@@ -1,0 +1,13 @@
+{
+  "name": "stone-shop-clone",
+  "version": "1.0.0",
+  "description": "Clone idêntico e completo do Stone Shop com vitrine, vídeos VSL, criadores reels, 87 produtos, checkout e pix",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["ecommerce", "stoneshop", "tiktokshop", "vsl", "clone"],
+  "author": "Bruno (CTO Uppi)",
+  "license": "ISC"
+}
