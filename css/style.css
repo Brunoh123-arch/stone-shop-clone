@@ -7494,3 +7494,6 @@ select.form-input {
   background: #fff1f3 !important;
   color: #e02447 !important;
 }
+
+/* REMOVE CONTADOR DE PESSOAS OLHANDO E ESTOQUE */
+.urgency-bar { display: none !important; }

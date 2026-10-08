@@ -378,58 +378,7 @@ function initOfertaTimer() {
 }
 
 // ===== CONTADOR DE PESSOAS OLHANDO E ESTOQUE DE URGÊNCIA (simulado) =====
-function initPessoasOlhando() {
-  const prodId = (typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL && PRODUTO_ATUAL.id) ? PRODUTO_ATUAL.id : 1;
-
-  // 1. Dinamiza as Unidades Restantes baseando-se no ID único do produto (variando de forma estável entre 8 e 28)
-  const baseEstoque = 8 + ((prodId * 7) % 21);
-  const elements = document.querySelectorAll('*');
-  elements.forEach(el => {
-    if (el.children.length === 0 && el.textContent.includes('Restam')) {
-      const match = el.textContent.match(/Restam\s+(\d+)\s+unidades/i);
-      if (match) {
-        el.innerHTML = el.innerHTML.replace(/Restam\s+\d+\s+unidades/i, `Restam <strong>${baseEstoque}</strong> unidades`);
-      }
-    } else if (el.tagName === 'SPAN' && el.textContent.includes('Restam') && el.querySelector('strong')) {
-      const strong = el.querySelector('strong');
-      if (strong) {
-        strong.textContent = baseEstoque;
-      }
-    }
-  });
-
-  // 2. Dinamiza as Pessoas Olhando (variando entre 42 e 148)
-  const basePessoas = 42 + ((prodId * 17) % 107);
-
-  // Varre spans de texto com a contagem de pessoas olhando
-  elements.forEach(el => {
-    if (el.children.length === 0 && el.textContent.includes('pessoas olhando')) {
-      const match = el.textContent.match(/(\d+)\s+pessoas olhando/i);
-      if (match) {
-        el.innerHTML = el.innerHTML.replace(/\d+\s+pessoas olhando/i, `<strong class="pessoas-olhando-count" data-base="${basePessoas}">${basePessoas}</strong> pessoas olhando`);
-      }
-    } else if (el.tagName === 'SPAN' && el.textContent.includes('pessoas olhando') && !el.querySelector('.pessoas-olhando-count')) {
-      const match = el.textContent.match(/(\d+)\s+pessoas/i);
-      if (match) {
-        el.innerHTML = el.innerHTML.replace(/\d+\s+pessoas/i, `<strong class="pessoas-olhando-count" data-base="${basePessoas}">${basePessoas}</strong> pessoas`);
-      }
-    }
-  });
-
-  // Mantém a oscilação realista em tempo real
-  const activeContadores = document.querySelectorAll('.pessoas-olhando-count');
-  activeContadores.forEach(el => {
-    const base = parseInt(el.getAttribute('data-base')) || basePessoas;
-    el.textContent = base;
-
-    function updateCount() {
-      const delta = Math.floor(Math.random() * 7) - 3;
-      const newVal = Math.max(30, base + delta);
-      el.textContent = newVal;
-    }
-    setInterval(updateCount, 5000 + Math.random() * 3000);
-  });
-}
+function initPessoasOlhando() { return; }
 
 // ===== ESTADO E PAGINAÇÃO DE AVALIAÇÕES =====
 const reviewPaginationState = {};
