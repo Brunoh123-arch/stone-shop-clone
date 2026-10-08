@@ -4035,26 +4035,21 @@ select.form-input {
   display: none !important;
 }
 
-para harmonia visual */ font-size: clamp(17px, 5.0vw, 30px);
-font-weight: 500;
-line-height: 1;
-letter-spacing: -0.5px;
-}
-
-/* 3. Preço Principal Grande (Ex: 69,90) - Subido ligeiramente para alinha com o "A partir de R$" */
+/* Preço Principal Grande */
 .price-current {
   position: absolute;
   left: 36.2%;
   top: 18%;
-  /* Movido um pouco para baixo */
   color: rgba(255, 255, 255, 0.85);
-
-  /* Mesma cor do 'A partir de R
+  font-size: clamp(17px, 5.0vw, 30px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
 
 .price-currency {
   display: none;
 }
-
 /* 4. Preço Original Riscado (Fica abaixo do balão de desconto) */
   .price-original {
     position: absolute;
