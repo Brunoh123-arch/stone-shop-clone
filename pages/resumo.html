@@ -557,6 +557,68 @@
     }
 
     /* TIKTOK STYLE LOADER SCREEN */
+  
+    /* ESTILOS TIKTOK SHOP PERFEITOS */
+    .badge-oferta-relampago {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: #fff0f2;
+      color: #ff2b56;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 5px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+      margin-right: 4px;
+    }
+
+    .badge-devolucao {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #f7f7f7;
+      border-radius: 3px;
+      padding: 2px 5px;
+      font-size: 10px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .card-brand-tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 4px;
+      border-radius: 2px;
+      border: 1px solid #ddd;
+      color: #555;
+      background: #fafafa;
+      line-height: 1;
+    }
+
+    .badge-aprovacao-imediata {
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .legal-notice {
+      font-size: 11px;
+      color: #888;
+      line-height: 1.4;
+      padding: 12px 16px 20px 16px;
+      text-align: center;
+      background: #f5f5f5;
+    }
+
+    .legal-notice a {
+      color: #555;
+      text-decoration: underline;
+    }
+
   </style>
   </head>
 
@@ -565,36 +627,32 @@
   <div class="app-container">
 
     <!-- HEADER -->
-    <header class="page-header">
-<!-- TikTok Pixel Base Code -->
-<script>
-</script>
-<!-- End TikTok Pixel Base Code -->
-            <a href="carrinho.html">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2.5">
+    <header class="page-header" style="background:#fff; height:50px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid #f0f0f0; position:sticky; top:0; z-index:100;">
+      <a href="carrinho.html" style="display:flex; align-items:center; text-decoration:none; color:#111;">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </a>
-      <h1>Resumo do pedido</h1>
-      <div class="header-spacer"></div>
+      <div style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:700; color:#222;">
+        <!-- Escudo Dourado/Marrom Oficial Garantia de Entrega -->
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+          <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 22.8C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#b07d2b"/>
+          <path d="M9 11.5L11 13.5L15 9.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Garantia de entrega</span>
+      </div>
+      <div style="width:22px;"></div>
     </header>
 
     <div class="content">
 
       <!-- ENDEREÇO -->
-      <div class="address-section" onclick="openAddressModalLocal()">
-        <svg class="address-pin-icon" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
-          <circle cx="12" cy="10" r="3" />
-        </svg>
-        <div class="address-details" id="address-details-box">
-          <!-- Preenchido via JS -->
-        </div>
-        <span class="address-arrow">›</span>
+      <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:14px 16px; cursor:pointer;">
+        <!-- Preenchido dinamicamente por renderAddress() -->
       </div>
 
-      <!-- DIVISÓRIA LISTRADA -->
+      <!-- DIVISÓRIA LISTRADA OFICIAL TIKTOK SHOP -->
+      <div class="colored-divider"></div>
       <div class="colored-divider"></div>
 
       <!-- ITENS DA COMPRA -->
@@ -690,12 +748,12 @@
         <div class="coupon-row" onclick="openAddressModalLocal()">
           <div class="coupon-label">
             <span style="font-size:16px;">🎟️</span>
-            <span>Desconto do TikTok Shop</span>
+            <span style="font-size:14px; font-weight:600; color:#111;">Desconto do TikTok Shop</span>
           </div>
           <div style="display:flex;align-items:center;gap:6px;">
-            <span class="coupon-badge-blue">Frete grátis</span>
-            <span class="coupon-badge-pink" id="coupon-pink-val">-R$ 0,00</span>
-            <span style="color:#aaa;font-weight:bold;">›</span>
+            <span class="coupon-badge-blue" style="background:#e0f7fa; color:#00838f; font-size:11px; font-weight:700; padding:2px 6px; border-radius:3px;">- R$ 20,00</span>
+            <span class="coupon-badge-pink" id="coupon-pink-val" style="background:#fff0f2; color:#ff2b56; font-size:11px; font-weight:700; padding:2px 6px; border-radius:3px;">- R$ 10,72</span>
+            <span style="color:#aaa;font-weight:bold;font-size:16px;">›</span>
           </div>
         </div>
         <div class="coupon-row">
@@ -732,7 +790,7 @@
           </div>
           <div class="summary-row" style="color:#ff2b56;">
             <span>Cupons do TikTok Shop</span>
-            <span>-R$ 0,00</span>
+            <span id="desconto-cupom-total">-R$ 10,72</span>
           </div>
         </div>
 
@@ -744,11 +802,11 @@
           </div>
           <div class="summary-row">
             <span>Taxa de envio</span>
-            <span id="taxa-envio-val">R$ 15,70</span>
+            <span id="taxa-envio-val">R$ 21,30</span>
           </div>
           <div class="summary-row" style="color:#ff2b56;">
             <span>Desconto de envio</span>
-            <span id="desconto-envio-val">-R$ 15,70</span>
+            <span id="desconto-envio-val">-R$ 21,30</span>
           </div>
         </div>
 
@@ -769,15 +827,53 @@
       </div>
 
       <!-- FORMA DE PAGAMENTO -->
-      <div class="payment-section">
-        <div class="summary-title">Forma de pagamento</div>
-        <div class="payment-option" style="border-bottom:none;">
-          <div class="payment-left" style="display:flex;align-items:center;gap:10px;">
-            <img src="../logopix/image.png" alt="Pix" style="width:22px;height:22px;object-fit:contain;" />
-            <span style="font-weight:600;">Pix</span>
+      <div class="payment-section" style="background:#fff; padding:16px; margin-bottom:8px;">
+        <div class="summary-title" style="font-size:15px; font-weight:700; margin-bottom:14px; color:#111;">Forma de pagamento</div>
+        
+        <!-- Cartão de crédito -->
+        <div class="payment-option" onclick="handleCardClick()" style="display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:1px solid #f2f2f2; cursor:pointer;">
+          <div class="payment-left" style="display:flex; align-items:center; gap:10px;">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+            </svg>
+            <div>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <span style="font-weight:600; font-size:14px; color:#222;">Cartão de crédito</span>
+                <span class="card-brand-tag" style="color:#00579f;">VISA</span>
+                <span class="card-brand-tag" style="color:#eb001b;">MC</span>
+                <span class="card-brand-tag" style="color:#ed1c24;">ELO</span>
+              </div>
+              <div style="font-size:11px; color:#888; margin-top:2px;">Sem juros em até 2 parcelas</div>
+            </div>
           </div>
-          <div class="payment-radio active" id="radio-pix"></div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div class="payment-radio" id="radio-card" style="width:18px; height:18px; border-radius:50%; border:2px solid #ddd; display:flex; align-items:center; justify-content:center;"></div>
+            <span style="color:#aaa; font-size:14px; font-weight:bold;">›</span>
+          </div>
         </div>
+
+        <!-- Pix -->
+        <div class="payment-option" onclick="selectPixPayment()" style="display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:none; cursor:pointer;">
+          <div class="payment-left" style="display:flex; align-items:center; gap:10px;">
+            <img src="../logopix/image.png" alt="Pix" style="width:22px; height:22px; object-fit:contain;" />
+            <div>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <span style="font-weight:700; font-size:14px; color:#111;">Pix</span>
+                <span class="badge-aprovacao-imediata">Aprovação imediata</span>
+              </div>
+              <div style="font-size:11px; color:#2e7d32; margin-top:2px;">Liberação rápida do pedido</div>
+            </div>
+          </div>
+          <div class="payment-radio active" id="radio-pix" style="width:18px; height:18px; border-radius:50%; border:2px solid #ff2b56; background:#ff2b56; display:flex; align-items:center; justify-content:center;">
+            <div style="width:6px; height:6px; border-radius:50%; background:#fff;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AVISO LEGAL TIKTOK SHOP -->
+      <div class="legal-notice">
+        Ao fazer o pedido, você concorda com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a> do TikTok Shop.
       </div>
 
     </div>
@@ -801,9 +897,15 @@
         <div class="footer-total-label" id="footer-item-count">Total (1 item)</div>
         <div class="footer-total-val" id="footer-total-val-bottom">R$ 0,00</div>
       </div>
-      <button class="fazer-pedido-btn" onclick="confirmarPedido()">
-        Fazer pedido
-        <span id="coupon-timer-txt">O cupom expira em 01:39:00 | Frete grátis</span>
+      <button class="fazer-pedido-btn" onclick="confirmarPedido()" style="background:#ff2b56; color:#fff; border:none; border-radius:28px; width:100%; padding:9px 16px; font-size:15px; font-weight:700; cursor:pointer; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 3px 10px rgba(255,43,86,0.35);">
+        <div style="display:flex; align-items:center; gap:6px;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+            <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 22.8C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#fff"/>
+            <path d="M9 11.5L11 13.5L15 9.5" stroke="#ff2b56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Fazer pedido</span>
+        </div>
+        <span id="coupon-timer-txt" style="font-size:10px; font-weight:500; opacity:0.95; margin-top:2px;">O cupom expira em 03:34:21</span>
       </button>
     </div>
 
@@ -837,6 +939,27 @@
         }
       }
     </style>
+
+    
+  <!-- MODAL NATIVO TIKTOK SHOP (Imagem 4: Adicionar endereço de entrega) -->
+  <div id="modal-address-native-alert" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999998; align-items:center; justify-content:center;">
+    <div style="background:#fff; width:85%; max-width:320px; border-radius:18px; text-align:center; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.2); animation:zoomInNativeModal 0.2s ease-out; font-family:-apple-system,BlinkMacSystemFont,Inter,sans-serif;">
+      <div style="padding:24px 20px 8px 20px;">
+        <h3 style="font-size:18px; font-weight:800; color:#000; margin:0 0 10px 0; letter-spacing:-0.3px;">Adicionar endereço de entrega</h3>
+        <p style="font-size:14px; color:#555; line-height:1.45; margin:0 0 16px 0;">Sua conta não tem um endereço de envio. Adicione um para prosseguir com a finalização da compra.</p>
+      </div>
+      <div style="display:flex; border-top:1px solid #f0f0f0; height:48px;">
+        <button onclick="closeNativeAddressAlert(event)" style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#555; font-weight:500; cursor:pointer; outline:none;">Mais tarde</button>
+        <button onclick="proceedToFullAddressForm(event)" style="flex:1; background:none; border:none; font-size:15px; color:#000; font-weight:800; cursor:pointer; outline:none;">Adicionar</button>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes zoomInNativeModal {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
 
     <!-- MODAL ENDEREÇO - COMPLETO NO RESUMO -->
     <div id="address-modal-box"
@@ -1055,20 +1178,78 @@
       var bairro = localStorage.getItem('user_bairro') || '';
       var cidade = localStorage.getItem('user_cidade') || '';
       var estado = localStorage.getItem('user_estado') || '';
-      var cpf = localStorage.getItem('user_cpf') || '';
 
-      var el = document.getElementById('address-details-box');
-      if (!el) return;
+      var container = document.getElementById('address-container-box');
+      if (!container) return;
 
       if (!rua) {
-        el.innerHTML = '<div style="color:#ff2b56;font-weight:700;cursor:pointer;" onclick="openAddressModalLocal()">Preencha o endereço de entrega clicando aqui</div>';
-        return;
-      }
+        // VISUAL IDÊNTICO ÀS IMAGENS 2 E 3 (SEM ENDEREÇO)
+        container.innerHTML = `
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span style="font-size:14px; font-weight:700; color:#111;">Endereço de envio</span>
+            </div>
+            <div style="font-size:14px; font-weight:700; color:#fe2c55; display:flex; align-items:center; gap:2px;">
+              + Adicionar endereço
+            </div>
+          </div>
+        `;
+      } else {
+        // VISUAL IDÊNTICO ÀS IMAGENS 1 E 5 (COM ENDEREÇO)
+        var telFmt = tel;
+        if (tel && tel.length >= 8) {
+          telFmt = '(+55)' + tel.slice(0, 2) + '*******' + tel.slice(-2);
+        }
+        var enderecoCompleto = rua + (num ? ', ' + num : ', s/n') + (bairro ? ', ' + bairro : '') + (cidade ? ', ' + cidade : '') + (estado ? ', ' + estado : '') + (cep ? ', ' + cep : '');
 
-      el.innerHTML = `
-    <div class="address-name">${name}, ${tel}</div>
-    <div class="address-text">${rua}, ${num}, ${bairro}, ${cidade}, ${estado}, ${cep}</div>
-  `;
+        container.innerHTML = `
+          <div>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span style="font-size:15px; font-weight:700; color:#111;">${name}${telFmt ? ', ' + telFmt : ''}</span>
+              </div>
+              <span style="color:#aaa; font-size:16px; font-weight:bold;">›</span>
+            </div>
+            <div style="padding-left:28px; font-size:13px; color:#555; line-height:1.4;">
+              ${enderecoCompleto}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function handleAddressClick() {
+      var rua = localStorage.getItem('user_rua') || '';
+      if (!rua) {
+        showNativeAddressAlert();
+      } else {
+        openAddressModalLocal();
+      }
+    }
+
+    function showNativeAddressAlert() {
+      const modal = document.getElementById('modal-address-native-alert');
+      if (modal) modal.style.display = 'flex';
+    }
+
+    function closeNativeAddressAlert(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const modal = document.getElementById('modal-address-native-alert');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function proceedToFullAddressForm(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      closeNativeAddressAlert();
+      openAddressModalLocal();
     }
 
     function openAddressModalLocal() {
@@ -1136,6 +1317,41 @@
       }
       return value;
     }
+
+    
+    // Timer regressivo dinâmico para o botão Fazer Pedido (Imagem 1)
+    function startCouponCountdown() {
+      let secondsLeft = 3 * 3600 + 34 * 60 + 21; // 03:34:21
+      const timerEl = document.getElementById('coupon-timer-txt');
+      if (!timerEl) return;
+
+      function update() {
+        if (secondsLeft <= 0) {
+          secondsLeft = 3 * 3600 + 34 * 60 + 21; // reinicia
+        }
+        const h = String(Math.floor(secondsLeft / 3600)).padStart(2, '0');
+        const m = String(Math.floor((secondsLeft % 3600) / 60)).padStart(2, '0');
+        const s = String(secondsLeft % 60).padStart(2, '0');
+        timerEl.textContent = 'O cupom expira em ' + h + ':' + m + ':' + s;
+        secondsLeft--;
+      }
+      update();
+      setInterval(update, 1000);
+    }
+    setTimeout(startCouponCountdown, 300);
+
+    function handleCardClick() {
+      alert('Pagamento via Cartão indisponível temporariamente para esta promoção. Utilize PIX com aprovação instantânea!');
+    }
+
+    function selectPixPayment() {
+      const radioPix = document.getElementById('radio-pix');
+      if (radioPix) {
+        radioPix.style.borderColor = '#ff2b56';
+        radioPix.style.background = '#ff2b56';
+      }
+    }
+
 
     document.addEventListener('DOMContentLoaded', () => {
       // [TikTok Pixel] InitiateCheckout — usuario chegou no resumo/checkout.
@@ -1399,9 +1615,17 @@
             
             ${item.variacao ? `<div class="product-variacao">${item.variacao}</div>` : ''}
             
-            <div class="badge-devolucao">
-              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#d4a373" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Devolução gratuita
+            <div style="display:flex; align-items:center; flex-wrap:wrap; gap:4px; margin-bottom:6px;">
+              <div class="badge-oferta-relampago">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="#ff2b56">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Oferta Relâmpago</span>
+              </div>
+              <div class="badge-devolucao">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#777" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Devolução gratuita</span>
+              </div>
             </div>
             
             <div class="price-qty-line">
@@ -1572,7 +1796,8 @@
         totalItens += 1;
       }
 
-      var cupomTikTok = 0;
+      var cupomTikTok = 10.72;
+      var descontoFrete = 21.30;
       var descontoProduto = subtotalOriginal - subtotalAtual;
       var economiaTotal = descontoProduto;
 
@@ -1581,6 +1806,8 @@
       document.getElementById('subtotal-val').textContent = 'R$ ' + formatarMoeda(subtotalAtual);
       document.getElementById('preco-original-total').textContent = 'R$ ' + formatarMoeda(subtotalOriginal);
       document.getElementById('desconto-produto-total').textContent = '-R$ ' + formatarMoeda(descontoProduto);
+      const cupomEl = document.getElementById('desconto-cupom-total');
+      if (cupomEl) cupomEl.textContent = '-R$ ' + formatarMoeda(cupomTikTok);
 
       document.getElementById('total-geral-val').textContent = 'R$ ' + formatarMoeda(totalGeral);
       document.getElementById('footer-total-val-bottom').textContent = 'R$ ' + formatarMoeda(totalGeral);
