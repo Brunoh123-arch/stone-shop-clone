@@ -833,29 +833,6 @@
       <div class="payment-section" style="background:#fff; padding:16px; margin-bottom:8px;">
         <div class="summary-title" style="font-size:15px; font-weight:700; margin-bottom:14px; color:#111;">Forma de pagamento</div>
         
-        <!-- Cartão de crédito -->
-        <div class="payment-option" onclick="handleCardClick()" style="display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:1px solid #f2f2f2; cursor:pointer;">
-          <div class="payment-left" style="display:flex; align-items:center; gap:10px;">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
-              <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-              <line x1="2" y1="10" x2="22" y2="10"></line>
-            </svg>
-            <div>
-              <div style="display:flex; align-items:center; gap:6px;">
-                <span style="font-weight:600; font-size:14px; color:#222;">Cartão de crédito</span>
-                <span class="card-brand-tag" style="color:#00579f;">VISA</span>
-                <span class="card-brand-tag" style="color:#eb001b;">MC</span>
-                <span class="card-brand-tag" style="color:#ed1c24;">ELO</span>
-              </div>
-              <div style="font-size:11px; color:#888; margin-top:2px;">Sem juros em até 2 parcelas</div>
-            </div>
-          </div>
-          <div style="display:flex; align-items:center; gap:8px;">
-            <div class="payment-radio" id="radio-card" style="width:18px; height:18px; border-radius:50%; border:2px solid #ddd; display:flex; align-items:center; justify-content:center;"></div>
-            <span style="color:#aaa; font-size:14px; font-weight:bold;">›</span>
-          </div>
-        </div>
-
         <!-- Pix -->
         <div class="payment-option" onclick="selectPixPayment()" style="display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:none; cursor:pointer;">
           <div class="payment-left" style="display:flex; align-items:center; gap:10px;">
@@ -1351,9 +1328,7 @@
     }
     setTimeout(startCouponCountdown, 300);
 
-    function handleCardClick() {
-      alert('Pagamento via Cartão indisponível temporariamente para esta promoção. Utilize PIX com aprovação instantânea!');
-    }
+    
 
     function selectPixPayment() {
       const radioPix = document.getElementById('radio-pix');
@@ -1679,16 +1654,12 @@
             </div>
           </div>
         </div>
-        <div class="delivery-banner">
-          <span class="delivery-left">${dataFmt}</span>
+        <div class="delivery-banner" style="background:#f9f9f9; padding:10px 12px; border-radius:6px; display:flex; justify-content:space-between; align-items:center; font-size:12px; margin-top:10px;">
+          <span class="delivery-left" style="font-weight:600; color:#222;">${dataFmt}</span>
           <span class="delivery-right" style="color:#2ea84f; display:inline-flex; align-items:center; gap:6px; font-weight:700;">
-            <span style="color:#999; text-decoration:line-through; font-weight:normal; font-size:12px; margin-right:2px;">R$ 15,70</span> Grátis
-            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#2ea84f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
-              <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
-              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" fill="#2ea84f" fill-opacity="0.1" />
-              <circle cx="5.5" cy="18.5" r="2.5" fill="#fff" />
-              <circle cx="18.5" cy="18.5" r="2.5" fill="#fff" />
-            </svg>
+            <span style="color:#aaa; text-decoration:line-through; font-weight:normal; font-size:11px;">R$ 21,30</span>
+            <span style="color:#111; font-weight:700; font-size:12px;">R$ 0,00</span>
+            <span style="color:#2ea84f; font-size:12px; font-weight:700;">Frete grátis</span>
           </span>
         </div>
       </div>
