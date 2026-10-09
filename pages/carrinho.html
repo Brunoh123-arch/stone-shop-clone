@@ -566,20 +566,13 @@
   <!-- ÁREA ROLÁVEL: endereço/CPF + produtos -->
   <div class="page-content" id="cart-page-content" style="padding-top: 0; margin-top: 0;">
 
-    <!-- SEÇÃO DE ENDEREÇO E CPF (rola junto com os produtos) -->
-    <div id="address-cpf-section" style="background: #f5f5f5; padding: 0 12px 0 12px;">
-      <!-- Card de endereço -->
-      <div id="address-header-trigger" onclick="openAddressModal()" style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; cursor: pointer; background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; margin-bottom: 10px;">
-        <span style="font-size: 22px; font-weight: 300; color: #333; flex-shrink: 0; line-height: 1; width: 22px; text-align: center;">+</span>
-        <span id="address-header-text" style="font-size: 14px; font-weight: 700; color: #222;">Adicionar endereço de entrega</span>
+    <!-- SEÇÃO DE ENDEREÇO (Idêntica ao Resumo) -->
+    <div id="address-cpf-section" style="background: #fff;">
+      <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:14px 16px; cursor:pointer;">
+        <!-- Preenchido dinamicamente por loadAddress() -->
       </div>
-      <!-- Card de CPF -->
-      <div onclick="openAddressModal()" style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; cursor: pointer; background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; margin-bottom: 10px;">
-        <span style="font-size: 22px; font-weight: 300; color: #333; flex-shrink: 0; line-height: 1; width: 22px; text-align: center;">+</span>
-        <span id="cpf-header-text" style="font-size: 14px; font-weight: 700; color: #222;">Adicionar CPF</span>
-      </div>
-      <!-- Linha decorativa bicolor ciano/vermelho tracejada -->
-      <div style="height: 4px; margin: 0 -12px; background-image: repeating-linear-gradient(45deg, #00c2cb 0px, #00c2cb 12px, #fff 12px, #fff 18px, #fe2c55 18px, #fe2c55 30px, #fff 30px, #fff 36px);"></div>
+      <!-- DIVISÓRIA LISTRADA OFICIAL TIKTOK SHOP -->
+      <div class="colored-divider" style="height: 4px; width: 100%; background-image: repeating-linear-gradient(45deg, #00c2cb 0px, #00c2cb 12px, #fff 12px, #fff 18px, #fe2c55 18px, #fe2c55 30px, #fff 30px, #fff 36px); margin-bottom: 8px;"></div>
     </div>
 
     <!-- Itens do carrinho renderizados por JS -->
@@ -851,63 +844,61 @@ function voltarDoCarrinho() {
 
 let itemsSelecionados = {}; // Rastreia quais IDs de item estão selecionados no carrinho
 function loadAddress() {
-  const address = localStorage.getItem('user_address');
-  const cpf = localStorage.getItem('user_cpf');
+  const container = document.getElementById('address-container-box');
+  const rua = localStorage.getItem('user_rua') || '';
+  const num = localStorage.getItem('user_numero') || '';
+  const bairro = localStorage.getItem('user_bairro') || '';
   const cidade = localStorage.getItem('user_cidade') || '';
   const estado = localStorage.getItem('user_estado') || '';
-  const rua = localStorage.getItem('user_rua') || '';
-  const bairro = localStorage.getItem('user_bairro') || '';
-  const addrSection = document.getElementById('address-cpf-section');
-  const editBtn = document.getElementById('header-edit-btn');
-  const subtitle = document.getElementById('cart-header-subtitle');
-  const subtitleText = document.getElementById('cart-subtitle-text');
-  const header = document.getElementById('cart-header');
+  const cep = localStorage.getItem('user_cep') || '';
 
-  if (address && cpf) {
-    // Monta texto curto para o subtitulo do header
-    let displayLine = '';
-    if (cidade && estado) {
-      displayLine = `${cidade}, ${estado}`;
-      if (rua) displayLine = `${rua} - ${displayLine}`;
-    } else {
-      displayLine = address;
-    }
-    // Exibe subtitulo no header
-    if (subtitle) subtitle.style.display = 'block';
-    if (subtitleText) subtitleText.textContent = displayLine;
-    if (header) header.style.height = '64px';
+  if (!container) return;
 
-    // Mostra resumo compacto no address-cpf-section
-    if (addrSection) {
-      addrSection.innerHTML = `
-        <div onclick="openAddressModal(true)" style="background:#fff;padding:0;cursor:pointer;">
+  if (!rua) {
+    container.innerHTML = `
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span style="font-size:15px; font-weight:700; color:#111;">Endereço de envio</span>
         </div>
-        <div style="height: 4px;background-image:repeating-linear-gradient(45deg, #00c2cb 0px, #00c2cb 12px, #fff 12px, #fff 18px, #fe2c55 18px, #fe2c55 30px, #fff 30px, #fff 36px);"></div>`;
-    }
-    if (editBtn) editBtn.style.display = 'block';
-
-  } else if (address && !cpf) {
-    const localDisplay = cidade && estado ? `${cidade}, ${estado}` : address;
-    if (subtitle) subtitle.style.display = 'none';
-    if (header) header.style.height = '52px';
-    if (addrSection) {
-      addrSection.innerHTML = `
-        <div style="background:#f5f5f5;padding:8px 12px 0 12px;">
-          <div style="display:flex;align-items:center;gap:8px;padding:12px 16px;background:#fff;border:1px solid #e5e5e5;border-radius:8px;margin-bottom:10px;">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#2EA84F" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <span style="font-size:13px;color:#333;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">${localDisplay}</span>
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#2EA84F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div onclick="openCpfModal()" style="display:flex;align-items:center;gap:14px;padding:14px 16px;cursor:pointer;background:#fff;border:1px solid #e5e5e5;border-radius:8px;margin-bottom:10px;">
-            <span style="font-size:22px;font-weight:300;color:#333;flex-shrink:0;line-height:1;width:22px;text-align:center;">+</span>
-            <span style="font-size:14px;font-weight:700;color:#222;">Adicionar CPF</span>
-          </div>
-          <div style="height: 4px;margin:0 -12px;background-image:repeating-linear-gradient(45deg, #00c2cb 0px, #00c2cb 12px, #fff 12px, #fff 18px, #fe2c55 18px, #fe2c55 30px, #fff 30px, #fff 36px);"></div>
-        </div>`;
-    }
-    if (editBtn) editBtn.style.display = 'none';
-
+        <div style="color:#fe2c55; font-size:14px; font-weight:700;">+ Adicionar endereço</div>
+      </div>
+    `;
   } else {
+    const name = localStorage.getItem('user_nome') || 'Cliente';
+    const tel = localStorage.getItem('user_tel') || '';
+    let telFmt = '';
+    if (tel) {
+      telFmt = '(+55) ' + (tel.length === 11 ? tel.substring(0, 2) + ' ' + tel.substring(2, 7) + '-' + tel.substring(7) : tel);
+    }
+    const enderecoCompleto = rua + (num ? ', ' + num : ', s/n') + (bairro ? ', ' + bairro : '') + (cidade ? ', ' + cidade : '') + (estado ? ', ' + estado : '') + (cep ? ', ' + cep : '');
+
+    container.innerHTML = `
+      <div>
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span style="font-size:15px; font-weight:700; color:#111;">${name}${telFmt ? ', ' + telFmt : ''}</span>
+          </div>
+          <span style="color:#aaa; font-size:16px; font-weight:bold;">›</span>
+        </div>
+        <div style="padding-left:28px; font-size:13px; color:#555; line-height:1.4;">
+          ${enderecoCompleto}
+        </div>
+      </div>
+    `;
+  }
+}
+
+function handleAddressClick() {
+  openAddressModal(true);
+} else {
     if (subtitle) subtitle.style.display = 'none';
     if (header) header.style.height = '52px';
     if (addrSection) {
