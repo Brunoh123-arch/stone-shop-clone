@@ -787,8 +787,8 @@
             </div>
           </div>
           <div style="display:flex; align-items:center; gap:8px;">
-            <span style="color:#999; font-size:13px; font-weight:500;">-R$ 0,00</span>
-            <div class="bonus-switch" id="bonus-switch" onclick="toggleBonus()">
+            <span id="bonus-val-label" style="color:#ff2b56; font-size:13px; font-weight:700;">-R$ 3,27</span>
+            <div class="bonus-switch active" id="bonus-switch" onclick="toggleBonus()">
               <div class="bonus-switch-thumb"></div>
             </div>
           </div>
@@ -816,6 +816,10 @@
           <div class="summary-row" style="color:#ff2b56;">
             <span>Cupons do TikTok Shop</span>
             <span id="desconto-cupom-total">-R$ 10,72</span>
+          </div>
+          <div class="summary-row" id="row-bonus-resumo" style="color:#ff2b56;">
+            <span>Bônus TikTok Shop</span>
+            <span id="desconto-bonus-total">-R$ 3,27</span>
           </div>
         </div>
 
@@ -1095,7 +1099,8 @@
     }
 
     var freteSelected = 0;
-    var bonusActive = false;
+    var bonusActive = true;
+    var valorBonus = 3.27;
     let orderBumpAdded = false;
     let orderBumpPeliculaAdded = false;
 
@@ -1829,15 +1834,35 @@
       var cupomTikTok = 10.72;
       var descontoFrete = 21.30;
       var descontoProduto = subtotalOriginal - subtotalAtual;
-      var economiaTotal = descontoProduto;
+      var descontoBonusAplicado = bonusActive ? valorBonus : 0;
+      var economiaTotal = descontoProduto + descontoBonusAplicado;
 
-      var totalGeral = subtotalAtual;
+      var totalGeral = Math.max(1, subtotalAtual - descontoBonusAplicado);
 
       document.getElementById('subtotal-val').textContent = 'R$ ' + formatarMoeda(subtotalAtual);
       document.getElementById('preco-original-total').textContent = 'R$ ' + formatarMoeda(subtotalOriginal);
       document.getElementById('desconto-produto-total').textContent = '-R$ ' + formatarMoeda(descontoProduto);
       const cupomEl = document.getElementById('desconto-cupom-total');
       if (cupomEl) cupomEl.textContent = '-R$ ' + formatarMoeda(cupomTikTok);
+      const bonusRow = document.getElementById('row-bonus-resumo');
+      const bonusTotalEl = document.getElementById('desconto-bonus-total');
+      const bonusLabel = document.getElementById('bonus-val-label');
+      if (bonusActive) {
+        if (bonusRow) bonusRow.style.display = 'flex';
+        if (bonusTotalEl) bonusTotalEl.textContent = '-R$ ' + formatarMoeda(valorBonus);
+        if (bonusLabel) {
+          bonusLabel.textContent = '-R$ ' + formatarMoeda(valorBonus);
+          bonusLabel.style.color = '#ff2b56';
+          bonusLabel.style.fontWeight = '700';
+        }
+      } else {
+        if (bonusRow) bonusRow.style.display = 'none';
+        if (bonusLabel) {
+          bonusLabel.textContent = '-R$ 0,00';
+          bonusLabel.style.color = '#999';
+          bonusLabel.style.fontWeight = '500';
+        }
+      }
 
       document.getElementById('total-geral-val').textContent = 'R$ ' + formatarMoeda(totalGeral);
       document.getElementById('footer-total-val-bottom').textContent = 'R$ ' + formatarMoeda(totalGeral);
@@ -1852,6 +1877,7 @@
       if (sw) {
         sw.classList.toggle('active', bonusActive);
       }
+      calcTotals();
     }
     let isConfirmingPedido = false;
     async function confirmarPedido() {
