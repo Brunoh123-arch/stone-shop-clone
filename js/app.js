@@ -1879,8 +1879,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="product-cupom-badge-row" style="display:flex; align-items:center; gap:8px; margin: -10px 2px 8px; flex-wrap:wrap; box-sizing:border-box; justify-content: flex-start;">
         <!-- Pílula 1: Cupom de Desconto -->
         <div style="background:#fff1f3; color:#e02447; font-size:11px; font-weight:700; padding:4px 8px; border-radius:4px; display:flex; align-items:center; gap:4px; height:22px; box-sizing:border-box; border:none;">
-          <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="vertical-align:middle;">
-            <path d="M20 12c0-1.1.9-2 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-1.99.9-1.99 2v4c1.1 0 1.99.9 1.99 2s-.89 2-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c-1.1 0-2-.9-2-2zm-9 1.5H9v-3h2v3zm4 0h-2v-3h2v3z"/>
+          <svg viewBox="0 0 24 16" width="14" height="10" fill="none" style="flex-shrink:0; vertical-align:middle; display:inline-block;">
+            <path d="M2 3.5C2 2.67 2.67 2 3.5 2H20.5C21.33 2 22 2.67 22 3.5V5.5C20.8 5.5 19.8 6.5 19.8 7.7C19.8 8.9 20.8 9.9 22 9.9V12.5C22 13.33 21.33 14 20.5 14H3.5C2.67 14 2 13.33 2 12.5V9.9C3.2 9.9 4.2 8.9 4.2 7.7C4.2 6.5 3.2 5.5 2 5.5V3.5Z" stroke="#e02447" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            <path d="M8.5 7.7L10.5 9.7L15 5.2" stroke="#e02447" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <span id="desconto-reais-badge">Desconto de R$ ${valorDesconto}</span>
         </div>

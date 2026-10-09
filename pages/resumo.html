@@ -41,14 +41,23 @@
       font-size: 14px
     }
 
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
     .app-container {
+      width: 100%;
       max-width: 480px;
       margin: 0 auto;
       min-height: 100vh;
       background: #f9f9f9;
       display: flex;
       flex-direction: column;
-      position: relative
+      position: relative;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
 
     /* HEADER */
@@ -793,9 +802,6 @@
             <span style="color:#999; font-size:13px; font-weight:500;">-R$ 0,00</span>
             <div class="bonus-switch" id="bonus-switch" onclick="toggleBonus()">
               <div class="bonus-switch-thumb"></div>
-            </div>
-          </div>
-        </div>
             </div>
           </div>
         </div>
