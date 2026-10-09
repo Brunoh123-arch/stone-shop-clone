@@ -906,7 +906,10 @@
           </svg>
           <span>Fazer pedido</span>
         </div>
-        <span id="coupon-timer-txt" style="font-size:10px; font-weight:500; opacity:0.95; margin-top:2px;">O cupom expira em 03:34:21</span>
+        <span id="coupon-timer-txt" style="font-size:10px; font-weight:500; opacity:0.95; margin-top:2px; display:inline-flex; align-items:center; justify-content:center; white-space:nowrap;">
+          <span>O cupom expira em&nbsp;</span>
+          <span id="coupon-clock-digits" style="display:inline-block; font-variant-numeric: tabular-nums; font-feature-settings: 'tnum'; min-width: 46px; text-align:left; font-weight:600;">03:34:21</span>
+        </span>
       </button>
     </div>
 
@@ -1323,17 +1326,24 @@
     // Timer regressivo dinâmico para o botão Fazer Pedido (Imagem 1)
     function startCouponCountdown() {
       let secondsLeft = 3 * 3600 + 34 * 60 + 21; // 03:34:21
+      const clockEl = document.getElementById('coupon-clock-digits');
       const timerEl = document.getElementById('coupon-timer-txt');
-      if (!timerEl) return;
+      if (!clockEl && !timerEl) return;
 
       function update() {
         if (secondsLeft <= 0) {
-          secondsLeft = 3 * 3600 + 34 * 60 + 21; // reinicia
+          secondsLeft = 3 * 3600 + 34 * 60 + 21;
         }
         const h = String(Math.floor(secondsLeft / 3600)).padStart(2, '0');
         const m = String(Math.floor((secondsLeft % 3600) / 60)).padStart(2, '0');
         const s = String(secondsLeft % 60).padStart(2, '0');
-        timerEl.textContent = 'O cupom expira em ' + h + ':' + m + ':' + s;
+        const timeStr = h + ':' + m + ':' + s;
+        
+        if (clockEl) {
+          clockEl.textContent = timeStr;
+        } else if (timerEl) {
+          timerEl.textContent = 'O cupom expira em ' + timeStr;
+        }
         secondsLeft--;
       }
       update();
