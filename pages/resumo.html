@@ -489,6 +489,10 @@
 
     .payment-radio.active::after {
       content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 6px;
       height: 6px;
       border-radius: 50%;
@@ -644,7 +648,7 @@
       <div style="width:22px;"></div>
     </header>
 
-    <div class="content">
+    <div class="content" style="padding-bottom: 130px;">
 
       <!-- ENDEREÇO -->
       <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:14px 16px; cursor:pointer;">
@@ -652,7 +656,6 @@
       </div>
 
       <!-- DIVISÓRIA LISTRADA OFICIAL TIKTOK SHOP -->
-      <div class="colored-divider"></div>
       <div class="colored-divider"></div>
 
       <!-- ITENS DA COMPRA -->
@@ -865,9 +868,7 @@
               <div style="font-size:11px; color:#2e7d32; margin-top:2px;">Liberação rápida do pedido</div>
             </div>
           </div>
-          <div class="payment-radio active" id="radio-pix" style="width:18px; height:18px; border-radius:50%; border:2px solid #ff2b56; background:#ff2b56; display:flex; align-items:center; justify-content:center;">
-            <div style="width:6px; height:6px; border-radius:50%; background:#fff;"></div>
-          </div>
+          <div class="payment-radio active" id="radio-pix" style="width:18px; height:18px; border-radius:50%; border:2px solid #ff2b56; background:#ff2b56; position:relative;"></div>
         </div>
       </div>
 
@@ -1547,6 +1548,29 @@
       renderAddress();
       closeAddressModalLocal();
     }
+
+    
+    // Fallback: se o usuario acessou direto o resumo sem antes colocar nada no carrinho
+    (function ensureCartItem() {
+      var cart = [];
+      try { cart = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch(e){}
+      if (!Array.isArray(cart) || !cart.length) {
+        try { cart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]'); } catch(e){}
+      }
+      if (!Array.isArray(cart) || !cart.length) {
+        var defaultItem = {
+          id: 52,
+          nome: 'Apple iPad 10ª Geração 10.9" Wi-Fi 64GB - Prateado',
+          preco: 189.90,
+          precoOrig: 3499.00,
+          img: '../img/ipad11/ipad1.png',
+          qty: 1,
+          variacao: 'Prateado / 64GB'
+        };
+        localStorage.setItem('famosinhos_checkout_cart', JSON.stringify([defaultItem]));
+        localStorage.setItem('famosinhos_cart', JSON.stringify([defaultItem]));
+      }
+    })();
 
     function renderItens() {
       var cart = getCart();
