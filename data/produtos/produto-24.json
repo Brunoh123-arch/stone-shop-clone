@@ -1,0 +1,712 @@
+{
+  "id": 24,
+  "title": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy - Stone Shop",
+  "meta_description": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy com 73% OFF. Apenas R$159,90. Frete grátis.",
+  "product_title": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
+  "slider_imgs": [
+    {
+      "src": "../img/produto-24-slide-1.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 1"
+    },
+    {
+      "src": "../img/produto-24-slide-2.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 2"
+    },
+    {
+      "src": "../img/produto-24-slide-3.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 3"
+    },
+    {
+      "src": "../img/produto-24-slide-4.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 4"
+    },
+    {
+      "src": "../img/produto-24-slide-5.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 5"
+    },
+    {
+      "src": "../img/produto-24-slide-6.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 6"
+    },
+    {
+      "src": "../img/produto-24-slide-7.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 7"
+    },
+    {
+      "src": "../img/produto-24-slide-8.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 8"
+    },
+    {
+      "src": "../img/produto-24-slide-9.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 9"
+    }
+  ],
+  "discount_badge": "-73%",
+  "price_int": "159",
+  "price_cents": ",90",
+  "price_original": "R$ 599,00",
+  "installment_text": "2x R$ 79,95",
+  "installment_highlight": "sem juros",
+  "coupon_main": "73% OFF",
+  "coupon_bonus": "",
+  "rating_score": "5.0",
+  "rating_count": "(52)",
+  "sold_count": "897 vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (52)",
+  "reviews_avg": "5,0",
+  "reviews": [
+    {
+      "name": "A**a N**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_186.jpg",
+      "stars": 4,
+      "date": "15/02",
+      "variation": "Azul Bebê",
+      "date_line": "15/02 · Azul Bebê",
+      "comment": "Simplesmente perfeito! Super seguro e confortável, o empurrador dá controle total para os passeios na praça e a capota protege bem do sol.",
+      "photos": [
+        "../img/review-24-real-1.jpg",
+        "../img/review-24-real-2.jpg"
+      ]
+    },
+    {
+      "name": "H**o C**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_157.jpg",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Rosa Bebê",
+      "date_line": "14/02 · Rosa Bebê",
+      "comment": "Meu bebê amou, vai usar por anos porque adapta conforme a criança cresce. Estrutura forte e acabamento de primeira linha!",
+      "photos": [
+        "../img/review-24-real-3.jpg",
+        "../img/review-24-real-4.jpg"
+      ]
+    },
+    {
+      "name": "L**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_188.jpg",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Azul Bebê",
+      "date_line": "12/02 · Azul Bebê",
+      "comment": "Relativamente fácil de montar! Material de qualidade, superou minhas expectativas",
+      "photos": []
+    },
+    {
+      "name": "K**s M**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_159.jpg",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Rosa Bebê",
+      "date_line": "11/02 · Rosa Bebê",
+      "comment": "Não abri comprei pra presente, mas a entrega foi bem rápida, chegou bem embalado",
+      "photos": []
+    },
+    {
+      "name": "F**a B**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_190.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Azul Bebê",
+      "date_line": "10/02 · Azul Bebê",
+      "comment": "Achei meio difícil a montagem, principalmente do cinto no mais adorei o produto",
+      "photos": []
+    },
+    {
+      "name": "W**r P**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_161.jpg",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Rosa Bebê",
+      "date_line": "08/02 · Rosa Bebê",
+      "comment": "O produto é 10/10!! PERFEITO! \nFácil e leve de dirigir.\nTem cinto de segurança que deixa o bebê muito firme.\nEspaço para colocar pertences dos pais e do bebê.\nAlém de proteger do sol.\nComprem sem medo pq vale muito a pena!!",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_192.jpg",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "Azul Bebê",
+      "date_line": "07/02 · Azul Bebê",
+      "comment": "Brinquedo de excelente qualidade, cores vivas e material atóxico resistente. Valeu demais a compra, recomendo a todas as mães!",
+      "photos": []
+    },
+    {
+      "name": "Y**a C**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_163.jpg",
+      "stars": 4,
+      "date": "05/02",
+      "variation": "Rosa Bebê",
+      "date_line": "05/02 · Rosa Bebê",
+      "comment": "Fácil de montar material resistente muito bom pode comprar de verdade",
+      "photos": []
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_194.jpg",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Azul Bebê",
+      "date_line": "04/02 · Azul Bebê",
+      "comment": "Muito bom ótima qualidade e não demorou para chegar amei.",
+      "photos": []
+    },
+    {
+      "name": "V**r H**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_165.jpg",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Rosa Bebê",
+      "date_line": "02/02 · Rosa Bebê",
+      "comment": "Sei que tem a idade 2+ na caixa , Meu bebê tem 5 meses e ficou perfeito bem seguro , simplesmente amei e tenho uma menina de 4 anos e tbm deu super certo. Vou usar bastante.",
+      "photos": []
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_196.jpg",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Azul Bebê",
+      "date_line": "01/02 · Azul Bebê",
+      "comment": "Perfeição, não dava nada por ele,o ferro é forte  todo perfeito só comprem.chegou no prazo limite .",
+      "photos": []
+    },
+    {
+      "name": "L**s F**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_167.jpg",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Rosa Bebê",
+      "date_line": "29/01 · Rosa Bebê",
+      "comment": "Carrinho muito bom, minha tem 93 cm e ficou bom o pedal.\n\nObs.: cuidado para montar e procure deixar firme.\nVale a pena a aquisição\n\nSem arrependimento",
+      "photos": []
+    },
+    {
+      "name": "I**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_198.jpg",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Azul Bebê",
+      "date_line": "28/01 · Azul Bebê",
+      "comment": "Chegou bem antes do prazo, igual o anúncio. Eu e meu filho amamos....",
+      "photos": []
+    },
+    {
+      "name": "D**a G**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_169.jpg",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "Rosa Bebê",
+      "date_line": "26/01 · Rosa Bebê",
+      "comment": "Ele é lindo e fácil de montar..Minha sobrinha amou. Uma das melhores compras que fiz..",
+      "photos": []
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_200.jpg",
+      "stars": 4,
+      "date": "25/01",
+      "variation": "Azul Bebê",
+      "date_line": "25/01 · Azul Bebê",
+      "comment": "Brinquedo de excelente qualidade, cores vivas e material atóxico resistente. Valeu demais a compra, recomendo a todas as mães!",
+      "photos": []
+    },
+    {
+      "name": "M**o B**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_171.jpg",
+      "stars": 5,
+      "date": "23/01",
+      "variation": "Rosa Bebê",
+      "date_line": "23/01 · Rosa Bebê",
+      "comment": "Gostei da qualidade, fácil de montar",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_202.jpg",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Azul Bebê",
+      "date_line": "21/01 · Azul Bebê",
+      "comment": "Meu bebê de 9 meses sentiu medo ao sentar, a travas acolchoadas laterais são um pouco frouxa e sacodem, vou procurar um jeito de resolver isso eu mesma, no mais tudo é bom, minha sobrinha de 5 anos amou quis levar pra ela, senti falta de freios pra crianças maiores, porém é do meu bebê, seguimos tentando fazer a adaptação dele ao triciclo.",
+      "photos": []
+    },
+    {
+      "name": "J**o P**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_173.jpg",
+      "stars": 5,
+      "date": "20/01",
+      "variation": "Rosa Bebê",
+      "date_line": "20/01 · Rosa Bebê",
+      "comment": "Estrutura muito firme e estável, não tomba e dá total segurança pra criança brincar. Entrega super pontual e caixa lacrada.",
+      "photos": []
+    },
+    {
+      "name": "L**u D**e",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_204.jpg",
+      "stars": 5,
+      "date": "18/01",
+      "variation": "Azul Bebê",
+      "date_line": "18/01 · Azul Bebê",
+      "comment": "Produto bom,conforme o anuncio,chegou rápido só é ruim pra transportar de carro pq tem que ficar desmontando mas é fácil o desmonte",
+      "photos": []
+    },
+    {
+      "name": "C**s E**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_175.jpg",
+      "stars": 5,
+      "date": "17/01",
+      "variation": "Rosa Bebê",
+      "date_line": "17/01 · Rosa Bebê",
+      "comment": "O carrinho é ótimo mas na minha opinião o cinto poderia ser mais firme pois ele a gente tem que grudar ele para ele ficar firme sempre fica saltando com meu neném tirando isso o carrinho é perfeito",
+      "photos": []
+    },
+    {
+      "name": "B**a C**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_206.jpg",
+      "stars": 5,
+      "date": "15/01",
+      "variation": "Azul Bebê",
+      "date_line": "15/01 · Azul Bebê",
+      "comment": "Chegou antes do previsto, ótimo produto!",
+      "photos": []
+    },
+    {
+      "name": "R**a G**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_177.jpg",
+      "stars": 4,
+      "date": "13/01",
+      "variation": "Rosa Bebê",
+      "date_line": "13/01 · Rosa Bebê",
+      "comment": "O triciclo é lindo, vale cada centavo! A estrutura é firme e segura, montei certinho seguindo o manual. Meu filho adorou passear nele e a haste de empurrar guia com muita facilidade. Entrega da Stone Shop foi nota 10, chegou antes do prazo e muito bem embalado. Com certeza uma das melhores compras que já fiz!",
+      "photos": []
+    },
+    {
+      "name": "E**e S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_208.jpg",
+      "stars": 5,
+      "date": "12/01",
+      "variation": "Azul Bebê",
+      "date_line": "12/01 · Azul Bebê",
+      "comment": "Foi difícil de montar inclusive ficou meio torto, temos que montar novamente uma parte",
+      "photos": []
+    },
+    {
+      "name": "T**s A**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_179.jpg",
+      "stars": 5,
+      "date": "10/01",
+      "variation": "Rosa Bebê",
+      "date_line": "10/01 · Rosa Bebê",
+      "comment": "Muito lindo maravilhoso adore. Muito obrigada chegou rápida a entrega parabéns",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_210.jpg",
+      "stars": 5,
+      "date": "08/01",
+      "variation": "Azul Bebê",
+      "date_line": "08/01 · Azul Bebê",
+      "comment": "Triciclo sensacional maravilhoso meu bebê amou é muito leve pra empurrar agente não faz esforço tem um estilo elegante o sinto segura bem fácil montagem meu marido levou seca de 40 minutos a uma hora no máximo o manual não ajuda muito a maior parte das peças e tudo de encaixe as rodas são de borracha achei frágil as rodas  porém tá dando pra usar bem e é muito platico no dia a dia amei de mais meu bebê tem 10 meses",
+      "photos": []
+    },
+    {
+      "name": "A**r C**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_181.jpg",
+      "stars": 5,
+      "date": "06/01",
+      "variation": "Rosa Bebê",
+      "date_line": "06/01 · Rosa Bebê",
+      "comment": "Bom produto, envio rápido além do esperado e chegou super rápido, a loja tá de parabéns eu recomendo.",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_212.jpg",
+      "stars": 5,
+      "date": "05/01",
+      "variation": "Azul Bebê",
+      "date_line": "05/01 · Azul Bebê",
+      "comment": "O vídeo não ficou tão bom e nem tão nítido pois eu tive que tampar os rostos mas da pra ver um pouquinho de como o carrinho é lindo, ele tem 2 anos e coube perfeitamente, a entrega foi bem rápida pra onde moro. Ele só é um pouco complicado de montar mas seguindo o vídeo do YouTube deu certinho",
+      "photos": []
+    },
+    {
+      "name": "F**e M**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_183.jpg",
+      "stars": 5,
+      "date": "03/01",
+      "variation": "Rosa Bebê",
+      "date_line": "03/01 · Rosa Bebê",
+      "comment": "Produto chegou com tudo certinho , ele é leve pra empurra , montagem um pouco difícil por conta do manual pouco explicativo , porém gostei muito do triciclo , entrega dentro do prazo",
+      "photos": []
+    },
+    {
+      "name": "N**a R**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_214.jpg",
+      "stars": 4,
+      "date": "02/01",
+      "variation": "Azul Bebê",
+      "date_line": "02/01 · Azul Bebê",
+      "comment": "Pelo valor que paguei ok \nProduto bom de qualidade \nNão tem muito conforto no banco para a criança. \nMais é bem bonito e meu bebê adorou",
+      "photos": []
+    },
+    {
+      "name": "G**o B**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_185.jpg",
+      "stars": 5,
+      "date": "15/02",
+      "variation": "Rosa Bebê",
+      "date_line": "15/02 · Rosa Bebê",
+      "comment": "Estrutura muito firme e estável, não tomba e dá total segurança pra criança brincar. Entrega super pontual e caixa lacrada.",
+      "photos": []
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_216.jpg",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Azul Bebê",
+      "date_line": "14/02 · Azul Bebê",
+      "comment": "Amei demais o produto podem comprar sem medo",
+      "photos": []
+    },
+    {
+      "name": "R**n O**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_187.jpg",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Rosa Bebê",
+      "date_line": "12/02 · Rosa Bebê",
+      "comment": "Ele é perfeito demais,posso dizer que fiz uma ótima compra.\nE benefício pra me já que ela tem 13k e só quer ficar no colo e uma diversão pra ela \nMinha filha tem 1 ano 9 meses e acredito que ela vai usar bastante ainda \n\nEu só não achei tão confortável como parece nas fotos",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_218.jpg",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Azul Bebê",
+      "date_line": "11/02 · Azul Bebê",
+      "comment": "Chegou tudo certinho e super embalado \nChegou na data prevista bem embalado sem nem.um defeito. Um pequeno detalhe os pneus são de borracha se não tiver cuidado danificar com muita facilidade. E tbm as partes de ferro por dentro vieram com um pouco de ferrugem tirando isso amei o Triciclo  ❤️ Ele é super seguro para as crianças tem o sinto d e segurança Ameiiii o produto  ❤️",
+      "photos": []
+    },
+    {
+      "name": "M**s P**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_189.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Rosa Bebê",
+      "date_line": "10/02 · Rosa Bebê",
+      "comment": "Ele é maravilhoso! o material bom e resistente \nSó o acolchoado do acento que é fininho tirando isso o produto é maravilhoso ...\nQuebra a cabeça pra montar kkkk mais depois que vc pega a manhã já foi ...\nObs: monte quando o bebê estiver dormindo  ❤️ pq é luta minha irmã  ❤️ \nCurtam muito meu comentário por favor  😍✨",
+      "photos": []
+    },
+    {
+      "name": "T**a L**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_220.jpg",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Azul Bebê",
+      "date_line": "08/02 · Azul Bebê",
+      "comment": "A entrega foi rápido .\nGostei bastante \nValeu muito a pena",
+      "photos": []
+    },
+    {
+      "name": "C**o L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_191.jpg",
+      "stars": 4,
+      "date": "07/02",
+      "variation": "Rosa Bebê",
+      "date_line": "07/02 · Rosa Bebê",
+      "comment": "Chegou com 8 dias após o pagamento, veio bem embalado, sem faltar peças e fácil de montar. Super apaixonada, meu baby amou tbm .",
+      "photos": []
+    },
+    {
+      "name": "M**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_2.jpg",
+      "stars": 5,
+      "date": "05/02",
+      "variation": "Azul Bebê",
+      "date_line": "05/02 · Azul Bebê",
+      "comment": "Lindo, vai servir por muito tempo,  ❤️",
+      "photos": []
+    },
+    {
+      "name": "L**z V**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_193.jpg",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Rosa Bebê",
+      "date_line": "04/02 · Rosa Bebê",
+      "comment": "Minha bebê de 8 meses ficou perfeita e ela gostou muito e eu também  😍✨",
+      "photos": []
+    },
+    {
+      "name": "V**a L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_4.jpg",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Azul Bebê",
+      "date_line": "02/02 · Azul Bebê",
+      "comment": "Eu amei cada detalhe dele 😍✨\nMinha filha amou,ele é ótimo, é bastante seguro, a capota é ótima, cobre bem, do sol, é bem confortável, ele é mais leve que um carrinho comum. E o valor é ótimo, chegou antes da data, comprem sem medo",
+      "photos": []
+    },
+    {
+      "name": "R**l M**t",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_195.jpg",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Rosa Bebê",
+      "date_line": "01/02 · Rosa Bebê",
+      "comment": "A entrega foi rápida veio tudo certinho só foi difícil um pouco pra montar mais amei meu filho ficou feliz",
+      "photos": []
+    },
+    {
+      "name": "C**a P**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_6.jpg",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Azul Bebê",
+      "date_line": "29/01 · Azul Bebê",
+      "comment": "Amei o triciclo, veio bem embalado e foi fácil pra montar.",
+      "photos": []
+    },
+    {
+      "name": "S**o F**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_197.jpg",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Rosa Bebê",
+      "date_line": "28/01 · Rosa Bebê",
+      "comment": "Estrutura muito firme e estável, não tomba e dá total segurança pra criança brincar. Entrega super pontual e caixa lacrada.",
+      "photos": []
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_8.jpg",
+      "stars": 4,
+      "date": "26/01",
+      "variation": "Azul Bebê",
+      "date_line": "26/01 · Azul Bebê",
+      "comment": "Brinquedo de excelente qualidade, cores vivas e material atóxico resistente. Valeu demais a compra, recomendo a todas as mães!",
+      "photos": []
+    },
+    {
+      "name": "T**g R**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_199.jpg",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "Rosa Bebê",
+      "date_line": "25/01 · Rosa Bebê",
+      "comment": "Veio com defeito no lugar de montar o assento veio torto montamos pq achava que dava pra utilizar porém soltou todas as porcas dos parafusos o bebê quase caiu, acredito que já veio com o defeito da loja já que o amassado tá alinhado, aí a gente vai ter outro gasto pra desamassar e colocar porcas fora que por pouco o bebe não caiu, a empresa deveria verificar tudo antes do envio pra não acontecer essas coisas é um transporte para bebês, achei até mais barato em outras lojas com o mesmo modelo, comprei aqui pq como todo mundo comprou e deu certo achei que daria... o material é bom o erro foi só pq veio com defeito",
+      "photos": []
+    },
+    {
+      "name": "A**a N**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_10.jpg",
+      "stars": 5,
+      "date": "23/01",
+      "variation": "Azul Bebê",
+      "date_line": "23/01 · Azul Bebê",
+      "comment": "Uma gracinha. Linda cor, tamanho ideal e entrega rápida.",
+      "photos": []
+    },
+    {
+      "name": "J**n S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_201.jpg",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Rosa Bebê",
+      "date_line": "21/01 · Rosa Bebê",
+      "comment": "Carrinho muito bom, um pouco difícil de montar kk mas depois fica tranquilo.\nSuper confortável e seguro. Meu bebê tem 9 meses e ficou bom.",
+      "photos": []
+    },
+    {
+      "name": "L**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "stars": 5,
+      "date": "20/01",
+      "variation": "Azul Bebê",
+      "date_line": "20/01 · Azul Bebê",
+      "comment": "Igual ao anúncio,confortável pra criança,tem um botão vermelho debaixo da cadeira é só apertar para girar a cadeira,pode comprar sem medo",
+      "photos": []
+    },
+    {
+      "name": "P**o H**e",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_203.jpg",
+      "stars": 5,
+      "date": "18/01",
+      "variation": "Rosa Bebê",
+      "date_line": "18/01 · Rosa Bebê",
+      "comment": "Eu gostei bastante.. fácil a montagem quem tiver quebrado a cabeça com o Manual tem vídeo no YouTube que facilita a montagem também. 😍✨",
+      "photos": []
+    },
+    {
+      "name": "F**a B**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
+      "stars": 5,
+      "date": "17/01",
+      "variation": "Azul Bebê",
+      "date_line": "17/01 · Azul Bebê",
+      "comment": "Meu filho amou demais! Material super seguro, bordas arredondadas e rodas reforçadas. Montagem bem rápida e fácil.",
+      "photos": []
+    },
+    {
+      "name": "D**e A**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_205.jpg",
+      "stars": 4,
+      "date": "15/01",
+      "variation": "Rosa Bebê",
+      "date_line": "15/01 · Rosa Bebê",
+      "comment": "Carrinho lindo, Bem leve gostei bastante da compra .",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_16.jpg",
+      "stars": 5,
+      "date": "13/01",
+      "variation": "Azul Bebê",
+      "date_line": "13/01 · Azul Bebê",
+      "comment": "Simplesmente maravilhoso comparado preço tive uma economia de 1000 mil reais na loja pagaria 1480,00 val u apena chegou certinho bem embalado impecável fácil de montar.e resistência super lêve",
+      "photos": []
+    },
+    {
+      "name": "M**e T**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_207.jpg",
+      "stars": 5,
+      "date": "12/01",
+      "variation": "Rosa Bebê",
+      "date_line": "12/01 · Rosa Bebê",
+      "comment": "Amei muito mesmo! Muito lindo, ótima segurança e chegou muito rápido.  😍✨\nQuem estiver na dúvida. Pode comprar que você não irá se arrepender.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Uso recomendado",
+      "value": "Mobilidade Urbana e Lazer",
+      "hidden": false
+    },
+    {
+      "label": "Montagem",
+      "value": "Pré-montado com manual incluso",
+      "hidden": false
+    },
+    {
+      "label": "Condição do item",
+      "value": "Novo (Original de Fábrica)",
+      "hidden": false
+    },
+    {
+      "label": "Garantia do vendedor",
+      "value": "90 dias de garantia oficial",
+      "hidden": false
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/3g9fcx.mp4",
+    "poster": "../img/posters-desc/poster-desc-24.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "Explore o mundo com o triciclo multifuncional da KaBaby, um companheiro que cresce com seu filho por ter diversas funcionalidades tecnológicas que se ajustam ao dia a dia e ao crescimento do seu bebê e da sua bebê.<br/><br/>Com características premium e capota ajustável, o triciclo da Kababy oferece conforto e versatilidade. Perfeito para levá-los para creches, escolas, parques, no shopping entre diversos lugares com conforto e segurança garantida.<br/><br/>O triciclo da Kababy proporciona acesso fácil aos itens essenciais, com modos de uso variados, garante segurança com barra frontal, cinto de 5 pontos e controle parental. Leve e compacto, é ideal para os primeiros anos da criança. Seguindo uma jornada de diversão e aprendizado em todas as fases do desenvolvimento.<br/><br/>Características:<br/><br/>Triciclo multifuncional que acompanha as aventuras e o crescimento do pequeno por muito mais tempo, onde quer que vocês forem! O triciclo da Kababy conta com tecido premium e uma capota ajustável, com 6 diferentes modos de uso, ele ainda tem 2 tipos diferentes de apoio para os pezinhos, além dos pedais, que se adaptam às necessidades do seu filho.<br/><br/>Exploração Ativa:<br/><br/>Seja durante um passeio no parque, no shopping, ou na ida para a cheche, o pequeno com certeza explorará ativamente o ambiente e para isso é importante estar sempre preparado para essas grandes aventuras!<br/><br/>Com bolsinha exclusiva para armazenamentos, o triciclo KaBaby permite que você tenha acesso aos itens pessoais essenciais, a qualquer momento, de forma prática e segura.<br/><br/>Versatilidade de Uso:<br/><br/>Seu pequeno pode explorar o mundo com o Triciclo KaBaby de diversas maneiras, desde 1 ano, suportando até 25Kg.<br/><br/>O Triciclo completo pode ser utilizado com ou sem a capota, tem também o apoio de pés baby para os menorzinhos, assento virado para os pais ou para o mundo, apoio de pés kids.<br/><br/>Já na fase intermediária, pode ser recolhido o encosto, a barra frontal e o empurrador para mais autonomia, o que possibilita que o pequeno passeie diretamente com os pedais.<br/><br/>Segurança:<br/><br/>Para máxima segurança, ele conta com barra de abertura frontal, cinto de 5 pontos e apoios de pés dobráveis ou removíveis, que acompanham o desenvolvimento do pequeno.<br/><br/>Além do engenhoso controle parental nas rodas e no guidão, você consegue controlar o nível de interação do pequeno com o rumo do passeio.<br/><br/>Adaptabilidade:<br/><br/>Pronto para acompanhar o desenvolvimento da independência do pequeno, o Triciclo KaBaby se adapta às novas possibilidades que surgem com o crescimento.<br/><br/>Com sua estrutura ultraleve, e fechamento compacto, o Triciclo KaBaby é portátil e pode ser facilmente armazenado em casa ou no porta-malas.<br/><br/>APROVADO PELO INMETRO / REGISTRO: 003164/2024",
+  "related": [
+    {
+      "href": "produto-96.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rd5p-m7uwvu85tnp9ae",
+      "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
+      "name": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
+      "price": "R$ 69,90",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "7643 vendido(s)"
+    },
+    {
+      "href": "produto-72.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mk3m0dsr37k1a6",
+      "alt": "Jogo de Panelas 13 Peças Ferro Fundido Esmaltado Premium Alta Resistência Antibacteria Mantenha aquecido e fresco",
+      "name": "Jogo de Panelas 13 Peças Ferro Fundido Esmaltado Premium Alta Resistência Antibacteria Mantenha aquecido e fresco",
+      "price": "R$ 79,90",
+      "price_original": "R$ 497,90",
+      "discount": "84% OFF",
+      "sold": "7965 vendido(s)"
+    },
+    {
+      "href": "produto-49.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7qve4-lgjjzn7opmtfae",
+      "alt": "Detergente Limpador Para Extratoras Limpa E Extrai 1L Wap",
+      "name": "Detergente Limpador Para Extratoras Limpa E Extrai 1L Wap",
+      "price": "R$ 19,99",
+      "price_original": "R$ 39,90",
+      "discount": "50% OFF",
+      "sold": "4983 vendido(s)"
+    },
+    {
+      "href": "produto-65.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxn-lzou0oyl6coa73",
+      "alt": "Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza",
+      "name": "Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza",
+      "price": "R$ 147,90",
+      "price_original": "R$ 697,90",
+      "discount": "79% OFF",
+      "sold": "8765 vendido(s)"
+    },
+    {
+      "href": "produto-6.html",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_870423-MLA92702191632_092025-F.jpg",
+      "alt": "Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor Preto e Vermelho Marca Sevenfit",
+      "name": "Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor Preto e Vermelho Marca Sevenfit",
+      "price": "R$ 147,00",
+      "price_original": "R$ 1094,00",
+      "discount": "87% OFF",
+      "sold": "10000 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 24,
+    "nome": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
+    "preco": 159.9,
+    "preco_antigo": 599,
+    "img": "../img/produto-24-slide-1.webp",
+    "imagens": [
+      "../img/produto-24-slide-1.webp",
+      "../img/produto-24-slide-2.webp",
+      "../img/produto-24-slide-3.webp",
+      "../img/produto-24-slide-4.webp",
+      "../img/produto-24-slide-5.webp",
+      "../img/produto-24-slide-6.webp",
+      "../img/produto-24-slide-7.webp",
+      "../img/produto-24-slide-8.webp",
+      "../img/produto-24-slide-9.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "nome": "Cinza Grafite",
+            "imagem": "../img/triciclo-kababy-cinza.webp",
+            "preco": 159.9,
+            "preco_antigo": 599
+          },
+          {
+            "nome": "Preto Ônix",
+            "imagem": "../img/triciclo-kababy-preto.webp",
+            "preco": 159.9,
+            "preco_antigo": 599
+          },
+          {
+            "nome": "Rosa Bebê",
+            "imagem": "../img/triciclo-kababy-rosa.webp",
+            "preco": 159.9,
+            "preco_antigo": 599
+          }
+        ]
+      }
+    }
+  },
+  "extra_scripts": []
+}

@@ -1,6 +1,9 @@
 .git
 scripts/
 Temp/
+temp_*/
+scratch/
+brain_test/
 videosprodutos/raw/
 criativos_tiktok_ads/
 *.py

@@ -1,0 +1,330 @@
+{
+  "id": 112,
+  "title": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led - Stone Shop",
+  "meta_description": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led com 73% OFF no 11.11. Apenas R$ 44,90. Frete grátis.",
+  "product_title": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led",
+  "slider_imgs": [
+    {
+      "src": "../img/produto-112-patinho-1.webp",
+      "alt": "Brinquedo Pista Patinhos Escada Musical 1"
+    },
+    {
+      "src": "../img/produto-112-patinho-2.webp",
+      "alt": "Brinquedo Pista Patinhos Escada Musical 2"
+    },
+    {
+      "src": "../img/produto-112-patinho-3.webp",
+      "alt": "Brinquedo Pista Patinhos Escada Musical 3"
+    },
+    {
+      "src": "../img/produto-112-patinho-4.webp",
+      "alt": "Brinquedo Pista Patinhos Escada Musical 4"
+    },
+    {
+      "src": "../img/produto-112-patinho-5.webp",
+      "alt": "Brinquedo Pista Patinhos Escada Musical 5"
+    }
+  ],
+  "discount_badge": "-73%",
+  "price_int": "44",
+  "price_cents": ",90",
+  "price_original": "R$ 169,90",
+  "installment_text": "6x de R$ 7,48",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Desconto de R$ 125",
+  "coupon_bonus": "Economize 88% com bônus",
+  "rating_score": "4.9",
+  "rating_count": "(3)",
+  "sold_count": "3.890 vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (48)",
+  "reviews_avg": "5,0",
+  "reviews": [
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_92.jpg",
+      "stars": 5,
+      "date": "18/11",
+      "variation": "Pista Escada + 3 Patinhos Amarelos",
+      "date_line": "18/11 · Pista Escada + 3 Patinhos Amarelos",
+      "comment": "Simplesmente perfeito, comprem sem medo! Meu filho ficou encantado, os patinhos sobem a escada mecânica e escorregam sozinhos na pista.",
+      "photos": [
+        "../img/review-112-real-1.jpg"
+      ]
+    },
+    {
+      "name": "R**o G**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_51.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Pista Escada + 6 Patinhos Amarelos",
+      "date_line": "16/11 · Pista Escada + 6 Patinhos Amarelos",
+      "comment": "Produto excelente, meus filhos gostaram muito! As luzes e a musiquinha prendem a atenção da criança por horas, fácil de montar.",
+      "photos": [
+        "../img/review-112-real-2.jpg"
+      ]
+    },
+    {
+      "name": "M**a C**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_94.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Pista Escada + 9 Patinhos Amarelos",
+      "date_line": "14/11 · Pista Escada + 9 Patinhos Amarelos",
+      "comment": "Muito fofo e chama bastante atenção dos pequenos! A montagem é rápida e o plástico tem acabamento sem rebarbas. 10/10!",
+      "photos": [
+        "../img/review-112-real-3.jpg"
+      ]
+    },
+    {
+      "name": "B**a F**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_96.jpg",
+      "stars": 4,
+      "date": "12/11",
+      "variation": "Pista Escada + 3 Patinhos Amarelos",
+      "date_line": "12/11 · Pista Escada + 3 Patinhos Amarelos",
+      "comment": "Meu filho não cansa de brincar! A musiquinha é bem animada, só indico usar pilhas alcalinas novas para a velocidade ficar perfeita.",
+      "photos": [
+        "../img/review-112-real-4.jpg"
+      ]
+    },
+    {
+      "name": "F**a B**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_58.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Pista Escada + 6 Patinhos Amarelos",
+      "date_line": "10/02 · Pista Escada + 6 Patinhos Amarelos",
+      "comment": "Excelente brinquedo educativo que estimula a atenção e coordenação da criança. Super recomendo!",
+      "photos": []
+    },
+    {
+      "name": "Y**r S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_73.jpg",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Pista Escada + 9 Patinhos Amarelos",
+      "date_line": "08/02 · Pista Escada + 9 Patinhos Amarelos",
+      "comment": "Top demais! Vale cada centavo ver o sorriso dos pequenos.",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_60.jpg",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "Pista Escada + 3 Patinhos Amarelos",
+      "date_line": "07/02 · Pista Escada + 3 Patinhos Amarelos",
+      "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
+      "photos": []
+    },
+    {
+      "name": "D**o M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_75.jpg",
+      "stars": 5,
+      "date": "05/02",
+      "variation": "Pista Escada + 6 Patinhos Amarelos",
+      "date_line": "05/02 · Pista Escada + 6 Patinhos Amarelos",
+      "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonito e resistente. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_62.jpg",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Pista Escada + 9 Patinhos Amarelos",
+      "date_line": "04/02 · Pista Escada + 9 Patinhos Amarelos",
+      "comment": "Produto espetacular! Chegou muito rápido e super bem embalado pela Stone Shop. Superou minhas expectativas!",
+      "photos": []
+    },
+    {
+      "name": "R**o S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_77.jpg",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Pista Escada + 3 Patinhos Amarelos",
+      "date_line": "02/02 · Pista Escada + 3 Patinhos Amarelos",
+      "comment": "Entrega relâmpago! Produto 100% original, acabamento impecável de altíssima qualidade. Recomendo de olhos fechados.",
+      "photos": []
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_64.jpg",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Pista Escada + 6 Patinhos Amarelos",
+      "date_line": "01/02 · Pista Escada + 6 Patinhos Amarelos",
+      "comment": "Comprei por indicação e me surpreendi positivamente. Vale cada centavo investido. Loja muito ágil e atenciosa!",
+      "photos": []
+    },
+    {
+      "name": "T**o A**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_79.jpg",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Pista Escada + 9 Patinhos Amarelos",
+      "date_line": "29/01 · Pista Escada + 9 Patinhos Amarelos",
+      "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "I**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_66.jpg",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Pista Escada + 3 Patinhos Amarelos",
+      "date_line": "28/01 · Pista Escada + 3 Patinhos Amarelos",
+      "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
+      "photos": []
+    },
+    {
+      "name": "G**a R**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_81.jpg",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "Pista Escada + 6 Patinhos Amarelos",
+      "date_line": "26/01 · Pista Escada + 6 Patinhos Amarelos",
+      "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
+      "photos": []
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_68.jpg",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "Pista Escada + 9 Patinhos Amarelos",
+      "date_line": "25/01 · Pista Escada + 9 Patinhos Amarelos",
+      "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Produto",
+      "value": "Brinquedo Pista Montanha-Russa de Patinhos",
+      "hidden": false
+    },
+    {
+      "label": "Condição",
+      "value": "Novo (Original de Fábrica)",
+      "hidden": false
+    },
+    {
+      "label": "Envio",
+      "value": "Pronta Entrega no Brasil com Rastreamento",
+      "hidden": false
+    },
+    {
+      "label": "Garantia",
+      "value": "90 Dias de Garantia Oficial",
+      "hidden": false
+    },
+    {
+      "label": "Disponibilidade",
+      "value": "Estoque Físico com Envio Imediato",
+      "hidden": true
+    },
+    {
+      "label": "Autenticidade",
+      "value": "100% Homologado e Certificado",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/geut5n.mp4",
+    "poster": "../img/posters-desc/poster-desc-112.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "Brinquedo Pista Montanha-Russa de Patinhos com 73% OFF no 11.11. Apenas R$ 44,90. Frete grátis.",
+  "related": [
+    {
+      "href": "produto-115.html",
+      "img": "../img/forno-hq-slide-1.webp",
+      "alt": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+      "price": "R$ 289,90",
+      "price_original": "R$ 429,00",
+      "discount": "35% OFF",
+      "sold": "668 vendido(s)"
+    },
+    {
+      "href": "produto-17.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf",
+      "alt": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "name": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "price": "R$ 89,00",
+      "price_original": "R$ 399,90",
+      "discount": "78% OFF",
+      "sold": "5668 vendido(s)"
+    },
+    {
+      "href": "produto-15.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqnmb7oulw6f02",
+      "alt": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+      "name": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+      "price": "R$ 149,90",
+      "price_original": "R$ 624,90",
+      "discount": "76% OFF",
+      "sold": "7543 vendido(s)"
+    },
+    {
+      "href": "produto-16.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "price": "R$ 129,30",
+      "price_original": "R$ 499,00",
+      "discount": "74% OFF",
+      "sold": "7548 vendido(s)"
+    },
+    {
+      "href": "produto-7.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "alt": "Caixa de Som AIWA",
+      "name": "Caixa de Som Bluetooth Boombox BS-01B 200W IP66",
+      "price": "R$ 69,90",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "8754 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 112,
+    "nome": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led",
+    "preco": 44.9,
+    "preco_antigo": 169.9,
+    "img": "../img/produto-112-patinho-1.webp",
+    "imagens": [
+      "../img/produto-112-patinho-1.webp",
+      "../img/produto-112-patinho-2.webp",
+      "../img/produto-112-patinho-3.webp",
+      "../img/produto-112-patinho-4.webp",
+      "../img/produto-112-patinho-5.webp"
+    ],
+    "variacoes": {
+      "modelo": {
+        "label": "Modelo",
+        "opcoes": [
+          {
+            "nome": "Pista Escada + 3 Patinhos Amarelos",
+            "imagem": "../img/produto-112-patinho-1.webp",
+            "preco": 44.9
+          },
+          {
+            "nome": "Pista Escada + 6 Patinhos Amarelos",
+            "imagem": "../img/produto-112-patinho-2.webp",
+            "preco": 54.9
+          },
+          {
+            "nome": "Pista Escada + 9 Patinhos Amarelos",
+            "imagem": "../img/produto-112-patinho-3.webp",
+            "preco": 64.9
+          }
+        ]
+      }
+    }
+  },
+  "extra_scripts": []
+}

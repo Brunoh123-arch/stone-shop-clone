@@ -1,0 +1,682 @@
+{
+  "id": 45,
+  "title": "Prancha Pro 480 Turbo MQ Professional Bivolt - Stone Shop",
+  "meta_description": "Prancha Pro 480 Turbo MQ Professional Bivolt com 83% OFF. Apenas R$69,90. Frete grátis.",
+  "product_title": "Prancha Pro 480 Turbo MQ Professional Bivolt",
+  "slider_imgs": [
+    {
+      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87",
+      "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 1"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217am1apcd",
+      "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 2"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217anfv5fa",
+      "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 3"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217aoufld3",
+      "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 4"
+    }
+  ],
+  "discount_badge": "-83%",
+  "price_int": "69",
+  "price_cents": ",90",
+  "price_original": "R$ 399,90",
+  "installment_text": "2x R$ 34,95",
+  "installment_highlight": "sem juros",
+  "coupon_main": "83% OFF",
+  "coupon_bonus": "",
+  "rating_score": "5.0",
+  "rating_count": "(53)",
+  "sold_count": "8.7K vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (53)",
+  "reviews_avg": "5,0",
+  "reviews": [
+    {
+      "name": "D**a F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_16.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "15/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "15/02 · Titanium Bivolt Automático",
+      "comment": "Chegou super rápido e muito bem embalado! O produto é exatamente como no anúncio, qualidade absurda e acabamento impecável. Super recomendo a Stone Shop!",
+      "photos": [
+        "../img/review-45-real-1.jpg",
+        "../img/review-45-real-2.jpg"
+      ]
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_17.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "14/02 · Titanium Bivolt Automático",
+      "comment": "Melhor compra que fiz ultimamente! Funciona perfeitamente, materiais de extrema qualidade e entrega relâmpago. Nota 10 em tudo!",
+      "photos": [
+        "../img/review-45-real-3.jpg",
+        "../img/review-45-real-4.jpg"
+      ]
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_18.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "12/02 · Titanium Bivolt Automático",
+      "comment": "Muito boa, chegou dentro do prazo bem embalada, testada e aprovada...",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_19.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "11/02 · Titanium Bivolt Automático",
+      "comment": "Excelente produto! Veio tudo lacrado de fábrica, completo com todos os acessórios. Já estou usando todos os dias e recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "L**u D**e",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "10/02 · Titanium Bivolt Automático",
+      "comment": "A chapinha é linda e leve tá funcionando, vou usar pela primeira vez a mq, pelos muitos comentários bons sobre ela!",
+      "photos": []
+    },
+    {
+      "name": "M**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "08/02 · Titanium Bivolt Automático",
+      "comment": "Comprei e estou simplesmente apaixonada! A chapinha esquenta muito rápido, desliza fácil no cabelo e alisa de verdade, até em cabelo mais grosso. Usei poucas passadas e o resultado ficou lindo, com brilho e sem frizz. Produto original, chegou bem embalado e antes do prazo. Super recomendo!",
+      "photos": []
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "07/02 · Titanium Bivolt Automático",
+      "comment": "Chegou certinho esquenta muito amei era meu sonho ter uma prancha dessa",
+      "photos": []
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "05/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "05/02 · Titanium Bivolt Automático",
+      "comment": "Já usei ela alizar super rápido fiz minha progressiva sozinha e ficou melhor que no salão.",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "04/02 · Titanium Bivolt Automático",
+      "comment": "Chapinha muito boa esquenta muito, boa pra fazer progressiva sem dúvidas,  uma das melhores compra sem arrependimento e chego antes da data prevista, podem compra sem medo nao vai se arrepender",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "02/02 · Titanium Bivolt Automático",
+      "comment": "Amei . Ela é linda é prática , os ajustes é maravilhoso o cabo é um tamanho maravilhoso. Ela é preta e tem brilhos a chapa é prática . Um ótimo investimento  ❤️",
+      "photos": []
+    },
+    {
+      "name": "I**s B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "01/02 · Titanium Bivolt Automático",
+      "comment": "Chegou super rápido e muito bem embalado! O produto é exatamente como no anúncio, qualidade absurda e acabamento impecável. Super recomendo a Stone Shop!",
+      "photos": []
+    },
+    {
+      "name": "P**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "29/01 · Titanium Bivolt Automático",
+      "comment": "Melhor compra que fiz ultimamente! Funciona perfeitamente, materiais de extrema qualidade e entrega relâmpago. Nota 10 em tudo!",
+      "photos": []
+    },
+    {
+      "name": "B**a M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "28/01 · Titanium Bivolt Automático",
+      "comment": "Chego em perfeito estado, ela é levinha esquenta bem rápido. Devido a alta temperatura otimiza muito o tempo . Tive um pequeno transtorno com a entrega pois passou do prazo . Mas chegou a tempo para usar.",
+      "photos": []
+    },
+    {
+      "name": "T**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "26/01 · Titanium Bivolt Automático",
+      "comment": "Eu amei a chapinha, é perfeita, esquenta surpe vem, a entrega foi super rápida e veio bem embalado amei  😍✨",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "25/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "25/01 · Titanium Bivolt Automático",
+      "comment": "Qualidade surpreendente pelo preço! Entrega pontual, produto original e muito bem embalado. Com certeza comprarei mais vezes nessa loja.",
+      "photos": []
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "23/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "23/01 · Titanium Bivolt Automático",
+      "comment": "Chegou certinho no prazo de entrega, liguei ela só pra testar e está funcionando normal espero que dure muito",
+      "photos": []
+    },
+    {
+      "name": "C**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "21/01 · Titanium Bivolt Automático",
+      "comment": "Melhor compra que fiz ultimamente! Funciona perfeitamente, materiais de extrema qualidade e entrega relâmpago. Nota 10 em tudo!",
+      "photos": []
+    },
+    {
+      "name": "L**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "20/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "20/01 · Titanium Bivolt Automático",
+      "comment": "Fiquei positivamente surpresa com a logística, a entrega da prancha ocorreu de forma muito rápida, sem nenhuma intercorrência, ela chegou perfeitamente embalada, dentro do prazo previsto e sem nenhuma avaria. Tanto o fornecedor quanto os responsáveis pela entrega estão de parabéns pelo excelente serviço prestado. Eu pretendia fazer uso da prancha antes de dar o depoimento, mas ainda não tive tempo de testá-la e sinceramente, estou com um pouco de receio de usá-la, pois ela é muito, muito quente  ❤️",
+      "photos": []
+    },
+    {
+      "name": "M**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_34.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "18/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "18/01 · Titanium Bivolt Automático",
+      "comment": "Prancha maravilhosaa  já tenho uma dessa marca .veio muito bem embalada amo os produtos da mq entregam o que prometem  😍✨",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "17/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "17/01 · Titanium Bivolt Automático",
+      "comment": "Uma chapinha excelentíssima, resultado incrível do que deixa o cabelo , leve esquenta rapidinho, já obtive bons resultados.",
+      "photos": []
+    },
+    {
+      "name": "G**a P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_36.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "15/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "15/01 · Titanium Bivolt Automático",
+      "comment": "Chegou 2dias antes da data prevista. Bem embalado!! Já testei e está funcionando direitinho!! Ameeiiiii a minha compra e recomendo!!!",
+      "photos": []
+    },
+    {
+      "name": "F**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_37.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "13/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "13/01 · Titanium Bivolt Automático",
+      "comment": "Eu tô apaixonada nessa prancha, ela e linda e esquenta muito rápido, tô doida pra usar, liguei e até então tá pegando perfeitamente. Vamos ver depois que usar né, mas super recomendo.",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_38.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "12/01 · Titanium Bivolt Automático",
+      "comment": "Ela é linda. Chegou super rápido. Bem embalado.\nEsquenta super bem e muito rápido.\nRecomendo",
+      "photos": []
+    },
+    {
+      "name": "V**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_39.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "10/01 · Titanium Bivolt Automático",
+      "comment": "Eu já tinha comprado um modelo semelhante o 480 pro, e por conta da Black consegui um preço maravilhoso quero ver se é bom e potente igual ao outro ... E a entrega foi muito rápido",
+      "photos": []
+    },
+    {
+      "name": "R**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_40.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "08/01 · Titanium Bivolt Automático",
+      "comment": "Ainda não testei de fato. Só liguei ontem, quando chegou pra ver a temperatura. Hoje, daqui a pouco, vou fazer uma progressiva, e aí é que vou saber se realmente valeu a pena. O produto chegou rápido. Antes do prazo. Quanto a isso, gostei  😍✨",
+      "photos": []
+    },
+    {
+      "name": "A**a N**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_41.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "06/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "06/01 · Titanium Bivolt Automático",
+      "comment": "essa prancha é perfeita, esquenta muito fácil, é leve e muito fácil de usar estou encantada",
+      "photos": []
+    },
+    {
+      "name": "I**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_42.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "05/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "05/01 · Titanium Bivolt Automático",
+      "comment": "Chegou super rápido! A prancha é linda",
+      "photos": []
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_43.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "03/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "03/01 · Titanium Bivolt Automático",
+      "comment": "Chegou dentro do prazo, veio bem embalada. Não testei porque vou dar de presente, mas parece que veio tudo certinho.",
+      "photos": []
+    },
+    {
+      "name": "N**a R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_44.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "02/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "02/01 · Titanium Bivolt Automático",
+      "comment": "Chegou antes do prazo, bem embalado, funcionando bem , amei super recomendo",
+      "photos": []
+    },
+    {
+      "name": "T**a L**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_45.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "15/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "15/02 · Titanium Bivolt Automático",
+      "comment": "Qualidade surpreendente pelo preço! Entrega pontual, produto original e muito bem embalado. Com certeza comprarei mais vezes nessa loja.",
+      "photos": []
+    },
+    {
+      "name": "D**a F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_46.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "14/02 · Titanium Bivolt Automático",
+      "comment": "Invistam nessa prancha oq mais gostei nela foi que ela n queima o couro mesmo vc pegando bem a raiz, mas mesmo assim tem que tomar cuidado, entrega foi bem rápida!! E chegou bem embalada , o atendimento  também é rápido do chat da loja",
+      "photos": []
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_47.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "12/02 · Titanium Bivolt Automático",
+      "comment": "A prancha é maravilhosa chegou super rápido a loja está de parabéns",
+      "photos": []
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_48.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "11/02 · Titanium Bivolt Automático",
+      "comment": "Chegou muito rápido! Moro em Araruama RJ, saiu dia 30/10 e chegou dia 01/10. Produto veio embalado num saquinho, mas protegido com plástico bolha. Amei minha compra!",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_49.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "10/02 · Titanium Bivolt Automático",
+      "comment": "Gostei bastante mais ainda não usei, fiquei na duvida de onde faço registro da garantia",
+      "photos": []
+    },
+    {
+      "name": "L**u D**e",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_50.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "08/02 · Titanium Bivolt Automático",
+      "comment": "A chapinha tem boas avaliações, usei num salão onde trabalhava e os equipamentos MQ são ótimos. Já testei e está funcionando, chegou em menos de uma semana no RS. Obrigada",
+      "photos": []
+    },
+    {
+      "name": "M**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_51.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "07/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "07/02 · Titanium Bivolt Automático",
+      "comment": "Chegou super rápido e muito bem embalado! O produto é exatamente como no anúncio, qualidade absurda e acabamento impecável. Super recomendo a Stone Shop!",
+      "photos": []
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_52.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "05/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "05/02 · Titanium Bivolt Automático",
+      "comment": "Melhor compra que fiz ultimamente! Funciona perfeitamente, materiais de extrema qualidade e entrega relâmpago. Nota 10 em tudo!",
+      "photos": []
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_53.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "04/02 · Titanium Bivolt Automático",
+      "comment": "Olha e a primeira vez que uso dessa marca e realmente me surpreendeu  esquenta muito nao queima a ponta dos dedos ela tem um design  próprio pra progressiva excelente  amei",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_54.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "02/02 · Titanium Bivolt Automático",
+      "comment": "A prancha facilita muito a vida do profissional e ela esquenta bastante, então é ótima para progressiva,amei a compra",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_55.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "01/02 · Titanium Bivolt Automático",
+      "comment": "Já ouvi falar bem desta marca, é a primeira vez que compro e já estou gostando muito.",
+      "photos": []
+    },
+    {
+      "name": "I**s B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_56.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "29/01 · Titanium Bivolt Automático",
+      "comment": "Minha mãe gostou da chapinha, chegou rápido",
+      "photos": []
+    },
+    {
+      "name": "P**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_57.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "28/01 · Titanium Bivolt Automático",
+      "comment": "Melhor compra que fiz ultimamente! Funciona perfeitamente, materiais de extrema qualidade e entrega relâmpago. Nota 10 em tudo!",
+      "photos": []
+    },
+    {
+      "name": "B**a M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_58.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "26/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "26/01 · Titanium Bivolt Automático",
+      "comment": "Superou todas as minhas expectativas! Muito resistente, prático e bonito. Podem comprar sem medo, loja 100% confiável e atendimento excelente.",
+      "photos": []
+    },
+    {
+      "name": "T**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_59.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "25/01 · Titanium Bivolt Automático",
+      "comment": "Excelente produto! Veio tudo lacrado de fábrica, completo com todos os acessórios. Já estou usando todos os dias e recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_60.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "23/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "23/01 · Titanium Bivolt Automático",
+      "comment": "Parece ser boa, foi muito recomendada essa prancha e a da lizze, mas preferi essa pq é bivolt.",
+      "photos": []
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_61.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "21/01 · Titanium Bivolt Automático",
+      "comment": "Ótimo produto entrega rápida já usei e é maravilhosa.",
+      "photos": []
+    },
+    {
+      "name": "C**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_62.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "20/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "20/01 · Titanium Bivolt Automático",
+      "comment": "Chegou certinho bem embalado comprei pra minha irmã ela amou",
+      "photos": []
+    },
+    {
+      "name": "L**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_63.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "18/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "18/01 · Titanium Bivolt Automático",
+      "comment": "Produto ótimo igualzinho ao anúncio  \nPerfeita, super recomendo pode comprar sem medo .",
+      "photos": []
+    },
+    {
+      "name": "M**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_64.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "17/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "17/01 · Titanium Bivolt Automático",
+      "comment": "Dizem que é a melhor.. vou usar pra fazer uma progressiva aí eu falo se é a melhor msm..  ❤️\nEntão tô voltando pra falar que é maaaraaavilhosaaa.. comprem sem medo.. usei agora pouca na progressiva e eu vi que não ficava legal a minha progressiva por causa da chapinha. Com essa ficou perfeita eu msm fazendo..  ❤️",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_65.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "15/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "15/01 · Titanium Bivolt Automático",
+      "comment": "Gente essa prancha era meu sonho. \nJá que faço meu botox em casa .\nTenho meu alto cuidado, realmente necessitava de uma prancha de qualidade, e essa superou minhas expectativas com certeza. \nPranha linda e super profissional. \nTô amando? \nSuper indico comprem sem medo.",
+      "photos": []
+    },
+    {
+      "name": "G**a P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_66.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "13/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "13/01 · Titanium Bivolt Automático",
+      "comment": "Compre sem medo a MQ tá sendo a melhor do mercado.",
+      "photos": []
+    },
+    {
+      "name": "F**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_67.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "12/01 · Titanium Bivolt Automático",
+      "comment": "Usei ela para fazer chapinha e também progressiva, e amei, alisa bem além de ser linda, recomendo",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_68.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/01",
+      "variation": "Titanium Bivolt Automático",
+      "date_line": "10/01 · Titanium Bivolt Automático",
+      "comment": "Igualzinho ao anúncio, bem embalado, envio rápido, ótima qualidade.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Material das placas",
+      "value": "Titanium",
+      "hidden": false
+    },
+    {
+      "label": "Temperatura mínima",
+      "value": "370F / 190C",
+      "hidden": false
+    },
+    {
+      "label": "Temperatura máxima",
+      "value": "485F / 252C",
+      "hidden": false
+    },
+    {
+      "label": "Ajustes de temperatura",
+      "value": "Sim - 5 níveis",
+      "hidden": false
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/bjcwqr.mp4",
+    "poster": "../img/posters-desc/poster-desc-45.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "A prancha Turbo você fará progressivas perfeitas muito mais rápido e com o melhor custo-benefício. Seu dia vai render com a agilidade e a temperatura da prancha MQ Pro480 Turbo Titanium, que chega a 485F no Modo Turbo. Muito fácil de ajustar, pois tem as 5 temperaturas mais usadas nos salões. Todo mundo vai comentar a velocidade e a qualidade do seu trabalho na hora de fazer um alisamento brasileiro. Possui um exclusivo formato ergonômico, que protege sua saúde de movimentos repetitivos e queimaduras. Chegou a sua vez de fazer alisamentos com a prancha testada e aprovada por milhares de profissionais do mundo inteiro. Produzida pela MQ Professional, uma marca com mais de 10 anos de experiência no mercado brasileiro, que tem todos os tipos de cabelo e todos os tipos de rede elétrica.<br/><br/>Especificações:<br/><br/>Material das placas: Titanium<br/><br/>Temperatura mínima: 370F / 190C<br/><br/>Temperatura máxima: 485F / 252C<br/><br/>Ajustes de temperatura: Sim - 5 níveis<br/><br/>MCH: Sim - Recuperação imediata da Temperatura<br/><br/>Floating Plates: Sim - Reduz a tensão no punho e mão<br/><br/>Íons: Placas ionizadas<br/><br/>Progressiva: Sim<br/><br/>Display digital: Não. Visor Led<br/><br/>Tamanho das placas: 32MM<br/><br/>Ponta antitérmica: Sim<br/><br/>Potência: 45W<br/><br/>Tipo de cabo: Giratório<br/><br/>Tamanho do cabo: 3M<br/><br/>Voltagem: Bivolt Automático<br/><br/>Design: Anatômico<br/><br/>Cor: Black e detalhes Silver<br/><br/>Pintura: Brilhante<br/><br/>Dimensão do produto: 30x7x4<br/><br/>Peso do produto: 262g<br/><br/>EAN: 7908422601597<br/><br/>Frequência: 50/60Hz<br/><br/>Material da carcaça: PA<br/><br/>Garantia:<br/><br/>- 12 meses<br/><br/>Conteúdo da Embalagem:<br/><br/>- 1 Prancha MQ PRO 480 Turbo,1 Manual",
+  "related": [
+    {
+      "href": "produto-5.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh9e1c37asxxe2",
+      "alt": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
+      "name": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
+      "price": "R$ 124,99",
+      "price_original": "R$ 500,00",
+      "discount": "75% OFF",
+      "sold": "2000 vendido(s)"
+    },
+    {
+      "href": "produto-9.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
+      "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
+      "price": "R$ 92,80",
+      "price_original": "R$ 754,44",
+      "discount": "88% OFF",
+      "sold": "10241 vendido(s)"
+    },
+    {
+      "href": "produto-101.html",
+      "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "alt": "Pneus Pirelli — Todas as Medidas | Cinturato, P ZERO, Scorpion e mais",
+      "name": "Pneus Pirelli — Todas as Medidas | Cinturato, P ZERO, Scorpion e mais",
+      "price": "R$ 87,90",
+      "price_original": "R$ 599,00",
+      "discount": "83% OFF",
+      "sold": "13488 vendido(s)"
+    },
+    {
+      "href": "produto-97.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-81zwa-mimr7kh9srno54",
+      "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
+      "name": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
+      "price": "R$ 69,90",
+      "price_original": "R$ 596,90",
+      "discount": "88% OFF",
+      "sold": "877 vendido(s)"
+    },
+    {
+      "href": "produto-63.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
+      "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
+      "name": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
+      "price": "R$ 69,90",
+      "price_original": "R$ 397,90",
+      "discount": "82% OFF",
+      "sold": "9853 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 45,
+    "nome": "Prancha Pro 480 Turbo MQ Professional Bivolt",
+    "preco": 69.9,
+    "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87",
+    "imagens": [
+      "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217am1apcd",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217anfv5fa",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217aoufld3"
+    ],
+    "variacoes": {
+      "modelo": {
+        "com_imagem": true,
+        "label": "Voltagem",
+        "opcoes": [
+          {
+            "nome": "Titanium Bivolt Automático",
+            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87"
+          }
+        ]
+      }
+    }
+  },
+  "extra_scripts": []
+}

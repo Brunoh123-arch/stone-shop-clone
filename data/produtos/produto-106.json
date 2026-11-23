@@ -1,0 +1,344 @@
+{
+  "id": 106,
+  "title": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora - Stone Shop",
+  "meta_description": "Body Modelador Cinta Alta Compressão Efeito Lipo com 75% OFF no 11.11. Apenas R$ 29,90. Frete grátis.",
+  "product_title": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora",
+  "slider_imgs": [
+    {
+      "src": "../img/produto-106-1.jpg",
+      "alt": "Body Modelador Efeito Lipo - 1"
+    },
+    {
+      "src": "../img/produto-106-2.jpg",
+      "alt": "Body Modelador Efeito Lipo - 2"
+    },
+    {
+      "src": "../img/produto-106-3.jpg",
+      "alt": "Body Modelador Efeito Lipo - 3"
+    },
+    {
+      "src": "../img/produto-106-4.jpg",
+      "alt": "Body Modelador Efeito Lipo - 4"
+    },
+    {
+      "src": "../img/produto-106-5.jpg",
+      "alt": "Body Modelador Efeito Lipo - 5"
+    }
+  ],
+  "discount_badge": "-75%",
+  "price_int": "29",
+  "price_cents": ",90",
+  "price_original": "R$ 119,90",
+  "installment_text": "2x R$ 14,95",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Desconto de R$ 90",
+  "coupon_bonus": "Economize 75% com bônus",
+  "rating_score": "4.9",
+  "rating_count": "(6)",
+  "sold_count": "19.4K vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (48)",
+  "reviews_avg": "5,0",
+  "reviews": [
+    {
+      "name": "M**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_68.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "18/11",
+      "variation": "Preto P/M",
+      "date_line": "18/11 · Preto P/M",
+      "comment": "Material muito bom e resistente! Modela muito bem a cintura e não marca sob a roupa nem em vestidos justos. Valeu muito a pena!",
+      "photos": [
+        "../img/review-106-real-1.jpg"
+      ]
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_69.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Preto G/GG",
+      "date_line": "16/11 · Preto G/GG",
+      "comment": "Eu amei minha compra, realmente cumpre o que promete! Aperta e modela sem sufocar, o tecido é respirável e super confortável no dia a dia.",
+      "photos": [
+        "../img/review-106-real-2.jpg"
+      ]
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_70.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "14/11",
+      "variation": "Bege P/M",
+      "date_line": "14/11 · Bege P/M",
+      "comment": "Excelente body modelador! A compressão na barriga é perfeita e o acabamento não enrola nas pernas. Segui a tabela de medidas certinho.",
+      "photos": [
+        "../img/review-106-real-3.jpg"
+      ]
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_71.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "Bege G/GG",
+      "date_line": "12/11 · Bege G/GG",
+      "comment": "O produto é maravilhoso! Qualidade excelente, costura reforçada e o fecho embaixo é super prático. Não fico mais sem!",
+      "photos": [
+        "../img/review-106-real-4.jpg"
+      ]
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_72.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Preto P/M",
+      "date_line": "10/11 · Preto P/M",
+      "comment": "O body é lindíssimo e chegou super rápido pela Stone Shop, amei minha compra! Vou comprar outras cores.",
+      "photos": [
+        "../img/review-106-real-5.jpg"
+      ]
+    },
+    {
+      "name": "I**s B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_73.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/11",
+      "variation": "Preto G/GG",
+      "date_line": "08/11 · Preto G/GG",
+      "comment": "Gostei muito, o material é uma malha fria de altíssima qualidade! Modela sem machucar e não enrola nada.",
+      "photos": [
+        "../img/review-106-real-6.jpg"
+      ]
+    },
+    {
+      "name": "P**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_74.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "06/11",
+      "variation": "Bege P/M",
+      "date_line": "06/11 · Bege P/M",
+      "comment": "Está de parabéns a loja... amei demais, super confortável pra ser tamanho P. Veste com perfeição!",
+      "photos": [
+        "../img/review-106-real-7.jpg"
+      ]
+    },
+    {
+      "name": "B**a M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_75.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "04/11",
+      "variation": "Bege G/GG",
+      "date_line": "04/11 · Bege G/GG",
+      "comment": "Gente eu tô apaixonada! Modela perfeitamente o corpo, costura reforçada e entrega relâmpago. Recomendo de olhos fechados!",
+      "photos": [
+        "../img/review-106-real-8.jpg"
+      ]
+    },
+    {
+      "name": "T**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_1.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "02/11",
+      "variation": "Preto P/M",
+      "date_line": "02/11 · Preto P/M",
+      "comment": "Gostei muito do body. O tecido é confortável, tem ótima compressão e o fecho embaixo é super prático no dia a dia.",
+      "photos": [
+        "../img/review-106-real-9.jpg"
+      ]
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_2.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "31/10",
+      "variation": "Preto G/GG",
+      "date_line": "31/10 · Preto G/GG",
+      "comment": "Ela é perfeita, superou todas as minhas expectativas. Modela perfeitamente a cintura e o tecido é super respirável!",
+      "photos": [
+        "../img/review-106-real-10.jpg"
+      ]
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_3.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Bege P/M",
+      "date_line": "01/02 · Bege P/M",
+      "comment": "Comprei por indicação e me surpreendi positivamente. Vale cada centavo investido. Loja muito ágil e atenciosa!",
+      "photos": []
+    },
+    {
+      "name": "C**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Bege G/GG",
+      "date_line": "29/01 · Bege G/GG",
+      "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "L**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_5.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Preto P/M",
+      "date_line": "28/01 · Preto P/M",
+      "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
+      "photos": []
+    },
+    {
+      "name": "M**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "Preto G/GG",
+      "date_line": "26/01 · Preto G/GG",
+      "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "Bege P/M",
+      "date_line": "25/01 · Bege P/M",
+      "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Produto",
+      "value": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora",
+      "hidden": false
+    },
+    {
+      "label": "Condição",
+      "value": "Novo (Original de Fábrica)",
+      "hidden": false
+    },
+    {
+      "label": "Envio",
+      "value": "Pronta Entrega no Brasil com Rastreamento",
+      "hidden": false
+    },
+    {
+      "label": "Garantia",
+      "value": "90 Dias de Garantia Oficial",
+      "hidden": false
+    },
+    {
+      "label": "Disponibilidade",
+      "value": "Estoque Físico com Envio Imediato",
+      "hidden": true
+    },
+    {
+      "label": "Autenticidade",
+      "value": "100% Homologado e Certificado",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/1hm15q.mp4",
+    "poster": "../img/posters-desc/poster-desc-106.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "O Body Modelador Cinta Alta Compressão Efeito Lipo Redutora é a escolha perfeita para modelar a silhueta com total discrição e conforto absoluto. Desenvolvido com tecido tecnológico respirável de compressão inteligente, ele reduz medidas na hora sem marcar sob as roupas.<br/><br/>\n\n• <strong>Efeito Lipo Redutora:</strong> Comprime suavemente a região abdominal, disfarçando pneuzinhos e realçando a cintura.<br/>\n\n• <strong>Costura Invisível:</strong> Não enrola na barra e não marca sob vestidos justos, calças ou blusas claras.<br/>\n\n• <strong>Abertura Higiênica Inferior:</strong> Facilidade total no dia a dia sem precisar tirar a peça inteira.<br/>\n\n• <strong>Alças Reguláveis e Confortáveis:</strong> Distribuição equilibrada sem machucar os ombros.<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Body Modelador\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-106.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n\nEscolha o seu tamanho ideal de acordo com a tabela acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
+  "related": [
+    {
+      "href": "produto-115.html",
+      "img": "../img/forno-hq-slide-1.webp",
+      "alt": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+      "price": "R$ 289,90",
+      "price_original": "R$ 429,00",
+      "discount": "35% OFF",
+      "sold": "668 vendido(s)"
+    },
+    {
+      "href": "produto-17.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf",
+      "alt": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "name": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "price": "R$ 89,00",
+      "price_original": "R$ 399,90",
+      "discount": "78% OFF",
+      "sold": "5668 vendido(s)"
+    },
+    {
+      "href": "produto-15.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqnmb7oulw6f02",
+      "alt": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+      "name": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+      "price": "R$ 149,90",
+      "price_original": "R$ 624,90",
+      "discount": "76% OFF",
+      "sold": "7543 vendido(s)"
+    },
+    {
+      "href": "produto-16.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "price": "R$ 129,30",
+      "price_original": "R$ 499,00",
+      "discount": "74% OFF",
+      "sold": "7548 vendido(s)"
+    },
+    {
+      "href": "produto-7.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "alt": "Caixa de Som AIWA",
+      "name": "Caixa de Som Bluetooth Boombox BS-01B 200W IP66",
+      "price": "R$ 69,90",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "8754 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 106,
+    "nome": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora",
+    "preco": 29.9,
+    "preco_antigo": 119.9,
+    "img": "../img/produto-106-1.jpg",
+    "imagens": [
+      "../img/produto-106-1.jpg",
+      "../img/produto-106-2.jpg",
+      "../img/produto-106-3.jpg",
+      "../img/produto-106-4.jpg",
+      "../img/produto-106-5.jpg"
+    ],
+    "variacoes": {
+      "modelo": {
+        "com_imagem": true,
+        "label": "Cor e Tamanho",
+        "opcoes": [
+          {
+            "nome": "Preto P/M",
+            "imagem": "../img/produto-106-1.jpg"
+          },
+          {
+            "nome": "Preto G/GG",
+            "imagem": "../img/produto-106-2.jpg"
+          },
+          {
+            "nome": "Bege P/M",
+            "imagem": "../img/produto-106-3.jpg"
+          },
+          {
+            "nome": "Bege G/GG",
+            "imagem": "../img/produto-106-4.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "extra_scripts": []
+}

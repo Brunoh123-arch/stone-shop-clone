@@ -11,6 +11,7 @@
     { "src": "/checkout", "dest": "/pages/resumo.html" },
     { "src": "/carrinho", "dest": "/pages/carrinho.html" },
     { "src": "/tracker.js", "dest": "/tracker.js" },
+    { "src": "/pages/produto-(\\d+)(?:\\.html)?", "dest": "/api/serve?slug=produto-$1" },
     { "src": "/pages/(.*)", "dest": "/pages/$1" },
     { "src": "/", "dest": "/api/serve" }
   ],
@@ -23,7 +24,7 @@
       ]
     },
     {
-      "source": "/js/(.*)",
+      "source": "/(js|css)/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0, s-maxage=0" },
         { "key": "CDN-Cache-Control", "value": "no-store" },
@@ -33,7 +34,7 @@
       ]
     },
     {
-      "source": "/(img|css|fonts|videosprodutos|criativos_tiktok_ads|botoesdecarrinhioechat|logopix|logoorderbumps|decalque)/(.*)",
+      "source": "/(img|fonts|videosprodutos|criativos_tiktok_ads|botoesdecarrinhioechat|logopix|logoorderbumps|decalque)/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
         { "key": "CDN-Cache-Control", "value": "public, max-age=31536000" }

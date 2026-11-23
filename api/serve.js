@@ -96,6 +96,19 @@ module.exports = async function handler(req, res) {
       let slug = String(req.query.slug).replace(/[^a-zA-Z0-9_-]/g, '');
       if (slug.endsWith('.html')) slug = slug.replace('.html', '');
 
+      // Modelo Único Permanente para produto-<id>
+      const prodMatch = slug.match(/^produto-(\d+)$/i);
+      if (prodMatch) {
+        const { renderProdutoHtml } = require('./_lib/render-produto');
+        const rendered = renderProdutoHtml(prodMatch[1]);
+        if (rendered.status === 302 && rendered.redirect) {
+          const target = rendered.redirect.startsWith('/') ? rendered.redirect : `/pages/${rendered.redirect}`;
+          res.setHeader('Location', target);
+          return res.status(302).end();
+        }
+        return res.status(rendered.status || 200).send(rendered.html);
+      }
+
       const pathsToTry = [
         path.join(__dirname, '..', 'pages', `${slug}.html`),
         path.join(__dirname, '..', '_pages', `${slug}.html`)

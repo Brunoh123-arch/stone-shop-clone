@@ -124,6 +124,21 @@ const server = http.createServer((req, res) => {
 
   // Intercepta rota raiz / ou /index.html para Server-Side Cloaking
   const cleanUrl = req.url.split('?')[0];
+
+  // Modelo Único Permanente: renderiza /pages/produto-X(.html) via api/serve.js
+  const prodMatch = cleanUrl.match(/^\/pages\/produto-(\d+)(?:\.html)?$/i);
+  if (prodMatch) {
+    const serveHandler = require('./api/serve');
+    req.query = { slug: `produto-${prodMatch[1]}` };
+    res.status = (code) => { res.statusCode = code; return res; };
+    res.send = (html) => {
+      if (!res.getHeader('Content-Type')) res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      res.end(html);
+      return res;
+    };
+    return serveHandler(req, res);
+  }
+
   if (cleanUrl === '/' || cleanUrl === '' || cleanUrl === '/index' || cleanUrl === '/index.html') {
     const serveHandler = require('./api/serve');
     const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
@@ -183,10 +198,11 @@ const server = http.createServer((req, res) => {
   }
 
   // Normal File Serving
+  const cacheHeader = (ext === '.css' || ext === '.js' || ext === '.html') ? 'no-store' : 'public, max-age=3600';
   res.writeHead(200, {
     'Content-Length': stat.size,
     'Content-Type': contentType,
-    'Cache-Control': 'public, max-age=3600'
+    'Cache-Control': cacheHeader
   });
   fs.createReadStream(filePath).pipe(res);
 });

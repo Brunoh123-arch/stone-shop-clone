@@ -1,0 +1,356 @@
+{
+  "id": 101,
+  "title": "Pneus Pirelli - Encontre a medida ideal para o seu veículo | Stone Shop",
+  "meta_description": "Pneus Pirelli com até 83% OFF. P Zero, Cinturato, Scorpion, Powergy. Encontre a medida certa para o seu carro. Frete grátis.",
+  "product_title": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
+  "slider_imgs": [
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "alt": "Pneu Pirelli Cinturato P7 C2"
+    },
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pzero.png",
+      "alt": "Pneu Pirelli P Zero PZ4"
+    },
+    {
+      "src": "../img/pneus/scorpion-verde.png",
+      "alt": "Pneu Pirelli Scorpion Verde"
+    },
+    {
+      "src": "../img/pneus/scorpion-atr.png",
+      "alt": "Pneu Pirelli Scorpion ATR"
+    },
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pwrgy.png",
+      "alt": "Pneu Pirelli Powergy"
+    },
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cint.png",
+      "alt": "Pneu Pirelli Cinturato P7"
+    },
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p1cint.png",
+      "alt": "Pneu Pirelli Cinturato P1"
+    },
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/CinturatoP6-BR_visorePDP_cake.png",
+      "alt": "Pneu Pirelli Cinturato P6"
+    },
+    {
+      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/P400Evo_visorePDP_cake.png",
+      "alt": "Pneu Pirelli P400 EVO"
+    }
+  ],
+  "discount_badge": "-83%",
+  "price_int": "87",
+  "price_cents": ",90",
+  "price_original": "R$ 599,00",
+  "installment_text": "2x R$ 43,95",
+  "installment_highlight": "sem juros",
+  "coupon_main": "83% OFF",
+  "coupon_bonus": "",
+  "rating_score": "4.7",
+  "rating_count": "(5,3 mil)",
+  "sold_count": "13.5K vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (5,3 mil)",
+  "reviews_avg": "4.7",
+  "reviews": [
+    {
+      "name": "E**e S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_208.jpg",
+      "stars": 4,
+      "date": "15/02",
+      "variation": "CINTURATO P7 (P7C2)",
+      "date_line": "15/02 · CINTURATO P7 (P7C2)",
+      "comment": "Chegou em 3 dias aqui em Curitiba! Pneus novos, zero defeitos, agarram muito bem na pista. Preço imbatível da Stone Shop com cupom.",
+      "photos": [
+        "../img/review-101-real-1.jpg",
+        "../img/review-101-real-2.jpg",
+        "../img/review-101-real-3.jpg",
+        "../img/review-101-real-4.jpg"
+      ]
+    },
+    {
+      "name": "G**l S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_135.jpg",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "CINTURATO P7",
+      "date_line": "14/02 · CINTURATO P7",
+      "comment": "Pneus Pirelli originais com data de fabricação recente (DOT novo)! Muito silenciosos na pista e excelente aderência na chuva.",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_210.jpg",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "CINTURATO P1",
+      "date_line": "12/02 · CINTURATO P1",
+      "comment": "Instalei no meu carro e a direção ficou super macia e estável. Preço excelente pelo par de pneus Pirelli originais.",
+      "photos": []
+    },
+    {
+      "name": "L**e C**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_137.jpg",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "CINTURATO P6",
+      "date_line": "11/02 · CINTURATO P6",
+      "comment": "Entrega super rápida da transportadora. Pneus chegaram com etiqueta oficial do Inmetro selada. Recomendo!",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_212.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "P ZERO (PZ4)",
+      "date_line": "10/02 · P ZERO (PZ4)",
+      "comment": "Melhor frenagem e economia de combustível notável. Pirelli é outra categoria.",
+      "photos": []
+    },
+    {
+      "name": "F**o P**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_139.jpg",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "POWERGY",
+      "date_line": "08/02 · POWERGY",
+      "comment": "Comprei pro carro da família e o mecânico elogiou muito a qualidade da borracha. Valeu muito a pena!",
+      "photos": []
+    },
+    {
+      "name": "N**a R**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_214.jpg",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "P400 EVO",
+      "date_line": "07/02 · P400 EVO",
+      "comment": "Excelente compra, atendimento ágil e produto de primeira linha.",
+      "photos": []
+    },
+    {
+      "name": "I**r D**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_141.jpg",
+      "stars": 5,
+      "date": "05/02",
+      "variation": "SCORPION VERDE",
+      "date_line": "05/02 · SCORPION VERDE",
+      "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonito e resistente. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_216.jpg",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "SCORPION ATR",
+      "date_line": "04/02 · SCORPION ATR",
+      "comment": "Produto espetacular! Chegou muito rápido e super bem embalado pela Stone Shop. Superou minhas expectativas!",
+      "photos": []
+    },
+    {
+      "name": "H**a N**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_143.jpg",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "CINTURATO P7 (P7C2)",
+      "date_line": "02/02 · CINTURATO P7 (P7C2)",
+      "comment": "Entrega relâmpago! Produto 100% original, acabamento impecável de altíssima qualidade. Recomendo de olhos fechados.",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_218.jpg",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "CINTURATO P7",
+      "date_line": "01/02 · CINTURATO P7",
+      "comment": "Comprei por indicação e me surpreendi positivamente. Vale cada centavo investido. Loja muito ágil e atenciosa!",
+      "photos": []
+    },
+    {
+      "name": "M**l G**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_145.jpg",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "CINTURATO P1",
+      "date_line": "29/01 · CINTURATO P1",
+      "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "T**a L**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_220.jpg",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "CINTURATO P6",
+      "date_line": "28/01 · CINTURATO P6",
+      "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
+      "photos": []
+    },
+    {
+      "name": "Y**r S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_147.jpg",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "P ZERO (PZ4)",
+      "date_line": "26/01 · P ZERO (PZ4)",
+      "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
+      "photos": []
+    },
+    {
+      "name": "M**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_2.jpg",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "POWERGY",
+      "date_line": "25/01 · POWERGY",
+      "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Condição do item",
+      "value": "Novo (Original de Fábrica)",
+      "hidden": false
+    },
+    {
+      "label": "Garantia do vendedor",
+      "value": "90 dias de garantia oficial",
+      "hidden": false
+    },
+    {
+      "label": "Disponibilidade",
+      "value": "Pronta entrega com envio imediato",
+      "hidden": false
+    },
+    {
+      "label": "Quantidade por embalagem",
+      "value": "1 unidade completa",
+      "hidden": false
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/ukmosr.mp4",
+    "poster": "../img/posters-desc/poster-desc-101.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>Pneus Pirelli - Alta Performance e Segurança</strong><br/><br/>\n          Os pneus Pirelli são reconhecidos mundialmente pela alta qualidade, tecnologia de ponta e performance extrema. Desenvolvidos com a experiência de décadas na Fórmula 1®, os pneus Pirelli garantem a máxima segurança, estabilidade em curvas e conforto superior para o seu veículo.<br/><br/>\n<strong>Clique em \"Comprar agora\" ou \"Adicionar ao carrinho\" para abrir o nosso seletor e encontrar a medida exata para o seu veículo.</strong> Nosso sistema conta com o banco de dados oficial Pirelli Brasil completo para busca por modelo de veículo ou diretamente por medidas.<br/><br/>\n<strong>Destaques dos Modelos Pirelli Disponíveis no Nosso Seletor:</strong><br/><br/>\n          :: <strong>P ZERO (PZ4) [Alta Performance / Premium]</strong><br/>\n          O pneu esportivo oficial com tecnologia herdada diretamente das pistas de Fórmula 1®. Projetado para quem exige aceleração máxima, resposta imediata na direção e aderência extrema em pistas secas e molhadas.<br/><br/>\n          :: <strong>CINTURATO P7 (P7C2) [Premium / Tecnológico]</strong><br/>\n          O pneu de passeio de última geração da Pirelli. Conta com a exclusiva tecnologia <strong>SEAL INSIDE</strong>, que previne a perda de pressão do ar em caso de furos de até 4mm na banda de rodagem, permitindo continuar rodando com segurança. Máxima eficiência energética e silêncio de rodagem.<br/><br/>\n          :: <strong>CINTURATO P7 [Passeio / Urbano]</strong><br/>\n          Referência em sedans de média e alta potência. Proporciona excelente rendimento quilométrico, controle preciso e frenagem otimizada em piso molhado.<br/><br/>\n          :: <strong>POWERGY [Passeio / Eficiente]</strong><br/>\n          O pneu ideal para o dia a dia. Focado em excelente aderência em piso molhado, baixa resistência ao rolamento (economia de combustível) e alta durabilidade.<br/><br/>\n          :: <strong>SCORPION VERDE [SUV / Crossover]</strong><br/>\n          Desenvolvido especificamente para SUVs de alta performance. Proporciona aderência superior, menor emissão de ruídos e alta durabilidade, respeitando o meio ambiente.<br/><br/>\n          :: <strong>SCORPION ATR [SUV / Off-Road Misto]</strong><br/>\n          Para quem divide o tempo entre o asfalto e a terra. Conta com blocos autolimpantes e estrutura reforçada para resistir aos impactos mais severos fora de estrada.<br/><br/>\n          :: <strong>CINTURATO P6 / P1 [Compactos / Urbanos]</strong><br/>\n          Pneus focados em carros compactos e urbanos de passeio. Garantem estabilidade direcional superior, segurança no molhado e excelente custo-benefício.<br/><br/>\n          :: <strong>P400 EVO [Econômico / Durabilidade]</strong><br/>\n          Pneu tradicional Pirelli focado na máxima durabilidade e economia. Excelente escoamento de água e conforto no asfalto.<br/><br/>\n<strong>Como Realizar a Compra Pelo Nosso Seletor Inteligente:</strong><br/><br/>\n          1. Clique nos botões \"Comprar agora\" ou \"Adicionar ao carrinho\" na barra inferior.<br/>\n          2. No modal Pirelli, escolha como deseja buscar: <strong>Por Veículo</strong> (selecionando Marca, Modelo, Ano e Versão do seu carro) ou <strong>Por Medida</strong> (selecionando Largura, Perfil e Aro do pneu).<br/>\n          3. O sistema filtrará os modelos compatíveis e exibirá as opções com os selos de <strong>Mais Vendido</strong> e <strong>Recomendado</strong> baseados no melhor desempenho e estrutura do pneu.<br/>\n          4. Escolha a quantidade desejada através do seletor `[-] 1 [+]` e clique em confirmar para finalizar a sua compra com **Frete Grátis** e envio imediato!<br/><br/>\n<strong>Características Gerais e Garantia:</strong><br/><br/>\n          :: Produto 100% Original Pirelli homologado pelo INMETRO.<br/>\n          :: Tecnologia anti-furos Seal Inside nos modelos aplicáveis.<br/>\n          :: Índices de carga e velocidade oficiais Pirelli gravados na lateral do pneu.<br/>\n          :: Frete Grátis para todo o Brasil com rastreamento ativo.<br/>\n          :: Garantia oficial de fábrica contra defeitos de fabricação.",
+  "related": [
+    {
+      "href": "produto-32.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rccw-ltobhzgc83yx8a",
+      "alt": "Chuveiro Acqua Duo Lorenzetti BIVOLT",
+      "name": "Chuveiro Acqua Duo Lorenzetti BIVOLT",
+      "price": "R$ 69,80",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "6978 vendido(s)"
+    },
+    {
+      "href": "produto-54.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
+      "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Aro 16 (Original) Cinza (PE11X)",
+      "name": "Purificador Eletrônico Compacto Efficient Painel Digital Aro 16 (Original) Cinza (PE11X)",
+      "price": "R$ 69,90",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "9876 vendido(s)"
+    },
+    {
+      "href": "produto-60.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjev4ty4yzghc1",
+      "alt": "Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,",
+      "name": "Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,",
+      "price": "R$ 69,90",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "9531 vendido(s)"
+    },
+    {
+      "href": "produto-35.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8",
+      "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Aro 16 (Original)",
+      "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Aro 16 (Original)",
+      "price": "R$ 96,78",
+      "price_original": "R$ 497,90",
+      "discount": "81% OFF",
+      "sold": "8569 vendido(s)"
+    },
+    {
+      "href": "produto-14.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdwx-lzpm7626yvg7c9",
+      "alt": "Churrasqueira Elétrica Arke Apartamento Rotativa Com 5 Espetos 220v Vitta Smart",
+      "name": "Churrasqueira Elétrica Arke Apartamento Rotativa Com 5 Espetos 220v Vitta Smart",
+      "price": "R$ 189,90",
+      "price_original": "R$ 779,90",
+      "discount": "76% OFF",
+      "sold": "9874 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 101,
+    "nome": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
+    "preco": 87.9,
+    "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+    "imagens": [
+      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pzero.png",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/scverde.png",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/scatr.png",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pwrgy.png",
+      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cint.png"
+    ],
+    "variacoes": {
+      "modelo": {
+        "label": "Modelo",
+        "opcoes": [
+          {
+            "nome": "CINTURATO P7 (P7C2)",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png"
+          },
+          {
+            "nome": "CINTURATO P7",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cint.png"
+          },
+          {
+            "nome": "CINTURATO P1",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p1cint.png"
+          },
+          {
+            "nome": "CINTURATO P6",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/CinturatoP6-BR_visorePDP_cake.png"
+          },
+          {
+            "nome": "P ZERO (PZ4)",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pzero.png"
+          },
+          {
+            "nome": "POWERGY",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pwrgy.png"
+          },
+          {
+            "nome": "P400 EVO",
+            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/P400Evo_visorePDP_cake.png"
+          },
+          {
+            "nome": "SCORPION VERDE",
+            "imagem": "../img/pneus/scorpion-verde.png"
+          },
+          {
+            "nome": "SCORPION ATR",
+            "imagem": "../img/pneus/scorpion-atr.png"
+          }
+        ]
+      }
+    }
+  },
+  "extra_scripts": [
+    "../js/avaliacoes-pirelli.js"
+  ]
+}

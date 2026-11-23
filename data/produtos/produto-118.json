@@ -1,0 +1,333 @@
+{
+  "id": 118,
+  "title": "Conjunto Sala de Jantar Mesa com 4 Cadeiras Estofadas Veludo Slim - Stone Shop",
+  "meta_description": "Conjunto Sala de Jantar Mesa Tampo Chanfrado com 4 Cadeiras Estofadas Veludo Slim com 55% OFF. Apenas R$ 449,00. Frete grátis Stone Shop.",
+  "product_title": "Conjunto Sala de Jantar Mesa Tampo Chanfrado com 4 Cadeiras Estofadas Suede Slim",
+  "slider_imgs": [
+    {
+      "src": "../img/mesa-jantar-slide-1.webp?v=1795147990000",
+      "alt": "Conjunto Sala de Jantar Mesa com 4 Cadeiras Estofadas Veludo Slim - 1"
+    },
+    {
+      "src": "../img/mesa-jantar-slide-2.webp?v=1795147990000",
+      "alt": "Conjunto Sala de Jantar Mesa com 4 Cadeiras Estofadas Veludo Slim - 2"
+    },
+    {
+      "src": "../img/mesa-jantar-slide-3.webp?v=1795147990000",
+      "alt": "Conjunto Sala de Jantar Mesa com 4 Cadeiras Estofadas Veludo Slim - 3"
+    },
+    {
+      "src": "../img/mesa-jantar-slide-4.webp?v=1795147990000",
+      "alt": "Conjunto Sala de Jantar Mesa com 4 Cadeiras Estofadas Veludo Slim - 4"
+    },
+    {
+      "src": "../img/mesa-jantar-slide-5.webp?v=1795147990000",
+      "alt": "Conjunto Sala de Jantar Mesa com 4 Cadeiras Estofadas Veludo Slim - 5"
+    }
+  ],
+  "discount_badge": "-55%",
+  "price_int": "449",
+  "price_cents": ",00",
+  "price_original": "R$ 990,00",
+  "installment_text": "6x de R$ 74,83",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Desconto de R$ 541",
+  "coupon_bonus": "Economize 55% com bônus",
+  "rating_score": "4.9",
+  "rating_count": "(148)",
+  "sold_count": "3.8K vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (382)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "C**a M.",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_80.jpg",
+      "stars": 5,
+      "date": "22/07",
+      "variation": "Freijó / Off-White",
+      "date_line": "22/07 · Freijó / Off-White",
+      "comment": "A mesa é simplesmente perfeita! O acabamento da madeira é lindo e as cadeiras são super confortáveis com o estofado em veludo. Deu um charme incrível na minha sala de jantar, entrega super rápida da Stone Shop!",
+      "photos": []
+    },
+    {
+      "name": "R**o S.",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_170.jpg",
+      "stars": 5,
+      "date": "15/08",
+      "variation": "Freijó / Grafite",
+      "date_line": "15/08 · Freijó / Grafite",
+      "comment": "Chegou bem antes do prazo e muito bem embalada com cantoneiras. A montagem foi bem tranquila com o manual. As cadeiras são muito firmes e aguentam peso com tranquilidade. Recomendo demais!",
+      "photos": [
+        "../img/reviews/review-118-4.webp"
+      ]
+    },
+    {
+      "name": "J**a F.",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_81.jpg",
+      "stars": 5,
+      "date": "04/09",
+      "variation": "Freijó / Off-White",
+      "date_line": "04/09 · Freijó / Off-White",
+      "comment": "A mesa é um espetáculo! O tampo chanfrado dá um ar super moderno na sala e o tecido das cadeiras é um veludo muito gostoso.",
+      "photos": [
+        "../img/reviews/review-118-1.webp",
+        "../img/reviews/review-118-2.webp",
+        "../img/reviews/review-118-3.webp"
+      ]
+    },
+    {
+      "name": "M**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_114.jpg",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Freijó / Grafite",
+      "date_line": "14/02 · Freijó / Grafite",
+      "comment": "A mesa é um espetáculo! O tampo chanfrado dá um ar super moderno na sala e o tecido das cadeiras é um veludo muito gostoso.",
+      "photos": [
+        "../img/reviews/review-118-1.webp"
+      ]
+    },
+    {
+      "name": "R**o S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_119.jpg",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Freijó / Off-White",
+      "date_line": "12/02 · Freijó / Off-White",
+      "comment": "Montagem simples e rápida com as ferramentas que vem junto. Cadeiras aguentam peso com muita firmeza e não balançam.",
+      "photos": [
+        "../img/reviews/review-118-2.webp"
+      ]
+    },
+    {
+      "name": "C**a P**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_126.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Freijó / Grafite",
+      "date_line": "10/02 · Freijó / Grafite",
+      "comment": "Ficou linda demais na minha copa! Chegou tudo super bem embalado sem nenhum arranhão. Recomendo muito!",
+      "photos": []
+    },
+    {
+      "name": "D**o M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_131.jpg",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Freijó / Off-White",
+      "date_line": "08/02 · Freijó / Off-White",
+      "comment": "Qualidade acima do que eu esperava pelo preço promocional. A madeira é pesada e o acabamento UV é bem brilhoso.",
+      "photos": []
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_138.jpg",
+      "stars": 4,
+      "date": "06/02",
+      "variation": "Freijó / Grafite",
+      "date_line": "06/02 · Freijó / Grafite",
+      "comment": "Conjunto lindo e confortável! Apenas a caixa das cadeiras estava um pouco amassada na ponta, mas os móveis estavam intactos dentro.",
+      "photos": []
+    },
+    {
+      "name": "G**a R**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_143.jpg",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Freijó / Off-White",
+      "date_line": "04/02 · Freijó / Off-White",
+      "comment": "Entrega relâmpago da Stone Shop, chegou em 4 dias no interior de SP. Cadeiras super fofas e fáceis de montar.",
+      "photos": []
+    },
+    {
+      "name": "A**a N**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_150.jpg",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Freijó / Grafite",
+      "date_line": "01/02 · Freijó / Grafite",
+      "comment": "Melhor compra que fiz para meu apartamento novo. Tamanho de 1,20m é perfeito, cabe certinho sem apertar o espaço.",
+      "photos": []
+    },
+    {
+      "name": "W**r P**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_155.jpg",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Freijó / Off-White",
+      "date_line": "29/01 · Freijó / Off-White",
+      "comment": "Estrutura reforçada e parafusos de boa qualidade. Já estamos usando todos os dias no almoço em família.",
+      "photos": []
+    },
+    {
+      "name": "L**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_162.jpg",
+      "stars": 5,
+      "date": "27/01",
+      "variation": "Freijó / Grafite",
+      "date_line": "27/01 · Freijó / Grafite",
+      "comment": "O tom da madeira combinou perfeitamente com os armários da minha cozinha. Estofado muito macio!",
+      "photos": []
+    },
+    {
+      "name": "M**o B**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_167.jpg",
+      "stars": 5,
+      "date": "24/01",
+      "variation": "Freijó / Off-White",
+      "date_line": "24/01 · Freijó / Off-White",
+      "comment": "Recomendo a todos, acabamento de primeira linha e excelente custo-benefício. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_174.jpg",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Freijó / Grafite",
+      "date_line": "21/01 · Freijó / Grafite",
+      "comment": "Todo mundo que vem em casa elogia a mesa. Valeu muito a pena aproveitar a promoção do TikTok Shop.",
+      "photos": []
+    },
+    {
+      "name": "Y**a C**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_179.jpg",
+      "stars": 4,
+      "date": "18/01",
+      "variation": "Freijó / Off-White",
+      "date_line": "18/01 · Freijó / Off-White",
+      "comment": "Muito bonita e resistente. A montagem exige um pouco de paciência, mas seguindo o manual fica perfeita.",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_186.jpg",
+      "stars": 5,
+      "date": "15/01",
+      "variation": "Freijó / Grafite",
+      "date_line": "15/01 · Freijó / Grafite",
+      "comment": "Perfeição define! Mesa espaçosa e cadeiras que abraçam as costas com a espuma D-23.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Marca",
+      "value": "Stone Casa & Decoração",
+      "hidden": false
+    },
+    {
+      "label": "Modelo",
+      "value": "Elegance 4 Lugares",
+      "hidden": false
+    },
+    {
+      "label": "Material do tampo",
+      "value": "MDF com tampo chanfrado resistente",
+      "hidden": false
+    },
+    {
+      "label": "Revestimento",
+      "value": "Suede toque de veludo (cadeiras estofadas D-23)",
+      "hidden": false
+    },
+    {
+      "label": "Dimensão da mesa",
+      "value": "1,20m com 4 cadeiras anatômicas",
+      "hidden": true
+    },
+    {
+      "label": "Estrutura",
+      "value": "Madeira reflorestada tratada de alta firmeza",
+      "hidden": true
+    },
+    {
+      "label": "Itens inclusos",
+      "value": "1 Mesa de Jantar, 4 Cadeiras, Kit Ferragens e Manual",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "6 meses contra defeitos de fabricação",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/nwj56a.mp4",
+    "poster": "../img/posters-desc/poster-desc-118.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>🍽️ Conjunto Sala de Jantar Mesa 1,20m com 4 Cadeiras Estofadas Suede Veludo</strong><br/><br/>\n              Transforme a sua sala de jantar em um ambiente sofisticado, aconchegante e pronto para receber amigos e família com o máximo conforto e elegância!<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n              • <strong>Tampo Chanfrado Resistente:</strong> Visual moderno em MDF de bordas suaves que trazem leveza e sofisticação ao ambiente.<br/>• <strong>Cadeiras Anatômicas e Confortáveis:</strong> Encosto ergonômico com densidade D-23 que abraça as costas durante as refeições.<br/>• <strong>Revestimento Suede Toque de Veludo:</strong> Tecido macio, elegante e fácil de higienizar no dia a dia.<br/>• <strong>Estrutura Firme e Estável:</strong> Produzida com madeira reflorestada tratada que não empena nem estala.<br/>• <strong>Montagem Prática:</strong> Acompanha manual detalhado passo a passo e todos os parafusos e ferragens necessários.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Stone Casa &amp; Decoração<br/>• Modelo: Elegance 4 Lugares<br/>• Cor Disponível: Freijó com Assento Off White / Grafite<br/>• Itens Inclusos: 1 Mesa de Jantar desmontada, 4 Cadeiras estofadas, Kit ferragens e Manual<br/>• Garantia: 6 meses de garantia contra defeitos de fabricação",
+  "related": [
+    {
+      "href": "produto-106.html",
+      "img": "../img/produto-106-1.jpg",
+      "alt": "Body Modelador Efeito Lipo",
+      "name": "Body Modelador Feminino Efeito Lipo Invisível Compressão",
+      "price": "R$ 29,90",
+      "price_original": "R$ 189,90",
+      "discount": "84% OFF",
+      "sold": "23.4K vendido(s)"
+    },
+    {
+      "href": "produto-114.html",
+      "img": "../img/produto-114-1.jpg",
+      "alt": "Controle Arcade 7 em 1",
+      "name": "Controle Arcade 7 em 1 Stick Retrô Multiplataforma PS4 PS3 Xbox PC Switch",
+      "price": "R$ 89,90",
+      "price_original": "R$ 349,90",
+      "discount": "74% OFF",
+      "sold": "2.950 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 118,
+    "nome": "Conjunto Sala de Jantar Mesa Tampo Chanfrado com 4 Cadeiras Estofadas Suede Slim",
+    "name": "Conjunto Sala de Jantar Mesa Tampo Chanfrado com 4 Cadeiras Estofadas Suede Slim",
+    "preco": 449,
+    "price": 449,
+    "preco_antigo": 990,
+    "precoOrig": 990,
+    "originalPrice": 990,
+    "cupomPreco": 449,
+    "couponPrice": 449,
+    "desc": 55,
+    "desconto": 55,
+    "installmentText": "6x de R$ 74,83 sem juros",
+    "parcelamento": "6x de R$ 74,83 sem juros",
+    "img": "../img/mesa-jantar-slide-1.webp?v=1795147990000",
+    "image": "../img/mesa-jantar-slide-1.webp?v=1795147990000",
+    "imagens": [
+      "../img/mesa-jantar-slide-1.webp?v=1795147990000",
+      "../img/mesa-jantar-slide-2.webp?v=1795147990000",
+      "../img/mesa-jantar-slide-3.webp?v=1795147990000",
+      "../img/mesa-jantar-slide-4.webp?v=1795147990000",
+      "../img/mesa-jantar-slide-5.webp?v=1795147990000"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": false,
+        "label": "Cor do Conjunto",
+        "opcoes": [
+          {
+            "nome": "Freijó / Off-White",
+            "preco": 449,
+            "preco_antigo": 990
+          },
+          {
+            "nome": "Freijó / Grafite",
+            "preco": 449,
+            "preco_antigo": 990
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "3.8K vendidos"
+  },
+  "extra_scripts": []
+}

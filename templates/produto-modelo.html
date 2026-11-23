@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>window.addEventListener('pageshow',function(e){if(e.persisted)window.location.reload(true);});</script>
+  <script src="../js/anti-clone-guard.js?v=20261020"></script>
+  <!-- TikTok Pixel Base Code -->
+  <script>
+  !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js',o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement('script');s.type='text/javascript',s.async=!0,s.src=r+'?sdkid='+e+'&lib='+t;var a=d.getElementsByTagName('script')[0];a.parentNode.insertBefore(s,a)},ttq.load('DBD7ASBC77UF91061F1G'),ttq.page()}(window,document,'ttq');
+  </script>
+  <script src="../js/tiktok-events.js?v={{ASSET_VERSION}}"></script>
+  <!-- End TikTok Pixel Base Code -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" name="viewport"/>
+  <title>{{TITLE}}</title>
+  <meta content="{{META_DESCRIPTION}}" name="description"/>
+  <link as="image" fetchpriority="high" href="../decalque/decalque-blackfriday.png?v={{ASSET_VERSION}}" rel="preload"/>
+  <link href="../css/style.css?v={{ASSET_VERSION}}" rel="stylesheet"/>
+  <link href="../css/ui-oficial.css?v={{ASSET_VERSION}}" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="app-container">
+  <!-- HEADER -->
+  <header class="header">
+    <a aria-label="Voltar" class="header-back-btn" href="../index.html">
+      <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="24">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </a>
+    <div class="header-search-wrapper">
+      <button class="header-search-icon-btn" type="button">
+        <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+        </svg>
+      </button>
+      <input class="header-search" onclick="window.location='../index.html'" placeholder="Pesquisar" readonly="" type="text"/>
+    </div>
+    <div class="header-icons">
+      <button aria-label="Compartilhar" class="header-share-btn" onclick="shareProduct()" type="button">
+        <img alt="Compartilhar" src="../img/share-arrow.png" style="width: 22px; height: 22px; object-fit: contain;"/>
+        <span class="share-dot"></span>
+      </button>
+      <a aria-label="Carrinho" class="header-icon-btn" href="../pages/carrinho.html">
+        <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="22">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-badge" style="display:none">0</span>
+      </a>
+      <button aria-label="Mais opções" class="header-more-btn" onclick="showMoreOptions()" type="button">
+        <svg fill="currentColor" height="22" viewbox="0 0 24 24" width="22">
+          <circle cx="5" cy="12" r="2"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+          <circle cx="19" cy="12" r="2"></circle>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO DA PÁGINA -->
+  <div class="page-content">
+    <!-- SLIDER DE IMAGENS -->
+    <div class="image-slider">
+      <div class="slider-track">
+        {{SLIDER_IMGS_HTML}}
+      </div>
+      <div class="slider-counter">1 / {{SLIDER_COUNT}}</div>
+    </div>
+    <div class="slider-dots"></div>
+
+    <!-- NAVEGAÇÃO STONE SHOP -->
+    <nav class="product-tabs">
+      <button class="product-tab active" data-tab="visao-geral" type="button">Visão geral</button>
+      <button class="product-tab" data-tab="avaliacoes" type="button">Avaliações</button>
+      <button class="product-tab" data-tab="descricao" type="button">Descrição</button>
+      <button class="product-tab" data-tab="recomendacoes" type="button">Recomendações</button>
+    </nav>
+
+    <!-- SEÇÃO DE PREÇO / DECALQUE OFICIAL BLACK FRIDAY -->
+    <div class="price-section price-section-bf">
+      <div class="discount-badge-white">{{DISCOUNT_BADGE}}</div>
+      <div class="price-row">
+        <span class="price-currency-sign">R$</span>
+        <div class="price-current">{{PRICE_INT}}<span class="price-cents">{{PRICE_CENTS}}</span></div>
+        <svg aria-hidden="true" class="bf-coupon-icon" fill="none" height="16" viewbox="0 0 22 16" width="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 1.25H19.5C20.19 1.25 20.75 1.81 20.75 2.5V5.4C19.65 5.65 18.85 6.62 18.85 7.8C18.85 8.98 19.65 9.95 20.75 10.2V13.5C20.75 14.19 20.19 14.75 19.5 14.75H2.5C1.81 14.75 1.25 14.19 1.25 13.5V10.2C2.35 9.95 3.15 8.98 3.15 7.8C3.15 6.62 2.35 5.65 1.25 5.4V2.5C1.25 1.81 1.81 1.25 2.5 1.25Z" stroke="#FFFFFF" stroke-linejoin="round" stroke-width="1.65"></path>
+          <path d="M7.5 8.1L10.1 10.6L14.8 5.6" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+        </svg>
+      </div>
+      <div class="price-original">{{PRICE_ORIGINAL}}</div>
+    </div>
+
+    <!-- INFORMAÇÕES DO PRODUTO -->
+    <div class="product-info">
+      <!-- 1. Parcelamento oficial TikTok Shop -->
+      {{INSTALLMENT_HTML}}
+
+      <!-- 2. Cupons oficiais TikTok Shop -->
+      {{COUPONS_HTML}}
+
+      <!-- Título com Bookmark à direita -->
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px;">
+        <h1 class="product-title" style="font-size: 16px; font-weight: 700; color: #161823; line-height: 1.35; margin: 0; flex: 1;">
+          {{PRODUCT_TITLE}}
+        </h1>
+        <button aria-label="Salvar" class="bookmark-btn" onclick="toggleBookmark(this)" style="background: none; border: none; padding: 2px 0 0 0; cursor: pointer; color: #161823; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" type="button">
+          <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="20">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Avaliações e Vendas -->
+      <div class="ratings-row" style="display: flex; align-items: center; gap: 6px; margin-bottom: 12px;">
+        <div class="star-row" style="display: flex; align-items: center; gap: 4px;">
+          <svg class="star-icon" fill="#ffb800" height="13" viewbox="0 0 24 24" width="13">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span style="font-size: 13px; font-weight: 700; color: #161823;">{{RATING_SCORE}}</span>
+          <span onclick="document.querySelector('.reviews-section')?.scrollIntoView({behavior:'smooth'})" style="font-size: 13px; font-weight: 500; color: #4364db; cursor: pointer;">{{RATING_COUNT}}</span>
+        </div>
+        <span style="color: #e5e5e5; font-size: 12px; margin: 0 1px;">|</span>
+        <div class="sold-count" style="font-size: 13px; color: #757575; font-weight: 400;">{{SOLD_COUNT}}</div>
+      </div>
+
+      <!-- BLOCO PRÉ-DESCRIÇÃO OFICIAL TIKTOK SHOP -->
+      <div class="product-info-rows" style="border-top:1px solid #f5f5f5; border-bottom:1px solid #f5f5f5; margin-bottom:14px; background:#fff;">
+        <!-- Linha 1: Frete Grátis -->
+        <div class="info-row-item info-row-envio" onclick="window.openEnvioModal && window.openEnvioModal()" style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid #f2f2f2; background:#fff; cursor:pointer;">
+          <div class="info-row-left" style="display:flex; align-items:center; gap:12px;">
+            <div class="info-row-icon" style="display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg height="20" viewbox="0 -2 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-2 -4)">
+                  <path d="M9.17,17H13V6a1,1,0,0,0-1-1H5" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  <path d="M3,13v3a1,1,0,0,0,1,1h.87" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  <path d="M14.87,17H13V7h4.25a1,1,0,0,1,1,.73L19,10.5l1.24.31a1,1,0,0,1,.76,1V16a1,1,0,0,1-1,1h-.89" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  <path d="M9,17a2,2,0,1,1-2-2A2,2,0,0,1,9,17Zm8-2a2,2,0,1,0,2,2A2,2,0,0,0,17,15ZM3,9H9" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="info-row-content" style="display:flex; flex-direction:column;">
+              <div class="info-row-title-row" style="display:flex; align-items:center; gap:6px; margin-bottom:2px;">
+                <span class="info-row-badge-green" style="background:#e6f8f6; color:#00bfa5; font-size:10.5px; font-weight:700; padding:1px 4px; border-radius:2px;">Frete grátis</span>
+                <span style="font-size:12px; color:#888; text-decoration:line-through;">{{FRETE_ORIGINAL}}</span>
+              </div>
+              <span class="info-row-subtitle frete-prazo-dinamico" id="frete-prazo-dinamico" style="font-size:13px; color:#161823; font-weight:500;">Receba até sex., 27 de nov – ter., 1 de dez</span>
+            </div>
+          </div>
+          <span class="info-row-arrow"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </div>
+
+        <!-- Linha 2: Opções Disponíveis -->
+        <div class="info-row-item info-row-opcoes" onclick="handleAddToCart()">
+          <div class="info-row-left">
+            <div class="info-row-icon">
+              <svg fill="none" height="18" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+                <rect height="7" width="7" x="3" y="3"></rect>
+                <rect height="7" width="7" x="14" y="3"></rect>
+                <rect height="7" width="7" x="14" y="14"></rect>
+                <rect height="7" width="7" x="3" y="14"></rect>
+              </svg>
+            </div>
+            <div class="info-row-opcoes-content" style="display:flex; align-items:center; gap:8px;">
+              <span class="info-row-title">Opções disponíveis</span>
+            </div>
+          </div>
+          <span class="info-row-arrow"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+        </div>
+
+        <!-- Linha 3: Proteção do Cliente -->
+        <div class="info-row-item-protection" onclick="window.openProtecaoModal()" style="background:#fff; padding:12px 16px; border-bottom:1px solid #f2f2f2; cursor:pointer;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div class="info-row-left" style="display:flex; align-items:center; gap:7px;">
+              <svg fill="none" height="17" stroke="#8B5E2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex-shrink:0;" viewbox="0 0 24 24" width="17">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+              <span class="info-row-title" style="color:#8B5E2B; font-weight:500; font-size:13.5px;">Proteção do cliente</span>
+            </div>
+            <span class="info-row-arrow"><svg fill="none" height="14" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" style="flex-shrink: 0; margin-left: auto;" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 12px; margin-top:8px; padding-left:24px; box-sizing:border-box;">
+            <div style="font-size:12px; color:#161823; display:flex; align-items:center; gap:5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><svg fill="none" height="11" style="flex-shrink:0;" viewbox="0 0 12 12" width="11"><path d="M2 6.5L4.5 9L10 3" stroke="#8B5E2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"></path></svg> Devolução gratuita</div>
+            <div style="font-size:12px; color:#161823; display:flex; align-items:center; gap:5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><svg fill="none" height="11" style="flex-shrink:0;" viewbox="0 0 12 12" width="11"><path d="M2 6.5L4.5 9L10 3" stroke="#8B5E2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"></path></svg> Garantia de pontualidade</div>
+            <div style="font-size:12px; color:#161823; display:flex; align-items:center; gap:5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><svg fill="none" height="11" style="flex-shrink:0;" viewbox="0 0 12 12" width="11"><path d="M2 6.5L4.5 9L10 3" stroke="#8B5E2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"></path></svg> Pagamento seguro</div>
+            <div style="font-size:12px; color:#161823; display:flex; align-items:center; gap:5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><svg fill="none" height="11" style="flex-shrink:0;" viewbox="0 0 12 12" width="11"><path d="M2 6.5L4.5 9L10 3" stroke="#8B5E2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"></path></svg> Reembolso se algo der errado</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VÍDEOS DE CRIADORES OFICIAL TIKTOK SHOP (VAZIO NO HTML — ZERO FLICKER) -->
+      <div class="creators-section" id="creators-section"></div>
+
+      <!-- AVALIAÇÕES DOS CLIENTES -->
+      <div class="reviews-section">
+        <h3 class="reviews-header">{{REVIEWS_HEADER}}</h3>
+        <div class="reviews-summary">
+          <span class="review-avg">{{REVIEWS_AVG}}</span><span class="review-avg-total">/5</span>
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        {{REVIEWS_CARDS_HTML}}
+      </div>
+
+      <!-- SOBRE ESTE PRODUTO (MODELO ÚNICO PERMANENTE) -->
+      <div class="about-product-section" id="sobre-este-produto">
+        <h2 class="about-section-title">Sobre este produto</h2>
+
+        <!-- SUBSEÇÃO 1: DETALHES -->
+        {{DETAILS_HTML}}
+
+        <!-- SUBSEÇÃO 2: VÍDEO OFICIAL DO PRODUTO (PLAYER 16:9 TIKTOK SHOP) -->
+        {{VIDEO_HTML}}
+
+        <!-- SUBSEÇÃO OPCIONAL: GUIA DE TAMANHOS -->
+        {{SIZE_GUIDE_HTML}}
+
+        <!-- SUBSEÇÃO 3: DESCRIÇÃO OFICIAL -->
+        <div class="description-section" id="sobre-produto-desc-section">
+          <h3 class="about-subtitle">Descrição</h3>
+          <div class="description-expandable-container" id="desc-expandable-container">
+            <div class="description-text" id="desc-content-text">
+              {{DESCRIPTION_HTML}}
+            </div>
+            <div class="desc-fade-overlay" id="desc-fade-overlay"></div>
+          </div>
+          <div class="btn-toggle-desc-wrap" id="btn-toggle-desc-wrap">
+            <button class="btn-toggle-desc" id="btn-toggle-desc" onclick="toggleDescricaoCompleta()" type="button">
+              <span id="btn-toggle-desc-text">Ver mais</span>
+              <svg class="toggle-icon-desc" fill="none" height="14" id="btn-toggle-desc-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUTOS RELACIONADOS -->
+      {{RELATED_HTML}}
+    </div><!-- fim product-info -->
+  </div><!-- fim page-content -->
+
+  <!-- BOTTOM BAR UNIVERSAL -->
+  <div class="bottom-bar">
+    <div class="store-chat-image-group">
+      <div class="store-chat-clickable-loja" onclick="window.location.href='../index.html'"></div>
+      <div class="store-chat-clickable-chat" onclick="openSmartChat()"></div>
+    </div>
+    <button aria-label="Adicionar ao carrinho" class="btn-add-cart" id="btn-add-cart" onclick="handleAddToCart()" type="button">
+      <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="22">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+    </button>
+    <button class="btn-buy" id="btn-buy" onclick="handleBuyNow()" type="button">
+      <span class="btn-line1">Comprar agora</span>
+      <span class="btn-line2">Frete grátis</span>
+    </button>
+  </div>
+</div><!-- fim app-container -->
+
+<script src="../js/catalogo.js?v={{ASSET_VERSION}}"></script>
+<script src="../js/app.js?v={{ASSET_VERSION}}"></script>
+<script>
+const PRODUTO_ATUAL = {{PRODUTO_ATUAL_JSON}};
+window.PRODUTO_ATUAL = PRODUTO_ATUAL;
+
+function handleAddToCart() {
+  handleAddToCartWithVariacoes(PRODUTO_ATUAL, false);
+}
+
+function handleBuyNow() {
+  if (typeof handleAddToCartWithVariacoes === 'function' && typeof PRODUTO_ATUAL !== 'undefined') {
+    handleAddToCartWithVariacoes(PRODUTO_ATUAL, true);
+  } else if (typeof irDiretoAoCheckoutComProduto === 'function' && typeof PRODUTO_ATUAL !== 'undefined') {
+    irDiretoAoCheckoutComProduto(PRODUTO_ATUAL, '', 1);
+  } else {
+    if (typeof PRODUTO_ATUAL !== 'undefined') addToCart(PRODUTO_ATUAL);
+    window.location.href = 'resumo.html';
+  }
+}
+
+function toggleBookmark(btn) {
+  var svg = btn && btn.querySelector('svg');
+  if (!svg) return;
+  svg.setAttribute('fill', svg.getAttribute('fill') === 'currentColor' ? 'none' : 'currentColor');
+}
+
+if (typeof window.toggleProductDetails !== 'function') {
+  window.toggleProductDetails = function(btn) {
+    if (!btn) return;
+    var container = btn.closest('.product-details-block');
+    if (!container) return;
+    var rows = container.querySelectorAll('.toggleable-row');
+    var isExpanded = btn.getAttribute('data-expanded') === 'true';
+    rows.forEach(function(r) {
+      if (isExpanded) {
+        r.classList.add('is-hidden');
+        r.style.setProperty('display', 'none', 'important');
+      } else {
+        r.classList.remove('is-hidden');
+        r.style.setProperty('display', 'flex', 'important');
+      }
+    });
+    btn.setAttribute('data-expanded', isExpanded ? 'false' : 'true');
+    var sp = btn.querySelector('span');
+    if (sp) sp.textContent = isExpanded ? 'Ver mais' : 'Ver menos';
+  };
+}
+</script>
+<script src="../tracker.js"></script>
+<script src="../js/videos-criadores-v3.js?v={{ASSET_VERSION}}"></script>
+{{EXTRA_SCRIPTS_HTML}}
+</body>
+</html>

@@ -1,0 +1,343 @@
+{
+  "id": 102,
+  "title": "Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km - Stone Shop",
+  "meta_description": "Scooter Elétrica TUI 1000w com bateria de lítio 60V, autonomia de 60km, 12 cores disponíveis. A partir de R$99,90. Frete grátis.",
+  "product_title": "Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km",
+  "slider_imgs": [
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 1"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_725757-MLA106965946098_022026-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 2"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_735269-MLA91958533693_092025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 3"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_767964-MLA91958573481_092025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 4"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_835789-MLA91559669066_092025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 5"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_877882-MLA91958603329_092025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 6"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_883810-MLA91958623277_092025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 7"
+    },
+    {
+      "src": "../imagemscooterpreta/D_NQ_NP_2X_940012-MLA91958533713_092025-F.webp",
+      "alt": "Scooter Elétrica TUI 1000w - 8"
+    }
+  ],
+  "discount_badge": "-82%",
+  "price_int": "99",
+  "price_cents": ",90",
+  "price_original": "R$ 2.344,00",
+  "installment_text": "2x R$ 49,95",
+  "installment_highlight": "sem juros",
+  "coupon_main": "82% OFF",
+  "coupon_bonus": "",
+  "rating_score": "4.9",
+  "rating_count": "(4,2 mil)",
+  "sold_count": "10.0K vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (4,2 mil)",
+  "reviews_avg": "4.9",
+  "reviews": [
+    {
+      "name": "F**a B**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_110.jpg",
+      "stars": 4,
+      "date": "15/02",
+      "variation": "Preta",
+      "date_line": "15/02 · Preta",
+      "comment": "Sensacional essa scooter! Muito forte nas subidas aqui do bairro, bateria dura a semana toda pro meu trajeto diário pro trabalho. Economia surreal!",
+      "photos": [
+        "../img/review-102-real-1.jpg"
+      ]
+    },
+    {
+      "name": "D**a G**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_123.jpg",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Branca",
+      "date_line": "14/02 · Branca",
+      "comment": "Super confortável e muito estilosa! Cabe eu e minha filha com muita segurança. Não precisa de CNH e não gasta gasolina nenhuma.",
+      "photos": [
+        "../img/review-102-real-2.jpg"
+      ]
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_135.jpg",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Vermelha",
+      "date_line": "12/02 · Vermelha",
+      "comment": "Chegou muito bem embalada na estrutura reforçada. Farol de LED ilumina muito à noite e os freios a disco respondem na hora.",
+      "photos": [
+        "../img/review-102-real-3.jpg"
+      ]
+    },
+    {
+      "name": "M**o B**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_149.jpg",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Preta",
+      "date_line": "11/02 · Preta",
+      "comment": "Melhor investimento de mobilidade urbana que já fiz. Silenciosa, potente e a bateria carrega rápido na tomada comum.",
+      "photos": [
+        "../img/review-102-real-4.jpg"
+      ]
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_160.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Branca",
+      "date_line": "10/02 · Branca",
+      "comment": "Adorei! Muito fácil de pilotar, display digital bem visível com velocímetro e nível de bateria.",
+      "photos": []
+    },
+    {
+      "name": "J**o P**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_173.jpg",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Vermelha",
+      "date_line": "08/02 · Vermelha",
+      "comment": "Top de linha! Excelente acabamento e amortecedores bem macios. Recomendo!",
+      "photos": []
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_186.jpg",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "Preta",
+      "date_line": "07/02 · Preta",
+      "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
+      "photos": []
+    },
+    {
+      "name": "C**s E**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_199.jpg",
+      "stars": 5,
+      "date": "05/02",
+      "variation": "Branca",
+      "date_line": "05/02 · Branca",
+      "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonito e resistente. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "I**a S**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_210.jpg",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Vermelha",
+      "date_line": "04/02 · Vermelha",
+      "comment": "Produto espetacular! Chegou muito rápido e super bem embalado pela Stone Shop. Superou minhas expectativas!",
+      "photos": []
+    },
+    {
+      "name": "R**a G**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_27.jpg",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Preta",
+      "date_line": "02/02 · Preta",
+      "comment": "Entrega relâmpago! Produto 100% original, acabamento impecável de altíssima qualidade. Recomendo de olhos fechados.",
+      "photos": []
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_38.jpg",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Branca",
+      "date_line": "01/02 · Branca",
+      "comment": "Comprei por indicação e me surpreendi positivamente. Vale cada centavo investido. Loja muito ágil e atenciosa!",
+      "photos": []
+    },
+    {
+      "name": "T**s A**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_51.jpg",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Vermelha",
+      "date_line": "29/01 · Vermelha",
+      "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_62.jpg",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Preta",
+      "date_line": "28/01 · Preta",
+      "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
+      "photos": []
+    },
+    {
+      "name": "A**r C**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_77.jpg",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "Branca",
+      "date_line": "26/01 · Branca",
+      "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
+      "photos": []
+    },
+    {
+      "name": "L**u D**e",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_28.jpg",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "Vermelha",
+      "date_line": "25/01 · Vermelha",
+      "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Produto",
+      "value": "Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km",
+      "hidden": false
+    },
+    {
+      "label": "Condição",
+      "value": "Novo (Original de Fábrica)",
+      "hidden": false
+    },
+    {
+      "label": "Envio",
+      "value": "Pronta Entrega no Brasil com Rastreamento",
+      "hidden": false
+    },
+    {
+      "label": "Garantia",
+      "value": "90 Dias de Garantia Oficial",
+      "hidden": false
+    },
+    {
+      "label": "Disponibilidade",
+      "value": "Estoque Físico com Envio Imediato",
+      "hidden": true
+    },
+    {
+      "label": "Autenticidade",
+      "value": "100% Homologado e Certificado",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "../videoscooterintroducao/scooter-preta.mp4",
+    "poster": "../img/posters-desc/poster-desc-102.jpg",
+    "duration": "0:20"
+  },
+  "size_guide_html": "",
+  "description_html": "Scooter Elétrica TUI 1000w com bateria de lítio 60V, autonomia de 60km, 12 cores disponíveis. A partir de R$99,90. Frete grátis.",
+  "related": [
+    {
+      "href": "produto-115.html",
+      "img": "../img/forno-hq-slide-1.webp",
+      "alt": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+      "price": "R$ 289,90",
+      "price_original": "R$ 429,00",
+      "discount": "35% OFF",
+      "sold": "668 vendido(s)"
+    },
+    {
+      "href": "produto-17.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf",
+      "alt": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "name": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "price": "R$ 89,00",
+      "price_original": "R$ 399,90",
+      "discount": "78% OFF",
+      "sold": "5668 vendido(s)"
+    },
+    {
+      "href": "produto-15.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqnmb7oulw6f02",
+      "alt": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+      "name": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+      "price": "R$ 149,90",
+      "price_original": "R$ 624,90",
+      "discount": "76% OFF",
+      "sold": "7543 vendido(s)"
+    },
+    {
+      "href": "produto-16.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "price": "R$ 129,30",
+      "price_original": "R$ 499,00",
+      "discount": "74% OFF",
+      "sold": "7548 vendido(s)"
+    },
+    {
+      "href": "produto-7.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "alt": "Caixa de Som AIWA",
+      "name": "Caixa de Som Bluetooth Boombox BS-01B 200W IP66",
+      "price": "R$ 69,90",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "8754 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 102,
+    "nome": "Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km",
+    "preco": 99.9,
+    "preco_antigo": 2344,
+    "img": "../imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp",
+    "imagens": [
+      "../imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_725757-MLA106965946098_022026-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_735269-MLA91958533693_092025-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_767964-MLA91958573481_092025-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_835789-MLA91559669066_092025-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_877882-MLA91958603329_092025-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_883810-MLA91958623277_092025-F.webp",
+      "../imagemscooterpreta/D_NQ_NP_2X_940012-MLA91958533713_092025-F.webp"
+    ],
+    "variacoes": {
+      "modelo": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "nome": "Preta",
+            "imagem": "../imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp"
+          },
+          {
+            "nome": "Branca",
+            "imagem": "../imagemscooterbranca/D_NQ_NP_2X_679453-MLA92387568816_092025-F.webp"
+          },
+          {
+            "nome": "Vermelha",
+            "imagem": "../imagemscootervermelho/D_NQ_NP_2X_606638-MLA91971019049_092025-F.webp"
+          }
+        ]
+      }
+    }
+  },
+  "extra_scripts": []
+}

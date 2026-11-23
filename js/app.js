@@ -6088,200 +6088,213 @@ window.toggleDescricaoCompleta = function() {
 };
 
 // ==========================================================================
-// TIKTOK SHOP: CONTROLES DO PLAYER DE VÍDEO OFICIAL GLOBAL (SUBSEÇÃO 2)
+// TIKTOK SHOP: CONTROLES DO PLAYER DE VÍDEO 16:9 OFICIAL (MODELO PERMANENTE)
 // ==========================================================================
-window.toggleTTVideo = function(e) {
-  if (e && e.target && e.target.closest && e.target.closest('.tt-video-bar') && !e.target.closest('#tt-btn-play')) return;
-  var card = document.getElementById('tt-product-video-wrapper') || (e && e.currentTarget ? e.currentTarget : null);
-  var video = card ? card.querySelector('video') : document.getElementById('tt-product-video');
-  var centerPlay = document.getElementById('tt-center-play') || (card ? card.querySelector('.tt-video-center-play') : null);
-  var iconPlay = document.getElementById('tt-icon-play') || (card ? card.querySelector('#tt-icon-play') : null);
-  var iconPause = document.getElementById('tt-icon-pause') || (card ? card.querySelector('#tt-icon-pause') : null);
-  if (!video) return;
-
-  // Debounce guard contra duplo disparo de eventos de clique/toque
-  var now = Date.now();
-  if (video._lastToggle && (now - video._lastToggle) < 280) return;
-  video._lastToggle = now;
-
-  // Se o vídeo já está tocando mudo (pelo IntersectionObserver), o primeiro toque do usuário ATIVA O SOM
-  if (!video.paused && video.muted) {
-    video.muted = false;
-    video._userPaused = false;
-    if (card) card.classList.add('is-playing');
-    if (centerPlay) { centerPlay.style.display = 'none'; centerPlay.style.setProperty('display', 'none', 'important'); }
-    if (iconPlay) iconPlay.style.display = 'none';
-    if (iconPause) iconPause.style.display = 'block';
-    return;
+(function initTTDescriptionPlayer() {
+  function fmtCurrent(s) {
+    if (!isFinite(s) || s < 0) return '00:00';
+    var m = Math.floor(s / 60);
+    var sec = Math.floor(s % 60);
+    return (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
   }
 
-  if (video.paused) {
-    video._userPaused = false;
-    var p = video.play();
-    if (p !== undefined && typeof p.then === 'function') {
-      p.then(function() {
-        if (card) card.classList.add('is-playing');
-        if (centerPlay) { centerPlay.style.display = 'none'; centerPlay.style.setProperty('display', 'none', 'important'); }
-        if (iconPlay) iconPlay.style.display = 'none';
-        if (iconPause) iconPause.style.display = 'block';
-      }).catch(function() {
-        video.muted = true;
-        video.play().then(function() {
-          if (card) card.classList.add('is-playing');
-          if (centerPlay) { centerPlay.style.display = 'none'; centerPlay.style.setProperty('display', 'none', 'important'); }
-          if (iconPlay) iconPlay.style.display = 'none';
-          if (iconPause) iconPause.style.display = 'block';
-        }).catch(function(err2) {
-          console.warn('Erro ao reproduzir vídeo demonstrativo:', err2);
-        });
-      });
-    } else {
-      if (card) card.classList.add('is-playing');
-      if (centerPlay) { centerPlay.style.display = 'none'; centerPlay.style.setProperty('display', 'none', 'important'); }
+  function fmtDuration(s) {
+    if (!isFinite(s) || s <= 0) return '0:00';
+    var m = Math.floor(s / 60);
+    var sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  function syncPlayState(card, isPlaying) {
+    if (!card) return;
+    var centerPlay = card.querySelector('#tt-center-play, .tt-video-center-play');
+    var iconPlay = card.querySelector('#tt-icon-play');
+    var iconPause = card.querySelector('#tt-icon-pause');
+    if (isPlaying) {
+      card.classList.add('is-playing');
+      if (centerPlay) centerPlay.style.removeProperty('display');
       if (iconPlay) iconPlay.style.display = 'none';
       if (iconPause) iconPause.style.display = 'block';
+    } else {
+      card.classList.remove('is-playing');
+      if (centerPlay) centerPlay.style.removeProperty('display');
+      if (iconPlay) iconPlay.style.display = 'block';
+      if (iconPause) iconPause.style.display = 'none';
     }
-  } else {
-    video._userPaused = true;
-    video.pause();
-    if (card) card.classList.remove('is-playing');
-    if (centerPlay) { centerPlay.style.display = 'flex'; centerPlay.style.setProperty('display', 'flex', 'important'); }
-    if (iconPlay) iconPlay.style.display = 'block';
-    if (iconPause) iconPause.style.display = 'none';
   }
-};
 
-window.seekTTVideo = function(e) {
-  if (e) e.stopPropagation();
-  var card = (e && e.target) ? e.target.closest('.tiktok-video-card') : document.getElementById('tt-product-video-wrapper');
-  var video = card ? card.querySelector('video') : document.getElementById('tt-product-video');
-  var bar = card ? card.querySelector('#tt-progress-bg') : document.getElementById('tt-progress-bg');
-  if (!video || !bar) return;
-  var rect = bar.getBoundingClientRect();
-  var pos = (e.clientX - rect.left) / rect.width;
-  if (isFinite(video.duration) && video.duration > 0) {
-    video.currentTime = Math.max(0, Math.min(pos * video.duration, video.duration));
+  function updateProgressVisual(card, pct) {
+    var clamped = Math.max(0, Math.min(100, pct));
+    var fill = card.querySelector('#tt-progress-fill');
+    var thumb = card.querySelector('#tt-progress-thumb');
+    if (fill) fill.style.width = clamped + '%';
+    if (thumb) thumb.style.left = clamped + '%';
   }
-};
 
-window.toggleTTFullscreen = function(e) {
-  if (e) e.stopPropagation();
-  var card = (e && e.target) ? e.target.closest('.tiktok-video-card') : document.getElementById('tt-product-video-wrapper');
-  var video = card ? card.querySelector('video') : document.getElementById('tt-product-video');
-  var target = card || video;
-  if (!target) return;
-  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-    if (target.requestFullscreen) target.requestFullscreen();
-    else if (target.webkitRequestFullscreen) target.webkitRequestFullscreen();
-    else if (video && video.webkitEnterFullscreen) video.webkitEnterFullscreen();
-  } else {
-    if (document.exitFullscreen) document.exitFullscreen();
-    else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+  window.toggleTTVideo = function(e) {
+    if (e && e.target && e.target.closest && e.target.closest('.tt-video-bar') && !e.target.closest('#tt-btn-play')) return;
+    if (e && e.target && e.target.closest && e.target.closest('.tt-fs-close-btn')) return;
+    var card = document.getElementById('tt-product-video-wrapper') || (e && e.currentTarget ? e.currentTarget : null);
+    var video = card ? card.querySelector('video') : document.getElementById('tt-product-video');
+    if (!video) return;
+
+    var now = Date.now();
+    if (video._lastToggle && (now - video._lastToggle) < 220) return;
+    video._lastToggle = now;
+
+    if (video.paused || video.ended) {
+      video.muted = false;
+      var p = video.play();
+      if (p && typeof p.then === 'function') {
+        p.then(function() {
+          syncPlayState(card, true);
+        }).catch(function() {
+          video.muted = true;
+          video.play().then(function() {
+            syncPlayState(card, true);
+          }).catch(function() {});
+        });
+      } else {
+        syncPlayState(card, true);
+      }
+    } else {
+      video.pause();
+      syncPlayState(card, false);
+    }
+  };
+
+  function applySeekFromClientX(card, clientX) {
+    var video = card ? card.querySelector('video') : document.getElementById('tt-product-video');
+    var track = card ? (card.querySelector('.tt-video-progress-track') || card.querySelector('#tt-progress-bg')) : null;
+    var curTime = card ? card.querySelector('#tt-cur-time') : null;
+    if (!video || !track) return;
+    var rect = track.getBoundingClientRect();
+    if (!rect.width) return;
+    var ratio = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    updateProgressVisual(card, ratio * 100);
+    if (isFinite(video.duration) && video.duration > 0) {
+      video.currentTime = ratio * video.duration;
+      if (curTime) curTime.textContent = fmtCurrent(video.currentTime);
+    }
   }
-};
 
-(function bindTTVideoGlobal() {
+  window.seekTTVideo = function(e) {
+    if (e) e.stopPropagation();
+    var card = (e && e.target) ? e.target.closest('.tiktok-video-card') : document.getElementById('tt-product-video-wrapper');
+    if (!card || !e) return;
+    var cx = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+    applySeekFromClientX(card, cx);
+  };
+
+  window.toggleTTFullscreen = function(e) {
+    if (e) e.stopPropagation();
+    var card = (e && e.target) ? e.target.closest('.tiktok-video-card') : document.getElementById('tt-product-video-wrapper');
+    if (!card) return;
+    var isExpanded = card.classList.toggle('tt-fs-expanded');
+    document.documentElement.style.overflow = isExpanded ? 'hidden' : '';
+    document.body.style.overflow = isExpanded ? 'hidden' : '';
+    if (!isExpanded && (document.fullscreenElement || document.webkitFullscreenElement)) {
+      if (document.exitFullscreen) document.exitFullscreen().catch(function() {});
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+  };
+
   function setupPlayer() {
     var video = document.getElementById('tt-product-video');
     var card = document.getElementById('tt-product-video-wrapper');
-    if (!video || !card) return;
-    if (video.dataset.ttBound) return;
+    if (!video || !card || video.dataset.ttBound) return;
     video.dataset.ttBound = 'true';
+
+    // Remove qualquer tag amarela antiga caso exista
+    card.querySelectorAll('.tt-desc-product-anchor').forEach(function(el) { el.remove(); });
+
+    // Garante botão de fechar no modo fullscreen
+    if (!card.querySelector('.tt-fs-close-btn')) {
+      var closeBtn = document.createElement('button');
+      closeBtn.type = 'button';
+      closeBtn.className = 'tt-fs-close-btn';
+      closeBtn.setAttribute('aria-label', 'Sair da tela cheia');
+      closeBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+      closeBtn.addEventListener('click', function(ev) {
+        ev.stopPropagation();
+        window.toggleTTFullscreen(ev);
+      });
+      card.appendChild(closeBtn);
+    }
 
     var curTime = card.querySelector('#tt-cur-time');
     var durTime = card.querySelector('#tt-dur-time');
-    var fill = card.querySelector('#tt-progress-fill');
-    var iconPlay = card.querySelector('#tt-icon-play') || document.getElementById('tt-icon-play');
-    var iconPause = card.querySelector('#tt-icon-pause') || document.getElementById('tt-icon-pause');
-    var centerPlay = card.querySelector('#tt-center-play') || document.getElementById('tt-center-play');
+    var barBg = card.querySelector('#tt-progress-bg');
 
-    // Injeta a Shopping Anchor Tag oficial também no vídeo da descrição
-    if (card && !card.querySelector('.tt-desc-product-anchor')) {
-      var prodObj = (typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL) ? PRODUTO_ATUAL : (window.PRODUTO_ATUAL || {});
-      var pName = prodObj.nome || (document.title ? document.title.replace(' - Stone Shop', '').trim() : 'Produto Oficial');
-      var pPrice = prodObj.preco ? ('R$ ' + Number(prodObj.preco).toFixed(2).replace('.', ',')) : '';
-      
-      var anchor = document.createElement('div');
-      anchor.className = 'tt-desc-product-anchor';
-      anchor.style.cssText = 'position:absolute; bottom:38px; left:12px; z-index:4; display:flex; align-items:center; gap:6px; background:rgba(0,0,0,0.72); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.25); border-radius:6px; padding:4px 9px; cursor:pointer; color:#fff; font-size:11px; font-weight:600; box-shadow:0 2px 8px rgba(0,0,0,0.4); max-width:calc(100% - 24px); box-sizing:border-box;';
-      anchor.innerHTML = '<svg viewBox="0 0 24 24" width="13" height="13" fill="#ffb800" style="flex-shrink:0;"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg><span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:180px; color:#ffb800; font-weight:700;">' + pName.slice(0, 24) + '... · ' + pPrice + '</span><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#fff" stroke-width="2.5" style="flex-shrink:0;"><polyline points="9 18 15 12 9 6"/></svg>';
-      anchor.onclick = function(e) {
-        e.stopPropagation();
-        var buyBtn = document.getElementById('btn-buy') || document.querySelector('.btn-buy');
-        if (buyBtn) buyBtn.click();
+    // Drag / Scrubbing suave (mouse + touch)
+    if (barBg) {
+      var dragging = false;
+      var onMove = function(ev) {
+        if (!dragging) return;
+        var cx = ev.clientX !== undefined ? ev.clientX : (ev.touches && ev.touches[0] ? ev.touches[0].clientX : 0);
+        applySeekFromClientX(card, cx);
       };
-      card.appendChild(anchor);
-    }
-
-    // Clique direto no card ou no video alterna reprodução (se não houver onclick inline)
-    if (!card.getAttribute('onclick')) {
-      card.addEventListener('click', function(e) {
-        if (e.target && e.target.closest && e.target.closest('.tt-video-bar') && !e.target.closest('#tt-btn-play')) return;
-        window.toggleTTVideo(e);
+      var onUp = function() {
+        if (!dragging) return;
+        dragging = false;
+        barBg.classList.remove('is-scrubbing');
+        window.removeEventListener('pointermove', onMove);
+        window.removeEventListener('pointerup', onUp);
+      };
+      barBg.addEventListener('pointerdown', function(ev) {
+        ev.stopPropagation();
+        dragging = true;
+        barBg.classList.add('is-scrubbing');
+        applySeekFromClientX(card, ev.clientX);
+        window.addEventListener('pointermove', onMove);
+        window.addEventListener('pointerup', onUp);
       });
     }
 
-    // Autoplay automático do vídeo da descrição ao rolar na tela (Padrão TikTok Shop)
+    // Fechar fullscreen com ESC
+    document.addEventListener('keydown', function(ev) {
+      if (ev.key === 'Escape' && card.classList.contains('tt-fs-expanded')) {
+        window.toggleTTFullscreen();
+      }
+    });
+
+    // Pausa quando o usuário rolar para fora da tela
     if ('IntersectionObserver' in window) {
-      var descVidObserver = new IntersectionObserver(function(entries) {
+      var obs = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            if (video._userPaused) return; // Respeita a pausa manual do usuário
-            video.muted = true;
-            var p = video.play();
-            if (p !== undefined && typeof p.then === 'function') {
-              p.then(function() {
-                if (card) card.classList.add('is-playing');
-                if (centerPlay) centerPlay.style.display = 'none';
-                if (iconPlay) iconPlay.style.display = 'none';
-                if (iconPause) iconPause.style.display = 'block';
-              }).catch(function() {});
-            }
-          } else {
+          if (!entry.isIntersecting && !video.paused && !card.classList.contains('tt-fs-expanded')) {
             video.pause();
-            if (card) card.classList.remove('is-playing');
-            if (centerPlay) centerPlay.style.display = 'flex';
-            if (iconPlay) iconPlay.style.display = 'block';
-            if (iconPause) iconPause.style.display = 'none';
+            syncPlayState(card, false);
           }
         });
-      }, { threshold: 0.25 });
-      descVidObserver.observe(card || video);
+      }, { threshold: 0.1 });
+      obs.observe(card);
     }
 
-    var curTime = card.querySelector('#tt-cur-time');
-    var durTime = card.querySelector('#tt-dur-time');
-    var fill = card.querySelector('#tt-progress-fill');
-    var iconPlay = card.querySelector('#tt-icon-play');
-    var iconPause = card.querySelector('#tt-icon-pause');
+    video.addEventListener('loadedmetadata', function() {
+      if (durTime && isFinite(video.duration) && video.duration > 0) {
+        durTime.textContent = fmtDuration(video.duration);
+      }
+    });
 
-    function fmt(s) {
-      if (isNaN(s)) return '00:00';
-      var m = Math.floor(s / 60);
-      var sec = Math.floor(s % 60);
-      return (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
+    if (video.readyState >= 1 && durTime && isFinite(video.duration) && video.duration > 0) {
+      durTime.textContent = fmtDuration(video.duration);
     }
 
     video.addEventListener('timeupdate', function() {
-      if (curTime) curTime.textContent = fmt(video.currentTime);
-      if (isFinite(video.duration) && video.duration > 0 && fill) {
-        fill.style.width = ((video.currentTime / video.duration) * 100) + '%';
+      if (curTime) curTime.textContent = fmtCurrent(video.currentTime);
+      if (isFinite(video.duration) && video.duration > 0) {
+        updateProgressVisual(card, (video.currentTime / video.duration) * 100);
       }
     });
 
-    video.addEventListener('loadedmetadata', function() {
-      if (durTime && isFinite(video.duration)) {
-        var m = Math.floor(video.duration / 60);
-        var sec = Math.floor(video.duration % 60);
-        durTime.textContent = (m < 10 ? '0' : '') + m + ':' + (sec < 10 ? '0' : '') + sec;
-      }
-    });
+    video.addEventListener('play', function() { syncPlayState(card, true); });
+    video.addEventListener('pause', function() { syncPlayState(card, false); });
 
     video.addEventListener('ended', function() {
-      card.classList.remove('is-playing');
-      if (iconPlay) iconPlay.style.display = 'block';
-      if (iconPause) iconPause.style.display = 'none';
-      if (fill) fill.style.width = '0%';
+      syncPlayState(card, false);
+      updateProgressVisual(card, 0);
+      if (curTime) curTime.textContent = '00:00';
     });
   }
 

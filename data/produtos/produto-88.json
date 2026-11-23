@@ -1,0 +1,898 @@
+{
+  "id": 88,
+  "title": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social - Stone Shop",
+  "meta_description": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social com 80% OFF. Apenas R$170,05. Frete grátis.",
+  "product_title": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social",
+  "slider_imgs": [
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cf0dmr4f",
+      "alt": "Conjunto Alfaiataria - Slide 1"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp1dkz4d",
+      "alt": "Conjunto Alfaiataria - Slide 2"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn1ojcy17",
+      "alt": "Conjunto Alfaiataria - Slide 3"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp46pv30",
+      "alt": "Conjunto Alfaiataria - Slide 4"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp2s5fc9",
+      "alt": "Conjunto Alfaiataria - Slide 5"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn1lqnt25",
+      "alt": "Conjunto Alfaiataria - Slide 6"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdrk9mvildx541",
+      "alt": "Conjunto Alfaiataria - Slide 7"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfpf8opa33t315",
+      "alt": "Conjunto Alfaiataria - Slide 8"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjvfug5wtrepe4",
+      "alt": "Conjunto Alfaiataria - Slide 9"
+    },
+    {
+      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2m8zm98",
+      "alt": "Conjunto Alfaiataria - Slide 10"
+    }
+  ],
+  "discount_badge": "-80%",
+  "price_int": "170",
+  "price_cents": ",05",
+  "price_original": "R$ 850,25",
+  "installment_text": "2x R$ 85,03",
+  "installment_highlight": "sem juros",
+  "coupon_main": "80% OFF",
+  "coupon_bonus": "",
+  "rating_score": "5.0",
+  "rating_count": "(65)",
+  "sold_count": "1.350 vendidos",
+  "frete_original": "R$ 15,60",
+  "reviews_header": "Avaliações dos clientes (65)",
+  "reviews_avg": "5,0",
+  "reviews": [
+    {
+      "name": "M**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_17.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "15/02",
+      "variation": "Verde Militar",
+      "date_line": "15/02 · Verde Militar",
+      "comment": "Eu já tinha comprado o cinza e agora pedi essa cor Caqui, pq ficou caimento lindo.",
+      "photos": [
+        "../img/review-88-real-1.jpg?v=1795147990000",
+        "../img/review-88-real-2.jpg?v=1795147990000"
+      ]
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_18.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Branco",
+      "date_line": "14/02 · Branco",
+      "comment": "Material de alta qualidade, acabamento impecável sem cheiro forte de borracha. Perfeito para usar o dia todo sem cansar os pés.",
+      "photos": [
+        "../img/review-88-real-3.jpg?v=1795147990000"
+      ]
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_19.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Marinho",
+      "date_line": "12/02 · Marinho",
+      "comment": "Muito bom o conjunto, o tamanho é fiel às descrições, e o tecido superou minhas expectativas.",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Cinza Claro",
+      "date_line": "11/02 · Cinza Claro",
+      "comment": "Lindo conjunto podem comprar sem medo, tecido maravilhoso ótimo acabamento, GG ficou perfeito tenho 1,83cm de altura",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Chumbo",
+      "date_line": "10/02 · Chumbo",
+      "comment": "Conjunto perfeitooooo! Uso 42/44, peguei o GG e a calça ficou larga, mas de resto tudo lindo.",
+      "photos": []
+    },
+    {
+      "name": "I**s B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Laranja Queimado",
+      "date_line": "08/02 · Laranja Queimado",
+      "comment": "Meninas é lindo. Realmente correspondente ao tamanho e as medidas disponíveis no anúncio, comprem sem medo, muito confortável, vestiu perfeitamente, uso 44 de calça jeans",
+      "photos": []
+    },
+    {
+      "name": "P**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "Rosê",
+      "date_line": "07/02 · Rosê",
+      "comment": "Maravilhoso!\nJá é o terceiro conjunto que adquiro.\nA calça fica grande, mas eu ajusto com a costureira.\nRecomendo",
+      "photos": []
+    },
+    {
+      "name": "B**a M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "05/02",
+      "variation": "Bege",
+      "date_line": "05/02 · Bege",
+      "comment": "Muito confortável! \nO tecido ele tem ótima qualidade, acabamento bem conservado.",
+      "photos": []
+    },
+    {
+      "name": "T**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Marrom",
+      "date_line": "04/02 · Marrom",
+      "comment": "Simplesmente perfeitooo, uso 36/38 e pedi P.. a calça ficou ótimo na cintura, mas tive que fazer a barra e mandar dar uma acinturada no colete. O tecido é ótimo também, comprem sem medooo",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Preto",
+      "date_line": "02/02 · Preto",
+      "comment": "Só comprem, melhor conjunto da vida! Já encomendei mais 4 de tão lindo para usar como uniforme  \nTenho 1,59 (fiz apenas a barra) \nComprei M (e eu uso TAM 40 de calça e ficou perfeita sem me apertar ou ficar grudada)",
+      "photos": []
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Marsala",
+      "date_line": "01/02 · Marsala",
+      "comment": "Tecido MARAVILHOSO, super chic. Porem a calça ficou muiiiito folgada e grande (por isso to c outra na foto, comprei o conjunto) kkk visto M, mas ela é longa dms olhe q tenho 1,65. Vou ajeitar. Fora isso incrível e pretendo comprar mais cores.",
+      "photos": []
+    },
+    {
+      "name": "C**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Caramelo",
+      "date_line": "29/01 · Caramelo",
+      "comment": "Entrega super rápida.\nComprei para usar como uniforme e amei. \nPeso 66 Kg e tenho 1,62 de altura, pedi o M mas tive que fazer alguns ajustes.",
+      "photos": []
+    },
+    {
+      "name": "L**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Royal",
+      "date_line": "28/01 · Royal",
+      "comment": "Amei! Já é a segunda vez que compro, tecido exelente, caimento mt bom, a cor linda!",
+      "photos": []
+    },
+    {
+      "name": "M**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "26/01",
+      "variation": "Verde Neon",
+      "date_line": "26/01 · Verde Neon",
+      "comment": "Comprei para presentear e a pessoa amou! Super resistente, sola antiderrapante e acabamento de primeira linha. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "25/01",
+      "variation": "Caqui",
+      "date_line": "25/01 · Caqui",
+      "comment": "Melhor conjunto social comprado aqui, já é o segundo que comprei. Pego sempre GG fica perfeito. Tenho 1.71 e uns 99 kg, quadril largo.",
+      "photos": []
+    },
+    {
+      "name": "G**a P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "23/01",
+      "variation": "Verde Militar",
+      "date_line": "23/01 · Verde Militar",
+      "comment": "O conjunto é maravilhoso, tescido ótimo, veste super bem peguei o P e peso 63kg",
+      "photos": []
+    },
+    {
+      "name": "F**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Branco",
+      "date_line": "21/01 · Branco",
+      "comment": "Belíssimo! Ainda não usei! \nRealmente a forma é grande, eu uso, em geral, M e o p ficou ótimo.",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_34.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "20/01",
+      "variation": "Marinho",
+      "date_line": "20/01 · Marinho",
+      "comment": "Muito lindo e estiloso! A cor é exatamente como na foto do anúncio. Entrega rápida e atendimento nota 10 da Stone Shop.",
+      "photos": []
+    },
+    {
+      "name": "V**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "18/01",
+      "variation": "Cinza Claro",
+      "date_line": "18/01 · Cinza Claro",
+      "comment": "Gente, é perfeito! A qualidade é incrível e te deixa muito elegante. Só preciso fazer a barra da calça, mas já sabia disso quando comprei, pois meço 1,56m kkkk",
+      "photos": []
+    },
+    {
+      "name": "R**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_36.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "17/01",
+      "variation": "Chumbo",
+      "date_line": "17/01 · Chumbo",
+      "comment": "O tecido é de ótima qualidade e o conjunto muito lindo. A calça é bem longa, mas é só diminuir um pouco o comprimento.",
+      "photos": []
+    },
+    {
+      "name": "A**a N**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_37.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "15/01",
+      "variation": "Laranja Queimado",
+      "date_line": "15/01 · Laranja Queimado",
+      "comment": "Eu amei o conjunto, comprei tamanho M, vou ter que fazer a barra, pois ficou um pouco grande. Mais o conjunto deu certinho. Só comprem, vale muito a pena.",
+      "photos": []
+    },
+    {
+      "name": "I**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_38.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "13/01",
+      "variation": "Rosê",
+      "date_line": "13/01 · Rosê",
+      "comment": "Tecido ótimo!\nUso 34-36 e o colete ficou um pouco grande, mas a calça ficou enorme",
+      "photos": []
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_39.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/01",
+      "variation": "Bege",
+      "date_line": "12/01 · Bege",
+      "comment": "O colete deu na medidamais a calça ficou grande. Valeu a pena a compra. Vou apertar um pouco a calça e fazer a barra. Tenho 1,5cm de altura e 58kg",
+      "photos": []
+    },
+    {
+      "name": "N**a R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_40.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/01",
+      "variation": "Marrom",
+      "date_line": "10/01 · Marrom",
+      "comment": "Amei demais e a entrega super rápida. Obg.",
+      "photos": []
+    },
+    {
+      "name": "T**a L**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_41.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/01",
+      "variation": "Preto",
+      "date_line": "08/01 · Preto",
+      "comment": "O tecido é ótimo, muito boa qualidade. Optei por usar as peças separadas, pois juntas remete a um uniforme. Visto 36 e precisei mandar ajustar. Para altas, tenho 1,70 e precisei fazer 2 dedos de barra. \n\nQueria que tivesse ele com outras opções de colete ou blusinha",
+      "photos": []
+    },
+    {
+      "name": "D**a F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_42.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "06/01",
+      "variation": "Marsala",
+      "date_line": "06/01 · Marsala",
+      "comment": "Chegou muito rápido e é lindo! Peso 58 e tenho 1,65 de altura e o tamanho p ficou muito bom \nSó a barra um pouco comprida mas ficou ótimo, material muito bom \nRecomendo, veste muito bem no corpo",
+      "photos": []
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_43.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "05/01",
+      "variation": "Caramelo",
+      "date_line": "05/01 · Caramelo",
+      "comment": "O conjunto é lindo veste super bem tecido grosso não esquenta muito eu tenho um preto e vinho visto 42 e pedi o G vestiu super bem já quero pedir outro",
+      "photos": []
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_44.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "03/01",
+      "variation": "Royal",
+      "date_line": "03/01 · Royal",
+      "comment": "Excelente aquisição! Acabamento muito bom. Custo benefício maravilhoso. Eu comprei tamanho P e farei ajustes mínimos na cava da axila e cintura por ser magrinha.",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_45.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "02/01",
+      "variation": "Verde Neon",
+      "date_line": "02/01 · Verde Neon",
+      "comment": "Eu comprei G porque sou alta e fiquei preocupada com a barra, mas ficou ótimo, poderei usar com salto tranquilamente. Eu tenho 1,70 de altura. Vou ter que ajustar apenas a cintura, amei minha compra, chegou bem antes da data, entrega super rápida. A cor igual do anúncio.",
+      "photos": []
+    },
+    {
+      "name": "L**u D**e",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_46.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "15/02",
+      "variation": "Caqui",
+      "date_line": "15/02 · Caqui",
+      "comment": "Muito lindo a calça ficou um pouquinho folgada mais do jeito que gosto, a parte de cima ficou ótima, só preciso fazer a barra.",
+      "photos": []
+    },
+    {
+      "name": "M**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_47.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Verde Militar",
+      "date_line": "14/02 · Verde Militar",
+      "comment": "Perfeito, tenho 1,58cm e peso 70kg, a calça ficou um pouquinho folgada e grande. O tecido é encorpado mas não é quente. Ideal para os 40 graus.",
+      "photos": []
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_48.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Branco",
+      "date_line": "12/02 · Branco",
+      "comment": "Chegou tudo certunho e rápido, veio no tamanho certo e a cor é linda, não consegui tirar a foto da cor real, mas é perfeita",
+      "photos": []
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_49.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Marinho",
+      "date_line": "11/02 · Marinho",
+      "comment": "Muito lindo e estiloso! A cor é exatamente como na foto do anúncio. Entrega rápida e atendimento nota 10 da Stone Shop.",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_50.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Cinza Claro",
+      "date_line": "10/02 · Cinza Claro",
+      "comment": "Comprei para presentear e a pessoa amou! Super resistente, sola antiderrapante e acabamento de primeira linha. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_51.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/02",
+      "variation": "Chumbo",
+      "date_line": "08/02 · Chumbo",
+      "comment": "Segui a tabela de medidas e deu certo com que eu queria (caimento com folga). A barra vai ter q fazer mas isso é normal para pessoal de 1,50 como eu",
+      "photos": []
+    },
+    {
+      "name": "I**s B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_52.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "07/02",
+      "variation": "Laranja Queimado",
+      "date_line": "07/02 · Laranja Queimado",
+      "comment": "Melhor compra que já fiz\nQualidade impecável, cor linda, sem defeitos\nEntrega rápida. Comprarei mais com toda certeza \nParabéns  😍✨",
+      "photos": []
+    },
+    {
+      "name": "P**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_53.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "05/02",
+      "variation": "Rosê",
+      "date_line": "05/02 · Rosê",
+      "comment": "Chegou dentro do prazo, bem embalado e o conjunto é lindo. Superou a minha expectativa!",
+      "photos": []
+    },
+    {
+      "name": "B**a M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_54.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "04/02",
+      "variation": "Bege",
+      "date_line": "04/02 · Bege",
+      "comment": "Maravilhada com a qualidade! Tenho 1,66 de altura e 73 kilos o M coube perfeitamente",
+      "photos": []
+    },
+    {
+      "name": "T**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_55.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "02/02",
+      "variation": "Marrom",
+      "date_line": "02/02 · Marrom",
+      "comment": "O conjunto é PERFEITO! Muita qualidade. Atentem-se as suas medidas. Achei o tamanho G grande, mas eu gosto da calça mais folgada. Apenas comprem.",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_56.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "01/02",
+      "variation": "Preto",
+      "date_line": "01/02 · Preto",
+      "comment": "Tenho 1,69 e não ficou curto\nAmei a minha compra.. com certeza irei comprar de outras cores!",
+      "photos": []
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_57.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "29/01",
+      "variation": "Marsala",
+      "date_line": "29/01 · Marsala",
+      "comment": "Conforto surreal! Parece que está pisando em nuvens, super macio e anatômico. O tamanho deu certinho seguindo a tabela da loja.",
+      "photos": []
+    },
+    {
+      "name": "C**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_58.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "28/01",
+      "variation": "Caramelo",
+      "date_line": "28/01 · Caramelo",
+      "comment": "Eu quero todas as cores! Já comprei 3 e a entrega é muito rápida. Qualidade excelente, é até inacreditável pelo valor!!  ❤️",
+      "photos": []
+    },
+    {
+      "name": "L**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_59.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "26/01",
+      "variation": "Royal",
+      "date_line": "26/01 · Royal",
+      "comment": "Muito lindo, social, confortável e elegante. Minha altura é 1,62 e peso 60k. Ficou perfeito.\nTenho silicone, então ficou um pouco mais justo nos seios, mas o tecido cede um pouco no corpo. \n\nPrefeito!",
+      "photos": []
+    },
+    {
+      "name": "M**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_60.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "25/01",
+      "variation": "Verde Neon",
+      "date_line": "25/01 · Verde Neon",
+      "comment": "O conjunto é lindo, o tecido elegante, e o corte muito bem estruturado. Valeu cada centavo investido!",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_61.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "23/01",
+      "variation": "Caqui",
+      "date_line": "23/01 · Caqui",
+      "comment": "É lindo demais! Perfeito !\nTecido encorpado de primeira linha , o tam G ficou perfeito para mim Tenho 1,65 de altura e peso 75kg .",
+      "photos": []
+    },
+    {
+      "name": "G**a P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_62.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "21/01",
+      "variation": "Verde Militar",
+      "date_line": "21/01 · Verde Militar",
+      "comment": "Conforto surreal! Parece que está pisando em nuvens, super macio e anatômico. O tamanho deu certinho seguindo a tabela da loja.",
+      "photos": []
+    },
+    {
+      "name": "F**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_63.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "20/01",
+      "variation": "Branco",
+      "date_line": "20/01 · Branco",
+      "comment": "Meu altura é 1.73 e a calça ficou grande no cumprimento. Mulheres altas podem comprar sem medo de ficar pega franga. Vestiu bem, tecido leve. E conforme a imagem do anúncio. Chegou antes do prazo. Recomendo a comprar!",
+      "photos": []
+    },
+    {
+      "name": "P**a S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_64.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "18/01",
+      "variation": "Marinho",
+      "date_line": "18/01 · Marinho",
+      "comment": "O conjunto é lindooo! Já comprei o bege e agora o preto. Chega rápido! Vale muito a pena",
+      "photos": []
+    },
+    {
+      "name": "V**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_65.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "17/01",
+      "variation": "Cinza Claro",
+      "date_line": "17/01 · Cinza Claro",
+      "comment": "Gostei demais do conjunto, pedi o M. Geralmente uso M ou G, só o seio que meu tamanho é 42 que ficou na medida. O restante ficou perfeito! Caimento e tamanho.",
+      "photos": []
+    },
+    {
+      "name": "R**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_66.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "15/01",
+      "variation": "Chumbo",
+      "date_line": "15/01 · Chumbo",
+      "comment": "G, M, P perfeitos Uma pena que não faz nota fiscal, pois gostaria de comprar uma grande quantidade  ❤️",
+      "photos": []
+    },
+    {
+      "name": "A**a N**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_67.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "13/01",
+      "variation": "Laranja Queimado",
+      "date_line": "13/01 · Laranja Queimado",
+      "comment": "Tecido de terno, excelente! Bem costurado, confortável. A cor marrom é  um tom quente e profundo. O colete serviu perfeitamente, mas a calça será necessário apertar largura e fazer barra.",
+      "photos": []
+    },
+    {
+      "name": "I**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_68.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/01",
+      "variation": "Rosê",
+      "date_line": "12/01 · Rosê",
+      "comment": "Chegou rapidinho, eu amei o tecido, pedi P e ficou um pouco grande porque sou baixinha, mas nada que a costureira não resolva rsrs, tenho 1,50 e peso 56kg. Ótima qualidade!",
+      "photos": []
+    },
+    {
+      "name": "B**z L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_69.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/01",
+      "variation": "Bege",
+      "date_line": "10/01 · Bege",
+      "comment": "Tecido muito bom, envio super rápido. Ficou enorme em mim, visto 40, gosto um pouco folgado, por isso peguei G. Mas, ficou enorme, seria um P p qm veste 40. Vou mandar fazer ajuste",
+      "photos": []
+    },
+    {
+      "name": "N**a R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_70.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "08/01",
+      "variation": "Marrom",
+      "date_line": "08/01 · Marrom",
+      "comment": "Comprei para presentear e a pessoa amou! Super resistente, sola antiderrapante e acabamento de primeira linha. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "T**a L**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_71.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "06/01",
+      "variation": "Preto",
+      "date_line": "06/01 · Preto",
+      "comment": "Eu visto G, porém achei que o M ficaria melhor.\nVou comprar mais uns 3",
+      "photos": []
+    },
+    {
+      "name": "D**a F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_72.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "05/01",
+      "variation": "Marsala",
+      "date_line": "05/01 · Marsala",
+      "comment": "O conjunto é surreal na qualidade e na beleza, comprei o tamanho P e ficou muito bom. A entrega foi rápida. Ameiii!!!!",
+      "photos": []
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_73.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "03/01",
+      "variation": "Caramelo",
+      "date_line": "03/01 · Caramelo",
+      "comment": "Que conjunto perfeito! \nJá quero o branco e o preto também. \nSó comprem!!!",
+      "photos": []
+    },
+    {
+      "name": "S**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_74.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "02/01",
+      "variation": "Royal",
+      "date_line": "02/01 · Royal",
+      "comment": "Lindo, tecido de primeira qualidade, incrível \nCorte muito bom, já quero outros",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_75.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "15/02",
+      "variation": "Verde Neon",
+      "date_line": "15/02 · Verde Neon",
+      "comment": "Conjunto maravilhoso, tecido muito bom, costuras boas, tenho 1,70 e 60 kg e comprei um M, mas precisarei mandar apertar.",
+      "photos": []
+    },
+    {
+      "name": "L**u D**e",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_1.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "14/02",
+      "variation": "Caqui",
+      "date_line": "14/02 · Caqui",
+      "comment": "Usei separado da calça, pq a calça é bem comprida, mas a qualidade é muito boa.",
+      "photos": []
+    },
+    {
+      "name": "M**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_2.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "12/02",
+      "variation": "Verde Militar",
+      "date_line": "12/02 · Verde Militar",
+      "comment": "Estou impressionada com este conjunto! Caimento ótimo, tecido pesado. Lindo mesmo. Peso 69kg e tenho 1,66m de altura. O tamanho G ficou ótimo, vou precisar só dar uma pequena pinça na cintura. Valeu a pena demais!",
+      "photos": []
+    },
+    {
+      "name": "A**e M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_3.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "11/02",
+      "variation": "Branco",
+      "date_line": "11/02 · Branco",
+      "comment": "Material de alta qualidade, acabamento impecável sem cheiro forte de borracha. Perfeito para usar o dia todo sem cansar os pés.",
+      "photos": []
+    },
+    {
+      "name": "J**e F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Marinho",
+      "date_line": "10/02 · Marinho",
+      "comment": "Muito lindo e estiloso! A cor é exatamente como na foto do anúncio. Entrega rápida e atendimento nota 10 da Stone Shop.",
+      "photos": []
+    },
+    {
+      "name": "C**e B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_5.jpg?v=1795410323540",
+      "stars": 4,
+      "date": "08/02",
+      "variation": "Cinza Claro",
+      "date_line": "08/02 · Cinza Claro",
+      "comment": "Comprei tamanho G, porém ficou um pouco apertado, uso tamanho 46 no busto, mas dependendo da combinação que fizer da p usar a parte de cima aberta, a calça ficou na medida. Uso tamanho 44 de calça. A barra ficou bem grande. É um excelente tecido,  parece aquele marrant.  Acabamento perfeito. Gostei demais. Foi uma excelente compra.",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg?v=1795410323540",
+      "stars": 5,
+      "date": "07/02",
+      "variation": "Chumbo",
+      "date_line": "07/02 · Chumbo",
+      "comment": "Elegante, veste muito bem. \nÓtimo caimento. \nMeu quadril é largo mesmo assim ficou bom.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Tecido",
+      "value": "Alfaiataria Laris(Tipo terno)",
+      "hidden": false
+    },
+    {
+      "label": "Composição",
+      "value": "93%Poliester+7%elastano",
+      "hidden": false
+    },
+    {
+      "label": "Elasticidade",
+      "value": "Média / Alta elasticidade",
+      "hidden": false
+    },
+    {
+      "label": "Estilo",
+      "value": "Elegante, Casual e Festa",
+      "hidden": false
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/kzxi1d.mp4",
+    "poster": "../img/produto-88-1.jpg",
+    "duration": "0:30"
+  },
+  "size_guide_html": "<div class=\"size-guide-block\">\n<h3 class=\"about-subtitle\">Guia de Tamanhos (cm)</h3>\n<div class=\"size-guide-card\">\n<table class=\"size-guide-table\">\n<thead>\n<tr>\n<th>Tamanho</th>\n<th>Manequim</th>\n<th>Busto</th>\n<th>Cintura</th>\n<th>Quadril</th>\n</tr>\n</thead>\n<tbody>\n<tr><td><strong>P</strong></td><td>36 - 38</td><td>86 - 90 cm</td><td>68 - 72 cm</td><td>94 - 98 cm</td></tr>\n<tr><td><strong>M</strong></td><td>40</td><td>92 - 96 cm</td><td>74 - 78 cm</td><td>100 - 104 cm</td></tr>\n<tr><td><strong>G</strong></td><td>42</td><td>98 - 102 cm</td><td>80 - 84 cm</td><td>106 - 110 cm</td></tr>\n<tr><td><strong>GG</strong></td><td>44</td><td>104 - 108 cm</td><td>86 - 90 cm</td><td>112 - 116 cm</td></tr>\n<tr><td><strong>Plus G1</strong></td><td>46 - 48</td><td>110 - 116 cm</td><td>92 - 98 cm</td><td>118 - 124 cm</td></tr>\n<tr><td><strong>Plus G2</strong></td><td>50 - 52</td><td>118 - 124 cm</td><td>100 - 106 cm</td><td>126 - 132 cm</td></tr>\n</tbody>\n</table>\n</div>\n</div>",
+  "description_html": "Conjunto feminino de trabalho elegante em tecido alfaiataria premium Laris (tipo terno). Peça estruturada de caimento impecável para ambientes profissionais e eventos.<br/><br/>\n              • <strong>Composição:</strong> 93% Poliéster, 7% Elastano<br/>\n              • <strong>Acabamento:</strong> Botões frontais funcionais na blusa e detalhes refinados<br/>\n              • <strong>Caimento:</strong> Modelagem clássica com cintura ajustada e calça reta<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Conjunto Alfaiataria\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-88.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n              Escolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
+  "related": [
+    {
+      "href": "produto-91.html",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma357gbfhypu7c",
+      "alt": "Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir Pipoca PPI04V Philco",
+      "name": "Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir Pipoca PPI04V Philco",
+      "price": "R$ 643,08",
+      "price_original": "",
+      "discount": "80% OFF",
+      "sold": "215 vendido(s)"
+    },
+    {
+      "href": "produto-32.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rccw-ltobhzgc83yx8a",
+      "alt": "Chuveiro Acqua Duo Lorenzetti BIVOLT",
+      "name": "Chuveiro Acqua Duo Lorenzetti BIVOLT",
+      "price": "R$ 69,80",
+      "price_original": "R$ 497,90",
+      "discount": "86% OFF",
+      "sold": "6978 vendido(s)"
+    },
+    {
+      "href": "produto-74.html",
+      "img": "https://meu-pedido.sbs/images/f952a003201ab6148b5b728e45a5dd60_1774470498.webp",
+      "alt": "Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026",
+      "name": "Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026",
+      "price": "R$ 129,90",
+      "price_original": "R$ 597,90",
+      "discount": "78% OFF",
+      "sold": "5331 vendido(s)"
+    },
+    {
+      "href": "produto-17.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf",
+      "alt": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "name": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+      "price": "R$ 89,00",
+      "price_original": "R$ 399,90",
+      "discount": "78% OFF",
+      "sold": "5668 vendido(s)"
+    },
+    {
+      "href": "produto-9.html",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
+      "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
+      "price": "R$ 92,80",
+      "price_original": "R$ 754,44",
+      "discount": "88% OFF",
+      "sold": "10241 vendido(s)"
+    }
+  ],
+  "produto_atual": {
+    "id": 88,
+    "nome": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social",
+    "preco": 170.05,
+    "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cf0dmr4f",
+    "imagens": [
+      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cf0dmr4f",
+      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp1dkz4d",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn1ojcy17",
+      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp46pv30",
+      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp2s5fc9",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn1lqnt25",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdrk9mvildx541",
+      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfpf8opa33t315",
+      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjvfug5wtrepe4",
+      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2m8zm98"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2m8zm98",
+            "nome": "Verde Militar"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2nnk227",
+            "nome": "Branco"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcwjwhq2ibea97",
+            "nome": "Marinho"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2w2yq54",
+            "nome": "Cinza Claro"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2uoea9e",
+            "nome": "Chumbo"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rh3nn2t9tu7d",
+            "nome": "Laranja Queimado"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdrk9mvimshl50",
+            "nome": "Rosê"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rhcp5hamux03",
+            "nome": "Bege"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rhcp5hc1fd69",
+            "nome": "Marrom"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9rhcp5hdfzt17",
+            "nome": "Preto"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdrk9mvio7214a",
+            "nome": "Marsala"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfpf8op9w2yo54",
+            "nome": "Caramelo"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mi3f5o6zemf6cc",
+            "nome": "Royal"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mi3f5o6z670m90",
+            "nome": "Verde Neon"
+          },
+          {
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cp5lab48",
+            "nome": "Caqui"
+          }
+        ]
+      },
+      "tamanho": {
+        "label": "Tamanho",
+        "opcoes": [
+          "P",
+          "M",
+          "G",
+          "GG",
+          "Plus G1",
+          "Plus G2"
+        ]
+      }
+    }
+  },
+  "extra_scripts": []
+}
