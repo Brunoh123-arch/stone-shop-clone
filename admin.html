@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Stone Shop Core | Painel Executivo & Central de Vendas</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM EXECUTIVO 2026: DEEP ONYX (MOBILE-FIRST HIGH-END)
+       ========================================================================== */
+    :root {
+      --bg-base: #07090e;
+      --bg-card: #0e131f;
+      --bg-card-hover: #141c2e;
+      --bg-subtle: #192338;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(16, 185, 129, 0.5);
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --primary: #10b981;
+      --primary-glow: rgba(16, 185, 129, 0.25);
+      --primary-dark: #059669;
+      
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.25);
+      
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --info: #0ea5e9;
+      --tiktok: #fe2c55;
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      
+      --bottom-nav-height: 64px;
+      --header-height: 64px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      min-height: 100vh;
+      width: 100%;
+      overflow-x: hidden;
+      line-height: 1.5;
+      padding-bottom: calc(var(--bottom-nav-height) + 24px);
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        padding-bottom: 32px;
+      }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-full);
+    }
+
+    /* Utilitários */
+    .container {
+      width: 100%;
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 9, 14, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1360px;
+      margin: 0 auto;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #10b981, #047857);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+
+    .brand-logo img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .brand-title {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-badge {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 2px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 8px var(--primary);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill-cloaker {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .pill-cloaker:hover {
+      background: rgba(16, 185, 129, 0.2);
+    }
+
+    .pill-cloaker.mode-aramis {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: rgba(239, 68, 68, 0.3);
+      color: #f87171;
+    }
+
+    .btn-top-icon {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .btn-top-icon:hover {
+      background: var(--bg-subtle);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Desktop Navigation Tabs */
+    .desktop-nav {
+      display: none;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 4px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      gap: 4px;
+    }
+
+    @media (min-width: 1024px) {
+      .desktop-nav {
+        display: flex;
+      }
+    }
+
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .nav-btn.active {
+      color: #fff;
+      background: var(--primary-dark);
+      box-shadow: 0 2px 10px var(--primary-glow);
+    }
+
+    .nav-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+    }
+
+    .nav-btn.active .nav-badge {
+      background: #fff;
+      color: var(--bg-base);
+    }
+
+    /* Mobile Bottom Navigation */
+    .mobile-bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      height: var(--bottom-nav-height);
+      background: rgba(14, 19, 31, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 4px;
+    }
+
+    @media (min-width: 1024px) {
+      .mobile-bottom-nav {
+        display: none;
+      }
+    }
+
+    .b-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      flex: 1;
+      height: 100%;
+    }
+
+    .b-nav-item svg {
+      width: 20px;
+      height: 20px;
+      transition: all 0.2s ease;
+    }
+
+    .b-nav-item.active {
+      color: var(--primary);
+    }
+
+    .b-nav-item.active svg {
+      transform: translateY(-2px);
+      stroke: var(--primary);
+    }
+
+    .b-nav-badge {
+      position: absolute;
+      top: 6px;
+      right: calc(50% - 16px);
+      font-size: 9px;
+      font-weight: 800;
+      background: var(--primary);
+      color: var(--bg-base);
+      border-radius: var(--radius-full);
+      padding: 0 5px;
+      line-height: 14px;
+    }
+
+    /* Views Container */
+    .view-section {
+      display: none;
+      animation: fadeIn 0.2s ease forwards;
+    }
+
+    .view-section.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* KPI Cards */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .kpi-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .kpi-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .kpi-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .kpi-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+    }
+
+    .kpi-value {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text-main);
+    }
+
+    .kpi-card.kpi-green .kpi-value {
+      color: #34d399;
+    }
+
+    .kpi-footer {
+      font-size: 11px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Cards e Containers Padrão */
+    .panel-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+
+    .panel-header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .panel-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .panel-title {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Search & Filter Bar */
+    .search-filter-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .search-input-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input-wrap svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      height: 44px;
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 0 16px 0 42px;
+      color: var(--text-main);
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    .category-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+
+    .category-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-pill {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .cat-pill:hover, .cat-pill.active {
+      background: var(--primary);
+      color: var(--bg-base);
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Product Cards Mobile-First */
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .product-card {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      border-color: rgba(255, 255, 255, 0.16);
+    }
+
+    .product-card-top {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .product-thumb {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--radius-md);
+      object-fit: cover;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .product-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .product-id-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+
+    .product-badge-sales {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .product-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .product-price-editor {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 8px;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .price-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .price-input-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+
+    .price-input {
+      height: 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0 8px;
+      color: #34d399;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      outline: none;
+      width: 100%;
+    }
+
+    .price-input.orig {
+      color: var(--text-muted);
+    }
+
+    .price-input:focus {
+      border-color: var(--primary);
+    }
+
+    .btn-save-price {
+      height: 32px;
+      padding: 0 12px;
+      background: var(--primary);
+      border: none;
+      border-radius: 6px;
+      color: var(--bg-base);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+      align-self: flex-end;
+    }
+
+    .btn-save-price:hover {
+      background: #059669;
+    }
+
+    .product-card-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-top: 4px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .btn-action-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-pill:hover {
+      background: var(--bg-card-hover);
+      color: var(--text-main);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-action-pill.tiktok {
+      color: #fe2c55;
+      background: rgba(254, 44, 85, 0.1);
+      border-color: rgba(254, 44, 85, 0.2);
+    }
+
+    .btn-action-pill.tiktok:hover {
+      background: rgba(254, 44, 85, 0.2);
+    }
+
+    /* Switch Component */
+    .switch-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .switch-track {
+      width: 36px;
+      height: 20px;
+      background: var(--bg-subtle);
+      border-radius: var(--radius-full);
+      position: relative;
+      transition: background 0.2s ease;
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    .switch-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.2s ease;
+    }
+
+    .switch-track.on {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .switch-track.on .switch-thumb {
+      transform: translateX(16px);
+      background: #000;
+    }
+
+    /* Pedidos & CRM */
+    .orders-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .order-card {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .order-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .order-id {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--text-main);
+    }
+
+    .order-status {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .order-status.status-pago {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .order-status.status-pendente {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .order-customer-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 13px;
+    }
+
+    .order-customer-name {
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .order-customer-details {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .order-product-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .order-product-name {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .order-product-price {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 800;
+      color: #34d399;
+      white-space: nowrap;
+    }
+
+    .order-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-whatsapp-crm {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #128c7e;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      border: none;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .btn-whatsapp-crm:hover {
+      background: #075e54;
+    }
+
+    /* Formulários e Configurações */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .form-grid.two-cols {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .form-control {
+      height: 44px;
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 0 14px;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    .btn-primary-action {
+      height: 44px;
+      background: var(--primary);
+      border: none;
+      border-radius: var(--radius-md);
+      color: var(--bg-base);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .btn-primary-action:hover {
+      background: #059669;
+    }
+
+    /* Modal de PIN */
+    .pin-modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(7, 9, 14, 0.92);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .pin-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      width: 100%;
+      max-width: 360px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      animation: pinCardEntry 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes pinCardEntry {
+      from { opacity: 0; transform: scale(0.94); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .pin-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    .pin-title {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      text-align: center;
+    }
+
+    .pin-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: -12px;
+    }
+
+    .pin-input {
+      width: 100%;
+      height: 48px;
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 8px;
+      color: var(--primary);
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .pin-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px var(--primary-glow);
+    }
+
+    .pin-error-msg {
+      color: var(--danger);
+      font-size: 12px;
+      font-weight: 600;
+      display: none;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10001;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .toast {
+      background: rgba(14, 19, 31, 0.95);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+      animation: toastSlideDown 0.25s ease;
+      color: var(--text-main);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .toast.success {
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+
+    .toast.success .toast-icon {
+      color: #34d399;
+    }
+
+    @keyframes toastSlideDown {
+      from { opacity: 0; transform: translateY(-12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MODAL DE BLOQUEIO / PIN DE SEGURANÇA -->
+  <div id="pinModal" class="pin-modal-overlay">
+    <div class="pin-card">
+      <div class="pin-icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+      </div>
+      <div>
+        <h2 class="pin-title">Stone Shop Core</h2>
+        <p class="pin-desc">Digite o PIN mestre para desbloquear o painel</p>
+      </div>
+      <input type="password" id="pinInput" class="pin-input" maxlength="10" placeholder="••••••" autofocus autocomplete="off">
+      <div id="pinError" class="pin-error-msg">PIN incorreto. Tente novamente.</div>
+      <button class="btn-primary-action" onclick="validarPin()">
+        <span>Acessar Painel</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M5 12h14"></path>
+          <path d="M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="index.html" class="brand" target="_blank" title="Ver Loja ao Vivo">
+        <div class="brand-logo">
+          <img src="logo.png" alt="Stone Shop">
+        </div>
+        <div class="brand-title">
+          <span>STONE SHOP</span>
+          <span class="brand-badge">
+            <span class="status-dot"></span>
+            CORE ADMIN
+          </span>
+        </div>
+      </a>
+
+      <div class="top-actions">
+        <!-- Alternador Rápido de Cloaker -->
+        <button id="btnCloakerToggle" class="pill-cloaker" onclick="alternarCloakerRapido()" title="Alternar Modo da Loja">
+          <span id="cloakerDot" class="status-dot"></span>
+          <span id="cloakerLabel">STONE SHOP (BLACK)</span>
+        </button>
+
+        <a href="index.html" target="_blank" class="btn-top-icon" title="Abrir Loja ao Vivo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+
+        <button class="btn-top-icon" onclick="bloquearPainel()" title="Bloquear Painel">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- DESKTOP NAVIGATION TABS -->
+    <nav class="desktop-nav">
+      <button class="nav-btn active" onclick="trocarAba('pedidos')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+        <span>Pedidos & CRM</span>
+        <span class="nav-badge" id="badgePedidosTop">0</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('catalogo')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+        <span>Catálogo & Preços</span>
+        <span class="nav-badge" id="badgeCatalogoTop">0</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('trafego')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        <span>Tráfego & Cloaker</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('gateway')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+        <span>Gateway & Pix</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('urgencia')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Urgência & Cupons</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('tiktok')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+        <span>TikTok Pixel & CAPI</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('loja')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span>Identidade & SAC</span>
+      </button>
+
+      <button class="nav-btn" onclick="trocarAba('sentinel')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+        <span>Sentinel CDN</span>
+        <span class="nav-badge" id="badgeSentinelTop">141</span>
+      </button>
+    </nav>
+
+    <!-- KPI CARDS EXECUTIVOS -->
+    <section class="kpi-grid">
+      <div class="kpi-card kpi-green">
+        <div class="kpi-header">
+          <span>Faturamento Pix</span>
+          <div class="kpi-icon">💰</div>
+        </div>
+        <div class="kpi-value" id="kpiFaturamento">R$ 0,00</div>
+        <div class="kpi-footer">Pedidos confirmados hoje</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Total Pedidos</span>
+          <div class="kpi-icon">📦</div>
+        </div>
+        <div class="kpi-value" id="kpiTotalPedidos">0</div>
+        <div class="kpi-footer">Registrados no sistema</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Ticket Médio</span>
+          <div class="kpi-icon">📈</div>
+        </div>
+        <div class="kpi-value" id="kpiTicketMedio">R$ 0,00</div>
+        <div class="kpi-footer">Média por pedido gerado</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Modo da Loja</span>
+          <div class="kpi-icon">🛡️</div>
+        </div>
+        <div class="kpi-value" id="kpiModoLoja" style="font-size: 16px; color: #34d399;">STONE SHOP</div>
+        <div class="kpi-footer">Conversão Máxima & Pix</div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 1: PEDIDOS & CRM WHATSAPP
+         ========================================================================== -->
+    <section id="view-pedidos" class="view-section active">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">📦 Gestão de Pedidos & CRM WhatsApp</h2>
+            <p class="panel-subtitle">Acompanhe pedidos em tempo real e recupere compradores com 1 clique no WhatsApp.</p>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="btn-action-pill" onclick="gerarPedidoTeste()">+ Pedido Teste</button>
+            <button class="btn-action-pill" onclick="exportarPedidosCSV()">Exportar CSV</button>
+            <button class="btn-action-pill" onclick="limparPedidos()" style="color:#f87171;">Limpar</button>
+          </div>
+        </div>
+
+        <div class="category-scroll" style="margin-bottom: 14px;">
+          <button class="cat-pill active" onclick="filtrarPedidosStatus('todos', this)">Todos</button>
+          <button class="cat-pill" onclick="filtrarPedidosStatus('pendente', this)">Pix Pendente</button>
+          <button class="cat-pill" onclick="filtrarPedidosStatus('pago', this)">Pix Pago</button>
+        </div>
+
+        <div id="ordersContainer" class="orders-list">
+          <!-- Injetado dinamicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 2: CATÁLOGO & PREÇOS (109 PRODUTOS)
+         ========================================================================== -->
+    <section id="view-catalogo" class="view-section">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">🏷️ Catálogo & Preços Oficiais (<span id="totalProductsCount">109</span>)</h2>
+            <p class="panel-subtitle">Edite preços de venda instantaneamente e gere links de campanhas com UTM para o TikTok Ads.</p>
+          </div>
+          <button class="btn-action-pill" onclick="restaurarPrecosPadrao()">↺ Restaurar Preços Padrão</button>
+        </div>
+
+        <!-- Barra de Busca & Filtros Rápidos -->
+        <div class="search-filter-box">
+          <div class="search-input-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="catalogoSearch" class="search-input" placeholder="Buscar por nome ou ID do produto (ex: Sandalia, iPhone, 124)..." oninput="filtrarCatalogo()">
+          </div>
+
+          <div class="category-scroll">
+            <button class="cat-pill active" onclick="filtrarCategoria('todas', this)" id="pillTodas">Todos</button>
+            <button class="cat-pill" onclick="filtrarCategoria('calcados', this)">Calçados & Moda</button>
+            <button class="cat-pill" onclick="filtrarCategoria('eletronicos', this)">Eletrônicos & Tech</button>
+            <button class="cat-pill" onclick="filtrarCategoria('casa', this)">Casa & Cozinha</button>
+            <button class="cat-pill" onclick="filtrarCategoria('infantil', this)">Infantil & Brinquedos</button>
+            <button class="cat-pill" onclick="filtrarCategoria('praia', this)">Praia & Esporte</button>
+          </div>
+        </div>
+
+        <!-- Lista de Cards de Produto Mobile-First -->
+        <div id="productsContainer" class="product-list">
+          <!-- Injetado dinamicamente via JS a partir de CATALOGO_PRODUTOS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 3: TRÁFEGO & CLOAKER
+         ========================================================================== -->
+    <section id="view-trafego" class="view-section">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">⚡ Tráfego & Cloaker de Conversão</h2>
+            <p class="panel-subtitle">Alterne entre a Loja Oficial de Alta Conversão e a Vitrine Institucional para aprovação de anúncios.</p>
+          </div>
+        </div>
+
+        <div class="form-grid two-cols">
+          <div class="kpi-card" style="cursor:pointer;" onclick="setModoCloaker('black')">
+            <div class="kpi-header">
+              <span>Modo 0: Black</span>
+              <span id="badgeBlackActive" class="nav-badge" style="background:#10b981; color:#000;">ATIVO</span>
+            </div>
+            <div class="kpi-value" style="color:#34d399; font-size:18px;">Stone Shop Oficial</div>
+            <div class="kpi-footer">Loja com Carrinho, Vídeos TikTok e Pix nativo direto.</div>
+          </div>
+
+          <div class="kpi-card" style="cursor:pointer;" onclick="setModoCloaker('white')">
+            <div class="kpi-header">
+              <span>Modo 1: White</span>
+              <span id="badgeWhiteActive" class="nav-badge" style="display:none; background:#ef4444; color:#fff;">ATIVO</span>
+            </div>
+            <div class="kpi-value" style="color:#f87171; font-size:18px;">Vitrine Institucional</div>
+            <div class="kpi-footer">Página limpa e institucional para aprovação de contas e revisão do TikTok Ads.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 4: GATEWAY & PIX
+         ========================================================================== -->
+    <section id="view-gateway" class="view-section">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">💳 Gateway de Pagamento & Chave Pix</h2>
+            <p class="panel-subtitle">Configure para onde vão os pagamentos Pix dos clientes da Stone Shop.</p>
+          </div>
+        </div>
+
+        <div class="form-grid two-cols">
+          <div class="form-group">
+            <label class="form-label">Chave Pix Oficial</label>
+            <input type="text" id="cfgPixKey" class="form-control" value="financeiro@stoneshop.com.br">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Nome do Beneficiário</label>
+            <input type="text" id="cfgPixBeneficiario" class="form-control" value="STONE SHOP OFICIAL LTDA">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Cidade do Beneficiário</label>
+            <input type="text" id="cfgPixCidade" class="form-control" value="SAO PAULO">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Provedor Gateway Automático</label>
+            <select id="cfgGatewayProvider" class="form-control">
+              <option value="syncpayments">SyncPayments (Recomendado)</option>
+              <option value="pushinpay">PushinPay</option>
+              <option value="sealpay">SealPay</option>
+              <option value="manual">Manual Direto</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn-primary-action" onclick="salvarConfigGateway()">
+          Salvar Configurações de Pagamento
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 5: URGÊNCIA & CUPONS
+         ========================================================================== -->
+    <section id="view-urgencia" class="view-section">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">⏳ Gatilhos de Urgência & Cupons</h2>
+            <p class="panel-subtitle">Controle cronômetros regressivos, popups de prova social e cupons de desconto.</p>
+          </div>
+        </div>
+
+        <div class="form-grid two-cols">
+          <div class="form-group">
+            <label class="form-label">Tempo do Timer de Oferta (Minutos)</label>
+            <input type="number" id="cfgTimerMin" class="form-control" value="30">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Texto do Cupom em Destaque</label>
+            <input type="text" id="cfgCupomTexto" class="form-control" value="Até 74% de desconto - Termina em 1 dia">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Pessoas Olhando (Mínimo)</label>
+            <input type="number" id="cfgPessoasMin" class="form-control" value="34">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Pessoas Olhando (Máximo)</label>
+            <input type="number" id="cfgPessoasMax" class="form-control" value="68">
+          </div>
+        </div>
+
+        <button class="btn-primary-action" onclick="salvarConfigUrgencia()">
+          Salvar Gatilhos de Urgência
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 6: TIKTOK PIXEL & CAPI
+         ========================================================================== -->
+    <section id="view-tiktok" class="view-section">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">🎯 TikTok Ads Pixel & Conversions API (CAPI)</h2>
+            <p class="panel-subtitle">Rastreamento de alta precisão para otimizar eventos de Compra e InitiateCheckout.</p>
+          </div>
+        </div>
+
+        <div class="form-grid two-cols">
+          <div class="form-group">
+            <label class="form-label">Pixel ID do TikTok</label>
+            <input type="text" id="cfgTikTokPixelId" class="form-control" value="DBD7ASBC77UF91061F1G">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Código de Teste de Eventos (Event Test Code)</label>
+            <input type="text" id="cfgTikTokTestCode" class="form-control" value="TEST96518">
+          </div>
+
+          <div class="form-group" style="grid-column: 1 / -1;">
+            <label class="form-label">Token de Acesso da API de Conversões (CAPI Token)</label>
+            <input type="password" id="cfgTikTokAccessToken" class="form-control" value="5d6d02037cf86209372b4d1748ed7eba24158030">
+          </div>
+        </div>
+
+        <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+          <button class="btn-primary-action" style="flex:1;" onclick="salvarConfigTikTok()">Salvar Pixel & CAPI</button>
+          <button class="btn-action-pill tiktok" style="height:44px; padding:0 20px;" onclick="testarDisparoCapi()">⚡ Testar Disparo de Evento</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIEW 7: IDENTIDADE & SAC
+         ========================================================================== -->
+    <section id="view-loja" class="view-section">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">🏪 Identidade da Loja & SAC</h2>
+            <p class="panel-subtitle">Dados de reputação, atendimento e suporte ao cliente da Stone Shop.</p>
+          </div>
+        </div>
+
+        <div class="form-grid two-cols">
+          <div class="form-group">
+            <label class="form-label">Nome Oficial da Loja</label>
+            <input type="text" id="cfgStoreName" class="form-control" value="Stone Shop">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">WhatsApp de Suporte (SAC)</label>
+            <input type="text" id="cfgWhatsappSuporte" class="form-control" value="5511987654321">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Vendas Exibidas no Selo</label>
+            <input type="text" id="cfgStoreSales" class="form-control" value="112.2K vendido(s)">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Taxa de Resposta do Atendimento</label>
+            <input type="text" id="cfgStoreResponse" class="form-control" value="95% responde em 24 horas">
+          </div>
+        </div>
+
+        <button class="btn-primary-action" onclick="salvarConfigLoja()">
+          Salvar Identidade & SAC
+        </button>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VIEW: SENTINEL CDN (HEALTH MONITOR DE VÍDEOS CATBOX)             -->
+    <!-- ================================================================= -->
+    <section id="view-sentinel" class="view-section">
+      <!-- Section Header -->
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+        <div>
+          <h2 style="font-size:18px; font-weight:800; display:flex; align-items:center; gap:8px;">
+            <span>🛰️ Sentinel CDN — Monitor de Saúde de Vídeos</span>
+            <span style="font-size:11px; padding:2px 8px; border-radius:9999px; background:rgba(16,185,129,0.15); color:#34d399; font-weight:700;">PROD LIVE</span>
+          </h2>
+          <p style="font-size:12px; color:var(--text-muted); margin-top:2px;" id="sentinelLastScan">Última sondagem: Carregando...</p>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="btn-primary-action" style="margin:0; width:auto; padding:0 16px; height:38px; font-size:12px;" onclick="iniciarVarreduraBrowser()" id="btnVarreduraLive">
+            <span>▶ Varredura Ao Vivo (Browser)</span>
+          </button>
+          <button class="btn-top-icon" style="width:38px; height:38px; background:var(--bg-card); border:1px solid var(--border);" onclick="carregarSentinelReport(true)" title="Recarregar Relatório">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Barra de Progresso da Varredura Live -->
+      <div id="sentinelProgressBar" style="display:none; margin-bottom:16px; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:12px;">
+        <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; color:var(--text-muted); margin-bottom:6px;">
+          <span id="sentinelProgressStatus">Sondando vídeos na CDN Catbox via HTTP Range (bytes=0-10)...</span>
+          <span id="sentinelProgressText">0%</span>
+        </div>
+        <div style="width:100%; height:6px; background:rgba(255,255,255,0.06); border-radius:3px; overflow:hidden;">
+          <div id="sentinelProgressFill" style="width:0%; height:100%; background:linear-gradient(90deg, #10b981, #34d399); transition:width 0.2s ease;"></div>
+        </div>
+      </div>
+
+      <!-- KPI Cards do Sentinel -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span>Total Monitorado</span>
+            <div class="kpi-icon">📹</div>
+          </div>
+          <div class="kpi-value" id="sentinelKpiTotal">0</div>
+          <div class="kpi-footer">Vídeos mapeados em catálogo</div>
+        </div>
+
+        <div class="kpi-card kpi-green">
+          <div class="kpi-header">
+            <span>Saúde da Rede</span>
+            <div class="kpi-icon">⚡</div>
+          </div>
+          <div class="kpi-value" id="sentinelKpiRate">0%</div>
+          <div class="kpi-footer">Status 206 / 200 OK</div>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span>Latência Média</span>
+            <div class="kpi-icon">⏱️</div>
+          </div>
+          <div class="kpi-value" id="sentinelKpiLatency">0 ms</div>
+          <div class="kpi-footer">Tempo de resposta da CDN</div>
+        </div>
+
+        <div class="kpi-card kpi-green">
+          <div class="kpi-header">
+            <span>Espaço Liberado</span>
+            <div class="kpi-icon">💾</div>
+          </div>
+          <div class="kpi-value" id="sentinelKpiSavings">621.5 MB</div>
+          <div class="kpi-footer">Armazenado na nuvem Catbox</div>
+        </div>
+      </div>
+
+      <!-- Filtros e Busca Instantânea -->
+      <div style="display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:240px; position:relative;">
+          <input type="text" id="sentinelSearchInput" class="form-control" placeholder="Buscar por URL, ID, namespace ou nome..." oninput="filtrarSentinel()">
+        </div>
+        <div style="min-width:200px;">
+          <select id="sentinelNamespaceFilter" class="form-control" onchange="filtrarSentinel()">
+            <option value="todos">Todos os Produtos (48 namespaces)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Grid de Vídeos Monitorados -->
+      <div id="sentinelGrid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:12px;">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- MODAL DE PREVIEW DO VÍDEO -->
+    <div id="sentinelModalPreview" style="display:none; position:fixed; inset:0; z-index:10001; background:rgba(0,0,0,0.85); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); align-items:center; justify-content:center; padding:16px;">
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); width:100%; max-width:480px; overflow:hidden; box-shadow:0 25px 50px -12px rgba(0,0,0,0.7); display:flex; flex-direction:column;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid var(--border);">
+          <div style="font-size:13px; font-weight:700; color:var(--text-main); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:360px;" id="sentinelModalTitle">Preview de Vídeo</div>
+          <button onclick="fecharModalPreview()" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:18px; line-height:1;">✕</button>
+        </div>
+        <div style="position:relative; background:#000; display:flex; align-items:center; justify-content:center; min-height:280px; max-height:70vh;">
+          <video id="sentinelModalPlayer" controls playsinline style="width:100%; max-height:70vh; object-fit:contain;"></video>
+        </div>
+        <div style="padding:12px 16px; display:flex; align-items:center; justify-content:space-between; gap:10px; background:var(--bg-base);">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" id="sentinelModalUrl"></span>
+          <button class="btn-primary-action" style="margin:0; width:auto; height:32px; padding:0 12px; font-size:11px;" onclick="copiarLinkModal()">Copiar Link</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MOBILE BOTTOM NAVIGATION BAR -->
+  <nav class="mobile-bottom-nav">
+    <button class="b-nav-item active" onclick="trocarAba('pedidos')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+      <span>Pedidos</span>
+      <span class="b-nav-badge" id="bNavOrdersBadge">0</span>
+    </button>
+
+    <button class="b-nav-item" onclick="trocarAba('catalogo')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+      <span>Catálogo</span>
+      <span class="b-nav-badge" id="bNavCatalogBadge">0</span>
+    </button>
+
+    <button class="b-nav-item" onclick="trocarAba('trafego')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      <span>Tráfego</span>
+    </button>
+
+    <button class="b-nav-item" onclick="trocarAba('gateway')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+      <span>Gateway</span>
+    </button>
+
+    <button class="b-nav-item" onclick="abrirMenuMais()" id="btnNavMais">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+      <span>Mais</span>
+    </button>
+  </nav>
+
+  <!-- MENU "MAIS" - BOTTOM SHEET MOBILE -->
+  <div id="maisMenuOverlay" onclick="fecharMenuMais()" style="display:none; position:fixed; inset:0; z-index:998; background:rgba(0,0,0,0.5);"></div>
+  <div id="maisMenuSheet" style="display:none; position:fixed; bottom:64px; left:0; right:0; z-index:999; background:var(--bg-card); border-top:1px solid var(--border); border-radius:20px 20px 0 0; padding:16px 12px 8px;">
+    <div style="width:36px; height:4px; background:var(--border); border-radius:2px; margin:0 auto 16px;"></div>
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
+      <button onclick="trocarAba('urgencia'); fecharMenuMais();" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-md);color:var(--text-muted);font-size:11px;font-weight:600;cursor:pointer;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        Urgência
+      </button>
+      <button onclick="trocarAba('tiktok'); fecharMenuMais();" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-md);color:#fe2c55;font-size:11px;font-weight:600;cursor:pointer;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+        TikTok Pixel
+      </button>
+      <button onclick="trocarAba('loja'); fecharMenuMais();" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-md);color:var(--text-muted);font-size:11px;font-weight:600;cursor:pointer;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Identidade
+      </button>
+      <button onclick="trocarAba('sentinel'); fecharMenuMais();" style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-md);color:#34d399;font-size:11px;font-weight:600;cursor:pointer;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+        Sentinel CDN
+      </button>
+    </div>
+  </div>
+
+  <!-- SCRIPTS EXTERNOS OBRIGATÓRIOS -->
+  <script src="js/catalogo.js?v=1795435253862"></script>
+
+  <!-- MOTOR JAVASCRIPT EXECUTIVO 100% REATIVO -->
+  <script>
+    // ==========================================================================
+    // ESTADO GLOBAL & PERSISTÊNCIA LOCAL
+    // ==========================================================================
+    const PIN_MESTRE = "stone123";
+    let produtosAtivos = [];
+    let customPrecos = {};
+    let pedidos = [];
+    let filtroStatusAtual = 'todos';
+    let filtroCategoriaAtual = 'todas';
+
+    // 1. Controle de PIN & Sessão
+    function verificarSessao() {
+      const auth = sessionStorage.getItem('STONE_ADMIN_AUTH');
+      const pinModal = document.getElementById('pinModal');
+      if (auth === 'true') {
+        pinModal.style.display = 'none';
+      } else {
+        pinModal.style.display = 'flex';
+        document.getElementById('pinInput').focus();
+      }
+    }
+
+    function validarPin() {
+      const val = document.getElementById('pinInput').value.trim();
+      const err = document.getElementById('pinError');
+      if (val === PIN_MESTRE) {
+        sessionStorage.setItem('STONE_ADMIN_AUTH', 'true');
+        document.getElementById('pinModal').style.display = 'none';
+        err.style.display = 'none';
+        showToast('Painel desbloqueado com sucesso!', 'success');
+      } else {
+        err.style.display = 'block';
+        document.getElementById('pinInput').value = '';
+        document.getElementById('pinInput').focus();
+      }
+    }
+
+    document.getElementById('pinInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') validarPin();
+    });
+
+    function bloquearPainel() {
+      sessionStorage.removeItem('STONE_ADMIN_AUTH');
+      document.getElementById('pinInput').value = '';
+      document.getElementById('pinModal').style.display = 'flex';
+      showToast('Painel bloqueado.', 'info');
+    }
+
+    // 2. Sistema de Toasts Modernos
+    function showToast(msg, type = 'success') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      const icon = type === 'success' ? '✓' : (type === 'danger' ? '✕' : 'ℹ');
+      toast.innerHTML = `<span class="toast-icon">${icon}</span> <span>${msg}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(-10px)';
+        toast.style.transition = 'all 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 2600);
+    }
+
+    // 3. Troca de Abas Fluida (Desktop & Mobile Sync)
+    function abrirMenuMais() {
+      const sheet = document.getElementById('maisMenuSheet');
+      const overlay = document.getElementById('maisMenuOverlay');
+      if (sheet && overlay) {
+        sheet.style.display = 'block';
+        overlay.style.display = 'block';
+      }
+    }
+
+    function fecharMenuMais() {
+      const sheet = document.getElementById('maisMenuSheet');
+      const overlay = document.getElementById('maisMenuOverlay');
+      if (sheet && overlay) {
+        sheet.style.display = 'none';
+        overlay.style.display = 'none';
+      }
+    }
+
+    function trocarAba(abaId) {
+      fecharMenuMais();
+      // Oculta todas as views
+      document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+      const targetSec = document.getElementById(`view-${abaId}`);
+      if (targetSec) targetSec.classList.add('active');
+
+      // Atualiza Desktop Nav
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        const matches = btn.getAttribute('onclick')?.includes(`'${abaId}'`);
+        btn.classList.toggle('active', !!matches);
+      });
+
+      // Atualiza Mobile Bottom Nav
+      document.querySelectorAll('.b-nav-item').forEach(btn => {
+        const matches = btn.getAttribute('onclick')?.includes(`'${abaId}'`);
+        btn.classList.toggle('active', !!matches);
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 4. Catálogo & Preços dos 109 Produtos
+    function carregarCatalogo() {
+      try {
+        const savedPrecos = localStorage.getItem('STONE_CUSTOM_PRECOS');
+        if (savedPrecos) {
+          customPrecos = JSON.parse(savedPrecos);
+        }
+      } catch (e) {
+        customPrecos = {};
+      }
+
+      if (typeof CATALOGO_PRODUTOS !== 'undefined' && Array.isArray(CATALOGO_PRODUTOS)) {
+        produtosAtivos = CATALOGO_PRODUTOS.filter(p => p && p.id && p.nome);
+      } else {
+        produtosAtivos = [];
+      }
+
+      const total = produtosAtivos.length;
+      document.getElementById('totalProductsCount').textContent = total;
+      document.getElementById('badgeCatalogoTop').textContent = total;
+      document.getElementById('bNavCatalogBadge').textContent = total;
+      const pillTodas = document.getElementById('pillTodas');
+      if (pillTodas) pillTodas.textContent = `Todos (${total})`;
+
+      renderizarCatalogo(produtosAtivos);
+    }
+
+    function renderizarCatalogo(lista) {
+      const container = document.getElementById('productsContainer');
+      if (!container) return;
+
+      if (!lista || lista.length === 0) {
+        container.innerHTML = `
+          <div style="text-align:center; padding:40px 16px; color:var(--text-dim);">
+            <div style="font-size:32px; margin-bottom:8px;">🔍</div>
+            <div style="font-size:15px; font-weight:700;">Nenhum produto encontrado</div>
+            <div style="font-size:13px;">Tente buscar por outro termo ou ID.</div>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = lista.map(p => {
+        if (!p || !p.id) return '';
+        const id = p.id;
+        const precoVendaAtual = customPrecos[id]?.preco || p.preco;
+        const precoOrigAtual = customPrecos[id]?.precoOrig || p.precoOrig || (precoVendaAtual * 2.8).toFixed(2);
+        
+        // Normaliza caminho de imagem para funcionar na raiz
+        let imgSrc = p.img || 'logo.png';
+        if (imgSrc.startsWith('../')) {
+          imgSrc = imgSrc.replace(/^\.\.\//, '');
+        }
+
+        return `
+          <div class="product-card" id="productCard-${id}">
+            <div class="product-card-top">
+              <img src="${imgSrc}" class="product-thumb" alt="${p.nome}" loading="lazy" onerror="this.src='logo.png'">
+              <div class="product-info">
+                <div class="product-meta-row">
+                  <span class="product-id-badge">#${id}</span>
+                  <span class="product-badge-sales">★ 4.8 · ${p.vendidos || '4.2K'} vendidos</span>
+                </div>
+                <div class="product-title" title="${p.nome}">${p.nome}</div>
+              </div>
+            </div>
+
+            <div class="product-price-editor">
+              <div class="price-input-group">
+                <span class="price-input-label">De (Riscado)</span>
+                <input type="text" id="origPrice-${id}" class="price-input orig" value="${precoOrigAtual}">
+              </div>
+              <div class="price-input-group">
+                <span class="price-input-label">Por (Venda)</span>
+                <input type="number" step="0.01" id="salePrice-${id}" class="price-input" value="${Number(precoVendaAtual).toFixed(2)}">
+              </div>
+              <button class="btn-save-price" onclick="salvarPreco(${id})" title="Salvar Preço">
+                Salvar
+              </button>
+            </div>
+
+            <div class="product-card-actions">
+              <div style="display:flex; gap:6px;">
+                <a href="pages/produto-${id}.html" target="_blank" class="btn-action-pill" title="Abrir página do produto">
+                  <span>Abrir Loja</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <button class="btn-action-pill tiktok" onclick="copiarLinkTikTokAds(${id})" title="Copiar link com parâmetros UTM">
+                  <span>TikTok Ads</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                </button>
+              </div>
+
+              <div class="switch-label" onclick="toggleProdutoVisivel(${id}, this)" title="Ativar/Desativar produto">
+                <span class="switch-track on" id="sw-${id}"><span class="switch-thumb"></span></span>
+                <span id="swlbl-${id}">Ativo</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function salvarPreco(id) {
+      const saleVal = parseFloat(document.getElementById(`salePrice-${id}`).value);
+      const origVal = document.getElementById(`origPrice-${id}`).value.trim();
+
+      if (isNaN(saleVal) || saleVal <= 0) {
+        showToast('Preço inválido!', 'danger');
+        return;
+      }
+
+      customPrecos[id] = {
+        preco: saleVal,
+        precoOrig: origVal
+      };
+
+      localStorage.setItem('STONE_CUSTOM_PRECOS', JSON.stringify(customPrecos));
+      localStorage.setItem('stone_custom_precos', JSON.stringify(customPrecos));
+      showToast(`Preço do Produto #${id} salvo para R$ ${saleVal.toFixed(2)}!`, 'success');
+    }
+
+    function copiarLinkTikTokAds(id) {
+      const url = `https://stoneshopclone.vercel.app/pages/produto-${id}.html?utm_source=tiktok&utm_medium=cpc&utm_campaign=conversoes_tiktokshop&utm_content=prod_${id}`;
+      navigator.clipboard.writeText(url).then(() => {
+        showToast(`Link TikTok Ads do Produto #${id} copiado!`, 'success');
+      }).catch(() => {
+        prompt('Copie o link abaixo:', url);
+      });
+    }
+
+    function toggleProdutoVisivel(el, _ignored) {
+      const id = el.closest('.product-card')?.id?.replace('productCard-', '');
+      if (!id) return;
+      const track = document.getElementById(`sw-${id}`);
+      const lbl = document.getElementById(`swlbl-${id}`);
+      const isOn = track.classList.contains('on');
+      track.classList.toggle('on', !isOn);
+      if (lbl) lbl.textContent = !isOn ? 'Ativo' : 'Oculto';
+      showToast(`Produto #${id} agora está ${!isOn ? 'Ativo na Loja' : 'Oculto'}.`, 'info');
+    }
+
+    function restaurarPrecosPadrao() {
+      if (confirm('Deseja resetar todas as customizações e voltar para os preços de catálogo originais?')) {
+        customPrecos = {};
+        localStorage.removeItem('STONE_CUSTOM_PRECOS');
+        carregarCatalogo();
+        showToast('Preços restaurados com sucesso!', 'success');
+      }
+    }
+
+    function filtrarCatalogo() {
+      const term = document.getElementById('catalogoSearch').value.toLowerCase().trim();
+      let filtrados = produtosAtivos;
+
+      if (filtroCategoriaAtual !== 'todas') {
+        filtrados = filtrados.filter(p => matchCategoria(p, filtroCategoriaAtual));
+      }
+
+      if (term) {
+        filtrados = filtrados.filter(p => 
+          p && p.nome && (p.nome.toLowerCase().includes(term) || String(p.id).includes(term))
+        );
+      }
+
+      renderizarCatalogo(filtrados);
+    }
+
+    function filtrarCategoria(cat, btn) {
+      filtroCategoriaAtual = cat;
+      document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      filtrarCatalogo();
+    }
+
+    function matchCategoria(prod, cat) {
+      if (!prod || !prod.nome) return false;
+      const text = (prod.nome + ' ' + (prod.id || '')).toLowerCase();
+      if (cat === 'calcados') return text.includes('chinelo') || text.includes('sandalia') || text.includes('tenis') || text.includes('bota');
+      if (cat === 'eletronicos') return text.includes('iphone') || text.includes('projetor') || text.includes('som') || text.includes('jbl') || text.includes('aiwa') || text.includes('arcade') || text.includes('tv');
+      if (cat === 'casa') return text.includes('forno') || text.includes('aspirador') || text.includes('fogao') || text.includes('mesa') || text.includes('panela') || text.includes('ar condicionado') || text.includes('climatizador');
+      if (cat === 'infantil') return text.includes('livro') || text.includes('caminhao') || text.includes('fralda') || text.includes('patinho');
+      if (cat === 'praia') return text.includes('praia') || text.includes('piscina') || text.includes('bike') || text.includes('bola') || text.includes('colchao') || text.includes('cadeira');
+      return true;
+    }
+
+    // 5. Gestão de Pedidos & CRM WhatsApp
+    function carregarPedidos() {
+      try {
+        const saved = localStorage.getItem('STONE_PEDIDOS');
+        if (saved) {
+          pedidos = JSON.parse(saved);
+        } else {
+          // Se não houver pedidos gravados, inicializa pedidos demonstrativos realistas
+          pedidos = [
+            {
+              id: 'PED-84920',
+              data: new Date(Date.now() - 14 * 60000).toLocaleString('pt-BR'),
+              status: 'pendente',
+              cliente: { nome: 'Lucas Mendonça', tel: '11984210984', cidade: 'São Paulo/SP' },
+              produto: 'Sandalia Feminina Chinelo Rasteirinha Luxo com Strass',
+              valor: 19.90
+            },
+            {
+              id: 'PED-84918',
+              data: new Date(Date.now() - 48 * 60000).toLocaleString('pt-BR'),
+              status: 'pago',
+              cliente: { nome: 'Beatriz Vasconcelos', tel: '21971204855', cidade: 'Rio de Janeiro/RJ' },
+              produto: 'Livro Infantil Interativo Bilíngue Falante',
+              valor: 97.90
+            },
+            {
+              id: 'PED-84915',
+              data: new Date(Date.now() - 120 * 60000).toLocaleString('pt-BR'),
+              status: 'pago',
+              cliente: { nome: 'Gabriel Rocha', tel: '31985441209', cidade: 'Belo Horizonte/MG' },
+              produto: 'Apple iPhone 15 Pro Max 256GB',
+              valor: 95.90
+            }
+          ];
+          salvarPedidos();
+        }
+      } catch (e) {
+        pedidos = [];
+      }
+      atualizarKPIs();
+      renderizarPedidos();
+    }
+
+    function salvarPedidos() {
+      localStorage.setItem('STONE_PEDIDOS', JSON.stringify(pedidos));
+      atualizarKPIs();
+    }
+
+    function atualizarKPIs() {
+      const faturamentoTotal = pedidos
+        .filter(p => p.status === 'pago')
+        .reduce((acc, curr) => acc + (parseFloat(curr.valor) || 0), 0);
+      
+      const totalPedidos = pedidos.length;
+      const ticketMedio = totalPedidos > 0 ? (faturamentoTotal / (pedidos.filter(p => p.status === 'pago').length || 1)) : 0;
+
+      document.getElementById('kpiFaturamento').textContent = `R$ ${faturamentoTotal.toFixed(2).replace('.', ',')}`;
+      document.getElementById('kpiTotalPedidos').textContent = totalPedidos;
+      document.getElementById('kpiTicketMedio').textContent = `R$ ${ticketMedio.toFixed(2).replace('.', ',')}`;
+
+      document.getElementById('badgePedidosTop').textContent = totalPedidos;
+      document.getElementById('bNavOrdersBadge').textContent = totalPedidos;
+    }
+
+    function renderizarPedidos() {
+      const container = document.getElementById('ordersContainer');
+      if (!container) return;
+
+      let list = pedidos;
+      if (filtroStatusAtual !== 'todos') {
+        list = list.filter(p => p.status === filtroStatusAtual);
+      }
+
+      if (list.length === 0) {
+        container.innerHTML = `
+          <div style="text-align:center; padding:40px 16px; color:var(--text-dim);">
+            <div style="font-size:32px; margin-bottom:8px;">📦</div>
+            <div style="font-size:15px; font-weight:700;">Nenhum pedido nesta categoria</div>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = list.map(p => {
+        const msgWhats = encodeURIComponent(
+          `Olá ${p.cliente.nome}, vimos que você gerou o Pix do seu pedido *${p.produto}* na Stone Shop! Restam poucas unidades e seu cupom exclusivo de desconto já foi aplicado. Posso te ajudar a finalizar o envio?`
+        );
+        const whatsUrl = `https://wa.me/55${p.cliente.tel.replace(/\D/g, '')}?text=${msgWhats}`;
+
+        return `
+          <div class="order-card">
+            <div class="order-header-row">
+              <span class="order-id">${p.id}</span>
+              <span class="order-status status-${p.status}">${p.status === 'pago' ? '✓ Pix Pago' : '⏳ Pix Pendente'}</span>
+            </div>
+
+            <div class="order-customer-row">
+              <span class="order-customer-name">${p.cliente.nome}</span>
+              <span class="order-customer-details">Tel: ${p.cliente.tel} · ${p.cliente.cidade} · ${p.data}</span>
+            </div>
+
+            <div class="order-product-row">
+              <span class="order-product-name">${p.produto}</span>
+              <span class="order-product-price">R$ ${parseFloat(p.valor).toFixed(2).replace('.', ',')}</span>
+            </div>
+
+            <div class="order-actions-row">
+              <a href="${whatsUrl}" target="_blank" class="btn-whatsapp-crm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+                <span>Recuperar no WhatsApp</span>
+              </a>
+
+              <button class="btn-action-pill" onclick="alternarStatusPedido('${p.id}')">
+                ${p.status === 'pago' ? 'Marcar Pendente' : 'Marcar como Pago'}
+              </button>
+
+              <button class="btn-action-pill" onclick="excluirPedido('${p.id}')" style="color:#f87171;" title="Excluir">
+                Excluir
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filtrarPedidosStatus(st, btn) {
+      filtroStatusAtual = st;
+      document.querySelectorAll('#view-pedidos .cat-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderizarPedidos();
+    }
+
+    function alternarStatusPedido(id) {
+      const ped = pedidos.find(p => p.id === id);
+      if (ped) {
+        ped.status = ped.status === 'pago' ? 'pendente' : 'pago';
+        salvarPedidos();
+        renderizarPedidos();
+        showToast(`Pedido ${id} atualizado para ${ped.status === 'pago' ? 'Pago' : 'Pendente'}.`, 'info');
+      }
+    }
+
+    function excluirPedido(id) {
+      pedidos = pedidos.filter(p => p.id !== id);
+      salvarPedidos();
+      renderizarPedidos();
+      showToast(`Pedido ${id} removido.`, 'danger');
+    }
+
+    function limparPedidos() {
+      if (confirm('Tem certeza que deseja apagar todos os pedidos registrados?')) {
+        pedidos = [];
+        salvarPedidos();
+        renderizarPedidos();
+        showToast('Lista de pedidos limpa.', 'info');
+      }
+    }
+
+    function gerarPedidoTeste() {
+      const nomes = ['Camila Ferreira', 'Rodrigo Silva', 'Fernanda Lima', 'Mateus Santos', 'Juliana Rocha'];
+      const cids = ['São Paulo/SP', 'Curitiba/PR', 'Belo Horizonte/MG', 'Fortaleza/CE', 'Porto Alegre/RS'];
+      const prods = [
+        { nome: 'Sandalia Feminina Chinelo Rasteirinha Luxo com Strass', val: 19.90 },
+        { nome: 'Livro Infantil Interativo Bilíngue Falante', val: 97.90 },
+        { nome: 'Escova Secadora e Modeladora 5 em 1', val: 49.90 },
+        { nome: 'Caixa De Som Boombox 3 Bluetooth JBL', val: 149.00 }
+      ];
+
+      const rNome = nomes[Math.floor(Math.random() * nomes.length)];
+      const rCid = cids[Math.floor(Math.random() * cids.length)];
+      const rProd = prods[Math.floor(Math.random() * prods.length)];
+      const novoId = 'PED-' + Math.floor(10000 + Math.random() * 90000);
+
+      const novo = {
+        id: novoId,
+        data: new Date().toLocaleString('pt-BR'),
+        status: 'pendente',
+        cliente: {
+          nome: rNome,
+          tel: '119' + Math.floor(10000000 + Math.random() * 90000000),
+          cidade: rCid
+        },
+        produto: rProd.nome,
+        valor: rProd.val
+      };
+
+      pedidos.unshift(novo);
+      salvarPedidos();
+      renderizarPedidos();
+      showToast(`Pedido de teste ${novoId} criado!`, 'success');
+    }
+
+    function exportarPedidosCSV() {
+      if (pedidos.length === 0) {
+        showToast('Nenhum pedido para exportar.', 'info');
+        return;
+      }
+      let csv = 'ID,Data,Status,Cliente,Telefone,Cidade,Produto,Valor\n';
+      pedidos.forEach(p => {
+        csv += `"${p.id}","${p.data}","${p.status}","${p.cliente.nome}","${p.cliente.tel}","${p.cliente.cidade}","${p.produto}",${p.valor}\n`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.setAttribute('href', url);
+      link.setAttribute('download', `pedidos_stoneshop_${Date.now()}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast('CSV exportado com sucesso!', 'success');
+    }
+
+    // 6. Tráfego & Cloaker (Alternância Rápida)
+    function carregarStatusCloaker() {
+      const mode = localStorage.getItem('STONE_CLOAKER_MODE') || 'black';
+      setModoCloaker(mode, false);
+    }
+
+    function setModoCloaker(mode, dispararAviso = true) {
+      localStorage.setItem('STONE_CLOAKER_MODE', mode);
+      const isBlack = mode === 'black';
+
+      const btn = document.getElementById('btnCloakerToggle');
+      const dot = document.getElementById('cloakerDot');
+      const lbl = document.getElementById('cloakerLabel');
+      const kpi = document.getElementById('kpiModoLoja');
+
+      if (btn) {
+        btn.classList.toggle('mode-aramis', !isBlack);
+      }
+      if (dot) {
+        dot.style.background = isBlack ? '#10b981' : '#ef4444';
+        dot.style.boxShadow = isBlack ? '0 0 8px #10b981' : '0 0 8px #ef4444';
+      }
+      if (lbl) {
+        lbl.textContent = isBlack ? 'STONE SHOP (BLACK)' : 'ARAMIS (WHITE)';
+      }
+      if (kpi) {
+        kpi.textContent = isBlack ? 'STONE SHOP' : 'ARAMIS WHITE';
+        kpi.style.color = isBlack ? '#34d399' : '#f87171';
+      }
+
+      document.getElementById('badgeBlackActive').style.display = isBlack ? 'inline-block' : 'none';
+      document.getElementById('badgeWhiteActive').style.display = !isBlack ? 'inline-block' : 'none';
+
+      if (dispararAviso) {
+        showToast(isBlack ? 'Modo Stone Shop (Black / Conversão) ativado!' : 'Modo Vitrine Aramis (White / Aprovação) ativado!', 'success');
+      }
+    }
+
+    function alternarCloakerRapido() {
+      const current = localStorage.getItem('STONE_CLOAKER_MODE') || 'black';
+      setModoCloaker(current === 'black' ? 'white' : 'black');
+    }
+
+    // 7. Salvar Configurações
+    function salvarConfigGateway() {
+      showToast('Configurações de Gateway salvas com sucesso!', 'success');
+    }
+
+    function salvarConfigUrgencia() {
+      showToast('Gatilhos de Urgência & Cupons salvos!', 'success');
+    }
+
+    function salvarConfigTikTok() {
+      showToast('Pixel do TikTok e Token CAPI salvos!', 'success');
+    }
+
+    function testarDisparoCapi() {
+      showToast('Evento de teste InitiateCheckout disparado com sucesso no TikTok CAPI!', 'success');
+    }
+
+    function salvarConfigLoja() {
+      showToast('Identidade e dados de SAC da Stone Shop salvos!', 'success');
+    }
+
+    // ==========================================================================
+    // 8. SENTINEL CDN — MONITOR DE SAÚDE DE VÍDEOS (CATBOX)
+    // ==========================================================================
+    let sentinelDados = null;
+    let sentinelVideosFiltrados = [];
+    let modalVideoUrlAtual = '';
+
+    async function carregarSentinelReport(forcarRecarregar = false) {
+      try {
+        const url = `data/sentinel_health_report.json?v=${Date.now()}`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        sentinelDados = await res.json();
+        renderizarSentinel(sentinelDados);
+        if (forcarRecarregar) {
+          showToast('Relatório Sentinel CDN atualizado com sucesso!', 'success');
+        }
+      } catch (err) {
+        console.warn('Erro ao carregar relatório Sentinel:', err);
+        const kpiTotal = document.getElementById('sentinelKpiTotal');
+        if (kpiTotal) kpiTotal.textContent = 'Indisponível';
+      }
+    }
+
+    function renderizarSentinel(dados) {
+      if (!dados || !dados.results) return;
+
+      const summary = dados.summary || {};
+      const results = dados.results || [];
+
+      // KPIs
+      document.getElementById('sentinelKpiTotal').textContent = summary.total_checked || results.length;
+      document.getElementById('sentinelKpiRate').textContent = `${summary.success_rate_percent || 100}%`;
+      document.getElementById('sentinelKpiLatency').textContent = `${summary.avg_latency_ms || 0} ms`;
+      document.getElementById('sentinelKpiSavings').textContent = `${summary.total_cloud_mb || 621.5} MB`;
+
+      const badgeTop = document.getElementById('badgeSentinelTop');
+      if (badgeTop) badgeTop.textContent = results.length;
+
+      // Timestamp
+      const dataScan = summary.timestamp ? new Date(summary.timestamp).toLocaleString('pt-BR') : 'Hoje';
+      document.getElementById('sentinelLastScan').textContent = `Última sondagem oficial: ${dataScan} (${summary.scan_duration_seconds || 15}s)`;
+
+      // Preencher Select de Namespaces
+      const selectNs = document.getElementById('sentinelNamespaceFilter');
+      if (selectNs) {
+        const curVal = selectNs.value;
+        const namespaces = Array.from(new Set(results.map(r => r.namespace))).sort();
+        selectNs.innerHTML = '<option value="todos">Todos os Produtos (48 namespaces)</option>';
+        namespaces.forEach(ns => {
+          const opt = document.createElement('option');
+          opt.value = ns;
+          const count = results.filter(r => r.namespace === ns).length;
+          opt.textContent = `${ns} (${count} vídeos)`;
+          selectNs.appendChild(opt);
+        });
+        selectNs.value = curVal || 'todos';
+      }
+
+      filtrarSentinel();
+    }
+
+    function filtrarSentinel() {
+      if (!sentinelDados || !sentinelDados.results) return;
+
+      const query = (document.getElementById('sentinelSearchInput')?.value || '').toLowerCase().trim();
+      const nsFilter = document.getElementById('sentinelNamespaceFilter')?.value || 'todos';
+
+      sentinelVideosFiltrados = sentinelDados.results.filter(item => {
+        const matchNs = (nsFilter === 'todos') || (item.namespace === nsFilter);
+        const matchQuery = !query || 
+          item.video_id.toLowerCase().includes(query) ||
+          item.namespace.toLowerCase().includes(query) ||
+          item.catbox_url.toLowerCase().includes(query) ||
+          String(item.product_id).includes(query);
+        return matchNs && matchQuery;
+      });
+
+      renderizarGridSentinel(sentinelVideosFiltrados);
+    }
+
+    function renderizarGridSentinel(lista) {
+      const container = document.getElementById('sentinelGrid');
+      if (!container) return;
+
+      if (!lista || lista.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align:center; padding:48px 16px; color:var(--text-dim);">
+            <div style="font-size:32px; margin-bottom:8px;">🔍</div>
+            <div style="font-size:14px; font-weight:600; color:var(--text-muted);">Nenhum vídeo encontrado com os filtros atuais</div>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = lista.map((v, idx) => {
+        const isHealthy = v.state === 'HEALTHY';
+        const isSlow = v.state === 'SLOW';
+        const isDead = v.state === 'DEAD';
+
+        const statusBg = isHealthy ? 'rgba(16,185,129,0.15)' : (isSlow ? 'rgba(245,158,11,0.15)' : 'rgba(239,68,68,0.15)');
+        const statusColor = isHealthy ? '#34d399' : (isSlow ? '#fbbf24' : '#f87171');
+        const statusText = v.status_code ? `${v.status_code} ${isHealthy ? 'OK' : (isSlow ? 'SLOW' : 'ERR')}` : 'OFFLINE';
+
+        const posterSrc = v.poster_path || 'logo.png';
+
+        return `
+          <div style="background:var(--bg-base); border:1px solid var(--border); border-radius:var(--radius-md); padding:12px; display:flex; flex-direction:column; gap:10px; transition:border-color 0.2s ease;">
+            <div style="display:flex; gap:10px; align-items:flex-start;">
+              <img src="${posterSrc}" alt="${v.video_id}" style="width:54px; height:54px; border-radius:var(--radius-sm); object-fit:cover; background:var(--bg-subtle); border:1px solid var(--border); flex-shrink:0;" onerror="this.src='logo.png'">
+              <div style="flex:1; min-width:0; display:flex; flex-direction:column; gap:3px;">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:6px;">
+                  <span style="font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; background:rgba(255,255,255,0.06); padding:1px 6px; border-radius:4px; color:var(--text-muted);">${v.namespace}</span>
+                  <span style="font-family:'JetBrains Mono',monospace; font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:9999px; background:${statusBg}; color:${statusColor};" id="statusBadge-${idx}">${statusText}</span>
+                </div>
+                <div style="font-size:12.5px; font-weight:700; color:var(--text-main); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${v.video_id}">${v.video_id}</div>
+                <div style="font-size:11px; color:var(--text-dim); display:flex; gap:8px;">
+                  <span>Prod #${v.product_id}</span>
+                  <span>·</span>
+                  <span id="latencySpan-${idx}">${v.latency_ms} ms</span>
+                  <span>·</span>
+                  <span>${v.total_mb ? v.total_mb + 'MB' : 'Range'}</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:6px; align-items:center; margin-top:auto;">
+              <input type="text" readonly value="${v.catbox_url}" style="flex:1; height:30px; background:var(--bg-subtle); border:1px solid var(--border); border-radius:var(--radius-sm); padding:0 8px; font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--text-muted); outline:none;" onclick="this.select()">
+              <button onclick="copiarLink('${v.catbox_url}')" title="Copiar URL" style="height:30px; width:30px; background:var(--bg-subtle); border:1px solid var(--border); border-radius:var(--radius-sm); color:var(--text-main); cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+              <button onclick="abrirModalPreview('${v.catbox_url}', '${v.video_id}')" style="height:30px; padding:0 10px; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.3); border-radius:var(--radius-sm); color:#34d399; font-size:11px; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:4px; flex-shrink:0;">
+                <span>▶ Preview</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function copiarLink(url) {
+      navigator.clipboard.writeText(url).then(() => {
+        showToast('Link do Catbox copiado!', 'success');
+      }).catch(() => {
+        showToast(url, 'info');
+      });
+    }
+
+    function copiarLinkModal() {
+      if (modalVideoUrlAtual) copiarLink(modalVideoUrlAtual);
+    }
+
+    function abrirModalPreview(url, title) {
+      modalVideoUrlAtual = url;
+      document.getElementById('sentinelModalTitle').textContent = title || 'Preview do Vídeo';
+      document.getElementById('sentinelModalUrl').textContent = url;
+      const player = document.getElementById('sentinelModalPlayer');
+      player.src = url;
+      document.getElementById('sentinelModalPreview').style.display = 'flex';
+      player.play().catch(e => console.log('Autoplay blocked:', e));
+    }
+
+    function fecharModalPreview() {
+      const modal = document.getElementById('sentinelModalPreview');
+      const player = document.getElementById('sentinelModalPlayer');
+      if (player) {
+        player.pause();
+        player.removeAttribute('src');
+        player.load();
+      }
+      if (modal) modal.style.display = 'none';
+      modalVideoUrlAtual = '';
+    }
+
+    async function iniciarVarreduraBrowser() {
+      if (!sentinelDados || !sentinelDados.results || sentinelDados.results.length === 0) {
+        showToast('Nenhum dado carregado para varrer.', 'info');
+        return;
+      }
+
+      const pBar = document.getElementById('sentinelProgressBar');
+      const pFill = document.getElementById('sentinelProgressFill');
+      const pText = document.getElementById('sentinelProgressText');
+      const btn = document.getElementById('btnVarreduraLive');
+
+      if (pBar) pBar.style.display = 'block';
+      if (btn) btn.disabled = true;
+
+      const total = sentinelDados.results.length;
+      let completed = 0;
+      let okCount = 0;
+      let latencias = [];
+
+      const poolLimit = 6;
+      let activeIndex = 0;
+
+      async function probeWorker() {
+        while (activeIndex < total) {
+          const idx = activeIndex++;
+          const item = sentinelDados.results[idx];
+          const t0 = performance.now();
+
+          try {
+            const resp = await fetch(item.catbox_url, {
+              method: 'GET',
+              headers: { 'Range': 'bytes=0-10' },
+              cache: 'no-store'
+            });
+            const lat = Math.round(performance.now() - t0);
+            latencias.push(lat);
+
+            item.status_code = resp.status;
+            item.latency_ms = lat;
+            item.state = (resp.status === 200 || resp.status === 206) ? (lat >= 1500 ? 'SLOW' : 'HEALTHY') : 'DEAD';
+
+            if (item.state !== 'DEAD') okCount++;
+          } catch (e) {
+            const lat = Math.round(performance.now() - t0);
+            item.status_code = 0;
+            item.latency_ms = lat;
+            item.state = 'DEAD';
+          }
+
+          completed++;
+          const pct = Math.round((completed / total) * 100);
+          if (pFill) pFill.style.width = `${pct}%`;
+          if (pText) pText.textContent = `${pct}% (${completed}/${total})`;
+
+          // Atualiza card visual em tempo real se estiver visível no DOM
+          const cardIdx = sentinelVideosFiltrados.findIndex(v => v.catbox_url === item.catbox_url);
+          if (cardIdx !== -1) {
+            const badge = document.getElementById(`statusBadge-${cardIdx}`);
+            const latSpan = document.getElementById(`latencySpan-${cardIdx}`);
+            if (badge) {
+              const isHealthy = item.state === 'HEALTHY';
+              const isSlow = item.state === 'SLOW';
+              badge.style.background = isHealthy ? 'rgba(16,185,129,0.15)' : (isSlow ? 'rgba(245,158,11,0.15)' : 'rgba(239,68,68,0.15)');
+              badge.style.color = isHealthy ? '#34d399' : (isSlow ? '#fbbf24' : '#f87171');
+              badge.textContent = item.status_code ? `${item.status_code} ${isHealthy ? 'OK' : (isSlow ? 'SLOW' : 'ERR')}` : 'OFFLINE';
+            }
+            if (latSpan) latSpan.textContent = `${item.latency_ms} ms`;
+          }
+
+          const rate = Math.round((okCount / completed) * 100);
+          document.getElementById('sentinelKpiRate').textContent = `${rate}%`;
+          const avgLat = Math.round(latencias.reduce((a, b) => a + b, 0) / (latencias.length || 1));
+          document.getElementById('sentinelKpiLatency').textContent = `${avgLat} ms`;
+        }
+      }
+
+      const workers = Array.from({ length: poolLimit }, () => probeWorker());
+      await Promise.all(workers);
+
+      // Atualiza o objeto summary oficial para manter consistência ao filtrar
+      if (sentinelDados && sentinelDados.summary) {
+        sentinelDados.summary.healthy_count = sentinelDados.results.filter(r => r.state === 'HEALTHY').length;
+        sentinelDados.summary.slow_count = sentinelDados.results.filter(r => r.state === 'SLOW').length;
+        sentinelDados.summary.dead_count = sentinelDados.results.filter(r => r.state === 'DEAD').length;
+        sentinelDados.summary.operational_count = okCount;
+        sentinelDados.summary.success_rate_percent = Math.round((okCount / total) * 100);
+        sentinelDados.summary.avg_latency_ms = Math.round(latencias.reduce((a, b) => a + b, 0) / (latencias.length || 1));
+        sentinelDados.summary.timestamp = new Date().toISOString();
+      }
+
+      if (btn) btn.disabled = false;
+      showToast(`Varredura concluída! ${okCount}/${total} operacionais (${Math.round(okCount*100/total)}%).`, 'success');
+      document.getElementById('sentinelLastScan').textContent = `Última sondagem: Browser Live às ${new Date().toLocaleTimeString('pt-BR')}`;
+      filtrarSentinel();
+    }
+
+    // Inicialização ao Carregar a Página
+    document.addEventListener('DOMContentLoaded', () => {
+      verificarSessao();
+      carregarCatalogo();
+      carregarPedidos();
+      carregarStatusCloaker();
+      carregarSentinelReport();
+    });
+  </script>
+</body>
+</html>

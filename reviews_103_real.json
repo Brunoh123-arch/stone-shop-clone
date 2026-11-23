@@ -1,0 +1,45 @@
+[
+  {
+    "id": "c1",
+    "nome_mascarado": "p**a r**a p**s d**o",
+    "nome_exibicao": "Paula Ramos Prado",
+    "estrelas": 5,
+    "data": "05/09",
+    "variacao": "Vinho Tinto, Tamanho Único",
+    "comentario": "Chegou no prazo, corresponde com o que é apresentado. Por ser tamanho único serviu muito bem! Corresponde a cor perfeitamente, o caimento é impecável.",
+    "avatar": "img/reviews-avatars/review-user-103-c1.jpg",
+    "fotos": [
+      "img/review-103-c1-1.jpg",
+      "img/review-103-c1-2.jpg",
+      "img/review-103-c1-3.jpg"
+    ]
+  },
+  {
+    "id": "c2",
+    "nome_mascarado": "A**3",
+    "nome_exibicao": "Amanda Cristina",
+    "estrelas": 5,
+    "data": "20/08",
+    "variacao": "Vinho Tinto, Tamanho Único",
+    "comentario": "Perfeito. Igualzinho a modelo! Em si, o vestido é lindo🥰 tamanho perfeito. Tenho 1,63 de altura peso 61 quilos. Valoriza muito as silhuetas. Sem marcar muito. Nada a reclamar. Qualidade perfeita. Nada de transparente. Impecável. Super recomendo 🥰🥰🥰",
+    "avatar": "img/reviews-avatars/review-user-103-c2.jpg",
+    "fotos": [
+      "img/review-103-c2-1.jpg",
+      "img/review-103-c2-2.jpg",
+      "img/review-103-c2-3.jpg"
+    ]
+  },
+  {
+    "id": "c3",
+    "nome_mascarado": "C****a",
+    "nome_exibicao": "Camila Ferreira",
+    "estrelas": 5,
+    "data": "18/09",
+    "variacao": "Vermelho, Tamanho Único",
+    "comentario": "Meninas comprem sem medo! O tecido tem um caimento absurdo, não fica transparente de jeito nenhum. Fui numa festa de formatura e todo mundo elogiou as costas abertas!",
+    "avatar": "img/reviews-avatars/review-user-103-c3.jpg",
+    "fotos": [
+      "img/review-103-c3-1.jpg"
+    ]
+  }
+]

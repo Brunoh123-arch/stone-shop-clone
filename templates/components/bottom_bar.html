@@ -1,0 +1,20 @@
+  <!-- BOTTOM BAR OFICIAL TIKTOK SHOP (CANÔNICA PRODUTO 104) -->
+  <div class="bottom-bar">
+    <div class="bottom-actions-left">
+      <button class="bottom-action-btn" onclick="window.location.href='../loja.html'" aria-label="Loja">
+        <svg viewBox="0 0 24 24" class="bottom-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span class="bottom-action-label">Loja</span>
+      </button>
+      <button class="bottom-action-btn" onclick="alert('Suporte Stone Shop disponível 24h via WhatsApp')" aria-label="Chat">
+        <svg viewBox="0 0 24 24" class="bottom-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <span class="bottom-action-label">Chat</span>
+      </button>
+    </div>
+    <div class="bottom-actions-right">
+      <button class="bottom-btn btn-cart" onclick="addToCart(PRODUTO_ATUAL)">Adicionar</button>
+      <button class="bottom-btn btn-buy" onclick="handleBuyNow()">
+        <span class="buy-label">Compre agora</span>
+        <span class="buy-price" id="btn-buy-price">{{BTN_BUY_PRICE}}</span>
+      </button>
+    </div>
+  </div>

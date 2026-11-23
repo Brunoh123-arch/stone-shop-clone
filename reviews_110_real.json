@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c1",
+    "name": "C**s M**a",
+    "avatar": "../img/reviews-avatars/review-user-110-c1.jpg",
+    "date": "14/09",
+    "variation": "Preto/Dourado, 41",
+    "comment": "Tênis surpreendeu demais pelo conforto e acabamento. O amortecimento Pulse RX é muito macio na pisada. Chegou em 3 dias!",
+    "photos": [
+      "../img/review-110-c1-1.jpg",
+      "../img/review-110-c1-2.jpg"
+    ]
+  },
+  {
+    "id": "c2",
+    "name": "M**a S**a",
+    "avatar": "../img/reviews-avatars/review-user-110-c2.jpg",
+    "date": "28/08",
+    "variation": "Marinho/Laranja, 38",
+    "comment": "Comprei pra caminhada e esteira. É super leve e a forma é perfeita. Recomendo pegar o tamanho normal de uso.",
+    "photos": [
+      "../img/review-110-c2-1.jpg",
+      "../img/review-110-c2-2.jpg"
+    ]
+  },
+  {
+    "id": "c3",
+    "name": "R**l G**s",
+    "avatar": "../img/reviews-avatars/review-user-110-c3.jpg",
+    "date": "05/08",
+    "variation": "Chumbo/Verde, 42",
+    "comment": "Excelente custo benefício. Veio na caixa original da Kappa, costuras e sola muito bem acabadas. 10/10!",
+    "photos": [
+      "../img/review-110-c3-1.jpg",
+      "../img/review-110-c3-2.jpg"
+    ]
+  }
+]

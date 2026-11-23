@@ -1,0 +1,1440 @@
+/* === Tela de Saque Nativa TikTok Bônus (Idêntica à Imagem) === */
+.withdraw-page-ds {
+  padding: 12px 14px 24px;
+  background-color: #f5f5f5;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.expira-saldo-ds {
+  margin: -12px -14px 14px -14px;
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.timer-wrapper-ds p {
+  margin: 0;
+  color: #000;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.timer-wrapper-ds span {
+  font-weight: 800;
+}
+
+.page-title-ds {
+  font-size: 18px;
+  font-weight: 700;
+  color: #121212;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* Card Preto de Saldo com Moeda Dourada P */
+.saldo-card-ds {
+  background: #000000;
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 18px 18px 14px 18px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 14px;
+}
+
+.saldo-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #333333;
+  padding-bottom: 14px;
+}
+
+.saldo-label-ds {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.saldo-amount-ds {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.saldo-points-ds {
+  font-size: 12px;
+  color: #828282;
+  font-weight: 500;
+}
+
+.saldo-coin-wrap {
+  flex-shrink: 0;
+}
+
+.saldo-coin-img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.saldo-card-footer {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #828282;
+  font-weight: 500;
+}
+
+/* Caixa Branca de Saque */
+.withdraw-box-ds {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  margin-bottom: 14px;
+  box-sizing: border-box;
+}
+
+.withdraw-box-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #121212;
+  display: block;
+}
+
+.withdraw-transfer-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #828282;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.card-icon-ds {
+  width: 16px;
+  height: auto;
+}
+
+.pix-logo-ds {
+  width: 38px;
+  height: auto;
+}
+
+.pills-grid-ds {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.pill-btn-ds {
+  background: #f0f2f5;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.pill-btn-ds.selected, .pill-btn-ds.btn-active {
+  background: #fff6f7;
+  border-color: #fe2b54;
+  color: #fe2b54;
+}
+
+.pill-btn-total-ds {
+  width: 100%;
+  background: #fff6f7;
+  border: 1.5px solid #fe2b54;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fe2b54;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn-sacar-dinheiro-ds {
+  width: 100%;
+  background: #fe2b54;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: opacity 0.2s;
+  box-shadow: 0 4px 12px rgba(254, 43, 84, 0.25);
+}
+
+.btn-sacar-dinheiro-ds:hover {
+  opacity: 0.95;
+}
+
+.withdraw-disclaimer-ds {
+  font-size: 11px;
+  color: #848486;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 14px;
+  padding: 0 10px;
+}
+
+/* Caixas Secundárias Oficiais (Moedas / Recarga) */
+.secondary-box-ds {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.secondary-box-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sec-icon-ds {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.sec-title-ds {
+  font-size: 14px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 2px;
+}
+
+.sec-desc-ds {
+  font-size: 11px;
+  color: #828282;
+  max-width: 220px;
+  line-height: 1.3;
+}
+
+.sec-phone-ds {
+  font-size: 13px;
+  color: #121212;
+  font-weight: 600;
+}
+
+.sec-phone-ds span {
+  color: #828282;
+  font-weight: 400;
+}
+
+.btn-indisponivel-ds {
+  background: #f0f2f5;
+  color: #a0a0a0;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: not-allowed;
+  flex-shrink: 0;
+}
+
+/* Efeito para quando estiver ativo (clicado) */
+.amount-btn:active {
+  transform: scale(0.97);
+}
+
+.pix-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pix-type, .pix-key {
+  padding: 17px 20px;
+  border: 2px solid #d1d1d1; /* Borda cinza */
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f8f8f8; /* Fundo cinza claro */
+  color: #4a4a4a; /* Texto cinza escuro */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Placeholder estilizado */
+.pix-type::placeholder, .pix-key::placeholder {
+  color: #8a8a8a; /* Cinza médio */
+  opacity: 0.9;
+}
+
+/* Estados de foco */
+.pix-type:focus, .pix-key:focus {
+  border-color: #a8a8a8; /* Cinza mais escuro no foco */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(168, 168, 168, 0.2);
+}
+
+/* Select personalizado */
+.pix-type {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238a8a8a'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 20px;
+  cursor: pointer;
+  padding-right: 48px;
+}
+
+/* Botão mantido igual (destaque) */
+.withdraw-submit-btn {
+  width: 100%;
+  background: #ff2c55;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 30px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 44, 85, 0.3);
+  text-transform: uppercase;
+}
+
+.withdraw-submit-btn:hover {
+  background: #e0264a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 44, 85, 0.4);
+}
+
+.withdraw-submit-btn:active {
+  transform: translateY(0);
+}
+
+.withdraw-info {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.invite-section {
+  background: #ff2c55;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.invite-period {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.reward-circles {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.reward-circle {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.reward-circle.active {
+  background: #ffeb3b;
+  color: black;
+}
+
+.invite-btn {
+  width: 100%;
+  background: #ffeb3b;
+  color: black;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.invite-code {
+  text-align: center;
+  font-size: 14px;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.help-text {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.terms {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+css
+/* Opção alternativa com borda inferior no hover */
+.terms a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.terms a:hover {
+  color: #ff2c55;
+  border-bottom: 2px solid #ff2c55;
+}
+
+/* Ou com fundo destacado */
+.terms a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.terms a:hover {
+  color: #ff2c55;
+  background: rgba(255, 44, 85, 0.1);
+}
+
+/* Registration Page Styles */
+.registration-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.security-icon {
+  margin: 30px 0;
+}
+
+.registration-description {
+  color: #666;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.refund-info {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.info-items {
+  margin: 30px 0;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.info-icon {
+  font-size: 24px;
+}
+
+.info-text h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Video Page Styles */
+.video-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-header {
+  background: #ff2c55;
+  color: white;
+  padding: 10px;
+  margin: -20px -20px 20px -20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.balance-display {
+  display: inline-block;
+  background: #f5f5f5;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.video-instruction {
+  color: #666;
+  margin: 15px 0;
+}
+
+.video-container {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+#tutorial-video {
+  width: 100%;
+  aspect-ratio: 9/16;
+  background: #000;
+}
+
+.unlock-btn {
+  width: 100%;
+  background: #ff2c55;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* === Comprovante Oficial de Saque (Importado do DS / Idêntico) === */
+.confirmation-container {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.confirmation-header {
+  padding: 10px 16px 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 16px;
+}
+
+.confirmation-logo {
+  height: 28px;
+  display: inline-block;
+}
+
+.confirmation-logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.confirmation-section {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: left;
+}
+
+.confirmation-balance {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  border: none;
+}
+
+.confirmation-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+}
+
+.confirmation-balance-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.confirmation-balance-amount {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.confirmation-balance-subtitle {
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.confirmation-fee-amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ea445a;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.confirmation-reembolso-badge {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.confirmation-fee-description {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.45;
+}
+
+.confirmation-fee-description .bold {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.confirmation-receipt-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.confirmation-receipt-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.confirmation-receipt-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.confirmation-receipt-label {
+  font-size: 12px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.confirmation-receipt-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: right;
+}
+
+.confirmation-receipt-value.bold {
+  font-weight: 700;
+}
+
+.confirmation-divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 16px 0;
+}
+
+.confirmation-requirements-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.confirmation-requirement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.confirmation-requirement-icon {
+  background: rgba(234, 68, 90, 0.1);
+  color: #ea445a;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.confirmation-requirement-icon.confirmation-reembolso {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.confirmation-requirement-content {
+  flex: 1;
+}
+
+.confirmation-requirement-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 3px;
+}
+
+.confirmation-requirement-title.confirmation-reembolso {
+  color: #10b981;
+}
+
+.confirmation-requirement-description {
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.4;
+}
+
+.confirmation-cta-button {
+  background: #ea445a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(234, 68, 90, 0.25);
+}
+
+.confirmation-cta-button:hover {
+  opacity: 0.95;
+}
+
+.confirmation-timer {
+  font-size: 12px;
+  color: #10b981;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.confirmation-success-message {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  color: #10b981;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 12px;
+  display: none;
+}
+
+.confirmation-security-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin: 22px 0 16px;
+}
+
+.confirmation-security-item {
+  text-align: center;
+}
+
+.confirmation-security-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-security-label img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-bacen {
+  width: 48px;
+}
+
+.img-gov-br {
+  width: 65px;
+}
+
+.img-receitafederal {
+  width: 65px;
+}
+
+.confirmation-footer {
+  text-align: center;
+  padding: 16px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.confirmation-footer-text {
+  font-size: 11px;
+  color: #999999;
+}
+
+/* Modal PIX SyncPayments */
+.syncpay-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.syncpay-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.syncpay-modal-card {
+  position: relative;
+  z-index: 100000;
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: syncpayPopIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes syncpayPopIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.syncpay-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.syncpay-pix-logo {
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.syncpay-modal-header h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #161823;
+  margin-bottom: 4px;
+}
+
+.syncpay-sub {
+  font-size: 13px;
+  color: #666;
+}
+
+.syncpay-sub strong {
+  color: #fe2c55;
+  font-size: 15px;
+}
+
+.syncpay-qrcode-box {
+  margin: 16px auto;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.syncpay-qrcode-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.syncpay-timer-pill {
+  display: inline-block;
+  background: #fff1f3;
+  color: #fe2c55;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.syncpay-copia-cola label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #444;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.syncpay-input-group {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.syncpay-input-group input {
+  flex: 1;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 11px;
+  color: #333;
+  outline: none;
+}
+
+.syncpay-input-group button {
+  background: #fe2c55;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.syncpay-input-group button:active {
+  background: #e6244b;
+}
+
+.syncpay-instructions {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 11px;
+  color: #777;
+  line-height: 1.45;
+}
+
+.syncpay-instructions strong {
+  color: #222;
+}
+
+/* ========================================================
+   Estilos Oficiais da Tela de Prova Humana / Antibot (Netlify)
+   ======================================================== */
+.antibot-page-wrapper {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.antibot-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.antibot-footer {
+  background: #ffffff;
+  color: #666666;
+  text-align: center;
+  padding: 20px 24px;
+  font-size: 0.8rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.antibot-footer a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.antibot-footer a:hover {
+  color: #fe2c55;
+}
+
+.antibot-footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.antibot-footer .footer-links span {
+  color: #9a9a9a;
+}
+
+/* OVERLAY */
+.antibot-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 24, 35, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.antibot-overlay.active {
+  display: flex;
+}
+
+/* POPUP */
+.antibot-popup {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+  animation: antibotSlideUp 0.25s ease;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@keyframes antibotSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.antibot-popup-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(254, 44, 85, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.antibot-popup-icon svg {
+  width: 26px;
+  height: 26px;
+  color: #fe2c55;
+}
+
+.antibot-popup h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #010101;
+  margin-bottom: 8px;
+}
+
+.antibot-popup p {
+  font-size: 0.88rem;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.antibot-popup-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.antibot-btn-confirm {
+  flex: 1;
+  background: #fe2c55;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.antibot-btn-confirm:hover {
+  background: #e6244b;
+}
+
+.antibot-btn-cancel {
+  flex: 1;
+  background: #f5f5f5;
+  color: #666666;
+  border: 1px solid #e8e8e8;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.antibot-btn-cancel:hover {
+  background: #e8e8e8;
+}
+
+/* STEPS */
+.antibot-captcha-step {
+  display: none;
+}
+
+.antibot-captcha-step.active {
+  display: block;
+}
+
+.antibot-welcome-step {
+  display: block;
+}
+
+.antibot-welcome-step.hidden {
+  display: none;
+}
+
+.antibot-captcha-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.antibot-captcha-question {
+  background: rgba(37, 244, 238, 0.12);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #010101;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.antibot-captcha-input {
+  width: 100%;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  color: #161823;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.antibot-captcha-input:focus {
+  border-color: #fe2c55;
+  box-shadow: 0 0 0 3px rgba(254, 44, 85, 0.15);
+}
+
+.antibot-captcha-input.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.antibot-error-msg {
+  font-size: 0.82rem;
+  color: #ef4444;
+  margin-top: -14px;
+  margin-bottom: 14px;
+  text-align: left;
+  display: none;
+}
+
+/* CONFIRMATION SCREEN */
+#confirmationScreen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 48px 24px;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#confirmationScreen.active {
+  display: flex;
+}
+
+.antibot-confirmation-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(254, 44, 85, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.antibot-confirmation-icon svg {
+  width: 36px;
+  height: 36px;
+  color: #fe2c55;
+}
+
+.antibot-confirmation-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #010101;
+  margin-bottom: 12px;
+}
+
+.antibot-confirmation-subtitle {
+  font-size: 0.95rem;
+  color: #666666;
+  max-width: 360px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.antibot-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.antibot-loader span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fe2c55;
+  animation: antibotBounce 1.2s infinite ease-in-out;
+}
+
+.antibot-loader span:nth-child(2) { animation-delay: 0.2s; }
+.antibot-loader span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes antibotBounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+/* POLICY MODALS */
+.antibot-policy-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 24, 35, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.antibot-policy-overlay.active {
+  display: flex;
+}
+
+.antibot-policy-modal {
+  background: #ffffff;
+  border-radius: 14px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  animation: antibotSlideUp 0.25s ease;
+  box-sizing: border-box;
+}
+
+.antibot-policy-header {
+  padding: 24px 28px 16px;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.antibot-policy-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #010101;
+}
+
+.antibot-policy-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9a9a9a;
+  padding: 4px;
+  border-radius: 6px;
+  transition: color 0.2s;
+}
+
+.antibot-policy-close:hover {
+  color: #161823;
+}
+
+.antibot-policy-body {
+  padding: 20px 28px 28px;
+  font-size: 0.88rem;
+  color: #666666;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.antibot-policy-body h4 {
+  color: #010101;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+
+/* === ANIMAÇÕES DOPAMINA DE SALDO E MOEDA (BRUNO CTO) === */
+@keyframes saldoPula {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.18) translateY(-6px);
+    color: #ffd700;
+    text-shadow: 0 0 16px rgba(255, 215, 0, 0.6);
+  }
+  40% {
+    transform: scale(0.96) translateY(2px);
+  }
+  60% {
+    transform: scale(1.08) translateY(-3px);
+  }
+  80% {
+    transform: scale(0.99) translateY(0);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    color: #ffffff;
+    text-shadow: none;
+  }
+}
+
+@keyframes coinDouradaPula {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.25) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(15deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.saldo-amount-ds.saldo-pula {
+  animation: saldoPula 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  display: inline-block;
+  transform-origin: left center;
+}
+
+.saldo-coin-img.coin-pula {
+  animation: coinDouradaPula 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}

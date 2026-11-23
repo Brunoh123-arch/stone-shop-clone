@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c1",
+    "name": "T**o M**s",
+    "avatar": "../img/reviews-avatars/review-user-112-c1.jpg",
+    "date": "19/10",
+    "variation": "Caminhão Bombeiro + Patinhos",
+    "comment": "Meu filho de 3 anos ficou encantado! Os patinhos sobem a escadinha sozinhos e descem a pista. As luzes e musiquinha são muito alegres.",
+    "photos": [
+      "../img/review-112-c1-1.jpg",
+      "../img/review-112-c1-2.jpg"
+    ]
+  },
+  {
+    "id": "c2",
+    "name": "A**a P**a",
+    "avatar": "../img/reviews-avatars/review-user-112-c2.jpg",
+    "date": "04/10",
+    "variation": "Caminhão Bombeiro + Patinhos",
+    "comment": "Ótima qualidade do plástico, bem resistente. O bate-e-volta funciona perfeitamente quando bate nos móveis. Recomendo muito!",
+    "photos": [
+      "../img/review-112-c2-1.jpg",
+      "../img/review-112-c2-2.jpg"
+    ]
+  },
+  {
+    "id": "c3",
+    "name": "L**s F**o",
+    "avatar": "../img/reviews-avatars/review-user-112-c3.jpg",
+    "date": "12/09",
+    "variation": "Caminhão Bombeiro + Patinhos",
+    "comment": "Brinquedo muito divertido, prende a atenção das crianças por horas. Chegou antes do prazo e muito bem embalado.",
+    "photos": [
+      "../img/review-112-c3-1.jpg",
+      "../img/review-112-c3-2.jpg"
+    ]
+  }
+]

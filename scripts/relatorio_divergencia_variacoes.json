@@ -1,0 +1,1551 @@
+[
+  {
+    "id": 4,
+    "nome": "Caixa De Som Boombox 3 Bluetooth Preta Jbl",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto"
+    ],
+    "review_opts": [
+      "Preto",
+      "Camuflado"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto'), mas reviews falam de várias opções: ['Preto', 'Camuflado']"
+  },
+  {
+    "id": 5,
+    "nome": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
+    "has_block": true,
+    "seletor_opts": [
+      "127V",
+      "220V"
+    ],
+    "review_opts": [
+      "127V",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 6,
+    "nome": "Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor Preto e Vermelho Marca Sevenfit",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto com Detalhes Vermelhos"
+    ],
+    "review_opts": [
+      "Preto com Detalhes Vermelhos"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 7,
+    "nome": "Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto Fosco"
+    ],
+    "review_opts": [
+      "Preto Fosco"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 8,
+    "nome": "Caixa de Som Amplificada AIWA Party Box AWSPB07 Bluetooth",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto Bivolt com LED RGB"
+    ],
+    "review_opts": [
+      "Preto Bivolt com LED RGB"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 9,
+    "nome": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
+    "has_block": true,
+    "seletor_opts": [],
+    "review_opts": [
+      "127V",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 12,
+    "nome": "Piscina Splash Fun Redonda Inflável 2400 Litros - Mor",
+    "has_block": true,
+    "seletor_opts": [
+      "Azul 2400 Litros Oficial Mor"
+    ],
+    "review_opts": [
+      "Azul 2400 Litros Oficial Mor"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 13,
+    "nome": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
+    "has_block": true,
+    "seletor_opts": [
+      "Azul 1000 Litros Oficial Mor"
+    ],
+    "review_opts": [
+      "Azul 1000 Litros Oficial Mor"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 14,
+    "nome": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
+    "has_block": true,
+    "seletor_opts": [
+      "Inox 110V (127V)"
+    ],
+    "review_opts": [
+      "Inox 110V (127V)",
+      "Inox 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Inox 110V (127V)'), mas reviews falam de várias opções: ['Inox 110V (127V)', 'Inox 220V']"
+  },
+  {
+    "id": 15,
+    "nome": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
+    "has_block": true,
+    "seletor_opts": [
+      "Inox Escovado"
+    ],
+    "review_opts": [
+      "Inox Escovado",
+      "Preto Esmaltado"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Inox Escovado'), mas reviews falam de várias opções: ['Inox Escovado', 'Preto Esmaltado']"
+  },
+  {
+    "id": 16,
+    "nome": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto Esmaltado Oficial Mor"
+    ],
+    "review_opts": [
+      "Preto Esmaltado Oficial Mor"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 17,
+    "nome": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
+    "has_block": true,
+    "seletor_opts": [
+      "Cores Sortidas Vibrantes (Kit 6 Cadeiras)"
+    ],
+    "review_opts": [
+      "Cores Sortidas Vibrantes (Kit 6 Cadeiras)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 18,
+    "nome": "Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts",
+    "has_block": true,
+    "seletor_opts": [
+      "Kit Completo (4 Cadeiras + Guarda-Sol)"
+    ],
+    "review_opts": [
+      "Kit Completo (4 Cadeiras + Guarda-Sol)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 19,
+    "nome": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
+    "has_block": true,
+    "seletor_opts": [
+      "Azul Stitch + Capa e Bolsa (64GB)"
+    ],
+    "review_opts": [
+      "Azul Stitch + Capa e Bolsa (64GB)",
+      "Kit Stitch Completo (Tablet + Bolsa + Alça)"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Azul Stitch + Capa e Bolsa (64GB)'), mas reviews falam de várias opções: ['Azul Stitch + Capa e Bolsa (64GB)', 'Kit Stitch Completo (Tablet + Bolsa + Alça)']"
+  },
+  {
+    "id": 20,
+    "nome": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto/Amarelo",
+      "Preto/Cinza",
+      "Preto/Vermelho",
+      "Preto/verde",
+      "Preto/rosa",
+      "Azul/Rosa",
+      "Preto/laranja",
+      "Preto/Azul",
+      "Vermelho/Amarelo"
+    ],
+    "review_opts": [
+      "Preto/Amarelo",
+      "Preto/Cinza",
+      "Preto/Vermelho",
+      "Preto/verde",
+      "Preto/rosa",
+      "Azul/Rosa",
+      "Preto/laranja",
+      "Preto/Azul",
+      "Vermelho/Amarelo"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 21,
+    "nome": "Bola De Futebol De Campo Penalty Bravo Xxv",
+    "has_block": true,
+    "seletor_opts": [
+      "Azul",
+      "Laranja",
+      "Marinho"
+    ],
+    "review_opts": [
+      "Azul",
+      "Laranja",
+      "Marinho"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 22,
+    "nome": "Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway",
+    "has_block": true,
+    "seletor_opts": [
+      "Casal Azul (1,91m x 1,37m - Suporta 300kg)"
+    ],
+    "review_opts": [
+      "Casal Azul (1,91m x 1,37m - Suporta 300kg)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 23,
+    "nome": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava",
+    "has_block": true,
+    "seletor_opts": [
+      "Kit Completo 24 Potes Herméticos com Trava"
+    ],
+    "review_opts": [
+      "Kit Completo 24 Potes Herméticos com Trava"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 24,
+    "nome": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
+    "has_block": true,
+    "seletor_opts": [
+      "Azul Bebê"
+    ],
+    "review_opts": [
+      "Azul Bebê",
+      "Rosa Bebê"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Azul Bebê'), mas reviews falam de várias opções: ['Azul Bebê', 'Rosa Bebê']"
+  },
+  {
+    "id": 25,
+    "nome": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
+    "has_block": true,
+    "seletor_opts": [
+      "Branco e Azul",
+      "Branco e Laranja",
+      "Branco e  Preto",
+      "Branco e Rosa",
+      "Branco e Verde",
+      "Laranja e Preto",
+      "Preto",
+      "Azul e Preto",
+      "Preto e Laranja",
+      "Preto e Verde",
+      "Rosa e Preto",
+      "Verde e Preto"
+    ],
+    "review_opts": [
+      "Branco e Azul",
+      "Branco e Laranja",
+      "Branco e  Preto",
+      "Branco e Rosa",
+      "Branco e Verde",
+      "Laranja e Preto",
+      "Preto",
+      "Azul e Preto",
+      "Preto e Laranja",
+      "Preto e Verde",
+      "Rosa e Preto",
+      "Verde e Preto"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 26,
+    "nome": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
+    "has_block": true,
+    "seletor_opts": [
+      "Rosa",
+      "Verde",
+      "Preto"
+    ],
+    "review_opts": [
+      "Rosa",
+      "Verde",
+      "Preto"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 28,
+    "nome": "Kit Mochila Rebecca Bonbon - Lancheira Térmica + Estojo + Box Escolar Nova Coleção Exclusiva Juvenil",
+    "has_block": true,
+    "seletor_opts": [
+      "Rosa Soft",
+      "Preto Metalizado",
+      "Lilás Pastel",
+      "Verde-Água Tiffany",
+      "Azul Escolar"
+    ],
+    "review_opts": [
+      "Rosa Soft",
+      "Preto Metalizado",
+      "Verde-Água Tiffany",
+      "Azul Escolar",
+      "Lilás Pastel"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 31,
+    "nome": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 200W IPX6"
+    ],
+    "review_opts": [
+      "Preto 200W IPX6"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 32,
+    "nome": "Chuveiro Acqua Duo Lorenzetti Ultra Eletrônico",
+    "has_block": true,
+    "seletor_opts": [
+      "Branco",
+      "Preto Fosco",
+      "Preto e Cromo",
+      "Branco e Cromo"
+    ],
+    "review_opts": [
+      "Branco",
+      "Preto Fosco",
+      "Preto e Cromo",
+      "Branco e Cromo"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 33,
+    "nome": "Mochila Escolar Bluey E Bingo 15l Kit Meninas Com Lancheira",
+    "has_block": true,
+    "seletor_opts": [
+      "Azul Bluey"
+    ],
+    "review_opts": [
+      "Azul Bluey",
+      "Rosa Bingo"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Azul Bluey'), mas reviews falam de várias opções: ['Azul Bluey', 'Rosa Bingo']"
+  },
+  {
+    "id": 34,
+    "nome": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
+    "has_block": true,
+    "seletor_opts": [
+      "Branco 110V (127V)"
+    ],
+    "review_opts": [
+      "Branco 110V (127V)",
+      "Branco 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Branco 110V (127V)'), mas reviews falam de várias opções: ['Branco 110V (127V)', 'Branco 220V']"
+  },
+  {
+    "id": 35,
+    "nome": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto"
+    ],
+    "review_opts": [
+      "Preto",
+      "Camuflado",
+      "Azul"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto'), mas reviews falam de várias opções: ['Preto', 'Camuflado', 'Azul']"
+  },
+  {
+    "id": 36,
+    "nome": "Celular Xiaomi Poco X7 Pro 5g Dual Sim 512gb Amarelo 12ram 50mpx",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 512GB"
+    ],
+    "review_opts": [
+      "Preto 512GB",
+      "Azul 512GB",
+      "Amarelo 512GB"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto 512GB'), mas reviews falam de várias opções: ['Preto 512GB', 'Azul 512GB', 'Amarelo 512GB']"
+  },
+  {
+    "id": 38,
+    "nome": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
+    "has_block": true,
+    "seletor_opts": [
+      "Coleção Completa Yara (4x25ml)"
+    ],
+    "review_opts": [
+      "Coleção Completa Yara (4x25ml)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 39,
+    "nome": "Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W",
+    "has_block": true,
+    "seletor_opts": [],
+    "review_opts": [
+      "220V",
+      "110V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 40,
+    "nome": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
+    "has_block": true,
+    "seletor_opts": [
+      "127V",
+      "220V"
+    ],
+    "review_opts": [
+      "127V",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 41,
+    "nome": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 110V (127V)"
+    ],
+    "review_opts": [
+      "Preto 110V (127V)",
+      "Preto 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto 110V (127V)'), mas reviews falam de várias opções: ['Preto 110V (127V)', 'Preto 220V']"
+  },
+  {
+    "id": 45,
+    "nome": "Prancha Pro 480 Turbo MQ Professional Bivolt",
+    "has_block": true,
+    "seletor_opts": [
+      "Titanium Bivolt Automático"
+    ],
+    "review_opts": [
+      "Titanium Bivolt Automático"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 46,
+    "nome": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)",
+    "has_block": true,
+    "seletor_opts": [],
+    "review_opts": [
+      "127V",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 47,
+    "nome": "Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá ",
+    "has_block": true,
+    "seletor_opts": [
+      "Amarelo/Preto 110V"
+    ],
+    "review_opts": [
+      "Amarelo/Preto 110V",
+      "Amarelo/Preto 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Amarelo/Preto 110V'), mas reviews falam de várias opções: ['Amarelo/Preto 110V', 'Amarelo/Preto 220V']"
+  },
+  {
+    "id": 48,
+    "nome": "Panificadora Automática Mondial Master Bread 220V",
+    "has_block": true,
+    "seletor_opts": [
+      "Branco 110V"
+    ],
+    "review_opts": [
+      "Branco 110V",
+      "Branco 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Branco 110V'), mas reviews falam de várias opções: ['Branco 110V', 'Branco 220V']"
+  },
+  {
+    "id": 49,
+    "nome": "Extratora e Higienizadora Portátil WAP Spot Cleaner W3 1450W Borrifa Esfrega e Extrai Sujeira",
+    "has_block": true,
+    "seletor_opts": [
+      "110V (127V)",
+      "220V"
+    ],
+    "review_opts": [
+      "110V (127V)",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 50,
+    "nome": "Lava e Seca Midea Master Clean Smart 11kg Wi-Fi MFM01D110WB-TKBR Titanium",
+    "has_block": true,
+    "seletor_opts": [
+      "110v",
+      "220v"
+    ],
+    "review_opts": [
+      "110v",
+      "220v"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 52,
+    "nome": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano",
+    "has_block": true,
+    "seletor_opts": [
+      "Prata 256gb",
+      "Azul 256gb",
+      "Rosa 256gb",
+      "Prata 128gb",
+      "Azul 128gb",
+      "Rosa 128gb"
+    ],
+    "review_opts": [
+      "Prata 256gb",
+      "Azul 256gb",
+      "Rosa 256gb",
+      "Prata 128gb",
+      "Azul 128gb",
+      "Rosa 128gb"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 53,
+    "nome": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
+    "has_block": true,
+    "seletor_opts": [
+      "Kit Completo Satélite V4 + Roteador Wi-Fi 6"
+    ],
+    "review_opts": [
+      "Kit Completo Satélite V4 + Roteador Wi-Fi 6"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 54,
+    "nome": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
+    "has_block": true,
+    "seletor_opts": [
+      "Prata Inox Bivolt"
+    ],
+    "review_opts": [
+      "Prata Inox Bivolt"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 55,
+    "nome": " SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
+    "has_block": true,
+    "seletor_opts": [
+      "NEON",
+      "CINZA"
+    ],
+    "review_opts": [
+      "NEON",
+      "CINZA"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 56,
+    "nome": "Esteira Elétrica Ergométrica Ginástica Corrida Dobrável - Max 85kg - Heroi Sports",
+    "has_block": true,
+    "seletor_opts": [
+      "Modelo 1",
+      "Modelo 2",
+      "Modelo 3"
+    ],
+    "review_opts": [
+      "Modelo 1",
+      "Modelo 2",
+      "Modelo 3"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 57,
+    "nome": "caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E Tws",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto (2 Microfones Sem Fio)"
+    ],
+    "review_opts": [
+      "Preto (2 Microfones Sem Fio)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 58,
+    "nome": "Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto",
+      "Branco",
+      "Azul",
+      "Vermelho",
+      "Bege",
+      "Cor Aleatório",
+      "Alaxe Pro Max-Preto",
+      "Alaxe Pro Max-Branco",
+      "Alaxe Pro Max-Azul",
+      "Alaxe Pro Max-Vermelho",
+      "Alaxe Pro Max-Cor Aleatório"
+    ],
+    "review_opts": [
+      "Preto",
+      "Branco",
+      "Azul",
+      "Vermelho",
+      "Bege",
+      "Cor Aleatório",
+      "Alaxe Pro Max-Preto",
+      "Alaxe Pro Max-Branco",
+      "Alaxe Pro Max-Azul",
+      "Alaxe Pro Max-Vermelho",
+      "Alaxe Pro Max-Cor Aleatório"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 59,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 60,
+    "nome": "Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,",
+    "has_block": true,
+    "seletor_opts": [
+      "AZUL",
+      "CINZA",
+      "VERMELHO",
+      "preto"
+    ],
+    "review_opts": [
+      "AZUL",
+      "CINZA",
+      "VERMELHO",
+      "preto"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 61,
+    "nome": "Caixa de Som Joog Amplificada Break X1 c/ Tela Touch 13 Microfone Sem Fio, Bluetooth, 800W, Android",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 800W (Tela Touch 13.1\\"
+    ],
+    "review_opts": [
+      "Preto 800W (Tela Touch 13.1"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 63,
+    "nome": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto com GPS"
+    ],
+    "review_opts": [
+      "Preto com GPS",
+      "Cinza Claro com GPS"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto com GPS'), mas reviews falam de várias opções: ['Preto com GPS', 'Cinza Claro com GPS']"
+  },
+  {
+    "id": 64,
+    "nome": "Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
+    "has_block": true,
+    "seletor_opts": [
+      "Kit Auxiliar de Partida + Compressor com Maleta"
+    ],
+    "review_opts": [
+      "Kit Auxiliar de Partida + Compressor com Maleta"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 65,
+    "nome": "Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza",
+    "has_block": true,
+    "seletor_opts": [
+      "Suede Veludo Cinza Chumbo"
+    ],
+    "review_opts": [
+      "Suede Veludo Cinza Chumbo",
+      "Suede Veludo Marrom"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Suede Veludo Cinza Chumbo'), mas reviews falam de várias opções: ['Suede Veludo Cinza Chumbo', 'Suede Veludo Marrom']"
+  },
+  {
+    "id": 68,
+    "nome": "Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro",
+    "has_block": true,
+    "seletor_opts": [
+      "Rose",
+      "Granite"
+    ],
+    "review_opts": [
+      "Rose",
+      "Granite"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 70,
+    "nome": "Secadora de Roupa Mueller Solaris 8 kg com timer ar quente e frio 6 varões e 5 cabides",
+    "has_block": true,
+    "seletor_opts": [
+      "Branco"
+    ],
+    "review_opts": [
+      "Branco"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 72,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 73,
+    "nome": "Caixa De Som Bluetooth Waaw Hyperboom 1000",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 180W RMS Bivolt"
+    ],
+    "review_opts": [
+      "Preto 180W RMS Bivolt"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 74,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [],
+    "review_opts": [
+      "Amarela Oficial G",
+      "Amarela Oficial M",
+      "Edição Especial",
+      "Azul Reserva G",
+      "Azul Reserva GG"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 75,
+    "nome": "Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida",
+    "has_block": true,
+    "seletor_opts": [
+      "Variadas"
+    ],
+    "review_opts": [
+      "Variadas"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 76,
+    "nome": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
+    "has_block": true,
+    "seletor_opts": [
+      "Jogo Completo 30 Peças Porcelana Orgânico"
+    ],
+    "review_opts": [
+      "Jogo Completo 30 Peças Porcelana Orgânico"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 78,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 79,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 80,
+    "nome": "Panificadora 19 Programas Gallant 600w 127v Branca (GPA1E19A_127BR)",
+    "has_block": true,
+    "seletor_opts": [
+      "Inox/Preto 110V"
+    ],
+    "review_opts": [
+      "Inox/Preto 110V",
+      "Inox/Preto 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Inox/Preto 110V'), mas reviews falam de várias opções: ['Inox/Preto 110V', 'Inox/Preto 220V']"
+  },
+  {
+    "id": 81,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 82,
+    "nome": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
+    "has_block": true,
+    "seletor_opts": [
+      "Titanium 110V"
+    ],
+    "review_opts": [
+      "Titanium 110V",
+      "Titanium 220V"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Titanium 110V'), mas reviews falam de várias opções: ['Titanium 110V', 'Titanium 220V']"
+  },
+  {
+    "id": 83,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 84,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 85,
+    "nome": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto Karaokê 300W com Tela 10.1\\"
+    ],
+    "review_opts": [
+      "Preto Karaokê 300W com Tela 10.1"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 87,
+    "nome": "Calça Mom Jeans Feminina com Cinto Preto KISSMELADY Cintura Alta Modeladora",
+    "has_block": true,
+    "seletor_opts": [
+      "Jeans Claro com Cinto",
+      "Jeans Médio com Cinto",
+      "Jeans Escuro com Cinto"
+    ],
+    "review_opts": [
+      "Jeans Claro com Cinto",
+      "Jeans Médio com Cinto",
+      "Jeans Escuro com Cinto"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 88,
+    "nome": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social",
+    "has_block": true,
+    "seletor_opts": [
+      "Verde Militar",
+      "Branco",
+      "Marinho",
+      "Cinza Claro",
+      "Chumbo",
+      "Laranja Queimado",
+      "Rosê",
+      "Bege",
+      "Marrom",
+      "Preto",
+      "Marsala",
+      "Caramelo",
+      "Royal",
+      "Verde Neon",
+      "Caqui"
+    ],
+    "review_opts": [
+      "Verde Militar",
+      "Branco",
+      "Marinho",
+      "Cinza Claro",
+      "Chumbo",
+      "Laranja Queimado",
+      "Rosê",
+      "Bege",
+      "Marrom",
+      "Preto",
+      "Marsala",
+      "Caramelo",
+      "Royal",
+      "Verde Neon",
+      "Caqui"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 89,
+    "nome": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
+    "has_block": true,
+    "seletor_opts": [
+      "VERMELHO CLASSICO",
+      "AZUL Moderno",
+      "PRETO Surreal",
+      "CINZA CHIQUE",
+      "LARANJA descolado"
+    ],
+    "review_opts": [
+      "VERMELHO CLASSICO",
+      "AZUL Moderno",
+      "PRETO Surreal",
+      "CINZA CHIQUE",
+      "LARANJA descolado"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 90,
+    "nome": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto Indução Space 5 Peças"
+    ],
+    "review_opts": [
+      "Preto Indução Space 5 Peças"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 91,
+    "nome": "Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir Pipoca PPI04V Philco",
+    "has_block": true,
+    "seletor_opts": [
+      "220v",
+      "110v"
+    ],
+    "review_opts": [
+      "220v",
+      "110v"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 92,
+    "nome": "",
+    "has_block": false,
+    "seletor_opts": [],
+    "review_opts": [],
+    "status": "SEM_VARIACOES_NO_SELETOR",
+    "motivo": "Cai no fallback 'Padrão único' no modal, mas reviews têm 0 opções: []"
+  },
+  {
+    "id": 94,
+    "nome": "Bicicleta Bike Ergometrica Spinning Academia Fitness Profissional 120kg",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto e Vermelho Academia"
+    ],
+    "review_opts": [
+      "Preto e Vermelho Academia"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 95,
+    "nome": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 127V",
+      "Branco 127V",
+      "Azul Tifany 127V",
+      "Prata Premium 127V"
+    ],
+    "review_opts": [
+      "Preto 127V",
+      "Branco 127V",
+      "Azul Tifany 127V",
+      "Prata Premium 127V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 96,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Oxford Ryo Maresia 30 Peças Porcelana"
+    ],
+    "review_opts": [
+      "Oxford Ryo Maresia 30 Peças Porcelana"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 97,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Canyon Porcelana Decorada 20 Peças"
+    ],
+    "review_opts": [
+      "Canyon Porcelana Decorada 20 Peças"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 98,
+    "nome": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
+    "has_block": true,
+    "seletor_opts": [
+      "Kit 12 Copos Cristal Bohemia 450ml"
+    ],
+    "review_opts": [
+      "Kit 12 Copos Cristal Bohemia 450ml"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 99,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [],
+    "review_opts": [
+      "Vermelha Oficial G",
+      "Vermelha Oficial M",
+      "Edição Especial",
+      "Verde Reserva G",
+      "Vermelha Oficial GG"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 100,
+    "nome": "Apple iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto",
+      "Azul",
+      "Verde",
+      "Amarelo",
+      "Rosa"
+    ],
+    "review_opts": [
+      "Titânio Preto 128GB",
+      "Titânio Natural 256GB",
+      "Titânio Azul 256GB",
+      "Titânio Branco 128GB"
+    ],
+    "status": "DIVERGENCIA_OPCOES",
+    "motivo": "Reviews citam opções que NÃO existem no seletor: ['Titânio Preto 128GB', 'Titânio Natural 256GB', 'Titânio Azul 256GB'] (Seletor tem: ['Preto', 'Azul', 'Verde'])"
+  },
+  {
+    "id": 101,
+    "nome": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
+    "has_block": true,
+    "seletor_opts": [
+      "CINTURATO P7 (P7C2)",
+      "CINTURATO P7",
+      "CINTURATO P1",
+      "CINTURATO P6",
+      "P ZERO (PZ4)",
+      "POWERGY",
+      "P400 EVO",
+      "SCORPION VERDE",
+      "SCORPION ATR"
+    ],
+    "review_opts": [
+      "CINTURATO P7 (P7C2)",
+      "CINTURATO P7",
+      "CINTURATO P1",
+      "CINTURATO P6",
+      "P ZERO (PZ4)",
+      "POWERGY",
+      "P400 EVO",
+      "SCORPION VERDE",
+      "SCORPION ATR"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 102,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Preta"
+    ],
+    "review_opts": [
+      "Preta",
+      "Branca",
+      "Vermelha"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preta'), mas reviews falam de várias opções: ['Preta', 'Branca', 'Vermelha']"
+  },
+  {
+    "id": 103,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto P"
+    ],
+    "review_opts": [
+      "Preto P",
+      "Preto M",
+      "Preto G",
+      "Vermelho M"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto P'), mas reviews falam de várias opções: ['Preto P', 'Preto M', 'Preto G', 'Vermelho M']"
+  },
+  {
+    "id": 104,
+    "nome": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+    "has_block": true,
+    "seletor_opts": [
+      "BRANCO",
+      "PRETO",
+      "CARAMELO"
+    ],
+    "review_opts": [
+      "BRANCO",
+      "PRETO",
+      "CARAMELO"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 105,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Branco 4K Smart Android 11"
+    ],
+    "review_opts": [
+      "Branco 4K Smart Android 11",
+      "Preto 4K Smart Android 11"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Branco 4K Smart Android 11'), mas reviews falam de várias opções: ['Branco 4K Smart Android 11', 'Preto 4K Smart Android 11']"
+  },
+  {
+    "id": 106,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto P/M"
+    ],
+    "review_opts": [
+      "Preto P/M",
+      "Preto G/GG",
+      "Bege P/M",
+      "Bege G/GG"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto P/M'), mas reviews falam de várias opções: ['Preto P/M', 'Preto G/GG', 'Bege P/M', 'Bege G/GG']"
+  },
+  {
+    "id": 107,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto com Bicos de Sucção e Soprador"
+    ],
+    "review_opts": [
+      "Preto com Bicos de Sucção e Soprador"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 108,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [],
+    "review_opts": [
+      "110V",
+      "220V",
+      "Bivolt"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 109,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Cinza e Roxo Bivolt USB"
+    ],
+    "review_opts": [
+      "Cinza e Roxo Bivolt USB"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 110,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto/Branco 39"
+    ],
+    "review_opts": [
+      "Preto/Branco 39",
+      "Preto/Branco 40",
+      "Preto/Branco 41",
+      "Preto/Branco 42",
+      "Azul Marinho 40",
+      "Azul Marinho 41"
+    ],
+    "status": "SELETOR_UNICO_REVIEWS_MULTIPLAS",
+    "motivo": "Seletor só tem 1 opção ('Preto/Branco 39'), mas reviews falam de várias opções: ['Preto/Branco 39', 'Preto/Branco 40', 'Preto/Branco 41', 'Preto/Branco 42', 'Azul Marinho 40', 'Azul Marinho 41']"
+  },
+  {
+    "id": 111,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto 16 Desenhos Temáticos USB"
+    ],
+    "review_opts": [
+      "Preto 16 Desenhos Temáticos USB"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 112,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Pista Musical Escada + 3 Patinhos"
+    ],
+    "review_opts": [
+      "Pista Musical Escada + 3 Patinhos"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 113,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Duplo Acrílico Transparente Elevado"
+    ],
+    "review_opts": [
+      "Duplo Acrílico Transparente Elevado"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 114,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Arcade Stick 7 em 1 USB Plug & Play"
+    ],
+    "review_opts": [
+      "Arcade Stick 7 em 1 USB Plug & Play"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 115,
+    "nome": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
+    "has_block": true,
+    "seletor_opts": [
+      "127V (110V)",
+      "220V"
+    ],
+    "review_opts": [
+      "127V (110V)",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 116,
+    "nome": "Smart TV DLED 32 HD Multi Roku 3HDMI 2USB Wi-Fi - TL052M",
+    "has_block": true,
+    "seletor_opts": [
+      "32\\",
+      "43\\"
+    ],
+    "review_opts": [
+      "32\\",
+      "43\\"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 117,
+    "nome": "Fogão Atlas Mônaco Top Glass 4 Bocas Mesa de Vidro Temperado Preto",
+    "has_block": true,
+    "seletor_opts": [
+      "Preto Bivolt - Gás GLP (Botijão)",
+      "Preto Bivolt - Gás Natural (GN Encanado)"
+    ],
+    "review_opts": [
+      "Preto Bivolt - Gás GLP (Botijão)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 118,
+    "nome": "Conjunto Sala de Jantar Mesa Tampo Chanfrado com 4 Cadeiras Estofadas Suede Slim",
+    "has_block": true,
+    "seletor_opts": [
+      "Freijó / Off-White",
+      "Freijó / Grafite"
+    ],
+    "review_opts": [
+      "Freijó / Off-White",
+      "Freijó / Grafite"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 119,
+    "nome": "Combo Fardo Mega Fraldas Supreme Care + 4 Pacotes Lenços Umedecidos Toque Suave",
+    "has_block": true,
+    "seletor_opts": [
+      "Tamanho M (5,5 a 9,5kg)",
+      "Tamanho G (9 a 12,5kg)",
+      "Tamanho XG (12 a 15kg)",
+      "Tamanho XXG (+14kg)"
+    ],
+    "review_opts": [
+      "Tamanho M (5,5 a 9,5kg)",
+      "Tamanho G (9 a 12,5kg)",
+      "Tamanho XG (12 a 15kg)",
+      "Tamanho XXG (+14kg)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 120,
+    "nome": "Sofá Retrátil e Reclinável 3 Lugares 2,10m Suede Veludo com Molas Ensacadas e Pillow Top",
+    "has_block": true,
+    "seletor_opts": [
+      "Cinza Chumbo",
+      "Bege Claro",
+      "Marrom Café",
+      "Azul Petróleo"
+    ],
+    "review_opts": [
+      "Cinza Chumbo",
+      "Bege Claro",
+      "Marrom Café",
+      "Azul Petróleo"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 121,
+    "nome": "Travesseiro Cervical Ortopédico Abranuv Pro 2.0 Espuma Viscoelástica",
+    "has_block": true,
+    "seletor_opts": [
+      "1 Unidade - Travesseiro Abranuv Pro 2.0",
+      "Combo 2 Unidades - Leve 2 com Super Desconto"
+    ],
+    "review_opts": [
+      "1 Unidade - Travesseiro Abranuv Pro 2.0"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 122,
+    "nome": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
+    "has_block": true,
+    "seletor_opts": [
+      "110V (127V)",
+      "220V"
+    ],
+    "review_opts": [
+      "110V (127V)",
+      "220V"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 123,
+    "nome": "Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta, 2 Baterias e Canhão de Espuma",
+    "has_block": true,
+    "seletor_opts": [
+      "Kit Completo 48V (2 Baterias + Maleta + Snow Foam)"
+    ],
+    "review_opts": [
+      "Kit Completo 48V (2 Baterias + Maleta + Snow Foam)"
+    ],
+    "status": "OK",
+    "motivo": ""
+  },
+  {
+    "id": 124,
+    "nome": "",
+    "has_block": true,
+    "seletor_opts": [
+      "Livro Bilíngue Interativo + Caneta Tátil Som ao Toque"
+    ],
+    "review_opts": [
+      "Livro Bilíngue Interativo + Caneta Tátil Som ao Toque"
+    ],
+    "status": "OK",
+    "motivo": ""
+  }
+]

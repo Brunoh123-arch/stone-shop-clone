@@ -1,0 +1,36 @@
+    <!-- SEÇÃO OFICIAL: SOBRE ESTE PRODUTO -->
+    <div class="about-product-section" id="sobre-este-produto">
+      <h2 class="about-section-title">Sobre este produto</h2>
+
+      <!-- SUBSEÇÃO 1: DETALHES (PARIDADE OFICIAL TIKTOK SHOP - SEM TABELA HTML) -->
+      <div class="product-details-block">
+        <h3 class="about-subtitle">Detalhes</h3>
+        <div class="details-attributes-grid">
+          {{DETALHES_GRID}}
+        </div>
+        <button class="details-toggle-btn" onclick="toggleProductDetails(this)">
+          <span>Ver mais</span>
+          <svg viewBox="0 0 24 24" class="toggle-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- SUBSEÇÃO 2: VÍDEO OFICIAL TIKTOK SHOP -->
+      {{PRODUCT_VIDEO_BLOCK}}
+
+      <!-- SUBSEÇÃO 3: DESCRIÇÃO OFICIAL TIKTOK SHOP -->
+      <div class="description-section" id="sobre-produto-desc-section">
+        <h3 class="about-subtitle">Descrição</h3>
+        <div class="desc-expandable-wrapper" id="desc-expandable-container">
+          <div class="desc-content-inner">
+            {{DESCRICAO_HTML}}
+          </div>
+          <div class="desc-fade-overlay" id="desc-fade-overlay"></div>
+        </div>
+        <button class="desc-toggle-expand-btn" id="btn-toggle-desc" onclick="toggleDescricaoCompleta()">
+          <span id="btn-toggle-desc-text">Ver mais</span>
+          <svg viewBox="0 0 24 24" class="desc-toggle-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>

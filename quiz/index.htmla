@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carregando...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    #app {
+      min-height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Este div é onde o conteúdo será carregado -->
+  <div id="app">
+    <!-- Conteúdo de carregamento opcional -->
+    <div
+      style="display: flex; justify-content: center; align-items: center; height: 100vh;"
+    >
+      <p>Carregando...</p>
+    </div>
+  </div>
+  
+  <!-- Carregar o script Clym -->
+  <script src="https://clym-v1.vercel.app/clym.js"></script>
+  <script>
+    // Inicializar o Clym com sua API key
+    Clym.init("2f6bf0872e68830a9d75aa353f9d4215");
+  </script>
+</body>
+</html>

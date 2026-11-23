@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+import json, sys, os
+sys.path.append(os.path.abspath('scripts'))
+from tiktok_catbox_downloader import download_and_upload_to_catbox
+
+videos = [
+  {
+    "username": "dlily.variedades",
+    "nickname": "D’Lily Variedades",
+    "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f879914a752a821266c3313d6c24a497~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=330ac987&x-expires=1795366800&x-signature=Ez5zQW6kyigtawUur50mTDQLAiU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+    "desc": "Kit de mochila da Bluey e Bingo com lancheira térmica saindo para entrega! Apaixonada!",
+    "playAddr": "https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oIQn8ZefRpETFUBpB4DZG7FUMy5WgAjIclTFEE/?a=1988&bti=ODszNWYuMDE6&&bt=1739&ft=-Csk_mrMPD12N3_ruY-Uxjv2LY6e3wv25ycAp&mime_type=video_mp4&rc=PDZoOjg8aDo3ZjQ8PGk3O0BpM21qOms5cnBuODMzODczNEBhLi0xMzJfNTIxMTZgMzAyYSNzM2drMmRjcWBhLS1kMTFzcw%3D%3D&expire=1795368212&l=2026112101230735835000620C52F678A9&ply_type=2&policy=2&signature=52a7f3a3335379a9e9b79d05e6358c6a&tk=tt_chain_token&btag=e000b8000",
+    "cover": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oEF7IUEDCcfBGjzQTpUZEneIwBFx8RAW4ZBqgg~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=RbiOZS9vFY%2Bn%2BBZCITjZlwSLH%2B4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2"
+  },
+  {
+    "username": "aldenice._",
+    "nickname": "Aldenice Souza",
+    "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/257448a53c7b45a482c786ff40c42941~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=cde9330c&x-expires=1795366800&x-signature=XGo7rpfSHRpofxBTAxIcK%2BU1Ps0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+    "desc": "Mochila infantil Bluey e Bingo maravilhosa! Minha pequena amou as cores e os bolsos laterais!",
+    "playAddr": "https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oAuWBYi14Ao4w2BAiVqucNa8kBzQnEBv8IEPq/?a=1988&bti=ODszNWYuMDE6&&bt=1351&ft=-Csk_mrMPD12NyLruY-UxJJ2WY6e3wv25DcAp&mime_type=video_mp4&rc=O2k8OWQ2Nmg3NzxmZ2U0NkBpMzo3PGo5cnY2ZTMzODczNEA2LTUxNjUyNjExMjMtNS4xYSNfcy1pMmRrYWthLS1kMTFzcw%3D%3D&expire=1795368218&l=202611210123288F7154215D5493F4A110&ply_type=2&policy=2&signature=965c8612cc1baf5abdbef64e57501d7c&tk=tt_chain_token&btag=e000b0000",
+    "cover": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o4oWeAG3sNDD1LjEVqOl3HoIAQduCQjQfnCGIf~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=sLK%2BN5UwWB6GXrqgxkWKadlKGDw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2"
+  },
+  {
+    "username": "feitozzi",
+    "nickname": "Feitozzi",
+    "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/710133245a8de43131f8174771745112~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4479a56e&x-expires=1795366800&x-signature=bI27yC6kmHKdttlM2AHpCdWhqRM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+    "desc": "Coleção de mochilas escolares da Bluey! Estampa vibrante, material reforçado e lancheira combinando!",
+    "playAddr": "https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oEiswEXPmAhivBYBiIdzAQE6CaXEt8uaIX98d/?a=1988&bti=ODszNWYuMDE6&&bt=1478&ft=I~da4oKyD12NvurKslIxR_bNvlBF-UjNSKopiX&mime_type=video_mp4&rc=OTk0NmQ8NzY7NDo2ZDtlPEBpajVvOHc5cnRsZTMzODczNEBiNjExYTY0NTYxNTZhLzA1YSNiaW9qMmQ0MGthLS1kMWBzcw%3D%3D&expire=1795368241&l=20261121012345DCF888FF9BB4A701DA99&ply_type=2&policy=2&signature=7b6ed826f2c4f30c484ef2b92734283a&tk=tt_chain_token&btag=e000b8000",
+    "cover": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oo7E6I1lIY7EcD7BEvhDfB6RHoAFDGygeLjqQu~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=NwNKhylPDWnjIIf8r5uZcmUSY7E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2"
+  },
+  {
+    "username": "deshop75",
+    "nickname": "Dejane ✨",
+    "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/480a8ab197c25f750308a7edc2a2ae25~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=24208e5c&x-expires=1795366800&x-signature=%2FlwwqXTr8YdqtIu0c14nvsUN5Kc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+    "desc": "Mochila escolar da Bluey perfeita para as aulas! Leve, espaçosa e com acabamento de primeira linha!",
+    "playAddr": "https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oEf4wL7jdVn5IAEd0snF3IrDCCBRfEj9Jf4AQD/?a=1988&bti=ODszNWYuMDE6&&bt=1791&ft=I~da4oKyD12NvYYKslIxRGkSQlBF-UjNSxopiX&mime_type=video_mp4&rc=NWVnOTY8aTo1aGZoNTs4M0BpamVsc3k5cnh3ZTMzODczNEAwXzZjNjI2NTYxM19jMy4wYSM1YnFvMmQ0MXJhLS1kMWBzcw%3D%3D&expire=1795368267&l=20261121012420C0CE67DCC492DA075ADA&ply_type=2&policy=2&signature=ca276b51504503750d512a80210df8ce&tk=tt_chain_token&btag=e000b0000",
+    "cover": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/oM407ASOd4AfIEQVHfFfDEAdTp3AOOIBjADtIn~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=2%2FiS7HW73j0%2FX%2FE7DrI0cP70suM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2"
+  },
+  {
+    "username": "dlily.variedades_2",
+    "nickname": "D’Lily Papelaria",
+    "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f879914a752a821266c3313d6c24a497~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=330ac987&x-expires=1795366800&x-signature=Ez5zQW6kyigtawUur50mTDQLAiU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+    "desc": "Kit mochila Bluey e Bingo com lancheira térmica e estojo! Sucesso absoluto para as meninas!",
+    "playAddr": "https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oUVIEYPdEFASybQgERsDQHpkjtPF9fpu5BhfB2/?a=1988&bti=ODszNWYuMDE6&&bt=2185&ft=-Csk_mrMPD12N9SruY-Ux7T59Y6e3wv252cAp&mime_type=video_mp4&rc=OTYzNjQ4ZzQ7ZDo6O2Q3ZkBpamc5O3k5cms2ODMzODczNEAyNDYyY19jNTYxYDM1YjYvYSNiNmE2MmRzcmthLS1kMS1zcw%3D%3D&expire=1795368300&l=202611210124406F30FE7C136B03C92785&ply_type=2&policy=2&signature=5283c51dafe1a573641a3bee786c7d63&tk=tt_chain_token&btag=e000b8000",
+    "cover": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/owaitBEIIBgpHIbfhPFQubhkd29pOEASDBjRHf~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=Jnm4wxDVa7w2qxTHtGa1WetcFQY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2"
+  }
+]
+
+results = []
+for i, v in enumerate(videos):
+    print(f"[*] Processando video {i+1}/5 (@{v['username']})...")
+    catbox = download_and_upload_to_catbox(v['playAddr'], f"bluey_{v['username']}.mp4")
+    print(f"    [+] Catbox: {catbox}")
+    v['catbox'] = catbox
+    results.append(v)
+
+with open('scripts/p33_videos_result.json', 'w', encoding='utf-8') as f:
+    json.dump(results, f, ensure_ascii=False, indent=2)
+
+print("\n[+] SUCESSO TOTAL! 5 vídeos de Bluey & Bingo (P33) no Catbox!")

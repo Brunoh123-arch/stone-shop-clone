@@ -1,0 +1,1274 @@
+{
+  "metadata": {
+    "total_files_purged": 158,
+    "total_bytes_purged": 702338692,
+    "total_mb_purged": 669.8,
+    "timestamp": "2026-11-16T20:13:18.061042+00:00"
+  },
+  "purged_files": [
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.22.mp4",
+      "catbox_url": "https://files.catbox.moe/ukmosr.mp4",
+      "size_bytes": 11368509,
+      "size_mb": 10.84,
+      "sha256": "e134f9c3c515d4399d6c3eb37855b234c5debc88ebb5d2326b1cb0747c4f5f0b",
+      "purged_at": "2026-11-16T19:49:32.318506+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.26.mp4",
+      "catbox_url": "https://files.catbox.moe/ifsim6.mp4",
+      "size_bytes": 7669368,
+      "size_mb": 7.31,
+      "sha256": "303bf13402febc75045a444c1fafb1f66fc94e4818aca143f9bca11397ec6152",
+      "purged_at": "2026-11-16T19:49:32.334889+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.27.mp4",
+      "catbox_url": "https://files.catbox.moe/3lusxf.mp4",
+      "size_bytes": 3525348,
+      "size_mb": 3.36,
+      "sha256": "31967e8c3a747eded00c2e383c9a5eba9a80d0a7094928f961ec72f715ee0892",
+      "purged_at": "2026-11-16T19:49:32.342543+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.32.mp4",
+      "catbox_url": "https://files.catbox.moe/38b3hv.mp4",
+      "size_bytes": 9431666,
+      "size_mb": 8.99,
+      "sha256": "eae1f83c0c477ae6e0f2cc0bd3d91e6de928082236fe24d6c6898295a18d5009",
+      "purged_at": "2026-11-16T19:49:32.362553+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.35.mp4",
+      "catbox_url": "https://files.catbox.moe/nqu6ks.mp4",
+      "size_bytes": 5960049,
+      "size_mb": 5.68,
+      "sha256": "e6cde21a66ef9875943827e5c1a124141a1558a30b2f86ba8986c8bf160d2183",
+      "purged_at": "2026-11-16T19:49:32.375243+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.40.mp4",
+      "catbox_url": "https://files.catbox.moe/q3naa4.mp4",
+      "size_bytes": 9732770,
+      "size_mb": 9.28,
+      "sha256": "04518c15f696e5837b2d6d03a70b264f8869134147c45efc588f199d08782680",
+      "purged_at": "2026-11-16T19:49:32.397938+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.41.mp4",
+      "catbox_url": "https://files.catbox.moe/pj5xsi.mp4",
+      "size_bytes": 3396909,
+      "size_mb": 3.24,
+      "sha256": "24d7317466cfbce54916a381613aaa7b3b0348e557f54eceded136d0f9d290fa",
+      "purged_at": "2026-11-16T19:49:32.405964+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.43.mp4",
+      "catbox_url": "https://files.catbox.moe/rpimi5.mp4",
+      "size_bytes": 2997430,
+      "size_mb": 2.86,
+      "sha256": "7b8f12fe0b4eaef0ea780759180313a180b5890c8dfa432dc430063b6d6692fb",
+      "purged_at": "2026-11-16T19:49:32.413039+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.48.mp4",
+      "catbox_url": "https://files.catbox.moe/zlnumo.mp4",
+      "size_bytes": 11090801,
+      "size_mb": 10.58,
+      "sha256": "b33b876313ef36325aace148c83125e20ead5f10968de2ac99cfe652a647a793",
+      "purged_at": "2026-11-16T19:49:32.437455+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.52.mp4",
+      "catbox_url": "https://files.catbox.moe/duznxa.mp4",
+      "size_bytes": 9543661,
+      "size_mb": 9.1,
+      "sha256": "969545a14f669fab50f27bb362257400861874f6d91b1d8e7677196a83fc7e3c",
+      "purged_at": "2026-11-16T19:49:32.457815+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.36.53.mp4",
+      "catbox_url": "https://files.catbox.moe/cill8y.mp4",
+      "size_bytes": 1867802,
+      "size_mb": 1.78,
+      "sha256": "fd586f8811cf980717ea27919f67e1e54924f8249e51f1ea596a0ea367b05d88",
+      "purged_at": "2026-11-16T19:49:32.461888+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.37.01.mp4",
+      "catbox_url": "https://files.catbox.moe/2n37mu.mp4",
+      "size_bytes": 14957095,
+      "size_mb": 14.26,
+      "sha256": "92d351dd6039c3cd6b8e940eb4eeb420cec975df693fa73c38cbc55a51edea31",
+      "purged_at": "2026-11-16T19:49:32.493459+00:00"
+    },
+    {
+      "original_path": "videosdoscriadorespneu/WhatsApp Video 2026-07-27 at 19.37.04.mp4",
+      "catbox_url": "https://files.catbox.moe/kkl0yf.mp4",
+      "size_bytes": 5595754,
+      "size_mb": 5.34,
+      "sha256": "faa4c3aca5de69b4be1d757a69f93d5637373149455fd7ead4a53af6c7a39b2e",
+      "purged_at": "2026-11-16T19:49:32.505629+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c1.mp4",
+      "catbox_url": "https://files.catbox.moe/jwkiqt.mp4",
+      "size_bytes": 3479767,
+      "size_mb": 3.32,
+      "sha256": "03190b2fe62b990aa4d2e79fc2665686e7b890700da06f4a7c763b1a3c96cdc7",
+      "purged_at": "2026-11-16T19:49:32.513112+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c2.mp4",
+      "catbox_url": "https://files.catbox.moe/qmv0y6.mp4",
+      "size_bytes": 2665466,
+      "size_mb": 2.54,
+      "sha256": "a1481d970055a2a4ba1218ac57b8a75cfb520141ae2935cec3fecdfe8720bdd4",
+      "purged_at": "2026-11-16T19:49:32.518907+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c3.mp4",
+      "catbox_url": "https://files.catbox.moe/mfpyu6.mp4",
+      "size_bytes": 2306386,
+      "size_mb": 2.2,
+      "sha256": "7b24cbbd37262fabf37186b8e5a364a534087e8512a5d39d91aa8a07ab6d5562",
+      "purged_at": "2026-11-16T19:49:32.523904+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c4.mp4",
+      "catbox_url": "https://files.catbox.moe/cbcaqg.mp4",
+      "size_bytes": 2143651,
+      "size_mb": 2.04,
+      "sha256": "7f3e74385d179654262eddbdc7d51032b45d9233d81139424da5c3bf50cd2404",
+      "purged_at": "2026-11-16T19:49:32.528569+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c5.mp4",
+      "catbox_url": "https://files.catbox.moe/ba3szw.mp4",
+      "size_bytes": 2621462,
+      "size_mb": 2.5,
+      "sha256": "8fec4441bbfcec870fbd1ddd580473019f9e794adb446b9735261b647b964943",
+      "purged_at": "2026-11-16T19:49:32.534236+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c6.mp4",
+      "catbox_url": "https://files.catbox.moe/jhxyrw.mp4",
+      "size_bytes": 1895613,
+      "size_mb": 1.81,
+      "sha256": "c374229014bbbb4a75f0a8b830d0934ace4e03e3446a8d31622e7ded9ef4ed9d",
+      "purged_at": "2026-11-16T19:49:32.538429+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c7.mp4",
+      "catbox_url": "https://files.catbox.moe/vtlv5y.mp4",
+      "size_bytes": 2063810,
+      "size_mb": 1.97,
+      "sha256": "beead05ece84ff4e70593dbd8e248552327b4e369c9124a25682fc337a9881e8",
+      "purged_at": "2026-11-16T19:49:32.542892+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-arke-c8.mp4",
+      "catbox_url": "https://files.catbox.moe/3xa4m3.mp4",
+      "size_bytes": 2720665,
+      "size_mb": 2.59,
+      "sha256": "0e22ba10a635d32f6ecca7e3ae2660b48b46d9980f5e2a007ff458643eb6947e",
+      "purged_at": "2026-11-16T19:49:32.549033+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-biscuitt-c1.mp4",
+      "catbox_url": "https://files.catbox.moe/dpa885.mp4",
+      "size_bytes": 4769272,
+      "size_mb": 4.55,
+      "sha256": "fb7f69824a247fb53b0db6e6ba005965dd18ee0cdce28c80a11f4eb19059d465",
+      "purged_at": "2026-11-16T19:49:32.559229+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-biscuitt-c2.mp4",
+      "catbox_url": "https://files.catbox.moe/ymfpap.mp4",
+      "size_bytes": 14018103,
+      "size_mb": 13.37,
+      "sha256": "a51d2fcf1118f8749b62ebf5e16b23d3d150e8a60459a1555961b0e61642dab7",
+      "purged_at": "2026-11-16T19:49:32.588907+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-biscuitt-c3.mp4",
+      "catbox_url": "https://files.catbox.moe/hmxb1e.mp4",
+      "size_bytes": 7772001,
+      "size_mb": 7.41,
+      "sha256": "11371c69c1f8ad39226b813d7799b4e055309a4a21b1cba3ce5cac3b910914d0",
+      "purged_at": "2026-11-16T19:49:32.605379+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-biscuitt-c4.mp4",
+      "catbox_url": "https://files.catbox.moe/h7ctxk.mp4",
+      "size_bytes": 5621655,
+      "size_mb": 5.36,
+      "sha256": "692cfa8408bea80f0f21ed5845a4780218d1aac6459e81a428488f6d3b1e47a9",
+      "purged_at": "2026-11-16T19:49:32.617430+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-biscuitt-c5.mp4",
+      "catbox_url": "https://files.catbox.moe/84y53y.mp4",
+      "size_bytes": 17435676,
+      "size_mb": 16.63,
+      "sha256": "8422caef7c3b2c702a26df558a9e09bc29a9c34ef100bf4c422c37882cedbd22",
+      "purged_at": "2026-11-16T19:49:32.654181+00:00"
+    },
+    {
+      "original_path": "videosprodutos/churras-biscuitt-c6.mp4",
+      "catbox_url": "https://files.catbox.moe/xs7xwp.mp4",
+      "size_bytes": 24801406,
+      "size_mb": 23.65,
+      "sha256": "215c162914e280f1332ff1b47e13b871e335a3c90022eb242beb5121011f245f",
+      "purged_at": "2026-11-16T19:49:32.711442+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-11-1.mp4",
+      "catbox_url": "https://files.catbox.moe/p7r4vc.mp4",
+      "size_bytes": 7251204,
+      "size_mb": 6.92,
+      "sha256": "b321578b6e660212489cbc243e193b574bea3597273897f1428a241065026740",
+      "purged_at": "2026-11-16T19:49:32.726860+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-11-2.mp4",
+      "catbox_url": "https://files.catbox.moe/ac2l43.mp4",
+      "size_bytes": 5658827,
+      "size_mb": 5.4,
+      "sha256": "d21f99ab9ae72a154502f7619d9c0b70502ce7ca28d018b72a0226d956c02683",
+      "purged_at": "2026-11-16T19:49:32.739024+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-11-3.mp4",
+      "catbox_url": "https://files.catbox.moe/byfq7d.mp4",
+      "size_bytes": 9030084,
+      "size_mb": 8.61,
+      "sha256": "4848feb7e36d6d8bf31a594819135daa5c5b9a4b0c926034d75ef0d43c96f29c",
+      "purged_at": "2026-11-16T19:49:32.758788+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-22-1.mp4",
+      "catbox_url": "https://files.catbox.moe/p7r4vc.mp4",
+      "size_bytes": 7251204,
+      "size_mb": 6.92,
+      "sha256": "b321578b6e660212489cbc243e193b574bea3597273897f1428a241065026740",
+      "purged_at": "2026-11-16T19:49:32.775154+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-22-2.mp4",
+      "catbox_url": "https://files.catbox.moe/ac2l43.mp4",
+      "size_bytes": 5658827,
+      "size_mb": 5.4,
+      "sha256": "d21f99ab9ae72a154502f7619d9c0b70502ce7ca28d018b72a0226d956c02683",
+      "purged_at": "2026-11-16T19:49:32.787502+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-22-3.mp4",
+      "catbox_url": "https://files.catbox.moe/byfq7d.mp4",
+      "size_bytes": 9030084,
+      "size_mb": 8.61,
+      "sha256": "4848feb7e36d6d8bf31a594819135daa5c5b9a4b0c926034d75ef0d43c96f29c",
+      "purged_at": "2026-11-16T19:49:32.806885+00:00"
+    },
+    {
+      "original_path": "videosprodutos/criador-9-2.mp4",
+      "catbox_url": "https://files.catbox.moe/zmlngs.mp4",
+      "size_bytes": 1646355,
+      "size_mb": 1.57,
+      "sha256": "4d6f586fe999c24ff015bcb42f06c483b760dc3d551c459510ff13768df71eec",
+      "purged_at": "2026-11-16T19:49:32.810527+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_01.mp4",
+      "catbox_url": "https://files.catbox.moe/ma9orc.mp4",
+      "size_bytes": 3313207,
+      "size_mb": 3.16,
+      "sha256": "b1fe39c26c02a15039ffdb41f9f886f0221830e697d412eb7f6a597d2f4e2bf7",
+      "purged_at": "2026-11-16T19:49:32.817652+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_02.mp4",
+      "catbox_url": "https://files.catbox.moe/0vbhfp.mp4",
+      "size_bytes": 2102635,
+      "size_mb": 2.01,
+      "sha256": "a1daaa0abe84e364e9cf1a82d3f2826a2545aba011a23dcfcdc8ce650123a2b8",
+      "purged_at": "2026-11-16T19:49:32.822333+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_03.mp4",
+      "catbox_url": "https://files.catbox.moe/3x4you.mp4",
+      "size_bytes": 1140888,
+      "size_mb": 1.09,
+      "sha256": "7af95cef691576cad9c2635d0f23b9c477cb5dcde54784320f5f519182a72648",
+      "purged_at": "2026-11-16T19:49:32.824946+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_04.mp4",
+      "catbox_url": "https://files.catbox.moe/y43cqh.mp4",
+      "size_bytes": 2778286,
+      "size_mb": 2.65,
+      "sha256": "671e2d8f580095ffcca5bd1c72aee0d4d5f835d8a990f43c822a0700c841c1ae",
+      "purged_at": "2026-11-16T19:49:32.830916+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_05.mp4",
+      "catbox_url": "https://files.catbox.moe/d2zr3n.mp4",
+      "size_bytes": 4388392,
+      "size_mb": 4.19,
+      "sha256": "79317055895e73fd275ef178b68a7b13b3248a6e8cc42dbad506cfabae26b7fe",
+      "purged_at": "2026-11-16T19:49:32.840476+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_06.mp4",
+      "catbox_url": "https://files.catbox.moe/ro3rql.mp4",
+      "size_bytes": 771405,
+      "size_mb": 0.74,
+      "sha256": "e417efd643c4339a0129f85888904352d0130a06dcb17b5c1a13e149a848e178",
+      "purged_at": "2026-11-16T19:49:32.842274+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_07.mp4",
+      "catbox_url": "https://files.catbox.moe/as86v5.mp4",
+      "size_bytes": 12397436,
+      "size_mb": 11.82,
+      "sha256": "6fda357c5fbca829673a1acd67aeec9a8dd9b8e474f2c53f32bd8faf29ef260d",
+      "purged_at": "2026-11-16T19:49:32.868523+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_08.mp4",
+      "catbox_url": "https://files.catbox.moe/7ji1kl.mp4",
+      "size_bytes": 948137,
+      "size_mb": 0.9,
+      "sha256": "b40d01f18ea1f0ce289aed0e0b597e53be24125afb4cbcd7cbb6b6637a829ae7",
+      "purged_at": "2026-11-16T19:49:32.870711+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_09.mp4",
+      "catbox_url": "https://files.catbox.moe/hl6497.mp4",
+      "size_bytes": 1592475,
+      "size_mb": 1.52,
+      "sha256": "b20be0ba2785c2858542ebfa2ced609743fd4e989138e8ff8766d329f22d1032",
+      "purged_at": "2026-11-16T19:49:32.874190+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_10.mp4",
+      "catbox_url": "https://files.catbox.moe/a99yi6.mp4",
+      "size_bytes": 1320068,
+      "size_mb": 1.26,
+      "sha256": "8b191899893eb758a8f41b80839ae4de14dd604b2eabb52cd3e993a3ccc8630e",
+      "purged_at": "2026-11-16T19:49:32.877113+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_11.mp4",
+      "catbox_url": "https://files.catbox.moe/0ynp98.mp4",
+      "size_bytes": 5653014,
+      "size_mb": 5.39,
+      "sha256": "7ed21adc430ee85d459659ff49986685a6844495d55cdf0177cdc7b68d3da772",
+      "purged_at": "2026-11-16T19:49:32.889164+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_12.mp4",
+      "catbox_url": "https://files.catbox.moe/d6g8cy.mp4",
+      "size_bytes": 3840056,
+      "size_mb": 3.66,
+      "sha256": "59e07676f1dd5af36392c1b22ba414eb84557905d7a003057d902e5af09af74b",
+      "purged_at": "2026-11-16T19:49:32.897404+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_13.mp4",
+      "catbox_url": "https://files.catbox.moe/zqvtxs.mp4",
+      "size_bytes": 1771136,
+      "size_mb": 1.69,
+      "sha256": "3efcdde400601730a1a5f76d6ece65b14efc49a52b5b4d1f51ece36a2b83822a",
+      "purged_at": "2026-11-16T19:49:32.901242+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_14.mp4",
+      "catbox_url": "https://files.catbox.moe/2ocaje.mp4",
+      "size_bytes": 953118,
+      "size_mb": 0.91,
+      "sha256": "61115a18a6d1f8f32ecf94b4e17ac2aed71d54b50e02988db5cc0d5a7062b928",
+      "purged_at": "2026-11-16T19:49:32.903393+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_15.mp4",
+      "catbox_url": "https://files.catbox.moe/sqhtzv.mp4",
+      "size_bytes": 3824296,
+      "size_mb": 3.65,
+      "sha256": "c95a9ee579d8e4f36008617af8b990dfb6424dc2afd6b1c1398e70fe7fafa2a1",
+      "purged_at": "2026-11-16T19:49:32.911952+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_16.mp4",
+      "catbox_url": "https://files.catbox.moe/5f3uxs.mp4",
+      "size_bytes": 9293048,
+      "size_mb": 8.86,
+      "sha256": "985b89d767456af1e6399d3f1f3f26be4342cbac4c929ac7b074b0265ac2e9bc",
+      "purged_at": "2026-11-16T19:49:32.946257+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_17.mp4",
+      "catbox_url": "https://files.catbox.moe/9zd1gt.mp4",
+      "size_bytes": 2500738,
+      "size_mb": 2.38,
+      "sha256": "5b105fee542562222f7583ace0143647308a7f7dd3732f3a0b18882493ff4215",
+      "purged_at": "2026-11-16T19:49:32.955445+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_18.mp4",
+      "catbox_url": "https://files.catbox.moe/vfpzlw.mp4",
+      "size_bytes": 12279201,
+      "size_mb": 11.71,
+      "sha256": "aa38df3fa8df7446ac6e7f545b8239c71dea3f8d43c03d41bf0c593a42dcf668",
+      "purged_at": "2026-11-16T19:49:32.987255+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_19.mp4",
+      "catbox_url": "https://files.catbox.moe/bzytqo.mp4",
+      "size_bytes": 13741329,
+      "size_mb": 13.1,
+      "sha256": "b75a5ac17a0eaa77531a1ad092f962a564f3958b23cc6fd1d3f66b994a1e8fa6",
+      "purged_at": "2026-11-16T19:49:33.016630+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_20.mp4",
+      "catbox_url": "https://files.catbox.moe/jaw3u7.mp4",
+      "size_bytes": 2154858,
+      "size_mb": 2.06,
+      "sha256": "b8ed5965d1dcbc25aec846e9a846531adc8a98704b662a222e87d4760f5ef950",
+      "purged_at": "2026-11-16T19:49:33.021605+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_21.mp4",
+      "catbox_url": "https://files.catbox.moe/as86v5.mp4",
+      "size_bytes": 12397436,
+      "size_mb": 11.82,
+      "sha256": "6fda357c5fbca829673a1acd67aeec9a8dd9b8e474f2c53f32bd8faf29ef260d",
+      "purged_at": "2026-11-16T19:49:33.048183+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_22.mp4",
+      "catbox_url": "https://files.catbox.moe/71r8g4.mp4",
+      "size_bytes": 15070697,
+      "size_mb": 14.37,
+      "sha256": "2f6b1bfc7fd29ab60a07c19fb32e184b7000d5cce51c66ff6724cd289e009824",
+      "purged_at": "2026-11-16T19:49:33.080403+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_23.mp4",
+      "catbox_url": "https://files.catbox.moe/saenki.mp4",
+      "size_bytes": 15404796,
+      "size_mb": 14.69,
+      "sha256": "ffd9fce46427af5dc6c523676b6cc6960ab52957757711f04d7c62a2cc52b51c",
+      "purged_at": "2026-11-16T19:49:33.112982+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_24.mp4",
+      "catbox_url": "https://files.catbox.moe/bqlpca.mp4",
+      "size_bytes": 9199391,
+      "size_mb": 8.77,
+      "sha256": "59ff2c56068a6b3bdf5dde6b852e59b28cddc297d0c96f5c5238b07c98f300ae",
+      "purged_at": "2026-11-16T19:49:33.132466+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_25.mp4",
+      "catbox_url": "https://files.catbox.moe/h29h7m.mp4",
+      "size_bytes": 474038,
+      "size_mb": 0.45,
+      "sha256": "74a33038f2086604d750b892a5f1cf16b1a621d1bd7d6a9e3838dc904e85632d",
+      "purged_at": "2026-11-16T19:49:33.133643+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_26.mp4",
+      "catbox_url": "https://files.catbox.moe/802olo.mp4",
+      "size_bytes": 9532420,
+      "size_mb": 9.09,
+      "sha256": "91ee9b3d84646463204dcccaf3ea1a6b35821921a53499ca35e630fee7a97c12",
+      "purged_at": "2026-11-16T19:49:33.153911+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_27.mp4",
+      "catbox_url": "https://files.catbox.moe/95izb1.mp4",
+      "size_bytes": 6567543,
+      "size_mb": 6.26,
+      "sha256": "b59770a2ec96dbf96f60dce2652e1974e0f8b332256ac32fbe0606fc75a8b38e",
+      "purged_at": "2026-11-16T19:49:33.167958+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_28.mp4",
+      "catbox_url": "https://files.catbox.moe/6vxb54.mp4",
+      "size_bytes": 10891209,
+      "size_mb": 10.39,
+      "sha256": "28aed8d653a7b2057338915912cbd444b6b0e8d17f6370e47da1e8f1f8917162",
+      "purged_at": "2026-11-16T19:49:33.190955+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_29.mp4",
+      "catbox_url": "https://files.catbox.moe/xhi8x1.mp4",
+      "size_bytes": 1397500,
+      "size_mb": 1.33,
+      "sha256": "64cd6a543855be0e9edf680bdf67ca65eb5002287bf527899839e9a17ece9e81",
+      "purged_at": "2026-11-16T19:49:33.194051+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_30.mp4",
+      "catbox_url": "https://files.catbox.moe/lg4tdt.mp4",
+      "size_bytes": 3346371,
+      "size_mb": 3.19,
+      "sha256": "4599b03297f97cde0211f81a38338f67d49853753c46a88bd2c6ce91fce15847",
+      "purged_at": "2026-11-16T19:49:33.201390+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_31.mp4",
+      "catbox_url": "https://files.catbox.moe/628cdv.mp4",
+      "size_bytes": 6938892,
+      "size_mb": 6.62,
+      "sha256": "011362849b847b4cb9af458c5520b2b92ff6065f69b3a10a1db2f820906c726f",
+      "purged_at": "2026-11-16T19:49:33.216209+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_32.mp4",
+      "catbox_url": "https://files.catbox.moe/zbswl8.mp4",
+      "size_bytes": 34889534,
+      "size_mb": 33.27,
+      "sha256": "c69ca2afc37cafccf3b86bc8b3d05be14e8abf57760bfc5049a82d2bfe6f8676",
+      "purged_at": "2026-11-16T19:49:33.290749+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_01.mp4",
+      "catbox_url": "https://files.catbox.moe/a1eoxs.mp4",
+      "size_bytes": 922747,
+      "size_mb": 0.88,
+      "sha256": "eb82d22484685d0fe9c2356ae567dce0ed393d7f29a0eedf254f3b13d2d27b7f",
+      "purged_at": "2026-11-16T19:49:33.293096+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_02.mp4",
+      "catbox_url": "https://files.catbox.moe/s1lcfe.mp4",
+      "size_bytes": 1590473,
+      "size_mb": 1.52,
+      "sha256": "94b51ba1330a713f19dd418e7957c4a0318e8413853db85432ef66724c5ea5a7",
+      "purged_at": "2026-11-16T19:49:33.296913+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_03.mp4",
+      "catbox_url": "https://files.catbox.moe/mc1plp.mp4",
+      "size_bytes": 1811642,
+      "size_mb": 1.73,
+      "sha256": "e85358a5e74e4b9f0c0b99c7a82ad88692e6fe4a4a5ddb9aef1c44af00aa12c1",
+      "purged_at": "2026-11-16T19:49:33.301203+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_04.mp4",
+      "catbox_url": "https://files.catbox.moe/9g7hs6.mp4",
+      "size_bytes": 1976144,
+      "size_mb": 1.88,
+      "sha256": "ec63904634938531f0ced41f4687185ec5351f7a88f215f02ea7522a855e7e20",
+      "purged_at": "2026-11-16T19:49:33.305866+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_05.mp4",
+      "catbox_url": "https://files.catbox.moe/c1oz8o.mp4",
+      "size_bytes": 1834372,
+      "size_mb": 1.75,
+      "sha256": "473dcd798e23cf84ec51040ab6d0af1ad434155011b3c2f1e8560a6d187ce380",
+      "purged_at": "2026-11-16T19:49:33.310341+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_06.mp4",
+      "catbox_url": "https://files.catbox.moe/zok50k.mp4",
+      "size_bytes": 1402368,
+      "size_mb": 1.34,
+      "sha256": "1ca0d0ee167944453458828340d2c3870b96ac42b7597c7acaf6bfd174abcf8e",
+      "purged_at": "2026-11-16T19:49:33.313697+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_07.mp4",
+      "catbox_url": "https://files.catbox.moe/vyw8h2.mp4",
+      "size_bytes": 1571239,
+      "size_mb": 1.5,
+      "sha256": "a163a3ba3176dd6083bb6494e73b90480a4d1ec1b247e11c053a8817385ecfee",
+      "purged_at": "2026-11-16T19:49:33.317432+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_08.mp4",
+      "catbox_url": "https://files.catbox.moe/sk0yh6.mp4",
+      "size_bytes": 1356092,
+      "size_mb": 1.29,
+      "sha256": "3dd835d7fdc2a32fcebed2f0626a058b23dd5cff8e06c7e2709f983a972814c3",
+      "purged_at": "2026-11-16T19:49:33.320681+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_09.mp4",
+      "catbox_url": "https://files.catbox.moe/i84hm4.mp4",
+      "size_bytes": 1616515,
+      "size_mb": 1.54,
+      "sha256": "5f986a2e0af68083d95388ca4a5a104fcf01e4e93ec3b5545ff48d749b825879",
+      "purged_at": "2026-11-16T19:49:33.324558+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_10.mp4",
+      "catbox_url": "https://files.catbox.moe/0n0j04.mp4",
+      "size_bytes": 2066247,
+      "size_mb": 1.97,
+      "sha256": "ad14ab6ab24c1b175dfa62f73e9180f0f81d014aeae8c971e727bf8b17e8e29d",
+      "purged_at": "2026-11-16T19:49:33.329426+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_11.mp4",
+      "catbox_url": "https://files.catbox.moe/tfjuih.mp4",
+      "size_bytes": 2006051,
+      "size_mb": 1.91,
+      "sha256": "c8afd09d72ffc4afaffa6bbc2f7ef10dd5026de48cc4008906fe83ea4174329f",
+      "purged_at": "2026-11-16T19:49:33.334149+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_12.mp4",
+      "catbox_url": "https://files.catbox.moe/rvye6v.mp4",
+      "size_bytes": 2008633,
+      "size_mb": 1.92,
+      "sha256": "1c037b6a37452240777e3ee35845f216713962f4e9fc3073d8d6b9d7167f610e",
+      "purged_at": "2026-11-16T19:49:33.338999+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_13.mp4",
+      "catbox_url": "https://files.catbox.moe/boz1bo.mp4",
+      "size_bytes": 236907,
+      "size_mb": 0.23,
+      "sha256": "4d6c2fb12665b215c4571b8e6162a1f79225e409477c16f30e4eb6028088214b",
+      "purged_at": "2026-11-16T19:49:33.339696+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_14.mp4",
+      "catbox_url": "https://files.catbox.moe/9ut6uv.mp4",
+      "size_bytes": 405762,
+      "size_mb": 0.39,
+      "sha256": "043d7b957eae2766e16d63551335ab5e679f4578210be7eecce17ba9c173986a",
+      "purged_at": "2026-11-16T19:49:33.340691+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_15.mp4",
+      "catbox_url": "https://files.catbox.moe/jqvk36.mp4",
+      "size_bytes": 455072,
+      "size_mb": 0.43,
+      "sha256": "a9d71e86bb9f54d1c9221688b1f8a355c148d5c669292b3d0c55172886bb56f4",
+      "purged_at": "2026-11-16T19:49:33.341794+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_16.mp4",
+      "catbox_url": "https://files.catbox.moe/eat313.mp4",
+      "size_bytes": 3379214,
+      "size_mb": 3.22,
+      "sha256": "7dfc519cbb566f82066d8836b58f0a7fc32c689f4c90b1f89c9a394684dcf997",
+      "purged_at": "2026-11-16T19:49:33.349024+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_17.mp4",
+      "catbox_url": "https://files.catbox.moe/azfbn2.mp4",
+      "size_bytes": 3028331,
+      "size_mb": 2.89,
+      "sha256": "ba0d4db6c84af7ad86f72e6e1b4cfd838a41c3d2143726a4fe77209f6ccdd573",
+      "purged_at": "2026-11-16T19:49:33.355488+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_18.mp4",
+      "catbox_url": "https://files.catbox.moe/5ki8dk.mp4",
+      "size_bytes": 221089,
+      "size_mb": 0.21,
+      "sha256": "09c1499c6eef1e77da0fef55bf12023bbd830ebe86656f3ebf5a5264c314433a",
+      "purged_at": "2026-11-16T19:49:33.356121+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_19.mp4",
+      "catbox_url": "https://files.catbox.moe/3e1lap.mp4",
+      "size_bytes": 355551,
+      "size_mb": 0.34,
+      "sha256": "e10b69d839579389a6b3e1cfc7a14717940ee9345f1425596f136f5bd92be30f",
+      "purged_at": "2026-11-16T19:49:33.357010+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_20.mp4",
+      "catbox_url": "https://files.catbox.moe/u1mpnm.mp4",
+      "size_bytes": 849719,
+      "size_mb": 0.81,
+      "sha256": "a4076d9d5ea119fb655cb56b7564fdeb67d0e9e7f2a90c0bb6f876d12664e05c",
+      "purged_at": "2026-11-16T19:49:33.358922+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_21.mp4",
+      "catbox_url": "https://files.catbox.moe/nptrl1.mp4",
+      "size_bytes": 691279,
+      "size_mb": 0.66,
+      "sha256": "9cd772e240f06c024dfbcea1122b228a93181436abc33e1debe52635f573e15c",
+      "purged_at": "2026-11-16T19:49:33.360497+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_22.mp4",
+      "catbox_url": "https://files.catbox.moe/hw63y3.mp4",
+      "size_bytes": 412574,
+      "size_mb": 0.39,
+      "sha256": "ee60385267fc4b5abbd37bc2a9297831098cafcf9fc639e761f73d2b811b2d5a",
+      "purged_at": "2026-11-16T19:49:33.361482+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_23.mp4",
+      "catbox_url": "https://files.catbox.moe/zw6m6q.mp4",
+      "size_bytes": 714523,
+      "size_mb": 0.68,
+      "sha256": "efcff5a9e752c2afb0eb348810b097e4f05e5482fb77ab6eff9a8b1c76146f28",
+      "purged_at": "2026-11-16T19:49:33.363118+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_24.mp4",
+      "catbox_url": "https://files.catbox.moe/a2vdpo.mp4",
+      "size_bytes": 736098,
+      "size_mb": 0.7,
+      "sha256": "36b24935264d2dc94276ddb75fbb764630699c62f6d9c8373ad642f4b2da2465",
+      "purged_at": "2026-11-16T19:49:33.364769+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_25.mp4",
+      "catbox_url": "https://files.catbox.moe/pxavr1.mp4",
+      "size_bytes": 340435,
+      "size_mb": 0.32,
+      "sha256": "d365fa181da5c4ecd67d05782c5b2589dff23f7a0539e7065545669705e2183a",
+      "purged_at": "2026-11-16T19:49:33.365618+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_26.mp4",
+      "catbox_url": "https://files.catbox.moe/9hq37i.mp4",
+      "size_bytes": 175120,
+      "size_mb": 0.17,
+      "sha256": "50ec270e9be66ec84813e4a0c51493ffd47359fd93de7b9a255ddd91843af158",
+      "purged_at": "2026-11-16T19:49:33.366147+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_27.mp4",
+      "catbox_url": "https://files.catbox.moe/z0m4xq.mp4",
+      "size_bytes": 1379540,
+      "size_mb": 1.32,
+      "sha256": "58c90e6569fa1b08fcbd2ec26466f8eddb308b1e8569f550e5194bf3eb41fdee",
+      "purged_at": "2026-11-16T19:49:33.369142+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_28.mp4",
+      "catbox_url": "https://files.catbox.moe/kvmthv.mp4",
+      "size_bytes": 1083309,
+      "size_mb": 1.03,
+      "sha256": "c29753d60e1f425b2263526f466602605f06a06eda541cee2c20a51c34084e8e",
+      "purged_at": "2026-11-16T19:49:33.371650+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_29.mp4",
+      "catbox_url": "https://files.catbox.moe/bfcywe.mp4",
+      "size_bytes": 1248607,
+      "size_mb": 1.19,
+      "sha256": "e625530dbd4ca8fe1ce8e685a6e5b65d339a812490699792849897a95b275eb5",
+      "purged_at": "2026-11-16T19:49:33.374418+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_30.mp4",
+      "catbox_url": "https://files.catbox.moe/l8ol2u.mp4",
+      "size_bytes": 948811,
+      "size_mb": 0.9,
+      "sha256": "80e0c257307be0c1a12649200c9985a7ff9e575a219e68be7db3d98806da1e03",
+      "purged_at": "2026-11-16T19:49:33.376535+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_31.mp4",
+      "catbox_url": "https://files.catbox.moe/pwmm71.mp4",
+      "size_bytes": 2109651,
+      "size_mb": 2.01,
+      "sha256": "78e00a14c9334f2227e35a162200a6677e4559b2c7b7c393ac7c9f8f70c70ff6",
+      "purged_at": "2026-11-16T19:49:33.381279+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia_32/beach_32.mp4",
+      "catbox_url": "https://files.catbox.moe/jq923t.mp4",
+      "size_bytes": 2544190,
+      "size_mb": 2.43,
+      "sha256": "0cdfdfc417d22f1f1af8302f5bdcf92bd0ff6af915eaea6b54c6e6dd25afbc21",
+      "purged_at": "2026-11-16T19:49:33.386879+00:00"
+    },
+    {
+      "original_path": "videosprodutos/shopee-asset-18-15.mp4",
+      "catbox_url": "https://files.catbox.moe/npi3kh.mp4",
+      "size_bytes": 3207105,
+      "size_mb": 3.06,
+      "sha256": "01fea85ab0464cfccc39850ac7a5865cb388b59c6381a067824c125bc58bf937",
+      "purged_at": "2026-11-16T19:49:33.393787+00:00"
+    },
+    {
+      "original_path": "videosprodutos/shopee-asset-22-1.mp4",
+      "catbox_url": "https://files.catbox.moe/qi938f.mp4",
+      "size_bytes": 771775,
+      "size_mb": 0.74,
+      "sha256": "c308637dfa481ef09213e6121e040418549e633d4758b9962822c0914712a0d7",
+      "purged_at": "2026-11-16T19:49:33.395544+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-14.mp4",
+      "catbox_url": "https://files.catbox.moe/ibv6vn.mp4",
+      "size_bytes": 4405534,
+      "size_mb": 4.2,
+      "sha256": "c84f15911916d519fc72e524a1a6704b66941aa24fbdccbb14eb2fdade49c7d7",
+      "purged_at": "2026-11-16T19:49:33.404930+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-15.mp4",
+      "catbox_url": "https://files.catbox.moe/qfampv.mp4",
+      "size_bytes": 5839630,
+      "size_mb": 5.57,
+      "sha256": "99b3158f3304e93008a040fa48d189866928bccbb20f6e494a38e82bec3c2ece",
+      "purged_at": "2026-11-16T19:49:33.419039+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-16.mp4",
+      "catbox_url": "https://files.catbox.moe/abwltl.mp4",
+      "size_bytes": 1564284,
+      "size_mb": 1.49,
+      "sha256": "cbf5129a45fff36bff7c1ac25506fbeac5f287379b26c4546a76559f57795f71",
+      "purged_at": "2026-11-16T19:49:33.422624+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-18.mp4",
+      "catbox_url": "https://files.catbox.moe/npi3kh.mp4",
+      "size_bytes": 3207105,
+      "size_mb": 3.06,
+      "sha256": "01fea85ab0464cfccc39850ac7a5865cb388b59c6381a067824c125bc58bf937",
+      "purged_at": "2026-11-16T19:49:33.429537+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-19.mp4",
+      "catbox_url": "https://files.catbox.moe/8octvc.mp4",
+      "size_bytes": 4038540,
+      "size_mb": 3.85,
+      "sha256": "ddfd28b9a96240f28ef615a8536cd346a17a641c2aa0e327c891e45901056771",
+      "purged_at": "2026-11-16T19:49:33.438301+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-20.mp4",
+      "catbox_url": "https://files.catbox.moe/8oqszr.mp4",
+      "size_bytes": 8003172,
+      "size_mb": 7.63,
+      "sha256": "7891b78ed2b3a59c803b76c043ea29db0d0b0181c50971a2ace7e9c7a1428bdc",
+      "purged_at": "2026-11-16T19:49:33.455322+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-21.mp4",
+      "catbox_url": "https://files.catbox.moe/rs5lzn.mp4",
+      "size_bytes": 1778149,
+      "size_mb": 1.7,
+      "sha256": "495df3447d149b38795a26a2d8e644c43b0aec8d69755552467f0b1c4b1c1e3b",
+      "purged_at": "2026-11-16T19:49:33.459246+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-22.mp4",
+      "catbox_url": "https://files.catbox.moe/ekswrf.mp4",
+      "size_bytes": 771763,
+      "size_mb": 0.74,
+      "sha256": "7fc8a612f6cbadbd9a0b91f07c403a3d224d12f283297a31d7e9860da3efc310",
+      "purged_at": "2026-11-16T19:49:33.461022+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-23.mp4",
+      "catbox_url": "https://files.catbox.moe/08kgk9.mp4",
+      "size_bytes": 1949681,
+      "size_mb": 1.86,
+      "sha256": "d65e57ed2655d011e143b216934f746d65c32c15c26f737c41513435ae28c9b1",
+      "purged_at": "2026-11-16T19:49:33.465281+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-24.mp4",
+      "catbox_url": "https://files.catbox.moe/3g9fcx.mp4",
+      "size_bytes": 4276271,
+      "size_mb": 4.08,
+      "sha256": "8ea3d7ec30c8dd45ce6a3df3f454dd3262195a5cb50cfb1e17e949653bcad31a",
+      "purged_at": "2026-11-16T19:49:33.474557+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-25.mp4",
+      "catbox_url": "https://files.catbox.moe/ncrzdr.mp4",
+      "size_bytes": 4670021,
+      "size_mb": 4.45,
+      "sha256": "4f63ceb3b5a29a3d943a24d667e15918d4d63e0410dce804144571442ee50ae7",
+      "purged_at": "2026-11-16T19:49:33.484643+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-26.mp4",
+      "catbox_url": "https://files.catbox.moe/sfr3li.mp4",
+      "size_bytes": 2964790,
+      "size_mb": 2.83,
+      "sha256": "934383fd2530414fbc56ef184b282c41e00a61b26b1ccc372ebdf841f076dde1",
+      "purged_at": "2026-11-16T19:49:33.491041+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-35.mp4",
+      "catbox_url": "https://files.catbox.moe/s313zy.mp4",
+      "size_bytes": 7029110,
+      "size_mb": 6.7,
+      "sha256": "61490fa4bb1612e30af968bfca36a712efa65f274424deea747bbec143d0ed0b",
+      "purged_at": "2026-11-16T19:49:33.506243+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-5.mp4",
+      "catbox_url": "https://files.catbox.moe/a8zjrb.mp4",
+      "size_bytes": 3230118,
+      "size_mb": 3.08,
+      "sha256": "5d641ac69c7f249911fa5c5062ba327f9d77d025dc7e271d457422da3024ab6b",
+      "purged_at": "2026-11-16T19:49:33.513329+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-52.mp4",
+      "catbox_url": "https://files.catbox.moe/3rtr42.mp4",
+      "size_bytes": 465436,
+      "size_mb": 0.44,
+      "sha256": "a973494ba4905f4b646e307cde1f1966f8177ca106f0d960cfa90aa534dc5067",
+      "purged_at": "2026-11-16T19:49:33.514479+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-55.mp4",
+      "catbox_url": "https://files.catbox.moe/wvgft8.mp4",
+      "size_bytes": 1243768,
+      "size_mb": 1.19,
+      "sha256": "9f0356571900cbe9ab38f85305a7863f02aafb68cefd27132c4f4ad3c74fc59d",
+      "purged_at": "2026-11-16T19:49:33.517260+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-57.mp4",
+      "catbox_url": "https://files.catbox.moe/v36v5l.mp4",
+      "size_bytes": 7729841,
+      "size_mb": 7.37,
+      "sha256": "9deac5f7996e7bbad2b0f6b4326ebd8648b0085231ca10a518168b485149c5e8",
+      "purged_at": "2026-11-16T19:49:33.533661+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-58.mp4",
+      "catbox_url": "https://files.catbox.moe/v6io74.mp4",
+      "size_bytes": 2456449,
+      "size_mb": 2.34,
+      "sha256": "1d379839b9e1b9c527e6bdcaa05c559fb0ad027b79ee7bf2d0de768edc4c3957",
+      "purged_at": "2026-11-16T19:49:33.539030+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-59.mp4",
+      "catbox_url": "https://files.catbox.moe/s6vnyh.mp4",
+      "size_bytes": 7928153,
+      "size_mb": 7.56,
+      "sha256": "1fc06e0a8ad658f36833024599e18f7a6fc10b072c4804afbed4f3b451e2fc57",
+      "purged_at": "2026-11-16T19:49:33.555872+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-60.mp4",
+      "catbox_url": "https://files.catbox.moe/1ig8lo.mp4",
+      "size_bytes": 2217123,
+      "size_mb": 2.11,
+      "sha256": "f0ed875c93ee45f9fd0b0619b3c5535df82d9eb842b453541cc4cffeacd08018",
+      "purged_at": "2026-11-16T19:49:33.560854+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-61.mp4",
+      "catbox_url": "https://files.catbox.moe/32ulh9.mp4",
+      "size_bytes": 722498,
+      "size_mb": 0.69,
+      "sha256": "915ee89b8a17f54138a29cd52351531644420ee20e4c4abd71a62a093281cd35",
+      "purged_at": "2026-11-16T19:49:33.562525+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-63.mp4",
+      "catbox_url": "https://files.catbox.moe/z40bo0.mp4",
+      "size_bytes": 3635263,
+      "size_mb": 3.47,
+      "sha256": "48e39c2cfd89d58222dfdca1e1be3e91ec3d30efbcf79db48b9a9446812179e1",
+      "purged_at": "2026-11-16T19:49:33.570292+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-64.mp4",
+      "catbox_url": "https://files.catbox.moe/fbfkzs.mp4",
+      "size_bytes": 3491157,
+      "size_mb": 3.33,
+      "sha256": "570581f35cd363bf61244bb35f03f5bc1ee23aea1c84fdfcbd2ecb3d3b9fa511",
+      "purged_at": "2026-11-16T19:49:33.577865+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-65.mp4",
+      "catbox_url": "https://files.catbox.moe/my8eud.mp4",
+      "size_bytes": 1297662,
+      "size_mb": 1.24,
+      "sha256": "5f3e830d45a11d4cb56ea2c008e922404ae0c35aebf3a2d27c94fdcf74a706fa",
+      "purged_at": "2026-11-16T19:49:33.580763+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-70.mp4",
+      "catbox_url": "https://files.catbox.moe/n5jecm.mp4",
+      "size_bytes": 1616333,
+      "size_mb": 1.54,
+      "sha256": "243b7220a6b0ad7fe90cdb833a5b6ae285b6407cfb87d6f22227196cb2cdf513",
+      "purged_at": "2026-11-16T19:49:33.584283+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-72.mp4",
+      "catbox_url": "https://files.catbox.moe/u5toyv.mp4",
+      "size_bytes": 3469977,
+      "size_mb": 3.31,
+      "sha256": "9ea2a7304b94a1e554cf71e0657e8faef7dbe645c3d4f4f44ac555683081d331",
+      "purged_at": "2026-11-16T19:49:33.591762+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-73.mp4",
+      "catbox_url": "https://files.catbox.moe/qd8ybp.mp4",
+      "size_bytes": 388292,
+      "size_mb": 0.37,
+      "sha256": "0d4055e87e33bbdcbadbdf3332fbdba0b6e921c44ed3ae632932172224944769",
+      "purged_at": "2026-11-16T19:49:33.592738+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-75.mp4",
+      "catbox_url": "https://files.catbox.moe/m3uloo.mp4",
+      "size_bytes": 7295818,
+      "size_mb": 6.96,
+      "sha256": "7919a2fc9ed5499e568740d4aaeaaaf31c745cecf81f4201cfbdd10a0ad0d756",
+      "purged_at": "2026-11-16T19:49:33.608192+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-78.mp4",
+      "catbox_url": "https://files.catbox.moe/6ubsxb.mp4",
+      "size_bytes": 5472444,
+      "size_mb": 5.22,
+      "sha256": "776c4231b78b24f522b72374349b47e2c92a8a27830354cf6a25221312b121af",
+      "purged_at": "2026-11-16T19:49:33.619825+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-80.mp4",
+      "catbox_url": "https://files.catbox.moe/3a2qhi.mp4",
+      "size_bytes": 4665095,
+      "size_mb": 4.45,
+      "sha256": "8cfa3129956eb5b918dd35c8f62599bbdfba8c84ba6bfc38be662e3c5e9ab81f",
+      "purged_at": "2026-11-16T19:49:33.630939+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-81.mp4",
+      "catbox_url": "https://files.catbox.moe/8ynmxe.mp4",
+      "size_bytes": 6030164,
+      "size_mb": 5.75,
+      "sha256": "129f66c7726f40b11a48c0e0d12520751619c1abdaf023ba61ba2af01a6946e1",
+      "purged_at": "2026-11-16T19:49:33.643970+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-83.mp4",
+      "catbox_url": "https://files.catbox.moe/2v31tr.mp4",
+      "size_bytes": 3317874,
+      "size_mb": 3.16,
+      "sha256": "0424db9678a0ae9c879d34a503cedbe228da87d339a4971a29ec2f0821bd2945",
+      "purged_at": "2026-11-16T19:49:33.651216+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-85.mp4",
+      "catbox_url": "https://files.catbox.moe/k3u5ff.mp4",
+      "size_bytes": 7856128,
+      "size_mb": 7.49,
+      "sha256": "91a471af11e35669df45745e4e83a1d16ae3f043d4aa8ea973f5110e371bbdd2",
+      "purged_at": "2026-11-16T19:49:33.667925+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-87.mp4",
+      "catbox_url": "https://files.catbox.moe/80bwka.mp4",
+      "size_bytes": 4718972,
+      "size_mb": 4.5,
+      "sha256": "201f74f97aa274c350d1b38c2c85ec5c9f43bc4e8c54cc6e2de38f8f4244f4a2",
+      "purged_at": "2026-11-16T19:49:33.678051+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-89.mp4",
+      "catbox_url": "https://files.catbox.moe/t5xtp1.mp4",
+      "size_bytes": 6032711,
+      "size_mb": 5.75,
+      "sha256": "8d76967290c3940268ee3e38f7faa1febae763b246230fbbc156fa5a04d94b52",
+      "purged_at": "2026-11-16T19:49:33.690919+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-91.mp4",
+      "catbox_url": "https://files.catbox.moe/xqpya7.mp4",
+      "size_bytes": 4092904,
+      "size_mb": 3.9,
+      "sha256": "5fe7ac5a3f628d012f6480afb65ba6abe8deeb7ce2f4a06113791b9d982a8f91",
+      "purged_at": "2026-11-16T19:49:33.699658+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-92.mp4",
+      "catbox_url": "https://files.catbox.moe/sdcjn0.mp4",
+      "size_bytes": 6207444,
+      "size_mb": 5.92,
+      "sha256": "829fcbc2a9858fd1a820fdaa4dfe386c7234f4ead53c5b7af501a2e9d9705000",
+      "purged_at": "2026-11-16T19:49:33.712838+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-94.mp4",
+      "catbox_url": "https://files.catbox.moe/perlvk.mp4",
+      "size_bytes": 1507648,
+      "size_mb": 1.44,
+      "sha256": "21b7fc7bb32e57620927925237f5116656db75e1d2b8d87e4eba7c7b5723bfa6",
+      "purged_at": "2026-11-16T19:49:33.716136+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-95.mp4",
+      "catbox_url": "https://files.catbox.moe/0qd90i.mp4",
+      "size_bytes": 2656722,
+      "size_mb": 2.53,
+      "sha256": "2cbfd7de3747894ddea098e8dd54210a20d6a6326b9484ae82454c3fa84117e3",
+      "purged_at": "2026-11-16T19:49:33.721928+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-96.mp4",
+      "catbox_url": "https://files.catbox.moe/i9wuhf.mp4",
+      "size_bytes": 2002732,
+      "size_mb": 1.91,
+      "sha256": "1e18f4ea1d6d28c6c16dbe31f0525cdae8af39ea14280327eb83b28de9339036",
+      "purged_at": "2026-11-16T19:49:33.726248+00:00"
+    },
+    {
+      "original_path": "videosprodutos/video-produto-97.mp4",
+      "catbox_url": "https://files.catbox.moe/0hhasi.mp4",
+      "size_bytes": 4163961,
+      "size_mb": 3.97,
+      "sha256": "ebdeb0472f905f410c4d998f8e2b7ab9b378af65944a2bb97b45c4589a27a3a5",
+      "purged_at": "2026-11-16T19:49:33.735128+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_21_short.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 3675539,
+      "size_mb": 3.51,
+      "sha256": "3900c21c5236c07c2c6fc4a7ca3dd3a61165a87fcb007f516dbaf94668e7f42c",
+      "purged_at": "2026-11-16T20:13:17.955030+00:00"
+    },
+    {
+      "original_path": "videosprodutos/piscina_32/pool_32_short.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 8127354,
+      "size_mb": 7.75,
+      "sha256": "5eaf41a10171ae153e067de7d64d60439884e9b27a00eb28191e6e0523e9f3f9",
+      "purged_at": "2026-11-16T20:13:17.972146+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cadeiras_mor_aluminio.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 1403351,
+      "size_mb": 1.34,
+      "sha256": "b554abb3f5401638984ab95ad4f170cccde5118e62657eef4d1bbc5c9ea2fd72",
+      "purged_at": "2026-11-16T20:13:17.976384+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cadeiras_mor_cores.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 3854648,
+      "size_mb": 3.68,
+      "sha256": "98574a875b67566195eccee8980b56865fccf488047ec58f56677200a2fef643",
+      "purged_at": "2026-11-16T20:13:17.984851+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cadeiras_mor_reclinavel.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 2157405,
+      "size_mb": 2.06,
+      "sha256": "1bafc0b3c669dad3e7eee879bb70d12fcb26cafba7c9980ffe62a41bd7d28b39",
+      "purged_at": "2026-11-16T20:13:17.989638+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cadeira_reclinavel_5pos.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 2712483,
+      "size_mb": 2.59,
+      "sha256": "0bbbca41664beabc3e946025bbab69a352f437955f8d57833494250d0d6a4f1d",
+      "purged_at": "2026-11-16T20:13:17.996211+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cadeira_summer_azul.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 1064768,
+      "size_mb": 1.02,
+      "sha256": "afc8477688f541c72613a0dda8af6b5e8381b713ecb7a31d0c2a7b70ec19d281",
+      "purged_at": "2026-11-16T20:13:17.998791+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/carrinho_praia_mor_1.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 2111731,
+      "size_mb": 2.01,
+      "sha256": "47e37fe5882b97398f707c5ca8ca6108a89d400eef3d58f667f5d82e3415fa19",
+      "purged_at": "2026-11-16T20:13:18.003418+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/carrinho_praia_mor_2.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 3334611,
+      "size_mb": 3.18,
+      "sha256": "fb7264df140bda2129a1fdfbb9adf6b9665b3987cf4770ab934230a619c64633",
+      "purged_at": "2026-11-16T20:13:18.010605+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/carrinho_praia_mor_3.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 7802837,
+      "size_mb": 7.44,
+      "sha256": "f13e4eb4b7e14d7dfc28b2ad3e23544ef8a39653af597a84801081a8d404aa7f",
+      "purged_at": "2026-11-16T20:13:18.027036+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cooler_18l_azul.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 426307,
+      "size_mb": 0.41,
+      "sha256": "2e9ecc03422f0da27593524b234ece70c087b2973056a214d24694e614231371",
+      "purged_at": "2026-11-16T20:13:18.028123+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cooler_18l_mor_unboxing.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 2477633,
+      "size_mb": 2.36,
+      "sha256": "f189574f8319b6fb3552d1c5eea1c6ad5d727774b5f867a72a36c2a7ab6ab85c",
+      "purged_at": "2026-11-16T20:13:18.033471+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cooler_compacto_mor.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 615130,
+      "size_mb": 0.59,
+      "sha256": "2233bca0bfba37820d5ce4c57aba3e62ca234680d3e7348a7094195c75e0cf9a",
+      "purged_at": "2026-11-16T20:13:18.034918+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/cooler_mor_18l.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 7418242,
+      "size_mb": 7.07,
+      "sha256": "2c2ed80d4e414690e83395e1870e28f9d415a382e44435ac721187f97dda4f58",
+      "purged_at": "2026-11-16T20:13:18.050950+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/guarda_sol_aluminio.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 829071,
+      "size_mb": 0.79,
+      "sha256": "371f4e6354537240def558cd5dc71cbeaf2c244cdc431da2b9ad157eba8eb617",
+      "purged_at": "2026-11-16T20:13:18.052957+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/guarda_sol_azul_mor.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 740215,
+      "size_mb": 0.71,
+      "sha256": "316cdfff0dd569c2302ce84123a8462ce88eb7144a13e046062b53d931bd53c1",
+      "purged_at": "2026-11-16T20:13:18.054632+00:00"
+    },
+    {
+      "original_path": "videosprodutos/praia/guarda_sol_colorido.mp4",
+      "catbox_url": "orphaned_or_draft",
+      "size_bytes": 1867215,
+      "size_mb": 1.78,
+      "sha256": "6742d7e39d4029325d908c9d5037239ee41df8a8ca8083ececf457266e56dcef",
+      "purged_at": "2026-11-16T20:13:18.058803+00:00"
+    }
+  ]
+}

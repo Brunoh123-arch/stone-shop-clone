@@ -1,0 +1,101 @@
+TOTAL NO CATALOGO: 99 PRODUTOS
+
+ID   4: Caixa De Som Boombox 3 Bluetooth Preta Jbl
+ID   5: Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza
+ID   6: Produto 6
+ID   7: Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA
+ID   8: Caixa de Som Amplificada AIWA Party Box AWS-PB-07 Bluetooth 100W RMS
+ID   9: Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW
+ID  10: Ar-Condicionado Portátil Wi-Fi 12.000 btus Frio AP-12CWBRNPS01 Hisense 127V
+ID  11: Climatizador de Ar 5,3L Oster Portátil 4 em 1
+ID  12: Piscina Splash Fun Redonda Inflável 2400 Litros - Mor
+ID  13: Piscina Borda Inflável Capacidade 1000 Litros Pixlar
+ID  14: Churrasqueira Elétrica Arke Apartamento Rotativa Com 5 Espetos 220v Vitta Smart
+ID  15: Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke &amp; Fire USB Com Bag
+ID  16: Produto 16
+ID  17: Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta
+ID  18: Produto 18
+ID  19: Produto 19
+ID  20: Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB
+ID  21: Bola De Futebol De Campo Penalty Bravo Xxv
+ID  22: Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway
+ID  23: Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava
+ID  24: Produto 24
+ID  25: Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake
+ID  26: Produto 26
+ID  27: Ar Condicionado Portátil LG Dual Inverter 14.000 Btu Bivolt
+ID  28: Produto 28
+ID  29: Ar Condicionado Portátil HQ 10.500 BTU/h Frio Branco HQ-AP10500FW
+ID  30: Climatizador de Ar Frio Midea 5 Litros Branco e Cinza ACM52 220V
+ID  31: Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v
+ID  32: Chuveiro Acqua Duo Lorenzetti BIVOLT
+ID  33: Mochila Escolar Bluey E Bingo 15l Kit Meninas Com Lancheira
+ID  34: Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt
+ID  35: Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt
+ID  36: Celular Xiaomi Poco X7 Pro 5g Dual Sim 512gb Amarelo 12ram 50mpx
+ID  38: Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original
+ID  39: Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W
+ID  40: Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros
+ID  41: Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI
+ID  44: Climatizador de Ar 35|60|80 Litros 127V-220V Ventisol PRO CLIN
+ID  45: Prancha Pro 480 Turbo MQ Professional Bivolt
+ID  46: Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)
+ID  47: Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá
+ID  48: Panificadora Automática Mondial Master Bread 220V
+ID  49: Detergente Limpador Para Extratoras Limpa E Extrai 1L Wap
+ID  50: Lava e Seca Midea Master Clean Smart 11kg Wi-Fi MFM01D110WB-TKBR Titanium
+ID  52: Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano
+ID  53: Produto 53
+ID  54: Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)
+ID  55: SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB
+ID  56: Esteira Elétrica Ergométrica Ginástica Corrida Dobrável - Max 85kg - Heroi Sports
+ID  57: caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E Tws
+ID  58: Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço
+ID  59: Mini Internet rápida Via Satélite Antena Original Garantia de 01 ano ENVIO IMEDIATO
+ID  60: Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,
+ID  61: Produto 61
+ID  63: Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira
+ID  64: Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear
+ID  65: Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza
+ID  68: Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro
+ID  70: Secadora de Roupa Mueller Solaris 8 kg com timer ar quente e frio 6 varões e 5 cabides
+ID  72: Produto 72
+ID  73: Caixa De Som Bluetooth Waaw Hyperboom 1000
+ID  74: Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026
+ID  75: Produto 75
+ID  76: Produto 76
+ID  78: Extratora e Higienizadora Portátil WAP Spot Cleaner 127V FW009214
+ID  79: Lava Louças Praxis Portátil LLPP Semi-Automática 127V Branca
+ID  80: Panificadora 19 Programas Gallant 600w 127v Branca (GPA1E19A_127BR)
+ID  81: Caixa de Som WAAW Hyperboom 1000 180W IPX7 TWS Bivolt
+ID  82: Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium
+ID  83: Caixa De Som Joog break X1 Tela 13,1 2 Microfones Cor Preto 110V/220V
+ID  84: Panificadora 19 Programas Gallant 600w Preta (GPA1E19A_127PT)
+ID  85: Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones
+ID  87: Produto 87
+ID  88: Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social
+ID  89: Kit conjunto de panelas de ferro esmaltadas luxo 18 peças
+ID  90: Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto
+ID  91: Produto 91
+ID  92: Produto 92
+ID  94: Bicicleta Bike Ergometrica Spinning Academia Fitness Profissional 120kg
+ID  95: Produto 95
+ID  96: Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças
+ID  97: Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina
+ID  98: Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect
+ID  99: Kit Compre 1 Leve 2 Camisa Seleção Portugal Home Copa 2026
+ID 100: Apple iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max
+ID 101: Pneus Pirelli - Encontre a medida ideal para o seu veículo | Stone Shop
+ID 102: Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km
+ID 103: Produto 103
+ID 104: Sandalia Feminina Chinelo Rasteirinha Luxo com Strass Macia Leve
+ID 105: Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto
+ID 106: Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora
+ID 107: Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo 2 em 1 Carro e Casa
+ID 108: Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda Bivolt
+ID 109: Produto 109
+ID 110: Tênis Kappa Pulse RX Masculino e Feminino Amortecimento Corrida e Caminhada
+ID 111: Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração Casa e Jardim
+ID 112: Caminhão de Bombeiros 2 em 1 Montanha-Russa de Patinhos Bate-Volta Led Musical
+ID 113: Comedouro Cachorro e Gato Elevado Duplo em Acrílico Transparente Anti-Engasgo
+ID 114: Controle Arcade 7 em 1 Stick Retrô Multiplataforma PS4 PS3 Xbox PC Switch Celular

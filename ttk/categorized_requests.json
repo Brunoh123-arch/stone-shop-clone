@@ -1,0 +1,1547 @@
+{
+  "api": [
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/api/post/item_list/",
+      "url": "https://www.tiktok.com/api/post/item_list/?WebIdLastTime=1792526555&aid=1988&app_language=pt-BR&app_name=tiktok_web&browser_language=pt-BR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F128.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&count=16&coverFormat=2&cursor=0&data_collection_enabled=false&device_id=7698842905792546311&device_platform=web_pc&focus_state=true&history_len=2&is_fullscreen=false&is_page_visible=true&language=pt-BR&odinId=7698842858023502866&os=windows&priority_region=&referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&region=BR&root_referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&screen_height=600&screen_width=800&secUid=MS4wLjABAAAArGZ1RzI28EJn8Kzw3U-VS7wtZfubk_LRcuXOmc1x2upGfCOESJZvdlfR1Z75NJS9&tz_name=America%2FFortaleza&user_is_login=false&video_encoding=dash&webcast_language=pt-BR&X-Dynosaur=MCaUWFaHCyppIP0Asc0PltWOqv92N/cGF1vfVeG8ITJbx1nvzbvAPwRCSzNAHNu1Xc7J0wQuwMWO-qyXGfMhBz3cJWzVlV6H9JtW-vhnHGmEgANkc-NhEoDfIUBGDgh10ZGw/mcNS6nubOFdnARthB5jIEK-2ObXwmHYUwqhCt8UQmOQC6wla3jEEiP/KVNz7U-KMalRgQpEzZdlqxnK18dicOH-dWFMogp0/i6rPaDRMec49MjIiicEGNKSWfwflLqgLj4Wt5wUCeTUr48PgDvgWTEL9woxYYR0-NT1ZRjH70RtSAqV5DVNf2W/wTtnFUQllePJW7OPiVUO/qO5ececjqXlFEFaZz89kpE1amwNJCCUiPo5HxxP/UVL3R6-WZy4LFhA7ZQg0GCef2rEF0R9OiD7k1nqtI==&msToken=&X-Bogus=1&X-Gnarly=MFhe0Ixdp6GvQTFXxn90cO4eUDFAd/I60Uaf9nNaeoy3h9mlisiokZuPoWA31Mb5wEydL3RpE0caX3W/7K1aHZzBVcQk39xxcTbJQjuqpgN/mYZt5m18D8QXla//ukwkeQp9vjN6Bywd2303AZmz/Ot48QoN/8RRhj8jJAAZZAhNLfv-hSdvvnM2WdtbGFoKyOLB-kALmxKMCmaowB9KCoxtlp8/hbO466h7qtl6//CC/RmDweNaeqap5wMqaDaQo0bLc0tmwlC8opN1EO0uKzCbqkSvwa6rKQ/oUmE3L3o5sujcPSmYmHVse2qxl-pfy619tDI8am23"
+    },
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/api/user/playlist/",
+      "url": "https://www.tiktok.com/api/user/playlist/?WebIdLastTime=1792526555&aid=1988&app_language=pt-BR&app_name=tiktok_web&browser_language=pt-BR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F128.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&count=20&cursor=0&data_collection_enabled=false&device_id=7698842905792546311&device_platform=web_pc&focus_state=true&history_len=2&is_fullscreen=false&is_page_visible=true&odinId=7698842858023502866&os=windows&priority_region=&referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&region=BR&root_referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&screen_height=600&screen_width=800&secUid=MS4wLjABAAAArGZ1RzI28EJn8Kzw3U-VS7wtZfubk_LRcuXOmc1x2upGfCOESJZvdlfR1Z75NJS9&tz_name=America%2FFortaleza&user_is_login=false&webcast_language=pt-BR&X-Dynosaur=MahulUozqLxqdXtjiXS-y7kXQYL1bQneolllz9e8xNZK8c9lhnRuMAD39IiTaHfwSTqVAUrkNoR4wzfYzZ/Qt9qco3WPfELP1fcX21y6Q5-0OtSg64-rmWtOIB7polYFMdnlmsAVdxxIEbnVE-C3wWAeOqkbJQMHw4DrYxqqBLkIiKikFhFUHHqwB0hNrMiTr0x3o7enx5B35ITyasMX2eMO4ZIn/8TaBy69DW8ym7kojitk5pXvhyctfytUVYwWHHWqIHcftELSiDxElJ2cqkIvsMY7UxvB8dLjPZYYYVbTZZqyse7ceYLSFq1wVnb70PDqgkswy4Lydqm/-T2xGhPsYPFOUV2cB81Iy1QzIWQpwPjEB0YhgdnXC4hxTfnRk6X7YFTs62cIm6Ur6lkeiFevam2YhfSipZ==&msToken=&X-Bogus=1&X-Gnarly=MxiNIZUU6E2swhpjTaihcZt812fJGcxnDUZU6RYfit1SG5wvesJmHqc40OxRBBgh-HdficOb-82EpeazaLpfVbW1YEaOgxJVTsJO4gbpf1vROl0AxY2rVhJM0pStMlZ4bqd/VYJSX2URUw/FtG7i1tnkqXN5z8mP8da2O7xdlvbFBdfCoXWNjMxpBIHesxlcTcB1rFDlW5ieSkcJIs3sXBbTR6QsFQK-N/bS7EvYWtxUE21gRGSs3CxzFsz-impjaN7esVmEcICc/CjXUujmABxivRpvJP9xmSTq0Mu0rktM-pLwvZROK-nSahjxuml74WQuqhqej4ac"
+    },
+    {
+      "method": "POST",
+      "host": "www.tiktok.com",
+      "path": "/tiktok/pns/privacy_headers",
+      "url": "https://www.tiktok.com/tiktok/pns/privacy_headers?aid=1233"
+    },
+    {
+      "method": "POST",
+      "host": "www.tiktok.com",
+      "path": "/tiktok/ppf/api/eligibility/v2",
+      "url": "https://www.tiktok.com/tiktok/ppf/api/eligibility/v2?WebIdLastTime=1792526555&aid=1988&app_language=pt-BR&app_name=tiktok_web&browser_language=pt-BR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F128.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7698842905792546311&device_platform=web_pc&focus_state=true&from_page=user&history_len=2&is_fullscreen=false&is_page_visible=true&odinId=7698842858023502866&os=windows&priority_region=&referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&region=BR&root_referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&screen_height=600&screen_width=800&tz_name=America%2FFortaleza&user_is_login=false&webcast_language=pt-BR"
+    },
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/tiktok/popup/dispatch/v1",
+      "url": "https://www.tiktok.com/tiktok/popup/dispatch/v1?region=BR&priority_region=BR&aid=1988&device_id=7698842905792546311&app_language=pt-BR&device_platform=web_pc&WebIdLastTime=1792526555&scene=0"
+    },
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/api/story/item_list/",
+      "url": "https://www.tiktok.com/api/story/item_list/?WebIdLastTime=1792526555&aid=1988&app_language=pt-BR&app_name=tiktok_web&authorId=7691162188648956949&browser_language=pt-BR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F128.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&count=4&cursor=0&data_collection_enabled=false&device_id=7698842905792546311&device_platform=web_pc&focus_state=true&from_page=user&history_len=2&is_fullscreen=false&is_page_visible=true&loadBackward=false&odinId=7698842858023502866&os=windows&priority_region=&referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&region=BR&root_referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&screen_height=600&screen_width=800&tz_name=America%2FFortaleza&user_is_login=false&webcast_language=pt-BR&X-Dynosaur=MOJr0PsYrU9sZfUjjNEyw8Syv8GKAhhr/tclZVjNvvQAEu4cWizXDlTR5/U0ILkJMvK2zwBEZj4iWUL-Q0HFz2xfC2jVV6R3qYvhboHHBxdYAU7unoSQDuPoXS0zQsQYd6DY1Jj1s9xT4dfUrKqNUAhEuUJOd4w4aFQ7i3WW1zCiVL74xQUkAwPpGfJFq7dr8rhKeh6A4CacKrCJkksvLWtO1hPpk6subBjZQ6GRtt72cQN4iN7KDoRtyZsxPjBseDKG0BW1y2iJe-3XY9p-e-AHeFPjFDyMHFwwfDiji8-FvSUmYeQBEei-jxjgy8G-owl9jUbnCCh033F3MLx7fm0euFncuWV7mh/MKXBDdVw/X3-jqbQ2obs1qXay84qS8AH-ovO7llx1Yq89AuVlfixllvoqXpcskI==&msToken=WAv35xLnxv651qHpH3YY1GY1ta4aOmfNRzZZQzJkqJlry_g37d7Rgvs2Ko2BhoJq6FA_z1aYTH5b7PTm2vPk1hVS3Qed9Wt1lTGePqf_akQWQjp5Io0o_bKk2w7bRw==&X-Bogus=1&X-Gnarly=MxLx50CQhWKwIHWFzUgZ8OEnNBovISZ4yVgiTqeEeh3W10ZdE4xrKucbc9TwKfGqlnFy8v1U1gPJwjs4dOxhUtFRBuIjDuBJ2hn8z/iAQVr4J9pd9KKjqKVASoENjQPYEp-oJycErvHXrxKIsjprkiHiETSsqOlT6uWrz/7zLGaM5hZhAfvaDKCFordEtvCthlQr5zloPPjNxJgTCtm98QCcZgDCuxa0Dxu7mffoiIZ1A-9NTjLsRy1j5-ShDoWNqufQdul0/mpNIsHoWdf6oOKBtQWKDOW90yDaUugX9tz-/oxzfh85bjCg4KF8R78jYXzDlpRHFGCP"
+    },
+    {
+      "method": "POST",
+      "host": "www.tiktok.com",
+      "path": "/tiktok/pns/privacy_headers",
+      "url": "https://www.tiktok.com/tiktok/pns/privacy_headers?aid=1233"
+    }
+  ],
+  "shop_or_commerce": [
+    {
+      "method": "POST",
+      "host": "webcast.tiktok.com",
+      "path": "/webcast/wallet_api_tiktok/recharge/check_external_entry",
+      "url": "https://webcast.tiktok.com/webcast/wallet_api_tiktok/recharge/check_external_entry?WebIdLastTime=1792526555&aid=1988&app_language=pt-BR&app_name=tiktok_web&browser_language=pt-BR&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F128.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7698842905792546311&device_platform=web_pc&focus_state=true&from_page=user&history_len=2&is_experiment_group=false&is_fullscreen=false&is_page_visible=true&odinId=7698842858023502866&os=windows&page_source=0&priority_region=&referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&region=BR&root_referer=https%3A%2F%2Fwww.tiktok.com%2F%40nandaa1332&screen_height=600&screen_width=800&tz_name=America%2FFortaleza&user_is_login=false&webcast_language=pt-BR&X-Dynosaur=M/PzjpRh4JsxJxN0mNO5JoyRwq4mz-pn4tBZ95yWQmCM87AQ3I8ZGflaO-yvBkDVZGd1hdpaHDaOTS-Z9Tbb/VIzWXCCLREhIRUuxSs8fYH3621u-OsmMKVwMpWhFivwZd/h3ZccU3DsTxjj9f9lZB6Neca0XPceXKG5zDY1mOeWp-H3nE58/DjzJE209Bizrsx-Z3nocx-QXCM7uO5DmwhfGVoU26sY8/XB4KZO4E/b1mLmqYiMWQB7uhshXUSgdNoQCZzdLkeeRIV5GPNrd6AB79sc6eql98BfRPaXC/kCSo4cGwPyUkHvDpJH9eKHJauTvctnidx9UkGRJM/T0mdk8Fd5DmLclauOI7KYtQyjxa7wp9aoL4Gsun9F1aaqc9uN96vInudSLvlxRav1nXme/5kN-bL2GI==&msToken=WAv35xLnxv651qHpH3YY1GY1ta4aOmfNRzZZQzJkqJlry_g37d7Rgvs2Ko2BhoJq6FA_z1aYTH5b7PTm2vPk1hVS3Qed9Wt1lTGePqf_akQWQjp5Io0o_bKk2w7bRw==&X-Bogus=1&X-Gnarly=MweGUFYu8vzZczzXWqkT6qSvtp6MJDb6zq3QFw9Qbvp3-ttviLlOc7Oj7dz7V4r-qcR-kFbgt66LFUZra6QJ6UnP44kQJa8zOKpMgPwVBtuFz70QeuA7QZIPF/fYYinkivZx5m6hOrVL/cPyW5BAN/zYbwRf63F9Zs/7UANySBY-8zx0jIySK5UxJ2XMlVc9tqiVQl0dL1MJussPVjTybzPBQ4UxD4sSLXGHnV9nubTPNkl6/T/PEehDBX2fhYmoQ2BxNMNcu21iaswclxmFYLBASInwazniGqL/UPVRKeywUcxyXK9sUP-AGglEjqGx72ILd5KHn7Hn"
+    }
+  ],
+  "security_antibot": [
+    {
+      "method": "GET",
+      "host": "mssdk-sg.tiktok.com",
+      "path": "/web/resource",
+      "url": "https://mssdk-sg.tiktok.com/web/resource?eq=2JeSXon1SmlrzGZmSmMU9rJs0JJgWd-CrfmbojLzGRo1scOL5R1kt/sLdM-yI4DN8REgm20levcWDlVm/XS="
+    },
+    {
+      "method": "POST",
+      "host": "www.tiktok.com",
+      "path": "/ttwid/check/",
+      "url": "https://www.tiktok.com/ttwid/check/"
+    }
+  ],
+  "telemetry_monitoring": [
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/sdk-pre/browser.web.pre.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/sdk-pre/browser.web.pre.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/obj/waf-aiso/dd9808.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/obj/waf-aiso/dd9808.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js?bid=slardar_us_waf&globalName=SlardarWAF"
+    },
+    {
+      "method": "GET",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=slardar_us_waf&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=slardar_us_waf&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/index.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/index.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/webmssdk/1.0.0.417/webmssdk.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.417/webmssdk.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok-infra/csp/sdk-pre/slardar.web.pre.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok-infra/csp/sdk-pre/slardar.web.pre.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_ebc73ad6.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_ebc73ad6.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/user-prefetch.238d9e51.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/user-prefetch.238d9e51.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/builder-runtime.8f96c3d3.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/builder-runtime.8f96c3d3.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-rxjs.3002fb8b.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-rxjs.3002fb8b.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-react.50f94747.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-react.50f94747.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-sigi.2b59dc0f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-sigi.2b59dc0f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-dp-byted-tea-sdk-oversea.f4e273c4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-dp-byted-tea-sdk-oversea.f4e273c4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/player.init.3900cab8.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/player.init.3900cab8.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/emotion.init.dc9e8caf.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/emotion.init.dc9e8caf.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/slardar.8879cd84.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/slardar.8879cd84.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/cache.tux.1abe1f5f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/cache.tux.1abe1f5f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.kernel.init.a5248099.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.kernel.init.a5248099.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.safety.init.1ee17e10.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.safety.init.1ee17e10.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.platform.init.7bdccd8f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.platform.init.7bdccd8f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.growth.init.9ff7deb4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.growth.init.9ff7deb4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/atom.init.abaa9466.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/atom.init.abaa9466.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.common.lib.c0873bd8.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.common.lib.c0873bd8.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/i18n.2e3d03b5.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/i18n.2e3d03b5.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/14845.4798f556.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/14845.4798f556.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/webapp-desktop.1c486a57.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/webapp-desktop.1c486a57.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-icons-shared.672f2dd1.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-icons-shared.672f2dd1.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-dayjs.22f083e7.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-dayjs.22f083e7.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/65728.bf39d898.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/65728.bf39d898.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/95047.feadcf44.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/95047.feadcf44.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20853.d350e051.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20853.d350e051.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/75627.55f7bcc1.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/75627.55f7bcc1.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/30294.721bf7a1.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/30294.721bf7a1.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/40813.f2a6b9c8.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/40813.f2a6b9c8.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/34807.beb11d33.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/34807.beb11d33.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24329.2dcafd07.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24329.2dcafd07.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90548.b0792821.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90548.b0792821.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/16119.4be2579f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/16119.4be2579f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/72184.e21fe57f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/72184.e21fe57f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59846.7594ba82.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59846.7594ba82.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/79019.fdf95e83.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/79019.fdf95e83.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/92835.9315fa46.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/92835.9315fa46.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47308.120bebd9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47308.120bebd9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/36308.65439b4e.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/36308.65439b4e.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/99445.3b60e015.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/99445.3b60e015.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7280.d5652afd.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7280.d5652afd.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51551.14a879f7.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51551.14a879f7.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51967.68bc019a.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51967.68bc019a.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/48436.1aa7b3b0.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/48436.1aa7b3b0.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/21978.65fef806.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/21978.65fef806.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/81716.ecb8b831.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/81716.ecb8b831.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41359.80f8b1f9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41359.80f8b1f9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/76224.b931f084.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/76224.b931f084.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/31864.81d6ce66.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/31864.81d6ce66.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/33270.2fb99fe9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/33270.2fb99fe9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/15347.25745681.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/15347.25745681.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/30363.e00c5712.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/30363.e00c5712.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59933.8fab79eb.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59933.8fab79eb.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/73553.af2aeea4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/73553.af2aeea4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/53692.03c70356.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/53692.03c70356.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/13779.eb00d0b4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/13779.eb00d0b4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/8615.fcd082da.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/8615.fcd082da.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/49797.3634df10.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/49797.3634df10.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/56706.49660c14.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/56706.49660c14.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25152.68bc6829.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25152.68bc6829.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/4717.19043ec0.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/4717.19043ec0.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user.bb9475c2.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user.bb9475c2.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/core.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/core.js?globalName=__PNS_RUNTIME__"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js?bid=tiktok_webapp&globalName=SlardarClient"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/item-list-cache.081d6008.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/item-list-cache.081d6008.js"
+    },
+    {
+      "method": "GET",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=webmssdk&store=1"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=webmssdk&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/devtools.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/devtools.js?globalName=__PNS_RUNTIME__&__PNS_SW_CACHE__=1&__PNS_SW_CACHE_KEY__=to-json-schema"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/foryou.a8be2260.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/foryou.a8be2260.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/playback1.mp4",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/playback1.mp4"
+    },
+    {
+      "method": "POST",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?bid=tiktok_pns_web_runtime"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/index.b5f3c689.css",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/index.b5f3c689.css"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/styles.814f3d15.css",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/styles.814f3d15.css"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/all.871b7edc.css",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/all.871b7edc.css"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/high-contrast.0f0f0b81.css",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/high-contrast.0f0f0b81.css"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/user/webid",
+      "url": "https://mcs-sg.tiktokv.com/v1/user/webid"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=pns_communication_service&store=1"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/user/webid",
+      "url": "https://mcs-sg.tiktokv.com/v1/user/webid"
+    },
+    {
+      "method": "GET",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=pns_communication_service&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/89240.83338e1c.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/89240.83338e1c.js"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=cdn_replace_service_worker&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=cdn_replace_service_worker&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/12506.01f06526.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/12506.01f06526.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/sibyl-ai-core.4338db72.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/sibyl-ai-core.4338db72.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/fixed-bottom.946ef85c.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/fixed-bottom.946ef85c.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/modals.55da63e5.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/modals.55da63e5.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/just-watched-button.f4aba4b0.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/just-watched-button.f4aba4b0.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5004.32dc0951.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5004.32dc0951.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/load-more-effect.d8895e46.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/load-more-effect.d8895e46.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/video-player.404f09b2.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/video-player.404f09b2.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/video-card-header.9bb295d7.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/video-card-header.9bb295d7.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/card-desc.eb471af8.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/card-desc.eb471af8.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7982.a85b9b06.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7982.a85b9b06.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/27112.b619d12d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/27112.b619d12d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/78446.2b74110e.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/78446.2b74110e.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/46918.6a1be741.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/46918.6a1be741.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/98778.4f0fb2a9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/98778.4f0fb2a9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/search-live-item.a4088eb5.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/search-live-item.a4088eb5.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/footer-side-effects-island.95bd3c6e.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/footer-side-effects-island.95bd3c6e.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/77718.a04888b1.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/77718.a04888b1.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/interaction-side-effects-island.241c7497.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/interaction-side-effects-island.241c7497.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/components-live-item.2e960b1d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/components-live-item.2e960b1d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/pa_prompt.08a5744b.css",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/assets/pa_prompt.08a5744b.css"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/explore-card-desc.6605557f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/explore-card-desc.6605557f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/explore-card-info.f8a9a7e4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/explore-card-info.f8a9a7e4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26025.6d68a7f2.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26025.6d68a7f2.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/48598.1859dd24.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/48598.1859dd24.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/36591.e13e37f1.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/36591.e13e37f1.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/76456.95dd478c.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/76456.95dd478c.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/question-card-desc.070b5a08.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/question-card-desc.070b5a08.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/search-card-desc.e7f15144.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/search-card-desc.e7f15144.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/84128.8a86a7e4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/84128.8a86a7e4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/95029.85924b51.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/95029.85924b51.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/73769.7d4c4fe2.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/73769.7d4c4fe2.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90234.1394b6c9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90234.1394b6c9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25368.ffed6fe7.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25368.ffed6fe7.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/71799.cec16f83.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/71799.cec16f83.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/46404.2bcf4988.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/46404.2bcf4988.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/86177.10140e55.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/86177.10140e55.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/3195.e7a5889c.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/3195.e7a5889c.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/tag-card-desc.babb1057.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/tag-card-desc.babb1057.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/card-avatar.09967454.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/card-avatar.09967454.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/mute-button.ab668b05.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/mute-button.ab668b05.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Regular.woff2",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Regular.woff2?_default_font=1&v=2"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/captcha-sg.d6abc53b.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/captcha-sg.d6abc53b.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_fonts/TikTokDisplayFont-Bold.woff2",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokDisplayFont-Bold.woff2?_default_font=1&v=2"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Bold.woff2",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Bold.woff2?_default_font=1&v=2"
+    },
+    {
+      "method": "GET",
+      "host": "p19-common-sign.tiktokcdn.com",
+      "path": "/tos-alisg-avt-0068/0ab0d6c3b6be6bf06d14dc893e8d4a5c~tplv-tiktokx-cropcenter:1080:1080.jpeg",
+      "url": "https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/0ab0d6c3b6be6bf06d14dc893e8d4a5c~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=42b055d0&x-expires=1792699200&x-signature=chPF9HP4IHMt%2Ft9MjC6HKwKiWcI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_fonts/TikTokFont-Semibold.woff2?_default_font=1&v=2"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "vcs-sg.tiktokv.com",
+      "path": "/vc/setting",
+      "url": "https://vcs-sg.tiktokv.com/vc/setting?aid=1988"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "vcs-sg.tiktokv.com",
+      "path": "/vc/setting",
+      "url": "https://vcs-sg.tiktokv.com/vc/setting?aid=1988"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.2933/webmssdk_ex.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.2933/webmssdk_ex.js"
+    },
+    {
+      "method": "POST",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?biz_id=webmssdk"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?biz_id=webmssdk"
+    },
+    {
+      "method": "POST",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon-sg.tiktokv.com/monitor_browser/collect/batch/?biz_id=tiktok_webapp"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.6.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.6.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.14.1.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.14.1.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon-sg.tiktokv.com/monitor_browser/collect/batch/?biz_id=tiktok_webapp"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/goofy-captcha/1.0.0.125/sg/captcha.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/goofy-captcha/1.0.0.125/sg/captcha.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/goofy-captcha/1.0.0.125/sg/static/js/45.49334540d46e4ab0b18a.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/goofy-captcha/1.0.0.125/sg/static/js/45.49334540d46e4ab0b18a.js"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/user/webid",
+      "url": "https://mcs-sg.tiktokv.com/v1/user/webid"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mon-sg.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon-sg.tiktokv.com/monitor_browser/collect/batch/?biz_id=tiktok_webapp"
+    },
+    {
+      "method": "POST",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?biz_id=pns_communication_service"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?biz_id=pns_communication_service"
+    },
+    {
+      "method": "POST",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mssdk-sg.tiktok.com",
+      "path": "/web/report",
+      "url": "https://mssdk-sg.tiktok.com/web/report?X-Dynosaur=Mac3E35gEh2NhUwI4Dz-SxCAk5rpbR49SHCJZTapZHc/-fvPSDop3d2hMCBp2GYlNctlQf342hx5uc0cK7j-qps6Z7ElluJoD9pLXcDPWyBh3AGm9bBlveGyCbUIv8w6ivFXFZv9YmUrdq4mIjAM8EG/yoSOk2-uLnETz4PC3g7LDguk6fPA7mIceW6QpdSKHTkml7oIBcdB-rNarfDNBAlIht72plz7eYSusgx504GUI2oX/Xx/jMWNBtcojA5pBRzDICeT3ZYy-owxXQdB2oJsYrdO4d74ihpSDK8qSXkKKlvCJhKZFd327ptKFdJv01be7/L-n-AKWDvZlFdRGKwMJEhylJg-I8Ok4UqvAFLip-ok/cqS9tZge8XK1ZxuMrxS8vO-rgglk96Z4JJuiBmP48NbeGfZ-8-fgupyY8uZXoTnBvXSMugWq34n8GEKL0yTlNojrM4wysi3R16Yo0f=&msToken=WAv35xLnxv651qHpH3YY1GY1ta4aOmfNRzZZQzJkqJlry_g37d7Rgvs2Ko2BhoJq6FA_z1aYTH5b7PTm2vPk1hVS3Qed9Wt1lTGePqf_akQWQjp5Io0o_bKk2w7bRw==&X-Bogus=1&X-Gnarly=MJivd1bBsoOCd-e6BIZCIR0gHD9Q3m4FRZRo4HClKNBfMfcCbNhVnbX3H63MroK5bkBWJAoEewdR6cTHmZr22MHJpE1WGQo9RcKYfS8EW7IOKbdY65Qn4Ol9DGBpdlmqUhhkMIgKUsmTFk4FVgo31WCOICR0ocup5kJhqgneS-GHTvzR2tV9-HcY9c3W/GoCwchFpSk-l0VLLH4GPCf/G0s4IN0ITojI1DLaLr7OHOwr6ycmGPHQuOB6SdDOTIp-OaUJ2Upqe/XCfI-pTGbW0HqG0HOMxBcDmZzO70HjNYs1y9vbMmJdwh2vgmnH6F-UWiUQDWsRZxaI"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=verify_center_va&store=1"
+    },
+    {
+      "method": "GET",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_web/settings/browser-settings",
+      "url": "https://mon.tiktokv.com/monitor_web/settings/browser-settings?bid=verify_center_va&store=1"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?biz_id=webmssdk"
+    },
+    {
+      "method": "POST",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?bid=tiktok_pns_web_runtime"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "mon.tiktokv.com",
+      "path": "/monitor_browser/collect/batch/",
+      "url": "https://mon.tiktokv.com/monitor_browser/collect/batch/?bid=tiktok_pns_web_runtime"
+    },
+    {
+      "method": "POST",
+      "host": "mcs-sg.tiktokv.com",
+      "path": "/v1/list",
+      "url": "https://mcs-sg.tiktokv.com/v1/list"
+    },
+    {
+      "method": "POST",
+      "host": "mssdk-sg.tiktok.com",
+      "path": "/web/report",
+      "url": "https://mssdk-sg.tiktok.com/web/report?X-Dynosaur=MxCQsu2IppmV1z92NJ/F9vM99JHAxGiQ0n5XqIi-PrmE4qRyxMD9jHaikfJFHGws/hAGavtnCEKSWwol2Jp3g0q6PXcSVj4pLSQokdo/tD53Bab1jqdd1hxikYLQs1U1bBLFrrP1Dy75x-bGhyTBnI845DRtGSbxfgcXQPp31J-9fNg-qyC1lJkJy-yxr6Xlxra7nhiI4/77yNzJgMOMZqVSHttmeYYuvRQt3lQzey898k9xvZ5XusOagW98lxVlMysJl6yQ19ZJGSgHwl4DWJEX2/CJShihkQzZnKD2XRWETXEGN7Yj8Ftw49gLlqeGZRqpgmvRRdtdE5mvRpghTi5upnlevkUqb/9-stiFLZgyXaL0RahJP7ZfYIw/eAG/PF-Vv/6yV7e/746XxQy-20o/aRH9K6Dzd-lUrN0giZQnR5MOXcgxuzlZTxXlPlEX1NW-cmyZ-Gd4Dz4eongXbLn=&msToken=F84tmFfaT79cEUX9cJuhiN5bBilQgx_uv4cv5hi4za84_epfu5BLm_M2wBPyd3gwoObakHALo7tWuznMKzq0WCogNS4sfZsv2MFF2aqskRISXUMrmVpxR4haJ4QfEu1w8DliH3vJFK_5UGNryRPWT2QLuA4=&X-Bogus=1&X-Gnarly=MwAaw1DyU4040SrvLxPFa-Ed0C-Nn0hcgL9pwoC-Y14eFaKL1SRZJm0s1bCRX7vNmCkwgZsMd4Z29oO2vzP6a5VSXMXJ/eree0FtVHcaMNSs46HpOEs/0m6j6NNAQoaMoOvNAR7SBzqnONZ8Eef7KoV8nGpWjx/vNxRSxPWnEXEQu4tsxwECUZzQ15UZ/8gxIVlSHe3mcHpnOvz5B2njHO5Yq9oW2ld/mfWeGwkN2o95QBm2ORhdcJr0ZTHVBu/UxbcGg0pNDKQLZgqDpWHG6IU8RNqAw9pqJ0QrVFN5koKN/J484Al/IVi2Ye-hu6JZAmAj4DxT/fLE"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24341.c2cf1d97.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24341.c2cf1d97.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26977.83b96e0d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26977.83b96e0d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/head-side-effect-island.3ba40608.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/head-side-effect-island.3ba40608.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/32335.92945e3c.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/32335.92945e3c.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25895.6c064de9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25895.6c064de9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/29192.d78589cb.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/29192.d78589cb.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/91150.3fa72df0.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/91150.3fa72df0.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5214.de551a35.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5214.de551a35.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/notification-side-effect-island.c7aa3fa9.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/notification-side-effect-island.c7aa3fa9.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20855.febfd16d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20855.febfd16d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59324.3959de35.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59324.3959de35.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/78182.c8463a5d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/78182.c8463a5d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/78529.77142604.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/78529.77142604.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26032.1fa5db94.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26032.1fa5db94.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/70770.abc0df9d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/70770.abc0df9d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25129.3d42686b.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25129.3d42686b.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/82870.5bb293dc.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/82870.5bb293dc.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64467.fd961c55.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64467.fd961c55.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/29240.1c5e2970.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/29240.1c5e2970.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/13003.31693949.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/13003.31693949.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/header-island.5f87cb3d.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/header-island.5f87cb3d.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47366.840b8916.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47366.840b8916.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/34138.71eb4670.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/34138.71eb4670.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/11648.73a91b4e.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/11648.73a91b4e.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25873.a49336a4.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25873.a49336a4.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47521.e30421b2.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47521.e30421b2.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/92409.f8bf99ed.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/92409.f8bf99ed.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5907.feec39e5.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5907.feec39e5.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90841.b1812724.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90841.b1812724.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/99682.362a7d68.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/99682.362a7d68.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64027.02dc097f.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64027.02dc097f.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64518.04b27800.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64518.04b27800.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/side-nav-island.834f9dae.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/side-nav-island.834f9dae.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/28300.62a525d0.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/28300.62a525d0.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/52733.b88df83b.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/52733.b88df83b.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20081.76bca897.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20081.76bca897.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/75640.c61f2bef.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/75640.c61f2bef.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/53389.d27b4eab.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/53389.d27b4eab.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/stories-player.61c08214.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/stories-player.61c08214.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-lottie.a9e4e188.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-lottie.a9e4e188.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51680.a131c42e.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51680.a131c42e.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24764.8b9f8aff.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24764.8b9f8aff.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/9408.7aeeda41.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/9408.7aeeda41.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/19628.9bfd8933.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/19628.9bfd8933.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/38690.44feeb22.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/38690.44feeb22.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/bottom-side-effect-island.40a77107.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/bottom-side-effect-island.40a77107.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user-side-effect.8aba9221.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user-side-effect.8aba9221.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41122.a50b5a53.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41122.a50b5a53.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/11136.10b80484.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/11136.10b80484.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7905.0d4528c5.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7905.0d4528c5.js"
+    },
+    {
+      "method": "GET",
+      "host": "sf16-website-login.neutral.ttwstatic.com",
+      "path": "/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user-secondary.ce711cee.js",
+      "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user-secondary.ce711cee.js"
+    }
+  ],
+  "scripts_bundles": [
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/webapp-desktop/static/worker/multiple.worker-0.4.24.js",
+      "url": "https://www.tiktok.com/webapp-desktop/static/worker/multiple.worker-0.4.24.js"
+    }
+  ],
+  "media_static": [
+    {
+      "method": "GET",
+      "host": "",
+      "path": "image/avif;base64,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",
+      "url": "data:image/avif;base64,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"
+    },
+    {
+      "method": "GET",
+      "host": "",
+      "path": "image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvn8AnAAdQiUpUov+BiOh/AAA=",
+      "url": "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvn8AnAAdQiUpUov+BiOh/AAA="
+    },
+    {
+      "method": "GET",
+      "host": "",
+      "path": "image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    }
+  ],
+  "other": [
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/@nandaa1332",
+      "resourceType": "document",
+      "url": "https://www.tiktok.com/@nandaa1332"
+    },
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/@nandaa1332",
+      "resourceType": "document",
+      "url": "https://www.tiktok.com/@nandaa1332"
+    },
+    {
+      "method": "OPTIONS",
+      "host": "libraweb-sg.tiktok.com",
+      "path": "/service/2/abtest_config/",
+      "resourceType": "other",
+      "url": "https://libraweb-sg.tiktok.com/service/2/abtest_config/"
+    },
+    {
+      "method": "POST",
+      "host": "libraweb-sg.tiktok.com",
+      "path": "/service/2/abtest_config/",
+      "resourceType": "xhr",
+      "url": "https://libraweb-sg.tiktok.com/service/2/abtest_config/"
+    },
+    {
+      "method": "GET",
+      "host": "www.tiktok.com",
+      "path": "/favicon.ico",
+      "resourceType": "other",
+      "url": "https://www.tiktok.com/favicon.ico"
+    },
+    {
+      "method": "GET",
+      "host": "starling-sg.tiktokv.com",
+      "path": "/check_and_get_text/51a6793082fe11ea9d096543164dfa7f/normal/BDTuringEn",
+      "resourceType": "xhr",
+      "url": "https://starling-sg.tiktokv.com/check_and_get_text/51a6793082fe11ea9d096543164dfa7f/normal/BDTuringEn?lang=en,en"
+    },
+    {
+      "method": "GET",
+      "host": "verification-sg.tiktok.com",
+      "path": "/captcha/get",
+      "resourceType": "xhr",
+      "url": "https://verification-sg.tiktok.com/captcha/get?lang=en&app_name=&h5_sdk_version=2.35.12&h5_sdk_use_type=goofy&sdk_version=&iid=0&did=0&device_id=0&ch=web_text&aid=1988&os_type=2&mode=slide&tmp=1792526562243&platform=pc&webdriver=undefined&enable_image=1&fp=verify_mvh413ol_ZNFANMID_45Bb_4p0i_9JVX_bWxEuJIdAmwZ&type=verify&detail=uKNqlqrdUVi-rc-TaRUJm-lU3GTq-nYsTWKeyBKdDqL4lf8UyLvCxIGaYAx8yegK3r6N3w07x2v0bDJzGYNT4q60rWIWX6jmO3UmA6lC9gdBQQGZ1eQ8h6jyKLkV*oRfd1hilmsvmmbqxgdJvzGwG8v6Qxkult4fgxgV0tlg1KsO9VUI4XZTAjAo0ADRJe6L3q7LokIixbavyxhj657yhJ7vMcY0J0db29eIncIOMtdevRbAlm5eDUcVK0OlFOVFWv9tshZ1cN9ELEU-nC9AVw5tNYgTopvBzZYhMp1x3b9cVzL0YsRh5MUyZL5p4V61sH4wCPvT5ZJIY7YFcCX6suaUdqi-24q2zMlbub2*p-eu27dKpjSyj*QZzk5i-dFg-qGIlbonU12tpEhECCbQsJT-tYYwidVXqGyBaayLhlD9389zIkKhByeKdJBzYr9papymAo78L5hnAginXgHp-BUBGxyKDizkngDqgBg4&server_sdk_env=%7B%22idc%22:%22my%22,%22region%22:%22ALISG%22,%22server_type%22:%22business%22%7D&imagex_domain=&subtype=slide&challenge_code=99999&os_name=windows&h5_check_version=3.8.28&region=sg&triggered_region=sg&cookie_enabled=true&screen_width=800&screen_height=600&browser_language=pt-BR&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F128.0.0.0+Safari%2F537.36&X-Dynosaur=MHuENw8QZINvlpmafny4bkHTt-uhMxwQnUvogQBxe4L7R4YZCCVDyC4pl0uYZZuQ2B5iL2OCYb7a4kcZTxM6Wht48Nx4Rg6taSiLjy79xnOTiX4gKw6Oeri1Dmh-TdUHko8Fgzv0Sq8OxP9PZy8bE9cIid9PrRy/GR-pipTRfHOGHdYpGAFWa9wUOxZrVs-o6uQf1-wjnckL/GRCVqfOTwJVE46Tk2W3d978C0X8h4AEWqEKufvA4cmssiiqAWL3H9WFDvcI-8pKCZcKF2NvBHPGg2ntGgsZFEONQrjCtnhnSCwb4icF1j5JxTOzx6RBjs7D6AkjB2F8LUuDjUpsyMjPGIJYoESbfTTFdjEFbxHbTuH9/Ef27mXWUAxqJIGt-mhjMWdLA2dzEFsopy-uCXlpZgLOTAT49V256FFPfx6wvMfA1tveQEBa4JiHrgT0dlbGnlmmhexYDP60KRoGoNv=&msToken=WAv35xLnxv651qHpH3YY1GY1ta4aOmfNRzZZQzJkqJlry_g37d7Rgvs2Ko2BhoJq6FA_z1aYTH5b7PTm2vPk1hVS3Qed9Wt1lTGePqf_akQWQjp5Io0o_bKk2w7bRw==&X-Bogus=1&X-Gnarly=MxElN979GMVcDsiruAGjUEmkBcjWq0tCYI2GckqU/zyjrpKFpvRynTCooACywIt3e3IHZ/fIX0Pck8hOZp9buo6JmUYi9tCk/LGElsFwOwCK4gAGSYnVqxXsKav6AEjGDjiclKkCr5T9Hw3-/tCYfm7CePs8WvaB2N3ozUOVaz0mSTRvhP5/9lfT8Xbh6qCO0w-rEJ3qoWVxeiAQwNRlBuZPBqkhZHkDEhdN77QMhuzi185r97r7Xqor-n2sIOeVeLXudIakb-7fZaRKDHZOg0nsMM9rdyqTc60OFtDOgmSQtDo9FpC9CxG3Uuew3zgWtmZpT/FyrJLP"
+    }
+  ]
+}

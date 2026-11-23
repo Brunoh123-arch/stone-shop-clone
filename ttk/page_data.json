@@ -1,0 +1,757 @@
+{
+  "sigiState": null,
+  "universalData": {},
+  "scriptsCount": 125,
+  "scripts": [
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js?bid=tiktok_webapp&globalName=SlardarClient",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "tiktok-environment",
+      "src": "",
+      "type": "application/json",
+      "textLength": 802
+    },
+    {
+      "id": "_REGION_DATA_",
+      "src": "",
+      "type": "application/json",
+      "textLength": 1064
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.6.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins/common-monitors.1.14.1.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/goofy-captcha/1.0.0.125/sg/captcha.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/26977.83b96e0d.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25895.6c064de9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/29192.d78589cb.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/notification-side-effect-island.c7aa3fa9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20855.febfd16d.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59324.3959de35.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/70770.abc0df9d.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25129.3d42686b.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/82870.5bb293dc.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64467.fd961c55.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/29240.1c5e2970.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/13003.31693949.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/header-island.5f87cb3d.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47366.840b8916.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/34138.71eb4670.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/11648.73a91b4e.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25873.a49336a4.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47521.e30421b2.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/92409.f8bf99ed.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/5907.feec39e5.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90841.b1812724.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/99682.362a7d68.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64027.02dc097f.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/64518.04b27800.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/side-nav-island.834f9dae.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/28300.62a525d0.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/52733.b88df83b.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20081.76bca897.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/75640.c61f2bef.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/53389.d27b4eab.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/stories-player.61c08214.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-lottie.a9e4e188.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51680.a131c42e.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24764.8b9f8aff.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/9408.7aeeda41.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/19628.9bfd8933.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/38690.44feeb22.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/bottom-side-effect-island.40a77107.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user-side-effect.8aba9221.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41122.a50b5a53.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/11136.10b80484.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7905.0d4528c5.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user-secondary.ce711cee.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "pumbaa-rule",
+      "src": "",
+      "type": "application/json",
+      "textLength": 29793
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/index.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "tiktok-environment-webapp",
+      "src": "",
+      "type": "application/json",
+      "textLength": 802
+    },
+    {
+      "id": "script-manager",
+      "src": "",
+      "type": "application/json",
+      "textLength": 470
+    },
+    {
+      "id": "chunk-manifest",
+      "src": "",
+      "type": "application/json",
+      "textLength": 74126
+    },
+    {
+      "id": "api-domains",
+      "src": "",
+      "type": "application/json",
+      "textLength": 595
+    },
+    {
+      "id": "service-region",
+      "src": "",
+      "type": "application/json",
+      "textLength": 49
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/secsdk_runtime_bundler_1104_ebc73ad6.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "slardar-config",
+      "src": "",
+      "type": "application/json",
+      "textLength": 218
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok-infra/csp/sdk-pre/slardar.web.pre.js",
+      "type": "text/javascript",
+      "textLength": 0
+    },
+    {
+      "id": "script_byted_acrawler",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.417/webmssdk.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "__UNIVERSAL_DATA_FOR_REHYDRATION__",
+      "src": "",
+      "type": "application/json",
+      "textLength": 278577
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/user-prefetch.238d9e51.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/builder-runtime.8f96c3d3.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-rxjs.3002fb8b.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-react.50f94747.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-sigi.2b59dc0f.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/npm-dp-byted-tea-sdk-oversea.f4e273c4.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/player.init.3900cab8.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/emotion.init.dc9e8caf.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/slardar.8879cd84.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/cache.tux.1abe1f5f.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.kernel.init.a5248099.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.safety.init.1ee17e10.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.platform.init.7bdccd8f.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.shared.growth.init.9ff7deb4.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/atom.init.abaa9466.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/biz.common.lib.c0873bd8.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/i18n.2e3d03b5.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/14845.4798f556.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/webapp-desktop.1c486a57.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-icons-shared.672f2dd1.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/npm-dayjs.22f083e7.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/65728.bf39d898.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/95047.feadcf44.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/20853.d350e051.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/75627.55f7bcc1.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/30294.721bf7a1.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/40813.f2a6b9c8.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/34807.beb11d33.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/24329.2dcafd07.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/90548.b0792821.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/16119.4be2579f.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/72184.e21fe57f.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59846.7594ba82.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/79019.fdf95e83.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/92835.9315fa46.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/47308.120bebd9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/36308.65439b4e.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/99445.3b60e015.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/7280.d5652afd.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51551.14a879f7.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/51967.68bc019a.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/48436.1aa7b3b0.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/21978.65fef806.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/81716.ecb8b831.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/41359.80f8b1f9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/76224.b931f084.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/31864.81d6ce66.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/33270.2fb99fe9.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/15347.25745681.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/30363.e00c5712.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/59933.8fab79eb.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/73553.af2aeea4.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/53692.03c70356.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/13779.eb00d0b4.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/8615.fcd082da.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/49797.3634df10.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/56706.49660c14.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/25152.68bc6829.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/4717.19043ec0.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/react-v18/webapp-desktop/static/js/async/user.bb9475c2.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js",
+      "type": "",
+      "textLength": 0
+    },
+    {
+      "id": "",
+      "src": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.2933/webmssdk_ex.js",
+      "type": "text/javascript",
+      "textLength": 0
+    }
+  ]
+}

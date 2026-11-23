@@ -1,0 +1,1947 @@
+[
+  {
+    "id": 4,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-4.html?test=1",
+    "status": 200,
+    "title": "Caixa De Som Boombox 3 Bluetooth Preta Jbl - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-1.jpg",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-2.jpg",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-3.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-4.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-5.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-6.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/jbl-boombox3-7.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/s313zy.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 15,
+      "totalPhotos": 15
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 149,00 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 5,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-5.html?test=1",
+    "status": 200,
+    "title": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh9e1c37asxxe2",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/a8zjrb.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 32,
+      "reviewsWithPhotos": 0,
+      "totalPhotos": 0
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 124,99 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 6,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-6.html?test=1",
+    "status": 200,
+    "title": "Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor Preto e Vermelho Marca Sevenfit - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_2X_679526-MLA100501405537_122025-F.webp",
+        "naturalWidth": 1200,
+        "naturalHeight": 1200,
+        "isBroken": false
+      },
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_870423-MLA92702191632_092025-F.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_2X_940421-MLA100012455152_122025-F.webp",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_2X_778730-MLA100501356013_122025-F.webp",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_2X_943084-MLA100012455164_122025-F.webp",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_2X_968531-MLA100011911876_122025-F.webp",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://http2.mlstatic.com/D_NQ_NP_2X_797980-MLA100012365712_122025-F.webp",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/perlvk.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 15,
+      "totalPhotos": 15
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 147,00 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 7,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-7.html?test=1",
+    "status": 200,
+    "title": "Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/1ig8lo.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 54,
+      "reviewsWithPhotos": 6,
+      "totalPhotos": 10
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 69,90 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 8,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-8.html?test=1",
+    "status": 200,
+    "title": "Caixa de Som Amplificada AIWA Party Box AWS-PB-07 Bluetooth 100W RMS - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-1.jpg",
+        "naturalWidth": 1100,
+        "naturalHeight": 1100,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-2.jpg",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-3.jpg",
+        "naturalWidth": 1100,
+        "naturalHeight": 1100,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-4.jpg",
+        "naturalWidth": 1100,
+        "naturalHeight": 1100,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-5.jpg",
+        "naturalWidth": 1100,
+        "naturalHeight": 1100,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-6.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-7.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-8-8.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/k3u5ff.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 4,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 149,99 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 9,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-9.html?test=1",
+    "status": 200,
+    "title": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p09/slide_1.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p09/slide_2.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p09/slide_3.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p09/slide_4.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p09/slide_5.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/mr2lij.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 3,
+      "totalPhotos": 3
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 92,80 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 12,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-12.html?test=1",
+    "status": 200,
+    "title": "Piscina Splash Fun Redonda Inflável 2400 Litros - Mor - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-12-1.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-12-2.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-12-3.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-12-4.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-12-5.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-12-6.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/h5x3n6.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 5,
+      "totalPhotos": 14
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 89,90 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 13,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-13.html?test=1",
+    "status": 200,
+    "title": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p13/mor_slide_1.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p13/mor_slide_2.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p13/mor_slide_3.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p13/mor_slide_4.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p13/mor_slide_5.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/h5x3n6.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 10,
+      "totalPhotos": 10
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 69,99 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 14,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-14.html?test=1",
+    "status": 200,
+    "title": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt - Stone Shop",
+    "broken_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/pages/produto-14?test=1",
+        "alt": "",
+        "className": "tt-creator-avatar",
+        "isSlider": false,
+        "isReview": false,
+        "parentElement": "DIV.tt-creator-wrapper"
+      }
+    ],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p14/slide_1.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p14/slide_2.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p14/slide_3.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p14/slide_4.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produtos/p14/slide_5.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 217,
+      "width": 452,
+      "cardCount": 16,
+      "innerHTMLTrimmed": 14252,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/ibv6vn.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 8,
+      "reviewsWithPhotos": 5,
+      "totalPhotos": 5
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 189,90 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 15,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-15.html?test=1",
+    "status": 200,
+    "title": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag - Stone Shop",
+    "broken_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/pages/produto-15?test=1",
+        "alt": "",
+        "className": "tt-creator-avatar",
+        "isSlider": false,
+        "isReview": false,
+        "parentElement": "DIV.tt-creator-wrapper"
+      }
+    ],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-15-1.jpg",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-15-2.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-15-3.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-15-4.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 217,
+      "width": 452,
+      "cardCount": 12,
+      "innerHTMLTrimmed": 10611,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/qfampv.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 2
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 149,90 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 16,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-16.html?test=1",
+    "status": 200,
+    "title": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+        "naturalWidth": 500,
+        "naturalHeight": 500,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/abwltl.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 45,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 129,30 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 17,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-17.html?test=1",
+    "status": 200,
+    "title": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-1.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-2.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-3.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-4.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-5.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-6.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-7.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-8.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-17-9.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/18m1t8.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 0,
+      "totalPhotos": 0
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 89,00 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 18,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-18.html?test=1",
+    "status": 200,
+    "title": "Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-1.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-2.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-3.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-4.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-5.jpg",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-6.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-7.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-8.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/stone-asset-18-9.jpg",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/18m1t8.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 0,
+      "totalPhotos": 0
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 129,90 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 19,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-19.html?test=1",
+    "status": 200,
+    "title": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqhbf556",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/8octvc.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 37,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 137,00 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 20,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-20.html?test=1",
+    "status": 200,
+    "title": "Bicicleta Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me910y70d7nmf6",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/8oqszr.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 54,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Comprar agora\nFrete grátis",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "Adicionarao carrinho",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 21,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-21.html?test=1",
+    "status": 200,
+    "title": "Bola De Futebol De Campo Penalty Bravo Xxv - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-21-1.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/produto-21-1.jpg",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/rs5lzn.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 0,
+      "totalPhotos": 0
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 49,00 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 22,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-22.html?test=1",
+    "status": 200,
+    "title": "Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://stoneshopclone.vercel.app/img/colchao-bestway-1.jpg?v=1795147990000",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/colchao-bestway-2.jpg?v=1795147990000",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/colchao-bestway-3.jpg?v=1795147990000",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/colchao-bestway-9.jpg?v=1795147990000",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      },
+      {
+        "src": "https://stoneshopclone.vercel.app/img/colchao-bestway-10.jpg?v=1795147990000",
+        "naturalWidth": 800,
+        "naturalHeight": 800,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/ekswrf.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 15,
+      "reviewsWithPhotos": 4,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 69,00 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 23,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-23.html?test=1",
+    "status": 200,
+    "title": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/08kgk9.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 47,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 64,99 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 24,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-24.html?test=1",
+    "status": 200,
+    "title": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/sg-11134201-81zw1-mivpxinfwy6803",
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/3g9fcx.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 52,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Compre\nR$ 159,90 com cupom",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  },
+  {
+    "id": 25,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-25.html?test=1",
+    "status": 200,
+    "title": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake - Stone Shop",
+    "broken_images": [],
+    "slider_images": [
+      {
+        "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b",
+        "naturalWidth": 1000,
+        "naturalHeight": 1000,
+        "isBroken": false
+      }
+    ],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1",
+      "height": 0,
+      "width": 0,
+      "cardCount": 0,
+      "innerHTMLTrimmed": 0,
+      "hasGap": false
+    },
+    "desc_video": {
+      "exists": true,
+      "hasBlock": true,
+      "hasVideoTag": true,
+      "src": "https://files.catbox.moe/ncrzdr.mp4",
+      "poster": "",
+      "paused": true
+    },
+    "competitor_mentions": [],
+    "review_summary": {
+      "totalReviews": 56,
+      "reviewsWithPhotos": 2,
+      "totalPhotos": 4
+    },
+    "buttons": {
+      "buyNow": {
+        "name": "Buy Now",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-buy",
+        "className": "btn-buy",
+        "text": "Comprar agora\nFrete grátis",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 278,
+        "height": 42,
+        "isVisible": true
+      },
+      "addCart": {
+        "name": "Add to Cart",
+        "exists": true,
+        "tagName": "BUTTON",
+        "id": "btn-add-cart",
+        "className": "btn-add-cart",
+        "text": "Adicionarao carrinho",
+        "display": "flex",
+        "visibility": "visible",
+        "disabled": false,
+        "width": 72,
+        "height": 42,
+        "isVisible": true
+      }
+    },
+    "console_errors": [],
+    "page_errors": [],
+    "failed_requests": [
+      "https://hotsite.fun/images/f93e5c8b5c0e1c88aa1d26864c13975d_1769059149.webp (net::ERR_BLOCKED_BY_ORB)"
+    ],
+    "button_action_test": {
+      "buyClicked": true,
+      "modalFound": false,
+      "modalVisible": false
+    }
+  }
+]

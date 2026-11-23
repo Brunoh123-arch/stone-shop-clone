@@ -1,0 +1,41 @@
+="display: none !important;">
+              <span class="detail-label">Ocasião</span>
+              <span class="detail-value">Casual</span>
+            </div>
+            <div class="detail-row is-hidden toggleable-row" style="display: none !important;">
+              <span class="detail-label">Quantidade por embalagem</span>
+              <span class="detail-value">1</span>
+            </div>
+            <div class="detail-row is-hidden toggleable-row" style="display: none !important;">
+              <span class="detail-label">Padrão</span>
+              <span class="detail-value">Nó</span>
+            </div>
+            <div class="detail-row is-hidden toggleable-row" style="display: none !important;">
+              <span class="detail-label">Materiais</span>
+              <span class="detail-value">Borracha</span>
+            </div>
+          </div>
+          <button type="button" class="btn-toggle-centered" onclick="toggleProductDetails(this)">
+            <span>Ver mais</span>
+            <svg class="toggle-icon-centered" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- ITEM 3: VÍDEO OFICIAL DO PRODUTO (CONTROLES TIKTOK SHOP) -->
+        <div class="product-video-block">
+          <h3 class="about-subtitle">Vídeo</h3>
+          <div class="tiktok-video-card" id="tt-product-video-wrapper" onclick="toggleTTVideo(event)">
+            <video id="tt-product-video" src="../img/video-chinelo-oficial.mp4" poster="../img/poster-chinelo-oficial.jpg" playsinline preload="metadata"></video>
+            <div class="tt-video-center-play" id="tt-center-play">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="#ffffff"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+            </div>
+            <div class="tt-video-bar">
+              <button type="button" class="tt-video-btn-play" id="tt-btn-play" onclick="event.stopPropagation(); toggleTTVideo();" aria-label="Play/Pause">
+                <svg id="tt-icon-play" viewBox="0 0 24 24" width="14" height="14" fill="#ffffff"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg id="tt-icon-pause" viewBox="0 0 24 24" width="14" height="14" fill="#ffffff" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </button>
+              <span class="tt-video-time" id="tt-cur-time">00:00</span>
+              <div class="tt-video-progress-bg" id="tt-progress-bg" onclick="seekTTVideo(event)">
+           

@@ -1,0 +1,11 @@
+node_modules/
+.vercel
+.env*.local
+*.log
+.playwright-mcp/
+tmp/
+*.tmp
+Temp/
+temp_*/
+scratch/
+brain_test/

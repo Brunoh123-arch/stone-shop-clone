@@ -1,0 +1,512 @@
+[
+  {
+    "id": 26,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-26.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/sfr3li.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 28,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-28.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/w60urq.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 31,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-31.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/1ig8lo.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 32,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-32.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/ge965g.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 33,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-33.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/a4ucgq.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 34,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-34.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/6ubsxb.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 35,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-35.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/s313zy.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 36,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-36.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": false
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 38,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-38.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": false
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 39,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-39.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/e7z9vc.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 40,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-40.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": false
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 41,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-41.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/a8zjrb.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 45,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-45.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/bjcwqr.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 46,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-46.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/t5xtp1.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 47,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-47.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/6ubsxb.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 48,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-48.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/u5toyv.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 49,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-49.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/6ubsxb.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  },
+  {
+    "id": 50,
+    "url": "https://stoneshopclone.vercel.app/pages/produto-50.html?test=1",
+    "status": 200,
+    "broken_images": [],
+    "creators_section": {
+      "exists": true,
+      "display": "none",
+      "visibility": "visible",
+      "height": 0,
+      "width": 0,
+      "cardsCount": 0,
+      "innerHTML": ""
+    },
+    "description_video": {
+      "exists": true,
+      "hasBlock": true,
+      "blockDisplay": "block",
+      "vidSrc": "https://files.catbox.moe/n5jecm.mp4",
+      "vidDisplay": "block"
+    },
+    "buttons": {
+      "buyExists": true,
+      "cartExists": false,
+      "buyVisible": true,
+      "cartVisible": false
+    },
+    "errors": []
+  }
+]

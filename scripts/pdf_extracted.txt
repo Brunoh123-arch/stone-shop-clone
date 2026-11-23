@@ -1,0 +1,871 @@
+--- PAGE 1 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+1
+Auditoria de mídia
+103 produtos
+STONE SHOP · 19/11/2026 · horário do Brasil
+Resultado: carrosséis com vídeos repetidos, mídia de outros itens e avaliações que misturam
+fotos de ambiente, publicidade e capturas de vídeo.
+Escopo / achado
+Quantidade
+Produtos consultados
+103
+Carrosséis que repetem URLs de vídeo
+80
+Carrosséis sem nenhuma amostra visual acessível
+12
+Carrossel oculto (scooter 102)
+1
+Imagens de avaliações examinadas
+577
+Produtos com imagem de catálogo/divulgação
+13
+Produtos com captura/frame nas avaliações
+10
+Critérios e limites
+Pessoa = apresentador aparece. Mãos/pés = contato com produto, sem comprovar influenciador
+identificado. Relacionado = mesma categoria visível; marca/modelo/versão continuam pendentes
+de conferência. Foto em ambiente real descreve a aparência da imagem, sem autenticar
+comprador.
+Foram examinados três quadros por arquivo decodificado, perto de 12%, 50% e 85% da duração:
+203 arquivos com amostras de vários trechos e dois só com quadro inicial. A ausência em
+amostras não prova ausência no vídeo inteiro. Links que retornaram vazios/incompletos estão
+identificados como não verificáveis nesta consulta.
+O sistema publicado duplica vídeos para atingir um mínimo de cartões e troca os rótulos de
+criador. Comentários do modal e métricas são definidos/gerados no código. Isso não comprova
+criadores diferentes nem interações reais no TikTok.
+Este PDF traz o diagnóstico dos 103 produtos. O relatório HTML que acompanha esta entrega
+contém todas as imagens examinadas, amostras de vídeo e links das mídias para conferência.
+
+--- PAGE 2 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+2
+P4 · Caixa De Som Boombox 3 Bluetooth Preta Jbl
+Criadores: 10 cartões / 2 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Os 10 cartões reutilizam apenas 2 URLs, ambas retornaram vazias. Não foi possível confirmar criador mostrando a
+JBL.
+Imagens das avaliações: 15 fotos em ambiente real.
+Abrir produto e conferir
+P5 · Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza
+Criadores: 10 cartões / 3 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Os 3 vídeos únicos do carrossel retornaram vazios. As fotos das avaliações são recortes de demonstração da air
+fryer, sem comprovação de foto de comprador.
+Imagens das avaliações: 6 capturas/frames de vídeo.
+Recorte de vídeo; não comprova foto original de comprador.
+Abrir produto e conferir
+P6 · Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor
+Preto e Vermelho Marca Sevenfit
+Criadores: 10 cartões / 4 URLs únicas / 2 com amostra visual. Só publicidade/catálogo nas amostras relacionadas.
+Mistura bicicleta de rua com publicidade de spinning. O anúncio é Sevenfit; não foi confirmada demonstração
+pessoal desse modelo.
+Imagens das avaliações: 13 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P7 · Caixa de Som AIWA
+Criadores: 10 cartões / 2 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Os vídeos do carrossel retornaram vazios. Há fotos do produto/caixa em ambiente real nas avaliações, mas a
+origem de compra não é comprovada.
+Imagens das avaliações: 9 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+P8 · Caixa de Som Amplificada AIWA Party Box AWS-PB-07 Bluetooth 100W RMS com
+Show de Luzes RGB e Bateria Recarregável
+Criadores: 10 cartões / 2 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Os vídeos do carrossel retornaram vazios. As avaliações misturam fotos com diversas artes promocionais de Party
+Box; não equivalem a fotos de clientes.
+Imagens das avaliações: 13 imagens de catálogo/divulgação · 2 fotos em ambiente real.
+Peça promocional/thumbnail/arte de catálogo nas avaliações.
+Abrir produto e conferir
+P9 · Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW
+Criadores: 10 cartões / 3 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Vídeos do carrossel sem conteúdo recebido. As três fotos das avaliações aparentam mostrar climatizadores
+evaporativos, diferentes do ar-condicionado HQ anunciado.
+Imagens das avaliações: 3 fotos em ambiente real.
+Aparece climatizador evaporativo; anúncio é ar-condicionado portátil HQ.
+Abrir produto e conferir
+
+--- PAGE 3 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+3
+P12 · Piscina Splash Fun Redonda Inflável 2400 Litros - Mor
+Criadores: 10 cartões / 2 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Vídeos do carrossel sem conteúdo recebido. Avaliações têm fotos de piscinas e embalagens em ambiente real;
+volume/modelo de cada foto não está comprovado.
+Imagens das avaliações: 13 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+P13 · Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul
+Criadores: 10 cartões / 2 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Usa o conjunto de vídeos da piscina 12; todos os recebidos estão vazios. Há fotos de piscina/embalagem, sem
+confirmação independente dos 1000 litros.
+Imagens das avaliações: 6 fotos em ambiente real · 4 imagens com pessoa/mãos/pés.
+5 referências repetem pixels de outra imagem desta página.
+Abrir produto e conferir
+P14 · Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O carrossel mostra panela elétrica, panelas esmaltadas e panificadora, em vez do assador Arke de 5 espetos. A
+descrição tem vídeo separado de churrasqueira.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 4 fotos em ambiente real.
+Abrir produto e conferir
+P15 · Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com
+Bag
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel com panelas/panificadora em vez da churrasqueira portátil a carvão. A descrição tem uma publicidade
+própria de churrasqueira.
+Imagens das avaliações: 2 fotos em ambiente real.
+Abrir produto e conferir
+P16 · Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina
+Verão Lazer Preta - Mor
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O conjunto chamado de churrasqueira no código entrega vídeos de panelas/panificadora. A descrição separada
+mostra churrasqueira a carvão.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 4 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+4
+P17 · Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta
+Criadores: 32 cartões / 32 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+32 URLs de criadores, mas todas retornaram vazias. Avaliações usam recortes de vídeo de kit de praia, não fotos
+originais de compradores comprovadas.
+Imagens das avaliações: 6 capturas/frames de vídeo.
+Frame de vídeo; não comprova foto original de comprador.
+Abrir produto e conferir
+P18 · Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+
+Carrinho+ Coller 18 Lts
+Criadores: 32 cartões / 32 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+32 URLs de criadores, mas todas retornaram vazias. Fotos das avaliações são frames do kit de praia; não
+autenticam compradores distintos.
+Imagens das avaliações: 4 capturas/frames de vídeo.
+Frame de vídeo; não comprova foto original de comprador.
+Abrir produto e conferir
+P19 · Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14
+Go Wi-Fi IPS Positivo
+Criadores: 10 cartões / 6 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mistura unboxing de iPad com publicidade de caixas de som; não confirma o tablet Positivo Stitch. Há
+unboxing do tablet infantil na descrição separada.
+Imagens das avaliações: 1 foto em ambiente real · 3 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P20 · Bicicleta Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero
+MTB
+Criadores: 10 cartões / 4 URLs únicas / 1 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O único vídeo do carrossel com amostra acessível mostra bicicleta de spinning, diferente da MTB GT. A descrição
+mostra bicicleta de rua.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P21 · Bola De Futebol De Campo Penalty Bravo Xxv
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra tênis e calça jeans, sem demonstração da bola. A única imagem da avaliação é de catálogo em
+fundo branco; a descrição separada mostra uma bola.
+Imagens das avaliações: 1 imagem de catálogo/divulgação.
+Imagem de catálogo/divulgação nas avaliações.
+1 imagens coincidem em pixels com galeria de produtos do catálogo.
+Abrir produto e conferir
+
+--- PAGE 5 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+5
+P22 · Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual
+Bestway
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Produto sozinho; sem demonstração humana
+relacionada.
+Há vídeo do colchão sozinho em ambiente real, mas as demonstrações com pessoas do carrossel são de
+travesseiros. Não identifiquei pessoa demonstrando o colchão nas amostras.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P23 · Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava
+Criadores: 10 cartões / 6 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra pratos e mesas/cadeiras, sem o conjunto de 24 potes. Avaliações contêm fotos de potes em
+ambiente real.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P24 · Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e
+CapotaSolar-Kababy
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra brinquedo de patinhos, diferente do triciclo. Avaliações misturam triciclo e carrinho de bebê; a
+descrição tem conteúdo de passeio separado.
+Imagens das avaliações: 2 imagens com pessoa/mãos/pés · 2 fotos em ambiente real.
+A foto mostra carrinho de bebê; anúncio é triciclo 4 em 1.
+Abrir produto e conferir
+P25 · Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake
+Criadores: 10 cartões / 5 URLs únicas / 2 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra MTB adulta e spinning, diferentes da BMX infantil. A descrição separada mostra bicicleta infantil.
+Imagens das avaliações: 1 foto em ambiente real · 3 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P26 · Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras
+Compacto, Seguro,Cinto
+Criadores: 10 cartões / 4 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra fraldas Huggies, sem o carrinho de bebê. Avaliações têm carrinhos e crianças; a descrição
+separada demonstra carrinho.
+Imagens das avaliações: 2 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+
+--- PAGE 6 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+6
+P28 · Kit Mochila Rebecca Bonbon - Lancheira Térmica + Estojo + Box Escolar Nova
+Coleção Exclusiva Juvenil
+Criadores: 10 cartões / 5 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra livros infantis, sem a mochila Rebecca Bonbon. Há fotos de mochilas/kit nas avaliações.
+Imagens das avaliações: 2 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P31 · Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto
+127/220v
+Criadores: 10 cartões / 4 URLs únicas / 1 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O vídeo acessível do carrossel mostra caixa Joog, diferente da caixa anunciada/Sabala. Avaliações misturam
+imagens em ambiente real e imagem de catálogo.
+Imagens das avaliações: 1 captura/frame de vídeo · 2 fotos em ambiente real · 1 imagem de catálogo/divulgação.
+Frame de vídeo; não comprova foto original de comprador. Imagem de catálogo/divulgação nas avaliações.
+Abrir produto e conferir
+P32 · Chuveiro Acqua Duo Lorenzetti BIVOLT
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra lavadora de pressão sem fio, sem o chuveiro Lorenzetti. Avaliações têm fotos de chuveiros
+instalados.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P33 · Mochila Escolar Bluey E Bingo 15l Kit Meninas Com Lancheira
+Criadores: 10 cartões / 5 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra livros infantis, sem a mochila Bluey/Bingo. Uma foto de avaliação aparenta mostrar mochila de
+outro personagem.
+Imagens das avaliações: 2 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+A mochila na foto parece de outro personagem, diferente de Bluey/Bingo.
+Abrir produto e conferir
+P34 · Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra lavadora de pressão e secadora de roupa, sem lava-louças Praxis. Avaliações têm fotos de
+lava-louças em ambiente real.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 7 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+7
+P35 · Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt
+Criadores: 10 cartões / 3 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Os vídeos únicos do carrossel retornaram vazios. Avaliações misturam fotos de caixas JBL e material de
+divulgação; não comprovam o modelo Boombox 4 em todos os casos.
+Imagens das avaliações: 5 fotos em ambiente real · 1 imagem de catálogo/divulgação.
+Imagem de catálogo/divulgação nas avaliações.
+Abrir produto e conferir
+P36 · Celular Xiaomi Poco X7 Pro 5g Dual Sim 512gb Amarelo 12ram 50mpx
+Criadores: 10 cartões / 5 URLs únicas / 2 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Vídeos identificados como criadores do Poco entregam montagens de caixas de som/eletrônicos; outros links
+estão vazios. O modelo Poco não foi confirmado nas amostras do carrossel.
+Imagens das avaliações: 1 foto em ambiente real · 3 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P38 · Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original
+Criadores: 32 cartões / 32 URLs únicas / 31 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel de perfume mostra escovas/modeladores de cabelo e até escovas de limpeza de pia. Não há perfume
+identificado nas amostras. Avaliações têm fotos dos frascos/kit.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P39 · Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W
+Criadores: 31 cartões / 31 URLs únicas / 30 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mistura kits/modeladores de cabelo e escovas de limpeza. Não confirma o secador Philco PSC3500. As
+fotos das avaliações também mostram kits de outro formato.
+Imagens das avaliações: 2 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Mostra kit de escova/modelador com acessórios; anúncio é secador Philco PSC3500.
+Abrir produto e conferir
+P40 · Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra forno elétrico de bancada, diferente de micro-ondas. Uma imagem de avaliação não permite
+identificar micro-ondas.
+Imagens das avaliações: 4 fotos em ambiente real.
+Foto sem micro-ondas identificável; parece parte inferior de móvel.
+Abrir produto e conferir
+
+--- PAGE 8 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+8
+P41 · Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI
+Criadores: 10 cartões / 3 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Os vídeos do carrossel retornaram vazios. Há fotos de air fryer/forno em ambiente real nas avaliações; o modelo
+precisa ser conferido.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P45 · Prancha Pro 480 Turbo MQ Professional Bivolt
+Criadores: 31 cartões / 31 URLs únicas / 31 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel predominantemente de modeladores de cachos e aparelhos variados, sem confirmação da prancha MQ
+Pro 480 anunciada. Parte das avaliações mostra só cabelo/resultado.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Mostra cabelo/resultado, sem o produto visível.
+Abrir produto e conferir
+P46 · Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital
+(PCC20)
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Pessoa demonstrando item da categoria.
+Há demonstrações de panela elétrica, mas não foi confirmada a Electrolux Rita Lobo 6L. O conjunto é
+compartilhado com panela de outro anúncio.
+Imagens das avaliações: 2 imagens com pessoa/mãos/pés · 2 fotos em ambiente real.
+Abrir produto e conferir
+P47 · Extratora Higienizadora Portátil Borrifa Esfrega e Extrai Sujeira Colchão Sofá
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há extratora WAP em uso, misturada com mini aspiradores/sopradores. É necessário conferir se a demonstração
+corresponde ao equipamento anunciado.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P48 · Panificadora Automática Mondial Master Bread 220V
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há demonstração de panificadora e retirada de pão, mas também vídeo de panela elétrica. Não foi confirmado o
+modelo Mondial em todas as mídias.
+Imagens das avaliações: 2 imagens com pessoa/mãos/pés · 2 fotos em ambiente real.
+Abrir produto e conferir
+P49 · Detergente Limpador Para Extratoras Limpa E Extrai 1L Wap
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra aparelhos de limpeza, sem demonstração identificável do frasco de detergente WAP 1L. Algumas
+avaliações mostram só estofado/resultados.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 9 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+9
+P50 · Lava e Seca Midea Master Clean Smart 11kg Wi-Fi MFM01D110WB-TKBR
+Titanium
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra lavadoras de pressão sem fio, diferentes de lava e seca Midea. Avaliações têm fotos de
+máquinas de roupa, sem confirmar o modelo exato em todas.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P52 · Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia
+de 1 ano
+Criadores: 10 cartões / 5 URLs únicas / 2 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O unboxing de iPad fica na descrição; o carrossel acessível mostra publicidade de caixas de som/eletrônicos. Não
+confirma criador demonstrando este iPad no carrossel.
+Imagens das avaliações: 2 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P53 · Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada
+Anatel (Starlink Padrão)
+Criadores: 10 cartões / 6 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Mistura conteúdo de internet e caixas de som; não foi confirmado o conjunto Starlink V4 anunciado. A descrição
+separada mostra unboxing Starlink, mas o modelo precisa de conferência.
+Imagens das avaliações: 4 fotos em ambiente real.
+Mostra teste de velocidade, sem o produto visível.
+Abrir produto e conferir
+P54 · Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)
+Criadores: 18 cartões / 18 URLs únicas / 15 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra fornos, fogões, panelas e panificadora, sem purificador Electrolux PE11X. Avaliações têm
+purificadores em ambiente real.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P55 · SWITCH DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE
+MEMORIA 128 GB
+Criadores: 10 cartões / 8 URLs únicas / 7 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel de Switch mistura controle arcade, tênis, aspirador, fralda, modelador, pratos e gelo. Não demonstra o
+console Switch anunciado nas amostras acessíveis.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 10 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+10
+P56 · Esteira Elétrica Ergométrica Ginástica Corrida Dobrável - Max 85kg - Heroi
+Sports
+Criadores: 10 cartões / 5 URLs únicas / 2 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra bicicletas/MTB e spinning, sem esteira. Avaliações têm muitas fotos de esteiras, aparentemente
+de modelos variados.
+Imagens das avaliações: 42 fotos em ambiente real · 3 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P57 · caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E
+Tws
+Criadores: 15 cartões / 15 URLs únicas / 6 com amostra visual. Só publicidade/catálogo nas amostras relacionadas.
+Mistura caixas de som de marcas/modelos diferentes. A mídia Joog One identificada é publicitária; não confirma
+influenciador mostrando esse modelo nas amostras.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P58 · Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor
+preço
+Criadores: 15 cartões / 15 URLs únicas / 6 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra outras caixas de som, sem Echo Dot/Alexa identificado. Avaliações têm fotos de Echo em
+ambiente real.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P59 · Mini Internet rápida Via Satélite Antena Original Garantia de 01 ano ENVIO
+IMEDIATO
+Criadores: 10 cartões / 6 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Mistura conteúdo de internet e caixas de som; o modelo Starlink Mini não ficou confirmado nas amostras do
+carrossel. A descrição tem unboxing separado de equipamento Starlink.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P60 · Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,
+Criadores: 10 cartões / 4 URLs únicas / 1 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O vídeo acessível do carrossel mostra Joog, diferente da Sabala DR-908. Os demais links recebidos estão vazios.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 11 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+11
+P61 · Caixa de Som Joog Amplificada Break X1 c/ Tela Touch 13 Microfone Sem Fio,
+Bluetooth, 800W, Android
+Criadores: 15 cartões / 15 URLs únicas / 6 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Mistura marcas e modelos de áudio. Há caixa com tela, mas não foi confirmado o modelo Break X1 13 polegadas;
+parte da mídia é de Joog One/WAAW/JBL.
+Imagens das avaliações: 2 imagens de catálogo/divulgação · 2 fotos em ambiente real.
+Composição promocional/ambiente de divulgação, sem origem de comprador comprovada.
+Abrir produto e conferir
+P63 · Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira
+Criadores: 10 cartões / 6 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra equipamento Starlink e caixas de som, sem Redmi Watch 5 Lite identificado. Avaliações têm
+relógios no pulso.
+Imagens das avaliações: 3 imagens com pessoa/mãos/pés · 1 foto em ambiente real.
+Abrir produto e conferir
+P64 · Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear
+Criadores: 13 cartões / 13 URLs únicas / 13 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel de auxiliar de partida/compressor mostra pneus Pirelli, sem o aparelho anunciado. Há demonstração
+própria de compressor na descrição separada.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P65 · Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoas/mãos demonstrando sofás, mas são modelos variados. Conferir dimensões, tecido e correspondência
+com o inBox Senses 2m.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P68 · Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro
+Criadores: 10 cartões / 9 URLs únicas / 9 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra panelas elétricas, panificadora e projetores natalinos, sem o jogo cerâmico de 5 peças
+anunciado.
+Imagens das avaliações: 3 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+
+--- PAGE 12 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+12
+P70 · Secadora de Roupa Mueller Solaris 8 kg com timer ar quente e frio 6 varões e 5
+cabides
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra lavadoras de pressão, sem a secadora Mueller. A demonstração de secadora está na descrição
+separada.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P72 · Jogo de Panelas 13 Peças Ferro Fundido Esmaltado Premium Alta Resistência
+Antibacteria Mantenha aquecido e fresco
+Criadores: 10 cartões / 9 URLs únicas / 9 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há panelas esmaltadas vermelhas, mas o carrossel também mistura panela elétrica e projetor natalino. Não
+confirma conjunto completo de 13 peças.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P73 · Caixa De Som Bluetooth Waaw Hyperboom 1000
+Criadores: 15 cartões / 15 URLs únicas / 6 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mistura Joog/JBL e outras caixas; não confirma demonstrador da WAAW específica. A publicidade WAAW
+fica na descrição separada.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P74 · Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra bola, tênis e jeans, sem camisa do Brasil. As imagens das avaliações são de catálogo de camisas
+de Portugal, diferentes do anúncio.
+Imagens das avaliações: 3 imagens de catálogo/divulgação.
+Catálogo de camisas de Portugal; anúncio é kit da Seleção Brasileira.
+Abrir produto e conferir
+P75 · Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes -
+Exercícios - Corrida
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra bola, tênis e jeans, sem o kit de camisetas dry fit. O vídeo de pessoa usando camiseta lisa está
+na descrição separada.
+Imagens das avaliações: 2 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+
+--- PAGE 13 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+13
+P76 · Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos
+Bertolazzi + BRINDE
+Criadores: 10 cartões / 5 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra móveis de jantar, sem o aparelho de porcelana. As avaliações têm fotos de pratos, alimentos e
+embalagem.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P78 · Extratora e Higienizadora Portátil WAP Spot Cleaner 127V FW009214
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há extratora WAP em uso, misturada com mini aspirador/soprador. Conferir a correspondência com a Spot Cleaner
+anunciada.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P79 · Lava Louças Praxis Portátil LLPP Semi-Automática 127V Branca
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra lavadora de pressão e secadora, sem lava-louças Praxis. Compartilha o problema do produto 34.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P80 · Panificadora 19 Programas Gallant 600w 127v Branca (GPA1E19A_127BR)
+Criadores: 18 cartões / 18 URLs únicas / 15 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Há demonstração de panificadora, misturada com forno, fogão, panela e gelo. Conferir marca Gallant e os 19
+programas.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P81 · Caixa de Som WAAW Hyperboom 1000 180W IPX7 TWS Bivolt
+Criadores: 16 cartões / 16 URLs únicas / 7 com amostra visual. Só publicidade/catálogo nas amostras relacionadas.
+Há render/publicidade WAAW, misturado com caixas de outros fabricantes. Não confirma influenciador mostrando
+a WAAW desse anúncio nas amostras.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P82 · Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra lavadora de pressão e secadora de parede, sem lava e seca Hisense.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 14 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+14
+P83 · Caixa De Som Joog break X1 Tela 13,1 2 Microfones Cor Preto 110V/220V
+Criadores: 16 cartões / 16 URLs únicas / 7 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Carrossel mistura marcas e caixas de som de outros modelos. Não foi confirmada demonstração do Break X1 13,1
+polegadas.
+Imagens das avaliações: 2 imagens de catálogo/divulgação · 2 fotos em ambiente real.
+Composição promocional/ambiente de divulgação, sem origem de comprador comprovada.
+Abrir produto e conferir
+P84 · Panificadora 19 Programas Gallant 600w Preta (GPA1E19A_127PT)
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há panificadora em demonstração e panela elétrica; confirmar Gallant e cor preta. O carrossel é compartilhado
+com produto de outra marca.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P85 · Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones
+Criadores: 15 cartões / 15 URLs únicas / 6 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra outras caixas, incluindo Joog One/WAAW/JBL. O vídeo com caixa de tela fica na descrição; o
+modelo X2 não é confirmado no carrossel acessível.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P87 · KISSMELADY 015 010 8110 com cinto preto calça mom jeans feminina moda
+novo lisa sem rascada
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra body, lingerie/cinta e shorts modelador, sem calça mom jeans. A demonstração de jeans fica na
+descrição separada.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P88 · Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça
+Social
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra body e lingerie/cinta, sem conjunto de blazer e calça. Algumas fotos de avaliação mostram
+pessoas em eventos, sem confirmar o conjunto exato.
+Imagens das avaliações: 3 imagens com pessoa/mãos/pés · 1 foto em ambiente real.
+Pessoa em evento; não comprova o conjunto exato de blazer e calça anunciado.
+Abrir produto e conferir
+
+--- PAGE 15 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+15
+P89 · Kit conjunto de panelas de ferro esmaltadas luxo 18 peças
+Criadores: 10 cartões / 9 URLs únicas / 9 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há panelas esmaltadas vermelhas, misturadas com panela elétrica, panificadora e projetor natalino. Não
+comprova conjunto completo de 18 peças.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P90 · Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto
+Criadores: 10 cartões / 9 URLs únicas / 9 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra panelas elétricas/ferro e projetores natalinos, diferentes do jogo cerâmico Avant Space.
+Avaliações também mostram jogos variados.
+Imagens das avaliações: 7 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+P91 · Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir
+Pipoca PPI04V Philco
+Criadores: 18 cartões / 18 URLs únicas / 15 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O vídeo relacionado à pipoqueira de manivela fica na descrição; carrossel mostra outros eletrodomésticos.
+Avaliações mostram máquina elétrica de pipoca, diferente do anunciado.
+Imagens das avaliações: 3 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Mostra máquina elétrica de pipoca; anúncio descreve pipoqueira de manivela.
+Abrir produto e conferir
+P92 · Conjunto de Panelas de Ferro Fundido Esmaltado 10 Peças - Frigideira e Panelas
+Antiaderentes
+Criadores: 10 cartões / 9 URLs únicas / 9 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mistura panela elétrica, panificadora e projetor natalino, sem confirmar o jogo esmaltado de 10 peças.
+Há vídeo de panelas na descrição separada.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P94 · Bicicleta Bike Ergometrica Spinning Academia Fitness Profissional 120kg
+Criadores: 10 cartões / 4 URLs únicas / 1 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+O único vídeo do carrossel com amostras completas mostra MTB de rua, diferente da bicicleta de spinning. Outras
+URLs recebidas estão vazias.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 16 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+16
+P95 · YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice
+Para Casa E Bar
+Criadores: 18 cartões / 18 URLs únicas / 15 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+A demonstração de máquina de gelo fica na descrição; carrossel acessível mostra outros eletrodomésticos. Não
+confirma criador demonstrando a YESOP ali.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P96 · Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças
+Criadores: 10 cartões / 5 URLs únicas / 4 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há mãos mostrando pratos/jogo de jantar, misturadas com mesas/cadeiras. Não confirma coleção Oxford Ryo
+Maresia de 30 peças.
+Imagens das avaliações: 3 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+P97 · Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina
+Criadores: 10 cartões / 5 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra mesas/cadeiras e banner de loja, sem confirmar o jogo de porcelana Canyon. Avaliações têm
+pratos em ambiente real.
+Imagens das avaliações: 3 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+P98 · Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect
+Criadores: 10 cartões / 5 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra mesas/cadeiras e banner, sem copos de cristal identificados. Avaliações têm fotos de copos e
+embalagens.
+Imagens das avaliações: 2 fotos em ambiente real · 2 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P99 · Kit Compre 1 Leve 2 Camisa Seleção Portugal Copa 2026 (Masculina/Feminina)
+Criadores: 10 cartões / 5 URLs únicas / 5 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra bola, tênis e jeans, sem camisa de Portugal. Avaliações usam catálogo/editorial promocional,
+sem foto de comprador comprovada.
+Imagens das avaliações: 3 imagens de catálogo/divulgação.
+Catálogo/editorial promocional de camisa; não demonstra foto original de comprador.
+Abrir produto e conferir
+
+--- PAGE 17 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+17
+P100 · Apple iPhone 15, 15 Plus, 15 Pro e 15 Pro Max (Vitrine Premium)
+Criadores: 10 cartões / 6 URLs únicas / 3 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel do iPhone usa conteúdo identificado no código e na interface como Poco/iPad, além de montagens de
+áudio. Não confirma demonstração de iPhone 15. Fotos das avaliações incluem aparelhos/caixas de modelos
+variados.
+Imagens das avaliações: 3 imagens com pessoa/mãos/pés · 1 foto em ambiente real.
+Há aparelhos/embalagens de modelos variados; não comprova o iPhone 15 anunciado.
+Abrir produto e conferir
+P101 · Pneus Pirelli - Encontre a medida ideal para o seu veículo
+Criadores: 12 cartões / 12 URLs únicas / 12 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoas/mãos mostrando pneus Pirelli, junto de close de pneus e imagem de catálogo. Conferir medida/modelo
+e se a autoria dos perfis corresponde às pessoas dos vídeos.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P102 · Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km
+Criadores: 0 cartões / 0 URLs únicas / 0 com amostra visual. Sem carrossel visível.
+Carrossel de criadores fica oculto; a mesma fonte é removida por coincidir com o vídeo da descrição. Há vídeo
+separado da scooter e fotos em ambiente real nas avaliações.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 3 fotos em ambiente real.
+Abrir produto e conferir
+P103 · Vestido longo feminino costas nua com fenda chique eventos festas moda
+fashion justo e elegante
+Criadores: 10 cartões / 4 URLs únicas / 4 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Carrossel mostra body e lingerie/cinta, sem o vestido longo. Avaliações têm pessoas vestindo vestidos, mas o
+modelo exato precisa ser conferido.
+Imagens das avaliações: 3 imagens com pessoa/mãos/pés · 1 foto em ambiente real.
+Abrir produto e conferir
+P104 · Chinelo Feminino Luxo Strass Brilhante Macio Leve
+Criadores: 32 cartões / 32 URLs únicas / 32 com amostra visual. Pessoa demonstrando item da categoria.
+Há várias demonstrações de pessoas/mãos/pés com chinelos de strass. Ainda é necessário validar autoria e
+correspondência de cada modelo; há fotos repetidas nas avaliações.
+Imagens das avaliações: 19 imagens com pessoa/mãos/pés · 28 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 18 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+18
+P105 · Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi
+Bluetooth Alto
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Item anunciado não identificado nas amostras do
+carrossel.
+Os vídeos do carrossel mostram projetor de desenhos/luzes natalinas, diferente do projetor multimídia HY300.
+Avaliações mostram projetor e projeção de tela.
+Imagens das avaliações: 4 fotos em ambiente real.
+Mostra resultado/tela/pessoa, sem o produto anunciado identificável.
+Abrir produto e conferir
+P106 · Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Carrossel mistura body, lingerie/cinta e shorts modelador; há mãos mostrando peça, sem confirmação de pessoa
+usando o body exato anunciado.
+Imagens das avaliações: 5 imagens com pessoa/mãos/pés · 5 fotos em ambiente real.
+Abrir produto e conferir
+P107 · Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo 2 em 1 Carro e Casa
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa mostrando mini aspirador/soprador, mas também extratora WAP de outro formato. Algumas fotos de
+avaliação não identificam o aspirador anunciado.
+Imagens das avaliações: 2 imagens com pessoa/mãos/pés · 2 fotos em ambiente real.
+Objeto circular; não identifica o aspirador 2 em 1 anunciado. Banco do carro, sem aspirador visível.
+Abrir produto e conferir
+P108 · Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda Bivolt
+Criadores: 31 cartões / 31 URLs únicas / 30 com amostra visual. Pessoa demonstrando item da categoria.
+Há demonstrações humanas de kits de cabelo, mas o carrossel também inclui escovas ELÉTRICAS DE LIMPEZA de
+pia/piso e aparelhos de outros modelos. Avaliações misturam escova oval, secador e resultados de cabelo.
+Imagens das avaliações: 4 imagens com pessoa/mãos/pés.
+Mostra escova oval/secador separado; não comprova kit 5 em 1 anunciado. Mostra resultado/tela/pessoa, sem o produto anunciado
+identificável.
+Abrir produto e conferir
+P109 · Modelador de Cachos Automático Sem Fio Portátil Cerâmica Bateria USB
+Criadores: 31 cartões / 31 URLs únicas / 31 com amostra visual. Pessoa demonstrando item da categoria.
+Há demonstrações humanas de modeladores, misturando aparelhos automáticos, hastes e outros formatos; não
+comprova que todos sejam o modelo sem fio anunciado. Avaliações incluem captura de vídeo e fotos só do cabelo.
+Imagens das avaliações: 1 captura/frame de vídeo · 1 imagem com pessoa/mãos/pés · 2 fotos em ambiente real.
+Captura de vídeo com botão de reprodução; não é foto original comprovada. Mostra resultado/tela/pessoa, sem o produto
+anunciado identificável. Aparelho alongado de modelar; não comprova modelador automático sem fio anunciado.
+Abrir produto e conferir
+
+--- PAGE 19 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+19
+P110 · Tênis Kappa Pulse RX Masculino e Feminino Amortecimento Corrida e
+Caminhada
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Carrossel acessível tem tênis em fundo branco e tênis rosa mostrado por mãos; não confirma pessoa
+demonstrando o Kappa Pulse RX exato. A demonstração identificada como Kappa fica na descrição.
+Imagens das avaliações: 1 foto em ambiente real · 3 imagens com pessoa/mãos/pés.
+Abrir produto e conferir
+P111 · Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há mãos mostrando projetores natalinos e projeções em parede. Não há rosto de apresentador nas amostras
+relacionadas do carrossel.
+Imagens das avaliações: 4 fotos em ambiente real.
+Abrir produto e conferir
+P112 · Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa demonstrando brinquedo de patinhos e vídeo do produto funcionando. Conferir se é a versão de
+caminhão/kit anunciada.
+Imagens das avaliações: 2 imagens com pessoa/mãos/pés · 2 fotos em ambiente real.
+Abrir produto e conferir
+P113 · Comedouro Cachorro e Gato Elevado Duplo em Acrílico Transparente
+Anti-Engasgo
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Um vídeo relacionado mostra mãos com comedouro; os demais acessíveis do carrossel mostram modeladores de
+cabelo. Uma foto de avaliação mostra só embalagem.
+Imagens das avaliações: 3 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Mostra apenas embalagem; produto não está visível.
+Abrir produto e conferir
+P114 · Controle Arcade 7 em 1 Stick Retrô Multiplataforma PS4 PS3 Xbox PC Switch
+Celular
+Criadores: 32 cartões / 32 URLs únicas / 25 com amostra visual. Pessoa demonstrando item da categoria.
+Há demonstração de arcade, mas o carrossel está fortemente misturado com tênis, fraldas, aspiradores,
+modeladores, pneus, panelas, sofá e outros itens.
+Imagens das avaliações: 8 capturas/frames de vídeo.
+Captura/frame de vídeo ou rede social, não foto original comprovada de comprador.
+Abrir produto e conferir
+P115 · Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há pessoa/mãos demonstrando forno elétrico HQ. Uma mídia só permitiu decodificar o quadro inicial; outras
+mostram o forno em amostras de vários trechos.
+Imagens das avaliações: 11 fotos em ambiente real.
+Abrir produto e conferir
+
+--- PAGE 20 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+20
+P116 · Smart TV DLED 32 HD Multi Roku 3HDMI 2USB Wi-Fi - TL052M
+Criadores: 10 cartões / 4 URLs únicas / 0 com amostra visual. Não verificável: mídias sem conteúdo recebido.
+Todos os vídeos do carrossel retornaram vazios. Não foi possível confirmar criador demonstrando a TV.
+Imagens das avaliações: 5 fotos em ambiente real.
+Abrir produto e conferir
+P117 · Fogão Atlas Mônaco Top Glass 4 Bocas Mesa de Vidro Temperado Preto
+Criadores: 10 cartões / 2 URLs únicas / 2 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há mãos mostrando fogão e publicidade; não identifiquei rosto de criador nas amostras relacionadas. As fotos das
+avaliações são predominantemente imagens com aparência de catálogo/divulgação.
+Imagens das avaliações: 4 imagens de catálogo/divulgação.
+Imagem com aparência de catálogo/divulgação/ambiente promocional.
+Abrir produto e conferir
+P118 · Conjunto Sala de Jantar Mesa Tampo Chanfrado com 4 Cadeiras Estofadas
+Suede Slim
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Mãos/pés; sem rosto de criador identificado.
+Há mãos mostrando mesas/cadeiras, sem rosto de criador nas amostras. Avaliações usam material com aparência
+de catálogo/propaganda e ambientes promocionais.
+Imagens das avaliações: 4 imagens de catálogo/divulgação.
+Imagem com aparência de catálogo/divulgação/ambiente promocional.
+Abrir produto e conferir
+P119 · Combo Fardo Mega Fraldas Supreme Care + 4 Pacotes Lenços Umedecidos
+Toque Suave
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa e mãos mostrando fraldas Huggies. Não confirma Pampers nem o combo completo do anúncio. Uma
+avaliação usa captura de rede social.
+Imagens das avaliações: 2 fotos em ambiente real · 1 imagem com pessoa/mãos/pés · 1 captura/frame de vídeo.
+Captura/frame de vídeo ou rede social, não foto original comprovada de comprador.
+Abrir produto e conferir
+P120 · Sofá Retrátil e Reclinável 3 Lugares 2,10m Suede Veludo com Molas Ensacadas
+e Pillow Top
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa/mãos demonstrando sofás. Avaliações misturam publicidade/catálogo com recortes de vídeos; não
+comprovam fotos originais de compradores.
+Imagens das avaliações: 2 capturas/frames de vídeo · 2 imagens de catálogo/divulgação.
+Captura/frame de vídeo ou rede social, não foto original comprovada de comprador. Imagem com aparência de
+catálogo/divulgação/ambiente promocional.
+Abrir produto e conferir
+
+--- PAGE 21 ---
+Stone Shop · Auditoria de mídia · 103 produtos · 19/11/2026
+21
+P121 · Travesseiro Cervical Ortopédico Abranuv Pro 2.0 Espuma de Memória
+Viscoelástica
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoas demonstrando travesseiros cervicais. Conferir marca Abranuv e modelo; as fotos de ambiente real não
+autenticam compradores.
+Imagens das avaliações: 10 fotos em ambiente real · 1 imagem com pessoa/mãos/pés.
+Abrir produto e conferir
+P122 · Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de
+Segurança
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa/mãos demonstrando panela elétrica e material promocional. As imagens das avaliações são recortes de
+vídeo/publicidade, sem foto original de comprador comprovada.
+Imagens das avaliações: 2 capturas/frames de vídeo · 2 imagens de catálogo/divulgação.
+Captura/frame de vídeo ou rede social, não foto original comprovada de comprador. Imagem com aparência de
+catálogo/divulgação/ambiente promocional.
+Abrir produto e conferir
+P123 · Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta, 2 Baterias e
+Canhão de Espuma
+Criadores: 10 cartões / 3 URLs únicas / 3 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa/mãos demonstrando lavadora de pressão sem fio. Uma mídia só permitiu quadro inicial; uma imagem
+de avaliação tem aparência promocional.
+Imagens das avaliações: 1 imagem com pessoa/mãos/pés · 2 fotos em ambiente real · 1 imagem de
+catálogo/divulgação.
+Imagem com aparência de catálogo/divulgação/ambiente promocional.
+1 referências repetem pixels de outra imagem desta página.
+Abrir produto e conferir
+P124 · Livro Infantil Interativo Bilíngue Falante com Som ao Toque - Português e
+Inglês com Caneta Tátil
+Criadores: 10 cartões / 4 URLs únicas / 3 com amostra visual. Pessoa demonstrando item da categoria.
+Há pessoa/mãos com livros infantis eletrônicos; um arquivo não decodificou. As avaliações misturam captura de
+vídeo e livro de atividades Busy Books, diferente do eletrônico falante anunciado.
+Imagens das avaliações: 1 captura/frame de vídeo · 1 foto em ambiente real · 1 imagem com pessoa/mãos/pés.
+Captura/frame de vídeo ou rede social, não foto original comprovada de comprador. Mostra Busy Books de atividades; não
+comprova livro eletrônico falante anunciado.
+Abrir produto e conferir

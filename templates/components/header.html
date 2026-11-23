@@ -1,0 +1,29 @@
+  <!-- HEADER OFICIAL TIKTOK SHOP (CANÔNICO PRODUTO-104) -->
+  <header class="header">
+    <div class="header-left">
+      <button class="header-btn" onclick="history.back()" aria-label="Voltar">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+    </div>
+    <div class="header-right">
+      <button class="header-btn" aria-label="Compartilhar" onclick="if(navigator.share){navigator.share({title:document.title,url:location.href})}else{navigator.clipboard.writeText(location.href);alert('Link copiado!')}">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      </button>
+      <button class="header-btn cart-btn" onclick="window.location.href='../resumo.html'" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24" class="header-icon" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+    </div>
+  </header>

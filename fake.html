@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>STONE® | Built for everyday — Coleção Oficial 2026</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-cream: #F5F3EF;
+      --bg-cream-card: #EFECE6;
+      --text-dark: #121316;
+      --text-muted: #6B6D74;
+      --border-soft: #E2DFD8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .app-shell {
+      width: 100%;
+      max-width: 480px;
+      background: var(--bg-cream);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    }
+
+    /* Top Bar */
+    .top-announcement {
+      background: #111215;
+      color: #F5F3EF;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 9px 16px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Header */
+    .stone-header {
+      background: var(--bg-cream);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 4px;
+    }
+
+    .menu-bar {
+      width: 20px;
+      height: 2px;
+      background: var(--text-dark);
+      border-radius: 2px;
+    }
+
+    .brand-logo-stone {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+    }
+
+    .brand-logo-stone sup {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-left: 2px;
+    }
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: var(--text-dark);
+    }
+
+    /* Hero Section (Imagem 100% fiel ao print) */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 620px;
+      background: #2b2b2b url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop') center top / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 32px 24px;
+      color: #fff;
+    }
+
+    /* Overlay com gradiente dramático para leitura do texto */
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 40%, rgba(18,19,22,0.85) 85%, rgba(18,19,22,0.98) 100%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 2px;
+    }
+
+    .hero-title {
+      font-size: 52px;
+      line-height: 0.95;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-title em {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .hero-desc {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.5;
+      max-width: 300px;
+      margin-top: 4px;
+    }
+
+    .hero-action-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+      padding-top: 12px;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1.5px solid #fff;
+      padding-bottom: 4px;
+      cursor: pointer;
+    }
+
+    .hero-counter {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Grid de Produtos de Luxo */
+    .catalog-section {
+      padding: 36px 20px 24px;
+      background: var(--bg-cream);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--text-dark);
+    }
+
+    .section-link {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .product-thumb {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background: var(--bg-cream-card);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .product-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .product-card:hover .product-thumb img {
+      transform: scale(1.04);
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: #111;
+      color: #fff;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 3px 7px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      border-radius: 2px;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .product-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.35;
+    }
+
+    .product-category {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .product-price {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-top: 2px;
+    }
+
+    /* Value Props */
+    .values-strip {
+      background: #111215;
+      color: #fff;
+      padding: 30px 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .value-icon {
+      font-size: 20px;
+    }
+
+    .value-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .value-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .value-sub {
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* Footer Institucional */
+    .stone-footer {
+      background: #0d0e11;
+      color: #fff;
+      padding: 36px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 12px;
+    }
+
+    .footer-logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #fff;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 24px;
+      list-style: none;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+      <span>FRETE GRÁTIS PARA COMPRAS ACIMA DE R$ 499</span>
+      <span>&rarr;</span>
+    </div>
+
+    <!-- Header Oficial Stone -->
+    <header class="stone-header">
+      <button class="menu-btn" aria-label="Menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <div class="brand-logo-stone">
+        STONE<sup>&reg;</sup>
+      </div>
+
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Favoritos">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Sacola">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section (Idêntico ao print do v0) -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="hero-tag">COLEÇÃO 04 &mdash; 2026</span>
+        <h1 class="hero-title">
+          Built for<br>
+          <em>everyday.</em>
+        </h1>
+        <p class="hero-desc">
+          Peças essenciais, feitas para durar. Descubra a nova coleção.
+        </p>
+
+        <div class="hero-action-row">
+          <a class="hero-cta" href="#catalogo">
+            <span>EXPLORAR COLEÇÃO</span>
+            <span>&rarr;</span>
+          </a>
+          <span class="hero-counter">01 &nbsp;/&nbsp; 03</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de Peças de Luxo -->
+    <section class="catalog-section" id="catalogo">
+      <div class="section-header">
+        <h2 class="section-title">Destaques da Temporada</h2>
+        <a class="section-link" href="#catalogo">Ver Todos</a>
+      </div>
+
+      <div class="products-grid">
+        <!-- Item 1 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-tag">Novo</span>
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=600&auto=format&fit=crop" alt="Moletom Essential Stone">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Moletom Heavyweight</span>
+            <span class="product-name">Moletom Essential Crewneck</span>
+            <span class="product-price">R$ 489,00</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop" alt="Camiseta Pima Stone">
+          </div>
+          <div class="product-info">
+            <span class="product-category">100% Algodão Pima</span>
+            <span class="product-name">Camiseta Minimalist Oversized</span>
+            <span class="product-price">R$ 229,00</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=600&auto=format&fit=crop" alt="Calça Cargo Stone">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Alfaiataria & Utility</span>
+            <span class="product-name">Calça Cargo Stone Utility</span>
+            <span class="product-price">R$ 549,00</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-tag">Techwear</span>
+            <img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=600&auto=format&fit=crop" alt="Jaqueta Corta-Vento Stone">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Resistente à Água</span>
+            <span class="product-name">Jaqueta Corta-Vento Shell</span>
+            <span class="product-price">R$ 689,00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faixa de Valores Stone -->
+    <div class="values-strip">
+      <div class="value-item">
+        <span class="value-icon">✦</span>
+        <div class="value-text">
+          <span class="value-title">Design Atemporal</span>
+          <span class="value-sub">Cortes minimalistas feitos para atravessar estações.</span>
+        </div>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">◈</span>
+        <div class="value-text">
+          <span class="value-title">Fibras Nobres</span>
+          <span class="value-sub">Algodão Pima peruano e tecidos de altíssima gramatura.</span>
+        </div>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">✔</span>
+        <div class="value-text">
+          <span class="value-title">Garantia & Devolução</span>
+          <span class="value-sub">Primeira troca gratuita em até 30 dias corridos.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Institucional -->
+    <footer class="stone-footer">
+      <div class="footer-logo">STONE<sup>&reg;</sup></div>
+      <ul class="footer-links">
+        <li><a href="#">Coleções</a></li>
+        <li><a href="#">Lojas Físicas</a></li>
+        <li><a href="#">Sustentabilidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <div class="footer-copy">
+        &copy; 2026 STONE BRASIL INDÚSTRIA E COMÉRCIO DE MODA LTDA.<br>
+        CNPJ 41.298.502/0001-83 &bull; São Paulo - SP &bull; Todos os direitos reservados.
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

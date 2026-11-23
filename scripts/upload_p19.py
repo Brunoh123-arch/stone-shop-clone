@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+import json
+from tiktok_catbox_downloader import download_and_upload_to_catbox
+
+videos = [
+    {
+        'username': 'achados_dah',
+        'nickname': 'Dahiane Achados',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f286ab911d852408374782842323b832~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=d5a0f028&x-expires=1795363200&x-signature=TOV2JTwpcWU4WYeeNdUsJQh7gXA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Tablet Positivo Vision TAB 7 Stitch infantil completo com capa e bolsa',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/ocrWQmL0fN4XmeClDgGAI1y8jTUAJCdIDkI5e4/?a=1988&bti=ODszNWYuMDE6&&bt=360&ft=-Csk_mrMPD12NCu4uY-Uxt~FPY6e3wv25HcAp&mime_type=video_mp4&rc=OGk0Z2RmNDk1ZGc7OGhkN0BpamlzZnk5cmRsPDMzODczNEA1YjJgNjYzXl4xMS8tLV8xYSM2X28vMmRzYWZhLS1kMWBzcw%3D%3D&expire=1795365816&l=202611210042506699E37BDDC7F9EA9B99&ply_type=2&policy=2&signature=ceb8886dd443e5291f8e7625d4b98c57&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8mJrBGTUlDxQvelCeLIA1GXIyAjqZ3IIJeV4k~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=znMcKJkovbO2IOi1d4%2BhN%2FIapFI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'yafernandes_',
+        'nickname': 'Yasmin Fernandes',
+        'avatar': 'https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/fc4fccc552a1099262470da49c9c5f0b~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=7f02e28e&x-expires=1795363200&x-signature=PoL8tPLHzjCROFMqf0sIsg%2FggS4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Comprei o tablet do Stitch perfeito pra minha filha com bolsa e capa',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oQu4rFBRUDp4FdEEagUKAOUAQf1YufBEz7IGzg/?a=1988&bti=ODszNWYuMDE6&&bt=1332&ft=-Csk_mrMPD12NUu4uY-UxW4FPY6e3wv25dcAp&mime_type=video_mp4&rc=OzlnPGk3ZmZpODM6ZGU6ZkBpM3R0a285cjltNzMzODczNEAuYDIzMTVeXl8xNV9jYF40YSNyLTZvMmQ0L19hLS1kMTFzcw%3D%3D&expire=1795365849&l=20261121004308729FC73AB89F60C689CF&ply_type=2&policy=2&signature=ee6af25d961ea607ecae63fd1834cd18&tk=tt_chain_token&btag=e00090000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIfIECpTT4LuAA3Xu5BdIyUNwAiJA0A5iZBKAi~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=LI4oCHgJSPrDBbI0t5ECTg6G76M%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'laiscordeiro01',
+        'nickname': 'Lais Cordeiro',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/7df421df12c8e92b550bda5623d6b4b0~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=e52eb185&x-expires=1795363200&x-signature=zuvmS%2F9kzf%2Feq%2BeALsEaOB3nFE4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Tablet Positivo Vision TAB 7 Stitch 64GB com controle parental',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oEVXBf34Cir0E6aO2Q1wiAD4IXIDA5kHOg3CIo/?a=1988&bti=ODszNWYuMDE6&&bt=1053&ft=-Csk_mrMPD12NQM4uY-Ux~22NY6e3wv25BcAp&mime_type=video_mp4&rc=ODloaDlmOzczZzdmZmZnN0Bpamg1M3E5cnY5ZDMzODczNUA2X2NeYy5hNmAxMC4wLy4wYSMwNW1vMmRjaXBhLS1kMTZzcw%3D%3D&expire=1795365864&l=202611210044019A6007D720E199D25CEC&ply_type=2&policy=2&signature=d305c78af76de65c1302f9cb2bddd4e1&tk=tt_chain_token&btag=e000b8000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o0fqeIRlETDuRwDE31FrxQMyBOpGQgBvGcEpsA~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=ZNFwcYfEt4n3lhZyCreX1V2Ak9g%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'dicasfacilita',
+        'nickname': 'Kamila Santos',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/74776b771c548956af7fa1f30fb90c62~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=563da971&x-expires=1795363200&x-signature=bX0dPysCs3Udrktt5CPMJIhjm%2FY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Tablet Positivo Vision TAB 7 Stitch 64GB 3GB RAM lindo demais',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/oU4dsWKEhVIzFD0qAdQEREMF2fUjNHEcBDtBge/?a=1988&bti=ODszNWYuMDE6&&bt=966&ft=-Csk_mrMPD12N8M4uY-Ux7w2NY6e3wv252cAp&mime_type=video_mp4&rc=OGg8aTk2O2lmNWloMzU1ZEBpam11PHY5cjg0OzMzODczNEBgL14uMF4yXjYxMi0uNF5hYSNqcWU0MmRjMl9hLS1kMWBzcw%3D%3D&expire=1795365903&l=2026112100443176A2981613614AC9B478&ply_type=2&policy=2&signature=f89cce69fa0ea9cb8e44e4c844d59b9f&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/oU4dGWKEhVIzFixqAdBIREMFKfQwEmEcBDtBge~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=CBRCZxxgWW1kSQJpcyEC7s5h2mQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'viacheiecomprei',
+        'nickname': 'Vi e Comprei',
+        'avatar': 'https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/18b90af3f84132fed214e3c76595340a~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=41ee3c6b&x-expires=1795363200&x-signature=gn34Ph86lgf5efnDd4RhhT8AVso%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Tablet Vision TAB 7 Stitch da Positivo com Android 14 Go 64GB com capa e bolsa',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oYeixIGGA3DLnGeLeAVNMgAkQB6tI6I3efT9Pg/?a=1988&bti=ODszNWYuMDE6&&bt=531&ft=-Csk_mrMPD12NGM4uY-Ux5MFPY6e3wv25NcAp&mime_type=video_mp4&rc=ZDQ2ZGZkZmk5OTMzaGRoNkBpanU6OXM5cnVxZDMzODczNEAxYS9fYDReNjIxXjZfNi82YSNlcm8tMmRzZHJhLS1kMWBzcw%3D%3D&expire=1795365909&l=20261121004445F49896FDA741F9D0FDB3&ply_type=2&policy=2&signature=5034fb9f48a266983bff6b17ae66630e&tk=tt_chain_token&btag=e000b8000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIAA4eEQIBgqvNvfP8Fc6XFZGNhS6EAMDCXRAw~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=ktR1V93ELZYMYOf1ZeXV5P4DXwI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    }
+]
+
+res = []
+for v in videos:
+    user = v['username']
+    print(f"Baixando e subindo {user}...")
+    catbox = download_and_upload_to_catbox(v['playAddr'], f"{user}.mp4")
+    print(f"-> {catbox}")
+    v['catbox'] = catbox
+    res.append(v)
+
+with open('scripts/p19_videos_result.json', 'w', encoding='utf-8') as f:
+    json.dump(res, f, ensure_ascii=False, indent=2)
+
+print("FINALIZADO COM SUCESSO!")

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Pixel Tracker (mesma conta das ofertas — carrega ttq configurado no painel) -->
+  <script src="/pixel-tracker/api/pixel.js" async></script>
+  <script src="/pixel-tracker/api/tracking.js" async></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Verifique seu status</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --tt-black: #010101;
+      --tt-pink: #FE2C55;
+      --tt-pink-dark: #E6244B;
+      --tt-cyan: #25F4EE;
+      --tt-cyan-dark: #10D9D3;
+      --bg: #ffffff;
+      --bg-soft: #f8f9fa;
+      --neutral-100: #f5f5f5;
+      --neutral-200: #e8e8e8;
+      --neutral-300: #d1d1d1;
+      --neutral-400: #9a9a9a;
+      --neutral-600: #666666;
+      --neutral-800: #161823;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: var(--neutral-800);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--white);
+      color: var(--neutral-600);
+      text-align: center;
+      padding: 20px 24px;
+      font-size: 0.8rem;
+      border-top: 1px solid var(--neutral-200);
+    }
+
+    footer a {
+      color: var(--neutral-600);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--tt-pink); }
+
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+
+    footer .footer-links span { color: var(--neutral-400); }
+
+    /* OVERLAY */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(22, 24, 35, 0.55);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .overlay.active { display: flex; }
+
+    /* POPUP */
+    .popup {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 36px 32px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 16px 60px rgba(0,0,0,0.3);
+      animation: slideUp 0.25s ease;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .popup-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(254, 44, 85, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .popup-icon svg {
+      width: 26px;
+      height: 26px;
+      color: var(--tt-pink);
+    }
+
+    .popup h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      margin-bottom: 8px;
+    }
+
+    .popup p {
+      font-size: 0.88rem;
+      color: var(--neutral-600);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .popup-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-confirm {
+      flex: 1;
+      background: var(--tt-pink);
+      color: var(--white);
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-confirm:hover { background: var(--tt-pink-dark); }
+    .btn-confirm:disabled { opacity: 0.6; cursor: wait; }
+
+    .btn-cancel {
+      flex: 1;
+      background: var(--neutral-100);
+      color: var(--neutral-600);
+      border: 1px solid var(--neutral-200);
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-cancel:hover { background: var(--neutral-200); }
+
+    /* STEPS */
+    .captcha-step { display: none; }
+    .captcha-step.active { display: block; }
+    .welcome-step { display: block; }
+    .welcome-step.hidden { display: none; }
+
+    .captcha-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--neutral-600);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      text-align: left;
+    }
+
+    .captcha-question {
+      background: rgba(37, 244, 238, 0.12);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .captcha-input {
+      width: 100%;
+      border: 1.5px solid var(--neutral-200);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 1rem;
+      color: var(--neutral-800);
+      outline: none;
+      transition: border-color 0.2s;
+      margin-bottom: 20px;
+    }
+
+    .captcha-input:focus {
+      border-color: var(--tt-pink);
+      box-shadow: 0 0 0 3px rgba(254, 44, 85, 0.15);
+    }
+
+    .captcha-input.error {
+      border-color: #ef4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+    }
+
+    .error-msg {
+      font-size: 0.82rem;
+      color: #ef4444;
+      margin-top: -14px;
+      margin-bottom: 14px;
+      text-align: left;
+      display: none;
+    }
+
+    /* CONFIRMATION SCREEN */
+    #confirmationScreen {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 48px 24px;
+      text-align: center;
+      background: var(--white);
+    }
+
+    #confirmationScreen.active { display: flex; }
+
+    .confirmation-icon {
+      width: 72px;
+      height: 72px;
+      background: rgba(254, 44, 85, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .confirmation-icon svg {
+      width: 36px;
+      height: 36px;
+      color: var(--tt-pink);
+    }
+
+    .confirmation-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      margin-bottom: 12px;
+    }
+
+    .confirmation-subtitle {
+      font-size: 0.95rem;
+      color: var(--neutral-600);
+      max-width: 360px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .loader {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .loader span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--tt-pink);
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .loader span:nth-child(2) { animation-delay: 0.2s; }
+    .loader span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+
+    /* POLICY MODALS */
+    .policy-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(22, 24, 35, 0.55);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .policy-overlay.active { display: flex; }
+
+    .policy-modal {
+      background: var(--white);
+      border-radius: 14px;
+      max-width: 560px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      animation: slideUp 0.25s ease;
+    }
+
+    .policy-header {
+      padding: 24px 28px 16px;
+      border-bottom: 1px solid var(--neutral-200);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      z-index: 1;
+    }
+
+    .policy-header h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--tt-black);
+    }
+
+    .policy-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--neutral-400);
+      padding: 4px;
+      border-radius: 6px;
+      transition: color 0.2s;
+    }
+
+    .policy-close:hover { color: var(--neutral-800); }
+
+    .policy-body {
+      padding: 20px 28px 28px;
+      font-size: 0.88rem;
+      color: var(--neutral-600);
+      line-height: 1.8;
+    }
+
+    .policy-body h4 {
+      color: var(--tt-black);
+      font-weight: 600;
+      margin: 16px 0 6px;
+    }
+
+    #mainContent {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  </style>
+  <!-- Google Fonts: Plus Jakarta Sans & Inter (Oficial TikTok Parity) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+</head>
+<body>
+
+<div id="mainContent">
+
+  <main>
+    <div class="card" style="display:none"></div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#" onclick="openPolicy('privacy'); return false;">Política de Privacidade</a>
+      <span>•</span>
+      <a href="#" onclick="openPolicy('terms'); return false;">Termos de Uso</a>
+    </div>
+    <div>© 2025 Todos os direitos reservados.</div>
+  </footer>
+
+</div>
+
+<!-- CONFIRMATION SCREEN -->
+<div id="confirmationScreen">
+  <div class="confirmation-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+    </svg>
+  </div>
+
+  <div class="confirmation-title">Confirmação de segurança</div>
+  <p class="confirmation-subtitle">
+    Confirmamos que você não é um robô.<br>
+    Aguarde enquanto realizamos o direcionamento seguro para o atendimento.
+  </p>
+
+  <div class="loader">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+<!-- POPUP OVERLAY -->
+<div class="overlay active" id="popupOverlay">
+  <div class="popup">
+
+    <!-- STEP 1: Welcome -->
+    <div class="welcome-step" id="welcomeStep">
+      <div class="popup-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg>
+      </div>
+      <h2>Bem-vindo</h2>
+      <p>Vamos fazer uma verificação rápida para liberar o acesso à sua consulta.</p>
+      <div class="popup-actions">
+        <button class="btn-confirm" onclick="goToCaptcha()">Iniciar acesso</button>
+        <button class="btn-cancel" onclick="closePopup()">Cancelar</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: Captcha -->
+    <div class="captcha-step" id="captchaStep">
+      <div class="popup-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+        </svg>
+      </div>
+      <h2>Prova humana</h2>
+      <div class="captcha-question" id="captchaQuestion">Carregando…</div>
+      <div class="captcha-label">Digite sua resposta</div>
+      <input type="text" class="captcha-input" id="captchaInput" placeholder="Sua resposta..." maxlength="20" inputmode="numeric" autocomplete="off">
+      <div class="error-msg" id="errorMsg">Resposta incorreta. Tente novamente.</div>
+      <div class="popup-actions">
+        <button class="btn-confirm" id="btnProsseguir" onclick="checkCaptcha()">Prosseguir</button>
+        <button class="btn-cancel" onclick="goBack()">Voltar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PRIVACY POLICY MODAL -->
+<div class="policy-overlay" id="privacyModal">
+  <div class="policy-modal">
+    <div class="policy-header">
+      <h3>Política de Privacidade</h3>
+      <button class="policy-close" onclick="closePolicy('privacy')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="policy-body">
+      <p>Esta plataforma respeita sua privacidade e está comprometida com a proteção dos seus dados pessoais, nos termos da Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018).</p>
+
+      <h4>1. Dados coletados</h4>
+      <p>Coletamos apenas os dados estritamente necessários para o funcionamento do serviço: dados de navegação (IP, data/hora de acesso) e informações fornecidas voluntariamente pelo usuário durante a consulta.</p>
+
+      <h4>2. Finalidade</h4>
+      <p>Os dados são utilizados exclusivamente para viabilizar a prestação do serviço, garantir a segurança das operações e cumprir obrigações legais.</p>
+
+      <h4>3. Compartilhamento</h4>
+      <p>Não vendemos, alugamos ou compartilhamos dados pessoais com terceiros, salvo quando exigido por lei ou mediante consentimento expresso do titular.</p>
+
+      <h4>4. Segurança</h4>
+      <p>Adotamos medidas técnicas e administrativas para proteger seus dados contra acesso não autorizado, perda ou divulgação indevida.</p>
+
+      <h4>5. Seus direitos (LGPD)</h4>
+      <p>Você pode solicitar acesso, correção, portabilidade ou exclusão dos seus dados a qualquer momento pelos canais disponíveis na plataforma.</p>
+
+      <h4>6. Cookies</h4>
+      <p>Utilizamos cookies estritamente funcionais. Nenhum cookie de rastreamento é utilizado sem seu consentimento.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS OF USE MODAL -->
+<div class="policy-overlay" id="termsModal">
+  <div class="policy-modal">
+    <div class="policy-header">
+      <h3>Termos de Uso</h3>
+      <button class="policy-close" onclick="closePolicy('terms')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="policy-body">
+      <p>Ao acessar e utilizar esta plataforma, você declara ter lido, compreendido e concordado com os presentes Termos de Uso.</p>
+
+      <h4>1. Natureza do serviço</h4>
+      <p>A plataforma oferece serviços de intermediação digital, sujeitos à disponibilidade técnica e às restrições legais aplicáveis.</p>
+
+      <h4>2. Uso adequado</h4>
+      <p>O usuário compromete-se a utilizar a plataforma de forma lícita, abstendo-se de práticas fraudulentas, automatizadas ou que comprometam a segurança do serviço.</p>
+
+      <h4>3. Limitação de responsabilidade</h4>
+      <p>A plataforma não se responsabiliza por danos decorrentes de uso indevido, falhas de conexão ou eventos de força maior.</p>
+
+      <h4>4. Alterações</h4>
+      <p>Estes termos podem ser atualizados periodicamente. O uso continuado após atualizações implica concordância com a versão vigente.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ────────────────────────────────────────────────────────────────
+  // Presell gate — conta matemática gerada e validada no servidor
+  // (/api/presell-gate). Ao acertar, o servidor seta o cookie de
+  // sessão da oferta (__Host-offer_session) e devolve o redirect.
+  // ────────────────────────────────────────────────────────────────
+  var challengeToken = '';
+  var verifying = false;
+  var urlParams = new URLSearchParams(window.location.search);
+  var toParam = urlParams.get('to') || '';
+
+  // Painel desligou o presell → entra direto na oferta (sem conta):
+  // mostra a tela de confirmação imediatamente e pede a sessão via POST.
+  function enterWithoutVerification() {
+    document.getElementById('welcomeStep').classList.add('hidden');
+    document.getElementById('mainContent').style.display = 'none';
+    document.getElementById('confirmationScreen').classList.add('active');
+    fetch('/api/presell-gate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify({ auto: true, to: toParam, search: window.location.search })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data && data.ok && data.redirect) {
+          showConfirmation(data.redirect);
+        } else {
+          // Painel religou no meio do caminho (cache ~30s) → fluxo normal
+          document.getElementById('confirmationScreen').classList.remove('active');
+          document.getElementById('mainContent').style.display = '';
+          document.getElementById('welcomeStep').classList.remove('hidden');
+        }
+      })
+      .catch(function () {
+        document.getElementById('confirmationScreen').classList.remove('active');
+        document.getElementById('mainContent').style.display = '';
+        document.getElementById('welcomeStep').classList.remove('hidden');
+      });
+  }
+
+  // Consulta o estado no painel ao carregar a página
+  (function checkEnabled() {
+    fetch('/api/presell-gate', { headers: { 'Accept': 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data && data.enabled === false) enterWithoutVerification();
+      })
+      .catch(function () { /* segue fluxo normal */ });
+  })();
+
+  function showWelcome() {
+    document.getElementById('welcomeStep').classList.remove('hidden');
+    document.getElementById('captchaStep').classList.remove('active');
+    resetCaptchaUi();
+  }
+
+  function resetCaptchaUi() {
+    var input = document.getElementById('captchaInput');
+    input.value = '';
+    input.classList.remove('error');
+    document.getElementById('errorMsg').style.display = 'none';
+  }
+
+  function closePopup() {
+    document.getElementById('popupOverlay').classList.remove('active');
+    setTimeout(showWelcome, 300);
+  }
+
+  function goToCaptcha() {
+    document.getElementById('welcomeStep').classList.add('hidden');
+    document.getElementById('captchaStep').classList.add('active');
+    loadChallenge();
+    setTimeout(function () { document.getElementById('captchaInput').focus(); }, 100);
+  }
+
+  function goBack() {
+    showWelcome();
+  }
+
+  function loadChallenge() {
+    var el = document.getElementById('captchaQuestion');
+    var btn = document.getElementById('btnProsseguir');
+    el.textContent = 'Carregando…';
+    btn.disabled = true;
+    fetch('/api/presell-gate', { headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (r.status === 429) throw new Error('rate_limited');
+        if (!r.ok) throw new Error('http_' + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        if (data && data.enabled === false) { enterWithoutVerification(); return; }
+        if (!data || !data.q) throw new Error('bad_payload');
+        challengeToken = data.token || '';
+        el.textContent = 'Quanto é ' + data.q + '?';
+        btn.disabled = false;
+      })
+      .catch(function (err) {
+        var msg = err && err.message === 'rate_limited'
+          ? 'Muitas tentativas. Aguarde um minuto.'
+          : 'Não foi possível carregar a verificação. Toque em Voltar e tente de novo.';
+        el.textContent = msg;
+      });
+  }
+
+  function checkCaptcha() {
+    if (verifying) return;
+    var input = document.getElementById('captchaInput');
+    var errorMsg = document.getElementById('errorMsg');
+    var btn = document.getElementById('btnProsseguir');
+    var answer = input.value.trim();
+    if (!answer || !challengeToken) {
+      input.classList.add('error');
+      errorMsg.style.display = 'block';
+      setTimeout(function () {
+        input.classList.remove('error');
+        errorMsg.style.display = 'none';
+      }, 2500);
+      if (!challengeToken) loadChallenge();
+      return;
+    }
+
+    verifying = true;
+    btn.disabled = true;
+    fetch('/api/presell-gate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify({
+        token: challengeToken,
+        resposta: answer,
+        to: toParam,
+        search: window.location.search
+      })
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        verifying = false;
+        if (data && data.ok && data.redirect) {
+          showConfirmation(data.redirect);
+          return;
+        }
+        // Errou: se o servidor devolveu token de retry, continua na MESMA
+        // conta (tentativa consumida vai assinada dentro do token); sem
+        // token, as tentativas acabaram → busca conta nova.
+        if (data && data.token) {
+          challengeToken = data.token;
+          btn.disabled = false;
+        } else {
+          challengeToken = '';
+          loadChallenge();
+        }
+        input.classList.add('error');
+        errorMsg.style.display = 'block';
+        input.value = '';
+        input.focus();
+        setTimeout(function () {
+          input.classList.remove('error');
+          errorMsg.style.display = 'none';
+        }, 2500);
+      })
+      .catch(function () {
+        verifying = false;
+        btn.disabled = false;
+        input.classList.add('error');
+        errorMsg.style.display = 'block';
+        setTimeout(function () {
+          input.classList.remove('error');
+          errorMsg.style.display = 'none';
+        }, 2500);
+        loadChallenge();
+      });
+  }
+
+  function showConfirmation(redirect) {
+    document.getElementById('popupOverlay').classList.remove('active');
+    document.getElementById('mainContent').style.display = 'none';
+    document.getElementById('confirmationScreen').classList.add('active');
+    if (window.ttq && typeof window.ttq.track === 'function') {
+      try { window.ttq.track('CompleteVerification'); } catch (e) { /* noop */ }
+    }
+    // Pula os presells internos da oferta (validação/@ da oferta-2, telas de
+    // intro da oferta-1) — mesma flag que o toggle do admin usa. Quem passou
+    // pela verificação matemática entra direto no conteúdo da oferta.
+    // sessionStorage (mesma aba) + cookie (outras abas/entradas diretas).
+    try { sessionStorage.setItem('__SKIP_PRESELLS', '1'); } catch (e) { /* noop */ }
+    try { document.cookie = 'p2skip=1; path=/; max-age=3600; SameSite=Lax'; } catch (e) { /* noop */ }
+    setTimeout(function () {
+      window.location.href = redirect;
+    }, 3000);
+  }
+
+  document.getElementById('captchaInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') checkCaptcha();
+  });
+
+  document.getElementById('popupOverlay').addEventListener('click', function (e) {
+    if (e.target === this) closePopup();
+  });
+
+  function openPolicy(type) {
+    document.getElementById(type === 'privacy' ? 'privacyModal' : 'termsModal').classList.add('active');
+  }
+
+  function closePolicy(type) {
+    document.getElementById(type === 'privacy' ? 'privacyModal' : 'termsModal').classList.remove('active');
+  }
+
+  document.getElementById('privacyModal').addEventListener('click', function (e) {
+    if (e.target === this) closePolicy('privacy');
+  });
+
+  document.getElementById('termsModal').addEventListener('click', function (e) {
+    if (e.target === this) closePolicy('terms');
+  });
+</script>
+</body>
+</html>

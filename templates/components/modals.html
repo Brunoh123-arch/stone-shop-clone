@@ -1,0 +1,41 @@
+  <!-- MODAL PROTEÇÃO DO CLIENTE -->
+  <div id="protection-modal" class="tt-modal-backdrop" onclick="closeProtectionModal(event)">
+    <div class="tt-modal-sheet" onclick="event.stopPropagation()">
+      <div class="tt-modal-header">
+        <h3 class="tt-modal-title">Proteção do Cliente</h3>
+        <button class="tt-modal-close" onclick="closeProtectionModal()">&times;</button>
+      </div>
+      <div class="tt-modal-body">
+        <div class="protection-feature-item">
+          <div class="prot-icon">🛡️</div>
+          <div class="prot-text">
+            <strong>Garantia Stone Shop Oficial</strong>
+            <p>Seu pagamento fica 100% retido e protegido até você receber o produto e confirmar que está tudo perfeito.</p>
+          </div>
+        </div>
+        <div class="protection-feature-item">
+          <div class="prot-icon">📦</div>
+          <div class="prot-text">
+            <strong>Devolução sem complicações</strong>
+            <p>Até 7 dias após o recebimento para solicitar troca ou devolução gratuita direto pelo site.</p>
+          </div>
+        </div>
+        <div class="protection-feature-item">
+          <div class="prot-icon">⚡</div>
+          <div class="prot-text">
+            <strong>Reembolso Rápido via Pix</strong>
+            <p>Estorno instantâneo para pagamentos feitos no Pix se houver qualquer divergência no pedido.</p>
+          </div>
+        </div>
+      </div>
+      <button class="tt-modal-confirm-btn" onclick="closeProtectionModal()">Entendido</button>
+    </div>
+  </div>
+
+  <!-- MODAL DE ZOOM DE FOTOS DE AVALIAÇÃO -->
+  <div id="review-modal" class="tt-modal-backdrop" onclick="closeReviewModal(event)" style="display:none;background:rgba(0,0,0,0.9);z-index:999999;">
+    <div style="position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+      <button onclick="closeReviewModal()" style="position:absolute;top:20px;right:20px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;z-index:10;">&times;</button>
+      <img id="review-modal-img" src="" alt="Foto expandida da avaliação" style="max-width:90%;max-height:85vh;object-fit:contain;border-radius:8px;">
+    </div>
+  </div>

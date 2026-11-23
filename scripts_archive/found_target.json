@@ -1,0 +1,1409 @@
+{
+  "error_code": 0,
+  "error_message": "success",
+  "categories": [
+    {
+      "category_id": "601352",
+      "level": 1,
+      "is_leaf": false,
+      "parent_id": "0",
+      "category_name": "Calçados",
+      "name_key": "magellan_601352"
+    },
+    {
+      "category_id": "900488",
+      "level": 2,
+      "is_leaf": false,
+      "parent_id": "601352",
+      "category_name": "Sapatos femininos",
+      "name_key": "magellan_900488"
+    },
+    {
+      "category_id": "601405",
+      "level": 3,
+      "is_leaf": true,
+      "parent_id": "900488",
+      "category_name": "Chinelos",
+      "name_key": "magellan_601405"
+    }
+  ],
+  "promotion_tag": {
+    "placement_labels": {
+      "3": [
+        {
+          "id": "8",
+          "default_style": 10,
+          "is_show_icon": true,
+          "type": 8,
+          "text": "Free shipping",
+          "icon": {
+            "light_icon": {
+              "height": 800,
+              "width": 800,
+              "minetype": "",
+              "uri": "tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light.png",
+              "url_list": [
+                "https://p16-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299",
+                "https://p19-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299"
+              ]
+            },
+            "dark_icon": {
+              "height": 800,
+              "width": 800,
+              "minetype": "",
+              "uri": "tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light_dark.png",
+              "url_list": [
+                "https://p16-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light_dark.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299",
+                "https://p19-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light_dark.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299"
+              ]
+            }
+          },
+          "da_info": "{\"placement\":\"FREE_SHIPPING\",\"ranking\":\"1\",\"is_free_shipping\":\"1\",\"delivery_tag\":\"free_shipping\",\"label_type\":\"PRODUCT_FREE_SHIPPING\",\"activity_name\":\"8\",\"has_icon\":\"true\",\"promotion_id\":\"-999\"}",
+          "feature": [
+            {
+              "property_name": "shipping_fee",
+              "property_value": "0"
+            }
+          ]
+        }
+      ],
+      "10": [
+        {
+          "id": "8",
+          "default_style": 10,
+          "is_show_icon": true,
+          "type": 8,
+          "text": "Free shipping",
+          "icon": {
+            "light_icon": {
+              "height": 800,
+              "width": 800,
+              "minetype": "",
+              "uri": "tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light.png",
+              "url_list": [
+                "https://p16-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299",
+                "https://p19-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299"
+              ]
+            },
+            "dark_icon": {
+              "height": 800,
+              "width": 800,
+              "minetype": "",
+              "uri": "tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light_dark.png",
+              "url_list": [
+                "https://p16-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light_dark.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299",
+                "https://p19-oec-va.ibyteimg.com/tos-maliva-i-5i1jvf5urr-us/free_shipping_medium_light_dark.png~tplv-o3syd03w52-resize-png:800:800.png?dr=15580&t=555f072d&ps=933b5bde&shp=cde50ccb&shcp=18d2f7d9&idc=my3&from=3454340299"
+              ]
+            }
+          },
+          "da_info": "{\"is_free_shipping\":\"1\",\"label_type\":\"PRODUCT_FREE_SHIPPING\",\"activity_name\":\"8\",\"has_icon\":\"true\",\"promotion_id\":\"-999\",\"delivery_tag\":\"free_shipping\",\"placement\":\"DEFAULT_SPLIT_ONE\",\"ranking\":\"1\"}",
+          "feature": [
+            {
+              "property_name": "shipping_fee",
+              "property_value": "0"
+            }
+          ]
+        }
+      ]
+    },
+    "placement_labels_ui": {
+      "ui_list": [
+        {
+          "placement": 10,
+          "labels": [
+            {
+              "meta": {
+                "label_type": "8",
+                "da_info": "{\"is_free_shipping\":\"1\",\"label_type\":\"PRODUCT_FREE_SHIPPING\",\"activity_name\":\"8\",\"has_icon\":\"true\",\"promotion_id\":\"-999\",\"delivery_tag\":\"free_shipping\",\"placement\":\"DEFAULT_SPLIT_ONE\",\"ranking\":\"1\"}",
+                "label_style_id": "194"
+              },
+              "lom": {
+                "hidden": false,
+                "type": "Text",
+                "value": "Free shipping",
+                "styles": "line-height:1;color:{{theme({ \"light\": \"#007b7b\", \"dark\": \"#00b8b9\" })}};font-family:TikTokFont;font-size:12rpx;white-space:nowrap;text-overflow:ellipsis;",
+                "click_event": {
+                  "type": "",
+                  "arguments": {
+                    "schema": ""
+                  }
+                },
+                "extra": "",
+                "strictMode": "",
+                "visibilityScript": "",
+                "children": []
+              }
+            }
+          ],
+          "divider": {
+            "value": "",
+            "styles": "width:2rpx;height:16rpx;background:rgba(0,0,0,0.12);margin-left:8rpx;margin-right:8rpx;"
+          }
+        },
+        {
+          "placement": 3,
+          "labels": [
+            {
+              "meta": {
+                "label_type": "8",
+                "da_info": "{\"placement\":\"FREE_SHIPPING\",\"ranking\":\"1\",\"is_free_shipping\":\"1\",\"delivery_tag\":\"free_shipping\",\"label_type\":\"PRODUCT_FREE_SHIPPING\",\"activity_name\":\"8\",\"has_icon\":\"true\",\"promotion_id\":\"-999\"}",
+                "label_style_id": "199"
+              },
+              "lom": {
+                "hidden": false,
+                "type": "View",
+                "value": "",
+                "styles": "padding:0rpx 4rpx 2rpx 4rpx;background-color:#007B7B;border-radius:4rpx;",
+                "click_event": {
+                  "type": "",
+                  "arguments": {
+                    "schema": ""
+                  }
+                },
+                "extra": "",
+                "strictMode": "",
+                "visibilityScript": "",
+                "children": [
+                  {
+                    "hidden": false,
+                    "type": "Text",
+                    "value": "Free shipping",
+                    "styles": "color:#fff;font-family:TikTokFont;font-size:11rpx;white-space:nowrap;text-overflow: ellipsis;line-height:1",
+                    "click_event": {
+                      "type": "",
+                      "arguments": {
+                        "schema": ""
+                      }
+                    },
+                    "extra": "",
+                    "strictMode": "",
+                    "visibilityScript": "",
+                    "children": []
+                  }
+                ]
+              }
+            }
+          ],
+          "divider": {
+            "value": "",
+            "styles": "width:2rpx;height:16rpx;background:rgba(0,0,0,0.12);margin-left:8rpx;margin-right:8rpx;"
+          }
+        }
+      ]
+    }
+  },
+  "product_info": {
+    "status": 1,
+    "biz_code": 0,
+    "biz_type": 0,
+    "sold_count": "21303",
+    "product_id": "1735058095159805819",
+    "seller_id": "7494533106612537211",
+    "title": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+    "sold_count_note": {
+      "title": "Itens vendidos",
+      "text": "O número de itens vendidos globalmente desde que esse item foi anunciado no TikTok Shop, excluindo itens que foram devolvidos."
+    },
+    "images": [
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      {
+        "width": 800,
+        "height": 1066,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be~tplv-aphluv4xwc-resize-webp:800:1066.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be~tplv-aphluv4xwc-resize-webp:200:267.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      }
+    ],
+    "header_video": {
+      "duration": 19.9,
+      "id": "v10c21g50000d7bvfavog65rihjgsglg",
+      "post_url": "https://p16-common-sign.tiktokcdn.com/tos-alisg-v-f466fc-sg/okQBrjATirsAI6igp1QDc9fflv7FBVC1XEBIGO~tplv-noop.image?dr=18692&refresh_token=b6ca36d1&x-expires=1791972432&x-signature=XL4CD3PEydGyTy0bvboMY4JwLa8%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=6ce186a1&idc=my3&VideoID=v10c21g50000d7bvfavog65rihjgsglg",
+      "media_type": "video",
+      "video_infos": [
+        {
+          "width": 480,
+          "height": 848,
+          "url_expire": "1791972432",
+          "size": "2581214",
+          "main_url": "https://v16m-default.tiktokcdn.com/83c1799cfdb862ba7ef606d31cc68821/6acf5450/video/tos/alisg/tos-alisg-v-f466fc-sg/o4dQfECVX7pDrEc9GLicBi1CFB7BlgvQcIfjOQ/?a=0&bti=PDM8QDI2M2A%3D&&bt=1013&ft=cApXJCz7ThWHhxkSLGZmo0P&mime_type=video_mp4&rc=PDVkNDc3ZTZoNTs8ZjllOkBpampqa3U5cmR5OjMzODRmNEAuMy5eMC8xNS8xLmMxYTBgYSNpcGdmMmRzY19hLS1kLy1zcw%3D%3D&vvpl=1&l=20261014120652477DD20F004C64269BF5&btag=e00078000",
+          "backup_url": "https://v16m.byteicdn.com/83c1799cfdb862ba7ef606d31cc68821/6acf5450/video/tos/alisg/tos-alisg-v-f466fc-sg/o4dQfECVX7pDrEc9GLicBi1CFB7BlgvQcIfjOQ/?a=0&bti=PDM8QDI2M2A%3D&&bt=1013&ft=cApXJCz7ThWHhxkSLGZmo0P&mime_type=video_mp4&rc=PDVkNDc3ZTZoNTs8ZjllOkBpampqa3U5cmR5OjMzODRmNEAuMy5eMC8xNS8xLmMxYTBgYSNpcGdmMmRzY19hLS1kLy1zcw%3D%3D&vvpl=1&l=20261014120652477DD20F004C64269BF5&btag=e00078000",
+          "format": "mp4"
+        }
+      ]
+    },
+    "desc_video": {
+      "duration": 19.9,
+      "id": "v10c21g50000d7bvfavog65rihjgsglg",
+      "post_url": "https://p16-common-sign.tiktokcdn.com/tos-alisg-v-f466fc-sg/okQBrjATirsAI6igp1QDc9fflv7FBVC1XEBIGO~tplv-noop.image?dr=18692&refresh_token=b6ca36d1&x-expires=1791972432&x-signature=XL4CD3PEydGyTy0bvboMY4JwLa8%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=6ce186a1&idc=my3&VideoID=v10c21g50000d7bvfavog65rihjgsglg",
+      "media_type": "video",
+      "video_infos": [
+        {
+          "width": 480,
+          "height": 848,
+          "url_expire": "1791972432",
+          "size": "2581214",
+          "main_url": "https://v16m-default.tiktokcdn.com/83c1799cfdb862ba7ef606d31cc68821/6acf5450/video/tos/alisg/tos-alisg-v-f466fc-sg/o4dQfECVX7pDrEc9GLicBi1CFB7BlgvQcIfjOQ/?a=0&bti=PDM8QDI2M2A%3D&&bt=1013&ft=cApXJCz7ThWHhxkSLGZmo0P&mime_type=video_mp4&rc=PDVkNDc3ZTZoNTs8ZjllOkBpampqa3U5cmR5OjMzODRmNEAuMy5eMC8xNS8xLmMxYTBgYSNpcGdmMmRzY19hLS1kLy1zcw%3D%3D&vvpl=1&l=20261014120652477DD20F004C64269BF5&btag=e00078000",
+          "backup_url": "https://v16m.byteicdn.com/83c1799cfdb862ba7ef606d31cc68821/6acf5450/video/tos/alisg/tos-alisg-v-f466fc-sg/o4dQfECVX7pDrEc9GLicBi1CFB7BlgvQcIfjOQ/?a=0&bti=PDM8QDI2M2A%3D&&bt=1013&ft=cApXJCz7ThWHhxkSLGZmo0P&mime_type=video_mp4&rc=PDVkNDc3ZTZoNTs8ZjllOkBpampqa3U5cmR5OjMzODRmNEAuMy5eMC8xNS8xLmMxYTBgYSNpcGdmMmRzY19hLS1kLy1zcw%3D%3D&vvpl=1&l=20261014120652477DD20F004C64269BF5&btag=e00078000",
+          "format": "mp4"
+        }
+      ]
+    },
+    "desc_blocks": [
+      {
+        "type": "text",
+        "text": "Descrição:",
+        "rich_text": {
+          "text_alignment": 1,
+          "template": "{{RGVzY_0}}",
+          "arguments": {
+            "{{RGVzY_0}}": {
+              "text_attribute": {
+                "text": "Descrição:",
+                "font": {
+                  "font_weight": 2,
+                  "font_class": 4
+                }
+              }
+            }
+          },
+          "text_attribute": {
+            "font": {
+              "font_weight": 1,
+              "font_class": 4
+            },
+            "font_color": {
+              "color": "#FF202020"
+            }
+          }
+        }
+      },
+      {
+        "type": "text",
+        "text": "✨ Elegância em cada passo ✨\nEste chinelo feminino é perfeito para quem busca conforto e estilo. Com strass brilhante, ele adiciona um toque de luxo a qualquer look. A textura macia e leve garante um uso agradável o dia todo. Ideal para ocasiões que exigem um toque especial.",
+        "rich_text": {
+          "text_alignment": 1,
+          "template": "{{4pyoI_0}}{{4pyoI_1}}{{4pyoI_2}}{{4pyoI_3}}{{4pyoI_4}}",
+          "arguments": {
+            "{{4pyoI_1}}": {
+              "text_attribute": {
+                "text": "Elegância em cada passo",
+                "font": {
+                  "font_weight": 3,
+                  "font_class": 5
+                }
+              }
+            },
+            "{{4pyoI_2}}": {
+              "text_attribute": {
+                "text": " ✨",
+                "font": {
+                  "font_weight": 1,
+                  "font_class": 5
+                }
+              }
+            },
+            "{{4pyoI_3}}": {
+              "text_attribute": {
+                "text": "\n",
+                "font": {
+                  "font_weight": 1,
+                  "font_class": 5
+                }
+              }
+            },
+            "{{4pyoI_4}}": {
+              "text_attribute": {
+                "text": "Este chinelo feminino é perfeito para quem busca conforto e estilo. Com strass brilhante, ele adiciona um toque de luxo a qualquer look. A textura macia e leve garante um uso agradável o dia todo. Ideal para ocasiões que exigem um toque especial.",
+                "font": {
+                  "font_weight": 1,
+                  "font_class": 5
+                }
+              }
+            },
+            "{{4pyoI_0}}": {
+              "text_attribute": {
+                "text": "✨ ",
+                "font": {
+                  "font_weight": 1,
+                  "font_class": 5
+                }
+              }
+            }
+          },
+          "text_attribute": {
+            "font": {
+              "font_weight": 1,
+              "font_class": 4
+            },
+            "font_color": {
+              "color": "#FF202020"
+            }
+          }
+        }
+      },
+      {
+        "type": "ul",
+        "content": [
+          "Características principais:  • Strass brilhante  • Textura macia  • Peso leve  "
+        ],
+        "rich_content": [
+          {
+            "text_alignment": 1,
+            "template": "{{Q2FyY_0}}{{Q2FyY_1}}",
+            "arguments": {
+              "{{Q2FyY_0}}": {
+                "text_attribute": {
+                  "text": "Características principais:",
+                  "font": {
+                    "font_weight": 3,
+                    "font_class": 5
+                  }
+                }
+              },
+              "{{Q2FyY_1}}": {
+                "text_attribute": {
+                  "text": "  • Strass brilhante  • Textura macia  • Peso leve  ",
+                  "font": {
+                    "font_weight": 1,
+                    "font_class": 5
+                  }
+                }
+              }
+            },
+            "text_attribute": {
+              "font": {
+                "font_weight": 1,
+                "font_class": 4
+              },
+              "font_color": {
+                "color": "#FF202020"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Este chinelo combina perfeitamente com qualquer roupa, oferecendo estilo e conforto. Experimente e sinta a diferença!",
+        "rich_text": {
+          "text_alignment": 1,
+          "template": "{{RXN0Z_0}}",
+          "arguments": {
+            "{{RXN0Z_0}}": {
+              "text_attribute": {
+                "text": "Este chinelo combina perfeitamente com qualquer roupa, oferecendo estilo e conforto. Experimente e sinta a diferença!",
+                "font": {
+                  "font_weight": 1,
+                  "font_class": 5
+                }
+              }
+            }
+          },
+          "text_attribute": {
+            "font": {
+              "font_weight": 1,
+              "font_class": 4
+            },
+            "font_color": {
+              "color": "#FF202020"
+            }
+          }
+        }
+      }
+    ],
+    "price": {
+      "symbol_position": 1,
+      "is_interval_price": true,
+      "real_price": "R$ 14,90",
+      "original_price": "R$ 59,90",
+      "discount": "Economize até 75%",
+      "currency": "BRL",
+      "currency_symbol": "R$",
+      "min_sku_price": "14,90",
+      "max_sku_price": "19,90",
+      "min_sku_original_price": "59,90"
+    },
+    "size_guide": {
+      "image": {
+        "width": 1173,
+        "height": 1600,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/31107db5aa38495a90948bfeab392025",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/31107db5aa38495a90948bfeab392025~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/31107db5aa38495a90948bfeab392025~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ],
+        "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/31107db5aa38495a90948bfeab392025",
+        "thumb_url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/31107db5aa38495a90948bfeab392025~tplv-aphluv4xwc-resize-webp:200:200.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/31107db5aa38495a90948bfeab392025~tplv-aphluv4xwc-resize-webp:200:200.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+        ]
+      },
+      "title": "Guia de tamanhos"
+    },
+    "sale_props": [
+      {
+        "has_image": true,
+        "has_extended_images": false,
+        "prop_id": "100000",
+        "prop_name": "Cor",
+        "sale_prop_values": [
+          {
+            "prop_value_id": "7105786340083517189",
+            "prop_value": "BRANCO",
+            "image": {
+              "width": 800,
+              "height": 1066,
+              "uri": "tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3",
+              "url_list": [
+                "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3~tplv-aphluv4xwc-resize-jpeg:800:1066.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3~tplv-aphluv4xwc-resize-jpeg:800:1066.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+              ],
+              "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3",
+              "thumb_url_list": [
+                "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3~tplv-aphluv4xwc-resize-jpeg:200:267.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3~tplv-aphluv4xwc-resize-jpeg:200:267.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+              ]
+            }
+          },
+          {
+            "prop_value_id": "6977618095393408770",
+            "prop_value": "PRETO",
+            "image": {
+              "width": 800,
+              "height": 1066,
+              "uri": "tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3",
+              "url_list": [
+                "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3~tplv-aphluv4xwc-resize-jpeg:800:1066.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3~tplv-aphluv4xwc-resize-jpeg:800:1066.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+              ],
+              "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3",
+              "thumb_url_list": [
+                "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3~tplv-aphluv4xwc-resize-jpeg:200:267.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3~tplv-aphluv4xwc-resize-jpeg:200:267.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+              ]
+            }
+          },
+          {
+            "prop_value_id": "7051418490636633857",
+            "prop_value": "CARAMELO",
+            "image": {
+              "width": 800,
+              "height": 1066,
+              "uri": "tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4",
+              "url_list": [
+                "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4~tplv-aphluv4xwc-resize-jpeg:800:1066.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4~tplv-aphluv4xwc-resize-jpeg:800:1066.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+              ],
+              "thumb_uri": "tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4",
+              "thumb_url_list": [
+                "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4~tplv-aphluv4xwc-resize-jpeg:200:267.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4~tplv-aphluv4xwc-resize-jpeg:200:267.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "has_image": false,
+        "has_extended_images": false,
+        "prop_id": "100007",
+        "prop_name": "Tamanho",
+        "sale_prop_values": [
+          {
+            "prop_value_id": "7032551406011909890",
+            "prop_value": "33/34"
+          },
+          {
+            "prop_value_id": "7008443155284723457",
+            "prop_value": "35/36"
+          },
+          {
+            "prop_value_id": "6972445848022222594",
+            "prop_value": "37/38"
+          },
+          {
+            "prop_value_id": "7143889424030418694",
+            "prop_value": "39/0"
+          }
+        ]
+      }
+    ],
+    "skus": [
+      {
+        "status": 1,
+        "stock": 8601,
+        "purchase_limit": 20,
+        "sku_id": "1735058199562717051",
+        "sale_prop_value_ids": "7105786340083517189_7032551406011909890",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7105786340083517189",
+            "prop_value": "BRANCO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7032551406011909890",
+            "prop_value": "33/34"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 7149,
+        "purchase_limit": 20,
+        "sku_id": "1735058199562782587",
+        "sale_prop_value_ids": "7105786340083517189_7008443155284723457",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7105786340083517189",
+            "prop_value": "BRANCO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7008443155284723457",
+            "prop_value": "35/36"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 6285,
+        "purchase_limit": 20,
+        "sku_id": "1735058199562848123",
+        "sale_prop_value_ids": "7105786340083517189_6972445848022222594",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7105786340083517189",
+            "prop_value": "BRANCO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "6972445848022222594",
+            "prop_value": "37/38"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 7698,
+        "purchase_limit": 20,
+        "sku_id": "1735058199562913659",
+        "sale_prop_value_ids": "7105786340083517189_7143889424030418694",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7105786340083517189",
+            "prop_value": "BRANCO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7143889424030418694",
+            "prop_value": "39/0"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 8796,
+        "purchase_limit": 20,
+        "sku_id": "1735058199562979195",
+        "sale_prop_value_ids": "6977618095393408770_7032551406011909890",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "6977618095393408770",
+            "prop_value": "PRETO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7032551406011909890",
+            "prop_value": "33/34"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "14,90",
+          "origin_price_format": "59,90",
+          "discount_format": "75%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "14.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.75",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 8399,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563044731",
+        "sale_prop_value_ids": "6977618095393408770_7008443155284723457",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "6977618095393408770",
+            "prop_value": "PRETO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7008443155284723457",
+            "prop_value": "35/36"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 8127,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563110267",
+        "sale_prop_value_ids": "6977618095393408770_6972445848022222594",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "6977618095393408770",
+            "prop_value": "PRETO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "6972445848022222594",
+            "prop_value": "37/38"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 8508,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563175803",
+        "sale_prop_value_ids": "6977618095393408770_7143889424030418694",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "6977618095393408770",
+            "prop_value": "PRETO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7143889424030418694",
+            "prop_value": "39/0"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 8742,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563241339",
+        "sale_prop_value_ids": "7051418490636633857_7032551406011909890",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7051418490636633857",
+            "prop_value": "CARAMELO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7032551406011909890",
+            "prop_value": "33/34"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 7953,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563306875",
+        "sale_prop_value_ids": "7051418490636633857_7008443155284723457",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7051418490636633857",
+            "prop_value": "CARAMELO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7008443155284723457",
+            "prop_value": "35/36"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 7269,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563372411",
+        "sale_prop_value_ids": "7051418490636633857_6972445848022222594",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7051418490636633857",
+            "prop_value": "CARAMELO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "6972445848022222594",
+            "prop_value": "37/38"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      },
+      {
+        "status": 0,
+        "stock": 8064,
+        "purchase_limit": 20,
+        "sku_id": "1735058199563437947",
+        "sale_prop_value_ids": "7051418490636633857_7143889424030418694",
+        "sku_sale_props": [
+          {
+            "prop_id": "100000",
+            "prop_name": "Cor",
+            "prop_value_id": "7051418490636633857",
+            "prop_value": "CARAMELO"
+          },
+          {
+            "prop_id": "100007",
+            "prop_name": "Tamanho",
+            "prop_value_id": "7143889424030418694",
+            "prop_value": "39/0"
+          }
+        ],
+        "price": {
+          "symbol_position": 1,
+          "price_type": 0,
+          "show_currency_space": true,
+          "sale_price_format": "19,90",
+          "origin_price_format": "59,90",
+          "discount_format": "67%",
+          "currency_symbol": "R$",
+          "sale_price_decimal": "19.9",
+          "origin_price_decimal": "59.9",
+          "discount_decimal": "0.67",
+          "currency_name": "BRL"
+        },
+        "pdp_button_area_id": "default",
+        "warehouse_id": "7623720152131847944"
+      }
+    ],
+    "default_sku_id": "1735058199562979195",
+    "logistic": {
+      "delivery_option": 1,
+      "is_default": true,
+      "free_shipping": true,
+      "reachable": true,
+      "delivery_min_days": 5,
+      "delivery_max_days": 11,
+      "delivery_name": "Envio padrão",
+      "lead_time": "Oct 19 - Oct 25",
+      "shipping_fee": {
+        "price_str": "Grátis",
+        "price_val": "0",
+        "currency": "BRL"
+      },
+      "original_shipping_val": "15.4",
+      "logistics_service_id": "7208694837359412994",
+      "event_tracking": {
+        "is_ontime_compensation_show": "0",
+        "logistics_test_info_v2": "{\"edt_metrics\":\"{\\\"base_info\\\":{\\\"time_zone\\\":\\\"America/Sao_Paulo\\\",\\\"fulfill_solution\\\":1},\\\"exp_out\\\":{\\\"algo_edt\\\":\\\"5-11\\\",\\\"exp_edt\\\":\\\"5_11\\\",\\\"before_xdd_flatten\\\":\\\"5_11\\\"}}\"}",
+        "ship_from": "local",
+        "ship_in_bd": "null",
+        "ship_in_cd": "null",
+        "shipping_currency": "BRL",
+        "est_delivery_day_expected": "0",
+        "global_shipping": "0",
+        "select_service_id": "7208694837359412994",
+        "shipping_price_origin": "15.4",
+        "est_logistic_delivery_day_min": "0",
+        "holiday_flag": "0",
+        "is_display_fastest": "0",
+        "shipping_price": "0",
+        "shipping_price_after_coupon": "0",
+        "shipping_type": "standard",
+        "est_delivery_bday_min": "0",
+        "est_logistic_delivery_day_max": "0",
+        "est_delivery_day_min": "5",
+        "is_1_day_shipping": "0",
+        "is_instant_tag": "0",
+        "is_late_guarantee": "0",
+        "is_next_day_delivery": "0",
+        "is_plus_effective": "0",
+        "delivery_type": "4pl",
+        "est_delivery_day_max": "11"
+      }
+    },
+    "seller": {
+      "product_count": "15",
+      "seller_id": "7494533106612537211",
+      "name": "Aristaly7",
+      "avatar": {
+        "width": 300,
+        "height": 300,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171~tplv-aphluv4xwc-resize-png:300:300.png?dr=15580&t=555f072d&ps=933b5bde&shp=905da467&shcp=6ce186a1&idc=my3&from=2422056039",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171~tplv-aphluv4xwc-resize-png:300:300.png?dr=15580&t=555f072d&ps=933b5bde&shp=905da467&shcp=6ce186a1&idc=my3&from=2422056039"
+        ]
+      },
+      "shop_link": "aweme://ec/store?custom_params=%7B%22custom_id_type%22%3A0%2C%22decorate_insert_items%22%3A%5B1735058095159805819%5D%7D&sellerId=7494533106612537211&store_page_version=3&url_maker=shop_schema_sdk"
+    },
+    "review": {
+      "product_rating": 4.8,
+      "review_count": "5058",
+      "product_rating_str": "4,8",
+      "review_count_str": "5,058"
+    },
+    "shipping_module": {
+      "description_list": [
+        {
+          "text": "Entrega estimada: 19 - 25 Oct",
+          "rich_text": {
+            "template": "Entrega estimada: 19 - 25 Oct",
+            "text_attribute": {
+              "font_color": {
+                "color": "#A6000000"
+              }
+            }
+          }
+        },
+        {
+          "text": "De Nova Serrana",
+          "rich_text": {
+            "template": "De Nova Serrana",
+            "text_attribute": {
+              "font_color": {
+                "color": "#A6000000"
+              }
+            }
+          }
+        },
+        {
+          "text": "Desconto de R$ 20 no frete em pedidos acima de R$ 19",
+          "rich_text": {
+            "template": "{{voucher_threshold_icon_en}} {{voucher_threshold}}",
+            "arguments": {
+              "{{voucher_threshold_icon_en}}": {
+                "link_text_type": 1,
+                "icon_attribute": {
+                  "icon": {
+                    "icon": {
+                      "width": 48,
+                      "height": 48,
+                      "uri": "tos-maliva-i-o3syd03w52-us/a970fe7c9075553502847a8c81a6a13d.png",
+                      "url_list": [
+                        "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a970fe7c9075553502847a8c81a6a13d.png~tplv-o3syd03w52-origin-png.png?dr=15574&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+                        "https://p21-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a970fe7c9075553502847a8c81a6a13d.png~tplv-o3syd03w52-origin-png.png?dr=15574&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+                      ]
+                    }
+                  }
+                }
+              },
+              "{{voucher_threshold}}": {
+                "text_attribute": {
+                  "text": "Desconto de R$ 20 no frete em pedidos acima de R$ 19",
+                  "font_color": {
+                    "color": "#A6000000"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "appendix_list": []
+    },
+    "return_policy": {
+      "title": "Política de devolução",
+      "description": "Elegível para devolução ou reembolso em até 30 dias após o recebimento"
+    },
+    "legit_warnings": [],
+    "button_area_id": "default",
+    "page_sections": [
+      "header_image",
+      "waist_banner",
+      "lock_up",
+      "sku_selection_top_divider",
+      "sku_selection",
+      "first_screen_bottom_divider",
+      "deals",
+      "deals_bottom_divider",
+      "logistic",
+      "return_policy_top_line",
+      "return_policy",
+      "return_policy_bottom_divider",
+      "sea_creator_video",
+      "sea_creator_video_bottom_divider",
+      "review_group",
+      "shop_group",
+      "about_this_product",
+      "about_this_product_bottom_divider",
+      "recommendation_ymal"
+    ]
+  },
+  "aigc_info": {},
+  "review_info": {
+    "has_more": true,
+    "total_reviews": "5102",
+    "product_reviews": [
+      {
+        "review_id": "7691103845199628053",
+        "product_id": "1735058095159805819",
+        "sku_id": "1735058199562848123",
+        "reviewer_id": "7337819405244335110",
+        "review_rating": 5,
+        "review_time": "1790724661493",
+        "is_verified_purchase": true,
+        "is_incentivized_review": true,
+        "product_name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+        "reviewer_name": "_**s",
+        "reviewer_avatar_url": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/085171b8ffe0c64bcc1fce3ce127b415~tplv-tiktokx-cropcenter:100:100.jpg?dr=14579&refresh_token=1bf4a61e&x-expires=1792123200&x-signature=cBmcXsvS8FfhcYJ4uRUZBkulCq0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=5f8d3399&idc=my2",
+        "review_text": "Simplesmente perfeito. \nVeio do tamanho certo , brilha demais , chegou rápido. \nMelhor comprar que fiz aqui",
+        "display_image_url": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/30679ceee5ff422892d1b8161722a9ea~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+        "review_images": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/30679ceee5ff422892d1b8161722a9ea~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d2e7e165475c4959af274c3a31b3c9a4~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/ddfbeca35fea449d9c361d12dce1107c~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/9a335cef4a15414083af7c28f885badf~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/527f8d710eab4f9fa5f53602782fdd16~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839"
+        ],
+        "sku_specification": "BRANCO, 37/38",
+        "review_country": "BR"
+      },
+      {
+        "review_id": "7688122991158380295",
+        "product_id": "1735058095159805819",
+        "sku_id": "1735058199563372411",
+        "reviewer_id": "6761457475885302790",
+        "review_rating": 5,
+        "review_time": "1790030626230",
+        "is_verified_purchase": true,
+        "is_incentivized_review": true,
+        "product_name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+        "reviewer_name": "J**a",
+        "reviewer_avatar_url": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/a8bb9a9af974fb6c5d2ff46ea8688158~tplv-tiktokx-cropcenter:100:100.jpg?dr=14579&refresh_token=8414da73&x-expires=1792123200&x-signature=cs0lUjp0JKMpDy5Zn1dXQGy%2BnKA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=5f8d3399&idc=my2",
+        "review_text": "Forma e tamanho: Pedi a 37/38 ficou perfeita no meu pé, muito confortável. E sem contar que é linda.",
+        "display_image_url": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/79bf69882ab7434bb96ad7521ba36aa3~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+        "review_images": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/79bf69882ab7434bb96ad7521ba36aa3~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/3d4600770ace47a6a81fa34b7f8d70c1~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7ea205573dd5458389d61912d996e766~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/fe8acb7d2ab44dea8e91c8da314e5a00~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/b4ffd0d56c2d405cb3293a3edd37fd68~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839"
+        ],
+        "sku_specification": "CARAMELO, 37/38",
+        "review_country": "BR"
+      },
+      {
+        "review_id": "7688034713126405908",
+        "product_id": "1735058095159805819",
+        "sku_id": "1735058199562848123",
+        "reviewer_id": "7187635112942093317",
+        "review_rating": 5,
+        "review_time": "1790010072524",
+        "is_verified_purchase": true,
+        "is_incentivized_review": true,
+        "product_name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+        "reviewer_name": "R**y",
+        "reviewer_avatar_url": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/9193df57743eea96c57f9f541322ee00~tplv-tiktokx-cropcenter:100:100.jpg?dr=14579&refresh_token=d8fcfd7c&x-expires=1792123200&x-signature=8sLdXkvAIkIHL72P1FTxES7%2FIAA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=5f8d3399&idc=my2",
+        "review_text": "Chegou tudo certinho ela é bonita só que o tamanho ficou muito grande pro meu pé eu calço 37 E pedir o 37 só que veio na forma muito grande",
+        "display_image_url": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/15612787b5b243ad82b29474b3bb26cc~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+        "review_images": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/15612787b5b243ad82b29474b3bb26cc~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/401acd7cc88c4436a07a5b986a99462b~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/6597055aae664a42adf070274609a366~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/340c934bf42846a3936ead3196fe0093~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839",
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/c58acee63c0d488c8a22a2c38baaebff~tplv-aphluv4xwc-crop-webp:300:300.webp?dr=15592&t=555f072d&ps=933b5bde&shp=8dbd94bf&shcp=607f11de&idc=my3&from=2378011839"
+        ],
+        "sku_specification": "BRANCO, 37/38",
+        "review_country": "BR"
+      }
+    ],
+    "review_ratings": {
+      "review_count": "5102",
+      "overall_score": 4.7,
+      "rating_result": {
+        "1": "117",
+        "2": "56",
+        "3": "180",
+        "4": "310",
+        "5": "4439"
+      }
+    }
+  },
+  "benefit_info": [],
+  "shop_info": {
+    "seller_id": "7494533106612537211",
+    "sold_count": 35273,
+    "on_sell_product_count": 15,
+    "review_count": 5928,
+    "global_seller_id": "7494533106612537211",
+    "global_sold_count": "35273",
+    "followers_count": "1052",
+    "video_count": "10",
+    "enable_follow": true,
+    "shop_name": "Aristaly7",
+    "shop_logo": {
+      "height": 300,
+      "width": 300,
+      "uri": "tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171",
+      "url_list": [
+        "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171~tplv-aphluv4xwc-resize-webp:300:300.webp?dr=15582&t=555f072d&ps=933b5bde&shp=905da467&shcp=607f11de&idc=my3&from=2422056039",
+        "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171~tplv-aphluv4xwc-resize-webp:300:300.webp?dr=15582&t=555f072d&ps=933b5bde&shp=905da467&shcp=607f11de&idc=my3&from=2422056039"
+      ]
+    },
+    "shop_link": "https://shop.tiktok.com/br/store/aristaly7/7494533106612537211",
+    "background": {
+      "is_default": true,
+      "image": {
+        "height": 300,
+        "width": 300,
+        "uri": "tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171",
+        "url_list": [
+          "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171~tplv-aphluv4xwc-resize-webp:300:300.webp?dr=15582&t=555f072d&ps=933b5bde&shp=905da467&shcp=607f11de&idc=my3&from=2422056039",
+          "https://p19-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/10c965daf62c4c1ca213715540398171~tplv-aphluv4xwc-resize-webp:300:300.webp?dr=15582&t=555f072d&ps=933b5bde&shp=905da467&shcp=607f11de&idc=my3&from=2422056039"
+        ]
+      },
+      "shop_background_type": 3
+    },
+    "format_sold_count": "35.3K",
+    "region": "BR",
+    "display_on_sell_product_count": "15",
+    "format_global_sold_count": "35.3K",
+    "format_followers_count": "1.0K+",
+    "format_video_count": "10",
+    "store_sub_score": [
+      {
+        "score": 0.813,
+        "type": 1,
+        "score_percentage": "81",
+        "high_light_tag": 0,
+        "platform_rate_type": 0
+      },
+      {
+        "score": 0.9769230769230769,
+        "type": 2,
+        "score_percentage": "98",
+        "high_light_tag": 1,
+        "platform_rate_type": 1
+      }
+    ],
+    "worst_rating": "0",
+    "best_rating": "5",
+    "creator_name": "Aristaly7",
+    "desc": "Shop Aristaly7 on TikTok Shop! 35.3K sold, 1.0K+ followers. 98+% Ships in 48h, 81+% replies in 24h. Join the trend!",
+    "shop_exp_scores": [
+      {
+        "shop_sub_score_type": 3,
+        "format_score": "-",
+        "score_description": "Feedback\npositivo",
+        "platform_rate_type": 0
+      },
+      {
+        "shop_sub_score_type": 2,
+        "format_score": "98%",
+        "score_description": "Envios em até \n48 horas",
+        "platform_rate_type": 1
+      },
+      {
+        "shop_sub_score_type": 1,
+        "format_score": "81%",
+        "score_description": "Responde em 24h",
+        "platform_rate_type": 0
+      }
+    ]
+  }
+}

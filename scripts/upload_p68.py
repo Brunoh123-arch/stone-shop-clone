@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+import json
+from tiktok_catbox_downloader import download_and_upload_to_catbox
+
+videos = [
+    {
+        'username': 'nyymorenna',
+        'nickname': 'Nicole Santos',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/3ecc136184a6353bb10d4c7680b34f71~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=53672921&x-expires=1795363200&x-signature=husLxJWt4y3CR%2B69XtRFpKzcOW4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Renovando enxoval com o jogo de panelas em ceramica antiaderente 5 pecas',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/oMdnaqggqEe4xQaQAAgPIQQHfeItnCCSTDljjF/?a=1988&bti=ODszNWYuMDE6&&bt=1350&ft=I~da4oKyD12Nvk7kslIxRe2SrlBF-UjNSiopiX&mime_type=video_mp4&rc=Zzk3NWhkNzk7PGdlNzpnZkBpMzxvZWw5cjptNDMzNzczM0A1MS0wYGFiX2ExNGIyYi5jYSNkXl5wMmRjczBhLS1kMTZzcw%3D%3D&expire=1795366196&l=202611210049043673A46E6FD93FCA5BAF&ply_type=2&policy=2&signature=757e76f0a732d73b797306dd79244dd1&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/ocHVJb7ERI4AZJ0fyxIDtVBoKQgiiBOzBQBfQR~tplv-tiktokx-dmt-logom:tos-useast2a-v-0068/oQBABdXzIEEg7vuNCUaiBHBiZbiwQAENlAQAB.image?dr=14573&x-expires=1795363200&x-signature=Q%2FGtfpUpqxrdYjtLhle7giFg7WY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'beatrizz.barreto',
+        'nickname': 'Bia Barreto',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/b2108e9d8de95e7d88ba23cb83e441e5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4d96293d&x-expires=1795363200&x-signature=uGmZ8SFXZbzVfE0cuIfqKzl9GMo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Troquei minhas panelas velhas por jogo de panela em ceramica antiaderente lindo',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/ogERZgCuUbDe8w1yCxFEAJDLIeAjSc6IQAfIoS/?a=1988&bti=ODszNWYuMDE6&&bt=458&ft=-Csk_mrMPD12Nyz4uY-UxD1vNY6e3wv252cAp&mime_type=video_mp4&rc=Mzk6Zzo1ODU1MzxnPDQ6aEBpanJkM3I5cmxsPDMzODczNEAtMDJjMy4yXzMxNTA2NDYtYSNfNWdkMmRzMXBhLS1kMTFzcw%3D%3D&expire=1795366185&l=20261121004920ADA927C067F5CCF2E2A6&ply_type=2&policy=2&signature=4b32d04dc2d1bdb8346576171698c354&tk=tt_chain_token&btag=e000b8000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/ocXI4Pi5augMR5qsCCElI4wIBfAZiAFYkAr1JI~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=eZhkGlp4%2BJsBdJL6KpKIZzj5oYI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'milamifar',
+        'nickname': 'Mila Mifar',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/81743e34c2bfcbb942aa9c7c703d91a1~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=c4535a20&x-expires=1795363200&x-signature=qXhdLF2GtPyDyTZzBRC5EQD4nTQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Kit 5 pecas em ceramica e antiaderente com fundo triplo que vai em qualquer fogao',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/oMMVBXfDUQ3wRIpEdWf0loXKBByASEyGFgP8Ig/?a=1988&bti=ODszNWYuMDE6&&bt=1513&ft=-Csk_mrMPD12NSf4uY-Ux2H2NY6e3wv25pcAp&mime_type=video_mp4&rc=ODRkM2VpZzRkZmdnZDw8ZkBpM2VoZHU5cmlkOTMzODczNEA2M2EvLzAtNjExMGMvL2AvYSNxNWlrMmQ0bWRhLS1kMTFzcw%3D%3D&expire=1795366252&l=20261121005012A62378CC346E33F68338&ply_type=2&policy=2&signature=1ac90f6e8a9cbb99722cdaf268620baa&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oQuBaBAC6ritLI7qEdAGv7CLagIPkYsYCriVu~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=5Z6JXFRZLFRZ0SMxhEDGGpwY1jo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'yascoliveirab',
+        'nickname': 'Yasmim Oliveira',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/8539b65d395a0ca51db2dda0d9d33764~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=7f6469b2&x-expires=1795363200&x-signature=O2crLIdtXWZfj9MOfx48YFim4NM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Jogo 5 panelas ceramica antiaderente inducao e gas linda demais',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/og3UCnrGEerFCpvAJAEIzuDvjsFCDDQfIf0E04/?a=1988&bti=ODszNWYuMDE6&&bt=1837&ft=I~da4oKyD12NvFukslIxRG0NJlBF-UjNSKopiX&mime_type=video_mp4&rc=ZTM5ZWRpZDpoZztmZzU5aEBpM247a3k5cjp1PDMzODczNEA0L19jXjZfNmMxM14yY180YSNrMjUuMmRrb2dhLS1kMWBzcw%3D%3D&expire=1795366260&l=20261121005029F4C3F7F429E68FCD3901&ply_type=2&policy=2&signature=77a02dd643531b52a8684a8c5c8e8075&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oQqEEIFjAKcoXA1nBADAI6ZeRuqgvCBEA7Esfw~tplv-tiktokx-dmt-logom:tos-alisg-i-0068/ocqEQf7nugYRD4AIAXgEAmCcvBZFEL7fqQ6gAB.image?dr=14573&x-expires=1795363200&x-signature=%2Bg4ByvO%2FnIMwcdsSBSJQfc2vbCY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'clubedosachadiinhoos',
+        'nickname': 'Clube dos Achadinhos',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/16d8d3ab4a76b317570c7d95a82800b3~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=647f4fd2&x-expires=1795363200&x-signature=5hTrrzKiXUEOi5BKEynrA9btXsU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Jogo de Panelas Antiaderente Ceramica Inducao e Gas 5 Pecas',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/ogZEBq2J6IA21Qt5iH0iWfgecQE2VBDdoQrR9F/?a=1988&bti=ODszNWYuMDE6&&bt=1350&ft=-Csk_mrMPD12Nwf4uY-Ux~5FPY6e3wv25McAp&mime_type=video_mp4&rc=NWlkOzZpMzVoZDs6ZzxoNEBpM3RxaXU5cmdwNTMzNzczM0AzXl4xXjIvNi4xY181MjIwYSNrLzMyMmRrZWlhLS1kMTZzcw%3D%3D&expire=1795366296&l=20261121005044E055964E38C70C870129&ply_type=2&policy=2&signature=b58a9fb398e90a825922375f8a26cb2f&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/o4LI1iv7aKtU1qxItu8SDtEQvBH7KraKaoAiB~tplv-tiktokx-origin.image?dr=14575&x-expires=1795363200&x-signature=acmlAkVJv%2FBurylzxHSac%2F22opk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    }
+]
+
+res = []
+for v in videos:
+    user = v['username']
+    print(f"Baixando e subindo {user}...")
+    catbox = download_and_upload_to_catbox(v['playAddr'], f"{user}.mp4")
+    print(f"-> {catbox}")
+    v['catbox'] = catbox
+    res.append(v)
+
+with open('scripts/p68_videos_result.json', 'w', encoding='utf-8') as f:
+    json.dump(res, f, ensure_ascii=False, indent=2)
+
+print("FINALIZADO COM SUCESSO!")

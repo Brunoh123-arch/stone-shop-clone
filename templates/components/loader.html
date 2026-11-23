@@ -1,0 +1,29 @@
+  <!-- CRITICAL TIKTOK SPINNER -->
+  <div id="tt-instant-loader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;z-index:99999999;display:flex;align-items:center;justify-content:center;transition:opacity 0.08s ease,visibility 0.08s ease;pointer-events:none;">
+    <div style="position:relative;width:42px;height:42px;">
+      <div style="position:absolute;width:18px;height:18px;border-radius:50%;background:#00f2fe;left:2px;top:12px;animation:tt-bounce-cyan 0.7s infinite ease-in-out alternate;mix-blend-mode:multiply;"></div>
+      <div style="position:absolute;width:18px;height:18px;border-radius:50%;background:#fe2c55;right:2px;top:12px;animation:tt-bounce-red 0.7s infinite ease-in-out alternate;mix-blend-mode:multiply;"></div>
+    </div>
+  </div>
+  <style>
+    @keyframes tt-bounce-cyan{0%{transform:translateX(0) scale(0.9);z-index:2;}100%{transform:translateX(18px) scale(1.15);z-index:1;}}
+    @keyframes tt-bounce-red{0%{transform:translateX(0) scale(1.15);z-index:1;}100%{transform:translateX(-18px) scale(0.9);z-index:2;}}
+  </style>
+  <script>
+    (function(){
+      var l=document.getElementById('tt-instant-loader');
+      function hide(){
+        if(!l)return;
+        l.style.opacity='0';
+        l.style.visibility='hidden';
+        setTimeout(function(){if(l&&l.parentNode)l.parentNode.removeChild(l);},100);
+      }
+      if(document.readyState==='complete'||document.readyState==='interactive'){
+        setTimeout(hide, 40);
+      }else{
+        document.addEventListener('DOMContentLoaded', hide);
+        window.addEventListener('load', hide);
+        setTimeout(hide, 150);
+      }
+    })();
+  </script>

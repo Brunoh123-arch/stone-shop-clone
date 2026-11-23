@@ -1,0 +1,110 @@
+    <!-- INFORMAÇÕES DO PRODUTO -->
+    <div class="product-info">
+      <!-- 1. Parcelamento oficial TikTok Shop -->
+      <div class="installment-block">
+        <span class="installment-text">{{INSTALLMENT_TEXT}}</span>
+      </div>
+
+      <!-- 2. Cupons oficiais TikTok Shop -->
+      <div class="voucher-discount-block">
+        <div class="voucher-ticket">
+          <span class="voucher-badge-text">{{DISCOUNT_BADGE_TICKET}}</span>
+          <span class="voucher-desc">Cupom da Loja Aplicado</span>
+        </div>
+      </div>
+
+      <!-- Título com Bookmark à direita -->
+      <div class="product-title-row">
+        <h1 class="product-title">{{PRODUCT_TITLE}}</h1>
+        <button class="bookmark-btn" onclick="toggleBookmark(this)" aria-label="Favoritar">
+          <svg viewBox="0 0 24 24" class="bookmark-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Avaliações e Vendas -->
+      <div class="rating-sold-row">
+        <div class="rating-pill">
+          <span class="rating-star">★</span>
+          <span class="rating-score">{{RATING_AVG}}</span>
+          <span class="rating-count">({{RATING_COUNT}})</span>
+        </div>
+        <div class="sold-pill">
+          <span class="sold-count">{{SOLD_COUNT}}</span>
+        </div>
+      </div>
+
+      <!-- BLOCO PRÉ-DESCRIÇÃO OFICIAL TIKTOK SHOP -->
+      <div class="product-pre-desc-block">
+        <!-- Linha 1: Frete Grátis -->
+        <div class="pre-desc-row shipping-row">
+          <div class="pre-desc-left">
+            <span class="pre-desc-label">Envio</span>
+            <div class="pre-desc-content">
+              <div class="shipping-lead">
+                <span class="shipping-tag-free">Frete Grátis</span>
+                <span class="shipping-estimate">Receba em 4 a 7 dias úteis</span>
+              </div>
+            </div>
+          </div>
+          <div class="pre-desc-arrow">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Linha 2: Proteção do Cliente -->
+        <div class="pre-desc-row protection-row" onclick="openProtectionModal()">
+          <div class="pre-desc-left">
+            <span class="pre-desc-label">Serviço</span>
+            <div class="pre-desc-content">
+              <div class="protection-pills-flow">
+                <span class="protection-pill-item">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="#00b67a"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                  Garantia Stone Shop
+                </span>
+                <span class="protection-pill-item">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="#00b67a"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                  Devolução em 7 dias
+                </span>
+                <span class="protection-pill-item">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="#00b67a"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                  Reembolso Rápido
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="pre-desc-arrow">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- VÍDEOS DE CRIADORES OFICIAL TIKTOK SHOP -->
+      <div class="creators-section" id="creators-section"></div>
+
+      <!-- AVALIAÇÕES DOS CLIENTES -->
+      <div class="reviews-section" id="avaliacoes-secao">
+        <div class="reviews-header-row">
+          <h2 class="reviews-title">Avaliações de clientes ({{RATING_COUNT}})</h2>
+          <div class="reviews-rating-badge">
+            <span class="reviews-score-num">{{RATING_AVG}}</span>
+            <span class="reviews-score-star">★</span>
+            <span class="reviews-score-max">/5</span>
+          </div>
+        </div>
+        <div class="reviews-filter-pills">
+          <span class="rev-pill active">Todas</span>
+          <span class="rev-pill">Com fotos (48)</span>
+          <span class="rev-pill">Entrega rápida</span>
+          <span class="rev-pill">Qualidade excelente</span>
+        </div>
+        <div class="reviews-list">
+          {{REVIEWS_BLOCK}}
+        </div>
+      </div>
+    </div>

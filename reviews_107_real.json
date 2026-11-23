@@ -1,0 +1,36 @@
+[
+  {
+    "id": "c1",
+    "name": "m**o p** m**s",
+    "avatar": "../img/reviews-avatars/review-user-107-c1.jpg",
+    "date": "16/02",
+    "variation": "Aspirador 3 em 1",
+    "comment": "Produto muito bom, simples e eficaz! Comprei pra limpar o carro e atendeu perfeitamente.",
+    "photos": [
+      "../img/review-107-c1-1.jpg"
+    ]
+  },
+  {
+    "id": "c2",
+    "name": "c**s s**a",
+    "avatar": "../img/reviews-avatars/review-user-107-c2.jpg",
+    "date": "25/09",
+    "variation": "Preto Fosco",
+    "comment": "Material: Bom. Eu amei, tamanho compacto e potência excelente de sucção e sopro.",
+    "photos": [
+      "../img/review-107-c2-1.jpg"
+    ]
+  },
+  {
+    "id": "c3",
+    "name": "r**o c**a",
+    "avatar": "../img/reviews-avatars/review-user-107-c3.jpg",
+    "date": "12/08",
+    "variation": "Kit Completo com Bicos",
+    "comment": "Chegou certinho com todos os adaptadores e o cabo de carregar. A função soprador é muito forte!",
+    "photos": [
+      "../img/review-107-c3-1.jpg",
+      "../img/review-107-c3-2.jpg"
+    ]
+  }
+]

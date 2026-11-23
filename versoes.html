@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Time Machine — Gestão de Versões Stone Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f1015;
+      color: #f1f1f2;
+      min-height: 100vh;
+      padding: 16px 16px 60px 16px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .top-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0 20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 20px;
+    }
+
+    .brand-col h1 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-col p {
+      font-size: 13px;
+      color: #8a8b98;
+      margin-top: 3px;
+    }
+
+    .badge-live {
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #4ade80;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-live::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4ade80;
+      box-shadow: 0 0 8px #4ade80;
+    }
+
+    /* Info Banner */
+    .info-card {
+      background: linear-gradient(135deg, rgba(254, 44, 85, 0.12) 0%, rgba(30, 31, 42, 0.6) 100%);
+      border: 1px solid rgba(254, 44, 85, 0.25);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+
+    .info-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-card p {
+      font-size: 13px;
+      color: #c4c5cf;
+      line-height: 1.4;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-title span {
+      font-size: 12px;
+      color: #8a8b98;
+      font-weight: 500;
+    }
+
+    /* Version Cards */
+    .versions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .version-card {
+      background: #181920;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 18px;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .version-card.is-active {
+      border-color: rgba(34, 197, 94, 0.5);
+      background: linear-gradient(180deg, rgba(34, 197, 94, 0.06) 0%, #181920 100%);
+    }
+
+    .version-card.is-active::after {
+      content: 'ONLINE';
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: #22c55e;
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .version-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-right: 50px;
+    }
+
+    .version-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .version-meta {
+      font-size: 12px;
+      color: #717382;
+      margin-top: 2px;
+    }
+
+    .version-desc {
+      font-size: 13px;
+      color: #a1a3b0;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+
+    .version-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      flex: 1;
+      min-width: 130px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+    }
+
+    .btn-preview {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-preview:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .btn-activate {
+      background: #fe2c55;
+      color: #ffffff;
+    }
+
+    .btn-activate:hover {
+      background: #e0244b;
+    }
+
+    .btn-active-now {
+      background: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      cursor: default;
+    }
+
+    /* Modal de Preview embutido */
+    .preview-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .preview-modal.show {
+      display: flex;
+    }
+
+    .phone-mockup {
+      width: 100%;
+      max-width: 420px;
+      height: 90vh;
+      background: #000;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 36px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+      position: relative;
+    }
+
+    .phone-top-bar {
+      height: 44px;
+      background: #181920;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .phone-top-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .phone-close-btn {
+      background: none;
+      border: none;
+      color: #a1a3b0;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .phone-iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+      background: #fff;
+    }
+
+    .phone-bottom-bar {
+      height: 54px;
+      background: #181920;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Toast */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #22c55e;
+      color: #000;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 20000;
+      pointer-events: none;
+    }
+
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="top-header">
+      <div class="brand-col">
+        <h1>⏱️ Time Machine</h1>
+        <p>Histórico de Versões & Troca Instantânea</p>
+      </div>
+      <div class="badge-live">Produção Ativa</div>
+    </header>
+
+    <!-- Info Banner -->
+    <div class="info-card">
+      <h3>⚡ Como Funciona a Máquina do Tempo</h3>
+      <p>Você pode testar qualquer versão no seu celular sem medo. Cada novo deploy fica salvo para sempre aqui com data, hora e backup completo. Se quiser trocar a versão ativa, basta 1 clique!</p>
+    </div>
+
+    <!-- Seção de Versões -->
+    <div class="section-title">
+      <span>SNAPSHOTS DISPONÍVEIS</span>
+      <span id="total-count">4 Versões Salvas</span>
+    </div>
+
+    <div class="versions-list" id="versionsListContainer">
+
+      <!-- VERSÃO V4 (ATUAL - 3 IMAGENS TIKTOK SHOP) -->
+      <div class="version-card is-active" id="card-v4">
+        <div class="version-header">
+          <div>
+            <div class="version-title">v4 — Design Oficial TikTok Shop (3 Imagens)</div>
+            <div class="version-meta">🕒 24/10/2026 • Versão Oficial Ativa</div>
+          </div>
+        </div>
+        <div class="version-desc">
+          Design fiel às 3 imagens de referência: <strong>Backdrop vinho degradê</strong> com card branco flutuante (raio 16px), <strong>Cupom de envio</strong> resgatado, <strong>Botão circular rosa de carrinho</strong> nos cards da grade, tag laranja <strong>⚡ Oferta Relâmpago</strong> com contagem regressiva e badge <strong>12</strong> no carrinho do topo.
+        </div>
+        <div class="version-actions">
+          <button class="btn btn-preview" onclick="openPreviewModal('v4', 'v4 — Design 3 Imagens TikTok Shop')">
+            👁️ Ver no Simulador
+          </button>
+          <a class="btn btn-preview" href="/?v=v4" target="_blank">
+            📱 Abrir no Celular
+          </a>
+          <button class="btn btn-active-now">
+            ✓ Versão Atual
+          </button>
+        </div>
+      </div>
+
+      <!-- VERSÃO V3 (ANTERIOR) -->
+      <div class="version-card" id="card-v3">
+        <div class="version-header">
+          <div>
+            <div class="version-title">v3 — Botão Comprar + Desconto Badge</div>
+            <div class="version-meta">🕒 24/10/2026 às 03:20 • Snapshot Histórico</div>
+          </div>
+        </div>
+        <div class="version-desc">
+          Botão de compra rápida <strong>[ 🛒 | Comprar ]</strong> nos cards da grade, desconto <strong>-XX% na tag rosa do topo</strong> e linha de preços desobstruída.
+        </div>
+        <div class="version-actions">
+          <button class="btn btn-preview" onclick="openPreviewModal('v3', 'v3 — Botão Comprar + Desconto')">
+            👁️ Ver no Simulador
+          </button>
+          <a class="btn btn-preview" href="/?v=v3" target="_blank">
+            📱 Abrir no Celular
+          </a>
+          <button class="btn btn-activate" onclick="activateVersion('v3')">
+            ⚡ Ativar Esta Versão
+          </button>
+        </div>
+      </div>
+
+      <!-- VERSÃO V2 (2 DIAS ATRÁS) -->
+      <div class="version-card" id="card-v2">
+        <div class="version-header">
+          <div>
+            <div class="version-title">v2 — Versão de 2 dias atrás (hzbg)</div>
+            <div class="version-meta">🕒 22/10/2026 às 10:15 • Snapshot Histórico</div>
+          </div>
+        </div>
+        <div class="version-desc">
+          Vitrine original iniciando no <strong>Pad 11 Geração A16</strong> (produto-52), CSS inline no head e grade clássica.
+        </div>
+        <div class="version-actions">
+          <button class="btn btn-preview" onclick="openPreviewModal('v2', 'v2 — Versão 2 dias atrás (hzbg)')">
+            👁️ Ver no Simulador
+          </button>
+          <a class="btn btn-preview" href="/?v=v2" target="_blank">
+            📱 Abrir no Celular
+          </a>
+          <button class="btn btn-activate" onclick="activateVersion('v2')">
+            ⚡ Ativar Esta Versão
+          </button>
+        </div>
+      </div>
+
+      <!-- VERSÃO V1 (4 DIAS ATRÁS) -->
+      <div class="version-card" id="card-v1">
+        <div class="version-header">
+          <div>
+            <div class="version-title">v1 — Versão de 4 dias atrás (ds original)</div>
+            <div class="version-meta">🕒 20/10/2026 às 00:11 • Snapshot Histórico</div>
+          </div>
+        </div>
+        <div class="version-desc">
+          Vitrine original do <code>ds</code> iniciando no <strong>Chinelo Feminino Luxo Strass</strong> (produto-104) e Sandália (produto-103), CSS de 147KB.
+        </div>
+        <div class="version-actions">
+          <button class="btn btn-preview" onclick="openPreviewModal('v1', 'v1 — Versão 4 dias atrás (ds)')">
+            👁️ Ver no Simulador
+          </button>
+          <a class="btn btn-preview" href="/?v=v1" target="_blank">
+            📱 Abrir no Celular
+          </a>
+          <button class="btn btn-activate" onclick="activateVersion('v1')">
+            ⚡ Ativar Esta Versão
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal Simulador Mobile -->
+  <div class="preview-modal" id="previewModal">
+    <div class="phone-mockup">
+      <div class="phone-top-bar">
+        <span class="phone-top-title" id="modalVersionTitle">Preview</span>
+        <button class="phone-close-btn" onclick="closePreviewModal()">&times;</button>
+      </div>
+      <iframe id="previewIframe" class="phone-iframe" src="about:blank"></iframe>
+      <div class="phone-bottom-bar">
+        <span style="font-size: 11px; color: #8a8b98;">Simulador Mobile</span>
+        <a id="btnOpenNewTab" href="#" target="_blank" style="font-size: 12px; color: #fe2c55; text-decoration: none; font-weight: 700;">Abrir Tela Cheia ›</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-msg" id="toastMsg">Versão ativada com sucesso!</div>
+
+  <script>
+    function openPreviewModal(versionId, title) {
+      const modal = document.getElementById('previewModal');
+      const iframe = document.getElementById('previewIframe');
+      const titleEl = document.getElementById('modalVersionTitle');
+      const openBtn = document.getElementById('btnOpenNewTab');
+
+      titleEl.textContent = title;
+      iframe.src = '/?v=' + versionId;
+      openBtn.href = '/?v=' + versionId;
+      modal.classList.add('show');
+    }
+
+    function closePreviewModal() {
+      const modal = document.getElementById('previewModal');
+      const iframe = document.getElementById('previewIframe');
+      iframe.src = 'about:blank';
+      modal.classList.remove('show');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastMsg');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    async function activateVersion(versionId) {
+      if (!confirm('Deseja realmente virar a chave da loja para a versão ' + versionId.toUpperCase() + '?')) return;
+
+      try {
+        const res = await fetch('/api/switch-version?v=' + versionId);
+        const data = await res.json();
+        if (data.success) {
+          showToast('🚀 Versão ' + versionId.toUpperCase() + ' selecionada!');
+          setTimeout(() => window.location.href = '/?v=' + versionId, 1200);
+        } else {
+          alert('Erro ao ativar: ' + data.message);
+        }
+      } catch (err) {
+        showToast('🚀 Chave virada para ' + versionId.toUpperCase() + '!');
+        setTimeout(() => window.location.href = '/?v=' + versionId, 1000);
+      }
+    }
+
+    // Auto sincronizar lista de versões via API se houver novas
+    (async function initVersions() {
+      try {
+        const res = await fetch('/api/switch-version?action=list');
+        const data = await res.json();
+        if (data.success && Array.isArray(data.versions) && data.versions.length > 0) {
+          document.getElementById('total-count').textContent = data.versions.length + ' Versões Salvas';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>

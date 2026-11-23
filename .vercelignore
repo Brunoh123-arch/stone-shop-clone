@@ -1,0 +1,8 @@
+.git
+scripts/
+Temp/
+videosprodutos/raw/
+criativos_tiktok_ads/
+*.py
+*.log
+.playwright-mcp/

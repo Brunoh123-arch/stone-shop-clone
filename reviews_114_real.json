@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c1",
+    "name": "D**o S**a",
+    "avatar": "../img/reviews-avatars/review-user-114-c1.jpg",
+    "date": "28/10",
+    "variation": "Arcade Stick Retrô 7 em 1",
+    "comment": "Sensacional para jogos de luta (The King of Fighters e Street Fighter)! O manche tem o clique bem preciso e os botões respondem na hora sem lag.",
+    "photos": [
+      "../img/review-114-c1-1.jpg",
+      "../img/review-114-c1-2.jpg"
+    ]
+  },
+  {
+    "id": "c2",
+    "name": "M**s V**a",
+    "avatar": "../img/reviews-avatars/review-user-114-c2.jpg",
+    "date": "14/10",
+    "variation": "Arcade Stick Retrô 7 em 1",
+    "comment": "Reconheceu no PC e no PS4 de primeira, só plugar e jogar. A base com ventosas não deixa escorregar da mesa nos combos mais rápidos.",
+    "photos": [
+      "../img/review-114-c2-1.jpg",
+      "../img/review-114-c2-2.jpg"
+    ]
+  },
+  {
+    "id": "c3",
+    "name": "F**e A**o",
+    "avatar": "../img/reviews-avatars/review-user-114-c3.jpg",
+    "date": "02/09",
+    "variation": "Arcade Stick Retrô 7 em 1",
+    "comment": "Nostalgia pura! Construção sólida e cabo longo de boa qualidade. Chegou super rápido e muito bem protegido.",
+    "photos": [
+      "../img/review-114-c3-1.jpg",
+      "../img/review-114-c3-2.jpg"
+    ]
+  }
+]

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Completo de Todos os Carregamentos do TikTok</title>
+  <style>
+    :root {
+      --tiktok-pink: #FE2C55;
+      --tiktok-cyan: #25F4EE;
+      --bg-dark: #0f0f12;
+      --card-bg: #181920;
+      --border: #282936;
+      --text: #ffffff;
+      --text-muted: #888899;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .item-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .item-card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .item-card .desc {
+      color: var(--text-muted);
+      font-size: 12.5px;
+      margin-bottom: 20px;
+      min-height: 38px;
+      line-height: 1.4;
+    }
+
+    .stage {
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .code-tag {
+      margin-top: 16px;
+      font-size: 11px;
+      font-family: monospace;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.06);
+      color: #bbb;
+    }
+
+    /* =======================================================
+       1. AS BOLINHAS CLÁSSICAS (TUXLoading)
+       ======================================================= */
+    .tiktok-balls {
+      position: relative;
+      width: 34px;
+      height: 16px;
+    }
+    .ball {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      top: 0;
+    }
+    .ball-cyan {
+      background-color: var(--tiktok-cyan);
+      left: 0;
+      animation: ballCyan 0.91s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    }
+    .ball-pink {
+      background-color: var(--tiktok-pink);
+      right: 0;
+      animation: ballPink 0.91s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    }
+    @keyframes ballCyan {
+      0% { transform: translateX(0) scale(1); z-index: 2; }
+      50% { transform: translateX(18px) scale(1.1); z-index: 2; }
+      50.01% { z-index: 1; }
+      100% { transform: translateX(0) scale(0.9); z-index: 1; }
+    }
+    @keyframes ballPink {
+      0% { transform: translateX(0) scale(0.9); z-index: 1; }
+      50% { transform: translateX(-18px) scale(0.9); z-index: 1; }
+      50.01% { z-index: 2; }
+      100% { transform: translateX(0) scale(1.1); z-index: 2; }
+    }
+
+    /* =======================================================
+       2. O QUADRADO MODAL HUD (TUXCenterToast)
+       ======================================================= */
+    .hud-box {
+      width: 95px;
+      height: 95px;
+      background: rgba(26, 27, 36, 0.94);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.6);
+    }
+    .hud-box span {
+      font-size: 11px;
+      color: rgba(255,255,255,0.85);
+      font-weight: 500;
+    }
+
+    /* =======================================================
+       3. CÍRCULO COM PORCENTAGEM (TUXLoadingCircle)
+       ======================================================= */
+    .circle-progress-box {
+      position: relative;
+      width: 58px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .circle-progress-svg {
+      width: 58px;
+      height: 58px;
+      transform: rotate(-90deg);
+    }
+    .circle-bg {
+      stroke: rgba(255, 255, 255, 0.12);
+      stroke-width: 4;
+      fill: none;
+    }
+    .circle-bar {
+      stroke: var(--tiktok-cyan);
+      stroke-width: 4;
+      stroke-linecap: round;
+      fill: none;
+      stroke-dasharray: 157;
+      stroke-dashoffset: 40;
+      animation: progressAnim 3s ease-in-out infinite alternate;
+    }
+    @keyframes progressAnim {
+      0% { stroke-dashoffset: 140; }
+      100% { stroke-dashoffset: 15; }
+    }
+    .circle-text {
+      position: absolute;
+      font-size: 11px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    /* =======================================================
+       4. SPINNER CIRCULAR DE BOTÃO (TUXLoadingSpinner)
+       ======================================================= */
+    .btn-spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid rgba(255,255,255,0.15);
+      border-top-color: var(--tiktok-pink);
+      border-radius: 50%;
+      animation: spinRound 0.8s linear infinite;
+    }
+    @keyframes spinRound {
+      to { transform: rotate(360deg); }
+    }
+
+    /* =======================================================
+       5. ESQUELETO SHIMMER (TUXSkeleton)
+       ======================================================= */
+    @keyframes shimmerWave {
+      0% { background-position: -150px 0; }
+      100% { background-position: 150px 0; }
+    }
+    .skeleton-wrap {
+      width: 100%;
+      max-width: 200px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .sk-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #23242e 25%, #323340 50%, #23242e 75%);
+      background-size: 200% 100%;
+      animation: shimmerWave 1.4s infinite;
+    }
+    .sk-lines {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .sk-line {
+      height: 10px;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #23242e 25%, #323340 50%, #23242e 75%);
+      background-size: 200% 100%;
+      animation: shimmerWave 1.4s infinite;
+    }
+
+    /* =======================================================
+       6. BUFFER DO VÍDEO NO PLAYER
+       ======================================================= */
+    .buffer-track {
+      width: 80%;
+      height: 4px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .buffer-bar {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--tiktok-cyan), var(--tiktok-pink));
+      animation: bufferSlide 1.3s ease-in-out infinite;
+    }
+    @keyframes bufferSlide {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(0); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+  <!-- Google Fonts: Plus Jakarta Sans & Inter (Oficial TikTok Parity) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+</head>
+<body>
+
+  <header>
+    <h1>Todos os Tipos de Carregamento do TikTok</h1>
+    <p>Os 6 componentes oficiais de carregamento encontrados no código do TikTok</p>
+  </header>
+
+  <div class="grid">
+    <!-- 1. Bolinhas TUXLoading -->
+    <div class="item-card">
+      <h3>1. As Bolinhas (TUXLoading)</h3>
+      <div class="desc">A clássica órbita das bolinhas Rosa e Ciano para tela cheia e transições.</div>
+      <div class="stage">
+        <div class="tiktok-balls">
+          <div class="ball ball-cyan"></div>
+          <div class="ball ball-pink"></div>
+        </div>
+      </div>
+      <span class="code-tag">TUXLoading (0.91s)</span>
+    </div>
+
+    <!-- 2. Quadrado HUD -->
+    <div class="item-card">
+      <h3>2. O Quadrado Modal (HUD)</h3>
+      <div class="desc">O quadradinho escuro translúcido com as bolinhas ao salvar vídeos ou processar compras.</div>
+      <div class="stage">
+        <div class="hud-box">
+          <div class="tiktok-balls">
+            <div class="ball ball-cyan"></div>
+            <div class="ball ball-pink"></div>
+          </div>
+          <span>Carregando...</span>
+        </div>
+      </div>
+      <span class="code-tag">TUXCenterToast</span>
+    </div>
+
+    <!-- 3. Círculo com Porcentagem -->
+    <div class="item-card">
+      <h3>3. Círculo de Porcentagem</h3>
+      <div class="desc">Anel com contador de 0% a 100% no meio para upload de vídeos, efeitos e exportação.</div>
+      <div class="stage">
+        <div class="circle-progress-box">
+          <svg class="circle-progress-svg" viewBox="0 0 58 58">
+            <circle class="circle-bg" cx="29" cy="29" r="25"></circle>
+            <circle class="circle-bar" cx="29" cy="29" r="25"></circle>
+          </svg>
+          <div class="circle-text">74%</div>
+        </div>
+      </div>
+      <span class="code-tag">TUXLoadingCircle</span>
+    </div>
+
+    <!-- 4. Spinner de Botão -->
+    <div class="item-card">
+      <h3>4. Spinner Circular</h3>
+      <div class="desc">Anel giratório usado dentro de botões pequenos (Seguir, Curtir, Carrinho do Shop).</div>
+      <div class="stage">
+        <div class="btn-spinner"></div>
+      </div>
+      <span class="code-tag">TUXLoadingSpinner</span>
+    </div>
+
+    <!-- 5. Skeleton Shimmer -->
+    <div class="item-card">
+      <h3>5. Skeleton (Esqueleto Shimmer)</h3>
+      <div class="desc">Retângulos pulsantes que reservam o espaço das fotos e produtos do Shop antes de baixar.</div>
+      <div class="stage">
+        <div class="skeleton-wrap">
+          <div class="sk-avatar"></div>
+          <div class="sk-lines">
+            <div class="sk-line" style="width: 85%;"></div>
+            <div class="sk-line" style="width: 55%;"></div>
+          </div>
+        </div>
+      </div>
+      <span class="code-tag">TUXSkeletonRectangle</span>
+    </div>
+
+    <!-- 6. Buffer de Vídeo -->
+    <div class="item-card">
+      <h3>6. Linha de Buffer de Vídeo</h3>
+      <div class="desc">Linha gradiente na parte inferior do player quando o vídeo precisa carregar mais frames.</div>
+      <div class="stage">
+        <div class="buffer-track">
+          <div class="buffer-bar"></div>
+        </div>
+      </div>
+      <span class="code-tag">fyp_resume_progress</span>
+    </div>
+  </div>
+
+</body>
+</html>

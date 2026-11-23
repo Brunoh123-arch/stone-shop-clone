@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+import json
+from tiktok_catbox_downloader import download_and_upload_to_catbox
+
+videos = [
+    {
+        'username': 'rafaelpachecotech',
+        'nickname': 'Rafael Pacheco',
+        'avatar': 'https://p19-common-sign.tiktokcdn.com/tos-maliva-avt-0068/d5aaff8200a603fc0633cffa9a65f31d~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2501abc4&x-expires=1795366800&x-signature=6ceBWSDlS1eiF0pnkCM5JmUzIqQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Unboxing do iPhone 15 oficial lacrado com cabo USB-C trancado',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/o4HdryEEIBQo1kafi3FJpS57gaxfLEAzDBdRQ7/?a=1988&bti=ODszNWYuMDE6&&bt=1045&ft=I~da4oKyD12Nv.TkslIxRe2SrlBF-UjNSiopiX&mime_type=video_mp4&rc=MzQ6MzQ0OzVkZGdoNjg4M0BpM2V5dnc5cnd3NDMzNzczM0BfMWMwXzUtNjAxYjJiLzYwYSNka19wMmRjbGhhLS1kMTZzcw%3D%3D&expire=1795366976&l=202611210101587630E496B1EA11CC44B2&ply_type=2&policy=2&signature=50c3bb3d8c1e73671f31e1b930065962&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-maliva-p-0068/oI1dZ7QofE8lzZioAgC0I3IpfxEx1BBJrD7RaF~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=sRhj9sl73bJ1FW0KbVXqa%2B%2FILB4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'vitoriatmsugc',
+        'nickname': 'Vitoria Taques',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/ffb61c03b9bb396f79c14facc17c346d~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4d63a41c&x-expires=1795366800&x-signature=YTGGltB4lmGjLWmbi2JHl%2FFidZg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Unboxing do meu iPhone 15 cor azul acabamento fosco lindo',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/osbIwxiCGDxOnOuxC6NfJbwIBPAWiAQZTAl0xE/?a=1988&bti=ODszNWYuMDE6&&bt=786&ft=-Csk_mrMPD12NW74uY-Ux9OFPY6e3wv25LcAp&mime_type=video_mp4&rc=aGZkZTY6PGc3OjczZjllaUBpanNzeGo5cnk1OTMzODczNEAxLTVfXmJhXi8xMF5iXzYyYSNhM2RsMmQ0YTRhLS1kMWBzcw%3D%3D&expire=1795367003&l=202611210102467AC17A65C71978D4435F&ply_type=2&policy=2&signature=3e3a76ea8a7a155398fc765e72d92e8d&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/osAYBEipcE8CARkQb2cfBFTjkDfBjiIhylmM0g~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=VBH5yubpQ%2Bw0302amCMVjHeejE8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'fernandaaa_oliv',
+        'nickname': 'Fernanda Oliveira',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/57027248c0db5d609d2976fc8bf8e5c9~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=5d8e0d08&x-expires=1795366800&x-signature=t%2FIBJ4cf2QhzCewGxIcLq%2BHgRgw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Unboxing iPhone 15 rosa novo companheiro perfeito',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/oUEbHJREQBAfaI8WgprgXsb9cBFn8liD0LfMiq/?a=1988&bti=ODszNWYuMDE6&&bt=670&ft=-Csk_mrMPD12NCW4uY-Ux54FWY6e3wv25XcAp&mime_type=video_mp4&rc=ZWg1ZDo5O2hnaGc3ZGY2O0BpM3hpdG85cm1uOTMzODczNEBhLS0vX182NjUxNS80YzItYSNfcXAzMmQ0ZzJhLS1kMWBzcw%3D%3D&expire=1795367046&l=20261121010306FC830FCC88BBA2D0913D&ply_type=2&policy=2&signature=5802eaeec6aab4d50acbfe948ac212f7&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIoY1CwiuYlnaBAAs3ATtTDAEAjYLIEKABPiS~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=onSTaTrA8fnoRYGeE6pK3uoMd4Q%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'diogooslvv',
+        'nickname': 'Diogo Silva',
+        'avatar': 'https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/5b321073ce17f1685993aadea88556cf~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=d97f2a4d&x-expires=1795366800&x-signature=9QfmMQg8r3i2M7BTAk6iJw%2BM5hQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Unboxing iPhone 15 Blue perfeito em cada detalhe',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-ve-0068c800-sg/oIoCFixkzgbvLh3wABAGblw6iQWIkEfIDCXJWE/?a=1988&bti=ODszNWYuMDE6&&bt=643&ft=-Csk_mrMPD12NSH4uY-UxgOFLY6e3wv25ycAp&mime_type=video_mp4&rc=MzlkaDc6OWhmNmQ2NTc6Z0BpMzRqb2o5cnU1eTMzNzczM0BiLTBjYWFgNjIxLzEuLl4yYSMvX3AxMmRzal9gLS1kMTZzcw%3D%3D&expire=1795367074&l=2026112101040353AC672A2CFADCDAB5D0&ply_type=2&policy=2&signature=3bd2a1a6c08f8a502fc7ee4a4f1dadaa&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p19-common-sign.tiktokcdn.com/tos-maliva-p-0068/oEAgBBhWvJzIfAPNwjBxFE3mk6LIiWio2HkCEX~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=QeEpsizpW1JPrrMMk%2B5%2FNJiJVZ8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    },
+    {
+        'username': 'tuanesangy',
+        'nickname': 'Tuane Sangy',
+        'avatar': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/8eb98c32c6959cbc0d1e06e04d5b5fda~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=e4f5802f&x-expires=1795366800&x-signature=wdwfQB23km1TtCxTpEn4ZyUARZ4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3',
+        'desc': 'Comprei meu primeiro iPhone 15 unboxing completo e sensacional',
+        'playAddr': 'https://v16-webapp-prime.tiktok.com/video/tos/alisg/tos-alisg-pve-0037c001/o0AiXFwVakBIsB8aiQx5FaL0zHEYg3EPBAvci/?a=1988&bti=ODszNWYuMDE6&&bt=314&ft=-Csk_mrMPD12NMH4uY-UxWeFNY6e3wv25AcAp&mime_type=video_mp4&rc=OTk4aGg1ZTY5Zzk6OjlnO0BpMzg1PHY5cm92ZTMzODczNEAtYi4vLTUyXjQxYTBeXzQtYSNsMTFhMmQ0YjJhLS1kMWBzcw%3D%3D&expire=1795367097&l=202611210104202A7817C9B3CD53E6822C&ply_type=2&policy=2&signature=382a57fa3cc68b77296733042fbb7978&tk=tt_chain_token&btag=e00088000',
+        'cover': 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o8gLHi1BdskXvAFBI3aiEhYVIC8Y8awbxAPBi~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=%2By%2ByQWfeeFmTNIPWWQq%2Fh%2Fjf6Iw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2'
+    }
+]
+
+res = []
+for v in videos:
+    user = v['username']
+    print(f"Baixando e subindo {user}...")
+    catbox = download_and_upload_to_catbox(v['playAddr'], f"{user}.mp4")
+    print(f"-> {catbox}")
+    v['catbox'] = catbox
+    res.append(v)
+
+with open('scripts/p100_videos_result.json', 'w', encoding='utf-8') as f:
+    json.dump(res, f, ensure_ascii=False, indent=2)
+
+print("FINALIZADO COM SUCESSO!")

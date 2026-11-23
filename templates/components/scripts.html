@@ -1,0 +1,88 @@
+  <!-- SCRIPTS GLOBAIS -->
+  <script>
+    const PRODUTO_ATUAL = {{PRODUTO_ATUAL_JS}};
+    window.PRODUTO_ATUAL = PRODUTO_ATUAL;
+
+    function handleBuyNow() {
+      if (typeof handleAddToCartWithVariacoes === 'function' && typeof PRODUTO_ATUAL !== 'undefined') {
+        handleAddToCartWithVariacoes(PRODUTO_ATUAL, true);
+      } else if (typeof irDiretoAoCheckoutComProduto === 'function' && typeof PRODUTO_ATUAL !== 'undefined') {
+        irDiretoAoCheckoutComProduto(PRODUTO_ATUAL, '', 1);
+      } else {
+        if (typeof PRODUTO_ATUAL !== 'undefined') addToCart(PRODUTO_ATUAL);
+        window.location.href = '../resumo.html';
+      }
+    }
+
+    function toggleBookmark(btn) {
+      const svg = btn.querySelector('svg');
+      if (svg.getAttribute('fill') === 'currentColor') {
+        svg.setAttribute('fill', 'none');
+      } else {
+        svg.setAttribute('fill', 'currentColor');
+      }
+    }
+
+    function openProtectionModal() {
+      const m = document.getElementById('protection-modal');
+      if (m) m.classList.add('is-active');
+    }
+    function closeProtectionModal(e) {
+      if (e && e.target !== e.currentTarget && !e.target.classList.contains('tt-modal-close') && !e.target.classList.contains('tt-modal-confirm-btn')) return;
+      const m = document.getElementById('protection-modal');
+      if (m) m.classList.remove('is-active');
+    }
+
+    function openReviewModal(src) {
+      const m = document.getElementById('review-modal');
+      const img = document.getElementById('review-modal-img');
+      if (m && img) {
+        img.src = src;
+        m.style.display = 'flex';
+      }
+    }
+    function closeReviewModal(e) {
+      const m = document.getElementById('review-modal');
+      if (m) m.style.display = 'none';
+    }
+
+    window.toggleDescricaoCompleta = function() {
+      var container = document.getElementById('desc-expandable-container');
+      var btn = document.getElementById('btn-toggle-desc');
+      var text = document.getElementById('btn-toggle-desc-text');
+      if (!container || !btn) return;
+
+      var isExpanded = container.classList.contains('is-expanded');
+      if (isExpanded) {
+        container.classList.remove('is-expanded');
+        btn.classList.remove('is-expanded');
+        if (text) text.textContent = 'Ver mais';
+      } else {
+        container.classList.add('is-expanded');
+        btn.classList.add('is-expanded');
+        if (text) text.textContent = 'Ver menos';
+      }
+    };
+
+    window.toggleProductDetails = function(btn) {
+      var hiddenRows = document.querySelectorAll('.details-attributes-grid .toggleable-row');
+      var span = btn.querySelector('span');
+      var isExpanding = false;
+      hiddenRows.forEach(function(row) {
+        if (row.classList.contains('is-hidden')) {
+          row.classList.remove('is-hidden');
+          row.style.setProperty('display', 'flex', 'important');
+          isExpanding = true;
+        } else {
+          row.classList.add('is-hidden');
+          row.style.setProperty('display', 'none', 'important');
+        }
+      });
+      if (span) {
+        span.innerText = isExpanding ? 'Ver menos' : 'Ver mais';
+      }
+    };
+  </script>
+  <script src="/tracker.js"></script>
+  <script src="../js/app.js?v=20261121_app_v1"></script>
+  <script src="../js/videos-criadores-v3.js?v=20261121_prod_v3"></script>

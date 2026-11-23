@@ -1,0 +1,38 @@
+[
+  {
+    "id": "c1",
+    "name": "J**a P**s",
+    "avatar": "../img/reviews-avatars/review-user-113-c1.jpg",
+    "date": "22/10",
+    "variation": "Duplo Acrílico Transparente",
+    "comment": "Lindo demais, super elegante na cozinha. Meus gatos se adaptaram no primeiro dia, a altura inclinada ajuda muito na digestão.",
+    "photos": [
+      "../img/review-113-c1-1.jpg",
+      "../img/review-113-c1-2.jpg"
+    ]
+  },
+  {
+    "id": "c2",
+    "name": "B**a R**a",
+    "avatar": "../img/reviews-avatars/review-user-113-c2.jpg",
+    "date": "08/10",
+    "variation": "Duplo Acrílico Transparente",
+    "comment": "Material acrílico bem espesso e resistente, as tigelas de inox são fáceis de tirar e lavar. Meu cachorro amou.",
+    "photos": [
+      "../img/review-113-c2-1.jpg",
+      "../img/review-113-c2-2.jpg"
+    ]
+  },
+  {
+    "id": "c3",
+    "name": "C**a N**s",
+    "avatar": "../img/reviews-avatars/review-user-113-c3.jpg",
+    "date": "15/09",
+    "variation": "Duplo Acrílico Transparente",
+    "comment": "Chegou super bem embalado com plástico bolha reforçado. Acabamento impecável, sem rebarbas. Super recomendo!",
+    "photos": [
+      "../img/review-113-c3-1.jpg",
+      "../img/review-113-c3-2.jpg"
+    ]
+  }
+]

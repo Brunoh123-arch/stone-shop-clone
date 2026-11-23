@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loaders Oficiais TikTok Shop</title>
+  <link rel="stylesheet" href="../css/style.css?v=1794176299347">
+  <style>
+    body {
+      background: #0f0f12;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    p.subtitle {
+      color: #888899;
+      font-size: 13px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 680px;
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      .demo-grid { grid-template-columns: 1fr; }
+    }
+    .demo-card {
+      background: #181920;
+      border: 1px solid #282936;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .demo-card h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .demo-card p {
+      color: #888899;
+      font-size: 12px;
+      margin-bottom: 18px;
+      line-height: 1.4;
+      min-height: 34px;
+    }
+    .preview-box {
+      height: 120px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.3);
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+    .btn-test {
+      background: #FE2C55;
+      color: #fff;
+      border: none;
+      padding: 11px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn-test:active {
+      opacity: 0.8;
+    }
+  </style>
+  <!-- TikTok Shop Oficial Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAAAAAAAAQCEeRdzAAAFZUlEQVR4nKWXbWwURRjHf7O7d30vxRZaihUIBD+0JCo2pkIBwQBVEmNLMRFikwZCgPClBjTEoOAHoJKgEcKbQVtoQAIUiyKEBEhVAthwRRQiBRG19IW3chRK6e2Ome21XLfX3l35J3t7u/vM/P/PMzPPPCOIAAKhbikSORp4LuCTCVwTiL/dLvddn8+HKdWr0DDC5H4GyJfIAuAlYGgQG0simzvMjhqJ3A38ANx7WgFuoARYCqQ7vknHswakWZY1C1DXv0ApsNkfoYgFjAN2AC/3QeiE83sG8CXwjqZrxVLKOmnJ0AJ0Q8c0zbeQlAGDwiAOJWiiZVo/ISjSdO2oZVr9CBAo8llIvgWiQpELoRGf8az9/7HXS3tLS19CUpFUWpb1tlOE4TDODpdcITYlhdW795CVlUXi8bPMmzePugeN9mTo6afdVwyScinlBOBKMAExSHvMY8MNu5pZz8fFMjExgehpU5k7eRKfHN7buViDR2KotKQa2gnBBCwDsiIdc58leQRExwqKPlrOluM/0vjofl/mqu9XgYXA1kABKcASBgAhpd9ji5E549l1cB9FRUXUNzX210w5Ww60dQmY608uEc94Hb8AXQMpmTZjOmfO17LzwD7Ky8u5dPqss4niUJk0H0GFoekalmnNYYDQpLDD+KjxJtFJSchoF8NSU/lw0RKmRqVTcLqQVkxahMM9QYFhGBWGZVrDgMyBCrCEZgtoP3WB/VVVzNz4KcnxCTZZtEsQhYu2YIlQku3r8MWrtmPCSjhDUhmblUV6chonjx+HOw1oUmIJaTeM092UlX3FxuojLFu2jPxRr5BU1wxCV5tEMKQBI5SAzkziQHfEXG5yCwvJW7yQ7OxsXr+ts6K4mDVHdhFrqv2xs3cpIEaP5di1PylYPJ8XiWJwzGCaRDuPlElPEepJcY+2f4IJ6LKfUrKckpISZgwdbO9MxEGaS+tW2bUKhGoQ4KqHdmjrdyUoRPezGQnGTZ/J+wvn84Ii90ruezy4D3tIrK23LXyGwBLCmfUiggFc7Unr9z4mljcLZzN5+HA7NfJFBZtLS9nU+js+f3w6DB1dCvSB83uVgP8C33QHMS2NrPHjSdAMfHU3WL3vG6paL/BPgEoVdk0bEL3qQQWu3vBvDPd6rYQoN8mDk1SmwXvnFr/U19E9ot1WAqF3TkNNCPuKIJU1ILiuElGDZVp/+HP0E9xrgQetttakjHTciUk8vG37343UkSOIS0iwXXl814th+SKJwVld172GZdlTaG8vAQ3NXPL8xszMTLT0FBat+IDqBSpj+zFmFPlLF5E5ZBjRwOlzHrz0uQn1hmS/aZoY/pBVACt67gcmZVu3MH/ObOLdLt6Y/y4Hx2aw/ugxXC4XudOmkpOTwyCp8fDcZQ6dOEYz/gg4067T986Jf0DZdC3DW8AmYFWg5fmfq1n58Uo2rFljP782KZcpk3J57K8FVNXCmUaq123m4MUzdid+70LhM7UTqj+G42Whsyb4fO1avPVNlK5eRfLIDFu+TXyjnTaPh5Prt1F5spKLnf2Fgmp+qqsWcApoQ1CM5ERnvnsiYsfOrzm3p5K8vDxmJ49GSknTpSvU1NSwwbzKg66u+/dcWTQLTRQFVseGw+hXf23Qqy6s7Wihtmo36/yN1DD0QGjyhwjeC6wHewtQiUXXvrMsazaSXcF2SXvJ9csVlPy2Ite0UGU5qOJE3b4HciM8mAQjVqgGFiC57CQPKiAAF/zVa7hHM2cx/BfYI7btac6Gj4G1wHa7hoOuw+mQIIQKNwFVBKrD6SG12YToP+zT8W0hxHZN07abpqkqaFVFOY/n19Wl6/pNleHCxf9wyvJIDG8F0wAAAABJRU5ErkJggg==">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="preload" as="image" href="../decalque/decalque-oferta.jpg?v=1111" fetchpriority="high">
+  <link rel="preload" as="image" href="../img/banner-1111-modal.webp" fetchpriority="high">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter (Oficial TikTok Parity) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+</head>
+<body>
+
+  <h1>Carregamentos Oficiais TikTok Shop</h1>
+  <p class="subtitle">Normal sem texto nas ações gerais • Quadrado preto exclusivo no PIX</p>
+
+  <div class="demo-grid">
+    <!-- 1. O NORMAL SEM TEXTO (GERAL) -->
+    <div class="demo-card">
+      <h3>1. Normal sem texto (Geral)</h3>
+      <p>Usado ao clicar em "Comprar agora", no carrinho e transições. Apenas as bolinhas puras.</p>
+      <div class="preview-box">
+        <div class="tiktok-balls tiktok-balls-lg">
+          <div class="ball ball-cyan"></div>
+          <div class="ball ball-pink"></div>
+        </div>
+      </div>
+      <button class="btn-test" onclick="window.showTikTokNormal(2500)">Testar Normal (2.5s)</button>
+    </div>
+
+    <!-- 2. O QUADRADO PRETO (EXCLUSIVO PIX) -->
+    <div class="demo-card">
+      <h3>2. Quadrado Preto (Exclusivo PIX)</h3>
+      <p>Usado exclusivamente ao clicar em "Pagar com PIX" no resumo do pedido.</p>
+      <div class="preview-box">
+        <div class="hud-box">
+          <div class="tiktok-balls">
+            <div class="ball ball-cyan"></div>
+            <div class="ball ball-pink"></div>
+          </div>
+          <span>Gerando PIX...</span>
+        </div>
+      </div>
+      <button class="btn-test" onclick="window.showTikTokHUD('Gerando PIX...', 2500)">Testar HUD PIX (2.5s)</button>
+    </div>
+  </div>
+
+  <script src="../js/catalogo.js"></script>
+  <script src="../js/app.js?v=1794176299347"></script>
+</body>
+</html>

@@ -1,0 +1,2981 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<script src="../js/anti-clone-guard.js?v=20261020"></script>
+<!-- TikTok Pixel Base Code -->
+<script>
+!function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js',o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement('script');s.type='text/javascript',s.async=!0,s.src=r+'?sdkid='+e+'&lib='+t;var a=d.getElementsByTagName('script')[0];a.parentNode.insertBefore(s,a)},ttq.load('DBD7ASBC77UF91061F1G'),ttq.page()}(window,document,'ttq');
+</script>
+<script src="../js/tiktok-events.js"></script>
+<!-- End TikTok Pixel Base Code -->
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo do Pedido - Stone Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .input-error {
+      border: 1.5px solid #fe2c55 !important;
+      border-bottom: 1.5px solid #fe2c55 !important;
+    }
+
+    .error-text {
+      color: #fe2c55;
+      font-size: 11px;
+      padding: 4px 16px;
+      background: #fff;
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: 6px;
+      right: 4px;
+      background: #fe2c55;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+      box-sizing: border-box;
+      line-height: 1;
+      border: 1.5px solid #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      font-size: 14px
+    }
+
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .app-container {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    /* HEADER */
+    .page-header {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      border-bottom: 1px solid #f2f2f2
+    }
+
+    .page-header a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      text-decoration: none;
+      color: #111;
+      flex-shrink: 0
+    }
+
+    .page-header h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+      flex: 1;
+      text-align: center
+    }
+
+    .header-spacer {
+      width: 40px;
+      flex-shrink: 0
+    }
+
+    /* CONTENT */
+    .content {
+      flex: 1;
+      padding-bottom: 140px
+    }
+
+    /* ENDEREÇO DA FOTO */
+    .address-section {
+      background: #fff;
+      padding: 14px 16px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .address-pin-icon {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .address-details {
+      flex: 1;
+    }
+
+    .address-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .address-text {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .address-arrow {
+      align-self: center;
+      color: #aaa;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* FITA DIVISÓRIA COLORIDA */
+    .colored-divider {
+      height: 4px;
+      background-image: repeating-linear-gradient(45deg, #00c2cb 0px, #00c2cb 12px, #fff 12px, #fff 18px, #fe2c55 18px, #fe2c55 30px, #fff 30px, #fff 36px);
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    /* ITEM CARD */
+    .item-card {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .store-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 12px;
+    }
+
+    .add-note {
+      font-size: 12px;
+      color: #999;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .product-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .product-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-name {
+      font-size: 13px;
+      color: #333;
+      line-height: 1.35;
+      font-weight: 500;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .product-variacao {
+      font-size: 12px;
+      color: #8c8c8c;
+      margin-bottom: 6px;
+    }
+
+    .badge-devolucao {
+      display: inline-flex;
+      align-items: center;
+      gap: 4.5px;
+      background: #f5f6f8 !important;
+      border-radius: 4px !important;
+      padding: 2.5px 6.5px !important;
+      font-size: 11.5px !important;
+      color: #474d57 !important;
+      font-weight: 500 !important;
+      line-height: 1.2 !important;
+      margin: 0 !important;
+    }
+
+    .price-qty-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .price-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-current {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fe2c55;
+      position: static !important;
+      left: auto !important;
+      top: auto !important;
+      display: inline-flex !important;
+      align-items: baseline;
+      gap: 1px;
+      white-space: nowrap;
+    }
+
+    .price-original-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: #b5b5b5;
+      margin-top: 1px;
+    }
+
+    .badge-discount {
+      background: #fff0f3;
+      color: #fe2c55;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 3px;
+      border-radius: 2px;
+    }
+
+    .qty-display {
+      background: #f7f7f7;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      border: 1px solid #e2e2e2;
+    }
+
+    .qty-btn {
+      width: 28px;
+      height: 28px;
+      border: none;
+      background: none;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qty-val {
+      padding: 0 10px;
+      font-weight: 600;
+      border-left: 1px solid #e2e2e2;
+      border-right: 1px solid #e2e2e2;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    /* PRAZO ENTREGA */
+    .delivery-banner {
+      background: #f7fafc;
+      padding: 10px 12px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .delivery-left {
+      font-weight: 500;
+      color: #222;
+    }
+
+    .delivery-right {
+      font-weight: 700;
+      color: #111;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* CUPONS DO TIKTOK SHOP */
+    .tiktok-coupons-section {
+      background: #fff;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .coupon-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .coupon-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .coupon-badge-pink {
+      background: #fff0f2;
+      color: #fe2c55;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .coupon-badge-blue {
+      background: #ebf5ff;
+      color: #2b80ff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .bonus-switch {
+      width: 44px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      position: relative;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .bonus-switch.active {
+      background: #2fe3dc !important; /* Ciano Oficial TikTok Shop */
+    }
+
+    @keyframes tiktokMoneyDrop {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, -6px, 0) scale(0.65) rotate(0deg);
+      }
+      20% {
+        opacity: 1;
+        transform: translate3d(0, 16px, 0) scale(1) rotate(calc(var(--rot-end, 10deg) * 0.3));
+      }
+      70% {
+        opacity: 0.95;
+        transform: translate3d(0, calc(var(--end-y, 80px) * 0.75), 0) scale(0.98) rotate(calc(var(--rot-end, 10deg) * 0.8));
+      }
+      100% {
+        opacity: 0;
+        transform: translate3d(0, var(--end-y, 80px), 0) scale(0.88) rotate(var(--rot-end, 10deg));
+      }
+    }
+    .bonus-switch.active.old {
+      background: #2ea84f;
+    }
+
+    .bonus-switch-thumb {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform .2s;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .bonus-switch.active .bonus-switch-thumb {
+      transform: translateX(20px);
+    }
+
+    /* RESUMO DO PEDIDO FINANCEIRO */
+    .summary-finance {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .summary-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .summary-group {
+      margin-bottom: 10px;
+    }
+
+    .summary-group-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 6px;
+      padding-left: 12px;
+    }
+
+    .summary-row.bold {
+      font-weight: 700;
+      color: #111;
+      padding-left: 0;
+      font-size: 14px;
+      border-top: 1px solid #f2f2f2;
+      padding-top: 10px;
+      margin-top: 8px;
+    }
+
+    .cashback-banner {
+      background: #fbf8eb;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #8a6d1c;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    /* FORMA DE PAGAMENTO */
+    .payment-section {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .payment-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #f5f5f5;
+      cursor: pointer;
+    }
+
+    .payment-option:last-child {
+      border-bottom: none;
+    }
+
+    .payment-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .payment-radio {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .payment-radio.active {
+      border-color: #fe2c55;
+      background: #fe2c55;
+    }
+
+    .payment-radio.active::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    /* FOOTER FIXADO DE ACORDO COM A FOTO FIXADA */
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      background: #fff;
+      border-top: 1px solid #eee;
+      padding: 10px 16px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 100;
+      box-sizing: border-box;
+    }
+
+    .footer-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .footer-total-label {
+      font-size: 15px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .footer-total-val {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fe2c55;
+    }
+
+    .fazer-pedido-btn {
+      background: #fe2c55;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      width: 100%;
+      height: 48px;
+      min-height: 48px;
+      max-height: 48px;
+      padding: 0 16px;
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: none;
+      box-sizing: border-box;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      transition: opacity .15s ease;
+    }
+
+    .fazer-pedido-btn:active {
+      opacity: 0.9;
+    }
+
+    .fazer-pedido-btn .btn-main-label {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .fazer-pedido-btn #coupon-timer-txt {
+      font-size: 11px;
+      font-weight: 400;
+      opacity: 0.92;
+      margin-top: 1px;
+      line-height: 1.2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      color: #fff;
+    }
+
+    .fazer-pedido-btn #coupon-clock-digits {
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: 'tnum';
+      font-weight: 500;
+    }
+
+    .fazer-pedido-btn #coupon-clock-digits {
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: 'tnum';
+      font-weight: 500;
+    }
+
+    /* TIKTOK STYLE LOADER SCREEN */
+  
+    /* ESTILOS TIKTOK SHOP PERFEITOS */
+    .badge-oferta-relampago {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #fdebf1 !important;
+      color: #9e0b35 !important;
+      font-size: 11.5px !important;
+      font-weight: 700 !important;
+      padding: 2.5px 7px !important;
+      border-radius: 4px !important;
+      line-height: 1.2 !important;
+      margin: 0 !important;
+      letter-spacing: -0.1px !important;
+    }
+
+    .badge-devolucao {
+      display: inline-flex;
+      align-items: center;
+      gap: 4.5px;
+      background: #f5f6f8 !important;
+      border-radius: 4px !important;
+      padding: 2.5px 6.5px !important;
+      font-size: 11.5px !important;
+      color: #474d57 !important;
+      font-weight: 500 !important;
+      line-height: 1.2 !important;
+      margin: 0 !important;
+    }
+
+    .card-brand-tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 4px;
+      border-radius: 2px;
+      border: 1px solid #ddd;
+      color: #555;
+      background: #fafafa;
+      line-height: 1;
+    }
+
+    .badge-aprovacao-imediata {
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .legal-notice {
+      font-size: 11px;
+      color: #888;
+      line-height: 1.4;
+      padding: 12px 16px 20px 16px;
+      text-align: center;
+      background: #f5f5f5;
+    }
+
+    .legal-notice a {
+      color: #555;
+      text-decoration: underline;
+    }
+
+
+    /* SISTEMA DE LOADING OFICIAL TIKTOK SHOP HUD */
+    .tiktok-loader-overlay,
+    #tiktok-global-loader {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      z-index: 9999999 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      pointer-events: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-sizing: border-box !important;
+      background: transparent !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+    .hud-box,
+    .tiktok-hud-box {
+      width: 122px !important;
+      height: 105px !important;
+      min-width: 122px !important;
+      min-height: 105px !important;
+      max-width: 122px !important;
+      max-height: 105px !important;
+      background: rgba(46, 46, 46, 0.93) !important;
+      border: none !important;
+      border-radius: 16px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      padding: 16px 8px 14px 8px !important;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22) !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      animation: ttHudScaleIn 0.16s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      box-sizing: border-box !important;
+    }
+    @keyframes ttHudScaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .hud-box .tiktok-balls,
+    .tiktok-hud-box .tiktok-balls {
+      position: relative !important;
+      width: 28px !important;
+      height: 13px !important;
+      display: inline-block !important;
+      box-sizing: border-box !important;
+    }
+    .hud-box .tiktok-balls .ball,
+    .tiktok-hud-box .tiktok-balls .ball {
+      position: absolute !important;
+      width: 13px !important;
+      height: 13px !important;
+      border-radius: 50% !important;
+      top: 0 !important;
+      box-sizing: border-box !important;
+    }
+    .hud-box .tiktok-balls .ball-cyan,
+    .tiktok-hud-box .tiktok-balls .ball-cyan {
+      background-color: #25F4EE !important;
+      left: 0 !important;
+      animation: ballCyanHud 0.91s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite !important;
+    }
+    .hud-box .tiktok-balls .ball-pink,
+    .tiktok-hud-box .tiktok-balls .ball-pink {
+      background-color: #FE2C55 !important;
+      right: 0 !important;
+      animation: ballPinkHud 0.91s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite !important;
+    }
+    @keyframes ballCyanHud {
+      0% { transform: translateX(0) scale(1); z-index: 2; }
+      50% { transform: translateX(15px) scale(1.1); z-index: 2; }
+      50.01% { z-index: 1; }
+      100% { transform: translateX(0) scale(0.9); z-index: 1; }
+    }
+    @keyframes ballPinkHud {
+      0% { transform: translateX(0) scale(0.9); z-index: 1; }
+      50% { transform: translateX(-15px) scale(0.9); z-index: 1; }
+      50.01% { z-index: 2; }
+      100% { transform: translateX(0) scale(1.1); z-index: 2; }
+    }
+    .hud-box span,
+    .tiktok-hud-box span {
+      font-size: 12px !important;
+      color: #ffffff !important;
+      font-weight: 500 !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      letter-spacing: -0.15px !important;
+      white-space: nowrap !important;
+      margin: 0 !important;
+      margin-top: 2px !important;
+    }
+
+
+    /* ANIMAÇÃO DE PULSO SUAVE DO CONTADOR DE PREÇO */
+    @keyframes ttPricePop {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+    .price-animating {
+      display: inline-block;
+      animation: ttPricePop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+  </style>
+    <!-- TikTok Shop Oficial Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAAAAAAAAQCEeRdzAAAFZUlEQVR4nKWXbWwURRjHf7O7d30vxRZaihUIBD+0JCo2pkIBwQBVEmNLMRFikwZCgPClBjTEoOAHoJKgEcKbQVtoQAIUiyKEBEhVAthwRRQiBRG19IW3chRK6e2Ome21XLfX3l35J3t7u/vM/P/PMzPPPCOIAAKhbikSORp4LuCTCVwTiL/dLvddn8+HKdWr0DDC5H4GyJfIAuAlYGgQG0simzvMjhqJ3A38ANx7WgFuoARYCqQ7vknHswakWZY1C1DXv0ApsNkfoYgFjAN2AC/3QeiE83sG8CXwjqZrxVLKOmnJ0AJ0Q8c0zbeQlAGDwiAOJWiiZVo/ISjSdO2oZVr9CBAo8llIvgWiQpELoRGf8az9/7HXS3tLS19CUpFUWpb1tlOE4TDODpdcITYlhdW795CVlUXi8bPMmzePugeN9mTo6afdVwyScinlBOBKMAExSHvMY8MNu5pZz8fFMjExgehpU5k7eRKfHN7buViDR2KotKQa2gnBBCwDsiIdc58leQRExwqKPlrOluM/0vjofl/mqu9XgYXA1kABKcASBgAhpd9ji5E549l1cB9FRUXUNzX210w5Ww60dQmY608uEc94Hb8AXQMpmTZjOmfO17LzwD7Ky8u5dPqss4niUJk0H0GFoekalmnNYYDQpLDD+KjxJtFJSchoF8NSU/lw0RKmRqVTcLqQVkxahMM9QYFhGBWGZVrDgMyBCrCEZgtoP3WB/VVVzNz4KcnxCTZZtEsQhYu2YIlQku3r8MWrtmPCSjhDUhmblUV6chonjx+HOw1oUmIJaTeM092UlX3FxuojLFu2jPxRr5BU1wxCV5tEMKQBI5SAzkziQHfEXG5yCwvJW7yQ7OxsXr+ts6K4mDVHdhFrqv2xs3cpIEaP5di1PylYPJ8XiWJwzGCaRDuPlElPEepJcY+2f4IJ6LKfUrKckpISZgwdbO9MxEGaS+tW2bUKhGoQ4KqHdmjrdyUoRPezGQnGTZ/J+wvn84Ii90ruezy4D3tIrK23LXyGwBLCmfUiggFc7Unr9z4mljcLZzN5+HA7NfJFBZtLS9nU+js+f3w6DB1dCvSB83uVgP8C33QHMS2NrPHjSdAMfHU3WL3vG6paL/BPgEoVdk0bEL3qQQWu3vBvDPd6rYQoN8mDk1SmwXvnFr/U19E9ot1WAqF3TkNNCPuKIJU1ILiuElGDZVp/+HP0E9xrgQetttakjHTciUk8vG37343UkSOIS0iwXXl814th+SKJwVld172GZdlTaG8vAQ3NXPL8xszMTLT0FBat+IDqBSpj+zFmFPlLF5E5ZBjRwOlzHrz0uQn1hmS/aZoY/pBVACt67gcmZVu3MH/ObOLdLt6Y/y4Hx2aw/ugxXC4XudOmkpOTwyCp8fDcZQ6dOEYz/gg4067T986Jf0DZdC3DW8AmYFWg5fmfq1n58Uo2rFljP782KZcpk3J57K8FVNXCmUaq123m4MUzdid+70LhM7UTqj+G42Whsyb4fO1avPVNlK5eRfLIDFu+TXyjnTaPh5Prt1F5spKLnf2Fgmp+qqsWcApoQ1CM5ERnvnsiYsfOrzm3p5K8vDxmJ49GSknTpSvU1NSwwbzKg66u+/dcWTQLTRQFVseGw+hXf23Qqy6s7Wihtmo36/yN1DD0QGjyhwjeC6wHewtQiUXXvrMsazaSXcF2SXvJ9csVlPy2Ite0UGU5qOJE3b4HciM8mAQjVqgGFiC57CQPKiAAF/zVa7hHM2cx/BfYI7btac6Gj4G1wHa7hoOuw+mQIIQKNwFVBKrD6SG12YToP+zT8W0hxHZN07abpqkqaFVFOY/n19Wl6/pNleHCxf9wyvJIDG8F0wAAAABJRU5ErkJggg==">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="preload" as="image" href="../decalque/decalque-oferta.jpg?v=1111" fetchpriority="high">
+  <link rel="preload" as="image" href="../img/banner-1111-modal.webp" fetchpriority="high">
+
+<style>
+/* CSS OFICIAL TIKTOK SHOP MODAL DE ENDEREÇO (PERFECT FLEX LAYOUT) */
+.tiktok-address-screen::-webkit-scrollbar,
+.tiktok-address-screen *::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+.tiktok-address-screen,
+.tiktok-address-screen * {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.tiktok-address-screen input,
+.tiktok-address-screen select {
+  font-size: 16px !important;
+  color: #161823 !important;
+  line-height: 22px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  box-sizing: border-box !important;
+}
+.tiktok-address-screen input::placeholder,
+.tiktok-address-screen select::placeholder {
+  color: #a0a0a5 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+.tiktok-toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.tiktok-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #e5e5e5;
+  transition: .25s ease;
+  border-radius: 28px;
+}
+.tiktok-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  transition: .25s ease;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+}
+input:checked + .tiktok-toggle-slider {
+  background-color: #20d5ec !important;
+}
+input:checked + .tiktok-toggle-slider:before {
+  transform: translateX(20px);
+}
+</style>
+
+</head>
+
+<body>
+  <!-- CRITICAL TIKTOK SPINNER (TRANSLÚCIDO E ULTRA-RÁPIDO) -->
+  <div id="tt-instant-loader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.42);backdrop-filter:blur(3.5px);-webkit-backdrop-filter:blur(3.5px);z-index:99999999;display:flex;align-items:center;justify-content:center;transition:opacity 0.12s ease,visibility 0.12s ease;pointer-events:none;">
+    <div style="position:relative;width:44px;height:20px;">
+      <div style="position:absolute;width:20px;height:20px;border-radius:50%;background:#25F4EE;left:0;animation:ttBallCyan 0.85s cubic-bezier(0.45,0.05,0.55,0.95) infinite;"></div>
+      <div style="position:absolute;width:20px;height:20px;border-radius:50%;background:#FE2C55;right:0;animation:ttBallPink 0.85s cubic-bezier(0.45,0.05,0.55,0.95) infinite;"></div>
+    </div>
+  </div>
+  <style>
+    @keyframes ttBallCyan{0%{transform:translateX(0) scale(1);z-index:2}50%{transform:translateX(24px) scale(1.12);z-index:2}50.01%{z-index:1}100%{transform:translateX(0) scale(0.88);z-index:1}}
+    @keyframes ttBallPink{0%{transform:translateX(0) scale(0.88);z-index:1}50%{transform:translateX(-24px) scale(0.88);z-index:1}50.01%{z-index:2}100%{transform:translateX(0) scale(1.12);z-index:2}}
+  </style>
+  <script>
+    (function(){
+      var el = document.getElementById('tt-instant-loader');
+      if(!el) return;
+      var dismissed = false;
+      function dismiss(){
+        if(dismissed) return;
+        dismissed = true;
+        el.style.opacity = '0';
+        el.style.visibility = 'hidden';
+        setTimeout(function(){ if(el && el.parentNode) el.parentNode.removeChild(el); }, 140);
+      }
+      if(document.readyState !== 'loading'){
+        dismiss();
+      } else {
+        document.addEventListener('DOMContentLoaded', dismiss, { passive: true });
+        window.addEventListener('load', dismiss, { passive: true });
+      }
+      setTimeout(dismiss, 80);
+    })();
+  </script>
+
+  <div class="app-container">
+
+    <!-- HEADER -->
+    <header class="page-header" style="background:#fff; height:50px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid #f0f0f0; position:sticky; top:0; z-index:100;">
+      <a href="javascript:voltarDoResumo()" style="display:flex; align-items:center; text-decoration:none; color:#111;">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </a>
+      <div style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:700; color:#222;">
+        <!-- Escudo Dourado/Marrom Oficial Garantia de Entrega -->
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+          <path d="M12 2L4 5V11C4 16.5 7.4 21.6 12 22.8C16.6 21.6 20 16.5 20 11V5L12 2Z" fill="#b07d2b"/>
+          <path d="M9 11.5L11 13.5L15 9.5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Garantia de entrega</span>
+      </div>
+      <div style="width: 24px; height: 24px;" aria-hidden="true"></div>
+    </header>
+
+    <div class="content" style="padding-bottom: 130px;">
+
+      <!-- ENDEREÇO -->
+      <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:14px 16px; cursor:pointer;">
+        <!-- Preenchido dinamicamente por renderAddress() -->
+      </div>
+
+      <!-- DIVISÓRIA LISTRADA OFICIAL TIKTOK SHOP -->
+      <div class="colored-divider"></div>
+
+      <!-- ITENS DA COMPRA (Contém apenas 1 frete grátis integrado dentro do card) -->
+      <div id="itens-section">
+        <!-- Preenchido via JS -->
+      </div>
+
+      <!-- ORDER BUMP -->
+      <div id="order-bump-section"
+        style="display: none; background: #fff; margin-bottom: 8px; padding: 14px 16px; border-bottom: 1px solid #f2f2f2; transition: all 0.2s;">
+        <div style="font-size: 14px; font-weight: 700; color: #111; margin-bottom: 12px;">Você também pode adicionar</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+          <img src="../logoorderbumps/adaptador.png" alt="Adaptador" style="width: 64px; height: 64px; object-fit: cover;">
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+            <div style="font-size: 13px; color: #333; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+              Adaptador de Energia USB-C Apple 70W + Cabo Carregador Apple USB-C 240W (2 m)</div>
+            <div style="margin-top: 6px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: baseline; gap: 4px;">
+                <span style="font-size: 15px; font-weight: 700; color: #fe2c55;">R$ 34,90</span>
+                <span style="font-size: 12px; color: #b5b5b5; text-decoration: line-through;">R$ 449,90</span>
+              </div>
+              <div style="display: flex; align-items: stretch; margin-top: 2px;">
+                <div style="background: linear-gradient(90deg, #FA5D21 0%, #FA5D21 55%, rgba(250, 93, 33, 0.15) 100%); color: #fff; font-size: 10px; font-weight: 700; padding: 0 6px; border-radius: 4px 0 0 4px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">-85%</div>
+                <button id="btn-add-bump" onclick="toggleOrderBump()" style="padding: 4px 10px; border: none; border-radius: 0 4px 4px 0; background: #fe2c55; color: #fff; font-size: 11px; font-weight: 700; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; justify-content: center; box-sizing: border-box; margin: 0;">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 100%; height: 1px; background: #eee; margin: 16px 0;"></div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-top: 16px;">
+          <img src="../logoorderbumps/pelicula.JPEG" alt="Pelicula" style="width: 64px; height: 64px; object-fit: cover; border-radius: 6px;">
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+            <div id="pelicula-title" style="font-size: 13px; color: #333; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+              CrystalArmor Kit com 2 Películas Anti-Espião 3D 9H + Aplicador</div>
+            <div style="margin-top: 6px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: baseline; gap: 4px;">
+                <span style="font-size: 15px; font-weight: 700; color: #fe2c55;">R$ 17,90</span>
+                <span style="font-size: 12px; color: #b5b5b5; text-decoration: line-through;">R$ 57,90</span>
+              </div>
+              <div style="display: flex; align-items: stretch; margin-top: 2px;">
+                <div style="background: linear-gradient(90deg, #FA5D21 0%, #FA5D21 55%, rgba(250, 93, 33, 0.15) 100%); color: #fff; font-size: 10px; font-weight: 700; padding: 0 6px; border-radius: 4px 0 0 4px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">-77%</div>
+                <button id="btn-add-bump-pelicula" onclick="toggleOrderBumpPelicula()" style="padding: 4px 10px; border: none; border-radius: 0 4px 4px 0; background: #fe2c55; color: #fff; font-size: 11px; font-weight: 700; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; justify-content: center; box-sizing: border-box; margin: 0;">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUPONS & BÔNUS DO TIKTOK SHOP -->
+      <div class="tiktok-coupons-section" style="background:#fff; padding:14px 16px; margin-bottom:8px; display:flex; flex-direction:column; gap:12px;">
+        <div class="coupon-row" onclick="openAddressModalLocal()" style="display:flex; align-items:center; justify-content:space-between; cursor:pointer;">
+          <div class="coupon-label" style="display:flex; align-items:center; gap:8px;">
+            <svg viewBox="0 0 24 16" width="19" height="13" fill="none" style="flex-shrink:0; vertical-align:middle; display:inline-block;">
+              <path d="M2 3.5C2 2.67 2.67 2 3.5 2H20.5C21.33 2 22 2.67 22 3.5V5.5C20.8 5.5 19.8 6.5 19.8 7.7C19.8 8.9 20.8 9.9 22 9.9V12.5C22 13.33 21.33 14 20.5 14H3.5C2.67 14 2 13.33 2 12.5V9.9C3.2 9.9 4.2 8.9 4.2 7.7C4.2 6.5 3.2 5.5 2 5.5V3.5Z" stroke="#fe2c55" stroke-width="2" stroke-linejoin="round" fill="none"/>
+              <path d="M8.5 7.7L10.5 9.7L15 5.2" stroke="#fe2c55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-size:14px; font-weight:600; color:#111;">Desconto do TikTok Shop</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span class="coupon-badge-blue" style="background:#e0f7fa; color:#00838f; font-size:11px; font-weight:700; padding:2px 6px; border-radius:3px;">- R$ 20,00</span>
+            <span class="coupon-badge-pink" id="coupon-pink-val" style="background:#fff0f2; color:#fe2c55; font-size:11px; font-weight:700; padding:2px 6px; border-radius:3px;">- R$ 10,72</span>
+            <span style="color:#aaa;font-weight:bold;font-size:16px;">›</span>
+          </div>
+        </div>
+        <div class="coupon-row" style="display:flex; align-items:center; justify-content:space-between; cursor:pointer;" onclick="toggleBonus()">
+          <div class="coupon-label" style="display:flex; align-items:flex-start; gap:9px;">
+            <img src="../img/tiktok-bonus-notes.png" alt="Bônus" style="width:24px; height:17px; object-fit:contain; flex-shrink:0; vertical-align:middle; display:inline-block;">
+            <div style="display:flex; flex-direction:column; line-height:1.25;">
+              <span style="font-size:13.5px; font-weight:600; color:#111;">Pagamento com o bônus</span>
+              <span style="font-size:13.5px; font-weight:600; color:#111; display:flex; align-items:center; gap:4px; margin-top:1px;">
+                TikTok Shop
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#999" stroke-width="2" style="vertical-align:middle; display:inline-block;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span id="bonus-val-label" style="color:#999; font-size:13px; font-weight:500;">-R$ 0,00</span>
+            <div class="bonus-switch" id="bonus-switch" onclick="event.stopPropagation(); toggleBonus();">
+              <div class="bonus-switch-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETALHES FINANCEIROS DO RESUMO DO PEDIDO -->
+      <div class="summary-finance" style="background:#fff; padding:16px; margin-bottom:8px;">
+        <div class="summary-title" style="font-size:15px; font-weight:700; margin-bottom:12px; color:#111;">Resumo do Pedido</div>
+
+        <!-- Subtotal do produto -->
+        <div class="summary-group" style="margin-bottom:10px;">
+          <div class="summary-group-title" style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px; color:#111;">
+            <span style="display:inline-flex; align-items:center;">Subtotal do produto <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; display:inline-block; margin-left:3px;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+            <span id="subtotal-val">R$ 39,90</span>
+          </div>
+          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#666; margin-bottom:6px; padding-left:12px;">
+            <span>Preço original</span>
+            <span id="preco-original-total">R$ 362,70</span>
+          </div>
+          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+            <span>Desconto no produto</span>
+            <span id="desconto-produto-total">-R$ 322,80</span>
+          </div>
+          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+            <span>Cupons do TikTok Shop</span>
+            <span id="desconto-cupom-total">-R$ 10,72</span>
+          </div>
+          <div class="summary-row" id="row-bonus-resumo" style="display:none; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+            <span>Bônus TikTok Shop</span>
+            <span id="desconto-bonus-total">-R$ 3,27</span>
+          </div>
+        </div>
+
+        <!-- Subtotal do envio -->
+        <div class="summary-group" style="margin-bottom:10px;">
+          <div class="summary-group-title" style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px; color:#111;">
+            <span style="display:inline-flex; align-items:center;">Subtotal do envio <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; display:inline-block; margin-left:3px;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+            <span>R$ 0,00</span>
+          </div>
+          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#666; margin-bottom:6px; padding-left:12px;">
+            <span>Taxa de envio</span>
+            <span id="taxa-envio-val">R$ 21,30</span>
+          </div>
+          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+            <span>Desconto de envio</span>
+            <span id="desconto-envio-val">-R$ 21,30</span>
+          </div>
+        </div>
+
+        <!-- Total geral -->
+        <div class="summary-row bold" style="display:flex; justify-content:space-between; font-weight:700; color:#111; font-size:14px; border-top:1px solid #f2f2f2; padding-top:10px; margin-top:8px;">
+          <span>Total</span>
+          <div style="text-align:right;">
+            <span style="font-size:16px;color:#000;" id="total-geral-val">R$ 39,90</span>
+            <div style="font-size:11px;color:#999;font-weight:normal;margin-top:2px;">Impostos inclusos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BÔNUS DE CASHBACK -->
+      <div class="cashback-banner" style="background:#fbf8eb; padding:8px 16px; display:flex; justify-content:space-between; font-size:13px; color:#8a6d1c; font-weight:500; margin-bottom:8px;">
+        <span style="display:flex; align-items:center; gap:8px;">
+          <img src="../img/tiktok-bonus-notes.png" alt="Bônus" style="width:24px; height:17px; object-fit:contain; flex-shrink:0; vertical-align:middle; display:inline-block;">
+          <span style="font-size:13px; font-weight:600; color:#222;">Bônus de cashback a ser ganho</span>
+        </span>
+        <span style="font-weight:700;">358</span>
+      </div>
+
+      <!-- FORMA DE PAGAMENTO -->
+      <div class="payment-section" style="background:#fff; padding:16px; margin-bottom:8px;">
+        <div class="summary-title" style="font-size:15px; font-weight:700; margin-bottom:14px; color:#111;">Forma de pagamento</div>
+        
+        <!-- Pix (Padrão Oficial Imagem 2 - Card Limpo) -->
+        <div class="payment-option" onclick="selectPixPayment()" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: none; cursor: pointer;">
+          <div class="payment-left" style="display: flex; align-items: center; gap: 12px;">
+            <img src="../logopix/pix-card-icon.png?v=2" alt="Pix" style="width: 34px; height: 20px; object-fit: contain; flex-shrink: 0; border-radius: 3px;" />
+            <span style="font-weight: 500; font-size: 15px; color: #161823;">Pix</span>
+          </div>
+          <div class="payment-radio active" id="radio-pix" style="width: 20px; height: 20px; border-radius: 50%; border: 6px solid #fe2c55; background: #ffffff; box-sizing: border-box; flex-shrink: 0;"></div>
+        </div>
+      </div>
+
+      <!-- AVISO LEGAL TIKTOK SHOP (Padrão Oficial Imagem 2) -->
+      <div class="legal-notice" style="font-size: 12.5px; color: #73747b; line-height: 1.45; padding: 12px 16px 18px 16px; text-align: left; background: #f8f8f8; margin: 0;">
+        Ao fazer um pedido, você concorda com <strong style="color: #161823; font-weight: 700;">Termos de uso e venda do TikTok Shop</strong> e reconhece que leu e concordou com a <strong style="color: #161823; font-weight: 700;">Política de privacidade do TikTok</strong>.
+      </div>
+
+    </div>
+
+    <!-- FOOTER FIXADO DE ACORDO COM A FOTO FIXADA -->
+    <div class="footer-bar">
+      <!-- BARRA DE ECONOMIA PINK ACOPLADA -->
+      <div class="saving-pink-banner"
+        style="background:#fff0f3;color:#fe2c55;padding:7px 16px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;width:calc(100% + 32px);margin: -10px -16px 0 -16px;box-sizing:border-box;">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" style="flex-shrink:0; vertical-align:middle;">
+          <circle cx="12" cy="12" r="10" stroke="#fe2c55" stroke-width="2" fill="none"/>
+          <path d="M7.5 9.5C8.2 8.3 9.3 8.3 10 9.5" stroke="#fe2c55" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 9.5C14.7 8.3 15.8 8.3 16.5 9.5" stroke="#fe2c55" stroke-width="2" stroke-linecap="round"/>
+          <path d="M8 13.5H16C16 16.2 14.2 17.6 12 17.6C9.8 17.6 8 16.2 8 13.5Z" stroke="#fe2c55" stroke-width="2" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span>Você está economizando <strong id="saving-pink-val">R$ 344,10</strong> nesse pedido.</span>
+      </div>
+
+      <div class="footer-top-row">
+        <div class="footer-total-label" id="footer-item-count">Total (1 item)</div>
+        <div class="footer-total-val" id="footer-total-val-bottom">R$ 39,90</div>
+      </div>
+      <button class="fazer-pedido-btn" onclick="confirmarPedido()">
+        <span class="btn-main-label">Fazer pedido</span>
+        <span id="coupon-timer-txt">
+          <span>O cupom expira em&nbsp;</span>
+          <span id="coupon-clock-digits">10:29:12</span>
+          <span>&nbsp;| Frete grátis</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- MODAL DE REMOÇÃO DE ITEM CUSTOMIZADO (Igual ao do print do usuário) -->
+    <div id="remove-confirm-overlay"
+      style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999999; align-items:center; justify-content:center;">
+      <div
+        style="background:#fff; width:88%; max-width:320px; border-radius:24px; text-align:center; overflow:hidden; font-family:-apple-system,BlinkMacSystemFont,sans-serif; box-shadow:0 4px 20px rgba(0,0,0,0.15); animation: zoomInConfirm 0.2s ease-out;">
+        <div
+          style="padding:28px 24px; font-size:16px; font-weight:700; color:#000; border-bottom:1px solid #f0f0f0; line-height:1.4;">
+          Deseja remover este item?
+        </div>
+        <div style="display:flex; height:48px;">
+          <button id="btn-cancel-remove"
+            style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#666; font-weight:500; cursor:pointer; outline:none; height:100%;">Cancelar</button>
+          <button id="btn-confirm-remove"
+            style="flex:1; background:none; border:none; font-size:15px; color:#ff2c55; font-weight:700; cursor:pointer; outline:none; height:100%;">Remover</button>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes zoomInConfirm {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    
+  <!-- MODAL NATIVO TIKTOK SHOP (Imagem 4: Adicionar endereço de entrega) -->
+  <div id="modal-address-native-alert" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999998; align-items:center; justify-content:center;">
+    <div style="background:#fff; width:85%; max-width:320px; border-radius:18px; text-align:center; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.2); animation:zoomInNativeModal 0.2s ease-out; font-family:-apple-system,BlinkMacSystemFont,Inter,sans-serif;">
+      <div style="padding:24px 20px 8px 20px;">
+        <h3 style="font-size:18px; font-weight:800; color:#000; margin:0 0 10px 0; letter-spacing:-0.3px;">Adicionar endereço de entrega</h3>
+        <p style="font-size:14px; color:#555; line-height:1.45; margin:0 0 16px 0;">Sua conta não tem um endereço de envio. Adicione um para prosseguir com a finalização da compra.</p>
+      </div>
+      <div style="display:flex; border-top:1px solid #f0f0f0; height:48px;">
+        <button onclick="closeNativeAddressAlert(event)" style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#555; font-weight:500; cursor:pointer; outline:none;">Mais tarde</button>
+        <button onclick="proceedToFullAddressForm(event)" style="flex:1; background:none; border:none; font-size:15px; color:#000; font-weight:800; cursor:pointer; outline:none;">Adicionar</button>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes zoomInNativeModal {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+
+    
+        <!-- MODAL OFICIAL TIKTOK SHOP (IDÊNTICO AOS PRINTS: NOVO ENDEREÇO / EDITAR COM S/N AUTOMÁTICO) -->
+    <div id="address-modal-box" class="tiktok-address-screen"
+      style="display:none; position:fixed; inset:0; width:100%; max-width:480px; left:0; right:0; margin:0 auto; height:100%; background:#f6f6f7; z-index:99999; flex-direction:column; overflow:hidden; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; box-sizing:border-box;">
+
+      <!-- 1. Header Fixo no Topo (52px) -->
+      <div class="tiktok-address-header"
+        style="background:#ffffff; height:52px; min-height:52px; flex-shrink:0; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid #f0f0f0; z-index:10; box-sizing:border-box;">
+        <button type="button" onclick="closeAddressModalLocal()" aria-label="Voltar"
+          style="background:none; border:none; cursor:pointer; padding:0; display:flex; align-items:center; justify-content:flex-start; width:32px; height:32px;">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+        <h2 id="addr-modal-title"
+          style="font-size:17px; font-weight:700; color:#161823; margin:0; flex:1; text-align:center; letter-spacing:-0.3px;">
+          Adicionar o novo endereço
+        </h2>
+        <div style="min-width:32px; display:flex; justify-content:flex-end;">
+          <button type="button" id="addr-modal-delete-btn" onclick="deleteAddressLocal()" aria-label="Excluir endereço"
+            style="display:none; background:none; border:none; cursor:pointer; padding:4px; align-items:center; justify-content:center;">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#161823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              <line x1="10" y1="11" x2="10" y2="17"></line>
+              <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Scroll Body Suave (Flex 1) -->
+      <div id="addr-scroll-body" style="flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; padding-bottom:16px; box-sizing:border-box;">
+        
+        <!-- Rótulo Seção de Contato -->
+        <div id="addr-section-title-contato" style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
+          Informações de contato
+        </div>
+
+        <!-- CARD 0: Informações de contato (Nome, Telefone, E-mail) -->
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px; box-sizing:border-box;">
+          
+          <!-- Nome e sobrenome -->
+          <div id="addr-nome-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <input id="addr-nome" type="text" placeholder="Nome e sobrenome" autocomplete="name"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+            <div id="addr-nome-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
+                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
+                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
+                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
+              </svg>
+              <span>Insira seu nome e sobrenome</span>
+            </div>
+          </div>
+
+          <!-- Número de telefone com BR +55 | -->
+          <div id="addr-tel-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <div style="display:flex; align-items:center;">
+              <span style="font-size:16px; color:#161823; font-weight:500; white-space:nowrap; cursor:default; display:inline-flex; align-items:center;">
+                BR +55
+              </span>
+              <span style="display:inline-block; width:1px; height:16px; background:#e0e0e0; margin:0 12px;"></span>
+              <input id="addr-tel" type="tel" maxlength="15" placeholder="Número de telefone" autocomplete="tel"
+                style="flex:1; width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+            </div>
+            <div id="addr-tel-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
+                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
+                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
+                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
+              </svg>
+              <span>Insira um número de telefone válido</span>
+            </div>
+          </div>
+
+          <!-- E-mail (com borda inferior idêntica ao Print 1) -->
+          <div id="addr-email-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
+            <input id="addr-email" type="email" placeholder="E-mail (opcional)" autocomplete="email"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+          </div>
+        </div>
+
+        <!-- Rótulo Seção de Endereço -->
+        <div id="addr-section-title-endereco" style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
+          Informações de endereço
+        </div>
+
+        <!-- CARD 1: Informações de endereço (Idêntico aos Prints 1 e 2) -->
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px; box-sizing:border-box;">
+          
+          <!-- CEP/Código postal -->
+          <div id="addr-cep-wrap" class="tiktok-input-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <input id="addr-cep" type="tel" maxlength="9" placeholder="CEP/Código postal" autocomplete="postal-code"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+            <div id="addr-cep-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
+                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
+                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
+                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
+              </svg>
+              <span>Insira um CEP válido</span>
+            </div>
+          </div>
+
+          <!-- Estado/UF & Cidade lado a lado com chevron ∨ -->
+          <div style="display:flex; gap:14px; align-items:flex-end;">
+            <!-- Estado/UF -->
+            <div id="addr-estado-wrap" style="flex:1; border-bottom:1px solid #ebebeb; position:relative; padding:16px 0 12px 0; transition:border-color 0.2s;">
+              <select id="addr-estado"
+                style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; appearance:none; -webkit-appearance:none; cursor:pointer; padding-right:22px; line-height:22px;">
+                <option value="">Estado/UF</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+              <div style="position:absolute; right:0; bottom:14px; pointer-events:none; display:flex; align-items:center;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#767676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Cidade -->
+            <div id="addr-cidade-wrap" style="flex:1; border-bottom:1px solid #ebebeb; position:relative; padding:16px 0 12px 0; transition:border-color 0.2s;">
+              <input id="addr-cidade" type="text" placeholder="Cidade" autocomplete="address-level2"
+                style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding-right:22px; line-height:22px;" />
+              <div style="position:absolute; right:0; bottom:14px; pointer-events:none; display:flex; align-items:center;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#767676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bairro/Distrito -->
+          <div style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
+            <input id="addr-bairro" type="text" placeholder="Bairro/Distrito" autocomplete="address-level3"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+          </div>
+
+          <!-- Endereço -->
+          <div id="addr-rua-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <input id="addr-rua" type="text" placeholder="Endereço" autocomplete="street-address"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+            <div id="addr-rua-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
+                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
+                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
+                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
+              </svg>
+              <span>Insira o endereço</span>
+            </div>
+          </div>
+
+          <!-- Número da residência (com s/n automático e alerta vermelho) -->
+          <div id="addr-numero-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <input id="addr-numero" type="text" placeholder='Nº da residência. Use "s/n" se nenhum'
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+            <div id="addr-numero-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
+                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
+                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
+                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
+              </svg>
+              <span>Insira o número da residência</span>
+            </div>
+          </div>
+
+          <!-- Complemento -->
+          <div style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
+            <input id="addr-complemento" type="text" placeholder="Apartamento, bloco, unidade etc. (opcional)"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+          </div>
+        </div>
+
+        <!-- CARD 2: Informações fiscais (CPF) - Idêntico ao Print 3 -->
+        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
+          Informações fiscais
+        </div>
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 14px 16px; box-sizing:border-box;">
+          <div id="addr-cpf-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <input id="addr-cpf" type="tel" maxlength="14" placeholder="000.000.000-00"
+              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+            <div id="addr-cpf-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
+                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
+                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
+                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
+              </svg>
+              <span>Insira um CPF válido</span>
+            </div>
+          </div>
+          <div style="font-size:12.5px; color:#737373; margin-top:10px; line-height:1.35;">
+            O CPF será usado para emitir faturas.
+          </div>
+        </div>
+
+        <!-- CARD 3: Configurações (Definir como padrão) -->
+        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
+          Configurações
+        </div>
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:16px; display:flex; align-items:center; justify-content:space-between; box-sizing:border-box;">
+          <span style="font-size:16px; font-weight:700; color:#161823;">Definir como padrão</span>
+          <label class="tiktok-toggle-label">
+            <input type="checkbox" id="addr-padrao-toggle" checked style="opacity:0; width:0; height:0; position:absolute;">
+            <span class="tiktok-toggle-slider"></span>
+          </label>
+        </div>
+
+      </div>
+
+      <!-- 3. Footer Fixo na Base (Política de Privacidade + Botão Salvar - Idêntico aos Prints) -->
+      <div style="flex-shrink:0; width:100%; background:#ffffff; padding:12px 16px calc(12px + env(safe-area-inset-bottom, 0px)) 16px; box-sizing:border-box; border-top:1px solid #ebebeb; z-index:20;">
+        <div style="text-align:center; font-size:12px; color:#737373; line-height:1.42; margin-bottom:12px; padding:0 8px;">
+          Leia a <b style="color:#161823; font-weight:700;">Política de privacidade do TikTok</b> para saber mais sobre como usamos suas informações pessoais.
+        </div>
+        <button type="button" id="addr-btn-salvar" onclick="saveAddressFormLocal()"
+          style="width:100%; height:46px; border-radius:24px; border:none; font-size:16px; font-weight:700; color:#ffffff; background:#ffb0bc; cursor:not-allowed; transition:background 0.2s ease; display:flex; align-items:center; justify-content:center;">
+          Salvar
+        </button>
+      </div>
+
+    </div>
+
+  <script src="../js/catalogo.js?v=1795410323540"></script>
+  <script src="../js/app.js?v=1795410323540"></script>
+  <script>
+    function parseSafeFloat(val) {
+      if (typeof val === 'number') return val;
+      if (!val) return 0;
+      const str = String(val).trim();
+      if (str.includes(',')) {
+        return parseFloat(str.replace(/\./g, '').replace(',', '.')) || 0;
+      }
+      return parseFloat(str) || 0;
+    }
+
+    function formatarMoeda(valor) {
+      return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    var freteSelected = 0;
+    var bonusActive = false;
+    var valorBonus = 3.27;
+    let orderBumpAdded = false;
+    let orderBumpPeliculaAdded = false;
+
+    function checkOrderBump() {
+      const cart = getCart();
+      const iphoneItem = cart.find(item => (item.nome || '').toLowerCase().includes('iphone'));
+      const bumpSection = document.getElementById('order-bump-section');
+      if (false) { // Removido a pedido do usuario
+        bumpSection.style.display = 'block';
+        const modelo = iphoneItem.nome || 'Apple iPhone 15';
+        const peliculaTitle = document.getElementById('pelicula-title');
+        const capinhaTitle = document.getElementById('capinha-title');
+        if (peliculaTitle) peliculaTitle.textContent = 'CrystalArmor Kit com 2 Películas Anti-Espião 3D 9H + Aplicador - ' + modelo;
+        if (capinhaTitle) capinhaTitle.textContent = 'Capa Protetora Transparente Premium - ' + modelo;
+      } else {
+        bumpSection.style.display = 'none';
+        orderBumpAdded = false;
+        orderBumpPeliculaAdded = false;
+        updateBumpUI();
+      }
+    }
+
+    function toggleOrderBump() {
+      orderBumpAdded = !orderBumpAdded;
+      updateBumpUI();
+      calcTotals();
+    }
+
+    function toggleOrderBumpPelicula() {
+      orderBumpPeliculaAdded = !orderBumpPeliculaAdded;
+      updateBumpUI();
+      calcTotals();
+    }
+
+    function updateBumpUI() {
+      const btn = document.getElementById('btn-add-bump');
+      if (btn) {
+        if (orderBumpAdded) {
+          btn.innerHTML = 'Remover';
+          btn.style.background = '#999';
+          btn.style.color = '#fff';
+        } else {
+          btn.innerHTML = 'Adicionar';
+          btn.style.background = '#fe2c55';
+          btn.style.color = '#fff';
+        }
+      }
+
+      const btnPel = document.getElementById('btn-add-bump-pelicula');
+      if (btnPel) {
+        if (orderBumpPeliculaAdded) {
+          btnPel.innerHTML = 'Remover';
+          btnPel.style.background = '#999';
+          btnPel.style.color = '#fff';
+        } else {
+          btnPel.innerHTML = 'Adicionar';
+          btnPel.style.background = '#fe2c55';
+          btnPel.style.color = '#fff';
+        }
+      }
+    }
+
+
+
+    function voltarDoResumo() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        var lastProd = localStorage.getItem('famosinhos_ultimo_produto_url');
+        window.location.href = lastProd || 'carrinho.html';
+      }
+    }
+
+    function getCart() {
+      // 1. Tenta recuperar do checkout_cart do localStorage
+      try {
+        var checkoutCart = localStorage.getItem('famosinhos_checkout_cart');
+        if (checkoutCart) {
+          var parsed = JSON.parse(checkoutCart);
+          if (Array.isArray(parsed) && parsed.length > 0 && parsed[0] && (parsed[0].preco > 0 || parsed[0].nome)) {
+            return parsed;
+          }
+        }
+      } catch (e) { }
+
+      // 2. Tenta recuperar do checkout_cart do sessionStorage (redundancia mobile)
+      try {
+        var sessCart = sessionStorage.getItem('famosinhos_checkout_cart');
+        if (sessCart) {
+          var parsedSess = JSON.parse(sessCart);
+          if (Array.isArray(parsedSess) && parsedSess.length > 0 && parsedSess[0] && (parsedSess[0].preco > 0 || parsedSess[0].nome)) {
+            try { localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(parsedSess)); } catch (e) { }
+            return parsedSess;
+          }
+        }
+      } catch (e) { }
+
+      // 3. Recuperacao via URL params (?produto=109&preco=39.90&var=...)
+      try {
+        var urlParams = new URLSearchParams(window.location.search);
+        var urlProdId = urlParams.get('produto') || urlParams.get('id');
+        if (urlProdId) {
+          var pid = parseInt(urlProdId, 10);
+          var pCat = (typeof CATALOGO_PRODUTOS !== 'undefined') ? CATALOGO_PRODUTOS.find(function (p) { return p.id === pid; }) : null;
+          var urlPreco = parseFloat(urlParams.get('preco')) || (pCat ? pCat.preco : 39.90);
+          var urlVar = urlParams.get('var') || urlParams.get('variacao') || '';
+          var urlImg = urlParams.get('img') || (pCat ? pCat.img : '');
+          var urlNome = pCat ? pCat.nome : 'Modelador de Cachos Automatico Sem Fio Portatil Ceramica Bateria USB';
+          var urlItem = {
+            id: pid,
+            nome: urlNome,
+            loja: 'Stone Shop',
+            preco: urlPreco,
+            precoOrig: pCat ? parseSafeFloat(pCat.precoOrig) : 362.70,
+            img: urlImg || (pCat ? pCat.img : ''),
+            variacao: urlVar || '',
+            qty: parseInt(urlParams.get('qty'), 10) || 1
+          };
+          try { localStorage.setItem('famosinhos_checkout_cart', JSON.stringify([urlItem])); } catch (e) { }
+          return [urlItem];
+        }
+      } catch (e) { }
+
+      // 4. Tenta recuperar do carrinho geral
+      try {
+        var mainCart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+        if (Array.isArray(mainCart) && mainCart.length > 0 && mainCart[0] && (mainCart[0].preco > 0 || mainCart[0].nome)) {
+          return mainCart;
+        }
+      } catch (e) { }
+
+      // 5. Fallback definitivo a prova de falhas: garante produto ativo
+      var pFallback = (typeof CATALOGO_PRODUTOS !== 'undefined' && CATALOGO_PRODUTOS.length > 0) ? CATALOGO_PRODUTOS[0] : null;
+      var fallbackItem = pFallback ? {
+        id: pFallback.id,
+        nome: pFallback.nome,
+        loja: 'Stone Shop',
+        preco: parseFloat(pFallback.preco) || 39.90,
+        precoOrig: pFallback.precoOrig ? parseSafeFloat(pFallback.precoOrig) : 362.70,
+        img: pFallback.img || '../img/produto-109-1.jpg',
+        qty: 1,
+        variacao: 'Rosa Bebe, 6 Niveis (150C - 200C)'
+      } : {
+        id: 109,
+        nome: 'Modelador de Cachos Automatico Sem Fio Portatil Ceramica Bateria USB',
+        loja: 'Stone Shop',
+        preco: 39.90,
+        precoOrig: 362.70,
+        img: '../img/produto-109-1.jpg',
+        qty: 1,
+        variacao: 'Rosa Bebe, 6 Niveis (150C - 200C)'
+      };
+      try { localStorage.setItem('famosinhos_checkout_cart', JSON.stringify([fallbackItem])); } catch (e) { }
+      try { localStorage.setItem('famosinhos_cart', JSON.stringify([fallbackItem])); } catch (e) { }
+      return [fallbackItem];
+    }
+
+    function renderAddress() {
+      var name = localStorage.getItem('user_nome') || '';
+      var tel = localStorage.getItem('user_tel') || '';
+      var cep = localStorage.getItem('user_cep') || '';
+      var rua = localStorage.getItem('user_rua') || '';
+      var num = localStorage.getItem('user_numero') || '';
+      var bairro = localStorage.getItem('user_bairro') || '';
+      var cidade = localStorage.getItem('user_cidade') || '';
+      var estado = localStorage.getItem('user_estado') || '';
+
+      var container = document.getElementById('address-container-box');
+      if (!container) return;
+
+      if (!rua) {
+        // VISUAL SEM ENDEREÇO
+        container.innerHTML = `
+          <div style="display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span style="font-size:14px; font-weight:700; color:#111;">Endereço de envio</span>
+            </div>
+            <div style="font-size:14px; font-weight:700; color:#fe2c55; display:flex; align-items:center; gap:2px;">
+              + Adicionar endereço
+            </div>
+          </div>
+        `;
+      } else {
+        // VISUAL IDÊNTICO AO SCREENSHOT
+        var telFmt = tel;
+        var rawTel = String(tel || '').replace(/\D/g, '');
+        if (rawTel.length >= 10) {
+          telFmt = '(+55) ' + rawTel.slice(0, 2) + '*******' + rawTel.slice(-2);
+        }
+        var partes = [rua, num || 's/n', bairro, cidade, estado, cep].filter(Boolean);
+        var enderecoCompleto = partes.join(', ');
+
+        container.innerHTML = `
+          <div style="display:flex; flex-direction:column; gap:4px;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div style="display:flex; align-items:center; gap:8px;">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span style="font-size:15px; font-weight:700; color:#111;">${name || 'Cliente'}${telFmt ? ', ' + telFmt : ''}</span>
+              </div>
+              <span style="color:#aaa; font-size:16px; font-weight:bold;">›</span>
+            </div>
+            <div style="padding-left:26px; font-size:13px; color:#555; line-height:1.4;">
+              ${enderecoCompleto}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function handleAddressClick() {
+      openAddressModalLocal();
+    }
+
+    function showNativeAddressAlert() {
+      const modal = document.getElementById('modal-address-native-alert');
+      if (modal) modal.style.display = 'flex';
+      const sb = document.getElementById('addr-scroll-body'); if (sb) sb.scrollTop = 0;
+    }
+
+    function closeNativeAddressAlert(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const modal = document.getElementById('modal-address-native-alert');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function proceedToFullAddressForm(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      closeNativeAddressAlert();
+      openAddressModalLocal();
+    }
+
+    // =========================================================================
+    // LÓGICA OFICIAL DA TELA DE ENDEREÇO TIKTOK SHOP COM S/N AUTOMÁTICO
+    // =========================================================================
+
+    // Validação CPF — Algoritmo oficial Receita Federal (Módulo 11)
+    function validarCPF(cpf) {
+      cpf = cpf.replace(/\D/g, '');
+      if (cpf.length !== 11) return false;
+      if (/^(\d)\1{10}$/.test(cpf)) return false;
+      let s = 0;
+      for (let i = 0; i < 9; i++) s += parseInt(cpf[i]) * (10 - i);
+      let r = (s * 10) % 11;
+      if (r === 10 || r === 11) r = 0;
+      if (r !== parseInt(cpf[9])) return false;
+      s = 0;
+      for (let i = 0; i < 10; i++) s += parseInt(cpf[i]) * (11 - i);
+      r = (s * 10) % 11;
+      if (r === 10 || r === 11) r = 0;
+      return r === parseInt(cpf[10]);
+    }
+
+    // Helper centralizado de erro de campo inline (igual ao TikTok Shop)
+    function setFieldError(wrapId, errorId, show) {
+      const wrap = document.getElementById(wrapId);
+      const err = document.getElementById(errorId);
+      if (wrap) wrap.style.borderBottom = show ? '1.5px solid #ff4d4f' : '1px solid #e5e5e5';
+      if (err) err.style.display = show ? 'flex' : 'none';
+    }
+
+    let autoSnTimer = null;
+
+    function triggerAutoSnTimer() {
+      clearTimeout(autoSnTimer);
+      const numEl = document.getElementById('addr-numero');
+      if (!numEl) return;
+      if (numEl.value.trim().length > 0) return;
+
+      // 2 segundos de hesitação -> preenche s/n automaticamente
+      autoSnTimer = setTimeout(() => {
+        if (!numEl.value.trim()) {
+          numEl.value = 's/n';
+          clearNumeroError();
+          validateAddressFormReactively();
+        }
+      }, 2000);
+    }
+
+    function clearNumeroError() {
+      const wrap = document.getElementById('addr-numero-wrap');
+      const err = document.getElementById('addr-numero-error');
+      if (wrap) wrap.style.borderBottom = '1px solid #e5e5e5';
+      if (err) err.style.display = 'none';
+    }
+
+    function showNumeroError() {
+      const wrap = document.getElementById('addr-numero-wrap');
+      const err = document.getElementById('addr-numero-error');
+      if (wrap) wrap.style.borderBottom = '1.5px solid #ff4d4f';
+      if (err) err.style.display = 'flex';
+    }
+
+    function validateAddressFormReactively() {
+      const nome = (document.getElementById('addr-nome')?.value || '').trim();
+      const tel = (document.getElementById('addr-tel')?.value || '').replace(/\D/g, '');
+      const cep = (document.getElementById('addr-cep')?.value || '').replace(/\D/g, '');
+      const estado = (document.getElementById('addr-estado')?.value || '').trim();
+      const cidade = (document.getElementById('addr-cidade')?.value || '').trim();
+      const rua = (document.getElementById('addr-rua')?.value || '').trim();
+      const num = (document.getElementById('addr-numero')?.value || '').trim();
+      const cpfRaw = (document.getElementById('addr-cpf')?.value || '').replace(/\D/g, '');
+
+      // Valida CPF em tempo real quando tem 11 dígitos
+      const cpfOk = cpfRaw.length === 11 ? validarCPF(cpfRaw) : false;
+      if (cpfRaw.length === 11) {
+        setFieldError('addr-cpf-wrap', 'addr-cpf-error', !cpfOk);
+      } else if (cpfRaw.length === 0) {
+        setFieldError('addr-cpf-wrap', 'addr-cpf-error', false);
+      }
+
+      const btn = document.getElementById('addr-btn-salvar');
+      if (!btn) return false;
+
+      const isValid = (nome.length >= 2) && (tel.length >= 10) && (cep.length === 8) && !!estado &&
+        (cidade.length >= 2) && (rua.length >= 2) && (num.length >= 1) &&
+        (cpfRaw.length === 11 && cpfOk);
+
+      if (isValid) {
+        btn.style.background = '#fe2c55';
+        btn.style.cursor = 'pointer';
+      } else {
+        btn.style.background = '#ffb4c0';
+        btn.style.cursor = 'not-allowed';
+      }
+      return isValid;
+    }
+
+    function openAddressModalLocal(forceEdit) {
+      const modal = document.getElementById('address-modal-box');
+      if (!modal) return;
+
+      const hasAddress = !!(localStorage.getItem('user_rua') || localStorage.getItem('user_cep') || localStorage.getItem('user_nome'));
+      const isEdit = forceEdit || hasAddress;
+
+      const titleEl = document.getElementById('addr-modal-title');
+      const deleteBtn = document.getElementById('addr-modal-delete-btn');
+
+      if (titleEl) titleEl.textContent = isEdit ? 'Editar o endereço' : 'Adicionar o novo endereço';
+      if (deleteBtn) deleteBtn.style.display = isEdit ? 'flex' : 'none';
+
+      // Preenche os valores de contato existentes
+      const nomeEl = document.getElementById('addr-nome');
+      if (nomeEl) nomeEl.value = localStorage.getItem('user_nome') || '';
+
+      const telEl = document.getElementById('addr-tel');
+      if (telEl) telEl.value = localStorage.getItem('user_tel') || '';
+
+      const emailEl = document.getElementById('addr-email');
+      if (emailEl) emailEl.value = localStorage.getItem('user_email') || '';
+
+      // Preenche os valores de endereço existentes
+      const cepEl = document.getElementById('addr-cep');
+      if (cepEl) cepEl.value = localStorage.getItem('user_cep') || '';
+
+      const estadoEl = document.getElementById('addr-estado');
+      if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
+
+      const cidadeEl = document.getElementById('addr-cidade');
+      if (cidadeEl) cidadeEl.value = localStorage.getItem('user_cidade') || '';
+
+      const bairroEl = document.getElementById('addr-bairro');
+      if (bairroEl) bairroEl.value = localStorage.getItem('user_bairro') || '';
+
+      const ruaEl = document.getElementById('addr-rua');
+      if (ruaEl) ruaEl.value = localStorage.getItem('user_rua') || '';
+
+      const numEl = document.getElementById('addr-numero');
+      if (numEl) numEl.value = localStorage.getItem('user_numero') || '';
+
+      const compEl = document.getElementById('addr-complemento');
+      if (compEl) compEl.value = localStorage.getItem('user_complemento') || '';
+
+      const cpfEl = document.getElementById('addr-cpf');
+      if (cpfEl) cpfEl.value = localStorage.getItem('user_cpf') || '';
+
+      clearNumeroError();
+      validateAddressFormReactively();
+
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+
+      // Configura os ouvintes de eventos reativos e do s/n automático
+      setupAddressModalListeners();
+    }
+
+    function closeAddressModalLocal() {
+      clearTimeout(autoSnTimer);
+      const modal = document.getElementById('address-modal-box');
+      if (modal) modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    function deleteAddressLocal() {
+      if (confirm('Deseja excluir este endereço de envio?')) {
+        localStorage.removeItem('user_nome');
+        localStorage.removeItem('user_tel');
+        localStorage.removeItem('user_email');
+        localStorage.removeItem('user_cep');
+        localStorage.removeItem('user_cidade');
+        localStorage.removeItem('user_bairro');
+        localStorage.removeItem('user_rua');
+        localStorage.removeItem('user_numero');
+        localStorage.removeItem('user_complemento');
+        localStorage.removeItem('user_estado');
+        localStorage.removeItem('user_cpf');
+        localStorage.removeItem('user_address');
+        renderAddress();
+        closeAddressModalLocal();
+      }
+    }
+
+    function setupAddressModalListeners() {
+      const nomeEl = document.getElementById('addr-nome');
+      const telEl = document.getElementById('addr-tel');
+      const emailEl = document.getElementById('addr-email');
+      const numEl = document.getElementById('addr-numero');
+      const cepEl = document.getElementById('addr-cep');
+      const cpfEl = document.getElementById('addr-cpf');
+      const compEl = document.getElementById('addr-complemento');
+
+      if (nomeEl && !nomeEl._hasListeners) {
+        nomeEl._hasListeners = true;
+        nomeEl.addEventListener('input', validateAddressFormReactively);
+        nomeEl.addEventListener('blur', function () {
+          setFieldError('addr-nome-wrap', 'addr-nome-error', this.value.trim().length < 2);
+        });
+      }
+
+      if (telEl && !telEl._hasListeners) {
+        telEl._hasListeners = true;
+        telEl.addEventListener('input', function () {
+          let v = this.value.replace(/\D/g, '').slice(0, 11);
+          if (v.length > 10) {
+            this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2, 7) + '-' + v.slice(7);
+          } else if (v.length > 6) {
+            this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2, 6) + '-' + v.slice(6);
+          } else if (v.length > 2) {
+            this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2);
+          } else if (v.length > 0) {
+            this.value = '(' + v;
+          }
+          validateAddressFormReactively();
+        });
+        telEl.addEventListener('blur', function () {
+          setFieldError('addr-tel-wrap', 'addr-tel-error', this.value.replace(/\D/g, '').length < 10);
+        });
+      }
+
+      if (emailEl && !emailEl._hasListeners) {
+        emailEl._hasListeners = true;
+        emailEl.addEventListener('input', validateAddressFormReactively);
+      }
+
+      if (numEl && !numEl._hasListeners) {
+        numEl._hasListeners = true;
+        numEl.addEventListener('focus', function () {
+          if (!this.value.trim()) triggerAutoSnTimer();
+        });
+        numEl.addEventListener('blur', function () {
+          if (!this.value.trim()) {
+            this.value = 's/n';
+            clearNumeroError();
+            validateAddressFormReactively();
+          }
+        });
+        numEl.addEventListener('input', function () {
+          clearTimeout(autoSnTimer);
+          clearNumeroError();
+          if (!this.value.trim()) triggerAutoSnTimer();
+          validateAddressFormReactively();
+        });
+      }
+
+      // Se o usuário clicar em CPF, Complemento ou Contato deixando número vazio, joga s/n na hora
+      [cpfEl, compEl, nomeEl, telEl].forEach(el => {
+        if (el && !el._hasSnListener) {
+          el._hasSnListener = true;
+          el.addEventListener('focus', function () {
+            const n = document.getElementById('addr-numero');
+            const rua = document.getElementById('addr-rua')?.value?.trim();
+            if (rua && n && !n.value.trim()) {
+              n.value = 's/n';
+              clearNumeroError();
+              validateAddressFormReactively();
+            }
+          });
+        }
+      });
+
+      if (cepEl && !cepEl._hasCepListener) {
+        cepEl._hasCepListener = true;
+        cepEl.addEventListener('input', function () {
+          this.value = this.value.replace(/\D/g, '').slice(0, 8);
+          if (this.value.length === 8) {
+            buscarCepResumo(this.value);
+          }
+          validateAddressFormReactively();
+        });
+        cepEl.addEventListener('blur', function () {
+          setFieldError('addr-cep-wrap', 'addr-cep-error', this.value.replace(/\D/g, '').length !== 8);
+        });
+      }
+
+      if (cpfEl && !cpfEl._hasCpfListener) {
+        cpfEl._hasCpfListener = true;
+        cpfEl.addEventListener('input', function () {
+          // Máscara CPF em tempo real: 000.000.000-00
+          let v = this.value.replace(/\D/g, '').slice(0, 11);
+          if (v.length > 9) v = v.slice(0,3)+'.'+v.slice(3,6)+'.'+v.slice(6,9)+'-'+v.slice(9);
+          else if (v.length > 6) v = v.slice(0,3)+'.'+v.slice(3,6)+'.'+v.slice(6);
+          else if (v.length > 3) v = v.slice(0,3)+'.'+v.slice(3);
+          this.value = v;
+          validateAddressFormReactively();
+        });
+        cpfEl.addEventListener('blur', function () {
+          const digits = this.value.replace(/\D/g, '');
+          if (digits.length > 0) {
+            setFieldError('addr-cpf-wrap', 'addr-cpf-error', !validarCPF(digits));
+          } else {
+            setFieldError('addr-cpf-wrap', 'addr-cpf-error', false);
+          }
+        });
+      }
+
+      // blur na rua
+      const ruaElL = document.getElementById('addr-rua');
+      if (ruaElL && !ruaElL._hasBlur) {
+        ruaElL._hasBlur = true;
+        ruaElL.addEventListener('blur', function () {
+          setFieldError('addr-rua-wrap', 'addr-rua-error', this.value.trim().length < 2);
+        });
+      }
+
+      ['addr-estado', 'addr-cidade', 'addr-bairro', 'addr-rua'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el && !el._hasValListener) {
+          el._hasValListener = true;
+          el.addEventListener('input', validateAddressFormReactively);
+          el.addEventListener('change', validateAddressFormReactively);
+        }
+      });
+    }
+
+    function buscarCepResumo(cep) {
+      cep = cep.replace(/\D/g, '');
+      if (cep.length !== 8) return;
+
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(r => r.json())
+        .then(d => {
+          if (!d.erro) {
+            if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade || '';
+            if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf || '';
+            if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro || '';
+            if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro || '';
+
+            // Se o número estiver vazio, foca nele e dispara o timer de s/n automático
+            const numEl = document.getElementById('addr-numero');
+            if (numEl && !numEl.value.trim()) {
+              numEl.focus();
+              triggerAutoSnTimer();
+            }
+            validateAddressFormReactively();
+          }
+        })
+        .catch(() => {});
+    }
+
+    function saveAddressFormLocal() {
+      const nomeEl = document.getElementById('addr-nome');
+      const telEl = document.getElementById('addr-tel');
+      const emailEl = document.getElementById('addr-email');
+      const cepEl = document.getElementById('addr-cep');
+      const cidadeEl = document.getElementById('addr-cidade');
+      const estadoEl = document.getElementById('addr-estado');
+      const bairroEl = document.getElementById('addr-bairro');
+      const ruaEl = document.getElementById('addr-rua');
+      const numEl = document.getElementById('addr-numero');
+      const compEl = document.getElementById('addr-complemento');
+      const cpfEl = document.getElementById('addr-cpf');
+
+      const nome = (nomeEl?.value || '').trim();
+      const tel = (telEl?.value || '').trim();
+      const email = (emailEl?.value || '').trim();
+      const cep = (cepEl?.value || '').replace(/\D/g, '');
+      const cidade = (cidadeEl?.value || '').trim();
+      const estado = (estadoEl?.value || '').trim();
+      const bairro = (bairroEl?.value || '').trim();
+      const rua = (ruaEl?.value || '').trim();
+      let numero = (numEl?.value || '').trim();
+      const complemento = (compEl?.value || '').trim();
+      const cpfRaw = (cpfEl?.value || '').replace(/\D/g, '');
+
+      // Validação inline — zero alert() — igual ao TikTok Shop nativo
+      let firstErrorEl = null;
+
+      const nomeOk = nome.length >= 2;
+      setFieldError('addr-nome-wrap', 'addr-nome-error', !nomeOk);
+      if (!nomeOk && !firstErrorEl) firstErrorEl = nomeEl;
+
+      const telDigits = tel.replace(/\D/g, '');
+      const telOk = telDigits.length >= 10;
+      setFieldError('addr-tel-wrap', 'addr-tel-error', !telOk);
+      if (!telOk && !firstErrorEl) firstErrorEl = telEl;
+
+      const cepOk = cep.length === 8;
+      setFieldError('addr-cep-wrap', 'addr-cep-error', !cepOk);
+      if (!cepOk && !firstErrorEl) firstErrorEl = cepEl;
+
+      const ruaOk = rua.length >= 2;
+      setFieldError('addr-rua-wrap', 'addr-rua-error', !ruaOk);
+      if (!ruaOk && !firstErrorEl) firstErrorEl = ruaEl;
+
+      // s/n automático ao salvar
+      if (!numero) {
+        numero = 's/n';
+        if (numEl) numEl.value = 's/n';
+      }
+
+      const cpfOk = cpfRaw.length === 11 && validarCPF(cpfRaw);
+      setFieldError('addr-cpf-wrap', 'addr-cpf-error', !cpfOk);
+      if (!cpfOk && !firstErrorEl) firstErrorEl = cpfEl;
+
+      if (firstErrorEl) {
+        firstErrorEl.focus();
+        firstErrorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Salva no localStorage com persistência total
+      localStorage.setItem('user_nome', nome);
+      localStorage.setItem('user_tel', tel);
+      if (email) localStorage.setItem('user_email', email);
+      localStorage.setItem('user_cep', cep);
+      localStorage.setItem('user_cidade', cidade);
+      localStorage.setItem('user_bairro', bairro);
+      localStorage.setItem('user_rua', rua);
+      localStorage.setItem('user_numero', numero);
+      localStorage.setItem('user_complemento', complemento);
+      localStorage.setItem('user_estado', estado);
+      localStorage.setItem('user_cpf', cpf);
+
+      const endFull = `${rua}, ${numero}${complemento ? ' - ' + complemento : ''}, ${bairro ? bairro + ', ' : ''}${cidade} - ${estado}`;
+      localStorage.setItem('user_address', endFull);
+
+      // Atualiza a tela de resumo principal
+      renderAddress();
+      closeAddressModalLocal();
+    }
+
+
+    
+    // Fallback: se o usuario acessou direto o resumo sem antes colocar nada no carrinho
+    (function ensureCartItem() {
+      // Limpa cache antigo de itens de teste que não são da Stone Shop
+      try {
+        var existing = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]');
+        if (Array.isArray(existing) && existing.some(function (i) { return (i.nome || '').includes('VIRGINIA') || (i.loja || '').includes('BARBARA'); })) {
+          localStorage.removeItem('famosinhos_checkout_cart');
+          localStorage.removeItem('famosinhos_cart');
+        }
+      } catch (e) { }
+
+      var cart = [];
+      try { cart = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) { }
+      if (!Array.isArray(cart) || !cart.length) {
+        try { cart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]'); } catch (e) { }
+      }
+      if (!Array.isArray(cart) || !cart.length) {
+        var p0 = (typeof CATALOGO_PRODUTOS !== 'undefined' && CATALOGO_PRODUTOS.length > 0) ? CATALOGO_PRODUTOS[0] : null;
+        var defaultItem = p0 ? {
+          id: p0.id,
+          nome: p0.nome,
+          loja: 'Stone Shop',
+          preco: parseFloat(p0.preco) || 19.90,
+          precoOrig: p0.precoOrig ? parseFloat(String(p0.precoOrig).replace(',', '.')) : 59.90,
+          img: p0.img,
+          qty: 1,
+          variacao: 'Preto, 36/37'
+        } : {
+          id: 104,
+          nome: 'Chinelo Feminino Luxo Strass Brilhante Macio Leve',
+          loja: 'Stone Shop',
+          preco: 19.90,
+          precoOrig: 59.90,
+          img: 'https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:800.webp',
+          qty: 1,
+          variacao: 'Preto, 36/37'
+        };
+        localStorage.setItem('famosinhos_checkout_cart', JSON.stringify([defaultItem]));
+        localStorage.setItem('famosinhos_cart', JSON.stringify([defaultItem]));
+      }
+    })();
+
+    function renderItens() {
+      var cart = getCart();
+      var section = document.getElementById('itens-section');
+      if (!cart.length) {
+        section.innerHTML = '<p style="text-align:center;color:#888;padding:20px;background:#fff;">Carrinho vazio</p>';
+        return;
+      }
+      var html = '';
+
+      var hoje = new Date();
+      var diaMin = new Date(hoje);
+      diaMin.setDate(hoje.getDate() + 3);
+      var diaMax = new Date(hoje);
+      diaMax.setDate(hoje.getDate() + 7);
+
+      var diasSemana = ['dom.', 'seg.', 'ter.', 'qua.', 'qui.', 'sex.', 'sáb.'];
+      var meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+      var dataFmt = 'até ' + diasSemana[diaMin.getDay()] + ', ' + diaMin.getDate() + ' de ' + meses[diaMin.getMonth()] + '–' + diasSemana[diaMax.getDay()] + ', ' + diaMax.getDate() + ' de ' + meses[diaMax.getMonth()];
+
+      cart.forEach(function (item) {
+        var catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(function (p) { return p.id === item.id }) : null;
+        var loja = item.loja || (catalogoProd && catalogoProd.loja) || 'Stone Shop';
+
+        var imgSrc = item.img || '';
+        if (imgSrc && !imgSrc.startsWith('http') && !imgSrc.startsWith('//')) {
+          if (imgSrc.startsWith('../')) imgSrc = imgSrc.substring(3);
+          imgSrc = '../' + imgSrc;
+        }
+
+        var precoOrigVal = parseSafeFloat(item.preco) * 1.5;
+        if (catalogoProd && catalogoProd.precoOrig) {
+          precoOrigVal = parseSafeFloat(catalogoProd.precoOrig);
+        } else if (item.precoOrig) {
+          precoOrigVal = parseSafeFloat(item.precoOrig);
+        }
+
+        if (Number(item.id) === 56) {
+          if (parseSafeFloat(item.preco) === 75.9) {
+            precoOrigVal = 788.90;
+          } else if (parseSafeFloat(item.preco) === 95.9) {
+            precoOrigVal = 1833.90;
+          } else if (parseSafeFloat(item.preco) === 144.9) {
+            precoOrigVal = 3798.90;
+          }
+        }
+
+        var preco = parseSafeFloat(item.preco);
+        var qty = parseInt(item.qty) || 1;
+        var descPct = precoOrigVal && precoOrigVal > preco ? Math.round((1 - preco / precoOrigVal) * 100) : 0;
+        if (Number(item.id) === 56 || Number(item.id) === 100 || Number(item.id) === 102) {
+          descPct = 82;
+        }
+
+        html += `
+      <div class="item-card" style="background:#fff; padding:16px; margin-bottom:8px;">
+        <div class="store-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+          <span style="font-size:14px; font-weight:700; color:#111; letter-spacing:0.2px;">${loja.toUpperCase()}</span>
+          <span class="add-note" onclick="event.preventDefault(); event.stopPropagation();" style="font-size:12.5px; color:#888; display:flex; align-items:center; gap:3px; cursor:pointer;">
+            Adicionar nota <span style="font-size:14px; color:#aaa;">›</span>
+          </span>
+        </div>
+        <div class="product-row" style="display:flex; gap:12px; align-items:flex-start;">
+          <img class="product-img" src="${imgSrc}" alt="${item.nome || ''}" onerror="this.src='https://via.placeholder.com/80x105'" style="width:78px; height:104px; border-radius:4px; object-fit:cover; flex-shrink:0;">
+          <div class="product-info" style="flex:1; min-width:0; display:flex; flex-direction:column;">
+            <div class="product-name" style="font-size:13.5px; color:#222; font-weight:500; line-height:1.3; margin-bottom:4px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;"><img class="badge-1111-inline" src="../img/badge-11-11.png" onerror="this.src='/img/badge-11-11.png'" alt="11.11" style="height:15px; width:auto; vertical-align:-2px; margin-right:4px; display:inline-block; flex-shrink:0;">${item.nome || ''}</div>
+            
+            ${item.variacao ? `<div class="product-variacao" style="font-size:12px; color:#777; margin-bottom:5px;">${item.variacao}</div>` : ''}
+            
+            <div style="display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin-bottom:8px;">
+              <div class="badge-oferta-relampago" style="display:inline-flex; align-items:center; gap:4.5px; background:#fdebf1; color:#9e0b35; font-size:11.5px; font-weight:700; padding:2.5px 7px; border-radius:4px; margin:0; line-height:1.2; letter-spacing:-0.1px;">
+                <img src="/img/icone-oferta-relampago.png" onerror="this.src='../img/icone-oferta-relampago.png'" alt="Oferta Relâmpago" style="width:11px; height:11px; object-fit:contain; flex-shrink:0; display:block;">
+                <span>Oferta Relâmpago</span>
+              </div>
+              <div class="badge-devolucao" style="display:inline-flex; align-items:center; gap:4.5px; font-size:11.5px; color:#474d57; font-weight:500; background:#f5f6f8; padding:2.5px 6.5px; border-radius:4px; margin:0; line-height:1.2;">
+                <img src="/img/icone-devolucao-gratuita.png" onerror="this.src='../img/icone-devolucao-gratuita.png'" alt="Devolução gratuita" style="width:13px; height:13px; object-fit:contain; flex-shrink:0; display:block;">
+                <span>Devolução gratuita</span>
+              </div>
+            </div>
+            
+            <div class="price-qty-line" style="display:flex; justify-content:space-between; align-items:flex-end;">
+              <div class="price-box">
+                <div class="price-current" style="font-size:16px; font-weight:700; color:#fe2c55; line-height:1.2;">R$ ${formatarMoeda(preco * qty)}</div>
+                <div class="price-original-wrapper" style="display:flex; align-items:center; gap:4px; margin-top:2px;">
+                  <span style="font-size:11.5px; color:#999; text-decoration:line-through;">R$ ${formatarMoeda(precoOrigVal * qty)}</span>
+                  ${descPct ? `<span class="badge-discount" style="background:#fff0f3; color:#fe2c55; font-size:10px; font-weight:700; padding:1px 4px; border-radius:2px;">-${descPct}%</span>` : ''}
+                </div>
+              </div>
+              
+              <div class="qty-display" style="display:flex; align-items:center; background:#f5f5f5; border-radius:4px; height:28px; padding:0 2px; border:none;">
+                <button class="qty-btn" onclick="changeResumoQty(${item.id}, -1, '${item.variacao || ''}')" style="width:28px; height:28px; border:none; background:none; font-size:16px; color:#666; cursor:pointer; display:flex; align-items:center; justify-content:center;">−</button>
+                <span class="qty-val" style="min-width:24px; text-align:center; font-size:13.5px; font-weight:600; color:#111; border:none; padding:0 4px;">${qty}</span>
+                <button class="qty-btn" onclick="changeResumoQty(${item.id}, 1, '${item.variacao || ''}')" style="width:28px; height:28px; border:none; background:none; font-size:16px; color:#111; cursor:pointer; display:flex; align-items:center; justify-content:center;">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="delivery-banner" style="background:#f0fafb; border-radius:6px; padding:8px 12px; margin-top:12px; display:flex; justify-content:space-between; align-items:center;">
+          <div style="font-size:12.5px; color:#111; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:65%;">Receba ${dataFmt}</div>
+          <div style="display:flex; align-items:center; gap:5px; flex-shrink:0;">
+            <s style="font-size:12px; color:#888; font-weight:normal;">R$ 19,20</s>
+            <span style="font-size:12.5px; font-weight:700; color:#111;">Grátis</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#00a89d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+              <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    `;
+      });
+
+      section.innerHTML = html;
+      checkOrderBump();
+    }
+
+    function changeResumoQty(id, delta, variacao = '') {
+      var checkoutCart = [];
+      try {
+        checkoutCart = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]');
+      } catch (e) { }
+
+      var checkoutItem = checkoutCart.find(function (i) {
+        return Number(i.id) === Number(id) && (variacao ? i.variacao === variacao : true);
+      });
+      if (checkoutItem) {
+        var newQty = (checkoutItem.qty || 1) + delta;
+        if (newQty <= 0) {
+          // Exibe modal customizado
+          var overlay = document.getElementById('remove-confirm-overlay');
+          if (overlay) {
+            overlay.style.display = 'flex';
+
+            document.getElementById('btn-cancel-remove').onclick = function () {
+              overlay.style.display = 'none';
+            };
+
+            document.getElementById('btn-confirm-remove').onclick = function () {
+              overlay.style.display = 'none';
+
+              // Remove do checkout
+              checkoutCart = checkoutCart.filter(function (i) {
+                if (Number(i.id) === Number(id)) {
+                  return variacao ? i.variacao !== variacao : false;
+                }
+                return true;
+              });
+              localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutCart));
+
+              // Sincroniza e remove do carrinho principal
+              var cart = [];
+              try {
+                cart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+              } catch (e) { }
+              cart = cart.filter(function (i) {
+                if (Number(i.id) === Number(id)) {
+                  return variacao ? i.variacao !== variacao : false;
+                }
+                return true;
+              });
+              localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
+
+              renderItens();
+              calcTotals();
+            };
+          }
+          return;
+        } else {
+          checkoutItem.qty = newQty;
+          localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutCart));
+        }
+      }
+
+      // 2. Sincronizar de volta no carrinho geral (famosinhos_cart)
+      var cart = [];
+      try {
+        cart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+      } catch (e) { }
+
+      var mainItem = cart.find(function (i) {
+        return Number(i.id) === Number(id) && (variacao ? i.variacao === variacao : true);
+      });
+      if (mainItem) {
+        var newQtyMain = (mainItem.qty || 1) + delta;
+        if (newQtyMain <= 0) {
+          cart = cart.filter(function (i) {
+            if (Number(i.id) === Number(id)) {
+              return variacao ? i.variacao !== variacao : false;
+            }
+            return true;
+          });
+        } else {
+          mainItem.qty = newQtyMain;
+        }
+        localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
+      }
+
+      renderItens();
+      calcTotals();
+    }
+
+    var lastTotalGeral = null;
+    var lastEconomiaTotal = null;
+
+    function animateCurrencyValue(element, startVal, endVal, duration, prefix) {
+      if (!element) return;
+      prefix = (typeof prefix === 'string') ? prefix : 'R$ ';
+      duration = duration || 650;
+
+      if (startVal === null || isNaN(startVal) || Math.abs(startVal - endVal) < 0.005) {
+        element.textContent = prefix + formatarMoeda(endVal);
+        return;
+      }
+
+      var startTime = null;
+      element.classList.add('price-animating');
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        // Easing: easeOutCubic suave
+        var ease = 1 - Math.pow(1 - progress, 3);
+        var current = startVal + (endVal - startVal) * ease;
+        element.textContent = prefix + formatarMoeda(current);
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          element.textContent = prefix + formatarMoeda(endVal);
+          setTimeout(function() {
+            element.classList.remove('price-animating');
+          }, 150);
+        }
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    function calcTotals(animate) {
+      animate = (animate === true);
+      var cart = getCart();
+      var subtotalOriginal = 0;
+      var subtotalAtual = 0;
+      var totalItens = 0;
+
+      cart.forEach(function (item) {
+        var preco = typeof item.preco === 'number' ? item.preco : parseFloat(String(item.preco).replace(',', '.'));
+
+        var catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(function (p) { return p.id === item.id }) : null;
+        var precoOrigVal = item.preco * 1.5;
+        if (item.precoOrig) {
+          precoOrigVal = parseSafeFloat(item.precoOrig);
+        } else if (catalogoProd && catalogoProd.precoOrig) {
+          precoOrigVal = parseSafeFloat(catalogoProd.precoOrig);
+        }
+
+        if (Number(item.id) === 56) {
+          if (parseSafeFloat(item.preco) === 75.9) {
+            precoOrigVal = 788.90;
+          } else if (parseSafeFloat(item.preco) === 95.9) {
+            precoOrigVal = 1833.90;
+          } else if (parseSafeFloat(item.preco) === 144.9) {
+            precoOrigVal = 3798.90;
+          }
+        }
+
+        var qty = parseInt(item.qty) || 1;
+        subtotalOriginal += precoOrigVal * qty;
+        subtotalAtual += preco * qty;
+        totalItens += qty;
+      });
+
+      // Blindagem definitiva contra R$ 0,00
+      if (subtotalAtual <= 0) {
+        var p0 = (typeof CATALOGO_PRODUTOS !== 'undefined' && CATALOGO_PRODUTOS.length > 0) ? CATALOGO_PRODUTOS[0] : null;
+        subtotalAtual = p0 ? (parseFloat(p0.preco) || 39.90) : 39.90;
+        subtotalOriginal = p0 ? (parseSafeFloat(p0.precoOrig) || 362.70) : 362.70;
+        totalItens = Math.max(1, totalItens);
+      }
+
+      if (orderBumpAdded) {
+        subtotalOriginal += 449.90;
+        subtotalAtual += 34.90;
+        totalItens += 1;
+      }
+      if (orderBumpPeliculaAdded) {
+        subtotalOriginal += 57.90;
+        subtotalAtual += 17.90;
+        totalItens += 1;
+      }
+
+      var cupomTikTok = 10.72;
+      var taxaEnvio = 21.30;
+      var descontoProduto = subtotalOriginal - subtotalAtual;
+      var descontoBonusAplicado = bonusActive ? valorBonus : 0;
+      var economiaTotal = Math.max(0, descontoProduto) + taxaEnvio + descontoBonusAplicado;
+      var totalGeral = Math.max(1, subtotalAtual - descontoBonusAplicado);
+
+      var subEl = document.getElementById('subtotal-val');
+      if (subEl) subEl.textContent = 'R$ ' + formatarMoeda(subtotalAtual);
+
+      var origEl = document.getElementById('preco-original-total');
+      if (origEl) origEl.textContent = 'R$ ' + formatarMoeda(subtotalOriginal);
+
+      var descEl = document.getElementById('desconto-produto-total');
+      if (descEl) descEl.textContent = '-R$ ' + formatarMoeda(descontoProduto);
+
+      var cupomEl = document.getElementById('desconto-cupom-total');
+      if (cupomEl) cupomEl.textContent = '-R$ ' + formatarMoeda(cupomTikTok);
+
+      var bonusRow = document.getElementById('row-bonus-resumo');
+      var bonusTotalEl = document.getElementById('desconto-bonus-total');
+      var bonusLabel = document.getElementById('bonus-val-label');
+      if (bonusActive) {
+        if (bonusRow) bonusRow.style.display = 'flex';
+        if (bonusTotalEl) bonusTotalEl.textContent = '-R$ ' + formatarMoeda(valorBonus);
+        if (bonusLabel) {
+          bonusLabel.textContent = '-R$ ' + formatarMoeda(valorBonus);
+          bonusLabel.style.color = '#fe2c55';
+          bonusLabel.style.fontWeight = '700';
+        }
+      } else {
+        if (bonusRow) bonusRow.style.display = 'none';
+        if (bonusLabel) {
+          bonusLabel.textContent = '-R$ 0,00';
+          bonusLabel.style.color = '#999';
+          bonusLabel.style.fontWeight = '500';
+        }
+      }
+
+      var taxaEnvioEl = document.getElementById('taxa-envio-val');
+      if (taxaEnvioEl) taxaEnvioEl.textContent = 'R$ ' + formatarMoeda(taxaEnvio);
+
+      var descEnvioEl = document.getElementById('desconto-envio-val');
+      if (descEnvioEl) descEnvioEl.textContent = '-R$ ' + formatarMoeda(taxaEnvio);
+
+      var totalGeralEl = document.getElementById('total-geral-val');
+      var footerTotalEl = document.getElementById('footer-total-val-bottom');
+      var savingEl = document.getElementById('saving-pink-val');
+
+      if (animate && lastTotalGeral !== null) {
+        animateCurrencyValue(totalGeralEl, lastTotalGeral, totalGeral, 650);
+        animateCurrencyValue(footerTotalEl, lastTotalGeral, totalGeral, 650);
+        animateCurrencyValue(savingEl, lastEconomiaTotal, economiaTotal, 650);
+      } else {
+        if (totalGeralEl) totalGeralEl.textContent = 'R$ ' + formatarMoeda(totalGeral);
+        if (footerTotalEl) footerTotalEl.textContent = 'R$ ' + formatarMoeda(totalGeral);
+        if (savingEl) savingEl.textContent = 'R$ ' + formatarMoeda(economiaTotal);
+      }
+
+      lastTotalGeral = totalGeral;
+      lastEconomiaTotal = economiaTotal;
+
+      var footerCountEl = document.getElementById('footer-item-count');
+      if (footerCountEl) footerCountEl.textContent = 'Total (' + totalItens + ' ' + (totalItens === 1 ? 'item' : 'itens') + ')';
+    }
+
+        let isTogglingBonus = false;
+
+        function triggerTikTokBonusMoneyAnimation() {
+      const sw = document.getElementById('bonus-switch');
+      if (!sw) return;
+
+      const rect = sw.getBoundingClientRect();
+      const animWidth = 72;
+      const animHeight = 155;
+
+      // Alinha a lateral direita com o switch do bônus
+      const posX = rect.right - animWidth + 4;
+      const posY = rect.bottom - 4;
+
+      const animEl = document.createElement('img');
+      animEl.src = '../img/tiktok-bonus-rain.webp?t=' + Date.now();
+      animEl.alt = 'Bônus TikTok';
+      animEl.style.cssText = 'position:fixed;left:' + posX + 'px;top:' + posY + 'px;width:' + animWidth + 'px;height:' + animHeight + 'px;object-fit:contain;pointer-events:none;z-index:9999999;';
+
+      document.body.appendChild(animEl);
+
+      setTimeout(function() {
+        if (animEl && animEl.parentNode) {
+          animEl.parentNode.removeChild(animEl);
+        }
+      }, 1000);
+    }
+
+    function showLocalTikTokHUD(text, duration) {
+      if (typeof window.showTikTokHUD === 'function') {
+        window.showTikTokHUD(text, duration);
+        return;
+      }
+      let overlay = document.getElementById('tiktok-global-loader');
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'tiktok-global-loader';
+        document.body.appendChild(overlay);
+      }
+      overlay.className = 'tiktok-loader-overlay type-hud';
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.zIndex = '9999999';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.background = 'transparent';
+      overlay.style.backdropFilter = 'none';
+      overlay.style.webkitBackdropFilter = 'none';
+      overlay.style.pointerEvents = 'auto';
+      overlay.style.opacity = '1';
+      overlay.innerHTML = '<div class="tiktok-hud-box"><div class="tiktok-balls"><div class="ball ball-cyan"></div><div class="ball ball-pink"></div></div><span>' + text + '</span></div>';
+      
+      if (duration && duration > 0) {
+        setTimeout(function() {
+          hideLocalTikTokHUD();
+        }, duration);
+      }
+    }
+
+    function hideLocalTikTokHUD() {
+      if (typeof window.hideTikTokLoader === 'function') {
+        window.hideTikTokLoader();
+        return;
+      }
+      const overlay = document.getElementById('tiktok-global-loader');
+      if (overlay) {
+        overlay.style.opacity = '0';
+        setTimeout(function() {
+          if (overlay && overlay.parentNode) {
+            overlay.parentNode.removeChild(overlay);
+          }
+        }, 150);
+      }
+    }
+
+    function toggleBonus() {
+      if (isTogglingBonus) return;
+      isTogglingBonus = true;
+
+      const sw = document.getElementById('bonus-switch');
+      const bonusValLabel = document.getElementById('bonus-val-label');
+      const willActivate = !bonusActive;
+
+      try {
+        if (willActivate) {
+          // ATIVAÇÃO IMEDIATA NO TOQUE:
+          bonusActive = true;
+          if (sw) sw.classList.add('active');
+          if (bonusValLabel) {
+            bonusValLabel.textContent = '-R$ ' + formatarMoeda(valorBonus);
+            bonusValLabel.style.color = '#fe2c55';
+            bonusValLabel.style.fontWeight = '700';
+          }
+
+          // Dispara HUD imediato com o texto "Carregando..."
+          showLocalTikTokHUD('Carregando...', 850);
+
+          setTimeout(function() {
+            try {
+              hideLocalTikTokHUD();
+              calcTotals(true);
+              if (typeof triggerTikTokBonusMoneyAnimation === 'function') {
+                triggerTikTokBonusMoneyAnimation();
+              }
+            } catch (err) {
+              console.error(err);
+            } finally {
+              isTogglingBonus = false;
+            }
+          }, 850);
+
+        } else {
+          // DESATIVAÇÃO IMEDIATA NO TOQUE:
+          bonusActive = false;
+          if (sw) sw.classList.remove('active');
+          if (bonusValLabel) {
+            bonusValLabel.textContent = '-R$ 0,00';
+            bonusValLabel.style.color = '#999';
+            bonusValLabel.style.fontWeight = '500';
+          }
+
+          showLocalTikTokHUD('Carregando...', 700);
+
+          setTimeout(function() {
+            try {
+              hideLocalTikTokHUD();
+              calcTotals(true);
+            } catch (err) {
+              console.error(err);
+            } finally {
+              isTogglingBonus = false;
+            }
+          }, 700);
+        }
+      } catch (e) {
+        console.error(e);
+        isTogglingBonus = false;
+      }
+    }
+    let isConfirmingPedido = false;
+    async function confirmarPedido() {
+      if (isConfirmingPedido) return;
+
+      const rua = localStorage.getItem('user_rua') || '';
+      if (!rua) {
+        showNativeAddressAlert();
+        return;
+      }
+
+      isConfirmingPedido = true;
+
+      // Coleta dados do cliente do localStorage
+      const nome = localStorage.getItem('user_nome') || '';
+      const email = localStorage.getItem('user_email') || '';
+      const tel = localStorage.getItem('user_tel') || '';
+      const cpf = localStorage.getItem('user_cpf') || '';
+      let checkoutItems = [];
+      try { checkoutItems = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) { }
+      if (!checkoutItems.length) {
+        try { checkoutItems = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]'); } catch (e) { }
+      }
+
+      if (orderBumpAdded) {
+        checkoutItems.push({
+          id: 99991,
+          nome: 'Adaptador de Energia USB-C Apple 70W + Cabo Carregador Apple USB-C 240W (2 m)',
+          preco: 34.90,
+          img: '../logoorderbumps/adaptador.png',
+          qty: 1
+        });
+      }
+      if (orderBumpPeliculaAdded) {
+        const cart = getCart();
+        const iphoneItem = cart.find(item => (item.nome || '').toLowerCase().includes('iphone'));
+        const modelo = iphoneItem ? iphoneItem.nome : 'Apple iPhone 15';
+        checkoutItems.push({
+          id: 99992,
+          nome: 'CrystalArmor Kit com 2 Películas Anti-Espião 3D 9H + Aplicador - ' + modelo,
+          preco: 17.90,
+          qty: 1,
+          img: '../logoorderbumps/pelicula.JPEG',
+          variacao: ''
+        });
+      }
+
+      const total = checkoutItems.reduce((acc, item) => {
+        const p = typeof item.preco === 'number' ? item.preco : parseFloat(String(item.preco).replace(',', '.'));
+        return acc + p * (item.qty || 1);
+      }, 0);
+      const amountCents = Math.round(total * 100);
+      
+      // Bloqueio de spam para pedidos muito baixos (ex: R$ 5,00)
+      if (total < 10) {
+        alert("Ops! Ocorreu um erro no cálculo do seu carrinho ou o valor mínimo não foi atingido. Por favor, tente novamente.");
+        isConfirmingPedido = false;
+        return;
+      }
+
+      // Exibe SOMENTE O QUADRADO PRETO HUD Oficial do TikTok na geração do PIX
+      if (typeof window.showTikTokHUD === 'function') {
+        window.showTikTokHUD('Gerando PIX...');
+      } else if (typeof window.showTikTokLoader === 'function') {
+        window.showTikTokLoader({ type: 'hud', text: 'Gerando PIX...' });
+      } else {
+        const overlay = document.createElement('div');
+        overlay.id = 'tiktok-global-loader';
+        overlay.className = 'tiktok-loader-overlay type-hud';
+        overlay.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;z-index:9999999;display:flex;align-items:center;justify-content:center;';
+        overlay.innerHTML = '<div style="width:122px;height:105px;background:rgba(46,46,46,0.93);border:none;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;box-shadow:0 4px 18px rgba(0,0,0,0.22);padding:16px 8px 14px 8px;box-sizing:border-box;"><div class="tiktok-balls" style="position:relative;width:28px;height:13px;"><div class="ball ball-cyan" style="position:absolute;width:13px;height:13px;border-radius:50%;top:0;background:#25F4EE;left:0;animation:ttBallCyan 0.91s cubic-bezier(0.45,0.05,0.55,0.95) infinite;"></div><div class="ball ball-pink" style="position:absolute;width:13px;height:13px;border-radius:50%;top:0;background:#FE2C55;right:0;animation:ttBallPink 0.91s cubic-bezier(0.45,0.05,0.55,0.95) infinite;"></div></div><span style="font-size:12px;color:#ffffff;font-weight:500;letter-spacing:-0.15px;margin-top:2px;">Gerando PIX...</span></div>';
+        document.body.appendChild(overlay);
+      }
+
+      // Captura UTMs
+      const urlParams = new URLSearchParams(window.location.search);
+      const getParam = k => urlParams.get(k) || sessionStorage.getItem(k) || '';
+
+      try {
+        // Detecta se é venda de pneu para usar a rota/credenciais da loja do pneu
+        const isPneuSale = Array.isArray(checkoutItems) && checkoutItems.some(item => {
+          const nomePneu = (item.nome || item.name || '').toLowerCase();
+          return nomePneu.includes('pneu') || nomePneu.includes('pirelli');
+        });
+        const pixRoute = '/api/create-pix';
+        console.log('[resumo] isPneuSale:', isPneuSale, '| rota:', pixRoute);
+
+        const resp = await fetch(pixRoute, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            amount: amountCents,
+            name: nome,
+            email: email,
+            cellphone: tel.replace(/\D/g, ''),
+            taxId: cpf.replace(/\D/g, ''),
+            utm_source: getParam('utm_source'),
+            utm_medium: getParam('utm_medium'),
+            utm_campaign: getParam('utm_campaign'),
+            utm_term: getParam('utm_term'),
+            utm_content: getParam('utm_content'),
+            src: window.location.href,
+            user_agent: navigator.userAgent,
+            items: checkoutItems.map(i => ({
+              nome: i.nome,
+              preco: typeof i.preco === 'number' ? i.preco.toFixed(2) : parseFloat(String(i.preco).replace(',','.')).toFixed(2),
+              qty: i.qty || 1
+            })),
+            ttclid: (window.ttqGetTtclid ? window.ttqGetTtclid() : (sessionStorage.getItem('ttclid') || localStorage.getItem('ttclid') || '')),
+            ttp: (window.ttqGetTtp ? window.ttqGetTtp() : '')
+          })
+        });
+
+        const data = await resp.json();
+        console.log('[SealPay] Resposta:', data);
+
+        if (!resp.ok || !data || !data.pix_code) {
+          throw new Error(data.message || 'Erro ao gerar PIX na API');
+        }
+
+        // [TikTok Pixel] PIX gerado = PlaceAnOrder (pedido feito, pagamento pendente).
+        // event_id compartilhado com a CAPI -> o TikTok conta 1 evento, nao 2.
+        try {
+          const valorReais = (amountCents / 100);
+          if (typeof window.ttqPlaceAnOrder === 'function') {
+            window.ttqPlaceAnOrder(valorReais, data.txid, checkoutItems);
+          }
+        } catch (eTtq) { /* silencioso */ }
+
+        sessionStorage.setItem('sealpay_pix_code', data.pix_code || '');
+        sessionStorage.setItem('sealpay_txid', data.txid || '');
+        sessionStorage.setItem('sealpay_total', total.toFixed(2));
+        if (data.txid) localStorage.setItem('last_main_txid', data.txid);
+
+        // Salva o pedido no localStorage (array de pedidos)
+        const rua = localStorage.getItem('user_rua') || '';
+        const num = localStorage.getItem('user_numero') || '';
+        const bairro = localStorage.getItem('user_bairro') || '';
+        const cid = localStorage.getItem('user_cidade') || '';
+        const uf = localStorage.getItem('user_estado') || '';
+        const cepVal = localStorage.getItem('user_cep') || '';
+        const endCompleto = rua ? (rua + ', ' + num + ' - ' + bairro + ', ' + cid + '/' + uf + ' (CEP: ' + cepVal + ')') : (localStorage.getItem('user_address') || 'Não informado');
+
+        const clienteInfo = {
+          nome: nome || localStorage.getItem('user_nome') || 'Cliente',
+          email: email || localStorage.getItem('user_email') || 'Não informado',
+          tel: tel || localStorage.getItem('user_tel') || 'Não informado',
+          cpf: cpf || localStorage.getItem('user_cpf') || 'Não informado',
+          endereco: endCompleto
+        };
+
+        const novoPedido = {
+          txid: data.txid || ('offline_' + Date.now()),
+          pix_code: data.pix_code || '',
+          total: total.toFixed(2),
+          data: new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+          cliente: clienteInfo,
+          status: 'Pix Gerado',
+          itens: checkoutItems.map(i => ({
+            nome: i.nome,
+            img: i.img,
+            preco: i.preco,
+            qty: i.qty || 1,
+            variacao: i.variacao || ''
+          }))
+        };
+
+        let pedidos = [];
+        try { pedidos = JSON.parse(localStorage.getItem('famosinhos_pedidos') || '[]'); } catch (e) { }
+        if (!Array.isArray(pedidos)) pedidos = [];
+        pedidos.unshift(novoPedido);
+        localStorage.setItem('famosinhos_pedidos', JSON.stringify(pedidos));
+
+        // Envia cópia para a API serverless
+        fetch('/api/pedidos', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(novoPedido)
+        }).catch(() => {});
+
+      } catch (err) {
+        console.error('[SealPay] Erro ao gerar PIX:', err);
+        sessionStorage.setItem('sealpay_pix_code', '');
+        sessionStorage.setItem('sealpay_txid', '');
+        sessionStorage.setItem('sealpay_total', total.toFixed(2));
+
+        const rua = localStorage.getItem('user_rua') || '';
+        const num = localStorage.getItem('user_numero') || '';
+        const bairro = localStorage.getItem('user_bairro') || '';
+        const cid = localStorage.getItem('user_cidade') || '';
+        const uf = localStorage.getItem('user_estado') || '';
+        const cepVal = localStorage.getItem('user_cep') || '';
+        const endCompleto = rua ? (rua + ', ' + num + ' - ' + bairro + ', ' + cid + '/' + uf + ' (CEP: ' + cepVal + ')') : (localStorage.getItem('user_address') || 'Não informado');
+
+        // Salva o pedido de fallback no localStorage
+        const novoPedido = {
+          txid: 'offline_' + Date.now(),
+          pix_code: '',
+          total: total.toFixed(2),
+          data: new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+          cliente: {
+            nome: nome || localStorage.getItem('user_nome') || 'Cliente',
+            email: email || localStorage.getItem('user_email') || 'Não informado',
+            tel: tel || localStorage.getItem('user_tel') || 'Não informado',
+            cpf: cpf || localStorage.getItem('user_cpf') || 'Não informado',
+            endereco: endCompleto
+          },
+          status: 'Aguardando Pagamento',
+          itens: checkoutItems.map(i => ({
+            nome: i.nome,
+            img: i.img,
+            preco: i.preco,
+            qty: i.qty || 1,
+            variacao: i.variacao || ''
+          }))
+        };
+
+        let pedidos = [];
+        try { pedidos = JSON.parse(localStorage.getItem('famosinhos_pedidos') || '[]'); } catch (e) { }
+        if (!Array.isArray(pedidos)) pedidos = [];
+        pedidos.unshift(novoPedido);
+        localStorage.setItem('famosinhos_pedidos', JSON.stringify(pedidos));
+
+        // Envia cópia para a API serverless
+        fetch('/api/pedidos', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(novoPedido)
+        }).catch(() => {});
+      }
+
+      // Redireciona para a página do código PIX
+      window.location.href = 'pix.html';
+    }
+
+    function startCouponCountdown() {
+      const el = document.getElementById('coupon-clock-digits');
+      if (!el) return;
+      let totalSeconds = 10 * 3600 + 29 * 60 + 12;
+      setInterval(() => {
+        if (totalSeconds > 0) totalSeconds--;
+        const h = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+        const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+        const s = String(totalSeconds % 60).padStart(2, '0');
+        el.textContent = h + ':' + m + ':' + s;
+      }, 1000);
+    }
+    function startTimer() {
+      startCouponCountdown();
+    }
+
+    renderAddress();
+    renderItens();
+    calcTotals();
+    startCouponCountdown();
+
+    window.addEventListener('pageshow', function (e) {
+      renderAddress();
+      renderItens();
+      calcTotals();
+      if (e.persisted) {
+        startCouponCountdown();
+      }
+    });
+
+    // Atualiza badge de itens no carrinho no header
+    try {
+      var cartAll = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+      var totalQty = cartAll.reduce(function(acc, i) { return acc + (parseInt(i.qty) || 1); }, 0);
+      var badge = document.querySelector('.header-icon-btn .cart-badge');
+      if (badge && totalQty > 0) {
+        badge.textContent = totalQty;
+        badge.style.display = 'flex';
+      }
+    } catch(e) {}
+
+    // Se a conta não tem endereço de envio, abre o alerta nativo do TikTok Shop automaticamente
+    var ruaAtual = localStorage.getItem('user_rua') || '';
+    if (!ruaAtual) {
+      setTimeout(function () {
+        showNativeAddressAlert();
+      }, 350);
+    }
+  </script>
+  
+  <!-- Preload do vídeo do PIX para carregar instantaneamente na próxima tela -->
+  <video src="/img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
+</div><!-- fim app-container -->
+</body>
+
+</html>
