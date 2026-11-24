@@ -41,10 +41,12 @@
   min-width: unset !important;
   padding: 3px 7px !important;
   background: #ffffff !important;
-  color: #fe1648 !important;
-  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif !important;
-  font-size: clamp(11.5px, 3.2vw, 14px) !important;
-  font-weight: 800 !important;
+  color: #e10543 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(12.5px, 3.6vw, 14.5px) !important;
+  font-weight: 600 !important;
   border-radius: 5px !important;
   line-height: 1.1 !important;
   letter-spacing: -0.2px !important;
@@ -73,29 +75,36 @@
 .price-section.price-section-bf .price-currency-sign {
   position: static !important;
   color: #ffffff !important;
-  font-size: clamp(12.5px, 3.4vw, 15px) !important;
-  font-weight: 700 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-size: clamp(12.5px, 3.5vw, 14.5px) !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
-  margin-right: 1px !important;
+  margin-right: 3px !important;
 }
 
 .price-section.price-section-bf .price-current {
   position: static !important;
   color: #ffffff !important;
-  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif !important;
-  font-size: clamp(21px, 5.8vw, 27px) !important;
-  font-weight: 800 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(23px, 6.4vw, 27px) !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
-  letter-spacing: -0.6px !important;
+  letter-spacing: -0.3px !important;
   display: inline-flex !important;
   align-items: baseline !important;
 }
 
 .price-section.price-section-bf .price-cents {
-  font-size: clamp(13px, 3.6vw, 16px) !important;
-  font-weight: 700 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(12.5px, 3.5vw, 14.5px) !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
-  letter-spacing: -0.2px !important;
+  letter-spacing: 0px !important;
 }
 
 .price-section.price-section-bf .price-cents::after,
@@ -117,8 +126,11 @@
   position: static !important;
   grid-column: 1 / span 2 !important;
   grid-row: 2 !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-size: clamp(11.5px, 3.2vw, 13.5px) !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(12px, 3.4vw, 13.5px) !important;
   font-weight: 400 !important;
   text-decoration: line-through !important;
   line-height: 1.15 !important;
