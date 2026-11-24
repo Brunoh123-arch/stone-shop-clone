@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'BFOnlyNumbers';
+  src: url('../fonts/bf-num-600.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ==========================================================================
    STONE SHOP — UI OFICIAL PERMANENTE (DECALQUE BLACK FRIDAY + PLAYER 16:9)
    Single Source of Truth — Carregado pelo Modelo Único Permanente
@@ -42,7 +50,7 @@
   padding: 3px 7px !important;
   background: #ffffff !important;
   color: #e10543 !important;
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
   font-size: clamp(12.5px, 3.6vw, 14.5px) !important;
@@ -75,7 +83,7 @@
 .price-section.price-section-bf .price-currency-sign {
   position: static !important;
   color: #ffffff !important;
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-size: clamp(12.5px, 3.5vw, 14.5px) !important;
   font-weight: 600 !important;
@@ -86,7 +94,7 @@
 .price-section.price-section-bf .price-current {
   position: static !important;
   color: #ffffff !important;
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
   font-size: clamp(23px, 6.4vw, 27px) !important;
@@ -98,7 +106,7 @@
 }
 
 .price-section.price-section-bf .price-cents {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
   font-size: clamp(12.5px, 3.5vw, 14.5px) !important;
@@ -127,7 +135,7 @@
   grid-column: 1 / span 2 !important;
   grid-row: 2 !important;
   color: rgba(255, 255, 255, 0.96) !important;
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
   font-size: clamp(12px, 3.4vw, 13.5px) !important;
