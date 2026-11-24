@@ -1425,8 +1425,9 @@ function renderRelacionados() {
     const precoInt = parts[0];
     const precoCent = parts[1] || '00';
 
+    const badgeBfSrc = isPagesDir ? '../img/badge-blackfriday.png' : 'img/badge-blackfriday.png';
     const badge1111Html = item.is1111 ? `
-      <span class="badge-1111" style="background:linear-gradient(135deg, #ff004f, #fe2c55); color:#fff; font-size:9px; font-weight:800; padding:1px 4.5px; border-radius:2.5px; margin-right:3.5px; vertical-align:middle; display:inline-block; line-height:1.15; letter-spacing:-0.2px;">11.11</span>
+      <img class="badge-1111" src="${badgeBfSrc}" alt="Black Friday" style="height:13.5px; width:auto; vertical-align:-2px; margin-right:4px; display:inline-block; flex-shrink:0;">
     ` : '';
 
     let badgesHtml = '';
