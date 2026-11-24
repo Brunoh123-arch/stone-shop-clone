@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,400..800&display=swap');
+
 /* ==========================================================================
    STONE SHOP — UI OFICIAL PERMANENTE (DECALQUE BLACK FRIDAY + PLAYER 16:9)
    Single Source of Truth — Carregado pelo Modelo Único Permanente
    ========================================================================== */
 
-/* 1. BANNER OFICIAL BLACK FRIDAY (1:1 COM REFERÊNCIA TIKTOK SHOP) */
+/* 1. BANNER OFICIAL BLACK FRIDAY (1:1 FORENSE COM PRINT REAL 720x1612 — TIKTOK SANS) */
 .price-section.price-section-bf {
   background-color: #fe1648 !important;
   background-image: url('../decalque/decalque-blackfriday.png?v=20261123_bf_v1') !important;
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  aspect-ratio: 686 / 122 !important;
+  aspect-ratio: 360 / 64 !important;
   width: 100% !important;
   height: auto !important;
-  min-height: 62px !important;
+  min-height: 64px !important;
   position: relative !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -23,9 +25,9 @@
   align-content: center !important;
   align-items: center !important;
   justify-items: start !important;
-  column-gap: 7px !important;
-  row-gap: 3px !important;
-  padding: 2px 46% 2px 14px !important;
+  column-gap: 6px !important;
+  row-gap: 6px !important;
+  padding: 4px 45% 4px 16px !important;
 }
 
 .price-section.price-section-bf::before,
@@ -37,23 +39,26 @@
   position: static !important;
   grid-column: 1 !important;
   grid-row: 1 !important;
-  height: auto !important;
+  height: 22px !important;
   min-width: unset !important;
-  padding: 3px 7px !important;
+  padding: 0 5.5px !important;
   background: #ffffff !important;
-  color: #fe1648 !important;
-  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif !important;
-  font-size: clamp(11.5px, 3.2vw, 14px) !important;
-  font-weight: 800 !important;
-  border-radius: 5px !important;
-  line-height: 1.1 !important;
+  color: #e10543 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(13.5px, 3.8vw, 15px) !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+  line-height: 1 !important;
   letter-spacing: -0.2px !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: none !important;
   margin: 0 !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   white-space: nowrap !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .price-section.price-section-bf .price-row {
@@ -63,7 +68,7 @@
   height: auto !important;
   display: inline-flex !important;
   align-items: baseline !important;
-  gap: 2px !important;
+  gap: 0px !important;
   margin: 0 !important;
   padding: 0 !important;
   line-height: 1 !important;
@@ -73,29 +78,40 @@
 .price-section.price-section-bf .price-currency-sign {
   position: static !important;
   color: #ffffff !important;
-  font-size: clamp(12.5px, 3.4vw, 15px) !important;
-  font-weight: 700 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-size: clamp(13px, 3.6vw, 14.5px) !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
-  margin-right: 1px !important;
+  letter-spacing: -0.1px !important;
+  margin-right: 4.5px !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .price-section.price-section-bf .price-current {
   position: static !important;
   color: #ffffff !important;
-  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif !important;
-  font-size: clamp(21px, 5.8vw, 27px) !important;
-  font-weight: 800 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(23.5px, 6.5vw, 27px) !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
-  letter-spacing: -0.6px !important;
+  letter-spacing: -0.3px !important;
   display: inline-flex !important;
   align-items: baseline !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .price-section.price-section-bf .price-cents {
-  font-size: clamp(13px, 3.6vw, 16px) !important;
-  font-weight: 700 !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(13px, 3.6vw, 14.5px) !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
-  letter-spacing: -0.2px !important;
+  letter-spacing: 0px !important;
+  margin-left: 0.5px !important;
 }
 
 .price-section.price-section-bf .price-cents::after,
@@ -105,30 +121,102 @@
 }
 
 .price-section.price-section-bf .bf-coupon-icon {
-  width: clamp(16px, 4.4vw, 20px) !important;
+  width: clamp(14.5px, 4vw, 16.5px) !important;
   height: auto !important;
-  align-self: center !important;
-  margin-left: 4px !important;
+  align-self: flex-end !important;
+  margin-bottom: 1.5px !important;
+  margin-left: 5px !important;
   flex-shrink: 0 !important;
-  opacity: 0.96 !important;
+  opacity: 1 !important;
 }
 
 .price-section.price-section-bf .price-original {
   position: static !important;
   grid-column: 1 / span 2 !important;
   grid-row: 2 !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-size: clamp(11.5px, 3.2vw, 13.5px) !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: clamp(12.5px, 3.55vw, 14px) !important;
   font-weight: 400 !important;
   text-decoration: line-through !important;
-  line-height: 1.15 !important;
+  text-decoration-thickness: 1px !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.1px !important;
   margin: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .price-section.price-section-bf .price-right {
   display: none !important;
+}
+
+/* 1.1 SLIDER COUNTER (1/7), MODAL DE VARIAÇÕES E DEMAIS NÚMEROS EM TIKTOK SANS */
+.image-slider .slider-counter {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: 11.5px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.46) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  height: 20px !important;
+  padding: 0 8px !important;
+  border-radius: 999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  letter-spacing: 0.2px !important;
+}
+
+#variacoes-modal .var-modal-desc-badge {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-weight: 600 !important;
+  color: #e10543 !important;
+  background: #ffe8ee !important;
+  border-radius: 5px !important;
+  letter-spacing: -0.2px !important;
+}
+
+#variacoes-modal .var-modal-preco,
+#variacoes-modal .var-modal-currency,
+#variacoes-modal .var-modal-int,
+#variacoes-modal .var-modal-cents {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-weight: 600 !important;
+  color: #e10543 !important;
+}
+
+#variacoes-modal .var-modal-currency {
+  margin-right: 3px !important;
+}
+
+#variacoes-modal .var-modal-preco-orig {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-weight: 400 !important;
+}
+
+.cart-badge,
+.ratings-row .star-row span,
+.ratings-row .sold-count,
+.installment-row span,
+.related-price,
+.related-price-original,
+.related-discount,
+.related-sold,
+.bottom-bar .btn-buy .btn-line1,
+.bottom-bar .btn-buy .btn-line2 {
+  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
 }
 
 /* ==========================================================================
