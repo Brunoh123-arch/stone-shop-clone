@@ -41,64 +41,78 @@
   "reviews_avg": "4.9",
   "reviews": [
     {
-      "name": "E**a S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_108.jpg",
-      "stars": 4,
+      "name": "P**o H**e",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_112.jpg",
+      "stars": 5,
       "date": "15/02",
-      "variation": "Azul",
-      "date_line": "15/02 · Azul",
-      "comment": "Preço imbatível de Black Friday. Vem com bico lubrificado e câmara que segura a pressão perfeitamente. Nota 10!",
-      "photos": []
+      "variation": "Laranja",
+      "date_line": "15/02 · Laranja",
+      "comment": "Chegou lacrada no plástico original pela Stone Shop e já calibrada! Costura termofusão perfeita, não entra água de jeito nenhum no campo molhado. Macia no chute e muito precisa.",
+      "photos": [
+        "../img/review-21-unbox-1.webp"
+      ]
     },
     {
-      "name": "P**o H**e",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_55.jpg",
+      "name": "C**a M**s",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_108.jpg",
       "stars": 5,
       "date": "14/02",
-      "variation": "Laranja",
-      "date_line": "14/02 · Laranja",
-      "comment": "Bola excelente! Costura termofusão perfeita, não entra água de jeito nenhum no campo molhado. Macia no chute e muito precisa.",
+      "variation": "Azul",
+      "date_line": "14/02 · Azul",
+      "comment": "Comprei pro meu filho que treina na escolinha de futebol e ele adorou! Azul linda demais pessoalmente, material de primeira qualidade e entrega super rápida.",
       "photos": [
-        "../img/review-21-c1-1.jpg"
+        "../img/review-21-unbox-2.webp"
       ]
     },
     {
-      "name": "I**a S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_110.jpg",
+      "name": "R**o A**s",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
       "stars": 5,
       "date": "12/02",
-      "variation": "Marinho",
-      "date_line": "12/02 · Marinho",
-      "comment": "Original da Penalty! Veio calibrada certinho na caixa. A galera do racha elogiou muito o peso e a trajetória. Vale a pena.",
+      "variation": "Laranja",
+      "date_line": "12/02 · Laranja",
+      "comment": "Laminado PU legítimo da Penalty! O toque é muito macio, não machuca o pé na batida e a câmara segura a pressão certinho. Melhor custo-benefício.",
       "photos": [
-        "../img/review-21-c2-1.jpg"
+        "../img/review-21-unbox-3.webp"
       ]
     },
     {
-      "name": "D**e A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "name": "L**s F**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_110.jpg",
       "stars": 5,
       "date": "11/02",
       "variation": "Azul",
       "date_line": "11/02 · Azul",
-      "comment": "Top demais! Muito resistente, já jogamos vários jogos no gramado sintético e ela continua novinha sem descascar.",
-      "photos": []
-    },
-    {
-      "name": "S**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_112.jpg",
-      "stars": 5,
-      "date": "10/02",
-      "variation": "Laranja",
-      "date_line": "10/02 · Laranja",
-      "comment": "Comprei pro meu filho que treina na escolinha de futebol e ele adorou. Material de primeira qualidade e entrega rápida.",
+      "comment": "Original da Penalty! A galera do racha elogiou demais o peso e a trajetória na batida. Já jogamos no gramado sintético e continua zerada.",
       "photos": [
-        "../img/review-21-c4-1.jpg"
+        "../img/review-21-unbox-4.webp"
       ]
     },
     {
-      "name": "M**e T**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_59.jpg",
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_5.jpg",
+      "stars": 5,
+      "date": "10/02",
+      "variation": "Azul",
+      "date_line": "10/02 · Azul",
+      "comment": "Aproveitei a promoção de Black Friday e já garanti logo duas pros meninos aqui de casa, uma azul e uma laranja! Vieram cheias e impecáveis.",
+      "photos": [
+        "../img/review-21-unbox-5.webp"
+      ]
+    },
+    {
+      "name": "E**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg",
+      "stars": 4,
+      "date": "09/02",
+      "variation": "Azul",
+      "date_line": "09/02 · Azul",
+      "comment": "Preço imbatível de Black Friday. Vem com bico lubrificado e câmara que segura a pressão perfeitamente. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "M**s T**o",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_118.jpg",
       "stars": 5,
       "date": "08/02",
       "variation": "Marinho",
@@ -107,8 +121,8 @@
       "photos": []
     },
     {
-      "name": "B**a N**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_114.jpg",
+      "name": "J**a R**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_100.jpg",
       "stars": 5,
       "date": "07/02",
       "variation": "Azul",
@@ -117,17 +131,17 @@
       "photos": []
     },
     {
-      "name": "G**l S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_61.jpg",
+      "name": "F**a C**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_114.jpg",
       "stars": 5,
       "date": "05/02",
       "variation": "Laranja",
       "date_line": "05/02 · Laranja",
-      "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonito e resistente. Recomendo demais!",
+      "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonita e resistente. Recomendo demais!",
       "photos": []
     },
     {
-      "name": "L**u D**e",
+      "name": "L**a D**e",
       "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_116.jpg",
       "stars": 5,
       "date": "04/02",
@@ -137,18 +151,18 @@
       "photos": []
     },
     {
-      "name": "L**e C**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_63.jpg",
+      "name": "A**a P**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_102.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Azul",
       "date_line": "02/02 · Azul",
-      "comment": "Entrega relâmpago! Produto 100% original, acabamento impecável de altíssima qualidade. Recomendo de olhos fechados.",
+      "comment": "Entrega relâmpago! Bola 100% original, acabamento impecável de altíssima qualidade. Meu marido amou.",
       "photos": []
     },
     {
-      "name": "B**a C**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_118.jpg",
+      "name": "T**a O**a",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_104.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "Laranja",
@@ -157,33 +171,23 @@
       "photos": []
     },
     {
-      "name": "F**o P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_65.jpg",
+      "name": "M**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_1.jpg",
       "stars": 5,
       "date": "29/01",
       "variation": "Marinho",
       "date_line": "29/01 · Marinho",
-      "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
+      "comment": "Simplesmente perfeita! Qualidade absurda, material resistente e quica certinho no gramado. Nota 10!",
       "photos": []
     },
     {
-      "name": "E**e S**s",
+      "name": "V**a S**s",
       "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_120.jpg",
       "stars": 5,
       "date": "28/01",
       "variation": "Azul",
       "date_line": "28/01 · Azul",
-      "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
-      "photos": []
-    },
-    {
-      "name": "I**r D**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_67.jpg",
-      "stars": 5,
-      "date": "26/01",
-      "variation": "Laranja",
-      "date_line": "26/01 · Laranja",
-      "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
+      "comment": "Chegou antes do prazo combinado! Já testaram aqui no campo do condomínio e aprovaram demais. Comprarei de novo!",
       "photos": []
     },
     {
@@ -240,7 +244,7 @@
     },
     {
       "href": "produto-57.html",
-      "img": "../img/produto-21-2.jpg",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdgxfw79ifo1aa",
       "alt": "caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E Tws",
       "name": "caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E Tws",
       "price": "R$ 69,90",
