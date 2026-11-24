@@ -360,3 +360,97 @@
   line-height: 1.3 !important;
 }
 
+/* ==========================================================================
+   4. CABEÇALHO DE AVALIAÇÕES DOS CLIENTES 1:1 TIKTOK SHOP
+      (★ 4,8 | Avaliações dos clientes ... ⓘ Ver mais ›)
+   ========================================================================== */
+.reviews-header-official {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  margin-bottom: 12px !important;
+  padding: 2px 0 !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.reviews-header-official .reviews-header-left {
+  display: flex !important;
+  align-items: center !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+.reviews-header-official .reviews-header-star {
+  width: 15px !important;
+  height: 15px !important;
+  flex-shrink: 0 !important;
+  margin-right: 4px !important;
+}
+
+.reviews-header-official .reviews-header-score {
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  color: #161823 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.1px !important;
+  flex-shrink: 0 !important;
+}
+
+.reviews-header-official .reviews-header-divider {
+  display: inline-block !important;
+  width: 1px !important;
+  height: 12px !important;
+  background-color: #e4e4e7 !important;
+  margin: 0 6px !important;
+  flex-shrink: 0 !important;
+}
+
+.reviews-header-official .reviews-header-title-text {
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  color: #161823 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.1px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  min-width: 0 !important;
+}
+
+.reviews-header-official .reviews-header-info-icon {
+  width: 13.5px !important;
+  height: 13.5px !important;
+  flex-shrink: 0 !important;
+  margin-left: 4px !important;
+  color: #161823 !important;
+}
+
+.reviews-header-official .reviews-header-ver-mais {
+  display: flex !important;
+  align-items: center !important;
+  gap: 2px !important;
+  font-size: 12.5px !important;
+  font-weight: 400 !important;
+  color: #8a8b91 !important;
+  flex-shrink: 0 !important;
+  line-height: 1 !important;
+}
+
+.reviews-header-official .reviews-header-ver-mais span {
+  color: #8a8b91 !important;
+  font-size: 12.5px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+
+.reviews-header-official .reviews-header-chevron {
+  width: 13px !important;
+  height: 13px !important;
+  flex-shrink: 0 !important;
+  stroke: #8a8b91 !important;
+}
+
+

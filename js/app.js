@@ -2649,32 +2649,44 @@ function formatCompactReviews() {
     }
   }
 
+  const notaVirgula = String(nota || '4,8').replace('.', ',');
+  const tituloCompleto = `Avaliações dos clientes (${total})`;
+
   if (header && !reviewsSection.querySelector('.reviews-header-official')) {
     const officialHeader = document.createElement('div');
     officialHeader.className = 'reviews-header-official';
-    officialHeader.style.cssText = 'display:flex; align-items:center; justify-content:space-between; gap:6px; margin-bottom:12px; cursor:pointer; user-select:none; -webkit-tap-highlight-color:transparent;';
     officialHeader.onclick = () => { if (typeof expandStoreReviews === 'function') expandStoreReviews(); };
     officialHeader.innerHTML = `
-      <div style="display:flex; align-items:center; gap:5px; min-width:0; flex:1;">
-        ${getTTOfficialStarSvg(16, true)}
-        <span style="font-size:15px; font-weight:800; color:#161823; line-height:1; letter-spacing:-0.2px;">4,7</span>
-        <span class="reviews-header-title-text" style="font-size:14px; font-weight:700; color:#161823; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:1; letter-spacing:-0.2px;">Avaliações dos clientes (...</span>
+      <div class="reviews-header-left">
+        <svg class="reviews-header-star" width="16" height="16" viewBox="0 0 24 24" fill="#FFB800" aria-hidden="true">
+          <path d="M12 2.2c.42 0 .8.25.98.63l2.36 4.96 5.46.75c.42.06.77.35.9.75.13.4.02.85-.28 1.15l-3.98 3.82.97 5.43c.07.42-.1.84-.45 1.09-.34.25-.8.28-1.17.08L12 18.27l-4.79 2.59c-.37.2-.83.17-1.17-.08-.35-.25-.52-.67-.45-1.09l.97-5.43-3.98-3.82c-.3-.3-.41-.75-.28-1.15.13-.4.48-.69.9-.75l5.46-.75 2.36-4.96c.18-.38.56-.63.98-.63z"></path>
+        </svg>
+        <span class="reviews-header-score">${notaVirgula}</span>
+        <span class="reviews-header-divider" aria-hidden="true"></span>
+        <span class="reviews-header-title-text">${tituloCompleto}</span>
+        <svg class="reviews-header-info-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9.5"></circle>
+          <line x1="12" y1="11" x2="12" y2="16.2"></line>
+          <circle cx="12" cy="7.6" r="1" fill="#161823" stroke="none"></circle>
+        </svg>
       </div>
-      <div class="reviews-header-ver-mais" style="display:flex; align-items:center; gap:2.5px; font-size:12px; color:#73747b; font-weight:400; flex-shrink:0; margin-left:6px;">
-        <span style="font-size:12px; color:#73747b; line-height:1;">ⓘ</span>
-        <span style="color:#73747b; line-height:1;">Ver mais</span>
-        <span style="font-size:13px; color:#73747b; line-height:1; margin-left:1px;">›</span>
+      <div class="reviews-header-ver-mais">
+        <span>Ver mais</span>
+        <svg class="reviews-header-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
       </div>
     `;
 
     header.style.display = 'none';
     if (summary) summary.style.display = 'none';
     reviewsSection.insertBefore(officialHeader, reviewsSection.firstChild);
-  } else if (reviewsSection.querySelector('.reviews-header-official') && realCount > 0) {
-    const titleTextEl = reviewsSection.querySelector('.reviews-header-official .reviews-header-title-text') ||
-      reviewsSection.querySelector('.reviews-header-official span:nth-of-type(3)');
-    if (titleTextEl) {
-      titleTextEl.textContent = `Avaliações dos clientes (...`;
+  } else if (reviewsSection.querySelector('.reviews-header-official')) {
+    const scoreEl = reviewsSection.querySelector('.reviews-header-official .reviews-header-score');
+    if (scoreEl && !scoreEl.textContent.trim()) scoreEl.textContent = notaVirgula;
+    const titleTextEl = reviewsSection.querySelector('.reviews-header-official .reviews-header-title-text');
+    if (titleTextEl && (!titleTextEl.textContent.trim() || titleTextEl.textContent.includes('(.'))) {
+      titleTextEl.textContent = tituloCompleto;
     }
   }
 

@@ -3,7 +3,7 @@ const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261124_senior_v1';
+const ASSET_VERSION = '20261124_rev_header_v2';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
@@ -243,7 +243,8 @@ function renderProdutoHtml(id) {
     '{{SOLD_COUNT}}': escapeHtml(data.sold_count || '1.2K vendidos'),
     '{{FRETE_ORIGINAL}}': escapeHtml(data.frete_original || 'R$ 15,60'),
     '{{REVIEWS_HEADER}}': escapeHtml(data.reviews_header || `Avaliações dos clientes (${(data.reviews || []).length})`),
-    '{{REVIEWS_AVG}}': escapeHtml(data.reviews_avg || '4,8'),
+    '{{REVIEWS_AVG}}': escapeHtml(data.reviews_avg || data.rating_score || '4,8'),
+    '{{REVIEWS_AVG_COMMA}}': escapeHtml(String(data.reviews_avg || data.rating_score || '4,8').replace('.', ',')),
     '{{REVIEWS_CARDS_HTML}}': renderReviews(data.reviews),
     '{{DETAILS_HTML}}': renderDetails(data.details),
     '{{VIDEO_HTML}}': renderVideo(data.video),
