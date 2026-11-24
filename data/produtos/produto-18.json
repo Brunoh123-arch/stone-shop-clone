@@ -236,9 +236,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/tfjuih.mp4",
+    "src": "https://files.catbox.moe/tfjuih.mp4#prod=18&slot=descricao&slug=kit-praia-4-cadeiras-sortida",
     "poster": "../img/posters-praia/poster-praia-01.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "tfjuih.mp4"
   },
   "size_guide_html": "",
   "description_html": "O Verão está aí, e que tal aquele Kit Completo para aproveitar com a família e amigos na praia?<br/><br/>O KIT 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ CollerKIT 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller, vai proporcionar conforto, alegria e diversão.<br/><br/>A Cadeira de Praia é dobrável reclinável 8 posições, fácil de carregar, e é ideal para ser levada para praia, pois o alumínio garante maior durabilidade, mesmo em regiões litorâneas.<br/><br/>Além de tudo é confortável e muito resistente.<br/><br/>Suporta até 100 kg.<br/><br/>O Guarda-sol Azul Mor 1,80m é um dos itens indispensáveis para quem gosta de praia e cuidar da saúde.<br/><br/>Fácil de montar, leve para transportar e acompanha sacola para facilitar o deslocamento. Tem estrutura em aço carbono com pintura epóxi à pó, rebites em aço e tecido em poliéster com silver coating que conferem a ele FPS 70.<br/><br/>E para deixar o seu Guarda-sol seguro, com pressão e rente à areia, não podia faltar o Saca Areia Convencional da Mor.<br/><br/>Produzido em PVC na cor azul com detalhe amarelo, é muito rápido e simples para utilizar, ideal para que você se instale na praia de forma mais cômoda.<br/><br/>Para o caminho até a praia, temos o Carrinho de Praia, que você consegue armazenar até cinco cadeiras, e tem espaço para caixa térmica, esteira de praia e guarda-sol. Além de todos esses benefícios, você pode utilizar o carrinho como mesa, quando chegar ao seu destino, e vem com quatro encaixes para copos ou latas.<br/><br/>As Caixas Térmicas da Mor são feitas em material altamente resistente, que não deixa odores no produto e são livres de BPA, permitindo assim o armazenamento de alimentos e bebidas com mais segurança.<br/><br/>As tampas possuem design diferenciado com suporte para bebidas e objetos. As alças são ergonômicas e auxiliam na hora do transporte.<br/><br/>MATERIAL<br/><br/>Cadeira: Alumínio, Polipropileno e Polietileno.<br/><br/>Guarda  Sol: Aço Carbono e Poliéster.<br/><br/>Saca Areia: PVC.<br/><br/>Carrinho de Praia: Estrutura de Alumínio, PP com EVA, Tampo em polipropileno.<br/><br/>Caixa Térmica: Polipropileno.<br/><br/>ITENS INCLUSOS<br/><br/>04 Cadeiras Sortidas Reclinável Nylon Mor<br/><br/>01 Guarda  Sol 1,80m Mor<br/><br/>01 Saca Areia Convencional Mor<br/><br/>01 Carrinho de Praia Mor<br/><br/>01 Caixa Térmica 18 litros Mor<br/><br/>MEDIDAS<br/><br/>CADEIRA<br/><br/>Altura Total 86,5 cm<br/><br/>Largura Total 54 cm<br/><br/>Comprimento Total 46 cm<br/><br/>Largura do Assento 48 cm<br/><br/>Comprimento do Assento 46 cm<br/><br/>Altura do Assento até o chão 25 cm<br/><br/>Comprimento encosto braço 47 cm<br/><br/>Peso da cadeira 1,700 kg<br/><br/>SUPORTA ATÉ 100 kg.<br/><br/>GUARDA-SOL<br/><br/>ABERTO<br/><br/>Comprimento 1,58m<br/><br/>Largura: 1,58m<br/><br/>Altura: até 1,80m (ajustável).<br/><br/>FECHADO<br/><br/>89 X 10 X 6<br/><br/>SACA AREIA<br/><br/>Comprimento 44 cm<br/><br/>Altura 3,5 cm<br/><br/>Largura 7,5 cm<br/><br/>CARRINHO DE PRAIA<br/><br/>Comprimento 84 cm<br/><br/>Largura 49 cm<br/><br/>Altura 1,11 m<br/><br/>Capacidade média:<br/><br/>5 cadeiras reclináveis;<br/><br/>4 cadeiras reclináveis + 1 alta;<br/><br/>5 cadeiras altas ou 5 cadeiras Master.<br/><br/>Espaço para Guarda-sol, Esteira de Praia e Caixa Térmica.<br/><br/>Capacidade do suporte para caixa térmica de 20L, 26L e 40L.<br/><br/>Suporta até 20 kg.<br/><br/>CAIXA TÉRMICA 18 L<br/><br/>Comprimento 38 cm<br/><br/>Altura 32 cm<br/><br/>Largura 26 cm<br/><br/>Capacidade sem gelo:<br/><br/>Latinha: 24 unidades de 350 ml<br/><br/>Garrafa pet: 12 unidades de 600ml.",
@@ -324,5 +325,134 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "kit_praia_mor_18",
+  "creators": [
+    {
+      "name": "Lucas Ferraz",
+      "username": "lucasferraz.sol",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_71.jpg",
+      "poster": "../img/posters-praia/poster-praia-02.jpg",
+      "video": "https://files.catbox.moe/rvye6v.mp4#prod=18&slot=criador_1&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "rvye6v.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Guarda-sol grande com proteção UV e cadeiras articuladas reforçadas! ☀️"
+    },
+    {
+      "name": "Mariana Rios",
+      "username": "mari.verao",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_72.jpg",
+      "poster": "../img/posters-praia/poster-praia-03.jpg",
+      "video": "https://files.catbox.moe/boz1bo.mp4#prod=18&slot=criador_2&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "boz1bo.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Facilidade pra montar e desmontar tudo na praia! Não ocupa espaço no porta-malas! 🌊"
+    },
+    {
+      "name": "Diego Litoral",
+      "username": "diegolitoral",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_73.jpg",
+      "poster": "../img/posters-praia/poster-praia-04.jpg",
+      "video": "https://files.catbox.moe/9ut6uv.mp4#prod=18&slot=criador_3&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "9ut6uv.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Qualidade Mor indiscutível! Kit mais completo e resistente pra curtir em família! 🌴"
+    },
+    {
+      "name": "Bianca Mar",
+      "username": "bianca.praiana",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_74.jpg",
+      "poster": "../img/posters-praia/poster-praia-10.jpg",
+      "video": "https://files.catbox.moe/jqvk36.mp4#prod=18&slot=criador_4&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "jqvk36.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "O saca-areia facilita muito a fixação do guarda-sol no vento forte! 👏"
+    },
+    {
+      "name": "Gustavo Mares",
+      "username": "gustavomares",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_75.jpg",
+      "poster": "../img/posters-praia/poster-praia-01.jpg",
+      "video": "https://files.catbox.moe/eat313.mp4#prod=18&slot=criador_5&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "eat313.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Alumínio leve e tecido resistente de secagem rápida! Vale cada centavo! 🏄‍♂️"
+    },
+    {
+      "name": "Carla Verão",
+      "username": "carlaverao_top",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_76.jpg",
+      "poster": "../img/posters-praia/poster-praia-02.jpg",
+      "video": "https://files.catbox.moe/azfbn2.mp4#prod=18&slot=criador_6&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "azfbn2.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Nossos dias de sol na praia agora são com conforto de primeira! 💖"
+    },
+    {
+      "name": "Marcelo Ondas",
+      "username": "marceloondas",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_77.jpg",
+      "poster": "../img/posters-praia/poster-praia-03.jpg",
+      "video": "https://files.catbox.moe/5ki8dk.mp4#prod=18&slot=criador_7&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "5ki8dk.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Kit praia top! Chegou tudo rápido antes da nossa viagem de fim de ano! 📦✈️"
+    },
+    {
+      "name": "Patrícia Mar",
+      "username": "patriciapraia",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_78.jpg",
+      "poster": "../img/posters-praia/poster-praia-04.jpg",
+      "video": "https://files.catbox.moe/3e1lap.mp4#prod=18&slot=criador_8&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "3e1lap.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Cadeiras confortáveis e guarda-sol amplo com ótima sombra! 🏖️"
+    },
+    {
+      "name": "Rafael Silva",
+      "username": "rafaelsilva_mar",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_79.jpg",
+      "poster": "../img/posters-praia/poster-praia-10.jpg",
+      "video": "https://files.catbox.moe/u1mpnm.mp4#prod=18&slot=criador_9&slug=kit-praia-4-cadeiras-sortida",
+      "catbox_id": "u1mpnm.mp4",
+      "startTime": 0.5,
+      "likes": 18700,
+      "commentsCount": 138,
+      "saves": 1980,
+      "shares": 610,
+      "description": "Conjunto de praia mais bem avaliado do TikTok Shop! 100% aprovado! 🌊"
+    }
+  ]
 }

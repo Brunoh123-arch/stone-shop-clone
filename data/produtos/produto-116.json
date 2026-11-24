@@ -247,9 +247,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/db3r4b.mp4",
+    "src": "https://files.catbox.moe/db3r4b.mp4#prod=116&slot=descricao&slug=smart-tv-dled-32-hd-multi-ro",
     "poster": "../img/posters-desc/poster-desc-116.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "db3r4b.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🔥 Smart TV DLED 32\" HD Multi Roku 3HDMI 2USB Wi-Fi - TL052M Preto</strong><br/><br/>\n              Transforme a sua sala ou quarto em um cinema com a Smart TV 32\" Multi Roku! Equipado com o consagrado sistema operacional Roku TV, processador potente Quad-Core e tecnologia de som Dolby Audio.<br/><br/>\n<strong>Destaques da Smart TV Multi Roku 32\":</strong><br/>\n              • <strong>Sistema Roku TV Integrado:</strong> Acesso rápido a milhares de canais gratuitos e aos principais apps de streaming como Netflix, Prime Video, Disney+, YouTube, Globoplay e HBO Max.<br/>\n              • <strong>Tela DLED HD Imersiva:</strong> Cores vivas, alto contraste e taxa de atualização suave de 60Hz com excelente ângulo de visão.<br/>\n              • <strong>Áudio Dolby Audio:</strong> Som nítido e potente com equalização inteligente para filmes, séries e esportes ao vivo.<br/>\n              • <strong>Conectividade Completa:</strong> 3 portas HDMI, 2 portas USB, entrada AV, saída óptica de áudio e Wi-Fi integrado de alta velocidade.<br/>\n              • <strong>Controle Intuitivo e App Mobile:</strong> Controle sua TV direto pelo controle remoto com teclas de atalho ou pelo smartphone (iOS e Android) com busca por voz.<br/>\n              • <strong>Compatível com Assistentes de Voz:</strong> Funcione integrado com Apple AirPlay, HomeKit, Alexa e Google Assistente.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Multi (Multilaser)<br/>\n              • Modelo: TL052M<br/>\n              • Tamanho da tela: 32 Polegadas<br/>\n              • Resolução: HD (1366 x 768)<br/>\n              • Voltagem: Bivolt Automático (100V - 240V)<br/>\n              • Dimensões com suporte: 72,4 x 47,1 x 18 cm<br/>\n              • Peso aproximado: 3,8 kg<br/>\n              • Itens inclusos: 1 Smart TV 32\" Multi Roku, 1 Controle remoto com pilhas, 1 Base de apoio com parafusos, 1 Cabo de força e Manual do usuário.<br/>\n              • Garantia oficial: 12 meses (1 ano) Multi do Brasil.",
@@ -323,5 +324,50 @@
     "rating": 4.8,
     "sales": "3.1K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "smart_tv_116",
+  "creators": [
+    {
+      "name": "Capítulo 0",
+      "username": "semroteiroreall",
+      "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_27.jpg",
+      "poster": "../videosprodutos/posters/poster-criador-116-1.jpg",
+      "video": "https://files.catbox.moe/1bsjyo.mp4#prod=116&slot=criador_1&slug=smart-tv-dled-32-hd-multi-ro",
+      "catbox_id": "1bsjyo.mp4",
+      "startTime": 0.2,
+      "likes": 26880,
+      "commentsCount": 180,
+      "saves": 2060,
+      "shares": 87,
+      "description": "Finalmente minha Tv🍿✨ #vlog #f #fy #sozinha #rotina "
+    },
+    {
+      "name": "Ysabella Rocha",
+      "username": "ysabellarocha",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/29b337df0fbc42f7ec0419a2c18728dd~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=f07a5891&x-expires=1795464000&x-signature=eSpLJBX9NXG7rYnSqJ0faO%2Bgyo4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-116-2.jpg",
+      "video": "https://files.catbox.moe/lqv9dt.mp4#prod=116&slot=criador_2&slug=smart-tv-dled-32-hd-multi-ro",
+      "catbox_id": "lqv9dt.mp4",
+      "startTime": 0.2,
+      "likes": 29260,
+      "commentsCount": 218,
+      "saves": 2270,
+      "shares": 106,
+      "description": "📲 Confere no link — separei só os achados que estão explodindo na Shopee! 💥 🛍️ Vê rápido antes que acabe 👇 #AchadinhosShopee #ShopeeVídeo..."
+    },
+    {
+      "name": "Eulina Monteiro",
+      "username": "eulinamonteiro1",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/78bdf59d5734bec27ad3daddd58830b9~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=82d79a3f&x-expires=1795464000&x-signature=NM91TET1IlxySeH0iSmDtS6LxI4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-116-3.jpg",
+      "video": "https://files.catbox.moe/6frcsi.mp4#prod=116&slot=criador_3&slug=smart-tv-dled-32-hd-multi-ro",
+      "catbox_id": "6frcsi.mp4",
+      "startTime": 0.2,
+      "likes": 31640,
+      "commentsCount": 256,
+      "saves": 2480,
+      "shares": 125,
+      "description": "Nossa nova conquista graças a Deus 🙏🏼🥰❤️#conquis#tvnova#gratidao "
+    }
+  ]
 }

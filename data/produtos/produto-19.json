@@ -456,9 +456,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/8octvc.mp4",
+    "src": "https://files.catbox.moe/8octvc.mp4#prod=19&slot=descricao&slug=tablet-vision-tab-7-stitch-c",
     "poster": "../img/posters-desc/poster-desc-19.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "8octvc.mp4"
   },
   "size_guide_html": "",
   "description_html": "Condições do Produto<br/><br/> Novo<br/><br/> Lacrado<br/><br/> 12 meses de garantia<br/><br/> Direto da fábrica<br/><br/> Original<br/><br/>DESTAQUES PRINCIPAIS<br/><br/><br/><br/>TELA: 7\" IPS LCD Full Lamination, resolução 1024x600, brilho 200 cd/m, proporção 16:9, 60Hz, touchscreen.<br/><br/><br/><br/>PROCESSADOR: Octa-Core Allwinner A523 (8x ARM Cortex-A55 até 1.8GHz).<br/><br/>MEMÓRIA RAM: 3GB LPDDR3 (real, não emulada).<br/><br/>ARMAZENAMENTO: 64GB eMMC, expansível até 512GB via microSD.<br/><br/>SISTEMA OPERACIONAL: Android 14 Go.<br/><br/>CONECTIVIDADE: Wi-Fi 2.4GHz AX, Bluetooth, USB-C, Saída de áudio P2 (3,5mm).<br/><br/>CÂMERA FRONTAL: 2MP, vídeo 720p @ 30fps.<br/><br/>CONTROLE PARENTAL: YouTube Kids pré-instalado, bloqueio infantil, monitoramento de uso.<br/><br/>DESIGN: Acabamento leather feeling, bordas finas, ergonômico.<br/><br/>ACESSÓRIOS: Capa de silicone + bolsa de neoprene com alça e suporte.<br/><br/>BATERIA: 3100mAh, carregador de 5W, USB-C.<br/><br/> CONTEÚDO DA EMBALAGEM<br/><br/>Tablet Positivo Vision Tab 7 Stitch<br/><br/>Carregador 5W<br/><br/>Cabo de dados<br/><br/>Guia rápido<br/><br/>Capa de proteção de silicone<br/><br/>Bolsa de transporte em Neoprene<br/><br/>Ohana significa família!!!<br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/review-user-15.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_1.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_10.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_15.jpg\"/><br/><br/><img decoding=\"async\" loading=\"lazy\" src=\"../img/reviews-avatars/tiktok_real/tt_avatar_16.jpg\"/><br/><br/>Tablet Positivo Vision TAB 7 Stitch + Capa e Bolsa Personalizadas para Tablet Infantil Octa Core 3GB RAM 64GB Android 14 Go Wi-Fi Tela 7 LCD IPS  Preto<br/><br/>Está procurando um tablet educativo e seguro para crianças? Stitch, um dos personagens preferidos dos pequenos, agora faz parte da linha de Tablets Infantis da Positivo: Conheça o Vision Tab 7 Stitch!<br/><br/>O tablet do Stitch é de outro mundo: Equipado com processador Octa Core Allwinner A523 e 3GB de RAM, garante desempenho fluido para atividades diárias e jogos. Com 64GB de armazenamento, tem espaço de sobra para todos os apps e conteúdos favoritos da criançada.<br/><br/>Tela IPS faz toda a diferença: Um dos grandes diferenciais é a tela IPS com full lamination. Esse painel tem cores intensas e precisas, além de imagens dinâmicas em qualquer ângulo de visão.<br/><br/>Tamanho na medida certa: Fácil de transportar, guardar e confortável para segurar. Possui design elegante e ergonômico, para uma experiência de uso agradável em uma tela de 7.<br/><br/>Segurança e proteção: Interface otimizada e intuitiva com o Android 14 Go. Com o recurso de controle parental você gerencia o tempo de uso e os apps acessados pelas crianças.<br/><br/>Acessórios personalizados do Stitch: Vem com 1 capa de silicone + 1 bolsa com alça que serve de suporte para o tablet. A caixa do produto vira jogo da memória e suporte.<br/><br/>Diferenciais do produto:<br/><br/>1. Processador Octa Core Allwinner A523 para desempenho fluido.<br/><br/>2. Tela de 7 com tecnologia IPS para cores intensas e vibrantes.<br/><br/>3. Android 14 Go para uma experiência otimizada e intuitiva.<br/><br/>4. Controle parental avançado com YouTube Kids pré-instalado.<br/><br/>5. Armazenamento de 64GB expansível até 512GB via microSD.<br/><br/>6. Acompanha capa de proteção + bolsa personalizadas e resistentes.<br/><br/>7. Bateria de 3100mAh para uso prolongado.<br/><br/>8. Design ergonômico e leve, ideal para o uso infantil.",
@@ -548,5 +549,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "stitch_19",
+  "creators": [
+    {
+      "name": "Dahiane Achados",
+      "username": "achados_dah",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_76.jpg",
+      "poster": "../img/produto-19-1.jpg",
+      "video": "https://files.catbox.moe/3wzagk.mp4#prod=19&slot=criador_1&slug=tablet-vision-tab-7-stitch-c",
+      "catbox_id": "3wzagk.mp4",
+      "startTime": 0.2,
+      "likes": 21900,
+      "commentsCount": 185,
+      "saves": 1690,
+      "shares": 78,
+      "description": "Presente perfeito pras crianças! Tablet Stitch da Positivo com capa protetora e jogos educativos 💙✨"
+    },
+    {
+      "name": "Yasmin Fernandes",
+      "username": "yafernandes_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_78.jpg",
+      "poster": "../img/produto-19-2.jpg",
+      "video": "https://files.catbox.moe/mqfzip.mp4#prod=19&slot=criador_2&slug=tablet-vision-tab-7-stitch-c",
+      "catbox_id": "mqfzip.mp4",
+      "startTime": 0.2,
+      "likes": 24000,
+      "commentsCount": 209,
+      "saves": 1870,
+      "shares": 92,
+      "description": "Comprei o tablet do Stitch perfeito pra minha filha com bolsa temática e controle parental 🥹🩵"
+    },
+    {
+      "name": "Lais Cordeiro",
+      "username": "laiscordeiro01",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_80.jpg",
+      "poster": "../img/produto-19-1.jpg",
+      "video": "https://files.catbox.moe/01mmmd.mp4#prod=19&slot=criador_3&slug=tablet-vision-tab-7-stitch-c",
+      "catbox_id": "01mmmd.mp4",
+      "startTime": 0.2,
+      "likes": 26100,
+      "commentsCount": 233,
+      "saves": 2050,
+      "shares": 106,
+      "description": "Tablet Positivo Vision TAB 7 Stitch 64GB com bolsa exclusiva, tela nítida e super resistente 📱"
+    },
+    {
+      "name": "Kamila Santos",
+      "username": "dicasfacilita",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_82.jpg",
+      "poster": "../img/produto-19-2.jpg",
+      "video": "https://files.catbox.moe/lo6a22.mp4#prod=19&slot=criador_4&slug=tablet-vision-tab-7-stitch-c",
+      "catbox_id": "lo6a22.mp4",
+      "startTime": 0.2,
+      "likes": 28200,
+      "commentsCount": 257,
+      "saves": 2230,
+      "shares": 120,
+      "description": "Tablet Positivo Vision TAB 7 Stitch infantil completo com capa emborrachada e alça de transporte ✨"
+    },
+    {
+      "name": "Vi e Comprei",
+      "username": "viacheiecomprei",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_84.jpg",
+      "poster": "../img/produto-19-1.jpg",
+      "video": "https://files.catbox.moe/25pill.mp4#prod=19&slot=criador_5&slug=tablet-vision-tab-7-stitch-c",
+      "catbox_id": "25pill.mp4",
+      "startTime": 0.2,
+      "likes": 30300,
+      "commentsCount": 281,
+      "saves": 2410,
+      "shares": 134,
+      "description": "Achadinho incrível! Tablet Stitch com Android 14 Go, rápido, seguro e muito fofo pro dia a dia 💙"
+    }
+  ]
 }

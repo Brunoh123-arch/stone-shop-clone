@@ -272,9 +272,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/h5x3n6.mp4",
+    "src": "https://files.catbox.moe/h5x3n6.mp4#prod=12&slot=descricao&slug=piscina-splash-fun-redonda-i",
     "poster": "../img/posters-desc/poster-desc-12.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "h5x3n6.mp4"
   },
   "size_guide_html": "",
   "description_html": "Sejam Bem-vindos à Mor Oficial!<br/><strong>Piscina Splash Fun Redonda Inflável 2400 Litros - Mor</strong><br/><br/>Desfrute ao máximo do verão com a incrível Piscina Inflável Splash Fun de 2.400 litros da Mor! Montar sua piscina nunca foi tão fácil e seguro. Sem a necessidade de armações de ferro pesadas ou peças rígidas, ela destaca-se pela lona de PVC super reforçada com laminado duplo e uma trama de poliéster entre as lâminas (tecnologia de 3 camadas), proporcionando resistência superior contra furos e rasgos.<br/><br/>A inovação continua com a exclusiva ausência de quinas rígidas na estrutura: a única sustentação necessária é o anel inflável na borda superior e a própria água, garantindo total segurança para as crianças brincarem à vontade. Para simplificar ainda mais, a Piscina Inflável acompanha manual detalhado de instruções, válvula de deságue para escoamento rápido, válvula para conexão de filtro e kit reparo original.<br/><br/>Transforme seu quintal em uma área de lazer completa para relaxar após o trabalho e curtir os fins de semana de sol com a família inteira!<br/><br/>Destaques Principais:<br/>- Capacidade: 2400 Litros<br/>- Formato: Redondo (2,40m de diâmetro x 63cm de altura)<br/>- Montagem expressa: basta inflar a borda superior e encher de água que ela sobe sozinha<br/>- Lona tripla reforçada com tela tramada de poliéster de alta tenacidade<br/>- Borda inflável macia: sem ferragens pontiagudas ou quinas perigosas<br/>- Acompanha válvula de deságue com encaixe, válvula para filtro e kit reparo original Mor<br/><br/>Especificações Técnicas:<br/>- Marca: Mor<br/>- Modelo: Splash Fun 2400L<br/>- Referência do Fabricante: 001053<br/>- EAN: 7896020610533<br/>- Medidas montada: 2,40m x 2,40m x 63cm<br/>- Peso: 5,16 Kg<br/>- Certificação e Segurança OCP: 00309/2016<br/>- Garantia: 90 dias contra defeito de fabricação<br/><br/>Atenção: Nunca deixe crianças sozinhas perto da água sem a supervisão direta de um adulto.",
@@ -336,5 +337,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "piscina_12",
+  "creators": [
+    {
+      "name": "Damiris Oliveira",
+      "username": "damiris.oliveira",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/73f7809fdc9612fc6b93351175f8c18d~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=3c6e8ffb&x-expires=1795464000&x-signature=Gs3PkZTeSclGltnCSt3b5plJD3g%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-12-1.jpg",
+      "video": "https://files.catbox.moe/ak8ypl.mp4#prod=12&slot=criador_1&slug=piscina-splash-fun-redonda-i",
+      "catbox_id": "ak8ypl.mp4",
+      "startTime": 0.2,
+      "likes": 14610,
+      "commentsCount": 79,
+      "saves": 1240,
+      "shares": 50,
+      "description": "Bora montar uma piscina neste calor? ☀️ @felipebarati #verao #calor #piscinas #piscinaemcasa #sol #bestway"
+    },
+    {
+      "name": "thaynacolsani",
+      "username": "thaynacolsani",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/f66dd15f624a52b3c85ecff9695794c4~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=eb96ec97&x-expires=1795464000&x-signature=UqxYeTGwMol8TGalpZ6LC1V0u%2F8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-12-2.jpg",
+      "video": "https://files.catbox.moe/09o5ip.mp4#prod=12&slot=criador_2&slug=piscina-splash-fun-redonda-i",
+      "catbox_id": "09o5ip.mp4",
+      "startTime": 0.2,
+      "likes": 15020,
+      "commentsCount": 90,
+      "saves": 1330,
+      "shares": 58,
+      "description": "Respondendo a @Gabriel😜😜😜 "
+    },
+    {
+      "name": "Eduardo Lopes",
+      "username": "duardolops",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/378400c1507efbea78d62d767d23ef36~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2e608666&x-expires=1795464000&x-signature=Dxws00hRyWyKu7QOJBIpy9kkUy8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-12-3.jpg",
+      "video": "https://files.catbox.moe/zg8pnv.mp4#prod=12&slot=criador_3&slug=piscina-splash-fun-redonda-i",
+      "catbox_id": "zg8pnv.mp4",
+      "startTime": 0.2,
+      "likes": 15430,
+      "commentsCount": 101,
+      "saves": 1420,
+      "shares": 66,
+      "description": "Montando uma piscina de 5000 Litros #piscina #verao #montagem #montandopiscina "
+    }
+  ]
 }

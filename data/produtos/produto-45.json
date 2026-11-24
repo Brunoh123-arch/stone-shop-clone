@@ -596,9 +596,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/bjcwqr.mp4",
+    "src": "https://files.catbox.moe/bjcwqr.mp4#prod=45&slot=descricao&slug=prancha-pro-480-turbo-mq-pro",
     "poster": "../img/posters-desc/poster-desc-45.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "bjcwqr.mp4"
   },
   "size_guide_html": "",
   "description_html": "A prancha Turbo você fará progressivas perfeitas muito mais rápido e com o melhor custo-benefício. Seu dia vai render com a agilidade e a temperatura da prancha MQ Pro480 Turbo Titanium, que chega a 485F no Modo Turbo. Muito fácil de ajustar, pois tem as 5 temperaturas mais usadas nos salões. Todo mundo vai comentar a velocidade e a qualidade do seu trabalho na hora de fazer um alisamento brasileiro. Possui um exclusivo formato ergonômico, que protege sua saúde de movimentos repetitivos e queimaduras. Chegou a sua vez de fazer alisamentos com a prancha testada e aprovada por milhares de profissionais do mundo inteiro. Produzida pela MQ Professional, uma marca com mais de 10 anos de experiência no mercado brasileiro, que tem todos os tipos de cabelo e todos os tipos de rede elétrica.<br/><br/>Especificações:<br/><br/>Material das placas: Titanium<br/><br/>Temperatura mínima: 370F / 190C<br/><br/>Temperatura máxima: 485F / 252C<br/><br/>Ajustes de temperatura: Sim - 5 níveis<br/><br/>MCH: Sim - Recuperação imediata da Temperatura<br/><br/>Floating Plates: Sim - Reduz a tensão no punho e mão<br/><br/>Íons: Placas ionizadas<br/><br/>Progressiva: Sim<br/><br/>Display digital: Não. Visor Led<br/><br/>Tamanho das placas: 32MM<br/><br/>Ponta antitérmica: Sim<br/><br/>Potência: 45W<br/><br/>Tipo de cabo: Giratório<br/><br/>Tamanho do cabo: 3M<br/><br/>Voltagem: Bivolt Automático<br/><br/>Design: Anatômico<br/><br/>Cor: Black e detalhes Silver<br/><br/>Pintura: Brilhante<br/><br/>Dimensão do produto: 30x7x4<br/><br/>Peso do produto: 262g<br/><br/>EAN: 7908422601597<br/><br/>Frequência: 50/60Hz<br/><br/>Material da carcaça: PA<br/><br/>Garantia:<br/><br/>- 12 meses<br/><br/>Conteúdo da Embalagem:<br/><br/>- 1 Prancha MQ PRO 480 Turbo,1 Manual",
@@ -678,5 +679,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "mq_45",
+  "creators": [
+    {
+      "name": "Clau B",
+      "username": "dicasclaub",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_32.jpg",
+      "poster": "../img/produto-45-1.jpg",
+      "video": "https://files.catbox.moe/v900zz.mp4#prod=45&slot=criador_1&slug=prancha-pro-480-turbo-mq-pro",
+      "catbox_id": "v900zz.mp4",
+      "startTime": 0.2,
+      "likes": 28400,
+      "commentsCount": 245,
+      "saves": 2150,
+      "shares": 110,
+      "description": "Que chapinha perfeita da MQ Professional PRO 480! Brilho espelhado e deslize ultra suave 😍🫶🏻"
+    },
+    {
+      "name": "Sheila Gimenez",
+      "username": "sheilagimenezz",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_34.jpg",
+      "poster": "../img/produto-45-2.jpg",
+      "video": "https://files.catbox.moe/ppsl9u.mp4#prod=45&slot=criador_2&slug=prancha-pro-480-turbo-mq-pro",
+      "catbox_id": "ppsl9u.mp4",
+      "startTime": 0.2,
+      "likes": 31100,
+      "commentsCount": 277,
+      "saves": 2390,
+      "shares": 129,
+      "description": "Alisamento impecável com meu equipamento top! Prancha Pro 480 MQ Hair ✨"
+    },
+    {
+      "name": "Grace Silva",
+      "username": "greysilvahelena",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_36.jpg",
+      "poster": "../img/produto-45-3.jpg",
+      "video": "https://files.catbox.moe/jb8mrw.mp4#prod=45&slot=criador_3&slug=prancha-pro-480-turbo-mq-pro",
+      "catbox_id": "jb8mrw.mp4",
+      "startTime": 0.2,
+      "likes": 33800,
+      "commentsCount": 309,
+      "saves": 2630,
+      "shares": 148,
+      "description": "O sonho de toda mulher que ama cuidar do cabelo! MQ Pro 480 Turbo sela a cutícula na hora 💖"
+    },
+    {
+      "name": "Jappa",
+      "username": "_eujapaoficial",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_38.jpg",
+      "poster": "../img/produto-45-1.jpg",
+      "video": "https://files.catbox.moe/6a95oa.mp4#prod=45&slot=criador_4&slug=prancha-pro-480-turbo-mq-pro",
+      "catbox_id": "6a95oa.mp4",
+      "startTime": 0.2,
+      "likes": 36500,
+      "commentsCount": 341,
+      "saves": 2870,
+      "shares": 167,
+      "description": "Prancha Professional MQ PRO 480 Turbo. 5 níveis de temperatura e tecnologia de titânio puro!"
+    },
+    {
+      "name": "Jessica Lopes",
+      "username": "jesslopesoficial1",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_40.jpg",
+      "poster": "../img/produto-45-2.jpg",
+      "video": "https://files.catbox.moe/npls76.mp4#prod=45&slot=criador_5&slug=prancha-pro-480-turbo-mq-pro",
+      "catbox_id": "npls76.mp4",
+      "startTime": 0.2,
+      "likes": 39200,
+      "commentsCount": 373,
+      "saves": 3110,
+      "shares": 186,
+      "description": "Review profissional da MQ Pro 480. Não queima as pontas e o liso dura dias! Perfeita!"
+    }
+  ]
 }

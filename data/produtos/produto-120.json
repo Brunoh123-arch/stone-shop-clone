@@ -253,9 +253,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/qdufjg.mp4",
+    "src": "https://files.catbox.moe/qdufjg.mp4#prod=120&slot=descricao&slug=sofa-retratil-e-reclinavel-3",
     "poster": "../img/posters-desc/poster-desc-120.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "qdufjg.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🛋️ Sofá Retrátil e Reclinável 3 Lugares 2,10m em Suede Veludo com Pillow Top</strong><br/><br/>\n              O conforto de um cinema na sua sala de estar! Fabricado com matérias-primas selecionadas e acabamento primoroso para proporcionar relaxamento absoluto.<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n              • <strong>Assento com Molas Ensacadas e Pillow Top de 12cm:</strong> Sustentação ideal que não afunda com o tempo e oferece sensação de aconchego incomparável.<br/>• <strong>Mecanismo Retrátil Suave:</strong> Abre com facilidade deslizando sobre rodízios de silicone que protegem seu piso de arranhões.<br/>• <strong>Encosto Reclinável em 4 Estágios:</strong> Ajuste na posição perfeita para ler, conversar, assistir TV ou tirar uma soneca deitado.<br/>• <strong>Tecido Suede Veludo Premium:</strong> Toque sedoso de alta durabilidade que não retém calor excessivo.<br/>• <strong>Braços Almofadados:</strong> Espuma macia nos braços para apoiar a cabeça ou relaxar os braços.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Stone Estofados<br/>• Modelo: Imperial Retrátil 2,10m<br/>• Capacidade de Peso: Suporta até 130 kg por assento<br/>• Pés: Pés em madeira maciça com sapatas niveladoras<br/>• Montagem: Módulos de engate rápido sem parafusos complexos",
@@ -337,5 +338,50 @@
     "rating": 4.9,
     "sales": "1.1K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "sofa120",
+  "creators": [
+    {
+      "name": "Patypooh",
+      "username": "patypooh03",
+      "avatar": "../img/avatars-sofa/creator-paty.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-120-c2.jpg",
+      "video": "https://files.catbox.moe/7oorlp.mp4#prod=120&slot=criador_1&slug=sofa-retratil-e-reclinavel-3",
+      "catbox_id": "7oorlp.mp4",
+      "startTime": 0.2,
+      "likes": 30700,
+      "commentsCount": 272,
+      "saves": 2380,
+      "shares": 117,
+      "description": "Sofá Retrátil e Reclinável com molas ensacadas e espuma D33! Abre até 1,80m e vira uma cama de casal perfeita! 🥰👏 #tiktokviral #casa #sofa"
+    },
+    {
+      "name": "Telma Indica",
+      "username": "telmareis341",
+      "avatar": "../img/avatars-sofa/creator-telma.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-120-c3.jpg",
+      "video": "https://files.catbox.moe/ctdyx8.mp4#prod=120&slot=criador_2&slug=sofa-retratil-e-reclinavel-3",
+      "catbox_id": "ctdyx8.mp4",
+      "startTime": 0.2,
+      "likes": 33600,
+      "commentsCount": 314,
+      "saves": 2640,
+      "shares": 139,
+      "description": "O sofá dos sonhos pra maratonar filmes e séries! Retrátil, reclinável, macio demais e super fácil de limpar! Aproveitem o cupom! 🍿🛋️ #tiktokshop #sofaretratil #decoracao"
+    },
+    {
+      "name": "Aura Glow Shop",
+      "username": "auraglowshop70",
+      "avatar": "../img/avatars-sofa/creator-aura.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-120-c4.jpg",
+      "video": "https://files.catbox.moe/3b1m78.mp4#prod=120&slot=criador_3&slug=sofa-retratil-e-reclinavel-3",
+      "catbox_id": "3b1m78.mp4",
+      "startTime": 0.2,
+      "likes": 36500,
+      "commentsCount": 356,
+      "saves": 2900,
+      "shares": 161,
+      "description": "Transforme sua sala com muito conforto e elegância! Sofá retrátil e reclinável revestido em veludo suede premium da Stone Shop! 💖🛋️ #SofaRetratil #MoveisParaCasa #decor"
+    }
+  ]
 }

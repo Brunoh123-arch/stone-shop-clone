@@ -220,9 +220,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/mr2lij.mp4",
+    "src": "https://files.catbox.moe/mr2lij.mp4#prod=9&slot=descricao&slug=ar-condicionado-portatil-hq-",
     "poster": "../img/posters-ar-portatil/poster-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "mr2lij.mp4"
   },
   "size_guide_html": "",
   "description_html": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW<br/><br/>O ar-condicionado portáteis HQ é a solução perfeita para conforto e praticidade. Disponíveis em modelos de 8.500 BTUs e 10.500 BTUs, são ideais para ambientes de até 12m. Com design moderno, oferecem modos de resfriamento, ventilação, desumidificação e temporizador de 24 horas. Utilizam gás refrigerante R32, que reduz impactos ambientais, garantindo eficiência e sustentabilidade. Compactos, fáceis de instalar e transportar, proporcionam bem-estar em qualquer lugar.<br/><br/>- Modos de operação: Resfriamento, desumidificação e ventilação.<br/><br/>- Temporizador de 24 horas para maior comodidade.<br/><br/>- Refrigerante R32: Mais eficiente e ambientalmente responsável.<br/><br/>- Portátil e fácil de instalar: Ideal para qualquer lugar.<br/><br/>Perfeito para residências, escritórios ou qualquer ambiente que precise de climatização eficiente. Seja em casa ou no trabalho, a linha HQ entrega qualidade e bem-estar em todos os momentos<br/><br/>Especificações Técnicas<br/><br/>Marca:HQ<br/><br/>Tipo:Portátil<br/><br/>Cor: Branco<br/><br/>Modelo:HQ-AP8500FW<br/><br/>Capacidade: 8.500 BTUs<br/><br/>Disponivel nas voltagens: 127V e 220V( Não é Bivolt)<br/><br/>Potência: 127V/900W<br/><br/>Potência: 220V/800W<br/><br/>Área Ideal(m): Até 12<br/><br/>Refrigerante: Gás R32<br/><br/>Funcionalidades<br/><br/>Resfriamento (16C - 31C)<br/><br/>Ventilação<br/><br/>Desumidificação<br/><br/>Temporizador ON/OFF (1 a 24 horas)<br/><br/>Indicador de reservatório cheio<br/><br/>Velocidades de ventilador ajustáveis (baixa, média e alta)<br/><br/>Operação silenciosa<br/><br/>Acessórios Inclusos<br/><br/>- Controle remoto<br/><br/>- Mangueira de exaustão<br/><br/>- Kit de instalação de janela (horizontal e vertical)<br/><br/>- Adaptador de caixa<br/><br/>- Conector de janela<br/><br/>- Tubo de drenagem<br/><br/>- Manual do usuário<br/><br/>Dimensões e Peso do Produto<br/><br/>Altura: 68 cm<br/><br/>Largura: 33 cm<br/><br/>Profundidade:28 cm<br/><br/>Peso: 18Kg<br/><br/>Garantia<br/><br/>01 Ano (Sendo 3 meses de garantia legal e mais 9 meses de garantia para defeito de fabricação).",
@@ -302,5 +303,22 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "ar_hq_9",
+  "creators": [
+    {
+      "name": "Tech Casa Brasil",
+      "username": "techcasabr",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_16.jpg",
+      "poster": "../img/posters-ar-portatil/poster-1.jpg",
+      "video": "https://files.catbox.moe/mr2lij.mp4#prod=9&slot=criador_1&slug=ar-condicionado-portatil-hq-",
+      "catbox_id": "mr2lij.mp4",
+      "startTime": 0.2,
+      "likes": 14200,
+      "commentsCount": 38,
+      "saves": 1200,
+      "shares": 180,
+      "description": "Ar Condicionado Portátil HQ 8.500 BTUs: perfeito pra quartos de até 12m², gela super rápido sem quebradeira!"
+    }
+  ]
 }

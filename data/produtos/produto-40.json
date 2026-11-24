@@ -566,9 +566,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/xzwsy6.mp4",
+    "src": "https://files.catbox.moe/xzwsy6.mp4#prod=40&slot=descricao&slug=micro-ondas-mondial-mo-01-21",
     "poster": "../img/produto-40-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "xzwsy6.mp4"
   },
   "size_guide_html": "",
   "description_html": "DESCRIÇÃO COMPLETA:<br/><br/>O Micro-ondas Mondial MO-01-21-E combina sofisticação e eficiência, oferecendo recursos que facilitam o preparo de refeições no dia a dia. Com design espelhado e compacto, é ideal para cozinhas modernas e funcionais.<br/><br/>Características:<br/><br/>Marca: Mondial<br/><br/>Modelo: MO-01-21-E<br/><br/>Especificações:<br/><br/>Cor: Cinza Espelhado<br/><br/>Capacidade: 21 litros<br/><br/>Potência: 1.200W<br/><br/>Consumo: 1,2 kWh<br/><br/>Voltagem: 127V/220V<br/><br/>Material: Aço Galvanizado e ABS<br/><br/>Níveis de Potência: 10<br/><br/>Funções:<br/><br/>Menu Dia a Dia<br/><br/>Menu Kids (pipoca, brigadeiro, bolo de caneca)<br/><br/>Descongelar<br/><br/>Manter Aquecido<br/><br/>Tira Odor<br/><br/>Trava de Segurança<br/><br/>Tecla Iniciar Fácil<br/><br/>Função Relógio<br/><br/>Prato Giratório<br/><br/>QR Code de Receitas<br/><br/>Eficiência Energética: Classificação A<br/><br/>Dimensões: 26x45x35 (AxLxC)<br/><br/>Conteúdo da Embalagem:<br/><br/>1 Micro-ondas Mondial MO-01-21-E<br/><br/>1 Prato Giratório de Vidro<br/><br/>1 Suporte do Prato Giratório<br/><br/>1 Manual de Instruções<br/><br/>Garantia:<br/><br/>12 meses<br/><br/>Peso:<br/><br/>10,5 Kg<br/><br/>Kit Mestre Cuca 10 Livros Digitais no Ubook GO:<br/><br/>Adquira um kit exclusivo com 10 títulos selecionados todos em formato digital com diversas receitas culinárias para transformar sua cozinha em um verdadeiro festival de sabores. Explore pratos do dia a dia, sobremesas irresistíveis e receitas especiais para impressionar, sempre com a praticidade de acessar onde e quando quiser pelo Ubook GO.<br/><br/>Os 10 títulos ficam disponíveis de forma vitalícia na sua conta do Ubook GO, vinculados ao seu CPF. Uma vez ativado o acesso, os conteúdos estarão sempre disponíveis para você, sem prazo de expiração..",
@@ -656,5 +657,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "mondial_40",
+  "creators": [
+    {
+      "name": "Wesley Machado",
+      "username": "wesleymachadoshop",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_21.jpg",
+      "poster": "../img/produto-40-2.jpg",
+      "video": "https://files.catbox.moe/shmn9s.mp4#prod=40&slot=criador_1&slug=micro-ondas-mondial-mo-01-21",
+      "catbox_id": "shmn9s.mp4",
+      "startTime": 0.2,
+      "likes": 22200,
+      "commentsCount": 208,
+      "saves": 1840,
+      "shares": 87,
+      "description": "Micro-ondas Mondial 21L ✨ Potência de 1200W e funções práticas pro dia a dia na cozinha!"
+    },
+    {
+      "name": "Garcia Indica",
+      "username": "garcia_indica",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_22.jpg",
+      "poster": "../img/produto-40-3.jpg",
+      "video": "https://files.catbox.moe/dzhghs.mp4#prod=40&slot=criador_2&slug=micro-ondas-mondial-mo-01-21",
+      "catbox_id": "dzhghs.mp4",
+      "startTime": 0.2,
+      "likes": 24600,
+      "commentsCount": 236,
+      "saves": 2030,
+      "shares": 102,
+      "description": "Microondas Mondial 21 litros compacto com puxador prático e receitas pré-programadas!"
+    },
+    {
+      "name": "Analice Salles",
+      "username": "analicepitrez",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_23.jpg",
+      "poster": "../img/produto-40-1.jpg",
+      "video": "https://files.catbox.moe/8mh69y.mp4#prod=40&slot=criador_3&slug=micro-ondas-mondial-mo-01-21",
+      "catbox_id": "8mh69y.mp4",
+      "startTime": 0.2,
+      "likes": 27000,
+      "commentsCount": 264,
+      "saves": 2220,
+      "shares": 117,
+      "description": "Comprei o Microondas Mondial 21L 1200W MO-01-21-E e estou super satisfeita! Design espelhado incrível!"
+    },
+    {
+      "name": "Sara Koniczna",
+      "username": "sarakoniczna2025",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_24.jpg",
+      "poster": "../img/produto-40-2.jpg",
+      "video": "https://files.catbox.moe/wcs86f.mp4#prod=40&slot=criador_4&slug=micro-ondas-mondial-mo-01-21",
+      "catbox_id": "wcs86f.mp4",
+      "startTime": 0.2,
+      "likes": 29400,
+      "commentsCount": 292,
+      "saves": 2410,
+      "shares": 132,
+      "description": "Excelente micro-ondas da Mondial de 21 litros! Aquece super rápido e muito fácil de limpar!"
+    }
+  ]
 }

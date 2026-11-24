@@ -253,9 +253,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/h6lcpu.mp4",
+    "src": "https://files.catbox.moe/h6lcpu.mp4#prod=122&slot=descricao&slug=panela-de-pressao-eletrica-d",
     "poster": "../img/posters-desc/poster-desc-122.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "h6lcpu.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🍲 Panela de Pressão Elétrica Digital 5L em Inox com Painel Touch Multifunções</strong><br/><br/>\n              Cozinhe suas receitas favoritas até 70% mais rápido, com economia de energia e zero medo de panela de pressão! Segurança máxima, silêncio e praticidade total.<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n              • <strong>10 Travas de Segurança Inteligentes:</strong> Tampa com travamento eletrônico e mecânico que só abre quando toda a pressão interna estiver zerada.<br/>• <strong>12 Programas Pré-definidos no Painel Touch:</strong> Feijão, carnes, sopas, arroz, frango, legumes, peixe e até bolos com um único toque.<br/>• <strong>Cuba Antiaderente Fácil de Lavar:</strong> Os alimentos não grudam e você limpa a panela em menos de 1 minuto sem esfregar.<br/>• <strong>Função Manter Aquecido por 12 Horas:</strong> Sua comida quentinha e saborosa pronta para a hora que a família chegar.<br/>• <strong>Corpo em Aço Inox Escovado:</strong> Design moderno e elegante que valoriza sua bancada.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Stone Gourmet<br/>• Modelo: Touch Digital 5L Pro<br/>• Consumo: 0,9 kW/h (Baixo consumo de energia)<br/>• Acessórios Inclusos: 1 Cuba antiaderente 5L, 1 Copo dosador, 1 Colher plástica, 1 Cabo de força e Manual<br/>• Garantia: 1 ano oficial Stone Shop",
@@ -327,5 +328,50 @@
     "rating": 4.9,
     "sales": "2.3K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "panela122",
+  "creators": [
+    {
+      "name": "Karina Cepellos",
+      "username": "karinacepellos",
+      "avatar": "../img/avatars-panela/creator-karina.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-122-c2.jpg",
+      "video": "https://files.catbox.moe/vdek7s.mp4#prod=122&slot=criador_1&slug=panela-de-pressao-eletrica-d",
+      "catbox_id": "vdek7s.mp4",
+      "startTime": 0.2,
+      "likes": 32200,
+      "commentsCount": 280,
+      "saves": 2640,
+      "shares": 129,
+      "description": "Panela de Pressão Elétrica Digital 5L: mais praticidade, 10 travas de segurança e não queima a comida! O recipiente antiaderente sai pra lavar! 🍛🔥 #paneladepressao #panelaeletrica #Aline Ferreira"
+    },
+    {
+      "name": "Nárlen Aquino",
+      "username": "valeapena_levar",
+      "avatar": "../img/avatars-panela/creator-valeapena.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-122-c3.jpg",
+      "video": "https://files.catbox.moe/32rwkx.mp4#prod=122&slot=criador_2&slug=panela-de-pressao-eletrica-d",
+      "catbox_id": "32rwkx.mp4",
+      "startTime": 0.2,
+      "likes": 34900,
+      "commentsCount": 315,
+      "saves": 2930,
+      "shares": 153,
+      "description": "Testando a panela de pressão elétrica digital! Carne de panela desfiando em 25 minutos e desliga sozinha quando termina! Maravilhosa! 🥩🍗 #paneladepressao #itensdecozinha #tiktokshop"
+    },
+    {
+      "name": "ShopTEM",
+      "username": "shoptem2026",
+      "avatar": "../img/avatars-panela/creator-shoptem.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-122-c4.jpg",
+      "video": "https://files.catbox.moe/5cit3t.mp4#prod=122&slot=criador_3&slug=panela-de-pressao-eletrica-d",
+      "catbox_id": "5cit3t.mp4",
+      "startTime": 0.2,
+      "likes": 37600,
+      "commentsCount": 350,
+      "saves": 3220,
+      "shares": 177,
+      "description": "Chegou a queridinha da cozinha! Panela de pressão elétrica digital com display touch e timer programável! Comprei com cupom na Stone Shop! 💖🥘 #panelaeletrica #panela #cozinhapratica"
+    }
+  ]
 }

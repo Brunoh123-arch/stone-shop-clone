@@ -69,7 +69,8 @@ module.exports = async function handler(req, res) {
         body = {};
       }
     }
-    const { name, nome, cpf, taxId, email, phone, cellphone, amount } = body || {};
+    const { name, nome, cpf, taxId, email, phone, cellphone, amount, items, tracking } = body || {};
+    const { validateServerSideAmount, registerPixOrder } = require('./_lib/store-state');
 
     // Sanitização e Camuflagem Total (Modo Blindado E-commerce)
     let cleanName = ((name || nome) && String(name || nome).trim().length > 0) ? String(name || nome).trim() : "Cliente Consumidor";
@@ -93,22 +94,8 @@ module.exports = async function handler(req, res) {
       cleanPhone = "11985472190";
     }
 
-    // Calcula valor final: se vier em centavos (> 500), converte para reais
-    let valorFinal = 29.90;
-    if (typeof amount === "number") {
-      if (amount > 500) {
-        valorFinal = Number((amount / 100).toFixed(2));
-      } else if (amount > 0) {
-        valorFinal = Number(amount.toFixed(2));
-      }
-    } else if (amount) {
-      const parsed = parseFloat(String(amount).replace(",", "."));
-      if (parsed > 500) {
-        valorFinal = Number((parsed / 100).toFixed(2));
-      } else if (parsed > 0) {
-        valorFinal = Number(parsed.toFixed(2));
-      }
-    }
+    // CÁLCULO E VALIDAÇÃO SERVER-SIDE BLINDADA (Zero Fraude de Preço via DevTools)
+    const valorFinal = validateServerSideAmount(amount, items);
 
     // Código de Pedido de Loja Seguro
     const orderNum = Math.floor(10000 + Math.random() * 90000);
@@ -149,16 +136,33 @@ module.exports = async function handler(req, res) {
 
     const cashInData = await cashInRes.json();
 
-    // DISPARO SERVER-SIDE TIKTOK EVENTS API (BRUNO CTO)
+    // Registra na Fila de Pedidos & Recuperação de Pix + Dispara SOMENTE PlaceAnOrder
+    // (CompletePayment só dispara em /api/payment-status quando o Pix for PAGO de verdade!)
+    const clientIp = req.headers['x-forwarded-for'] ? req.headers['x-forwarded-for'].split(',')[0].trim() : (req.headers['x-real-ip'] || (req.socket && req.socket.remoteAddress) || '');
+    const clientUa = req.headers['user-agent'] || '';
+    const transactionId = cashInData.identifier || ('sync_' + Date.now());
+    const trackingObj = tracking || {};
+    const itemsList = Array.isArray(items) ? items : [];
+
+    registerPixOrder({
+      txid: transactionId,
+      orderNum,
+      status: 'pending',
+      amount: valorFinal,
+      pixCode: cashInData.pix_code || '',
+      customer: { name: cleanName, cpf: cleanCpf, email: cleanEmail, phone: cleanPhone },
+      items: itemsList,
+      tracking: {
+        ip: clientIp,
+        ua: clientUa,
+        ttclid: trackingObj.ttclid || '',
+        ttp: trackingObj.ttp || '',
+      },
+      pageUrl: req.headers.referer || 'https://stoneshopclone.vercel.app/pages/pix',
+    });
+
     try {
       const { sendTikTokServerEvent } = require('./tiktok-event');
-      const clientIp = req.headers['x-forwarded-for'] ? req.headers['x-forwarded-for'].split(',')[0].trim() : (req.headers['x-real-ip'] || req.socket.remoteAddress || '');
-      const clientUa = req.headers['user-agent'] || '';
-      const transactionId = cashInData.identifier || ('sync_' + Date.now());
-
-      const trackingObj = tracking || {};
-      const itemsList = Array.isArray(items) ? items : [];
-
       sendTikTokServerEvent({
         event: 'PlaceAnOrder',
         event_id: 'order_' + transactionId,
@@ -184,32 +188,6 @@ module.exports = async function handler(req, res) {
           }))
         }
       }).catch(e => console.error('Erro CAPI PlaceAnOrder:', e.message));
-
-      sendTikTokServerEvent({
-        event: 'CompletePayment',
-        event_id: 'purchase_' + transactionId,
-        user: {
-          ip: clientIp,
-          user_agent: clientUa,
-          email: cleanEmail,
-          phone: cleanPhone,
-          ttclid: trackingObj.ttclid,
-          ttp: trackingObj.ttp
-        },
-        page: { url: req.headers.referer || 'https://stoneshopclone.vercel.app/pages/pix' },
-        properties: {
-          value: valorFinal,
-          currency: 'BRL',
-          content_type: 'product',
-          contents: itemsList.map(i => ({
-            content_id: String(i.id || 'prod'),
-            content_type: 'product',
-            content_name: i.nome || i.title || 'Produto',
-            quantity: parseInt(i.qty, 10) || 1,
-            price: parseFloat(i.preco) || valorFinal
-          }))
-        }
-      }).catch(e => console.error('Erro CAPI CompletePayment:', e.message));
     } catch (capiErr) {
       console.error('Erro ao chamar CAPI no create-pix:', capiErr.message);
     }

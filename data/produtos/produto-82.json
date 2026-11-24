@@ -1066,9 +1066,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/zzk4sr.mp4",
+    "src": "https://files.catbox.moe/zzk4sr.mp4#prod=82&slot=descricao&slug=lava-e-seca-11kg-hisense-11-",
     "poster": "../videosprodutos/posters/poster-criador-82-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "zzk4sr.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>✨ Lava e Seca 11kg Hisense Titanium Inverter com Wi-Fi e Função Steam ✨</strong><br/><br/>\n\nMáxima eficiência, sofisticação e tecnologia para a sua lavanderia! A <strong>Lava e Seca Hisense 11kg Titanium</strong> oferece uma solução completa para lavar e secar suas roupas com o mais alto padrão de cuidado com os tecidos. Produto novo, 100% original, lacrado de fábrica com nota fiscal e garantia oficial Hisense do Brasil.<br/><br/>\n<strong>Destaques e Tecnologias Exclusivas:</strong><br/>\n\n• <strong>Motor Inverter Silencioso e Durável:</strong> Funcionamento ultra silencioso com altíssima eficiência energética (Classificação Procel A) e durabilidade estendida.<br/>\n\n• <strong>Função Vapor Steam (Higienização Profunda):</strong> Elimina até 99,9% dos ácaros, bactérias e odores, revitalizando as fibras e reduzindo amassados para facilitar o passar das roupas.<br/>\n\n• <strong>Conectividade Wi-Fi e Controle por App:</strong> Inicie, pause e monitore os ciclos de lavagem e secagem diretamente do seu smartphone com total comodidade.<br/>\n\n• <strong>Tambor RainDrop em Inox:</strong> O relevo especial em gotas de chuva protege os tecidos mais delicados, garantindo limpeza profunda sem desgaste das peças.<br/>\n\n• <strong>11 Programas de Lavagem + 3 Opções de Secagem:</strong> Ciclo Rápido, Roupas de Bebê, Carga Pesada, Lavagem com Vapor, Ciclo Antialérgico, Centrifugação ajustável até 1400 RPM e Autolimpeza do Tambor.<br/>\n\n• <strong>Lavagem a Jato (Pure Jet):</strong> Jatos de água de alta pressão dissolvem rapidamente o sabão e o amaciante, removendo resíduos com eficiência impecável.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n\n:: Modelo: WD3S1143BT (Titanium Elegance)<br/>\n\n:: Capacidade: Lavagem 11 kg / Secagem 7 kg<br/>\n\n:: Abertura: Front Load com porta ampla em vidro temperado<br/>\n\n:: Consumo de Energia: 0,38 kWh/ciclo (Super Econômica)<br/>\n\n:: Consumo de Água: 90 L/ciclo<br/>\n\n:: Velocidade de Centrifugação: 600, 800, 1000, 1200 e 1400 RPM<br/>\n\n:: Tensão / Voltagem: 110V ou 220V (selecionável na hora da compra)<br/>\n\n:: Dimensões (A x L x P): 84,5 x 59,5 x 61,0 cm | Peso: 70 kg<br/><br/>\n<strong>Itens Inclusos na Caixa:</strong><br/>\n\n01 Lava e Seca Hisense 11kg Titanium, 01 Mangueira de Entrada de Água, 01 Mangueira de Drenagem, 01 Chave de Ajuste de Pés, 01 Guia de Instalação Rápida e Manual do Usuário com Certificado de Garantia de 12 Meses Hisense Brasil.<br/><br/>\n<strong>Garantia Oficial: 12 meses de fábrica. Envio Imediato com Frete Grátis e Seguro Total Stone Shop!</strong>",
@@ -1152,5 +1153,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "hisense_82",
+  "creators": [
+    {
+      "name": "Lívia Helena",
+      "username": "liviahelena_lar",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
+      "poster": "../videosprodutos/posters/poster-criador-82-2.jpg",
+      "video": "https://files.catbox.moe/bo9xom.mp4#prod=82&slot=criador_1&slug=lava-e-seca-11kg-hisense-11-",
+      "catbox_id": "bo9xom.mp4",
+      "startTime": 0.2,
+      "likes": 22700,
+      "commentsCount": 205,
+      "saves": 1880,
+      "shares": 80,
+      "description": "Minha rotina de lavanderia com a Lava e Seca Hisense 11kg Titanium! Super econômica e silenciosa com o motor inverter! Amei! 🫧🧺✨"
+    },
+    {
+      "name": "Patrícia Moreira",
+      "username": "patriciamoreira_home",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/14e8c80700bc9507c77cd6bdf4bd6cce~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=0f236a01&x-expires=1795413600&x-signature=PWUKu%2BPvA9oOTmLyHKivEkVGuFs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-82-3.jpg",
+      "video": "https://files.catbox.moe/lbzn5y.mp4#prod=82&slot=criador_2&slug=lava-e-seca-11kg-hisense-11-",
+      "catbox_id": "lbzn5y.mp4",
+      "startTime": 0.2,
+      "likes": 23900,
+      "commentsCount": 230,
+      "saves": 2060,
+      "shares": 95,
+      "description": "Lava e Seca Hisense 11kg Titanium Inverter com Função Vapor Steam! Tira todas as manchas e deixa as roupas sequinhas e macias! ❤️🏠"
+    }
+  ]
 }

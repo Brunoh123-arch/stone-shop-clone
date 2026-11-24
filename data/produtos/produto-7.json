@@ -632,9 +632,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/1ig8lo.mp4",
+    "src": "https://files.catbox.moe/1ig8lo.mp4#prod=7&slot=descricao&slug=caixa-de-som-aiwa",
     "poster": "../img/posters-desc/poster-desc-7.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "1ig8lo.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p><strong>Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA</strong></p><p>Produto oficial com nota fiscal e garantia total.</p>",
@@ -718,5 +719,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "aiwa_7",
+  "creators": [
+    {
+      "name": "Família Soares",
+      "username": "familiasoares_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/6b6c74bab7e142d4c16a71dd3468616c~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=afeb6059&x-expires=1795413600&x-signature=xJQwsR1yF%2BQFKDPXllDV7Lvu6UY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-7-1.jpg",
+      "video": "https://files.catbox.moe/858hnf.mp4#prod=7&slot=criador_1&slug=caixa-de-som-aiwa",
+      "catbox_id": "858hnf.mp4",
+      "startTime": 0.2,
+      "likes": 19500,
+      "commentsCount": 110,
+      "saves": 1600,
+      "shares": 55,
+      "description": "⚠️ 'NÃO COMPRE a JBL Boombox 3 sem ver isso antes!'💥 '200W RMS NA MÃO: Essa é a Aiwa Boombox Plus!'🔊 'O grave que faz o chão tremer (Modo..."
+    },
+    {
+      "name": "ROSLEON - Leonardo Mey",
+      "username": "leonardomey",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/e28ee00cd5cf11f9630cdd2a9cbe43b5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=ab8709c5&x-expires=1795413600&x-signature=M%2BbOazt6I6Yl%2FMqFmv0BlkFwtV4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-7-2.jpg",
+      "video": "https://files.catbox.moe/4t4oya.mp4#prod=7&slot=criador_2&slug=caixa-de-som-aiwa",
+      "catbox_id": "4t4oya.mp4",
+      "startTime": 0.2,
+      "likes": 19920,
+      "commentsCount": 132,
+      "saves": 1750,
+      "shares": 67,
+      "description": "🚀Hoje foi a vê da nossa pioneira Aiwa meus amigos! @aiwabr  #aiwaboomboxplus #aiwaboombobxolus200w #caixadesomaiwaboomboxplus #caixaaiwab..."
+    },
+    {
+      "name": "Arquivo Tec",
+      "username": "arquivotec",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/0acd17b804bd0ae0a5eb32674984d248~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=ea72e437&x-expires=1795413600&x-signature=M5en0mhpRqOLl2%2B%2BdfvJUEgyaJk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-7-3.jpg",
+      "video": "https://files.catbox.moe/oqqc2t.mp4#prod=7&slot=criador_3&slug=caixa-de-som-aiwa",
+      "catbox_id": "oqqc2t.mp4",
+      "startTime": 0.2,
+      "likes": 20340,
+      "commentsCount": 154,
+      "saves": 1900,
+      "shares": 79,
+      "description": "A AIWA Boombox Plus entrega tudo isso mesmo? #aiwaboomboxplus #aiwa #caixadesom "
+    }
+  ]
 }

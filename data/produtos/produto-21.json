@@ -220,9 +220,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/rs5lzn.mp4",
+    "src": "https://files.catbox.moe/rs5lzn.mp4#prod=21&slot=descricao&slug=bola-de-futebol-de-campo-pen",
     "poster": "../img/posters-desc/poster-desc-21.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "rs5lzn.mp4"
   },
   "size_guide_html": "",
   "description_html": "Prepare-se para elevar o seu jogo a um novo patamar com a Bola de Futebol de Campo Penalty Bravo!     Desenvolvida com tecnologia de ponta e materiais de alta performance, esta Bola de Campo é a escolha ideal para jogadores que buscam precisão, durabilidade e controle absoluto em cada toque.     A Bola de Futebol de Campo Penalty Bravo oferece uma experiência superior em campo, proporcionando passes precisos, chutes potentes e domínio total da partida. Seu design moderno e construção robusta garantem alta performance em qualquer condição climática.     Benefícios:           Controle Absoluto<br/><br/>Durabilidade<br/><br/>Menor Absorção de Água<br/><br/>Performance<br/><br/>Alguns diferenciais técnicos:     A Bola de Futebol de Campo Penalty Bravo possui construção Ultra Fusion, que garante menor absorção de água, garantindo desempenho consistente em qualquer condição climática. A tecnologia Ultra Fusion garante união termofundida dos gomos, oferecendo maior resistência e durabilidade.     Além da Câmara 6D que dá equilíbrio total e trajetória precisa. Essa tecnologia, com 6 discos posicionados simetricamente, proporciona estabilidade e controle da bola durante os passes e chutes.     Essa Bola de Futebol de Campo possui Dupla Colagem que reforça a junção dos gomos, aumentando a vida útil da bola e garantindo sua performance por muito mais tempo.<br/><br/>Peso: 410-450g<br/><br/>Circunferência: 68-70cm<br/><br/>Gomos: 6<br/><br/>Laminado: PU<br/><br/>Construção: Ultra Fusion<br/><br/>Câmara: 6D<br/><br/>Sistema de Forro: Termofixo<br/><br/>Processo Extra: Dupla Colagem<br/><br/>Miolo: Cápsula SIS<br/><br/>PU: Conforto. Material Elástico e macio que proporciona um excelente nível de performance.<br/><br/>Ultra Fusion: Tecnologia de Termofusão que elimina as costuras garantindo menor absorção de água, proporcionando melhor esfericidade e durabilidade.<br/><br/>6D: Precisão Total e Controle absoluto. Composto por 6 discos posicionados simetricamente, que deixam a bola mais esférica.<br/><br/>Termofixo: Estabilidade. A câmara é enrolada com fios sintéticos, em um sistema de forro Multiaxial.<br/><br/>Evacel: Camada de amortecimento interno em composto microcelular. Deixando a bola ainda mais macia.<br/><br/>Cápsula SIS: Possui miolo lubrificado e substituível, além de bico alongado que envolve a agulha impedindo qu substituível, além de bico alongado que envolve a agulha impedindo qulagem, reforçando ainda mais a junção dos gomos e garantindo a vida útil da bola por muito mais tempo.<br/><br/>Cuidados<br/><br/>Limpar a bola com escova ou pano limpo levemente úmido com água após utilização.<br/><br/>Secar a bola por completo.<br/><br/>Armazenar em ambiente seco e ventilado.<br/><br/>Não deixar exposta ao sol ou chuva.<br/><br/>Mantê-la sempre calibrada.",
@@ -287,5 +288,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "bola_penalty_21",
+  "creators": [
+    {
+      "name": "Ferreira❤️",
+      "username": "matheus.ferreirajf",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/2fbe7f717a6ac0f1db39d6c23b988d5a~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=a1e0a885&x-expires=1795464000&x-signature=2MsRgF6mtXkuluiFP8lyErltyq4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-21-1.jpg",
+      "video": "https://files.catbox.moe/91pumc.mp4#prod=21&slot=criador_1&slug=bola-de-futebol-de-campo-pen",
+      "catbox_id": "91pumc.mp4",
+      "startTime": 0.2,
+      "likes": 20500,
+      "commentsCount": 196,
+      "saves": 1640,
+      "shares": 77,
+      "description": "Ganhei 2 PRESENTE DA @Penalty Brasil⚽️😱🎁  #pravoce #diversao #fyp #alegria #futebol #CapCut "
+    },
+    {
+      "name": "Lyz Franco",
+      "username": "lyzfranco7",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/31d4ded741785ce08e7050819f2687d7~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=13747242&x-expires=1795464000&x-signature=WgjlMptBRJoaM16SvKrDz9yfHaY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-21-2.jpg",
+      "video": "https://files.catbox.moe/p1vdq5.mp4#prod=21&slot=criador_2&slug=bola-de-futebol-de-campo-pen",
+      "catbox_id": "p1vdq5.mp4",
+      "startTime": 0.2,
+      "likes": 22600,
+      "commentsCount": 224,
+      "saves": 1830,
+      "shares": 92,
+      "description": "senta que lá vem história kkkk #volei #boladevolei #umboxing #bolapenalty #voleibolista #voleiamador "
+    },
+    {
+      "name": "matheus",
+      "username": "vitorx.vieira",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/1e35ddad8ea6285b1d1f27644019130e~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=d3413966&x-expires=1795464000&x-signature=7YggTXrBuAE6V7hVxxccLWC2AME%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-21-3.jpg",
+      "video": "https://files.catbox.moe/hbjvvm.mp4#prod=21&slot=criador_3&slug=bola-de-futebol-de-campo-pen",
+      "catbox_id": "hbjvvm.mp4",
+      "startTime": 0.2,
+      "likes": 24700,
+      "commentsCount": 252,
+      "saves": 2020,
+      "shares": 107,
+      "description": "gostaram dela? #penalty #fy #adolescente "
+    }
+  ]
 }

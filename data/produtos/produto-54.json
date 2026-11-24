@@ -726,9 +726,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/6n9lsb.mp4",
+    "src": "https://files.catbox.moe/6n9lsb.mp4#prod=54&slot=descricao&slug=purificador-eletronico-compa",
     "poster": "../img/produto-54-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "6n9lsb.mp4"
   },
   "size_guide_html": "",
   "description_html": "Se você deseja ter água de qualidade e com um equipamento moderno e de design diferenciado, então pode apostar no Purificador de Água PE11X Electrolux.<br/><br/>Esse Purificador possui um filtro de carvão ativado que retira gostos e odores e filtro de polipropileno que<br/><br/>retira partículas, deixando sua sua água sempre limpa.<br/><br/>Possui um sistema que alerta sobre a necessidade de troca do filtro, que pode ser realizada sem a presença de um técnico especializado.<br/><br/>O Purificador Electrolux possui três opções de temperatura com apenas um toque: Água Natural, Gelada ou Fria, é só escolher. Com design compacto e arrojado, tem o tamanho ideal para qualquer espaço.<br/><br/>Seu sistema eletrônico de refrigeração mantém temperatura abaixo de 10C e seu fluxo contínuo ou controlado facilita encher copos ou garrafas. Este é um Purificador de Água Electrolux que não pode faltar em sua casa.",
@@ -801,5 +802,64 @@
       "https://down-br.img.susercontent.com/file/sg-11134201-7rdwo-mdeoo5h7vglw3b"
     ]
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "purificador_54",
+  "creators": [
+    {
+      "name": "Carol Casone",
+      "username": "carolinecasone",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
+      "poster": "../img/produto-54-2.jpg",
+      "video": "https://files.catbox.moe/iydgj5.mp4#prod=54&slot=criador_1&slug=purificador-eletronico-compa",
+      "catbox_id": "iydgj5.mp4",
+      "startTime": 0.2,
+      "likes": 27500,
+      "commentsCount": 250,
+      "saves": 2200,
+      "shares": 111,
+      "description": "Respondendo dúvidas sobre o purificador Electrolux PE11X compacto! Design lindo na cozinha 😍"
+    },
+    {
+      "name": "Apartamento 102",
+      "username": "bloco14ap102",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_16.jpg",
+      "poster": "../img/produto-54-3.jpg",
+      "video": "https://files.catbox.moe/q0yb8j.mp4#prod=54&slot=criador_2&slug=purificador-eletronico-compa",
+      "catbox_id": "q0yb8j.mp4",
+      "startTime": 0.2,
+      "likes": 29600,
+      "commentsCount": 280,
+      "saves": 2420,
+      "shares": 127,
+      "description": "Purificador de água Electrolux 💦💧 Praticidade total e água pura o dia todo!"
+    },
+    {
+      "name": "Andressa Lopes",
+      "username": "apt104s2",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "poster": "../img/produto-54-1.jpg",
+      "video": "https://files.catbox.moe/oivafp.mp4#prod=54&slot=criador_3&slug=purificador-eletronico-compa",
+      "catbox_id": "oivafp.mp4",
+      "startTime": 0.2,
+      "likes": 31700,
+      "commentsCount": 310,
+      "saves": 2640,
+      "shares": 143,
+      "description": "Resenha sincera do purificador Electrolux PE11X. Troca de filtro super fácil e fluxo rápido!"
+    },
+    {
+      "name": "Pacheco Creator",
+      "username": "pacheco_machry",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_18.jpg",
+      "poster": "../img/produto-54-2.jpg",
+      "video": "https://files.catbox.moe/z1pg95.mp4#prod=54&slot=criador_4&slug=purificador-eletronico-compa",
+      "catbox_id": "z1pg95.mp4",
+      "startTime": 0.2,
+      "likes": 33800,
+      "commentsCount": 340,
+      "saves": 2860,
+      "shares": 159,
+      "description": "Tem que aproveitar! Purificador de água Electrolux PE11X bivolt silencioso e top!"
+    }
+  ]
 }

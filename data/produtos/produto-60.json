@@ -216,9 +216,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/t0yoei.mp4",
+    "src": "https://files.catbox.moe/t0yoei.mp4#prod=60&slot=descricao&slug=caixa-som-sabala-dr-908-a-es",
     "poster": "../videosprodutos/posters/poster-criador-60-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "t0yoei.mp4"
   },
   "size_guide_html": "",
   "description_html": "A Sabala DR-908 é uma caixa de som portátil Bluetooth projetada para quem busca potência, autonomia e presença sonora marcante. Com um design robusto e moderno, ela se destaca como uma excelente opção para festas, eventos, churrascos e uso ao ar livre, entregando um som forte e bem distribuído em diferentes ambientes.<br/><br/>Mesmo sendo portátil, a DR-908 oferece áudio de alto desempenho, com graves intensos, médios equilibrados e agudos nítidos, garantindo qualidade sonora mesmo em volumes mais elevados. A conexão Bluetooth proporciona pareamento rápido e estável com smartphones, tablets e outros dispositivos compatíveis, permitindo total liberdade de uso sem fios.<br/><br/>A bateria interna de alta capacidade permite longas horas de reprodução contínua, ideal para quem precisa de som por muito tempo sem se preocupar com recargas. O modelo também conta com função TWS, possibilitando a conexão de duas caixas iguais para uma experiência sonora ainda mais potente e envolvente.<br/><br/>Outro destaque é a iluminação LED integrada, que acompanha o ritmo da música e cria um efeito visual moderno e animado. Além disso, a Sabala DR-908 possui estrutura resistente, proteção contra respingos dágua e alça para transporte, facilitando o uso tanto em ambientes internos quanto externos.<br/><br/>A Sabala DR-908 é a escolha ideal para quem deseja som potente, longa duração de bateria e um visual impactante, tudo em um único equipamento.",
@@ -311,5 +312,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "sabala_60",
+  "creators": [
+    {
+      "name": "Waguinho Das Caixas 👑🔥",
+      "username": "waguinhodosom",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/9ce5de7b48f87087c52c504f98a2a5f9~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=d75cdb55&x-expires=1795413600&x-signature=AHxN6DCZ5uGWmahZc%2F6omhdKO5w%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-60-2.jpg",
+      "video": "https://files.catbox.moe/90w02n.mp4#prod=60&slot=criador_1&slug=caixa-som-sabala-dr-908-a-es",
+      "catbox_id": "90w02n.mp4",
+      "startTime": 0.2,
+      "likes": 23000,
+      "commentsCount": 210,
+      "saves": 1900,
+      "shares": 80,
+      "description": "Caixa de Som Bluetooth SABALA DR-908 Pro 120W, Bateria 20.800mAh, TWS e Luzes LED, IPX6, APP #fyppppppppppppppppppppppp #blackfridaybr #t..."
+    },
+    {
+      "name": "Kelvyn | Canal do Pincei 😎",
+      "username": "issopresta",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/2cc3cc90bb0013289ac74ecd0116b5ad~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=6d1005bd&x-expires=1795413600&x-signature=BvI6lRu%2BnNfBybEfc3skCjc59tc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-60-3.jpg",
+      "video": "https://files.catbox.moe/a38eor.mp4#prod=60&slot=criador_2&slug=caixa-som-sabala-dr-908-a-es",
+      "catbox_id": "a38eor.mp4",
+      "startTime": 0.2,
+      "likes": 23000,
+      "commentsCount": 210,
+      "saves": 1900,
+      "shares": 80,
+      "description": "Chegou a minha Sabala DR908 Pro que eu estava esperando 🤌🏼 Veio com melhorias em relação a 908. Que caixa meus amigos! É o melhor custo b..."
+    }
+  ]
 }

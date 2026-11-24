@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/014o2c.mp4",
+    "src": "https://files.catbox.moe/014o2c.mp4#prod=110&slot=descricao&slug=tenis-kappa-pulse-rx-masculi",
     "poster": "../videosprodutos/posters/poster-produto-110.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "014o2c.mp4"
   },
   "size_guide_html": "",
   "description_html": "O Tênis Kappa Pulse RX foi desenvolvido para proporcionar máxima absorção de impacto, leveza incomparável e alta durabilidade tanto para treinos intensos quanto para o uso diário e caminhadas prolongadas.<br/><br/>\n\n• <strong>Cabedal Respirável em Knit:</strong> Ajuste anatômico que se molda aos pés e mantém a ventilação constante.<br/>\n\n• <strong>Entressola com Tecnologia Pulse RX:</strong> Espuma de alto retorno de energia para passadas mais macias.<br/>\n\n• <strong>Solado de Borracha Antiderrapante:</strong> Aderência firme e tração segura em esteiras, asfalto ou pisos lisos.<br/>\n\n• <strong>Design Esportivo Italiano:</strong> Acabamento premium da tradicional marca Kappa com logo icônico.<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Tênis Kappa Pulse\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-110.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n\nConfira a tabela de medidas acima e escolha a sua numeração BR exata. Produto original com garantia Stone Shop e nota fiscal!",
@@ -328,5 +329,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "kappa110",
+  "creators": [
+    {
+      "name": "Nati",
+      "username": "entrecafeesonhos",
+      "avatar": "../img/creators-auto/avatar-entrecafeesonhos.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-110.jpg",
+      "video": "https://files.catbox.moe/2t30kf.mp4#prod=110&slot=criador_1&slug=tenis-kappa-pulse-rx-masculi",
+      "catbox_id": "2t30kf.mp4",
+      "startTime": 0.2,
+      "likes": 12400,
+      "commentsCount": 62,
+      "saves": 840,
+      "shares": 18,
+      "description": "Tênis Kappa Pulse Unissex Academia Caminhada. Compre aqui 👉🏻 https://meli.la/2Y4FRAa #tiktokshop #constancia #creatorsea"
+    },
+    {
+      "name": "Clayton_Achadinhos",
+      "username": "clayton_Aline Ferreira",
+      "avatar": "../img/creators-auto/avatar-clayton_Aline Ferreira.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-110-criadora3.jpg",
+      "video": "https://files.catbox.moe/qgvpj6.mp4#prod=110&slot=criador_2&slug=tenis-kappa-pulse-rx-masculi",
+      "catbox_id": "qgvpj6.mp4",
+      "startTime": 0.2,
+      "likes": 13300,
+      "commentsCount": 86,
+      "saves": 1020,
+      "shares": 26,
+      "description": "👟🔥 Tênis Kappa Pulse Unissex – Conforto e estilo para o seu dia a dia! Quer um tênis bonito, moderno e confortável para "
+    }
+  ]
 }

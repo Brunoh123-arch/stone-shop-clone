@@ -236,9 +236,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/e6mrx2.mp4",
+    "src": "https://files.catbox.moe/e6mrx2.mp4#prod=97&slot=descricao&slug=jogo-de-jantar-canyon-porcel",
     "poster": "../videosprodutos/posters/video-produto-97.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "e6mrx2.mp4"
   },
   "size_guide_html": "",
   "description_html": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina com 88% OFF. Apenas R$69,90. Frete grátis.",
@@ -321,5 +322,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "jogo_jantar_97",
+  "creators": [
+    {
+      "name": "Renata Mesa & Afeto",
+      "username": "renatamesaeafeto",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_28.jpg",
+      "poster": "../videosprodutos/posters/video-produto-97.jpg",
+      "video": "https://files.catbox.moe/0hhasi.mp4#prod=97&slot=criador_1&slug=jogo-de-jantar-canyon-porcel",
+      "catbox_id": "0hhasi.mp4",
+      "startTime": 0.2,
+      "likes": 25600,
+      "commentsCount": 220,
+      "saves": 2020,
+      "shares": 80,
+      "description": "Jogo de Jantar Tramontina Canyon Porcelana Decorada 20 peças! Os tons terrosos e as estampas geométricas são um escândalo! 🍽️✨ #tramontina #jogodejantar #mesaposta"
+    },
+    {
+      "name": "Casa Ruas",
+      "username": "casa.ruas.br",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/ac9b5e81b618d7f2db0adfc20c818c29~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=3815f942&x-expires=1795438800&x-signature=JJ6C%2Foql9gTn0qpfLtgC%2FYE8i9A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-97-2.jpg",
+      "video": "https://files.catbox.moe/0ei6gj.mp4#prod=97&slot=criador_2&slug=jogo-de-jantar-canyon-porcel",
+      "catbox_id": "0ei6gj.mp4",
+      "startTime": 0.2,
+      "likes": 31000,
+      "commentsCount": 284,
+      "saves": 2460,
+      "shares": 116,
+      "description": "Jogo de Jantar Canyon Porcelana Tramontina ✨"
+    },
+    {
+      "name": "LARYSSA",
+      "username": "laryfsln_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/3664bd19601d1dd0fa85a240a411a840~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=483f7911&x-expires=1795438800&x-signature=F%2BghOTwtCAvpztNmEfrbUqmRw5Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-97-3.jpg",
+      "video": "https://files.catbox.moe/t0kd18.mp4#prod=97&slot=criador_3&slug=jogo-de-jantar-canyon-porcel",
+      "catbox_id": "t0kd18.mp4",
+      "startTime": 0.2,
+      "likes": 33700,
+      "commentsCount": 316,
+      "saves": 2680,
+      "shares": 134,
+      "description": "#unboxingvideo #aparelhodejantar #tramontina #aparelhodejantarcanyon #fyp "
+    }
+  ]
 }

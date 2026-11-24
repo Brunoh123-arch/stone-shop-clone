@@ -221,9 +221,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/blcp5n.mp4",
+    "src": "https://files.catbox.moe/blcp5n.mp4#prod=36&slot=descricao&slug=celular-xiaomi-poco-x7-pro-5",
     "poster": "../img/posters-poco/poster_5.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "blcp5n.mp4"
   },
   "size_guide_html": "",
   "description_html": "<b>📱 POCO X7 Pro - Velocidade Máxima, Desempenho Imbatível</b><p>O <b>POCO X7 Pro</b> é a combinação perfeita entre poder de processamento, design elegante e tecnologia de ponta. Com um desempenho ultrarrápido, um display impressionante e uma bateria de longa duração, ele foi feito para quem exige mais do seu smartphone. Seja para jogos, trabalho ou entretenimento, o POCO X7 Pro oferece uma<b> experiência incomparável.</b></p><p><b><br/></b></p><p><b>💡 DESTAQUES PRINCIPAIS</b></p><p><b>⚡ Desempenho Poderoso</b></p><p>Equipado com o MediaTek Dimensity 8400 Ultra (até 3,25 GHz), o POCO X7 Pro garante desempenho máximo para todas as suas tarefas. Junto com a GPU Mali-G720 MC7, você tem gráficos incríveis e desempenho superior em jogos e multitarefas.</p><p><br/></p><p><b>🖥️ <b>Tela Imersiva CrystalRes AMOLED</b> de 6,67</b></p><p>Com resolução QHD de 2712 x 1220px, a tela do POCO X7 Pro oferece cores vibrantes, pretos profundos e detalhes nítidos, tudo com a proteção de Corning Gorilla Glass 7. Além disso, com taxa de atualização de 120Hz, tudo no seu smartphone fica ultra fluido, seja para navegar ou jogar.</p><p><br/></p><p><b>🔋 <b>Bateria de Longa Duração com Carregamento Rápido</b></b></p><p>A bateria de 6000mAh te acompanha o dia inteiro e mais. Além disso, com o carregamento rápido de 90W, você recarrega rapidamente e volta para o seu ritmo de maneira eficiente, sem perder tempo.</p><p><b><br/></b></p><p><b>📸 Câmeras que Impressionam</b></p><p>Capture imagens incríveis com a câmera traseira de 50 MP + 8 MP, ideal para fotos com alta definição e grande angulação. Para selfies, a câmera frontal de 20 MP garante autofotos nítidas e vibrantes, sem esforço.</p><p><br/></p><p><b>🔊 Som Dolby Atmos</b></p><p>Com alto-falantes duplos e suporte para Dolby Atmos, o POCO X7 Pro oferece áudio imersivo que eleva sua experiência de entretenimento a um novo nível. Perfeito para filmes, jogos e música.</p><p><br/></p><p><b>ESPECIFICAÇÕES TÉCNICAS</b></p><p><b>Processador</b>: MediaTek Dimensity 8400 Ultra (até 3,25 GHz)</p><p><b>GPU</b>: Mali-G720 MC7</p><p><b>Tela</b>: 6,67\" CrystalRes AMOLED, 120Hz, resolução QHD (2712 x 1220px)</p><p><b>Câmeras</b>: Traseira: 50 MP + 8 MP | Frontal: 20 MP</p><p><b>Memória</b>: 512 GB de armazenamento interno | 12 GB de RAM</p><p><b>Sistema operacional</b>: HyperOS 2.0 (Android 15)</p><p><b>Bateria</b>: 6000mAh com carregamento rápido de 90W</p><p><b>Conectividade</b>: Bluetooth 5.4, Wi-Fi 802.11a/b/g/n/ac/ax</p><p><b>Portas</b>: USB Tipo C, Dual Nano-SIM (sem Jack 3.5mm)</p><p><b>Outros</b>: Sensor de impressão digital na tela, Emissor infravermelho (IR), Dolby Atmos</p><p><br/></p><p><b>🚀 <b>INOVAÇÃO E TECNOLOGIA DE PONTA</b></b></p><p>O POCO X7 Pro também vem com recursos como sensor de impressão digital na tela e emissor infravermelho para facilitar o controle de aparelhos domésticos. Seu sistema operacional HyperOS 2.0 traz uma interface fluida, inteligente e cheia de recursos.</p><p><br/></p><p><b>⚡ <b>SEJA MAIS RÁPIDO, SEJA MAIS EFICIENTE</b></b></p><p>O POCO X7 Pro foi projetado para quem exige desempenho e qualidade. Com memória de sobra, uma tela deslumbrante, câmeras poderosas e uma bateria duradoura, é o dispositivo perfeito para quem não quer perder tempo e precisa de potência de sobra no dia a dia.</p>",
@@ -310,5 +311,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "poco_x7_pro_36",
+  "creators": [
+    {
+      "name": "Day Syndell",
+      "username": "day.syndell",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/e75c438ac8747ad3c1307a28df62556b~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4ed6f03f&x-expires=1795366800&x-signature=h90CLnuC9X7EOIBINvQi7aiX0JQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../img/posters-poco/poster_2.jpg",
+      "video": "https://files.catbox.moe/jxkrk9.mp4#prod=36&slot=criador_1&slug=celular-xiaomi-poco-x7-pro-5",
+      "catbox_id": "jxkrk9.mp4",
+      "startTime": 0.2,
+      "likes": 33000,
+      "commentsCount": 432,
+      "saves": 2890,
+      "shares": 168,
+      "description": "Unboxing Poco X7 Pro Xiaomi troquei meu celular por essa maquina! Amarelo em couro vegano lindo demais!"
+    },
+    {
+      "name": "Bruno Barboza",
+      "username": "brunobarboza_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/87123ea6231d9d7da3b4620724d5fd08~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=81d31585&x-expires=1795366800&x-signature=rH5ulwnDSiMdmhx4wDJihbQGr4c%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../img/posters-poco/poster_1.jpg",
+      "video": "https://files.catbox.moe/7dva6t.mp4#prod=36&slot=criador_2&slug=celular-xiaomi-poco-x7-pro-5",
+      "catbox_id": "7dva6t.mp4",
+      "startTime": 0.2,
+      "likes": 36200,
+      "commentsCount": 484,
+      "saves": 3180,
+      "shares": 196,
+      "description": "Poco X7 Pro em maos visual gamer agressivo e carregador turbo de 90W na caixa original! ⚡📦"
+    },
+    {
+      "name": "Cellofertas",
+      "username": "cellofertas.brasi",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/07aafa1a760cdd12170f10494a2a56f0~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=e0ef512d&x-expires=1795366800&x-signature=XrfpfqfXQc4FA1T1Y672BPmufAU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../img/posters-poco/poster_3.jpg",
+      "video": "https://files.catbox.moe/sc9goq.mp4#prod=36&slot=criador_3&slug=celular-xiaomi-poco-x7-pro-5",
+      "catbox_id": "sc9goq.mp4",
+      "startTime": 0.2,
+      "likes": 39400,
+      "commentsCount": 536,
+      "saves": 3470,
+      "shares": 224,
+      "description": "Poco X7 Pro 512GB potencia sem limites tela AMOLED 120Hz super fluida e bateria monstra!"
+    },
+    {
+      "name": "Bloom Fofa",
+      "username": "bloomfofa",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/33d6f9be69fce8466cff54d0d615b87c~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2c37201d&x-expires=1795366800&x-signature=AFf%2FjFVLDA0lWcI%2BLJ%2FR6IXA%2FJY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../img/posters-poco/poster_4.jpg",
+      "video": "https://files.catbox.moe/uv1bfg.mp4#prod=36&slot=criador_4&slug=celular-xiaomi-poco-x7-pro-5",
+      "catbox_id": "uv1bfg.mp4",
+      "startTime": 0.2,
+      "likes": 42600,
+      "commentsCount": 588,
+      "saves": 3760,
+      "shares": 252,
+      "description": "Unboxing do meu celular Poco X7 Pro roda tudo no ultra muito rapido amei demais! 💛📱"
+    }
+  ]
 }

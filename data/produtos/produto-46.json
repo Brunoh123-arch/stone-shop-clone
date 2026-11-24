@@ -618,9 +618,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/6d4nko.mp4",
+    "src": "https://files.catbox.moe/6d4nko.mp4#prod=46&slot=descricao&slug=panela-de-pressao-eletrica-e",
     "poster": "../img/posters-desc/poster-desc-46.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "6d4nko.mp4"
   },
   "size_guide_html": "",
   "description_html": "A Panela de Pressão Elétrica Electrolux Experience PCC20 assinada pela Chef Rita Lobo traz praticidade e maior segurança no preparo das refeições, tornando suas receitas deliciosas e saudáveis.<br/><br/>Com as 15 receitas e modos de cozimento pré-programados, ela descomplica o preparo de pratos conhecidos. Faça saborosas carnes, mandioca e outras receitas com a facilidade de um toque. Além disso, os 3 níveis diferentes de pressão ajudam a alcançar o ponto ideal de cozimento dos alimentos, desde legumes até diferentes tipos de carnes. Selecione a Função Cozimento Lento para extrair o máximo sabor dos preparos de temperatura branda, como barreado e costela.<br/><br/>O produto conta com 10 dispositivos de segurança para sua tranquilidade, como o aviso sonoro e o travamento automático da tampa ao atingir a temperatura de pressão. A panela interna antiaderente de 6 litros é ideal para fazer receitas que servem toda a família. Por ser removível e antiaderente, é fácil de limpar.<br/><br/>O display em LED oferece a Função Programar Preparo, que permite planejar o início do cozimento de suas receitas com até 24 horas de antecedência, para que você encontre sua refeição pronta no horário que preferir.<br/><br/>O cabo elétrico removível facilita o transporte da panela, permitindo colocá-la na mesa para servir seus alimentos com mais praticidade. Com acabamento em aço inox escovado, oferece modernidade, além de ser durável e fácil de limpar.",
@@ -700,5 +701,106 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "electrolux_46",
+  "creators": [
+    {
+      "name": "Paloma Vivian",
+      "username": "paloma_vivian",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/6ef8f712f6d807897d17cd9e157750b3~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=48a8dfdd&x-expires=1795366800&x-signature=MFi%2F2HBYB1EAVKebx%2ByaknLC3PA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c1.jpg?v=20261121",
+      "video": "https://files.catbox.moe/e3p88g.mp4#prod=46&slot=criador_1&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "e3p88g.mp4",
+      "startTime": 0.2,
+      "likes": 31200,
+      "commentsCount": 280,
+      "saves": 2800,
+      "shares": 140,
+      "description": "Unboxing da minha panela de pressão elétrica Electrolux Rita Lobo 6L! Linda, moderna e super silenciosa! 🍲✨ #electrolux #ritalobo #cozinha"
+    },
+    {
+      "name": "Vitória Bueno",
+      "username": "vitoriabueno.home",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/2bd76a14841d08388ce50b4f66457583~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=61b449e0&x-expires=1795366800&x-signature=WAEQ3iFYh7hOmJ5kbiCznLtpqII%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c2.jpg?v=20261121",
+      "video": "https://files.catbox.moe/4mjnk2.mp4#prod=46&slot=criador_2&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "4mjnk2.mp4",
+      "startTime": 0.2,
+      "likes": 34000,
+      "commentsCount": 318,
+      "saves": 3110,
+      "shares": 162,
+      "description": "Nova aquisição desbloqueada: panela de pressão elétrica Electrolux digital! Facilita muito a rotina na cozinha! 🍛🔥"
+    },
+    {
+      "name": "Juliane Furtado",
+      "username": "julianefurtadovidareal",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/d41b826c107825d1ae17022d470e9e96~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=cfb2e86e&x-expires=1795366800&x-signature=oAriVTe6OTj1o7Maa8GeFLGSA4M%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c3.jpg?v=20261121",
+      "video": "https://files.catbox.moe/x8kw1f.mp4#prod=46&slot=criador_3&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "x8kw1f.mp4",
+      "startTime": 0.2,
+      "likes": 36800,
+      "commentsCount": 356,
+      "saves": 3420,
+      "shares": 184,
+      "description": "Fazendo feijão na panela de pressão elétrica Electrolux Rita Lobo 6L! Caldo grossinho e cozimento perfeito sem chiado! 🫘❤️ #PanelaRitaLobo"
+    },
+    {
+      "name": "Bia Barbosa",
+      "username": "biabarbosa.indicaa",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/83c97bd98a947f77ef2bb3cd97993d49~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=92fd1eaa&x-expires=1795366800&x-signature=UDGnwLEyMHSktUajczIubMwoH%2B0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c4.jpg?v=20261121",
+      "video": "https://files.catbox.moe/asz0ui.mp4#prod=46&slot=criador_4&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "asz0ui.mp4",
+      "startTime": 0.2,
+      "likes": 39600,
+      "commentsCount": 394,
+      "saves": 3730,
+      "shares": 206,
+      "description": "Panela de pressão elétrica Electrolux é vida! Super segura com várias travas e mantém a comida quentinha! 🍲✨"
+    },
+    {
+      "name": "Kátia Romão",
+      "username": "katialimaromao",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f04c30e3fa04c1e0f6cd528a5ea87677~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=97ff9754&x-expires=1795366800&x-signature=uuAICPIxsMDa8mA8x6GZHvXM3ZU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c5.jpg?v=20261121",
+      "video": "https://files.catbox.moe/7iz443.mp4#prod=46&slot=criador_5&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "7iz443.mp4",
+      "startTime": 0.2,
+      "likes": 42400,
+      "commentsCount": 432,
+      "saves": 4040,
+      "shares": 228,
+      "description": "A panela que mais me ajuda na correria da cozinha! Panela de pressão elétrica Electrolux por Rita Lobo 6L com painel digital! 🖤✨"
+    },
+    {
+      "name": "Mânia Silva",
+      "username": "mmaniasilva",
+      "avatar": "../img/creator-46-c6.jpg",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c6.jpg?v=20261121",
+      "video": "https://files.catbox.moe/qflt8f.mp4#prod=46&slot=criador_6&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "qflt8f.mp4",
+      "startTime": 0.2,
+      "likes": 45200,
+      "commentsCount": 470,
+      "saves": 4350,
+      "shares": 250,
+      "description": "Panela de pressão elétrica 6L da Electrolux linha Rita Lobo! Arrependimento foi não ter comprado antes! 🍲🖤"
+    },
+    {
+      "name": "Isabele",
+      "username": "isabelevn",
+      "avatar": "../img/creator-46-c7.jpg",
+      "poster": "../videosprodutos/posters/poster-electrolux-46-c7.jpg?v=20261121",
+      "video": "https://files.catbox.moe/ztwghy.mp4#prod=46&slot=criador_7&slug=panela-de-pressao-eletrica-e",
+      "catbox_id": "ztwghy.mp4",
+      "startTime": 0.2,
+      "likes": 48000,
+      "commentsCount": 508,
+      "saves": 4660,
+      "shares": 272,
+      "description": "Panela de pressão Electrolux Rita Lobo 6L! Dá pra fazer de tudo, silenciosa e muito rápida! ✨🥘"
+    }
+  ]
 }

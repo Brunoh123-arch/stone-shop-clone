@@ -221,9 +221,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/nqu6ks.mp4",
+    "src": "https://files.catbox.moe/nqu6ks.mp4#prod=31&slot=descricao&slug=caixa-de-som-bluetooth-200w-",
     "poster": "../img/posters-sabala/poster_1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "nqu6ks.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p>🔊 <b>CAIXA DE SOM BLUETOOTH SABALA 200W</b></p><p><b>Potência, bateria gigante e som de festa onde você estiver</b></p><p>Transforme qualquer lugar em um verdadeiro evento com a Caixa de Som Bluetooth SABALA. Seja em casa, na praia, na piscina ou no churrasco com os amigos, ela entrega som potente, graves intensos e bateria de longa duração para curtir do dia até a noite sem parar.</p><p><br/></p><p>💡 <b>DESTAQUES PRINCIPAIS</b></p><p>🔋 <b>Bateria Gigante de 39.000mAh</b></p><p>Até 36 horas de reprodução contínua </p><p>Carregamento rápido em apenas 4 horas </p><p>Música sem interrupções do amanhecer ao anoitecer</p><p>🔊 <b>Som Potente de 200W</b></p><p>Woofers de 100W, médios duplos de 30W e tweeters duplos de 20W</p><p>Radiadores passivos duplos para graves mais fortes e profundos</p><p>Áudio limpo, encorpado e com baixa distorção</p><p>Ideal para festas, ambientes grandes e áreas externas</p><p><br/></p><p>🎛️ <b>Modos de Equalização Inteligente (EQ)</b></p><p>Modo interno: graves reforçados</p><p>Modo externo: som mais limpo e equilibrado</p><p>Ajuste o som com apenas um botão</p><p><br/></p><p><b>🌊 FEITA PARA QUALQUER AVENTURA</b></p><p>💧 <b>À Prova dÁgua IPX6 Resistente à água e respingos</b></p><p>Perfeita para piscina, praia, quintal e camping</p><p>Use sem medo, faça chuva ou faça sol</p><p><br/></p><p><b>🛡️ Portátil e Resistente</b></p><p>Alça integrada para facilitar o transporte</p><p>Revestimento em tecido robusto e borracha reforçada</p><p>Design moderno e resistente para acompanhar você em qualquer lugar</p><p><br/></p><p><b>⚡ TECNOLOGIA QUE IMPRESSIONA</b></p><p>📶 <b>Bluetooth 5.3</b> Conexão rápida e estável</p><p>Alcance de 10 a 13 metros</p><p>🎧 <b>TWS  Som Estéreo Sem Fio Emparelhe duas caixas SABALA</b></p><p>Experiência estéreo real e som ainda mais alto e envolvente</p><p>🔋 <b>Power Bank Integrado</b></p><p>Carregue seu celular e outros dispositivos e nunca fique sem bateria no meio da festa.</p><p><br/></p><p><b>📦 O QUE VEM NA CAIXA</b></p><p>1 Caixa de Som Bluetooth SABALA</p><p>1 Cabo de carregamento rápido 24V / 2,5A1 </p><p>Manual do usuário</p><p><br/></p><p><b>⚙️ ESPECIFICAÇÕES TÉCNICAS</b></p><p>Potência: 200WBateria: 39.000mAh</p><p>Tempo de carregamento: 4 horas</p><p>Bluetooth: 5.3</p><p>Distância de transmissão: 1013m</p><p>Material: ABS resistente</p><p>Dimensões: 45,5 x 16,5 x 14,6 cm</p><p>Peso: 7 kg </p><p><br/></p><p><b>SOBRE A SABALA</b></p><p>A <b>SABALA</b> atua há anos nas vendas online, sempre com o compromisso de oferecer qualidade, alto desempenho e excelente custo-benefício, garantindo a melhor experiência para nossos clientes.</p><p>🛡️ <b>Garantia do Vendedor:</b> 1 ano de garantia oficial Stone Shop com suporte dedicado.</p>",
@@ -306,5 +307,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "sabala_31",
+  "creators": [
+    {
+      "name": "Elvyn | Canal do Pincei",
+      "username": "issopresta",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_15.jpg",
+      "poster": "../img/posters-sabala/poster_1.jpg",
+      "video": "https://files.catbox.moe/1ig8lo.mp4#prod=31&slot=criador_1&slug=caixa-de-som-bluetooth-200w-",
+      "catbox_id": "1ig8lo.mp4",
+      "startTime": 0.2,
+      "likes": 25400,
+      "commentsCount": 310,
+      "saves": 2150,
+      "shares": 110,
+      "description": "Na minha humilde opinião, a Sabala DR-909 é o melhor custo benefício hoje! 39.000mAh de bateria, 200W RMS e graves que batem pesado! 🔊🔥 #sabala #dr909 #caixadesom #sompesado"
+    },
+    {
+      "name": "Gaspar Recomenda",
+      "username": "gaspar_recomenda",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_44.jpg",
+      "poster": "../img/posters-sabala/poster_4.jpg",
+      "video": "https://files.catbox.moe/rpimi5.mp4#prod=31&slot=criador_2&slug=caixa-de-som-bluetooth-200w-",
+      "catbox_id": "rpimi5.mp4",
+      "startTime": 0.2,
+      "likes": 31200,
+      "commentsCount": 400,
+      "saves": 2630,
+      "shares": 154,
+      "description": "Caixa de Som Bluetooth SABALA DR-909 é um monstro! Coloquei no volume máximo no churrasco e não distorceu nada! 🥩🎉 #sabala #somdechurrasco #audiophile"
+    },
+    {
+      "name": "Leonardo Mey",
+      "username": "leonardomey",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_58.jpg",
+      "poster": "../img/posters-sabala/poster_5.jpg",
+      "video": "https://files.catbox.moe/q3naa4.mp4#prod=31&slot=criador_3&slug=caixa-de-som-bluetooth-200w-",
+      "catbox_id": "q3naa4.mp4",
+      "startTime": 0.2,
+      "likes": 34100,
+      "commentsCount": 445,
+      "saves": 2870,
+      "shares": 176,
+      "description": "Testando a Sabala DR-909 de 200W no limite! Som limpo, graves potentes e o dobro de potência no modo TWS! 💥🎵 #sabaladr909 #reviewcompleto #testedeaudio"
+    }
+  ]
 }

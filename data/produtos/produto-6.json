@@ -252,9 +252,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/perlvk.mp4",
+    "src": "https://files.catbox.moe/perlvk.mp4#prod=6&slot=descricao&slug=bicicleta-ergometrica-fitnes",
     "poster": "../img/posters-desc/poster-desc-6.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "perlvk.mp4"
   },
   "size_guide_html": "",
   "description_html": "Bora começar a melhorar sua qualidade de vida!\n\nA atividade de spinning é uma das atividades mais completas para fazer em qualquer lugar, mas principalmente em casa. A inércia do guidão é resistente, pois permite maiores possibilidades de exercício.\n\nSimule pedaladas rápidas, fortes subidas de montanha e exercite-se ao ritmo da música. É hora de começar a mudança e ter um estilo de vida mais ativa e saudável.\n\nBenefícios:\n\nSpinning emagrece\nAlivia impacto nas articulações e joelhos\nReduz a pressão arterial\nDiminui estresse e depressão\nPode ser praticado em qualquer idade\nFortalece as pernas e região lombar\nMelhora a frequência cardíaca\nMelhora da auto estima\n\nFICHA TÉCNICA:\nCategoria do produto: vertical\nMétodo de ajuste de resistência: feltro de lã\nFunção lcd: varredura, tempo, calorias, velocidade, distância, modo scan\nPrograma: perda de peso, condicionamento físico\nTamanho da embalagem: 86x 20 x 74cm\nPeso líquido: 19kg\n\nITENS INCLUSOS:\n1  Bicicleta Ergométrica Spinning Sevenfit\n1 - Kit montagem\n1 - Manual de montagem",
@@ -337,5 +338,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "bike_6",
+  "creators": [
+    {
+      "name": "kethhh____",
+      "username": "kethhh____",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/6a01195f2ecbb857eeaf85775c7eae59~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=23e0b30c&x-expires=1795464000&x-signature=o4IahP4lGLA7wUcBY5m%2BK5h9CWU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-6-1.jpg",
+      "video": "https://files.catbox.moe/3crsz9.mp4#prod=6&slot=criador_1&slug=bicicleta-ergometrica-fitnes",
+      "catbox_id": "3crsz9.mp4",
+      "startTime": 0.2,
+      "likes": 12290,
+      "commentsCount": 63,
+      "saves": 865,
+      "shares": 21,
+      "description": "estou amando minha bike!!! >unboxing<  💦 . . . #bikeodin #spinning #bikeemcasa #emagrecimento #fyp "
+    },
+    {
+      "name": "Sara",
+      "username": "sara_schutz",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/5e42714c6bb929a06732e0db06023b16~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=1b2e8beb&x-expires=1795464000&x-signature=bNSno5DDaCcCvoMzDWQ8oFQNhC4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-6-2.jpg",
+      "video": "https://files.catbox.moe/oxsqb4.mp4#prod=6&slot=criador_2&slug=bicicleta-ergometrica-fitnes",
+      "catbox_id": "oxsqb4.mp4",
+      "startTime": 0.2,
+      "likes": 12780,
+      "commentsCount": 72,
+      "saves": 950,
+      "shares": 26,
+      "description": "Unboxing da minha bike para spinning ⭐️🚴🏼‍♀️ simplesmente PERFEITA!  Link Mercado Livre: https://meli.la/2Hu1FKJ   #bike #spinning #bikee..."
+    },
+    {
+      "name": "Maju ✨",
+      "username": "maju.inspira",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/61ee51a1b0ead21f8324b1af17989c44~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=914b5782&x-expires=1795464000&x-signature=Fu2dM1WmEstGRgG%2B%2FSzym2G0ceM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-6-3.jpg",
+      "video": "https://files.catbox.moe/doo1cp.mp4#prod=6&slot=criador_3&slug=bicicleta-ergometrica-fitnes",
+      "catbox_id": "doo1cp.mp4",
+      "startTime": 0.2,
+      "likes": 13270,
+      "commentsCount": 81,
+      "saves": 1035,
+      "shares": 31,
+      "description": "Review bike spining profissional do TiktokShop #processodeemagrecimento  #bikeergometrica #bicicletaergometrica #treinoemcasa #tiktokshop..."
+    }
+  ]
 }

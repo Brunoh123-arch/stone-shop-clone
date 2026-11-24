@@ -253,9 +253,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/qfao5v.mp4",
+    "src": "https://files.catbox.moe/qfao5v.mp4#prod=119&slot=descricao&slug=combo-fardo-mega-fraldas-sup",
     "poster": "../img/posters-desc/poster-desc-119.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "qfao5v.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>👶 Combo Fardo Mega Fraldas de Alta Absorção + 4 Pacotes de Lenços Umedecidos</strong><br/><br/>\n              O combo definitivo que todas as mães e pais procuram para garantir conforto, proteção noturna de 12 horas e economia real no orçamento da família!<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n              • <strong>Proteção Noturna Anti-Vazamento:</strong> Canais de fluxo rápido que distribuem o líquido uniformemente, impedindo a fralda de ficar pesada entre as pernas.<br/>• <strong>Pele Sequinha e Arejada:</strong> Camada microporosa que permite a pele respirar livremente, prevenindo assaduras e irritações.<br/>• <strong>Lenços Grossos e Macios:</strong> Toalhinhas umedecidas com 99% de água pura e extrato de camomila para uma limpeza suave e cheirosa.<br/>• <strong>Fecho Reposicionável:</strong> Ajuste perfeito quantas vezes precisar sem perder a aderência da fita.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Linha: Supreme Care Baby Comfort<br/>• Quantidade de Fraldas: Fardo Mega Econômico (conforme tamanho selecionado)<br/>• Quantidade de Lenços: 4 pacotes com 48 toalhas cada (total 192 unidades)<br/>• Validade: 36 meses a partir da data de fabricação<br/>• Envio: Embalagem discreta e reforçada Stone Shop",
@@ -338,5 +339,50 @@
     "rating": 4.9,
     "sales": "8.9K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "fraldas119",
+  "creators": [
+    {
+      "name": "Mamãe Recomenda",
+      "username": "mamae_recomenda_oficial",
+      "avatar": "../img/avatars-fraldas/creator-mamae.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-119.jpg",
+      "video": "https://files.catbox.moe/sfr3li.mp4#prod=119&slot=criador_1&slug=combo-fardo-mega-fraldas-sup",
+      "catbox_id": "sfr3li.mp4",
+      "startTime": 0.2,
+      "likes": 31200,
+      "commentsCount": 280,
+      "saves": 2450,
+      "shares": 110,
+      "description": "Meninas, olha esse lote promocional de Fraldas Huggies Máxima Proteção e Pampers com frete grátis na Stone Shop! O custo por tira tá inacreditável! 👶🍼 #maternidade #fraldashuggies #enxovalbebe"
+    },
+    {
+      "name": "Ádria Galvão",
+      "username": "adriagalvao7",
+      "avatar": "../img/avatars-fraldas/creator-adria.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-119-c3.jpg",
+      "video": "https://files.catbox.moe/fz7mye.mp4#prod=119&slot=criador_2&slug=combo-fardo-mega-fraldas-sup",
+      "catbox_id": "fz7mye.mp4",
+      "startTime": 0.2,
+      "likes": 37400,
+      "commentsCount": 384,
+      "saves": 3090,
+      "shares": 166,
+      "description": "Mega economia de fraldas no esquenta Black Friday! Comprei o fardo hiper e ganhei pacote de lenços umedecidos! Corre que vai esgotar rápido! 🏃‍♀️💨 #TikTokShop #Huggies #Achadinhos"
+    },
+    {
+      "name": "Lidi indica",
+      "username": "lidianecastros1",
+      "avatar": "../img/avatars-fraldas/creator-lidi.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-119-c4.jpg",
+      "video": "https://files.catbox.moe/664mdu.mp4#prod=119&slot=criador_3&slug=combo-fardo-mega-fraldas-sup",
+      "catbox_id": "664mdu.mp4",
+      "startTime": 0.2,
+      "likes": 40500,
+      "commentsCount": 436,
+      "saves": 3410,
+      "shares": 194,
+      "description": "Agora só compro fralda aqui na Stone Shop! Preço de atacado muito melhor que em farmácia e entrega super rápida! 📦🥰 #huggies #fralda #maternidade #foryou"
+    }
+  ]
 }

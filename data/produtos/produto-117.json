@@ -243,9 +243,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/55n8uo.mp4",
+    "src": "https://files.catbox.moe/55n8uo.mp4#prod=117&slot=descricao&slug=fogao-atlas-monaco-top-glass",
     "poster": "../img/posters-desc/poster-desc-117.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "55n8uo.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🔥 Fogão Atlas Mônaco Top Glass 4 Bocas Mesa de Vidro Temperado Preto - Bivolt Automático</strong><br/><br/>\n              A elegância e sofisticação de um cooktop com a praticidade de um fogão de piso completo! O Fogão Atlas Mônaco Top Glass é o campeão absoluto de preferência no Brasil, unindo modernidade com eficiência energética classe A.<br/><br/>\n<strong>Destaques do Fogão Atlas Mônaco Top Glass:</strong><br/>\n              • <strong>Mesa de Vidro Temperado Preto:</strong> Superfície plana sem furos ou frestas, resistente a impactos e altas temperaturas, limpando em segundos com um pano úmido.<br/>\n              • <strong>Design Estilo Cooktop:</strong> Manípulos removíveis no topo da mesa com acabamento premium preto fosco.<br/>\n              • <strong>Acendimento Automático Total:</strong> Basta pressionar o botão e girar para acender queimadores e forno sem fósforos.<br/>\n              • <strong>Trempes Individuais Reforçadas:</strong> Desenho exclusivo com 6 pontos de apoio que garantem firmeza e segurança máxima para panelas de todos os tamanhos.<br/>\n              • <strong>Forno Limpa Fácil de 50 Litros:</strong> Esmaltação especial que não deixa a gordura grudar nas paredes internas e porta de vidro duplo panorâmico.<br/>\n              • <strong>Puxador Ergonômico em Aço:</strong> Visual moderno e seguro que não esquenta durante o uso do forno.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Atlas Eletrodomésticos<br/>\n              • Linha: Mônaco Top Glass<br/>\n              • Cor: Preto com mesa em vidro preto espelhado<br/>\n              • Número de bocas: 4 (2 Queimadores de 2,0kW e 2 Queimadores de 1,7kW)<br/>\n              • Capacidade do forno: 50 Litros<br/>\n              • Dimensões: 48 cm (Largura) x 58 cm (Profundidade) x 88 cm (Altura)<br/>\n              • Voltagem: Bivolt Automático (127V / 220V)<br/>\n              • Eficiência: Selo Procel Classe A no forno e na mesa<br/>\n              • Itens inclusos: 1 Fogão 4 Bocas Atlas Mônaco Top Glass, 4 Trempes individuais, 1 Grade deslizante de forno e Manual de instruções.<br/>\n              • Garantia oficial: 12 meses Atlas do Brasil.",
@@ -320,5 +321,36 @@
     "rating": 4.9,
     "sales": "4.2K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "fogao117",
+  "creators": [
+    {
+      "name": "Ariana Top Shop",
+      "username": "arianababysorrisos",
+      "avatar": "../img/avatars-fogao/creator-ariana.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-117-c2.jpg",
+      "video": "https://files.catbox.moe/w23wcu.mp4#prod=117&slot=criador_1&slug=fogao-atlas-monaco-top-glass",
+      "catbox_id": "w23wcu.mp4",
+      "startTime": 0.2,
+      "likes": 24200,
+      "commentsCount": 229,
+      "saves": 1940,
+      "shares": 96,
+      "description": "Fogão 4 bocas automático mesa de vidro temperado preto fosco! Forno espaçoso com visão panorâmica e super econômico nota A! 👏✨ #fogao #mesadevidro #Aline Ferreira"
+    },
+    {
+      "name": "Mylla Gulart",
+      "username": "vivendo_1proposito",
+      "avatar": "../img/avatars-fogao/creator-proposito.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-117-c4.jpg",
+      "video": "https://files.catbox.moe/sxseft.mp4#prod=117&slot=criador_2&slug=fogao-atlas-monaco-top-glass",
+      "catbox_id": "sxseft.mp4",
+      "startTime": 0.2,
+      "likes": 27400,
+      "commentsCount": 274,
+      "saves": 2230,
+      "shares": 120,
+      "description": "Testando o Fogão a Gás Atlas Monaco Top Glass 4 Bocas Mesa de Vidro Preto! As chamas são fortes e o forno assa por igual! 🍕🥘 #fogao #comprinhas #tiktokshop"
+    }
+  ]
 }

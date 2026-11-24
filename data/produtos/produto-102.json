@@ -339,5 +339,22 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "scooter_102",
+  "creators": [
+    {
+      "name": "Matheus EletroMob",
+      "username": "matheuseletromob",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_1.jpg",
+      "poster": "../img/posters-scooter/poster-1.jpg",
+      "video": "../videoscooterintroducao/scooter-preta.mp4",
+      "catbox_id": null,
+      "startTime": 0.2,
+      "likes": 21000,
+      "commentsCount": 180,
+      "saves": 1600,
+      "shares": 65,
+      "description": "Scooter Elétrica TUI 1000W! Autonomia surreal para o dia a dia na cidade! 🛴⚡ #scooter #mobilidadeurbana #tecnologia"
+    }
+  ]
 }

@@ -647,9 +647,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/ifunlx.mp4",
+    "src": "https://files.catbox.moe/ifunlx.mp4#prod=28&slot=descricao&slug=kit-mochila-rebecca-bonbon-l",
     "poster": "../videosprodutos/posters/video-produto-28.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "ifunlx.mp4"
   },
   "size_guide_html": "",
   "description_html": "<b>KIT MOCHILA ESTOJO E LANCHEIRA REBECCA BONBON - COLEÇÃO 2026 EXCLUSIVA!!!!<br/></b><br/><b>ACOMPANHA UMA LINDA GARRAFA, CADERNO E LIP TINT OFICIAL REBECCA BONBON<br/></b><br/>Rebecca Bonbon está de volta com seu mais novo modelo exclusivo da loja, com todo seu charme e glamour para encantar mais um volta as aulas!! Com detalhes e cores pensadas para aquelas fashionistas que querem arrasar no corredor da escola com todo destaque que só esse novo kit traz!<br/><br/><b>MOCHILA<br/></b><br/>- Revestimento interno: Poliéster<br/><br/>- Compartimento para notebook e tablet<br/><br/>- Logo RB em metal<br/><br/>- Bolsos frontais<br/><br/>- Bolsos laterais em redinha<br/><br/>- Zíper personalizado RB<br/><br/>- Bolso Antifurto<br/><br/>- Costas acolchoadas<br/><br/>- Alça carona<br/><br/>- Chaveiro de estrela felpudo, mascote 3d e Logo emborrachada<br/><br/>- Organizador interno<br/><br/>- Dimensões 44cm X 33cm X 14cm<br/><br/><b>ESTOJO</b><br/><br/>- Zíper com puxador personalizado RB<br/><br/>- Logo RB em metal<br/><br/>- Capacidade para 36 lápis<br/><br/>- Estampa em estrela<br/><br/>- Dimensões 22cm x 16cm x 6cm<br/><br/><b>LANCHEIRA</b><br/><br/>- Revestimento interno térmico<br/><br/>- 2 em 1: Transversal ou Costas<br/><br/>- Alça de mãos<br/><br/>- Zíper com puxador personalizado RB<br/><br/>- Dimensões 27cm x 20cm x 14cm<br/><br/>Tá esperando o que para garantir a sua Rebecca Bonbon? Adquira já, e boas compras :)<br/><br/><b>ESTOQUE DISPONIVEL!!!!</b>",
@@ -750,5 +751,106 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "rebecca_bonbon_28",
+  "creators": [
+    {
+      "name": "Evilyn Ribeiro",
+      "username": "evi_ribeiro1",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/2d3eb5487cc8efae10a1c0004661c8f4~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=9ee4ca70&x-expires=1795366800&x-signature=z6r7VYIqVvBo4%2BiYaC%2FvoDY%2B6%2F4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c2.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/kegz2k.mp4#prod=28&slot=criador_1&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "kegz2k.mp4",
+      "startTime": 0.2,
+      "likes": 33800,
+      "commentsCount": 335,
+      "saves": 3790,
+      "shares": 210,
+      "description": "Abrindo a mochila Rebecca Bonbon da minha filha! Material impecável, detalhes dourados e muito espaço! ✨🎒"
+    },
+    {
+      "name": "Mãe e Madrasta",
+      "username": "mae_madrasta",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/26b28a5bec8a8c312250e738380e1695~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=6d6a8511&x-expires=1795366800&x-signature=G7T8Nzz9DB6ECJMz3ZolQv2rg%2Bo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c3.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/b2ztu8.mp4#prod=28&slot=criador_2&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "b2ztu8.mp4",
+      "startTime": 0.2,
+      "likes": 36200,
+      "commentsCount": 380,
+      "saves": 4180,
+      "shares": 240,
+      "description": "Chegou a mochila Rebecca Bonbon original! Qualidade surreal, chaveiro lindo do cachorrinho e super resistente! 🎀"
+    },
+    {
+      "name": "Dayse Santos",
+      "username": "daysesantos777",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/7323233900525436934~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=185c420d&x-expires=1795366800&x-signature=Mm0%2FmUUd75CdKH5Tdi3eoiux6jY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c4.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/ihak03.mp4#prod=28&slot=criador_3&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "ihak03.mp4",
+      "startTime": 0.2,
+      "likes": 38600,
+      "commentsCount": 425,
+      "saves": 4570,
+      "shares": 270,
+      "description": "Unboxing da minha mochila da Rebecca Bonbon! Perfeita em todos os ângulos, super confortável nas costas! 📚🎒✨"
+    },
+    {
+      "name": "Larissa Daily",
+      "username": "larihdailyy_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/af9046555e71170b8fcfc4e95abaff83~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=f5b21b95&x-expires=1795366800&x-signature=%2FZxne7944nr4u7HC7fLEWaDTGyg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c5.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/w58lgl.mp4#prod=28&slot=criador_4&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "w58lgl.mp4",
+      "startTime": 0.2,
+      "likes": 41000,
+      "commentsCount": 470,
+      "saves": 4960,
+      "shares": 300,
+      "description": "Unboxing da minha mochila escolar Rebecca Bonbon! Cabe tudo e mais um pouco, tecido impermeável top! 🍱🥤"
+    },
+    {
+      "name": "Eula Castro",
+      "username": "eula.castro26",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_6.jpg",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c6.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/ji0ykv.mp4#prod=28&slot=criador_5&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "ji0ykv.mp4",
+      "startTime": 0.2,
+      "likes": 43400,
+      "commentsCount": 515,
+      "saves": 5350,
+      "shares": 330,
+      "description": "Nossa reação ao abrir a mochila escolar da Vivi! A Rebecca Bonbon é maravilhosa demais, acabamento de primeira! 🎒😍"
+    },
+    {
+      "name": "Josiane Teixeira",
+      "username": "josianeteixeira00",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_7.jpg",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c7.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/2ofkyl.mp4#prod=28&slot=criador_6&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "2ofkyl.mp4",
+      "startTime": 0.2,
+      "likes": 45800,
+      "commentsCount": 560,
+      "saves": 5740,
+      "shares": 360,
+      "description": "A febre do momento Mochila da Rebecca Bonbon, chegou super rápido! O estojo box cabe todo o material! 🎀✨"
+    },
+    {
+      "name": "Maria Vitória",
+      "username": "mavi2.04",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_8.jpg",
+      "poster": "../videosprodutos/posters/poster-rebecca-28-c8.jpg?v=20261121_p28_v8",
+      "video": "https://files.catbox.moe/pjyt97.mp4#prod=28&slot=criador_7&slug=kit-mochila-rebecca-bonbon-l",
+      "catbox_id": "pjyt97.mp4",
+      "startTime": 0.2,
+      "likes": 48200,
+      "commentsCount": 605,
+      "saves": 6130,
+      "shares": 390,
+      "description": "Abrindo e mostrando todos os detalhes da minha nova mochila Rebecca Bonbon! Simplesmente perfeita! 🌸📚"
+    }
+  ]
 }

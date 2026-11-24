@@ -221,9 +221,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/haa2xd.mp4",
+    "src": "https://files.catbox.moe/haa2xd.mp4#prod=74&slot=descricao&slug=kit-compre-1-leve-2-camisa-s",
     "poster": "../videosprodutos/posters/video-produto-21.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "haa2xd.mp4"
   },
   "size_guide_html": "",
   "description_html": "Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026 oficial com tecnologia Dri-FIT respirável de alta absorção e tecido leve de alta performance.<br/><br/>\n• <strong>Composição:</strong> 100% Poliéster reciclado premium<br/>\n• <strong>Escudo e Detalhes:</strong> Bordados em alta definição com acabamento térmico selado<br/>\n• <strong>Ajuste:</strong> Caimento atlético confortável para torcer, jogar ou uso casual<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Camisa Seleção Brasil\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-74.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\nEscolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
@@ -312,5 +313,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "camisa_brasil_74",
+  "creators": [
+    {
+      "name": "Juliana Medeiros",
+      "username": "jumedeirosr",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/15abe20ad26603a031b6707a4dad5462~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=bfc1c8bb&x-expires=1795366800&x-signature=Pqii2VxxQv8%2BtIEf5aF8wmR0BPg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-21.jpg",
+      "video": "https://files.catbox.moe/7psxwz.mp4#prod=74&slot=criador_1&slug=kit-compre-1-leve-2-camisa-s",
+      "catbox_id": "7psxwz.mp4",
+      "startTime": 0.2,
+      "likes": 38600,
+      "commentsCount": 430,
+      "saves": 4210,
+      "shares": 255,
+      "description": "A nova camisa da Seleção Brasileira! Mostrando cada detalhe do tecido Dri-FIT e do caimento impecável! 🇧🇷✨"
+    },
+    {
+      "name": "Eiti por aí",
+      "username": "eitiporai",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/097ad4b466543d26fb6680f2c85e3727~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=781c27ba&x-expires=1795366800&x-signature=MA%2FNlFdOP0l5PqffMPb%2FZSaaWI8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-21.jpg",
+      "video": "https://files.catbox.moe/adk9fx.mp4#prod=74&slot=criador_2&slug=kit-compre-1-leve-2-camisa-s",
+      "catbox_id": "adk9fx.mp4",
+      "startTime": 0.2,
+      "likes": 42000,
+      "commentsCount": 480,
+      "saves": 4620,
+      "shares": 290,
+      "description": "Unboxing e review sincero da camisa amarela do Brasil! O tecido é muito leve, respirável e confortável no corpo! 💛💚"
+    },
+    {
+      "name": "Matheus Silva",
+      "username": "ritmodascamisas",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/c9359eff55edd496645c3a0c2b972481~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=5fe2b60b&x-expires=1795366800&x-signature=1iCW0oFCJ39XeShB%2Fz%2BvuLuUc1Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-21.jpg",
+      "video": "https://files.catbox.moe/gw0duv.mp4#prod=74&slot=criador_3&slug=kit-compre-1-leve-2-camisa-s",
+      "catbox_id": "gw0duv.mp4",
+      "startTime": 0.2,
+      "likes": 45400,
+      "commentsCount": 530,
+      "saves": 5030,
+      "shares": 325,
+      "description": "Nova camisa da Seleção Canarinho! As aplicações cheias de textura e o tecido tecnológico deixam a camisa surreal! ⚽💎"
+    },
+    {
+      "name": "Júlia Stofel",
+      "username": "juliastofel_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/632db09b3d96fb6e4c459b21f5ff8e09~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=d4e723cf&x-expires=1795366800&x-signature=aTstWpbkhFR3cwLYkUqh0%2FgSAFw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-21.jpg",
+      "video": "https://files.catbox.moe/ygaaob.mp4#prod=74&slot=criador_4&slug=kit-compre-1-leve-2-camisa-s",
+      "catbox_id": "ygaaob.mp4",
+      "startTime": 0.2,
+      "likes": 48800,
+      "commentsCount": 580,
+      "saves": 5440,
+      "shares": 360,
+      "description": "Recebidos da camisa da Seleção Brasileira! Linda demais, tecido super macio e caimento perfeito! 🇧🇷🥰"
+    }
+  ]
 }

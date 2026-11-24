@@ -409,9 +409,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/a8zjrb.mp4",
+    "src": "https://files.catbox.moe/a8zjrb.mp4#prod=5&slot=descricao&slug=fritadeira-eletrica-visio-fr",
     "poster": "../img/posters-desc/poster-desc-5.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "a8zjrb.mp4"
   },
   "size_guide_html": "",
   "description_html": "Fritadeira Elétrica Sem Óleo Elgin Visio Fry 5L  Praticidade, potência e visualização total do preparo<br/><br/>Transforme sua rotina na cozinha com a Visio Fry da Elgin. Seu design moderno com visor transparente permite acompanhar o preparo dos alimentos sem abrir o cesto, mantendo o calor e garantindo mais eficiência.<br/><br/>Com painel Digital Touch Screen e 12 funções pré-programadas, você prepara diversas receitas com facilidade. A capacidade de 5 litros é ideal para famílias e para quem gosta de fazer porções maiores de uma só vez.<br/><br/>Equipada com 1700W de potência e tecnologia Air Circuit 360, a fritadeira garante circulação de ar ultrarrápida, deixando os alimentos crocantes por fora e macios por dentro, com economia de energia.<br/><br/>O cesto possui revestimento antiaderente Black Resist, que oferece mais durabilidade e muito mais facilidade na hora da limpeza. Conta também com controle de temperatura de 80C a 200C, timer de até 60 minutos com aviso sonoro, desligamento automático, proteção contra superaquecimento, base antiderrapante e alça fria, proporcionando um uso seguro e confortável.<br/><br/>A escolha ideal para quem busca sabor, saúde e praticidade no dia a dia.",
@@ -500,5 +501,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "airfryer_5",
+  "creators": [
+    {
+      "name": "Daiana Leite",
+      "username": "daianasilva233",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/8a8b4fc1e8fe438d6e6280317ebe9406~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=1117e58a&x-expires=1795438800&x-signature=3D%2BboffXEL6nrXxdV%2BCfUNAtMcE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-5-1.jpg",
+      "video": "https://files.catbox.moe/7rjaog.mp4#prod=5&slot=criador_1&slug=fritadeira-eletrica-visio-fr",
+      "catbox_id": "7rjaog.mp4",
+      "startTime": 0.2,
+      "likes": 12890,
+      "commentsCount": 76,
+      "saves": 1195,
+      "shares": 46,
+      "description": "Air Fryer Elgin 3,5 litros! ❤️.  #airfryer #cozinha #fritadeiraeletrica #fritadeiraelétricaairfryer "
+    },
+    {
+      "name": "Frazão Móveis e Eletros",
+      "username": "frazaomoveiss",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/7221632323484614661~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=0226acc6&x-expires=1795438800&x-signature=dwfg9qIR1kUKhiq63OQTHJSkIeA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-5-2.jpg",
+      "video": "https://files.catbox.moe/u709rj.mp4#prod=5&slot=criador_2&slug=fritadeira-eletrica-visio-fr",
+      "catbox_id": "u709rj.mp4",
+      "startTime": 0.2,
+      "likes": 13280,
+      "commentsCount": 87,
+      "saves": 1290,
+      "shares": 54,
+      "description": "🔥 Air Fryer Elgin 5L: mais espaço, mais sabor e menos óleo! ✨ Deixe suas receitas crocantes e saudáveis com muito mais praticidade. 💥 Che..."
+    },
+    {
+      "name": "Raiza Aguiar Recomenda",
+      "username": "raiza.recomenda",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/07927745fb1680a993d9dfa2f19608ab~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=8dc77331&x-expires=1795438800&x-signature=DGRI1TQ%2BMtePj0pbbE2nSBjNjdA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-5-3.jpg",
+      "video": "https://files.catbox.moe/2575d9.mp4#prod=5&slot=criador_3&slug=fritadeira-eletrica-visio-fr",
+      "catbox_id": "2575d9.mp4",
+      "startTime": 0.2,
+      "likes": 13670,
+      "commentsCount": 98,
+      "saves": 1385,
+      "shares": 62,
+      "description": "Fritadeira AirFryer 3,5L Elgin"
+    }
+  ]
 }

@@ -736,9 +736,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/s6vnyh.mp4",
+    "src": "https://files.catbox.moe/s6vnyh.mp4#prod=53&slot=descricao&slug=starlink-v4-internet-satelit",
     "poster": "../img/posters-desc/poster-desc-53.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "s6vnyh.mp4"
   },
   "size_guide_html": "",
   "description_html": "Olá amigos,<br/><br/> Produto 100% Original.<br/><br/> Nota Fiscal.<br/><br/> Garantia de 01 ano pelo fabricante.<br/><br/> Kit Internet Satélite Starlink V4<br/><br/>Garantia oficial de 12 meses com a Starlink.<br/><br/>O Starlink V4  é a solução ideal para quem precisa de internet confiável, rápida e estável em qualquer lugar. Seja em casas, estabelecimentos comerciais, áreas rurais ou regiões remotas, o Starlink V4 permite manter sua conexão ativa 100% do tempo, mesmo onde não há infraestrutura de rede. Robusto, com maior desempenho e maior área de cobertura, é ideal para aplicações fixas ou semi-móveis que exigem alta disponibilidade de internet via satélite.<br/><br/> Especificações Técnicas<br/><br/> Peso do pacote: 7,3 kg<br/><br/> Dimensões do pacote: 575 x 511 x 152 mm<br/><br/> Antena: Matriz faseada eletrônica<br/><br/> Campo de visão: 140<br/><br/> Orientação: Automática, assistida por motores internos<br/><br/> Peso do equipamento: 3,2 kg (somente antena) e 4,2 kg (com suporte e cabo)<br/><br/> Índice Ambiental: IP67<br/><br/> Temperatura de operação: -30C a 50C<br/><br/> Resistência ao vento: até 193 km/h<br/><br/> Capacidade de derretimento de neve: até 40 mm/h<br/><br/> Consumo médio de energia: 50 a 75 W<br/><br/> Tensão de entrada: 100240 V AC<br/><br/> Requisitos de energia: Adaptador Starlink PoE de 150 W<br/><br/> Wi-Fi Integrado: 802.11a/b/g/n/ac/ax (WiFi 6), Dual Band<br/><br/> Cobertura Wi-Fi: até 185 m<br/><br/> Portas Ethernet: 1 porta LAN via adaptador Ethernet (vendido separadamente)<br/><br/> Segurança: WPA2/WPA3<br/><br/> Compatibilidade de Mesh: Compatível com sistemas Mesh Starlink<br/><br/> Conecta até: 200 dispositivos<br/><br/> Indicador de energia: LED na fonte e no roteador<br/><br/> Conteúdo da Embalagem:<br/><br/> Antena Starlink V4 com Wi-Fi integrado<br/><br/> Suporte de base para instalação<br/><br/> Cabo de alimentação e dados de 15 m<br/><br/> Fonte de alimentação com PoE<br/><br/> Roteador Wi-Fi 6 integrado<br/><br/> Manual e conectores Starlink<br/><br/> O Starlink V4 é ideal para áreas onde a internet tradicional não chega com qualidade, como regiões rurais, locais afastados, áreas off-grid, estabelecimentos comerciais e propriedades em campo aberto. Perfeito para manter sua produtividade, entretenimento e comunicação onde quer que você esteja.<br/><br/> Enviamos rapidamente, com garantia e nota fiscal.",
@@ -823,5 +824,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "starlink_53",
+  "creators": [
+    {
+      "name": "Por essa Dica",
+      "username": "poressadica",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/abaf9b2b268b5ac426f6dc3714725dd6~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2b528612&x-expires=1795464000&x-signature=BmGNUXm9EzHPF4d%2FtNEP7VPlYI8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-53-1.jpg",
+      "video": "https://files.catbox.moe/jnaryf.mp4#prod=53&slot=criador_1&slug=starlink-v4-internet-satelit",
+      "catbox_id": "jnaryf.mp4",
+      "startTime": 0.2,
+      "likes": 38000,
+      "commentsCount": 420,
+      "saves": 3100,
+      "shares": 190,
+      "description": "STARLINK V4 RESIDENCIAL INSTALAÇÃO E CONFIGURAÇÃO Chegou a Starlink Brasil! Neste review completo, eu mostro se a internet via satélite d..."
+    },
+    {
+      "name": "Santarem Imports",
+      "username": "santaremimports_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f071a29b4f44d27a686b871edc440522~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=a6d0a0cd&x-expires=1795464000&x-signature=uDsEYn%2B3Fq5gessnpXBAgDftKdI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-53-2.jpg",
+      "video": "https://files.catbox.moe/8f5k0p.mp4#prod=53&slot=criador_2&slug=starlink-v4-internet-satelit",
+      "catbox_id": "8f5k0p.mp4",
+      "startTime": 0.2,
+      "likes": 38000,
+      "commentsCount": 420,
+      "saves": 3100,
+      "shares": 190,
+      "description": "“É uma Mini - Maior 😂😂😂” Parte 01- Unboxing Starlink V4 Siga @santaremimports_ pra mais conteúdos! #santarém #santarempa #vendas #alterdo..."
+    },
+    {
+      "name": "Borgesvitaa",
+      "username": "borgesvitaa",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/3dbdb61da7d3cc3bff2ef2d4164c8523~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=05c13cef&x-expires=1795464000&x-signature=C2jiiHreIyEHfFEvjoGkbY84%2BfA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-53-3.jpg",
+      "video": "https://files.catbox.moe/kk0bhu.mp4#prod=53&slot=criador_3&slug=starlink-v4-internet-satelit",
+      "catbox_id": "kk0bhu.mp4",
+      "startTime": 0.2,
+      "likes": 38000,
+      "commentsCount": 420,
+      "saves": 3100,
+      "shares": 190,
+      "description": "Aqui no sítio, depois de Presidente Figueiredo, a internet agora vem do céu! ☁️📡 Instalamos o kit Starlink V4 Gen 3 e tá funcionando perf..."
+    }
+  ]
 }

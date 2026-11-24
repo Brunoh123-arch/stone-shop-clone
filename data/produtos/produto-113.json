@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/grwbds.mp4",
+    "src": "https://files.catbox.moe/grwbds.mp4#prod=113&slot=descricao&slug=comedouro-cachorro-e-gato-el",
     "poster": "../img/posters-desc/poster-desc-113.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "grwbds.mp4"
   },
   "size_guide_html": "",
   "description_html": "Comedouro Pet Elevado Duplo Acrílico com 69% OFF no 11.11. Apenas R$ 39,90. Frete grátis.",
@@ -316,5 +317,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "comedouro_113",
+  "creators": [
+    {
+      "name": "Beatriz Santos",
+      "username": "biaegatinhos",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_22.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-113-criadora2.jpg",
+      "video": "https://files.catbox.moe/581lcj.mp4#prod=113&slot=criador_1&slug=comedouro-cachorro-e-gato-el",
+      "catbox_id": "581lcj.mp4",
+      "startTime": 0.2,
+      "likes": 11780,
+      "commentsCount": 63,
+      "saves": 865,
+      "shares": 32,
+      "description": "Comedouro elevado de porcelana ❤️🥰🌸"
+    },
+    {
+      "name": "Ana Lima",
+      "username": "canalanalima",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-113-criadora3.jpg",
+      "video": "https://files.catbox.moe/bffyn2.mp4#prod=113&slot=criador_2&slug=comedouro-cachorro-e-gato-el",
+      "catbox_id": "bffyn2.mp4",
+      "startTime": 0.2,
+      "likes": 12160,
+      "commentsCount": 74,
+      "saves": 950,
+      "shares": 38,
+      "description": "A patroa ganhou um comedouro novo! Comedouro duplo elevado para cachorros e gatos! 🐱🐶✨ #petshop #comedouro"
+    },
+    {
+      "name": "Laura Luzia",
+      "username": "lauraluzia28",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-113-criadora4.jpg",
+      "video": "https://files.catbox.moe/kbl124.mp4#prod=113&slot=criador_3&slug=comedouro-cachorro-e-gato-el",
+      "catbox_id": "kbl124.mp4",
+      "startTime": 0.2,
+      "likes": 12540,
+      "commentsCount": 85,
+      "saves": 1035,
+      "shares": 44,
+      "description": "Chega de pote de plastico! Esse comedouro elevado pet duplo dura muito e melhora a postura! 🐾✨"
+    },
+    {
+      "name": "Luh & Gustavo",
+      "username": "casalfindss",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_25.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-113.jpg",
+      "video": "https://files.catbox.moe/avgf8r.mp4#prod=113&slot=criador_4&slug=comedouro-cachorro-e-gato-el",
+      "catbox_id": "avgf8r.mp4",
+      "startTime": 0.2,
+      "likes": 12920,
+      "commentsCount": 96,
+      "saves": 1120,
+      "shares": 50,
+      "description": "Comedouro elevado para pet com inclinação que facilita a digestão, super aprovado! 🐶🐱❤️"
+    }
+  ]
 }

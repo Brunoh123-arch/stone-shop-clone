@@ -1082,9 +1082,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/wwyxh9.mp4",
+    "src": "https://files.catbox.moe/wwyxh9.mp4#prod=94&slot=descricao&slug=bicicleta-bike-ergometrica-s",
     "poster": "../videosprodutos/posters/video-produto-94.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "wwyxh9.mp4"
   },
   "size_guide_html": "",
   "description_html": "A bicicleta ergométrica Bike Sport é uma excelente opção para melhorar a saúde cardiovascular, controlar a pressão arterial e reduzir o impacto nas articulações. Além disso, auxilia na queima de calorias, redução da gordura corporal e tonificação de pernas e glúteos, contribuindo para a estética. No condicionamento físico, melhora a resistência muscular, a capacidade aeróbica e permite ajustes de intensidade para diferentes níveis de treino. Sendo um exercício prático e acessível, pode ser realizado em qualquer ambiente, independentemente do clima.<br/><br/>Seja para sua casa ou para sua academia, essa bicicleta é ideal para você! Garanta já!<br/><br/>FICHA TÉCNICA:<br/><br/>Altura parte frontal: 96cm - 110cm<br/><br/>Altura parte traseira: 78cm - 92cm<br/><br/>Distância entre apoio do banco e guidom: 40cm<br/><br/>Comprimento total: 80cm<br/><br/>Largura: 46cm<br/><br/>Material: Aço carbono leve e resistente<br/><br/>Peso: Aproximadamente 18 kg<br/><br/>CARACTERISTICAS:<br/><br/>Regulagem: Possui regulagem de altura do guidom em até 12cm, altura do banco em até 12cm e distância do assento em até 6cm.<br/><br/>Pedal: Pedal ergonômico com trava para o pé.<br/><br/>Silenciosa: Seu sistema de acionamento por correia faz com que a bicicleta seja silenciosa e suave.<br/><br/>Computador de bordo: Computador de bordo digital com monitoramento de tempo, velocidade, distância, calorias, odômetro e pulso.<br/><br/>Ideal para: Pessoas com até 1,8m de altura e até 120kg.<br/><br/>Ajustes de intensidade: Possui ajustes de níveis de intensidade, adequando perfeitamente ao seu objetivo e evolução.<br/><br/>DIFERENCIAIS:<br/><br/>Material leve e resistente: Nossas bicicletas são fabricadas com aço carbono de alta qualidade revestido com pintura anti corrosão. Garantindo assim um design moderno e alta durabilidade!<br/><br/>Leve e versátil: Pesando apenas 18 kilos seu transporte e manejo é fácil, ideal para você ter em casa. E com toda a sua tecnologia de ponta, ela é recomendada para uso profissional, como academias e aulas de spinning.<br/><br/>Ergonomia: Nossa bicicleta conta com 3 níveis de ajustes e pedais ergonômicos, adequando perfeitamente a pessoas com diversas estaturas e trazendo conforto e segurança ao pedalar.<br/><br/>Monitor de treino: Com o monitor eletrônico você pode medir diferentes funções como velocidade, tempo, calorias, distância, fazer uma varredura e inclui o sistema ODO que registra o total de quilômetros desde o primeiro dia. O monitor digital pode rastrear e registrar dados em tempo real, como velocidade, frequência cardíaca, tempo e calorias queimadas. O complemento ideal para você atingir seus objetivos de exercício.<br/><br/>Saúde e entretenimento: Com o suporte para celular e tablet você pode pedalar e se divertir assistindo suas séries e vídeos favoritos!<br/><br/>Ajuste de intensidade: O ajuste de intensidade de vários níveis você pode fazer diversos tipos de treinos, desde aquecimento a um treino de alto nível.",
@@ -1169,5 +1170,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "bike_spinning_94",
+  "creators": [
+    {
+      "name": "Lucas Treino & Spinning",
+      "username": "lucasspinning_fit",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "poster": "../videosprodutos/posters/video-produto-94.jpg",
+      "video": "https://files.catbox.moe/perlvk.mp4#prod=94&slot=criador_1&slug=bicicleta-bike-ergometrica-s",
+      "catbox_id": "perlvk.mp4",
+      "startTime": 0.2,
+      "likes": 26300,
+      "commentsCount": 228,
+      "saves": 2080,
+      "shares": 82,
+      "description": "Bike de Spinning profissional suporta até 120kg! Roda de inércia pesada com frenagem macia e silenciosa no apartamento! 🚴‍♂️🔥 #spinning #bikeindoor #treinoemcasa"
+    },
+    {
+      "name": "elaniacreator",
+      "username": "elaniacreator",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/a2569e2d1e63272ef51cdf2001f205d0~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=12071a04&x-expires=1795464000&x-signature=iBpeFbT8er%2BixGpqNVqXyIucVw4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-94-2.jpg",
+      "video": "https://files.catbox.moe/1njhzx.mp4#prod=94&slot=criador_2&slug=bicicleta-bike-ergometrica-s",
+      "catbox_id": "1njhzx.mp4",
+      "startTime": 0.2,
+      "likes": 31900,
+      "commentsCount": 296,
+      "saves": 2540,
+      "shares": 120,
+      "description": "🚴‍♀️ Treine em casa com mais tecnologia e diversão! Bicicleta Ergométrica, com Bluetooth 2.0, jogos AR e roda de inércia. Ideal para deix..."
+    },
+    {
+      "name": "Fran Novaes",
+      "username": "frannovaes05",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/de6e8700454bb8db65016ccc7eab2c5a~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4eb3e96c&x-expires=1795464000&x-signature=26r5aaPMMTW5OskCJ5kk45b1vJY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-94-3.jpg",
+      "video": "https://files.catbox.moe/qxb06m.mp4#prod=94&slot=criador_3&slug=bicicleta-bike-ergometrica-s",
+      "catbox_id": "qxb06m.mp4",
+      "startTime": 0.2,
+      "likes": 34700,
+      "commentsCount": 330,
+      "saves": 2770,
+      "shares": 139,
+      "description": "Dá Só Uma Olhadinha Bicicleta Bike Ergometrica Spinning Academia Fitness Profissional 120kg🛍️🛒#academia #verao #blogueira #fitness #esporte "
+    }
+  ]
 }

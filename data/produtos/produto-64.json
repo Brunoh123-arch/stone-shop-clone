@@ -626,9 +626,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/fbfkzs.mp4",
+    "src": "https://files.catbox.moe/fbfkzs.mp4#prod=64&slot=descricao&slug=bateria-auxiliar-de-partida-",
     "poster": "../img/posters-desc/poster-desc-64.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "fbfkzs.mp4"
   },
   "size_guide_html": "",
   "description_html": "O BICO DA BOMBA DE AR É DE ROSQUEAR!!!<br/><br/>ENVIO IMEDIATO!!<br/><br/>Característica:<br/><br/>1.Arrancador de salto 2500A<br/><br/>2.Compressor de ar 150 PSI<br/><br/>3.Banco de potência<br/><br/>4.Lanterna LED<br/><br/>Descrição:<br/><br/>Modelo do produto: Arrancador de salto de carro com compressor de ar<br/><br/>Capacidade da bateria: 8000mAh<br/><br/>Corrente de pico: 600A-1200A<br/><br/>Iluminação LED: SOS piscando e brilhante<br/><br/>Tensão inicial: 12V<br/><br/>Pressão de inflação: 150PSI (MÁX.)<br/><br/>Potência do cilindro:80W<br/><br/>Saída USB: 5V/3A 9V/2A 12V/1,5A<br/><br/>Tempo de carregamento: 3-4H<br/><br/>Material da carcaça: PC + ABS<br/><br/>Diâmetro do cilindro: 19 cilindros<br/><br/>Comprimento do tubo inflável: cerca de 15cm<br/><br/>Fluxo de pressão de ar: 30L/min<br/><br/>Temperatura adequada: -3580<br/><br/>Assuntos que precisam de atenção (os compradores devem ver)<br/><br/>O produto acabou de ser recebido, você deve primeiro ligar a lanterna para descarregar, depois carregar o produto por mais de 4 horas e depois ligar o carro, pois o produto está vazio .Esta operação pode prolongar a vida útil do produto!<br/><br/>Não descarregue e carregue ao mesmo tempo.",
@@ -709,5 +710,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "bateria_64",
+  "creators": [
+    {
+      "name": "Gilberto e Aline",
+      "username": "validashop",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_79.jpg",
+      "poster": "../img/produto-64-1.jpg",
+      "video": "https://files.catbox.moe/q1oiaj.mp4#prod=64&slot=criador_1&slug=bateria-auxiliar-de-partida-",
+      "catbox_id": "q1oiaj.mp4",
+      "startTime": 0.2,
+      "likes": 24300,
+      "commentsCount": 205,
+      "saves": 1890,
+      "shares": 88,
+      "description": "Bomba de Ar 4 em 1 Multifuncional, infla pneus rápido e dá partida em emergências 🚗⚡"
+    },
+    {
+      "name": "Cleiton Pesca",
+      "username": "pesca.criativa",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_81.jpg",
+      "poster": "../img/produto-64-2.jpg",
+      "video": "https://files.catbox.moe/q62x2f.mp4#prod=64&slot=criador_2&slug=bateria-auxiliar-de-partida-",
+      "catbox_id": "q62x2f.mp4",
+      "startTime": 0.2,
+      "likes": 26600,
+      "commentsCount": 232,
+      "saves": 2090,
+      "shares": 103,
+      "description": "Auxiliar de partida, compressor e powerbank 4 em 1! Não fico sem no carro e no barco 🚙"
+    },
+    {
+      "name": "Casal Visionário",
+      "username": "acatherinelussani",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_83.jpg",
+      "poster": "../img/produto-64-1.jpg",
+      "video": "https://files.catbox.moe/15i1tw.mp4#prod=64&slot=criador_3&slug=bateria-auxiliar-de-partida-",
+      "catbox_id": "15i1tw.mp4",
+      "startTime": 0.2,
+      "likes": 28900,
+      "commentsCount": 259,
+      "saves": 2290,
+      "shares": 118,
+      "description": "Compressor multifunção 150 PSI e partida rápida de emergência. Salva de verdade nas viagens! ⚡"
+    },
+    {
+      "name": "Felipe Dicas",
+      "username": "felipedicasnet",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_85.jpg",
+      "poster": "../img/produto-64-2.jpg",
+      "video": "https://files.catbox.moe/zjqwgy.mp4#prod=64&slot=criador_4&slug=bateria-auxiliar-de-partida-",
+      "catbox_id": "zjqwgy.mp4",
+      "startTime": 0.2,
+      "likes": 31200,
+      "commentsCount": 286,
+      "saves": 2490,
+      "shares": 133,
+      "description": "Bomba de ar portátil e calibrador digital com bateria interna e lanterna LED potente 🛞"
+    },
+    {
+      "name": "Luiz Felipe",
+      "username": "felipeindicabr",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_87.jpg",
+      "poster": "../img/produto-64-1.jpg",
+      "video": "https://files.catbox.moe/0jv9uz.mp4#prod=64&slot=criador_5&slug=bateria-auxiliar-de-partida-",
+      "catbox_id": "0jv9uz.mp4",
+      "startTime": 0.2,
+      "likes": 33500,
+      "commentsCount": 313,
+      "saves": 2690,
+      "shares": 148,
+      "description": "Dá partida até em motor pesado sem precisar de chupeta! Equipamento indispensável pro carro 🚗"
+    }
+  ]
 }

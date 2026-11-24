@@ -736,9 +736,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/80bwka.mp4",
+    "src": "https://files.catbox.moe/80bwka.mp4#prod=87&slot=descricao&slug=calca-mom-jeans-feminina-com",
     "poster": "../img/posters-desc/poster-desc-87.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "80bwka.mp4"
   },
   "size_guide_html": "",
   "description_html": "Calça Mom Jeans feminina de cintura alta com caimento perfeito, confeccionada em jeans premium com toque macio e acabamento refinado. Acompanha cinto preto exclusivo.<br/><br/>\n<strong>Informações da Modelo:</strong><br/>\n              • Altura: 1,56m | Busto: 86cm | Cintura: 70cm | Quadril: 101cm | Peso: 54kg (Veste tamanho 36)<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Calça Mom Jeans\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-87.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n              Escolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
@@ -845,5 +846,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "mom_jeans_87",
+  "creators": [
+    {
+      "name": "MI MARTINS • AUTOCUIDADO",
+      "username": "mitransformada",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/fc441e340709cdf676ceaeca917e8264~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=6bc06d25&x-expires=1795464000&x-signature=bp6%2BTh0IWFWCd%2B5j6OZ1jrokvho%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-87-1.jpg",
+      "video": "https://files.catbox.moe/syh7wi.mp4#prod=87&slot=criador_1&slug=calca-mom-jeans-feminina-com",
+      "catbox_id": "syh7wi.mp4",
+      "startTime": 0.2,
+      "likes": 32500,
+      "commentsCount": 303,
+      "saves": 2610,
+      "shares": 118,
+      "description": "Vem ver esse unboxing da minha 1° calça jeans comprada na internet 🤭 @MI MARTINS • AUTOCUIDADO  #calçajeansfeminina #calçamom #jeans #mod..."
+    },
+    {
+      "name": "Rayssa Zeferino ✭",
+      "username": "rayssa_creator",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/c25aca62290f923aa50c4dc217ced1e8~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=9bfdbc07&x-expires=1795464000&x-signature=8K3tGsO4MjjZntCo0MRgjyz30%2Fw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-87-2.jpg",
+      "video": "https://files.catbox.moe/7xs0ix.mp4#prod=87&slot=criador_2&slug=calca-mom-jeans-feminina-com",
+      "catbox_id": "7xs0ix.mp4",
+      "startTime": 0.2,
+      "likes": 35600,
+      "commentsCount": 341,
+      "saves": 2870,
+      "shares": 140,
+      "description": "Calça Mom Jeans Naraka #calcajeans #momjeans #viraltiktok #tiktokshopbr1111 #naraka "
+    },
+    {
+      "name": "Natalia Marques",
+      "username": "natmarquesvi",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/21711b0f517bd6ca7f364a978ec6e2e0~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=8552b086&x-expires=1795464000&x-signature=9qKGVik%2BfxwVwskqrCz3%2BwJmnIg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-87-3.jpg",
+      "video": "https://files.catbox.moe/uwry25.mp4#prod=87&slot=criador_3&slug=calca-mom-jeans-feminina-com",
+      "catbox_id": "uwry25.mp4",
+      "startTime": 0.2,
+      "likes": 38700,
+      "commentsCount": 379,
+      "saves": 3130,
+      "shares": 162,
+      "description": "#jeans #mom "
+    }
+  ]
 }

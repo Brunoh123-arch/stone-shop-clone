@@ -226,9 +226,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/0hhasi.mp4",
+    "src": "https://files.catbox.moe/0hhasi.mp4#prod=76&slot=descricao&slug=aparelho-jogo-de-jantar-30-p",
     "poster": "../img/posters-desc/poster-desc-76.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "0hhasi.mp4"
   },
   "size_guide_html": "",
   "description_html": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE com 86% OFF. Apenas R$69,90. Frete grátis.",
@@ -308,5 +309,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "aparelho_76",
+  "creators": [
+    {
+      "name": "Jessica | Enxoval de casa 🏡",
+      "username": "enxovaldajessy",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/9a2df0635c0700aa0bb0902537b6514b~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=eb71938a&x-expires=1795413600&x-signature=%2FZ7a8u%2B2RtBC%2FRZOCfZmyHTgUv8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-76-1.jpg",
+      "video": "https://files.catbox.moe/ujw0j2.mp4#prod=76&slot=criador_1&slug=aparelho-jogo-de-jantar-30-p",
+      "catbox_id": "ujw0j2.mp4",
+      "startTime": 0.2,
+      "likes": 21000,
+      "commentsCount": 190,
+      "saves": 1800,
+      "shares": 70,
+      "description": "Meu jogo de jantar preto matte da Porto Brasil 🖤 #foryou #utensiliosdecozinha #enxovaldecasanova #casa #chadepanela #chadecozinha #enxova..."
+    },
+    {
+      "name": "Debora e Miro Shop",
+      "username": "deboradaianapereira",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/975a9e41c7237e617e430c360d7c2fdc~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=71c43444&x-expires=1795413600&x-signature=Sg9noKrs%2FUM%2FBZTxki5QuC98zWM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-76-2.jpg",
+      "video": "https://files.catbox.moe/bsbp4s.mp4#prod=76&slot=criador_2&slug=aparelho-jogo-de-jantar-30-p",
+      "catbox_id": "bsbp4s.mp4",
+      "startTime": 0.2,
+      "likes": 21000,
+      "commentsCount": 190,
+      "saves": 1800,
+      "shares": 70,
+      "description": "Aparelho de jantar de porcelana! #tiktokshopchegou #porcelana #aparelhodejantar #vancasso "
+    },
+    {
+      "name": "amarcelanascimento",
+      "username": "amarcelanascimento",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/4d9958a6753cfe92460783fc67353167~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=dc0c2853&x-expires=1795413600&x-signature=0OY%2FWvdYARIhau70QFoWjJixKjM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-76-3.jpg",
+      "video": "https://files.catbox.moe/542l79.mp4#prod=76&slot=criador_3&slug=aparelho-jogo-de-jantar-30-p",
+      "catbox_id": "542l79.mp4",
+      "startTime": 0.2,
+      "likes": 21000,
+      "commentsCount": 190,
+      "saves": 1800,
+      "shares": 70,
+      "description": "Meu novo xodó!!!  🥹😮‍💨🥰 #portobrasil #aparelhodejantar #aparelhodejantarorganico #portobrasilorganico #fyp #xicaraorganica #xicara #jogod..."
+    }
+  ]
 }

@@ -546,9 +546,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/v6io74.mp4",
+    "src": "https://files.catbox.moe/v6io74.mp4#prod=58&slot=descricao&slug=caixa-de-som-original-alaxe-",
     "poster": "../img/posters-desc/poster-desc-58.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "v6io74.mp4"
   },
   "size_guide_html": "",
   "description_html": "Caixa de Som Bluetooth com LED e Compatível com Alexa - Potência 5W<br/><br/>Transforme seu ambiente com música e tecnologia com esta caixa de som portátil Bluetooth com LEDs coloridos! Ideal para festas, passeios ou uso diário, ela ainda conta com integração via aplicativo com a Alexa para comandos de voz simples.<br/><br/> Principais Vantagens:<br/><br/> Som de Alta Qualidade<br/><br/>Potência de saída de 5W para músicas com ótimo volume e clareza sonora.<br/><br/> Iluminação LED<br/><br/>Luzes LED vibrantes para criar um clima animado onde estiver!<br/><br/> Conexão Bluetooth 5.0<br/><br/>Compatível com celulares, tablets e outros dispositivos com conexão rápida e estável.<br/><br/> Bateria Recarregável 1200mAh<br/><br/>Autonomia de até 5 horas de reprodução. Carregamento via cabo USB (incluso).<br/><br/> Função Rádio FM Integrada<br/><br/>Sintonize suas estações favoritas com facilidade.<br/><br/> Conexões<br/><br/>Entrada USB, rádio FM, conexão Bluetooth, controle suave ao toque.<br/><br/> Função Extra: Conecte 2 Caixas Simultaneamente<br/><br/>Para som estéreo duplo, basta parear duas caixas do mesmo modelo.<br/><br/> Especificações Técnicas:<br/><br/>Bluetooth: Versão 5.0<br/><br/>Potência de saída: 5W<br/><br/>Capacidade da bateria: 1200mAh<br/><br/>Tensão de trabalho: DC 3.7V<br/><br/>Tensão de carregamento: DC 5V<br/><br/>Tempo de carga: 2-3h<br/><br/>Tempo de reprodução: 2-5h<br/><br/>Entrada USB<br/><br/>Rádio FM<br/><br/>Alto-falante: 52mm<br/><br/>Sensibilidade de entrada: 400mv<br/><br/>Separação: &gt; 90db<br/><br/>Relação sinal/ruído: &gt; 80db<br/><br/>Método de controle: toque suave<br/><br/> Conteúdo da Embalagem:<br/><br/>1x Caixa de Som Bluetooth com LED<br/><br/>1x Cabo de Carregamento USB<br/><br/> Observações Importantes:<br/><br/>Produto não é uma Echo Dot.<br/><br/>É necessário o aplicativo Amazon Alexa instalado e em funcionamento para uso dos comandos de voz.",
@@ -674,5 +675,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "echodot_58",
+  "creators": [
+    {
+      "name": "Consultora.julienecarvalho",
+      "username": "consultora.juliene",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/60667452e70d936e340b9578dbb8bd78~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=acfe90af&x-expires=1795413600&x-signature=67Sk%2B3cU5eTWJ%2BZU1Zru0%2FrcVwY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-58-1.jpg",
+      "video": "https://files.catbox.moe/qkh068.mp4#prod=58&slot=criador_1&slug=caixa-de-som-original-alaxe-",
+      "catbox_id": "qkh068.mp4",
+      "startTime": 0.2,
+      "likes": 25800,
+      "commentsCount": 225,
+      "saves": 2050,
+      "shares": 82,
+      "description": "OpenBox da Alexa, comprei a echo dot 5’ geração  #amazon #comprinha #alexa "
+    },
+    {
+      "name": "Priscila Lopes",
+      "username": "priscilalopes192",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/0aa79151139c1c007d4306be9e1ad205~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=bbcb5333&x-expires=1795413600&x-signature=JXQHQh8e8Ix1wfXjMoRWP6mg0FQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-58-2.jpg",
+      "video": "https://files.catbox.moe/eri1ie.mp4#prod=58&slot=criador_2&slug=caixa-de-som-original-alaxe-",
+      "catbox_id": "eri1ie.mp4",
+      "startTime": 0.2,
+      "likes": 28600,
+      "commentsCount": 260,
+      "saves": 2280,
+      "shares": 101,
+      "description": "A Alexa 5' geração com preço imperdível!!  #alexa #amazon #echodot #som #audio "
+    },
+    {
+      "name": "Jonnhy Play",
+      "username": "jonnhyplay",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/f631488a18d5e426cab08d0e258358d3~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=75a09419&x-expires=1795413600&x-signature=gwzn6o1tsN5zO1dhtbbn496Ph10%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-58-3.jpg",
+      "video": "https://files.catbox.moe/2er3jg.mp4#prod=58&slot=criador_3&slug=caixa-de-som-original-alaxe-",
+      "catbox_id": "2er3jg.mp4",
+      "startTime": 0.2,
+      "likes": 31400,
+      "commentsCount": 295,
+      "saves": 2510,
+      "shares": 120,
+      "description": "UNBOXING 2025! ALEXA Echo Dot 5ª Geração - GERAÇÃO MAIS RECENTE!! . . #alexa #echodot #unboxing #2025 #alexa2025 "
+    }
+  ]
 }

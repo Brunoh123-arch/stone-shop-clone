@@ -650,9 +650,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/sfr3li.mp4",
+    "src": "https://files.catbox.moe/sfr3li.mp4#prod=26&slot=descricao&slug=carrinho-de-bebe-guarda-chuv",
     "poster": "../img/posters-desc/poster-desc-26.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "sfr3li.mp4"
   },
   "size_guide_html": "",
   "description_html": "\"Na Mega Compras ficou Mega fácil encontrar\"<br/><br/>CARRINHO DE BEBÊ GUARDA CHUVA PASSEIO MEGA COMPRAS<br/><br/>CARACTERÍSTICAS:<br/><br/>Apresentamos o Carrinho de Bebê Guarda-Chuva Mega Compras! Com praticidade em cada passeio, transforme os passeios com seu bebê em momentos de pura diversão e tranquilidade. Leve e compacto, o carrinho de bebê guarda chuva é de fechamento fácil, rápido, com travas nas rodas, capota removível e pegador macio com espuma! Projetado para oferecer o máximo de praticidade, este carrinho é a escolha perfeita para pais que buscam qualidade e conveniência.<br/><br/> Marca : Mega Compras<br/><br/> Modelo:<br/><br/>- MC925<br/><br/> Material: A estrutura é de ferro e o encosto é de sistema de respiro anti suor para seu bebê;<br/><br/> Fácil de desmontar;<br/><br/> Com trava nas rodas;<br/><br/> 4 rodas sendo elas removíveis;<br/><br/> Sistema com cinto de segurança;<br/><br/> Sistema de capota removível;<br/><br/> Pegador macio com espuma para não escorregar;<br/><br/> Suporta até 15kg<br/><br/>DIMENSÕES DO PRODUTO:<br/><br/>(AxLxC): 95cm x 36cm x 59cm<br/><br/>IMPORTANTE:<br/><br/> Garantia de 3 meses;<br/><br/> Recomendado para +6 meses<br/><br/> Certificações: 003802/2024<br/><br/>CONTEÚDO DA EMBALAGEM:<br/><br/> 1 carrinho de bebê guarda chuva;<br/><br/> 1 Manual de instruções (via QRCODE colado em uma etiqueta na caixa do produto)<br/><br/>*Todos os Direitos Reservados<br/><br/>Em caso de cópia dessa descrição e fotos, os responsáveis serão cobrados de acordo com a Lei (9.610/98) de Diretos Autorais.*",
@@ -746,5 +747,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "carrinho_26",
+  "creators": [
+    {
+      "name": "JFK Variedades",
+      "username": "jfk.variedades",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_62.jpg",
+      "poster": "../img/produto-26-1.jpg",
+      "video": "https://files.catbox.moe/zpxw9r.mp4#prod=26&slot=criador_1&slug=carrinho-de-bebe-guarda-chuv",
+      "catbox_id": "zpxw9r.mp4",
+      "startTime": 0.2,
+      "likes": 20500,
+      "commentsCount": 168,
+      "saves": 1560,
+      "shares": 64,
+      "description": "Carrinho de bebê estilo guarda-chuva: super leve, dobra fácil e perfeito pro dia a dia! 🛒💕"
+    },
+    {
+      "name": "Jaacy Macedo",
+      "username": "jaacymacedo_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_64.jpg",
+      "poster": "../img/produto-26-2.jpg",
+      "video": "https://files.catbox.moe/u5dmvx.mp4#prod=26&slot=criador_2&slug=carrinho-de-bebe-guarda-chuv",
+      "catbox_id": "u5dmvx.mp4",
+      "startTime": 0.2,
+      "likes": 22600,
+      "commentsCount": 190,
+      "saves": 1725,
+      "shares": 77,
+      "description": "3 motivos pra ter um carrinho guarda-chuva: leve, compacto no porta-malas e super confortável! ✨"
+    }
+  ]
 }

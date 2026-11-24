@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
+const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261123_bf_v3';
+const ASSET_VERSION = '20261124_senior_v1';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
@@ -208,9 +209,7 @@ function renderExtraScripts(extraScripts) {
 }
 
 function getProductData(id) {
-  const key = String(id).replace(/[^0-9]/g, '');
-  if (!key || !produtosRegistry[key]) return null;
-  return produtosRegistry[key]();
+  return getOfficialProduct(id);
 }
 
 function renderProdutoHtml(id) {
@@ -223,6 +222,8 @@ function renderProdutoHtml(id) {
 
   let html = getTemplate();
   const safeJson = JSON.stringify(data.produto_atual || {}).replace(/</g, '\\u003c');
+  const safeCreatorsJson = JSON.stringify(data.creators || []).replace(/</g, '\\u003c');
+  const safeCreatorsCtx = escapeHtml(data.creator_context || 'general');
 
   const replacements = {
     '{{ASSET_VERSION}}': ASSET_VERSION,
@@ -250,6 +251,8 @@ function renderProdutoHtml(id) {
     '{{DESCRIPTION_HTML}}': data.description_html || '',
     '{{RELATED_HTML}}': renderRelated(data.related),
     '{{PRODUTO_ATUAL_JSON}}': safeJson,
+    '{{PRODUTO_CRIADORES_JSON}}': safeCreatorsJson,
+    '{{PRODUTO_CRIADORES_CTX}}': safeCreatorsCtx,
     '{{EXTRA_SCRIPTS_HTML}}': renderExtraScripts(data.extra_scripts),
   };
 

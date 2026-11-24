@@ -1515,9 +1515,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/2t30kf.mp4",
+    "src": "https://files.catbox.moe/2t30kf.mp4#prod=56&slot=descricao&slug=esteira-eletrica-ergometrica",
     "poster": "../img/posters-desc/poster-desc-56.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "2t30kf.mp4"
   },
   "size_guide_html": "",
   "description_html": "Os pedidos são despachados rapidamente com envio prioritário! Produto original à pronta entrega com nota fiscal e garantia pela Stone Shop. Entrega rápida de 2 a 5 dias úteis com frete grátis.<br/><br/>A Esteira Ergométrica HEROI TY068 e a escolha perfeita para quem deseja manter a forma sem sair de casa. Com design compacto e dobrável, ela se adapta facilmente a ambientes com espaço limitado, proporcionando praticidade no armazenamento.<br/><br/>Características Principais:<br/><br/>Motor Elétrico de 1,25 HP: Garante desempenho estável e silencioso durante os exercícios.<br/><br/>Velocidade Máxima de 10 km/h: Ideal para caminhadas e corridas leves.<br/><br/>Capacidade de Peso: Suporta usuários de até 85 kg.<br/><br/>Sistema de Amortecimento: Reduz o impacto nas articulações, proporcionando maior conforto durante o uso.<br/><br/>Design Dobrável com Rodas: Facilita o transporte e o armazenamento, ideal para residências com espaço reduzido.<br/><br/>Voltagem: 127V e 220V<br/><br/>Benefícios:<br/><br/>Praticidade: Treine no conforto da sua casa, sem depender de academias.<br/><br/>Economia de Espaço: Design dobrável que facilita o armazenamento.<br/><br/>Monitoramento Eficiente: Painel digital que auxilia no acompanhamento dos treinos.<br/><br/>Conforto e Segurança: Sistema de amortecimento que protege as articulações.<br/><br/>A Esteira HEROI TY068 é ideal para quem busca uma opção acessível e eficiente para manter a saúde e o condicionamento físico em dia. Com avaliações positivas destacando seu ótimo custo-benefício e funcionamento silencioso, é uma excelente escolha para iniciantes e usuários intermediários.<br/><br/>Garantia do vendedor: 30 dias",
@@ -1617,5 +1618,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "esteira_56",
+  "creators": [
+    {
+      "name": "Heloisa Gomes",
+      "username": "byheloisagomes",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_18.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-110.jpg",
+      "video": "https://files.catbox.moe/1m8e3i.mp4#prod=56&slot=criador_1&slug=esteira-eletrica-ergometrica",
+      "catbox_id": "1m8e3i.mp4",
+      "startTime": 0.2,
+      "likes": 23400,
+      "commentsCount": 180,
+      "saves": 1850,
+      "shares": 75,
+      "description": "Esteira ergométrica bivolt silenciosa dobrável 12 velocidades! Perfeita para caminhar em casa! 🏃‍♀️⚡ #esteira #fitness"
+    },
+    {
+      "name": "Camila (Apê 156)",
+      "username": "ape156",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_22.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-110-criadora2.jpg",
+      "video": "https://files.catbox.moe/3g25ts.mp4#prod=56&slot=criador_2&slug=esteira-eletrica-ergometrica",
+      "catbox_id": "3g25ts.mp4",
+      "startTime": 0.2,
+      "likes": 26300,
+      "commentsCount": 215,
+      "saves": 2040,
+      "shares": 91,
+      "description": "Esteira Elétrica Dobrável Portátil para Treinar em Casa sem ocupar espaço! 🏃‍♀️✨ #treinoemcasa #esteiraeletrica"
+    },
+    {
+      "name": "Dhi Lins",
+      "username": "dhiovanalinsoficial",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-110-criadora3.jpg",
+      "video": "https://files.catbox.moe/maizzc.mp4#prod=56&slot=criador_3&slug=esteira-eletrica-ergometrica",
+      "catbox_id": "maizzc.mp4",
+      "startTime": 0.2,
+      "likes": 29200,
+      "commentsCount": 250,
+      "saves": 2230,
+      "shares": 107,
+      "description": "Onde há foco, há progresso! Esteira dobrável excelente pra bater a meta diária em casa! 🏃‍♂️⚡ #esteiraergometrica"
+    },
+    {
+      "name": "Thiago Achados",
+      "username": "achados.premium77",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_25.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-110.jpg",
+      "video": "https://files.catbox.moe/9a840r.mp4#prod=56&slot=criador_4&slug=esteira-eletrica-ergometrica",
+      "catbox_id": "9a840r.mp4",
+      "startTime": 0.2,
+      "likes": 32100,
+      "commentsCount": 285,
+      "saves": 2420,
+      "shares": 123,
+      "description": "Esteira inteligente dobrável com controle remoto e velocidade ajustável, prática demais! 🏃‍♂️⚡ #treinoemcasa"
+    }
+  ]
 }

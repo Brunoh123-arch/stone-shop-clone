@@ -438,9 +438,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/wvgft8.mp4",
+    "src": "https://files.catbox.moe/wvgft8.mp4#prod=55&slot=descricao&slug=switch-desbloqueado-10-jogos",
     "poster": "../img/posters-desc/poster-desc-55.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "wvgft8.mp4"
   },
   "size_guide_html": "",
   "description_html": "Bem vindo a nossa loja<br/><br/>Nintendo switch V2 desbloqueado lotado de jogos<br/><br/>ensino a coloca mais jogos , metodo bem simples<br/><br/>todos nossos games sao revisados e testados antes de enviar e com garantia<br/><br/>Nintendo switch v2 desbloqueado vc pode baixa qualquer jogo e se divertir<br/><br/>ja acompanha com jogos instalados<br/><br/>caso queira alguns so me passa a lista que coloco<br/><br/>10 JOGOS A SUA ESCOLHA<br/><br/>Ja esta na ultima atualizaçao disponivel<br/><br/>acompanha todos os acessorios completo<br/><br/>Duvidas so chamar no chat",
@@ -528,5 +529,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "switch_55",
+  "creators": [
+    {
+      "name": "Bianca",
+      "username": "bpolivier",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/fc3d81fc66638c531bc2defb33ee5a56~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=f2d8e123&x-expires=1795464000&x-signature=i9idibxYhgo7fLwOMt3RpvCjlBY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-55-1.jpg",
+      "video": "https://files.catbox.moe/8u8s3m.mp4#prod=55&slot=criador_1&slug=switch-desbloqueado-10-jogos",
+      "catbox_id": "8u8s3m.mp4",
+      "startTime": 0.2,
+      "likes": 30400,
+      "commentsCount": 276,
+      "saves": 2390,
+      "shares": 108,
+      "description": "Melhor experiência 🧚‍♀️🙌 #fyp #nintendoswitch #CapCut "
+    },
+    {
+      "name": "Lana",
+      "username": "lanasier",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/f7bac7fe3873ed4de87ade8cd81ca8f7~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=97ff013a&x-expires=1795464000&x-signature=Ky6G5%2Bmh0o2m3ikyWVdIWDNJnQE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-55-2.jpg",
+      "video": "https://files.catbox.moe/wy3j0m.mp4#prod=55&slot=criador_2&slug=switch-desbloqueado-10-jogos",
+      "catbox_id": "wy3j0m.mp4",
+      "startTime": 0.2,
+      "likes": 33300,
+      "commentsCount": 312,
+      "saves": 2630,
+      "shares": 128,
+      "description": "Unboxing Nintendo Switch Oled 🩷 se eu disse alguma coisa errada vocês vão relevar porque eu sou uma mortal #nintendo #nintendoswitch #nin..."
+    },
+    {
+      "name": "Finishherbr",
+      "username": "finishherbr",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/de2eccf6d155f258f9c374cd8fd40abe~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=23ba7ff7&x-expires=1795464000&x-signature=GT3qdIjEZm9ua7TlGxJREW3%2BImQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-55-3.jpg",
+      "video": "https://files.catbox.moe/ufjswe.mp4#prod=55&slot=criador_3&slug=switch-desbloqueado-10-jogos",
+      "catbox_id": "ufjswe.mp4",
+      "startTime": 0.2,
+      "likes": 36200,
+      "commentsCount": 348,
+      "saves": 2870,
+      "shares": 148,
+      "description": "Unboxing Nintendo Switch OLED + Mario Wonder +Assinatura 1 ano Nintendo Switch Online. 🎮🤍✨️✨️  E aí gostaram?  #Nintendo #NintendoSwitch ..."
+    }
+  ]
 }

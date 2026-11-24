@@ -260,9 +260,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/cfm2lc.mp4",
+    "src": "https://files.catbox.moe/cfm2lc.mp4#prod=114&slot=descricao&slug=controle-arcade-7-em-1-stick",
     "poster": "../img/posters-desc/poster-desc-114.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "cfm2lc.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p><strong>🕹️🔥 Reviva a Autêntica Emoção dos Fliperamas em Casa</strong></p>\n<p>O <strong>Controle Arcade Fightstick 7 em 1</strong> foi projetado especialmente para entusiastas de jogos de luta e clássicos dos fliperamas que exigem precisão cirúrgica, durabilidade máxima e zero atraso de comando (zero input lag).</p>\n<br/>\n<p><strong>Destaques do Produto:</strong></p>\n<ul style=\"margin: 8px 0 14px 18px; padding: 0; line-height: 1.6; color: #161823;\">\n<li><strong>Compatibilidade Universal 7 em 1:</strong> Funciona nativamente em PlayStation 4 (PS4), PlayStation 3 (PS3), Xbox One, Nintendo Switch, PC (Windows 11/10/8), Celulares/Tablets Android (via OTG) e Smart TV Boxes.</li>\n<li><strong>Alavanca Direcional Microswitch 360°:</strong> Joystick esférico de padrão profissional arcade com microchaves de clique tátil preciso, garantindo execução perfeita de combos, meias-luas e especiais em Street Fighter, Tekken, The King of Fighters e Mortal Kombat.</li>\n<li><strong>8 Botões de Ação Mecânicos:</strong> Layout clássico de fliperama japonês com resposta rápida e resistência mecânica para suportar horas contínuas de jogo.</li>\n<li><strong>Funções Turbo e Macro Avançadas:</strong> Ative disparo contínuo automático em jogos de nave/tiro (shmups) ou configure sequências rápidas nos botões de atalho.</li>\n<li><strong>Estabilidade Imbatível na Mesa:</strong> Equipado com 4 ventosas de silicone de alta sucção na base, mantendo o fightstick 100% firme e travado em qualquer superfície lisa.</li>\n<li><strong>Cabo USB Blindado de 2.5 Metros:</strong> Conexão com fio de alta velocidade Plug &amp; Play com alcance generoso para jogar confortável no sofá ou na mesa.</li>\n</ul>\n<br/>\n<p><strong>Conteúdo da Embalagem:</strong></p>\n<ul style=\"margin: 8px 0 14px 18px; padding: 0; line-height: 1.6; color: #161823;\">\n<li>1x Controle Arcade Fightstick 7 em 1 Multiplataforma</li>\n<li>1x Cabo USB Integrado Reforçado de 2.5m</li>\n<li>1x Manual de Instruções em Português com Guia de Mapeamento</li>\n</ul>",
@@ -344,5 +345,22 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "arcade_114",
+  "creators": [
+    {
+      "name": "Leonardo Rocha",
+      "username": "leo_fightsticks",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_3.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-114-criadora3.jpg",
+      "video": "https://files.catbox.moe/fbfkzs.mp4#prod=114&slot=criador_1&slug=controle-arcade-7-em-1-stick",
+      "catbox_id": "fbfkzs.mp4",
+      "startTime": 0.2,
+      "likes": 18810,
+      "commentsCount": 112,
+      "saves": 1590,
+      "shares": 51,
+      "description": "Testei no PS4 e PC jogando Street Fighter 6! Os combos saem limpíssimos e a resposta dos 8 botões é imediata! 🎮✨ #streetfighter #fightstick"
+    }
+  ]
 }

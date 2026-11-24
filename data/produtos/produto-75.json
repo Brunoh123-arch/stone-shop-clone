@@ -716,9 +716,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/7wnkoq.mp4",
+    "src": "https://files.catbox.moe/7wnkoq.mp4#prod=75&slot=descricao&slug=kit-10-camisetas-dry-fit-mas",
     "poster": "../img/produto-75-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "7wnkoq.mp4"
   },
   "size_guide_html": "",
   "description_html": "Kit com 10 Camisetas Dry Fit Masculinas de alta performance para treino, academia, esportes ao ar livre e uso casual diário. Tecido tecnológico leve e respirável que não amassa e seca rapidamente.<br/><br/>\n              • <strong>Composição:</strong> 100% Poliéster Dry Fit respirável com proteção UV<br/>\n              • <strong>Gola:</strong> Redonda reforçada com acabamento antialérgico<br/>\n              • <strong>Modelagem:</strong> Ajuste anatômico que garante liberdade total de movimentos<br/>\n              • <strong>Praticidade:</strong> Não amassa, não precisa passar e não desbota na lavagem<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Camisetas Dry Fit\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-75.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n              Escolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
@@ -812,5 +813,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "dryfit_75",
+  "creators": [
+    {
+      "name": "Matheus Shop",
+      "username": "matheuzshop",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_87.jpg",
+      "poster": "../img/produto-75-2.jpg",
+      "video": "https://files.catbox.moe/lmprnn.mp4#prod=75&slot=criador_1&slug=kit-10-camisetas-dry-fit-mas",
+      "catbox_id": "lmprnn.mp4",
+      "startTime": 0.2,
+      "likes": 25300,
+      "commentsCount": 220,
+      "saves": 1970,
+      "shares": 96,
+      "description": "Kit 10 camisas dry fit masculinas, tecido leve anti suor e caimento atlético impecável 🏋️‍♂️"
+    },
+    {
+      "name": "Loja 365",
+      "username": "shoptresmeiacinco365",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_89.jpg",
+      "poster": "../img/produto-75-1.jpg",
+      "video": "https://files.catbox.moe/5l382m.mp4#prod=75&slot=criador_2&slug=kit-10-camisetas-dry-fit-mas",
+      "catbox_id": "5l382m.mp4",
+      "startTime": 0.2,
+      "likes": 27500,
+      "commentsCount": 245,
+      "saves": 2160,
+      "shares": 110,
+      "description": "Kit com 10 camisas Dry Fit perfeitas para treino pesado, corrida e caminhada diária 🔥"
+    },
+    {
+      "name": "David Souza",
+      "username": "d.v.variedades",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_91.jpg",
+      "poster": "../img/produto-75-2.jpg",
+      "video": "https://files.catbox.moe/eoyce3.mp4#prod=75&slot=criador_3&slug=kit-10-camisetas-dry-fit-mas",
+      "catbox_id": "eoyce3.mp4",
+      "startTime": 0.2,
+      "likes": 29700,
+      "commentsCount": 270,
+      "saves": 2350,
+      "shares": 124,
+      "description": "Kit com 10 camisetas Dry Fit alta durabilidade, secagem ultrarrápida e zero transparência 🏃"
+    },
+    {
+      "name": "Elite Masculina",
+      "username": "elitemasculinashop",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_93.jpg",
+      "poster": "../img/produto-75-1.jpg",
+      "video": "https://files.catbox.moe/4nta3q.mp4#prod=75&slot=criador_4&slug=kit-10-camisetas-dry-fit-mas",
+      "catbox_id": "4nta3q.mp4",
+      "startTime": 0.2,
+      "likes": 31900,
+      "commentsCount": 295,
+      "saves": 2540,
+      "shares": 138,
+      "description": "Tá valendo a pena demais! Camisetas esportivas respiráveis, costura reforçada e não amarrota ⚡"
+    }
+  ]
 }

@@ -556,9 +556,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/08kgk9.mp4",
+    "src": "https://files.catbox.moe/08kgk9.mp4#prod=23&slot=descricao&slug=conjunto-de-24-potes-hermeti",
     "poster": "../img/posters-desc/poster-desc-23.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "08kgk9.mp4"
   },
   "size_guide_html": "",
   "description_html": "DESCRIÇÃO RESUMIDA<br/><br/>Um kit de 24 potes herméticos com tampa transparente é um conjunto versátil de recipientes de armazenamento projetados para manter os alimentos frescos e organizados. Cada pote possui um design hermético que impede a entrada de ar e umidade, garantindo a preservação da qualidade dos alimentos. A tampa transparente permite visualizar facilmente o conteúdo, facilitando a identificação dos itens armazenados.<br/><br/>Características:<br/><br/>- Marca: Croix<br/><br/>Especificações:<br/><br/>- Material Plástico e Acrilico<br/><br/>- Livre de BPA<br/><br/>- Recipiente multiuso<br/><br/>- Ideal para transporte de alimentos<br/><br/>- Reutilizáveis<br/><br/>- Resistentes a manchas e odores<br/><br/>- Design empilhável<br/><br/>- Design transparente<br/><br/>- Dimensões 27x18x25cm (AxLxC)<br/><br/>Garantia:<br/><br/>- 6 Meses<br/><br/>Conteúdo da embalagem:<br/><br/>- 2 x Potes de 1L<br/><br/>- 3 x Potes de 840ml<br/><br/>- 2 x Potes de 700ml<br/><br/>- 2 x Potes de 500ml<br/><br/>- 3 x Potes de 350ml<br/><br/>- 4 x Potes de 320ml<br/><br/>- 8 x Potes de 60ml<br/><br/>Peso<br/><br/>- 1,50Kg<br/><br/>Kit com 5 Audiolivros e Livros Digitais no Ubook GO:<br/><br/>Adquira um kit exclusivo com 5 títulos selecionados, entre audiolivros e livros digitais, para consumir onde e quando quiser através da plataforma Ubook GO. Os conteúdos abrangem diversas categorias e são escolhidos especialmente para proporcionar uma experiência completa de leitura e escuta, com obras narradas por profissionais, autores, atores e dubladores.<br/><br/>Os 5 títulos ficam disponíveis de forma vitalícia na sua conta do Ubook GO, vinculados ao seu CPF. Uma vez ativado o acesso, os conteúdos estarão sempre disponíveis para você, sem prazo de expiração.",
@@ -644,5 +645,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "croix_23",
+  "creators": [
+    {
+      "name": "Dicas da Angélica",
+      "username": "lar.da.angell",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_48.jpg",
+      "poster": "../img/produto-23-1.jpg",
+      "video": "https://files.catbox.moe/tiko7j.mp4#prod=23&slot=criador_1&slug=conjunto-de-24-potes-hermeti",
+      "catbox_id": "tiko7j.mp4",
+      "startTime": 0.2,
+      "likes": 22100,
+      "commentsCount": 175,
+      "saves": 1540,
+      "shares": 65,
+      "description": "Kit com 24 Potes Herméticos Croix com tampa que trava! Borracha de vedação total e não vaza nada! 🥗"
+    },
+    {
+      "name": "Carolaine Moreira",
+      "username": "carolaine_moreira",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_50.jpg",
+      "poster": "../img/produto-23-2.jpg",
+      "video": "https://files.catbox.moe/s87i1c.mp4#prod=23&slot=criador_2&slug=conjunto-de-24-potes-hermeti",
+      "catbox_id": "s87i1c.mp4",
+      "startTime": 0.2,
+      "likes": 24100,
+      "commentsCount": 197,
+      "saves": 1700,
+      "shares": 77,
+      "description": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava. Organização impecável na cozinha e despensa! ✨"
+    },
+    {
+      "name": "Cláudio Costa",
+      "username": "claudiocosta_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_52.jpg",
+      "poster": "../img/produto-23-3.jpg",
+      "video": "https://files.catbox.moe/gb8uzv.mp4#prod=23&slot=criador_3&slug=conjunto-de-24-potes-hermeti",
+      "catbox_id": "gb8uzv.mp4",
+      "startTime": 0.2,
+      "likes": 26100,
+      "commentsCount": 219,
+      "saves": 1860,
+      "shares": 89,
+      "description": "Conjunto de 24 Potes Herméticos Croix com tampa e 4 travas. Praticidade absoluta no dia a dia!"
+    }
+  ]
 }

@@ -252,9 +252,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/s313zy.mp4",
+    "src": "https://files.catbox.moe/s313zy.mp4#prod=4&slot=descricao&slug=caixa-de-som-boombox-3-bluet",
     "poster": "../img/posters-desc/poster-desc-4.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "s313zy.mp4"
   },
   "size_guide_html": "",
   "description_html": "Acabamos de tornar a nossa mais poderosa caixa de som Bluetooth portátil ainda melhor! \n\nDIVERSÃO E MÚSICA ONDE VOCÊ QUISER\nA Boombox 3 possui uma silhueta icônica, tampas laterais duplas e tecido exclusivo à prova d'água e poeira, ou seja, leve na piscina, no parque ou na praia e curta um som com a galera, faça chuva ou faça sol.\n\nATÉ 24 HORAS DE REPRODUÇÃO\nPara cada música há um momento para ser celebrado. Curta por até 24 horas de reprodução sem interrupções com a Boombox 3.\n\nTRANSMISSÃO VIA BLUETOOTH\nÉ possível tornar seu momento duas vezes melhor, conecte até 2 smartphones ou tablets ao alto-falante sem o uso de fios compartilhando seus sons favoritos.\n\nINTEGRAÇÃO COM O APP\nUse a opção de baixar o aplicativo JBL Portable para aproveitar ao máximo seu Boombox 3.\n\nAUMENTE A DIVERSÃO COM PARTYBOOST \nCom o PARTYBOOST, você pode emparelhar duas caixas de som JBL compatíveis com essa tecnologia e ter um som estéreo, ou vincular várias caixas de som e criar infinitas possibilidades de áudio.\n\nPOTÊNCIA DE SAÍDA (W RMS)\n1×80W RMS-subwoofer + 2×40W RMS-midrange + 2×10W RMS-tweeter (AC mode) 1×60W RMS-subwoofer + 2×30W RMS-midrange + 2×8W RMS-tweeter (Battery mode) \n\nQUAL O CONTEÚDO DA CAIXA? \n1 Caixa de som JBL Boombox 3\n1 Cabo de energia AC (o plugue AC e a quantidade variam conforme a região)\n1 Guia de início rápido\n1 Certificado de segurança\n1 Certificado de garantia\n\nA JBL destaca-se com áudio de alta qualidade, tecnologia avançada e design moderno, proporcionando momentos únicos na vida das pessoas.\n\nAviso legal\n A duração da bateria depende do uso que se dê ao produto.",
@@ -341,5 +342,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "jbl_4",
+  "creators": [
+    {
+      "name": "Rodrigo Tech & Games",
+      "username": "rodrigo.techaudio",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_23.jpg",
+      "poster": "../img/poster-criador-4-2.jpg",
+      "video": "https://files.catbox.moe/zlnumo.mp4#prod=4&slot=criador_1&slug=caixa-de-som-boombox-3-bluet",
+      "catbox_id": "zlnumo.mp4",
+      "startTime": 0.2,
+      "likes": 14220,
+      "commentsCount": 91,
+      "saves": 1360,
+      "shares": 54,
+      "description": "Bass Test com funk e eletrônica na Boombox 3: graves profundos sem distorcer nada. Melhor caixa portátil do mercado! 🎶💥"
+    },
+    {
+      "name": "Lucas & Mari Churrasco",
+      "username": "casal.somdechurrasco",
+      "avatar": "../img/creators-tech/creator-3.jpg",
+      "poster": "../img/poster-criador-4-3.jpg",
+      "video": "https://files.catbox.moe/pj5xsi.mp4#prod=4&slot=criador_2&slug=caixa-de-som-boombox-3-bluet",
+      "catbox_id": "pj5xsi.mp4",
+      "startTime": 0.2,
+      "likes": 14640,
+      "commentsCount": 104,
+      "saves": 1470,
+      "shares": 63,
+      "description": "Levamos a JBL Boombox 3 pro sítio e tocou mais de 20 horas direto no churrasco sem pedir tomada! Bateria monstra! 🔋🥩"
+    }
+  ]
 }

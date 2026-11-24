@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/geut5n.mp4",
+    "src": "https://files.catbox.moe/geut5n.mp4#prod=112&slot=descricao&slug=brinquedo-pista-montanha-rus",
     "poster": "../img/posters-desc/poster-desc-112.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "geut5n.mp4"
   },
   "size_guide_html": "",
   "description_html": "Brinquedo Pista Montanha-Russa de Patinhos com 73% OFF no 11.11. Apenas R$ 44,90. Frete grátis.",
@@ -326,5 +327,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "patinhos112",
+  "creators": [
+    {
+      "name": "Loja do Guza",
+      "username": "lojadoguza",
+      "avatar": "../img/creators-auto/avatar-lojadoguza.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-112-criadora2.jpg",
+      "video": "https://files.catbox.moe/a00mz6.mp4#prod=112&slot=criador_1&slug=brinquedo-pista-montanha-rus",
+      "catbox_id": "a00mz6.mp4",
+      "startTime": 0.2,
+      "likes": 10080,
+      "commentsCount": 53,
+      "saves": 720,
+      "shares": 27,
+      "description": "Escorregador pista de patinhos. Brinquedos Brincadeira de criança  Brinquedo infantil A criançada ama"
+    },
+    {
+      "name": "Menino Gessé",
+      "username": "meninogesse",
+      "avatar": "../img/creators-auto/avatar-meninogesse.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-112-criadora3.jpg",
+      "video": "https://files.catbox.moe/tz769q.mp4#prod=112&slot=criador_2&slug=brinquedo-pista-montanha-rus",
+      "catbox_id": "tz769q.mp4",
+      "startTime": 0.2,
+      "likes": 10360,
+      "commentsCount": 61,
+      "saves": 790,
+      "shares": 32,
+      "description": "Brinquedo Patinho Escorregador  Pista Musical Pato montanha Russa Escada Tobogã R..."
+    }
+  ]
 }

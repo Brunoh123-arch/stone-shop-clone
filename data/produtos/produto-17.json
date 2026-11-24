@@ -236,9 +236,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/18m1t8.mp4",
+    "src": "https://files.catbox.moe/18m1t8.mp4#prod=17&slot=descricao&slug=kit-6-cadeira-de-praia-aco-m",
     "poster": "../img/posters-desc/poster-desc-17.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "18m1t8.mp4"
   },
   "size_guide_html": "",
   "description_html": "!!! ATENÇÃO !!!!!<br/><br/>AO COMPRAR O KIT COMPRE NO MAXIMO 1 KIT (6 CADEIRAS) POR COMPRA COMPRANDO ACIMA DE 1 KITS NAO E POSSIVEL O ENVIO PQ O PACOTE EXCEDE O TAMANHO PERMITIDO PELA TRANSPORTADORA<br/><br/>Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS<br/><br/>Relaxe com o conforto que você merece! Apresentamos a Cadeira Alta Conforto da Mor!<br/><br/>A Cadeira Alta Conforto da Mor foi projetada para proporcionar o máximo de bem-estar em seus momentos de lazer. Com encosto e assento mais largos que as cadeiras convencionais, você sentirá a diferença no conforto e na ergonomia.<br/><br/>Qualidade e durabilidade: Estrutura em alumínio de alta qualidade, tela em polietileno e rebites em aço.<br/><br/>Design ergonômico: Braços plásticos em formato anatômico para maior conforto.<br/><br/>Leveza e praticidade: Fácil de carregar e dobrável, ideal para qualquer ambiente.<br/><br/>Especificações:<br/><br/>Material: Aço<br/><br/>Capacidade: 110 kg<br/><br/>Altura: 85,50 centímetros<br/><br/>Largura: 59,00 centímetros<br/><br/>Comprimento: 58,00 centímetros<br/><br/>Peso: 1,65 kg<br/><br/>Garantia: 90 dias",
@@ -323,5 +324,148 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "cadeiras_praia_mor_17",
+  "creators": [
+    {
+      "name": "Juliana Mendes",
+      "username": "ju.praia",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_35.jpg",
+      "poster": "../img/posters-praia/poster-praia-01.jpg",
+      "video": "https://files.catbox.moe/a1eoxs.mp4#prod=17&slot=criador_1&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "a1eoxs.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Cadeiras de praia Mor em alumínio: leves, não enferrujam e perfeitas para o verão! 🏖️☀️"
+    },
+    {
+      "name": "Felipe Castro",
+      "username": "felipe.litoral",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_36.jpg",
+      "poster": "../img/posters-praia/poster-praia-02.jpg",
+      "video": "https://files.catbox.moe/s1lcfe.mp4#prod=17&slot=criador_2&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "s1lcfe.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Kit 4 cadeiras Mor reclináveis, super confortáveis e fáceis de carregar! 🌊"
+    },
+    {
+      "name": "Larissa Ramos",
+      "username": "lari.verao",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "poster": "../img/posters-praia/poster-praia-03.jpg",
+      "video": "https://files.catbox.moe/mc1plp.mp4#prod=17&slot=criador_3&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "mc1plp.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Fecham compactas e cabem com folga no porta-malas! Super recomendo! 🚗🏖️"
+    },
+    {
+      "name": "Marcos Vinicius",
+      "username": "marcos.mor",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_38.jpg",
+      "poster": "../img/posters-praia/poster-praia-04.jpg",
+      "video": "https://files.catbox.moe/9g7hs6.mp4#prod=17&slot=criador_4&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "9g7hs6.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Estrutura de alumínio reforçado que aguenta até 110kg sem afundar na areia! 👏"
+    },
+    {
+      "name": "Camila Litoral",
+      "username": "camilalitoral",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_44.jpg",
+      "poster": "../img/posters-praia/poster-praia-10.jpg",
+      "video": "https://files.catbox.moe/c1oz8o.mp4#prod=17&slot=criador_5&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "c1oz8o.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "As melhores cadeiras de praia que já tive! Chegou tudo perfeito e bem embalado! ✨"
+    },
+    {
+      "name": "Thiago Mar",
+      "username": "thiagomar_praia",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_45.jpg",
+      "poster": "../img/posters-praia/poster-praia-01.jpg",
+      "video": "https://files.catbox.moe/zok50k.mp4#prod=17&slot=criador_6&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "zok50k.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Partiu praia com as 4 cadeiras novinhas da Mor! Muito resistentes! 🏖️🌊"
+    },
+    {
+      "name": "Renata Sol",
+      "username": "renata.solpraia",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_46.jpg",
+      "poster": "../img/posters-praia/poster-praia-02.jpg",
+      "video": "https://files.catbox.moe/vyw8h2.mp4#prod=17&slot=criador_7&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "vyw8h2.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Super leves de carregar na mão, até as crianças conseguem levar! ☀️"
+    },
+    {
+      "name": "Bruno Maresia",
+      "username": "brunomaresia",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_47.jpg",
+      "poster": "../img/posters-praia/poster-praia-03.jpg",
+      "video": "https://files.catbox.moe/sk0yh6.mp4#prod=17&slot=criador_8&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "sk0yh6.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Alumínio de verdade, pode molhar com água do mar que não oxida! 🏄‍♂️"
+    },
+    {
+      "name": "Fernanda Maré",
+      "username": "fernandapraiana",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_48.jpg",
+      "poster": "../img/posters-praia/poster-praia-04.jpg",
+      "video": "https://files.catbox.moe/i84hm4.mp4#prod=17&slot=criador_9&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "i84hm4.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Melhor compra para o verão! 4 cadeiras de alta qualidade na Stone Shop! 💖"
+    },
+    {
+      "name": "Rodrigo Costa",
+      "username": "rodrigopraia_fit",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_49.jpg",
+      "poster": "../img/posters-praia/poster-praia-10.jpg",
+      "video": "https://files.catbox.moe/0n0j04.mp4#prod=17&slot=criador_10&slug=kit-6-cadeira-de-praia-aco-m",
+      "catbox_id": "0n0j04.mp4",
+      "startTime": 0.5,
+      "likes": 19400,
+      "commentsCount": 145,
+      "saves": 2100,
+      "shares": 680,
+      "description": "Conforto total no descanso da praia! Regulagem de posições muito firme! 🌴"
+    }
+  ]
 }

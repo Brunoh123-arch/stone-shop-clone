@@ -254,9 +254,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/ak8ypl.mp4",
+    "src": "https://files.catbox.moe/ak8ypl.mp4#prod=13&slot=descricao&slug=piscina-inflavel-redonda-mor",
     "poster": "../img/posters-piscina/poster-piscina-01.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "ak8ypl.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>✨ Diversão e Refrescância Garantida para Toda a Família ✨</strong><br/><br/>\n              A <strong>Piscina Inflável Mor 1000 Litros Splash Fun</strong> é a escolha perfeita para transformar qualquer espaço em um ambiente refrescante nos dias quentes! Desenvolvida com a exclusiva tecnologia Splash Fun da Mor, ela alia praticidade máxima, segurança e durabilidade sem necessidade de estruturas pesadas de ferro ou ferramentas de montagem.<br/><br/>\n              Basta estender a lona em piso nivelado, inflar a borda superior e encher com água. Conforme o volume sobe, a própria pressão da água molda a estrutura, deixando a piscina firme, estável e pronta para o banho em poucos minutos.<br/><br/>\n<strong>Destaques da Piscina Mor:</strong><br/>\n              • <strong>Montagem Rápida e Fácil:</strong> Não precisa de nenhuma ferramenta. Inflou a borda, encheu d'água e está pronta para a diversão.<br/>\n              • <strong>Borda Inflável Macia:</strong> Segurança total e conforto absoluto para as crianças, sem ferragens rígidas ou quinas duras.<br/>\n              • <strong>Lona em PVC Tripla Camada:</strong> Fabricada em PVC reforçado com trama interna de poliéster para máxima resistência contra furos e desgaste.<br/>\n              • <strong>Válvula de Deságue Prática:</strong> Facilita o escoamento rápido da água para limpeza e higienização sem esforço.<br/>\n              • <strong>Super Compacta:</strong> Desinflada e dobrada ocupa pouquíssimo espaço no armário ou no porta-malas.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Mor Oficial<br/>\n              • Modelo: Splash Fun 1000 Litros (Ref. 001051)<br/>\n              • Capacidade: 1.000 Litros<br/>\n              • Formato: Redonda<br/>\n              • Diâmetro: Ø 1,65 m | Altura: 55 cm<br/>\n              • Material: Lona em PVC de alta resistência com trama de poliéster<br/>\n              • Cor: Azul clássico Splash Fun<br/>\n              • Itens Inclusos: 01 Piscina Inflável Mor 1000L, 01 Válvula de deságue, 01 Kit de reparação e Manual de instruções oficial.",
@@ -339,5 +340,22 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "piscina_pixlar_13",
+  "creators": [
+    {
+      "name": "Renata Silveira",
+      "username": "renatasilveira.lar",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_1.jpg",
+      "poster": "../img/posters-piscina/poster-piscina-01.jpg",
+      "video": "https://files.catbox.moe/h5x3n6.mp4#prod=13&slot=criador_1&slug=piscina-inflavel-redonda-mor",
+      "catbox_id": "h5x3n6.mp4",
+      "startTime": 0.2,
+      "likes": 18400,
+      "commentsCount": 45,
+      "saves": 350,
+      "shares": 120,
+      "description": "Piscina inflável 1000L montada no quintal! As crianças amaram ☀️💦"
+    }
+  ]
 }

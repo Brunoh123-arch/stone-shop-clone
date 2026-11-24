@@ -739,9 +739,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/kzxi1d.mp4",
+    "src": "https://files.catbox.moe/kzxi1d.mp4#prod=88&slot=descricao&slug=conjunto-feminino-de-trabalh",
     "poster": "../img/produto-88-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "kzxi1d.mp4"
   },
   "size_guide_html": "<div class=\"size-guide-block\">\n<h3 class=\"about-subtitle\">Guia de Tamanhos (cm)</h3>\n<div class=\"size-guide-card\">\n<table class=\"size-guide-table\">\n<thead>\n<tr>\n<th>Tamanho</th>\n<th>Manequim</th>\n<th>Busto</th>\n<th>Cintura</th>\n<th>Quadril</th>\n</tr>\n</thead>\n<tbody>\n<tr><td><strong>P</strong></td><td>36 - 38</td><td>86 - 90 cm</td><td>68 - 72 cm</td><td>94 - 98 cm</td></tr>\n<tr><td><strong>M</strong></td><td>40</td><td>92 - 96 cm</td><td>74 - 78 cm</td><td>100 - 104 cm</td></tr>\n<tr><td><strong>G</strong></td><td>42</td><td>98 - 102 cm</td><td>80 - 84 cm</td><td>106 - 110 cm</td></tr>\n<tr><td><strong>GG</strong></td><td>44</td><td>104 - 108 cm</td><td>86 - 90 cm</td><td>112 - 116 cm</td></tr>\n<tr><td><strong>Plus G1</strong></td><td>46 - 48</td><td>110 - 116 cm</td><td>92 - 98 cm</td><td>118 - 124 cm</td></tr>\n<tr><td><strong>Plus G2</strong></td><td>50 - 52</td><td>118 - 124 cm</td><td>100 - 106 cm</td><td>126 - 132 cm</td></tr>\n</tbody>\n</table>\n</div>\n</div>",
   "description_html": "Conjunto feminino de trabalho elegante em tecido alfaiataria premium Laris (tipo terno). Peça estruturada de caimento impecável para ambientes profissionais e eventos.<br/><br/>\n              • <strong>Composição:</strong> 93% Poliéster, 7% Elastano<br/>\n              • <strong>Acabamento:</strong> Botões frontais funcionais na blusa e detalhes refinados<br/>\n              • <strong>Caimento:</strong> Modelagem clássica com cintura ajustada e calça reta<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Conjunto Alfaiataria\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-88.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n              Escolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
@@ -894,5 +895,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "alfaiataria_88",
+  "creators": [
+    {
+      "name": "Samara Fashion",
+      "username": "samarafashion_modesta",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_90.jpg",
+      "poster": "../img/produto-88-2.jpg",
+      "video": "https://files.catbox.moe/1fdkcv.mp4#prod=88&slot=criador_1&slug=conjunto-feminino-de-trabalh",
+      "catbox_id": "1fdkcv.mp4",
+      "startTime": 0.2,
+      "likes": 35400,
+      "commentsCount": 321,
+      "saves": 2910,
+      "shares": 157,
+      "description": "Conjunto de calça e colete de alfaiataria verão elegante, corte reto chic e moderno 💖"
+    },
+    {
+      "name": "Larissa Closet",
+      "username": "lariicloset",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_92.jpg",
+      "poster": "../img/produto-88-1.jpg",
+      "video": "https://files.catbox.moe/5mv5f6.mp4#prod=88&slot=criador_2&slug=conjunto-feminino-de-trabalh",
+      "catbox_id": "5mv5f6.mp4",
+      "startTime": 0.2,
+      "likes": 38400,
+      "commentsCount": 357,
+      "saves": 3200,
+      "shares": 179,
+      "description": "Conjunto social feminino colete com calça alfaiataria acabamento premium para trabalhar 💫"
+    },
+    {
+      "name": "Manuela Souza",
+      "username": "manuela_souzahh0",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_94.jpg",
+      "poster": "../img/produto-88-2.jpg",
+      "video": "https://files.catbox.moe/y6t37g.mp4#prod=88&slot=criador_3&slug=conjunto-feminino-de-trabalh",
+      "catbox_id": "y6t37g.mp4",
+      "startTime": 0.2,
+      "likes": 41400,
+      "commentsCount": 393,
+      "saves": 3490,
+      "shares": 201,
+      "description": "Conjunto alfaiataria colete e calça impecável, caimento fluido que valoriza a silhueta 🎀"
+    },
+    {
+      "name": "Duda Leal",
+      "username": "dudaleal.outfits",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_96.jpg",
+      "poster": "../img/produto-88-1.jpg",
+      "video": "https://files.catbox.moe/94txtj.mp4#prod=88&slot=criador_4&slug=conjunto-feminino-de-trabalh",
+      "catbox_id": "94txtj.mp4",
+      "startTime": 0.2,
+      "likes": 44400,
+      "commentsCount": 429,
+      "saves": 3780,
+      "shares": 223,
+      "description": "Look de trabalho completo: conjunto alfaiataria sofisticado, tecido encorpado que não amassa ✨"
+    }
+  ]
 }

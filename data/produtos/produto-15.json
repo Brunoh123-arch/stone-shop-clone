@@ -218,9 +218,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/qfampv.mp4",
+    "src": "https://files.catbox.moe/qfampv.mp4#prod=15&slot=descricao&slug=churrasqueira-portatil-a-car",
     "poster": "../img/posters-desc/poster-desc-15.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "qfampv.mp4"
   },
   "size_guide_html": "",
   "description_html": "A qualquer hora e em qualquer lugar, ninguém resiste a um bom churrasco<br/><br/> Motivos que fazem valer a Pena<br/><br/>- Churrasco a Carvão:<br/><br/>Para um banquete cheio de sabor e aroma<br/><br/>- Grelha em ferro fundido de 310mm:<br/><br/>Robusto e com revestimento antiaderente<br/><br/>- Estrutura em Aço Inoxidável:<br/><br/>Garante qualidade e durabilidade<br/><br/>-Com Controle de Brasa<br/><br/>Regule a intensidade do fogo para ter o churrasco perfeito<br/><br/>- Incluso Bag Exclusiva:<br/><br/>Prática para levar onde quiser com estilo<br/><br/>Sobre o Produto<br/><br/>A gente sabe que o sabor do churrasco é o preferido dos brasileiros, até quem não é muito fã de carne vermelha não dispensa um peixe grelhado ou legumes tostados no carvão. Ah, e qualquer lugar é o ideal para apreciar todas essas delícias. Na praia, na piscina ou até dentro do apê, bora pro churrasquinho tradicional ou gourmet?<br/><br/>A linha Smoke &amp; Fire Biscuitt foi especialmente desenhada para tornar sua experiência de um bom churrasco inesquecível, por isso, a Churrasqueira Portátil Steak Master tem design contemporâneo e com funcionalidades que vão tornar o churrasquinho de domingo um evento saboroso e cheio de aroma, seja ao ar livre ou dentro de casa.<br/><br/>Para começar, a Steak Master é a carvão, sem essa de carnes sem gosto feitas em churrasqueiras portáteis elétricas. E faz bem menos fumaça! Isso ocorre porque a gordura do churrasco não cai diretamente no carvão. Talvez você não saiba, mas em churrasqueiras tradicionais, podem existir substâncias nocivas devido ao contato direto da chama com os alimentos. Isso não acontece na Churrasqueira Steak Master, o que preserva e mantém seus alimentos seguros.<br/><br/>E tem mais, a Churrasqueira Steak Master tem sistema de controle de velocidade do fluxo de ar, permitindo a regulagem da temperatura para o corte específico da sua carne.<br/><br/>Prepare pratos no ponto certo e onde quiser pois essa churrasqueira tem autonomia total, ajuste a velocidade da ventoinha para controlar a queima do carvão; funciona com 4 pilhas AA ou com alimentação USB. Além disso, a caixa de carvão dele possui grande capacidade, e pode grelhar durante 2 horas antes de precisar repor o carvão. Para evitar fumaça adicione um pouco de água, sal grosso ou papel alumínio no reservatório de gordura.<br/><br/>Fácil de montar e desmontar, a churrasqueira portátil é leve e resistente feita com material de aço inoxidável. A praticidade da Steak Master vai além, a grelha de ferro fundido de 310mm garante durabilidade e robustez, e tem revestimento antiaderente. Além disso, não esquenta a base, tornando seu churrasquinho de final de semana muito mais seguro. Todo corpo e suas partes  exceto baterias  são laváveis, facilitando seu lazer até na hora de limpar. Para finalizar, o kit da linha Smoke &amp; Fire vem em uma bag exclusiva. Então, é só escolher o lugar e preparar suas melhores receitas.<br/><br/>Com a Churrasqueira Steak Master da linha Smoke &amp; Fire Biscuitt, o churrasco perfeito vai com você para onde quiser. Experimente a liberdade de saborear em um #MomentoBiscuitt<br/><br/>Sobre a Marca<br/><br/>Na correria do dia a dia, a Biscuitt Creative Cuisine acredita que cada momento de pausa é uma oportunidade única para relaxar, descobrir e se divertir, sozinho ou acompanhado.<br/><br/>Seja no café da manhã de domingo ou em um jantar com amigos, a Biscuitt estará ao seu lado com produtos criativos, receitas e dicas para desacelerar e aproveitar do seu jeito.<br/><br/>Ficha técnica<br/><br/>Altura: 21 cm<br/><br/>Largura: 35 cm<br/><br/>Profundidade: 35 cm<br/><br/>Peso: 2,3 kg<br/><br/>Informações Adicionais<br/><br/>Marca Biscuitt<br/><br/>ModeloSteak Master<br/><br/>Garantia do Fabricante 12 Meses<br/><br/>Código EAN7898693851398<br/><br/>Código FabricanteB00120<br/><br/>Conteúdo da Embalagem<br/><br/>01 Churrasqueira<br/><br/>01 Grelha de ferro fundido<br/><br/>01 Bolsa Exclusiva<br/><br/>01 Manual de Instruções",
@@ -305,5 +306,92 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "churrasqueira_15",
+  "creators": [
+    {
+      "name": "Carlos BBQ",
+      "username": "carlosbbq_oficial",
+      "avatar": "../img/avatars-biscuitt/creator-carlos.jpg",
+      "poster": "../img/posters-biscuitt/poster-biscuitt-c1.jpg",
+      "video": "https://files.catbox.moe/dpa885.mp4#prod=15&slot=criador_1&slug=churrasqueira-portatil-a-car",
+      "catbox_id": "dpa885.mp4",
+      "startTime": 0.2,
+      "likes": 34200,
+      "commentsCount": 48,
+      "saves": 3420,
+      "shares": 420,
+      "description": "Churrasqueira Portátil Biscuitt Steak Master: acende em 3 minutos com cooler USB! 🔥"
+    },
+    {
+      "name": "Renata na Varanda",
+      "username": "renatavaranda_gourmet",
+      "avatar": "../img/avatars-biscuitt/creator-renata.jpg",
+      "poster": "../img/posters-biscuitt/poster-biscuitt-c2.jpg",
+      "video": "https://files.catbox.moe/ymfpap.mp4#prod=15&slot=criador_2&slug=churrasqueira-portatil-a-car",
+      "catbox_id": "ymfpap.mp4",
+      "startTime": 0.2,
+      "likes": 27850,
+      "commentsCount": 39,
+      "saves": 2780,
+      "shares": 310,
+      "description": "Testando a Table Grill no apartamento: zero fumaça na sala e a carne fica suculenta demais! 🥩"
+    },
+    {
+      "name": "Thiago Brasa",
+      "username": "thiagobrasa_oficial",
+      "avatar": "../img/avatars-biscuitt/creator-thiago.jpg",
+      "poster": "../img/posters-biscuitt/poster-biscuitt-c3.jpg",
+      "video": "https://files.catbox.moe/hmxb1e.mp4#prod=15&slot=criador_3&slug=churrasqueira-portatil-a-car",
+      "catbox_id": "hmxb1e.mp4",
+      "startTime": 0.2,
+      "likes": 41200,
+      "commentsCount": 62,
+      "saves": 4100,
+      "shares": 490,
+      "description": "O cooler com regulador de ar faz a brasa pegar fogo em minutos sem precisar soprar! Muito prático"
+    },
+    {
+      "name": "Bruno Churras",
+      "username": "brunochurras_ape",
+      "avatar": "../img/avatars-biscuitt/creator-bruno.jpg",
+      "poster": "../img/posters-biscuitt/poster-biscuitt-c4.jpg",
+      "video": "https://files.catbox.moe/h7ctxk.mp4#prod=15&slot=criador_4&slug=churrasqueira-portatil-a-car",
+      "catbox_id": "h7ctxk.mp4",
+      "startTime": 0.2,
+      "likes": 23150,
+      "commentsCount": 35,
+      "saves": 2310,
+      "shares": 275,
+      "description": "Gasta menos de 250g de carvão e assa picanha, coração e queijo coalho para 4 pessoas tranquilamente!"
+    },
+    {
+      "name": "Gabi no Apê",
+      "username": "gabinoape_dicas",
+      "avatar": "../img/avatars-biscuitt/creator-gabi.jpg",
+      "poster": "../img/posters-biscuitt/poster-biscuitt-c5.jpg",
+      "video": "https://files.catbox.moe/84y53y.mp4#prod=15&slot=criador_5&slug=churrasqueira-portatil-a-car",
+      "catbox_id": "84y53y.mp4",
+      "startTime": 0.2,
+      "likes": 36700,
+      "commentsCount": 53,
+      "saves": 3670,
+      "shares": 415,
+      "description": "A parede externa tem isolamento térmico, pode pegar na lateral com a mão que não queima! Nota 10 👏"
+    },
+    {
+      "name": "Felipe Grill",
+      "username": "felipegrill_bbq",
+      "avatar": "../img/avatars-biscuitt/creator-felipe.jpg",
+      "poster": "../img/posters-biscuitt/poster-biscuitt-c6.jpg",
+      "video": "https://files.catbox.moe/xs7xwp.mp4#prod=15&slot=criador_6&slug=churrasqueira-portatil-a-car",
+      "catbox_id": "xs7xwp.mp4",
+      "startTime": 0.2,
+      "likes": 29400,
+      "commentsCount": 42,
+      "saves": 2940,
+      "shares": 330,
+      "description": "A bag térmica de transporte facilita demais levar pra praia ou camping no fim de semana. Top!"
+    }
+  ]
 }

@@ -250,9 +250,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/z40bo0.mp4",
+    "src": "https://files.catbox.moe/z40bo0.mp4#prod=63&slot=descricao&slug=smartwatch-redmi-watch-5-lit",
     "poster": "../img/posters-desc/poster-desc-63.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "z40bo0.mp4"
   },
   "size_guide_html": "",
   "description_html": "O smartwatch Redmi Watch 5 Lite Preto é um acessório tecnológico moderno e funcional que complementa seu dia a dia com estilo e praticidade. Com uma tela AMOLED de 1.96\" e design elegante em preto, este relógio inteligente oferece múltiplas funcionalidades para monitorar sua saúde e facilitar sua rotina, seja no trabalho, treino ou momentos de lazer.<br/><br/>ESPECIFICAÇÕES TÉCNICAS:<br/><br/>Tela AMOLED de 1.96\" com excelente definição e visibilidade.<br/><br/>Monitor de frequência cardíaca, oxigênio no sangue e sono para acompanhamento da saúde.<br/><br/>Conectividade Bluetooth para chamadas e notificações no pulso.<br/><br/>GPS integrado para monitoramento de atividades ao ar livre.<br/><br/>Design moderno e leve, ideal para uso diário.<br/><br/>CARACTERÍSTICAS:<br/><br/>Marca: Xiaomi<br/><br/>Tipo: Smartwatch<br/><br/>Material da pulseira: Silicone confortável e durável<br/><br/>Cor: Preto<br/><br/>Resistência à água: Sim (5 ATM  pode ser usado para natação em piscinas rasas)<br/><br/>Dimensões da caixa: 4,45 cm (comprimento) x 3,74 cm (largura) x 1,06 cm (espessura)<br/><br/>Peso: Aproximadamente 24,4 gramas<br/><br/>DIMENSÕES DA EMBALAGEM:<br/><br/>Altura: 11,2 cm<br/><br/>Largura: 11,0 cm<br/><br/>Profundidade: 5,2 cm<br/><br/>Peso com embalagem: Aproximadamente 0,16 kg<br/><br/>DICA DO MINEIRINHO:<br/><br/>O smartwatch Redmi Watch 5 Lite Preto é ideal para quem busca praticidade e recursos inteligentes em um único acessório. Com tela ampla, conectividade eficiente e funções voltadas para saúde e bem-estar, é uma ótima opção para o dia a dia.<br/><br/>DÚVIDAS FREQUENTES<br/><br/>Qual é o tipo de tela do Redmi Watch 5 Lite Preto?<br/><br/>Resposta: A tela é AMOLED de 1.96\", com excelente visibilidade mesmo sob luz intensa.<br/><br/>O relógio é resistente à água?<br/><br/>Sim, o Redmi Watch 5 Lite possui resistência de 5 ATM, podendo ser usado para natação em piscinas rasas. Não é indicado para mergulho.<br/><br/>Quais as principais funções de monitoramento do relógio?<br/><br/>O relógio monitora frequência cardíaca, oxigênio no sangue (SpO2), sono, estresse e conta com mais de 100 modos esportivos.<br/><br/>O smartwatch permite atender chamadas?<br/><br/>Sim, com conectividade Bluetooth, é possível atender e realizar chamadas diretamente pelo relógio.<br/><br/>ITENS INCLUSOS:<br/><br/>1 Smartwatch Redmi Watch 5 Lite Preto<br/><br/>1 Cabo carregador magnético<br/><br/>1 Manual de instruções<br/><br/>IMAGENS MERAMENTE ILUSTRATIVAS.<br/><br/>O prazo de devolução, conforme o artigo 49 do CDC (Código de Defesa do Consumidor), é de 7 dias corridos a partir do recebimento do produto. Recomenda-se que a devolução seja feita com o produto em perfeitas condições, sem danos ou marcas de uso, utilizando uma embalagem protetora original. A ausência dessa embalagem ou danos a ela podem resultar na recusa da devolução.<br/><br/>A garantia legal é de 90 dias, conforme CDC - Código de Defesa do Consumidor. Após esse prazo, passa a vigorar a garantia contratual, que é tratada diretamente pelo fabricante do item e segue as regras estipuladas pelo próprio. A garantia total (garantia legal + garantia contratual) é exibida no campo correspondente deste anúncio. Atente-se à responsabilidade de cada parte e lembre-se que estamos sempre à disposição para esclarecimentos em nosso SAC.",
@@ -338,5 +339,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "redmi_watch_63",
+  "creators": [
+    {
+      "name": "ananunescolomboo",
+      "username": "ananunescolomboo",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/807645627ba57e64d2397959d9c311d4~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=5808e1c2&x-expires=1795464000&x-signature=84eXiPpy57JFZwufAyCehEPx1Mo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-63-1.jpg",
+      "video": "https://files.catbox.moe/nii2jw.mp4#prod=63&slot=criador_1&slug=smartwatch-redmi-watch-5-lit",
+      "catbox_id": "nii2jw.mp4",
+      "startTime": 0.2,
+      "likes": 26700,
+      "commentsCount": 227,
+      "saves": 2100,
+      "shares": 94,
+      "description": "Vale a pena comprar o smartwatch da Xiaomi?? #redmiwatch5lite #smartwatchxiaomi #xiaomi "
+    },
+    {
+      "name": "NOVERA Creative",
+      "username": "novera_creative",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/167e857026da4e4e5a9c4e99cffc6884~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=8e75bb8a&x-expires=1795464000&x-signature=Mvq3szQPftYsjdc4Q2FtL%2BwoFNI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-63-2.jpg",
+      "video": "https://files.catbox.moe/3d3unl.mp4#prod=63&slot=criador_2&slug=smartwatch-redmi-watch-5-lit",
+      "catbox_id": "3d3unl.mp4",
+      "startTime": 0.2,
+      "likes": 29300,
+      "commentsCount": 259,
+      "saves": 2320,
+      "shares": 112,
+      "description": "Unboxing do novo Xiaomi Redmi Watch 5 Lite! 🚀 Se você busca um smartwatch bom e barato em 2026, esse é o campeão em custo-benefício. O qu..."
+    },
+    {
+      "name": "Gabi Cabral | Creator",
+      "username": "eugabicabral",
+      "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_16.jpg",
+      "poster": "../videosprodutos/posters/poster-criador-63-3.jpg",
+      "video": "https://files.catbox.moe/b5a49z.mp4#prod=63&slot=criador_3&slug=smartwatch-redmi-watch-5-lit",
+      "catbox_id": "b5a49z.mp4",
+      "startTime": 0.2,
+      "likes": 31900,
+      "commentsCount": 291,
+      "saves": 2540,
+      "shares": 130,
+      "description": "Meu mais novo xodó: Redmi watch 5 lite. Aprimorando minha vida fitness ⌚️✨😍♥️ #creatorsearchinsights #redmiwatch5lite #xiaomi #fyp #redmi "
+    }
+  ]
 }

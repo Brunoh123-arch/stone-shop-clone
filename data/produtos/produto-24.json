@@ -606,9 +606,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/3g9fcx.mp4",
+    "src": "https://files.catbox.moe/3g9fcx.mp4#prod=24&slot=descricao&slug=triciclo-infantil-4-em-1-mul",
     "poster": "../img/posters-desc/poster-desc-24.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "3g9fcx.mp4"
   },
   "size_guide_html": "",
   "description_html": "Explore o mundo com o triciclo multifuncional da KaBaby, um companheiro que cresce com seu filho por ter diversas funcionalidades tecnológicas que se ajustam ao dia a dia e ao crescimento do seu bebê e da sua bebê.<br/><br/>Com características premium e capota ajustável, o triciclo da Kababy oferece conforto e versatilidade. Perfeito para levá-los para creches, escolas, parques, no shopping entre diversos lugares com conforto e segurança garantida.<br/><br/>O triciclo da Kababy proporciona acesso fácil aos itens essenciais, com modos de uso variados, garante segurança com barra frontal, cinto de 5 pontos e controle parental. Leve e compacto, é ideal para os primeiros anos da criança. Seguindo uma jornada de diversão e aprendizado em todas as fases do desenvolvimento.<br/><br/>Características:<br/><br/>Triciclo multifuncional que acompanha as aventuras e o crescimento do pequeno por muito mais tempo, onde quer que vocês forem! O triciclo da Kababy conta com tecido premium e uma capota ajustável, com 6 diferentes modos de uso, ele ainda tem 2 tipos diferentes de apoio para os pezinhos, além dos pedais, que se adaptam às necessidades do seu filho.<br/><br/>Exploração Ativa:<br/><br/>Seja durante um passeio no parque, no shopping, ou na ida para a cheche, o pequeno com certeza explorará ativamente o ambiente e para isso é importante estar sempre preparado para essas grandes aventuras!<br/><br/>Com bolsinha exclusiva para armazenamentos, o triciclo KaBaby permite que você tenha acesso aos itens pessoais essenciais, a qualquer momento, de forma prática e segura.<br/><br/>Versatilidade de Uso:<br/><br/>Seu pequeno pode explorar o mundo com o Triciclo KaBaby de diversas maneiras, desde 1 ano, suportando até 25Kg.<br/><br/>O Triciclo completo pode ser utilizado com ou sem a capota, tem também o apoio de pés baby para os menorzinhos, assento virado para os pais ou para o mundo, apoio de pés kids.<br/><br/>Já na fase intermediária, pode ser recolhido o encosto, a barra frontal e o empurrador para mais autonomia, o que possibilita que o pequeno passeie diretamente com os pedais.<br/><br/>Segurança:<br/><br/>Para máxima segurança, ele conta com barra de abertura frontal, cinto de 5 pontos e apoios de pés dobráveis ou removíveis, que acompanham o desenvolvimento do pequeno.<br/><br/>Além do engenhoso controle parental nas rodas e no guidão, você consegue controlar o nível de interação do pequeno com o rumo do passeio.<br/><br/>Adaptabilidade:<br/><br/>Pronto para acompanhar o desenvolvimento da independência do pequeno, o Triciclo KaBaby se adapta às novas possibilidades que surgem com o crescimento.<br/><br/>Com sua estrutura ultraleve, e fechamento compacto, o Triciclo KaBaby é portátil e pode ser facilmente armazenado em casa ou no porta-malas.<br/><br/>APROVADO PELO INMETRO / REGISTRO: 003164/2024",
@@ -708,5 +709,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "kababy_24",
+  "creators": [
+    {
+      "name": "Déborah Influencer",
+      "username": "deboraoinfluencer",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_54.jpg",
+      "poster": "../img/produto-24-1.jpg",
+      "video": "https://files.catbox.moe/d137fd.mp4#prod=24&slot=criador_1&slug=triciclo-infantil-4-em-1-mul",
+      "catbox_id": "d137fd.mp4",
+      "startTime": 0.2,
+      "likes": 18900,
+      "commentsCount": 155,
+      "saves": 1410,
+      "shares": 58,
+      "description": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e Capota Solar - Kababy! 👼🏻"
+    },
+    {
+      "name": "Achados Com Gosto",
+      "username": "achados.com.gosto",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_56.jpg",
+      "poster": "../img/produto-24-2.jpg",
+      "video": "https://files.catbox.moe/w6fwpu.mp4#prod=24&slot=criador_2&slug=triciclo-infantil-4-em-1-mul",
+      "catbox_id": "w6fwpu.mp4",
+      "startTime": 0.2,
+      "likes": 20800,
+      "commentsCount": 175,
+      "saves": 1560,
+      "shares": 69,
+      "description": "O companheiro perfeito para todas as fases! Triciclo 4 em 1 Kababy com capota solar e total segurança! 🚲✨"
+    }
+  ]
 }

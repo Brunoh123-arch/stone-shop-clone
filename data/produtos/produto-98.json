@@ -242,9 +242,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/i0td5g.mp4",
+    "src": "https://files.catbox.moe/i0td5g.mp4#prod=98&slot=descricao&slug=conjunto-de-12-copos-de-cris",
     "poster": "../videosprodutos/posters/poster-criador-98-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "i0td5g.mp4"
   },
   "size_guide_html": "",
   "description_html": "A Oxford Alumina Crystal traz alta tecnologia para o mundo dos cristais. O processo inovador de produção e a adição de Alumina na sua composição conferem ao produto características únicas de alta performance para uso no dia a dia. Testes de resistência mostram que a Oxford Alumina Crystal tem maior resistência de borda e de bojo que as taças convencionais. O modelo Proper na decoração Effect é inspirado no movimento artístico Art Nouveau que surgiu no final do século XIX, na Europa. Uma das principais características deste movimento foi a exuberância decorativa, as formas ondulantes e elegantes. O Copo Long Drink da linha Proper possui efeito ondulado no interior da peça de 14,4  cm de altura e capacidade para 490  ml. O Copo Long Drink é usado para servir água, suco ou coquetéis diversos.<br/><br/>Conteúdo da embalagem: 6 Copos de Cristal Long Drink 490 Ml  Com 14,4 cm de altura<br/><br/>- Garantia: 3 Meses para Defeitos de fabricação<br/><br/>- Marca: Oxford<br/><br/>- Tipo da embalagem: Papelão pardo<br/><br/>- Material: Cristal<br/><br/>- É apto para lava-louças: Sim<br/><br/>- É apto para micro-ondas: Não<br/><br/>- Tipo de produto: Copo<br/><br/>- Modelo: Proper Effect<br/><br/>- Cor: Transparente<br/><br/>- Capacidade em volume: 490 ml<br/><br/>- Inclui tampa: Não<br/><br/>- Formato de venda: Kit<br/><br/>- É descartável: Não<br/><br/>- Código universal de produto: 7891361250301<br/><br/>- Linha: Alumina Crystal<br/><br/>- SKU: 097201<br/><br/>- Bebidas recomendadas: Água, Suco<br/><br/>- Com canudo: Não<br/><br/>- Altura: 14,4 cm<br/><br/>- Condição do item: Novo<br/><br/>- É produto personalizado: Não<br/><br/>- Unidades por kit: 6<br/><br/>- É kit: Sim<br/><br/>ATENÇÃO: Para compras de pessoa jurídica,cadastreosdados exatamente como consta em seu cartão do CNPJ",
@@ -325,5 +326,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "copos_98",
+  "creators": [
+    {
+      "name": "JUNIOR OFERTAS",
+      "username": "juniorofertas",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/dccf13f6c55a869b60534c46af76aca7~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=6a8cc0de&x-expires=1795413600&x-signature=1o36sxWgA09FSf%2FdofGfu1Wtz%2FY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-98-2.jpg",
+      "video": "https://files.catbox.moe/qf0fqb.mp4#prod=98&slot=criador_1&slug=conjunto-de-12-copos-de-cris",
+      "catbox_id": "qf0fqb.mp4",
+      "startTime": 0.2,
+      "likes": 22500,
+      "commentsCount": 195,
+      "saves": 1850,
+      "shares": 75,
+      "description": "Jogo 6 Copos Long Drink de Cristal XTRA 400ml Bohemia #CoposDeCristal #JogoDeCopos #LongDrink #CozinhaElegante "
+    },
+    {
+      "name": "Design Gallery",
+      "username": "lojasdesigngallery",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/5c69cdbb14c90cedf7d37cd0a871650e~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=d7ce35bc&x-expires=1795413600&x-signature=JUzxTYn4W4BgKGJyqLf4m4HVZ3s%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-98-3.jpg",
+      "video": "https://files.catbox.moe/jcnzf7.mp4#prod=98&slot=criador_2&slug=conjunto-de-12-copos-de-cris",
+      "catbox_id": "jcnzf7.mp4",
+      "startTime": 0.2,
+      "likes": 22500,
+      "commentsCount": 195,
+      "saves": 1850,
+      "shares": 75,
+      "description": "Conjunto com 6 copos Bohemia, em cristal com liga de titânio  Por R$ 139,90  🎁 Loja de presentes e artigos para o lar, desde 2005. 🥂 Faze..."
+    }
+  ]
 }

@@ -536,9 +536,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/v36v5l.mp4",
+    "src": "https://files.catbox.moe/v36v5l.mp4#prod=57&slot=descricao&slug=caixa-de-som-joog-one-hifi-j",
     "poster": "../img/posters-desc/poster-desc-57.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "v36v5l.mp4"
   },
   "size_guide_html": "",
   "description_html": "JOOG ONE HiFi JOF-01<br/><br/>Sinta o poder do som com o speaker Joog ONE HiFi JOF-01!<br/><br/>Com 200W de potência,<br/><br/>esta caixa de som não só vai emocionar você com seu áudio excepcional, mas também foi projetada para acompanhá-lo em todas as suas aventuras graças à sua resistência à água com certificação IP67, suportando até 1 metro de água por 30 minutos.<br/><br/>Com uma bateria de 9.000 mAh, aproveite até 20 horas de música ininterrupta e, se precisar, use-o como um power bank para carregar seus dispositivos. Você quer mais? Inclui um conector auxiliar, um slot Micro SD, porta USB e um prático controle remoto com múltiplas funções, como efeitos para transmissão ao vivo, mudança de modo, avançar ou retroceder músicas, ajustar o volume, alterar a voz do microfone e muitas outras opções que tornarão sua experiência ainda mais completa.<br/><br/>Além disso, com seus dois microfones de karaokê sem fio, você estará pronto para animar qualquer festa ou reunião! Perfeito para casa, escritório ou natureza, o Joog ONE HiFi está pronto para tudo!<br/><br/>Acessórios incluído:<br/><br/>2x Microfones sem fio<br/><br/>Cabo de áudio.<br/><br/>Controle remoto.<br/><br/>Cabo de carregamento USB para microfone.<br/><br/>Cabo de carregamento rápido tipo C.<br/><br/>Correia.<br/><br/>Manual do usuário.",
@@ -619,5 +620,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "joog_one_57",
+  "creators": [
+    {
+      "name": "Mundo smartphone",
+      "username": "mundotec.smartphone",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/3519d2019b7c95181d83b0b7e0ae17cf~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=44084daa&x-expires=1795413600&x-signature=TfNxPt%2BQMkn%2F372IUxCd3XEaM%2B8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-57-1.jpg",
+      "video": "https://files.catbox.moe/2ymwxn.mp4#prod=57&slot=criador_1&slug=caixa-de-som-joog-one-hifi-j",
+      "catbox_id": "2ymwxn.mp4",
+      "startTime": 0.2,
+      "likes": 21400,
+      "commentsCount": 188,
+      "saves": 1720,
+      "shares": 72,
+      "description": "JOOG ONE HI-FI DETONA A JBL! 💣 O som que treme a alma e transforma qualquer rolê em palco! #joogonehifi #joog #boombox #som #grave #jbl "
+    },
+    {
+      "name": "Tiago_Dionisio",
+      "username": "tiagodionisio",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/ed74b1a2dbb37d778761091a3149d5dd~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2f07d72f&x-expires=1795413600&x-signature=TCf%2FijsvmKOJTCxYyv6kMyUeR6w%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-57-2.jpg",
+      "video": "https://files.catbox.moe/1pm9zq.mp4#prod=57&slot=criador_2&slug=caixa-de-som-joog-one-hifi-j",
+      "catbox_id": "1pm9zq.mp4",
+      "startTime": 0.2,
+      "likes": 23900,
+      "commentsCount": 218,
+      "saves": 1930,
+      "shares": 88,
+      "description": "“🎶  Em clima de São João Conheça a Joog ONE HiFi! Potência de 200W, resistência à água IP67 e até 20 horas de música! Perfeito para qualq..."
+    },
+    {
+      "name": "ROSLEON - Leonardo Mey",
+      "username": "leonardomey",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/e28ee00cd5cf11f9630cdd2a9cbe43b5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=ab8709c5&x-expires=1795413600&x-signature=M%2BbOazt6I6Yl%2FMqFmv0BlkFwtV4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-57-3.jpg",
+      "video": "https://files.catbox.moe/vem3zq.mp4#prod=57&slot=criador_3&slug=caixa-de-som-joog-one-hifi-j",
+      "catbox_id": "vem3zq.mp4",
+      "startTime": 0.2,
+      "likes": 26400,
+      "commentsCount": 248,
+      "saves": 2140,
+      "shares": 104,
+      "description": "Conheça a incrível JOOG ONE HIFI 200W! 🎶 Com som surreal, graves potentes e design robusto, essa caixa de som vai transformar sua experiê..."
+    }
+  ]
 }

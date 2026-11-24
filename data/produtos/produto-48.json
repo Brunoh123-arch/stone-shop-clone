@@ -370,9 +370,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/u5toyv.mp4",
+    "src": "https://files.catbox.moe/u5toyv.mp4#prod=48&slot=descricao&slug=panificadora-automatica-mond",
     "poster": "../img/posters-desc/poster-desc-48.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "u5toyv.mp4"
   },
   "size_guide_html": "",
   "description_html": "Panificadora Automática Mondial Master Bread Branco NPF-54 220VA Panificadora Automática Master Bread Mondial prepara diversos tipos de pães, bolos, pizzas, panetones, além de fazer geleia, iogurte, tostar castanhas e muito mais. O painel digital te possibilita iniciar os preparos com apenas 1 clique e possui 19 opções pré-programadas. Conta com ajuste de tonalidade e de peso, função timer para programar seu tempo e potência de 700W.<br/><br/>Saiba mais sobre a NPF-54 da Mondial<br/><br/>- 19 Funções Pré-Programadas: Prepare receitas com apenas um clique! São 19 funções programadas para o preparo de diversos tipos de pães, bolos, massas e muito mais.<br/><br/>- Painel Digital: Facilita a escolha do tamanho dos pães, ciclos e timer para a produção.<br/><br/>- Versatilidade de Receitas: A panificadora automática Mondial prepara pães, bolos, pizzas, panetones, iogurtes, geleias e muito mais.<br/><br/>- Ajuste de Tonalidade: Possibilita escolher o tom do pão que preferir: claro, médio ou escuro.<br/><br/>- Função Timer: Permite programar os preparos com até 15 horas de antecedência.<br/><br/>- Potência de 700W: Ótimo desempenho e mais agilidade nas receitas.<br/><br/>- Visor de Acrílico: Garante mais praticidade para visualizar e acompanhar o preparo das receitas.<br/><br/>- Seletor de Peso: Selecione entre pequeno (500g), médio (750g) e grande (1kg).<br/><br/>- Forma Removível: Com revestimento antiaderente, facilita a retirada dos alimentos e a hora da limpeza.<br/><br/>- Acessórios: Acompanha copo medidor e colher dosadora para facilitar o preparo.<br/><br/>- Um ano de garantia Mondial: A Mondial é a escolha de milhões de consumidores. Mondial, a escolha inteligente!<br/><br/>Especificações Técnicas:<br/><br/>Marca: Mondial<br/><br/>Modelo: NPF-54<br/><br/>Cor: Branco<br/><br/>Opções pré-programadas: Sim, 19 opções<br/><br/>Tamanho de pães: 500g, 750g ou 1kg<br/><br/>Material: PP e Metal<br/><br/>Comprimento do cabo: 1,50m<br/><br/>Tipo de tomada: 10A<br/><br/>Potência: 700W<br/><br/>Painel Digital: Sim<br/><br/>Forma removível: Sim<br/><br/>Visor de acrílico: Sim<br/><br/>Ajuste de tonalidade: Sim<br/><br/>Função timer: Sim, 15 horas<br/><br/>Alimentação: Energia Elétrica<br/><br/>Voltagem: 127V ou 220V (Não é Bivolt)<br/><br/>Dimensões do produto (AxLxP): 29,5 x 28 x 33,5 cm<br/><br/>Peso: 4,300kg<br/><br/>Itens inclusos: 01 Panificadora e 01 Manual de Instruções<br/><br/>Garantia: 01 ano",
@@ -457,5 +458,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "panificadora_48",
+  "creators": [
+    {
+      "name": "Amanda Cristhiny",
+      "username": "amandacristhiny_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_50.jpg",
+      "poster": "../videosprodutos/posters/video-produto-80-take1.jpg",
+      "video": "https://files.catbox.moe/t5xtp1.mp4#prod=48&slot=criador_1&slug=panificadora-automatica-mond",
+      "catbox_id": "t5xtp1.mp4",
+      "startTime": 0.2,
+      "likes": 21400,
+      "commentsCount": 285,
+      "saves": 1630,
+      "shares": 152,
+      "description": "Olha a fofura desse pão doce feito na panificadora! Acordar com o cheiro de pão pela casa é maravilhoso! 🥐❤️ #panificadoramondial #receitas #paofofinho"
+    },
+    {
+      "name": "Hairda Hoffman",
+      "username": "hairdahoffman",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_52.jpg",
+      "poster": "../videosprodutos/posters/video-produto-80-take2.jpg",
+      "video": "https://files.catbox.moe/3a2qhi.mp4#prod=48&slot=criador_2&slug=panificadora-automatica-mond",
+      "catbox_id": "3a2qhi.mp4",
+      "startTime": 0.2,
+      "likes": 24300,
+      "commentsCount": 330,
+      "saves": 1810,
+      "shares": 184,
+      "description": "Testando a função timer da panificadora! Coloquei os ingredientes à noite e acordei com pão integral fresquinho e crocante! 🍞⏰ #receitasfaceis #rotinamatinal"
+    }
+  ]
 }

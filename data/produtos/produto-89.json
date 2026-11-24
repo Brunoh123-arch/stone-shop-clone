@@ -746,9 +746,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/t5xtp1.mp4",
+    "src": "https://files.catbox.moe/t5xtp1.mp4#prod=89&slot=descricao&slug=kit-conjunto-de-panelas-de-f",
     "poster": "../img/posters-desc/poster-desc-89.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "t5xtp1.mp4"
   },
   "size_guide_html": "",
   "description_html": "Coleção Select Cook 18 peças kit<br/><br/>O verdadeiro luxo da cozinha francesa agora ao seu alcance!<br/><br/>O Kit de Panelas de Ferro Fundido Esmaltado Select Cook da Vicalina Brasil combina sofisticação, desempenho e durabilidade em cada detalhe. Inspiradas nos tradicionais bistrôs franceses, essas panelas unem charme clássico e robustez moderna para transformar o preparo das suas receitas em uma experiência gourmet.<br/><br/> Características principais:<br/><br/>\tMaterial: Ferro fundido esmaltado de alta densidade  mantém o calor por muito mais tempo e distribui de forma uniforme.<br/><br/>\tCompatibilidade total: Vai ao fogão a gás, elétrico, por indução, à lenha e também ao forno.<br/><br/>\tPraticidade: Pode ser levada à lava-louças, garantindo fácil limpeza sem danificar o esmalte.<br/><br/>\tDesign Premium: Interior esmaltado em tom claro, que evita aderência e facilita o acompanhamento do cozimento.<br/><br/>\tAlta performance: Ideal para refogar, assar, grelhar, selar e cozinhar lentamente  tudo com eficiência e sabor.<br/><br/>\tCapacidade generosa: Panelas grandes, pesadas e robustas  feitas para impressionar na mesa e durar por gerações.<br/><br/>\tCores disponíveis: Preto, Vermelho, Cinza, Azul e Verde  elegância para combinar com qualquer ambiente.<br/><br/> Conteúdo do Kit (18 peças):<br/><br/>\t1 Frigideira 24 cm × 4,5 cm 2 litros<br/><br/>\t1 Caçarola 20 cm × 8,5 cm 2,6 litros<br/><br/>\t1 Caçarola 22 cm × 9,5 cm 3,6 litros<br/><br/>\t1 Caçarola 24 cm × 11,5 cm 5 litros<br/><br/>\t1 Cesta vaporizadora em inox (Cozivapor)<br/><br/>\t2 Pegadores de panela em silicone<br/><br/>\t6 Utensílios de cozinha com cabo em aço inox e silicone resistente ao calor (alto padrão)<br/><br/>2  Trivet base para mesa<br/><br/>As panelas de ferro fundido esmaltadas vitrificadas Vicalina seguem o padrão de utensílios utilizados nas cozinhas profissionais ao redor do mundo. Chefs preferem esse tipo de panela porque o ferro fundido distribui e retém o calor de forma uniforme, permitindo cozimentos mais consistentes, sabores mais intensos e economia de energia.<br/><br/>O revestimento esmaltado vitrificado elimina a necessidade de cura e evita contato direto do alimento com o metal, tornando o preparo mais prático e seguro no dia a dia. Além disso, o material é atóxico, não libera resíduos indesejáveis e não absorve odores ou sabores, garantindo alimentos mais puros e saudáveis.<br/><br/>Outro grande diferencial é a durabilidade: são panelas feitas para durar muitos anos, podendo ir ao fogão, forno e servir direto à mesa com elegância.<br/><br/>Com grande capacidade, estrutura robusta e acabamento premium, as panelas Vicalina unem tradição culinária, desempenho profissional e design sofisticado, sendo a escolha ideal para quem busca cozinhar melhor todos os dias.",
@@ -850,5 +851,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "panelas_ferro_89",
+  "creators": [
+    {
+      "name": "Camila Franklin",
+      "username": "camilafrankliin",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_88.jpg",
+      "poster": "../videosprodutos/posters/video-produto-89.jpg",
+      "video": "https://files.catbox.moe/wvqi46.mp4#prod=89&slot=criador_1&slug=kit-conjunto-de-panelas-de-f",
+      "catbox_id": "wvqi46.mp4",
+      "startTime": 0.2,
+      "likes": 25300,
+      "commentsCount": 218,
+      "saves": 1980,
+      "shares": 78,
+      "description": "Eu to apaixonada nas minhas panelas de ferro fundido esmaltadas! A comida fica com sabor incrível! 🥘🔥 #panelasdeferro #cozinha #gastronomia"
+    },
+    {
+      "name": "Sil e Balta",
+      "username": "silvanacaldasmotta",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/85d20df933734db3bdb91df58facd9ea~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=12441ac4&x-expires=1795438800&x-signature=xHNTaX4LAkQ2Z7EGo8%2Bs7YN%2FJiI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-89-1.jpg",
+      "video": "https://files.catbox.moe/05qzp7.mp4#prod=89&slot=criador_2&slug=kit-conjunto-de-panelas-de-f",
+      "catbox_id": "05qzp7.mp4",
+      "startTime": 0.2,
+      "likes": 28000,
+      "commentsCount": 250,
+      "saves": 2200,
+      "shares": 96,
+      "description": "Conjunto 13 peças de panelas de ferro esmaltadas. #tiktokshopbr1212 #paneladeluxo  #conjuntodepanelas #jogodepanelas #panelasesmaltadas "
+    },
+    {
+      "name": "Danielle Müzel",
+      "username": "muzeldane",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/1a3ee975801bd7c00eab4be388ab19b2~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=adf87744&x-expires=1795438800&x-signature=Qw30lRyrSYvmS%2Bn5TWRPVAhcjQg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-89-2.jpg",
+      "video": "https://files.catbox.moe/ny3prr.mp4#prod=89&slot=criador_3&slug=kit-conjunto-de-panelas-de-f",
+      "catbox_id": "ny3prr.mp4",
+      "startTime": 0.2,
+      "likes": 30700,
+      "commentsCount": 282,
+      "saves": 2420,
+      "shares": 114,
+      "description": "Gente, olha que coisa mais linda que chegou aqui em casa! 😍"
+    },
+    {
+      "name": "gabi soares",
+      "username": "soaresgabriellaa",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/460258f409cd84879b9f57ca16d11f8b~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=397c4ee7&x-expires=1795438800&x-signature=dHrk3LKrV16NlzFBETlobirk50A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-89-3.jpg",
+      "video": "https://files.catbox.moe/x0t90g.mp4#prod=89&slot=criador_4&slug=kit-conjunto-de-panelas-de-f",
+      "catbox_id": "x0t90g.mp4",
+      "startTime": 0.2,
+      "likes": 33400,
+      "commentsCount": 314,
+      "saves": 2640,
+      "shares": 132,
+      "description": "para!! venci na vida 🫵🏼 #panela "
+    }
+  ]
 }

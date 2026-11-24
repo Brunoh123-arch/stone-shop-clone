@@ -248,9 +248,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/0ajj9s.mp4",
+    "src": "https://files.catbox.moe/0ajj9s.mp4#prod=103&slot=descricao&slug=vestido-longo-feminino-costa",
     "poster": "../img/produto-103-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "0ajj9s.mp4"
   },
   "size_guide_html": "",
   "description_html": "Vestido longo feminino com modelagem ajustada, fenda lateral elegante e costas abertas. Tecido premium com elastano de excelente sustentação e toque macio.<br/><br/>\n\n• <strong>Composição:</strong> 92% Poliamida, 8% Elastano de alta densidade (não fica transparente)<br/>\n\n• <strong>Design:</strong> Decote com amarração regulável nas costas e fenda estratégica lateral<br/>\n\n• <strong>Ocasião:</strong> Perfeito para festas, eventos noturnos, jantares e ocasiões especiais<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Vestido Longo Costas Nua\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-103.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n\nEscolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
@@ -348,5 +349,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "vestido_103",
+  "creators": [
+    {
+      "name": "Cassy Correa",
+      "username": "cassycorrea0",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_94.jpg",
+      "poster": "../img/produto-103-2.jpg",
+      "video": "https://files.catbox.moe/as7hah.mp4#prod=103&slot=criador_1&slug=vestido-longo-feminino-costa",
+      "catbox_id": "as7hah.mp4",
+      "startTime": 0.2,
+      "likes": 39100,
+      "commentsCount": 362,
+      "saves": 3280,
+      "shares": 181,
+      "description": "Vestido suplex longo colado com fenda e costas nuas! Elegância, conforto e modelagem perfeita 💖"
+    },
+    {
+      "name": "Keyla Braga",
+      "username": "keylasbraga",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_96.jpg",
+      "poster": "../img/produto-103-1.jpg",
+      "video": "https://files.catbox.moe/1uaeyo.mp4#prod=103&slot=criador_2&slug=vestido-longo-feminino-costa",
+      "catbox_id": "1uaeyo.mp4",
+      "startTime": 0.2,
+      "likes": 42400,
+      "commentsCount": 404,
+      "saves": 3610,
+      "shares": 207,
+      "description": "Vestido longo festa costas nua e fenda lateral, tecido encorpado que não marca nada ✨"
+    },
+    {
+      "name": "Andréia Alves",
+      "username": "andreia.alves.aaa",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_98.jpg",
+      "poster": "../img/produto-103-2.jpg",
+      "video": "https://files.catbox.moe/0r3osh.mp4#prod=103&slot=criador_3&slug=vestido-longo-feminino-costa",
+      "catbox_id": "0r3osh.mp4",
+      "startTime": 0.2,
+      "likes": 45700,
+      "commentsCount": 446,
+      "saves": 3940,
+      "shares": 233,
+      "description": "Look impecável para eventos noturnos, jantares e formaturas. Modela o corpo com elegância máxima 👑"
+    },
+    {
+      "name": "Érica Leão",
+      "username": "ericamcabeluda",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_100.jpg",
+      "poster": "../img/produto-103-1.jpg",
+      "video": "https://files.catbox.moe/3sbo0d.mp4#prod=103&slot=criador_4&slug=vestido-longo-feminino-costa",
+      "catbox_id": "3sbo0d.mp4",
+      "startTime": 0.2,
+      "likes": 49000,
+      "commentsCount": 488,
+      "saves": 4270,
+      "shares": 259,
+      "description": "Vestido longo com fenda sensual e decote nas costas, valoriza muito a silhueta e veste super bem 👗"
+    }
+  ]
 }

@@ -254,9 +254,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/dgi7wy.mp4",
+    "src": "https://files.catbox.moe/dgi7wy.mp4#prod=115&slot=descricao&slug=forno-eletrico-hq-48-litros-",
     "poster": "../img/posters-desc/poster-desc-115.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "dgi7wy.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🔥 Forno Elétrico HQ 48 Litros HQ48D 1600W Preto</strong><br/><br/>\n              Praticidade, potência e alta capacidade para todas as suas receitas do dia a dia! O Forno Elétrico HQ 48L é ideal para assar, grelhar, tostar e gratinar com rapidez e precisão térmica.<br/><br/>\n<strong>Destaques do Forno HQ:</strong><br/>\n              • <strong>Super Capacidade de 48 Litros:</strong> Amplo espaço interno para formas grandes de pizza, bolos, travessas e assados inteiros.<br/>\n              • <strong>Potência de 1600W:</strong> Atinge a temperatura ideal rapidamente com cozimento uniforme.<br/>\n              • <strong>Controle de Temperatura de 100°C a 250°C:</strong> Ajuste milimétrico para cada tipo de preparo culinário.<br/>\n              • <strong>Timer Sonoro de 60 Minutos:</strong> Desligamento automático que avisa quando sua refeição está pronta, evitando que queime.<br/>\n              • <strong>Seletor de Resistências:</strong> Controle independente para aquecer por cima (gratinar), por baixo (assar) ou ambos simultaneamente.<br/>\n              • <strong>Porta de Vidro Temperado:</strong> Alta resistência térmica e ampla visibilidade do interior sem precisar abrir a porta.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: HQ<br/>\n              • Modelo: HQ48D<br/>\n              • Capacidade: 48 Litros<br/>\n              • Voltagem: 127V ou 220V (selecionar no momento da compra)<br/>\n              • Potência: 1600W<br/>\n              • Dimensões: 56 x 41,7 x 35 cm<br/>\n              • Peso aproximado: 7,5 kg<br/>\n              • Itens inclusos: 1 Forno Elétrico HQ 48L, 1 Grelha cromada, 1 Assadeira coletora de gordura e Manual de instruções.<br/>\n              • Garantia oficial: 1 Ano.",
@@ -328,5 +329,50 @@
     "rating": 4.8,
     "sales": "1.8K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "fornohq115",
+  "creators": [
+    {
+      "name": "Theleleu",
+      "username": "theleleu1705",
+      "avatar": "../img/avatars-forno-hq/creator-theleleu.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-115-c2.jpg",
+      "video": "https://files.catbox.moe/cexk71.mp4#prod=115&slot=criador_1&slug=forno-eletrico-hq-48-litros-",
+      "catbox_id": "cexk71.mp4",
+      "startTime": 0.2,
+      "likes": 19940,
+      "commentsCount": 102,
+      "saves": 1440,
+      "shares": 46,
+      "description": "🔥 O TikTok SURTOU com essa oferta! 😱 Forno elétrico HQ de 48 litros, 1600W e muito espaço!"
+    },
+    {
+      "name": "Vitrine da Carol",
+      "username": "vitrine_da_carol",
+      "avatar": "../img/avatars-forno-hq/creator-vitrine.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-115-c3.jpg",
+      "video": "https://files.catbox.moe/u4fc4i.mp4#prod=115&slot=criador_2&slug=forno-eletrico-hq-48-litros-",
+      "catbox_id": "u4fc4i.mp4",
+      "startTime": 0.2,
+      "likes": 20480,
+      "commentsCount": 116,
+      "saves": 1560,
+      "shares": 54,
+      "description": "Forno Elétrico HQ 48 Litros HQ #fornoeletrico #fornoeletricohq #forno48litros"
+    },
+    {
+      "name": "DAMIS • MARK",
+      "username": "damis_mark",
+      "avatar": "../img/avatars-forno-hq/creator-damis.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-115-c4.jpg",
+      "video": "https://files.catbox.moe/go5yf7.mp4#prod=115&slot=criador_3&slug=forno-eletrico-hq-48-litros-",
+      "catbox_id": "go5yf7.mp4",
+      "startTime": 0.2,
+      "likes": 21020,
+      "commentsCount": 130,
+      "saves": 1680,
+      "shares": 62,
+      "description": "Comprei o forno elétrico HQ de 48 litros no TikTok Shop e me surpreendi com o tamanho e a potência! 🔌👨‍🍳 #fornohq #cozinha #tiktokshop"
+    }
+  ]
 }

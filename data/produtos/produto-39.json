@@ -238,9 +238,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/e7z9vc.mp4",
+    "src": "https://files.catbox.moe/e7z9vc.mp4#prod=39&slot=descricao&slug=secador-de-cabelos-philco-ps",
     "poster": "../img/posters-desc/poster-desc-39.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "e7z9vc.mp4"
   },
   "size_guide_html": "",
   "description_html": "<b>Secador de Cabelos Philco PSC3500: Potência e Versatilidade para Seus Cabelos<br/></b><br/><b>Transforme sua rotina de beleza</b> com a Secador de Cabelos Philco PSC3500. Com um poderoso motor de <b>1450W</b>, esta secador oferece <b>3 velocidades</b> e <b>3 temperaturas</b>, garantindo uma secagem rápida e eficiente, além de proporcionar resultados dignos de salão. Ideal para todos os tipos de cabelo, ela permite que você ajuste a intensidade do calor e do vento para atender às suas necessidades específicas.<br/><br/><b>Tecnologia e Conforto ao Seu Alcance:</b> A Philco PSC3500 não é apenas potente, mas também foi projetada para proporcionar conforto e praticidade no uso diário. Seu design ergonômico e leve facilita a manobra, enquanto a função de jato de ar frio fixa o penteado e proporciona um acabamento brilhoso. Seja para um look casual ou uma produção mais elaborada, essa secadora é sua aliada perfeita.<br/><br/><b>Durabilidade</b> e <b>estilo</b> construída com materiais de alta qualidade, a Secadora de Cabelo Philco PSC3500 é <b>robusta</b> e <b>durável</b>, garantindo que você desfrute de seus recursos por muito tempo. Com um visual moderno e sofisticado, ela se destaca em qualquer ambiente, tornando-se não apenas uma ferramenta de beleza, mas também um item de decoração.<br/><br/>Não perca tempo! eleve seus cuidados com os cabelos a um novo patamar com a Philco PSC3500!<br/><b><br/></b><p><b>ESPECIFICAÇÕES TÉCNICAS:</b></p><p><br/></p>Velocidades: 3<br/>Controle de temperatura: 3<br/>Emissão de Íons: Íons Tourmaline<br/>Jato de ar frio: Sim<br/>Bocal direcionador de ar: Sim<br/>Dobrável: Sim<br/>Alça para Pendurar: Não<br/>Cabo 360: Sim<br/>Tamanho do fio (cm): 180<br/>Voltagem: 110V ou 220V (não é bivolt)<br/>Consumo (kWh): 0,14 kW/h<br/>Potência (W): 1450W<br/>Peso (kg): 0.88<br/>Referência: PSC3500<br/>Dimensões (AxLxP): 31,5 x 4,5 x 4,5cm<br/>Registro INMETRO: OCP 0040<br/><br/><b>Itens Inclusos:</b><br/><br/>- 1 Secador de Cabelo Philco<br/>- 1 Escova oval<br/>- 1 Escova raquete<br/>- 1 Bocal concentrador<br/>- 2 Cacheadores<br/><br/><b>Garantia Fabricante:</b> 12 meses",
@@ -322,5 +323,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "philco_39",
+  "creators": [
+    {
+      "name": "Amanda Soares",
+      "username": "mandasoaris",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_66.jpg",
+      "poster": "../img/produto-39-1.jpg",
+      "video": "https://files.catbox.moe/36o9s0.mp4#prod=39&slot=criador_1&slug=secador-de-cabelos-philco-ps",
+      "catbox_id": "36o9s0.mp4",
+      "startTime": 0.2,
+      "likes": 29800,
+      "commentsCount": 265,
+      "saves": 2280,
+      "shares": 118,
+      "description": "O verdadeiro PS5 das garotas! Secador e modelador 4 em 1 Philco PSC3500 com efeito Coanda 💅✨"
+    },
+    {
+      "name": "Karen Mendes",
+      "username": "dailykarenm",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_68.jpg",
+      "poster": "../img/produto-39-2.jpg",
+      "video": "https://files.catbox.moe/ybjva3.mp4#prod=39&slot=criador_2&slug=secador-de-cabelos-philco-ps",
+      "catbox_id": "ybjva3.mp4",
+      "startTime": 0.2,
+      "likes": 32700,
+      "commentsCount": 299,
+      "saves": 2540,
+      "shares": 138,
+      "description": "Comprei o secador 4 em 1 dobrável da Philco! Modela os cachos com ar sem queimar os fios 😍💖"
+    },
+    {
+      "name": "Lilian Maurente",
+      "username": "lilianmaurente",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_70.jpg",
+      "poster": "../img/produto-39-3.jpg",
+      "video": "https://files.catbox.moe/ynj6md.mp4#prod=39&slot=criador_3&slug=secador-de-cabelos-philco-ps",
+      "catbox_id": "ynj6md.mp4",
+      "startTime": 0.2,
+      "likes": 35600,
+      "commentsCount": 333,
+      "saves": 2800,
+      "shares": 158,
+      "description": "Resultado de salão em casa com preço de centavos perto do importado! Philco PSC3500 é surreal 😭"
+    },
+    {
+      "name": "Dai Mendes",
+      "username": "favoritosdadaii",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_72.jpg",
+      "poster": "../img/produto-39-1.jpg",
+      "video": "https://files.catbox.moe/m38pfu.mp4#prod=39&slot=criador_4&slug=secador-de-cabelos-philco-ps",
+      "catbox_id": "m38pfu.mp4",
+      "startTime": 0.2,
+      "likes": 38500,
+      "commentsCount": 367,
+      "saves": 3060,
+      "shares": 178,
+      "description": "Secador de Cabelos Philco PSC3500 4 em 1 Dobrável – 1450W! Perfeito para viagens 🧳💖"
+    },
+    {
+      "name": "Leandra Klisievicz",
+      "username": "leandraklisievicz",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_74.jpg",
+      "poster": "../img/produto-39-2.jpg",
+      "video": "https://files.catbox.moe/3el0vq.mp4#prod=39&slot=criador_5&slug=secador-de-cabelos-philco-ps",
+      "catbox_id": "3el0vq.mp4",
+      "startTime": 0.2,
+      "likes": 41400,
+      "commentsCount": 401,
+      "saves": 3320,
+      "shares": 198,
+      "description": "Review sincera do secador 4 em 1 da Philco, modela rápido e não queima o cabelo ⭐️💖"
+    }
+  ]
 }

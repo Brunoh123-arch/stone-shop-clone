@@ -659,9 +659,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/ncrzdr.mp4",
+    "src": "https://files.catbox.moe/ncrzdr.mp4#prod=25&slot=descricao&slug=bicicleta-aro-20-bmx-infanti",
     "poster": "../img/posters-desc/poster-desc-25.jpg",
-    "duration": "0:15"
+    "duration": "0:15",
+    "catbox_id": "ncrzdr.mp4"
   },
   "size_guide_html": "",
   "description_html": "Seja o mestre da adrenalina com nossa incrível bicicleta BMX aro 20! Projetada para oferecer uma experiência única de emoção e diversão sobre duas rodas, nossa bicicleta combina um design moderno e arrojado com uma construção robusta e resistente.<br/><br/>Montagem: A bicicleta é enviada desmontada e requer montagem. Recomendamos que a montagem seja feita por um profissional para garantir ajustes corretos nos freios e demais componentes, proporcionando maior segurança para a criança.<br/><br/>Garantia do Fabricante: 3 Meses<br/><br/>Recomendações de Uso: Iniciantes<br/><br/>Informações Técnicas:<br/><br/>- Material do Quadro: Quadro BMX Aço<br/><br/>- Modelo e Composição do Guidão: Guidão BMX em Aço<br/><br/>- Modelo e Composição do Garfo: Garfo BMX em Aço<br/><br/>- Movimento Central: 45mm<br/><br/>- Movimento Direção: Standard<br/><br/>- Modelo e Composição do Freios: Freios V-Brake<br/><br/>- Tipo de Engrenagem: Catraca 18 Dentes e Coroa 36 Dentes<br/><br/>- Marca e Composição do Pedivela: Pedivela Monobloco em Aço<br/><br/>- Modelo de Pedal: Pedal Nylon<br/><br/>- Pneus: Aro 20<br/><br/>- Modelo e Composição do Aro: Aro 20 Alumínio 36 Furos<br/><br/>- Marca e Composição dos Cubos: Cubos rolamentados em Aço 36 Furos<br/><br/>- Material do Canote: Aço<br/><br/>- Marca e Composição do Selim: Selim P.U.<br/><br/>Importante: As fotos são ilustrativas, a cor real do produto pode ser ligeiramente diferente devido a diferença de calibragem de monitor e telas de celular.<br/><br/>As transportadoras farão a entrega até a porta do endereço onde foi efetuado o pedido, qualquer movimentação do produto a partir dali é de inteira responsabilidade do cliente.",
@@ -787,5 +788,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "bmx_25",
+  "creators": [
+    {
+      "name": "Story Ofertas BR",
+      "username": "storyofertasbr",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_58.jpg",
+      "poster": "../img/produto-25-1.jpg",
+      "video": "https://files.catbox.moe/eym6k1.mp4#prod=25&slot=criador_1&slug=bicicleta-aro-20-bmx-infanti",
+      "catbox_id": "eym6k1.mp4",
+      "startTime": 0.2,
+      "likes": 17800,
+      "commentsCount": 140,
+      "saves": 1320,
+      "shares": 52,
+      "description": "Bicicleta Aro 20 BMX Infantil - Quadro reforçado em aço carbono e freios V-Brake precisos! 🚲🔥"
+    },
+    {
+      "name": "Shop da Bike",
+      "username": "shopdabike",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_60.jpg",
+      "poster": "../img/produto-25-2.jpg",
+      "video": "https://files.catbox.moe/s61az3.mp4#prod=25&slot=criador_2&slug=bicicleta-aro-20-bmx-infanti",
+      "catbox_id": "s61az3.mp4",
+      "startTime": 0.2,
+      "likes": 19600,
+      "commentsCount": 159,
+      "saves": 1460,
+      "shares": 62,
+      "description": "Aquela bike BMX que deixa qualquer passeio muito mais radical e divertido! A criançada ama 🚴‍♂️"
+    }
+  ]
 }

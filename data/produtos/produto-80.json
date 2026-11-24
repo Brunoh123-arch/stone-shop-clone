@@ -1066,9 +1066,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/3a2qhi.mp4",
+    "src": "https://files.catbox.moe/3a2qhi.mp4#prod=80&slot=descricao&slug=panificadora-19-programas-ga",
     "poster": "../img/posters-desc/poster-desc-80.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "3a2qhi.mp4"
   },
   "size_guide_html": "",
   "description_html": "PANIFICADORA 19 PROGRAMAS GALLANT 600W BRANCA (GPA1E19A).<br/><br/>Deixe o seu dia a dia mais gostoso com a Panificadora Gallant! Ela é a novidade que você precisa para deixar a sua rotina mais prática e saborosa. Ela é ideal para você, pois conta com 19 programas digitais além de possuir revestimento antiaderente e um display LCD intuitivo para você acompanhar o preparo dos seus pães.<br/><br/>Imagine acordar todas as manhãs com o aroma irresistível de pão quentinho, com a Função Programar de até 15 horas. Com ela, você pode deixar tudo preparado na noite anterior e desfrutar de pães frescos assim que acordar. Já a função Manter Aquecido, mantém o aquecimento da Panificadora por 60 minutos depois de pronto.<br/><br/>A Panificadora Gallant possibilita diversos modos de preparo para diferentes tipos de pães, como macio, francês, integral, sem glúten, entre outros. Adapte o tamanho dos pães de acordo com a sua preferência e crie receitas sem sair de casa e tenha total controle sobre os ingredientes utilizados, evitando aditivos artificiais, conservantes e outros ingredientes indesejados, sendo um ponto muito importante para pessoas com restrições alimentares ou dietas específicas.<br/><br/>Além de tudo isso, economize o seu bolso ao fazer pão em casa, sem a necessidade de comprar pães de qualidade similar em uma padaria ou supermercado. Você ainda economiza tempo e pode programar a máquina para começar a fazer pão enquanto você realiza outras tarefas.<br/><br/>Especificação Técnica:<br/><br/>Marca: Gallant<br/><br/>Modelo: GPA1E19A_127BR<br/><br/>Voltagem: 127V<br/><br/>Cor: Branco<br/><br/>Tipo de tomada (amperes): 20A<br/><br/>Itens inclusos: Máquina de pão, Forma de pão, Amassador, Copo medidor, Colher medidora, Gancho.<br/><br/>Capacidade: 500/750/1000g<br/><br/>Potência: 600W<br/><br/>Temperatura Mínima e Máxima: -5C  55C<br/><br/>Timer: Sim, 15 horas<br/><br/>Manter aquecido: Sim, 1 hora<br/><br/>Cor pão / Claro  Médio - Escuro: Sim<br/><br/>Possui 19 Funções Pré-programadas: Macio / Francês ou DÁgua / Pão Integral, Pão Rápido / Brioche / Sanduiche / Sem Glúten / Misturar / Massa Integral / Massa de Pizza / Massa / Sovar / Mingau / Descongelar / Fermentar / Misturar e Assar / Geleia / Bolo / Assar.<br/><br/>Painel digital: Sim<br/><br/>Visor: Visor de vidro<br/><br/>Recipiente removível: Sim<br/><br/>Material: PP e Metal<br/><br/>Forma revestimento antiaderente: Sim<br/><br/>Luz indicadora: Luz de fundo branca para LCD<br/><br/>Luz interna: Não<br/><br/>Dimensões do produto (AxLxP): 33,1 x 27,8 x 28,8 cm<br/><br/>Dimensões da Embalagem (AxLxP): 37,5 x 33,3 x 30,8 cm<br/><br/>Peso líquido: 4,5 kg<br/><br/>Peso bruto: 5,2 kg<br/><br/>Garantia: 6 Meses",
@@ -1153,5 +1154,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "panificadora_80",
+  "creators": [
+    {
+      "name": "Casa Com Amor",
+      "username": "casacomamor215",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_18.jpg",
+      "poster": "../videosprodutos/posters/video-produto-80.jpg",
+      "video": "https://files.catbox.moe/yvjiu5.mp4#prod=80&slot=criador_1&slug=panificadora-19-programas-ga",
+      "catbox_id": "yvjiu5.mp4",
+      "startTime": 0.2,
+      "likes": 23400,
+      "commentsCount": 205,
+      "saves": 1850,
+      "shares": 75,
+      "description": "Vem abrir comigo a minha nova aquisição! Panificadora Gallant 19 programas bate, fermenta e assa sozinha! 🍞✨ #panificadora #gallant #paocaseiro"
+    },
+    {
+      "name": "Kah (A Casa da Kah)",
+      "username": "acasadakah_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_22.jpg",
+      "poster": "../videosprodutos/posters/video-produto-80-take1.jpg",
+      "video": "https://files.catbox.moe/psnlw9.mp4#prod=80&slot=criador_2&slug=panificadora-19-programas-ga",
+      "catbox_id": "psnlw9.mp4",
+      "startTime": 0.2,
+      "likes": 25900,
+      "commentsCount": 235,
+      "saves": 2050,
+      "shares": 92,
+      "description": "Receita do pão na panificadora Gallant! Fica fofinho e super douradinho! 🍞🥐 #panificadoragallant"
+    }
+  ]
 }

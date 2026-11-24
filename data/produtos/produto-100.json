@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/c6hua3.mp4",
+    "src": "https://files.catbox.moe/c6hua3.mp4#prod=100&slot=descricao&slug=apple-iphone-15-15-plus-15-p",
     "poster": "../img/produto-100-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "c6hua3.mp4"
   },
   "size_guide_html": "",
   "description_html": "Apple iPhone 15, 15 Plus, 15 Pro e 15 Pro Max de vitrine com desconto. A partir de R$108,90. Frete grátis.",
@@ -328,5 +329,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "iphone_100",
+  "creators": [
+    {
+      "name": "Vitória Taques",
+      "username": "vitoriatmsugc",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_97.jpg",
+      "poster": "../img/produto-100-2.jpg",
+      "video": "https://files.catbox.moe/czrpji.mp4#prod=100&slot=criador_1&slug=apple-iphone-15-15-plus-15-p",
+      "catbox_id": "czrpji.mp4",
+      "startTime": 0.2,
+      "likes": 46000,
+      "commentsCount": 428,
+      "saves": 3840,
+      "shares": 227,
+      "description": "Unboxing do meu novo iPhone 15 cor azul! Acabamento em vidro fosco simplesmente perfeito 💙"
+    },
+    {
+      "name": "Fernanda Oliveira",
+      "username": "fernandaaa_oliv",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_98.jpg",
+      "poster": "../img/produto-100-1.jpg",
+      "video": "https://files.catbox.moe/4je9vm.mp4#prod=100&slot=criador_2&slug=apple-iphone-15-15-plus-15-p",
+      "catbox_id": "4je9vm.mp4",
+      "startTime": 0.2,
+      "likes": 49900,
+      "commentsCount": 476,
+      "saves": 4230,
+      "shares": 259,
+      "description": "Meu novo companheiro! iPhone 15 rosa, câmera de 48MP e bateria que dura o dia inteiro 🩷🥹"
+    },
+    {
+      "name": "Diogo Silva",
+      "username": "diogooslvv",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_99.jpg",
+      "poster": "../img/produto-100-2.jpg",
+      "video": "https://files.catbox.moe/xcta68.mp4#prod=100&slot=criador_3&slug=apple-iphone-15-15-plus-15-p",
+      "catbox_id": "xcta68.mp4",
+      "startTime": 0.2,
+      "likes": 53800,
+      "commentsCount": 524,
+      "saves": 4620,
+      "shares": 291,
+      "description": "Perfeição em cada detalhe! iPhone 15 Blue unboxing e primeiras impressões 🌊🐚"
+    },
+    {
+      "name": "Tuane Sangy",
+      "username": "tuanesangy",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_100.jpg",
+      "poster": "../img/produto-100-1.jpg",
+      "video": "https://files.catbox.moe/q5ctfn.mp4#prod=100&slot=criador_4&slug=apple-iphone-15-15-plus-15-p",
+      "catbox_id": "q5ctfn.mp4",
+      "startTime": 0.2,
+      "likes": 57700,
+      "commentsCount": 572,
+      "saves": 5010,
+      "shares": 323,
+      "description": "Comprei meu primeiro iPhone 15 e deu tudo certo! Câmera cinematográfica e super rápido ✨"
+    }
+  ]
 }

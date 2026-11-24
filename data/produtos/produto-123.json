@@ -251,9 +251,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/iopyod.mp4",
+    "src": "https://files.catbox.moe/iopyod.mp4#prod=123&slot=descricao&slug=lavadora-de-alta-pressao-por",
     "poster": "../img/posters-desc/poster-desc-123.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "iopyod.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🚗💦 Lavadora de Alta Pressão Portátil Sem Fio 48V com 2 Baterias e Maleta Completa</strong><br/><br/>\n\n              A ferramenta que revolucionou a limpeza automotiva e residencial! Lave carros, motos, calçadas, janelas e ar-condicionado em qualquer lugar, sem fios e sem precisar de torneira por perto.<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n\n              • <strong>Auto-Aspiração Inteligente:</strong> Puxe água direto de um balde, galão, piscina ou garrafa pet com a mangueira com filtro.<br/>• <strong>Pressão Forte de 48V:</strong> Remove sujeira pesada, lodo, graxa e crosta de barro com extrema facilidade.<br/>• <strong>Kit com 2 Baterias de Lítio:</strong> Trabalhe sem interrupções: enquanto usa uma bateria, a outra pode ficar carregando.<br/>• <strong>Canhão Snow Foam de Espuma:</strong> Gera espuma densa e consistente para lavagem automotiva profissional que não risca a pintura.<br/>• <strong>Maleta Portátil Compacta:</strong> Leve tudo organizado no porta-malas do carro com facilidade.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n\n              • Marca: Stone Power Tools<br/>• Modelo: HydroMax 48V Cordless<br/>• Motor: Cobre Puro de Alto Torque e Baixa Vibração<br/>• Itens Inclusos: 1 Lavadora Sem Fio, 2 Baterias 48V, 1 Carregador Bivolt, 1 Mangueira 5m, 1 Filtro, 2 Bicos, 1 Snow Foam, 1 Maleta e Manual<br/>• Garantia: 1 ano com nota fiscal Stone Shop",
@@ -320,5 +321,50 @@
     "rating": 4.9,
     "sales": "5.4K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "lavadora123",
+  "creators": [
+    {
+      "name": "bionic.shop",
+      "username": "bionic.shop",
+      "avatar": "../img/avatars-lavadora/creator-bionic.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-123-c2.jpg",
+      "video": "https://files.catbox.moe/cqx9m9.mp4#prod=123&slot=criador_1&slug=lavadora-de-alta-pressao-por",
+      "catbox_id": "cqx9m9.mp4",
+      "startTime": 0.2,
+      "likes": 37300,
+      "commentsCount": 339,
+      "saves": 3090,
+      "shares": 156,
+      "description": "Lava jato portátil profissional com maleta completa! Puxa água direto de balde ou torneira! A pressão é surreal! 🧰⚡ #LavadoraPortátil #Limpeza #lavajato #Aline Ferreira"
+    },
+    {
+      "name": "Edutilidades Shop",
+      "username": "edutilidades",
+      "avatar": "../img/avatars-lavadora/creator-ed.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-123-c3.jpg",
+      "video": "https://files.catbox.moe/wcutms.mp4#prod=123&slot=criador_2&slug=lavadora-de-alta-pressao-por",
+      "catbox_id": "wcutms.mp4",
+      "startTime": 0.2,
+      "likes": 40400,
+      "commentsCount": 383,
+      "saves": 3400,
+      "shares": 182,
+      "description": "Lavadora alta pressão a bateria 48V kit completo com aplicador de sabão, filtro e 2 bicos de leque! Muito potente e leve! 🚗🧼 #lavajato #ferramentas #tiktokshop"
+    },
+    {
+      "name": "Amanda Nogueira",
+      "username": "amandanogueira_",
+      "avatar": "../img/avatars-lavadora/creator-Aline Ferreira.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-123-c4.jpg",
+      "video": "https://files.catbox.moe/2lscen.mp4#prod=123&slot=criador_3&slug=lavadora-de-alta-pressao-por",
+      "catbox_id": "2lscen.mp4",
+      "startTime": 0.2,
+      "likes": 43500,
+      "commentsCount": 427,
+      "saves": 3710,
+      "shares": 208,
+      "description": "O produto que todo homem e dono de casa precisa ter! Lavadora de alta pressão sem fio com maleta organizadora! Comprei na Stone Shop com super desconto! 🚀🚿 #lavadoraaltapressao #lavajato #viraltiktokshop"
+    }
+  ]
 }

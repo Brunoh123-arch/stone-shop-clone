@@ -220,9 +220,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/p2w012.mp4",
+    "src": "https://files.catbox.moe/p2w012.mp4#prod=85&slot=descricao&slug=caixa-de-som-karaoke-joog-x2",
     "poster": "../videosprodutos/posters/poster-criador-85-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "p2w012.mp4"
   },
   "size_guide_html": "",
   "description_html": "O Break X2 oferece áudio potente e rico com woofers duplos de 4 polegadas e tweeters de 1,2 polegadas, atingindo um nível de pressão sonora (SPL) de 106 dB e uma faixa de frequência de 48 Hz a 20 kHz.<br/><br/>Se estiver dando uma festa, se apresentando no palco ou discursando em um evento, desfrute de um som perfeitamente equilibrado e de graves profundos.<br/><br/>Tela sensível ao toque HD de 10,1\" com aplicativos de karaokê e música<br/><br/>Navegue tranquilamente pelas suas apresentações com a tela sensível ao toque LCD-IPS de 10,1 polegadas, com resolução de 800P.<br/><br/>Acesse aplicativos populares como Karafun e Spotify, tornando mais fácil do que nunca cantar junto com suas músicas favoritas ou transmitir música durante os eventos.<br/><br/>Microfone profissional sem fio<br/><br/>Projetado para cantores e palestrantes, o microfone dinâmico sem fio oferece áudio nítido com um alcance de 10 metros e uma bateria com duração de 30 horas.<br/><br/>Seus efeitos sonoros personalizáveis e a conexão estável o tornam perfeito para qualquer apresentação, desde karaokê até discursos ao vivo.<br/><br/>Bateria de longa duração para uso prolongado<br/><br/>Com até 8 horas de reprodução quando a tela está ligada e 11 horas com a tela desligada, o Break X2 garante que você nunca ficará sem energia durante momentos críticos em eventos, apresentações ou reuniões ao ar livre.<br/><br/>Controle de som personalizável<br/><br/>Ajuste as configurações de graves, agudos e eco a seu gosto com controles intuitivos. Quer esteja conduzindo uma aula de ginástica ou organizando uma reunião, o Break X2 oferece ajustes precisos de som para proporcionar a experiência de áudio perfeita.<br/><br/>Opções versáteis de conectividade<br/><br/>Conecte-se facilmente via USB, entrada/saída AUX, HDMI ou Bluetooth. Seja para fazer streaming de música, conectar-se a um microfone ou guitarra ou conectar-se a vários dispositivos, o Break X2 oferece transições perfeitas entre dispositivos para qualquer ocasião.<br/><br/>Conectividade sem fio confiável<br/><br/>Mantenha-se conectado com Bluetooth e Wi-Fi 802.11ac para obter conectividade estável e de longo alcance de até 50 metros. Expanda seu sistema de som com o TWS (True Wireless Stereo) para locais maiores, garantindo que sua música ou apresentação chegue a todos.<br/><br/>O que vem na caixa:<br/><br/>Break X2 x1.<br/><br/>Microfones x2.<br/><br/>Alça de transporte x1.<br/><br/>Adaptador de alimentação CA x1.<br/><br/>Cabo do adaptador CA x1.",
@@ -304,5 +305,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "joog_x2_85",
+  "creators": [
+    {
+      "name": "ROSLEON - Leonardo Mey",
+      "username": "leonardomey",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/e28ee00cd5cf11f9630cdd2a9cbe43b5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=ab8709c5&x-expires=1795413600&x-signature=M%2BbOazt6I6Yl%2FMqFmv0BlkFwtV4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-85-2.jpg",
+      "video": "https://files.catbox.moe/0yy10w.mp4#prod=85&slot=criador_1&slug=caixa-de-som-karaoke-joog-x2",
+      "catbox_id": "0yy10w.mp4",
+      "startTime": 0.2,
+      "likes": 29500,
+      "commentsCount": 264,
+      "saves": 2330,
+      "shares": 103,
+      "description": "🔊 Essa é a Joog Break X2! Caixa de som com tela HD, sistema Android, 🎬 assiste clipes, 🎶 ouve Spotify, navega na internet 🌐 e ainda faz k..."
+    },
+    {
+      "name": "Mundo smartphone",
+      "username": "mundotec.smartphone",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/3519d2019b7c95181d83b0b7e0ae17cf~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=44084daa&x-expires=1795413600&x-signature=TfNxPt%2BQMkn%2F372IUxCd3XEaM%2B8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-85-3.jpg",
+      "video": "https://files.catbox.moe/xj9rgq.mp4#prod=85&slot=criador_2&slug=caixa-de-som-karaoke-joog-x2",
+      "catbox_id": "xj9rgq.mp4",
+      "startTime": 0.2,
+      "likes": 32300,
+      "commentsCount": 298,
+      "saves": 2560,
+      "shares": 122,
+      "description": "'Uma caixa de som com Android? A Joog break X2 vai explodir sua mente e seus ouvidos!' #joog #ikarao  #som #caixadesom #caixadesombluetoo..."
+    }
+  ]
 }

@@ -710,9 +710,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/sdcjn0.mp4",
+    "src": "https://files.catbox.moe/sdcjn0.mp4#prod=68&slot=descricao&slug=jogo-de-panelas-ceramica-kit",
     "poster": "../img/posters-desc/poster-desc-68.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "sdcjn0.mp4"
   },
   "size_guide_html": "",
   "description_html": "CONJUNTO PANELAS NAPOLI CERÂMICA<br/><br/>Composição: ALUMÍNIO<br/><br/>Revestimento Interno: CERÂMICO<br/><br/>Revestimento Externo: PINTURA<br/><br/>Tampa: VIDRO<br/><br/>1 Caçarola 20 cm com tampa de vidro;<br/><br/>1 Frigideira 18 cm;<br/><br/>1 Panela 18 cm com tampa de vidro;<br/><br/>1 Panela 22cm com tampa de vidro;<br/><br/>1 Leiteira 14 cm - 1,5 Litro.<br/><br/>ATENÇÃOI INSTRUÇÕES DE USO:<br/><br/>Pode ir a lava louças<br/><br/>Os utensílios não podem sofrer modificações. Caso necessário, todas as peças devem ser substituídas por peças originais. Em caso de dúvidas e/ou necessidade de manutenção, contatar o SAC.<br/><br/>Para melhor conservação e durabilidade dos produtos, antes do primeiro uso, lave com uma esponja macia, enxague e seque cada peça. Não usar abrasivos para limpeza. Utilize espátula de silicone ou madeira para não danificar a superfície do antiaderente. Cozinhe em temperaturas baixas ou médias para melhor distribuição de calor. Evite esquentar o produto vazio, Resfrie a panela antes de lavar. Não levar ao micro-ondas. Pode ser lavado em lava louças. Capacidade máxima de cozimento 3/4 da capacidade.",
@@ -797,5 +798,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "ceramica_68",
+  "creators": [
+    {
+      "name": "Nicole Santos",
+      "username": "nyymorenna",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_82.jpg",
+      "poster": "../img/produto-68-1.jpg",
+      "video": "https://files.catbox.moe/gacybk.mp4#prod=68&slot=criador_1&slug=jogo-de-panelas-ceramica-kit",
+      "catbox_id": "gacybk.mp4",
+      "startTime": 0.2,
+      "likes": 26800,
+      "commentsCount": 225,
+      "saves": 2110,
+      "shares": 95,
+      "description": "Renovando meu enxoval com o jogo de panelas em cerâmica 5 peças! Fundo triplo antiaderente 🤍✨"
+    },
+    {
+      "name": "Bia Barreto",
+      "username": "beatrizz.barreto",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_84.jpg",
+      "poster": "../img/produto-68-2.jpg",
+      "video": "https://files.catbox.moe/mxayy3.mp4#prod=68&slot=criador_2&slug=jogo-de-panelas-ceramica-kit",
+      "catbox_id": "mxayy3.mp4",
+      "startTime": 0.2,
+      "likes": 29300,
+      "commentsCount": 254,
+      "saves": 2330,
+      "shares": 111,
+      "description": "Troquei minhas panelas velhas por cerâmica antiaderente! Não gruda nada e cozinha por igual ✨"
+    },
+    {
+      "name": "Mila Mifar",
+      "username": "milamifar",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_86.jpg",
+      "poster": "../img/produto-68-1.jpg",
+      "video": "https://files.catbox.moe/wfucd0.mp4#prod=68&slot=criador_3&slug=jogo-de-panelas-ceramica-kit",
+      "catbox_id": "wfucd0.mp4",
+      "startTime": 0.2,
+      "likes": 31800,
+      "commentsCount": 283,
+      "saves": 2550,
+      "shares": 127,
+      "description": "Kit 5 peças em cerâmica com fundo triplo que funciona em fogão a gás e indução 💕"
+    },
+    {
+      "name": "Yasmim Oliveira",
+      "username": "yascoliveirab",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_88.jpg",
+      "poster": "../img/produto-68-2.jpg",
+      "video": "https://files.catbox.moe/lr0tj1.mp4#prod=68&slot=criador_4&slug=jogo-de-panelas-ceramica-kit",
+      "catbox_id": "lr0tj1.mp4",
+      "startTime": 0.2,
+      "likes": 34300,
+      "commentsCount": 312,
+      "saves": 2770,
+      "shares": 143,
+      "description": "Jogo 5 panelas cerâmica antiaderente super premium, tampa de vidro com saída de vapor 🤩"
+    },
+    {
+      "name": "Cláudia Alencar",
+      "username": "claudiaalencar_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_90.jpg",
+      "poster": "../img/produto-68-1.jpg",
+      "video": "https://files.catbox.moe/0yeupc.mp4#prod=68&slot=criador_5&slug=jogo-de-panelas-ceramica-kit",
+      "catbox_id": "0yeupc.mp4",
+      "startTime": 0.2,
+      "likes": 36800,
+      "commentsCount": 341,
+      "saves": 2990,
+      "shares": 159,
+      "description": "Conjunto 5 peças cerâmica completo, cabo antitérmico e acabamento marmorizado de luxo 🏠"
+    }
+  ]
 }

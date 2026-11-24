@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/049abg.mp4",
+    "src": "https://files.catbox.moe/049abg.mp4#prod=107&slot=descricao&slug=mini-aspirador-de-po-sem-fio",
     "poster": "../img/posters-desc/poster-desc-107.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "049abg.mp4"
   },
   "size_guide_html": "",
   "description_html": "Mini Aspirador de Pó Portátil e Soprador Turbo com 75% OFF no 11.11. Apenas R$ 34,90. Frete grátis.",
@@ -321,5 +322,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "aspirador",
+  "creators": [
+    {
+      "name": "Canal CleanTech",
+      "username": "canalcleantech",
+      "avatar": "../img/creators-aspirador/creator-2.jpg",
+      "poster": "../videosprodutos/posters/poster-107-criador2.jpg",
+      "video": "https://files.catbox.moe/nwhxcm.mp4#prod=107&slot=criador_1&slug=mini-aspirador-de-po-sem-fio",
+      "catbox_id": "nwhxcm.mp4",
+      "startTime": 0.2,
+      "likes": 9590,
+      "commentsCount": 50,
+      "saves": 1710,
+      "shares": 235,
+      "description": "Além de aspirar ele é soprador turbo de ar! Limpa teclado, PC e acende churrasqueira 🔥"
+    },
+    {
+      "name": "Dicas do Casal",
+      "username": "dicasdocasal_",
+      "avatar": "../img/creators-aspirador/creator-3.jpg",
+      "poster": "../videosprodutos/posters/poster-107-criador3.jpg",
+      "video": "https://files.catbox.moe/yki4q2.mp4#prod=107&slot=criador_2&slug=mini-aspirador-de-po-sem-fio",
+      "catbox_id": "yki4q2.mp4",
+      "startTime": 0.2,
+      "likes": 10080,
+      "commentsCount": 58,
+      "saves": 1820,
+      "shares": 260,
+      "description": "Filtro HEPA lavável reutilizável, muito fácil de limpar na torneira. Valeu cada centavo! 😍"
+    }
+  ]
 }

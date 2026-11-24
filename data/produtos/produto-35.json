@@ -282,9 +282,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/scc6vb.mp4",
+    "src": "https://files.catbox.moe/scc6vb.mp4#prod=35&slot=descricao&slug=caixa-de-som-jbl-boombox-4-b",
     "poster": "../videosprodutos/posters/poster-criador-35-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "scc6vb.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p><b>🔊 Caixa de Som JBL Portátil Boombox 4</b></p><p><b>Eleve sua experiência musical com som imbatível e design incrível!</b></p><p><br/></p><p>Aumente a sua experiência musical com a Caixa de Som Portátil Boombox 4. Este poderoso dispositivo é projetado para proporcionar um som imbatível durante todo o dia, seja na praia, no quintal ou em qualquer lugar que você desejar. Descubra todos os detalhes que fazem da Boombox 4 a escolha perfeita para suas festas e momentos de lazer.</p><br/><b>Som Potente e Clareza Inigualável<br/></b><br/>Com o potente som JBL Pro, a Boombox 4 garante que suas músicas soem altas e claras, mesmo em volumes elevados. Equipado com dois woofers maiores, dois tweeters e três radiadores passivos, este modelo entrega graves profundos e estrondosos, proporcionando uma experiência auditiva imersiva. O AI Sound Boost analisa a música em tempo real, ajustando o som para oferecer mais potência com menos distorção.<br/><br/><b>Design Moderno e Portátil<br/></b><br/>O design da Boombox 4 é uma atualização do clássico, sendo maior, mas mais leve, facilitando o transporte para onde quer que a festa vá. A sua construção robusta e o acabamento elegante fazem dela não apenas uma caixa de som, mas também um item de estilo. Com classificação IP68, ela é à prova d'água e poeira, permitindo que você curta a música sem se preocupar com as condições climáticas.<br/><br/>Atributos do Produto<br/>Marca: JBL<br/>Modelo: 28913917<br/><br/><b>Características:</b> Potente som JBL Pro, AI Sound Boost, dois woofers, dois tweeters, três radiadores passivos, design leve e portátil, IP68 à prova d'água e poeira, até 34 horas de reprodução.<br/><br/>Durabilidade e Autonomia: Com até 34 horas de reprodução, a Boombox 4 garante que a música nunca pare. Sua bateria de longa duração permite que você aproveite suas faixas favoritas por mais tempo, sem a necessidade de recargas constantes. Este é o parceiro ideal para qualquer evento, seja uma festa na piscina ou um piquenique no parque.<br/>Se você busca uma caixa de som que una potência, qualidade sonora e portabilidade, a Caixa de Som JBL Portátil Boombox 4 é a escolha perfeita. Não perca a oportunidade de elevar suas experiências musicais a um novo nível. Adquira a sua agora mesmo e leve a festa para onde você for!<br/><br/><b> DÚVIDAS FREQUENTES<br/></b><br/><b> O produto é novo ou usado?<br/></b><br/>Resposta: Você recebe um produto <b>100% novo.</b><br/><br/><b> O produto acompanha nota fiscal?<br/></b><br/>Resposta: Sim! Todos os nossos produtos vêm com nota fiscal emitida em nome do CPF que for informado na compra. Nunca vendemos sem nota fiscal. Sua compra é transparente e segura.",
@@ -376,5 +377,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "jbl_boombox4_35",
+  "creators": [
+    {
+      "name": "Tik Tok Shopp Produtos",
+      "username": "faclub_gildoreporte",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/def838db22159abeb54752464d6b0e6b~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2dc4b906&x-expires=1795413600&x-signature=D2rmQV%2Bk0m4KCN6kqAvEiMEL7%2Bw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-35-2.jpg",
+      "video": "https://files.catbox.moe/6d3x7u.mp4#prod=35&slot=criador_1&slug=caixa-de-som-jbl-boombox-4-b",
+      "catbox_id": "6d3x7u.mp4",
+      "startTime": 0.2,
+      "likes": 32000,
+      "commentsCount": 302,
+      "saves": 2460,
+      "shares": 117,
+      "description": "Caixa de Som Jbl Boombox 4 Bluetooth "
+    },
+    {
+      "name": "JBL bombox 4",
+      "username": "jbl_bombox4_pura",
+      "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_28.jpg",
+      "poster": "../videosprodutos/posters/poster-criador-35-3.jpg",
+      "video": "https://files.catbox.moe/x5ega3.mp4#prod=35&slot=criador_2&slug=caixa-de-som-jbl-boombox-4-b",
+      "catbox_id": "x5ega3.mp4",
+      "startTime": 0.2,
+      "likes": 35100,
+      "commentsCount": 344,
+      "saves": 2720,
+      "shares": 139,
+      "description": "Deixe uma sugestão de música para o próximo vídeo aqui!👇#somaltomotivo #jbl #bombox4 "
+    }
+  ]
 }

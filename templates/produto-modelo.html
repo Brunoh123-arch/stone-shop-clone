@@ -268,6 +268,8 @@
 <script>
 const PRODUTO_ATUAL = {{PRODUTO_ATUAL_JSON}};
 window.PRODUTO_ATUAL = PRODUTO_ATUAL;
+window.PRODUTO_CRIADORES = {{PRODUTO_CRIADORES_JSON}};
+window.PRODUTO_CRIADORES_CTX = "{{PRODUTO_CRIADORES_CTX}}";
 
 function handleAddToCart() {
   handleAddToCartWithVariacoes(PRODUTO_ATUAL, false);
@@ -313,7 +315,7 @@ if (typeof window.toggleProductDetails !== 'function') {
 }
 </script>
 <script src="../tracker.js"></script>
-<script src="../js/videos-criadores-v3.js?v={{ASSET_VERSION}}"></script>
+<script src="../js/videos-criadores-modular.js?v={{ASSET_VERSION}}"></script>
 {{EXTRA_SCRIPTS_HTML}}
 </body>
 </html>

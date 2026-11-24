@@ -276,9 +276,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/8dgikb.mp4",
+    "src": "https://files.catbox.moe/8dgikb.mp4#prod=90&slot=descricao&slug=jogo-de-panela-avant-space-5",
     "poster": "../videosprodutos/posters/video-produto-89.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "8dgikb.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p><b>Jogo de Panelas Avant Space – Praticidade e Design Premiado</b></p>\n<p>Ganhe espaço na cozinha! Panelas empilháveis que otimizam seu armário e geladeira com inteligência.</p>\n<p><br/></p>\n<p>💡 <b>Principais Benefícios:</b></p>\n<p>• <b>Empilhável &amp; Compacto:</b> Organize sua cozinha sem bagunça e com máxima elegância.</p>\n<p>• <b>Versátil:</b> Cozinhe, asse e sirva direto à mesa.</p>\n<p>• <b>Antiaderente 5 camadas efeito mármore:</b> Nada gruda e super resistente a riscos.</p>\n<p>• <b>Tampas multiuso:</b> Descanso de panela + 2 modos de escoamento inteligente.</p>\n<p>• <b>Do fogão ao forno:</b> Suporta até 180°C com distribuição de calor perfeitamente uniforme.</p>\n<p>🏆 <b>Premiado:</b> iF Design Award 2025 – design internacional reconhecido mundialmente!</p>\n<p><br/></p>\n<p>📦 <b>O Conjunto Inclui:</b></p>\n<p>• 1x Caçarola 16 cm + tampa de vidro inteligente</p>\n<p>• 1x Caçarola 20 cm + tampa de vidro inteligente</p>\n<p>• 1x Caçarola 24 cm + tampa de vidro inteligente</p>\n<p>• 1x Frigideira 24 cm antiaderente mármore</p>\n<p>• 1x Frigideira 28 cm antiaderente mármore</p>\n<p><br/></p>\n<p>⚙️ <b>Especificações Técnicas:</b></p>\n<p>• <b>Material:</b> Alumínio fundido antiaderente 5 camadas de alta performance</p>\n<p>• <b>Espessura:</b> 4,5 mm de fundo triplo condutivo</p>\n<p>• <b>Fogões Compatíveis:</b> Indução, gás, elétrico e vitrocerâmico</p>\n<p>• <b>Forno:</b> Gás e elétrico até 180°C</p>\n<p>• <b>Cabos e Alças:</b> Soft touch anti-queimadura e ergonômico</p>\n<p><br/></p>\n<p>🛡️ <b>Cuidados e Conservação:</b></p>\n<p>• Use utensílios de silicone, nylon ou madeira para preservar o revestimento.</p>\n<p>• Evite micro-ondas e produtos abrasivos na lavagem.</p>\n<p>• Deixe esfriar antes de lavar para máxima vida útil da camada antiaderente.</p>\n<p><br/></p>\n<p><b>Compre agora e transforme sua cozinha com qualidade profissional Stone Shop!</b></p>",
@@ -364,5 +365,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "panelas_avant_90",
+  "creators": [
+    {
+      "name": "Junior Ofertas",
+      "username": "juniorofertas",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/dccf13f6c55a869b60534c46af76aca7~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=c3175f2a&x-expires=1795366800&x-signature=6u0hZz5cZwQY81r0ljf5Xl0JyF0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-89-take1.jpg",
+      "video": "https://files.catbox.moe/002wty.mp4#prod=90&slot=criador_1&slug=jogo-de-panela-avant-space-5",
+      "catbox_id": "002wty.mp4",
+      "startTime": 0.2,
+      "likes": 25320,
+      "commentsCount": 493,
+      "saves": 2040,
+      "shares": 358,
+      "description": "Jogo de panelas cerâmica antiaderente completo! Cabos em baquelite que não esquentam e tampas de vidro temperado! ✨🥘 #Aline Ferreira #panelasdeinducao"
+    },
+    {
+      "name": "Rê Santana",
+      "username": "produtinhosonlinee",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/d719e4b9a10459813607d8841c845178~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=9505dc7a&x-expires=1795366800&x-signature=g2ckDU9i0DPmdYVlNuQjCieKC24%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-89-take2.jpg",
+      "video": "https://files.catbox.moe/06vxoq.mp4#prod=90&slot=criador_2&slug=jogo-de-panela-avant-space-5",
+      "catbox_id": "06vxoq.mp4",
+      "startTime": 0.2,
+      "likes": 29140,
+      "commentsCount": 566,
+      "saves": 2230,
+      "shares": 406,
+      "description": "Testando o antiaderente 5 camadas de mármore do jogo Avant Space! Desliza 100% sem óleo e limpa super fácil! 📦✨ #panelas #unboxing"
+    },
+    {
+      "name": "Mari Munyz",
+      "username": "marimunyz",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/20e863722ea248da2fabd8c40de4f7ff~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=5f281081&x-expires=1795366800&x-signature=0HrBFk4YO1Sp3qlPa2R5p6cfhOE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-89-take3.jpg",
+      "video": "https://files.catbox.moe/7048l9.mp4#prod=90&slot=criador_3&slug=jogo-de-panela-avant-space-5",
+      "catbox_id": "7048l9.mp4",
+      "startTime": 0.2,
+      "likes": 32960,
+      "commentsCount": 639,
+      "saves": 2420,
+      "shares": 454,
+      "description": "Unboxing completo do jogo de panelas de indução! O material é bem grosso e a distribuição de calor é uniforme! 🖤✨ #cozinhaorganizada"
+    },
+    {
+      "name": "Anny Andrade",
+      "username": "annyandrade03",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/7333783957153103877~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=658d0ebb&x-expires=1795366800&x-signature=6xPewySIK3bmCV8oLiu0IkMNf8U%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "../videosprodutos/posters/video-produto-89-take4.jpg",
+      "video": "https://files.catbox.moe/pekqoj.mp4#prod=90&slot=criador_4&slug=jogo-de-panela-avant-space-5",
+      "catbox_id": "pekqoj.mp4",
+      "startTime": 0.2,
+      "likes": 36780,
+      "commentsCount": 712,
+      "saves": 2610,
+      "shares": 502,
+      "description": "Meu jogo de panelas chegou e eu estou completamente apaixonada! Design sofisticado que decora a bancada da cozinha! 🍳🔥 #fogaoinducao #panelastognana"
+    }
+  ]
 }

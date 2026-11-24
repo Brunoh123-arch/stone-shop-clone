@@ -274,9 +274,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/k3u5ff.mp4",
+    "src": "https://files.catbox.moe/k3u5ff.mp4#prod=8&slot=descricao&slug=caixa-de-som-amplificada-aiw",
     "poster": "../img/posters-desc/poster-desc-8.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "k3u5ff.mp4"
   },
   "size_guide_html": "",
   "description_html": "Sejam bem-vindos à Loja Oficial da AIWA no TikTok Shop!<br/>\n<strong>Caixa de Som Amplificada AIWA Party Box AWS-PB-07 Bluetooth 100W RMS</strong><br/><br/>\n              A AIWA Party Box AWS-PB-07 foi projetada para transformar qualquer reunião em uma verdadeira celebração com áudio potente, definição acústica e iluminação vibrante. Com 100W RMS de potência real entregues através de um sistema de 2 vias (Woofer de 6,5\" e Tweeter de 1,5\"), você garante batidas encorpadas com a tecnologia Bass Boost e vocais cristalinos sem distorções.<br/><br/>\n<strong>PRINCIPAIS CARACTERÍSTICAS:</strong><br/>\n              • <strong>Potência de 100W RMS:</strong> Som potente e imersivo com alto alcance dinâmico.<br/>\n              • <strong>Sistema de Áudio 2 Vias:</strong> 1 Woofer de 6,5 polegadas para graves e médios encorpados + 1 Tweeter de 1,5 polegadas para agudos detalhados.<br/>\n              • <strong>Show de Luzes LED RGB:</strong> 7 modos de iluminação que pulsam dinamicamente em sincronia com o ritmo da música.<br/>\n              • <strong>Bateria de Longa Duração:</strong> Até 8 horas de autonomia contínua para você curtir a festa sem se preocupar com tomadas.<br/>\n              • <strong>Proteção IPX4:</strong> Resistente a respingos de água, perfeita para uso à beira da piscina ou em áreas externas.<br/>\n              • <strong>Conectividade Completa:</strong> Bluetooth 5.3 de ultra baixa latência, porta USB para pendrive, leitor de cartão Micro-SD e entrada Auxiliar P2 (3,5mm).<br/>\n              • <strong>Entrada P10 para Microfone e Instrumentos:</strong> Faça seu karaokê com os amigos ou conecte seu violão/guitarra.<br/>\n              • <strong>Função TWS (True Wireless Stereo):</strong> Sincronize duas caixas AIWA AWS-PB-07 sem fio para dobrar a potência e criar um palco estéreo absurdo.<br/>\n              • <strong>Compatível com App AIWA Brasil:</strong> Equalize frequências e controle os efeitos visuais de luz diretamente pelo seu smartphone.<br/><br/>\n<strong>ITENS INCLUSOS NA EMBALAGEM:</strong><br/>\n              • 01 Caixa de Som Amplificada AIWA Party Box AWS-PB-07<br/>\n              • 01 Cabo USB-C para Carregamento Rápido<br/>\n              • 01 Manual de Instruções em Português<br/><br/>\n              Garantia oficial do fabricante de 12 meses com nota fiscal eletrônica.",
@@ -361,5 +362,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "aiwa_partybox_8",
+  "creators": [
+    {
+      "name": "TioSuper Tech",
+      "username": "tio_super",
+      "avatar": "../img/creators-tech/avatar-criador-8-2.jpg",
+      "poster": "../img/poster-criador-8-2.jpg",
+      "video": "https://files.catbox.moe/8ynmxe.mp4#prod=8&slot=criador_1&slug=caixa-de-som-amplificada-aiw",
+      "catbox_id": "8ynmxe.mp4",
+      "startTime": 0.2,
+      "likes": 15880,
+      "commentsCount": 102,
+      "saves": 1310,
+      "shares": 40,
+      "description": "Testando os graves no talo da AIWA Party Box! Essa caixa bate muito forte com o Bass Boost ativado, qualidade absurda pra festa! 🔥🎶 #aiwa #caixadesom #bass"
+    },
+    {
+      "name": "Lucas Áudio Review",
+      "username": "lucas.audioreview",
+      "avatar": "../img/creators-tech/avatar-criador-8-3.jpg",
+      "poster": "../img/poster-criador-8-3.jpg",
+      "video": "https://files.catbox.moe/32ulh9.mp4#prod=8&slot=criador_2&slug=caixa-de-som-amplificada-aiw",
+      "catbox_id": "32ulh9.mp4",
+      "startTime": 0.2,
+      "likes": 16360,
+      "commentsCount": 116,
+      "saves": 1420,
+      "shares": 48,
+      "description": "Demonstração da AIWA Party Box com entrada de microfone, conexão Bluetooth 5.3 e Lightshow multicolorido! O som preenche o ambiente todo! 🎤🎉 #aiwa #partybox"
+    }
+  ]
 }

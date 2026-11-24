@@ -236,9 +236,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/32ulh9.mp4",
+    "src": "https://files.catbox.moe/32ulh9.mp4#prod=61&slot=descricao&slug=caixa-de-som-joog-amplificad",
     "poster": "../img/posters-desc/poster-desc-61.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "32ulh9.mp4"
   },
   "size_guide_html": "",
   "description_html": "Som Imersivo e Potente<br/><br/>A Break X1 oferece uma experiência de áudio de alta fidelidade com graves intensos e agudos cristalinos. Equipada com woofer de 6,5 + 2 tweeters de 2,6, alcança 107 dB de potência e frequência de 45 Hz a 20 kHz, perfeita para karaokê, festas, discursos públicos ou apresentações ao ar livre.<br/><br/> Tela Touch Screen Full HD de 13,3<br/><br/>Desfrute de uma navegação fluida e intuitiva com a tela LCD-IPS sensível ao toque 1080p. Além de exibir letras e configurações de forma clara, vem com aplicativos integrados como Spotify e Karafun, facilitando o acesso às suas músicas favoritas direto no aparelho.<br/><br/> Microfones Sem Fio Profissionais<br/><br/>Acompanham 2 microfones sem fio com alcance de até 10 metros, áudio nítido e até 30 horas de autonomia. Ideais para cantar, palestrar ou animar eventos.<br/><br/> Bateria de Longa Duração<br/><br/>Com bateria recarregável de 4800mAh, oferece até 6 horas de reprodução contínua com a tela ligada, garantindo diversão e confiabilidade em qualquer ocasião.<br/><br/> Controles de Áudio Personalizáveis<br/><br/>Ajuste graves, agudos e eco conforme sua preferência. Ideal para quem busca um som adaptado ao ambiente e ao estilo da apresentação.<br/><br/> Conectividade Completa e Sem Fio Estável<br/><br/>Bluetooth 5.4 com alcance de até 50 metros<br/><br/>Wi-Fi 802.11ac (2.4G/5G)<br/><br/>Compatível com TWS (True Wireless Stereo) para parear múltiplas caixas<br/><br/>Conexões: USB, AUX In/Out, HDMI, MicroSD, entrada 6.5mm para microfone ou guitarra<br/><br/>Especificações Técnicas<br/><br/>Marca: Joog by Ikarao<br/><br/>Modelo: Break X1<br/><br/>Cor: Preto<br/><br/>Potência: 800W (RMS 80W + 10Wx2)<br/><br/>Tela: Touch LCD IPS 13,3 HD 1080p (rotação 180)<br/><br/>Bateria: 4800mAh (até 6h reprodução)<br/><br/>Sistema Operacional: Android 13<br/><br/>Conectividade: Bluetooth 5.4 / Wi-Fi 802.11ac<br/><br/>Alcance: Microfone até 10m | Conexão sem fio até 50m<br/><br/>Entradas/Saídas: 6.5mm MIC/GUITAR, Aux In, Aux Out, USB, HDMI, MicroSD<br/><br/>Peso embalado: 12,7 kg<br/><br/>Dimensões embalagem: 36 x 57,5 x 32,5 cm<br/><br/>Voltagem: Bivolt automático (110-220V | 50-60Hz)<br/><br/>EAN: 6975806660250<br/><br/> Conteúdo da Embalagem<br/><br/>1 Caixa de Som Break X1<br/><br/>2 Microfones sem fio<br/><br/>1 Alça de transporte<br/><br/>1 Cabo de alimentação<br/><br/>1 Guia rápido<br/><br/> Diferenciais:<br/><br/> Som profissional 800W com graves potentes<br/><br/> Tela Touch Full HD 13,3 com apps Spotify e Karafun<br/><br/> 2 microfones sem fio inclusos  até 30h de uso<br/><br/> Bateria de 4800mAh para até 6h de reprodução<br/><br/> Bluetooth 5.4, Wi-Fi e TWS  conectividade total<br/><br/> Ajustes de graves, agudos e eco personalizados",
@@ -324,5 +325,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "joog_break_61",
+  "creators": [
+    {
+      "name": "JOEL DBM",
+      "username": "joel_dbm",
+      "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "poster": "../videosprodutos/posters/poster-criador-61-1.jpg",
+      "video": "https://files.catbox.moe/lbth06.mp4#prod=61&slot=criador_1&slug=caixa-de-som-joog-amplificad",
+      "catbox_id": "lbth06.mp4",
+      "startTime": 0.2,
+      "likes": 32400,
+      "commentsCount": 310,
+      "saves": 2600,
+      "shares": 115,
+      "description": "Speaker Karaokê Joog Break X1, Karaokê Joog Break X1, caixa de som Karaokê Joog Break X1, caixa de som "
+    },
+    {
+      "name": "joog.tech",
+      "username": "joog.tech",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/9a6968ad147e5b982961c5d03dac883e~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=62c4084a&x-expires=1795413600&x-signature=6MFeYcFfuxfocU5AP1oBRAPJoo8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-61-2.jpg",
+      "video": "https://files.catbox.moe/ohajdy.mp4#prod=61&slot=criador_2&slug=caixa-de-som-joog-amplificad",
+      "catbox_id": "ohajdy.mp4",
+      "startTime": 0.2,
+      "likes": 35900,
+      "commentsCount": 358,
+      "saves": 2900,
+      "shares": 141,
+      "description": "@Boiadeira agora poderá fazer karaokê em qualquer lugar com o speaker karaoke Break X1 da JOOG🎤💙🔥 #anacastela #boiadeira #joog #enjoyexpe..."
+    },
+    {
+      "name": "Deiatoppi",
+      "username": "deiatoppi",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/2f07644af68c4a772e14cde9361ee25f~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=e47d7725&x-expires=1795413600&x-signature=GJF%2FG0LQ9FrVf0DWX1q%2B0XJ4y1s%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-61-3.jpg",
+      "video": "https://files.catbox.moe/czck79.mp4#prod=61&slot=criador_3&slug=caixa-de-som-joog-amplificad",
+      "catbox_id": "czck79.mp4",
+      "startTime": 0.2,
+      "likes": 39400,
+      "commentsCount": 406,
+      "saves": 3200,
+      "shares": 167,
+      "description": "PROMO NA @cellshop.oficial #ciudaddeleste #paraguay #comprasparaguai "
+    }
+  ]
 }

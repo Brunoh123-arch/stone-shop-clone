@@ -270,9 +270,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/ibv6vn.mp4",
+    "src": "https://files.catbox.moe/ibv6vn.mp4#prod=14&slot=descricao&slug=churrasqueira-assador-a-gas-",
     "poster": "../img/posters-desc/poster-desc-14.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "ibv6vn.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>✨ O Verdadeiro Churrasco Gaúcho no Conforto do seu Apartamento ✨</strong><br/><br/>\n              A <strong>Churrasqueira Assador a Gás GLP Rotativo Arke AGR-05 Bivolt</strong> foi desenvolvida especialmente para quem ama um bom churrasco mas não abre mão da praticidade, economia e ausência total de fumaça. Ideal para apartamentos, varandas gourmet, sacadas e residências sem churrasqueira de alvenaria.<br/><br/>\n              Equipada com 5 espetos giratórios automáticos e 2 queimadores infravermelhos independentes a gás GLP, ela assa de forma homogênea carnes, picanha, frango inteiro, linguiça e pão de alho, mantendo o calor distribuído por igual e selando os sucos naturais do alimento.<br/><br/>\n<strong>Destaques da Churrasqueira Arke:</strong><br/>\n              • <strong>Zero Fumaça:</strong> Ecologicamente correta e perfeita para condomínios e ambientes fechados.<br/>\n              • <strong>Porta em Vidro Curvo Transparente:</strong> Permite visualizar o ponto da carne sem abrir a porta e assar peças grandes com circulação perfeita do calor.<br/>\n              • <strong>Queimadores Infravermelhos a Gás GLP:</strong> 2 queimadores independentes de alto rendimento térmico e baixíssimo consumo (apenas 200 g/h por queimador).<br/>\n              • <strong>Sistema de Rotação Suave (Bivolt):</strong> Motor elétrico bivolt que gira os 5 espetos a 6 RPM de forma contínua e silenciosa.<br/>\n              • <strong>Bandeja Coletora de Gordura:</strong> Fabricada em inox, recolhe toda a gordura facilitando a limpeza e tornando seu churrasco muito mais saudável.<br/>\n              • <strong>Estrutura em Aço com Pintura Epóxi:</strong> Durabilidade extrema contra calor e oxidação, pés antiderrapantes para total estabilidade.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Arke Oficial<br/>\n              • Modelo: AGR-05 Vitta Smart<br/>\n              • Alimentação Térmica: Gás GLP (botijão convencional de cozinha)<br/>\n              • Alimentação do Motor Rotativo: Elétrico Bivolt (110V / 220V com chave seletora)<br/>\n              • Queimadores: 2 Queimadores Infravermelhos Independentes<br/>\n              • Consumo de Gás: 200 g/h por queimador | Consumo de Energia: 0,03 kW/h (130W)<br/>\n              • Capacidade por Espeto: 1,5 kg de carne (Capacidade total: 7,5 kg)<br/>\n              • Espetos Inclusos: 04 espetos simples + 01 espeto triplo com cabos de madeira de lei<br/>\n              • Dimensões Externas: Largura 58 cm | Altura 71 cm | Profundidade 40 cm | Peso: 24 kg | Certificação INMETRO.",
@@ -357,5 +358,120 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "churrasqueira_14",
+  "creators": [
+    {
+      "name": "Camila Rocha",
+      "username": "camilaoch.ape",
+      "avatar": "../img/avatars-churras/creator-camila.jpg",
+      "poster": "../img/posters-churras/poster-arke-c1.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/jwkiqt.mp4#prod=14&slot=criador_1&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "jwkiqt.mp4",
+      "startTime": 0.2,
+      "likes": 37200,
+      "commentsCount": 41,
+      "saves": 3700,
+      "shares": 485,
+      "description": "Churrasqueira Arke Vitta Smart 5 Espetos Rotativa no apê! Sem fumaça nenhuma 🔥🥩"
+    },
+    {
+      "name": "Marcos Vinicius",
+      "username": "marcoschurras_ape",
+      "avatar": "../img/avatars-churras/creator-marcos.jpg",
+      "poster": "../img/posters-churras/poster-arke-c2.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/qmv0y6.mp4#prod=14&slot=criador_2&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "qmv0y6.mp4",
+      "startTime": 0.2,
+      "likes": 28400,
+      "commentsCount": 32,
+      "saves": 2800,
+      "shares": 245,
+      "description": "Frangos inteiros dourando nos 5 espetos rotativos da Arke! Fica muito macio e suculento 🍗"
+    },
+    {
+      "name": "Larissa Rezende",
+      "username": "larissarezende_home",
+      "avatar": "../img/avatars-churras/creator-larissa.jpg",
+      "poster": "../img/posters-churras/poster-arke-c3.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/mfpyu6.mp4#prod=14&slot=criador_3&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "mfpyu6.mp4",
+      "startTime": 0.2,
+      "likes": 31700,
+      "commentsCount": 45,
+      "saves": 3270,
+      "shares": 310,
+      "description": "Ligando a Arke Vitta Smart 5 espetos elétrica: esquenta rápido demais e o vidro não deixa fumaça escapar!"
+    },
+    {
+      "name": "Rodrigo Barcellos",
+      "username": "rodrigo.brasa",
+      "avatar": "../img/avatars-churras/creator-rodrigo.jpg",
+      "poster": "../img/posters-churras/poster-arke-c4.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/cbcaqg.mp4#prod=14&slot=criador_4&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "cbcaqg.mp4",
+      "startTime": 0.2,
+      "likes": 42190,
+      "commentsCount": 58,
+      "saves": 4219,
+      "shares": 494,
+      "description": "Churrasco completo com 5 espetos: picanha, alcatra e linguiça toscana assando juntos por igual! 🥩"
+    },
+    {
+      "name": "Juliana Mendes",
+      "username": "julianamendes_ape",
+      "avatar": "../img/avatars-churras/creator-juliana.jpg",
+      "poster": "../img/posters-churras/poster-arke-c5.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/ba3szw.mp4#prod=14&slot=criador_5&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "ba3szw.mp4",
+      "startTime": 0.2,
+      "likes": 25400,
+      "commentsCount": 39,
+      "saves": 2640,
+      "shares": 278,
+      "description": "Zero fumaça no apartamento! A água na bandeja de gordura não deixa queimar e é super fácil de lavar 👏"
+    },
+    {
+      "name": "Fernando Costa",
+      "username": "fernandochurrasco",
+      "avatar": "../img/avatars-churras/creator-fernando.jpg",
+      "poster": "../img/posters-churras/poster-arke-c6.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/jhxyrw.mp4#prod=14&slot=criador_6&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "jhxyrw.mp4",
+      "startTime": 0.2,
+      "likes": 29050,
+      "commentsCount": 46,
+      "saves": 2955,
+      "shares": 300,
+      "description": "Picanha com legumes e queijo coalho nos espetos giratórios elétricos da Arke. Melhor investimento do ano!"
+    },
+    {
+      "name": "Patrícia Alencar",
+      "username": "paty.varandagourmet",
+      "avatar": "../img/avatars-churras/creator-patricia.jpg",
+      "poster": "../img/posters-churras/poster-arke-c7.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/vtlv5y.mp4#prod=14&slot=criador_7&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "vtlv5y.mp4",
+      "startTime": 0.2,
+      "likes": 22900,
+      "commentsCount": 42,
+      "saves": 2350,
+      "shares": 287,
+      "description": "Montagem completa da churrasqueira Arke 5 espetos na varanda gourmet. Espetos macios e resistentes 🍖"
+    },
+    {
+      "name": "Lucas Medeiros",
+      "username": "lucasmedeiros_bbq",
+      "avatar": "../img/avatars-churras/creator-lucas.jpg",
+      "poster": "../img/posters-churras/poster-arke-c8.jpg?v=20261113_arke_v100",
+      "video": "https://files.catbox.moe/3xa4m3.mp4#prod=14&slot=criador_8&slug=churrasqueira-assador-a-gas-",
+      "catbox_id": "3xa4m3.mp4",
+      "startTime": 0.2,
+      "likes": 34550,
+      "commentsCount": 69,
+      "saves": 3525,
+      "shares": 414,
+      "description": "Olha a casquinha dourada dessa picanha giratória na Arke Vitta Smart! 100% aprovada para apartamento!"
+    }
+  ]
 }

@@ -601,9 +601,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/upj5la.mp4",
+    "src": "https://files.catbox.moe/upj5la.mp4#prod=41&slot=descricao&slug=fritadeira-air-fryer-forno-o",
     "poster": "../img/poster-oven-41-desc.jpg",
-    "duration": "0:35"
+    "duration": "0:35",
+    "catbox_id": "upj5la.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>✨ 2 em 1: Fritadeira Sem Óleo + Forno Elétrico de 12 Litros ✨</strong><br/><br/>\nA <strong>Air Fryer Forno Oven 12L Mondial AFON-12L-BI</strong> une a rapidez e a crocância da fritadeira a ar com o amplo espaço e a versatilidade de um forno elétrico. Permite assar, cozinhar, gratinar e fritar porções generosas para toda a família sem utilizar uma gota de óleo!<br/><br/>\n<strong>Destaques e Funcionalidades Principais:</strong><br/>\n• <strong>Capacidade Gigante de 12 Litros:</strong> Espaço de sobra para assar frango inteiro, pizzas de tamanho família, tortas, bolos e batatas fritas crocantes de uma só vez.<br/>\n• <strong>Painel Digital Touch com 10 Funções:</strong> Prepare receitas com apenas um toque pré-definido: Batata, Frango, Carne, Peixe, Camarão, Pão de Queijo, Pizza, Bolo, Legumes e Reaquecer.<br/>\n• <strong>Porta com Amplo Visor + Luz Interna:</strong> Acompanhe o ponto exato das suas receitas sem precisar abrir a porta ou perder calor.<br/>\n• <strong>Circulação de Ar Quente 360°:</strong> Tecnologia de convecção avançada que doura de maneira uniforme, deixando os alimentos crocantes por fora e suculentos por dentro.<br/>\n• <strong>Revestimento Antiaderente Duraflon:</strong> Tecnologia exclusiva que impede os alimentos de grudarem no fundo, facilitando a limpeza em segundos.<br/>\n• <strong>Kit Completo de Acessórios:</strong> Acompanha 3 assadeiras antiaderentes exclusivas, cesto de 5 litros removível, bandeja coletora de resíduos e luva de silicone de proteção térmica.<br/><br/>\n<strong>Produto 100% Original com Nota Fiscal e Garantia Nacional de 12 Meses Mondial do Brasil. Envio Imediato com Frete Grátis e Rastreamento Seguro Stone Shop!</strong>",
@@ -692,5 +693,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "oven_41",
+  "creators": [
+    {
+      "name": "Laís Veloso",
+      "username": "laisvelosop",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_24.jpg",
+      "poster": "../img/produto-41-1.jpg",
+      "video": "https://files.catbox.moe/9y2j8z.mp4#prod=41&slot=criador_1&slug=fritadeira-air-fryer-forno-o",
+      "catbox_id": "9y2j8z.mp4",
+      "startTime": 0.2,
+      "likes": 31200,
+      "commentsCount": 290,
+      "saves": 2450,
+      "shares": 125,
+      "description": "Airfryer Mondial 12 litros Forno Oven! Cabe um frango inteiro e assa tudo por igual 🤩🍗"
+    },
+    {
+      "name": "Nosso Lar 123",
+      "username": "nosso_lar__123",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_26.jpg",
+      "poster": "../img/produto-41-2.jpg",
+      "video": "https://files.catbox.moe/zi3ydm.mp4#prod=41&slot=criador_2&slug=fritadeira-air-fryer-forno-o",
+      "catbox_id": "zi3ydm.mp4",
+      "startTime": 0.2,
+      "likes": 34400,
+      "commentsCount": 325,
+      "saves": 2730,
+      "shares": 147,
+      "description": "Minha nova Air Fryer Oven de 12 litros da Mondial! Vem com 2 bandejas e cesto de 5L ✨"
+    },
+    {
+      "name": "Edvana Alves",
+      "username": "amorzinho4435",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_28.jpg",
+      "poster": "../img/produto-41-3.jpg",
+      "video": "https://files.catbox.moe/zpl81h.mp4#prod=41&slot=criador_3&slug=fritadeira-air-fryer-forno-o",
+      "catbox_id": "zpl81h.mp4",
+      "startTime": 0.2,
+      "likes": 37600,
+      "commentsCount": 360,
+      "saves": 3010,
+      "shares": 169,
+      "description": "Air Fryer Mondial 12L prática demais pra família toda! Dá pra fazer várias receitas juntas!"
+    },
+    {
+      "name": "Thayná Mello",
+      "username": "euthaynamello_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_30.jpg",
+      "poster": "../img/produto-41-1.jpg",
+      "video": "https://files.catbox.moe/d478qj.mp4#prod=41&slot=criador_4&slug=fritadeira-air-fryer-forno-o",
+      "catbox_id": "d478qj.mp4",
+      "startTime": 0.2,
+      "likes": 40800,
+      "commentsCount": 395,
+      "saves": 3290,
+      "shares": 191,
+      "description": "A minha mais nova Air Fryer 12 litros queridinha! Acabamento lindo em inox e super rápida!"
+    },
+    {
+      "name": "Patrícia Dias",
+      "username": "patriciadias804",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_32.jpg",
+      "poster": "../img/produto-41-2.jpg",
+      "video": "https://files.catbox.moe/fg8dza.mp4#prod=41&slot=criador_5&slug=fritadeira-air-fryer-forno-o",
+      "catbox_id": "fg8dza.mp4",
+      "startTime": 0.2,
+      "likes": 44000,
+      "commentsCount": 430,
+      "saves": 3570,
+      "shares": 213,
+      "description": "Bolo fofinho e dourado feito na Air Fryer Forno Mondial 12L! Super recomendo!"
+    }
+  ]
 }

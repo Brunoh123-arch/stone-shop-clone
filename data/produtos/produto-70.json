@@ -512,9 +512,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/n5jecm.mp4",
+    "src": "https://files.catbox.moe/n5jecm.mp4#prod=70&slot=descricao&slug=secadora-de-roupa-mueller-so",
     "poster": "../videosprodutos/posters/video-produto-70.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "n5jecm.mp4"
   },
   "size_guide_html": "",
   "description_html": "A Secadora de Roupas Solaris oferece 6 varões fixos e mais 5 cabides removíveis que permitem secar vários tipos de roupa ao mesmo tempo.<br/><br/>Possui botão seletor de ar quente ou frio, timer de até 120 minutos, roupas secas em menos tempo.<br/><br/>Conta com sistema Giro Fácil: permite que a câmara seja recolhida e a secadora seja dobrada até a parede, ocupando menos espaço na lavanderia.<br/><br/>INFORMAÇÕES TÉCNICAS<br/><br/>Altura (cm): 105cm<br/><br/>Largura (cm): 50cm<br/><br/>Largura do produto instalado(cm): 62cm<br/><br/>Profundidade (cm): 57cm<br/><br/>Peso (Kg): 7,9Kg<br/><br/>Timer: Timer de até 120 minutos e botão seletor de ar quente ou frio<br/><br/>Abertura: Zíper<br/><br/>Aletas que reaproveitam ar quente: Sim<br/><br/>Capacidade de Secagem - Roupa úmida (Kg): 8Kg<br/><br/>Ciclo do timer (min): 45 a 120 minutos<br/><br/>Tipo de Cabides: 6 varões fixos e 5 cabides removíveis<br/><br/>Câmara: Plástico especial<br/><br/>Câmara: Plástico<br/><br/>IMPORTANTE<br/><br/>A secadora acompanha um suporte para instalação na parede e sua caixa possui um gabarito impresso com a marcação exata onde deverá ser feita a furação. O ideal é instalar a uma altura de 1,6m a 1,8m do piso para maior comodidade e ergonomia.<br/><br/>Recomendamos apenas a utilização de cabides originais Mueller na secadora, pois os mesmos são fabricados com um material adequado para a temperatura que a secadora atinge. Preservando o tecido das peças de roupa.",
@@ -606,5 +607,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "secadora_mueller_70",
+  "creators": [
+    {
+      "name": "Loxinha",
+      "username": "homeservicers",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/c0c547bae30b240ff881427fbc1f3ce1~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4226547b&x-expires=1795438800&x-signature=5kIljr8hd7%2F5lX1qiL0AuTrpMr0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-70-1.jpg",
+      "video": "https://files.catbox.moe/bxlf5d.mp4#prod=70&slot=criador_1&slug=secadora-de-roupa-mueller-so",
+      "catbox_id": "bxlf5d.mp4",
+      "startTime": 0.2,
+      "likes": 25000,
+      "commentsCount": 220,
+      "saves": 1970,
+      "shares": 83,
+      "description": "O que faltou pra deixar sua Secadora novinha em folha? #fyp #secadora "
+    },
+    {
+      "name": "Tik tok shop 🏪",
+      "username": "hebert.aleatorio_01",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/45bc925856384527a86a4d2af09f2cc9~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=a6147c9b&x-expires=1795438800&x-signature=mNCsXSJZ%2BmvSUrz9%2F5Ir60VTi18%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-70-2.jpg",
+      "video": "https://files.catbox.moe/dvd56q.mp4#prod=70&slot=criador_2&slug=secadora-de-roupa-mueller-so",
+      "catbox_id": "dvd56q.mp4",
+      "startTime": 0.2,
+      "likes": 27400,
+      "commentsCount": 248,
+      "saves": 2160,
+      "shares": 98,
+      "description": "Secadora Mueller Solaris 8kg Seca até 8kg de roupa em até 120 min, sem depender do sol. É só pendurar nos cabides, fechar a capa e girar ..."
+    },
+    {
+      "name": "Gaby Braganca",
+      "username": "tkgabybraganca",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/e8216c20775889d08a8972b1bc178b50~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=0ad48556&x-expires=1795438800&x-signature=DVoTY9HvYqbMm7%2FxctUjI21XTD8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-70-3.jpg",
+      "video": "https://files.catbox.moe/xqysay.mp4#prod=70&slot=criador_3&slug=secadora-de-roupa-mueller-so",
+      "catbox_id": "xqysay.mp4",
+      "startTime": 0.2,
+      "likes": 29800,
+      "commentsCount": 276,
+      "saves": 2350,
+      "shares": 113,
+      "description": "✨ Já imaginou ter roupas secas, bem cuidadas e sem esforço em poucos minutos? A Secadora de Parede Solaris da @Mueller Eletrodomésticos ..."
+    }
+  ]
 }

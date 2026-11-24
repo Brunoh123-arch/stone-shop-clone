@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/d7tqme.mp4",
+    "src": "https://files.catbox.moe/d7tqme.mp4#prod=111&slot=descricao&slug=projetor-led-natalino-16-des",
     "poster": "../img/posters-desc/poster-desc-111.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "d7tqme.mp4"
   },
   "size_guide_html": "",
   "description_html": "Projetor LED Natalino com 16 Desenhos Temáticos em Alta Definição. Rotação 360°, USB Bivolt. 75% OFF no 11.11. Apenas R$ 49,90. Frete grátis.",
@@ -316,5 +317,78 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "projetor_111",
+  "creators": [
+    {
+      "name": "Larissa Holf",
+      "username": "lariholf",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
+      "poster": "../videosprodutos/posters/poster-111-kahena.jpg",
+      "video": "https://files.catbox.moe/hiuwu2.mp4#prod=111&slot=criador_1&slug=projetor-led-natalino-16-des",
+      "catbox_id": "hiuwu2.mp4",
+      "startTime": 0.2,
+      "likes": 15300,
+      "commentsCount": 78,
+      "saves": 1100,
+      "shares": 35,
+      "description": "Projetor de Luz Natalino - efeito perfeito na parede de casa! ✨🎅 #natal #projetorled #decoracaodenatal"
+    },
+    {
+      "name": "Wilson Achados",
+      "username": "wilsondotiktok0",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_25.jpg",
+      "poster": "../videosprodutos/posters/poster-111-bruna.jpg",
+      "video": "https://files.catbox.moe/wvxbgd.mp4#prod=111&slot=criador_2&slug=projetor-led-natalino-16-des",
+      "catbox_id": "wvxbgd.mp4",
+      "startTime": 0.2,
+      "likes": 15620,
+      "commentsCount": 93,
+      "saves": 1210,
+      "shares": 42,
+      "description": "Projetor natalino 16 desenhos temáticos USB, sensacional pra enfeitar sem bagunça! 🎄✨"
+    },
+    {
+      "name": "Malu Looks",
+      "username": "malu_looks",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-111-criadora2.jpg",
+      "video": "https://files.catbox.moe/eruxi4.mp4#prod=111&slot=criador_3&slug=projetor-led-natalino-16-des",
+      "catbox_id": "eruxi4.mp4",
+      "startTime": 0.2,
+      "likes": 15940,
+      "commentsCount": 108,
+      "saves": 1320,
+      "shares": 49,
+      "description": "Olha o efeito desse projetor de LED natalino na sala, super prático e lindo! 🎄✨ #projetornatalino"
+    },
+    {
+      "name": "Alisson Sebold",
+      "username": "alissonseboldrecomendabr",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_04.jpg",
+      "poster": "../videosprodutos/posters/poster-111-ale.jpg",
+      "video": "https://files.catbox.moe/fmi37c.mp4#prod=111&slot=criador_4&slug=projetor-led-natalino-16-des",
+      "catbox_id": "fmi37c.mp4",
+      "startTime": 0.2,
+      "likes": 16260,
+      "commentsCount": 123,
+      "saves": 1430,
+      "shares": 56,
+      "description": "Maneira fácil de deixar a casa no clima de Natal! O projetor LED natalino cria um efeito lindo! ✨🎅"
+    },
+    {
+      "name": "Danilo Trovão",
+      "username": "dmntrovao",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_07.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-111.jpg",
+      "video": "https://files.catbox.moe/6lslcd.mp4#prod=111&slot=criador_5&slug=projetor-led-natalino-16-des",
+      "catbox_id": "6lslcd.mp4",
+      "startTime": 0.2,
+      "likes": 16580,
+      "commentsCount": 138,
+      "saves": 1540,
+      "shares": 63,
+      "description": "Projetor natalino com 16 desenhos temáticos, funciona perfeitamente! #DecoracaoDeNatal #natal"
+    }
+  ]
 }

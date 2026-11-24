@@ -236,9 +236,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/i9wuhf.mp4",
+    "src": "https://files.catbox.moe/i9wuhf.mp4#prod=96&slot=descricao&slug=aparelho-de-jantar-cha-oxfor",
     "poster": "../img/posters-desc/poster-desc-96.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "i9wuhf.mp4"
   },
   "size_guide_html": "",
   "description_html": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças com 86% OFF. Apenas R$69,90. Frete grátis.",
@@ -321,5 +322,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "aparelho_ryo_96",
+  "creators": [
+    {
+      "name": "Casa da Bruh / Diário 🤍",
+      "username": "home_porbru",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/83d14f214e5c163527b8989ee956ec37~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=a86b7413&x-expires=1795438800&x-signature=5twI5JDiGw6Bgb5pT2g4cw3ziIg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-96-1.jpg",
+      "video": "https://files.catbox.moe/rcsh9b.mp4#prod=96&slot=criador_1&slug=aparelho-de-jantar-cha-oxfor",
+      "catbox_id": "rcsh9b.mp4",
+      "startTime": 0.2,
+      "likes": 31100,
+      "commentsCount": 284,
+      "saves": 2480,
+      "shares": 112,
+      "description": "COMPREI, COMPREI, COMPREI! 😍💙🍽️ Vizinhas, eu tô completamente apaixonada nesse jogo de jantar da Oxford! O Ryo Blue Bay tem esses tons de..."
+    },
+    {
+      "name": "Millena Assenco",
+      "username": "millenaassencomattos",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/af437aec54fcafa71a4997111951b881~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=33fcd2df&x-expires=1795438800&x-signature=xYovq6VcqLwl%2ByM64t2gGs0plCk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-96-2.jpg",
+      "video": "https://files.catbox.moe/csot17.mp4#prod=96&slot=criador_2&slug=aparelho-de-jantar-cha-oxfor",
+      "catbox_id": "csot17.mp4",
+      "startTime": 0.2,
+      "likes": 34000,
+      "commentsCount": 320,
+      "saves": 2720,
+      "shares": 132,
+      "description": "#jogodejantaroxford #jogodejantarporcelana  #maresia #jogodejantar "
+    },
+    {
+      "name": "Kássia Ravanna/UGC",
+      "username": "kassiaravanna",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/288a849c3be5912f939e2938cb9a6855~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4689571e&x-expires=1795438800&x-signature=r9XnFtT2gqgwdKMec2bTV63Ac%2F8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-96-3.jpg",
+      "video": "https://files.catbox.moe/60byr1.mp4#prod=96&slot=criador_3&slug=aparelho-de-jantar-cha-oxfor",
+      "catbox_id": "60byr1.mp4",
+      "startTime": 0.2,
+      "likes": 36900,
+      "commentsCount": 356,
+      "saves": 2960,
+      "shares": 152,
+      "description": "Você comprou o aparelho de jantar dos seus sonhos 😍❤️🙌🏼  Aparelho de jantar 30 peças Ryo Maresia Oxford porcelana lá do @Mercado Livre  I..."
+    }
+  ]
 }

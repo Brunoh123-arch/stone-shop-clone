@@ -630,9 +630,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/ge965g.mp4",
+    "src": "https://files.catbox.moe/ge965g.mp4#prod=32&slot=descricao&slug=chuveiro-acqua-duo-lorenzett",
     "poster": "../videosprodutos/posters/video-produto-32.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "ge965g.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p><strong>Chuveiro Acqua Duo Lorenzetti Ultra Eletrônico</strong></p><p>Produto oficial com nota fiscal e garantia total.</p>",
@@ -732,5 +733,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "chuveiro_32",
+  "creators": [
+    {
+      "name": "Patrick Araújo",
+      "username": "patrickaraujos",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_15.jpg",
+      "poster": "../videosprodutos/posters/video-produto-32-take3.jpg",
+      "video": "https://files.catbox.moe/b1fvp6.mp4#prod=32&slot=criador_1&slug=chuveiro-acqua-duo-lorenzett",
+      "catbox_id": "b1fvp6.mp4",
+      "startTime": 0.2,
+      "likes": 25400,
+      "commentsCount": 215,
+      "saves": 1980,
+      "shares": 82,
+      "description": "Review sincero do Acqua Duo Lorenzetti! Pressão excelente e água quentinha no chuveiro e ducha! 🚿🔥 #reforma #chuveiro #acquaduo"
+    },
+    {
+      "name": "Thais Magnago",
+      "username": "thaismagnago",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_30.jpg",
+      "poster": "../videosprodutos/posters/video-produto-32-take4.jpg",
+      "video": "https://files.catbox.moe/gdwjt5.mp4#prod=32&slot=criador_2&slug=chuveiro-acqua-duo-lorenzett",
+      "catbox_id": "gdwjt5.mp4",
+      "startTime": 0.2,
+      "likes": 28200,
+      "commentsCount": 247,
+      "saves": 2200,
+      "shares": 100,
+      "description": "Melhor investimento pra casa! O chuveiro Acqua Duo é lindo e super potente! 🖤✨ #tourpeloape #acquaduo #lorenzetti"
+    }
+  ]
 }

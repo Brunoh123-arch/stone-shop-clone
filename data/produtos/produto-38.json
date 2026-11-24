@@ -496,9 +496,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/ml8w43.mp4",
+    "src": "https://files.catbox.moe/ml8w43.mp4#prod=38&slot=descricao&slug=kit-lattafa-yara-collection-",
     "poster": "../img/produto-38-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "ml8w43.mp4"
   },
   "size_guide_html": "",
   "description_html": "<p><b>Transforme seu Estilo com o Kit Lattafa Yara Collection EDP - 4 Fragrâncias Exclusivas! 💖✨</b></p><p><b><br/></b></p><p><b>Você merece o melhor em cada momento.</b> O <b>Lattafa Yara Collection Kit EDP 4x25ml</b> traz para você a sofisticação das fragrâncias árabes em quatro opções irresistíveis, criadas para mulheres que sabem o que querem: versatilidade, elegância e poder.</p><p><b>🌸 O que é o Lattafa Yara Collection?</b></p><p>Um conjunto único de <b>4 perfumes</b> da família olfativa <b>Floral Frutal Gourmand</b>, lançados pela Lattafa Perfumes. Cada fragrância foi cuidadosamente desenvolvida para capturar a essência feminina e a sofisticação da perfumaria árabe, oferecendo uma experiência sensorial completa. No kit, você encontra:</p><p><b>Yara: </b>Uma fragrância fresca e delicada, perfeita para o dia a dia.</p><p><b>Yara Moi: </b>Um toque de sensualidade para momentos especiais.</p><p><b>Yara Tous: </b>Doçura e frescor em uma única fragrância, ideal para o trabalho e passeios.</p><p><b>Yara Candy:</b> Um perfume gourmand para um toque de charme e aconchego.</p><p><br/></p><p><b>💫 Por que você vai amar?</b></p><p>Versatilidade para todos os momentos: Seja no trabalho, um encontro casual ou uma noite especial, há uma fragrância perfeita para cada ocasião.</p><p>Frascos práticos e elegantes: Cada frasco de 25ml é compacto, ideal para levar na bolsa ou viajar, e vem em designs sofisticados e coloridos.</p><p>Fragrâncias duradouras: Proporciona uma sensação de frescor e sofisticação o dia inteiro.</p><p>Perfume para todas as estações: As notas florais e frutais se encaixam perfeitamente nos climas ameno de primavera e outono.</p><p><br/></p><p><b>🌟 Transforme Seu Dia a Dia com o Poder do Perfume!</b></p><p>O Lattafa Yara Collection Kit é o presente perfeito para quem deseja se destacar e exalar confiança. Com quatro fragrâncias para você usar como e quando quiser, o kit se adapta ao seu estilo e à sua personalidade única.</p><p>Não perca tempo e eleve sua experiência olfativa ao próximo nível com o Lattafa Yara. Seja a mulher que marca presença em qualquer lugar!</p>",
@@ -578,5 +579,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "yara_38",
+  "creators": [
+    {
+      "name": "Gabby Fragrances",
+      "username": "gabbyfragrances",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_42.jpg",
+      "poster": "../img/produto-38-2.jpg",
+      "video": "https://files.catbox.moe/etv97p.mp4#prod=38&slot=criador_1&slug=kit-lattafa-yara-collection-",
+      "catbox_id": "etv97p.mp4",
+      "startTime": 0.2,
+      "likes": 37600,
+      "commentsCount": 350,
+      "saves": 3110,
+      "shares": 170,
+      "description": "Lattafa Yara Collection 4 Pcs Perfume Set! Fixação absurda e aroma incrível! 🌸🎀"
+    },
+    {
+      "name": "Aura 18K Perfumaria",
+      "username": "lojaaura18k",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_44.jpg",
+      "poster": "../img/produto-38-3.jpg",
+      "video": "https://files.catbox.moe/di2102.mp4#prod=38&slot=criador_2&slug=kit-lattafa-yara-collection-",
+      "catbox_id": "di2102.mp4",
+      "startTime": 0.2,
+      "likes": 40700,
+      "commentsCount": 390,
+      "saves": 3420,
+      "shares": 195,
+      "description": "Kit Yara Collection Lattafa. Quatro miniaturas, um universo de fragrâncias de luxo! 💖"
+    },
+    {
+      "name": "Moça dos Perfumes",
+      "username": "mocadosperfumescba",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_46.jpg",
+      "poster": "../img/produto-38-1.jpg",
+      "video": "https://files.catbox.moe/rxlz3w.mp4#prod=38&slot=criador_3&slug=kit-lattafa-yara-collection-",
+      "catbox_id": "rxlz3w.mp4",
+      "startTime": 0.2,
+      "likes": 43800,
+      "commentsCount": 430,
+      "saves": 3730,
+      "shares": 220,
+      "description": "Doce, cremoso e envolvente. O kit Yara árabe é um dos maiores sucessos de vendas do TikTok!"
+    }
+  ]
 }

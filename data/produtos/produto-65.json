@@ -642,9 +642,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/my8eud.mp4",
+    "src": "https://files.catbox.moe/my8eud.mp4#prod=65&slot=descricao&slug=sofa-3-lugares-retratil-e-re",
     "poster": "../img/posters-desc/poster-desc-65.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "my8eud.mp4"
   },
   "size_guide_html": "",
   "description_html": "Perfeito para quem tem ambiente compacto, o Sofá de 3 Lugares Retrátil e Reclinável Senses é ideal para quem busca unir modernidade, conforto e tamanho para sua sala. Desenvolvido com uma estrutura interna resistente, sendo feito com espuma D33 com Tecnologia Thermogel, Percintas Extra Suport, Madeira de Eucalpito e o nosso Tecido Exclusivo Velusoft, tudo isso dará o suporte necessário para o conforto, sendo ideal para acomodar você e sua família. Tenha toda essa qualidade e conforto em sua sala. Demais, né? Garanta já o seu!<br/><br/>Informações do Produto:<br/><br/>Assentos:<br/><br/>Feitos de espuma D33 com Tecnologia Exclusiva ThermoGel, onde suas partículas em gel fazem com que sua estrutura não absorva o calor do corpo, mantendo sempre o sofá com a sensação FRESH e Aconchegante.<br/><br/>Manta Siliconada<br/><br/>Percintas Extra Suport<br/><br/>Assentos com Bordado Pantográfico<br/><br/>Encosto:<br/><br/>Reclináveis em 5 níveis de estágios.<br/><br/>Almofadas do encosto são parcialmente removíveis.<br/><br/>Compostas de 80% fibra siliconada e 20% flocos de espuma que proporcionam maior conforto.<br/><br/>Braços:<br/><br/>Madeira maciça 100% Eucalipto<br/><br/>Medindo 25cm de largura cada<br/><br/>Braços com Bordado Pantográfico<br/><br/>Estrutura:<br/><br/>Madeira maciça de Eucalipto 100% de reflorestamento<br/><br/>Grampos galvanizados<br/><br/>Pés:<br/><br/>Este modelo conta com sapatas para melhor suporte e sustentação.<br/><br/>Tecido:<br/><br/>Suede Velusoft com um toque macio e aconchegante.<br/><br/>Cor: Cinza<br/><br/>Medidas do Produto Montado:<br/><br/>Altura: 0,98cm<br/><br/>Profundidade fechado: 0,82cm<br/><br/>Profundidade aberto: 1,40m<br/><br/>Largura: 2,00m<br/><br/>Disponível nas seguintes cores: Azul, Bege, Café, Castor, Cinza, Vermelho, Vinho e Preto.<br/><br/>IMPORTANTE: Não há necessidade de montagem, pois o mesmo já vai montado.<br/><br/>Informações Extras:<br/><br/>Peso suportado: 110kg por pessoa<br/><br/>Garantia: 3 meses<br/><br/>Fabricante: Cama inBox<br/><br/>Entra facilmente em qualquer porta acima de 65cm de largura.<br/><br/>Informações Importantes:<br/><br/>- OS TECIDOS PODEM SOFRER ALTERAÇÕES DE TONALIDADES DEPENDENDO DO LOTE DE PRODUÇÃO E TAMBÉM DA RESOLUÇÃO DA TELA DO SEU MONITOR/CELULAR.<br/><br/>- Produto produzido de forma artesanal, podendo haver pequenas variações de centímetros na largura, altura e profundidade do produto.<br/><br/>- Os objetos que ambientam as fotos não acompanham o produto.<br/><br/>- Nossos produtos são feitos sob padrão, não permitindo a personalização dos mesmos.<br/><br/>- A Cama inBox fica responsável pelo transporte e entrega do produto adquirido até a porta de entrada ou portaria do cliente. Após a conclusão da entrega no endereço solicitado, o transporte até o local de uso ficará sob responsabilidade do cliente, caso neste momento haja problemas ou danos no produto, ficará a cargo do mesmo. OBS.: As transportadoras NÃO SOBEM escadas ou elevadores.",
@@ -733,5 +734,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "sofa_senses_65",
+  "creators": [
+    {
+      "name": "Náthaly Rossi",
+      "username": "nathalyrmartinss",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f23e4d391524b11802364f3d5ee6a8a5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=e16222dd&x-expires=1795464000&x-signature=7EWpShHzQ8rw27LaGlyolZeVKFU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-65-1.jpg",
+      "video": "https://files.catbox.moe/67fj8e.mp4#prod=65&slot=criador_1&slug=sofa-3-lugares-retratil-e-re",
+      "catbox_id": "67fj8e.mp4",
+      "startTime": 0.2,
+      "likes": 31500,
+      "commentsCount": 288,
+      "saves": 2530,
+      "shares": 111,
+      "description": "Dá pra acreditar que ele veio dentro de uma caixa que eu mesma carreguei para dentro do apê? #sofánacaixa #sofacama #sofainbox "
+    },
+    {
+      "name": "Malu Fernandes",
+      "username": "marialluizaff",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/a7ce1cfdb6f0e6946284c6d87b511b63~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=b970001a&x-expires=1795464000&x-signature=%2Fk9fQKpKfPXShzaxGcls%2Fs%2FfDq4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-65-2.jpg",
+      "video": "https://files.catbox.moe/2w2dd9.mp4#prod=65&slot=criador_2&slug=sofa-3-lugares-retratil-e-re",
+      "catbox_id": "2w2dd9.mp4",
+      "startTime": 0.2,
+      "likes": 34500,
+      "commentsCount": 326,
+      "saves": 2780,
+      "shares": 132,
+      "description": "Agora temos SOFÁ ✨ depois de um mêssss! Cê gostou? Eu ameiii e achei que combinou taaaanto com a sala!! Ele vira uma cama também então po..."
+    },
+    {
+      "name": "Dicas da Poliii",
+      "username": "dicasdapoliii",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/df53ee959a19106b9967735a4187d209~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=9598f5a4&x-expires=1795464000&x-signature=jGvAiq%2F4NFz0P41YrQRQaK%2Bclqs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-65-3.jpg",
+      "video": "https://files.catbox.moe/uny51l.mp4#prod=65&slot=criador_3&slug=sofa-3-lugares-retratil-e-re",
+      "catbox_id": "uny51l.mp4",
+      "startTime": 0.2,
+      "likes": 37500,
+      "commentsCount": 364,
+      "saves": 3030,
+      "shares": 153,
+      "description": "Sofá Cama inbox Nami. 1,88m ID SHOPEE:AXV-JBT-MQA #camainbox #sofacama "
+    }
+  ]
 }

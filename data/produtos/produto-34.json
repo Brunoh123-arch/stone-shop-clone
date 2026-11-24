@@ -1088,9 +1088,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/11ffrq.mp4",
+    "src": "https://files.catbox.moe/11ffrq.mp4#prod=34&slot=descricao&slug=lava-loucas-praxis-portatil-",
     "poster": "../img/produto-34-1.jpg",
-    "duration": "0:30"
+    "duration": "0:30",
+    "catbox_id": "11ffrq.mp4"
   },
   "size_guide_html": "",
   "description_html": "<b>🍽️ Lava Louças Portátil Praxis LLPP </b><p><b>A revolução que sua cozinha merece: mais tempo para você e menos trabalho com a louça!</b></p><p>A <b>Lava Louças Portátil Praxis</b> é a escolha inteligente para quem busca <b>praticidade</b>, <b>eficiência</b> e <b>design moderno</b>. Com recursos inovadores, ela transforma a forma como você cuida das suas louças, otimizando o tempo e trazendo mais comodidade para o seu dia a dia.</p><p><br/></p><p><b>🌟 PRINCIPAIS FUNÇÕES E BENEFÍCIOS</b></p><p><b>💦 Pré-Lavagem</b></p><p>Retire resíduos difíceis e deixe suas louças prontas para uma limpeza impecável.</p><p><b>⏱️ Lavagem Express</b></p><p>Sabe aquele momento de pressa? A Lavagem Express oferece uma limpeza rápida e eficiente, sem perder a qualidade.</p><p><b>🧼 Lavagem Delicada</b></p><p>Cuide das suas louças mais frágeis com todo o carinho, sem danos e com máxima eficiência.</p><p><b>🌱 Lavagem ECO</b></p><p>Cuide do planeta! Economize água e energia com um programa sustentável que não compromete o poder de limpeza.</p><p><b>🧽 Lavagem Pesada</b></p><p>Enfrente sujeiras difíceis e gorduras persistentes com facilidade e rapidez, deixando suas panelas impecáveis.</p><p><b>🍊 Higienização de Frutas e Legumes</b></p><p>Mantenha seus alimentos frescos e seguros, com uma limpeza profunda para eliminar contaminantes.</p><p><b>🥫 Higienização de Embalagens</b></p><p>Limpeza segura para latas, embalagens Tetra Pak e outros itens, trazendo mais higiene para sua cozinha.</p><p><br/></p><p><b>🔥 Água Quente para Limpeza Profunda</b></p><p>Com <b>água quente</b>, a Lava Louças Praxis garante uma <b>limpeza profunda</b> e <b>higienizante</b>, eliminando germes e bactérias, enquanto mantém a <b>eficiência</b> no <b>consumo de energia.</b></p><p><b><br/></b></p><p><b>⏳ Ciclo Rápido de 30 Minutos</b></p><p>Perfeito para a rotina agitada: apenas 30 minutos para ter suas louças limpas e prontas para o próximo uso, sem comprometer a qualidade.</p><p><br/></p><p><b>🔧 Fácil Instalação e Versatilidade</b></p><p><b>Instalação simples</b>, sem a necessidade de complicações hidráulicas. Basta conectar à tomada e pronto, sua Lava Louças está pronta para te ajudar no dia a dia.</p><p><br/></p><p><b>✨ Design Moderno e Elegante</b></p><p>Disponível na elegante cor Preto Fosco, ela combina perfeitamente com qualquer estilo de cozinha, trazendo um toque sofisticado e moderno.</p><p><br/></p><p><b>🔝 Por que escolher a Lava Louças Portátil Praxis?</b></p><p><b>Alta performance</b>: Limpeza eficiente em menos tempo</p><p><b>Tecnologia inovadora</b>: Água quente, ciclos rápidos e programas diversos</p><p><b>Praticidade</b>: Fácil de instalar, sem complicação</p><p><b>Design incrível</b>: Perfeita para qualquer cozinha moderna</p><p><br/></p><p><b>📦 O que vem na caixa?</b></p><p>Lava Louças Portátil Praxis LLPP</p><p>Jarra de abastecimento</p><p>Copo medidor</p><p>Manual de uso</p><p><br/></p><p><b>🔌 Especificações Técnicas</b></p><p>Voltagem: Bivolt</p><p>Cor: Preto ou Branco</p><p>Consumo por ciclo: 3 Litros</p><p>Potência: 415W</p><p>Dimensões (A x L x P): 47,1 cm x 42 cm x 43,2 cm</p><p>Abertura superior e instalação bancada</p><p>Consumo de energia otimizado</p><p>Garantia do fabricante: 12 meses</p><p><br/></p>",
@@ -1177,5 +1178,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "praxis_34",
+  "creators": [
+    {
+      "name": "Letícia Veloso",
+      "username": "leticiavelososs",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_04.jpg",
+      "poster": "../img/produto-34-2.jpg",
+      "video": "https://files.catbox.moe/efnhg1.mp4#prod=34&slot=criador_1&slug=lava-loucas-praxis-portatil-",
+      "catbox_id": "efnhg1.mp4",
+      "startTime": 0.2,
+      "likes": 23700,
+      "commentsCount": 220,
+      "saves": 1900,
+      "shares": 102,
+      "description": "Testando a lava-louças portátil da Praxis! 🧡🫧 Compacta, lava com água quente e louças brilhando! #tiktokshop"
+    },
+    {
+      "name": "Diário do Primeiro Apê",
+      "username": "diariodoprimeiroape",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_06.jpg",
+      "poster": "../img/produto-34-3.jpg",
+      "video": "https://files.catbox.moe/o84hxh.mp4#prod=34&slot=criador_2&slug=lava-loucas-praxis-portatil-",
+      "catbox_id": "o84hxh.mp4",
+      "startTime": 0.2,
+      "likes": 26000,
+      "commentsCount": 245,
+      "saves": 2080,
+      "shares": 116,
+      "description": "A lava louças mais barata da internet vale a pena? Resenha completa da Praxis! ✨"
+    },
+    {
+      "name": "Camille Cesário",
+      "username": "camillecesario",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_08.jpg",
+      "poster": "../img/produto-34-1.jpg",
+      "video": "https://files.catbox.moe/uij8io.mp4#prod=34&slot=criador_3&slug=lava-loucas-praxis-portatil-",
+      "catbox_id": "uij8io.mp4",
+      "startTime": 0.2,
+      "likes": 28300,
+      "commentsCount": 270,
+      "saves": 2260,
+      "shares": 130,
+      "description": "Como funciona minha lava louças portátil Praxis na bancada da cozinha! 🍽️"
+    },
+    {
+      "name": "Viviane Castro",
+      "username": "vivianecastro_",
+      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_10.jpg",
+      "poster": "../img/produto-34-2.jpg",
+      "video": "https://files.catbox.moe/9k8c7q.mp4#prod=34&slot=criador_4&slug=lava-loucas-praxis-portatil-",
+      "catbox_id": "9k8c7q.mp4",
+      "startTime": 0.2,
+      "likes": 30600,
+      "commentsCount": 295,
+      "saves": 2440,
+      "shares": 144,
+      "description": "Lava Louças Praxis Portátil Semi-Automática! Praticidade total pro dia a dia 🤩"
+    }
+  ]
 }

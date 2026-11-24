@@ -232,9 +232,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/xqpya7.mp4",
+    "src": "https://files.catbox.moe/xqpya7.mp4#prod=91&slot=descricao&slug=pipoqueira-classic-retro-mis",
     "poster": "../img/posters-desc/poster-desc-91.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "xqpya7.mp4"
   },
   "size_guide_html": "",
   "description_html": "Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir Pipoca PPI04V Philco com 80% OFF. Apenas R$643,08. Frete grátis.",
@@ -320,5 +321,50 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "pipoqueira_91",
+  "creators": [
+    {
+      "name": "Eve Marks",
+      "username": "eve.marks",
+      "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_22.jpg",
+      "poster": "../videosprodutos/posters/poster-criador-91-1.jpg",
+      "video": "https://files.catbox.moe/dpbvy9.mp4#prod=91&slot=criador_1&slug=pipoqueira-classic-retro-mis",
+      "catbox_id": "dpbvy9.mp4",
+      "startTime": 0.2,
+      "likes": 24100,
+      "commentsCount": 213,
+      "saves": 1910,
+      "shares": 81,
+      "description": "#pipoqueiraeletrica #pipocasemoleo #TikTokShopBR1111 #TikTokShopBR1212 #BlackFridayTikTokShopBR  "
+    },
+    {
+      "name": "Thais Kelly",
+      "username": "thaiskelly_",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/f2dca2b982ce89554022b3819a4489d9~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=2037e927&x-expires=1795438800&x-signature=zZ6%2Fj32j811l0hgsjNefUymtlMw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-91-2.jpg",
+      "video": "https://files.catbox.moe/4vw5vb.mp4#prod=91&slot=criador_2&slug=pipoqueira-classic-retro-mis",
+      "catbox_id": "4vw5vb.mp4",
+      "startTime": 0.2,
+      "likes": 26400,
+      "commentsCount": 241,
+      "saves": 2100,
+      "shares": 97,
+      "description": "🔥🍿 Chega de esperar cinema! Com a Pipoqueira Philco Classic Retrô a sessão pipoca é na sua casa todos os dias – e com muito mais estilo r..."
+    },
+    {
+      "name": "maikeline mourao",
+      "username": "maikeline.mourao",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/f9539c056ff0448f8d4c32ebbc109bf3~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=54dcd5d9&x-expires=1795438800&x-signature=LKpAy8HAmwSXrd7cN8H11yjKjJI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "poster": "../videosprodutos/posters/poster-criador-91-3.jpg",
+      "video": "https://files.catbox.moe/ykv9wq.mp4#prod=91&slot=criador_3&slug=pipoqueira-classic-retro-mis",
+      "catbox_id": "ykv9wq.mp4",
+      "startTime": 0.2,
+      "likes": 28700,
+      "commentsCount": 269,
+      "saves": 2290,
+      "shares": 113,
+      "description": "Pipoqueira carrinho, linda e prática #tiktokshopbr1010 #pipoqueira #carrinhodepipoca #pipoqueiraeletrica #pipocadecinema "
+    }
+  ]
 }

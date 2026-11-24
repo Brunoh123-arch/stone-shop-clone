@@ -247,9 +247,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/26cgyz.mp4",
+    "src": "https://files.catbox.moe/26cgyz.mp4#prod=33&slot=descricao&slug=mochila-escolar-bluey-e-bing",
     "poster": "../videosprodutos/posters/video-produto-33.jpg",
-    "duration": "0:47"
+    "duration": "0:47",
+    "catbox_id": "26cgyz.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>🎒 Kit Escolar Completo Bluey e Bingo: Mochila de Rodinhas + Lancheira Térmica + Estojo Box Duplo 🐾</strong><br/><br/>\nLeve a magia e a diversão do desenho favorito para o dia a dia escolar! O Kit Escolar Oficial Bluey e Bingo foi desenvolvido com materiais premium e estampas vibrantes em alta definição que não desbotam. Perfeito para creche, educação infantil e ensino fundamental, combinando ergonomia, resistência e máxima praticidade.<br/><br/>\nO kit oferece versatilidade 2 em 1: pode ser usado puxando pelas rodinhas de gel silenciosas com haste retrátil de alumínio ou confortavelmente nas costas graças às alças acolchoadas respiráveis com regulagem.<br/><br/>\n<strong>Destaques do Kit Escolar Bluey &amp; Bingo:</strong><br/>\n• <strong>Super Mochila 15L com Rodinhas em Gel:</strong> Espaçosa, comporta cadernos grandes, pastas, estojos e casaco com facilidade. Rodinhas suaves que não travam e haste anatômica com trava de segurança.<br/>\n• <strong>Lancheira Térmica Acoplável:</strong> Forro interno térmico impermeável de fácil higienização, mantendo sucos, frutas e lanches na temperatura ideal durante todo o turno.<br/>\n• <strong>Estojo Duplo Espaçoso:</strong> 2 compartimentos independentes com zíperes reforçados para manter lápis de cor, canetas, tesoura e cola 100% organizados.<br/>\n• <strong>Acabamento Premium e Impermeável:</strong> Confeccionado em tecido Poliéster 600D de alta densidade que repele respingos de água e sujeira, garantindo durabilidade para o ano letivo inteiro.<br/>\n• <strong>Bolsos Laterais em Mesh:</strong> Ideais para squeezes e garrafinhas de água, facilitando o acesso rápido das crianças.<br/><br/>\n<strong>Dimensões e Especificações do Kit:</strong><br/>\n• Mochila de Rodinhas: 41 cm (A) x 30 cm (L) x 15 cm (P) | Altura com haste estendida: 75 cm<br/>\n• Lancheira Térmica: 23 cm (A) x 20 cm (L) x 11 cm (P)<br/>\n• Estojo Escolar Duplo: 22 cm (L) x 10 cm (A) x 7 cm (P)<br/><br/>\nAcompanha chaveiro decorativo emborrachado oficial. Envio imediato da Stone Shop com embalagem protetora reforçada e código de rastreamento oficial dos Correios!",
@@ -340,5 +341,64 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "bluey_33",
+  "creators": [
+    {
+      "name": "D’Lily Variedades",
+      "username": "dlily.variedades",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f879914a752a821266c3313d6c24a497~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=330ac987&x-expires=1795366800&x-signature=Ez5zQW6kyigtawUur50mTDQLAiU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oEF7IUEDCcfBGjzQTpUZEneIwBFx8RAW4ZBqgg~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=RbiOZS9vFY%2Bn%2BBZCITjZlwSLH%2B4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "video": "https://files.catbox.moe/8x2qjy.mp4#prod=33&slot=criador_1&slug=mochila-escolar-bluey-e-bing",
+      "catbox_id": "8x2qjy.mp4",
+      "startTime": 0.2,
+      "likes": 28500,
+      "commentsCount": 260,
+      "saves": 2900,
+      "shares": 150,
+      "description": "Kit de mochila da Bluey e Bingo com lancheira térmica saindo para entrega! Apaixonada! 🎒✨ #bluey #voltaasaulas"
+    },
+    {
+      "name": "Aldenice Souza",
+      "username": "aldenice._",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/257448a53c7b45a482c786ff40c42941~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=cde9330c&x-expires=1795366800&x-signature=XGo7rpfSHRpofxBTAxIcK%2BU1Ps0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o4oWeAG3sNDD1LjEVqOl3HoIAQduCQjQfnCGIf~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=sLK%2BN5UwWB6GXrqgxkWKadlKGDw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "video": "https://files.catbox.moe/m8dral.mp4#prod=33&slot=criador_2&slug=mochila-escolar-bluey-e-bing",
+      "catbox_id": "m8dral.mp4",
+      "startTime": 0.2,
+      "likes": 30600,
+      "commentsCount": 298,
+      "saves": 3210,
+      "shares": 175,
+      "description": "Mochila infantil Bluey e Bingo maravilhosa! Minha pequena amou as cores e os bolsos laterais! 💙🧡"
+    },
+    {
+      "name": "Feitozzi",
+      "username": "feitozzi",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/710133245a8de43131f8174771745112~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=4479a56e&x-expires=1795366800&x-signature=bI27yC6kmHKdttlM2AHpCdWhqRM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oo7E6I1lIY7EcD7BEvhDfB6RHoAFDGygeLjqQu~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=NwNKhylPDWnjIIf8r5uZcmUSY7E%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "video": "https://files.catbox.moe/1n5fg2.mp4#prod=33&slot=criador_3&slug=mochila-escolar-bluey-e-bing",
+      "catbox_id": "1n5fg2.mp4",
+      "startTime": 0.2,
+      "likes": 32700,
+      "commentsCount": 336,
+      "saves": 3520,
+      "shares": 200,
+      "description": "Coleção de mochilas escolares da Bluey! Estampa vibrante, material reforçado e lancheira combinando! 🐾"
+    },
+    {
+      "name": "Dejane ✨",
+      "username": "deshop75",
+      "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/480a8ab197c25f750308a7edc2a2ae25~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=24208e5c&x-expires=1795366800&x-signature=%2FlwwqXTr8YdqtIu0c14nvsUN5Kc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "poster": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0037/oM407ASOd4AfIEQVHfFfDEAdTp3AOOIBjADtIn~tplv-tiktokx-origin.image?dr=14575&x-expires=1795366800&x-signature=2%2FiS7HW73j0%2FX%2FE7DrI0cP70suM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my2",
+      "video": "https://files.catbox.moe/bj3ql1.mp4#prod=33&slot=criador_4&slug=mochila-escolar-bluey-e-bing",
+      "catbox_id": "bj3ql1.mp4",
+      "startTime": 0.2,
+      "likes": 34800,
+      "commentsCount": 374,
+      "saves": 3830,
+      "shares": 225,
+      "description": "Mochila escolar da Bluey perfeita para as aulas! Leve, espaçosa e com acabamento de primeira linha! 📚🎒"
+    }
+  ]
 }

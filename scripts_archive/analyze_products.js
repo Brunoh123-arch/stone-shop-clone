@@ -1,32 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 
-const base = 'C:/Users/Dell/Downloads/stone_shop_clone';
-const pagesDir = path.join(base, 'pages');
-const videosDir = path.join(base, 'videosprodutos');
+const dir = 'C:\\Users\\Dell\\Downloads\\stone_shop_clone\\pages';
+const files = fs.readdirSync(dir).filter(f => f.startsWith('produto-') && f.endsWith('.html'));
 
-const files = fs.readdirSync(pagesDir).filter(f => f.startsWith('produto-') && f.endsWith('.html'));
-const availableVideos = fs.existsSync(videosDir) ? fs.readdirSync(videosDir) : [];
+const patterns = {};
+const samples = {};
 
-console.log(`Total de páginas de produto: ${files.length}`);
-console.log(`Total de vídeos específicos em videosprodutos/: ${availableVideos.length}`);
-
-const matching = [];
-const missing = [];
-
-for (const f of files) {
-  const match = f.match(/produto-(\d+)\.html/);
-  if (match) {
-    const id = match[1];
-    const vid = `video-produto-${id}.mp4`;
-    if (availableVideos.includes(vid)) {
-      matching.push(f);
-    } else {
-      missing.push(f);
-    }
+files.forEach(f => {
+  const content = fs.readFileSync(path.join(dir, f), 'utf8');
+  const start = content.indexOf('<div class="price-section"');
+  if (start !== -1) {
+    const end = content.indexOf('<!-- INFO', start);
+    const section = content.slice(start, end !== -1 ? end : start + 600);
+    const hasDiscountInRow = section.includes('price-row') && section.indexOf('discount-badge') > section.indexOf('price-row');
+    const hasApartir = section.includes('price-label-apartir');
+    const hasDiscountDirect = section.includes('discount-badge-white') && !hasDiscountInRow;
+    const key = `inRow:${hasDiscountInRow}_hasApartir:${hasApartir}_direct:${hasDiscountDirect}`;
+    patterns[key] = (patterns[key] || 0) + 1;
+    if (!samples[key]) samples[key] = f;
+  } else {
+    patterns['no_price_section'] = (patterns['no_price_section'] || 0) + 1;
   }
-}
+});
 
-console.log(`Produtos COM vídeo dedicado em videosprodutos/: ${matching.length}`);
-console.log(`Produtos SEM vídeo dedicado: ${missing.length}`);
-console.log('Exemplos de produtos sem vídeo:', missing.slice(0, 10));
+console.log('Patterns:', patterns);
+console.log('Samples:', samples);

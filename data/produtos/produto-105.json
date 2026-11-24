@@ -228,9 +228,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/facj5t.mp4",
+    "src": "https://files.catbox.moe/facj5t.mp4#prod=105&slot=descricao&slug=projetor-hy300-original-port",
     "poster": "../img/posters-desc/poster-desc-105.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "facj5t.mp4"
   },
   "size_guide_html": "",
   "description_html": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD com 90% OFF no Festival 11.11. Apenas R$ 39,90 com Frete Grátis.",
@@ -315,5 +316,36 @@
       }
     }
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "projetor",
+  "creators": [
+    {
+      "name": "Bruno Cinema",
+      "username": "brunocine",
+      "avatar": "../img/creators-tech/creator-2.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-111-criadora2.jpg",
+      "video": "https://files.catbox.moe/4tf7wb.mp4#prod=105&slot=criador_1&slug=projetor-hy300-original-port",
+      "catbox_id": "4tf7wb.mp4",
+      "startTime": 0.2,
+      "likes": 13018,
+      "commentsCount": 54,
+      "saves": 2234,
+      "shares": 425,
+      "description": "Olha a qualidade desse Projetor Smart HY300! Já vem com Android 11, Wi-Fi e Bluetooth. Conecta na caixa de som e é perfeito! 🔥"
+    },
+    {
+      "name": "Lucas Pixel",
+      "username": "lucaspixeltech",
+      "avatar": "../img/creators-tech/creator-3.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-111-criadora3.jpg",
+      "video": "https://files.catbox.moe/e8go2r.mp4#prod=105&slot=criador_2&slug=projetor-hy300-original-port",
+      "catbox_id": "e8go2r.mp4",
+      "startTime": 0.2,
+      "likes": 13636,
+      "commentsCount": 63,
+      "saves": 2368,
+      "shares": 470,
+      "description": "Testando a rotação de 180 graus na parede e no teto. Rotação livre, foco ajustável e imagem gigante de 130 polegadas! 🤩"
+    }
+  ]
 }

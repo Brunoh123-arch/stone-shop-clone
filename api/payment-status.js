@@ -119,6 +119,49 @@ module.exports = async function handler(req, res) {
       rawStatus === "liquidated"
     );
 
+    // DISPARO IDEMPOTENTE DE CompletePayment APENAS QUANDO PAGO DE VERDADE!
+    if (isPaid) {
+      try {
+        const { markOrderPaid } = require("./_lib/store-state");
+        const { record, firstTimePaid } = markOrderPaid(tx.reference_id || identifier);
+        if (firstTimePaid || (record && !record.capiCompleteSent)) {
+          if (record) record.capiCompleteSent = true;
+          const { sendTikTokServerEvent } = require("./tiktok-event");
+          const cust = (record && record.customer) || {};
+          const trk = (record && record.tracking) || {};
+          const items = (record && record.items) || [];
+          const paidVal = Number(tx.amount || (record && record.amount) || 29.90);
+          sendTikTokServerEvent({
+            event: "CompletePayment",
+            event_id: "purchase_" + (tx.reference_id || identifier),
+            user: {
+              ip: trk.ip || (req.headers["x-forwarded-for"] ? req.headers["x-forwarded-for"].split(",")[0].trim() : ""),
+              user_agent: trk.ua || req.headers["user-agent"] || "",
+              email: cust.email || "",
+              phone: cust.phone || "",
+              ttclid: trk.ttclid || "",
+              ttp: trk.ttp || "",
+            },
+            page: { url: (record && record.pageUrl) || "https://stoneshopclone.vercel.app/pages/pix" },
+            properties: {
+              value: paidVal,
+              currency: "BRL",
+              content_type: "product",
+              contents: items.map((i) => ({
+                content_id: String(i.id || "prod"),
+                content_type: "product",
+                content_name: i.nome || i.title || "Produto",
+                quantity: parseInt(i.qty, 10) || 1,
+                price: parseFloat(i.preco) || paidVal,
+              })),
+            },
+          }).catch((err) => console.error("Erro CAPI CompletePayment real:", err.message));
+        }
+      } catch (hookErr) {
+        console.error("Erro hook markOrderPaid:", hookErr.message);
+      }
+    }
+
     return res.status(200).json({
       success: true,
       identifier: tx.reference_id || identifier,

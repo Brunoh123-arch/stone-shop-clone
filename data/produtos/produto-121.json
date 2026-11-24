@@ -271,9 +271,10 @@
     }
   ],
   "video": {
-    "src": "https://files.catbox.moe/0trj7i.mp4",
+    "src": "https://files.catbox.moe/0trj7i.mp4#prod=121&slot=descricao&slug=travesseiro-cervical-ortoped",
     "poster": "../img/posters-desc/poster-desc-121.jpg",
-    "duration": "0:20"
+    "duration": "0:20",
+    "catbox_id": "0trj7i.mp4"
   },
   "size_guide_html": "",
   "description_html": "<strong>😴 Travesseiro Cervical Ortopédico Ergonômico Abranuv Pro 2.0 com Espuma Viscoelástica</strong><br/><br/>\n              Diga adeus às dores no pescoço, ombros travados e noites mal dormidas com a tecnologia de suporte ortopédico cervical mais recomendada por fisioterapeutas!<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n              • <strong>Alinhamento Perfeito da Coluna Cervical:</strong> O contorno anatômico preenche o vão do pescoço, mantendo as vértebras perfeitamente alinhadas.<br/>• <strong>Espuma de Memória Inteligente (NASA):</strong> Distribui a pressão uniformemente na cabeça e na cervical sem gerar pontos de tensão.<br/>• <strong>Capa Ice Silk Térmica e Lavável:</strong> Mantém a temperatura fresca a noite toda e pode ser lavada na máquina sempre que quiser.<br/>• <strong>Ideal para Todas as Posições:</strong> Projetado com rebaixos específicos para quem dorme de lado, de costas ou de bruços.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Abranuv Sleep Innovations<br/>• Modelo: Pro 2.0 Cervical Therapy<br/>• Densidade: D-50 de Alta Recuperação<br/>• Itens Inclusos: 1 Travesseiro Viscoelástico Abranuv Pro 2.0 + 1 Capa com Zíper<br/>• Garantia: 12 meses Stone Shop",
@@ -346,5 +347,50 @@
     "rating": 4.9,
     "sales": "3.8K vendidos"
   },
-  "extra_scripts": []
+  "extra_scripts": [],
+  "creator_context": "travesseiro121",
+  "creators": [
+    {
+      "name": "Gabriela Sou",
+      "username": "_gabiso",
+      "avatar": "../img/avatars-travesseiro/creator-gabriela.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-121-c2.jpg",
+      "video": "https://files.catbox.moe/82p725.mp4#prod=121&slot=criador_1&slug=travesseiro-cervical-ortoped",
+      "catbox_id": "82p725.mp4",
+      "startTime": 0.2,
+      "likes": 42400,
+      "commentsCount": 388,
+      "saves": 3500,
+      "shares": 176,
+      "description": "Dica de ouro de fisioterapia: o travesseiro cervical com espuma viscoelástica alinha a coluna e relaxa a musculatura na hora de dormir! 💤🩺 #travesseiro #fisioterapia #coluna"
+    },
+    {
+      "name": "LysaBGalante",
+      "username": "lysabgalante.tiktokshop",
+      "avatar": "../img/avatars-travesseiro/creator-lysa.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-121-c3.jpg",
+      "video": "https://files.catbox.moe/40pj5q.mp4#prod=121&slot=criador_2&slug=travesseiro-cervical-ortoped",
+      "catbox_id": "40pj5q.mp4",
+      "startTime": 0.2,
+      "likes": 45900,
+      "commentsCount": 436,
+      "saves": 3880,
+      "shares": 207,
+      "description": "Travesseiro Cervical Ortopédico anatômico! Sono perfeito, não esquenta e apoia tanto de lado quanto de costas! Melhor investimento pro sono! 😴🛏️ #travesseiro #ortopedico #cervical"
+    },
+    {
+      "name": "Maribel Bortolotto",
+      "username": "maribelbortolotto",
+      "avatar": "../img/avatars-travesseiro/creator-maribel.jpg",
+      "poster": "../videosprodutos/posters/poster-produto-121-c4.jpg",
+      "video": "https://files.catbox.moe/vdi5oq.mp4#prod=121&slot=criador_3&slug=travesseiro-cervical-ortoped",
+      "catbox_id": "vdi5oq.mp4",
+      "startTime": 0.2,
+      "likes": 49400,
+      "commentsCount": 484,
+      "saves": 4260,
+      "shares": 238,
+      "description": "Testando o Travesseiro Cervical Abranuv Pro 2.0 com capa lavável e tecnologia antiácaro! Minhas noites mudaram completamente! 💖✨ #viraltiktokshop #travesseiro #sono"
+    }
+  ]
 }
