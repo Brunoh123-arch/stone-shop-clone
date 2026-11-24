@@ -5,7 +5,7 @@
   "product_title": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto",
   "slider_imgs": [
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/81525a24b6074e6c87b673c8cc37d237~tplv-aphluv4xwc-resize-webp:800:800.webp",
+      "src": "../img/prod-105-local-1.webp",
       "alt": "Projetor HY300 4K Smart - 1"
     },
     {
@@ -291,9 +291,9 @@
     "nome": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto",
     "preco": 39.9,
     "preco_antigo": 399.9,
-    "img": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/81525a24b6074e6c87b673c8cc37d237~tplv-aphluv4xwc-resize-webp:800:800.webp",
+    "img": "../img/prod-105-local-1.webp",
     "imagens": [
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/81525a24b6074e6c87b673c8cc37d237~tplv-aphluv4xwc-resize-webp:800:800.webp",
+      "../img/prod-105-local-1.webp",
       "../img/projetor-slide-2.webp",
       "../img/projetor-slide-3.webp?v=1795147990000",
       "../img/projetor-slide-4.webp"
@@ -305,7 +305,7 @@
         "opcoes": [
           {
             "nome": "Branco Smart Android 11",
-            "imagem": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/81525a24b6074e6c87b673c8cc37d237~tplv-aphluv4xwc-resize-webp:800:800.webp"
+            "imagem": "../img/prod-105-local-1.webp"
           },
           {
             "nome": "Preto Smart Android 11",

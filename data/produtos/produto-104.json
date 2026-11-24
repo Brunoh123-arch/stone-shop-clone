@@ -5,39 +5,39 @@
   "product_title": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
   "slider_imgs": [
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-1.webp",
       "alt": "Chinelo Feminino Luxo Strass - 1"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-2.webp",
       "alt": "Chinelo Feminino Luxo Strass - 2"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-3.webp",
       "alt": "Chinelo Feminino Luxo Strass - 3"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-4.webp",
       "alt": "Chinelo Feminino Luxo Strass - 4"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-5.webp",
       "alt": "Chinelo Feminino Luxo Strass - 5"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-6.webp",
       "alt": "Chinelo Feminino Luxo Strass - 6"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-7.webp",
       "alt": "Chinelo Feminino Luxo Strass - 7"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-8.webp",
       "alt": "Chinelo Feminino Luxo Strass - 8"
     },
     {
-      "src": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "src": "../img/prod-104-local-9.webp",
       "alt": "Chinelo Feminino Luxo Strass - 9"
     }
   ],
@@ -322,7 +322,7 @@
   "related": [
     {
       "href": "produto-103.html",
-      "img": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/ad55abb03d5c4c37957422c69ecd7d65~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+      "img": "../img/prod-103-local-1.webp",
       "alt": "Vestido longo costas nua",
       "name": "Vestido longo feminino costas nua com fenda chique",
       "price": "R$ 76,99",
@@ -346,17 +346,17 @@
     "nome": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
     "preco": 19.9,
     "preco_antigo": 59.9,
-    "img": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+    "img": "../img/prod-104-local-1.webp",
     "imagens": [
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/7467bc2b64a44c34a35c7d38357e6e63~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/d1225a0ba7b9492683401953c5c4bf02~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/cbc47b24541346dcb1a7af5fa1fa17cc~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/53bf5449455446aa903aef80462557b0~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a7b201e4dc13451193c99d99cbb4f70a~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/93619ad47c184ea683a4fc36fef611e4~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/59e114217853430086e319bb63372840~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
-      "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/bddf4ce8c6b54ba899d657c82853e3be~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192"
+      "../img/prod-104-local-1.webp",
+      "../img/prod-104-local-2.webp",
+      "../img/prod-104-local-3.webp",
+      "../img/prod-104-local-4.webp",
+      "../img/prod-104-local-5.webp",
+      "../img/prod-104-local-6.webp",
+      "../img/prod-104-local-7.webp",
+      "../img/prod-104-local-8.webp",
+      "../img/prod-104-local-9.webp"
     ],
     "variacoes": {
       "cor": {
@@ -364,15 +364,15 @@
         "label": "Cor",
         "opcoes": [
           {
-            "imagem": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/4b108ccc0c6e416ca36785b3b83d1cc3~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+            "imagem": "../img/prod-104-local-10.webp",
             "nome": "BRANCO"
           },
           {
-            "imagem": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/de0ebc96ce0f425994bce34ba59976d3~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+            "imagem": "../img/prod-104-local-11.webp",
             "nome": "PRETO"
           },
           {
-            "imagem": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/337346130ae44bd5a6b821de09482ee4~tplv-aphluv4xwc-resize-jpeg:800:800.jpeg?dr=15584&t=555f072d&ps=933b5bde&shp=c940a200&shcp=9b759fb9&idc=my3&from=3376456192",
+            "imagem": "../img/prod-104-local-12.webp",
             "nome": "CARAMELO"
           }
         ]

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 
-const ASSET_VERSION = '20261123_bf_v2';
+const ASSET_VERSION = '20261123_bf_v3';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;

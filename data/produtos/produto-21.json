@@ -6,11 +6,23 @@
   "slider_imgs": [
     {
       "src": "../img/produto-21-1.jpg",
-      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - 2"
+      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - Azul Frente"
     },
     {
-      "src": "../img/produto-21-1.jpg",
-      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - 3"
+      "src": "../img/produto-21-2.jpg",
+      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - Ultra Fusion"
+    },
+    {
+      "src": "../img/produto-21-laranja.webp",
+      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - Laranja"
+    },
+    {
+      "src": "../img/produto-21-marinho.webp",
+      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - Marinho"
+    },
+    {
+      "src": "../img/produto-21-gramado.webp",
+      "alt": "Bola De Futebol De Campo Penalty Bravo Xxv - Em Campo"
     }
   ],
   "discount_badge": "-62%",
@@ -234,36 +246,6 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "9876 vendido(s)"
-    },
-    {
-      "href": "produto-30.html",
-      "img": "../img/produto-21-1.jpg",
-      "alt": "Climatizador de Ar Frio Midea 5 Litros Branco e Cinza ACM52 220V",
-      "name": "Climatizador de Ar Frio Midea 5 Litros Branco e Cinza ACM52 220V",
-      "price": "R$ 82,90",
-      "price_original": "R$ 497,90",
-      "discount": "83% OFF",
-      "sold": "8659 vendido(s)"
-    },
-    {
-      "href": "produto-28.html",
-      "img": "",
-      "alt": "",
-      "name": "Kit Mochila Rebecca Bonbon - Lancheira Térmica + Estojo + Box Escolar Nova Coleção Exclusiva Juvenil",
-      "price": "R$ 69,90",
-      "price_original": "R$ 489,90",
-      "discount": "86% OFF",
-      "sold": "12569 vendido(s)"
-    },
-    {
-      "href": "produto-84.html",
-      "img": "",
-      "alt": "",
-      "name": "Panificadora 19 Programas Gallant 600w Preta (GPA1E19A_127PT)",
-      "price": "R$ 69,90",
-      "price_original": "R$ 589,90",
-      "discount": "88% OFF",
-      "sold": "200 vendido(s)"
     }
   ],
   "produto_atual": {
@@ -272,25 +254,28 @@
     "preco": 49,
     "img": "../img/produto-21-1.jpg",
     "imagens": [
-      "https://files.catbox.moe/rs5lzn.mp4",
       "../img/produto-21-1.jpg",
-      "../img/produto-21-2.jpg"
+      "../img/produto-21-2.jpg",
+      "../img/produto-21-laranja.webp",
+      "../img/produto-21-marinho.webp",
+      "../img/produto-21-gramado.webp"
     ],
     "variacoes": {
       "cor": {
-        "label": "COR",
+        "com_imagem": true,
+        "label": "Cor",
         "opcoes": [
           {
-            "imagem": "../img/produto-21-1.jpg",
-            "nome": "Azul"
+            "nome": "Azul",
+            "imagem": "../img/produto-21-1.jpg"
           },
           {
-            "imagem": "../img/produto-21-1.jpg",
-            "nome": "Laranja"
+            "nome": "Laranja",
+            "imagem": "../img/produto-21-laranja.webp"
           },
           {
-            "imagem": "../img/produto-21-1.jpg",
-            "nome": "Marinho"
+            "nome": "Marinho",
+            "imagem": "../img/produto-21-marinho.webp"
           }
         ]
       },

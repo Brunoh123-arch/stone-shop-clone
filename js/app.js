@@ -2286,24 +2286,25 @@ function openVariacaoModal(produto, fluxo = 'cart', onConfirm) {
             </div>
           </div>
           ${precoOrigFormatado ? `<div class="var-modal-preco-orig" id="var-modal-preco-orig-val">R$ ${precoOrigFormatado}</div>` : `<div class="var-modal-preco-orig" id="var-modal-preco-orig-val" style="display:none;"></div>`}
+          <div class="var-modal-frete-badge" style="display:inline-flex; align-items:center; gap:5px; margin-top:6px; padding:2px 8px; border:1px solid #8ad4ca; border-radius:6px; background:#ffffff; color:#007a6d; font-size:11.5px; font-weight:700; line-height:1.25; width:fit-content;">
+            <svg viewBox="0 0 24 20" width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+              <path d="M1.5 5.5H5.5M0.5 8.5H4.5M1.5 11.5H4.5" stroke="#007a6d" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M5 4.2C5 3.26 5.76 2.5 6.7 2.5H14.5C15.44 2.5 16.2 3.26 16.2 4.2V14.5H5V4.2Z" fill="#007a6d"/>
+              <path d="M16.2 6.5H19.4C20.12 6.5 20.77 6.94 21.04 7.61L22.3 10.7C22.43 11.02 22.5 11.37 22.5 11.72V14.5H16.2V6.5Z" fill="#007a6d"/>
+              <path d="M17.6 8H19.4L20.5 10.6H17.6V8Z" fill="#ffffff"/>
+              <circle cx="8.8" cy="15.2" r="2.6" fill="#007a6d" stroke="#ffffff" stroke-width="1.2"/>
+              <circle cx="18.6" cy="15.2" r="2.6" fill="#007a6d" stroke="#ffffff" stroke-width="1.2"/>
+            </svg>
+            <span>Frete grátis</span>
+          </div>
           <div class="var-modal-preco-unit" style="display:none;" id="var-modal-preco-unit-val">${produto.preco}</div>
         </div>
         <button class="var-close-btn" onclick="closeVariacaoModal()">✕</button>
       </div>
 
-      <!-- BANNER OFICIAL TIKTOK SHOP - OFERTA RELÂMPAGO -->
-      <div class="var-modal-banner-1111" style="padding: 4px 16px 10px 16px; width: 100%; box-sizing: border-box;">
-        <div style="background: linear-gradient(90deg, #ff004f 0%, #ff2b56 100%); border-radius: 10px; padding: 7px 12px; display: flex; align-items: center; justify-content: space-between; color: #fff; box-shadow: 0 2px 6px rgba(255, 0, 79, 0.2);">
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-              <path d="M19.5 7.5h-3.75V6a3.75 3.75 0 0 0-7.5 0v1.5H4.5a1.5 1.5 0 0 0-1.5 1.5v11.25A2.25 2.25 0 0 0 5.25 22.5h13.5a2.25 2.25 0 0 0 2.25-2.25V9a1.5 1.5 0 0 0-1.5-1.5zm-9-1.5a2.25 2.25 0 0 1 4.5 0v1.5h-4.5V6zm9.75 14.25a.75.75 0 0 1-.75.75H4.5a.75.75 0 0 1-.75-.75V9.75h16.5v10.5z"/>
-            </svg>
-            <span style="font-size: 13px; font-weight: 800; letter-spacing: -0.2px;">Oferta Relâmpago</span>
-          </div>
-          <div style="display: flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; opacity: 0.95;">
-            <span>Preço mais baixo em 30 dias</span>
-          </div>
-        </div>
+      <!-- BANNER OFICIAL TIKTOK SHOP - BLACK FRIDAY -->
+      <div class="var-modal-banner-bf" style="padding: 4px 16px 10px 16px; width: 100%; box-sizing: border-box;">
+        <img src="${window.location.pathname.includes('/pages/') ? '../decalque/banner-modal-bf-v2.png' : './decalque/banner-modal-bf-v2.png'}" alt="Black Friday - 12 de nov - 3 de dez" style="width: 100%; height: auto; display: block; border-radius: 10px; object-fit: cover;">
       </div>
 
       <div class="var-modal-body">
@@ -3974,203 +3975,492 @@ function toggleSeguirLoja(btn) {
 window.toggleSeguirLoja = toggleSeguirLoja;
 window.updateFollowBtnState = updateFollowBtnState;
 
-// Chat Inteligente
+// Chat Oficial 1:1 TikTok Shop (Stone Shop)
 function openSmartChat() {
-  // Remove chat anterior se existir
   const existing = document.getElementById('smart-chat-overlay');
   if (existing) {
     existing.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
     return;
   }
+
+  const now = new Date();
+  const timeStr = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+
+  // Coleta dados reais do produto atual (se estiver numa página de produto)
+  const hasProd = typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL && PRODUTO_ATUAL.nome;
+  const domSliderImg = document.querySelector('.slider-track .slider-img, .slider-img');
+  const prodImg = hasProd ? (PRODUTO_ATUAL.img || (Array.isArray(PRODUTO_ATUAL.imagens) && PRODUTO_ATUAL.imagens[0]) || (domSliderImg ? domSliderImg.src : '')) : '';
+  const prodName = hasProd ? String(PRODUTO_ATUAL.nome) : '';
+  const prodPriceNum = hasProd ? Number(PRODUTO_ATUAL.preco || 0) : 0;
+  const prodOrigNum = hasProd ? Number(PRODUTO_ATUAL.preco_antigo || 0) : 0;
+  const prodPriceStr = hasProd ? ('R$ ' + prodPriceNum.toFixed(2).replace('.', ',')) : '';
+  const prodOrigStr = (hasProd && prodOrigNum > prodPriceNum) ? ('R$ ' + prodOrigNum.toFixed(2).replace('.', ',')) : (document.querySelector('.price-original')?.textContent?.trim() || '');
+  const soldText = document.querySelector('.sold-count')?.textContent?.trim() || '2.5K vendidos';
+
+  const botAvatarSvg = `<div class="tt-chat-bot-avatar" aria-hidden="true">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="3" x2="12" y2="6"></line>
+      <circle cx="12" cy="2.5" r="1" fill="#161823" stroke="none"></circle>
+      <rect x="4" y="6" width="16" height="12" rx="3.5"></rect>
+      <circle cx="9.2" cy="11.8" r="1.2" fill="#161823" stroke="none"></circle>
+      <circle cx="14.8" cy="11.8" r="1.2" fill="#161823" stroke="none"></circle>
+      <path d="M9.5 15h5"></path>
+      <line x1="2" y1="11" x2="4" y2="11"></line>
+      <line x1="20" y1="11" x2="22" y2="11"></line>
+    </svg>
+  </div>`;
+
+  const chevronSvg = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
 
   const overlay = document.createElement('div');
   overlay.id = 'smart-chat-overlay';
   overlay.style.cssText = `
-    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.6); z-index: 10000;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.45); z-index: 100000;
     display: flex; align-items: flex-end; justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   `;
 
   const chatContainer = document.createElement('div');
   chatContainer.id = 'smart-chat-container';
   chatContainer.style.cssText = `
-    width: 100%; max-width: 480px; height: 80vh;
-    background: #f6f6f6; border-radius: 20px 20px 0 0;
+    width: 100%; max-width: 480px; height: 100dvh;
+    background: #f5f5f5;
     display: flex; flex-direction: column; overflow: hidden;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
-    animation: slideUpChat 0.3s ease-out;
+    animation: slideUpTTChat 0.22s ease-out;
   `;
 
-  // Obter o nome do produto atual se estiver na página de produto
-  let prodInfo = '';
-  if (typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL.nome) {
-    prodInfo = `sobre o produto "${PRODUTO_ATUAL.nome}"`;
-  }
+  const floatingProductCardHtml = hasProd ? `
+    <div class="tt-chat-product-float" id="tt-chat-product-float">
+      <button type="button" class="tt-chat-float-close" aria-label="Fechar produto" onclick="document.getElementById('tt-chat-product-float')?.remove()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img class="tt-chat-float-img" src="${prodImg}" alt="${prodName.replace(/"/g, '&quot;')}">
+      <div class="tt-chat-float-info">
+        <div class="tt-chat-float-title">${prodName}</div>
+        <div class="tt-chat-float-sold">${soldText}</div>
+        <div class="tt-chat-float-price-row">
+          <span class="tt-chat-float-price">${prodPriceStr}</span>
+          ${prodOrigStr ? `<span class="tt-chat-float-orig">${prodOrigStr}</span>` : ''}
+        </div>
+      </div>
+      <button type="button" class="tt-chat-float-send" onclick="sendChatProductCard()">Enviar</button>
+    </div>
+  ` : '';
 
   chatContainer.innerHTML = `
     <style>
-      @keyframes slideUpChat { from { transform: translateY(100%); } to { transform: translateY(0); } }
-      .chat-header {
-        background: #fff; padding: 14px 16px;
-        display: flex; align-items: center; justify-content: space-between;
-        border-bottom: 1px solid #e8e8e8;
+      @keyframes slideUpTTChat { from { transform: translateY(32px); opacity: 0.7; } to { transform: translateY(0); opacity: 1; } }
+      .tt-chat-header {
+        background: #ffffff;
+        height: 54px;
+        padding: 0 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eeeeee;
+        flex-shrink: 0;
       }
-      .chat-store-info { display: flex; align-items: center; gap: 10px; }
-      .chat-store-logo { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
-      .chat-store-name { font-size: 15px; font-weight: 700; color: #333; }
-      .chat-store-status { font-size: 11px; color: #2E7D32; display: flex; align-items: center; gap: 4px; margin-top: 2px; }
-      .chat-close-btn { background: none; border: none; font-size: 24px; cursor: pointer; color: #666; }
-      .chat-messages { flex: 1; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
-      .msg { max-width: 80%; padding: 12px 14px; border-radius: 14px; font-size: 14px; line-height: 1.4; word-wrap: break-word; }
-      .msg-bot { background: #fff; color: #333; align-self: flex-start; border-bottom-left-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-      .msg-user { background: #ff2b56; color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
-      .chat-suggestions {
-        padding: 10px 16px; background: #fff; border-top: 1px solid #e8e8e8;
-        display: flex; flex-direction: column; gap: 8px; max-height: 220px; overflow-y: auto;
+      .tt-chat-header-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
       }
-      .chat-suggestions::-webkit-scrollbar { display: none; }
-      .sug-title { font-size: 12px; color: #888; font-weight: 600; margin-bottom: 2px; text-transform: uppercase; }
-      .sug-btn {
-        background: #f5f5f5; border: 1px solid #e8e8e8; border-radius: 18px;
-        padding: 8px 14px; font-size: 13px; text-align: left; cursor: pointer;
-        color: #333; transition: all 0.2s; font-family: inherit;
+      .tt-chat-icon-btn {
+        background: none;
+        border: none;
+        padding: 4px;
+        color: #161823;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
       }
-      .sug-btn:hover { background: #ffe3ea; border-color: #ffd4e0; color: #ff2b56; }
-      .chat-input-area {
-        padding: 12px 16px; background: #fff; border-top: 1px solid #e8e8e8;
-        display: flex; gap: 10px; align-items: center;
+      .tt-chat-store-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: #161823;
+        letter-spacing: -0.2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
-      .chat-input {
-        flex: 1; height: 38px; border: 1px solid #ddd; border-radius: 19px;
-        padding: 0 16px; font-size: 14px; outline: none; font-family: inherit;
+      .tt-chat-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 14px 14px 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
       }
-      .chat-send-btn {
-        background: #ff2b56; border: none; color: #fff; width: 38px; height: 38px;
-        border-radius: 50%; display: flex; align-items: center; justify-content: center;
-        cursor: pointer; font-size: 16px; flex-shrink: 0;
+      .tt-chat-time {
+        text-align: center;
+        font-size: 12px;
+        color: #8a8b91;
+        margin: 2px 0 6px;
+      }
+      .tt-chat-bot-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .tt-chat-bot-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      }
+      .tt-chat-bot-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex: 1;
+        min-width: 0;
+      }
+      .tt-chat-bubble-bot {
+        background: #ffffff;
+        color: #161823;
+        border-radius: 12px;
+        padding: 12px 14px;
+        font-size: 15px;
+        line-height: 1.38;
+        max-width: 268px;
+        word-wrap: break-word;
+      }
+      .tt-chat-bubble-user {
+        background: #fe2c55;
+        color: #ffffff;
+        border-radius: 12px;
+        padding: 11px 14px;
+        font-size: 14.5px;
+        line-height: 1.38;
+        max-width: 80%;
+        align-self: flex-end;
+        word-wrap: break-word;
+      }
+      .tt-chat-faq-card {
+        background: #ffffff;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 295px;
+        overflow: hidden;
+      }
+      .tt-chat-faq-header {
+        padding: 13px 14px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #161823;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .tt-chat-faq-item {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 13px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        text-align: left;
+        font-family: inherit;
+        font-size: 14.5px;
+        line-height: 1.3;
+        color: #161823;
+        cursor: pointer;
+      }
+      .tt-chat-faq-item:active {
+        background: #f8f8f8;
+      }
+      .tt-chat-bot-caption {
+        font-size: 12px;
+        color: #9c9da3;
+        padding-left: 2px;
+      }
+      .tt-chat-product-float {
+        position: relative;
+        margin: 6px 12px 10px;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 10px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+      .tt-chat-float-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: none;
+        border: none;
+        padding: 2px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .tt-chat-float-img {
+        width: 68px;
+        height: 68px;
+        border-radius: 8px;
+        object-fit: cover;
+        flex-shrink: 0;
+        background: #f5f5f5;
+      }
+      .tt-chat-float-info {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding-right: 14px;
+      }
+      .tt-chat-float-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #161823;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tt-chat-float-sold {
+        font-size: 12px;
+        color: #8a8b91;
+      }
+      .tt-chat-float-price-row {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        margin-top: 2px;
+      }
+      .tt-chat-float-price {
+        font-size: 15px;
+        font-weight: 700;
+        color: #161823;
+      }
+      .tt-chat-float-orig {
+        font-size: 12px;
+        color: #9c9da3;
+        text-decoration: line-through;
+      }
+      .tt-chat-float-send {
+        background: #fe2c55;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: inherit;
+        cursor: pointer;
+        align-self: flex-end;
+        flex-shrink: 0;
+      }
+      .tt-chat-input-bar {
+        background: #ffffff;
+        padding: 8px 12px max(10px, env(safe-area-inset-bottom));
+        border-top: 1px solid #efefef;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+      .tt-chat-input {
+        flex: 1;
+        height: 40px;
+        background: #f3f3f4;
+        border: none;
+        border-radius: 20px;
+        padding: 0 15px;
+        font-size: 14.5px;
+        color: #161823;
+        outline: none;
+        font-family: inherit;
+      }
+      .tt-chat-input::placeholder {
+        color: #8a8b91;
+      }
+      .tt-chat-bar-icon {
+        background: none;
+        border: none;
+        padding: 4px;
+        color: #161823;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .tt-chat-sent-product {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        max-width: 82%;
+        align-self: flex-end;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .tt-chat-sent-product img {
+        width: 52px;
+        height: 52px;
+        border-radius: 6px;
+        object-fit: cover;
+        flex-shrink: 0;
       }
     </style>
 
-    <div class="chat-header">
-      <div class="chat-store-info">
-        <img class="chat-store-logo" src="${window.location.pathname.includes('/pages/') ? '../logo.png' : './logo.png'}" onerror="this.src='https://via.placeholder.com/40'" alt="Logo">
-        <div>
-          <div class="chat-store-name">Stone Shop</div>
-          <div class="chat-store-status">● Suporte Online</div>
+    <div class="tt-chat-header">
+      <div class="tt-chat-header-left">
+        <button type="button" class="tt-chat-icon-btn" aria-label="Voltar" onclick="closeSmartChat()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </button>
+        <div class="tt-chat-store-title">Stone Shop</div>
+      </div>
+      <button type="button" class="tt-chat-icon-btn" aria-label="Mais opções" onclick="sendChatSuggestion('Quero falar com um atendente', 'atendente')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#161823"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
+      </button>
+    </div>
+
+    <div class="tt-chat-body" id="chat-messages-box">
+      <div class="tt-chat-time">${timeStr}</div>
+      <div class="tt-chat-bot-row">
+        ${botAvatarSvg}
+        <div class="tt-chat-bot-col">
+          <div class="tt-chat-bubble-bot">Agradecemos por entrar em contato. Como posso ajudar hoje?</div>
+          <div class="tt-chat-faq-card">
+            <div class="tt-chat-faq-header">Como posso ajudar você hoje?</div>
+            <button type="button" class="tt-chat-faq-item" onclick="sendChatSuggestion('Como posso rastrear meu pacote?', 'rastrear')">
+              <span>Como posso rastrear meu pacote?</span>${chevronSvg}
+            </button>
+            <button type="button" class="tt-chat-faq-item" onclick="sendChatSuggestion('Ainda não recebi o produto.', 'nao_recebi')">
+              <span>Ainda não recebi o produto.</span>${chevronSvg}
+            </button>
+            <button type="button" class="tt-chat-faq-item" onclick="sendChatSuggestion('Quando vou receber as mercadorias?', 'quando_receber')">
+              <span>Quando vou receber as mercadorias?</span>${chevronSvg}
+            </button>
+            <button type="button" class="tt-chat-faq-item" onclick="sendChatSuggestion('Quando meu pedido chegará?', 'quando_chegara')">
+              <span>Quando meu pedido chegará?</span>${chevronSvg}
+            </button>
+          </div>
+          <div class="tt-chat-bot-caption">Enviado por chatbot</div>
         </div>
       </div>
-      <button class="chat-close-btn" onclick="closeSmartChat()">✕</button>
     </div>
 
-    <div class="chat-messages" id="chat-messages-box">
-      <div class="msg msg-bot">
-        Olá! Seja bem-vindo ao suporte oficial da <strong>Stone Shop</strong>. Como podemos te ajudar hoje?
-      </div>
-    </div>
+    ${floatingProductCardHtml}
 
-    <div class="chat-suggestions" id="chat-suggestions-box">
-      <div class="sug-title">Sugestões de perguntas</div>
-      <a href="https://wa.me/${(localStorage.getItem('stone_whatsapp_suporte') || '5511987654321').replace(/\D/g, '')}?text=${encodeURIComponent('Olá, gostaria de falar com o suporte oficial da Stone Shop!')}" target="_blank" class="sug-btn" style="text-decoration:none; background:#e8f5e9; border-color:#c8e6c9; color:#2e7d32; font-weight:700; display:flex; align-items:center; gap:6px;">
-        <span style="font-size:16px;">💬</span> Falar com Atendente no WhatsApp
-      </a>
-      <button class="sug-btn" onclick="sendChatSuggestion('Qual o prazo de entrega?', 'prazo')">📅 Qual o prazo de entrega?</button>
-      <button class="sug-btn" onclick="sendChatSuggestion('O frete é realmente grátis?', 'frete')">🚚 O frete é realmente grátis?</button>
-      <button class="sug-btn" onclick="sendChatSuggestion('Quais as formas de pagamento?', 'pagamento')">💳 Quais as formas de pagamento?</button>
-      <button class="sug-btn" onclick="sendChatSuggestion('Como funciona o reembolso?', 'reembolso')">🛡️ Como funciona o reembolso?</button>
-      <button class="sug-btn" onclick="sendChatSuggestion('Os produtos são originais e têm garantia?', 'garantia')">⭐ Os produtos são originais?</button>
-      ${prodInfo ? `<button class="sug-btn" onclick="sendChatSuggestion('Tem estoque deste produto?', 'produto')">🔍 Dúvidas sobre o produto atual</button>` : ''}
-    </div>
-
-    <div class="chat-input-area">
-      <input type="text" class="chat-input" id="chat-input-text" placeholder="Digite sua mensagem..." onkeypress="handleChatEnter(event)">
-      <button class="chat-send-btn" onclick="sendChatManual()">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    <div class="tt-chat-input-bar">
+      <input type="text" class="tt-chat-input" id="chat-input-text" placeholder="Enviar mensagem..." onkeypress="handleChatEnter(event)">
+      <button type="button" class="tt-chat-bar-icon" aria-label="Emoji" onclick="document.getElementById('chat-input-text')?.focus()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 14.5s1.3 2 3.5 2 3.5-2 3.5-2"/><circle cx="9" cy="10" r="1" fill="#161823" stroke="none"/><circle cx="15" cy="10" r="1" fill="#161823" stroke="none"/></svg>
+      </button>
+      <button type="button" class="tt-chat-bar-icon" aria-label="Enviar ou mais" onclick="sendChatManual()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
       </button>
     </div>
   `;
 
   overlay.appendChild(chatContainer);
   document.body.appendChild(overlay);
+  document.body.style.overflow = 'hidden';
 
-  // Fecha chat se clicar fora
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) closeSmartChat();
   });
 
   window.closeSmartChat = function () {
     overlay.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  function appendUserMsg(texto) {
+    const box = document.getElementById('chat-messages-box');
+    if (!box) return;
+    const div = document.createElement('div');
+    div.className = 'tt-chat-bubble-user';
+    div.textContent = texto;
+    box.appendChild(div);
+    box.scrollTo({ top: box.scrollHeight, behavior: 'smooth' });
+  }
+
+  function appendBotMsg(htmlTexto) {
+    const box = document.getElementById('chat-messages-box');
+    if (!box) return;
+    const row = document.createElement('div');
+    row.className = 'tt-chat-bot-row';
+    row.innerHTML = `${botAvatarSvg}<div class="tt-chat-bot-col"><div class="tt-chat-bubble-bot">${htmlTexto}</div><div class="tt-chat-bot-caption">Enviado por chatbot</div></div>`;
+    box.appendChild(row);
+    box.scrollTo({ top: box.scrollHeight, behavior: 'smooth' });
+  }
+
+  window.sendChatProductCard = function () {
+    const box = document.getElementById('chat-messages-box');
+    if (!box || !hasProd) return;
+    const card = document.createElement('div');
+    card.className = 'tt-chat-sent-product';
+    card.innerHTML = `<img src="${prodImg}" alt=""><div><div style="font-size:13px;font-weight:600;color:#161823;line-height:1.25;">${prodName.slice(0, 48)}</div><div style="font-size:14px;font-weight:700;color:#fe2c55;margin-top:3px;">${prodPriceStr}</div></div>`;
+    box.appendChild(card);
+    document.getElementById('tt-chat-product-float')?.remove();
+    box.scrollTo({ top: box.scrollHeight, behavior: 'smooth' });
+    setTimeout(() => {
+      appendBotMsg(`Sim! O produto <strong>${prodName}</strong> está disponível em nosso estoque com <strong>Frete grátis</strong> e envio imediato após a confirmação do pagamento.`);
+    }, 550);
   };
 
   window.sendChatSuggestion = function (texto, tipo) {
-    appendMsg(texto, 'user');
-
-    // Respostas prontas
-    let resposta = '';
-    if (tipo === 'prazo') {
-      resposta = '📅 Nosso prazo médio de entrega para qualquer região do Brasil é de <strong>3 a 7 dias úteis</strong> após a postagem, com rastreamento completo enviado por e-mail e WhatsApp.';
-    } else if (tipo === 'frete') {
-      resposta = '🚚 Sim! Oferecemos <strong>frete grátis sem valor mínimo</strong> para todos os pedidos realizados hoje. Aproveite!';
-    } else if (tipo === 'pagamento') {
-      resposta = '💳 Aceitamos pagamento via <strong>PIX</strong> (com aprovação imediata e desconto) e cartões de crédito em até 12x.';
-    } else if (tipo === 'reembolso') {
-      resposta = '🛡️ Oferecemos garantia de 7 dias para devolução ou troca sem custos. Se você não gostar ou houver qualquer problema, devolvemos 100% do seu dinheiro de forma imediata.';
-    } else if (tipo === 'garantia') {
-      resposta = '⭐ Todos os produtos da Stone Shop são enviados lacrados na caixa original, possuem garantia de fábrica de 1 ano e passam por controle rigoroso de qualidade.';
-    } else if (tipo === 'produto') {
-      resposta = `🔍 Sim! O item <strong>"${PRODUTO_ATUAL.nome}"</strong> está com estoque disponível no nosso centro de distribuição e pronto para envio imediato hoje com frete grátis!`;
+    appendUserMsg(texto);
+    let resposta = 'Obrigado pelo contato! Nossa equipe da <strong>Stone Shop</strong> está à disposição. Como posso te ajudar com seu pedido?';
+    if (tipo === 'rastrear') {
+      resposta = 'Assim que o pedido for despachado, você recebe o <strong>código de rastreamento oficial</strong> automaticamente no seu e-mail e WhatsApp cadastrados no checkout.';
+    } else if (tipo === 'nao_recebi') {
+      resposta = 'Fique tranquilo! Todos os pedidos possuem <strong>Proteção do cliente</strong> com garantia de entrega ou reembolso integral. Nos informe o número do seu pedido ou CPF para verificarmos agora mesmo.';
+    } else if (tipo === 'quando_receber' || tipo === 'quando_chegara' || tipo === 'prazo') {
+      const prazoTxt = document.getElementById('frete-prazo-dinamico')?.textContent?.trim() || '3 a 7 dias úteis';
+      resposta = `O envio é realizado em até 24h úteis após a aprovação do pagamento. Previsão estimada: <strong>${prazoTxt}</strong>, com frete grátis para todo o Brasil.`;
+    } else if (tipo === 'atendente') {
+      resposta = 'Nosso atendimento humano está disponível de segunda a sábado, das 08h às 20h. Pode enviar sua dúvida aqui mesmo que já te respondemos!';
     }
-
-    setTimeout(() => {
-      appendMsg(resposta, 'bot');
-    }, 600);
+    setTimeout(() => appendBotMsg(resposta), 550);
   };
 
   window.sendChatManual = function () {
     const input = document.getElementById('chat-input-text');
     if (!input) return;
     const txt = input.value.trim();
-    if (!txt) return;
-
-    appendMsg(txt, 'user');
+    if (!txt) { input.focus(); return; }
+    appendUserMsg(txt);
     input.value = '';
-
-    // Resposta padrão inteligente
     setTimeout(() => {
-      let resposta = 'Obrigado pelo contato! Nossa equipe de atendimento foi notificada e entrará em contato com você em instantes. Se preferir um atendimento ainda mais rápido, você também pode finalizar seu pedido direto no PIX.';
-      const txtLower = txt.toLowerCase();
-      if (txtLower.includes('prazo') || txtLower.includes('demora') || txtLower.includes('chegar')) {
-        resposta = '📅 O prazo médio de entrega é de <strong>3 a 7 dias úteis</strong> para todo o Brasil, com código de rastreamento oficial.';
-      } else if (txtLower.includes('frete') || txtLower.includes('envio') || txtLower.includes('gratis')) {
-        resposta = '🚚 O frete é <strong>100% grátis</strong> para todas as compras feitas hoje!';
-      } else if (txtLower.includes('pagar') || txtLower.includes('pix') || txtLower.includes('cartao')) {
-        resposta = '💳 Aceitamos <strong>PIX</strong> e cartão de crédito. Compras no PIX têm aprovação imediata e envio prioritário.';
-      } else if (txtLower.includes('original') || txtLower.includes('garantia') || txtLower.includes('replica')) {
-        resposta = '⭐ Garantimos a originalidade e o lacre de fábrica de todos os produtos, acompanhados de 1 ano de garantia total.';
+      const lower = txt.toLowerCase();
+      let resposta = 'Recebemos sua mensagem! Um atendente da <strong>Stone Shop</strong> já foi acionado e vai te responder por aqui em instantes.';
+      if (lower.includes('prazo') || lower.includes('chega') || lower.includes('demora') || lower.includes('entrega')) {
+        const prazoTxt = document.getElementById('frete-prazo-dinamico')?.textContent?.trim() || '3 a 7 dias úteis';
+        resposta = `A previsão de entrega para a sua região é <strong>${prazoTxt}</strong>, com código de rastreamento completo.`;
+      } else if (lower.includes('frete') || lower.includes('envio')) {
+        resposta = 'O envio hoje está com <strong>Frete grátis</strong> para todo o Brasil na promoção Black Friday!';
+      } else if (lower.includes('pix') || lower.includes('pagar') || lower.includes('cartao')) {
+        resposta = 'Aceitamos <strong>PIX</strong> com aprovação instantânea e envio prioritário no mesmo dia.';
+      } else if (lower.includes('rastre')) {
+        resposta = 'Seu código de rastreamento é enviado por e-mail e WhatsApp logo após a postagem do pedido.';
       }
-
-      appendMsg(resposta, 'bot');
-    }, 700);
+      appendBotMsg(resposta);
+    }, 600);
   };
 
   window.handleChatEnter = function (e) {
-    if (e.key === 'Enter') {
-      sendChatManual();
-    }
+    if (e.key === 'Enter') sendChatManual();
   };
-
-  function appendMsg(texto, remetente) {
-    const box = document.getElementById('chat-messages-box');
-    if (!box) return;
-
-    const div = document.createElement('div');
-    div.className = `msg msg-${remetente}`;
-    div.innerHTML = texto;
-    box.appendChild(div);
-
-    // Auto-scroll
-    box.scrollTo({ top: box.scrollHeight, behavior: 'smooth' });
-  }
 }
 
 // Configura botões de chat na página para abrir o modal de chat inteligente
