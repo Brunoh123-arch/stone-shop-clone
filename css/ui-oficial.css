@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,400..800&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,400..800&display=swap');
 
 /* ==========================================================================
    STONE SHOP — UI OFICIAL PERMANENTE (DECALQUE BLACK FRIDAY + PLAYER 16:9)
@@ -154,70 +154,6 @@
   display: none !important;
 }
 
-/* 1.1 SLIDER COUNTER (1/7), MODAL DE VARIAÇÕES E DEMAIS NÚMEROS EM TIKTOK SANS */
-.image-slider .slider-counter {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: 11.5px !important;
-  font-weight: 500 !important;
-  color: #ffffff !important;
-  background: rgba(0, 0, 0, 0.46) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  height: 20px !important;
-  padding: 0 8px !important;
-  border-radius: 999px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  line-height: 1 !important;
-  letter-spacing: 0.2px !important;
-}
-
-#variacoes-modal .var-modal-desc-badge {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-weight: 600 !important;
-  color: #e10543 !important;
-  background: #ffe8ee !important;
-  border-radius: 5px !important;
-  letter-spacing: -0.2px !important;
-}
-
-#variacoes-modal .var-modal-preco,
-#variacoes-modal .var-modal-currency,
-#variacoes-modal .var-modal-int,
-#variacoes-modal .var-modal-cents {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-weight: 600 !important;
-  color: #e10543 !important;
-}
-
-#variacoes-modal .var-modal-currency {
-  margin-right: 3px !important;
-}
-
-#variacoes-modal .var-modal-preco-orig {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-weight: 400 !important;
-}
-
-.cart-badge,
-.ratings-row .star-row span,
-.ratings-row .sold-count,
-.installment-row span,
-.related-price,
-.related-price-original,
-.related-discount,
-.related-sold,
-.bottom-bar .btn-buy .btn-line1,
-.bottom-bar .btn-buy .btn-line2 {
-  font-family: 'TikTok Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-}
 
 /* ==========================================================================
    2. PLAYER DE VÍDEO 16:9 OFICIAL TIKTOK SHOP (DESCRIÇÃO)
