@@ -7,9 +7,9 @@
     { "source": "/time-machine", "destination": "/versoes.html" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/painel", "destination": "/admin.html" },
-    { "source": "/resumo", "destination": "/pages/resumo.html" },
-    { "source": "/checkout", "destination": "/pages/resumo.html" },
-    { "source": "/carrinho", "destination": "/pages/carrinho.html" },
+    { "source": "/resumo", "destination": "/pages/resumo" },
+    { "source": "/checkout", "destination": "/pages/resumo" },
+    { "source": "/carrinho", "destination": "/pages/carrinho" },
     { "source": "/pages/produto-:id(\\d+).html", "destination": "/api/serve?slug=produto-:id" },
     { "source": "/pages/produto-:id(\\d+)", "destination": "/api/serve?slug=produto-:id" },
     { "source": "/", "destination": "/api/serve" }
