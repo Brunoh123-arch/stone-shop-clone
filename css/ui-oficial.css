@@ -958,15 +958,25 @@
 
 /* ==========================================================================
    9. BLOCO DETALHES ISOLADO 1:1 COM REFERÊNCIA OFICIAL ('TTDetalhesOnly')
+      (Proporção exata de tela: 4 linhas compactas + Vídeo inteiro visível)
    ========================================================================== */
+.product-info > .store-widget-section,
+.store-widget-section {
+  width: calc(100% + 28px) !important;
+  max-width: none !important;
+  margin-left: -14px !important;
+  margin-right: -14px !important;
+  border-bottom: none !important;
+}
+
 #sobre-este-produto.about-product-section {
   width: calc(100% + 28px) !important;
   max-width: none !important;
   margin-left: -14px !important;
   margin-right: -14px !important;
-  margin-top: 12px !important;
-  border-top: 8px solid #f8f8f8 !important;
-  padding: 20px 18px 20px 18px !important;
+  margin-top: 0 !important;
+  border-top: 8px solid #f5f5f5 !important;
+  padding: 16px 16px 16px 16px !important;
   background: #ffffff !important;
   box-sizing: border-box !important;
 }
@@ -978,7 +988,8 @@
 #sobre-este-produto .product-details-block .detail-label,
 #sobre-este-produto .product-details-block .detail-value,
 #sobre-este-produto .product-details-block .btn-detalhes-link,
-#sobre-este-produto .product-details-block .btn-detalhes-link span {
+#sobre-este-produto .product-details-block .btn-detalhes-link span,
+#sobre-este-produto .product-video-block .about-subtitle {
   font-family: 'TTDetalhesOnly', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-synthesis: none !important;
   -webkit-font-smoothing: antialiased !important;
@@ -987,43 +998,43 @@
 }
 
 #sobre-este-produto > .about-section-title {
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
   color: #000000 !important;
-  line-height: 23px !important;
-  letter-spacing: -0.2px !important;
-  margin: 0 0 16px 0 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.15px !important;
+  margin: 0 0 11px 0 !important;
 }
 
 #sobre-este-produto .product-details-block {
-  margin: 0 0 22px 0 !important;
+  margin: 0 0 20px 0 !important;
 }
 
 #sobre-este-produto .product-details-block .about-subtitle {
-  font-size: 15.5px !important;
+  font-size: 13.5px !important;
   font-weight: 600 !important;
   color: #161823 !important;
-  line-height: 20px !important;
-  margin: 0 0 20px 0 !important;
+  line-height: 17px !important;
+  margin: 0 0 13px 0 !important;
 }
 
 #sobre-este-produto .product-details-block .details-attributes-grid {
   display: flex !important;
   flex-direction: column !important;
-  gap: 5px !important;
+  gap: 2px !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 #sobre-este-produto .product-details-block .detail-row {
   display: flex !important;
-  align-items: flex-start !important;
+  align-items: baseline !important;
   justify-content: flex-start !important;
   gap: 0px !important;
   padding: 0 !important;
   margin: 0 !important;
-  font-size: 14.5px !important;
-  line-height: 19px !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
 }
 
 #sobre-este-produto .product-details-block .detail-row.is-hidden {
@@ -1031,26 +1042,38 @@
 }
 
 #sobre-este-produto .product-details-block .detail-label {
-  font-size: 14.5px !important;
+  font-size: 13px !important;
   font-weight: 400 !important;
   color: #858585 !important;
-  line-height: 19px !important;
-  width: 37% !important;
-  min-width: 124px !important;
-  max-width: 146px !important;
-  flex: 0 0 37% !important;
-  padding-right: 12px !important;
+  line-height: 18px !important;
+  width: 35.5% !important;
+  min-width: 114px !important;
+  max-width: 128px !important;
+  flex: 0 0 35.5% !important;
+  padding-right: 8px !important;
   box-sizing: border-box !important;
-  word-break: break-word !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 #sobre-este-produto .product-details-block .detail-value {
-  font-size: 14.5px !important;
+  font-size: 13px !important;
   font-weight: 400 !important;
   color: #1f1f1f !important;
-  line-height: 19px !important;
+  line-height: 18px !important;
   flex: 1 1 auto !important;
   min-width: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#sobre-este-produto .product-details-block.is-expanded .detail-label,
+#sobre-este-produto .product-details-block.is-expanded .detail-value {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
   word-break: break-word !important;
 }
 
@@ -1058,11 +1081,11 @@
   background: none !important;
   border: none !important;
   padding: 0 !important;
-  margin: 16px 0 0 0 !important;
-  font-size: 15px !important;
+  margin: 11px 0 0 0 !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   color: #2b5db9 !important;
-  line-height: 19px !important;
+  line-height: 17px !important;
   text-align: left !important;
   display: inline-block !important;
   cursor: pointer !important;
@@ -1071,10 +1094,27 @@
 }
 
 #sobre-este-produto .product-details-block .btn-detalhes-link span {
-  font-size: 15px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   color: #2b5db9 !important;
-  line-height: 19px !important;
+  line-height: 17px !important;
+}
+
+#sobre-este-produto .product-video-block {
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+}
+
+#sobre-este-produto .product-video-block .about-subtitle {
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #161823 !important;
+  line-height: 17px !important;
+  margin: 0 0 10px 0 !important;
+}
+
+#sobre-este-produto #sobre-produto-desc-section {
+  margin-top: 0 !important;
 }
 
 

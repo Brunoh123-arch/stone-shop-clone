@@ -1690,7 +1690,7 @@ function initProductTabs() {
       tabsBar.style.top = '-100px';
     }
 
-    const threshold = HEADER + TABS + 18;
+    const threshold = HEADER + TABS + 88;
     let active = 'visao-geral';
     const domOrder = ['avaliacoes', 'descricao', 'recomendacoes'];
     for (const key of domOrder) {
@@ -6592,6 +6592,7 @@ window.toggleProductDetails = function(btn) {
       r.style.setProperty('display', 'none', 'important');
     });
     btn.classList.remove('is-expanded');
+    container.classList.remove('is-expanded');
     btn.textContent = 'Ver mais';
   } else {
     hiddenRows.forEach(function(r) {
@@ -6599,6 +6600,7 @@ window.toggleProductDetails = function(btn) {
       r.style.setProperty('display', 'flex', 'important');
     });
     btn.classList.add('is-expanded');
+    container.classList.add('is-expanded');
     btn.textContent = 'Ver menos';
   }
 };
