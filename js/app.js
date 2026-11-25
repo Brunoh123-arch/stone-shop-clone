@@ -2326,14 +2326,15 @@ function openVariacaoModal(produto, fluxo = 'cart', onConfirm) {
             </div>
           </div>
           ${precoOrigFormatado ? `<div class="var-modal-preco-orig" id="var-modal-preco-orig-val">R$ ${precoOrigFormatado}</div>` : `<div class="var-modal-preco-orig" id="var-modal-preco-orig-val" style="display:none;"></div>`}
-          <div class="var-modal-frete-badge" style="display:inline-flex; align-items:center; gap:5px; margin-top:6px; padding:2px 8px; border:1px solid #8ad4ca; border-radius:6px; background:#ffffff; color:#007a6d; font-size:11.5px; font-weight:700; line-height:1.25; width:fit-content;">
-            <svg viewBox="0 0 24 20" width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
-              <path d="M1.5 5.5H5.5M0.5 8.5H4.5M1.5 11.5H4.5" stroke="#007a6d" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M5 4.2C5 3.26 5.76 2.5 6.7 2.5H14.5C15.44 2.5 16.2 3.26 16.2 4.2V14.5H5V4.2Z" fill="#007a6d"/>
-              <path d="M16.2 6.5H19.4C20.12 6.5 20.77 6.94 21.04 7.61L22.3 10.7C22.43 11.02 22.5 11.37 22.5 11.72V14.5H16.2V6.5Z" fill="#007a6d"/>
-              <path d="M17.6 8H19.4L20.5 10.6H17.6V8Z" fill="#ffffff"/>
-              <circle cx="8.8" cy="15.2" r="2.6" fill="#007a6d" stroke="#ffffff" stroke-width="1.2"/>
-              <circle cx="18.6" cy="15.2" r="2.6" fill="#007a6d" stroke="#ffffff" stroke-width="1.2"/>
+          <div class="var-modal-frete-badge" style="display:inline-flex; align-items:center; gap:4.5px; margin-top:6px; padding:2.5px 6.5px; border:1px solid #d7ebe8; border-radius:4px; background:#ffffff; color:#007f73; font-family:'BFOnlyNumbers','Plus Jakarta Sans',sans-serif; font-size:12px; font-weight:600; line-height:1.2; width:fit-content; letter-spacing:0px;">
+            <svg viewBox="0 0 22 16" width="14" height="11" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; display:block;">
+              <path d="M2.2 2.2C2.2 1.54 2.74 1 3.4 1H13.4C14.06 1 14.6 1.54 14.6 2.2V12.2H2.2V9.8H4.6C5.04 9.8 5.4 9.44 5.4 9C5.4 8.56 5.04 8.2 4.6 8.2H2.2V6.6H5.6C6.04 6.6 6.4 6.24 6.4 5.8C6.4 5.36 6.04 5 5.6 5H2.2V2.2Z" fill="#007f73"/>
+              <path d="M14.6 4.4H17.85C18.55 4.4 19.18 4.82 19.45 5.47L20.75 8.55C20.91 8.93 21 9.34 21 9.75V12.2H14.6V4.4Z" fill="#007f73"/>
+              <path d="M16.1 6H17.95L19.05 8.55H16.1V6Z" fill="#ffffff"/>
+              <circle cx="6.8" cy="12.6" r="2.5" fill="#007f73" stroke="#ffffff" stroke-width="1.15"/>
+              <circle cx="6.8" cy="12.6" r="0.85" fill="#ffffff"/>
+              <circle cx="17.1" cy="12.6" r="2.5" fill="#007f73" stroke="#ffffff" stroke-width="1.15"/>
+              <circle cx="17.1" cy="12.6" r="0.85" fill="#ffffff"/>
             </svg>
             <span>Frete grátis</span>
           </div>
@@ -4047,15 +4048,14 @@ function openSmartChat() {
   const soldText = document.querySelector('.sold-count')?.textContent?.trim() || '2.5K vendidos';
 
   const botAvatarSvg = `<div class="tt-chat-bot-avatar" aria-hidden="true">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="12" y1="3" x2="12" y2="6"></line>
-      <circle cx="12" cy="2.5" r="1" fill="#161823" stroke="none"></circle>
-      <rect x="4" y="6" width="16" height="12" rx="3.5"></rect>
-      <circle cx="9.2" cy="11.8" r="1.2" fill="#161823" stroke="none"></circle>
-      <circle cx="14.8" cy="11.8" r="1.2" fill="#161823" stroke="none"></circle>
-      <path d="M9.5 15h5"></path>
-      <line x1="2" y1="11" x2="4" y2="11"></line>
-      <line x1="20" y1="11" x2="22" y2="11"></line>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="5.1" r="1.75" stroke="#161823" stroke-width="1.75"></circle>
+      <line x1="12" y1="6.85" x2="12" y2="8.5" stroke="#161823" stroke-width="1.85"></line>
+      <rect x="5.8" y="8.5" width="12.4" height="9.6" rx="2.1" stroke="#161823" stroke-width="1.8"></rect>
+      <circle cx="9.65" cy="13.3" r="1.2" fill="#161823"></circle>
+      <circle cx="14.35" cy="13.3" r="1.2" fill="#161823"></circle>
+      <line x1="3.2" y1="11.1" x2="3.2" y2="15.5" stroke="#161823" stroke-width="1.85" stroke-linecap="butt"></line>
+      <line x1="20.8" y1="11.1" x2="20.8" y2="15.5" stroke="#161823" stroke-width="1.85" stroke-linecap="butt"></line>
     </svg>
   </div>`;
 
@@ -4155,15 +4155,15 @@ function openSmartChat() {
         gap: 8px;
       }
       .tt-chat-bot-avatar {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         background: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        box-shadow: none;
       }
       .tt-chat-bot-col {
         display: flex;
@@ -4411,10 +4411,15 @@ function openSmartChat() {
     <div class="tt-chat-input-bar">
       <input type="text" class="tt-chat-input" id="chat-input-text" placeholder="Enviar mensagem..." onkeypress="handleChatEnter(event)">
       <button type="button" class="tt-chat-bar-icon" aria-label="Emoji" onclick="document.getElementById('chat-input-text')?.focus()">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 14.5s1.3 2 3.5 2 3.5-2 3.5-2"/><circle cx="9" cy="10" r="1" fill="#161823" stroke="none"/><circle cx="15" cy="10" r="1" fill="#161823" stroke="none"/></svg>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9.7" stroke="#161823" stroke-width="1.85"></circle>
+          <ellipse cx="8.9" cy="10.1" rx="1.35" ry="1.85" fill="#161823"></ellipse>
+          <ellipse cx="15.1" cy="10.1" rx="1.35" ry="1.85" fill="#161823"></ellipse>
+          <path d="M8 13.7H16C15.8 16.4 14.1 17.9 12 17.9C9.9 17.9 8.2 16.4 8 13.7Z" fill="#161823"></path>
+        </svg>
       </button>
       <button type="button" class="tt-chat-bar-icon" aria-label="Enviar ou mais" onclick="sendChatManual()">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.7"/><line x1="12" y1="7.8" x2="12" y2="16.2"/><line x1="7.8" y1="12" x2="16.2" y2="12"/></svg>
       </button>
     </div>
   `;
@@ -6621,13 +6626,13 @@ window.calibrateDescricaoCollapsedHeight = function() {
   if (!container || container.classList.contains('is-expanded')) return;
   container.style.removeProperty('max-height');
   var fullH = container.scrollHeight || 0;
-  if (fullH > 0 && fullH <= 355) {
-    var targetH = Math.max(150, Math.round(fullH * 0.68));
+  if (fullH > 0 && fullH <= 445) {
+    var targetH = Math.max(170, Math.round(fullH * 0.72));
     container.style.setProperty('max-height', targetH + 'px', 'important');
-    if (fade) fade.style.setProperty('height', Math.min(135, Math.round(targetH * 0.72)) + 'px', 'important');
+    if (fade) fade.style.setProperty('height', Math.min(124, Math.round(targetH * 0.62)) + 'px', 'important');
   } else {
-    container.style.setProperty('max-height', '340px', 'important');
-    if (fade) fade.style.setProperty('height', '148px', 'important');
+    container.style.setProperty('max-height', '430px', 'important');
+    if (fade) fade.style.setProperty('height', '124px', 'important');
   }
 };
 

@@ -3,7 +3,7 @@ const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261125_toggle_20px_v19';
+const ASSET_VERSION = '20261125_chat_frete_desc_v20';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
