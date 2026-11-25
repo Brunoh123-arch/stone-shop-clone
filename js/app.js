@@ -6926,85 +6926,18 @@ window.toggleDescricaoCompleta = function() {
   function initSliderSizeGuideBadge() {
     const slider = document.querySelector('.image-slider');
     if (!slider) return;
-
-    const sizeGuideImgSrc = getProductSizeGuideImage();
-    if (!sizeGuideImgSrc) {
-      // Produto sem guia de tamanhos (eletrônicos, casa, etc.): não injeta nada e remove qualquer resquício
-      const existingGuide = document.getElementById('slider-size-guide');
-      if (existingGuide) existingGuide.remove();
-      const existingToggle = slider.querySelector('.slider-counter-toggle');
-      if (existingToggle) existingToggle.remove();
-      const counter = slider.querySelector('.slider-counter');
-      if (counter) counter.style.display = '';
-      return;
-    }
-
-    // 1. Injetar ou Atualizar container do Guia de Tamanhos no Slider
-    let guideContainer = document.getElementById('slider-size-guide');
-    if (!guideContainer) {
-      guideContainer = document.createElement('div');
-      guideContainer.id = 'slider-size-guide';
-      guideContainer.className = 'slider-size-guide';
-      guideContainer.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; background:#fff; z-index:5; display:none; align-items:center; justify-content:center; padding:16px 14px 60px 14px; box-sizing:border-box;';
-      guideContainer.innerHTML = `<img src="${sizeGuideImgSrc}" alt="Guia de Tamanhos Oficial" style="max-width:100%; max-height:100%; object-fit:contain; display:block; margin:auto;" />`;
-      slider.appendChild(guideContainer);
-    } else {
-      const guideImg = guideContainer.querySelector('img');
-      if (guideImg && guideImg.getAttribute('src') !== sizeGuideImgSrc) {
-        guideImg.src = sizeGuideImgSrc;
-      }
-    }
-
-    // 2. Modificar ou Injetar o Toggle no Contador do Slider
-    let counter = slider.querySelector('.slider-counter');
+    const existingGuide = document.getElementById('slider-size-guide');
+    if (existingGuide) existingGuide.remove();
+    const existingToggle = slider.querySelector('.slider-counter-toggle');
+    if (existingToggle) existingToggle.remove();
+    const counter = slider.querySelector('.slider-counter');
     if (counter) {
-      counter.style.display = 'none'; // esconde o simples
-    }
-
-    let toggle = slider.querySelector('.slider-counter-toggle');
-    if (!toggle) {
-      toggle = document.createElement('div');
-      toggle.className = 'slider-counter-toggle';
-      toggle.style.cssText = 'position:absolute; bottom:12px; right:12px; z-index:11; display:inline-flex; align-items:center; height:24px; background:rgba(0,0,0,0.42); border-radius:999px; padding:2px; box-sizing:border-box;';
-      
+      counter.classList.remove('is-hidden-by-toggle');
+      counter.removeAttribute('data-has-tamanho');
+      counter.style.removeProperty('display');
       const track = slider.querySelector('.slider-track');
-      const totalImgs = track ? track.querySelectorAll('.slider-img, img').length : 5;
-
-      toggle.innerHTML = `
-        <div id="btn-tab-fotos" style="height: 20px; padding: 0 8.5px; border-radius: 999px; color: #fff; font-size: 12px; font-weight: 500; background: rgba(255,255,255,0.22); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s;">
-          <span id="slider-count-cur">1</span>/${totalImgs}
-        </div>
-        <div id="btn-tab-tamanho" style="height: 20px; padding: 0 8.5px; border-radius: 999px; color: rgba(255,255,255,0.92); font-size: 12px; font-weight: 500; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s;">
-          Tamanho
-        </div>
-      `;
-
-      slider.appendChild(toggle);
-
-      const btnFotos = toggle.querySelector('#btn-tab-fotos');
-      const btnTamanho = toggle.querySelector('#btn-tab-tamanho');
-
-      btnFotos.onclick = function(e) {
-        if (e) e.stopPropagation();
-        window.switchSliderTab('fotos');
-        btnFotos.style.background = 'rgba(255,255,255,0.22)';
-        btnFotos.style.color = '#fff';
-        btnFotos.style.fontWeight = '500';
-        btnTamanho.style.background = 'transparent';
-        btnTamanho.style.color = 'rgba(255,255,255,0.92)';
-        btnTamanho.style.fontWeight = '500';
-      };
-
-      btnTamanho.onclick = function(e) {
-        if (e) e.stopPropagation();
-        window.switchSliderTab('tamanho');
-        btnTamanho.style.background = 'rgba(255,255,255,0.22)';
-        btnTamanho.style.color = '#fff';
-        btnTamanho.style.fontWeight = '500';
-        btnFotos.style.background = 'transparent';
-        btnFotos.style.color = 'rgba(255,255,255,0.92)';
-        btnFotos.style.fontWeight = '500';
-      };
+      const totalImgs = track ? track.querySelectorAll('.slider-img, img').length : 1;
+      counter.textContent = `1/${totalImgs}`;
     }
   }
 

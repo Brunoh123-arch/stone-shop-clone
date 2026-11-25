@@ -655,54 +655,29 @@
 .image-slider .slider-counter {
   position: absolute !important;
   bottom: 12px !important;
-  right: 12px !important;
-  height: 24px !important;
-  padding: 0 9.5px !important;
+  right: 16px !important;
+  height: 20px !important;
+  min-width: 30px !important;
+  padding: 0 7.5px !important;
   border-radius: 999px !important;
-  background: rgba(0, 0, 0, 0.42) !important;
+  background: rgba(0, 0, 0, 0.47) !important;
   color: #ffffff !important;
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.2px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0px !important;
   line-height: 1 !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
-
-.image-slider .slider-counter-toggle {
-  position: absolute !important;
-  bottom: 12px !important;
-  right: 12px !important;
-  height: 24px !important;
-  padding: 2px !important;
-  border-radius: 999px !important;
-  background: rgba(0, 0, 0, 0.42) !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 1px !important;
   box-sizing: border-box !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
 
-.image-slider .slider-counter-toggle #btn-tab-fotos,
-.image-slider .slider-counter-toggle #btn-tab-tamanho {
-  height: 20px !important;
-  padding: 0 8.5px !important;
-  border-radius: 999px !important;
-  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: 12px !important;
-  line-height: 1 !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin: 0 !important;
+.image-slider .slider-counter-toggle {
+  display: none !important;
 }
 
 
