@@ -9,644 +9,754 @@
 <script src="../js/tiktok-events.js"></script>
 <!-- End TikTok Pixel Base Code -->
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>Carrinho - Stone Shop</title>
-  <link rel="stylesheet" href="../css/style.css?v=1795410323540">
-  <style>
-    /* Estilos Premium do Carrinho Shopee Style */
-    body {
-      background-color: #f5f5f5 !important;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
-    .app-container {
-      background-color: #f5f5f5;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 74px;
-    }
-    .header {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 16px;
-      height: 54px;
-    }
-    .header-title-wrapper {
-      flex: 1;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .header-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: #000;
-      margin: 0;
-      line-height: 1.2;
-    }
-    .header-subtitle {
-      font-size: 11px;
-      color: #888;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2px;
-      margin-top: 2px;
-      cursor: pointer;
-    }
-    .header-subtitle svg {
-      width: 10px;
-      height: 10px;
-      stroke: #888;
-    }
-    .header-edit-btn {
-      font-size: 14px;
-      color: #333;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-weight: 500;
-    }
-
-    /* Bloco de Endereço / CPF no Topo */
-    .address-bar-box {
-      background: #fff;
-      padding: 10px 16px;
-      border-bottom: 1px solid #f2f2f2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 12px;
-      color: #777;
-      gap: 2px;
-    }
-    .address-bar-left {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      max-width: 90%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .address-bar-box svg {
-      width: 11px;
-      height: 11px;
-      stroke: #888;
-      flex-shrink: 0;
-    }
-
-    /* Estilo Checkbox customizado Shopee */
-    .shopee-checkbox-label {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      position: relative;
-      user-select: none;
-    }
-    .shopee-checkbox {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      border-radius: 50%;
-      appearance: none;
-      -webkit-appearance: none;
-      border: 1px solid #ccc;
-      background: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s;
-      outline: none;
-      margin-right: 10px;
-    }
-    .shopee-checkbox:checked {
-      background: #ff2b56;
-      border-color: #ff2b56;
-    }
-    .shopee-checkbox:checked:after {
-      content: "";
-      width: 5px;
-      height: 9px;
-      border: solid white;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-      margin-bottom: 2px;
-    }
-
-    /* Container de cada Lojinha/Produto */
-    .shop-section {
-      background: #fff;
-      margin-top: 8px;
-      border-bottom: 1px solid #eee;
-    }
-    .shop-header {
-      display: flex;
-      align-items: center;
-      padding: 10px 16px;
-      border-bottom: 1px solid #f8f8f8;
-      font-size: 14px;
-      font-weight: 700;
-      color: #222;
-    }
-    .shop-header-title {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      cursor: pointer;
-    }
-    .shop-header-title svg {
-      width: 12px;
-      height: 12px;
-      stroke: #666;
-    }
-    .shop-frete-banner {
-      background: #f0fafb;
-      padding: 9px 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12.5px;
-      color: #111;
-      font-weight: 500;
-    }
-    .shop-frete-banner svg {
-      color: #00a699;
-      flex-shrink: 0;
-    }
-
-    /* Item do Carrinho */
-    .cart-item-shopee {
-      display: flex;
-      padding: 14px 16px;
-      position: relative;
-    }
-    .cart-item-checkbox-wrapper {
-      display: flex;
-      align-items: center;
-      margin-right: 6px;
-    }
-    .cart-item-img {
-      width: 82px;
-      height: 82px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 1px solid #f0f0f0;
-      flex-shrink: 0;
-    }
-    .cart-item-details {
-      flex: 1;
-      margin-left: 12px;
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    .cart-item-name {
-      font-size: 13px;
-      color: #333;
-      font-weight: 500;
-      line-height: 1.35;
-      margin-bottom: 4px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .cart-item-variation-btn {
-      align-self: flex-start;
-      background: #f5f5f5;
-      border: none;
-      border-radius: 4px;
-      padding: 4px 8px;
-      font-size: 11px;
-      color: #666;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      margin-bottom: 8px;
-      cursor: pointer;
-    }
-    .cart-item-variation-btn svg {
-      width: 10px;
-      height: 10px;
-      stroke: #888;
-    }
-    .cart-item-price-qty-row {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-top: auto;
-    }
-    .cart-item-price-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    .cart-item-price-current {
-      font-size: 14px;
-      font-weight: 700;
-      color: #ff2b56;
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-    .cart-item-price-old {
-      font-size: 11px;
-      color: #999;
-      text-decoration: line-through;
-      margin-top: 1px;
-    }
-    .cart-item-qty-selector {
-      display: flex;
-      align-items: center;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      overflow: hidden;
-      height: 24px;
-    }
-    .cart-qty-btn {
-      width: 26px;
-      height: 100%;
-      background: #fff;
-      border: none;
-      font-size: 14px;
-      color: #555;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .cart-qty-btn:active {
-      background: #eee;
-    }
-    .cart-qty-val {
-      width: 32px;
-      text-align: center;
-      font-size: 12px;
-      font-weight: 600;
-      color: #333;
-      border-left: 1px solid #ddd;
-      border-right: 1px solid #ddd;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Barra de Cupons */
-    .coupon-section {
-      background: #fff;
-      margin-top: 8px;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 13px;
-      color: #333;
-      cursor: pointer;
-      border-bottom: 1px solid #eee;
-    }
-    .coupon-left {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .coupon-left svg {
-      color: #ff2b56;
-    }
-    .coupon-right {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      color: #ff2b56;
-      font-weight: 500;
-    }
-    .coupon-right svg {
-      width: 14px;
-      height: 14px;
-      stroke: #ff2b56;
-    }
-
-    /* Seção Proteção do Cliente */
-    .cart-protection-box {
-      background: #fff;
-      margin-top: 8px;
-      padding: 14px 16px;
-      border-bottom: 1px solid #eee;
-    }
-    .cart-protection-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 13px;
-      font-weight: 700;
-      color: #8B4D0B;
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
-    .cart-protection-header-left {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .cart-protection-header-left svg {
-      color: #8B4D0B;
-    }
-    .cart-protection-header svg {
-      width: 16 height 16;
-      stroke: #8B4D0B;
-    }
-    .cart-protection-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px 12px;
-      font-size: 11px;
-      color: #666;
-      padding-left: 4px;
-    }
-    .cart-protection-item {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    /* Modal de Endereço / CPF */
-    .address-modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0,0,0,0.5);
-      z-index: 1000;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-    }
-    .address-modal-content {
-      background: #fff;
-      width: 100%;
-      max-width: 480px;
-      border-radius: 12px 12px 0 0;
-      padding: 20px;
-      box-sizing: border-box;
-      animation: slideUp 0.3s ease-out;
-    }
-    .address-modal-title {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: #222;
-      text-align: center;
-    }
-    .address-input-group {
-      margin-bottom: 12px;
-    }
-    .address-input-label {
-      display: block;
-      font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: #555;
-    }
-    .address-input {
-      width: 100%;
-      padding: 10px 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-    .address-modal-save-btn {
-      width: 100%;
-      background: #ff2b56;
-      color: #fff;
-      border: none;
-      padding: 12px;
-      border-radius: 6px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      margin-top: 8px;
-    }
-    .input-error {
-      border: 1.5px solid #ff2b56 !important;
-      border-bottom: 1.5px solid #ff2b56 !important;
-    }
-    .error-text {
-      color: #ff2b56;
-      font-size: 11px;
-      padding: 4px 16px;
-      background: #fff;
-      display: block;
-      margin: 0;
-      text-align: left;
-    }
-
-    .shopee-cart-footer {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      max-width: 480px;
-      background: #fff;
-      border-top: 1px solid #e8e8e8;
-      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
-      z-index: 99;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 6px 16px;
-      box-sizing: border-box;
-    }
-    .footer-left {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      color: #333;
-    }
-    .footer-right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .footer-total-box {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-    .footer-total-price-row {
-      display: flex;
-      align-items: baseline;
-      gap: 2px;
-      font-size: 13px;
-      color: #333;
-      font-weight: 500;
-    }
-    .footer-total-price-val {
-      font-size: 18px;
-      font-weight: 700;
-      color: #ff2b56;
-    }
-    .footer-total-saving {
-      font-size: 10px;
-      color: #ff2b56;
-      font-weight: 500;
-      margin-top: 1px;
-    }
-    .footer-checkout-btn {
-      background: #ff2b56;
-      color: #fff;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 50px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      white-space: normal;
-      text-align: center;
-      line-height: 1.2;
-      min-width: 110px;
-    }
-
-    /* Recomendados do Carrinho */
-    .cart-empty-shopping-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 24px;
-      background: #ff2b56;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 14px;
-      margin-top: 14px;
-    }
-    /* Toggle definir como padrão */
-    #addr-padrao:checked ~ #toggle-track { background: #ff2b56 !important; }
-    #addr-padrao:checked ~ #toggle-thumb { transform: translateX(22px) !important; }
-  </style>
-    <!-- TikTok Shop Oficial Favicon -->
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAAAAAAAAQCEeRdzAAAFZUlEQVR4nKWXbWwURRjHf7O7d30vxRZaihUIBD+0JCo2pkIBwQBVEmNLMRFikwZCgPClBjTEoOAHoJKgEcKbQVtoQAIUiyKEBEhVAthwRRQiBRG19IW3chRK6e2Ome21XLfX3l35J3t7u/vM/P/PMzPPPCOIAAKhbikSORp4LuCTCVwTiL/dLvddn8+HKdWr0DDC5H4GyJfIAuAlYGgQG0simzvMjhqJ3A38ANx7WgFuoARYCqQ7vknHswakWZY1C1DXv0ApsNkfoYgFjAN2AC/3QeiE83sG8CXwjqZrxVLKOmnJ0AJ0Q8c0zbeQlAGDwiAOJWiiZVo/ISjSdO2oZVr9CBAo8llIvgWiQpELoRGf8az9/7HXS3tLS19CUpFUWpb1tlOE4TDODpdcITYlhdW795CVlUXi8bPMmzePugeN9mTo6afdVwyScinlBOBKMAExSHvMY8MNu5pZz8fFMjExgehpU5k7eRKfHN7buViDR2KotKQa2gnBBCwDsiIdc58leQRExwqKPlrOluM/0vjofl/mqu9XgYXA1kABKcASBgAhpd9ji5E549l1cB9FRUXUNzX210w5Ww60dQmY608uEc94Hb8AXQMpmTZjOmfO17LzwD7Ky8u5dPqss4niUJk0H0GFoekalmnNYYDQpLDD+KjxJtFJSchoF8NSU/lw0RKmRqVTcLqQVkxahMM9QYFhGBWGZVrDgMyBCrCEZgtoP3WB/VVVzNz4KcnxCTZZtEsQhYu2YIlQku3r8MWrtmPCSjhDUhmblUV6chonjx+HOw1oUmIJaTeM092UlX3FxuojLFu2jPxRr5BU1wxCV5tEMKQBI5SAzkziQHfEXG5yCwvJW7yQ7OxsXr+ts6K4mDVHdhFrqv2xs3cpIEaP5di1PylYPJ8XiWJwzGCaRDuPlElPEepJcY+2f4IJ6LKfUrKckpISZgwdbO9MxEGaS+tW2bUKhGoQ4KqHdmjrdyUoRPezGQnGTZ/J+wvn84Ii90ruezy4D3tIrK23LXyGwBLCmfUiggFc7Unr9z4mljcLZzN5+HA7NfJFBZtLS9nU+js+f3w6DB1dCvSB83uVgP8C33QHMS2NrPHjSdAMfHU3WL3vG6paL/BPgEoVdk0bEL3qQQWu3vBvDPd6rYQoN8mDk1SmwXvnFr/U19E9ot1WAqF3TkNNCPuKIJU1ILiuElGDZVp/+HP0E9xrgQetttakjHTciUk8vG37343UkSOIS0iwXXl814th+SKJwVld172GZdlTaG8vAQ3NXPL8xszMTLT0FBat+IDqBSpj+zFmFPlLF5E5ZBjRwOlzHrz0uQn1hmS/aZoY/pBVACt67gcmZVu3MH/ObOLdLt6Y/y4Hx2aw/ugxXC4XudOmkpOTwyCp8fDcZQ6dOEYz/gg4067T986Jf0DZdC3DW8AmYFWg5fmfq1n58Uo2rFljP782KZcpk3J57K8FVNXCmUaq123m4MUzdid+70LhM7UTqj+G42Whsyb4fO1avPVNlK5eRfLIDFu+TXyjnTaPh5Prt1F5spKLnf2Fgmp+qqsWcApoQ1CM5ERnvnsiYsfOrzm3p5K8vDxmJ49GSknTpSvU1NSwwbzKg66u+/dcWTQLTRQFVseGw+hXf23Qqy6s7Wihtmo36/yN1DD0QGjyhwjeC6wHewtQiUXXvrMsazaSXcF2SXvJ9csVlPy2Ite0UGU5qOJE3b4HciM8mAQjVqgGFiC57CQPKiAAF/zVa7hHM2cx/BfYI7btac6Gj4G1wHa7hoOuw+mQIIQKNwFVBKrD6SG12YToP+zT8W0hxHZN07abpqkqaFVFOY/n19Wl6/pNleHCxf9wyvJIDG8F0wAAAABJRU5ErkJggg==">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <link rel="preload" as="image" href="../decalque/decalque-oferta.jpg?v=1111" fetchpriority="high">
-  <link rel="preload" as="image" href="../img/banner-1111-modal.webp" fetchpriority="high">
-
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Carrinho - Stone Shop</title>
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="preload" href="../fonts/tt-pro-400.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../fonts/tt-pro-500.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../fonts/tt-pro-600.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="../css/style.css?v=1795410323540">
 <style>
-/* SWITCH TOGGLE TIKTOK SHOP OFICIAL (CIANO #20d5ec) */
-.tiktok-toggle-slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #e5e5e5;
-  transition: .3s cubic-bezier(.4,0,.2,1);
-  border-radius: 24px;
-}
-.tiktok-toggle-slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  transition: .3s cubic-bezier(.4,0,.2,1);
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-}
-input:checked + .tiktok-toggle-slider {
-  background-color: #20d5ec !important;
-}
-input:checked + .tiktok-toggle-slider:before {
-  transform: translateX(20px);
-}
-.tiktok-address-screen input::placeholder {
-  color: #a8a8a8;
-  font-weight: 400;
-}
-</style>
+  @font-face {
+    font-family: 'TTCartFont';
+    src: url('../fonts/tt-pro-400.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'TTCartFont';
+    src: url('../fonts/tt-pro-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'TTCartFont';
+    src: url('../fonts/tt-pro-600.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'TTCartFont';
+    src: url('../fonts/tt-pro-600.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
 
-<style>
-/* CSS OFICIAL TIKTOK SHOP MODAL DE ENDEREÇO (PERFECT FLEX LAYOUT) */
-.tiktok-address-screen::-webkit-scrollbar,
-.tiktok-address-screen *::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-.tiktok-address-screen,
-.tiktok-address-screen * {
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
-}
-.tiktok-address-screen input,
-.tiktok-address-screen select {
-  font-size: 16px !important;
-  color: #161823 !important;
-  line-height: 22px !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
-  box-sizing: border-box !important;
-}
-.tiktok-address-screen input::placeholder,
-.tiktok-address-screen select::placeholder {
-  color: #a0a0a5 !important;
-  font-size: 16px !important;
-  font-weight: 400 !important;
-}
-.tiktok-toggle-label {
-  position: relative;
-  display: inline-block;
-  width: 48px;
-  height: 28px;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-.tiktok-toggle-slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #e5e5e5;
-  transition: .25s ease;
-  border-radius: 28px;
-}
-.tiktok-toggle-slider:before {
-  position: absolute;
-  content: "";
-  height: 24px;
-  width: 24px;
-  left: 2px;
-  bottom: 2px;
-  background-color: #ffffff;
-  transition: .25s ease;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.18);
-}
-input:checked + .tiktok-toggle-slider {
-  background-color: #20d5ec !important;
-}
-input:checked + .tiktok-toggle-slider:before {
-  transform: translateX(20px);
-}
+  *, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5 !important;
+    color: #161823;
+    font-family: 'TTCartFont', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    font-variant-numeric: proportional-nums lining-nums;
+    font-feature-settings: "tnum" 0, "pnum" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .app-container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: calc(128px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* 1. HEADER OFICIAL TIKTOK SHOP CARRINHO (1:1) */
+  .tt-cart-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e4e4e5;
+    height: 54px;
+    padding: 0 15px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tt-cart-back-btn {
+    width: 32px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .tt-cart-header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 136px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tt-cart-header-title {
+    margin: 0;
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.18;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+  }
+
+  .tt-cart-header-sub {
+    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    max-width: 100%;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: #717171;
+    line-height: 1.2;
+    cursor: pointer;
+  }
+
+  .tt-cart-header-sub-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 185px;
+  }
+
+  .tt-cart-edit-btn {
+    background: none;
+    border: none;
+    padding: 4px 0;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    color: #161823;
+    cursor: pointer;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  /* 2. CHECKBOX CIRCULAR 22x22 OFICIAL TIKTOK SHOP */
+  .tt-check-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .tt-checkbox {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1.5px solid #b5b5b5;
+    background-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+    outline: none;
+    flex-shrink: 0;
+  }
+
+  .tt-checkbox:checked {
+    background-color: #fe2c55;
+    border-color: #fe2c55;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.5 8.2L6.6 11.3L12.6 4.8' stroke='%23ffffff' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 14px 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* 3. SEÇÃO DA LOJA + ITEM (1:1 COM GDRIVE_CART_REF) */
+  .shop-section {
+    background: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .shop-header {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px 9px 16px;
+    background: #ffffff;
+  }
+
+  .shop-header-title {
+    margin-left: 13.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .shop-shipping-banner {
+    margin: 0 4px 2px 4px;
+    height: 33px;
+    padding: 0 12px;
+    border-radius: 8px;
+    background: #effafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .shop-shipping-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .shop-shipping-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #057d7d;
+    flex-shrink: 0;
+    margin-left: 8px;
+  }
+
+  .cart-item-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 12.5px 14px 16px;
+    background: #ffffff;
+  }
+
+  .cart-item-check-col {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .cart-item-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #f0f0f0;
+    background: #f8f8f8;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block;
+  }
+
+  .cart-item-details {
+    flex: 1;
+    min-width: 0;
+    margin-left: 12px;
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-item-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3f3f44;
+    line-height: 1.32;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+
+  .cart-item-var-pill {
+    align-self: flex-start;
+    max-width: 100%;
+    height: 28px;
+    padding: 0 9px;
+    border-radius: 5px;
+    border: none;
+    background: #f1f1f2;
+    color: #161823;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .cart-item-var-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cart-item-price-qty-row {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .cart-item-price-black {
+    color: #000000;
+    display: inline-flex;
+    align-items: baseline;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .cart-item-price-black .p-rs {
+    font-size: 13.5px;
+    font-weight: 700;
+    margin-right: 2px;
+  }
+
+  .cart-item-price-black .p-int {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  .cart-item-price-black .p-dec {
+    font-size: 13.5px;
+    font-weight: 700;
+  }
+
+  /* Stepper [- | 1 | +] 80x28 #f1f1f2 sem borda externa */
+  .cart-qty-stepper {
+    width: 80px;
+    height: 28px;
+    border-radius: 5px;
+    background: #f1f1f2;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .cart-qty-btn {
+    width: 24px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000000;
+  }
+
+  .cart-qty-btn:active {
+    opacity: 0.6;
+  }
+
+  .cart-qty-divider {
+    width: 1px;
+    height: 14px;
+    background: #d5d5d6;
+    flex-shrink: 0;
+  }
+
+  .cart-qty-val {
+    width: 30px;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #161823;
+    line-height: 1;
+    user-select: none;
+  }
+
+  .cart-item-social-sub {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 4. PÍLULA FLUTUANTE "Todos os cupons" (1:1 CANTO INFERIOR ESQUERDO) */
+  .tt-floating-coupons-pill {
+    position: fixed;
+    left: max(16px, calc(50% - 224px));
+    bottom: calc(74px + env(safe-area-inset-bottom, 0px));
+    z-index: 97;
+    height: 44px;
+    padding: 4px 16px 4px 4px;
+    border-radius: 999px;
+    background: #ffe9ee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    border: none;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .tt-floating-coupons-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .tt-floating-coupons-text {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: -0.15px;
+    white-space: nowrap;
+  }
+
+  /* 5. RODAPÉ FIXO 1:1 TIKTOK SHOP CARRINHO */
+  .tt-cart-footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-top: 1px solid #e4e4e5;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)) 16px;
+    z-index: 99;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tt-footer-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .tt-footer-tudo-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+  }
+
+  .tt-footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tt-footer-total-val {
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+  }
+
+  .tt-footer-checkout-btn {
+    min-width: 126px;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 999px;
+    border: none;
+    background: #fe2c55;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.15;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .tt-footer-checkout-btn.delete-mode {
+    background: #ffffff;
+    color: #fe2c55;
+    border: 1.5px solid #fe2c55;
+  }
+
+  /* 6. CARRINHO VAZIO */
+  .cart-empty-shopping-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    background: #fe2c55;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  /* 7. RECOMENDAÇÕES STONE SHOP ("Você também pode gostar") */
+  .tt-rec-section {
+    padding: 14px 8px 8px 8px;
+    background: #f5f5f5;
+  }
+
+  .tt-rec-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 10px 4px;
+    letter-spacing: -0.2px;
+  }
+
+  .tt-rec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .tt-rec-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tt-rec-card img.rec-thumb {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #f2f2f2;
+    display: block;
+  }
+
+  .tt-rec-body {
+    padding: 8px 8px 10px 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .tt-rec-badges-top {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+
+  .tt-badge-bf {
+    background: linear-gradient(90deg, #ff1767 0%, #ed1590 100%);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1.5px 5px;
+    border-radius: 3px;
+    line-height: 1.2;
+  }
+
+  .tt-badge-star-shop {
+    background: #f9e6c8;
+    color: #5c3a09;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1.5px 5px;
+    border-radius: 3px;
+    line-height: 1.2;
+  }
+
+  .tt-rec-name {
+    font-size: 13px;
+    font-weight: 400;
+    color: #161823;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+
+  .tt-rec-price-line {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-top: auto;
+    flex-wrap: wrap;
+  }
+
+  .tt-rec-price-cur {
+    color: #e10543;
+    font-weight: 700;
+    font-size: 16.5px;
+    line-height: 1.1;
+  }
+
+  .tt-rec-price-cur small {
+    font-size: 11.5px;
+    font-weight: 700;
+  }
+
+  .tt-rec-price-old {
+    color: #8a8b91;
+    font-size: 11px;
+    text-decoration: line-through;
+  }
+
+  .tt-rec-coupon-pill {
+    margin-top: 4px;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    background: #fff0f3;
+    color: #e10543;
+    font-size: 10.5px;
+    font-weight: 600;
+    padding: 1.5px 5px;
+    border-radius: 3px;
+    line-height: 1.2;
+  }
+
+  .tt-rec-meta {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+    color: #717171;
+  }
+
+  /* 8. MODAL DE ENDEREÇO TIKTOK SHOP 1:1 */
+  .tiktok-address-screen::-webkit-scrollbar,
+  .tiktok-address-screen *::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .tiktok-address-screen,
+  .tiktok-address-screen * {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+  .tiktok-address-screen input,
+  .tiktok-address-screen select {
+    font-size: 16px !important;
+    color: #161823 !important;
+    line-height: 22px !important;
+    font-family: 'TTCartFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    box-sizing: border-box !important;
+  }
+  .tiktok-address-screen input::placeholder {
+    color: #a0a0a5 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .tiktok-toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .tiktok-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #e5e5e5;
+    transition: .25s ease;
+    border-radius: 28px;
+  }
+  .tiktok-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #ffffff;
+    transition: .25s ease;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+  }
+  input:checked + .tiktok-toggle-slider {
+    background-color: #20d5ec !important;
+  }
+  input:checked + .tiktok-toggle-slider:before {
+    transform: translateX(20px);
+  }
+
+  @keyframes zoomInNativeModal {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes ttSheetSlideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
 </style>
-  <!-- Google Fonts: Plus Jakarta Sans & Inter (Oficial TikTok Parity) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 </head>
 <body>
-  <!-- CRITICAL TIKTOK SPINNER (TRANSLÚCIDO E ULTRA-RÁPIDO) -->
+  <!-- SPINNER INSTANTÂNEO TIKTOK SHOP -->
   <div id="tt-instant-loader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.42);backdrop-filter:blur(3.5px);-webkit-backdrop-filter:blur(3.5px);z-index:99999999;display:flex;align-items:center;justify-content:center;transition:opacity 0.12s ease,visibility 0.12s ease;pointer-events:none;">
     <div style="position:relative;width:44px;height:20px;">
       <div style="position:absolute;width:20px;height:20px;border-radius:50%;background:#25F4EE;left:0;animation:ttBallCyan 0.85s cubic-bezier(0.45,0.05,0.55,0.95) infinite;"></div>
@@ -675,101 +785,167 @@ input:checked + .tiktok-toggle-slider:before {
         document.addEventListener('DOMContentLoaded', dismiss);
         window.addEventListener('load', dismiss);
       }
-      setTimeout(dismiss, 700);
+      setTimeout(dismiss, 650);
     })();
   </script>
 
   <div class="app-container">
 
-    <!-- HEADER -->
-  <header id="cart-header" style="background: #fff; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 100; height: 52px; display: flex; flex-direction: column; align-items: stretch; justify-content: center; padding: 0 16px; box-sizing: border-box; transition: height .2s;">
-<!-- TikTok Pixel Base Code -->
-<script>
-</script>
-<!-- End TikTok Pixel Base Code -->
-    <div style="display:flex; align-items:center; height: 52px; justify-content: space-between;">
-      <a href="javascript:voltarDoCarrinho()" aria-label="Voltar" style="display: flex; align-items: center; justify-content: center; width: 45px; height: 36px; background: none; border: none; cursor: pointer; text-decoration: none; color: #222; flex-shrink: 0; margin-right: auto;">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
+    <!-- HEADER 1:1 COM GDRIVE_CART_REF -->
+    <header id="cart-header" class="tt-cart-header">
+      <a href="javascript:voltarDoCarrinho()" class="tt-cart-back-btn" aria-label="Voltar">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 19 8 12 15 5"></polyline>
         </svg>
       </a>
-      <div style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; width: 60%; pointer-events: none;">
-        <h1 id="cart-header-title" style="font-size: 16px; font-weight: 700; color: #000; margin: 0; line-height: 1.1;">Carrinho (0)</h1>
-        <div id="cart-header-subtitle" style="display:none; font-size:11px; color:#888; margin-top:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding:0 4px; pointer-events: auto;">
-          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#888" stroke-width="2.5" style="vertical-align:middle;margin-right:2px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span id="cart-subtitle-text"></span>
-          <svg viewBox="0 0 24 24" width="8" height="8" fill="none" stroke="#aaa" stroke-width="2.5" style="vertical-align:middle;margin-left:2px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+
+      <div class="tt-cart-header-center">
+        <h1 id="cart-header-title" class="tt-cart-header-title">Carrinho (0)</h1>
+        <div id="cart-header-subtitle" class="tt-cart-header-sub" onclick="handleAddressClick()">
+          <svg viewBox="0 0 24 24" width="12.5" height="12.5" fill="none" stroke="#717171" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <path d="M12 2.5a7 7 0 0 0-7 7c0 4.9 7 12 7 12s7-7.1 7-12a7 7 0 0 0-7-7z"></path>
+            <circle cx="12" cy="9.5" r="2.4"></circle>
+          </svg>
+          <span id="cart-subtitle-text" class="tt-cart-header-sub-text">Adicionar endereço</span>
+          <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#717171" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </div>
       </div>
-      <button id="header-edit-btn" onclick="openAddressModal(true)" style="font-size: 14px; color: #333; background: none; border: none; cursor: pointer; font-weight: 500; width: 45px; text-align: right; flex-shrink: 0; margin-left: auto; display: none;">Editar</button>
-    </div>
-  </header>
 
-  <!-- ÁREA ROLÁVEL: endereço/CPF + produtos -->
-  <div class="page-content" id="cart-page-content" style="padding-top: 0; margin-top: 0;">
+      <button type="button" id="header-edit-btn" class="tt-cart-edit-btn" onclick="toggleCartEditMode()">Editar</button>
+    </header>
 
-    <!-- SEÇÃO DE ENDEREÇO (Idêntica ao Resumo) -->
-    <div id="address-cpf-section" style="background: #fff;">
-      <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:14px 16px; cursor:pointer;">
-        <!-- Preenchido dinamicamente por loadAddress() -->
-      </div>
-      <!-- DIVISÓRIA LISTRADA OFICIAL TIKTOK SHOP -->
-      <div class="colored-divider" style="height: 4px; width: 100%; background-image: repeating-linear-gradient(45deg, #00c2cb 0px, #00c2cb 12px, #fff 12px, #fff 18px, #fe2c55 18px, #fe2c55 30px, #fff 30px, #fff 36px); margin-bottom: 8px;"></div>
-    </div>
+    <!-- CONTEÚDO DO CARRINHO -->
+    <main id="cart-page-content" style="flex:1;">
+      <div id="cart-items-wrapper"></div>
+    </main>
 
-    <!-- Itens do carrinho renderizados por JS -->
-    <div id="cart-items-wrapper"></div>
+    <!-- PÍLULA FLUTUANTE "Todos os cupons" (1:1 GDRIVE_CART_REF) -->
+    <button type="button" id="floating-coupons-pill" class="tt-floating-coupons-pill" onclick="openCuponsModal()">
+      <span class="tt-floating-coupons-icon">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ttCouponGrad" x1="21" y1="6" x2="7" y2="22" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ff9327"/>
+              <stop offset="52%" stop-color="#ff4949"/>
+              <stop offset="100%" stop-color="#ff1c59"/>
+            </linearGradient>
+          </defs>
+          <g transform="rotate(-45 14 14)">
+            <path d="M4.5 9C4.5 7.9 5.4 7 6.5 7H21.5C22.6 7 23.5 7.9 23.5 9V11.4C22.05 11.4 20.9 12.55 20.9 14C20.9 15.45 22.05 16.6 23.5 16.6V19C23.5 20.1 22.6 21 21.5 21H6.5C5.4 21 4.5 20.1 4.5 19V16.6C5.95 16.6 7.1 15.45 7.1 14C7.1 12.55 5.95 11.4 4.5 11.4V9Z" fill="url(#ttCouponGrad)"/>
+            <rect x="13" y="8.2" width="2" height="2.2" rx="0.6" fill="#ffffff"/>
+            <rect x="13" y="12.9" width="2" height="2.2" rx="0.6" fill="#ffffff"/>
+            <rect x="13" y="17.6" width="2" height="2.2" rx="0.6" fill="#ffffff"/>
+          </g>
+        </svg>
+      </span>
+      <span class="tt-floating-coupons-text">Todos os cupons</span>
+    </button>
 
-  </div>
-
-  <!-- RODAPÉ FLUTUANTE DO CARRINHO -->
-  <div class="shopee-cart-footer" id="shopee-cart-footer-bar" style="display:none">
-    <div class="footer-left">
-      <label class="shopee-checkbox-label">
-        <input type="checkbox" class="shopee-checkbox" id="select-all-checkbox" checked onchange="toggleSelectAll(this)">
-        <span>Tudo</span>
+    <!-- RODAPÉ FLUTUANTE 1:1 COM GDRIVE_CART_REF -->
+    <div class="tt-cart-footer" id="shopee-cart-footer-bar">
+      <label class="tt-footer-left" for="select-all-checkbox">
+        <input type="checkbox" class="tt-checkbox" id="select-all-checkbox" onchange="toggleSelectAll(this)">
+        <span class="tt-footer-tudo-label" id="footer-tudo-text">Tudo</span>
       </label>
+
+      <div class="tt-footer-right">
+        <span class="tt-footer-total-val" id="footer-total-val">R$ 0,00</span>
+        <button type="button" class="tt-footer-checkout-btn" id="footer-checkout-btn-action" onclick="handleFooterPrimaryAction()">Finalizar<br>compra</button>
+      </div>
     </div>
-    <div class="footer-right">
-      <div class="footer-total-box">
-        <div class="footer-total-price-row">
-          <span>Total:</span>
-          <span class="footer-total-price-val" id="footer-total-val">R$ 0,00</span>
+
+    <!-- MODAL NATIVO TIKTOK SHOP: ADICIONAR ENDEREÇO DE ENTREGA -->
+    <div id="modal-address-native-alert" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:999998; align-items:center; justify-content:center;">
+      <div style="background:#fff; width:85%; max-width:320px; border-radius:16px; text-align:center; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.2); animation:zoomInNativeModal 0.18s ease-out;">
+        <div style="padding:22px 20px 8px 20px;">
+          <h3 style="font-size:17px; font-weight:700; color:#000; margin:0 0 8px 0; letter-spacing:-0.2px;">Adicionar endereço de entrega</h3>
+          <p style="font-size:14px; color:#555; line-height:1.42; margin:0 0 16px 0;">Sua conta não tem um endereço de envio. Adicione um para prosseguir com a finalização da compra.</p>
         </div>
-        <span class="footer-total-saving" id="footer-saving-val">R$ 0,50 de desconto</span>
-      </div>
-      <button class="footer-checkout-btn" id="footer-checkout-btn-action" onclick="irParaCheckout()">Finalizar<br>compra (0)</button>
-    </div>
-  </div>
-
-  <!-- MODAL NATIVO TIKTOK SHOP (Adicionar endereço de entrega) -->
-  <div id="modal-address-native-alert" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999998; align-items:center; justify-content:center;">
-    <div style="background:#fff; width:85%; max-width:320px; border-radius:18px; text-align:center; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.2); animation:zoomInNativeModal 0.2s ease-out; font-family:-apple-system,BlinkMacSystemFont,Inter,sans-serif;">
-      <div style="padding:24px 20px 8px 20px;">
-        <h3 style="font-size:18px; font-weight:800; color:#000; margin:0 0 10px 0; letter-spacing:-0.3px;">Adicionar endereço de entrega</h3>
-        <p style="font-size:14px; color:#555; line-height:1.45; margin:0 0 16px 0;">Sua conta não tem um endereço de envio. Adicione um para prosseguir com a finalização da compra.</p>
-      </div>
-      <div style="display:flex; border-top:1px solid #f0f0f0; height:48px;">
-        <button onclick="closeNativeAddressAlert(event)" style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#555; font-weight:500; cursor:pointer; outline:none;">Mais tarde</button>
-        <button onclick="proceedToFullAddressForm(event)" style="flex:1; background:none; border:none; font-size:15px; color:#000; font-weight:800; cursor:pointer; outline:none;">Adicionar</button>
+        <div style="display:flex; border-top:1px solid #f0f0f0; height:48px;">
+          <button type="button" onclick="closeNativeAddressAlert(event)" style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#555; font-weight:500; cursor:pointer; font-family:inherit;">Mais tarde</button>
+          <button type="button" onclick="proceedToFullAddressForm(event)" style="flex:1; background:none; border:none; font-size:15px; color:#fe2c55; font-weight:700; cursor:pointer; font-family:inherit;">Adicionar</button>
+        </div>
       </div>
     </div>
-  </div>
-  <style>
-    @keyframes zoomInNativeModal {
-      from { transform: scale(0.9); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-  </style>
 
-  <!-- MODAL ENDEREÇO - TELA COMPLETA ESTILO TIKTOK -->
-      <!-- MODAL OFICIAL TIKTOK SHOP (IDÊNTICO AOS PRINTS: NOVO ENDEREÇO / EDITAR COM S/N AUTOMÁTICO) -->
+    <!-- MODAL CONFIRMAÇÃO DE REMOÇÃO DE ITEM -->
+    <div id="remove-confirm-overlay" onclick="if(event.target===this)this.style.display='none'" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:999996; align-items:center; justify-content:center;">
+      <div style="background:#ffffff; width:84%; max-width:310px; border-radius:14px; text-align:center; overflow:hidden; box-shadow:0 8px 28px rgba(0,0,0,0.18); animation:zoomInNativeModal 0.16s ease-out;">
+        <div style="padding:22px 20px 16px 20px;">
+          <div style="font-size:16.5px; font-weight:700; color:#161823; margin-bottom:6px;">Excluir item?</div>
+          <div id="remove-confirm-desc" style="font-size:13.5px; color:#666666; line-height:1.4;">Tem certeza de que deseja remover este item do seu carrinho?</div>
+        </div>
+        <div style="display:flex; border-top:1px solid #eeeeee; height:46px;">
+          <button type="button" id="btn-cancel-remove" style="flex:1; background:none; border:none; border-right:1px solid #eeeeee; font-size:15px; font-weight:500; color:#555555; cursor:pointer; font-family:inherit;">Cancelar</button>
+          <button type="button" id="btn-confirm-remove" style="flex:1; background:none; border:none; font-size:15px; font-weight:700; color:#fe2c55; cursor:pointer; font-family:inherit;">Excluir</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM SHEET DE CUPONS ("Todos os cupons") -->
+    <div id="cupons-modal-overlay" onclick="if(event.target===this)closeCuponsModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:999995; align-items:flex-end; justify-content:center;">
+      <div id="cupons-modal-box" style="width:100%; max-width:480px; background:#f6f6f7; border-radius:14px 14px 0 0; overflow:hidden; animation:ttSheetSlideUp 0.22s cubic-bezier(0.32,0.72,0,1);">
+        <div style="height:52px; background:#ffffff; display:flex; align-items:center; justify-content:center; position:relative; border-bottom:1px solid #efefef;">
+          <span style="font-size:16.5px; font-weight:700; color:#000000;">Cupons e ofertas</span>
+          <button type="button" onclick="closeCuponsModal()" aria-label="Fechar" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); width:32px; height:32px; border:none; background:none; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="2.1" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div style="padding:14px 14px 18px 14px; display:flex; flex-direction:column; gap:10px;">
+          <div style="background:#ffffff; border:1px solid #ffd5df; border-radius:10px; padding:14px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+            <div style="min-width:0;">
+              <div style="display:inline-flex; align-items:center; gap:5px; background:#fff0f3; color:#fe2c55; font-size:11px; font-weight:700; padding:2px 6px; border-radius:4px; margin-bottom:5px;">Cupom TikTok Shop</div>
+              <div id="cupom-desc-valor" style="font-size:15.5px; font-weight:700; color:#161823;">Desconto automático aplicado</div>
+              <div style="font-size:12px; color:#717171; margin-top:2px;">Válido em todos os itens Stone Shop</div>
+            </div>
+            <span style="width:22px; height:22px; border-radius:50%; background:#fe2c55; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.2L6.6 11.3L12.6 4.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div style="background:#ffffff; border:1px solid #d5f2ef; border-radius:10px; padding:14px; display:flex; align-items:center; justify-content:space-between; gap:12px;">
+            <div style="min-width:0;">
+              <div style="display:inline-flex; align-items:center; gap:5px; background:#effafa; color:#057d7d; font-size:11px; font-weight:700; padding:2px 6px; border-radius:4px; margin-bottom:5px;">Cupom de Envio</div>
+              <div style="font-size:15.5px; font-weight:700; color:#161823;">Frete grátis disponível</div>
+              <div style="font-size:12px; color:#717171; margin-top:2px;">Aplicado automaticamente na finalização</div>
+            </div>
+            <span style="width:22px; height:22px; border-radius:50%; background:#057d7d; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3.5 8.2L6.6 11.3L12.6 4.8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <button type="button" onclick="closeCuponsModal()" style="margin-top:6px; width:100%; height:44px; border:none; border-radius:999px; background:#fe2c55; color:#ffffff; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit;">Confirmar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM SHEET DE TROCA DE VARIAÇÃO NO CARRINHO -->
+    <div id="cart-var-overlay" onclick="if(event.target===this)closeCartVarSheet()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:999995; align-items:flex-end; justify-content:center;">
+      <div style="width:100%; max-width:480px; background:#ffffff; border-radius:14px 14px 0 0; overflow:hidden; animation:ttSheetSlideUp 0.22s cubic-bezier(0.32,0.72,0,1); padding:16px 16px calc(18px + env(safe-area-inset-bottom, 0px)) 16px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;">
+          <div style="display:flex; align-items:center; gap:12px; min-width:0;">
+            <img id="cart-var-sheet-img" src="" alt="" style="width:56px; height:56px; border-radius:6px; object-fit:cover; border:1px solid #efefef; flex-shrink:0;">
+            <div style="min-width:0;">
+              <div id="cart-var-sheet-price" style="font-size:17px; font-weight:700; color:#000000;"></div>
+              <div id="cart-var-sheet-cur" style="font-size:12.5px; color:#717171; margin-top:2px;"></div>
+            </div>
+          </div>
+          <button type="button" onclick="closeCartVarSheet()" style="width:32px; height:32px; border:none; background:none; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="2.1" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div style="font-size:13.5px; font-weight:600; color:#161823; margin-bottom:8px;">Opções disponíveis</div>
+        <div id="cart-var-sheet-options" style="display:flex; flex-wrap:wrap; gap:8px; max-height:220px; overflow-y:auto; margin-bottom:16px;"></div>
+        <button type="button" onclick="confirmCartVarSheet()" style="width:100%; height:44px; border:none; border-radius:999px; background:#fe2c55; color:#ffffff; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit;">Confirmar</button>
+      </div>
+    </div>
+
+    <!-- MODAL OFICIAL TIKTOK SHOP DE ENDEREÇO COMPLETO (COM SUGESTÃO DE CEP 1:1) -->
     <div id="address-modal-box" class="tiktok-address-screen"
-      style="display:none; position:fixed; inset:0; width:100%; max-width:480px; left:0; right:0; margin:0 auto; height:100%; background:#f6f6f7; z-index:99999; flex-direction:column; overflow:hidden; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; box-sizing:border-box;">
+      style="display:none; position:fixed; inset:0; width:100%; max-width:480px; left:0; right:0; margin:0 auto; height:100%; background:#f6f6f7; z-index:999999; flex-direction:column; overflow:hidden; box-sizing:border-box;">
 
-      <!-- 1. Header Fixo no Topo (52px) -->
       <div class="tiktok-address-header"
-        style="background:#ffffff; height:52px; min-height:52px; flex-shrink:0; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid #f0f0f0; z-index:10; box-sizing:border-box;">
+        style="background:#ffffff; height:52px; min-height:52px; flex-shrink:0; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid #f0f0f0; z-index:10;">
         <button type="button" onclick="closeAddressModalLocal()" aria-label="Voltar"
           style="background:none; border:none; cursor:pointer; padding:0; display:flex; align-items:center; justify-content:flex-start; width:32px; height:32px;">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -784,7 +960,7 @@ input:checked + .tiktok-toggle-slider:before {
         <div style="min-width:32px; display:flex; justify-content:flex-end;">
           <button type="button" id="addr-modal-delete-btn" onclick="deleteAddressLocal()" aria-label="Excluir endereço"
             style="display:none; background:none; border:none; cursor:pointer; padding:4px; align-items:center; justify-content:center;">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#161823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#161823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="3 6 5 6 21 6"></polyline>
               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
               <line x1="10" y1="11" x2="10" y2="17"></line>
@@ -794,1237 +970,788 @@ input:checked + .tiktok-toggle-slider:before {
         </div>
       </div>
 
-      <!-- 2. Scroll Body Suave (Flex 1) -->
-      <div id="addr-scroll-body" style="flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; padding-bottom:16px; box-sizing:border-box;">
-        
-        <!-- Rótulo Seção de Contato -->
-        <div id="addr-section-title-contato" style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
-          Informações de contato
-        </div>
-
-        <!-- CARD 0: Informações de contato (Nome, Telefone, E-mail) -->
-        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px; box-sizing:border-box;">
-          
-          <!-- Nome e sobrenome -->
-          <div id="addr-nome-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+      <div id="addr-scroll-body" style="flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; padding-bottom:16px;">
+        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">Informações de contato</div>
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px;">
+          <div id="addr-nome-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <input id="addr-nome" type="text" placeholder="Nome e sobrenome" autocomplete="name"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
-            <div id="addr-nome-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
-              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
-                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
-                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
-                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
-              </svg>
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
+            <div id="addr-nome-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;"><path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/><rect x="11" y="8" width="2" height="5.5" rx="1" fill="#fff"/><circle cx="12" cy="16.5" r="1.2" fill="#fff"/></svg>
               <span>Insira seu nome e sobrenome</span>
             </div>
           </div>
 
-          <!-- Número de telefone com BR +55 | -->
-          <div id="addr-tel-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+          <div id="addr-tel-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <div style="display:flex; align-items:center;">
-              <span style="font-size:16px; color:#161823; font-weight:500; white-space:nowrap; cursor:default; display:inline-flex; align-items:center;">
-                BR +55
-              </span>
+              <span style="font-size:16px; color:#161823; font-weight:500; white-space:nowrap;">BR +55</span>
               <span style="display:inline-block; width:1px; height:16px; background:#e0e0e0; margin:0 12px;"></span>
               <input id="addr-tel" type="tel" maxlength="15" placeholder="Número de telefone" autocomplete="tel"
-                style="flex:1; width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+                style="flex:1; width:100%; border:none; outline:none; background:transparent; padding:0;" />
             </div>
-            <div id="addr-tel-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
-              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
-                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
-                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
-                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
-              </svg>
+            <div id="addr-tel-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;"><path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/><rect x="11" y="8" width="2" height="5.5" rx="1" fill="#fff"/><circle cx="12" cy="16.5" r="1.2" fill="#fff"/></svg>
               <span>Insira um número de telefone válido</span>
             </div>
           </div>
 
-          <!-- E-mail (com borda inferior idêntica ao Print 1) -->
-          <div id="addr-email-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
+          <div id="addr-email-wrap" style="padding:16px 0 12px 0;">
             <input id="addr-email" type="email" placeholder="E-mail (opcional)" autocomplete="email"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
           </div>
         </div>
 
-        <!-- Rótulo Seção de Endereço -->
-        <div id="addr-section-title-endereco" style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
-          Informações de endereço
-        </div>
-
-        <!-- CARD 1: Informações de endereço (Idêntico aos Prints 1 e 2) -->
-        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px; box-sizing:border-box;">
-          
-          <!-- CEP/Código postal -->
-          <div id="addr-cep-wrap" class="tiktok-input-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
-            <input id="addr-cep" type="tel" maxlength="9" placeholder="CEP/Código postal" autocomplete="postal-code"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
-            <div id="addr-cep-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
-              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
-                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
-                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
-                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
-              </svg>
+        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">Informações de endereço</div>
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px;">
+          <!-- CEP com botão limpar e Card Flutuante de Sugestão 1:1 -->
+          <div id="addr-cep-wrap" style="position:relative; border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <input id="addr-cep" type="tel" maxlength="9" placeholder="CEP/Código postal" autocomplete="postal-code"
+                style="flex:1; width:100%; border:none; outline:none; background:transparent; padding:0;" />
+              <button type="button" id="addr-cep-clear-btn" onclick="limparCampoCepResumo(event)" aria-label="Limpar CEP"
+                style="display:none; width:18px; height:18px; border-radius:50%; border:none; background:#a5a6ab; color:#ffffff; align-items:center; justify-content:center; padding:0; cursor:pointer; flex-shrink:0;">
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>
+              </button>
+            </div>
+            <div id="addr-cep-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;"><path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/><rect x="11" y="8" width="2" height="5.5" rx="1" fill="#fff"/><circle cx="12" cy="16.5" r="1.2" fill="#fff"/></svg>
               <span>Insira um CEP válido</span>
             </div>
+            <div id="addr-cep-suggest-card" onclick="aplicarSugestaoCepResumo(event)"
+              style="display:none; position:absolute; left:-4px; right:-4px; top:calc(100% + 6px); background:#ffffff; border-radius:10px; padding:13px 16px; box-shadow:0 6px 24px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.06); z-index:60; cursor:pointer;">
+              <div style="font-size:15.5px; line-height:1.32; color:#161823;">
+                <strong id="addr-cep-sug-code" style="font-weight:700; color:#000000;"></strong><span id="addr-cep-sug-street" style="color:#737378; font-weight:400;"></span>
+              </div>
+              <div id="addr-cep-sug-sub" style="font-size:13px; color:#8a8b91; margin-top:3px; line-height:1.3;"></div>
+            </div>
           </div>
 
-          <!-- Estado/UF & Cidade lado a lado com chevron ∨ -->
           <div style="display:flex; gap:14px; align-items:flex-end;">
-            <!-- Estado/UF -->
-            <div id="addr-estado-wrap" style="flex:1; border-bottom:1px solid #ebebeb; position:relative; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <div id="addr-estado-wrap" style="flex:1; border-bottom:1px solid #ebebeb; position:relative; padding:16px 0 12px 0;">
               <select id="addr-estado"
-                style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; appearance:none; -webkit-appearance:none; cursor:pointer; padding-right:22px; line-height:22px;">
+                style="width:100%; border:none; outline:none; background:transparent; appearance:none; -webkit-appearance:none; cursor:pointer; padding-right:22px;">
                 <option value="">Estado/UF</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
+                <option value="AC">Acre</option><option value="AL">Alagoas</option><option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option><option value="BA">Bahia</option><option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option><option value="ES">Espírito Santo</option><option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option><option value="MT">Mato Grosso</option><option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option><option value="PA">Pará</option><option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option><option value="PE">Pernambuco</option><option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option><option value="RN">Rio Grande do Norte</option><option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option><option value="RR">Roraima</option><option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option><option value="SE">Sergipe</option><option value="TO">Tocantins</option>
               </select>
               <div style="position:absolute; right:0; bottom:14px; pointer-events:none; display:flex; align-items:center;">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#767676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#767676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </div>
 
-            <!-- Cidade -->
-            <div id="addr-cidade-wrap" style="flex:1; border-bottom:1px solid #ebebeb; position:relative; padding:16px 0 12px 0; transition:border-color 0.2s;">
+            <div id="addr-cidade-wrap" style="flex:1; border-bottom:1px solid #ebebeb; position:relative; padding:16px 0 12px 0;">
               <input id="addr-cidade" type="text" placeholder="Cidade" autocomplete="address-level2"
-                style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding-right:22px; line-height:22px;" />
+                style="width:100%; border:none; outline:none; background:transparent; padding-right:22px;" />
               <div style="position:absolute; right:0; bottom:14px; pointer-events:none; display:flex; align-items:center;">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#767676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#767676" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </div>
           </div>
 
-          <!-- Bairro/Distrito -->
           <div style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <input id="addr-bairro" type="text" placeholder="Bairro/Distrito" autocomplete="address-level3"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
           </div>
 
-          <!-- Endereço -->
-          <div id="addr-rua-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+          <div id="addr-rua-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <input id="addr-rua" type="text" placeholder="Endereço" autocomplete="street-address"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
-            <div id="addr-rua-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
-              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
-                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
-                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
-                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
-              </svg>
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
+            <div id="addr-rua-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;"><path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/><rect x="11" y="8" width="2" height="5.5" rx="1" fill="#fff"/><circle cx="12" cy="16.5" r="1.2" fill="#fff"/></svg>
               <span>Insira o endereço</span>
             </div>
           </div>
 
-          <!-- Número da residência (com s/n automático e alerta vermelho) -->
-          <div id="addr-numero-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+          <div id="addr-numero-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <input id="addr-numero" type="text" placeholder='Nº da residência. Use "s/n" se nenhum'
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
-            <div id="addr-numero-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
-              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
-                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
-                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
-                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
-              </svg>
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
+            <div id="addr-numero-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;"><path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/><rect x="11" y="8" width="2" height="5.5" rx="1" fill="#fff"/><circle cx="12" cy="16.5" r="1.2" fill="#fff"/></svg>
               <span>Insira o número da residência</span>
             </div>
           </div>
 
-          <!-- Complemento -->
-          <div style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
+          <div style="padding:16px 0 12px 0;">
             <input id="addr-complemento" type="text" placeholder="Apartamento, bloco, unidade etc. (opcional)"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
           </div>
         </div>
 
-        <!-- CARD 2: Informações fiscais (CPF) - Idêntico ao Print 3 -->
-        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
-          Informações fiscais
-        </div>
-        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 14px 16px; box-sizing:border-box;">
-          <div id="addr-cpf-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
+        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">Informações fiscais</div>
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 14px 16px;">
+          <div id="addr-cpf-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <input id="addr-cpf" type="tel" maxlength="14" placeholder="000.000.000-00"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
-            <div id="addr-cpf-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
-              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
-                <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
-                <rect x="11" y="8" width="2" height="5.5" rx="1" fill="#ffffff"/>
-                <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
-              </svg>
+              style="width:100%; border:none; outline:none; background:transparent; padding:0;" />
+            <div id="addr-cpf-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px;">
+              <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;"><path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/><rect x="11" y="8" width="2" height="5.5" rx="1" fill="#fff"/><circle cx="12" cy="16.5" r="1.2" fill="#fff"/></svg>
               <span>Insira um CPF válido</span>
             </div>
           </div>
-          <div style="font-size:12.5px; color:#737373; margin-top:10px; line-height:1.35;">
-            O CPF será usado para emitir faturas.
-          </div>
+          <div style="font-size:12.5px; color:#737373; margin-top:10px; line-height:1.35;">O CPF será usado para emitir faturas.</div>
         </div>
 
-        <!-- CARD 3: Configurações (Definir como padrão) -->
-        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">
-          Configurações
-        </div>
-        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:16px; display:flex; align-items:center; justify-content:space-between; box-sizing:border-box;">
+        <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">Configurações</div>
+        <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:16px; display:flex; align-items:center; justify-content:space-between;">
           <span style="font-size:16px; font-weight:700; color:#161823;">Definir como padrão</span>
           <label class="tiktok-toggle-label">
             <input type="checkbox" id="addr-padrao-toggle" checked style="opacity:0; width:0; height:0; position:absolute;">
             <span class="tiktok-toggle-slider"></span>
           </label>
         </div>
-
       </div>
 
-      <!-- 3. Footer Fixo na Base (Política de Privacidade + Botão Salvar - Idêntico aos Prints) -->
-      <div style="flex-shrink:0; width:100%; background:#ffffff; padding:12px 16px calc(12px + env(safe-area-inset-bottom, 0px)) 16px; box-sizing:border-box; border-top:1px solid #ebebeb; z-index:20;">
+      <div style="flex-shrink:0; width:100%; background:#ffffff; padding:12px 16px calc(12px + env(safe-area-inset-bottom, 0px)) 16px; border-top:1px solid #ebebeb; z-index:20;">
         <div style="text-align:center; font-size:12px; color:#737373; line-height:1.42; margin-bottom:12px; padding:0 8px;">
           Leia a <b style="color:#161823; font-weight:700;">Política de privacidade do TikTok</b> para saber mais sobre como usamos suas informações pessoais.
         </div>
         <button type="button" id="addr-btn-salvar" onclick="saveAddressFormLocal()"
-          style="width:100%; height:46px; border-radius:24px; border:none; font-size:16px; font-weight:700; color:#ffffff; background:#ffb0bc; cursor:not-allowed; transition:background 0.2s ease; display:flex; align-items:center; justify-content:center;">
+          style="width:100%; height:46px; border-radius:24px; border:none; font-size:16px; font-weight:700; color:#ffffff; background:#ffb4c0; cursor:not-allowed; transition:background 0.2s ease; display:flex; align-items:center; justify-content:center; font-family:inherit;">
           Salvar
         </button>
       </div>
-
     </div>
 
+  </div><!-- fim app-container -->
+
+  <video src="../img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
+
   <script src="../js/catalogo.js?v=1795410323540"></script>
-<script src="../js/app.js?v=1795410323540"></script>
-<script>
-function parseSafeFloat(val) {
-  if (typeof val === 'number') return val;
-  if (!val) return 0;
-  const str = String(val).trim();
-  if (str.includes(',')) {
-    return parseFloat(str.replace(/\./g, '').replace(',', '.')) || 0;
-  }
-  return parseFloat(str) || 0;
-}
-
-function formatarMoeda(valor) {
-  return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
-// Dados locais
-function voltarDoCarrinho() {
-  const ultimoProduto = localStorage.getItem('famosinhos_ultimo_produto_url');
-  if (ultimoProduto) {
-    window.location.href = ultimoProduto;
-  } else {
-    window.location.href = '../index.html';
-  }
-}
-
-let itemsSelecionados = {}; // Rastreia quais IDs de item estão selecionados no carrinho
-function loadAddress() {
-  const container = document.getElementById('address-container-box');
-  const rua = localStorage.getItem('user_rua') || '';
-  const num = localStorage.getItem('user_numero') || '';
-  const bairro = localStorage.getItem('user_bairro') || '';
-  const cidade = localStorage.getItem('user_cidade') || '';
-  const estado = localStorage.getItem('user_estado') || '';
-  const cep = localStorage.getItem('user_cep') || '';
-
-  if (!container) return;
-
-  if (!rua) {
-    container.innerHTML = `
-      <div style="display:flex; align-items:center; justify-content:space-between;">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          <span style="font-size:15px; font-weight:700; color:#111;">Endereço de envio</span>
-        </div>
-        <div style="color:#fe2c55; font-size:14px; font-weight:700;">+ Adicionar endereço</div>
-      </div>
-    `;
-  } else {
-    const name = localStorage.getItem('user_nome') || 'Cliente';
-    const tel = localStorage.getItem('user_tel') || '';
-    let telFmt = '';
-    if (tel) {
-      telFmt = '(+55) ' + (tel.length === 11 ? tel.substring(0, 2) + ' ' + tel.substring(2, 7) + '-' + tel.substring(7) : tel);
-    }
-    const enderecoCompleto = rua + (num ? ', ' + num : ', s/n') + (bairro ? ', ' + bairro : '') + (cidade ? ', ' + cidade : '') + (estado ? ', ' + estado : '') + (cep ? ', ' + cep : '');
-
-    container.innerHTML = `
-      <div>
-        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
-          <div style="display:flex; align-items:center; gap:8px;">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <span style="font-size:15px; font-weight:700; color:#111;">${name}${telFmt ? ', ' + telFmt : ''}</span>
-          </div>
-          <span style="color:#aaa; font-size:16px; font-weight:bold;">›</span>
-        </div>
-        <div style="padding-left:28px; font-size:13px; color:#555; line-height:1.4;">
-          ${enderecoCompleto}
-        </div>
-      </div>
-    `;
-  }
-}
-
-function handleAddressClick() {
-  openAddressModal(true);
-}
-
-
-
-function openAddressModal() {
-  const modal = document.getElementById('address-modal-box');
-  const fields = {
-    'addr-nome': 'user_nome', 'addr-tel': 'user_tel', 'addr-email': 'user_email',
-    'addr-cep': 'user_cep', 'addr-cidade': 'user_cidade', 'addr-bairro': 'user_bairro',
-    'addr-rua': 'user_rua', 'addr-numero': 'user_numero', 'addr-complemento': 'user_complemento'
-  };
-  Object.entries(fields).forEach(([id, key]) => {
-    const el = document.getElementById(id);
-    if (el) el.value = localStorage.getItem(key) || '';
-  });
-  const estadoEl = document.getElementById('addr-estado');
-  if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
-  
-  // CPF integrado no rodapé
-  const savedCpf = localStorage.getItem('user_cpf');
-  const cpfFooter = document.getElementById('addr-cpf-footer-display');
-  const cpfLabel = document.getElementById('addr-cpf-saved-label');
-  if (savedCpf && cpfFooter && cpfLabel) {
-    cpfLabel.textContent = savedCpf;
-    cpfFooter.style.display = 'block';
-  } else if (cpfFooter) {
-    cpfFooter.style.display = 'none';
-  }
-  
-  if (modal) modal.style.display = 'flex';
-      const sb = document.getElementById('addr-scroll-body'); if (sb) sb.scrollTop = 0;
-}
-
-function closeAddressModal() {
-  const modal = document.getElementById('address-modal-box');
-  if (modal) modal.style.display = 'none';
-}
-
-function openProtecaoModal() {
-  const overlay = document.getElementById('protecao-modal-overlay');
-  const modal = document.getElementById('protecao-modal-box');
-  if (overlay) overlay.style.display = 'block';
-  if (modal) modal.style.display = 'flex';
-}
-
-function closeProtecaoModal() {
-  const overlay = document.getElementById('protecao-modal-overlay');
-  const modal = document.getElementById('protecao-modal-box');
-  if (overlay) overlay.style.display = 'none';
-  if (modal) modal.style.display = 'none';
-}
-
-function openCpfModal() {
-  const modal = document.getElementById('cpf-modal-box');
-  const input = document.getElementById('input-cpf-full');
-  if (input) input.value = localStorage.getItem('user_cpf') || '';
-  if (modal) modal.style.display = 'flex';
-}
-
-function closeCpfModal() {
-  const modal = document.getElementById('cpf-modal-box');
-  if (modal) modal.style.display = 'none';
-}
-
-function openCuponsModal() {
-  const overlay = document.getElementById('cupons-modal-overlay');
-  const modal = document.getElementById('cupons-modal-box');
-  // Atualiza o valor do desconto no card
-  const cart = getCart();
-  let totalDesc = 0;
-  cart.forEach((item, index) => {
-    let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
-    let orig = item.preco * 1.5;
-    if (catalogoProd && catalogoProd.precoOrig) {
-      orig = parseSafeFloat(catalogoProd.precoOrig);
-    } else if (item.precoOrig) {
-      orig = parseSafeFloat(item.precoOrig);
-    }
-      if (Number(item.id) === 56) {
-        if (itemPreco === 75.9) {
-          if (typeof orig !== "undefined") orig = 788.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
-        } else if (itemPreco === 95.9) {
-          if (typeof orig !== "undefined") orig = 1833.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
-        } else if (itemPreco === 144.9) {
-          if (typeof orig !== "undefined") orig = 3798.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
-        }
+  <script src="../js/app.js?v=20261125_detalhes_1to1_v25"></script>
+  <script>
+    function parseSafeFloat(val) {
+      if (typeof val === 'number') return val;
+      if (!val) return 0;
+      const str = String(val).trim();
+      if (str.includes(',')) {
+        return parseFloat(str.replace(/\./g, '').replace(',', '.')) || 0;
       }
-    totalDesc += (orig - item.preco) * (item.qty || 1);
-  });
-  const descEl = document.getElementById('cupom-desc-valor');
-  if (descEl) descEl.textContent = 'Desconto de R$ ' + formatarMoeda(totalDesc);
-  if (overlay) overlay.style.display = 'block';
-  if (modal) modal.style.display = 'flex';
-}
+      return parseFloat(str) || 0;
+    }
 
-function closeCuponsModal() {
-  const overlay = document.getElementById('cupons-modal-overlay');
-  const modal = document.getElementById('cupons-modal-box');
-  if (overlay) overlay.style.display = 'none';
-  if (modal) modal.style.display = 'none';
-}
+    function formatarMoeda(valor) {
+      return Number(valor || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
 
-let isEditingAddress = false;
+    function escapeHtmlCart(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
 
-function openAddressModal(editMode = false) {
-  isEditingAddress = !!editMode;
-  const modal = document.getElementById('address-modal-box');
-  const titleEl = document.getElementById('address-modal-title');
-  const cpfGroup = document.getElementById('addr-cpf-group');
-  
-  // Limpa mensagens de erro e bordas vermelhas
-  document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
+    function voltarDoCarrinho() {
+      const ultimoProduto = localStorage.getItem('famosinhos_ultimo_produto_url');
+      if (ultimoProduto) {
+        window.location.href = ultimoProduto;
+      } else {
+        window.location.href = '../index.html';
+      }
+    }
 
-  const fields = {
-    'addr-nome': 'user_nome', 'addr-tel': 'user_tel', 'addr-email': 'user_email',
-    'addr-cep': 'user_cep', 'addr-cidade': 'user_cidade', 'addr-bairro': 'user_bairro',
-    'addr-rua': 'user_rua', 'addr-numero': 'user_numero', 'addr-complemento': 'user_complemento'
-  };
+    let itemsSelecionados = {};
+    let cartEditMode = false;
+    let _editingCartVarIndex = -1;
+    let _selectedSheetVar = '';
 
-  if (isEditingAddress) {
-    if (titleEl) titleEl.textContent = "Editar endereço";
-    if (cpfGroup) cpfGroup.style.display = "block";
-    
-    // Preenche com os dados salvos
-    Object.entries(fields).forEach(([id, key]) => {
-      const el = document.getElementById(id);
-      if (el) el.value = localStorage.getItem(key) || '';
-    });
-    const estadoEl = document.getElementById('addr-estado');
-    if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
-    
-    const cpfEl = document.getElementById('addr-cpf');
-    if (cpfEl) cpfEl.value = localStorage.getItem('user_cpf') || '';
-  } else {
-    if (titleEl) titleEl.textContent = "Adicionar o novo endereço";
-    if (cpfGroup) cpfGroup.style.display = "none";
-    
-    // Limpa campos para novo preenchimento
-    Object.entries(fields).forEach(([id, key]) => {
-      const el = document.getElementById(id);
-      if (el) el.value = '';
-    });
-    const estadoEl = document.getElementById('addr-estado');
-    if (estadoEl) estadoEl.value = '';
-  }
+    function loadAddress() {
+      const subText = document.getElementById('cart-subtitle-text');
+      if (!subText) return;
 
-  if (modal) modal.style.display = 'flex';
-}
+      const rua = (localStorage.getItem('user_rua') || '').trim();
+      const num = (localStorage.getItem('user_numero') || '').trim();
+      const cidade = (localStorage.getItem('user_cidade') || '').trim();
+      const estado = (localStorage.getItem('user_estado') || '').trim();
 
-function closeAddressModal() {
-  const modal = document.getElementById('address-modal-box');
-  if (modal) modal.style.display = 'none';
-}
+      if (!rua) {
+        subText.textContent = 'Adicionar endereço';
+      } else {
+        const resumoCurto = rua + (num ? ', ' + num : '') + (cidade ? ' - ' + cidade : '') + (estado ? '/' + estado : '');
+        subText.textContent = resumoCurto;
+      }
+    }
 
-function openCpfModal() {
-  const modal = document.getElementById('cpf-modal-box');
-  const input = document.getElementById('input-cpf-full');
-  if (input) input.value = localStorage.getItem('user_cpf') || '';
-  
-  // Limpa erros do modal CPF
-  const inputEl = document.getElementById('input-cpf-full');
-  if (inputEl) inputEl.classList.remove('input-error');
-  
-  if (modal) modal.style.display = 'flex';
-}
+    function handleAddressClick() {
+      openAddressModalLocal(false);
+    }
 
-function closeCpfModal() {
-  const modal = document.getElementById('cpf-modal-box');
-  if (modal) modal.style.display = 'none';
-}
+    function toggleCartEditMode() {
+      const cart = getCart();
+      if (!cart || !cart.length) {
+        openAddressModalLocal(false);
+        return;
+      }
+      cartEditMode = !cartEditMode;
+      const btn = document.getElementById('header-edit-btn');
+      if (btn) btn.textContent = cartEditMode ? 'Concluir' : 'Editar';
+      updateTotals();
+    }
 
-// Algoritmo Oficial de CPF
-function validarCPF(cpf) {
-  cpf = cpf.replace(/\D/g, '');
-  if (cpf.length !== 11) return false;
-  if (/^(\d)\1{10}$/.test(cpf)) return false; // descarta repetidos
-  
-  let soma = 0;
-  for (let i = 0; i < 9; i++) soma += parseInt(cpf.charAt(i)) * (10 - i);
-  let resto = 11 - (soma % 11);
-  let digito1 = (resto === 10 || resto === 11) ? 0 : resto;
-  if (digito1 !== parseInt(cpf.charAt(9))) return false;
-  
-  soma = 0;
-  for (let i = 0; i < 10; i++) soma += parseInt(cpf.charAt(i)) * (11 - i);
-  resto = 11 - (soma % 11);
-  let digito2 = (resto === 10 || resto === 11) ? 0 : resto;
-  if (digito2 !== parseInt(cpf.charAt(10))) return false;
-  
-  return true;
-}
+    function scrollToRecommendations() {
+      const rec = document.getElementById('cart-related-section');
+      if (rec) {
+        rec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
 
-// Formatação automática do CPF
-function formatarCPF(value) {
-  value = value.replace(/\D/g, '');
-  if (value.length > 11) value = value.slice(0, 11);
-  if (value.length > 9) {
-    return value.replace(/^(\d{3})(\d{3})(\d{3})(\d{1,2})$/, '$1.$2.$3-$4');
-  }
-  if (value.length > 6) {
-    return value.replace(/^(\d{3})(\d{3})(\d{1,3})$/, '$1.$2.$3');
-  }
-  if (value.length > 3) {
-    return value.replace(/^(\d{3})(\d{1,3})$/, '$1.$2');
-  }
-  return value;
-}
+    function getSocialSubtext(itemId, idx) {
+      const n = Number(itemId) || (idx + 1);
+      if (idx % 2 === 1) {
+        const comprados = 180 + ((n * 73) % 690);
+        return `${comprados} comprado(s) no mês passado`;
+      }
+      const carrinhos = 95 + ((n * 47) % 240);
+      return `Em outros ${carrinhos} carrinhos`;
+    }
 
-// Adiciona formatação automática nos inputs de CPF
-document.addEventListener('DOMContentLoaded', () => {
-  const cpfInputMain = document.getElementById('input-cpf-full');
-  if (cpfInputMain) {
-    cpfInputMain.addEventListener('input', function() {
-      this.value = formatarCPF(this.value);
-    });
-  }
+    function toggleSelectItem(idx, checked) {
+      itemsSelecionados[idx] = !!checked;
+      const storeCb = document.getElementById('store-cb-' + idx);
+      const itemCb = document.getElementById('item-cb-' + idx);
+      if (storeCb) storeCb.checked = !!checked;
+      if (itemCb) itemCb.checked = !!checked;
+      updateTotals();
+    }
 
-  const cpfInputModal = document.getElementById('addr-cpf');
-  if (cpfInputModal) {
-    cpfInputModal.addEventListener('input', function() {
-      this.value = formatarCPF(this.value);
-    });
-  }
-
-  // Máscaras de telefone (permitir apenas números, max 11 dígitos)
-  const telInput = document.getElementById('addr-tel');
-  if (telInput) {
-    telInput.addEventListener('input', function() {
-      this.value = this.value.replace(/\D/g, '').slice(0, 11);
-    });
-  }
-
-  // Máscaras de CEP (permitir apenas números, max 8 dígitos)
-  const cepInput = document.getElementById('addr-cep');
-  if (cepInput) {
-    cepInput.addEventListener('input', function() {
-      this.value = this.value.replace(/\D/g, '').slice(0, 8);
-      buscarCepCarrinho(this.value);
-    });
-  }
-});
-
-function buscarCepCarrinho(cep) {
-  cep = cep.replace(/\D/g, '');
-  const errCep = document.getElementById('err-cep');
-  const inputCep = document.getElementById('addr-cep');
-  
-  if (cep.length === 8) {
-    fetch(`https://viacep.com.br/ws/${cep}/json/`)
-      .then(r => r.json())
-      .then(d => {
-        if (!d.erro) {
-          if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade;
-          if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf;
-          if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro;
-          if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro;
-          
-          if (errCep) errCep.style.display = 'none';
-          if (inputCep) inputCep.classList.remove('input-error');
-        } else {
-          if (errCep) {
-            errCep.textContent = 'CEP não encontrado. Insira os dados manualmente.';
-            errCep.style.display = 'block';
-          }
-          if (inputCep) inputCep.classList.add('input-error');
-        }
-      })
-      .catch(() => {
-        if (errCep) {
-          errCep.textContent = 'Erro ao buscar o CEP. Insira os dados manualmente.';
-          errCep.style.display = 'block';
-        }
-        if (inputCep) inputCep.classList.add('input-error');
+    function toggleSelectAll(checkbox) {
+      const checked = !!checkbox.checked;
+      const cart = getCart();
+      cart.forEach((_, idx) => {
+        itemsSelecionados[idx] = checked;
+        const storeCb = document.getElementById('store-cb-' + idx);
+        const itemCb = document.getElementById('item-cb-' + idx);
+        if (storeCb) storeCb.checked = checked;
+        if (itemCb) itemCb.checked = checked;
       });
-  }
-}
-
-function saveAddressForm() {
-  const nomeEl = document.getElementById('addr-nome');
-  const telEl = document.getElementById('addr-tel');
-  const emailEl = document.getElementById('addr-email');
-  const cepEl = document.getElementById('addr-cep');
-  const cidadeEl = document.getElementById('addr-cidade');
-  const estadoEl = document.getElementById('addr-estado');
-  const ruaEl = document.getElementById('addr-rua');
-  const numEl = document.getElementById('addr-numero');
-  const compEl = document.getElementById('addr-complemento');
-  const cpfEl = document.getElementById('addr-cpf');
-
-  const nome = (nomeEl?.value || '').trim();
-  const tel = (telEl?.value || '').replace(/\D/g, '');
-  const email = (emailEl?.value || '').trim();
-  const cep = (cepEl?.value || '').replace(/\D/g, '');
-  const cidade = (cidadeEl?.value || '').trim();
-  const estado = (estadoEl?.value || '').trim();
-  const rua = (ruaEl?.value || '').trim();
-  const numero = (numEl?.value || '').trim();
-  const complemento = (compEl?.value || '').trim();
-  const cpf = (cpfEl?.value || '').trim();
-
-  let hasErrors = false;
-
-  // Resetar erros anteriores
-  document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
-  document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
-
-  // Validar Nome Completo
-  if (!nome || nome.split(' ').filter(Boolean).length < 2) {
-    const err = document.getElementById('err-nome');
-    if (err) {
-      err.textContent = 'Insira seu nome e sobrenome (completo)';
-      err.style.display = 'block';
+      updateTotals();
     }
-    if (nomeEl) nomeEl.classList.add('input-error');
-    hasErrors = true;
-  }
 
-  // Validar Telefone
-  if (!tel || tel.length !== 11) {
-    const err = document.getElementById('err-tel');
-    if (err) {
-      err.textContent = 'Telefone inválido (deve conter 11 números)';
-      err.style.display = 'block';
+    function calcTotalDiscount(cart) {
+      let discount = 0;
+      cart.forEach((item, index) => {
+        if (itemsSelecionados[index]) {
+          let itemPreco = parseSafeFloat(item.preco);
+          let itemQty = parseInt(item.qty) || 1;
+          let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => Number(p.id) === Number(item.id)) : null;
+          let orig = itemPreco * 1.5;
+          if (catalogoProd && catalogoProd.precoOrig) {
+            orig = parseSafeFloat(catalogoProd.precoOrig);
+          } else if (item.precoOrig) {
+            orig = parseSafeFloat(item.precoOrig);
+          }
+          if (Number(item.id) === 56) {
+            if (itemPreco === 75.9) orig = 788.90;
+            else if (itemPreco === 95.9) orig = 1833.90;
+            else if (itemPreco === 144.9) orig = 3798.90;
+          }
+          if (orig > itemPreco) {
+            discount += (orig - itemPreco) * itemQty;
+          }
+        }
+      });
+      return discount;
     }
-    if (telEl) telEl.classList.add('input-error');
-    hasErrors = true;
-  }
 
-  // Validar E-mail
-  if (!email || !email.includes('@') || !email.includes('.')) {
-    const err = document.getElementById('err-email');
-    if (err) {
-      err.textContent = 'Insira um e-mail válido';
-      err.style.display = 'block';
-    }
-    if (emailEl) emailEl.classList.add('input-error');
-    hasErrors = true;
-  }
+    function updateTotals() {
+      const cart = getCart();
+      let total = 0;
+      let count = 0;
+      let allSelected = cart.length > 0;
 
-  // Validar CEP
-  if (!cep || cep.length !== 8) {
-    const err = document.getElementById('err-cep');
-    if (err) {
-      err.textContent = 'CEP deve conter 8 dígitos';
-      err.style.display = 'block';
-    }
-    if (cepEl) cepEl.classList.add('input-error');
-    hasErrors = true;
-  }
+      cart.forEach((item, index) => {
+        if (itemsSelecionados[index]) {
+          const itemPreco = parseSafeFloat(item.preco);
+          const itemQty = parseInt(item.qty) || 1;
+          total += itemPreco * itemQty;
+          count += itemQty;
+        } else {
+          allSelected = false;
+        }
+      });
 
-  // Validar campos de endereço obrigatórios
-  if (!cidade || !rua || !numero) {
-    showToast('Cidade, Endereço e Nº da residência são obrigatórios!');
-    hasErrors = true;
-  }
+      const selectAllCb = document.getElementById('select-all-checkbox');
+      if (selectAllCb) selectAllCb.checked = allSelected;
 
-  // Validar CPF (Somente em modo de edição)
-  if (isEditingAddress) {
-    if (!cpf || !validarCPF(cpf)) {
-      const err = document.getElementById('err-addr-cpf');
-      if (err) {
-        err.textContent = 'CPF inválido';
-        err.style.display = 'block';
-      }
-      if (cpfEl) cpfEl.classList.add('input-error');
-      hasErrors = true;
-    }
-  }
+      const tudoText = document.getElementById('footer-tudo-text');
+      if (tudoText) tudoText.style.color = allSelected ? '#161823' : '#707070';
 
-  if (hasErrors) {
-    showToast('Corrija as informações incorretas!');
-    return;
-  }
+      const footerTotal = document.getElementById('footer-total-val');
+      const footerBtn = document.getElementById('footer-checkout-btn-action');
 
-  // Salvar no localStorage
-  localStorage.setItem('user_nome', nome);
-  localStorage.setItem('user_tel', tel);
-  localStorage.setItem('user_email', email);
-  localStorage.setItem('user_cep', cep);
-  localStorage.setItem('user_cidade', cidade);
-  localStorage.setItem('user_bairro', (document.getElementById('addr-bairro')?.value || '').trim());
-  localStorage.setItem('user_rua', rua);
-  localStorage.setItem('user_numero', numero);
-  localStorage.setItem('user_complemento', complemento);
-  localStorage.setItem('user_estado', estado);
-
-  const endFull = `${rua}, ${cidade} - ${estado}`;
-  localStorage.setItem('user_address', endFull);
-
-  if (isEditingAddress) {
-    localStorage.setItem('user_cpf', cpf);
-  }
-
-  loadAddress();
-  closeAddressModal();
-  showToast('Endereço salvo com sucesso!');
-
-}
-
-function saveCpfForm() {
-  const cpfEl = document.getElementById('input-cpf-full');
-  const cpf = (cpfEl?.value || '').trim();
-
-  if (!cpf || !validarCPF(cpf)) {
-    if (cpfEl) cpfEl.classList.add('input-error');
-    showToast('CPF inválido!');
-    return;
-  }
-
-  localStorage.setItem('user_cpf', cpf);
-  loadAddress();
-  closeCpfModal();
-  showToast('CPF salvo com sucesso!');
-}
-
-function toggleSelectItem(id, checked) {
-  itemsSelecionados[id] = checked;
-  updateTotals();
-}
-
-function toggleSelectAll(checkbox) {
-  const checked = checkbox.checked;
-  const checkboxes = document.querySelectorAll('.cart-item-check');
-  checkboxes.forEach(cb => {
-    cb.checked = checked;
-    const id = cb.getAttribute('data-id');
-    itemsSelecionados[id] = checked;
-  });
-  updateTotals();
-}
-
-function calcTotalDiscount(cart, selecionados) {
-  let discount = 0;
-  cart.forEach((item, index) => {
-    if (selecionados[index] !== false) {
-      let itemPreco = parseSafeFloat(item.preco);
-      let itemQty = parseInt(item.qty) || 1;
-      let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
-      let orig = itemPreco * 1.5;
-      if (catalogoProd && catalogoProd.precoOrig) {
-        orig = parseSafeFloat(catalogoProd.precoOrig);
-      } else if (item.precoOrig) {
-        orig = parseSafeFloat(item.precoOrig);
-      }
-      if (Number(item.id) === 56) {
-        if (itemPreco === 75.9) {
-          if (typeof orig !== "undefined") orig = 788.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
-        } else if (itemPreco === 95.9) {
-          if (typeof orig !== "undefined") orig = 1833.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
-        } else if (itemPreco === 144.9) {
-          if (typeof orig !== "undefined") orig = 3798.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
+      if (cartEditMode) {
+        if (footerTotal) footerTotal.style.visibility = 'hidden';
+        if (footerBtn) {
+          footerBtn.classList.add('delete-mode');
+          footerBtn.innerHTML = count > 0 ? `Excluir (${count})` : 'Excluir';
+        }
+      } else {
+        if (footerTotal) {
+          footerTotal.style.visibility = 'visible';
+          footerTotal.textContent = 'R$ ' + formatarMoeda(total);
+        }
+        if (footerBtn) {
+          footerBtn.classList.remove('delete-mode');
+          footerBtn.innerHTML = count > 0 ? `Finalizar<br>compra (${count})` : `Finalizar<br>compra`;
         }
       }
-      discount += (orig - itemPreco) * itemQty;
-    }
-  });
-  return discount;
-}
-
-function updateTotals() {
-  const cart = getCart();
-  let total = 0;
-  let count = 0;
-  
-  cart.forEach((item, index) => {
-    if (itemsSelecionados[index] !== false) {
-      let itemPreco = parseSafeFloat(item.preco);
-      let itemQty = parseInt(item.qty) || 1;
-      total += itemPreco * itemQty;
-      count += itemQty;
-    }
-  });
-
-  const discount = calcTotalDiscount(cart, itemsSelecionados);
-  const totalFmt = 'R$ ' + formatarMoeda(total);
-  const discountFmt = 'R$ ' + formatarMoeda(discount) + ' de desconto';
-  
-  const footerTotal = document.getElementById('footer-total-val');
-  const footerSaving = document.getElementById('footer-saving-val');
-  const footerBtn = document.getElementById('footer-checkout-btn-action');
-  
-  if (footerTotal) footerTotal.textContent = totalFmt;
-  if (footerSaving) footerSaving.textContent = discountFmt;
-  if (footerBtn) footerBtn.innerHTML = `Finalizar<br>compra (${count})`;
-}
-
-function renderCart() {
-  try {
-    const cart = getCart();
-    const content = document.getElementById('cart-items-wrapper');
-    const footerBar = document.getElementById('shopee-cart-footer-bar');
-    const headerTitle = document.getElementById('cart-header-title');
-
-    if (headerTitle) {
-      headerTitle.textContent = `Carrinho (${getCartCount()})`;
     }
 
-    if (!content) return;
-
-    if (!cart || !cart.length) {
-      const addrSection = document.getElementById('address-cpf-section');
-      if (addrSection) addrSection.style.display = 'none';
-      content.innerHTML = `
-        <div style="text-align:center; padding: 48px 16px; background:#fff;">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin-bottom:12px;">
-            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-          </svg>
-          <div style="font-size:16px; font-weight:700; color:#333; margin-bottom:4px;">Seu carrinho está vazio</div>
-          <div style="font-size:13px; color:#888; margin-bottom:16px;">Que tal dar uma olhada nas nossas promoções de hoje?</div>
-          <a class="cart-empty-shopping-btn" href="../index.html">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-            Ir para a loja
-          </a>
-        </div>
-        
-        <div style="padding: 16px; background: #f5f5f5;">
-          <div style="font-size: 15px; font-weight: 700; margin-bottom: 12px; color: #222;">Você também pode gostar</div>
-          <div id="cart-related-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;"></div>
-        </div>`;
-        
-      if (footerBar) footerBar.style.display = 'none';
-      renderRelatedList();
-      return;
-    }
-
-    const addrSection = document.getElementById('address-cpf-section');
-    if (addrSection) addrSection.style.display = 'block';
-
-    if (footerBar) footerBar.style.display = 'flex';
-
-    let html = '';
-    cart.forEach((item, index) => {
-      if (itemsSelecionados[index] === undefined) {
-        itemsSelecionados[index] = true;
-      }
-      const isChecked = itemsSelecionados[index] ? 'checked' : '';
-
-      let finalImg = item.img || '';
-      if (finalImg && !finalImg.startsWith('http') && !finalImg.startsWith('//')) {
-        if (finalImg.startsWith('../')) finalImg = finalImg.substring(3);
-        finalImg = '../' + finalImg;
-      }
-
-      let itemPreco = parseSafeFloat(item.preco);
-      let itemQty = parseInt(item.qty) || 1;
-
-      let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
-      let precoOrigVal = itemPreco * 1.5;
-      if (catalogoProd && catalogoProd.precoOrig) {
-        precoOrigVal = parseSafeFloat(catalogoProd.precoOrig);
-      } else if (item.precoOrig) {
-        precoOrigVal = parseSafeFloat(item.precoOrig);
-      }
-      if (Number(item.id) === 56) {
-        if (itemPreco === 75.9) {
-          if (typeof orig !== "undefined") orig = 788.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
-        } else if (itemPreco === 95.9) {
-          if (typeof orig !== "undefined") orig = 1833.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
-        } else if (itemPreco === 144.9) {
-          if (typeof orig !== "undefined") orig = 3798.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
+    function handleFooterPrimaryAction() {
+      if (cartEditMode) {
+        const cart = getCart();
+        const selectedIndexes = [];
+        cart.forEach((_, idx) => {
+          if (itemsSelecionados[idx]) selectedIndexes.push(idx);
+        });
+        if (!selectedIndexes.length) {
+          if (typeof showToast === 'function') showToast('Selecione pelo menos um item para excluir');
+          return;
         }
+        const overlay = document.getElementById('remove-confirm-overlay');
+        const desc = document.getElementById('remove-confirm-desc');
+        if (desc) desc.textContent = `Tem certeza de que deseja remover ${selectedIndexes.length} item(ns) do seu carrinho?`;
+        if (overlay) {
+          overlay.style.display = 'flex';
+          document.getElementById('btn-cancel-remove').onclick = function() {
+            overlay.style.display = 'none';
+          };
+          document.getElementById('btn-confirm-remove').onclick = function() {
+            overlay.style.display = 'none';
+            const remaining = cart.filter((_, idx) => !itemsSelecionados[idx]);
+            localStorage.setItem('famosinhos_cart', JSON.stringify(remaining));
+            itemsSelecionados = {};
+            cartEditMode = false;
+            const editBtn = document.getElementById('header-edit-btn');
+            if (editBtn) editBtn.textContent = 'Editar';
+            renderCart();
+          };
+        }
+        return;
       }
+      irParaCheckout();
+    }
 
-      const precoMultiplicado = formatarMoeda(itemPreco * itemQty);
-      const precoOrigMultiplicado = formatarMoeda(precoOrigVal * itemQty);
+    function renderCart() {
+      try {
+        const cart = getCart();
+        const content = document.getElementById('cart-items-wrapper');
+        const footerBar = document.getElementById('shopee-cart-footer-bar');
+        const floatingPill = document.getElementById('floating-coupons-pill');
+        const headerTitle = document.getElementById('cart-header-title');
+        const editBtn = document.getElementById('header-edit-btn');
 
-      let descPct = precoOrigVal > itemPreco ? Math.round((1 - itemPreco / precoOrigVal) * 100) : 0;
-      if (Number(item.id) === 56 || Number(item.id) === 100 || Number(item.id) === 102) {
-        descPct = 82;
-      }
+        const totalCartUnits = typeof getCartCount === 'function'
+          ? getCartCount()
+          : (cart || []).reduce((acc, it) => acc + (parseInt(it.qty) || 1), 0);
 
-      html += `
-      <div class="shop-section">
-        <div class="shop-header">
-          <label class="shopee-checkbox-label">
-            <input type="checkbox" class="shopee-checkbox cart-item-check" data-id="${index}" ${isChecked} onchange="toggleSelectItem(${index}, this.checked)">
-          </label>
-          <span class="shop-header-title" onclick="window.location.href='../index.html'">
-            Stone Shop
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </span>
-        </div>
-        
-        <div class="shop-frete-banner">
-          <svg width="18" height="18" viewBox="0 -2 20 20" xmlns="http://www.w3.org/2000/svg" style="color:#00a699; flex-shrink:0;">
-            <g transform="translate(-2 -4)">
-              <path d="M9.17,17H13V6a1,1,0,0,0-1-1H5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              <path d="M3,13v3a1,1,0,0,0,1,1h.87" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              <path d="M14.87,17H13V7h4.25a1,1,0,0,1,1,.73L19,10.5l1.24.31a1,1,0,0,1,.76,1V16a1,1,0,0,1-1,1h-.89" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              <path d="M9,17a2,2,0,1,1-2-2A2,2,0,0,1,9,17Zm8-2a2,2,0,1,0,2,2A2,2,0,0,0,17,15ZM3,9H9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-            </g>
-          </svg>
-          <span>Você ganhou frete grátis!</span>
-        </div>
+        if (headerTitle) {
+          headerTitle.textContent = `Carrinho (${totalCartUnits})`;
+        }
 
-        <div class="cart-item-shopee">
-          <img class="cart-item-img" src="${finalImg}" alt="${item.nome || ''}" onclick="window.location.href='produto-${item.id}.html'" style="cursor:pointer;" onerror="this.src='https://via.placeholder.com/82'">
-          <div class="cart-item-details">
-            <div class="cart-item-name"><img class="badge-1111-inline" src="../img/badge-blackfriday.png" onerror="this.src='/img/badge-blackfriday.png'" alt="Black Friday" style="height:15px; width:auto; vertical-align:-2.5px; margin-right:4px; display:inline-block; flex-shrink:0;">${item.nome || ''}</div>
-            
-            ${item.variacao ? `
-            <div style="font-size: 12px; color: #8c8c8c; margin-top: 3px;">
-              ${item.variacao}
+        if (!content) return;
+
+        if (!cart || !cart.length) {
+          if (footerBar) footerBar.style.display = 'none';
+          if (floatingPill) floatingPill.style.display = 'none';
+          if (editBtn) editBtn.style.visibility = 'hidden';
+
+          content.innerHTML = `
+            <div style="text-align:center; padding:48px 16px; background:#ffffff; margin-bottom:8px;">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#c8c8cc" stroke-width="1.5" style="margin-bottom:12px;">
+                <circle cx="9" cy="21" r="1.3"/><circle cx="19" cy="21" r="1.3"/>
+                <path d="M2 3h3l2.4 12.2a2 2 0 0 0 2 1.6h9.4a2 2 0 0 0 2-1.6L22 6H6"/>
+              </svg>
+              <div style="font-size:16px; font-weight:700; color:#161823; margin-bottom:4px;">Seu carrinho está vazio</div>
+              <div style="font-size:13px; color:#717171; margin-bottom:16px;">Explore as ofertas da Stone Shop selecionadas para você</div>
+              <a class="cart-empty-shopping-btn" href="../index.html">Começar a comprar</a>
+            </div>
+            <section id="cart-related-section" class="tt-rec-section">
+              <h2 class="tt-rec-title">Você também pode gostar</h2>
+              <div id="cart-related-grid" class="tt-rec-grid"></div>
+            </section>`;
+
+          renderRelatedList();
+          return;
+        }
+
+        if (editBtn) editBtn.style.visibility = 'visible';
+        if (footerBar) footerBar.style.display = 'flex';
+        if (floatingPill) floatingPill.style.display = 'inline-flex';
+
+        let html = '';
+        cart.forEach((item, index) => {
+          if (itemsSelecionados[index] === undefined) {
+            itemsSelecionados[index] = true;
+          }
+          const isChecked = itemsSelecionados[index] ? 'checked' : '';
+
+          let finalImg = item.img || '';
+          if (finalImg && !finalImg.startsWith('http') && !finalImg.startsWith('//') && !finalImg.startsWith('/')) {
+            if (finalImg.startsWith('../')) finalImg = finalImg.substring(3);
+            finalImg = '../' + finalImg;
+          }
+
+          const itemPreco = parseSafeFloat(item.preco);
+          const itemQty = parseInt(item.qty) || 1;
+          const unitParts = formatarMoeda(itemPreco).split(',');
+          const intPart = unitParts[0] || '0';
+          const decPart = unitParts[1] || '00';
+
+          const showShippingBanner = index > 0 || cart.length === 1;
+          const socialLine = getSocialSubtext(item.id, index);
+          const varLabel = (item.variacao || '').trim();
+
+          html += `
+          <section class="shop-section">
+            <div class="shop-header">
+              <label class="tt-check-wrap" aria-label="Selecionar loja">
+                <input type="checkbox" class="tt-checkbox" id="store-cb-${index}" ${isChecked} onchange="toggleSelectItem(${index}, this.checked)">
+              </label>
+              <span class="shop-header-title" onclick="window.location.href='../index.html'">
+                <span>STONE SHOP</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#757575" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+
+            ${showShippingBanner ? `
+            <div class="shop-shipping-banner" onclick="scrollToRecommendations()">
+              <div class="shop-shipping-left">
+                <svg width="18" height="15" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+                  <path d="M2 3.5H13.5V12.5H2" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.5 6H17.3L20 9.4V12.5H13.5V6Z" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="1.2" y1="6.8" x2="7.5" y2="6.8" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round"/>
+                  <line x1="2.2" y1="9.6" x2="6.2" y2="9.6" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round"/>
+                  <circle cx="6.2" cy="13.8" r="2.1" fill="#effafa" stroke="#007f7a" stroke-width="1.8"/>
+                  <circle cx="16.5" cy="13.8" r="2.1" fill="#effafa" stroke="#007f7a" stroke-width="1.8"/>
+                </svg>
+                <span>Desconto de envio disponível</span>
+              </div>
+              <span class="shop-shipping-right">
+                <span>Adicionar</span>
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#057d7d" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
             </div>` : ''}
 
-            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 5px; margin-bottom: 2px;">
-              <div class="badge-oferta-relampago" style="display:inline-flex; align-items:center; gap:4.5px; background:#fdebf1; color:#9e0b35; font-size:11.5px; font-weight:700; padding:2.5px 7px; border-radius:4px; margin:0; line-height:1.2; letter-spacing:-0.1px;">
-                <img src="/img/icone-oferta-relampago.png" onerror="this.src='../img/icone-oferta-relampago.png'" alt="Oferta Relâmpago" style="width:11px; height:11px; object-fit:contain; flex-shrink:0; display:block;">
-                <span>Oferta Relâmpago</span>
+            <div class="cart-item-row">
+              <div class="cart-item-check-col">
+                <label class="tt-check-wrap" aria-label="Selecionar produto">
+                  <input type="checkbox" class="tt-checkbox cart-item-check" id="item-cb-${index}" data-id="${index}" ${isChecked} onchange="toggleSelectItem(${index}, this.checked)">
+                </label>
               </div>
-              <div class="badge-devolucao" style="display:inline-flex; align-items:center; gap:4.5px; font-size:11.5px; color:#474d57; font-weight:500; background:#f5f6f8; padding:2.5px 6.5px; border-radius:4px; margin:0; line-height:1.2;">
-                <img src="/img/icone-devolucao-gratuita.png" onerror="this.src='../img/icone-devolucao-gratuita.png'" alt="Devolução gratuita" style="width:13px; height:13px; object-fit:contain; flex-shrink:0; display:block;">
-                <span>Devolução gratuita</span>
+
+              <img class="cart-item-img" src="${escapeHtmlCart(finalImg)}" alt="${escapeHtmlCart(item.nome)}" onclick="window.location.href='produto-${item.id}.html'" onerror="this.style.background='#f0f0f0'">
+
+              <div class="cart-item-details">
+                <div class="cart-item-name" onclick="window.location.href='produto-${item.id}.html'">${escapeHtmlCart(item.nome)}</div>
+
+                ${varLabel ? `
+                <button type="button" class="cart-item-var-pill" onclick="openCartVarSheet(${index})">
+                  <span class="cart-item-var-text">${escapeHtmlCart(varLabel)}</span>
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#757575" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>` : ''}
+
+                <div class="cart-item-price-qty-row">
+                  <div class="cart-item-price-black">
+                    <span class="p-rs">R$</span><span class="p-int">${intPart}</span><span class="p-dec">,${decPart}</span>
+                  </div>
+
+                  <div class="cart-qty-stepper">
+                    <button type="button" class="cart-qty-btn" aria-label="Diminuir quantidade" onclick="changeQtyByIndex(${index}, -1)">
+                      <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><line x1="1" y1="1" x2="9" y2="1" stroke="#000000" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    </button>
+                    <span class="cart-qty-divider"></span>
+                    <span class="cart-qty-val" id="qty-${index}">${itemQty}</span>
+                    <span class="cart-qty-divider"></span>
+                    <button type="button" class="cart-qty-btn" aria-label="Aumentar quantidade" onclick="changeQtyByIndex(${index}, 1)">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                        <line x1="1" y1="5" x2="9" y2="5" stroke="#000000" stroke-width="1.6" stroke-linecap="round"/>
+                        <line x1="5" y1="1" x2="5" y2="9" stroke="#000000" stroke-width="1.6" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cart-item-social-sub">${socialLine}</div>
               </div>
             </div>
-            
-            <div class="cart-item-price-qty-row" style="margin-top: 3px; display: flex; align-items: flex-end; justify-content: space-between;">
-              <div class="cart-item-price-wrapper" style="display: flex; flex-direction: column; gap: 0px;">
-                <div class="cart-item-price-current" style="font-size: 15px; font-weight: 700; color: #ff2b56; display: flex; align-items: baseline;">
-                  <span style="font-size: 14px; font-weight: 700; margin-right: 2px;">R$</span>
-                  <span style="font-size: 16px; font-weight: 800;">${precoMultiplicado}</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 4px;">
-                  <span class="cart-item-price-old" style="font-size: 11px; color: #b5b5b5; text-decoration: line-through;">R$ ${precoOrigMultiplicado}</span>
-                  ${descPct ? `<span style="background: #fff0f3; color: #ff2b56; font-size: 10px; font-weight: 600; padding: 1px 4px; border-radius: 2px;">-${descPct}%</span>` : ''}
-                </div>
-              </div>
-              
-              <div class="cart-item-qty-selector">
-                <button class="cart-qty-btn" onclick="changeQty(${item.id}, -1, '${item.variacao || ''}')">−</button>
-                <span class="cart-qty-val" id="qty-${item.id}">${itemQty}</span>
-                <button class="cart-qty-btn" onclick="changeQty(${item.id}, 1, '${item.variacao || ''}')">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>`;
-    });
+          </section>`;
+        });
 
-    let totalDesconto = 0;
-    cart.forEach((item) => {
-      let itemPreco = parseSafeFloat(item.preco);
-      let itemQty = parseInt(item.qty) || 1;
-      let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
-      let orig = itemPreco * 1.5;
-      if (catalogoProd && catalogoProd.precoOrig) {
-        orig = parseSafeFloat(catalogoProd.precoOrig);
-      } else if (item.precoOrig) {
-        orig = parseSafeFloat(item.precoOrig);
+        html += `
+        <section id="cart-related-section" class="tt-rec-section">
+          <h2 class="tt-rec-title">Você também pode gostar</h2>
+          <div id="cart-related-grid" class="tt-rec-grid"></div>
+        </section>`;
+
+        content.innerHTML = html;
+        renderRelatedList();
+        updateTotals();
+      } catch (e) {
+        console.error('Error rendering cart:', e);
       }
-      if (Number(item.id) === 56) {
-        if (itemPreco === 75.9) {
-          if (typeof orig !== "undefined") orig = 788.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
-        } else if (itemPreco === 95.9) {
-          if (typeof orig !== "undefined") orig = 1833.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
-        } else if (itemPreco === 144.9) {
-          if (typeof orig !== "undefined") orig = 3798.90;
-          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
-        }
-      }
-      totalDesconto += (orig - itemPreco) * itemQty;
-    });
-    const descontoFmt = 'R$ ' + formatarMoeda(totalDesconto);
-
-    html += `
-    <div class="coupon-section" onclick="openCuponsModal()">
-      <div class="coupon-left">
-        <svg viewBox="0 0 24 16" width="20" height="14" fill="none" style="flex-shrink:0; vertical-align:middle; display:inline-block;">
-          <path d="M2 3.5C2 2.67 2.67 2 3.5 2H20.5C21.33 2 22 2.67 22 3.5V5.5C20.8 5.5 19.8 6.5 19.8 7.7C19.8 8.9 20.8 9.9 22 9.9V12.5C22 13.33 21.33 14 20.5 14H3.5C2.67 14 2 13.33 2 12.5V9.9C3.2 9.9 4.2 8.9 4.2 7.7C4.2 6.5 3.2 5.5 2 5.5V3.5Z" stroke="#ff2b56" stroke-width="2" stroke-linejoin="round" fill="none"/>
-          <path d="M8.5 7.7L10.5 9.7L15 5.2" stroke="#ff2b56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span>Desconto de ${descontoFmt} aplicado</span>
-      </div>
-      <div class="coupon-right">
-        <span>Todos os cupons</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </div>
-    </div>`;
-
-    html += `
-    <div class="cart-protection-box">
-      <div class="cart-protection-header" onclick="openProtecaoModal()" style="cursor:pointer;">
-        <div class="cart-protection-header-left">
-          <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24,44c0,0,20-4,20-34L24,4L4,10C4,42,24,44,24,44z" fill="#8B4D0B"/>
-            <path d="M32.829,18L22,28.828L15.171,22L18,19.172l4,4l8-8L32.829,18z" fill="#fff"/>
-          </svg>
-          Proteção do cliente
-        </div>
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </div>
-      <div class="cart-protection-grid">
-        <div class="cart-protection-item">✓ Devolução gratuita</div>
-        <div class="cart-protection-item">✓ Reembolso se algo der errado</div>
-        <div class="cart-protection-item">✓ Pagamento seguro</div>
-        <div class="cart-protection-item">✓ Reembolso automático por danos</div>
-      </div>
-    </div>`;
-
-    html += `
-    <div style="padding: 16px; background: #f5f5f5; margin-top: 8px;">
-      <div style="font-size: 15px; font-weight: 700; margin-bottom: 12px; color: #222;">Você também pode gostar</div>
-      <div id="cart-related-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;"></div>
-    </div>`;
-
-    content.innerHTML = html;
-    
-    renderRelatedList();
-    updateTotals();
-  } catch(e) {
-    console.error('Error rendering cart:', e);
-  }
-}
-
-function renderRelatedList() {
-  const grid = document.getElementById('cart-related-grid');
-  if (grid && typeof CATALOGO_PRODUTOS !== 'undefined') {
-    const listCopy = [...CATALOGO_PRODUTOS];
-    // Embaralha
-    for (let i = listCopy.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [listCopy[i], listCopy[j]] = [listCopy[j], listCopy[i]];
     }
 
-    let allCards = '';
-    listCopy.forEach(p => {
-      const precoFmt = 'R$ ' + parseFloat(p.preco).toFixed(2).replace('.', ',');
-      const precoOrigFmt = p.precoOrig ? 'R$ ' + p.precoOrig : '';
-      const imgSrc = p.img || '';
+    function changeQtyByIndex(index, delta) {
+      const cart = getCart();
+      const item = cart[index];
+      if (!item) return;
+      const curQty = parseInt(item.qty) || 1;
 
-      // Cálculo de desconto %
-      let desc = p.desc || 0;
-      if (!desc && p.precoOrig) {
-        const origVal = parseFloat(String(p.precoOrig).replace(/\./g, '').replace(',', '.'));
-        const curVal = parseFloat(p.preco);
-        if (origVal > curVal) {
-          desc = Math.round((1 - curVal / origVal) * 100);
+      if (curQty + delta <= 0) {
+        const overlay = document.getElementById('remove-confirm-overlay');
+        const desc = document.getElementById('remove-confirm-desc');
+        if (desc) desc.textContent = 'Tem certeza de que deseja remover este item do seu carrinho?';
+        if (overlay) {
+          overlay.style.display = 'flex';
+          document.getElementById('btn-cancel-remove').onclick = function() {
+            overlay.style.display = 'none';
+          };
+          document.getElementById('btn-confirm-remove').onclick = function() {
+            overlay.style.display = 'none';
+            cart.splice(index, 1);
+            localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
+            const nextSel = {};
+            cart.forEach((_, i) => {
+              nextSel[i] = itemsSelecionados[i >= index ? i + 1 : i] !== false;
+            });
+            itemsSelecionados = nextSel;
+            renderCart();
+          };
         }
+        return;
       }
 
-      // Formatação de vendas
-      let vendasFormatadas = '';
-      const rawVendas = p.vendidos || (p.id * 123 % 8000 + 150);
-      if (rawVendas >= 1000) {
-        vendasFormatadas = (rawVendas >= 10000 ? Math.round(rawVendas / 1000) : (rawVendas / 1000).toFixed(1)) + 'K vendido(s)';
-      } else {
-        vendasFormatadas = rawVendas + ' vendido(s)';
-      }
-
-      allCards += `
-        <a class="product-card-rec" href="produto-${p.id}.html" style="background:#fff;border-radius:8px;overflow:hidden;border:1px solid #ebebeb;text-decoration:none;color:inherit;display:flex;flex-direction:column;justify-content:space-between;width:100%;box-sizing:border-box;box-shadow:0 1px 3px rgba(0,0,0,0.03);">
-          <div>
-            <img src="${imgSrc}" style="width:100%;aspect-ratio:1/1;object-fit:cover;background:#f0f0f0;display:block;" onerror="this.style.background='#eee'">
-            <div style="padding:8px 8px 4px 8px;">
-              <div style="font-size:12px;font-weight:500;color:#161823;line-height:1.35;margin-bottom:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;height:32px;">${p.nome}</div>
-              
-              <!-- Badges de Frete Grátis e Cupom Oficial TikTok Shop -->
-              <div class="card-badges-row" style="display:flex;align-items:center;gap:4px;margin-bottom:5px;flex-wrap:wrap;">
-                <span class="badge-frete-gratis" style="background:#e6f9f6;color:#00a699;font-size:9.5px;font-weight:700;padding:1px 4px;border-radius:3px;line-height:1.2;">Frete grátis</span>
-                ${desc >= 40 ? `<span class="related-discount" style="background:#fff0f2;color:#fe2c55;border:1px solid #ffd8e0;font-size:9px;font-weight:700;padding:0.5px 3px;border-radius:2px;line-height:1.2;">Cupom</span>` : ''}
-              </div>
-
-              <!-- Avaliação e Vendas estilo iOS/TikTok -->
-              <div style="display:flex;align-items:center;gap:3px;font-size:10.5px;color:#8a8b91;margin-bottom:5px;">
-                <span style="color:#f59e0b;font-size:11px;">★</span>
-                <span style="font-weight:600;color:#161823;font-size:11px;">${(4.7 + (p.id % 3) * 0.1).toFixed(1)}</span>
-                <span style="color:#d1d5db;margin:0 1px;">|</span>
-                <span>${vendasFormatadas}</span>
-              </div>
-            </div>
-          </div>
-
-          <div style="padding:0 8px 8px 8px;">
-            <!-- Preço Atual + Preço Antigo com Badge -XX% idêntico à Home -->
-            <div style="display:flex;flex-direction:column;gap:1px;">
-              <div style="font-size:15px;font-weight:700;color:#fe2c55;letter-spacing:-0.3px;">${precoFmt}</div>
-              ${precoOrigFmt ? `
-                <div style="display:flex;align-items:center;gap:4px;margin-top:1px;">
-                  <span style="font-size:10.5px;color:#8a8b91;text-decoration:line-through;">${precoOrigFmt}</span>
-                  ${desc > 0 ? `<span style="background:#ffe8ee;color:#ff2b56;font-size:9.5px;font-weight:700;padding:1px 4px;border-radius:3px;line-height:1;">-${desc}%</span>` : ''}
-                </div>
-              ` : ''}
-            </div>
-          </div>
-        </a>`;
-    });
-    grid.innerHTML = allCards;
-  }
-}
-
-function changeQty(id, delta, variacao = '') {
-  const cart = getCart();
-  const item = cart.find(i => Number(i.id) === Number(id) && (variacao ? i.variacao === variacao : true));
-  if (item && item.qty + delta <= 0) {
-    // Abre o modal customizado de confirmação
-    const overlay = document.getElementById('remove-confirm-overlay');
-    if (overlay) {
-      overlay.style.display = 'flex';
-      
-      // Associa as ações de clique
-      document.getElementById('btn-cancel-remove').onclick = function() {
-        overlay.style.display = 'none';
-      };
-      
-      document.getElementById('btn-confirm-remove').onclick = function() {
-        overlay.style.display = 'none';
-        removeFromCart(id, variacao || null);
-        renderCart();
-      };
-    }
-  } else {
-    updateQty(id, delta, variacao || null);
-    renderCart();
-  }
-}
-
-function handleRemove(id, variacao = '') {
-  const overlay = document.getElementById('remove-confirm-overlay');
-  if (overlay) {
-    overlay.style.display = 'flex';
-    document.getElementById('btn-cancel-remove').onclick = function() {
-      overlay.style.display = 'none';
-    };
-    document.getElementById('btn-confirm-remove').onclick = function() {
-      overlay.style.display = 'none';
-      removeFromCart(id, variacao || null);
+      item.qty = curQty + delta;
+      localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
       renderCart();
-    };
-  } else {
-    removeFromCart(id, variacao || null);
-    renderCart();
-  }
-}
+    }
 
-function showNativeAddressAlert() {
-  const modal = document.getElementById('modal-address-native-alert');
-  if (modal) modal.style.display = 'flex';
-}
+    function openCartVarSheet(index) {
+      const cart = getCart();
+      const item = cart[index];
+      if (!item) return;
 
-function closeNativeAddressAlert(e) {
-  if (e) { e.preventDefault(); e.stopPropagation(); }
-  const modal = document.getElementById('modal-address-native-alert');
-  if (modal) modal.style.display = 'none';
-}
+      const prod = typeof CATALOGO_PRODUTOS !== 'undefined'
+        ? CATALOGO_PRODUTOS.find(p => Number(p.id) === Number(item.id))
+        : null;
 
-function proceedToFullAddressForm(e) {
-  if (e) { e.preventDefault(); e.stopPropagation(); }
-  closeNativeAddressAlert();
-  openAddressModal();
-}
+      let options = [];
+      if (prod && Array.isArray(prod.variacoes) && prod.variacoes.length) {
+        prod.variacoes.forEach(v => {
+          if (typeof v === 'string') options.push(v);
+          else if (v && Array.isArray(v.opcoes)) {
+            v.opcoes.forEach(op => options.push(typeof op === 'string' ? op : (op.nome || op.label || '')));
+          } else if (v && (v.nome || v.label)) {
+            options.push(v.nome || v.label);
+          }
+        });
+      }
+      options = options.filter(Boolean);
+      if (!options.length && item.variacao) {
+        options = [item.variacao];
+      }
+      if (options.length <= 1) {
+        window.location.href = `produto-${item.id}.html`;
+        return;
+      }
 
-function irParaCheckout() {
-  const cart = getCart();
-  const checkoutItems = cart.filter((item, index) => itemsSelecionados[index] !== false);
+      _editingCartVarIndex = index;
+      _selectedSheetVar = item.variacao || options[0];
 
-  if (checkoutItems.length === 0) {
-    showToast('Selecione pelo menos um produto para continuar!');
-    return;
-  }
+      let img = item.img || '';
+      if (img && !img.startsWith('http') && !img.startsWith('/')) {
+        if (img.startsWith('../')) img = img.substring(3);
+        img = '../' + img;
+      }
 
-  const address = localStorage.getItem('user_address') || localStorage.getItem('user_rua');
-  const cpf     = localStorage.getItem('user_cpf');
+      document.getElementById('cart-var-sheet-img').src = img;
+      document.getElementById('cart-var-sheet-price').textContent = 'R$ ' + formatarMoeda(parseSafeFloat(item.preco));
+      document.getElementById('cart-var-sheet-cur').textContent = 'Selecionado: ' + _selectedSheetVar;
 
-  if (!address) {
-    showNativeAddressAlert();
-    return;
-  }
-  if (!cpf) {
-    showToast('Adicione seu CPF para continuar!');
-    openCpfModal();
-    return;
-  }
+      renderCartVarOptions(options);
+      document.getElementById('cart-var-overlay').style.display = 'flex';
+    }
 
-  localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutItems));
-  if (typeof window.showTikTokHUD === 'function') {
-    window.showTikTokLoader();
-  }
-  setTimeout(() => {
-    window.location.href = 'resumo.html';
-  }, 380);
-}
+    function renderCartVarOptions(options) {
+      const wrap = document.getElementById('cart-var-sheet-options');
+      if (!wrap) return;
+      wrap.innerHTML = options.map(opt => {
+        const active = opt === _selectedSheetVar;
+        return `<button type="button" onclick="selectCartVarOption('${escapeHtmlCart(opt).replace(/'/g, "\\'")}')" style="padding:7px 12px; border-radius:6px; font-family:inherit; font-size:13px; font-weight:${active ? '600' : '400'}; border:1.5px solid ${active ? '#fe2c55' : '#e5e5e5'}; background:${active ? '#fff2f5' : '#f6f6f7'}; color:${active ? '#fe2c55' : '#161823'}; cursor:pointer;">${escapeHtmlCart(opt)}</button>`;
+      }).join('');
+      window._currentCartSheetOpts = options;
+    }
 
-document.addEventListener('DOMContentLoaded', () => {
-  localStorage.removeItem('famosinhos_checkout_cart');
-  loadAddress();
-  renderCart();
+    function selectCartVarOption(val) {
+      _selectedSheetVar = val;
+      const cur = document.getElementById('cart-var-sheet-cur');
+      if (cur) cur.textContent = 'Selecionado: ' + val;
+      renderCartVarOptions(window._currentCartSheetOpts || [val]);
+    }
 
-  // Se a conta não tem endereço de envio, abre o alerta nativo do TikTok Shop automaticamente
-  const ruaAtual = localStorage.getItem('user_address') || localStorage.getItem('user_rua') || '';
-  const currentCart = getCart();
-  if (!ruaAtual && currentCart && currentCart.length > 0) {
-    setTimeout(function () {
-      showNativeAddressAlert();
-    }, 450);
-  }
-  
-  // Fecha modal de endereço ao clicar fora dele
-  const modal = document.getElementById('address-modal-box');
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeAddressModal();
-    });
-  }
-});
-</script>
+    function closeCartVarSheet() {
+      const ov = document.getElementById('cart-var-overlay');
+      if (ov) ov.style.display = 'none';
+    }
 
-<!-- Preload do vídeo do PIX para carregar instantaneamente na próxima tela -->
-<video src="../img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
-<script>
+    function confirmCartVarSheet() {
+      const cart = getCart();
+      if (_editingCartVarIndex >= 0 && cart[_editingCartVarIndex] && _selectedSheetVar) {
+        cart[_editingCartVarIndex].variacao = _selectedSheetVar;
+        localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
+        renderCart();
+      }
+      closeCartVarSheet();
+    }
+
+    function openCuponsModal() {
+      const overlay = document.getElementById('cupons-modal-overlay');
+      const cart = getCart();
+      const totalDesc = calcTotalDiscount(cart);
+      const descEl = document.getElementById('cupom-desc-valor');
+      if (descEl) {
+        descEl.textContent = totalDesc > 0
+          ? 'Economia de R$ ' + formatarMoeda(totalDesc) + ' aplicada'
+          : 'Desconto automático aplicado';
+      }
+      if (overlay) overlay.style.display = 'flex';
+    }
+
+    function closeCuponsModal() {
+      const overlay = document.getElementById('cupons-modal-overlay');
+      if (overlay) overlay.style.display = 'none';
+    }
+
+    function renderRelatedList() {
+      const grid = document.getElementById('cart-related-grid');
+      if (!grid || typeof CATALOGO_PRODUTOS === 'undefined') return;
+
+      const listCopy = [...CATALOGO_PRODUTOS].slice(0, 24);
+      let cardsHtml = '';
+
+      listCopy.forEach((p, idx) => {
+        const curVal = parseSafeFloat(p.preco);
+        const origVal = p.precoOrig ? parseSafeFloat(p.precoOrig) : Math.round(curVal * 1.65 * 100) / 100;
+        const parts = formatarMoeda(curVal).split(',');
+        const origFmt = formatarMoeda(origVal);
+        const descReais = Math.max(5, Math.round(origVal - curVal));
+
+        let imgSrc = p.img || '';
+        if (imgSrc && !imgSrc.startsWith('http') && !imgSrc.startsWith('//') && !imgSrc.startsWith('/')) {
+          if (imgSrc.startsWith('../')) imgSrc = imgSrc.substring(3);
+          imgSrc = '../' + imgSrc;
+        }
+
+        const rawVendas = p.vendidos || (p.id * 137 % 9000 + 320);
+        const vendasFmt = rawVendas >= 1000
+          ? (rawVendas / 1000).toFixed(1).replace('.', ',') + 'K vendidos'
+          : rawVendas + ' vendidos';
+        const nota = (4.7 + (p.id % 3) * 0.1).toFixed(1).replace('.', ',');
+
+        cardsHtml += `
+          <a class="tt-rec-card" href="produto-${p.id}.html">
+            <img class="rec-thumb" src="${escapeHtmlCart(imgSrc)}" alt="${escapeHtmlCart(p.nome)}" loading="lazy" onerror="this.style.background='#eeeeee'">
+            <div class="tt-rec-body">
+              <div class="tt-rec-name">
+                <span class="tt-badge-bf">Black Friday</span>
+                ${idx % 2 === 0 ? `<span class="tt-badge-star-shop" style="margin-left:3px;">Loja Estrela</span>` : ''}
+                <span style="margin-left:4px;">${escapeHtmlCart(p.nome)}</span>
+              </div>
+              <div class="tt-rec-price-line">
+                <span class="tt-rec-price-cur"><small>R$</small> ${parts[0]}<small>,${parts[1]}</small></span>
+                <span class="tt-rec-price-old">R$ ${origFmt}</span>
+              </div>
+              <div class="tt-rec-coupon-pill">
+                <svg width="11" height="9" viewBox="0 0 16 12" fill="none"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H13.5C14.33 1 15 1.67 15 2.5V4.2C14.05 4.2 13.3 4.95 13.3 5.9C13.3 6.85 14.05 7.6 15 7.6V9.5C15 10.33 14.33 11 13.5 11H2.5C1.67 11 1 10.33 1 9.5V7.6C1.95 7.6 2.7 6.85 2.7 5.9C2.7 4.95 1.95 4.2 1 4.2V2.5Z" fill="#e10543"/></svg>
+                <span>Desconto de R$ ${descReais}</span>
+              </div>
+              <div class="tt-rec-meta">
+                <span style="color:#ffb800;font-size:12px;">★</span>
+                <span>${nota}</span>
+                <span style="color:#d8d8dc;">|</span>
+                <span>${vendasFmt}</span>
+              </div>
+            </div>
+          </a>`;
+      });
+
+      grid.innerHTML = cardsHtml;
+    }
+
+    function showNativeAddressAlert() {
+      const modal = document.getElementById('modal-address-native-alert');
+      if (modal) modal.style.display = 'flex';
+    }
+
+    function closeNativeAddressAlert(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const modal = document.getElementById('modal-address-native-alert');
+      if (modal) modal.style.display = 'none';
+    }
+
+    function proceedToFullAddressForm(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      closeNativeAddressAlert();
+      openAddressModalLocal(false);
+    }
+
+    function irParaCheckout() {
+      const cart = getCart();
+      const checkoutItems = cart.filter((_, index) => !!itemsSelecionados[index]);
+
+      if (checkoutItems.length === 0) {
+        if (typeof showToast === 'function') showToast('Selecione pelo menos um produto para continuar');
+        return;
+      }
+
+      const address = localStorage.getItem('user_address') || localStorage.getItem('user_rua');
+      const cpf = localStorage.getItem('user_cpf');
+
+      if (!address) {
+        showNativeAddressAlert();
+        return;
+      }
+
+      if (!cpf) {
+        openAddressModalLocal(true);
+        setTimeout(() => {
+          const cpfEl = document.getElementById('addr-cpf');
+          if (cpfEl) {
+            cpfEl.focus();
+            cpfEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 120);
+        return;
+      }
+
+      localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutItems));
+      if (typeof window.showTikTokLoader === 'function') {
+        window.showTikTokLoader();
+      }
+      setTimeout(() => {
+        window.location.href = 'resumo.html';
+      }, 260);
+    }
 
     // =========================================================================
-    // LÓGICA OFICIAL DA TELA DE ENDEREÇO TIKTOK SHOP COM S/N AUTOMÁTICO
+    // MODAL DE ENDEREÇO TIKTOK SHOP (CEP CARD FLUTUANTE + S/N AUTOMÁTICO)
     // =========================================================================
-
-    // Validação CPF — Algoritmo oficial Receita Federal (Módulo 11)
     function validarCPF(cpf) {
-      cpf = cpf.replace(/\D/g, '');
+      cpf = String(cpf || '').replace(/\D/g, '');
       if (cpf.length !== 11) return false;
       if (/^(\d)\1{10}$/.test(cpf)) return false;
       let s = 0;
@@ -2039,11 +1766,10 @@ document.addEventListener('DOMContentLoaded', () => {
       return r === parseInt(cpf[10]);
     }
 
-    // Helper centralizado de erro de campo inline (igual ao TikTok Shop)
     function setFieldError(wrapId, errorId, show) {
       const wrap = document.getElementById(wrapId);
       const err = document.getElementById(errorId);
-      if (wrap) wrap.style.borderBottom = show ? '1.5px solid #ff4d4f' : '1px solid #e5e5e5';
+      if (wrap) wrap.style.borderBottom = show ? '1.5px solid #fe2c55' : '1px solid #ebebeb';
       if (err) err.style.display = show ? 'flex' : 'none';
     }
 
@@ -2052,10 +1778,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function triggerAutoSnTimer() {
       clearTimeout(autoSnTimer);
       const numEl = document.getElementById('addr-numero');
-      if (!numEl) return;
-      if (numEl.value.trim().length > 0) return;
-
-      // 2 segundos de hesitação -> preenche s/n automaticamente
+      if (!numEl || numEl.value.trim().length > 0) return;
       autoSnTimer = setTimeout(() => {
         if (!numEl.value.trim()) {
           numEl.value = 's/n';
@@ -2066,17 +1789,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function clearNumeroError() {
-      const wrap = document.getElementById('addr-numero-wrap');
-      const err = document.getElementById('addr-numero-error');
-      if (wrap) wrap.style.borderBottom = '1px solid #e5e5e5';
-      if (err) err.style.display = 'none';
-    }
-
-    function showNumeroError() {
-      const wrap = document.getElementById('addr-numero-wrap');
-      const err = document.getElementById('addr-numero-error');
-      if (wrap) wrap.style.borderBottom = '1.5px solid #ff4d4f';
-      if (err) err.style.display = 'flex';
+      setFieldError('addr-numero-wrap', 'addr-numero-error', false);
     }
 
     function validateAddressFormReactively() {
@@ -2086,10 +1799,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const estado = (document.getElementById('addr-estado')?.value || '').trim();
       const cidade = (document.getElementById('addr-cidade')?.value || '').trim();
       const rua = (document.getElementById('addr-rua')?.value || '').trim();
-      const num = (document.getElementById('addr-numero')?.value || '').trim();
       const cpfRaw = (document.getElementById('addr-cpf')?.value || '').replace(/\D/g, '');
 
-      // Valida CPF em tempo real quando tem 11 dígitos
       const cpfOk = cpfRaw.length === 11 ? validarCPF(cpfRaw) : false;
       if (cpfRaw.length === 11) {
         setFieldError('addr-cpf-wrap', 'addr-cpf-error', !cpfOk);
@@ -2100,17 +1811,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = document.getElementById('addr-btn-salvar');
       if (!btn) return false;
 
-      const isValid = (nome.length >= 2) && (tel.length >= 10) && (cep.length === 8) && !!estado &&
-        (cidade.length >= 2) && (rua.length >= 2) && (num.length >= 1) &&
-        (cpfRaw.length === 11 && cpfOk);
+      const isValid = (nome.length >= 2) && (tel.length >= 10) && (cep.length === 8) &&
+        !!estado && (cidade.length >= 2) && (rua.length >= 2) && (cpfRaw.length === 11 && cpfOk);
 
-      if (isValid) {
-        btn.style.background = '#fe2c55';
-        btn.style.cursor = 'pointer';
-      } else {
-        btn.style.background = '#ffb4c0';
-        btn.style.cursor = 'not-allowed';
-      }
+      btn.style.background = isValid ? '#fe2c55' : '#ffb4c0';
+      btn.style.cursor = isValid ? 'pointer' : 'not-allowed';
       return isValid;
     }
 
@@ -2127,48 +1832,32 @@ document.addEventListener('DOMContentLoaded', () => {
       if (titleEl) titleEl.textContent = isEdit ? 'Editar o endereço' : 'Adicionar o novo endereço';
       if (deleteBtn) deleteBtn.style.display = isEdit ? 'flex' : 'none';
 
-      // Preenche os valores de contato existentes
-      const nomeEl = document.getElementById('addr-nome');
-      if (nomeEl) nomeEl.value = localStorage.getItem('user_nome') || '';
+      const map = {
+        'addr-nome': 'user_nome',
+        'addr-tel': 'user_tel',
+        'addr-email': 'user_email',
+        'addr-cep': 'user_cep',
+        'addr-estado': 'user_estado',
+        'addr-cidade': 'user_cidade',
+        'addr-bairro': 'user_bairro',
+        'addr-rua': 'user_rua',
+        'addr-numero': 'user_numero',
+        'addr-complemento': 'user_complemento',
+        'addr-cpf': 'user_cpf'
+      };
+      Object.keys(map).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.value = localStorage.getItem(map[id]) || '';
+      });
 
-      const telEl = document.getElementById('addr-tel');
-      if (telEl) telEl.value = localStorage.getItem('user_tel') || '';
-
-      const emailEl = document.getElementById('addr-email');
-      if (emailEl) emailEl.value = localStorage.getItem('user_email') || '';
-
-      // Preenche os valores de endereço existentes
-      const cepEl = document.getElementById('addr-cep');
-      if (cepEl) cepEl.value = localStorage.getItem('user_cep') || '';
-
-      const estadoEl = document.getElementById('addr-estado');
-      if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
-
-      const cidadeEl = document.getElementById('addr-cidade');
-      if (cidadeEl) cidadeEl.value = localStorage.getItem('user_cidade') || '';
-
-      const bairroEl = document.getElementById('addr-bairro');
-      if (bairroEl) bairroEl.value = localStorage.getItem('user_bairro') || '';
-
-      const ruaEl = document.getElementById('addr-rua');
-      if (ruaEl) ruaEl.value = localStorage.getItem('user_rua') || '';
-
-      const numEl = document.getElementById('addr-numero');
-      if (numEl) numEl.value = localStorage.getItem('user_numero') || '';
-
-      const compEl = document.getElementById('addr-complemento');
-      if (compEl) compEl.value = localStorage.getItem('user_complemento') || '';
-
-      const cpfEl = document.getElementById('addr-cpf');
-      if (cpfEl) cpfEl.value = localStorage.getItem('user_cpf') || '';
+      const sug = document.getElementById('addr-cep-suggest-card');
+      if (sug) sug.style.display = 'none';
 
       clearNumeroError();
       validateAddressFormReactively();
 
       modal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
-
-      // Configura os ouvintes de eventos reativos e do s/n automático
       setupAddressModalListeners();
     }
 
@@ -2181,21 +1870,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function deleteAddressLocal() {
       if (confirm('Deseja excluir este endereço de envio?')) {
-        localStorage.removeItem('user_nome');
-        localStorage.removeItem('user_tel');
-        localStorage.removeItem('user_email');
-        localStorage.removeItem('user_cep');
-        localStorage.removeItem('user_cidade');
-        localStorage.removeItem('user_bairro');
-        localStorage.removeItem('user_rua');
-        localStorage.removeItem('user_numero');
-        localStorage.removeItem('user_complemento');
-        localStorage.removeItem('user_estado');
-        localStorage.removeItem('user_cpf');
-        localStorage.removeItem('user_address');
-        if (typeof renderAddress === "function") renderAddress(); if (typeof loadAddress === "function") loadAddress();
+        ['user_nome','user_tel','user_email','user_cep','user_cidade','user_bairro','user_rua','user_numero','user_complemento','user_estado','user_cpf','user_address'].forEach(k => localStorage.removeItem(k));
+        loadAddress();
         closeAddressModalLocal();
       }
+    }
+
+    var _pendingViaCepData = null;
+    var _UF_NOMES_RESUMO = {
+      AC:'Acre', AL:'Alagoas', AP:'Amapá', AM:'Amazonas', BA:'Bahia', CE:'Ceará', DF:'Distrito Federal',
+      ES:'Espírito Santo', GO:'Goiás', MA:'Maranhão', MT:'Mato Grosso', MS:'Mato Grosso do Sul', MG:'Minas Gerais',
+      PA:'Pará', PB:'Paraíba', PR:'Paraná', PE:'Pernambuco', PI:'Piauí', RJ:'Rio de Janeiro', RN:'Rio Grande do Norte',
+      RS:'Rio Grande do Sul', RO:'Rondônia', RR:'Roraima', SC:'Santa Catarina', SP:'São Paulo', SE:'Sergipe', TO:'Tocantins'
+    };
+
+    function limparCampoCepResumo(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const cepEl = document.getElementById('addr-cep');
+      const clr = document.getElementById('addr-cep-clear-btn');
+      const sug = document.getElementById('addr-cep-suggest-card');
+      _pendingViaCepData = null;
+      if (cepEl) { cepEl.value = ''; cepEl.focus(); }
+      if (clr) clr.style.display = 'none';
+      if (sug) sug.style.display = 'none';
+      validateAddressFormReactively();
+    }
+
+    function aplicarSugestaoCepResumo(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const d = _pendingViaCepData;
+      const sug = document.getElementById('addr-cep-suggest-card');
+      if (sug) sug.style.display = 'none';
+      if (!d) return;
+      if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade || '';
+      if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf || '';
+      if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro || '';
+      if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro || '';
+      setFieldError('addr-cep-wrap', 'addr-cep-error', false);
+      if (d.logradouro) setFieldError('addr-rua-wrap', 'addr-rua-error', false);
+      const numEl = document.getElementById('addr-numero');
+      if (numEl && !numEl.value.trim()) {
+        numEl.focus();
+        triggerAutoSnTimer();
+      }
+      validateAddressFormReactively();
+    }
+
+    function buscarCepResumo(cep) {
+      cep = String(cep || '').replace(/\D/g, '');
+      if (cep.length !== 8) return;
+
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(r => r.json())
+        .then(d => {
+          if (!d.erro) {
+            _pendingViaCepData = d;
+            const sug = document.getElementById('addr-cep-suggest-card');
+            const codeEl = document.getElementById('addr-cep-sug-code');
+            const streetEl = document.getElementById('addr-cep-sug-street');
+            const subEl = document.getElementById('addr-cep-sug-sub');
+            if (sug && codeEl && streetEl && subEl) {
+              codeEl.textContent = cep;
+              streetEl.textContent = d.logradouro ? ', ' + d.logradouro : '';
+              const ufNome = _UF_NOMES_RESUMO[d.uf] || d.uf || '';
+              subEl.textContent = [d.bairro, d.localidade, ufNome].filter(Boolean).join(', ');
+              sug.style.display = 'block';
+            }
+            if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade || '';
+            if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf || '';
+            if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro || '';
+            if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro || '';
+            setFieldError('addr-cep-wrap', 'addr-cep-error', false);
+            validateAddressFormReactively();
+          }
+        })
+        .catch(() => {});
     }
 
     function setupAddressModalListeners() {
@@ -2210,27 +1959,22 @@ document.addEventListener('DOMContentLoaded', () => {
       if (nomeEl && !nomeEl._hasListeners) {
         nomeEl._hasListeners = true;
         nomeEl.addEventListener('input', validateAddressFormReactively);
-        nomeEl.addEventListener('blur', function () {
+        nomeEl.addEventListener('blur', function() {
           setFieldError('addr-nome-wrap', 'addr-nome-error', this.value.trim().length < 2);
         });
       }
 
       if (telEl && !telEl._hasListeners) {
         telEl._hasListeners = true;
-        telEl.addEventListener('input', function () {
+        telEl.addEventListener('input', function() {
           let v = this.value.replace(/\D/g, '').slice(0, 11);
-          if (v.length > 10) {
-            this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2, 7) + '-' + v.slice(7);
-          } else if (v.length > 6) {
-            this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2, 6) + '-' + v.slice(6);
-          } else if (v.length > 2) {
-            this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2);
-          } else if (v.length > 0) {
-            this.value = '(' + v;
-          }
+          if (v.length > 10) this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2, 7) + '-' + v.slice(7);
+          else if (v.length > 6) this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2, 6) + '-' + v.slice(6);
+          else if (v.length > 2) this.value = '(' + v.slice(0, 2) + ') ' + v.slice(2);
+          else if (v.length > 0) this.value = '(' + v;
           validateAddressFormReactively();
         });
-        telEl.addEventListener('blur', function () {
+        telEl.addEventListener('blur', function() {
           setFieldError('addr-tel-wrap', 'addr-tel-error', this.value.replace(/\D/g, '').length < 10);
         });
       }
@@ -2242,17 +1986,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (numEl && !numEl._hasListeners) {
         numEl._hasListeners = true;
-        numEl.addEventListener('focus', function () {
+        numEl.addEventListener('focus', function() {
+          const sug = document.getElementById('addr-cep-suggest-card');
+          if (sug) sug.style.display = 'none';
           if (!this.value.trim()) triggerAutoSnTimer();
         });
-        numEl.addEventListener('blur', function () {
+        numEl.addEventListener('blur', function() {
           if (!this.value.trim()) {
             this.value = 's/n';
             clearNumeroError();
             validateAddressFormReactively();
           }
         });
-        numEl.addEventListener('input', function () {
+        numEl.addEventListener('input', function() {
           clearTimeout(autoSnTimer);
           clearNumeroError();
           if (!this.value.trim()) triggerAutoSnTimer();
@@ -2260,11 +2006,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Se o usuário clicar em CPF, Complemento ou Contato deixando número vazio, joga s/n na hora
       [cpfEl, compEl, nomeEl, telEl].forEach(el => {
         if (el && !el._hasSnListener) {
           el._hasSnListener = true;
-          el.addEventListener('focus', function () {
+          el.addEventListener('focus', function() {
+            const sug = document.getElementById('addr-cep-suggest-card');
+            if (sug) sug.style.display = 'none';
             const n = document.getElementById('addr-numero');
             const rua = document.getElementById('addr-rua')?.value?.trim();
             if (rua && n && !n.value.trim()) {
@@ -2278,22 +2025,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (cepEl && !cepEl._hasCepListener) {
         cepEl._hasCepListener = true;
-        cepEl.addEventListener('input', function () {
+        cepEl.addEventListener('input', function() {
           this.value = this.value.replace(/\D/g, '').slice(0, 8);
+          const clr = document.getElementById('addr-cep-clear-btn');
+          if (clr) clr.style.display = this.value.length > 0 ? 'inline-flex' : 'none';
           if (this.value.length === 8) {
             buscarCepResumo(this.value);
+          } else {
+            const sug = document.getElementById('addr-cep-suggest-card');
+            if (sug) sug.style.display = 'none';
           }
           validateAddressFormReactively();
         });
-        cepEl.addEventListener('blur', function () {
+        cepEl.addEventListener('blur', function() {
           setFieldError('addr-cep-wrap', 'addr-cep-error', this.value.replace(/\D/g, '').length !== 8);
         });
       }
+      const clrInit = document.getElementById('addr-cep-clear-btn');
+      if (clrInit && cepEl) clrInit.style.display = cepEl.value.trim().length > 0 ? 'inline-flex' : 'none';
 
       if (cpfEl && !cpfEl._hasCpfListener) {
         cpfEl._hasCpfListener = true;
-        cpfEl.addEventListener('input', function () {
-          // Máscara CPF em tempo real: 000.000.000-00
+        cpfEl.addEventListener('input', function() {
           let v = this.value.replace(/\D/g, '').slice(0, 11);
           if (v.length > 9) v = v.slice(0,3)+'.'+v.slice(3,6)+'.'+v.slice(6,9)+'-'+v.slice(9);
           else if (v.length > 6) v = v.slice(0,3)+'.'+v.slice(3,6)+'.'+v.slice(6);
@@ -2301,21 +2054,17 @@ document.addEventListener('DOMContentLoaded', () => {
           this.value = v;
           validateAddressFormReactively();
         });
-        cpfEl.addEventListener('blur', function () {
+        cpfEl.addEventListener('blur', function() {
           const digits = this.value.replace(/\D/g, '');
-          if (digits.length > 0) {
-            setFieldError('addr-cpf-wrap', 'addr-cpf-error', !validarCPF(digits));
-          } else {
-            setFieldError('addr-cpf-wrap', 'addr-cpf-error', false);
-          }
+          if (digits.length > 0) setFieldError('addr-cpf-wrap', 'addr-cpf-error', !validarCPF(digits));
+          else setFieldError('addr-cpf-wrap', 'addr-cpf-error', false);
         });
       }
 
-      // blur na rua
       const ruaElL = document.getElementById('addr-rua');
       if (ruaElL && !ruaElL._hasBlur) {
         ruaElL._hasBlur = true;
-        ruaElL.addEventListener('blur', function () {
+        ruaElL.addEventListener('blur', function() {
           setFieldError('addr-rua-wrap', 'addr-rua-error', this.value.trim().length < 2);
         });
       }
@@ -2328,31 +2077,6 @@ document.addEventListener('DOMContentLoaded', () => {
           el.addEventListener('change', validateAddressFormReactively);
         }
       });
-    }
-
-    function buscarCepResumo(cep) {
-      cep = cep.replace(/\D/g, '');
-      if (cep.length !== 8) return;
-
-      fetch(`https://viacep.com.br/ws/${cep}/json/`)
-        .then(r => r.json())
-        .then(d => {
-          if (!d.erro) {
-            if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade || '';
-            if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf || '';
-            if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro || '';
-            if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro || '';
-
-            // Se o número estiver vazio, foca nele e dispara o timer de s/n automático
-            const numEl = document.getElementById('addr-numero');
-            if (numEl && !numEl.value.trim()) {
-              numEl.focus();
-              triggerAutoSnTimer();
-            }
-            validateAddressFormReactively();
-          }
-        })
-        .catch(() => {});
     }
 
     function saveAddressFormLocal() {
@@ -2380,15 +2104,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const complemento = (compEl?.value || '').trim();
       const cpfRaw = (cpfEl?.value || '').replace(/\D/g, '');
 
-      // Validação inline — zero alert() — igual ao TikTok Shop nativo
       let firstErrorEl = null;
 
       const nomeOk = nome.length >= 2;
       setFieldError('addr-nome-wrap', 'addr-nome-error', !nomeOk);
       if (!nomeOk && !firstErrorEl) firstErrorEl = nomeEl;
 
-      const telDigits = tel.replace(/\D/g, '');
-      const telOk = telDigits.length >= 10;
+      const telOk = tel.replace(/\D/g, '').length >= 10;
       setFieldError('addr-tel-wrap', 'addr-tel-error', !telOk);
       if (!telOk && !firstErrorEl) firstErrorEl = telEl;
 
@@ -2400,7 +2122,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setFieldError('addr-rua-wrap', 'addr-rua-error', !ruaOk);
       if (!ruaOk && !firstErrorEl) firstErrorEl = ruaEl;
 
-      // s/n automático ao salvar
       if (!numero) {
         numero = 's/n';
         if (numEl) numEl.value = 's/n';
@@ -2416,7 +2137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Salva no localStorage com persistência total
+      const cpfFormatted = cpfRaw.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})$/, '$1.$2.$3-$4');
+
       localStorage.setItem('user_nome', nome);
       localStorage.setItem('user_tel', tel);
       if (email) localStorage.setItem('user_email', email);
@@ -2427,17 +2149,20 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('user_numero', numero);
       localStorage.setItem('user_complemento', complemento);
       localStorage.setItem('user_estado', estado);
-      localStorage.setItem('user_cpf', cpf);
+      localStorage.setItem('user_cpf', cpfFormatted);
 
       const endFull = `${rua}, ${numero}${complemento ? ' - ' + complemento : ''}, ${bairro ? bairro + ', ' : ''}${cidade} - ${estado}`;
       localStorage.setItem('user_address', endFull);
 
-      // Atualiza a tela de resumo principal
-      renderAddress();
+      loadAddress();
       closeAddressModalLocal();
     }
 
-</script>
-</div><!-- fim app-container -->
+    document.addEventListener('DOMContentLoaded', () => {
+      localStorage.removeItem('famosinhos_checkout_cart');
+      loadAddress();
+      renderCart();
+    });
+  </script>
 </body>
 </html>
