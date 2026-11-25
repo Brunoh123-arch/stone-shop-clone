@@ -1486,7 +1486,7 @@ input:checked + .tiktok-toggle-slider:before {
       <img src="../img/pelicano-recuperacao.webp" onerror="this.src='/img/pelicano-recuperacao.webp'" alt="Economize" style="width:158px; height:auto; display:block; margin:2px auto 16px auto; object-fit:contain; user-select:none;" />
 
       <div style="font-size:18px; font-weight:700; color:#161823; line-height:1.32; letter-spacing:-0.2px; margin:0 0 18px 0;">
-        Não perca a chance<br>de economizar <span style="color:#fe2c55;">R$<br><span id="exit-recovery-discount-val">22,49</span></span>
+        Não perca a chance de<br>economizar <span style="color:#fe2c55; white-space:nowrap;">R$ <span id="exit-recovery-discount-val">61,30</span></span>
       </div>
 
       <button type="button" onclick="fecharModalRecuperacaoResumo()" style="width:100%; height:44px; border:none; border-radius:8px; background:#fe2c55; color:#ffffff; font-size:15px; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; -webkit-tap-highlight-color:transparent;">
@@ -1500,7 +1500,7 @@ input:checked + .tiktok-toggle-slider:before {
   </div>
 
   <script src="../js/catalogo.js?v=1795410323540"></script>
-  <script src="../js/app.js?v=20261124_loader_2balls_v11"></script>
+  <script src="../js/app.js?v=20261125_bf_pnum_tabs_addr_v21"></script>
   <script>
     function parseSafeFloat(val) {
       if (typeof val === 'number') return val;
@@ -1586,15 +1586,21 @@ input:checked + .tiktok-toggle-slider:before {
     var _exitRecoveryBypass = false;
 
     function obterValorDescontoRecuperacao() {
+      if (typeof calcTotals === 'function') {
+        try { calcTotals(false); } catch (e) {}
+      }
+      if (typeof window._resumoEconomiaTotal === 'number' && window._resumoEconomiaTotal > 0) {
+        return formatarMoeda(window._resumoEconomiaTotal);
+      }
+      var econBanner = document.getElementById('economia-valor') || document.querySelector('[id*="economia"]');
+      if (econBanner && econBanner.textContent) {
+        var me = econBanner.textContent.match(/([0-9]+[.,][0-9]{2})/);
+        if (me && me[1]) return me[1];
+      }
       if (typeof window._resumoDescontoProduto === 'number' && window._resumoDescontoProduto > 0) {
         return formatarMoeda(window._resumoDescontoProduto);
       }
-      var descEl = document.getElementById('desconto-produto-total');
-      if (descEl && descEl.textContent) {
-        var m = descEl.textContent.match(/([0-9]+[.,][0-9]{2})/);
-        if (m && m[1]) return m[1];
-      }
-      return '22,49';
+      return '61,30';
     }
 
     function abrirModalRecuperacaoResumo() {
