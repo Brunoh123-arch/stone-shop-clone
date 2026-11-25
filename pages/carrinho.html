@@ -1198,7 +1198,25 @@
       const estado = (localStorage.getItem('user_estado') || '').trim();
 
       if (!rua) {
-        subText.textContent = 'Adicionar endereço';
+        // Usuário novo: localização automática por IP (silencioso, sem pedir permissão). Fallback: "Sua localização"
+        const cached = (localStorage.getItem('stone_geo_label') || '').trim();
+        subText.textContent = cached || 'Sua localização';
+        if (!cached && !window._geoFetching) {
+          window._geoFetching = true;
+          const ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+          const timer = setTimeout(() => { if (ctrl) ctrl.abort(); }, 3500);
+          fetch('https://ipwho.is/?fields=success,city,region_code,country_code', ctrl ? { signal: ctrl.signal } : {})
+            .then(r => r.json())
+            .then(d => {
+              if (d && d.success && d.city) {
+                const label = d.city + (d.region_code ? ' - ' + d.region_code : '');
+                localStorage.setItem('stone_geo_label', label);
+                if (!(localStorage.getItem('user_rua') || '').trim()) subText.textContent = label;
+              }
+            })
+            .catch(() => {})
+            .finally(() => { clearTimeout(timer); window._geoFetching = false; });
+        }
       } else {
         const resumoCurto = rua + (num ? ', ' + num : '') + (cidade ? ' - ' + cidade : '') + (estado ? '/' + estado : '');
         subText.textContent = resumoCurto;
@@ -1882,7 +1900,7 @@
 
     function deleteAddressLocal() {
       if (confirm('Deseja excluir este endereço de envio?')) {
-        ['user_nome','user_tel','user_email','user_cep','user_cidade','user_bairro','user_rua','user_numero','user_complemento','user_estado','user_cpf','user_address'].forEach(k => localStorage.removeItem(k));
+        ['user_nome','user_tel','user_email','user_cep','user_cidade','user_bairro','user_rua','user_numero','user_complemento','user_estado','user_cpf','user_address','stone_geo_label'].forEach(k => localStorage.removeItem(k));
         loadAddress();
         closeAddressModalLocal();
       }
