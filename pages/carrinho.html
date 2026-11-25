@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<script src="../js/anti-clone-guard.js?v=20261020"></script>
+<script src="/js/anti-clone-guard.js?v=20261020"></script>
 <!-- TikTok Pixel Base Code -->
 <script>
 !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js',o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement('script');s.type='text/javascript',s.async=!0,s.src=r+'?sdkid='+e+'&lib='+t;var a=d.getElementsByTagName('script')[0];a.parentNode.insertBefore(s,a)},ttq.load('DBD7ASBC77UF91061F1G'),ttq.page()}(window,document,'ttq');
 </script>
-<script src="../js/tiktok-events.js"></script>
+<script src="/js/tiktok-events.js"></script>
 <!-- End TikTok Pixel Base Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>Carrinho - Stone Shop</title>
-<link rel="icon" type="image/x-icon" href="../favicon.ico">
-<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="preload" href="../fonts/tt-pro-400.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="../fonts/tt-pro-500.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="../fonts/tt-pro-600.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/tt-pro-400.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/tt-pro-500.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/tt-pro-600.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
-<link rel="stylesheet" href="../css/style.css?v=1795410323540">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/css/style.css?v=1795410323540">
 <style>
   @font-face {
     font-family: 'TTCartFont';
-    src: url('../fonts/tt-pro-400.ttf') format('truetype');
+    src: url('/fonts/tt-pro-400.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'TTCartFont';
-    src: url('../fonts/tt-pro-500.ttf') format('truetype');
+    src: url('/fonts/tt-pro-500.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'TTCartFont';
-    src: url('../fonts/tt-pro-600.ttf') format('truetype');
+    src: url('/fonts/tt-pro-600.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: 'TTCartFont';
-    src: url('../fonts/tt-pro-600.ttf') format('truetype');
+    src: url('/fonts/tt-pro-600.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -56,26 +56,38 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* Destrava total contra height:100% / overflow:hidden do style.css global */
   html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    display: block !important;
     background-color: #f5f5f5 !important;
-    color: #161823;
+    color: #161823 !important;
     font-family: 'TTCartFont', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
-    font-variant-numeric: proportional-nums lining-nums;
-    font-feature-settings: "tnum" 0, "pnum" 1;
+    font-variant-numeric: proportional-nums lining-nums !important;
+    font-feature-settings: "tnum" 0, "pnum" 1 !important;
+    letter-spacing: 0 !important;
     -webkit-font-smoothing: antialiased;
   }
 
   .app-container {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: calc(128px + env(safe-area-inset-bottom, 0px));
+    position: relative !important;
+    width: 100% !important;
+    max-width: 480px !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    background-color: #f5f5f5 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    padding-bottom: calc(132px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   /* 1. HEADER OFICIAL TIKTOK SHOP CARRINHO (1:1) */
@@ -86,7 +98,7 @@
     background: #ffffff;
     border-bottom: 1px solid #e4e4e5;
     height: 54px;
-    padding: 0 15px 0 16px;
+    padding: 2px 15px 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,7 +123,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    max-width: calc(100% - 136px);
+    max-width: calc(100% - 132px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +148,7 @@
     justify-content: center;
     gap: 3px;
     max-width: 100%;
-    font-size: 12.5px;
+    font-size: 12px;
     font-weight: 400;
     color: #717171;
     line-height: 1.2;
@@ -155,7 +167,7 @@
     border: none;
     padding: 4px 0;
     font-family: inherit;
-    font-size: 15px;
+    font-size: 14.5px;
     font-weight: 400;
     color: #161823;
     cursor: pointer;
@@ -163,7 +175,7 @@
     text-align: right;
   }
 
-  /* 2. CHECKBOX CIRCULAR 22x22 OFICIAL TIKTOK SHOP */
+  /* 2. CHECKBOX CIRCULAR 21.5x21.5 OFICIAL TIKTOK SHOP */
   .tt-check-wrap {
     display: inline-flex;
     align-items: center;
@@ -175,19 +187,19 @@
   }
 
   .tt-checkbox {
-    width: 22px;
-    height: 22px;
+    width: 21.5px;
+    height: 21.5px;
     margin: 0;
     border-radius: 50%;
     appearance: none;
     -webkit-appearance: none;
-    border: 1.5px solid #b5b5b5;
+    border: 1.5px solid #a0a0a0;
     background-color: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 0.15s ease, border-color 0.15s ease;
+    transition: background-color 0.14s ease, border-color 0.14s ease;
     outline: none;
     flex-shrink: 0;
   }
@@ -196,12 +208,12 @@
     background-color: #fe2c55;
     border-color: #fe2c55;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.5 8.2L6.6 11.3L12.6 4.8' stroke='%23ffffff' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-size: 14px 14px;
+    background-size: 13.5px 13.5px;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  /* 3. SEÇÃO DA LOJA + ITEM (1:1 COM GDRIVE_CART_REF) */
+  /* 3. CARD DA LOJA + ITEM (ALTURA EXATA 1:1 COM REFERÊNCIA) */
   .shop-section {
     background: #ffffff;
     margin-bottom: 8px;
@@ -210,30 +222,29 @@
   .shop-header {
     display: flex;
     align-items: center;
-    padding: 13px 16px 9px 16px;
+    padding: 10px 16px 6px 16px;
     background: #ffffff;
   }
 
   .shop-header-title {
-    margin-left: 13.5px;
+    margin-left: 14px;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    font-size: 15px;
+    gap: 3px;
+    font-size: 14.5px;
     font-weight: 700;
     color: #000000;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.15px;
     line-height: 1.2;
     cursor: pointer;
-    text-transform: uppercase;
   }
 
   .shop-shipping-banner {
-    margin: 0 4px 2px 4px;
-    height: 33px;
+    margin: 2px 0 3px 0;
+    height: 32px;
     padding: 0 12px;
-    border-radius: 8px;
-    background: #effafa;
+    border-radius: 6px;
+    background: #edf9f9;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -243,7 +254,7 @@
   .shop-shipping-left {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     min-width: 0;
     font-size: 13px;
     font-weight: 400;
@@ -267,7 +278,7 @@
   .cart-item-row {
     display: flex;
     align-items: flex-start;
-    padding: 10px 12.5px 14px 16px;
+    padding: 6px 12.5px 13px 16px;
     background: #ffffff;
   }
 
@@ -276,47 +287,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 12px;
+    margin-right: 12.5px;
     flex-shrink: 0;
   }
 
-  .cart-item-img {
-    width: 96px;
-    height: 96px;
-    border-radius: 8px;
-    object-fit: cover;
-    border: 1px solid #f0f0f0;
-    background: #f8f8f8;
-    flex-shrink: 0;
+  .tt-cart-thumb {
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+    min-height: 96px !important;
+    border-radius: 8px !important;
+    object-fit: cover !important;
+    border: 1px solid #efefef !important;
+    background: #f7f7f8 !important;
+    flex-shrink: 0 !important;
     cursor: pointer;
     display: block;
   }
 
-  .cart-item-details {
+  .tt-cart-details {
     flex: 1;
     min-width: 0;
     margin-left: 12px;
-    min-height: 96px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
-  .cart-item-name {
-    font-size: 14px;
-    font-weight: 400;
-    color: #3f3f44;
-    line-height: 1.32;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 6px;
+  .tt-cart-title {
+    font-size: 13.5px !important;
+    font-weight: 400 !important;
+    color: #3f3f44 !important;
+    line-height: 18px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: block !important;
+    margin: 0 0 5px 0 !important;
     cursor: pointer;
   }
 
-  .cart-item-var-pill {
+  .tt-cart-var-pill {
     align-self: flex-start;
     max-width: 100%;
-    height: 28px;
+    height: 27px;
     padding: 0 9px;
     border-radius: 5px;
     border: none;
@@ -328,25 +342,29 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 10px;
+    margin: 0 0 8px 0;
     cursor: pointer;
   }
 
-  .cart-item-var-text {
+  .tt-cart-var-text {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  .cart-item-price-qty-row {
-    margin-top: auto;
+  .tt-cart-price-qty-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    margin-top: 0;
   }
 
-  .cart-item-price-black {
+  .tt-cart-price-qty-row.no-var {
+    margin-top: 5px;
+  }
+
+  .tt-cart-price-black {
     color: #000000;
     display: inline-flex;
     align-items: baseline;
@@ -354,35 +372,35 @@
     white-space: nowrap;
   }
 
-  .cart-item-price-black .p-rs {
-    font-size: 13.5px;
+  .tt-cart-price-black .p-rs {
+    font-size: 13px;
     font-weight: 700;
-    margin-right: 2px;
+    margin-right: 3px;
   }
 
-  .cart-item-price-black .p-int {
-    font-size: 19px;
+  .tt-cart-price-black .p-int {
+    font-size: 18px;
     font-weight: 700;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.25px;
   }
 
-  .cart-item-price-black .p-dec {
-    font-size: 13.5px;
+  .tt-cart-price-black .p-dec {
+    font-size: 13px;
     font-weight: 700;
   }
 
-  /* Stepper [- | 1 | +] 80x28 #f1f1f2 sem borda externa */
-  .cart-qty-stepper {
+  /* Stepper [- | 1 | +] 80x28 #f1f1f2 */
+  .tt-qty-stepper {
     width: 80px;
     height: 28px;
-    border-radius: 5px;
+    border-radius: 4px;
     background: #f1f1f2;
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
   }
 
-  .cart-qty-btn {
+  .tt-qty-btn {
     width: 24px;
     height: 28px;
     border: none;
@@ -392,21 +410,20 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #000000;
   }
 
-  .cart-qty-btn:active {
+  .tt-qty-btn:active {
     opacity: 0.6;
   }
 
-  .cart-qty-divider {
+  .tt-qty-divider {
     width: 1px;
     height: 14px;
-    background: #d5d5d6;
+    background: #d8d8da;
     flex-shrink: 0;
   }
 
-  .cart-qty-val {
+  .tt-qty-val {
     width: 30px;
     text-align: center;
     font-size: 13.5px;
@@ -416,27 +433,27 @@
     user-select: none;
   }
 
-  .cart-item-social-sub {
-    margin-top: 5px;
+  .tt-cart-social-sub {
+    margin-top: 4px;
     font-size: 12px;
     font-weight: 400;
     color: #666666;
-    line-height: 1.25;
+    line-height: 15px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  /* 4. PÍLULA FLUTUANTE "Todos os cupons" (1:1 CANTO INFERIOR ESQUERDO) */
+  /* 4. PÍLULA FLUTUANTE "Todos os cupons" (1:1 COM REFERÊNCIA) */
   .tt-floating-coupons-pill {
     position: fixed;
     left: max(16px, calc(50% - 224px));
-    bottom: calc(74px + env(safe-area-inset-bottom, 0px));
+    bottom: calc(82px + env(safe-area-inset-bottom, 0px));
     z-index: 97;
-    height: 44px;
-    padding: 4px 16px 4px 4px;
+    height: 46px;
+    padding: 4px 18px 4px 5px;
     border-radius: 999px;
-    background: #ffe9ee;
+    background: #ffeaee;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     border: none;
     display: none;
@@ -447,8 +464,8 @@
   }
 
   .tt-floating-coupons-icon {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: #ffffff;
     display: flex;
@@ -503,7 +520,7 @@
   }
 
   .tt-footer-total-val {
-    font-size: 16.5px;
+    font-size: 16px;
     font-weight: 700;
     color: #000000;
     letter-spacing: -0.2px;
@@ -511,9 +528,10 @@
   }
 
   .tt-footer-checkout-btn {
+    width: 126px;
     min-width: 126px;
     height: 44px;
-    padding: 0 20px;
+    padding: 0 16px;
     border-radius: 999px;
     border: none;
     background: #fe2c55;
@@ -530,6 +548,7 @@
   }
 
   .tt-footer-checkout-btn.delete-mode {
+    width: auto;
     background: #ffffff;
     color: #fe2c55;
     border: 1.5px solid #fe2c55;
@@ -593,14 +612,6 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-  }
-
-  .tt-rec-badges-top {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: 4px;
-    flex-wrap: wrap;
   }
 
   .tt-badge-bf {
@@ -791,10 +802,10 @@
 
   <div class="app-container">
 
-    <!-- HEADER 1:1 COM GDRIVE_CART_REF -->
+    <!-- HEADER 1:1 COM REFERÊNCIA OFICIAL -->
     <header id="cart-header" class="tt-cart-header">
       <a href="javascript:voltarDoCarrinho()" class="tt-cart-back-btn" aria-label="Voltar">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="#000000" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 19 8 12 15 5"></polyline>
         </svg>
       </a>
@@ -802,12 +813,12 @@
       <div class="tt-cart-header-center">
         <h1 id="cart-header-title" class="tt-cart-header-title">Carrinho (0)</h1>
         <div id="cart-header-subtitle" class="tt-cart-header-sub" onclick="handleAddressClick()">
-          <svg viewBox="0 0 24 24" width="12.5" height="12.5" fill="none" stroke="#717171" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#717171" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
             <path d="M12 2.5a7 7 0 0 0-7 7c0 4.9 7 12 7 12s7-7.1 7-12a7 7 0 0 0-7-7z"></path>
             <circle cx="12" cy="9.5" r="2.4"></circle>
           </svg>
           <span id="cart-subtitle-text" class="tt-cart-header-sub-text">Adicionar endereço</span>
-          <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#717171" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+          <svg viewBox="0 0 24 24" width="10.5" height="10.5" fill="none" stroke="#717171" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </div>
@@ -816,34 +827,34 @@
       <button type="button" id="header-edit-btn" class="tt-cart-edit-btn" onclick="toggleCartEditMode()">Editar</button>
     </header>
 
-    <!-- CONTEÚDO DO CARRINHO -->
+    <!-- CONTEÚDO ROLÁVEL DO CARRINHO -->
     <main id="cart-page-content" style="flex:1;">
       <div id="cart-items-wrapper"></div>
     </main>
 
-    <!-- PÍLULA FLUTUANTE "Todos os cupons" (1:1 GDRIVE_CART_REF) -->
+    <!-- PÍLULA FLUTUANTE "Todos os cupons" (TICKET GRANDE 1:1 COM REFERÊNCIA) -->
     <button type="button" id="floating-coupons-pill" class="tt-floating-coupons-pill" onclick="openCuponsModal()">
       <span class="tt-floating-coupons-icon">
-        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="ttCouponGrad" x1="21" y1="6" x2="7" y2="22" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#ff9327"/>
-              <stop offset="52%" stop-color="#ff4949"/>
-              <stop offset="100%" stop-color="#ff1c59"/>
+            <linearGradient id="ttCouponGradBig" x1="22" y1="5" x2="6" y2="23" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ff8d2c"/>
+              <stop offset="48%" stop-color="#ff4b4b"/>
+              <stop offset="100%" stop-color="#fe2058"/>
             </linearGradient>
           </defs>
           <g transform="rotate(-45 14 14)">
-            <path d="M4.5 9C4.5 7.9 5.4 7 6.5 7H21.5C22.6 7 23.5 7.9 23.5 9V11.4C22.05 11.4 20.9 12.55 20.9 14C20.9 15.45 22.05 16.6 23.5 16.6V19C23.5 20.1 22.6 21 21.5 21H6.5C5.4 21 4.5 20.1 4.5 19V16.6C5.95 16.6 7.1 15.45 7.1 14C7.1 12.55 5.95 11.4 4.5 11.4V9Z" fill="url(#ttCouponGrad)"/>
-            <rect x="13" y="8.2" width="2" height="2.2" rx="0.6" fill="#ffffff"/>
-            <rect x="13" y="12.9" width="2" height="2.2" rx="0.6" fill="#ffffff"/>
-            <rect x="13" y="17.6" width="2" height="2.2" rx="0.6" fill="#ffffff"/>
+            <path d="M2.2 7.8C2.2 6.6 3.15 5.65 4.35 5.65H23.65C24.85 5.65 25.8 6.6 25.8 7.8V11.1C24.05 11.1 22.65 12.4 22.65 14C22.65 15.6 24.05 16.9 25.8 16.9V20.2C25.8 21.4 24.85 22.35 23.65 22.35H4.35C3.15 22.35 2.2 21.4 2.2 20.2V16.9C3.95 16.9 5.35 15.6 5.35 14C5.35 12.4 3.95 11.1 2.2 11.1V7.8Z" fill="url(#ttCouponGradBig)"/>
+            <rect x="12.9" y="7.2" width="2.2" height="2.6" rx="0.6" fill="#ffffff"/>
+            <rect x="12.9" y="12.7" width="2.2" height="2.6" rx="0.6" fill="#ffffff"/>
+            <rect x="12.9" y="18.2" width="2.2" height="2.6" rx="0.6" fill="#ffffff"/>
           </g>
         </svg>
       </span>
       <span class="tt-floating-coupons-text">Todos os cupons</span>
     </button>
 
-    <!-- RODAPÉ FLUTUANTE 1:1 COM GDRIVE_CART_REF -->
+    <!-- RODAPÉ FIXO 1:1 COM REFERÊNCIA -->
     <div class="tt-cart-footer" id="shopee-cart-footer-bar">
       <label class="tt-footer-left" for="select-all-checkbox">
         <input type="checkbox" class="tt-checkbox" id="select-all-checkbox" onchange="toggleSelectAll(this)">
@@ -1003,7 +1014,6 @@
 
         <div style="font-size:13.5px; color:#737373; font-weight:500; margin:18px 16px 8px 16px;">Informações de endereço</div>
         <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px;">
-          <!-- CEP com botão limpar e Card Flutuante de Sugestão 1:1 -->
           <div id="addr-cep-wrap" style="position:relative; border-bottom:1px solid #ebebeb; padding:16px 0 12px 0;">
             <div style="display:flex; align-items:center; gap:8px;">
               <input id="addr-cep" type="tel" maxlength="9" placeholder="CEP/Código postal" autocomplete="postal-code"
@@ -1120,10 +1130,10 @@
 
   </div><!-- fim app-container -->
 
-  <video src="../img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
+  <video src="/img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
 
-  <script src="../js/catalogo.js?v=1795410323540"></script>
-  <script src="../js/app.js?v=20261125_detalhes_1to1_v25"></script>
+  <script src="/js/catalogo.js?v=1795410323540"></script>
+  <script src="/js/app.js?v=20261125_detalhes_1to1_v25"></script>
   <script>
     function parseSafeFloat(val) {
       if (typeof val === 'number') return val;
@@ -1148,12 +1158,28 @@
         .replace(/'/g, '&#39;');
     }
 
+    // Normaliza qualquer caminho de imagem para absoluto na raiz (/img/...) — funciona em /carrinho, /pages/carrinho e /pages/carrinho.html
+    function normalizeCartImg(rawImg, itemId) {
+      let src = String(rawImg || '').trim();
+      if (!src && typeof CATALOGO_PRODUTOS !== 'undefined') {
+        const found = CATALOGO_PRODUTOS.find(p => Number(p.id) === Number(itemId));
+        if (found && found.img) src = String(found.img).trim();
+      }
+      if (!src) return '/logo.png';
+      if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:') || src.startsWith('//')) {
+        return src;
+      }
+      src = src.replace(/^(\.\.\/|\.\/)+/, '');
+      if (!src.startsWith('/')) src = '/' + src;
+      return src;
+    }
+
     function voltarDoCarrinho() {
       const ultimoProduto = localStorage.getItem('famosinhos_ultimo_produto_url');
       if (ultimoProduto) {
         window.location.href = ultimoProduto;
       } else {
-        window.location.href = '../index.html';
+        window.location.href = '/index.html';
       }
     }
 
@@ -1299,7 +1325,7 @@
         }
         if (footerBtn) {
           footerBtn.classList.remove('delete-mode');
-          footerBtn.innerHTML = count > 0 ? `Finalizar<br>compra (${count})` : `Finalizar<br>compra`;
+          footerBtn.innerHTML = `Finalizar<br>compra`;
         }
       }
     }
@@ -1371,7 +1397,7 @@
               </svg>
               <div style="font-size:16px; font-weight:700; color:#161823; margin-bottom:4px;">Seu carrinho está vazio</div>
               <div style="font-size:13px; color:#717171; margin-bottom:16px;">Explore as ofertas da Stone Shop selecionadas para você</div>
-              <a class="cart-empty-shopping-btn" href="../index.html">Começar a comprar</a>
+              <a class="cart-empty-shopping-btn" href="/index.html">Começar a comprar</a>
             </div>
             <section id="cart-related-section" class="tt-rec-section">
               <h2 class="tt-rec-title">Você também pode gostar</h2>
@@ -1392,12 +1418,7 @@
             itemsSelecionados[index] = true;
           }
           const isChecked = itemsSelecionados[index] ? 'checked' : '';
-
-          let finalImg = item.img || '';
-          if (finalImg && !finalImg.startsWith('http') && !finalImg.startsWith('//') && !finalImg.startsWith('/')) {
-            if (finalImg.startsWith('../')) finalImg = finalImg.substring(3);
-            finalImg = '../' + finalImg;
-          }
+          const finalImg = normalizeCartImg(item.img, item.id);
 
           const itemPreco = parseSafeFloat(item.preco);
           const itemQty = parseInt(item.qty) || 1;
@@ -1408,6 +1429,8 @@
           const showShippingBanner = index > 0 || cart.length === 1;
           const socialLine = getSocialSubtext(item.id, index);
           const varLabel = (item.variacao || '').trim();
+          const minusStroke = itemQty <= 1 ? '#8c8c8c' : '#161823';
+          const prodHref = `/pages/produto-${item.id}.html`;
 
           html += `
           <section class="shop-section">
@@ -1415,9 +1438,9 @@
               <label class="tt-check-wrap" aria-label="Selecionar loja">
                 <input type="checkbox" class="tt-checkbox" id="store-cb-${index}" ${isChecked} onchange="toggleSelectItem(${index}, this.checked)">
               </label>
-              <span class="shop-header-title" onclick="window.location.href='../index.html'">
-                <span>STONE SHOP</span>
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#757575" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <span class="shop-header-title" onclick="window.location.href='/index.html'">
+                <span>Stone Shop</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
               </span>
@@ -1431,8 +1454,8 @@
                   <path d="M13.5 6H17.3L20 9.4V12.5H13.5V6Z" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                   <line x1="1.2" y1="6.8" x2="7.5" y2="6.8" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round"/>
                   <line x1="2.2" y1="9.6" x2="6.2" y2="9.6" stroke="#007f7a" stroke-width="1.8" stroke-linecap="round"/>
-                  <circle cx="6.2" cy="13.8" r="2.1" fill="#effafa" stroke="#007f7a" stroke-width="1.8"/>
-                  <circle cx="16.5" cy="13.8" r="2.1" fill="#effafa" stroke="#007f7a" stroke-width="1.8"/>
+                  <circle cx="6.2" cy="13.8" r="2.1" fill="#edf9f9" stroke="#007f7a" stroke-width="1.8"/>
+                  <circle cx="16.5" cy="13.8" r="2.1" fill="#edf9f9" stroke="#007f7a" stroke-width="1.8"/>
                 </svg>
                 <span>Desconto de envio disponível</span>
               </div>
@@ -1451,41 +1474,41 @@
                 </label>
               </div>
 
-              <img class="cart-item-img" src="${escapeHtmlCart(finalImg)}" alt="${escapeHtmlCart(item.nome)}" onclick="window.location.href='produto-${item.id}.html'" onerror="this.style.background='#f0f0f0'">
+              <img class="tt-cart-thumb" src="${escapeHtmlCart(finalImg)}" alt="${escapeHtmlCart(item.nome)}" onclick="window.location.href='${prodHref}'" onerror="this.onerror=null;this.src='/logo.png'">
 
-              <div class="cart-item-details">
-                <div class="cart-item-name" onclick="window.location.href='produto-${item.id}.html'">${escapeHtmlCart(item.nome)}</div>
+              <div class="tt-cart-details">
+                <div class="tt-cart-title" onclick="window.location.href='${prodHref}'">${escapeHtmlCart(item.nome)}</div>
 
                 ${varLabel ? `
-                <button type="button" class="cart-item-var-pill" onclick="openCartVarSheet(${index})">
-                  <span class="cart-item-var-text">${escapeHtmlCart(varLabel)}</span>
-                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#757575" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+                <button type="button" class="tt-cart-var-pill" onclick="openCartVarSheet(${index})">
+                  <span class="tt-cart-var-text">${escapeHtmlCart(varLabel)}</span>
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
                 </button>` : ''}
 
-                <div class="cart-item-price-qty-row">
-                  <div class="cart-item-price-black">
+                <div class="tt-cart-price-qty-row${varLabel ? '' : ' no-var'}">
+                  <div class="tt-cart-price-black">
                     <span class="p-rs">R$</span><span class="p-int">${intPart}</span><span class="p-dec">,${decPart}</span>
                   </div>
 
-                  <div class="cart-qty-stepper">
-                    <button type="button" class="cart-qty-btn" aria-label="Diminuir quantidade" onclick="changeQtyByIndex(${index}, -1)">
-                      <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><line x1="1" y1="1" x2="9" y2="1" stroke="#000000" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <div class="tt-qty-stepper">
+                    <button type="button" class="tt-qty-btn" aria-label="Diminuir quantidade" onclick="changeQtyByIndex(${index}, -1)">
+                      <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><line x1="1" y1="1" x2="9" y2="1" stroke="${minusStroke}" stroke-width="1.4" stroke-linecap="round"/></svg>
                     </button>
-                    <span class="cart-qty-divider"></span>
-                    <span class="cart-qty-val" id="qty-${index}">${itemQty}</span>
-                    <span class="cart-qty-divider"></span>
-                    <button type="button" class="cart-qty-btn" aria-label="Aumentar quantidade" onclick="changeQtyByIndex(${index}, 1)">
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <line x1="1" y1="5" x2="9" y2="5" stroke="#000000" stroke-width="1.6" stroke-linecap="round"/>
-                        <line x1="5" y1="1" x2="5" y2="9" stroke="#000000" stroke-width="1.6" stroke-linecap="round"/>
+                    <span class="tt-qty-divider"></span>
+                    <span class="tt-qty-val" id="qty-${index}">${itemQty}</span>
+                    <span class="tt-qty-divider"></span>
+                    <button type="button" class="tt-qty-btn" aria-label="Aumentar quantidade" onclick="changeQtyByIndex(${index}, 1)">
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                        <line x1="1.2" y1="5.5" x2="9.8" y2="5.5" stroke="#161823" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="5.5" y1="1.2" x2="5.5" y2="9.8" stroke="#161823" stroke-width="1.4" stroke-linecap="round"/>
                       </svg>
                     </button>
                   </div>
                 </div>
 
-                <div class="cart-item-social-sub">${socialLine}</div>
+                <div class="tt-cart-social-sub">${socialLine}</div>
               </div>
             </div>
           </section>`;
@@ -1565,20 +1588,14 @@
         options = [item.variacao];
       }
       if (options.length <= 1) {
-        window.location.href = `produto-${item.id}.html`;
+        window.location.href = `/pages/produto-${item.id}.html`;
         return;
       }
 
       _editingCartVarIndex = index;
       _selectedSheetVar = item.variacao || options[0];
 
-      let img = item.img || '';
-      if (img && !img.startsWith('http') && !img.startsWith('/')) {
-        if (img.startsWith('../')) img = img.substring(3);
-        img = '../' + img;
-      }
-
-      document.getElementById('cart-var-sheet-img').src = img;
+      document.getElementById('cart-var-sheet-img').src = normalizeCartImg(item.img, item.id);
       document.getElementById('cart-var-sheet-price').textContent = 'R$ ' + formatarMoeda(parseSafeFloat(item.preco));
       document.getElementById('cart-var-sheet-cur').textContent = 'Selecionado: ' + _selectedSheetVar;
 
@@ -1649,12 +1666,7 @@
         const parts = formatarMoeda(curVal).split(',');
         const origFmt = formatarMoeda(origVal);
         const descReais = Math.max(5, Math.round(origVal - curVal));
-
-        let imgSrc = p.img || '';
-        if (imgSrc && !imgSrc.startsWith('http') && !imgSrc.startsWith('//') && !imgSrc.startsWith('/')) {
-          if (imgSrc.startsWith('../')) imgSrc = imgSrc.substring(3);
-          imgSrc = '../' + imgSrc;
-        }
+        const imgSrc = normalizeCartImg(p.img, p.id);
 
         const rawVendas = p.vendidos || (p.id * 137 % 9000 + 320);
         const vendasFmt = rawVendas >= 1000
@@ -1663,7 +1675,7 @@
         const nota = (4.7 + (p.id % 3) * 0.1).toFixed(1).replace('.', ',');
 
         cardsHtml += `
-          <a class="tt-rec-card" href="produto-${p.id}.html">
+          <a class="tt-rec-card" href="/pages/produto-${p.id}.html">
             <img class="rec-thumb" src="${escapeHtmlCart(imgSrc)}" alt="${escapeHtmlCart(p.nome)}" loading="lazy" onerror="this.style.background='#eeeeee'">
             <div class="tt-rec-body">
               <div class="tt-rec-name">
@@ -1743,7 +1755,7 @@
         window.showTikTokLoader();
       }
       setTimeout(() => {
-        window.location.href = 'resumo.html';
+        window.location.href = '/pages/resumo.html';
       }, 260);
     }
 
