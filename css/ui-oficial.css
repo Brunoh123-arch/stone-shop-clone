@@ -46,6 +46,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'TTDetalhesOnly';
+  src: url('../fonts/tt-pro-400.ttf') format('woff2'), url('../fonts/tt-pro-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTDetalhesOnly';
+  src: url('../fonts/tt-pro-500.ttf') format('woff2'), url('../fonts/tt-pro-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTDetalhesOnly';
+  src: url('../fonts/tt-pro-600.ttf') format('woff2'), url('../fonts/tt-pro-600.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ==========================================================================
    STONE SHOP — UI OFICIAL PERMANENTE (DECALQUE BLACK FRIDAY + PLAYER 16:9)
    Single Source of Truth — Carregado pelo Modelo Único Permanente
@@ -931,6 +955,128 @@
   height: 44px !important;
   border-radius: 999px !important;
 }
+
+/* ==========================================================================
+   9. BLOCO DETALHES ISOLADO 1:1 COM REFERÊNCIA OFICIAL ('TTDetalhesOnly')
+   ========================================================================== */
+#sobre-este-produto.about-product-section {
+  width: calc(100% + 28px) !important;
+  max-width: none !important;
+  margin-left: -14px !important;
+  margin-right: -14px !important;
+  margin-top: 12px !important;
+  border-top: 8px solid #f8f8f8 !important;
+  padding: 20px 18px 20px 18px !important;
+  background: #ffffff !important;
+  box-sizing: border-box !important;
+}
+
+#sobre-este-produto > .about-section-title,
+#sobre-este-produto .product-details-block,
+#sobre-este-produto .product-details-block .about-subtitle,
+#sobre-este-produto .product-details-block .detail-row,
+#sobre-este-produto .product-details-block .detail-label,
+#sobre-este-produto .product-details-block .detail-value,
+#sobre-este-produto .product-details-block .btn-detalhes-link,
+#sobre-este-produto .product-details-block .btn-detalhes-link span {
+  font-family: 'TTDetalhesOnly', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-synthesis: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  letter-spacing: 0px !important;
+}
+
+#sobre-este-produto > .about-section-title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+  line-height: 23px !important;
+  letter-spacing: -0.2px !important;
+  margin: 0 0 16px 0 !important;
+}
+
+#sobre-este-produto .product-details-block {
+  margin: 0 0 22px 0 !important;
+}
+
+#sobre-este-produto .product-details-block .about-subtitle {
+  font-size: 15.5px !important;
+  font-weight: 600 !important;
+  color: #161823 !important;
+  line-height: 20px !important;
+  margin: 0 0 20px 0 !important;
+}
+
+#sobre-este-produto .product-details-block .details-attributes-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#sobre-este-produto .product-details-block .detail-row {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 14.5px !important;
+  line-height: 19px !important;
+}
+
+#sobre-este-produto .product-details-block .detail-row.is-hidden {
+  display: none !important;
+}
+
+#sobre-este-produto .product-details-block .detail-label {
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  color: #858585 !important;
+  line-height: 19px !important;
+  width: 37% !important;
+  min-width: 124px !important;
+  max-width: 146px !important;
+  flex: 0 0 37% !important;
+  padding-right: 12px !important;
+  box-sizing: border-box !important;
+  word-break: break-word !important;
+}
+
+#sobre-este-produto .product-details-block .detail-value {
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  color: #1f1f1f !important;
+  line-height: 19px !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  word-break: break-word !important;
+}
+
+#sobre-este-produto .product-details-block .btn-detalhes-link {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 16px 0 0 0 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #2b5db9 !important;
+  line-height: 19px !important;
+  text-align: left !important;
+  display: inline-block !important;
+  cursor: pointer !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+#sobre-este-produto .product-details-block .btn-detalhes-link span {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #2b5db9 !important;
+  line-height: 19px !important;
+}
+
 
 
 
