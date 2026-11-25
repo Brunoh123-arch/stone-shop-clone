@@ -47,18 +47,18 @@
   grid-row: 1 !important;
   height: auto !important;
   min-width: unset !important;
-  padding: 3px 7px !important;
+  padding: 3.5px 7.5px !important;
   background: #ffffff !important;
   color: #e10543 !important;
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(12.5px, 3.6vw, 14.5px) !important;
+  font-size: clamp(14px, 3.95vw, 16px) !important;
   font-weight: 600 !important;
-  border-radius: 5px !important;
+  border-radius: 6px !important;
   line-height: 1.1 !important;
   letter-spacing: -0.2px !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: none !important;
   margin: 0 !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -73,7 +73,7 @@
   height: auto !important;
   display: inline-flex !important;
   align-items: baseline !important;
-  gap: 2px !important;
+  gap: 1.5px !important;
   margin: 0 !important;
   padding: 0 !important;
   line-height: 1 !important;
@@ -85,10 +85,10 @@
   color: #ffffff !important;
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
-  font-size: clamp(12.5px, 3.5vw, 14.5px) !important;
+  font-size: clamp(14px, 3.9vw, 15.5px) !important;
   font-weight: 600 !important;
   line-height: 1 !important;
-  margin-right: 3px !important;
+  margin-right: 2px !important;
 }
 
 .price-section.price-section-bf .price-current {
@@ -97,10 +97,10 @@
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(23px, 6.4vw, 27px) !important;
+  font-size: clamp(26.5px, 7.4vw, 30px) !important;
   font-weight: 600 !important;
-  line-height: 1 !important;
-  letter-spacing: -0.3px !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.4px !important;
   display: inline-flex !important;
   align-items: baseline !important;
 }
@@ -109,7 +109,7 @@
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(12.5px, 3.5vw, 14.5px) !important;
+  font-size: clamp(15.5px, 4.35vw, 17.5px) !important;
   font-weight: 600 !important;
   line-height: 1 !important;
   letter-spacing: 0px !important;
@@ -122,12 +122,13 @@
 }
 
 .price-section.price-section-bf .bf-coupon-icon {
-  width: clamp(16px, 4.4vw, 20px) !important;
+  width: clamp(18px, 4.9vw, 20.5px) !important;
   height: auto !important;
-  align-self: center !important;
-  margin-left: 4px !important;
+  align-self: baseline !important;
+  transform: translateY(1.5px) !important;
+  margin-left: 4.5px !important;
   flex-shrink: 0 !important;
-  opacity: 0.96 !important;
+  opacity: 1 !important;
 }
 
 .price-section.price-section-bf .price-original {
@@ -138,7 +139,7 @@
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
   font-optical-sizing: auto !important;
   font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(12px, 3.4vw, 13.5px) !important;
+  font-size: clamp(13px, 3.65vw, 14.5px) !important;
   font-weight: 400 !important;
   text-decoration: line-through !important;
   line-height: 1.15 !important;
@@ -546,6 +547,152 @@
   background: linear-gradient(90deg, #f9f9f9 25%, #ffffff 50%, #f9f9f9 75%) !important;
   background-size: 200% 100% !important;
   animation: ttRelSkeletonPulse 1.35s ease-in-out infinite !important;
+}
+
+/* ==========================================================================
+   6. HEADER 1:1 TIKTOK SHOP + PILL DO SLIDER (1/9 | Tamanho)
+   ========================================================================== */
+.header {
+  height: 48px !important;
+  padding: 0 8px 0 6px !important;
+  gap: 4px !important;
+  border-bottom: none !important;
+  background: #ffffff !important;
+}
+
+.header-back-btn {
+  width: 34px !important;
+  height: 36px !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+  color: #161823 !important;
+}
+
+.header-back-btn svg {
+  width: 24px !important;
+  height: 24px !important;
+  stroke: #161823 !important;
+}
+
+.header-search-wrapper {
+  flex: 1 !important;
+  min-width: 0 !important;
+  position: relative !important;
+  margin: 0 4px 0 2px !important;
+}
+
+.header-search {
+  width: 100% !important;
+  height: 36px !important;
+  background: #f1f1f2 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 0 12px 0 33px !important;
+  font-size: 14.5px !important;
+  font-weight: 400 !important;
+  color: #161823 !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+.header-search::placeholder {
+  color: #8a8b91 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+.header-search-icon-btn {
+  position: absolute !important;
+  left: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 18px !important;
+  height: 18px !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  color: #161823 !important;
+  pointer-events: none !important;
+}
+
+.header-search-icon-btn svg {
+  width: 18px !important;
+  height: 18px !important;
+  stroke: #161823 !important;
+}
+
+.header-icons {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  flex-shrink: 0 !important;
+}
+
+.header-share-btn,
+.header-icon-btn,
+.header-more-btn {
+  width: 34px !important;
+  height: 36px !important;
+  padding: 0 !important;
+  color: #161823 !important;
+  position: relative !important;
+}
+
+.header-share-btn .share-dot {
+  display: none !important;
+}
+
+.image-slider .slider-counter {
+  position: absolute !important;
+  bottom: 12px !important;
+  right: 12px !important;
+  height: 24px !important;
+  padding: 0 9.5px !important;
+  border-radius: 999px !important;
+  background: rgba(0, 0, 0, 0.42) !important;
+  color: #ffffff !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.2px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.image-slider .slider-counter-toggle {
+  position: absolute !important;
+  bottom: 12px !important;
+  right: 12px !important;
+  height: 24px !important;
+  padding: 2px !important;
+  border-radius: 999px !important;
+  background: rgba(0, 0, 0, 0.42) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 1px !important;
+  box-sizing: border-box !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.image-slider .slider-counter-toggle #btn-tab-fotos,
+.image-slider .slider-counter-toggle #btn-tab-tamanho {
+  height: 20px !important;
+  padding: 0 8.5px !important;
+  border-radius: 999px !important;
+  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
 }
 
 

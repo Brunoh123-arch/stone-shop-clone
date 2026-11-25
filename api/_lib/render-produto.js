@@ -3,7 +3,7 @@ const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261124_fade_1to1_v14';
+const ASSET_VERSION = '20261125_top_1to1_v15';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
@@ -46,17 +46,17 @@ function renderSliderImgs(imgs, fallbackAlt) {
 function renderInstallment(text, highlight) {
   if (!text) return '';
   return `<div class="installment-row" onclick="handleAddToCart()" style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #161823; cursor: pointer; margin-bottom: 8px;">
-        <div style="display: inline-flex; align-items: center; gap: 5px;">
-          <svg fill="none" height="16" style="flex-shrink: 0;" viewbox="0 0 24 24" width="16">
-            <rect fill="none" height="13.5" rx="2" stroke="#161823" stroke-width="1.8" width="20" x="2" y="4"></rect>
-            <line stroke="#161823" stroke-width="1.8" x1="2" x2="22" y1="8" y2="8"></line>
-            <circle cx="16" cy="14" fill="#fff" r="4.2" stroke="#161823" stroke-width="1.8"></circle>
-            <polyline points="16 11.8 16 14 18 14" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></polyline>
+        <div style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg fill="none" height="17" style="flex-shrink: 0;" viewbox="0 0 22 20" width="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 15.2H3.4C2.46 15.2 1.7 14.44 1.7 13.5V4.7C1.7 3.76 2.46 3 3.4 3H17.6C18.54 3 19.3 3.76 19.3 4.7V9.4" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+            <line stroke="#161823" stroke-width="1.75" x1="1.7" x2="19.3" y1="6.8" y2="6.8"></line>
+            <circle cx="16.4" cy="14.6" fill="#161823" r="4.1"></circle>
+            <path d="M16.3 12.5V14.7L17.85 15.6" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.45"></path>
           </svg>
-          <span style="font-weight: 500;">${escapeHtml(text)}</span>
-          <span style="color: #df3564; font-weight: 400; margin-left: 2px;">${escapeHtml(highlight || 'sem juros')}</span>
+          <span style="font-weight: 400; color: #161823;">${escapeHtml(text)}</span>
+          <span style="color: #d61f52; font-weight: 400; margin-left: 1px;">${escapeHtml(highlight || 'sem juros')}</span>
         </div>
-        <svg fill="none" height="14" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" style="flex-shrink: 0; margin-left: auto;" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        <svg fill="none" height="14" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1" style="flex-shrink: 0; margin-left: auto;" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </div>`;
 }
 

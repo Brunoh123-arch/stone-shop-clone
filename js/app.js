@@ -350,6 +350,8 @@ function initSlider(sliderEl) {
   function goto(idx) {
     current = Math.max(0, Math.min(imgs.length - 1, idx));
     if (track) track.style.transform = `translateX(calc(-${current * 100}% + 0px))`;
+    const countCur = sliderEl.querySelector('#slider-count-cur');
+    if (countCur) countCur.textContent = String(current + 1);
     if (counter) {
       const hasTamanho = counter.getAttribute('data-has-tamanho') || counter.textContent.includes('Tamanho');
       if (hasTamanho) {
@@ -6963,16 +6965,16 @@ window.toggleDescricaoCompleta = function() {
     if (!toggle) {
       toggle = document.createElement('div');
       toggle.className = 'slider-counter-toggle';
-      toggle.style.cssText = 'position:absolute; bottom:12px; right:12px; z-index:11; display:flex; align-items:center; background:rgba(0,0,0,0.65); border-radius:14px; padding:2px; backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "TikTok Sans", sans-serif;';
+      toggle.style.cssText = 'position:absolute; bottom:12px; right:12px; z-index:11; display:inline-flex; align-items:center; height:24px; background:rgba(0,0,0,0.42); border-radius:999px; padding:2px; box-sizing:border-box;';
       
       const track = slider.querySelector('.slider-track');
       const totalImgs = track ? track.querySelectorAll('.slider-img, img').length : 5;
 
       toggle.innerHTML = `
-        <div id="btn-tab-fotos" style="padding: 2.5px 8px; border-radius: 12px; color: #fff; font-size: 11px; font-weight: 600; background: rgba(255,255,255,0.25); cursor: pointer; transition: all 0.2s;">
+        <div id="btn-tab-fotos" style="height: 20px; padding: 0 8.5px; border-radius: 999px; color: #fff; font-size: 12px; font-weight: 500; background: rgba(255,255,255,0.22); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s;">
           <span id="slider-count-cur">1</span>/${totalImgs}
         </div>
-        <div id="btn-tab-tamanho" style="padding: 2.5px 8px; border-radius: 12px; color: rgba(255,255,255,0.75); font-size: 11px; font-weight: 500; cursor: pointer; transition: all 0.2s; margin-left: 2px;">
+        <div id="btn-tab-tamanho" style="height: 20px; padding: 0 8.5px; border-radius: 999px; color: rgba(255,255,255,0.92); font-size: 12px; font-weight: 500; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s;">
           Tamanho
         </div>
       `;
@@ -6985,22 +6987,22 @@ window.toggleDescricaoCompleta = function() {
       btnFotos.onclick = function(e) {
         if (e) e.stopPropagation();
         window.switchSliderTab('fotos');
-        btnFotos.style.background = 'rgba(255,255,255,0.25)';
+        btnFotos.style.background = 'rgba(255,255,255,0.22)';
         btnFotos.style.color = '#fff';
-        btnFotos.style.fontWeight = '600';
+        btnFotos.style.fontWeight = '500';
         btnTamanho.style.background = 'transparent';
-        btnTamanho.style.color = 'rgba(255,255,255,0.75)';
+        btnTamanho.style.color = 'rgba(255,255,255,0.92)';
         btnTamanho.style.fontWeight = '500';
       };
 
       btnTamanho.onclick = function(e) {
         if (e) e.stopPropagation();
         window.switchSliderTab('tamanho');
-        btnTamanho.style.background = 'rgba(255,255,255,0.25)';
+        btnTamanho.style.background = 'rgba(255,255,255,0.22)';
         btnTamanho.style.color = '#fff';
-        btnTamanho.style.fontWeight = '600';
+        btnTamanho.style.fontWeight = '500';
         btnFotos.style.background = 'transparent';
-        btnFotos.style.color = 'rgba(255,255,255,0.75)';
+        btnFotos.style.color = 'rgba(255,255,255,0.92)';
         btnFotos.style.fontWeight = '500';
       };
     }
