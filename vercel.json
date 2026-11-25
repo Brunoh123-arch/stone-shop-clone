@@ -1,19 +1,18 @@
 {
+  "framework": null,
   "cleanUrls": true,
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/versoes", "dest": "/versoes.html" },
-    { "src": "/historico", "dest": "/versoes.html" },
-    { "src": "/time-machine", "dest": "/versoes.html" },
-    { "src": "/admin", "dest": "/admin.html" },
-    { "src": "/painel", "dest": "/admin.html" },
-    { "src": "/resumo", "dest": "/pages/resumo.html" },
-    { "src": "/checkout", "dest": "/pages/resumo.html" },
-    { "src": "/carrinho", "dest": "/pages/carrinho.html" },
-    { "src": "/tracker.js", "dest": "/tracker.js" },
-    { "src": "/pages/produto-(\\d+)(?:\\.html)?", "dest": "/api/serve?slug=produto-$1" },
-    { "src": "/pages/(.*)", "dest": "/pages/$1" },
-    { "src": "/", "dest": "/api/serve" }
+  "rewrites": [
+    { "source": "/versoes", "destination": "/versoes.html" },
+    { "source": "/historico", "destination": "/versoes.html" },
+    { "source": "/time-machine", "destination": "/versoes.html" },
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/painel", "destination": "/admin.html" },
+    { "source": "/resumo", "destination": "/pages/resumo.html" },
+    { "source": "/checkout", "destination": "/pages/resumo.html" },
+    { "source": "/carrinho", "destination": "/pages/carrinho.html" },
+    { "source": "/pages/produto-:id(\\d+).html", "destination": "/api/serve?slug=produto-:id" },
+    { "source": "/pages/produto-:id(\\d+)", "destination": "/api/serve?slug=produto-:id" },
+    { "source": "/", "destination": "/api/serve" }
   ],
   "headers": [
     {
@@ -55,13 +54,10 @@
       ]
     },
     {
-      "source": "/((?!api|img|css|js|fonts|videosprodutos).*\\.html|^$)",
+      "source": "/",
       "headers": [
         { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0, s-maxage=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" },
-        { "key": "Surrogate-Control", "value": "no-store" },
-        { "key": "Pragma", "value": "no-cache" },
-        { "key": "Expires", "value": "0" }
+        { "key": "CDN-Cache-Control", "value": "no-store" }
       ]
     }
   ]

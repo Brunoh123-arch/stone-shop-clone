@@ -31,9 +31,9 @@ const server = http.createServer((req, res) => {
   // CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
 
-  // Intercepta rota de API /api/chave
-  if (req.url.startsWith('/api/chave')) {
-    const chaveHandler = require('./api/chave');
+  // Intercepta rota de API /api/chave (se existir)
+  if (req.url.startsWith('/api/chave') && fs.existsSync(path.join(ROOT, 'api', 'chave.js'))) {
+    const chaveHandler = require(path.join(ROOT, 'api', 'chave.js'));
     const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
     req.query = Object.fromEntries(parsedUrl.searchParams);
     res.status = (code) => { res.statusCode = code; return res; };
@@ -105,9 +105,9 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // Intercepta rota de API /api/produtos
-  if (req.url.startsWith('/api/produtos')) {
-    const produtosHandler = require('./api/produtos');
+  // Intercepta rota de API /api/produtos (se existir)
+  if (req.url.startsWith('/api/produtos') && fs.existsSync(path.join(ROOT, 'api', 'produtos.js'))) {
+    const produtosHandler = require(path.join(ROOT, 'api', 'produtos.js'));
     let bodyData = '';
     req.on('data', chunk => { bodyData += chunk; });
     req.on('end', () => {

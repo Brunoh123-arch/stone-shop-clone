@@ -1,4 +1,7 @@
 .git
+server.js
+deploy_to_vercel.js
+iniciar_loja.bat
 scripts/
 Temp/
 temp_*/
