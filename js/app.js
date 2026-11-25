@@ -3804,9 +3804,9 @@ function irDiretoAoCheckoutComProduto(produto, varLabel, qty) {
   addToCart(produto, itemQty);
 
   // Sobrescreve checkout_cart para conter EXCLUSIVAMENTE o produto escolhido
-  // Feedback visual imediato: HUD Quadrado TikTok SOBRE A TELA DO PRODUTO
-  if (typeof window.showTikTokHUD === 'function') {
-    window.showTikTokHUD('Carregando...', 700);
+  // Feedback visual imediato: Loader oficial de 2 bolinhas com fundo escuro 0.50
+  if (typeof window.showTikTokLoader === 'function') {
+    window.showTikTokLoader({ type: 'normal', duration: 900 });
   }
   try { localStorage.setItem('famosinhos_checkout_cart', JSON.stringify([checkoutItem])); } catch (e) { }
   try { sessionStorage.setItem('famosinhos_checkout_cart', JSON.stringify([checkoutItem])); } catch (e) { }
@@ -4564,30 +4564,32 @@ window.ensureTikTokLoaderStyles = function () {
       100% { transform: translateX(0) scale(1.1); z-index: 2; }
     }
     .tiktok-balls.tiktok-balls-lg {
-      width: 44px;
-      height: 20px;
+      width: 24px;
+      height: 11px;
     }
     .tiktok-balls.tiktok-balls-lg .ball {
-      width: 20px;
-      height: 20px;
+      width: 11px;
+      height: 11px;
     }
     .tiktok-balls.tiktok-balls-lg .ball-cyan {
+      background-color: #25F4EE;
       animation-name: ballCyanLg;
     }
     .tiktok-balls.tiktok-balls-lg .ball-pink {
+      background-color: #FE2C55;
       animation-name: ballPinkLg;
     }
     @keyframes ballCyanLg {
-      0% { transform: translateX(0) scale(1); z-index: 2; }
-      50% { transform: translateX(24px) scale(1.12); z-index: 2; }
-      50.01% { z-index: 1; }
-      100% { transform: translateX(0) scale(0.88); z-index: 1; }
+      0% { transform: translateX(0) scale(0.96); z-index: 1; }
+      50% { transform: translateX(13px) scale(1.06); z-index: 2; }
+      50.01% { z-index: 2; }
+      100% { transform: translateX(0) scale(0.96); z-index: 1; }
     }
     @keyframes ballPinkLg {
-      0% { transform: translateX(0) scale(0.88); z-index: 1; }
-      50% { transform: translateX(-24px) scale(0.88); z-index: 1; }
-      50.01% { z-index: 2; }
-      100% { transform: translateX(0) scale(1.12); z-index: 2; }
+      0% { transform: translateX(0) scale(1.06); z-index: 2; }
+      50% { transform: translateX(-13px) scale(0.92); z-index: 1; }
+      50.01% { z-index: 1; }
+      100% { transform: translateX(0) scale(1.06); z-index: 2; }
     }
 
     /* O QUADRADO PRETO HUD OFICIAL (USADO SOMENTE NA GERAÇÃO DO PIX) */
@@ -4672,9 +4674,9 @@ window.ensureTikTokLoaderStyles = function () {
       -webkit-backdrop-filter: none !important;
     }
     .tiktok-loader-overlay.type-normal {
-      background: rgba(255, 255, 255, 0.42);
-      backdrop-filter: blur(3.5px);
-      -webkit-backdrop-filter: blur(3.5px);
+      background: rgba(0, 0, 0, 0.50) !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
     }
   `;
   document.head.appendChild(style);
@@ -4709,9 +4711,9 @@ window.showTikTokLoader = function (options = {}) {
     overlay.style.backdropFilter = 'none';
     overlay.style.webkitBackdropFilter = 'none';
   } else {
-    overlay.style.background = 'rgba(255, 255, 255, 0.42)';
-    overlay.style.backdropFilter = 'blur(3.5px)';
-    overlay.style.webkitBackdropFilter = 'blur(3.5px)';
+    overlay.style.background = 'rgba(0, 0, 0, 0.50)';
+    overlay.style.backdropFilter = 'none';
+    overlay.style.webkitBackdropFilter = 'none';
   }
 
   if (isHud) {
@@ -5988,10 +5990,24 @@ if (typeof document !== 'undefined' && !window.__ttLoaderClickBound) {
       return;
     }
     // Cards de produtos clicáveis
-    const card = e.target.closest('.recommended-card, .product-card, .store-more-item, .related-card');
+    const card = e.target.closest('.recommended-card, .product-card, .product-card-rec, .store-more-item, .related-card, .store-widget-product-card');
     if (card && !e.target.closest('button')) {
       if (typeof window.showTikTokLoader === 'function') {
-        window.showTikTokLoader({ type: 'normal', duration: 500 });
+        window.showTikTokLoader({ type: 'normal', duration: 650 });
+      }
+      return;
+    }
+    // Botões de ação da loja (Comprar, Carrinho, Opções, Frete, Proteção, Parcelas, Cupons, Avaliações, Chat, Loja)
+    const actionBtn = e.target.closest(
+      '#btn-buy, #btn-add-cart, .btn-buy, .btn-add-cart, .unified-buy-btn, ' +
+      '.var-btn-buy-full, .var-btn-cart-full, ' +
+      '.info-row-item, .info-row-item-protection, .installment-row, .discount-ticket, ' +
+      '.reviews-header-official, .store-chat-clickable-chat, .store-chat-clickable-loja, ' +
+      '.checkout-btn, #btn-checkout, #btn-finalizar-compra'
+    );
+    if (actionBtn) {
+      if (typeof window.showTikTokLoader === 'function') {
+        window.showTikTokLoader({ type: 'normal', duration: 360 });
       }
     }
   }, true);
