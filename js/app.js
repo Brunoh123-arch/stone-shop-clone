@@ -13,6 +13,10 @@ window.switchSliderTab = function(tab, e) {
   const descGuideImg = document.querySelector('.size-guide-img, .description-text img[src*="guia-tamanhos"], .about-product-section img[src*="guia-tamanhos"], .product-desc img[src*="guia-tamanhos"]');
   const guideSrc = descGuideImg ? (descGuideImg.getAttribute('src') || descGuideImg.src) : (typeof getProductSizeGuideImage === 'function' ? getProductSizeGuideImage() : null);
 
+  const hasModernToggle = !!document.querySelector('.slider-counter-toggle');
+  const btnFotos = document.getElementById('btn-tab-fotos');
+  const btnTamanho = document.getElementById('btn-tab-tamanho');
+
   if (tab === 'tamanho') {
     if (!guide && guideSrc) {
       const slider = document.querySelector('.image-slider');
@@ -20,13 +24,12 @@ window.switchSliderTab = function(tab, e) {
         guide = document.createElement('div');
         guide.id = 'slider-size-guide';
         guide.className = 'slider-size-guide';
-        guide.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; background:#fff; z-index:5; display:none; align-items:center; justify-content:center; padding:16px 14px 60px 14px; box-sizing:border-box;';
+        guide.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; background:#fff; z-index:5; display:none; align-items:center; justify-content:center; padding:16px 14px 44px 14px; box-sizing:border-box;';
         guide.innerHTML = `<img src="${guideSrc}" alt="Guia de Tamanhos Oficial" style="max-width:100%; max-height:100%; object-fit:contain; display:block; margin:auto;" />`;
         slider.appendChild(guide);
       }
     }
     if (guide) {
-      // Sincroniza a imagem com a descrição toda vez que clicar na aba
       const imgInGuide = guide.querySelector('img');
       if (imgInGuide && guideSrc && imgInGuide.getAttribute('src') !== guideSrc) {
         imgInGuide.src = guideSrc;
@@ -34,15 +37,39 @@ window.switchSliderTab = function(tab, e) {
       guide.style.setProperty('display', 'flex', 'important');
     }
     if (track) track.style.visibility = 'hidden';
-    if (counterImages) counterImages.style.setProperty('display', 'none', 'important');
-    if (counterSize) counterSize.style.setProperty('display', 'flex', 'important');
+    if (hasModernToggle) {
+      if (counterImages) counterImages.style.setProperty('display', 'none', 'important');
+      if (btnTamanho) {
+        btnTamanho.style.background = 'rgba(255,255,255,0.24)';
+        btnTamanho.style.color = '#ffffff';
+      }
+      if (btnFotos) {
+        btnFotos.style.background = 'transparent';
+        btnFotos.style.color = 'rgba(255,255,255,0.88)';
+      }
+    } else {
+      if (counterImages) counterImages.style.setProperty('display', 'none', 'important');
+      if (counterSize) counterSize.style.setProperty('display', 'flex', 'important');
+    }
   } else {
     if (guide) {
       guide.style.setProperty('display', 'none', 'important');
     }
     if (track) track.style.visibility = 'visible';
-    if (counterImages) counterImages.style.setProperty('display', 'flex', 'important');
-    if (counterSize) counterSize.style.setProperty('display', 'none', 'important');
+    if (hasModernToggle) {
+      if (counterImages) counterImages.style.setProperty('display', 'none', 'important');
+      if (btnFotos) {
+        btnFotos.style.background = 'rgba(255,255,255,0.24)';
+        btnFotos.style.color = '#ffffff';
+      }
+      if (btnTamanho) {
+        btnTamanho.style.background = 'transparent';
+        btnTamanho.style.color = 'rgba(255,255,255,0.88)';
+      }
+    } else {
+      if (counterImages) counterImages.style.setProperty('display', 'flex', 'important');
+      if (counterSize) counterSize.style.setProperty('display', 'none', 'important');
+    }
   }
 };
 
@@ -6926,18 +6953,82 @@ window.toggleDescricaoCompleta = function() {
   function initSliderSizeGuideBadge() {
     const slider = document.querySelector('.image-slider');
     if (!slider) return;
-    const existingGuide = document.getElementById('slider-size-guide');
-    if (existingGuide) existingGuide.remove();
-    const existingToggle = slider.querySelector('.slider-counter-toggle');
-    if (existingToggle) existingToggle.remove();
+
+    const sizeGuideImgSrc = getProductSizeGuideImage();
+    if (!sizeGuideImgSrc) {
+      const existingGuide = document.getElementById('slider-size-guide');
+      if (existingGuide) existingGuide.remove();
+      const existingToggle = slider.querySelector('.slider-counter-toggle');
+      if (existingToggle) existingToggle.remove();
+      const counter = slider.querySelector('.slider-counter');
+      if (counter) {
+        counter.classList.remove('is-hidden-by-toggle');
+        counter.removeAttribute('data-has-tamanho');
+        counter.style.removeProperty('display');
+        const track = slider.querySelector('.slider-track');
+        const totalImgs = track ? track.querySelectorAll('.slider-img, img').length : 1;
+        counter.textContent = `1/${totalImgs}`;
+      }
+      return;
+    }
+
+    // 1. Injetar ou Atualizar container do Guia de Tamanhos no Slider
+    let guideContainer = document.getElementById('slider-size-guide');
+    if (!guideContainer) {
+      guideContainer = document.createElement('div');
+      guideContainer.id = 'slider-size-guide';
+      guideContainer.className = 'slider-size-guide';
+      guideContainer.style.cssText = 'position:absolute; top:0; left:0; width:100%; height:100%; background:#fff; z-index:5; display:none; align-items:center; justify-content:center; padding:16px 14px 44px 14px; box-sizing:border-box;';
+      guideContainer.innerHTML = `<img src="${sizeGuideImgSrc}" alt="Guia de Tamanhos Oficial" style="max-width:100%; max-height:100%; object-fit:contain; display:block; margin:auto;" />`;
+      slider.appendChild(guideContainer);
+    } else {
+      const guideImg = guideContainer.querySelector('img');
+      if (guideImg && guideImg.getAttribute('src') !== sizeGuideImgSrc) {
+        guideImg.src = sizeGuideImgSrc;
+      }
+    }
+
+    // 2. Ocultar definitivamente o .slider-counter simples para zero fantasma atrás
     const counter = slider.querySelector('.slider-counter');
     if (counter) {
-      counter.classList.remove('is-hidden-by-toggle');
+      counter.classList.add('is-hidden-by-toggle');
       counter.removeAttribute('data-has-tamanho');
-      counter.style.removeProperty('display');
+      counter.style.setProperty('display', 'none', 'important');
+    }
+
+    // 3. Injetar o Toggle 1:1 [ 1/9 | Tamanho ] na escala exata (20px altura, 11px SemiBold, rgba(0,0,0,0.47))
+    let toggle = slider.querySelector('.slider-counter-toggle');
+    if (!toggle) {
+      toggle = document.createElement('div');
+      toggle.className = 'slider-counter-toggle';
+      toggle.style.cssText = 'position:absolute; bottom:12px; right:16px; z-index:12; display:inline-flex; align-items:center; height:20px; background:rgba(0,0,0,0.47); border-radius:999px; padding:2px; box-sizing:border-box;';
+
       const track = slider.querySelector('.slider-track');
-      const totalImgs = track ? track.querySelectorAll('.slider-img, img').length : 1;
-      counter.textContent = `1/${totalImgs}`;
+      const totalImgs = track ? track.querySelectorAll('.slider-img, img').length : 5;
+
+      toggle.innerHTML = `
+        <div id="btn-tab-fotos" style="height:16px; padding:0 7px; border-radius:999px; color:#ffffff; font-size:11px; font-weight:600; background:rgba(255,255,255,0.24); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; transition:all 0.18s;">
+          <span id="slider-count-cur">1</span>/${totalImgs}
+        </div>
+        <div id="btn-tab-tamanho" style="height:16px; padding:0 7px; border-radius:999px; color:rgba(255,255,255,0.88); font-size:11px; font-weight:600; background:transparent; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; transition:all 0.18s;">
+          Tamanho
+        </div>
+      `;
+
+      slider.appendChild(toggle);
+
+      const btnFotos = toggle.querySelector('#btn-tab-fotos');
+      const btnTamanho = toggle.querySelector('#btn-tab-tamanho');
+
+      btnFotos.onclick = function(e) {
+        if (e) { e.preventDefault(); e.stopPropagation(); }
+        window.switchSliderTab('fotos', e);
+      };
+
+      btnTamanho.onclick = function(e) {
+        if (e) { e.preventDefault(); e.stopPropagation(); }
+        window.switchSliderTab('tamanho', e);
+      };
     }
   }
 
