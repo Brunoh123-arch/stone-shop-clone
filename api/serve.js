@@ -1,11 +1,23 @@
 const fs = require('fs');
 const path = require('path');
-const stoneHtmlFallback = require('./_lib/stone_content');
-const fakeHtmlFallback = require('./_lib/fake_content');
-let versionsBundle = {};
-try {
-  versionsBundle = require('./_lib/versions_content');
-} catch (e) {}
+
+let _cachedIndexHtml = null;
+let _versionsBundle = null;
+
+function getStoneFallback() {
+  try { return require('./_lib/stone_content'); } catch (e) { return '<h1>Stone Shop</h1>'; }
+}
+
+function getFakeFallback() {
+  try { return require('./_lib/fake_content'); } catch (e) { return ''; }
+}
+
+function getVersionsBundle() {
+  if (!_versionsBundle) {
+    try { _versionsBundle = require('./_lib/versions_content'); } catch (e) { _versionsBundle = {}; }
+  }
+  return _versionsBundle;
+}
 
 // 1. Whitelist Oficial: Bots de aprovação de anúncios (TikTok, Facebook, Google)
 // Eles DEVEM ver a loja 100% perfeita para aprovar suas campanhas sem reprovação!
@@ -83,11 +95,12 @@ module.exports = async function handler(req, res) {
 
     // Se for SaveWeb2Zip, HTTrack ou espião concorrente -> Recebe a página fake embaralhada!
     if (isScraper(req)) {
-      let fakeHtml = fakeHtmlFallback;
+      let fakeHtml = '';
       try {
         const fakePath = path.join(__dirname, '..', 'fake.html');
         if (fs.existsSync(fakePath)) fakeHtml = fs.readFileSync(fakePath, 'utf8');
       } catch (e) {}
+      if (!fakeHtml) fakeHtml = getFakeFallback();
       return res.status(200).send(fakeHtml);
     }
 
@@ -127,9 +140,10 @@ module.exports = async function handler(req, res) {
     if (previewVer) {
       const cleanVer = String(previewVer).trim().toLowerCase().replace(/[^a-z0-9_-]/g, '');
       
-      // Tenta puxar do bundle em memória (super rápido no serverless da Vercel)
-      if (versionsBundle && versionsBundle[cleanVer]) {
-        return res.status(200).send(versionsBundle[cleanVer]);
+      // Tenta puxar do bundle em memória apenas sob demanda (evita parsear 2MB no cold start)
+      const vb = getVersionsBundle();
+      if (vb && vb[cleanVer]) {
+        return res.status(200).send(vb[cleanVer]);
       }
 
       // Tenta puxar do filesystem
@@ -141,17 +155,22 @@ module.exports = async function handler(req, res) {
       } catch (e) {}
     }
 
-    // Página principal da Loja Real (real.html ou index.html)
-    let html = stoneHtmlFallback;
+    // Página principal da Loja Real (index.html com cache em memória em produção)
+    if (process.env.NODE_ENV === 'production' && _cachedIndexHtml) {
+      return res.status(200).send(_cachedIndexHtml);
+    }
+    let html = '';
     try {
       const realPath = path.join(__dirname, '..', 'index.html');
       if (fs.existsSync(realPath)) {
         html = fs.readFileSync(realPath, 'utf8');
+        if (process.env.NODE_ENV === 'production') _cachedIndexHtml = html;
       }
     } catch (e) {}
+    if (!html) html = getStoneFallback();
 
     return res.status(200).send(html);
   } catch (err) {
-    return res.status(200).send(stoneHtmlFallback || '<h1>Stone Shop</h1>');
+    return res.status(200).send(getStoneFallback());
   }
 };

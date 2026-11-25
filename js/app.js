@@ -6731,6 +6731,11 @@ window.toggleDescricaoCompleta = function() {
     if (video._lastToggle && (now - video._lastToggle) < 220) return;
     video._lastToggle = now;
 
+    if (!video.getAttribute('src') && video.dataset && video.dataset.src) {
+      video.preload = 'auto';
+      video.src = video.dataset.src;
+    }
+
     if (video.paused || video.ended) {
       video.muted = false;
       var p = video.play();
@@ -6793,6 +6798,22 @@ window.toggleDescricaoCompleta = function() {
     var card = document.getElementById('tt-product-video-wrapper');
     if (!video || !card || video.dataset.ttBound) return;
     video.dataset.ttBound = 'true';
+
+    // Hidrata metadados do vídeo de descrição apenas quando o usuário chega perto da seção
+    if (!video.getAttribute('src') && video.dataset && video.dataset.src && 'IntersectionObserver' in window) {
+      var descVidObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            if (!video.getAttribute('src') && video.dataset.src) {
+              video.preload = 'metadata';
+              video.src = video.dataset.src;
+            }
+            descVidObs.disconnect();
+          }
+        });
+      }, { rootMargin: '450px 0px' });
+      descVidObs.observe(card);
+    }
 
     // Remove qualquer tag amarela antiga caso exista
     card.querySelectorAll('.tt-desc-product-anchor').forEach(function(el) { el.remove(); });

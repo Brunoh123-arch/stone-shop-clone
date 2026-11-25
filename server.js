@@ -1,6 +1,9 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
+
+const COMPRESSIBLE_EXTS = new Set(['.html', '.css', '.js', '.json', '.svg']);
 
 const PORT = process.env.PORT || 3333;
 const ROOT = __dirname;
@@ -133,6 +136,16 @@ const server = http.createServer((req, res) => {
     res.status = (code) => { res.statusCode = code; return res; };
     res.send = (html) => {
       if (!res.getHeader('Content-Type')) res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      const acceptEnc = req.headers['accept-encoding'] || '';
+      if (acceptEnc.includes('gzip') && typeof html === 'string' && html.length > 1024) {
+        res.setHeader('Content-Encoding', 'gzip');
+        res.setHeader('Vary', 'Accept-Encoding');
+        return zlib.gzip(Buffer.from(html, 'utf8'), (err, buf) => {
+          if (err) { res.removeHeader('Content-Encoding'); return res.end(html); }
+          res.setHeader('Content-Length', buf.length);
+          res.end(buf);
+        });
+      }
       res.end(html);
       return res;
     };
@@ -146,6 +159,16 @@ const server = http.createServer((req, res) => {
     res.status = (code) => { res.statusCode = code; return res; };
     res.send = (html) => {
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      const acceptEnc = req.headers['accept-encoding'] || '';
+      if (acceptEnc.includes('gzip') && typeof html === 'string' && html.length > 1024) {
+        res.setHeader('Content-Encoding', 'gzip');
+        res.setHeader('Vary', 'Accept-Encoding');
+        return zlib.gzip(Buffer.from(html, 'utf8'), (err, buf) => {
+          if (err) { res.removeHeader('Content-Encoding'); return res.end(html); }
+          res.setHeader('Content-Length', buf.length);
+          res.end(buf);
+        });
+      }
       res.end(html);
       return res;
     };
@@ -197,8 +220,24 @@ const server = http.createServer((req, res) => {
     }
   }
 
-  // Normal File Serving
-  const cacheHeader = (ext === '.css' || ext === '.js' || ext === '.html') ? 'no-store' : 'public, max-age=3600';
+  // Normal File Serving (com Gzip automático para HTML/CSS/JS/JSON/SVG e cache rápido de mídia/fontes)
+  const isImmutableMedia = (ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.webp' || ext === '.gif' || ext === '.woff' || ext === '.woff2' || ext === '.ttf' || ext === '.ico');
+  const cacheHeader = isImmutableMedia
+    ? 'public, max-age=31536000, immutable'
+    : ((ext === '.css' || ext === '.js') ? 'public, max-age=300' : 'no-cache');
+
+  const acceptEncoding = req.headers['accept-encoding'] || '';
+  if (COMPRESSIBLE_EXTS.has(ext) && stat.size > 1024 && acceptEncoding.includes('gzip')) {
+    res.writeHead(200, {
+      'Content-Type': contentType,
+      'Content-Encoding': 'gzip',
+      'Vary': 'Accept-Encoding',
+      'Cache-Control': cacheHeader
+    });
+    fs.createReadStream(filePath).pipe(zlib.createGzip({ level: 6 })).pipe(res);
+    return;
+  }
+
   res.writeHead(200, {
     'Content-Length': stat.size,
     'Content-Type': contentType,

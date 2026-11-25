@@ -12,7 +12,12 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resumo do Pedido - Stone Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link as="font" crossorigin="" href="../fonts/tt-pro-400.ttf" rel="preload" type="font/woff2">
+  <link as="font" crossorigin="" href="../fonts/tt-pro-600.ttf" rel="preload" type="font/woff2">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" rel="stylesheet">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
   <style>
     @font-face {
       font-family: 'ResumoNumsOnly';
@@ -1678,7 +1683,7 @@ input:checked + .tiktok-toggle-slider:before {
   </div>
 
   <script src="../js/catalogo.js?v=1795410323540"></script>
-  <script src="../js/app.js?v=20261125_tabs_resumo_nota_v22"></script>
+  <script src="../js/app.js?v=20261125_perf_ultra_fast_v27"></script>
   <script>
     function parseSafeFloat(val) {
       if (typeof val === 'number') return val;
@@ -3369,9 +3374,6 @@ input:checked + .tiktok-toggle-slider:before {
       }, 350);
     }
   </script>
-  
-  <!-- Preload do vídeo do PIX para carregar instantaneamente na próxima tela -->
-  <video src="/img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
 </div><!-- fim app-container -->
 </body>
 

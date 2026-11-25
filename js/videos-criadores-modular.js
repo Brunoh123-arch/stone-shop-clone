@@ -887,17 +887,16 @@
       const listElement = document.getElementById('creators-carousel-list');
       for (let i = 0; i < totalVideosCount; i++) {
         const item = videoList[i];
-        const loadingAttr = i < 4 ? 'loading="eager"' : 'loading="lazy"';
-        const fetchAttr = i < 2 ? 'fetchpriority="high"' : '';
+        const avatarLoading = i < 4 ? 'eager' : 'lazy';
         const cardHtml = `
           <div class="creator-card" data-video-id="${i}">
-            <video class="creator-preview-vid" src="${item.video}" poster="${item.poster}" autoplay muted loop playsinline webkit-playsinline preload="${i < 4 ? 'auto' : 'none'}" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; pointer-events: none;"></video>
+            <video class="creator-preview-vid" data-src="${item.video}" poster="${item.poster}" muted loop playsinline webkit-playsinline preload="none" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; pointer-events: none;"></video>
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, transparent 40%, rgba(0,0,0,0.75) 100%); pointer-events: none;"></div>
             <div style="position: absolute; top: 8px; left: 8px; width: 22px; height: 22px; background: rgba(0,0,0,0.45); backdrop-filter: blur(4px); border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2; pointer-events: none;">
               <svg viewBox="0 0 24 24" style="fill: #fff; width: 10px; height: 10px; margin-left: 1px;"><path d="M8 5v14l11-7z"/></svg>
             </div>
             <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 6px; display: flex; align-items: center; gap: 5px; z-index: 2; box-sizing: border-box; pointer-events: none;">
-              <img src="${item.avatar}" alt="" style="width: 18px; height: 18px; border-radius: 50%; object-fit: cover; border: 1px solid #fff; flex-shrink: 0;" onerror="this.src='../img/creators-avatars/creator-1.jpg'">
+              <img src="${item.avatar}" alt="" loading="${avatarLoading}" decoding="async" style="width: 18px; height: 18px; border-radius: 50%; object-fit: cover; border: 1px solid #fff; flex-shrink: 0;" onerror="this.src='../img/creators-avatars/creator-1.jpg'">
               <span style="font-size: 10px; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; text-shadow: 0 1px 2px rgba(0,0,0,0.8);">${item.name}</span>
             </div>
           </div>
@@ -919,44 +918,50 @@
       };
     });
 
-    // Inicializa o modal em background para deixá-lo quente na memória
+    // Inicializa o modal em background para deixá-lo quente na memória (sem baixar vídeo até clicar)
     createTikTokModalMarkup();
 
-    // AUTOPLAY AUTOMÁTICO DOS VÍDEOS DE CRIADORES NO CARROSSEL (PADRÃO TIKTOK SHOP)
-    if ('IntersectionObserver' in window) {
-      const vidObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          const v = entry.target.querySelector('video.creator-preview-vid');
-          if (!v) return;
-          if (entry.isIntersecting) {
-            v.muted = true;
-            const p = v.play();
-            if (p !== undefined) p.catch(() => {});
-          } else {
-            v.pause();
-          }
-        });
-      }, { threshold: 0.15 });
-
-      allCards.forEach(card => vidObserver.observe(card));
-    } else {
-      allCards.forEach((card, idx) => {
-        if (idx < 3) {
-          const v = card.querySelector('video.creator-preview-vid');
-          if (v) { v.muted = true; v.play().catch(() => {}); }
-        }
-      });
+    function hydrateAndPlayPreview(v) {
+      if (!v) return;
+      if (!v.getAttribute('src') && v.dataset.src) {
+        v.preload = 'metadata';
+        v.src = v.dataset.src;
+      }
+      v.muted = true;
+      const p = v.play();
+      if (p !== undefined) p.catch(() => {});
     }
 
-    // Disparo imediato para os primeiros cards visíveis (Zero Delay)
-    setTimeout(() => {
-      const firstVids = targetContainer.querySelectorAll('.creator-card:nth-child(-n+3) video.creator-preview-vid');
-      firstVids.forEach(v => {
-        v.muted = true;
-        const p = v.play();
-        if (p !== undefined) p.catch(() => {});
-      });
-    }, 250);
+    // Hidrata vídeos SOMENTE quando a seção de criadores entra perto da tela e após o carregamento crítico das imagens
+    function bindLazyCreatorPreviews() {
+      if ('IntersectionObserver' in window) {
+        const vidObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const v = entry.target.querySelector('video.creator-preview-vid');
+            if (!v) return;
+            if (entry.isIntersecting) {
+              hydrateAndPlayPreview(v);
+            } else if (v.getAttribute('src')) {
+              v.pause();
+            }
+          });
+        }, { rootMargin: '180px 100px', threshold: 0.05 });
+
+        allCards.forEach(card => vidObserver.observe(card));
+      } else {
+        allCards.forEach((card, idx) => {
+          if (idx < 2) {
+            hydrateAndPlayPreview(card.querySelector('video.creator-preview-vid'));
+          }
+        });
+      }
+    }
+
+    if (document.readyState === 'complete') {
+      setTimeout(bindLazyCreatorPreviews, 120);
+    } else {
+      window.addEventListener('load', () => setTimeout(bindLazyCreatorPreviews, 120), { once: true });
+    }
 
   }
 
@@ -986,7 +991,7 @@
         </div>
 
         <div class="tt-video-wrapper" id="tt-video-wrapper">
-          <video class="tt-video" id="tt-modal-player" loop playsinline webkit-playsinline autoplay preload="auto" style="background:#000;"></video>
+          <video class="tt-video" id="tt-modal-player" loop playsinline webkit-playsinline preload="none" style="background:#000;"></video>
 
           <div class="tt-play-icon-overlay" id="tt-play-overlay">
             <svg viewBox="0 0 24 24" width="34" height="34" fill="#fff"><path d="M8 5v14l11-7z"/></svg>

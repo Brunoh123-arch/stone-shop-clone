@@ -3,7 +3,7 @@ const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261125_detalhes_tela_ref_v26';
+const ASSET_VERSION = '20261125_perf_ultra_fast_v27';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
@@ -39,7 +39,13 @@ function renderSliderImgs(imgs, fallbackAlt) {
   return imgs.map((img, i) => {
     const src = escapeHtml(img.src || '');
     const alt = escapeHtml(img.alt || `${fallbackAlt} - ${i + 1}`);
-    return `<img alt="${alt}" class="slider-img" onerror="this.style.display='none'" src="${src}"/>`;
+    if (i === 0) {
+      return `<img alt="${alt}" class="slider-img" decoding="sync" fetchpriority="high" loading="eager" onerror="this.style.display='none'" src="${src}"/>`;
+    }
+    if (i === 1) {
+      return `<img alt="${alt}" class="slider-img" decoding="async" fetchpriority="low" loading="eager" onerror="this.style.display='none'" src="${src}"/>`;
+    }
+    return `<img alt="${alt}" class="slider-img" decoding="async" fetchpriority="low" loading="lazy" onerror="this.style.display='none'" src="${src}"/>`;
   }).join('\n        ');
 }
 
@@ -144,7 +150,7 @@ function renderVideo(video) {
   return `<div class="product-video-block">
           <h3 class="about-subtitle">Vídeo</h3>
           <div class="tiktok-video-card" id="tt-product-video-wrapper" onclick="toggleTTVideo(event)">
-            <video id="tt-product-video"${posterAttr} playsinline="" webkit-playsinline="" preload="metadata" src="${src}"></video>
+            <video id="tt-product-video"${posterAttr} playsinline="" webkit-playsinline="" preload="none" data-src="${src}"></video>
             <div class="tt-video-center-play" id="tt-center-play">
               <svg fill="#ffffff" height="54" viewbox="0 0 24 24" width="54" aria-hidden="true">
                 <path d="M7.5 4.8C7.5 3.9 8.48 3.35 9.25 3.82L19.95 10.32C20.68 10.76 20.68 11.84 19.95 12.28L9.25 18.78C8.48 19.25 7.5 18.7 7.5 17.8V4.8Z"></path>
@@ -225,8 +231,13 @@ function renderProdutoHtml(id) {
   const safeCreatorsJson = JSON.stringify(data.creators || []).replace(/</g, '\\u003c');
   const safeCreatorsCtx = escapeHtml(data.creator_context || 'general');
 
+  const firstImgSrc = (Array.isArray(data.slider_imgs) && data.slider_imgs[0] && data.slider_imgs[0].src)
+    ? `<link as="image" fetchpriority="high" href="${escapeHtml(data.slider_imgs[0].src)}" rel="preload"/>`
+    : '';
+
   const replacements = {
     '{{ASSET_VERSION}}': ASSET_VERSION,
+    '{{HERO_IMAGE_PRELOAD}}': firstImgSrc,
     '{{TITLE}}': escapeHtml(data.title || `${data.product_title} - Stone Shop`),
     '{{META_DESCRIPTION}}': escapeHtml(data.meta_description || data.product_title || ''),
     '{{SLIDER_IMGS_HTML}}': renderSliderImgs(data.slider_imgs, data.product_title || ''),

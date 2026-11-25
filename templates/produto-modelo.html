@@ -13,12 +13,17 @@
   <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" name="viewport"/>
   <title>{{TITLE}}</title>
   <meta content="{{META_DESCRIPTION}}" name="description"/>
+  {{HERO_IMAGE_PRELOAD}}
+  <link as="font" crossorigin="" href="../fonts/tt-pro-400.ttf" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="../fonts/tt-pro-600.ttf" rel="preload" type="font/woff2"/>
   <link as="image" fetchpriority="high" href="../decalque/decalque-blackfriday.png?v={{ASSET_VERSION}}" rel="preload"/>
   <link href="../css/style.css?v={{ASSET_VERSION}}" rel="stylesheet"/>
   <link href="../css/ui-oficial.css?v={{ASSET_VERSION}}" rel="stylesheet"/>
+  <link crossorigin="" href="https://files.catbox.moe" rel="preconnect"/>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/></noscript>
 </head>
 <body>
 <div class="app-container">
@@ -335,8 +340,8 @@ if (typeof window.toggleProductDetails !== 'function') {
   };
 }
 </script>
-<script src="../tracker.js"></script>
-<script src="../js/videos-criadores-modular.js?v={{ASSET_VERSION}}"></script>
+<script defer="" src="../tracker.js"></script>
+<script defer="" src="../js/videos-criadores-modular.js?v={{ASSET_VERSION}}"></script>
 {{EXTRA_SCRIPTS_HTML}}
 </body>
 </html>
