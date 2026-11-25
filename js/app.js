@@ -1652,7 +1652,7 @@ function initProductTabs() {
 
   const HEADER = 48;   // altura real do header fixo
   const TABS = 42;     // altura das abas
-  const SHOW_AT = 150; // mostrar abas após rolar 150px
+  const SHOW_AT = 18;  // aparece imediatamente ao iniciar a rolagem já na 1ª aba (Visão geral)
 
   // Configuração inicial forçada para garantir visibilidade absoluta
   tabsBar.style.position = 'fixed';
@@ -1673,8 +1673,14 @@ function initProductTabs() {
 
   const scrollContainer = document.querySelector('.page-content');
 
+  function getScrollTopReal() {
+    const winSy = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+    const innerSy = scrollContainer ? (scrollContainer.scrollTop || 0) : 0;
+    return Math.max(winSy, innerSy);
+  }
+
   function updateActiveTab() {
-    const sy = scrollContainer ? scrollContainer.scrollTop : window.scrollY;
+    const sy = getScrollTopReal();
 
     if (sy > SHOW_AT) {
       tabsBar.classList.add('tabs-visible');
@@ -1684,9 +1690,9 @@ function initProductTabs() {
       tabsBar.style.top = '-100px';
     }
 
-    const threshold = HEADER + TABS + 30;
+    const threshold = HEADER + TABS + 18;
     let active = 'visao-geral';
-    const domOrder = ['visao-geral', 'avaliacoes', 'descricao', 'recomendacoes'];
+    const domOrder = ['avaliacoes', 'descricao', 'recomendacoes'];
     for (const key of domOrder) {
       const el = sections[key];
       if (el) {
@@ -1710,19 +1716,20 @@ function initProductTabs() {
   function handleTabClick(tab) {
     const key = tab.dataset.tab;
     const el = sections[key];
-    if (!el) {
-      if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
-      else window.scrollTo({ top: 0, behavior: 'smooth' });
+    const useInner = scrollContainer && (scrollContainer.scrollHeight > scrollContainer.clientHeight + 20) && (window.getComputedStyle(scrollContainer).overflowY !== 'visible');
+    if (!el || key === 'visao-geral') {
+      if (useInner) scrollContainer.scrollTo({ top: 24, behavior: 'smooth' });
+      else window.scrollTo({ top: 24, behavior: 'smooth' });
       return;
     }
-    if (scrollContainer) {
+    if (useInner) {
       const rect = el.getBoundingClientRect();
       const cRect = scrollContainer.getBoundingClientRect();
       const target = scrollContainer.scrollTop + (rect.top - cRect.top) - (TABS + 4);
       scrollContainer.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
     } else {
       const rect = el.getBoundingClientRect();
-      const target = window.scrollY + rect.top - (HEADER + TABS + 4);
+      const target = (window.scrollY || window.pageYOffset || 0) + rect.top - (HEADER + TABS + 4);
       window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
     }
   }
@@ -1742,23 +1749,12 @@ function initProductTabs() {
 
   if (scrollContainer) {
     scrollContainer.addEventListener('scroll', updateActiveTab, { passive: true });
-  } else {
-    window.addEventListener('scroll', updateActiveTab, { passive: true });
   }
+  window.addEventListener('scroll', updateActiveTab, { passive: true });
+  document.addEventListener('scroll', updateActiveTab, { passive: true });
 
   // Executa uma vez
-  setTimeout(() => {
-    if (scrollContainer) {
-      const sy = scrollContainer.scrollTop;
-      if (sy > SHOW_AT) {
-        tabsBar.classList.add('tabs-visible');
-        tabsBar.style.top = '48px';
-      } else {
-        tabsBar.classList.remove('tabs-visible');
-        tabsBar.style.top = '-100px';
-      }
-    }
-  }, 100);
+  setTimeout(updateActiveTab, 80);
 }
 
 // Normalização global: Garante que todo produto com objeto variacoes vazio ou ausente 

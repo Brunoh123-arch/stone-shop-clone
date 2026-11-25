@@ -2,658 +2,1300 @@
 <html lang="pt-BR">
 
 <head>
-<script src="../js/anti-clone-guard.js?v=20261020"></script>
-<!-- TikTok Pixel Base Code -->
-<script>
-!function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js',o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement('script');s.type='text/javascript',s.async=!0,s.src=r+'?sdkid='+e+'&lib='+t;var a=d.getElementsByTagName('script')[0];a.parentNode.insertBefore(s,a)},ttq.load('DBD7ASBC77UF91061F1G'),ttq.page()}(window,document,'ttq');
-</script>
-<script src="../js/tiktok-events.js"></script>
-<!-- End TikTok Pixel Base Code -->
+  <script src="../js/anti-clone-guard.js?v=20261020"></script>
+  <!-- TikTok Pixel Base Code -->
+  <script>
+  !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie','holdConsent','revokeConsent','grantConsent'],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r='https://analytics.tiktok.com/i18n/pixel/events.js',o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var s=d.createElement('script');s.type='text/javascript',s.async=!0,s.src=r+'?sdkid='+e+'&lib='+t;var a=d.getElementsByTagName('script')[0];a.parentNode.insertBefore(s,a)},ttq.load('DBD7ASBC77UF91061F1G'),ttq.page()}(window,document,'ttq');
+  </script>
+  <script src="../js/tiktok-events.js"></script>
+  <!-- End TikTok Pixel Base Code -->
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>Código do pagamento - Stone Shop</title>
-  <link rel="stylesheet" href="../css/style.css?v=1794176299347">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <style>
-    html,
-    body {
-      height: 100%;
+    @font-face {
+      font-family: 'TTPixFont';
+      src: url('../fonts/tt-pro-400.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'TTPixFont';
+      src: url('../fonts/tt-pro-500.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'TTPixFont';
+      src: url('../fonts/tt-pro-600.ttf') format('truetype');
+      font-weight: 600 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      min-height: 100%;
       background: #ffffff;
+      color: #161823;
+      font-family: 'TTPixFont', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-variant-numeric: proportional-nums lining-nums;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Container com o gradiente pastel exato do topo da Imagem 2 */
-    .pix-container {
-      background: 
-        radial-gradient(circle at 0% 0%, rgba(200, 245, 255, 0.75) 0%, transparent 45%),
-        radial-gradient(circle at 100% 0%, rgba(255, 222, 236, 0.75) 0%, transparent 45%),
-        #ffffff;
-      background-repeat: no-repeat;
-      background-size: 100% 360px, 100% 360px, 100% 100%;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+    .pix-screen {
       width: 100%;
       max-width: 480px;
+      min-height: 100dvh;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
       position: relative;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      box-sizing: border-box;
+      background-color: #ffffff;
+      background-image:
+        radial-gradient(ellipse 68% 230px at 8% 0%, rgba(215, 247, 249, 0.92) 0%, rgba(215, 247, 249, 0) 100%),
+        radial-gradient(ellipse 68% 250px at 96% 10%, rgba(255, 220, 234, 0.88) 0%, rgba(255, 220, 234, 0) 100%);
+      background-repeat: no-repeat;
     }
 
-    /* Header transparente sem borda inferior (como na Imagem 2) */
     .pix-header {
+      height: 50px;
       display: flex;
       align-items: center;
-      padding: 14px 16px;
+      justify-content: space-between;
+      padding: 0 14px;
       background: transparent;
-      border-bottom: none;
     }
 
-    .pix-header-back {
-      background: none;
+    .pix-back-btn {
+      width: 32px;
+      height: 32px;
       border: none;
-      cursor: pointer;
-      padding: 0;
-      display: flex;
+      background: none;
+      display: inline-flex;
       align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+      color: #111111;
     }
 
     .pix-header-title {
-      flex: 1;
-      text-align: center;
       font-size: 17px;
       font-weight: 700;
-      color: #161823;
-      margin-right: 22px;
+      color: #000000;
       letter-spacing: -0.2px;
+      text-align: center;
+      flex: 1;
     }
 
-    .pix-content {
+    .pix-header-spacer {
+      width: 32px;
+      height: 32px;
+    }
+
+    .pix-main {
       flex: 1;
-      padding: 14px 16px 20px 16px;
+      padding: 12px 16px 20px 16px;
       display: flex;
       flex-direction: column;
     }
 
-    /* Bloco informativo superior */
-    .pix-status-box {
+    .pix-status-row {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 22px;
-      padding-top: 6px;
     }
 
     .pix-status-left {
       display: flex;
       flex-direction: column;
-      gap: 3px;
     }
 
-    .pix-status-title {
+    .pix-status-heading {
       font-size: 22px;
-      font-weight: 800;
-      color: #161823;
-      letter-spacing: -0.5px;
+      font-weight: 700;
+      color: #000000;
+      line-height: 1.24;
+      letter-spacing: -0.3px;
+    }
+
+    .pix-status-amount {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000000;
       line-height: 1.25;
-    }
-
-    .pix-status-price {
-      font-size: 24px;
-      font-weight: 800;
-      color: #161823;
       margin-top: 2px;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.2px;
     }
 
-    .pix-status-expire {
-      font-size: 13px;
-      color: #73747b;
+    .pix-expire-row {
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-top: 6px;
+      margin-top: 12px;
+      font-size: 13.5px;
+      color: #73747b;
     }
 
-    .pix-expire-badge {
-      background: #ff2c55;
+    .pix-expire-pill {
+      background: #ef4b39;
       color: #ffffff;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 2.5px 7px;
+      font-size: 12px;
+      font-weight: 600;
+      height: 21px;
+      padding: 0 7px 0 5px;
       border-radius: 4px;
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      letter-spacing: 0.3px;
+      font-variant-numeric: tabular-nums;
     }
 
-    .pix-status-date {
-      font-size: 13px;
+    .pix-deadline-row {
+      margin-top: 8px;
+      font-size: 13.5px;
       color: #73747b;
-      margin-top: 4px;
     }
 
-    .pix-status-date strong {
+    .pix-deadline-row strong {
       color: #161823;
       font-weight: 500;
     }
 
-    /* Relógio Laranja Sólido IDÊNTICO à Imagem 2 */
-    .pix-status-icon-orange {
-      width: 44px;
-      height: 44px;
+    .pix-clock-orange {
+      width: 46px;
+      height: 46px;
       flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
-    /* Caixa do Pix Copia e Cola */
-    .pix-code-box {
+    .pix-card {
       background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.05);
       border-radius: 12px;
-      padding: 18px 16px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+      padding: 20px 18px 20px 18px;
+      box-shadow: 0 4px 22px rgba(0, 0, 0, 0.055);
+      border: 1px solid rgba(0, 0, 0, 0.03);
       margin-bottom: 18px;
     }
 
-    .pix-brand-row {
+    .pix-card-brand {
       display: flex;
       align-items: center;
-      gap: 8px;
-      margin-bottom: 16px;
+      gap: 9px;
+      margin-bottom: 18px;
     }
 
-    .pix-logo-badge {
+    .pix-badge-rect {
+      height: 20px;
+      padding: 0 5px;
+      border-radius: 3px;
+      border: 1px solid #ececec;
+      background: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .pix-badge-rect img {
+      width: 11px;
+      height: 11px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .pix-badge-rect span {
+      font-size: 10px;
+      font-weight: 500;
+      color: #8a8b91;
+      letter-spacing: -0.2px;
+      line-height: 1;
+    }
+
+    .pix-card-brand-title {
+      font-size: 15.5px;
+      font-weight: 500;
+      color: #111111;
+    }
+
+    .pix-code-preview {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 20px;
+      font-weight: 600;
+      color: #000000;
+      letter-spacing: -0.15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 18px;
+      padding: 0;
+    }
+
+    .pix-btn-copy {
+      width: 100%;
+      height: 44px;
+      border: none;
+      border-radius: 8px;
+      background: #fe385c;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+
+    .pix-btn-copy:active {
+      opacity: 0.88;
+    }
+
+    .pix-path-note {
+      font-size: 12.5px;
+      color: #4f515a;
+      line-height: 1.45;
+      margin-bottom: 28px;
+    }
+
+    .pix-path-note strong {
+      color: #111111;
+      font-weight: 600;
+    }
+
+    .pix-howto-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000000;
+      letter-spacing: -0.25px;
+      margin-bottom: 12px;
+    }
+
+    .pix-howto-desc {
+      font-size: 14px;
+      color: #222222;
+      line-height: 1.48;
+    }
+
+    .pix-footer-bar {
+      margin-top: auto;
+      padding: 16px 16px calc(22px + env(safe-area-inset-bottom, 0px)) 16px;
+      background: #ffffff;
+    }
+
+    .pix-btn-ver-pedido {
+      width: 100%;
+      height: 46px;
+      border: none;
+      border-radius: 8px;
+      background: #f1f1f2;
+      color: #111111;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tt-copy-toast {
+      position: fixed;
+      top: 44px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px);
+      background: rgba(46, 46, 50, 0.92);
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 11px 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 14px;
+      font-weight: 500;
+      white-space: nowrap;
+      z-index: 999999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    .tt-copy-toast.is-visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .order-loading-screen {
+      display: none;
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      background: #ffffff;
+      z-index: 99990;
+      flex-direction: column;
+    }
+
+    .order-loading-header {
+      height: 50px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .order-loading-body {
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .pix-brand-name {
-      font-size: 15px;
-      font-weight: 700;
-      color: #161823;
+    .tt-two-balls {
+      position: relative;
+      width: 24px;
+      height: 11px;
     }
 
-    .pix-textarea {
+    .tt-two-balls .b-pink,
+    .tt-two-balls .b-cyan {
+      position: absolute;
+      top: 0;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+
+    .tt-two-balls .b-pink {
+      left: 0;
+      background: #FE2C55;
+      animation: ttOrbitPink 0.85s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    }
+
+    .tt-two-balls .b-cyan {
+      right: 0;
+      background: #25F4EE;
+      animation: ttOrbitCyan 0.85s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    }
+
+    @keyframes ttOrbitPink {
+      0% { transform: translateX(0) scale(1); z-index: 2; }
+      50% { transform: translateX(13px) scale(1.08); z-index: 2; }
+      50.01% { z-index: 1; }
+      100% { transform: translateX(0) scale(0.92); z-index: 1; }
+    }
+
+    @keyframes ttOrbitCyan {
+      0% { transform: translateX(0) scale(0.92); z-index: 1; }
+      50% { transform: translateX(-13px) scale(0.92); z-index: 1; }
+      50.01% { z-index: 2; }
+      100% { transform: translateX(0) scale(1.08); z-index: 2; }
+    }
+
+    .order-detail-screen {
+      display: none;
       width: 100%;
-      font-size: 18px;
-      color: #161823;
+      max-width: 480px;
+      min-height: 100dvh;
+      margin: 0 auto;
+      background: #f5f5f5;
+      flex-direction: column;
+      padding-bottom: calc(74px + env(safe-area-inset-bottom, 0px));
+      position: relative;
+    }
+
+    .od-sticky-topbar {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      height: 50px;
+      background: #ffffff;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .od-sticky-topbar.is-stuck {
+      display: flex;
+    }
+
+    .od-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 14px 16px 26px 14px;
+      background: linear-gradient(110deg, #effafb 0%, #f7f6fa 55%, #fdf2f6 100%);
+    }
+
+    .od-hero-watermark {
+      position: absolute;
+      right: 12px;
+      top: 6px;
+      width: 78px;
+      height: 78px;
+      pointer-events: none;
+      opacity: 0.45;
+    }
+
+    .od-hero-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .od-hero-title {
+      font-size: 20px;
       font-weight: 700;
-      border: none;
-      resize: none;
-      outline: none;
-      background: transparent;
-      padding: 0;
-      margin-bottom: 16px;
-      line-height: 1.35;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #000000;
       letter-spacing: -0.3px;
+    }
+
+    .od-hero-sub {
+      padding-left: 34px;
+      margin-top: 4px;
+      font-size: 13.5px;
+      color: #57585e;
+      position: relative;
+      z-index: 2;
+    }
+
+    .od-hero-sub strong {
+      color: #111111;
+      font-weight: 700;
+    }
+
+    .od-top-card {
+      background: #ffffff;
+      border-radius: 14px 14px 0 0;
+      margin-top: -12px;
+      position: relative;
+      z-index: 3;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .od-pay-summary {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .od-pix-icon-card {
+      width: 28px;
+      height: 18px;
+      object-fit: cover;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .od-link-blue {
+      color: #0b65c6;
+      font-size: 13.5px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .od-addr-summary {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .od-section-card {
+      background: #ffffff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .od-store-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .od-store-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .od-store-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #efefef;
+      flex-shrink: 0;
+    }
+
+    .od-star-badge {
+      background: #f9e4be;
+      color: #3a2605;
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .od-store-name {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #111111;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    .pix-copy-btn {
-      width: 100%;
-      background: #fe2c55;
-      color: #ffffff;
-      border: none;
+    .od-store-nav {
+      font-size: 13px;
+      color: #57585e;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      flex-shrink: 0;
+    }
+
+    .od-item-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .od-item-img {
+      width: 68px;
+      height: 68px;
       border-radius: 8px;
-      padding: 13px;
-      font-size: 15px;
+      object-fit: cover;
+      background: #f5f5f5;
+      flex-shrink: 0;
+    }
+
+    .od-item-mid {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .od-item-title {
+      font-size: 14px;
+      color: #222222;
+      font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .od-item-var {
+      font-size: 12.5px;
+      color: #73747b;
+      margin-top: 3px;
+    }
+
+    .od-devolucao-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #fdf3e4;
+      color: #7d4e12;
+      font-size: 11px;
       font-weight: 600;
-      cursor: pointer;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-top: 6px;
+    }
+
+    .od-item-right {
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .od-meta-divider {
+      height: 1px;
+      background: #f0f0f0;
+      margin: 14px 0;
+    }
+
+    .od-meta-row {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      transition: all 0.2s ease;
+      justify-content: space-between;
+      font-size: 13.5px;
+      color: #57585e;
     }
 
-    .pix-copy-btn:hover {
-      background: #e0244b;
-    }
-
-    .pix-copy-btn.copied-success {
-      background: #00b159 !important;
-    }
-
-    /* Nota Informativa */
-    .pix-instructions-note {
-      font-size: 12px;
-      color: #73747b;
-      line-height: 1.5;
-      margin-bottom: 24px;
-    }
-
-    .pix-instructions-note strong {
-      color: #161823;
-      font-weight: 600;
-    }
-
-    /* Como pagar */
-    .pix-instructions-section {
-      margin-top: 4px;
-      margin-bottom: 24px;
-    }
-
-    .pix-instructions-title {
-      font-size: 18px;
-      font-weight: 800;
-      color: #161823;
-      margin-bottom: 12px;
-      letter-spacing: -0.3px;
-    }
-
-    .pix-instructions-desc {
-      font-size: 13px;
-      color: #4f515a;
-      line-height: 1.55;
-    }
-
-    /* Footer com botão Ver pedido idêntico à Imagem 2 */
-    .pix-footer {
-      width: 100%;
-      padding: 16px 16px 28px 16px;
+    .od-contact-card {
       background: #ffffff;
-      box-sizing: border-box;
-      margin-top: auto;
+      margin-bottom: 8px;
     }
 
-    .pix-btn-ver-pedido {
-      width: 100%;
-      background: #f1f1f2;
+    .od-contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 16px;
+      font-size: 14.5px;
       color: #161823;
-      border: none;
-      border-radius: 8px;
-      padding: 14px;
-      font-size: 15px;
-      font-weight: 600;
       cursor: pointer;
-      text-align: center;
-      transition: background 0.2s;
+      border-bottom: 1px solid #f2f2f2;
     }
 
-    .pix-btn-ver-pedido:hover {
-      background: #e8e8e9;
+    .od-contact-row:last-child {
+      border-bottom: none;
     }
 
-    /* Modal de Lista de Produtos do Pedido */
-    .pedido-modal {
-      display: none;
+    .od-protection-card {
+      background: linear-gradient(180deg, #fdf5e8 0%, #ffffff 68%);
+      padding: 14px 16px 16px 16px;
+      margin-bottom: 8px;
+    }
+
+    .od-rec-section {
+      padding: 10px 8px 16px 8px;
+      background: #f5f5f5;
+    }
+
+    .od-rec-title {
+      font-size: 16.5px;
+      font-weight: 700;
+      color: #111111;
+      margin: 0 4px 12px 4px;
+      letter-spacing: -0.2px;
+    }
+
+    .od-rec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .od-rec-card {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .od-rec-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #f7f7f7;
+      display: block;
+    }
+
+    .od-rec-body {
+      padding: 8px 9px 10px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .od-rec-name {
+      font-size: 13px;
+      line-height: 1.32;
+      color: #161823;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .od-bottom-actions {
       position: fixed;
-      top: 0;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
       max-width: 480px;
-      height: 100vh;
-      background: #f7f9fa;
-      z-index: 99999;
-      overflow-y: auto;
-      flex-direction: column;
+      background: #ffffff;
+      border-top: 1px solid #eeeeee;
+      padding: 10px 14px calc(12px + env(safe-area-inset-bottom, 0px)) 14px;
+      display: none;
+      gap: 10px;
+      z-index: 80;
     }
 
-    .pedido-modal-header {
-      background: #fff;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #eee;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .pedido-modal-title {
+    .od-btn-cancel {
       flex: 1;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 700;
-      color: #111;
-      margin-right: 24px;
+      height: 44px;
+      border: none;
+      border-radius: 999px;
+      background: #f1f1f2;
+      color: #111111;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
     }
 
-    .pedido-modal-content {
-      padding: 16px;
+    .od-btn-code {
       flex: 1;
-    }
-
-    .pedido-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    }
-
-    .pedido-store-name {
-      font-size: 13px;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 12px;
-    }
-
-    .pedido-item-row {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .pedido-item-img {
-      width: 64px;
-      height: 64px;
-      border-radius: 8px;
-      object-fit: contain;
-      transform: scale(0.85);
-      border: 1px solid #f0f0f0;
-    }
-
-    .pedido-item-details {
-      flex: 1;
-    }
-
-    .pedido-item-name {
-      font-size: 13px;
-      color: #222;
-      font-weight: 500;
-      line-height: 1.4;
-    }
-
-    .pedido-item-var {
-      font-size: 11px;
-      color: #888;
-      margin-top: 4px;
-    }
-
-    .pedido-item-price-qty {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 8px;
-    }
-
-    .pedido-item-price {
-      font-size: 14px;
-      font-weight: 700;
-      color: #111;
-    }
-
-    .pedido-item-qty {
-      font-size: 12px;
-      color: #666;
+      height: 44px;
+      border: none;
+      border-radius: 999px;
+      background: #fe2c55;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
     }
   </style>
-  <!-- TikTok Shop Oficial Favicon -->
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAAAAAAAAQCEeRdzAAAFZUlEQVR4nKWXbWwURRjHf7O7d30vxRZaihUIBD+0JCo2pkIBwQBVEmNLMRFikwZCgPClBjTEoOAHoJKgEcKbQVtoQAIUiyKEBEhVAthwRRQiBRG19IW3chRK6e2Ome21XLfX3l35J3t7u/vM/P/PMzPPPCOIAAKhbikSORp4LuCTCVwTiL/dLvddn8+HKdWr0DDC5H4GyJfIAuAlYGgQG0simzvMjhqJ3A38ANx7WgFuoARYCqQ7vknHswakWZY1C1DXv0ApsNkfoYgFjAN2AC/3QeiE83sG8CXwjqZrxVLKOmnJ0AJ0Q8c0zbeQlAGDwiAOJWiiZVo/ISjSdO2oZVr9CBAo8llIvgWiQpELoRGf8az9/7HXS3tLS19CUpFUWpb1tlOE4TDODpdcITYlhdW795CVlUXi8bPMmzePugeN9mTo6afdVwyScinlBOBKMAExSHvMY8MNu5pZz8fFMjExgehpU5k7eRKfHN7buViDR2KotKQa2gnBBCwDsiIdc58leQRExwqKPlrOluM/0vjofl/mqu9XgYXA1kABKcASBgAhpd9ji5E549l1cB9FRUXUNzX210w5Ww60dQmY608uEc94Hb8AXQMpmTZjOmfO17LzwD7Ky8u5dPqss4niUJk0H0GFoekalmnNYYDQpLDD+KjxJtFJSchoF8NSU/lw0RKmRqVTcLqQVkxahMM9QYFhGBWGZVrDgMyBCrCEZgtoP3WB/VVVzNz4KcnxCTZZtEsQhYu2YIlQku3r8MWrtmPCSjhDUhmblUV6chonjx+HOw1oUmIJaTeM092UlX3FxuojLFu2jPxRr5BU1wxCV5tEMKQBI5SAzkziQHfEXG5yCwvJW7yQ7OxsXr+ts6K4mDVHdhFrqv2xs3cpIEaP5di1PylYPJ8XiWJwzGCaRDuPlElPEepJcY+2f4IJ6LKfUrKckpISZgwdbO9MxEGaS+tW2bUKhGoQ4KqHdmjrdyUoRPezGQnGTZ/J+wvn84Ii90ruezy4D3tIrK23LXyGwBLCmfUiggFc7Unr9z4mljcLZzN5+HA7NfJFBZtLS9nU+js+f3w6DB1dCvSB83uVgP8C33QHMS2NrPHjSdAMfHU3WL3vG6paL/BPgEoVdk0bEL3qQQWu3vBvDPd6rYQoN8mDk1SmwXvnFr/U19E9ot1WAqF3TkNNCPuKIJU1ILiuElGDZVp/+HP0E9xrgQetttakjHTciUk8vG37343UkSOIS0iwXXl814th+SKJwVld172GZdlTaG8vAQ3NXPL8xszMTLT0FBat+IDqBSpj+zFmFPlLF5E5ZBjRwOlzHrz0uQn1hmS/aZoY/pBVACt67gcmZVu3MH/ObOLdLt6Y/y4Hx2aw/ugxXC4XudOmkpOTwyCp8fDcZQ6dOEYz/gg4067T986Jf0DZdC3DW8AmYFWg5fmfq1n58Uo2rFljP782KZcpk3J57K8FVNXCmUaq123m4MUzdid+70LhM7UTqj+G42Whsyb4fO1avPVNlK5eRfLIDFu+TXyjnTaPh5Prt1F5spKLnf2Fgmp+qqsWcApoQ1CM5ERnvnsiYsfOrzm3p5K8vDxmJ49GSknTpSvU1NSwwbzKg66u+/dcWTQLTRQFVseGw+hXf23Qqy6s7Wihtmo36/yN1DD0QGjyhwjeC6wHewtQiUXXvrMsazaSXcF2SXvJ9csVlPy2Ite0UGU5qOJE3b4HciM8mAQjVqgGFiC57CQPKiAAF/zVa7hHM2cx/BfYI7btac6Gj4G1wHa7hoOuw+mQIIQKNwFVBKrD6SG12YToP+zT8W0hxHZN07abpqkqaFVFOY/n19Wl6/pNleHCxf9wyvJIDG8F0wAAAABJRU5ErkJggg==">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <link rel="preload" as="image" href="../decalque/decalque-oferta.jpg?v=1111" fetchpriority="high">
-  <link rel="preload" as="image" href="../img/banner-1111-modal.webp" fetchpriority="high">
-  <!-- Google Fonts: Plus Jakarta Sans & Inter (Oficial TikTok Parity) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 </head>
 
 <body>
 
-  <div class="pix-container">
+  <div class="tt-copy-toast" id="tt-copy-toast">
+    <svg width="17" height="17" viewBox="0 0 20 20" fill="none" style="flex-shrink:0;">
+      <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+      <path d="M6.2 10.3L8.8 12.8L13.9 7.4" stroke="#26262a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span id="tt-copy-toast-text">O código foi copiado</span>
+  </div>
 
-    <!-- HEADER (Transparente sem borda cinza, idêntico à Imagem 2) -->
+  <!-- TELA 1: CÓDIGO DO PAGAMENTO -->
+  <div class="pix-screen" id="pix-code-screen">
     <header class="pix-header">
-      <button class="pix-header-back" onclick="window.location.href='resumo.html'">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#161823" stroke-width="2.8">
-          <polyline points="15 18 9 12 15 6"></polyline>
+      <button type="button" class="pix-back-btn" onclick="window.location.href='resumo.html'" aria-label="Voltar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15.5 4.75L8.25 12L15.5 19.25"></path>
         </svg>
       </button>
       <div class="pix-header-title">Código do pagamento</div>
+      <div class="pix-header-spacer"></div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <div class="pix-content">
-
-      <!-- Status do pedido -->
-      <div class="pix-status-box">
+    <div class="pix-main">
+      <div class="pix-status-row">
         <div class="pix-status-left">
-          <div class="pix-status-title">Aguardando o<br>pagamento</div>
-          <div class="pix-status-price" id="pix-total-price">R$ 0,00</div>
-          <div class="pix-status-expire">
+          <div class="pix-status-heading">Aguardando o<br>pagamento</div>
+          <div class="pix-status-amount" id="pix-total-price">R$ 0,00</div>
+          <div class="pix-expire-row">
             <span>Vence em</span>
-            <div class="pix-expire-badge">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#fff" stroke-width="3"
-                style="margin-top: 0.5px;">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
+            <span class="pix-expire-pill">
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;">
+                <circle cx="8" cy="8" r="6.8" fill="#ffffff"/>
+                <path d="M8 4.4V8.2L10.5 9.7" stroke="#ef4b39" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               <span id="pix-countdown">23:59:59</span>
-            </div>
+            </span>
           </div>
-          <div class="pix-status-date" id="pix-deadline-date">Prazo <strong>15 de out. de 2026, 13:36</strong></div>
+          <div class="pix-deadline-row" id="pix-deadline-date">Prazo <strong>26 de nov. de 2026, 03:34</strong></div>
         </div>
-        
-        <!-- Ícone do Relógio Laranja Sólido Oficial (Imagem 2) -->
-        <div class="pix-status-icon-orange">
-          <svg viewBox="0 0 44 44" width="44" height="44" fill="none">
-            <circle cx="22" cy="22" r="22" fill="#ff9800"/>
-            <path d="M22 13V22H31" stroke="#ffffff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <div class="pix-clock-orange">
+          <svg viewBox="0 0 46 46" width="46" height="46" fill="none">
+            <circle cx="23" cy="23" r="23" fill="#f59a0c"/>
+            <path d="M23 13V23.5L29.5 27.5" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
       </div>
 
-      <!-- Bloco Copia e Cola -->
-      <div class="pix-code-box">
-        <div class="pix-brand-row">
-          <div class="pix-logo-badge">
-            <img src="../logopix/pix-symbol.png?v=1" alt="Pix" style="width: 22px; height: 22px; object-fit: contain; display: block;" />
+      <div class="pix-card">
+        <div class="pix-card-brand">
+          <div class="pix-badge-rect">
+            <img src="../logopix/pix-symbol.png" onerror="this.src='/logopix/pix-symbol.png'" alt="Pix">
+            <span>pix</span>
           </div>
-          <span class="pix-brand-name">Pix</span>
+          <span class="pix-card-brand-title">Pix</span>
         </div>
-        <input type="text" class="pix-textarea" id="pix-code-text" readonly
-          value="00020101021226870014br.gov.bcb.pix25650021qrpix-h.sigilopay.com/v2/01b87a8761bf4604928f2">
-        <button class="pix-copy-btn" onclick="copyPixCode()">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
-            <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+
+        <input type="text" class="pix-code-preview" id="pix-code-text" readonly value="00020101021226740014br.gov.bcb.pix...">
+
+        <button type="button" class="pix-btn-copy" onclick="copyPixCode()">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+            <path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"></path>
           </svg>
-          Copiar
+          <span>Copiar</span>
         </button>
       </div>
 
-      <!-- Texto explicativo cinza -->
-      <div class="pix-instructions-note">
-        Para acessar esta página no app, abra <strong>Loja &gt; Pedidos &gt; Sem pagamento &gt; Visualizar o
-          código</strong>
+      <div class="pix-path-note">
+        Para acessar esta página no app, abra <strong>Loja &gt; Pedidos &gt; Sem pagamento &gt; Visualizar o código</strong>
       </div>
 
-      <!-- Como pagar com pix -->
-      <div class="pix-instructions-section">
-        <div class="pix-instructions-title">Como fazer pagamentos com Pix?</div>
-        <div class="pix-instructions-desc">
+      <div>
+        <div class="pix-howto-title">Como fazer pagamentos com Pix?</div>
+        <div class="pix-howto-desc">
           Copie o código de pagamento acima, selecione Pix no seu app de internet ou de banco e cole o código.
         </div>
       </div>
-
     </div>
 
-    <!-- FOOTER COM BOTÃO VER PEDIDO IDÊNTICO À IMAGEM 2 -->
-    <footer class="pix-footer">
-      <button class="pix-btn-ver-pedido" onclick="openPedidoModal()">Ver pedido</button>
+    <footer class="pix-footer-bar">
+      <button type="button" class="pix-btn-ver-pedido" onclick="abrirFluxoVerPedido()">Ver pedido</button>
     </footer>
-
   </div>
 
-  <!-- MODAL DE LISTA DE PRODUTOS -->
-  <div class="pedido-modal" id="pedido-modal-box">
-    <div class="pedido-modal-header">
-      <button class="pix-header-back" onclick="closePedidoModal()">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2.5">
-          <polyline points="15 18 9 12 15 6"></polyline>
+  <!-- TRANSIÇÃO: LOADER 2 BOLAS EM TELA BRANCA -->
+  <div class="order-loading-screen" id="order-loading-screen">
+    <div class="order-loading-header">
+      <button type="button" class="pix-back-btn" onclick="voltarParaCodigoPix()" aria-label="Voltar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15.5 4.75L8.25 12L15.5 19.25"></path>
         </svg>
       </button>
-      <div class="pedido-modal-title">Detalhes do Pedido</div>
     </div>
-    <div class="pedido-modal-content">
-      <div class="pedido-card">
-        <div class="pedido-store-name">Stone Shop</div>
-        <div id="pedido-items-list">
-          <!-- Preenchido via Javascript -->
-        </div>
+    <div class="order-loading-body">
+      <div class="tt-two-balls">
+        <div class="b-pink"></div>
+        <div class="b-cyan"></div>
       </div>
     </div>
   </div>
 
-  <script>
-    function formatarMoeda(valor) {
-      return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    }
+  <!-- TELA 2 & 3: AGUARDANDO PAGAMENTO + PRODUTOS STONE SHOP -->
+  <div class="order-detail-screen" id="order-detail-screen">
+    <div class="od-sticky-topbar" id="od-sticky-topbar">
+      <button type="button" class="pix-back-btn" onclick="voltarParaCodigoPix()" aria-label="Voltar">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15.5 4.75L8.25 12L15.5 19.25"></path>
+        </svg>
+      </button>
+      <div style="font-size:17px; font-weight:700; color:#000000; flex:1; text-align:center;">Aguardando pagamento</div>
+      <div style="width:32px;"></div>
+    </div>
 
-    // ===== Lê dados gerados pelo gateway Syncpay/SealPay =====
-    const pixCode = sessionStorage.getItem('sealpay_pix_code') || '';
-    const pixTxid = sessionStorage.getItem('sealpay_txid') || '';
-    const pixTotal = parseFloat(sessionStorage.getItem('sealpay_total') || '0');
+    <div class="od-hero" id="od-hero">
+      <svg class="od-hero-watermark" viewBox="0 0 80 80" fill="none">
+        <circle cx="40" cy="40" r="34" stroke="#cfe5ea" stroke-width="7"/>
+        <path d="M40 22V41H55" stroke="#cfe5ea" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="od-hero-top">
+        <button type="button" class="pix-back-btn" onclick="voltarParaCodigoPix()" aria-label="Voltar" style="width:26px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15.5 4.75L8.25 12L15.5 19.25"></path>
+          </svg>
+        </button>
+        <div class="od-hero-title">Aguardando pagamento</div>
+      </div>
+      <div class="od-hero-sub">Reservados por <strong>23h</strong></div>
+    </div>
 
-    // Exibe o valor correto
-    const totalEl = document.getElementById('pix-total-price');
-    if (totalEl) {
-      totalEl.textContent = 'R$ ' + (pixTotal > 0 ? formatarMoeda(pixTotal) : '0,00');
-    }
-
-    // Exibe o código PIX real no campo de texto
-    const codeEl = document.getElementById('pix-code-text');
-    if (codeEl) {
-      if (pixCode) {
-        codeEl.value = pixCode;
-      } else {
-        codeEl.value = 'Aguardando geração do código PIX...';
-      }
-    }
-
-    // ===== Itens do pedido (modal "Ver pedido") =====
-    function getCart() {
-      try {
-        const pedidos = JSON.parse(localStorage.getItem('famosinhos_pedidos') || '[]');
-        if (pedidos && pedidos.length > 0 && pedidos[0].itens) {
-          return pedidos[0].itens;
-        }
-        return JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
-      } catch (e) { return []; }
-    }
-
-    function renderPedidoItems() {
-      const cart = getCart();
-      const listEl = document.getElementById('pedido-items-list');
-      if (!listEl) return;
-
-      if (!cart.length) {
-        listEl.innerHTML = '<p style="color:#888;font-size:13px;text-align:center;">Nenhum produto no pedido.</p>';
-        return;
-      }
-
-      let html = '';
-      cart.forEach(item => {
-        const qty = item.qty || 1;
-        const price = typeof item.preco === 'number' ? item.preco : parseFloat(String(item.preco).replace(',', '.'));
-
-        let imgSrc = item.img || '';
-        if (!imgSrc.startsWith('http') && !imgSrc.startsWith('//')) {
-          if (imgSrc.startsWith('../')) imgSrc = imgSrc.substring(3);
-          imgSrc = '../' + imgSrc;
-        } else if (imgSrc.startsWith('//')) {
-          imgSrc = 'https:' + imgSrc;
-        }
-
-        html += `
-      <div class="pedido-item-row">
-        <img class="pedido-item-img" src="${imgSrc}" onerror="this.src='https://via.placeholder.com/64'">
-        <div class="pedido-item-details">
-          <div class="pedido-item-name">${item.nome}</div>
-          ${item.variacao ? `<div class="pedido-item-var">${item.variacao}</div>` : ''}
-          <div class="pedido-item-price-qty">
-            <span class="pedido-item-price">R$ ${formatarMoeda(price)}</span>
-            <span class="pedido-item-qty">x${qty}</span>
-          </div>
+    <div class="od-top-card">
+      <div class="od-pay-summary">
+        <img class="od-pix-icon-card" src="../logopix/pix-card-icon.png" onerror="this.src='/logopix/pix-card-icon.png'" alt="Pix">
+        <div>
+          <div style="font-size:15px; font-weight:700; color:#111111;" id="od-top-total">Total R$ 0,00</div>
+          <div style="font-size:13px; color:#73747b; margin-top:3px;">PIX</div>
+          <span class="od-link-blue" onclick="window.location.href='resumo.html'">Alterar o método de pagamento</span>
         </div>
       </div>
-    `;
-      });
 
-      listEl.innerHTML = html;
+      <div class="od-addr-summary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#b0b3b8" style="flex-shrink:0; margin-top:2px;">
+          <path d="M12 2C7.86 2 4.5 5.36 4.5 9.5C4.5 15.12 12 22 12 22C12 22 19.5 15.12 19.5 9.5C19.5 5.36 16.14 2 12 2ZM12 12.2C10.51 12.2 9.3 10.99 9.3 9.5C9.3 8.01 10.51 6.8 12 6.8C13.49 6.8 14.7 8.01 14.7 9.5C14.7 10.99 13.49 12.2 12 12.2Z"/>
+        </svg>
+        <div style="flex:1; min-width:0;">
+          <div style="font-size:14.5px; color:#111111; line-height:1.35;" id="od-customer-name-tel"></div>
+          <div style="font-size:13.5px; color:#57585e; margin-top:3px;" id="od-customer-email"></div>
+          <div style="font-size:13.5px; color:#57585e; line-height:1.38; margin-top:3px;" id="od-customer-addr"></div>
+          <span class="od-link-blue" onclick="window.location.href='resumo.html'">Mudar endereço</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="od-section-card">
+      <div class="od-store-row">
+        <div class="od-store-left">
+          <img class="od-store-avatar" src="../logo.png" onerror="this.src='/logo.png'" alt="Stone Shop">
+          <span class="od-star-badge">Loja Estrela</span>
+          <span class="od-store-name">STONE SHOP</span>
+        </div>
+        <a class="od-store-nav" href="../index.html">
+          <span>Navegar pela loja</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#73747b" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div id="od-items-container"></div>
+
+      <div class="od-meta-divider"></div>
+
+      <div class="od-meta-row">
+        <span>Número do pedido</span>
+        <div style="display:inline-flex; align-items:center; gap:6px; color:#111111; font-weight:500;">
+          <span id="od-order-number">587377171033982322</span>
+          <button type="button" onclick="copiarNumeroPedido()" aria-label="Copiar número do pedido" style="border:none; background:none; padding:0; cursor:pointer; display:inline-flex; align-items:center; color:#111111;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+              <path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="od-meta-row" style="align-items:flex-start; margin-top:14px;">
+        <div style="display:inline-flex; align-items:center; gap:8px;">
+          <img class="od-pix-icon-card" src="../logopix/pix-card-icon.png" onerror="this.src='/logopix/pix-card-icon.png'" alt="Pix">
+          <span>PIX</span>
+        </div>
+        <div style="text-align:right;">
+          <div style="display:inline-flex; align-items:center; gap:4px; color:#57585e;">
+            <span>Total:</span>
+            <strong style="color:#111111; font-size:14.5px; font-weight:700;" id="od-meta-total">R$ 0,00</strong>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#57585e" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div style="font-size:12px; color:#57585e; margin-top:3px;">Impostos inclusos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="od-contact-card">
+      <div class="od-contact-row" onclick="window.location.href='../index.html'">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#73747b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            <path d="M9.5 13.5s1 1.2 2.5 1.2 2.5-1.2 2.5-1.2"/>
+          </svg>
+          <span>Entre em contato com o vendedor</span>
+        </div>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div class="od-contact-row" onclick="voltarParaCodigoPix()">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#73747b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9.5"/>
+            <path d="M9.4 9.3a2.7 2.7 0 0 1 5.1 1c0 1.8-2.5 2.4-2.5 3.7"/>
+            <circle cx="12" cy="17" r="0.8" fill="#73747b"/>
+          </svg>
+          <span>Entrar em contato com o TikTok Shop</span>
+        </div>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+    </div>
+
+    <div class="od-protection-card">
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div style="display:flex; align-items:center; gap:7px;">
+          <svg width="16" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L4 5.2V11.2C4 16.5 7.4 21.4 12 22.8C16.6 21.4 20 16.5 20 11.2V5.2L12 2Z" fill="#8b5715"/>
+            <path d="M8.8 12.1L11 14.3L15.4 9.8" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span style="font-size:13.5px; font-weight:600; color:#8b5715;">Proteção do cliente</span>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5715" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div style="display:grid; grid-template-columns:44% 56%; row-gap:7px; column-gap:8px; margin-top:10px; font-size:12.5px; color:#222222;">
+        <div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style="color:#8b5715; font-weight:700;">✓</span> Devolução gratuita</div>
+        <div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style="color:#8b5715; font-weight:700;">✓</span> Reembolso se algo der errado</div>
+        <div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style="color:#8b5715; font-weight:700;">✓</span> Pagamento seguro</div>
+        <div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><span style="color:#8b5715; font-weight:700;">✓</span> Se o seu pedido não for enviado</div>
+      </div>
+    </div>
+
+    <div class="od-rec-section">
+      <h3 class="od-rec-title">Você também pode gostar</h3>
+      <div class="od-rec-grid" id="od-stone-products-grid"></div>
+    </div>
+  </div>
+
+  <div class="od-bottom-actions" id="od-bottom-actions">
+    <button type="button" class="od-btn-cancel" onclick="window.location.href='../index.html'">Cancelar pedido</button>
+    <button type="button" class="od-btn-code" onclick="voltarParaCodigoPix()">Visualizar código</button>
+  </div>
+
+  <script src="../js/catalogo.js?v=1795410323540"></script>
+  <script>
+    function formatarMoeda(valor) {
+      return Number(valor || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }
 
-    // ===== Copiar código PIX =====
-    function copyPixCode() {
-      const btn = document.querySelector('.pix-copy-btn');
-      const input = document.getElementById('pix-code-text');
-      const code = input ? input.value : pixCode;
+    const pixCode = sessionStorage.getItem('sealpay_pix_code') || '';
+    const pixTxid = sessionStorage.getItem('sealpay_txid') || '';
+    let pixTotal = parseFloat(sessionStorage.getItem('sealpay_total') || '0');
 
-      if (!code || code.includes('Aguardando')) {
-        alert('Código PIX ainda não disponível.');
-        return;
-      }
+    function getOrderData() {
+      try {
+        const pedidos = JSON.parse(localStorage.getItem('famosinhos_pedidos') || '[]');
+        if (Array.isArray(pedidos) && pedidos.length > 0) return pedidos[0];
+      } catch (e) {}
+      return null;
+    }
 
-      const execCopy = () => {
-        if (btn) {
-          const originalHTML = btn.innerHTML;
-          btn.innerHTML = `
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-        Copiado
-      `;
-          btn.classList.add('copied-success');
+    const currentOrder = getOrderData();
+    if ((!pixTotal || pixTotal <= 0) && currentOrder && currentOrder.total) {
+      pixTotal = parseFloat(currentOrder.total) || 0;
+    }
 
-          setTimeout(() => {
-            btn.innerHTML = originalHTML;
-            btn.classList.remove('copied-success');
-          }, 4000);
-        }
-      };
+    const totalFormatted = 'R$ ' + formatarMoeda(pixTotal > 0 ? pixTotal : 19.90);
+    document.getElementById('pix-total-price').textContent = totalFormatted;
+    document.getElementById('od-top-total').textContent = 'Total ' + totalFormatted;
+    document.getElementById('od-meta-total').textContent = totalFormatted;
 
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(code).then(execCopy).catch(() => {
-          if (input) {
-            input.select();
-            document.execCommand('copy');
-            execCopy();
-          }
+    const codeEl = document.getElementById('pix-code-text');
+    const resolvedPixCode = pixCode || (currentOrder && currentOrder.pix_code) || '';
+    if (codeEl) {
+      codeEl.value = resolvedPixCode || 'Aguardando geração do código PIX...';
+    }
+
+    let orderNumber18 = sessionStorage.getItem('stone_order_num18');
+    if (!orderNumber18) {
+      const seed = String(Date.now());
+      orderNumber18 = '58737' + seed.slice(-13).padStart(13, '2');
+      sessionStorage.setItem('stone_order_num18', orderNumber18);
+    }
+    document.getElementById('od-order-number').textContent = orderNumber18;
+
+    let _toastTimer = null;
+    function showTopCopyToast(msg) {
+      const t = document.getElementById('tt-copy-toast');
+      const tx = document.getElementById('tt-copy-toast-text');
+      if (!t || !tx) return;
+      tx.textContent = msg || 'O código foi copiado';
+      t.classList.add('is-visible');
+      clearTimeout(_toastTimer);
+      _toastTimer = setTimeout(() => {
+        t.classList.remove('is-visible');
+      }, 2400);
+    }
+
+    function copyTextSafe(text, toastMsg) {
+      if (!text || text.includes('Aguardando')) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showTopCopyToast(toastMsg)).catch(() => {
+          fallbackExecCopy(text, toastMsg);
         });
       } else {
-        if (input) {
-          input.select();
-          document.execCommand('copy');
-          execCopy();
-        }
+        fallbackExecCopy(text, toastMsg);
       }
     }
 
-    // ===== Relógio regressivo 24h =====
+    function fallbackExecCopy(text, toastMsg) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;left:-9999px;top:0;';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+      showTopCopyToast(toastMsg);
+    }
+
+    function copyPixCode() {
+      const val = codeEl ? codeEl.value : resolvedPixCode;
+      copyTextSafe(val, 'O código foi copiado');
+    }
+
+    function copiarNumeroPedido() {
+      copyTextSafe(orderNumber18, 'Copiado');
+    }
+
+    function populateOrderDetailsScreen() {
+      const nome = localStorage.getItem('user_nome') || (currentOrder && currentOrder.cliente && currentOrder.cliente.nome) || 'Cliente';
+      const rawTel = String(localStorage.getItem('user_tel') || (currentOrder && currentOrder.cliente && currentOrder.cliente.tel) || '').replace(/\D/g, '');
+      const telMasked = rawTel.length >= 10 ? `(+55)${rawTel.slice(0, 2)}*******${rawTel.slice(-2)}` : '';
+      const email = localStorage.getItem('user_email') || '';
+      const rua = localStorage.getItem('user_rua') || '';
+      const num = localStorage.getItem('user_numero') || 's/n';
+      const bairro = localStorage.getItem('user_bairro') || '';
+      const cidade = localStorage.getItem('user_cidade') || '';
+      const estado = localStorage.getItem('user_estado') || '';
+      const cep = localStorage.getItem('user_cep') || '';
+
+      const UF_MAP = {
+        AC:'Acre', AL:'Alagoas', AP:'Amapá', AM:'Amazonas', BA:'Bahia', CE:'Ceará', DF:'Distrito Federal',
+        ES:'Espírito Santo', GO:'Goiás', MA:'Maranhão', MT:'Mato Grosso', MS:'Mato Grosso do Sul', MG:'Minas Gerais',
+        PA:'Pará', PB:'Paraíba', PR:'Paraná', PE:'Pernambuco', PI:'Piauí', RJ:'Rio de Janeiro', RN:'Rio Grande do Norte',
+        RS:'Rio Grande do Sul', RO:'Rondônia', RR:'Roraima', SC:'Santa Catarina', SP:'São Paulo', SE:'Sergipe', TO:'Tocantins'
+      };
+      const estadoFull = UF_MAP[estado] || estado;
+
+      const nameTelEl = document.getElementById('od-customer-name-tel');
+      if (nameTelEl) {
+        nameTelEl.innerHTML = `<strong style="font-weight:700;">${nome}</strong>${telMasked ? ', ' + telMasked : ''}`;
+      }
+      const emailEl = document.getElementById('od-customer-email');
+      if (emailEl) {
+        emailEl.textContent = email;
+        emailEl.style.display = email ? 'block' : 'none';
+      }
+      const addrEl = document.getElementById('od-customer-addr');
+      if (addrEl) {
+        const parts = [rua, num, bairro, cidade, estadoFull, cep].filter(Boolean);
+        addrEl.textContent = parts.length ? parts.join(', ') : (localStorage.getItem('user_address') || '');
+      }
+
+      let items = [];
+      if (currentOrder && Array.isArray(currentOrder.itens) && currentOrder.itens.length) {
+        items = currentOrder.itens;
+      } else {
+        try { items = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) {}
+        if (!items.length) {
+          try { items = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]'); } catch (e) {}
+        }
+      }
+
+      const itemsBox = document.getElementById('od-items-container');
+      if (itemsBox) {
+        itemsBox.innerHTML = items.map(item => {
+          const qty = parseInt(item.qty) || 1;
+          const pr = typeof item.preco === 'number' ? item.preco : (parseFloat(String(item.preco || '19.90').replace(',', '.')) || 19.90);
+          let imgSrc = item.img || '../img/prod-104-local-1.webp';
+          if (!imgSrc.startsWith('http') && !imgSrc.startsWith('/') && !imgSrc.startsWith('../')) {
+            imgSrc = '../' + imgSrc.replace(/^\.\//, '');
+          }
+          return `
+            <div class="od-item-row">
+              <img class="od-item-img" src="${imgSrc}" onerror="this.src='../logo.png'" alt="">
+              <div class="od-item-mid">
+                <div class="od-item-title">${item.nome || 'Produto Stone Shop'}</div>
+                <div class="od-item-var">${item.variacao || 'Padrão'}</div>
+                <div class="od-devolucao-pill">
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="2.5" width="13" height="11" rx="2" fill="#8b5715"/><path d="M5.5 8.5H10.5M5.5 8.5L7.3 6.8M5.5 8.5L7.3 10.2" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Devolução gratuita</span>
+                </div>
+              </div>
+              <div class="od-item-right">
+                <div style="font-size:14.5px; font-weight:500; color:#111111;">R$ ${formatarMoeda(pr)}</div>
+                <div style="font-size:13px; color:#57585e; margin-top:3px;">x${qty}</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      renderStoneShopRecommendations();
+    }
+
+    function renderStoneShopRecommendations() {
+      const grid = document.getElementById('od-stone-products-grid');
+      if (!grid || grid.children.length > 0) return;
+      const list = (typeof CATALOGO_PRODUTOS !== 'undefined' && Array.isArray(CATALOGO_PRODUTOS))
+        ? CATALOGO_PRODUTOS.filter(p => p && p.id && p.nome && p.img).slice(0, 24)
+        : [];
+
+      const couponSvg = `<svg viewBox="0 0 667 534" width="11" height="9" fill="none" style="flex-shrink:0;"><path d="M666.666 166.667C640.145 166.667 614.71 177.203 595.956 195.956C577.202 214.71 566.666 240.145 566.666 266.667C566.666 293.189 577.202 318.624 595.956 337.378C614.71 356.131 640.145 366.667 666.666 366.667V466.667C666.666 503.486 636.819 533.334 600 533.334H466.666V470.601C466.666 452.191 451.743 437.267 433.333 437.267C414.924 437.267 400 452.191 400 470.601V533.334H66.666C29.847 533.334 0 503.486 0 466.667V366.666C55.428 366.576 100.333 266.167 100.333 266.167C100.333 210.718 55.428 165.758 0 165.668V66.667C0 29.848 29.847 0 66.666 0H400V62.733C400 81.143 414.924 96.067 433.333 96.067C451.743 96.067 466.666 81.143 466.666 62.733V0H600C636.819 0 666.666 29.848 666.666 66.667V166.667Z" fill="#d60643"/></svg>`;
+
+      grid.innerHTML = list.map(p => {
+        const pr = parseFloat(String(p.preco || '29.90').replace(',', '.')) || 29.90;
+        const origRaw = p.precoOrig || p.preco_antigo || (pr * 1.9);
+        const orig = parseFloat(String(origRaw).replace(/\./g, '').replace(',', '.')) || (pr * 1.9);
+        const prParts = formatarMoeda(pr).split(',');
+        const descReais = Math.max(5, Math.round(orig - pr));
+        let imgSrc = String(p.img || '');
+        if (!imgSrc.startsWith('http') && !imgSrc.startsWith('/') && !imgSrc.startsWith('../')) {
+          imgSrc = '../' + imgSrc.replace(/^\.\//, '');
+        }
+        const rating = p.nota || '4,8';
+        const vendidos = p.vendidos || '3.4K vendidos';
+        return `
+          <a class="od-rec-card" href="produto-${p.id}.html">
+            <img class="od-rec-img" loading="lazy" decoding="async" src="${imgSrc}" onerror="this.style.display='none'" alt="">
+            <div class="od-rec-body">
+              <div class="od-rec-name">
+                <img src="../img/badge-blackfriday.png" onerror="this.src='/img/badge-blackfriday.png'" alt="Black Friday" style="height:14px; width:auto; vertical-align:-2.5px; margin-right:3px;">
+                <span class="od-star-badge" style="font-size:9.5px; padding:1px 4px; margin-right:3px; vertical-align:1px;">Loja Estrela</span>${p.nome}
+              </div>
+              <div style="display:flex; align-items:baseline; gap:4px; margin-top:2px;">
+                <span style="color:#e10543; font-weight:600; font-size:12px;">R$ <span style="font-size:17px;">${prParts[0]}</span>,${prParts[1]}</span>
+                <span style="color:#8a8b91; font-size:11.5px; text-decoration:line-through;">R$ ${formatarMoeda(orig)}</span>
+              </div>
+              <div>
+                <span style="display:inline-flex; align-items:center; gap:3px; background:#fff2f5; color:#d60643; font-size:10.5px; font-weight:600; padding:1.5px 5px; border-radius:3px;">
+                  ${couponSvg}<span>Desconto de R$ ${descReais}</span>
+                </span>
+              </div>
+              <div style="display:flex; align-items:center; gap:4px; font-size:11.5px; color:#73747b; margin-top:1px;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#ffb800"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>${String(rating).replace('.', ',')}</span>
+                <span style="color:#e0e0e0;">|</span>
+                <span>${String(vendidos).includes('vendido') ? vendidos : (vendidos + ' vendidos')}</span>
+              </div>
+            </div>
+          </a>
+        `;
+      }).join('');
+    }
+
+    function abrirFluxoVerPedido() {
+      const codeScr = document.getElementById('pix-code-screen');
+      const loadScr = document.getElementById('order-loading-screen');
+      const detScr = document.getElementById('order-detail-screen');
+      const botAct = document.getElementById('od-bottom-actions');
+
+      populateOrderDetailsScreen();
+      if (loadScr) loadScr.style.display = 'flex';
+
+      setTimeout(() => {
+        if (codeScr) codeScr.style.display = 'none';
+        if (loadScr) loadScr.style.display = 'none';
+        if (detScr) detScr.style.display = 'flex';
+        if (botAct) botAct.style.display = 'flex';
+        window.scrollTo(0, 0);
+      }, 520);
+    }
+
+    function voltarParaCodigoPix() {
+      const codeScr = document.getElementById('pix-code-screen');
+      const loadScr = document.getElementById('order-loading-screen');
+      const detScr = document.getElementById('order-detail-screen');
+      const botAct = document.getElementById('od-bottom-actions');
+
+      if (loadScr) loadScr.style.display = 'none';
+      if (detScr) detScr.style.display = 'none';
+      if (botAct) botAct.style.display = 'none';
+      if (codeScr) codeScr.style.display = 'flex';
+      window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('scroll', () => {
+      const detScr = document.getElementById('order-detail-screen');
+      const topbar = document.getElementById('od-sticky-topbar');
+      if (!detScr || !topbar || detScr.style.display === 'none') return;
+      const sy = window.scrollY || window.pageYOffset || 0;
+      topbar.classList.toggle('is-stuck', sy > 64);
+    }, { passive: true });
+
     function startRegressivo() {
-      let time = 24 * 3600 - 1;
+      let time = 24 * 3600 - 29;
       const countEl = document.getElementById('pix-countdown');
       setInterval(() => {
         const h = Math.floor(time / 3600);
         const m = Math.floor((time % 3600) / 60);
         const s = time % 60;
-        if (countEl) countEl.textContent =
-          String(h).padStart(2, '0') + ':' +
-          String(m).padStart(2, '0') + ':' +
-          String(s).padStart(2, '0');
+        if (countEl) {
+          countEl.textContent = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+        }
         time--;
         if (time < 0) time = 24 * 3600 - 1;
       }, 1000);
     }
 
-    // ===== Data limite (Formato exato Imagem 2: Prazo 15 de out. de 2026, 13:36) =====
     function setDeadlineDate() {
       const now = new Date();
       now.setDate(now.getDate() + 1);
@@ -667,11 +1309,6 @@
       if (el) el.innerHTML = `Prazo <strong>${dia} de ${mes} de ${ano}, ${hora}:${min}</strong>`;
     }
 
-    // ===== Modal de pedido =====
-    function openPedidoModal() { document.getElementById('pedido-modal-box').style.display = 'flex'; }
-    function closePedidoModal() { document.getElementById('pedido-modal-box').style.display = 'none'; }
-
-    // ===== Polling SyncPay / SealPay: verifica a cada 4s se o pagamento foi confirmado =====
     let _pollingInterval = null;
     function iniciarPolling(txid) {
       if (!txid) return;
@@ -679,45 +1316,27 @@
         try {
           const resp = await fetch(`/api/payment-status/${txid}`);
           const data = await resp.json();
-          console.log('[SyncPay/SealPay] Status:', data);
-
-          const pago = data.status === 'paid' ||
-            data.status === 'approved' ||
-            data.status === 'PAID' ||
-            data.status === 'APPROVED' ||
-            data.paid === true;
-
+          const pago = data.status === 'paid' || data.status === 'approved' || data.status === 'PAID' || data.status === 'APPROVED' || data.paid === true;
           if (pago) {
             clearInterval(_pollingInterval);
             try {
               const valorPago = parseFloat(sessionStorage.getItem('sealpay_total') || pixTotal || 0);
               let itensPago = [];
-              try { itensPago = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) { }
+              try { itensPago = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) {}
               if (typeof window.ttqCompletePayment === 'function') {
                 window.ttqCompletePayment(valorPago, txid, itensPago);
               }
-            } catch (ePix) {
-              console.error('[TikTok Pixel] Erro ao disparar CompletePayment no pix.html:', ePix);
-            }
-            setTimeout(function () {
-              window.location.href = '/up-up-1';
-            }, 1500);
+            } catch (ePix) {}
+            setTimeout(() => { window.location.href = '/up-up-1'; }, 1500);
           }
-        } catch (err) {
-          console.error('[SyncPay/SealPay] Erro no polling:', err);
-        }
+        } catch (err) {}
       }, 4000);
     }
 
-    // ===== Inicializações =====
-    renderPedidoItems();
     startRegressivo();
     setDeadlineDate();
-
-    // Inicia polling se tiver txid
     if (pixTxid) iniciarPolling(pixTxid);
   </script>
-
 </body>
 
 </html>

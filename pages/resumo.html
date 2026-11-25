@@ -966,7 +966,7 @@ input:checked + .tiktok-toggle-slider:before {
     <div class="content" style="padding-bottom: 130px;">
 
       <!-- ENDEREÇO -->
-      <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:14px 16px; cursor:pointer;">
+      <div id="address-container-box" onclick="handleAddressClick()" style="background:#fff; padding:18px 16px; cursor:pointer;">
         <!-- Preenchido dinamicamente por renderAddress() -->
       </div>
 
@@ -1059,56 +1059,56 @@ input:checked + .tiktok-toggle-slider:before {
         </div>
       </div>
 
-      <!-- DETALHES FINANCEIROS DO RESUMO DO PEDIDO -->
-      <div class="summary-finance" style="background:#fff; padding:16px; margin-bottom:8px;">
-        <div class="summary-title" style="font-size:15px; font-weight:700; margin-bottom:12px; color:#111;">Resumo do Pedido</div>
+      <!-- DETALHES FINANCEIROS DO RESUMO DO PEDIDO (ESPAÇAMENTOS 1:1 IMAGEM 2) -->
+      <div class="summary-finance" style="background:#fff; padding:18px 16px 20px 16px; margin-bottom:8px;">
+        <div class="summary-title" style="font-size:16px; font-weight:600; margin-bottom:18px; color:#161823; letter-spacing:-0.2px;">Resumo do Pedido</div>
 
         <!-- Subtotal do produto -->
-        <div class="summary-group" style="margin-bottom:10px;">
-          <div class="summary-group-title" style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px; color:#111;">
-            <span style="display:inline-flex; align-items:center;">Subtotal do produto <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; display:inline-block; margin-left:3px;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+        <div class="summary-group" style="margin-bottom:18px;">
+          <div class="summary-group-title" style="display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; margin-bottom:14px; color:#161823;">
+            <span style="display:inline-flex; align-items:center; gap:5px;">Subtotal do produto <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
             <span id="subtotal-val">R$ 39,90</span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#666; margin-bottom:6px; padding-left:12px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:13px; padding-left:14px;">
             <span>Preço original</span>
-            <span id="preco-original-total">R$ 362,70</span>
+            <span id="preco-original-total" style="color:#222222;">R$ 362,70</span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:13px; padding-left:14px;">
             <span>Desconto no produto</span>
-            <span id="desconto-produto-total">-R$ 322,80</span>
+            <span id="desconto-produto-total" style="color:#e10543;">- R$ 322,80</span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:0; padding-left:14px;">
             <span>Cupons do TikTok Shop</span>
-            <span id="desconto-cupom-total">-R$ 10,72</span>
+            <span id="desconto-cupom-total" style="color:#e10543;">- R$ 10,72</span>
           </div>
-          <div class="summary-row" id="row-bonus-resumo" style="display:none; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+          <div class="summary-row" id="row-bonus-resumo" style="display:none; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-top:13px; margin-bottom:0; padding-left:14px;">
             <span>Bônus TikTok Shop</span>
-            <span id="desconto-bonus-total">-R$ 3,27</span>
+            <span id="desconto-bonus-total" style="color:#e10543;">- R$ 3,27</span>
           </div>
         </div>
 
         <!-- Subtotal do envio -->
-        <div class="summary-group" style="margin-bottom:10px;">
-          <div class="summary-group-title" style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px; color:#111;">
-            <span style="display:inline-flex; align-items:center;">Subtotal do envio <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; display:inline-block; margin-left:3px;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
+        <div class="summary-group" style="margin-bottom:20px;">
+          <div class="summary-group-title" style="display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; margin-bottom:14px; color:#161823;">
+            <span style="display:inline-flex; align-items:center; gap:5px;">Subtotal do envio <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
             <span>R$ 0,00</span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#666; margin-bottom:6px; padding-left:12px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:13px; padding-left:14px;">
             <span>Taxa de envio</span>
-            <span id="taxa-envio-val">R$ 21,30</span>
+            <span id="taxa-envio-val" style="color:#222222;">R$ 21,30</span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; font-size:13px; color:#fe2c55; margin-bottom:6px; padding-left:12px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:0; padding-left:14px;">
             <span>Desconto de envio</span>
-            <span id="desconto-envio-val">-R$ 21,30</span>
+            <span id="desconto-envio-val" style="color:#e10543;">- R$ 21,30</span>
           </div>
         </div>
 
         <!-- Total geral -->
-        <div class="summary-row bold" style="display:flex; justify-content:space-between; font-weight:700; color:#111; font-size:14px; border-top:1px solid #f2f2f2; padding-top:10px; margin-top:8px;">
+        <div class="summary-row bold" style="display:flex; justify-content:space-between; align-items:flex-start; font-weight:700; color:#000000; font-size:17px; border-top:none; padding-top:4px; margin-top:4px; margin-bottom:0; padding-left:0;">
           <span>Total</span>
           <div style="text-align:right;">
-            <span style="font-size:16px;color:#000;" id="total-geral-val">R$ 39,90</span>
-            <div style="font-size:11px;color:#999;font-weight:normal;margin-top:2px;">Impostos inclusos</div>
+            <span style="font-size:17px; font-weight:700; color:#000000;" id="total-geral-val">R$ 39,90</span>
+            <div style="font-size:12.5px; color:#73747b; font-weight:400; margin-top:5px;">Impostos inclusos</div>
           </div>
         </div>
       </div>
@@ -1315,10 +1315,16 @@ input:checked + .tiktok-toggle-slider:before {
         <!-- CARD 1: Informações de endereço (Idêntico aos Prints 1 e 2) -->
         <div style="background:#ffffff; border-radius:8px; margin:0 12px; padding:0 16px 4px 16px; box-sizing:border-box;">
           
-          <!-- CEP/Código postal -->
-          <div id="addr-cep-wrap" class="tiktok-input-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s;">
-            <input id="addr-cep" type="tel" maxlength="9" placeholder="CEP/Código postal" autocomplete="postal-code"
-              style="width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+          <!-- CEP/Código postal + Sugestão Flutuante Oficial 1:1 -->
+          <div style="position:relative;">
+            <div id="addr-cep-wrap" class="tiktok-input-wrap" style="border-bottom:1px solid #ebebeb; padding:16px 0 12px 0; transition:border-color 0.2s; display:flex; align-items:center; gap:8px;">
+              <input id="addr-cep" type="tel" maxlength="9" placeholder="CEP/Código postal" autocomplete="postal-code"
+                style="flex:1; width:100%; border:none; outline:none; font-size:16px; color:#161823; background:transparent; font-family:inherit; padding:0; line-height:22px;" />
+              <button type="button" id="addr-cep-clear-btn" onclick="limparCampoCepResumo(event)" aria-label="Limpar CEP"
+                style="display:none; width:18px; height:18px; border-radius:50%; border:none; background:#b0b0b5; color:#ffffff; align-items:center; justify-content:center; padding:0; cursor:pointer; flex-shrink:0;">
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><line x1="3" y1="3" x2="9" y2="9"/><line x1="9" y1="3" x2="3" y2="9"/></svg>
+              </button>
+            </div>
             <div id="addr-cep-error" style="display:none; align-items:center; gap:6px; color:#fe2c55; font-size:13px; margin-top:6px; font-weight:400;">
               <svg viewBox="0 0 24 24" width="15" height="15" style="flex-shrink:0;">
                 <path d="M12 2L1 21h22L12 2z" fill="#fe2c55"/>
@@ -1326,6 +1332,13 @@ input:checked + .tiktok-toggle-slider:before {
                 <circle cx="12" cy="16.5" r="1.2" fill="#ffffff"/>
               </svg>
               <span>Insira um CEP válido</span>
+            </div>
+            <div id="addr-cep-suggest-card" onclick="aplicarSugestaoCepResumo(event)"
+              style="display:none; position:relative; z-index:30; margin:8px -4px 4px -4px; padding:13px 16px; background:#ffffff; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.12); border:1px solid rgba(0,0,0,0.04); cursor:pointer; -webkit-tap-highlight-color:transparent;">
+              <div style="font-size:15px; line-height:1.3; color:#73747b;">
+                <strong id="cep-sug-num" style="color:#161823; font-weight:600;"></strong><span id="cep-sug-rua"></span>
+              </div>
+              <div id="cep-sug-sub" style="font-size:13px; color:#8a8b91; line-height:1.35; margin-top:3px;"></div>
             </div>
           </div>
 
@@ -1499,8 +1512,33 @@ input:checked + .tiktok-toggle-slider:before {
     </div>
   </div>
 
+  <!-- MODAL OFICIAL TIKTOK SHOP — NOTA DO PEDIDO (1:1 IMAGEM 1) -->
+  <div id="nota-pedido-overlay" onclick="if(event.target===this)fecharNotaPedidoModal()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.50); z-index:999997; align-items:flex-end; justify-content:center; font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+    <div style="width:100%; max-width:480px; background:#ffffff; border-radius:14px 14px 0 0; overflow:hidden; box-sizing:border-box; animation:ttNotaSlideUp 0.22s cubic-bezier(0.32,0.72,0,1);">
+      <style>
+        @keyframes ttNotaSlideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        #nota-pedido-textarea::placeholder { color: #8a8b91; font-weight: 400; }
+      </style>
+      <div style="height:52px; display:flex; align-items:center; justify-content:center; position:relative; border-bottom:1px solid #f0f0f0; padding:0 16px;">
+        <span style="font-size:16.5px; font-weight:700; color:#000000; letter-spacing:-0.2px;">Nota do pedido</span>
+        <button type="button" onclick="fecharNotaPedidoModal()" aria-label="Fechar" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); width:32px; height:32px; border:none; background:none; cursor:pointer; display:flex; align-items:center; justify-content:center; color:#111111; -webkit-tap-highlight-color:transparent;">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.1" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div style="padding:16px 16px calc(18px + env(safe-area-inset-bottom, 0px)) 16px;">
+        <div style="background:#f5f5f5; border-radius:8px; padding:14px 14px; height:188px; box-sizing:border-box;">
+          <textarea id="nota-pedido-textarea" maxlength="200" oninput="atualizarContadorNotaPedido()" placeholder="Forneça ao vendedor mais informações sobre seu pedido (opcional)" style="width:100%; height:100%; border:none; outline:none; resize:none; background:transparent; font-size:15px; line-height:1.4; color:#161823; font-family:inherit;"></textarea>
+        </div>
+        <div id="nota-pedido-counter" style="margin-top:8px; text-align:right; font-size:13px; color:#57585e; font-weight:400;">0/200</div>
+        <button type="button" onclick="salvarNotaPedidoModal()" style="margin-top:28px; width:100%; height:46px; border:none; border-radius:999px; background:#fe2c55; color:#ffffff; font-size:15.5px; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; -webkit-tap-highlight-color:transparent;">
+          Salvar
+        </button>
+      </div>
+    </div>
+  </div>
+
   <script src="../js/catalogo.js?v=1795410323540"></script>
-  <script src="../js/app.js?v=20261125_bf_pnum_tabs_addr_v21"></script>
+  <script src="../js/app.js?v=20261125_tabs_resumo_nota_v22"></script>
   <script>
     function parseSafeFloat(val) {
       if (typeof val === 'number') return val;
@@ -2081,8 +2119,13 @@ input:checked + .tiktok-toggle-slider:before {
         cepEl._hasCepListener = true;
         cepEl.addEventListener('input', function () {
           this.value = this.value.replace(/\D/g, '').slice(0, 8);
+          const clr = document.getElementById('addr-cep-clear-btn');
+          if (clr) clr.style.display = this.value.length > 0 ? 'inline-flex' : 'none';
           if (this.value.length === 8) {
             buscarCepResumo(this.value);
+          } else {
+            const sug = document.getElementById('addr-cep-suggest-card');
+            if (sug) sug.style.display = 'none';
           }
           validateAddressFormReactively();
         });
@@ -2090,6 +2133,8 @@ input:checked + .tiktok-toggle-slider:before {
           setFieldError('addr-cep-wrap', 'addr-cep-error', this.value.replace(/\D/g, '').length !== 8);
         });
       }
+      const clrInit = document.getElementById('addr-cep-clear-btn');
+      if (clrInit && cepEl) clrInit.style.display = cepEl.value.trim().length > 0 ? 'inline-flex' : 'none';
 
       if (cpfEl && !cpfEl._hasCpfListener) {
         cpfEl._hasCpfListener = true;
@@ -2131,6 +2176,48 @@ input:checked + .tiktok-toggle-slider:before {
       });
     }
 
+    var _pendingViaCepData = null;
+    var _UF_NOMES_RESUMO = {
+      AC:'Acre', AL:'Alagoas', AP:'Amapá', AM:'Amazonas', BA:'Bahia', CE:'Ceará', DF:'Distrito Federal',
+      ES:'Espírito Santo', GO:'Goiás', MA:'Maranhão', MT:'Mato Grosso', MS:'Mato Grosso do Sul', MG:'Minas Gerais',
+      PA:'Pará', PB:'Paraíba', PR:'Paraná', PE:'Pernambuco', PI:'Piauí', RJ:'Rio de Janeiro', RN:'Rio Grande do Norte',
+      RS:'Rio Grande do Sul', RO:'Rondônia', RR:'Roraima', SC:'Santa Catarina', SP:'São Paulo', SE:'Sergipe', TO:'Tocantins'
+    };
+
+    function limparCampoCepResumo(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const cepEl = document.getElementById('addr-cep');
+      const clr = document.getElementById('addr-cep-clear-btn');
+      const sug = document.getElementById('addr-cep-suggest-card');
+      _pendingViaCepData = null;
+      if (cepEl) { cepEl.value = ''; cepEl.focus(); }
+      if (clr) clr.style.display = 'none';
+      if (sug) sug.style.display = 'none';
+      validateAddressFormReactively();
+    }
+
+    function aplicarSugestaoCepResumo(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const d = _pendingViaCepData;
+      const sug = document.getElementById('addr-cep-suggest-card');
+      if (sug) sug.style.display = 'none';
+      if (!d) return;
+      if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade || '';
+      if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf || '';
+      if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro || '';
+      if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro || '';
+      setFieldError('addr-cep-wrap', 'addr-cep-error', false);
+      setFieldError('addr-estado-wrap', 'addr-estado-error', false);
+      setFieldError('addr-cidade-wrap', 'addr-cidade-error', false);
+      if (d.logradouro) setFieldError('addr-rua-wrap', 'addr-rua-error', false);
+      const numEl = document.getElementById('addr-numero');
+      if (numEl && !numEl.value.trim()) {
+        numEl.focus();
+        triggerAutoSnTimer();
+      }
+      validateAddressFormReactively();
+    }
+
     function buscarCepResumo(cep) {
       cep = cep.replace(/\D/g, '');
       if (cep.length !== 8) return;
@@ -2139,24 +2226,70 @@ input:checked + .tiktok-toggle-slider:before {
         .then(r => r.json())
         .then(d => {
           if (!d.erro) {
-            if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade || '';
-            if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf || '';
-            if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro || '';
-            if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro || '';
-
-            // Se o número estiver vazio, foca nele e dispara o timer de s/n automático
-            const numEl = document.getElementById('addr-numero');
-            if (numEl && !numEl.value.trim()) {
-              numEl.focus();
-              triggerAutoSnTimer();
+            _pendingViaCepData = d;
+            const sug = document.getElementById('addr-cep-suggest-card');
+            const sNum = document.getElementById('cep-sug-num');
+            const sRua = document.getElementById('cep-sug-rua');
+            const sSub = document.getElementById('cep-sug-sub');
+            const ufNome = _UF_NOMES_RESUMO[d.uf] || d.uf || '';
+            if (sug && sNum && sRua && sSub) {
+              sNum.textContent = cep;
+              sRua.textContent = d.logradouro ? (', ' + d.logradouro) : '';
+              sSub.textContent = [d.bairro, d.localidade, ufNome].filter(Boolean).join(', ');
+              sug.style.display = 'block';
+            } else {
+              aplicarSugestaoCepResumo();
             }
-            validateAddressFormReactively();
           }
         })
         .catch(() => {});
     }
 
+    function openNotaPedidoModal(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      const ov = document.getElementById('nota-pedido-overlay');
+      const ta = document.getElementById('nota-pedido-textarea');
+      if (!ov) return;
+      if (ta) {
+        ta.value = localStorage.getItem('stone_nota_pedido') || '';
+        atualizarContadorNotaPedido();
+      }
+      ov.style.display = 'flex';
+      setTimeout(() => { if (ta) ta.focus(); }, 120);
+    }
+
+    function fecharNotaPedidoModal() {
+      const ov = document.getElementById('nota-pedido-overlay');
+      if (ov) ov.style.display = 'none';
+    }
+
+    function atualizarContadorNotaPedido() {
+      const ta = document.getElementById('nota-pedido-textarea');
+      const cnt = document.getElementById('nota-pedido-counter');
+      if (ta && cnt) cnt.textContent = (ta.value || '').length + '/200';
+    }
+
+    function salvarNotaPedidoModal() {
+      const ta = document.getElementById('nota-pedido-textarea');
+      const val = ta ? ta.value.trim().slice(0, 200) : '';
+      localStorage.setItem('stone_nota_pedido', val);
+      document.querySelectorAll('.add-note-text').forEach(el => {
+        el.textContent = val ? (val.length > 22 ? val.slice(0, 22) + '...' : val) : 'Adicionar nota';
+      });
+      fecharNotaPedidoModal();
+    }
+
     function saveAddressFormLocal() {
+      if (_pendingViaCepData) {
+        const cEl = document.getElementById('addr-cidade');
+        const eEl = document.getElementById('addr-estado');
+        const rEl = document.getElementById('addr-rua');
+        const bEl = document.getElementById('addr-bairro');
+        if (cEl && !cEl.value.trim() && _pendingViaCepData.localidade) cEl.value = _pendingViaCepData.localidade;
+        if (eEl && !eEl.value.trim() && _pendingViaCepData.uf) eEl.value = _pendingViaCepData.uf;
+        if (rEl && !rEl.value.trim() && _pendingViaCepData.logradouro) rEl.value = _pendingViaCepData.logradouro;
+        if (bEl && !bEl.value.trim() && _pendingViaCepData.bairro) bEl.value = _pendingViaCepData.bairro;
+      }
       const nomeEl = document.getElementById('addr-nome');
       const telEl = document.getElementById('addr-tel');
       const emailEl = document.getElementById('addr-email');
@@ -2345,12 +2478,15 @@ input:checked + .tiktok-toggle-slider:before {
           descPct = 82;
         }
 
+        var notaSalva = localStorage.getItem('stone_nota_pedido') || '';
+        var notaLabel = notaSalva ? (notaSalva.length > 22 ? notaSalva.slice(0, 22) + '...' : notaSalva) : 'Adicionar nota';
+
         html += `
       <div class="item-card" style="background:#fff; padding:16px; margin-bottom:8px;">
-        <div class="store-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <div class="store-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
           <span style="font-size:14px; font-weight:700; color:#111; letter-spacing:0.2px;">${loja.toUpperCase()}</span>
-          <span class="add-note" onclick="event.preventDefault(); event.stopPropagation();" style="font-size:12.5px; color:#888; display:flex; align-items:center; gap:3px; cursor:pointer;">
-            Adicionar nota <span style="font-size:14px; color:#aaa;">›</span>
+          <span class="add-note" onclick="openNotaPedidoModal(event)" style="font-size:13px; color:#73747b; display:flex; align-items:center; gap:4px; cursor:pointer; -webkit-tap-highlight-color:transparent;">
+            <span class="add-note-text">${notaLabel}</span> <span style="font-size:15px; color:#8a8b91;">›</span>
           </span>
         </div>
         <div class="product-row" style="display:flex; gap:12px; align-items:flex-start;">
@@ -2598,17 +2734,17 @@ input:checked + .tiktok-toggle-slider:before {
       if (origEl) origEl.textContent = 'R$ ' + formatarMoeda(subtotalOriginal);
 
       var descEl = document.getElementById('desconto-produto-total');
-      if (descEl) descEl.textContent = '-R$ ' + formatarMoeda(descontoProduto);
+      if (descEl) descEl.textContent = '- R$ ' + formatarMoeda(descontoProduto);
 
       var cupomEl = document.getElementById('desconto-cupom-total');
-      if (cupomEl) cupomEl.textContent = '-R$ ' + formatarMoeda(cupomTikTok);
+      if (cupomEl) cupomEl.textContent = '- R$ ' + formatarMoeda(cupomTikTok);
 
       var bonusRow = document.getElementById('row-bonus-resumo');
       var bonusTotalEl = document.getElementById('desconto-bonus-total');
       var bonusLabel = document.getElementById('bonus-val-label');
       if (bonusActive) {
         if (bonusRow) bonusRow.style.display = 'flex';
-        if (bonusTotalEl) bonusTotalEl.textContent = '-R$ ' + formatarMoeda(valorBonus);
+        if (bonusTotalEl) bonusTotalEl.textContent = '- R$ ' + formatarMoeda(valorBonus);
         if (bonusLabel) {
           bonusLabel.textContent = '-R$ ' + formatarMoeda(valorBonus);
           bonusLabel.style.color = '#fe2c55';
@@ -2627,7 +2763,7 @@ input:checked + .tiktok-toggle-slider:before {
       if (taxaEnvioEl) taxaEnvioEl.textContent = 'R$ ' + formatarMoeda(taxaEnvio);
 
       var descEnvioEl = document.getElementById('desconto-envio-val');
-      if (descEnvioEl) descEnvioEl.textContent = '-R$ ' + formatarMoeda(taxaEnvio);
+      if (descEnvioEl) descEnvioEl.textContent = '- R$ ' + formatarMoeda(taxaEnvio);
 
       var totalGeralEl = document.getElementById('total-geral-val');
       var footerTotalEl = document.getElementById('footer-total-val-bottom');
