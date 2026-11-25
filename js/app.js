@@ -1650,8 +1650,8 @@ function initProductTabs() {
   const tabs = document.querySelectorAll('.product-tab');
   if (!tabsBar || !tabs.length) return;
 
-  const HEADER = 44;   // altura real do header fixo
-  const TABS = 44;   // altura das abas
+  const HEADER = 48;   // altura real do header fixo
+  const TABS = 42;     // altura das abas
   const SHOW_AT = 150; // mostrar abas após rolar 150px
 
   // Configuração inicial forçada para garantir visibilidade absoluta
@@ -1678,7 +1678,7 @@ function initProductTabs() {
 
     if (sy > SHOW_AT) {
       tabsBar.classList.add('tabs-visible');
-      tabsBar.style.top = '44px';
+      tabsBar.style.top = '48px';
     } else {
       tabsBar.classList.remove('tabs-visible');
       tabsBar.style.top = '-100px';
@@ -1696,7 +1696,15 @@ function initProductTabs() {
         }
       }
     }
-    document.querySelectorAll('.product-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === active));
+    document.querySelectorAll('.product-tab').forEach(t => {
+      const isAct = t.dataset.tab === active;
+      const wasAct = t.classList.contains('active');
+      t.classList.toggle('active', isAct);
+      if (isAct && !wasAct && tabsBar.scrollWidth > tabsBar.clientWidth) {
+        const targetLeft = t.offsetLeft - (tabsBar.clientWidth - t.offsetWidth) / 2;
+        tabsBar.scrollTo({ left: Math.max(0, targetLeft), behavior: 'smooth' });
+      }
+    });
   }
 
   function handleTabClick(tab) {
@@ -1744,7 +1752,7 @@ function initProductTabs() {
       const sy = scrollContainer.scrollTop;
       if (sy > SHOW_AT) {
         tabsBar.classList.add('tabs-visible');
-        tabsBar.style.top = '44px';
+        tabsBar.style.top = '48px';
       } else {
         tabsBar.classList.remove('tabs-visible');
         tabsBar.style.top = '-100px';

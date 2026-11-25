@@ -1896,7 +1896,7 @@ input:checked + .tiktok-toggle-slider:before {
       if (!btn) return false;
 
       const isValid = (nome.length >= 2) && (tel.length >= 10) && (cep.length === 8) && !!estado &&
-        (cidade.length >= 2) && (rua.length >= 2) && (num.length >= 1) &&
+        (cidade.length >= 2) && (rua.length >= 2) &&
         (cpfRaw.length === 11 && cpfOk);
 
       if (isValid) {
@@ -2195,6 +2195,14 @@ input:checked + .tiktok-toggle-slider:before {
       setFieldError('addr-rua-wrap', 'addr-rua-error', !ruaOk);
       if (!ruaOk && !firstErrorEl) firstErrorEl = ruaEl;
 
+      const estadoOk = estado.length >= 2;
+      setFieldError('addr-estado-wrap', 'addr-estado-error', !estadoOk);
+      if (!estadoOk && !firstErrorEl && estadoEl) firstErrorEl = estadoEl;
+
+      const cidadeOk = cidade.length >= 2;
+      setFieldError('addr-cidade-wrap', 'addr-cidade-error', !cidadeOk);
+      if (!cidadeOk && !firstErrorEl && cidadeEl) firstErrorEl = cidadeEl;
+
       // s/n automático ao salvar
       if (!numero) {
         numero = 's/n';
@@ -2211,6 +2219,8 @@ input:checked + .tiktok-toggle-slider:before {
         return;
       }
 
+      const cpfFormatted = cpfRaw.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+
       // Salva no localStorage com persistência total
       localStorage.setItem('user_nome', nome);
       localStorage.setItem('user_tel', tel);
@@ -2222,7 +2232,7 @@ input:checked + .tiktok-toggle-slider:before {
       localStorage.setItem('user_numero', numero);
       localStorage.setItem('user_complemento', complemento);
       localStorage.setItem('user_estado', estado);
-      localStorage.setItem('user_cpf', cpf);
+      localStorage.setItem('user_cpf', cpfFormatted);
 
       const endFull = `${rua}, ${numero}${complemento ? ' - ' + complemento : ''}, ${bairro ? bairro + ', ' : ''}${cidade} - ${estado}`;
       localStorage.setItem('user_address', endFull);

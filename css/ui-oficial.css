@@ -1,15 +1,47 @@
 @font-face {
   font-family: 'BFOnlyNumbers';
-  src: url('../fonts/bf-num-600.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/tt-pro-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BFOnlyNumbers';
+  src: url('../fonts/tt-pro-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BFOnlyNumbers';
+  src: url('../fonts/tt-pro-600.ttf') format('truetype');
+  font-weight: 600 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'TTDescOnly';
-  src: url('../fonts/bf-num-600.woff2') format('woff2');
-  font-weight: 100 900;
+  src: url('../fonts/tt-pro-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTDescOnly';
+  src: url('../fonts/tt-pro-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTDescOnly';
+  src: url('../fonts/tt-pro-600.ttf') format('truetype');
+  font-weight: 600 700;
   font-style: normal;
   font-display: swap;
 }
@@ -39,9 +71,9 @@
   align-content: center !important;
   align-items: center !important;
   justify-items: start !important;
-  column-gap: 7px !important;
-  row-gap: 3px !important;
-  padding: 2px 46% 2px 14px !important;
+  column-gap: 4.5px !important;
+  row-gap: 4.5px !important;
+  padding: 2px 46% 2px 16px !important;
 }
 
 .price-section.price-section-bf::before,
@@ -53,18 +85,18 @@
   position: static !important;
   grid-column: 1 !important;
   grid-row: 1 !important;
-  height: auto !important;
+  height: 21.5px !important;
   min-width: unset !important;
-  padding: 3.5px 7.5px !important;
+  padding: 0 6.5px !important;
   background: #ffffff !important;
   color: #e10543 !important;
-  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(14px, 3.95vw, 16px) !important;
+  font-family: 'BFOnlyNumbers', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: proportional-nums lining-nums !important;
+  font-feature-settings: "tnum" 0, "pnum" 1, "lnum" 1 !important;
+  font-size: clamp(13.5px, 3.85vw, 15px) !important;
   font-weight: 600 !important;
-  border-radius: 6px !important;
-  line-height: 1.1 !important;
+  border-radius: 5.5px !important;
+  line-height: 1 !important;
   letter-spacing: -0.2px !important;
   box-shadow: none !important;
   margin: 0 !important;
@@ -81,7 +113,7 @@
   height: auto !important;
   display: inline-flex !important;
   align-items: baseline !important;
-  gap: 1.5px !important;
+  gap: 1px !important;
   margin: 0 !important;
   padding: 0 !important;
   line-height: 1 !important;
@@ -91,36 +123,38 @@
 .price-section.price-section-bf .price-currency-sign {
   position: static !important;
   color: #ffffff !important;
-  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-size: clamp(14px, 3.9vw, 15.5px) !important;
+  font-family: 'BFOnlyNumbers', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: proportional-nums lining-nums !important;
+  font-feature-settings: "tnum" 0, "pnum" 1, "lnum" 1 !important;
+  font-size: clamp(13px, 3.7vw, 14.5px) !important;
   font-weight: 600 !important;
   line-height: 1 !important;
-  margin-right: 2px !important;
+  letter-spacing: -0.2px !important;
+  margin-right: 1.5px !important;
 }
 
 .price-section.price-section-bf .price-current {
   position: static !important;
   color: #ffffff !important;
-  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(26.5px, 7.4vw, 30px) !important;
+  font-family: 'BFOnlyNumbers', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: proportional-nums lining-nums !important;
+  font-feature-settings: "tnum" 0, "pnum" 1, "lnum" 1 !important;
+  font-size: clamp(24.5px, 7.0vw, 27.5px) !important;
   font-weight: 600 !important;
-  line-height: 0.96 !important;
-  letter-spacing: -0.4px !important;
+  line-height: 0.94 !important;
+  letter-spacing: -0.3px !important;
   display: inline-flex !important;
   align-items: baseline !important;
 }
 
 .price-section.price-section-bf .price-cents {
-  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(15.5px, 4.35vw, 17.5px) !important;
+  font-family: 'BFOnlyNumbers', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: proportional-nums lining-nums !important;
+  font-feature-settings: "tnum" 0, "pnum" 1, "lnum" 1 !important;
+  font-size: clamp(14px, 3.95vw, 15.5px) !important;
   font-weight: 600 !important;
   line-height: 1 !important;
-  letter-spacing: 0px !important;
+  letter-spacing: -0.2px !important;
 }
 
 .price-section.price-section-bf .price-cents::after,
@@ -130,11 +164,11 @@
 }
 
 .price-section.price-section-bf .bf-coupon-icon {
-  width: clamp(18px, 4.9vw, 20.5px) !important;
+  width: clamp(14.5px, 4.1vw, 16px) !important;
   height: auto !important;
   align-self: baseline !important;
-  transform: translateY(1.5px) !important;
-  margin-left: 4.5px !important;
+  transform: translateY(1px) !important;
+  margin-left: 3.5px !important;
   flex-shrink: 0 !important;
   opacity: 1 !important;
 }
@@ -144,13 +178,14 @@
   grid-column: 1 / span 2 !important;
   grid-row: 2 !important;
   color: rgba(255, 255, 255, 0.96) !important;
-  font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
-  font-size: clamp(13px, 3.65vw, 14.5px) !important;
+  font-family: 'BFOnlyNumbers', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-variant-numeric: proportional-nums lining-nums !important;
+  font-feature-settings: "tnum" 0, "pnum" 1, "lnum" 1 !important;
+  font-size: clamp(12.5px, 3.5vw, 13.5px) !important;
   font-weight: 400 !important;
   text-decoration: line-through !important;
   line-height: 1.15 !important;
+  letter-spacing: -0.1px !important;
   margin: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
@@ -774,7 +809,7 @@
   padding: 0 7px !important;
   border-radius: 999px !important;
   font-family: 'BFOnlyNumbers', 'Plus Jakarta Sans', sans-serif !important;
-  font-variant-numeric: tabular-nums lining-nums !important;
+  font-variant-numeric: proportional-nums lining-nums !important;
   font-size: 11px !important;
   font-weight: 600 !important;
   letter-spacing: 0px !important;
@@ -784,6 +819,81 @@
   justify-content: center !important;
   margin: 0 !important;
   white-space: nowrap !important;
+}
+
+/* ==========================================================================
+   7. ABAS DE NAVEGAÇÃO DO PRODUTO (.product-tabs) 1:1 TIKTOK SHOP
+      (Linha inferior ativa larga de ponta a ponta da aba, altura 42px colada ao header)
+   ========================================================================== */
+.product-tabs {
+  position: fixed !important;
+  top: 48px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 100% !important;
+  max-width: var(--max-width, 480px) !important;
+  height: 42px !important;
+  background: #ffffff !important;
+  z-index: 998 !important;
+  border-bottom: 1px solid #ececec !important;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding: 0 10px !important;
+  gap: 6px !important;
+  box-sizing: border-box !important;
+}
+
+.product-tabs::-webkit-scrollbar {
+  display: none !important;
+}
+
+.product-tabs.tabs-visible {
+  top: 48px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.product-tab {
+  flex: 0 0 auto !important;
+  height: 100% !important;
+  padding: 0 14px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #73747b !important;
+  background: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  letter-spacing: -0.15px !important;
+}
+
+.product-tab.active {
+  color: #161823 !important;
+  font-weight: 600 !important;
+}
+
+.product-tab.active::after {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 2.5px !important;
+  background: #161823 !important;
+  border-radius: 1px !important;
 }
 
 
