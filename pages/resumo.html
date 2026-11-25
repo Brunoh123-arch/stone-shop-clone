@@ -14,6 +14,130 @@
   <title>Resumo do Pedido - Stone Shop</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'ResumoNumsOnly';
+      src: url('../fonts/tt-pro-400.ttf') format('woff2'), url('../fonts/tt-pro-400.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ResumoNumsOnly';
+      src: url('../fonts/tt-pro-500.ttf') format('woff2'), url('../fonts/tt-pro-500.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'ResumoNumsOnly';
+      src: url('../fonts/tt-pro-600.ttf') format('woff2'), url('../fonts/tt-pro-600.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Isolamento estrito: aplica TikTok Sans proporcional SOMENTE nos números do Resumo */
+    .resumo-num-isolated,
+    .resumo-num-isolated span {
+      font-family: 'ResumoNumsOnly', -apple-system, BlinkMacSystemFont, sans-serif !important;
+      font-variant-numeric: proportional-nums lining-nums !important;
+      font-feature-settings: "tnum" 0, "pnum" 1, "lnum" 1 !important;
+      font-synthesis: none !important;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .resumo-num-subtotal {
+      display: inline-flex;
+      align-items: baseline;
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      color: #000000 !important;
+      line-height: 20px !important;
+      letter-spacing: 0px !important;
+      white-space: nowrap;
+    }
+
+    .resumo-num-subtotal .rn-rs {
+      margin-right: 4px;
+    }
+
+    .resumo-num-sub {
+      display: inline-flex;
+      align-items: baseline;
+      font-size: 13.5px !important;
+      font-weight: 400 !important;
+      color: #161823 !important;
+      line-height: 18px !important;
+      letter-spacing: 0px !important;
+      white-space: nowrap;
+    }
+
+    .resumo-num-sub .rn-rs {
+      margin-right: 4.5px;
+    }
+
+    .resumo-num-discount {
+      display: inline-flex;
+      align-items: baseline;
+      font-size: 13.5px !important;
+      font-weight: 400 !important;
+      color: #e10543 !important;
+      line-height: 18px !important;
+      letter-spacing: 0px !important;
+      white-space: nowrap;
+    }
+
+    .resumo-num-discount .rn-minus {
+      margin-right: 5px;
+    }
+
+    .resumo-num-discount .rn-rs {
+      margin-right: 4.5px;
+    }
+
+    .resumo-num-total {
+      display: inline-flex;
+      align-items: baseline;
+      font-size: 18px !important;
+      font-weight: 600 !important;
+      color: #000000 !important;
+      line-height: 22px !important;
+      letter-spacing: -0.15px !important;
+      white-space: nowrap;
+    }
+
+    .resumo-num-total .rn-rs {
+      margin-right: 4.5px;
+    }
+
+    .footer-total-val.resumo-num-footer-total {
+      display: inline-flex !important;
+      align-items: baseline !important;
+      color: #fe2c55 !important;
+      line-height: 1 !important;
+      white-space: nowrap !important;
+    }
+
+    .footer-total-val.resumo-num-footer-total .rn-footer-rs {
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      color: #fe2c55 !important;
+      margin-right: 3.5px !important;
+      letter-spacing: 0px !important;
+      line-height: 1 !important;
+    }
+
+    .footer-total-val.resumo-num-footer-total .rn-footer-digits {
+      font-size: 18.5px !important;
+      font-weight: 600 !important;
+      color: #fe2c55 !important;
+      letter-spacing: -0.15px !important;
+      line-height: 1 !important;
+    }
+
     .input-error {
       border: 1.5px solid #fe2c55 !important;
       border-bottom: 1.5px solid #fe2c55 !important;
@@ -1059,56 +1183,56 @@ input:checked + .tiktok-toggle-slider:before {
         </div>
       </div>
 
-      <!-- DETALHES FINANCEIROS DO RESUMO DO PEDIDO (ESPAÇAMENTOS 1:1 IMAGEM 2) -->
+      <!-- DETALHES FINANCEIROS DO RESUMO DO PEDIDO (ESPAÇAMENTOS E NÚMEROS ISOLADOS 1:1 REF) -->
       <div class="summary-finance" style="background:#fff; padding:18px 16px 20px 16px; margin-bottom:8px;">
         <div class="summary-title" style="font-size:16px; font-weight:600; margin-bottom:18px; color:#161823; letter-spacing:-0.2px;">Resumo do Pedido</div>
 
         <!-- Subtotal do produto -->
-        <div class="summary-group" style="margin-bottom:18px;">
-          <div class="summary-group-title" style="display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; margin-bottom:14px; color:#161823;">
+        <div class="summary-group" style="margin-bottom:20px;">
+          <div class="summary-group-title" style="display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; line-height:20px; margin-bottom:18px; color:#000000;">
             <span style="display:inline-flex; align-items:center; gap:5px;">Subtotal do produto <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
-            <span id="subtotal-val">R$ 39,90</span>
+            <span id="subtotal-val" class="resumo-num-isolated resumo-num-subtotal"><span class="rn-rs">R$</span><span class="rn-val">39,90</span></span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:13px; padding-left:14px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; line-height:18px; color:#161823; margin-bottom:14px; padding-left:14px;">
             <span>Preço original</span>
-            <span id="preco-original-total" style="color:#222222;">R$ 362,70</span>
+            <span id="preco-original-total" class="resumo-num-isolated resumo-num-sub"><span class="rn-rs">R$</span><span class="rn-val">362,70</span></span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:13px; padding-left:14px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; line-height:18px; color:#161823; margin-bottom:14px; padding-left:14px;">
             <span>Desconto no produto</span>
-            <span id="desconto-produto-total" style="color:#e10543;">- R$ 322,80</span>
+            <span id="desconto-produto-total" class="resumo-num-isolated resumo-num-discount"><span class="rn-minus">-</span><span class="rn-rs">R$</span><span class="rn-val">322,80</span></span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:0; padding-left:14px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; line-height:18px; color:#161823; margin-bottom:0; padding-left:14px;">
             <span>Cupons do TikTok Shop</span>
-            <span id="desconto-cupom-total" style="color:#e10543;">- R$ 10,72</span>
+            <span id="desconto-cupom-total" class="resumo-num-isolated resumo-num-discount"><span class="rn-minus">-</span><span class="rn-rs">R$</span><span class="rn-val">10,72</span></span>
           </div>
-          <div class="summary-row" id="row-bonus-resumo" style="display:none; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-top:13px; margin-bottom:0; padding-left:14px;">
+          <div class="summary-row" id="row-bonus-resumo" style="display:none; justify-content:space-between; align-items:center; font-size:13.5px; line-height:18px; color:#161823; margin-top:14px; margin-bottom:0; padding-left:14px;">
             <span>Bônus TikTok Shop</span>
-            <span id="desconto-bonus-total" style="color:#e10543;">- R$ 3,27</span>
+            <span id="desconto-bonus-total" class="resumo-num-isolated resumo-num-discount"><span class="rn-minus">-</span><span class="rn-rs">R$</span><span class="rn-val">3,27</span></span>
           </div>
         </div>
 
         <!-- Subtotal do envio -->
-        <div class="summary-group" style="margin-bottom:20px;">
-          <div class="summary-group-title" style="display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; margin-bottom:14px; color:#161823;">
+        <div class="summary-group" style="margin-bottom:0;">
+          <div class="summary-group-title" style="display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; line-height:20px; margin-bottom:18px; color:#000000;">
             <span style="display:inline-flex; align-items:center; gap:5px;">Subtotal do envio <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;"><polyline points="18 15 12 9 6 15"></polyline></svg></span>
-            <span>R$ 0,00</span>
+            <span id="subtotal-envio-val" class="resumo-num-isolated resumo-num-subtotal"><span class="rn-rs">R$</span><span class="rn-val">0,00</span></span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:13px; padding-left:14px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; line-height:18px; color:#161823; margin-bottom:14px; padding-left:14px;">
             <span>Taxa de envio</span>
-            <span id="taxa-envio-val" style="color:#222222;">R$ 21,30</span>
+            <span id="taxa-envio-val" class="resumo-num-isolated resumo-num-sub"><span class="rn-rs">R$</span><span class="rn-val">21,30</span></span>
           </div>
-          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; color:#222222; margin-bottom:0; padding-left:14px;">
+          <div class="summary-row" style="display:flex; justify-content:space-between; align-items:center; font-size:13.5px; line-height:18px; color:#161823; margin-bottom:0; padding-left:14px;">
             <span>Desconto de envio</span>
-            <span id="desconto-envio-val" style="color:#e10543;">- R$ 21,30</span>
+            <span id="desconto-envio-val" class="resumo-num-isolated resumo-num-discount"><span class="rn-minus">-</span><span class="rn-rs">R$</span><span class="rn-val">21,30</span></span>
           </div>
         </div>
 
         <!-- Total geral -->
-        <div class="summary-row bold" style="display:flex; justify-content:space-between; align-items:flex-start; font-weight:700; color:#000000; font-size:17px; border-top:none; padding-top:4px; margin-top:4px; margin-bottom:0; padding-left:0;">
+        <div class="summary-row bold" style="display:flex; justify-content:space-between; align-items:flex-start; font-weight:700; color:#000000; font-size:17px; border-top:1px solid #ececed; padding-top:16px; margin-top:14px; margin-bottom:0; padding-left:0;">
           <span>Total</span>
           <div style="text-align:right;">
-            <span style="font-size:17px; font-weight:700; color:#000000;" id="total-geral-val">R$ 39,90</span>
-            <div style="font-size:12.5px; color:#73747b; font-weight:400; margin-top:5px;">Impostos inclusos</div>
+            <span id="total-geral-val" class="resumo-num-isolated resumo-num-total"><span class="rn-rs">R$</span><span class="rn-val">39,90</span></span>
+            <div style="font-size:13px; color:#595959; font-weight:400; margin-top:6px;">Impostos inclusos</div>
           </div>
         </div>
       </div>
@@ -1159,7 +1283,7 @@ input:checked + .tiktok-toggle-slider:before {
 
       <div class="footer-top-row">
         <div class="footer-total-label" id="footer-item-count">Total (1 item)</div>
-        <div class="footer-total-val" id="footer-total-val-bottom">R$ 39,90</div>
+        <div class="footer-total-val resumo-num-isolated resumo-num-footer-total" id="footer-total-val-bottom"><span class="rn-footer-rs">R$</span><span class="rn-footer-digits">39,90</span></div>
       </div>
       <button class="fazer-pedido-btn" onclick="confirmarPedido()">
         <span class="btn-main-label">Fazer pedido</span>
@@ -2631,13 +2755,27 @@ input:checked + .tiktok-toggle-slider:before {
     var lastTotalGeral = null;
     var lastEconomiaTotal = null;
 
-    function animateCurrencyValue(element, startVal, endVal, duration, prefix) {
+    function setResumoCurrencyHtml(element, val, mode, prefix) {
+      if (!element) return;
+      var formatted = formatarMoeda(val);
+      if (mode === 'neg') {
+        element.innerHTML = '<span class="rn-minus">-</span><span class="rn-rs">R$</span><span class="rn-val">' + formatted + '</span>';
+      } else if (mode === 'footer') {
+        element.innerHTML = '<span class="rn-footer-rs">R$</span><span class="rn-footer-digits">' + formatted + '</span>';
+      } else if (mode === 'pos') {
+        element.innerHTML = '<span class="rn-rs">R$</span><span class="rn-val">' + formatted + '</span>';
+      } else {
+        element.textContent = ((typeof prefix === 'string') ? prefix : 'R$ ') + formatted;
+      }
+    }
+
+    function animateCurrencyValue(element, startVal, endVal, duration, prefix, mode) {
       if (!element) return;
       prefix = (typeof prefix === 'string') ? prefix : 'R$ ';
       duration = duration || 650;
 
       if (startVal === null || isNaN(startVal) || Math.abs(startVal - endVal) < 0.005) {
-        element.textContent = prefix + formatarMoeda(endVal);
+        setResumoCurrencyHtml(element, endVal, mode, prefix);
         return;
       }
 
@@ -2650,12 +2788,12 @@ input:checked + .tiktok-toggle-slider:before {
         // Easing: easeOutCubic suave
         var ease = 1 - Math.pow(1 - progress, 3);
         var current = startVal + (endVal - startVal) * ease;
-        element.textContent = prefix + formatarMoeda(current);
+        setResumoCurrencyHtml(element, current, mode, prefix);
 
         if (progress < 1) {
           requestAnimationFrame(step);
         } else {
-          element.textContent = prefix + formatarMoeda(endVal);
+          setResumoCurrencyHtml(element, endVal, mode, prefix);
           setTimeout(function() {
             element.classList.remove('price-animating');
           }, 150);
@@ -2728,23 +2866,23 @@ input:checked + .tiktok-toggle-slider:before {
       var totalGeral = Math.max(1, subtotalAtual - descontoBonusAplicado);
 
       var subEl = document.getElementById('subtotal-val');
-      if (subEl) subEl.textContent = 'R$ ' + formatarMoeda(subtotalAtual);
+      setResumoCurrencyHtml(subEl, subtotalAtual, 'pos');
 
       var origEl = document.getElementById('preco-original-total');
-      if (origEl) origEl.textContent = 'R$ ' + formatarMoeda(subtotalOriginal);
+      setResumoCurrencyHtml(origEl, subtotalOriginal, 'pos');
 
       var descEl = document.getElementById('desconto-produto-total');
-      if (descEl) descEl.textContent = '- R$ ' + formatarMoeda(descontoProduto);
+      setResumoCurrencyHtml(descEl, descontoProduto, 'neg');
 
       var cupomEl = document.getElementById('desconto-cupom-total');
-      if (cupomEl) cupomEl.textContent = '- R$ ' + formatarMoeda(cupomTikTok);
+      setResumoCurrencyHtml(cupomEl, cupomTikTok, 'neg');
 
       var bonusRow = document.getElementById('row-bonus-resumo');
       var bonusTotalEl = document.getElementById('desconto-bonus-total');
       var bonusLabel = document.getElementById('bonus-val-label');
       if (bonusActive) {
         if (bonusRow) bonusRow.style.display = 'flex';
-        if (bonusTotalEl) bonusTotalEl.textContent = '- R$ ' + formatarMoeda(valorBonus);
+        setResumoCurrencyHtml(bonusTotalEl, valorBonus, 'neg');
         if (bonusLabel) {
           bonusLabel.textContent = '-R$ ' + formatarMoeda(valorBonus);
           bonusLabel.style.color = '#fe2c55';
@@ -2759,23 +2897,26 @@ input:checked + .tiktok-toggle-slider:before {
         }
       }
 
+      var subEnvioEl = document.getElementById('subtotal-envio-val');
+      setResumoCurrencyHtml(subEnvioEl, 0, 'pos');
+
       var taxaEnvioEl = document.getElementById('taxa-envio-val');
-      if (taxaEnvioEl) taxaEnvioEl.textContent = 'R$ ' + formatarMoeda(taxaEnvio);
+      setResumoCurrencyHtml(taxaEnvioEl, taxaEnvio, 'pos');
 
       var descEnvioEl = document.getElementById('desconto-envio-val');
-      if (descEnvioEl) descEnvioEl.textContent = '- R$ ' + formatarMoeda(taxaEnvio);
+      setResumoCurrencyHtml(descEnvioEl, taxaEnvio, 'neg');
 
       var totalGeralEl = document.getElementById('total-geral-val');
       var footerTotalEl = document.getElementById('footer-total-val-bottom');
       var savingEl = document.getElementById('saving-pink-val');
 
       if (animate && lastTotalGeral !== null) {
-        animateCurrencyValue(totalGeralEl, lastTotalGeral, totalGeral, 650);
-        animateCurrencyValue(footerTotalEl, lastTotalGeral, totalGeral, 650);
+        animateCurrencyValue(totalGeralEl, lastTotalGeral, totalGeral, 650, 'R$ ', 'pos');
+        animateCurrencyValue(footerTotalEl, lastTotalGeral, totalGeral, 650, 'R$ ', 'footer');
         animateCurrencyValue(savingEl, lastEconomiaTotal, economiaTotal, 650);
       } else {
-        if (totalGeralEl) totalGeralEl.textContent = 'R$ ' + formatarMoeda(totalGeral);
-        if (footerTotalEl) footerTotalEl.textContent = 'R$ ' + formatarMoeda(totalGeral);
+        setResumoCurrencyHtml(totalGeralEl, totalGeral, 'pos');
+        setResumoCurrencyHtml(footerTotalEl, totalGeral, 'footer');
         if (savingEl) savingEl.textContent = 'R$ ' + formatarMoeda(economiaTotal);
       }
 

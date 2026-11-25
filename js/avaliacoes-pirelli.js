@@ -7195,8 +7195,13 @@ const PIRELLI_REVIEWS = [
           <div class="store-chat-clickable-loja" onclick="window.location.href='../index.html'"></div>
           <div class="store-chat-clickable-chat" onclick="openSmartChat()"></div>
         </div>
-        <button class="btn-add-cart" onclick="window.closePirelliReviewsModal(); setTimeout(()=>handlePirelliAddToCart(), 200);">
-          Adicionar<br>ao carrinho
+        <button class="btn-add-cart" aria-label="Adicionar ao carrinho" type="button" onclick="window.closePirelliReviewsModal(); setTimeout(()=>handlePirelliAddToCart(), 200);">
+          <svg aria-hidden="true" viewBox="0 0 50 44" width="25" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.8 4H8.6C9.8 4 10.5 4.6 10.8 5.8L15.6 26.2C16.1 28.3 17.5 29.5 19.7 29.5H37.3C39.5 29.5 40.9 28.3 41.5 26.2L45.3 12.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+            <path d="M28.5 6V19M22 12.5H35" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+            <circle cx="17" cy="38" r="3.5" fill="currentColor"></circle>
+            <circle cx="40" cy="38" r="3.5" fill="currentColor"></circle>
+          </svg>
         </button>
         <button class="btn-buy" onclick="window.closePirelliReviewsModal(); setTimeout(()=>handlePirelliBuyNow(), 200);">
           <span class="btn-line1">Comprar agora</span>

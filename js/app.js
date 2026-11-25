@@ -3535,12 +3535,12 @@ window.abrirTelaAvaliacoesCompletas = function(filtro = 'all') {
         </div>
         <!-- Caixa Rosa com Carrinho e Ícone de Mais Oficial TikTok Shop -->
         <div class="tt-rev-cart-box-btn" onclick="window.location.href='carrinho.html'">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fe2c55" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          <svg aria-hidden="true" width="25" height="22" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.8 4H8.6C9.8 4 10.5 4.6 10.8 5.8L15.6 26.2C16.1 28.3 17.5 29.5 19.7 29.5H37.3C39.5 29.5 40.9 28.3 41.5 26.2L45.3 12.8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+            <path d="M28.5 6V19M22 12.5H35" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+            <circle cx="17" cy="38" r="3.5" fill="currentColor"></circle>
+            <circle cx="40" cy="38" r="3.5" fill="currentColor"></circle>
           </svg>
-          <span class="tt-cart-box-plus">+</span>
         </div>
       </div>
       <button type="button" class="tt-rev-btn-buy" onclick="ttHandleBuyFromReviews()">

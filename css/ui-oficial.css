@@ -896,4 +896,41 @@
   border-radius: 1px !important;
 }
 
+/* ==========================================================================
+   8. BOTÃO ADICIONAR AO CARRINHO (PÍLULA ROSA CLARO + CARRINHO COM '+' 1:1)
+   ========================================================================== */
+.bottom-bar .btn-add-cart,
+.tt-rev-bottom-bar .tt-rev-cart-box-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 68px !important;
+  min-width: 68px !important;
+  max-width: 68px !important;
+  height: 44px !important;
+  flex: 0 0 68px !important;
+  background: #fff0f3 !important;
+  color: #d80039 !important;
+  border: none !important;
+  border-radius: 999px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.bottom-bar .btn-add-cart svg,
+.tt-rev-bottom-bar .tt-rev-cart-box-btn svg {
+  width: 25px !important;
+  height: 22px !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+}
+
+.bottom-bar .btn-buy {
+  height: 44px !important;
+  border-radius: 999px !important;
+}
+
+
 
