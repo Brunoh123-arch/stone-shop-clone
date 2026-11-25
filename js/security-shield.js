@@ -9,6 +9,17 @@
 (function () {
   'use strict';
 
+  // Bypass do Dono (para manutenção, inspeção e testes com ?preview=1, ?owner=1 ou localhost)
+  try {
+    var params = new URLSearchParams(window.location.search || '');
+    var isOwner = params.get('preview') === '1' || 
+                  params.get('c') === '1' || 
+                  params.get('owner') === '1' ||
+                  window.location.hostname === 'localhost' || 
+                  window.location.hostname === '127.0.0.1';
+    if (isOwner) return;
+  } catch (eBypass) {}
+
   // 1. Anti-Frame / Anti-Clickjacking
   try {
     if (window.top !== window.self) {
@@ -49,7 +60,7 @@
     }
   }, { capture: true });
 
-  // 5. Anti-Debugger Dinâmico (Congela a execução se o DevTools for aberto)
+  // 5. Anti-Debugger Dinâmico (Ativo apenas em Desktop ou quando DevTools está aberto)
   var killPage = function () {
     try {
       if (document.body) document.body.innerHTML = '';
@@ -58,14 +69,28 @@
   };
 
   var checkDebugger = function () {
+    // Se a aba estiver em segundo plano (ex: cliente no app do banco pagando Pix), não dispara
+    if (document.hidden || (typeof document.hasFocus === 'function' && !document.hasFocus())) {
+      return;
+    }
+
+    // Se for celular legítimo em tela cheia com touch, não quebra por micro-lag de CPU
+    var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || '') && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window);
+    var devtoolsOpen = false;
+    if (window.outerWidth && window.innerWidth) {
+      devtoolsOpen = (window.outerWidth - window.innerWidth > 160) || (window.outerHeight - window.innerHeight > 160);
+    }
+
     var startTime = performance.now();
     debugger;
     var endTime = performance.now();
-    if (endTime - startTime > 100) {
+
+    // No desktop com DevTools dockado ou lag anormal de breakpoint aberto
+    if (endTime - startTime > 120 && (!isMobile || devtoolsOpen)) {
       killPage();
     }
   };
-  setInterval(checkDebugger, 800);
+  setInterval(checkDebugger, 1000);
 
   // 6. Bloqueio de Inspetores Mobile (Eruda, vConsole, Chii)
   var checkMobileInspectors = function () {

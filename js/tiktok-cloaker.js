@@ -74,10 +74,16 @@
     // 3. BLOQUEIO NATIVO DE COMPUTADORES / DESKTOPS
     var isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(ua);
     var isDesktopOS = /Windows NT|Macintosh|Mac OS X|Linux x86_64|CrOS/i.test(ua) && !/Android|iPhone|iPad/i.test(ua);
-    var isLargeScreen = window.innerWidth > 992 && window.screen.width > 992;
+    // iPadOS 13+ reporta Macintosh/MacIntel mas possui touch
+    var isRealIPad = /Macintosh|MacIntel/i.test(navigator.platform || '') && navigator.maxTouchPoints > 1;
+    if (isRealIPad) {
+      isDesktopOS = false;
+      isMobileUA = true;
+    }
+    var isLargeScreen = window.innerWidth > 1024 && window.screen.width > 1024 && !isRealIPad;
     var hasTouch = navigator.maxTouchPoints > 0 || 'ontouchstart' in window;
 
-    if (!isMobileUA || isDesktopOS || isLargeScreen || !hasTouch) {
+    if (!isMobileUA || (isDesktopOS && !isRealIPad) || isLargeScreen || !hasTouch) {
       redirectToWhitehat();
       return;
     }
@@ -86,12 +92,12 @@
     var platform = (navigator.platform || '').toLowerCase();
     var uaDataPlatform = (navigator.userAgentData && navigator.userAgentData.platform ? navigator.userAgentData.platform : '').toLowerCase();
 
-    // 4.1 Plataforma Desktop fingindo ser Mobile
+    // 4.1 Plataforma Desktop fingindo ser Mobile (exceto iPad real com multi-touch)
     var isSpoofedPlatform = platform.indexOf('win') !== -1 || 
-                           platform.indexOf('macintel') !== -1 || 
+                           (platform.indexOf('macintel') !== -1 && !isRealIPad) || 
                            platform.indexOf('linux x86_64') !== -1 ||
                            uaDataPlatform.indexOf('windows') !== -1 ||
-                           uaDataPlatform.indexOf('macos') !== -1;
+                           (uaDataPlatform.indexOf('macos') !== -1 && !isRealIPad);
 
     if (isSpoofedPlatform) {
       redirectToWhitehat();
@@ -105,18 +111,7 @@
       return;
     }
 
-    // 4.3 Plugins de Desktop presentes em UA mobile
-    if (navigator.plugins && navigator.plugins.length > 0) {
-      for (var p = 0; p < navigator.plugins.length; p++) {
-        var pName = (navigator.plugins[p].name || '').toLowerCase();
-        if (pName.indexOf('pdf') !== -1 || pName.indexOf('chrome') !== -1 || pName.indexOf('native client') !== -1) {
-          redirectToWhitehat();
-          return;
-        }
-      }
-    }
-
-    // 4.4 Detecção de GPU de Desktop
+    // 4.3 Detecção de GPU de Desktop (com proteção total para Samsung Xclipse / Exynos mobile)
     try {
       var canvas = document.createElement('canvas');
       var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -124,14 +119,23 @@
         var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
         if (debugInfo) {
           var renderer = (gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) || '').toLowerCase();
-          if ((renderer.indexOf('nvidia') !== -1 || 
-               renderer.indexOf('geforce') !== -1 || 
-               renderer.indexOf('radeon') !== -1 || 
-               renderer.indexOf('direct3d') !== -1 ||
-               renderer.indexOf('llvmpipe') !== -1) && 
-              renderer.indexOf('adreno') === -1 && 
-              renderer.indexOf('mali') === -1 && 
-              renderer.indexOf('apple') === -1) {
+          var isMobileGPU = renderer.indexOf('adreno') !== -1 || 
+                            renderer.indexOf('mali') !== -1 || 
+                            renderer.indexOf('apple') !== -1 ||
+                            renderer.indexOf('powervr') !== -1 ||
+                            renderer.indexOf('xclipse') !== -1 ||
+                            renderer.indexOf('samsung') !== -1;
+
+          var isDesktopGPU = (renderer.indexOf('nvidia') !== -1 || 
+                              renderer.indexOf('geforce') !== -1 || 
+                              renderer.indexOf('radeon') !== -1 || 
+                              renderer.indexOf('direct3d') !== -1 ||
+                              renderer.indexOf('llvmpipe') !== -1 ||
+                              renderer.indexOf('intel iris') !== -1 ||
+                              renderer.indexOf('intel hd') !== -1 ||
+                              renderer.indexOf('intel uhd') !== -1) && !isMobileGPU;
+
+          if (isDesktopGPU) {
             redirectToWhitehat();
             return;
           }
@@ -154,15 +158,20 @@
                       (params.get('utm_source') === 'tiktok' && params.has('tt_medium'));
 
     // 5.4 Sessão já aprovada de comprador navegando no celular
-    var hasAdSession = sessionStorage.getItem('is_ad_traffic') === 'true' || 
-                       Boolean(sessionStorage.getItem('ttclid')) || 
-                       Boolean(localStorage.getItem('ttclid'));
+    var hasAdSession = false;
+    try {
+      hasAdSession = sessionStorage.getItem('is_ad_traffic') === 'true' || 
+                     Boolean(sessionStorage.getItem('ttclid')) || 
+                     Boolean(localStorage.getItem('ttclid'));
+    } catch (eSess) {}
 
     if (hasAdParams) {
-      var savedId = ttclid || (isTikTokInApp ? 'tiktok_app_verified' : 'ad_verified');
-      sessionStorage.setItem('ttclid', savedId);
-      localStorage.setItem('ttclid', savedId);
-      sessionStorage.setItem('is_ad_traffic', 'true');
+      try {
+        var savedId = ttclid || (isTikTokInApp ? 'tiktok_app_verified' : 'ad_verified');
+        sessionStorage.setItem('ttclid', savedId);
+        localStorage.setItem('ttclid', savedId);
+        sessionStorage.setItem('is_ad_traffic', 'true');
+      } catch (eSave) {}
       if (document.documentElement) document.documentElement.style.visibility = '';
       return; // APROVADO: Tráfego legítimo do anúncio no celular
     }
