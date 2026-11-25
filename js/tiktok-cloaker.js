@@ -26,7 +26,7 @@
     var pathname = window.location.pathname || '';
 
     // Se já estiver na página da Loja Whitehat, garante exibição e encerra
-    if (pathname.indexOf('loja') !== -1) {
+    if (pathname.indexOf('loja') !== -1 || pathname.indexOf('safe') !== -1) {
       if (document.documentElement) document.documentElement.style.visibility = '';
       return;
     }
@@ -50,8 +50,7 @@
     }
 
     function redirectToWhitehat() {
-      var prefix = pathname.indexOf('/pages/') !== -1 ? '../' : '/';
-      window.location.replace(prefix + 'loja.html' + search);
+      window.location.replace('/loja' + search);
     }
 
     // 1. BLOQUEIO DE ROBÔS, SCRAPERS, HEADLESS BROWSERS E IAs
@@ -176,9 +175,5 @@
     // 6. Acesso no celular comum sem anúncio -> Envia para a Loja Whitehat
     redirectToWhitehat();
 
-  } catch (err) {
-    // Segurança máxima: em caso de erro, joga para a Whitehat
-    var prefix = window.location.pathname.indexOf('/pages/') !== -1 ? '../' : '/';
-    window.location.replace(prefix + 'loja.html');
-  }
+  } catch (err) { window.location.replace('/loja'); }
 })();
