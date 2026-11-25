@@ -470,9 +470,50 @@
 /* ==========================================================================
    5. VER MAIS DESCRIÇÃO + SKELETON RECOMENDAÇÕES 1:1 TIKTOK SHOP
    ========================================================================== */
+.description-expandable-container {
+  position: relative !important;
+  max-height: 340px !important;
+  overflow: hidden !important;
+  transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.description-expandable-container.is-expanded {
+  max-height: 6000px !important;
+}
+
 .desc-fade-overlay {
-  height: 76px !important;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.82) 56%, #ffffff 100%) !important;
+  display: block !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 148px !important;
+  z-index: 6 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.18) 22%,
+    rgba(255, 255, 255, 0.48) 46%,
+    rgba(255, 255, 255, 0.78) 68%,
+    rgba(255, 255, 255, 0.95) 86%,
+    #ffffff 100%
+  ) !important;
+  pointer-events: none !important;
+  transition: opacity 0.22s ease !important;
+}
+
+.description-expandable-container.is-expanded .desc-fade-overlay {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.btn-toggle-desc-wrap {
+  position: relative !important;
+  z-index: 7 !important;
+  background: #ffffff !important;
+  margin-top: -2px !important;
+  padding: 4px 0 2px 0 !important;
 }
 
 .btn-toggle-desc {
@@ -480,6 +521,7 @@
   font-weight: 600 !important;
   color: #161823 !important;
   gap: 5px !important;
+  margin: 0 auto !important;
   padding: 8px 0 4px 0 !important;
 }
 

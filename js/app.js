@@ -6586,6 +6586,34 @@ window.toggleSobreProdutoDescricao = function(expand) {
 // ==========================================================================
 // TIKTOK SHOP: TOGGLE DESCRIÇÃO EXPANSÍVEL COM FADE-OUT
 // ==========================================================================
+window.calibrateDescricaoCollapsedHeight = function() {
+  var container = document.getElementById('desc-expandable-container');
+  var fade = document.getElementById('desc-fade-overlay');
+  if (!container || container.classList.contains('is-expanded')) return;
+  container.style.removeProperty('max-height');
+  var fullH = container.scrollHeight || 0;
+  if (fullH > 0 && fullH <= 355) {
+    var targetH = Math.max(150, Math.round(fullH * 0.68));
+    container.style.setProperty('max-height', targetH + 'px', 'important');
+    if (fade) fade.style.setProperty('height', Math.min(135, Math.round(targetH * 0.72)) + 'px', 'important');
+  } else {
+    container.style.setProperty('max-height', '340px', 'important');
+    if (fade) fade.style.setProperty('height', '148px', 'important');
+  }
+};
+
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      window.calibrateDescricaoCollapsedHeight();
+      setTimeout(window.calibrateDescricaoCollapsedHeight, 350);
+    });
+  } else {
+    window.calibrateDescricaoCollapsedHeight();
+    setTimeout(window.calibrateDescricaoCollapsedHeight, 350);
+  }
+}
+
 window.toggleDescricaoCompleta = function() {
   var container = document.getElementById('desc-expandable-container');
   var btn = document.getElementById('btn-toggle-desc');
@@ -6597,10 +6625,12 @@ window.toggleDescricaoCompleta = function() {
     container.classList.remove('is-expanded');
     btn.classList.remove('is-expanded');
     if (text) text.textContent = 'Ver mais';
+    window.calibrateDescricaoCollapsedHeight();
     var section = document.getElementById('sobre-produto-desc-section');
     if (section) section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   } else {
     container.classList.add('is-expanded');
+    container.style.setProperty('max-height', (container.scrollHeight + 200) + 'px', 'important');
     btn.classList.add('is-expanded');
     if (text) text.textContent = 'Ver menos';
   }

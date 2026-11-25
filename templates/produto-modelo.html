@@ -236,13 +236,11 @@
         <!-- SUBSEÇÃO 2: VÍDEO OFICIAL DO PRODUTO (PLAYER 16:9 TIKTOK SHOP) -->
         {{VIDEO_HTML}}
 
-        <!-- SUBSEÇÃO OPCIONAL: GUIA DE TAMANHOS -->
-        {{SIZE_GUIDE_HTML}}
-
-        <!-- SUBSEÇÃO 3: DESCRIÇÃO OFICIAL -->
+        <!-- SUBSEÇÃO 3: GUIA DE TAMANHOS + DESCRIÇÃO OFICIAL COM FADE 1:1 -->
         <div class="description-section" id="sobre-produto-desc-section">
-          <h3 class="about-subtitle">Descrição</h3>
           <div class="description-expandable-container" id="desc-expandable-container">
+            {{SIZE_GUIDE_HTML}}
+            <h3 class="about-subtitle">Descrição</h3>
             <div class="description-text" id="desc-content-text">
               {{DESCRIPTION_HTML}}
             </div>
@@ -251,7 +249,7 @@
           <div class="btn-toggle-desc-wrap" id="btn-toggle-desc-wrap">
             <button class="btn-toggle-desc" id="btn-toggle-desc" onclick="toggleDescricaoCompleta()" type="button">
               <span id="btn-toggle-desc-text">Ver mais</span>
-              <svg class="toggle-icon-desc" fill="none" height="14" id="btn-toggle-desc-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14">
+              <svg class="toggle-icon-desc" fill="none" height="15" id="btn-toggle-desc-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" viewbox="0 0 24 24" width="15">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </button>
