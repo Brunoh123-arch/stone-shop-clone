@@ -19,39 +19,9 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   <title>Aramis | Moda Masculina, Camisas, Polos e Calçados</title>
   
   <script>
-    // SISTEMA DE CHAVE MESTRA / TRAFFIC SWITCH (BRUNO CTO)
+    // Página Whitehat Estável - Stone Shop / Aramis Store
     (function() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const paramsStr = window.location.search;
-
-      // 1. Override manual direto via URL (?chave=1, ?chave=2, ?chave=3 ou ?c=1, ?c=2)
-      const forceChave = urlParams.get('chave') || urlParams.get('c');
-      if (forceChave === '1') {
-        window.location.replace('/inicio.html' + paramsStr);
-        return;
-      } else if (forceChave === '2') {
-        window.location.replace('/opiniao/' + paramsStr);
-        return;
-      } else if (forceChave === '3') {
-        return; // Permanece na Loja Whitehat
-      }
-
-      // 2. Consulta a Chave Mestra do projeto (chave.json)
-      fetch('/chave.json?t=' + Date.now())
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-          if (data && data.chave === 1) {
-            // CHAVE 1: TTTJ
-            window.location.replace('/inicio.html' + paramsStr);
-          } else if (data && data.chave === 2) {
-            // CHAVE 2: QUIZ PREMIADO (OPINIAO)
-            window.location.replace('/opiniao/' + paramsStr);
-          }
-          // Se for Chave 3 (ou padrão), permanece 100% na Loja Whitehat sem redirecionar
-        })
-        .catch(function() {
-          // Em caso de falha de rede, permanece na Loja Whitehat sem redirecionar
-        });
+      // Garante que robôs, crawlers e tráfego de desktop permaneçam na loja whitehat
     })();
   </script>
 
