@@ -467,4 +467,43 @@
   flex-shrink: 0 !important;
 }
 
+/* ==========================================================================
+   5. VER MAIS DESCRIÇÃO + SKELETON RECOMENDAÇÕES 1:1 TIKTOK SHOP
+   ========================================================================== */
+.desc-fade-overlay {
+  height: 76px !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.82) 56%, #ffffff 100%) !important;
+}
+
+.btn-toggle-desc {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #161823 !important;
+  gap: 5px !important;
+  padding: 8px 0 4px 0 !important;
+}
+
+.btn-toggle-desc .toggle-icon-desc {
+  width: 15px !important;
+  height: 15px !important;
+  stroke: #161823 !important;
+  stroke-width: 2.3 !important;
+}
+
+.related-section {
+  background: #f5f5f5 !important;
+  padding: 14px 0 24px !important;
+}
+
+@keyframes ttRelSkeletonPulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.tt-rel-skel-shimmer {
+  background: linear-gradient(90deg, #f9f9f9 25%, #ffffff 50%, #f9f9f9 75%) !important;
+  background-size: 200% 100% !important;
+  animation: ttRelSkeletonPulse 1.35s ease-in-out infinite !important;
+}
+
 

@@ -1223,43 +1223,14 @@ function initAvatarColors() {
 
 // ===== PRODUTOS RELACIONADOS DINÂMICOS — MASONRY CASCATA REAL COM VÍDEO E DADOS 1:1 TIKTOK SHOP =====
 
-// ===== SKELETON / LOADING 1:1 TIKTOK SHOP (IMAGEM 3) =====
+// ===== SKELETON / LOADING 1:1 TIKTOK SHOP (Fundo #f5f5f5 + 1 barra título + 2 blocos suaves #f9f9f9) =====
 function getRelatedSkeletonHtml() {
   return `
-    <div class="masonry-column" style="display:flex; flex-direction:column; gap:8px; flex:1; min-width:0;">
-      <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:flex; flex-direction:column; width:100%;">
-        <div class="tt-shimmer-box" style="width:100%; aspect-ratio:1 / 1.1; background:#f2f2f3;"></div>
-        <div style="padding:8px 8px 12px; display:flex; flex-direction:column; gap:6px;">
-          <div class="tt-shimmer-box" style="height:12px; width:85%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:12px; width:55%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:14px; width:40%; border-radius:4px; background:#f0f0f2; margin-top:4px;"></div>
-        </div>
-      </div>
-      <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:flex; flex-direction:column; width:100%;">
-        <div class="tt-shimmer-box" style="width:100%; aspect-ratio:1 / 1.1; background:#f2f2f3;"></div>
-        <div style="padding:8px 8px 12px; display:flex; flex-direction:column; gap:6px;">
-          <div class="tt-shimmer-box" style="height:12px; width:85%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:12px; width:55%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:14px; width:40%; border-radius:4px; background:#f0f0f2; margin-top:4px;"></div>
-        </div>
-      </div>
-    </div>
-    <div class="masonry-column" style="display:flex; flex-direction:column; gap:8px; flex:1; min-width:0;">
-      <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:flex; flex-direction:column; width:100%;">
-        <div class="tt-shimmer-box" style="width:100%; aspect-ratio:1 / 1.1; background:#f2f2f3;"></div>
-        <div style="padding:8px 8px 12px; display:flex; flex-direction:column; gap:6px;">
-          <div class="tt-shimmer-box" style="height:12px; width:85%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:12px; width:55%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:14px; width:40%; border-radius:4px; background:#f0f0f2; margin-top:4px;"></div>
-        </div>
-      </div>
-      <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:flex; flex-direction:column; width:100%;">
-        <div class="tt-shimmer-box" style="width:100%; aspect-ratio:1 / 1.1; background:#f2f2f3;"></div>
-        <div style="padding:8px 8px 12px; display:flex; flex-direction:column; gap:6px;">
-          <div class="tt-shimmer-box" style="height:12px; width:85%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:12px; width:55%; border-radius:4px; background:#f0f0f2;"></div>
-          <div class="tt-shimmer-box" style="height:14px; width:40%; border-radius:4px; background:#f0f0f2; margin-top:4px;"></div>
-        </div>
+    <div class="tt-related-skeleton-wrap" style="width:100%; padding:2px 0 10px; box-sizing:border-box;">
+      <div class="tt-rel-skel-shimmer" style="width:48%; height:18px; border-radius:4px; margin:0 0 12px 2px;"></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; width:100%;">
+        <div class="tt-rel-skel-shimmer" style="width:100%; height:246px; border-radius:8px;"></div>
+        <div class="tt-rel-skel-shimmer" style="width:100%; height:246px; border-radius:8px;"></div>
       </div>
     </div>
   `;
@@ -1519,7 +1490,7 @@ function renderRelacionados() {
     }
   });
 
-  grid.innerHTML = `
+  const finalMasonryHtml = `
     <div class="masonry-column" style="display:flex; flex-direction:column; flex:1; min-width:0;">
       ${colLeft.join('')}
     </div>
@@ -1528,6 +1499,44 @@ function renderRelacionados() {
     </div>
   `;
 
+  const relSection = grid.closest('.related-section');
+  const relTitle = relSection ? relSection.querySelector('.related-title') : null;
+
+  // Inicializa com o Skeleton oficial 1:1 (igual à print) abaixo do "Ver mais ⌄" e carrega os produtos ao entrar na tela
+  if (relTitle) relTitle.style.display = 'none';
+  grid.innerHTML = getRelatedSkeletonHtml();
+
+  let hasRevealedRel = false;
+  function revealRelatedProducts() {
+    if (hasRevealedRel) return;
+    hasRevealedRel = true;
+    setTimeout(() => {
+      if (relTitle) relTitle.style.display = '';
+      grid.style.opacity = '0';
+      grid.style.transition = 'opacity 0.22s ease';
+      grid.innerHTML = finalMasonryHtml;
+      requestAnimationFrame(() => {
+        grid.style.opacity = '1';
+      });
+      bindRelatedVideos();
+    }, 680);
+  }
+
+  if (typeof IntersectionObserver !== 'undefined' && (relSection || grid)) {
+    const skelObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          skelObs.disconnect();
+          revealRelatedProducts();
+        }
+      });
+    }, { rootMargin: '20px 0px', threshold: 0.05 });
+    skelObs.observe(relSection || grid);
+  } else {
+    revealRelatedProducts();
+  }
+
+  function bindRelatedVideos() {
   // === DINÂMICA OFICIAL TIKTOK SHOP: TEMPO PASSANDO EM TEMPO REAL & PLAY/PAUSE INTERATIVO ===
   const videoCards = grid.querySelectorAll('.related-card');
   
@@ -1603,6 +1612,7 @@ function renderRelacionados() {
       updateBadgeState();
     });
   });
+  }
 }
 
 // ===== ABAS DE NAVEGAÇÃO DO PRODUTO =====
@@ -2784,38 +2794,37 @@ function formatCompactReviews() {
     card.setAttribute('data-author-variation', varAttrDisplay);
     card.setAttribute('data-author-date', rawDateTxt.split('·')[0].split('|')[0].trim() || (idx === 0 ? '23/10' : (idx < 3 ? '1 sem.' : '2 sem.')));
 
-    // Cabeçalho compacto idêntico ao oficial TikTok Shop (Imagem 2):
-    // [Avatar 32x32] + [★★★★★ · VARIAÇÃO Atributo...] na mesma linha horizontal
+    // Cabeçalho compacto 1:1 com print oficial TikTok Shop:
+    // [Avatar 24x24] + [★★★★★] + [· Variação] em linha única centralizada (sem nome e sem data visíveis)
     const maskedName = (typeof formatTikTokMaskedName === 'function') ? formatTikTokMaskedName(rawAuthorName, idx) : (rawAuthorName || 'Cliente');
+    const starCountNum = Math.max(1, Math.min(5, parseInt(rawAuthorStars, 10) || 5));
+    let starsInlineHtml = '';
+    for (let s = 1; s <= 5; s++) {
+      starsInlineHtml += getTTOfficialStarSvg(12, s <= starCountNum);
+    }
     const compactHeader = document.createElement('div');
     compactHeader.className = 'review-header';
-    compactHeader.style.cssText = 'display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; width: 100%; overflow: hidden;';
+    compactHeader.style.cssText = 'display: flex; align-items: center; gap: 7px; margin-bottom: 7px; width: 100%; overflow: hidden;';
     compactHeader.innerHTML = `
-      <div class="review-avatar" style="width: 32px; height: 32px; min-width: 32px; border-radius: 50%; overflow: hidden; flex-shrink: 0; margin-top: 1px;">
+      <div class="review-avatar" style="width: 24px; height: 24px; min-width: 24px; border-radius: 50%; overflow: hidden; flex-shrink: 0;">
         <img src="${avatarSrc}" alt="${maskedName}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
       </div>
-      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 2px;">
-        <div style="display: flex; align-items: center; gap: 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
-          <span style="font-size: 12.5px; font-weight: 600; color: #161823; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${maskedName}</span>
-          <span style="display:flex; align-items:center; gap:1px; flex-shrink:0;">${getTTOfficialStarSvg(11, true)}${getTTOfficialStarSvg(11, true)}${getTTOfficialStarSvg(11, true)}${getTTOfficialStarSvg(11, true)}${getTTOfficialStarSvg(11, true)}</span>
-        </div>
-        <div style="font-size: 11px; color: #73747b; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-          <span>${card.getAttribute('data-author-date') || '12/10'}</span>
-          <span> · </span>
-          <span>${varAttrDisplay}</span>
-        </div>
+      <div style="display: flex; align-items: center; gap: 5px; flex: 1; min-width: 0; overflow: hidden; white-space: nowrap;">
+        <span style="display: inline-flex; align-items: center; gap: 2px; flex-shrink: 0;">${starsInlineHtml}</span>
+        <span style="color: #8a8b91; font-size: 12.5px; line-height: 1; flex-shrink: 0;">·</span>
+        <span style="font-size: 12.5px; color: #73747b; font-weight: 400; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${varAttrDisplay}</span>
       </div>
     `;
     contentWrap.appendChild(compactHeader);
 
     const comment = card.querySelector('.review-comment');
     if (comment) {
-      comment.style.cssText = 'font-size: 13px; line-height: 1.42; color: #161823; margin: 0; word-break: break-word; width: 100%; display: block; font-weight: 400;';
+      comment.style.cssText = 'font-size: 13.5px; line-height: 1.4; color: #161823; margin: 0; word-break: break-word; width: 100%; font-weight: 400; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;';
       contentWrap.appendChild(comment);
     }
 
     card.innerHTML = '';
-    card.style.cssText = 'display: flex; justify-content: space-between; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #f0f0f0; width: 100%; box-sizing: border-box; cursor: pointer;';
+    card.style.cssText = 'display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 0; border-bottom: none; width: 100%; box-sizing: border-box; cursor: pointer;';
     card.addEventListener('click', function(e) {
       if (e.target.closest('.review-compact-thumb-wrap, .review-photo, video')) return;
       if (typeof window.abrirTelaAvaliacoesCompletas === 'function') {
@@ -2851,10 +2860,10 @@ function formatCompactReviews() {
       const thumbWrap = document.createElement('div');
       thumbWrap.className = 'review-compact-thumb-wrap';
       thumbWrap.style.cssText = `
-        width: 70px;
-        height: 70px;
-        min-width: 70px;
-        border-radius: 6px;
+        width: 84px;
+        height: 84px;
+        min-width: 84px;
+        border-radius: 8px;
         overflow: hidden;
         position: relative;
         flex-shrink: 0;
@@ -2864,7 +2873,7 @@ function formatCompactReviews() {
 
       // Play badge oficial idêntico ao TikTok Shop (Imagem 2)
       const playBadge = `
-        <div class="review-thumb-play" style="position:absolute; top:4px; left:4px; width:20px; height:20px; background:rgba(0,0,0,0.45); border-radius:50%; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2;">
+        <div class="review-thumb-play" style="position:absolute; top:5px; left:5px; width:20px; height:20px; background:rgba(0,0,0,0.45); border-radius:50%; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:2;">
           <svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" style="margin-left:1px;"><polygon points="6 4 20 12 6 20"></polygon></svg>
         </div>`;
 
@@ -2874,11 +2883,11 @@ function formatCompactReviews() {
         <img src="${bestThumbItem.src}" alt="Mídia do cliente" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="var w=this.closest('.review-compact-thumb-wrap');if(w){w.style.display='none';}">
       `;
 
-      // Badge de quantidade (+5, +4) com estilo e opacidade idênticos à Imagem 2
+      // Badge de quantidade (+3, +2) com estilo e opacidade idênticos à print oficial
       thumbWrap.innerHTML = `
         ${mediaHtml}
         ${isVideo ? playBadge : ''}
-        ${totalFotos > 1 ? `<div class="review-thumb-count" style="position:absolute; bottom:4px; right:4px; background:rgba(0,0,0,0.45); color:#fff; font-size:10.5px; font-weight:600; padding:1px 5px; border-radius:4px; line-height:1.2; pointer-events:none; z-index:2;">+${totalFotos}</div>` : ''}
+        ${totalFotos > 1 ? `<div class="review-thumb-count" style="position:absolute; bottom:5px; right:5px; background:rgba(0,0,0,0.62); color:#fff; font-size:11px; font-weight:600; padding:1.5px 5.5px; border-radius:4px; line-height:1.2; pointer-events:none; z-index:2;">+${totalFotos}</div>` : ''}
       `;
 
       thumbWrap.onclick = (e) => {
@@ -6069,6 +6078,199 @@ function formatarPrazoEnvioCompleto() {
   return `Receba até ${semMin}., ${diaMin} de ${mesMin} – ${semMax}., ${diaMax} de ${mesMax}`;
 }
 
+const BR_ESTADOS_ENVIO = [
+  { uf: 'AC', nome: 'Acre', cap: ['Rio Branco', 'Cruzeiro do Sul', 'Sena Madureira', 'Tarauacá'] },
+  { uf: 'AL', nome: 'Alagoas', cap: ['Maceió', 'Arapiraca', 'Rio Largo', 'Palmeira dos Índios'] },
+  { uf: 'AP', nome: 'Amapá', cap: ['Macapá', 'Santana', 'Laranjal do Jari', 'Oiapoque'] },
+  { uf: 'AM', nome: 'Amazonas', cap: ['Manaus', 'Parintins', 'Itacoatiara', 'Manacapuru'] },
+  { uf: 'BA', nome: 'Bahia', cap: ['Salvador', 'Feira de Santana', 'Vitória da Conquista', 'Camaçari', 'Ilhéus', 'Juazeiro', 'Lauro de Freitas'] },
+  { uf: 'CE', nome: 'Ceará', cap: ['Fortaleza', 'Caucaia', 'Juazeiro do Norte', 'Maracanaú', 'Sobral'] },
+  { uf: 'DF', nome: 'Distrito Federal', cap: ['Brasília', 'Taguatinga', 'Ceilândia', 'Águas Claras', 'Gama'] },
+  { uf: 'ES', nome: 'Espírito Santo', cap: ['Vitória', 'Vila Velha', 'Serra', 'Cariacica', 'Cachoeiro de Itapemirim'] },
+  { uf: 'GO', nome: 'Goiás', cap: ['Goiânia', 'Aparecida de Goiânia', 'Anápolis', 'Rio Verde', 'Luziânia'] },
+  { uf: 'MA', nome: 'Maranhão', cap: ['São Luís', 'Imperatriz', 'São José de Ribamar', 'Timon', 'Caxias'] },
+  { uf: 'MT', nome: 'Mato Grosso', cap: ['Cuiabá', 'Várzea Grande', 'Rondonópolis', 'Sinop', 'Tangará da Serra'] },
+  { uf: 'MS', nome: 'Mato Grosso do Sul', cap: ['Campo Grande', 'Dourados', 'Três Lagoas', 'Corumbá'] },
+  { uf: 'MG', nome: 'Minas Gerais', cap: ['Belo Horizonte', 'Uberlândia', 'Contagem', 'Juiz de Fora', 'Betim', 'Montes Claros', 'Uberaba'] },
+  { uf: 'PA', nome: 'Pará', cap: ['Belém', 'Ananindeua', 'Santarém', 'Marabá', 'Parauapebas', 'Castanhal', 'Abaetetuba'] },
+  { uf: 'PB', nome: 'Paraíba', cap: ['João Pessoa', 'Campina Grande', 'Santa Rita', 'Patos'] },
+  { uf: 'PR', nome: 'Paraná', cap: ['Curitiba', 'Londrina', 'Maringá', 'Ponta Grossa', 'Cascavel', 'São José dos Pinhais', 'Foz do Iguaçu'] },
+  { uf: 'PE', nome: 'Pernambuco', cap: ['Recife', 'Jaboatão dos Guararapes', 'Olinda', 'Caruaru', 'Petrolina', 'Paulista'] },
+  { uf: 'PI', nome: 'Piauí', cap: ['Teresina', 'Parnaíba', 'Picos', 'Piripiri'] },
+  { uf: 'RJ', nome: 'Rio de Janeiro', cap: ['Rio de Janeiro', 'São Gonçalo', 'Duque de Caxias', 'Nova Iguaçu', 'Niterói', 'Belford Roxo', 'Campos dos Goytacazes'] },
+  { uf: 'RN', nome: 'Rio Grande do Norte', cap: ['Natal', 'Mossoró', 'Parnamirim', 'São Gonçalo do Amarante'] },
+  { uf: 'RS', nome: 'Rio Grande do Sul', cap: ['Porto Alegre', 'Caxias do Sul', 'Canoas', 'Pelotas', 'Santa Maria', 'Gravataí', 'Novo Hamburgo'] },
+  { uf: 'RO', nome: 'Rondônia', cap: ['Porto Velho', 'Ji-Paraná', 'Ariquemes', 'Vilhena'] },
+  { uf: 'RR', nome: 'Roraima', cap: ['Boa Vista', 'Rorainópolis', 'Caracaraí'] },
+  { uf: 'SC', nome: 'Santa Catarina', cap: ['Florianópolis', 'Joinville', 'Blumenau', 'São José', 'Chapecó', 'Itajaí', 'Criciúma'] },
+  { uf: 'SP', nome: 'São Paulo', cap: ['São Paulo', 'Guarulhos', 'Campinas', 'São Bernardo do Campo', 'Santo André', 'Osasco', 'Ribeirão Preto', 'Sorocaba', 'Santos', 'São José dos Campos'] },
+  { uf: 'SE', nome: 'Sergipe', cap: ['Aracaju', 'Nossa Senhora do Socorro', 'Lagarto', 'Itabaiana'] },
+  { uf: 'TO', nome: 'Tocantins', cap: ['Palmas', 'Araguaína', 'Gurupi', 'Porto Nacional'] }
+];
+
+const _ibgeCidadesCache = {};
+let _envioSelectedEstado = null;
+
+function getSavedEnvioDestino() {
+  try {
+    const saved = localStorage.getItem('stone_envio_local');
+    if (saved) {
+      const p = JSON.parse(saved);
+      if (p && p.cidade && p.estadoNome) return `${p.cidade}, ${p.estadoNome}, Brasil`;
+    }
+    const cepData = localStorage.getItem('user_cep_info');
+    if (cepData) {
+      const parsed = JSON.parse(cepData);
+      if (parsed && parsed.cidade && parsed.uf) {
+        const est = BR_ESTADOS_ENVIO.find(e => e.uf === String(parsed.uf).toUpperCase());
+        return `${parsed.cidade}, ${est ? est.nome : parsed.uf}, Brasil`;
+      }
+    }
+  } catch (e) {}
+  return '';
+}
+
+window.showEnvioMainStep = function() {
+  const stepMain = document.getElementById('modal-envio-step-main');
+  const stepPicker = document.getElementById('modal-envio-step-picker');
+  const backBtn = document.getElementById('modal-envio-back-btn');
+  const titleEl = document.getElementById('modal-envio-header-title');
+  if (stepMain) stepMain.style.display = 'block';
+  if (stepPicker) stepPicker.style.display = 'none';
+  if (backBtn) backBtn.style.display = 'none';
+  if (titleEl) titleEl.textContent = 'Envio';
+
+  const destinoEl = document.getElementById('modal-envio-destino-txt');
+  if (destinoEl) {
+    const savedTxt = getSavedEnvioDestino();
+    if (savedTxt) {
+      destinoEl.textContent = savedTxt;
+      destinoEl.style.color = '#161823';
+    } else {
+      destinoEl.textContent = 'Selecionar estado';
+      destinoEl.style.color = '#161823';
+    }
+  }
+};
+
+window.openEnvioEstadoPicker = function() {
+  _envioSelectedEstado = null;
+  const stepMain = document.getElementById('modal-envio-step-main');
+  const stepPicker = document.getElementById('modal-envio-step-picker');
+  const backBtn = document.getElementById('modal-envio-back-btn');
+  const titleEl = document.getElementById('modal-envio-header-title');
+  const searchInput = document.getElementById('modal-envio-search-input');
+  const listWrap = document.getElementById('modal-envio-picker-list');
+  if (!stepPicker || !listWrap) return;
+
+  if (stepMain) stepMain.style.display = 'none';
+  stepPicker.style.display = 'flex';
+  if (backBtn) {
+    backBtn.style.display = 'flex';
+    backBtn.onclick = function() { window.showEnvioMainStep(); };
+  }
+  if (titleEl) titleEl.textContent = 'Selecionar estado';
+  if (searchInput) {
+    searchInput.value = '';
+    searchInput.placeholder = 'Pesquisar estado...';
+    searchInput.oninput = function() { renderEstadosList(searchInput.value); };
+  }
+  renderEstadosList('');
+};
+
+function renderEstadosList(filtro) {
+  const listWrap = document.getElementById('modal-envio-picker-list');
+  if (!listWrap) return;
+  const q = String(filtro || '').trim().toLowerCase();
+  const filtrados = BR_ESTADOS_ENVIO.filter(e => !q || e.nome.toLowerCase().includes(q) || e.uf.toLowerCase().includes(q));
+  listWrap.innerHTML = filtrados.map(e => `
+    <div onclick="window.openEnvioCidadePicker('${e.uf}')" style="display:flex; align-items:center; justify-content:space-between; padding:13px 16px; border-bottom:1px solid #f3f3f5; cursor:pointer; font-size:14.5px; color:#161823; -webkit-tap-highlight-color:transparent;">
+      <span>${e.nome}</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#999aa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </div>
+  `).join('');
+  listWrap.scrollTop = 0;
+}
+
+window.openEnvioCidadePicker = async function(uf) {
+  const est = BR_ESTADOS_ENVIO.find(e => e.uf === uf);
+  if (!est) return;
+  _envioSelectedEstado = est;
+
+  const backBtn = document.getElementById('modal-envio-back-btn');
+  const titleEl = document.getElementById('modal-envio-header-title');
+  const searchInput = document.getElementById('modal-envio-search-input');
+  const listWrap = document.getElementById('modal-envio-picker-list');
+  if (!listWrap) return;
+
+  if (titleEl) titleEl.textContent = `Selecionar cidade (${est.uf})`;
+  if (backBtn) {
+    backBtn.style.display = 'flex';
+    backBtn.onclick = function() { window.openEnvioEstadoPicker(); };
+  }
+  if (searchInput) {
+    searchInput.value = '';
+    searchInput.placeholder = `Pesquisar cidade em ${est.nome}...`;
+  }
+
+  listWrap.innerHTML = '<div style="padding:28px 16px; text-align:center; color:#8a8b91; font-size:13.5px;">Carregando cidades...</div>';
+
+  let cidades = _ibgeCidadesCache[uf];
+  if (!cidades) {
+    try {
+      const ctrl = new AbortController();
+      const tId = setTimeout(() => ctrl.abort(), 3500);
+      const resp = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios?orderBy=nome`, { signal: ctrl.signal });
+      clearTimeout(tId);
+      if (resp.ok) {
+        const arr = await resp.json();
+        if (Array.isArray(arr) && arr.length > 0) {
+          cidades = arr.map(c => c.nome);
+          _ibgeCidadesCache[uf] = cidades;
+        }
+      }
+    } catch (e) {}
+  }
+  if (!cidades || !cidades.length) {
+    cidades = est.cap.slice().sort((a, b) => a.localeCompare(b, 'pt-BR'));
+  }
+
+  function renderCidades(qStr) {
+    const q = String(qStr || '').trim().toLowerCase();
+    const matches = cidades.filter(c => !q || c.toLowerCase().includes(q));
+    if (!matches.length) {
+      listWrap.innerHTML = '<div style="padding:24px 16px; text-align:center; color:#8a8b91; font-size:13.5px;">Nenhuma cidade encontrada</div>';
+      return;
+    }
+    listWrap.innerHTML = matches.map(c => {
+      const safeC = c.replace(/'/g, "\\'");
+      return `
+        <div onclick="window.selectEnvioCidade('${safeC}')" style="display:flex; align-items:center; justify-content:space-between; padding:13px 16px; border-bottom:1px solid #f3f3f5; cursor:pointer; font-size:14.5px; color:#161823; -webkit-tap-highlight-color:transparent;">
+          <span>${c}</span>
+        </div>
+      `;
+    }).join('');
+    listWrap.scrollTop = 0;
+  }
+
+  if (searchInput) {
+    searchInput.oninput = function() { renderCidades(searchInput.value); };
+  }
+  renderCidades('');
+};
+
+window.selectEnvioCidade = function(cidade) {
+  if (!_envioSelectedEstado || !cidade) return;
+  try {
+    localStorage.setItem('stone_envio_local', JSON.stringify({
+      uf: _envioSelectedEstado.uf,
+      estadoNome: _envioSelectedEstado.nome,
+      cidade: cidade
+    }));
+  } catch (e) {}
+  window.showEnvioMainStep();
+};
+
 window.openEnvioModal = function() {
   let overlay = document.getElementById('modal-envio-overlay');
   if (!overlay) {
@@ -6077,16 +6279,18 @@ window.openEnvioModal = function() {
   }
   if (!overlay) return;
 
+  window.showEnvioMainStep();
+
   // Atualiza a data dinâmica
   const prazoEl = document.getElementById('modal-envio-prazo-txt');
   if (prazoEl) {
     prazoEl.textContent = formatarPrazoEnvioCompleto();
   }
 
-  // Puxa o preço riscado do frete se existir na tela
+  // Puxa o preço original do frete da tela principal ou exibe R$ 19,20
   const precoEl = document.getElementById('modal-envio-preco-txt');
   if (precoEl) {
-    const riscadoEl = document.querySelector('.info-row-text-group span[style*="line-through"]');
+    const riscadoEl = document.querySelector('.info-row-frete-orig, .info-row-text-group span[style*="line-through"]');
     if (riscadoEl && riscadoEl.textContent.trim()) {
       precoEl.textContent = riscadoEl.textContent.trim();
     } else {
@@ -6094,22 +6298,8 @@ window.openEnvioModal = function() {
     }
   }
 
-  // Tenta obter localização salva ou cidade padrão
-  const destinoEl = document.getElementById('modal-envio-destino-txt');
-  if (destinoEl) {
-    try {
-      const cepData = localStorage.getItem('user_cep_info');
-      if (cepData) {
-        const parsed = JSON.parse(cepData);
-        if (parsed.cidade && parsed.uf) {
-          destinoEl.textContent = `${parsed.cidade}, ${parsed.uf}, Brasil`;
-        }
-      }
-    } catch(e) {}
-  }
-
   overlay.style.display = 'flex';
-  void overlay.offsetWidth; // Força reflow para transição suave
+  void overlay.offsetWidth;
   overlay.style.opacity = '1';
   overlay.style.pointerEvents = 'auto';
 
@@ -6181,65 +6371,78 @@ window.initEnvioModal = function() {
   overlay.style.cssText = 'position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100000; display: none; align-items: flex-end; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.25s ease;';
 
   overlay.innerHTML = `
-    <div id="modal-envio-box" style="position: relative; width: 100%; max-width: 480px; background: #ffffff; border-radius: 16px 16px 0 0; z-index: 100001; overflow: hidden; box-shadow: 0 -4px 20px rgba(0,0,0,0.18); transform: translateY(100%); transition: transform 0.28s cubic-bezier(0.25, 1, 0.5, 1); min-height: 380px; box-sizing: border-box;">
+    <div id="modal-envio-box" style="position: relative; width: 100%; max-width: 480px; background: #ffffff; border-radius: 14px 14px 0 0; z-index: 100001; overflow: hidden; box-shadow: 0 -4px 20px rgba(0,0,0,0.18); transform: translateY(100%); transition: transform 0.28s cubic-bezier(0.25, 1, 0.5, 1); min-height: 58vh; max-height: 78vh; display: flex; flex-direction: column; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
       
       <!-- Cabeçalho Oficial -->
-      <div style="position: relative; height: 52px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #f1f1f2; padding: 0 16px;">
-        <span style="font-size: 16px; font-weight: 700; color: #161823; letter-spacing: -0.2px;">Envio</span>
+      <div style="position: relative; height: 52px; min-height: 52px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #f1f1f2; padding: 0 16px;">
+        <button id="modal-envio-back-btn" type="button" style="display: none; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; padding: 8px; align-items: center; justify-content: center;" aria-label="Voltar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <span id="modal-envio-header-title" style="font-size: 16px; font-weight: 700; color: #161823; letter-spacing: -0.2px;">Envio</span>
         <button type="button" onclick="window.closeEnvioModal()" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; padding: 8px; display: flex; align-items: center; justify-content: center;" aria-label="Fechar">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
       </div>
 
-      <!-- Bloco 1: Origem e Destino -->
-      <div style="padding: 18px 16px 12px 16px;">
-        <!-- Linha 1: Origem -->
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <!-- Ícone Loja/Galpão TikTok Shop -->
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
-            <path d="M4 10V20C4 20.5523 4.44772 21 5 21H19C19.5523 21 20 20.5523 20 20V10" stroke="#161823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2.5 10L12 3L21.5 10" stroke="#161823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M9 21V15H15V21" stroke="#161823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12 15L15 15M13.5 13.5L15 15L13.5 16.5" stroke="#161823" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span style="font-size: 14.5px; font-weight: 500; color: #161823;">De São Paulo</span>
-        </div>
-
-        <!-- Setinhas duplas conectoras -->
-        <div style="padding-left: 4px; margin: 4px 0 2px 0; display: flex; align-items: center;">
-          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
-            <path d="M2 3L6 7L10 3" stroke="#8a8b91" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 8L6 12L10 8" stroke="#8a8b91" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-
-        <!-- Linha 2: Destino -->
-        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer;">
+      <!-- STEP 1: TELA PRINCIPAL ENVIO 1:1 -->
+      <div id="modal-envio-step-main" style="flex: 1;">
+        <!-- Bloco 1: Origem e Destino -->
+        <div style="padding: 18px 16px 14px 16px;">
+          <!-- Linha 1: Origem (Ícone Caixa com Aba + Seta Direita 1:1 da Print) -->
           <div style="display: flex; align-items: center; gap: 12px;">
-            <!-- Ícone Pin Destino -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
-              <path d="M12 21C16 17.5 20 13.5 20 9.5C20 5.08172 16.4183 1.5 12 1.5C7.58172 1.5 4 5.08172 4 9.5C4 13.5 8 17.5 12 21Z" stroke="#161823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="12" cy="9.5" r="3" stroke="#161823" stroke-width="1.8"/>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+              <path d="M4 8.5H20V19C20 19.8284 19.3284 20.5 18.5 20.5H5.5C4.67157 20.5 4 19.8284 4 19V8.5Z" stroke="#161823" stroke-width="1.75" stroke-linejoin="round"/>
+              <path d="M4 8.5L6.8 4H17.2L20 8.5" stroke="#161823" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.5 14.3H15.2" stroke="#161823" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M12.6 11.8L15.3 14.3L12.6 16.8" stroke="#161823" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span id="modal-envio-destino-txt" style="font-size: 14.5px; font-weight: 400; color: #161823;">Castanhal, Pará, Brasil</span>
+            <span style="font-size: 14.5px; font-weight: 400; color: #161823;">De São Paulo</span>
           </div>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+
+          <!-- Setinhas duplas conectoras 1:1 -->
+          <div style="width: 18px; margin: 7px 0; display: flex; align-items: center; justify-content: center;">
+            <svg width="11" height="13" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+              <path d="M2.2 2.5L6 6.3L9.8 2.5" stroke="#999aa0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.2 7.5L6 11.3L9.8 7.5" stroke="#999aa0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- Linha 2: Destino Clicável (Selecionar Estado → Cidade) -->
+          <div onclick="window.openEnvioEstadoPicker()" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; -webkit-tap-highlight-color: transparent;">
+            <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1;">
+              <!-- Ícone Pin Destino 1:1 -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                <path d="M12 21C15.8 17.6 19 13.9 19 9.8C19 5.93401 15.866 2.8 12 2.8C8.13401 2.8 5 5.93401 5 9.8C5 13.9 8.2 17.6 12 21Z" stroke="#161823" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="9.8" r="2.6" stroke="#161823" stroke-width="1.75"/>
+              </svg>
+              <span id="modal-envio-destino-txt" style="font-size: 14.5px; font-weight: 400; color: #161823; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Selecionar estado</span>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </div>
+        </div>
+
+        <!-- Linha divisória -->
+        <div style="height: 1px; background: #f1f1f2; margin: 4px 16px 16px 16px;"></div>
+
+        <!-- Bloco 2: Opção de Envio (Envio padrão) -->
+        <div style="padding: 0 16px 24px 16px; display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <div style="font-size: 14.5px; font-weight: 600; color: #161823; margin-bottom: 4px;">Envio padrão</div>
+            <div id="modal-envio-prazo-txt" style="font-size: 13px; color: #757575; line-height: 1.35;">${formatarPrazoEnvioCompleto()}</div>
+          </div>
+          <div id="modal-envio-preco-txt" style="font-size: 14px; font-weight: 400; color: #161823; white-space: nowrap; margin-left: 12px;">R$ 19,20</div>
         </div>
       </div>
 
-      <!-- Linha divisória -->
-      <div style="height: 1px; background: #f1f1f2; margin: 6px 16px 16px 16px;"></div>
-
-      <!-- Bloco 2: Opção de Envio (Envio padrão) -->
-      <div style="padding: 0 16px 24px 16px; display: flex; justify-content: space-between; align-items: flex-start;">
-        <div>
-          <div style="font-size: 15px; font-weight: 600; color: #161823; margin-bottom: 4px;">Envio padrão</div>
-          <div id="modal-envio-prazo-txt" style="font-size: 13px; color: #757575; line-height: 1.35;">${formatarPrazoEnvioCompleto()}</div>
+      <!-- STEP 2 & 3: SELETOR ESTADO → CIDADE -->
+      <div id="modal-envio-step-picker" style="display: none; flex-direction: column; flex: 1; min-height: 0; max-height: calc(78vh - 52px);">
+        <div style="padding: 10px 16px; background: #ffffff; border-bottom: 1px solid #f1f1f2;">
+          <input id="modal-envio-search-input" type="text" placeholder="Pesquisar estado..." style="width: 100%; height: 36px; border-radius: 8px; border: none; background: #f3f3f5; padding: 0 12px; font-size: 13.5px; color: #161823; outline: none; box-sizing: border-box;" />
         </div>
-        <div id="modal-envio-preco-txt" style="font-size: 15px; font-weight: 500; color: #161823; white-space: nowrap; margin-left: 12px;">R$ 19,20</div>
+        <div id="modal-envio-picker-list" style="flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch;"></div>
       </div>
 
     </div>
