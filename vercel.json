@@ -12,6 +12,9 @@
     { "source": "/carrinho", "destination": "/pages/carrinho" },
     { "source": "/pages/produto-:id(\\d+).html", "destination": "/api/serve?slug=produto-:id" },
     { "source": "/pages/produto-:id(\\d+)", "destination": "/api/serve?slug=produto-:id" },
+    { "source": "/produto-:id(\\d+).html", "destination": "/api/serve?slug=produto-:id" },
+    { "source": "/produto-:id(\\d+)", "destination": "/api/serve?slug=produto-:id" },
+    { "source": "/produto/:id(\\d+)", "destination": "/api/serve?slug=produto-:id" },
     { "source": "/", "destination": "/api/serve" }
   ],
   "headers": [
