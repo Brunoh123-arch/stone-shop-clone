@@ -202,6 +202,33 @@
         </div>
       </div>
 
+      <!-- SEÇÃO OFERTAS OFICIAL TIKTOK SHOP (ABAIXO DE PROTEÇÃO DO CLIENTE) -->
+      <div class="tt-ofertas-section" id="tt-ofertas-section" onclick="handleAddToCart()">
+        <div class="tt-ofertas-header">
+          <span class="tt-ofertas-title">Ofertas</span>
+          <svg aria-hidden="true" fill="none" height="13" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.95" viewbox="0 0 24 24" width="13"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+        <div class="tt-ofertas-card">
+          <div class="tt-ofertas-stub">
+            <svg aria-hidden="true" class="tt-ofertas-stub-icon" fill="none" height="21" viewbox="0 0 24 24" width="21" xmlns="http://www.w3.org/2000/svg">
+              <g transform="rotate(-42 12 12)">
+                <path d="M4 7.2C4 6.54 4.54 6 5.2 6H18.8C19.46 6 20 6.54 20 7.2V9.8C18.9 9.8 18 10.7 18 11.8C18 12.9 18.9 13.8 20 13.8V16.8C20 17.46 19.46 18 18.8 18H5.2C4.54 18 4 17.46 4 16.8V13.8C5.1 13.8 6 12.9 6 11.8C6 10.7 5.1 9.8 4 9.8V7.2Z" stroke="#d60643" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85"></path>
+                <line stroke="#d60643" stroke-dasharray="1.8 2.2" stroke-linecap="round" stroke-width="1.65" x1="10.2" x2="10.2" y1="8.5" y2="15.5"></line>
+              </g>
+            </svg>
+            <span class="tt-ofertas-stub-text">Tempo<br/>limitado</span>
+          </div>
+          <div class="tt-ofertas-body">
+            <div class="tt-ofertas-main">
+              <div class="tt-ofertas-discount">20% OFF</div>
+              <div class="tt-ofertas-sub">Sem gasto mínimo</div>
+              <div class="tt-ofertas-exp">Expira em <span class="tt-ofertas-timer" id="tt-ofertas-timer">0:59:21.4</span></div>
+            </div>
+            <span class="tt-ofertas-status">Resgatado</span>
+          </div>
+        </div>
+      </div>
+
       <!-- VÍDEOS DE CRIADORES OFICIAL TIKTOK SHOP (VAZIO NO HTML — ZERO FLICKER) -->
       <div class="creators-section" id="creators-section"></div>
 
@@ -343,6 +370,36 @@ if (typeof window.toggleProductDetails !== 'function') {
     if (sp) sp.textContent = isExpanded ? 'Ver mais' : 'Ver menos';
   };
 }
+
+(function initOfertasFastTimer() {
+  var el = document.getElementById('tt-ofertas-timer');
+  if (!el) return;
+  var KEY = 'tt_oferta_deadline_v1';
+  var now = Date.now();
+  var end = 0;
+  try { end = parseInt(sessionStorage.getItem(KEY) || '0', 10); } catch (e) {}
+  if (!end || end <= now + 60000 || end > now + 3600000) {
+    end = now + (59 * 60 * 1000) + (28 * 1000) + 700;
+    try { sessionStorage.setItem(KEY, String(end)); } catch (e) {}
+  }
+  function tick() {
+    var rem = end - Date.now();
+    if (rem <= 0) {
+      end = Date.now() + (59 * 60 * 1000) + (45 * 1000);
+      try { sessionStorage.setItem(KEY, String(end)); } catch (e) {}
+      rem = end - Date.now();
+    }
+    var totalTenths = Math.floor(rem / 100);
+    var tenths = totalTenths % 10;
+    var totalSec = Math.floor(totalTenths / 10);
+    var sec = totalSec % 60;
+    var min = Math.floor(totalSec / 60) % 60;
+    var hr = Math.floor(totalSec / 3600);
+    el.textContent = hr + ':' + (min < 10 ? '0' + min : min) + ':' + (sec < 10 ? '0' + sec : sec) + '.' + tenths;
+  }
+  tick();
+  setInterval(tick, 90);
+})();
 </script>
 <script defer="" src="../tracker.js"></script>
 <script defer="" src="../js/videos-criadores-modular.js?v={{ASSET_VERSION}}"></script>

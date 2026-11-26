@@ -485,91 +485,249 @@
         flex-shrink: 0 !important;
         color: rgba(255, 255, 255, 0.82) !important;
       }
+      /* Modo Comentários Aberto: Vídeo encolhe no topo preto (35.7%) + Gaveta branca 64.3% 1:1 */
+      .tt-modal.comments-open .tt-top-bar,
+      .tt-modal.comments-open .tt-right-actions,
+      .tt-modal.comments-open .tt-left-info,
+      .tt-modal.comments-open .tt-bottom-bar-comment,
+      .tt-modal.comments-open .tt-video-wrapper::after {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+      .tt-modal.comments-open .tt-video-wrapper {
+        flex: 0 0 35.7% !important;
+        height: 35.7% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #000000 !important;
+        transition: height 0.26s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+      }
+      .tt-modal.comments-open .tt-video {
+        width: auto !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        aspect-ratio: 9 / 16 !important;
+        object-fit: cover !important;
+      }
       .tt-comments-drawer {
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        height: 65%;
-        background: #fff;
-        border-radius: 14px 14px 0 0;
-        z-index: 20;
-        transition: bottom 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-        display: flex;
-        flex-direction: column;
+        position: absolute !important;
+        bottom: -100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 64.3% !important;
+        background: #ffffff !important;
+        border-radius: 14px 14px 0 0 !important;
+        z-index: 30 !important;
+        transition: bottom 0.28s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
       }
       .tt-comments-drawer.open {
-        bottom: 0;
+        bottom: 0 !important;
       }
-      .tt-drawer-header {
-        padding: 14px 16px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #eee;
+      .tt-drawer-shop-bar {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
+        padding: 12px 14px 6px 14px !important;
+        background: #ffffff !important;
+        flex-shrink: 0 !important;
       }
-      .tt-drawer-title {
-        font-size: 14px;
-        font-weight: 700;
-        color: #161823;
+      .tt-drawer-shop-left {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+        cursor: pointer !important;
+      }
+      .tt-drawer-shop-cart {
+        width: 28px !important;
+        height: 28px !important;
+        border-radius: 6px !important;
+        background: #ff6221 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+      }
+      .tt-drawer-shop-texts {
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+        gap: 1px !important;
+      }
+      .tt-drawer-shop-name {
+        font-size: 13.5px !important;
+        font-weight: 600 !important;
+        color: #161823 !important;
+        line-height: 1.25 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      .tt-drawer-shop-sold {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        color: #8a8b91 !important;
+        line-height: 1.2 !important;
       }
       .tt-drawer-close {
-        background: none;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-        color: #666;
+        width: 28px !important;
+        height: 28px !important;
+        border-radius: 50% !important;
+        background: #f5f5f6 !important;
+        border: none !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+        color: #52545c !important;
+        flex-shrink: 0 !important;
+        padding: 0 !important;
+      }
+      .tt-drawer-count-row {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 5px !important;
+        padding: 6px 16px 10px 16px !important;
+        flex-shrink: 0 !important;
+      }
+      .tt-drawer-title {
+        font-size: 13.5px !important;
+        font-weight: 600 !important;
+        color: #161823 !important;
+        line-height: 1.2 !important;
       }
       .tt-drawer-list {
-        flex: 1;
-        overflow-y: auto;
-        padding: 12px 16px;
+        flex: 1 1 auto !important;
+        overflow-y: auto !important;
+        padding: 8px 16px 12px 16px !important;
+        -webkit-overflow-scrolling: touch !important;
       }
       .tt-comment-item {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 14px;
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 11px !important;
+        margin-bottom: 18px !important;
       }
       .tt-comment-avatar {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        object-fit: cover;
+        width: 36px !important;
+        height: 36px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        flex-shrink: 0 !important;
+        background: #f0f0f0 !important;
       }
       .tt-comment-user {
-        font-size: 12px;
-        font-weight: 700;
-        color: #666;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        color: #8a8b91 !important;
+        line-height: 1.25 !important;
       }
       .tt-comment-text {
-        font-size: 13px;
-        color: #161823;
-        margin-top: 2px;
+        font-size: 14.5px !important;
+        font-weight: 400 !important;
+        color: #161823 !important;
+        line-height: 1.35 !important;
+        margin-top: 2px !important;
+      }
+      .tt-comment-first-badge {
+        display: inline-block !important;
+        background: #f3f3f4 !important;
+        color: #73747b !important;
+        font-size: 11px !important;
+        font-weight: 500 !important;
+        padding: 2px 7px !important;
+        border-radius: 4px !important;
+        margin-top: 5px !important;
+      }
+      .tt-comment-footer {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        margin-top: 6px !important;
+      }
+      .tt-comment-meta-left {
+        display: flex !important;
+        align-items: center !important;
+        gap: 14px !important;
+      }
+      .tt-comment-date {
+        font-size: 12.5px !important;
+        color: #9a9ba1 !important;
+        font-weight: 400 !important;
+      }
+      .tt-comment-reply {
+        font-size: 12.5px !important;
+        color: #73747b !important;
+        font-weight: 500 !important;
+        cursor: pointer !important;
+      }
+      .tt-comment-actions-right {
+        display: flex !important;
+        align-items: center !important;
+        gap: 18px !important;
+        color: #73747b !important;
+      }
+      .tt-comment-like-box,
+      .tt-comment-dislike-box {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 4px !important;
+        color: #73747b !important;
+        font-size: 12.5px !important;
+        cursor: pointer !important;
+        padding: 2px !important;
+        -webkit-tap-highlight-color: transparent !important;
       }
       .tt-comment-input-bar {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 14px;
-        border-top: 1px solid #eee;
-        background: #fff;
-        box-sizing: border-box;
-        flex-shrink: 0;
+        display: flex !important;
+        align-items: center !important;
+        padding: 8px 14px calc(10px + env(safe-area-inset-bottom, 0px)) 14px !important;
+        border-top: 1px solid #f0f0f2 !important;
+        background: #ffffff !important;
+        box-sizing: border-box !important;
+        flex-shrink: 0 !important;
+      }
+      .tt-comment-input-pill-wrap {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: 42px !important;
+        background: #f1f1f2 !important;
+        border-radius: 999px !important;
+        padding: 0 14px !important;
+        gap: 12px !important;
+        box-sizing: border-box !important;
       }
       .tt-comment-input {
-        flex: 1;
-        height: 38px;
-        background: #f1f1f2;
-        border: none;
-        border-radius: 20px;
-        padding: 0 16px;
-        font-size: 13.5px;
-        color: #161823;
-        outline: none;
-        box-sizing: border-box;
+        flex: 1 !important;
+        height: 100% !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        font-size: 14.5px !important;
+        font-weight: 400 !important;
+        color: #161823 !important;
+        outline: none !important;
+        min-width: 0 !important;
       }
       .tt-comment-input::placeholder {
-        color: #8a8b91;
+        color: #9a9ba1 !important;
+      }
+      .tt-drawer-pill-icons {
+        display: flex !important;
+        align-items: center !important;
+        gap: 13px !important;
+        color: #161823 !important;
+        flex-shrink: 0 !important;
       }
       .tt-comment-submit-btn {
         width: 36px;
@@ -1351,20 +1509,58 @@
             </div>
           </div>
 
-          <div class="tt-comments-drawer" id="tt-comments-drawer">
-            <div class="tt-drawer-header">
-              <span class="tt-drawer-title" id="tt-drawer-title">94 comentários</span>
-              <button class="tt-drawer-close" id="tt-drawer-close" type="button">✕</button>
-            </div>
-            <div class="tt-drawer-list" id="tt-drawer-comments-list"></div>
-            <div class="tt-comment-input-bar">
-              <input type="text" class="tt-comment-input" id="tt-comment-input-field" placeholder="Adicionar comentário...">
-              <button class="tt-comment-submit-btn" id="tt-comment-send-btn" type="button" aria-label="Enviar comentário">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </div>
+        </div>
+
+        <div class="tt-comments-drawer" id="tt-comments-drawer">
+          <div class="tt-drawer-shop-bar">
+            <div class="tt-drawer-shop-left" id="tt-drawer-shop-link">
+              <div class="tt-drawer-shop-cart">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 4h2.2l1.9 9.5a1.5 1.5 0 0 0 1.48 1.2h7.9a1.5 1.5 0 0 0 1.46-1.15L19.8 6.8H6.1"></path>
+                  <circle cx="9.2" cy="18.6" r="1.4" fill="#ffffff" stroke="none"></circle>
+                  <circle cx="16.4" cy="18.6" r="1.4" fill="#ffffff" stroke="none"></circle>
                 </svg>
-              </button>
+              </div>
+              <div class="tt-drawer-shop-texts">
+                <span class="tt-drawer-shop-name" id="tt-drawer-shop-name">Shop·Produto Oficial</span>
+                <span class="tt-drawer-shop-sold" id="tt-drawer-shop-sold">3842 vendidos</span>
+              </div>
+            </div>
+            <button class="tt-drawer-close" id="tt-drawer-close" type="button" aria-label="Fechar comentários">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          <div class="tt-drawer-count-row">
+            <span class="tt-drawer-title" id="tt-drawer-title">94 comentários</span>
+            <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="#161823" stroke-width="1.5" stroke-linecap="round">
+              <line x1="1.5" y1="3.5" x2="12.5" y2="3.5"></line>
+              <line x1="1.5" y1="7" x2="9.5" y2="7"></line>
+              <line x1="1.5" y1="10.5" x2="6.2" y2="10.5"></line>
+            </svg>
+          </div>
+          <div class="tt-drawer-list" id="tt-drawer-comments-list"></div>
+          <div class="tt-comment-input-bar">
+            <div class="tt-comment-input-pill-wrap">
+              <input type="text" class="tt-comment-input" id="tt-comment-input-field" placeholder="Adicionar comentário...">
+              <div class="tt-drawer-pill-icons">
+                <svg onclick="document.getElementById('tt-comment-input-field')?.focus()" style="cursor:pointer;" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="3"></rect>
+                  <circle cx="15.5" cy="9" r="1.4" fill="currentColor" stroke="none"></circle>
+                  <path d="M20.5 16.5L15.2 12L5.5 20.2"></path>
+                </svg>
+                <svg onclick="document.getElementById('tt-comment-input-field')?.focus()" style="cursor:pointer;" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.5 12A8.5 8.5 0 1 0 12 20.5C14.2 20.5 15.8 20.1 17.2 18.8L19.3 16.7C20.2 15.6 20.5 14 20.5 12Z"></path>
+                  <path d="M14.8 20.1V16.6C14.8 15.6 15.6 14.8 16.6 14.8H20.1"></path>
+                  <circle cx="9.2" cy="10" r="1.15" fill="currentColor" stroke="none"></circle>
+                  <circle cx="14.8" cy="10" r="1.15" fill="currentColor" stroke="none"></circle>
+                </svg>
+                <svg onclick="document.getElementById('tt-comment-input-field')?.focus()" style="cursor:pointer;" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="3" width="6" height="11" rx="3"></rect>
+                  <path d="M5.5 11a6.5 6.5 0 0 0 13 0"></path>
+                  <line x1="12" y1="17.5" x2="12" y2="21"></line>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -1467,22 +1663,36 @@
       };
     }
 
+    function openCommentsDrawer() {
+      const drw = document.getElementById('tt-comments-drawer');
+      if (drw) drw.classList.add('open');
+      if (ttModal) ttModal.classList.add('comments-open');
+    }
+
+    function closeCommentsDrawer() {
+      const drw = document.getElementById('tt-comments-drawer');
+      if (drw) drw.classList.remove('open');
+      if (ttModal) ttModal.classList.remove('comments-open');
+    }
+
     const drawerClose = document.getElementById('tt-drawer-close');
-    if (drawerClose) drawerClose.onclick = () => {
-      document.getElementById('tt-comments-drawer').classList.remove('open');
+    if (drawerClose) drawerClose.onclick = (e) => {
+      e.stopPropagation();
+      closeCommentsDrawer();
     };
 
     const actionComment = document.getElementById('tt-action-comment');
     if (actionComment) actionComment.onclick = (e) => {
       e.stopPropagation();
-      document.getElementById('tt-comments-drawer').classList.toggle('open');
+      const drw = document.getElementById('tt-comments-drawer');
+      if (drw && drw.classList.contains('open')) closeCommentsDrawer();
+      else openCommentsDrawer();
     };
 
     const bottomCommentPill = document.getElementById('tt-open-comment-pill');
     if (bottomCommentPill) bottomCommentPill.onclick = (e) => {
       e.stopPropagation();
-      const drw = document.getElementById('tt-comments-drawer');
-      if (drw) drw.classList.add('open');
+      openCommentsDrawer();
       setTimeout(() => {
         const inp = document.getElementById('tt-comment-input-field');
         if (inp) inp.focus();
@@ -1539,6 +1749,7 @@
 
     function handleMove(clientY, clientX, e) {
       if (!isTracking || isTransitioning) return;
+      if (ttModal && ttModal.classList.contains('comments-open')) return;
       const deltaY = clientY - touchStartY;
       const deltaX = clientX - touchStartX;
 
@@ -1561,6 +1772,10 @@
     function handleEnd() {
       if (!isTracking) return;
       isTracking = false;
+      if (ttModal && ttModal.classList.contains('comments-open')) {
+        closeCommentsDrawer();
+        return;
+      }
 
       const deltaY = touchCurrentY - touchStartY;
       const deltaTime = Date.now() - touchStartTime;
@@ -1610,9 +1825,15 @@
     ttModal.addEventListener('touchend', () => { handleEnd(); }, { passive: true });
     ttModal.addEventListener('touchcancel', () => { handleEnd(); }, { passive: true });
 
-    // Desktop Click no wrapper para dar play/pause
+    // Desktop Click no wrapper para dar play/pause (ou fechar gaveta de comentários se estiver aberta)
     if (wrapper) {
       wrapper.onclick = function(e) {
+        if (ttModal && ttModal.classList.contains('comments-open')) {
+          const drw = document.getElementById('tt-comments-drawer');
+          if (drw) drw.classList.remove('open');
+          ttModal.classList.remove('comments-open');
+          return;
+        }
         if (e.target.closest('#tt-comments-drawer') || 
             e.target.closest('#tt-bottom-bar-comment') ||
             e.target.closest('#tt-product-anchor') ||
@@ -1802,6 +2023,9 @@
 
   function closeTikTokModal() {
     if (ttModal) {
+      ttModal.classList.remove('comments-open');
+      const drw = document.getElementById('tt-comments-drawer');
+      if (drw) drw.classList.remove('open');
       ttModal.style.display = 'none';
       document.body.style.overflow = '';
       if (ttVideo) {
@@ -1882,12 +2106,12 @@
     const shareCount = document.getElementById('tt-share-count');
     if (shareCount) shareCount.textContent = formatNumber(item.shares || 753);
 
-    // Atualiza Âncora Oficial de Produto (BLACK FRIDAY · Loja - ... / Frete grátis · Devoluções gratuitas)
+    // Atualiza Âncora Oficial de Produto (Loja - ... / Frete grátis · Devoluções gratuitas) + Barra Shop do Drawer
     const anchorEl = document.getElementById('tt-product-anchor');
     const anchorTitle = document.getElementById('tt-anchor-title');
+    const prodObj = (typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL) ? PRODUTO_ATUAL : (window.PRODUTO_ATUAL || {});
+    const pName = prodObj.nome || (document.title ? document.title.replace(' - Stone Shop', '').trim() : 'Produto Oficial');
     if (anchorTitle) {
-      const prodObj = (typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL) ? PRODUTO_ATUAL : (window.PRODUTO_ATUAL || {});
-      const pName = prodObj.nome || (document.title ? document.title.replace(' - Stone Shop', '').trim() : 'Produto Oficial');
       anchorTitle.textContent = `Loja - ${pName}`;
       if (anchorEl) {
         anchorEl.setAttribute('data-product-id', prodObj.id || '');
@@ -1900,8 +2124,29 @@
       }
     }
 
+    const drawerShopName = document.getElementById('tt-drawer-shop-name');
+    if (drawerShopName) drawerShopName.textContent = `Shop·${pName}`;
+    const drawerShopSold = document.getElementById('tt-drawer-shop-sold');
+    if (drawerShopSold) {
+      const domSoldNum = document.querySelector('.sold-count .sold-num')?.textContent?.trim();
+      const rawSold = domSoldNum || String(prodObj.sales || '').replace(/[^\d]/g, '') || '3842';
+      drawerShopSold.textContent = `${rawSold} vendidos`;
+    }
+    const drawerShopLink = document.getElementById('tt-drawer-shop-link');
+    if (drawerShopLink) {
+      drawerShopLink.onclick = function(e) {
+        e.stopPropagation();
+        closeTikTokModal();
+        const buyBtn = document.getElementById('btn-buy') || document.querySelector('.btn-buy');
+        if (buyBtn) buyBtn.click();
+      };
+    }
+
     const drawerTitle = document.getElementById('tt-drawer-title');
-    if (drawerTitle) drawerTitle.textContent = `${formatNumber(item.commentsCount || 94)} comentários`;
+    if (drawerTitle) {
+      const cNum = parseStatNumber(item.commentsCount, 94);
+      drawerTitle.textContent = `${formatNumber(cNum)} ${cNum === 1 ? 'comentário' : 'comentários'}`;
+    }
 
     const likeSvg = document.querySelector('#tt-action-like svg');
     if (likeSvg) likeSvg.style.fill = item.liked ? '#f7355a' : '#ffffff';
@@ -1916,35 +2161,67 @@
       followEl.style.background = item.followed ? '#25D366' : '#f7355a';
     }
 
-    // Renderizar comentários da gaveta
+    // Renderizar comentários da gaveta 1:1 com a referência oficial
     const commentsList = document.getElementById('tt-drawer-comments-list') || document.getElementById('tt-drawer-list');
     if (commentsList && item.commentsList) {
       commentsList.innerHTML = '';
-      item.commentsList.forEach(c => {
+      const firstUserIdx = item.commentsList.findIndex(x => !x.isCreator);
+      item.commentsList.forEach((c, cIdx) => {
         const el = document.createElement('div');
         el.className = 'tt-comment-item';
+        const showFirstBadge = cIdx === (firstUserIdx >= 0 ? firstUserIdx : 0) && !c.isCreator;
         el.innerHTML = `
-          <img class="tt-comment-avatar" src="${c.avatar}" alt="" onerror="this.src='../img/creators-avatars/creator-1.jpg'">
-          <div style="flex:1;">
-            <div class="tt-comment-user">${c.user}${c.isCreator ? ' <span style="background: #fe2c55; color: #fff; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 3px; vertical-align: middle;">Criador</span>' : ''}</div>
+          <img class="tt-comment-avatar" src="${c.avatar}" alt="" onerror="this.src='../img/reviews-avatars/mulheres_validadas/mulher_1.jpg'">
+          <div style="flex:1; min-width:0;">
+            <div class="tt-comment-user">${c.user}${c.isCreator ? ' <span style="background: #fe2c55; color: #fff; font-size: 9.5px; font-weight: 600; padding: 1px 5px; border-radius: 3px; vertical-align: middle; margin-left: 3px;">Criador</span>' : ''}</div>
             <div class="tt-comment-text">${c.text}</div>
-            <div style="font-size:11px; color:#999; margin-top:3px;">${c.date} · Responder</div>
-          </div>
-          <div class="tt-comment-like-box" style="display:flex; flex-direction:column; align-items:center; color:${c.liked ? '#fe2c55' : '#888'}; font-size:11px; cursor:pointer; padding:2px; min-width:28px;">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="${c.liked ? '#fe2c55' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            <span class="tt-comment-like-count">${c.likes}</span>
+            ${showFirstBadge ? '<div class="tt-comment-first-badge">Primeiro comentário</div>' : ''}
+            <div class="tt-comment-footer">
+              <div class="tt-comment-meta-left">
+                <span class="tt-comment-date">${c.date}</span>
+                <span class="tt-comment-reply">Responder</span>
+              </div>
+              <div class="tt-comment-actions-right">
+                <div class="tt-comment-like-box" style="color:${c.liked ? '#f7355a' : '#73747b'};">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="${c.liked ? '#f7355a' : 'none'}" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  <span class="tt-comment-like-count">${c.likes > 0 ? c.likes : ''}</span>
+                </div>
+                <div class="tt-comment-dislike-box" style="color:${c.disliked ? '#161823' : '#73747b'};">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg>
+                </div>
+              </div>
+            </div>
           </div>
         `;
+        const replyBtn = el.querySelector('.tt-comment-reply');
+        if (replyBtn) {
+          replyBtn.onclick = function(e) {
+            e.stopPropagation();
+            const inp = document.getElementById('tt-comment-input-field');
+            if (inp) {
+              inp.placeholder = `Responder a ${c.user}...`;
+              inp.focus();
+            }
+          };
+        }
         const likeBox = el.querySelector('.tt-comment-like-box');
         if (likeBox) {
           likeBox.onclick = function(e) {
             e.stopPropagation();
             c.liked = !c.liked;
-            c.likes += c.liked ? 1 : -1;
-            this.style.color = c.liked ? '#fe2c55' : '#888';
+            c.likes = (c.likes || 0) + (c.liked ? 1 : -1);
+            this.style.color = c.liked ? '#f7355a' : '#73747b';
             const svg = this.querySelector('svg');
-            if (svg) svg.setAttribute('fill', c.liked ? '#fe2c55' : 'none');
-            this.querySelector('.tt-comment-like-count').textContent = c.likes;
+            if (svg) svg.setAttribute('fill', c.liked ? '#f7355a' : 'none');
+            this.querySelector('.tt-comment-like-count').textContent = c.likes > 0 ? c.likes : '';
+          };
+        }
+        const dislikeBox = el.querySelector('.tt-comment-dislike-box');
+        if (dislikeBox) {
+          dislikeBox.onclick = function(e) {
+            e.stopPropagation();
+            c.disliked = !c.disliked;
+            this.style.color = c.disliked ? '#161823' : '#73747b';
           };
         }
         commentsList.appendChild(el);
