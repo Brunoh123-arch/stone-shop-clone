@@ -1,204 +1,126 @@
-# Stone Shop — Manual Mestre de Arquitetura, Regras e Protocolos (Bruno CTO - Modo ZIKA Blindado)
+# Stone Shop — Manual Mestre (Bruno CTO) — leia INTEIRO antes de mexer em qualquer coisa
 
-> **Gatilho de Ativação:** Sempre ativo em qualquer sessão na pasta `c:\Users\Dell\Downloads\ds`.
-> **Objetivo Deste Arquivo:** Ser a ÚNICA fonte de verdade para qualquer agente ou engenheiro entender como o projeto funciona, o que é estritamente proibido, o que é obrigatório, e como cadastrar, validar e subir produtos sem nunca se perder.
-
----
-
-## 1. VISÃO GERAL & ARQUITETURA DO PROJETO (COMO TUDO FUNCIONA)
-
-A **Stone Shop** é uma plataforma e-commerce de ultra-alta conversão inspirada na interface nativa do **TikTok Shop Brasil**, hospedada na **Vercel** com domínio oficial e CDN global HTTPS (`https://stoneshopclone.vercel.app`), com repositório no GitHub (`main`).
-
-### 1.1 Doutrina do Modelo Único Permanente (Single Source of Truth)
-- **PROIBIDO CRIAR ARQUIVOS HTML ESTÁTICOS EM `pages/`**: NUNCA crie `pages/produto-*.html`. Esse padrão antigo foi 100% extinto!
-- **Cada Produto é um JSON**: Todos os produtos moram exclusivamente em `data/produtos/produto-[id].json`.
-- **Índice Central de Registro**: Todo produto DEVE ser registrado em `data/produtos/index.js` via lazy require estático (`'126': () => require('./produto-126.json'),`).
-- **Renderizador Oficial Dinâmico**: A Vercel Serverless Function `api/_lib/render-produto.js` recebe o ID do produto, lê o respectivo JSON e injeta os dados dinamicamente no template mestre `templates/produto-modelo.html`.
-- **Roteamento Unificado (`vercel.json`)**:
-  - `/produto-126` -> Renderiza dinamicamente via `api/serve?slug=produto-126`
-  - `/produto/126` -> Renderiza dinamicamente via `api/serve?slug=produto-126`
-  - `/pages/produto-126` -> Compatibilidade legada garantida
-  - `/` -> Vitrine oficial da loja (`index.html`)
+> Sempre ativo na pasta `c:\Users\Dell\Downloads\ds`. Única fonte de verdade para qualquer chat novo.
+> Site: `https://stoneshopclone.vercel.app` (Vercel) · Repo: GitHub `Brunoh123-arch/stone-shop-clone` (branch `main`).
 
 ---
 
-## 2. DOUTRINA DE ENGENHARIA: PERMITIDO VS PROIBIDO (TOLERÂNCIA ZERO A JÚNIORICE)
+## 1. COMO O PROJETO FUNCIONA
 
-### ❌ O que é TERMINANTEMENTE PROIBIDO:
-1. **Proibição de Fatiar Vídeos para Reviews**: NUNCA use `ffmpeg` para tirar prints de vídeos de criadores e fingir que são fotos de clientes. Review falsa desse tipo quebra a credibilidade.
-2. **Proibição de Fundo Branco em Avaliações**: Foto de review é de cliente físico em ambiente doméstico real (sala, chão, cozinha, desembalando o pacote dos Correios). Zero foto de estúdio nos cards de depoimento.
-3. **Proibição de Avatares Falsos / Gringos / IA**: Proibido fotos de banco gratuito (Unsplash, Pexels), rostos gerados por IA ou pessoas com estética gringa (inverno americano, etc.). Avatares DEVEM ser 100% pessoas físicas reais brasileiras do CDN do TikTok (`img/reviews-avatars/tiktok_real/`).
-4. **Proibição de Incoerência de Gênero**:
-   - Nome feminino (`Maria`, `Camila`, `Juliana`) DEVE ter avatar de mulher real.
-   - Nome masculino (`Rodrigo`, `Carlos`, `Felipe`) DEVE ter avatar de homem real.
-   - Em produtos femininos (vestidos, lingerie, modeladores, secadores), 100% dos nomes e avatares DEVEM ser mulheres.
-5. **Proibição de Contaminação de Nicho**: Nunca misture mídias de produtos diferentes (ex: vídeo de ar-condicionado em patinete ou churrasqueira em tênis).
-6. **Proibição de Lixo na Codebase**: Proibido arquivos `*_backup.js`, `*_old.html`, `test*.png` soltos na raiz. Arquivos temporários de scripts DEVEM ser apagados imediatamente após o uso.
-7. **Proibição de Excesso de Vídeos (Bloatware)**: Não use 30+ vídeos pesados. O padrão oficial são **entre 8 e 15 vídeos de criadores reais** de alta qualidade.
-8. **Proibição de Redirecionar Celulares Reais**: Nunca redirecione celulares legítimos para `/loja` ou páginas de erro.
+Loja e-commerce estilo **TikTok Shop Brasil**. Modelo Único Permanente:
 
-### ✅ O que é OBRIGATÓRIO & PERMITIDO:
-1. **Navegador Chrome Oficial (Profile 42)**: Toda extração via Playwright DEVE rodar no Chrome oficial conectado ao perfil **Profile 42** (`kaiobrunocastro12@gmail.com`), com sessão real para evitar bloqueios de bot.
-2. **Janela Minimizada & Som Mutado**: Quando rodar Playwright no PC do usuário, mantenha a janela minimizada (`bounds: { windowState: 'minimized' }`) e o áudio forçado em `volume = 0` para não atrapalhar o usuário assistindo Netflix/vídeos.
-3. **Fotos Oficiais de Catálogo (5 a 8 Fotos)**: Fotos de alta resolução em formato WebP com fundo branco, cobrindo todos os ângulos, detalhes e dimensões.
-4. **Grade de Variações 1:1**: Cada opção de cor/modelo deve ter sua miniatura exata correspondente e trocar no slider ao ser clicada.
-5. **Autoplay no Carrossel de Criadores**: Cards de criadores devem rodar vídeos MP4 leves com `autoplay`, `muted`, `loop` e `playsinline`.
-6. **Avaliações com Unboxing Real (5+ fotos)**: No topo das avaliações, exibir depoimentos autênticos com fotos de unboxing recebidas no Brasil.
-7. **Validação Obrigatória**: Antes de qualquer commit, rodar compulsoriamente `node scripts/validar-modelo-unico.js` (deve passar com ZERO erros).
+| Peça | Arquivo |
+|---|---|
+| Dados de **cada produto** | `data/produtos/produto-[id].json` (NUNCA criar `pages/produto-*.html`) |
+| Índice de registro | `data/produtos/index.js` → `'126': () => require('./produto-126.json'),` |
+| Renderizador (Vercel Function) | `api/_lib/render-produto.js` injeta o JSON em `templates/produto-modelo.html` |
+| Rotas | `/produto-126`, `/produto/126`, `/pages/produto-126` → `api/serve?slug=produto-126` (`vercel.json`) |
+| Vitrine / busca / recomendados | `js/catalogo.js` (`CATALOGO_PRODUTOS`) + `index.html` |
+| Carrossel de criadores | vem do campo `creators` do JSON (autoplay mudo, IntersectionObserver). `js/videos-criadores.js` só serve produtos legados |
+| Anti-clone / cloaker v6.6 | `api/serve.js` (backend) + `js/tiktok-cloaker.js` (frontend) |
+| Validador | `node scripts/validar-modelo-unico.js` (**obrigatório antes de todo commit**) |
+
+**Cloaker:** bots de anúncio (TikTok/Google/Meta) passam; scrapers (HTTrack, SaveWeb2Zip, curl, headless) recebem `fake.html`. **Celular real (touch + GPU móvel) tem acesso liberado direto** — nunca redirecionar celular legítimo para `/loja`. Dono do site: `?preview=1`, `?c=1` ou `?owner=1`.
 
 ---
 
-## 3. PROTOCOLO PASSO A PASSO PARA CADASTRAR UM NOVO PRODUTO
+## 2. REGRAS DE OURO (violou = refazer)
 
-Sempre que o usuário pedir para subir ou puxar um novo produto (ex: `produto-125`), siga rigorosamente este fluxo:
+### 2.1 Navegador / Playwright (Profile 42)
+- Toda extração via **Playwright MCP no Chrome oficial, perfil Profile 42** (`kaiobrunocastro12@gmail.com`). Proibido instância anônima/headless genérica.
+- Janela **sempre minimizada** (`Browser.setWindowBounds {windowState:'minimized'}`) e **ZERO ÁUDIO**: o usuário assiste Netflix enquanto você trabalha.
+  - **NUNCA abrir páginas `/video/...` do TikTok no navegador** (o player toca som e vaza). Para baixar um vídeo use Python: `https://www.tikwm.com/api/?url=<url do vídeo>` → campo `data.play` → baixar MP4 → `ffmpeg` extrai frame → upload em `https://catbox.moe/user/api.php`. 100% silencioso.
+  - Para listar vídeos na busca do TikTok via navegador, bloqueie mídia: `page.route('**/*', r => ['media'].includes(r.request().resourceType()) ? r.abort() : r.continue())`. Terminou? `page.goto('about:blank')`.
+  - O endpoint de **busca** do tikwm devolve 403 — não tente burlar. Se não achar vídeos suficientes, **avise o usuário** (nunca complete com vídeo de outro produto).
 
+### 2.2 INSPEÇÃO VISUAL É OBRIGATÓRIA (a causa de todos os erros passados)
+**Nunca referencie uma imagem sem abri-la com `read_file` e olhar.** Confirme: cor exata da variação (um banner com 4 patinetes NÃO é a cor Azul), produto = o anunciado, avatar = rosto humano brasileiro do gênero certo (logo/cartoon/criança = proibido), unboxing sem marca de outro fabricante legível. Não deduzir cor/gênero pela ordem dos links, pelo número do arquivo ou por par/ímpar.
+
+### 2.3 Mídia pertence a UM produto
+- **PROIBIDO reaproveitar MP4/poster/foto de outro produto** (erro real: patinete com vídeo de livro infantil e de chinelo). O validador bloqueia `catbox_id` repetido entre produtos (ids ≥ 125).
+- Vídeos de criadores: **8 a 15**, rostos/cenas/MP4 diferentes, do **produto exato**, fonte TikTok. Mínimo absoluto aceitável com aviso: o que for verificável — nunca encher com produto diferente.
+- Criadores = **pessoas físicas** (@username de pessoa, rosto humano no avatar). Proibido perfil de loja/marca/logo (ex.: "Achadinhos…", "…Shop", "…Store", "Ruiva Tech").
+- **Vídeo da descrição** (`video` no JSON → `#tt-product-video`) é obrigatório e **diferente** dos vídeos do carrossel.
+- **Poster = frame real do próprio MP4** (`ffmpeg -ss 0.5 -i x.mp4 -vframes 1`). Proibido usar foto de catálogo como poster. Cache-buster `?v=AAAAMMDD` em posters/avatares.
+- Hospedagem: Catbox (`files.catbox.moe`). Arquivo > 500 KB, HTTP 200/206.
+
+### 2.4 Fotos
+- **Slider:** 4 a 8 fotos oficiais de catálogo (TikTok Shop; fallback Mercado Livre), fundo branco/arte do vendedor. Proibido frame de vídeo no slider.
+- **Variações:** cada cor com sua miniatura 1:1 (arquivo diferente por cor), trocando o slider ao clicar.
+- **Unboxing em avaliações:** foto REAL de comprador (TikTok Shop; fallback Mercado Livre), ambiente doméstico real, produto/caixa físico visível. Proibido: ffmpeg de vídeo, IA, foto de estúdio, foto repetida.
+  - **Um comprador = um card.** Todas as fotos do mesmo comprador (mesma sala/chão) ficam no MESMO `photos: [...]`; nunca fatiar em cards de “pessoas diferentes”.
+  - **A cor em `variation` tem que bater com a cor do produto na foto.**
+
+### 2.5 Avaliações (texto)
+- Texto real extraído do anúncio (PT-BR); proibido inventar em script. Sem vocabulário Shopee/AliExpress (“moedas”, “qualidade do produto:”).
+- Mix ~90% 5★ / 10% 4★. Datas dos últimos 30–45 dias (`dd/mm`). `variation` só com opções que existem na grade do produto (sem “110V” em calçado).
+- Nome mascarado (`M**a S**a`) com **gênero coerente com o avatar**. Produto feminino = 100% mulheres.
+
+### 2.6 AVATARES (pastas)
+- ✅ **Pode usar (inspecionado):** `img/reviews-avatars/mulheres_validadas/` (mulheres BR), `img/reviews-avatars/mulheres_brasil/`, avatares de criador baixados do próprio TikTok do criador para `img/avatars-<nicho>/`, e arquivos individuais de `img/reviews-avatars/tiktok_cdn_real/` e `tiktok_real/` **depois de abrir e conferir**.
+- ❌ **Proibido:** pastas `unique/` e `curated/` (rostos gringos — EXCLUÍDAS do projeto), stock photo, IA, qualquer rosto estrangeiro.
+- ❌ **Logos/cartoons conhecidos (bloqueados no validador):** `tt_avatar_5,9,11,12,13,17,19,29,31,37,39,43,57` e `tt_cdn_2,3,4,5,10,13,14,15,19,21,22,23,27,30`. O validador mantém a lista `BAD_AVATARS`; ao achar outro, adicione lá.
+- Ainda não existe pasta só de homens validados. Para homem: abra e confira individualmente (`tt_cdn_6`, `tt_cdn_7` já conferidos).
+
+### 2.7 Guia de tamanhos
+Só vestuário/calçado: imagem gráfica oficial do vendedor (nunca tabela HTML), espelhada no alternador `[1/X]|[Tamanho]` e no modal. Brinquedo/eletrônico/casa: `"size_guide_html": ""` (omitir tudo).
+
+### 2.8 Loja e limpeza
+- Loja é SEMPRE **Stone Shop** (mascote `../logo.png`, selo azul). Proibido card de loja concorrente.
+- Proibido: `*_backup`, `*_old`, `*_v2`, scripts/imagens soltos na raiz, lixo de IA. Scripts temporários → apagar após uso (rascunhos ficam em `scratch/` fora do repo).
+- **Nunca enviar `localhost`.** Link ao usuário = HTTPS Vercel (ou Cloudflare Tunnel para lives).
+- Preço: sweet spot PIX calibrado (ver §5). Sempre `produto_atual.preco` numérico (carrinho/PIX leem esse campo).
+
+---
+
+## 3. PASSO A PASSO PARA CADASTRAR PRODUTO (usuário mandou link/nome)
+
+1. **Extrair** (Profile 42, silencioso): título, specs, fotos HD, variações, reviews com foto (TikTok Shop → fallback Mercado Livre).
+2. **Baixar** mídia para `img/` (WebP/JPG): `produto-[id]-slide-N`, `…-var-<cor>`, `review-[id]-<comprador>-N`.
+3. **ABRIR CADA IMAGEM (`read_file`)** e anotar o que é de verdade (§2.2). Descartar banner multi-cor, marca de outro fabricante, foto repetida.
+4. **Vídeos:** pesquisar criadores reais do produto, baixar via Python/tikwm, frame com ffmpeg, subir no Catbox, baixar avatar do criador e conferir.
+5. **Escrever** `data/produtos/produto-[id].json` (schema §4). Descrição/specs **só com o que as imagens/anúncio comprovam** (erro real: prometer Bluetooth/bivolt que o produto não tem).
+6. **Registrar:** `data/produtos/index.js` e `js/catalogo.js`.
+7. **Validar:** `node scripts/validar-modelo-unico.js` → zero erros; ler os AVISOS e contar ao usuário.
+8. **Conferir no navegador do usuário** (celular) antes de dizer “pronto”.
+9. **Deploy:** `git add -A; git commit -m "..."; git push origin main; npx vercel --prod --yes` + `npx vercel alias set <url> stoneshopclone.vercel.app`.
+
+---
+
+## 4. SCHEMA DO JSON (`data/produtos/produto-[id].json`) — copie de `produto-126.json`
+
+Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{src,alt}], discount_badge, price_int, price_cents, price_original, installment_text, installment_highlight, coupon_main, coupon_bonus, rating_score, rating_count, sold_count, frete_original, reviews_header, reviews_avg, reviews[{name,avatar,stars,date,variation,date_line,comment,photos[]}], details[{label,value,hidden}], video{src,poster,duration,catbox_id}, size_guide_html, description_html, related[{href,img,alt,name,price,price_original,discount,sold}], produto_atual, extra_scripts, creator_context, creators[{name,username,avatar,poster,video,catbox_id,startTime,likes,commentsCount,saves,shares,description}]`.
+
+`produto_atual` (lido pelo carrinho/PIX): `id, nome, preco, preco_antigo, img, imagens[], variacoes:{cor:{com_imagem:true,label:"Cor",opcoes:[{imagem,nome}]}}` (+ `price, precoOrig, installmentText, shipping, store, rating, sales`). **Não usar `preco_avista`** — não é lido.
+
+---
+
+## 5. LISTA OURO NATAL / 13º (125–131) — preço PIX
+
+| ID | Produto | PIX | Status |
+|:--:|---|:--:|---|
+| 125 | Carrinho Rolimã Girocar / Super Car LED (100 kg) | R$ 84,90 | fila |
+| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 97,00 | **no ar** — pendência: só 2 criadores verificados (faltam vídeos do modelo exato) e 5 unboxings reais |
+| 127 | Carrinho RC Drift 4x4 (fumaça + 2 baterias) | R$ 74,90 | fila |
+| 128 | Mesa dobrável maleta 1,80 m | R$ 89,90 | fila |
+| 129 | Escova elétrica giratória 9 em 1 c/ extensor | R$ 64,90 | fila |
+| 130 | Colar Prata 925 c/ rosa giratória + sacola | R$ 74,90 | fila |
+| 131 | Kit 2 jogos de cama casal 400 fios | R$ 69,90 | fila |
+
+---
+
+## 6. DÍVIDAS TÉCNICAS CONHECIDAS (não esconda do usuário)
+- ~42 produtos antigos (< 125) ainda usam avatares de logo/cartoon da lista `BAD_AVATARS` (validador só informa; corrigir 1 a 1 com inspeção visual).
+- Scripts antigos em `scripts/` referenciam `reviews-avatars/unique|curated` (pastas já excluídas) — são resíduos de patches únicos; podem ser apagados.
+- `js/videos-criadores.js` (7 mil linhas) só atende produtos legados; produto novo usa `creators` no JSON.
+
+---
+
+## 7. COMANDOS
+```powershell
+node scripts/validar-modelo-unico.js
+git add -A; git commit -m "feat/fix: ..."; git push origin main
+npx vercel --prod --yes
+npx vercel alias set <deployment-url> stoneshopclone.vercel.app
 ```
-[1. Extração no Chrome Profile 42]
-  ↓ (Puxar fotos de catálogo + unboxings reais + especificações via Playwright no ML / TikTok Shop)
-[2. Download & Otimização de Mídias]
-  ↓ (Salvar slides em img/produto-[id]-slide-*.webp e unboxings em img/review-[id]-real-*.webp)
-[3. Criar JSON Canônico]
-  ↓ (Escrever data/produtos/produto-[id].json com preço calibrado, reviews, variações e specs)
-[4. Registrar no Índice]
-  ↓ (Adicionar 'id': () => require('./produto-[id].json') em data/produtos/index.js)
-[5. Mapear Vídeos de Criadores]
-  ↓ (Configurar CREATORS_[PROD]_[ID] e adicionar o case [id] em js/videos-criadores.js)
-[6. Validação do Modelo Único]
-  ↓ (Atualizar contagem esperada e rodar node scripts/validar-modelo-unico.js)
-[7. Deploy & Sincronização Git]
-  ↓ (Commit limpo, push origin main e npx vercel --prod --yes com alias stoneshopclone.vercel.app)
-```
-
----
-
-## 4. ESTRUTURA DO JSON DO PRODUTO (`data/produtos/produto-[id].json`)
-
-Todo produto deve seguir exatamente esta estrutura de campos:
-
-```json
-{
-  "id": 126,
-  "title": "Título Completo com SEO - Stone Shop",
-  "meta_description": "Descrição persuasiva com preço PIX e frete grátis.",
-  "product_title": "Título Limpo para Exibição no Topo da Página",
-  "slider_imgs": [
-    { "src": "../img/produto-126-slide-1.webp", "alt": "Vista Frontal" },
-    { "src": "../img/produto-126-slide-2.webp", "alt": "Detalhes" }
-  ],
-  "discount_badge": "-75%",
-  "price_int": "97",
-  "price_cents": ",00",
-  "price_original": "R$ 389,90",
-  "installment_text": "3x de R$ 32,33 sem juros",
-  "installment_highlight": "sem juros",
-  "coupon_main": "Cupom R$ 50 OFF aplicado",
-  "coupon_bonus": "Final R$ 97,00 no Pix ou Cartão",
-  "rating_score": "4,9",
-  "rating_count": "(386)",
-  "sold_count": "3.8K vendido(s)",
-  "frete_original": "R$ 24,90",
-  "reviews_header": "Avaliações dos clientes (15)",
-  "reviews_avg": "4,9",
-  "reviews": [
-    {
-      "name": "P**a S**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
-      "stars": 5,
-      "date": "24/11",
-      "variation": "Azul Turbo",
-      "date_line": "24/11 · Azul Turbo",
-      "comment": "Texto humanizado em português de cliente real elogiando entrega e qualidade.",
-      "photos": ["../img/review-126-real-1.webp"]
-    }
-  ],
-  "description_html": "<div class=\"product-description-content\">...especificações e tabela...</div>",
-  "produto_atual": {
-    "id": 126,
-    "nome": "Título do Produto",
-    "preco_original": 389.9,
-    "preco_avista": 97.0,
-    "parcelas": 3,
-    "valor_parcela": 32.33,
-    "categoria": "Brinquedos",
-    "imagem": "../img/produto-126-slide-1.webp",
-    "fotos": ["../img/produto-126-slide-1.webp"],
-    "variacoes": {
-      "cor": {
-        "label": "Cor",
-        "opcoes": [
-          { "nome": "Preto", "imagem": "../img/var-preto.webp", "preco": 97.0 }
-        ]
-      }
-    }
-  },
-  "creator_context": "patinete126",
-  "creators": [
-    {
-      "name": "Criador Real",
-      "username": "usuario_tiktok",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_30.jpg",
-      "poster": "../videosprodutos/posters/poster-produto-c1.jpg",
-      "video": "https://files.catbox.moe/64aksn.mp4#prod=126",
-      "catbox_id": "64aksn.mp4",
-      "startTime": 0.2,
-      "likes": 32400,
-      "commentsCount": 380,
-      "saves": 3890,
-      "shares": 210,
-      "description": "Legenda real do vídeo com hashtags #tiktokshop #review"
-    }
-  ]
-}
-```
-
----
-
-## 5. CLOAKER V6.6 & SEGURANÇA CONTRA SCRAPERS
-
-O sistema conta com proteção em duas camadas:
-1. **Camada Backend (`api/serve.js`)**:
-   - Bloqueia na largada scrapers como SaveWeb2Zip, HTTrack, Scrapy, Wget, Puppeteer e Selenium entregando `fake.html`.
-   - Permite 100% dos bots de aprovação de anúncios (TikTokBot, Googlebot, FacebookExternalHit) para aprovar campanhas instantaneamente.
-2. **Camada Frontend (`js/tiktok-cloaker.js`)**:
-   - Detecta emuladores de celular do PC (DevTools Device Toolbar), telas desktop sem touch e plataformas spoofed.
-   - **LIBERAÇÃO TOTAL DE CELULARES REAIS**: Celulares físicos legítimos (Android e iPhone com touch e GPU móvel) têm acesso imediato liberado aos produtos da loja, mesmo quando acessados diretamente por links compartilhados no WhatsApp, Instagram ou navegador.
-   - Bypass para o dono da loja via query string: `?preview=1` ou `?c=1` ou `?owner=1`.
-
----
-
-## 6. LISTA OURO DE NATAL / 13º SALÁRIO (FOGUETES 125 A 131)
-
-Produtos de alta viralidade calibrados no ponto cego de preço do mercado (sweet spot no PIX para conversão imediata de trabalhadores com 13º salário em mãos):
-
-| ID | Produto | Nicho / Gancho | Preço PIX | Status Atual |
-|:---:|:---|:---|:---:|:---:|
-| **125** | Carrinho Rolimã Girocar / Super Car c/ LED (até 100kg) | Brinquedo Família / Pai e Filho | R$ 84,90 | ⏳ Na fila de extração |
-| **126** | Patinete Elétrico Infantil Dobrável c/ LED e Som (Bivolt) | Brinquedos Elétricos / Sonho de Criança | R$ 97,00 | ✅ 100% Cadastrado e No Ar |
-| **127** | Carrinho RC Drift 4x4 Alta Velocidade (Solta Fumaça) | Controle Remoto / Drift Real | R$ 74,90 | ⏳ Na fila de extração |
-| **128** | Mesa Dobrável Maleta Portátil 1,80m em Polietileno | Casa / Ceia de Natal e Churrasco | R$ 89,90 | ⏳ Na fila de extração |
-| **129** | Escova Elétrica Giratória 9 em 1 sem Fio c/ Extensor | Faxina Pesada de Fim de Ano | R$ 64,90 | ⏳ Na fila de extração |
-| **130** | Colar Prata 925 na Caixa com Rosa Giratória Encantada | Presente Romântico de Natal | R$ 74,90 | ⏳ Na fila de extração |
-| **131** | Kit 2 Jogos de Cama Casal 400 Fios Toque Acetinado Hotel | Cama e Banho / Renovação da Casa | R$ 69,90 | ⏳ Na fila de extração |
-
----
-
-## 7. COMANDOS DE MANUTENÇÃO E VALIDAÇÃO OFICIAL
-
-Sempre execute os comandos a partir da raiz `c:\Users\Dell\Downloads\ds`:
-
-- **Validar integridade de todos os produtos:**
-  ```powershell
-  node scripts/validar-modelo-unico.js
-  ```
-- **Fazer deploy em produção na Vercel:**
-  ```powershell
-  npx vercel --prod --yes
-  ```
-- **Apontar o domínio de produção oficial:**
-  ```powershell
-  npx vercel alias set <deployment-url> stoneshopclone.vercel.app
-  ```
-- **Commit e sincronização no Git:**
-  ```powershell
-  git add -A; git commit -m "feat/fix: descricao das alteracoes"; git push origin main
-  ```
+(PowerShell: não use `&&`; use `;`.)

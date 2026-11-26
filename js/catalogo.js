@@ -1,5 +1,6 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
+  {id:126,nome:'Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas',preco:97,precoOrig:'389,90',desc:75,vendidos:3800,img:'../img/patinete-126-slide-1.webp'},
   {id:115,nome:'Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V',preco:289.9,precoOrig:'429,00',desc:35,vendidos:668,img:'../img/forno-hq-slide-1.webp'},
   {id:110,nome:'Tênis Kappa Pulse RX Masculino e Feminino Amortecimento Corrida e Caminhada',preco:69.9,precoOrig:'259,90',desc:73,vendidos:6520,img:'../img/produto-110-1.jpg'},
   {id:111,nome:'Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração',preco:49.9,precoOrig:'199,90',desc:75,vendidos:5180,img:'../img/produto-111-oficial-1.jpg?v=3'},
