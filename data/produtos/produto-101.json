@@ -45,13 +45,13 @@
   "price_int": "87",
   "price_cents": ",90",
   "price_original": "R$ 599,00",
-  "installment_text": "2x R$ 43,95",
+  "installment_text": "3x R$ 29,30",
   "installment_highlight": "sem juros",
   "coupon_main": "83% OFF",
   "coupon_bonus": "",
   "rating_score": "4.7",
   "rating_count": "(5,3 mil)",
-  "sold_count": "13.5K vendidos",
+  "sold_count": "13488 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (5,3 mil)",
   "reviews_avg": "4.7",
@@ -251,7 +251,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
-      "sold": "9876 vendido(s)"
+      "sold": "9876 vendidos"
     },
     {
       "href": "produto-35.html",
@@ -261,7 +261,7 @@
       "price": "R$ 96,78",
       "price_original": "R$ 497,90",
       "discount": "81% OFF",
-      "sold": "8569 vendido(s)"
+      "sold": "8569 vendidos"
     },
     {
       "href": "produto-14.html",
@@ -271,7 +271,7 @@
       "price": "R$ 189,90",
       "price_original": "R$ 779,90",
       "discount": "76% OFF",
-      "sold": "9874 vendido(s)"
+      "sold": "9874 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -281,7 +281,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     },
     {
       "href": "produto-104.html",
@@ -291,7 +291,7 @@
       "price": "R$ 19,90",
       "price_original": "R$ 59,90",
       "discount": "67% OFF",
-      "sold": "21.3K vendidos"
+      "sold": "21303 vendidos"
     }
   ],
   "produto_atual": {
@@ -349,7 +349,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "13488 vendidos on-line",
+    "installmentText": "3x R$ 29,30 sem juros"
   },
   "extra_scripts": [
     "../js/avaliacoes-pirelli.js"

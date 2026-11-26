@@ -1,0 +1,529 @@
+{
+  "id": 133,
+  "title": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente - Stone Shop",
+  "meta_description": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9 metros com 8 funções e fio transparente por R$ 34,90 no PIX. Frete grátis Stone Shop.",
+  "product_title": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração",
+  "slider_imgs": [
+    {
+      "src": "../img/pisca-133-slide-1.webp",
+      "alt": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m Colorido Fio Transparente"
+    },
+    {
+      "src": "../img/pisca-133-slide-2.webp",
+      "alt": "Pisca-Pisca 100 LEDs com Controlador de 8 Funções e Árvore de Natal"
+    },
+    {
+      "src": "../img/pisca-133-slide-3.webp",
+      "alt": "Pisca-Pisca 8 Funções de Iluminação - Troca Rápida no Botão"
+    },
+    {
+      "src": "../img/pisca-133-slide-4.webp",
+      "alt": "Tabela das 8 Funções de Iluminação LED"
+    },
+    {
+      "src": "../img/pisca-133-slide-5.webp",
+      "alt": "Cordão de LED Decorativo 100 LEDs Luz Colorida 9 Metros"
+    },
+    {
+      "src": "../img/pisca-133-slide-6.webp",
+      "alt": "Decoração de Escada e Sala com Cordão de Luz Natalino"
+    },
+    {
+      "src": "../img/pisca-133-slide-7.webp",
+      "alt": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m Branco Quente"
+    },
+    {
+      "src": "../img/pisca-133-slide-8.webp",
+      "alt": "Ambiente Decorado com Pisca-Pisca Branco Quente Fio Transparente"
+    }
+  ],
+  "discount_badge": "-65%",
+  "price_int": "34",
+  "price_cents": ",90",
+  "price_original": "R$ 99,90",
+  "installment_text": "3x R$ 11,63",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom Natal R$ 15 OFF aplicado",
+  "coupon_bonus": "Final R$ 34,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(624)",
+  "sold_count": "6454 vendidos on-line",
+  "frete_original": "R$ 15,90",
+  "reviews_header": "Avaliações dos clientes (624)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "A**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Colorido",
+      "date_line": "25/11 · Colorido",
+      "comment": "A entrega foi super rápida e o preço excelente! Fio transparente bem resistente e a caixinha de 8 funções funciona certinho. Vai ficar linda na decoração!",
+      "photos": [
+        "../img/review-133-b1-1.webp",
+        "../img/review-133-b1-2.webp"
+      ]
+    },
+    {
+      "name": "M**a E**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Colorido",
+      "date_line": "24/11 · Colorido",
+      "comment": "Olha como ficou a minha árvore de Natal! 9 metros deu certinho pra envolver tudo e as cores são super vibrantes. Amei demais!",
+      "photos": [
+        "../img/review-133-b2-1.webp"
+      ]
+    },
+    {
+      "name": "P**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Colorido",
+      "date_line": "24/11 · Colorido",
+      "comment": "Perfeito os piscas piscas, cores vivas e vibrantes! Coloquei no corrimão da escada e na árvore, ficou lindo demais!",
+      "photos": [
+        "../img/review-133-b3-1.jpg",
+        "../img/review-133-b3-2.jpg"
+      ]
+    },
+    {
+      "name": "R**o S**a",
+      "avatar": "../img/avatars-tv/creator-matheus.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Colorido",
+      "date_line": "23/11 · Colorido",
+      "comment": "Produto muito top, grande e cumpre com o que promete! São 9 metros de luz pra deixar a árvore toda iluminada. Super indico!",
+      "photos": [
+        "../img/review-133-b4-1.webp",
+        "../img/review-133-b4-2.webp"
+      ]
+    },
+    {
+      "name": "L**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg",
+      "stars": 5,
+      "date": "22/11",
+      "variation": "Branco Quente",
+      "date_line": "22/11 · Branco Quente",
+      "comment": "O fio é transparente e bem firme, o que garante uma durabilidade ótima. As luzes são intensas e luminosas, vou pedir mais um!",
+      "photos": [
+        "../img/review-133-b5-1.webp",
+        "../img/review-133-b5-2.webp"
+      ]
+    },
+    {
+      "name": "C**a B**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "Branco Quente",
+      "date_line": "21/11 · Branco Quente",
+      "comment": "Lindo demais, bem forte e ilumina muito bem a sala! A cor branco quente deixa o Natal super aconchegante.",
+      "photos": [
+        "../img/review-133-b6-1.webp"
+      ]
+    },
+    {
+      "name": "J**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Branco Quente",
+      "date_line": "20/11 · Branco Quente",
+      "comment": "Envio rápido e funcionando perfeitamente na cor que eu queria! Testei assim que chegou e as 8 funções funcionam direitinho.",
+      "photos": [
+        "../img/review-133-b7-1.webp"
+      ]
+    },
+    {
+      "name": "T**o M**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "Colorido",
+      "date_line": "19/11 · Colorido",
+      "comment": "Ótimo custo-benefício! Comprei 3 unidades pra decorar a casa toda e todas vieram funcionando 100%.",
+      "photos": []
+    },
+    {
+      "name": "F**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg",
+      "stars": 5,
+      "date": "18/11",
+      "variation": "Branco Quente",
+      "date_line": "18/11 · Branco Quente",
+      "comment": "Lindas, fio super discreto que nem aparece nos galhos da árvore. Podem comprar sem medo!",
+      "photos": []
+    },
+    {
+      "name": "G**l O**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
+      "stars": 4,
+      "date": "17/11",
+      "variation": "Colorido",
+      "date_line": "17/11 · Colorido",
+      "comment": "Muito bom e bem brilhante. Chegou antes do prazo e os 8 modos de pisca são bem legais, dá pra deixar fixo também.",
+      "photos": []
+    },
+    {
+      "name": "S**e L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Branco Quente",
+      "date_line": "16/11 · Branco Quente",
+      "comment": "Amei! O modo luz fixa é o meu favorito, não cansa a vista e deixa a árvore maravilhosa.",
+      "photos": []
+    },
+    {
+      "name": "B**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "Colorido",
+      "date_line": "15/11 · Colorido",
+      "comment": "Produto barato, bonito e cumpre perfeitamente a função. Já vou comprar outro pra janela!",
+      "photos": []
+    },
+    {
+      "name": "D**a S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Branco Quente",
+      "date_line": "14/11 · Branco Quente",
+      "comment": "Chegou super rápido e bem protegido. Os LEDs não esquentam nada, ótimo pra quem tem criança e pet em casa.",
+      "photos": []
+    },
+    {
+      "name": "N**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg",
+      "stars": 5,
+      "date": "13/11",
+      "variation": "Colorido",
+      "date_line": "13/11 · Colorido",
+      "comment": "Maravilhoso! Meus filhos amaram ficar trocando as funções no botãozinho.",
+      "photos": []
+    },
+    {
+      "name": "V**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_34.jpg",
+      "stars": 4,
+      "date": "12/11",
+      "variation": "Branco Quente",
+      "date_line": "12/11 · Branco Quente",
+      "comment": "Gostei bastante, bem delicado e ilumina super bem. Pra árvore acima de 1,80m recomendo pegar 2 cordões pra ficar bem cheio.",
+      "photos": []
+    },
+    {
+      "name": "K**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg",
+      "stars": 5,
+      "date": "11/11",
+      "variation": "Colorido",
+      "date_line": "11/11 · Colorido",
+      "comment": "Todas as 100 luzinhas acendem forte! Entrega super rápida da Stone Shop.",
+      "photos": []
+    },
+    {
+      "name": "E**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_36.jpg",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Branco Quente",
+      "date_line": "10/11 · Branco Quente",
+      "comment": "Ficou um sonho na minha sala! O fio transparente dá um acabamento muito mais bonito que o fio escuro.",
+      "photos": []
+    },
+    {
+      "name": "L**s A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_37.jpg",
+      "stars": 5,
+      "date": "09/11",
+      "variation": "Colorido",
+      "date_line": "09/11 · Colorido",
+      "comment": "Super recomendo! Veio certinho na voltagem que escolhi e brilha muito.",
+      "photos": []
+    },
+    {
+      "name": "M**a R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_38.jpg",
+      "stars": 5,
+      "date": "08/11",
+      "variation": "Branco Quente",
+      "date_line": "08/11 · Branco Quente",
+      "comment": "Excelente qualidade, já deixei ligado várias horas seguidas e não esquenta nada.",
+      "photos": []
+    },
+    {
+      "name": "I**s M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_39.jpg",
+      "stars": 5,
+      "date": "07/11",
+      "variation": "Colorido",
+      "date_line": "07/11 · Colorido",
+      "comment": "Comprei pra montar minha árvore de 1,50m e os 9 metros deram com folga! Perfeito.",
+      "photos": []
+    },
+    {
+      "name": "R**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_40.jpg",
+      "stars": 5,
+      "date": "06/11",
+      "variation": "Branco Quente",
+      "date_line": "06/11 · Branco Quente",
+      "comment": "Chegou em 3 dias, bem embalado e funcionando tudo direitinho. Amei!",
+      "photos": []
+    },
+    {
+      "name": "C**a H**e",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_41.jpg",
+      "stars": 5,
+      "date": "05/11",
+      "variation": "Colorido",
+      "date_line": "05/11 · Colorido",
+      "comment": "Cores lindas, bem forte mesmo! Melhor preço que encontrei com frete grátis.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Quantidade de LEDs",
+      "value": "100 Lâmpadas LED de Alto Brilho",
+      "hidden": false
+    },
+    {
+      "label": "Comprimento",
+      "value": "9 Metros",
+      "hidden": false
+    },
+    {
+      "label": "Cor do Fio",
+      "value": "Transparente (Discreto em qualquer decoração)",
+      "hidden": false
+    },
+    {
+      "label": "Funções de Iluminação",
+      "value": "8 Modos (Combinação, Ondas, Sequencial, Fixo e mais)",
+      "hidden": false
+    },
+    {
+      "label": "Voltagem",
+      "value": "110V ou 220V (selecionar na variação)",
+      "hidden": true
+    },
+    {
+      "label": "Cores da Luz",
+      "value": "Colorido ou Branco Quente",
+      "hidden": true
+    },
+    {
+      "label": "Consumo",
+      "value": "Baixo consumo de energia — não esquenta",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/m7o8fm.mp4",
+    "poster": "../videosprodutos/posters/poster-pisca-133-desc.jpg?v=20261126",
+    "duration": "0:26",
+    "catbox_id": "m7o8fm.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>🎄 Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m — 8 Funções com Fio Transparente</strong><br/><br/>\nDeixe sua árvore de Natal, sala, escada ou janela mágica! Com <strong>9 metros de comprimento e 100 LEDs de alto brilho</strong>, este cordão possui <strong>fio transparente discreto</strong> que desaparece na decoração e destaca apenas a luminosidade.<br/><br/>\n<strong>Destaques Principais:</strong><br/>\n• <strong>8 Funções no Controlador</strong>: Combinação, Ondas, Sequencial, Brilho Lento, Perseguição/Flash, Fade Lento, Pisca/Flash e <strong>Luz Fixa</strong>.<br/>\n• <strong>Fio Transparente Flexível</strong>: fácil de enrolar em árvores, guirlandas, corrimãos e cortinas.<br/>\n• <strong>Tecnologia LED Econômica</strong>: brilho intenso com baixíssimo consumo de energia e sem aquecer — seguro para crianças e pets.<br/>\n• <strong>Disponível em Colorido ou Branco Quente</strong>, nas opções 110V ou 220V.<br/><br/>\n<strong>Conteúdo da Embalagem:</strong><br/>\n• 1 Cordão Pisca-Pisca 100 LEDs 9m com controlador de 8 funções<br/>• Garantia de 90 dias Stone Shop",
+  "related": [
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3842 vendidos"
+    },
+    {
+      "href": "produto-132.html",
+      "img": "../img/cinta-132-slide-1.webp",
+      "alt": "Cinta Modeladora Feminina M+",
+      "name": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste",
+      "price": "R$ 49,90",
+      "price_original": "R$ 179,90",
+      "discount": "72% OFF",
+      "sold": "4617 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 133,
+    "nome": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração",
+    "name": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração",
+    "preco": 34.9,
+    "price": 34.9,
+    "preco_antigo": 99.9,
+    "precoOrig": 99.9,
+    "originalPrice": 99.9,
+    "cupomPreco": 34.9,
+    "couponPrice": 34.9,
+    "desc": 65,
+    "desconto": 65,
+    "installmentText": "3x R$ 11,63 sem juros",
+    "parcelamento": "2x de R$ 17,45 sem juros",
+    "categoria": "Casa e Decoração",
+    "img": "../img/pisca-133-slide-1.webp",
+    "image": "../img/pisca-133-slide-1.webp",
+    "imagens": [
+      "../img/pisca-133-slide-1.webp",
+      "../img/pisca-133-slide-2.webp",
+      "../img/pisca-133-slide-3.webp",
+      "../img/pisca-133-slide-4.webp",
+      "../img/pisca-133-slide-5.webp",
+      "../img/pisca-133-slide-6.webp",
+      "../img/pisca-133-slide-7.webp",
+      "../img/pisca-133-slide-8.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor da Luz",
+        "opcoes": [
+          {
+            "imagem": "../img/pisca-133-var-colorido.webp",
+            "nome": "Colorido"
+          },
+          {
+            "imagem": "../img/pisca-133-var-branco-quente.webp",
+            "nome": "Branco Quente"
+          }
+        ]
+      },
+      "voltagem": {
+        "com_imagem": false,
+        "label": "Voltagem",
+        "opcoes": [
+          {
+            "nome": "110V"
+          },
+          {
+            "nome": "220V"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "6454 vendidos on-line"
+  },
+  "extra_scripts": [],
+  "creator_context": "pisca133",
+  "creators": [
+    {
+      "name": "Tiffany Dayane",
+      "username": "tiffanydayane0",
+      "avatar": "../img/avatars-pisca/creator-133-c1.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c1.jpg?v=20261126",
+      "video": "https://files.catbox.moe/0ipgcy.mp4#prod=133&slot=criador_1&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "0ipgcy.mp4",
+      "startTime": 0.2,
+      "likes": 16500,
+      "commentsCount": 230,
+      "saves": 2200,
+      "shares": 565,
+      "description": "Olha o brilho desse cordão de 100 LEDs fio transparente na árvore! Tem 8 modos de pisca ✨🎄 #natal #piscapisca #decoracaodenatal"
+    },
+    {
+      "name": "Gabi & Bia",
+      "username": "irgb.doje",
+      "avatar": "../img/avatars-pisca/creator-133-c2.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c2.jpg?v=20261126",
+      "video": "https://files.catbox.moe/ksk7x1.mp4#prod=133&slot=criador_2&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "ksk7x1.mp4",
+      "startTime": 0.2,
+      "likes": 16500,
+      "commentsCount": 160,
+      "saves": 2200,
+      "shares": 1194,
+      "description": "Chegou o pisca-pisca 100 LEDs 9 metros que todo mundo tá comprando pro Natal 🎄🔥 #luzesdenatal #natal2026"
+    },
+    {
+      "name": "Melissa Costa",
+      "username": "melissaaofc1",
+      "avatar": "../img/avatars-pisca/creator-133-c3.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c3.jpg?v=20261126",
+      "video": "https://files.catbox.moe/sulpes.mp4#prod=133&slot=criador_3&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "sulpes.mp4",
+      "startTime": 0.2,
+      "likes": 16500,
+      "commentsCount": 160,
+      "saves": 2200,
+      "shares": 4444,
+      "description": "Cores super vivas e fio transparente que some na árvore! Amei demais 🌈✨ #piscapisca #arvoredenatal"
+    },
+    {
+      "name": "Rayane Silva",
+      "username": "rayane7388",
+      "avatar": "../img/avatars-pisca/creator-133-c4.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c4.jpg?v=20261126",
+      "video": "https://files.catbox.moe/441dir.mp4#prod=133&slot=criador_4&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "441dir.mp4",
+      "startTime": 0.2,
+      "likes": 16500,
+      "commentsCount": 230,
+      "saves": 2200,
+      "shares": 380,
+      "description": "Olha os 8 efeitos desse pisca-pisca de 9 metros! Ilumina a sala inteira 😍🎄 #natal #decoracao"
+    },
+    {
+      "name": "Michele Oliveira",
+      "username": "mi.oliveira85",
+      "avatar": "../img/avatars-pisca/creator-133-c5.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c5.jpg?v=20261126",
+      "video": "https://files.catbox.moe/etdrz1.mp4#prod=133&slot=criador_5&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "etdrz1.mp4",
+      "startTime": 0.2,
+      "likes": 16500,
+      "commentsCount": 230,
+      "saves": 2200,
+      "shares": 380,
+      "description": "Branco quente ou colorido? Peguei os dois pro Natal aqui de casa e ficaram perfeitos! ✨🎄 #piscapisca #natal"
+    },
+    {
+      "name": "Nina Barbosa",
+      "username": "ninabarbosau",
+      "avatar": "../img/avatars-pisca/creator-133-c6.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c6.jpg?v=20261126",
+      "video": "https://files.catbox.moe/553mz7.mp4#prod=133&slot=criador_6&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "553mz7.mp4",
+      "startTime": 0.2,
+      "likes": 16500,
+      "commentsCount": 230,
+      "saves": 2900,
+      "shares": 380,
+      "description": "Esse ano não pago caro na decoração de Natal! 9 metros com 100 LEDs por esse precinho 🎄💛 #achadinhos #natal"
+    },
+    {
+      "name": "Sérgio Almeida",
+      "username": "serjaorecomenda9",
+      "avatar": "../img/avatars-pisca/creator-133-c7.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-pisca-133-c7.jpg?v=20261126",
+      "video": "https://files.catbox.moe/npzq61.mp4#prod=133&slot=criador_7&slug=cordao-luz-natal-100-leds-9m",
+      "catbox_id": "npzq61.mp4",
+      "startTime": 0.2,
+      "likes": 20164,
+      "commentsCount": 160,
+      "saves": 3081,
+      "shares": 2740,
+      "description": "Coloquei na varanda e na fachada de casa, olha como ficou top à noite! 🎄✨ #decoracaodenatal #piscapisca"
+    }
+  ]
+}

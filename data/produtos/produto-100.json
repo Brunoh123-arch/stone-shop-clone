@@ -29,13 +29,13 @@
   "price_int": "95",
   "price_cents": ",90",
   "price_original": "R$ 2.314,40",
-  "installment_text": "2x R$ 47,95",
+  "installment_text": "3x R$ 31,96",
   "installment_highlight": "sem juros",
   "coupon_main": "82% OFF",
   "coupon_bonus": "",
   "rating_score": "4.9",
   "rating_count": "(4,2 mil)",
-  "sold_count": "10.0K vendidos",
+  "sold_count": "12478 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (4,2 mil)",
   "reviews_avg": "4.9",
@@ -248,7 +248,7 @@
       "price": "R$ 89,00",
       "price_original": "R$ 399,90",
       "discount": "78% OFF",
-      "sold": "5668 vendido(s)"
+      "sold": "5668 vendidos"
     },
     {
       "href": "produto-15.html",
@@ -258,7 +258,7 @@
       "price": "R$ 149,90",
       "price_original": "R$ 624,90",
       "discount": "76% OFF",
-      "sold": "7543 vendido(s)"
+      "sold": "7543 vendidos"
     },
     {
       "href": "produto-16.html",
@@ -268,7 +268,7 @@
       "price": "R$ 129,30",
       "price_original": "R$ 499,00",
       "discount": "74% OFF",
-      "sold": "7548 vendido(s)"
+      "sold": "7548 vendidos"
     },
     {
       "href": "produto-7.html",
@@ -278,7 +278,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
-      "sold": "8754 vendido(s)"
+      "sold": "7894 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -288,7 +288,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     }
   ],
   "produto_atual": {
@@ -327,7 +327,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "12478 vendidos on-line",
+    "installmentText": "3x R$ 31,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "iphone_100",

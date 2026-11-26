@@ -45,13 +45,13 @@
   "price_int": "89",
   "price_cents": ",00",
   "price_original": "R$ 399,90",
-  "installment_text": "2x R$ 44,50",
+  "installment_text": "3x R$ 29,66",
   "installment_highlight": "sem juros",
   "coupon_main": "78% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(41)",
-  "sold_count": "5.7K vendidos",
+  "sold_count": "5668 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (15)Ver mais >",
   "reviews_avg": "4.9",
@@ -252,7 +252,7 @@
       "price": "R$ 84,90",
       "price_original": "R$ 389,90",
       "discount": "78% OFF",
-      "sold": "8953 vendido(s)"
+      "sold": "8953 vendidos"
     },
     {
       "href": "produto-12.html",
@@ -262,7 +262,7 @@
       "price": "R$ 139,99",
       "price_original": "R$ 349,00",
       "discount": "60% OFF",
-      "sold": "3676 vendido(s)"
+      "sold": "9899 vendidos"
     },
     {
       "href": "produto-7.html",
@@ -272,7 +272,7 @@
       "price": "R$ 19,80",
       "price_original": "",
       "discount": "80% OFF",
-      "sold": "9351 vendido(s)"
+      "sold": "7894 vendidos"
     },
     {
       "href": "produto-55.html",
@@ -282,7 +282,7 @@
       "price": "R$ 64,90",
       "price_original": "R$ 497,90",
       "discount": "87% OFF",
-      "sold": "5462 vendido(s)"
+      "sold": "5462 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -292,7 +292,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     }
   ],
   "produto_atual": {
@@ -322,7 +322,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "5668 vendidos on-line",
+    "installmentText": "3x R$ 29,66 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "cadeiras_praia_mor_17",

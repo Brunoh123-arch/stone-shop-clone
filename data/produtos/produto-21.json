@@ -29,13 +29,13 @@
   "price_int": "49",
   "price_cents": ",00",
   "price_original": "R$ 129,99",
-  "installment_text": "2x R$ 24,50",
+  "installment_text": "3x R$ 16,33",
   "installment_highlight": "sem juros",
   "coupon_main": "62% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(43)",
-  "sold_count": "5.3K vendidos",
+  "sold_count": "5346 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (1.120)",
   "reviews_avg": "4.9",
@@ -240,7 +240,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     },
     {
       "href": "produto-104.html",
@@ -250,7 +250,7 @@
       "price": "R$ 19,90",
       "price_original": "R$ 59,90",
       "discount": "67% OFF",
-      "sold": "21.3K vendidos"
+      "sold": "21303 vendidos"
     }
   ],
   "produto_atual": {
@@ -290,7 +290,9 @@
           "ÚNICO"
         ]
       }
-    }
+    },
+    "sales": "5346 vendidos on-line",
+    "installmentText": "3x R$ 16,33 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "bola_penalty_21",

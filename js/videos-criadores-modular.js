@@ -796,6 +796,90 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'cinta132') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Meninas, os 6 níveis de colchetes dessa cinta M+ seguram muito firme sem enrolar quando senta! O tecido furadinho é super fresquinho 💕✨',
+                date: 'Há 1 hora',
+                likes: 88,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_3.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_3.jpg',
+                user: 'camila.fit22',
+                text: 'Peguei a preta e a bege! Uso a bege embaixo de vestido justo e não marca absolutamente nada 😍',
+                date: 'Há 35 min',
+                likes: 41,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_4.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_4.jpg',
+                user: 'fer_oliveira91',
+                text: 'Chegou em 4 dias aqui! Compressão maravilhosa e ajuda demais na postura na academia 💪',
+                date: 'Há 18 min',
+                likes: 29,
+                liked: false
+              }
+            ];
+          } else if (contextType === 'pisca133') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Gente, são 9 metros reais com 100 LEDs super brilhantes e fio transparente que some na árvore! Dá pra deixar fixo ou escolher entre os 8 modos 🎄✨',
+                date: 'Há 1 hora',
+                likes: 112,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_5.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_5.jpg',
+                user: 'patricia_decor',
+                text: 'Comprei 2 branco quente e 1 colorido pra minha árvore de 1,80m, ficou parecendo árvore de shopping 😍🎄',
+                date: 'Há 42 min',
+                likes: 54,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_6.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_6.jpg',
+                user: 'amanda.costa',
+                text: 'O melhor é que não esquenta nada, deixo ligado a noite inteira tranquila com meus cachorros em casa!',
+                date: 'Há 20 min',
+                likes: 33,
+                liked: false
+              }
+            ];
+          } else if (contextType === 'sobrancelha134') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Sério, essa canetinha com LED salva a vida! Limpa a sobrancelha e o buço em 1 minuto sem dor e sem ficar vermelho, e carrega no USB ✨💖',
+                date: 'Há 1 hora',
+                likes: 104,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_7.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_7.jpg',
+                user: 'bia.makeup_',
+                text: 'Comprei a Branco Pérola e já tô levando na bolsa! A luzinha LED mostra todos os pelinhos claros 😍',
+                date: 'Há 38 min',
+                likes: 49,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_8.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_8.jpg',
+                user: 'juliana.santos',
+                text: 'Chegou com o cabinho USB e a escovinha de limpeza, super prática e não irrita pele sensível!',
+                date: 'Há 15 min',
+                likes: 27,
+                liked: false
+              }
+            ];
           } else if (contextType === 'patinete126') {
             return [
               {

@@ -17,8 +17,9 @@
   <title>{{TITLE}}</title>
   <meta content="{{META_DESCRIPTION}}" name="description"/>
   {{HERO_IMAGE_PRELOAD}}
-  <link as="font" crossorigin="" href="../fonts/tt-pro-400.ttf" rel="preload" type="font/woff2"/>
-  <link as="font" crossorigin="" href="../fonts/tt-pro-600.ttf" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="../fonts/tt-pro-400.ttf" rel="preload" type="font/ttf"/>
+  <link as="font" crossorigin="" href="../fonts/tt-pro-500.ttf" rel="preload" type="font/ttf"/>
+  <link as="font" crossorigin="" href="../fonts/tt-pro-600.ttf" rel="preload" type="font/ttf"/>
   <link as="image" fetchpriority="high" href="../decalque/decalque-blackfriday.png?v={{ASSET_VERSION}}" rel="preload"/>
   <link href="../css/style.css?v={{ASSET_VERSION}}" rel="stylesheet"/>
   <link href="../css/ui-oficial.css?v={{ASSET_VERSION}}" rel="stylesheet"/>
@@ -112,54 +113,54 @@
       {{COUPONS_HTML}}
 
       <!-- Título com Bookmark à direita -->
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px;">
-        <h1 class="product-title" style="font-size: 16px; font-weight: 700; color: #161823; line-height: 1.35; margin: 0; flex: 1;">
+      <div class="product-title-wrap" style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 7px;">
+        <h1 class="product-title" style="font-size: 15.5px; font-weight: 600; color: #161823; line-height: 1.32; margin: 0; flex: 1;">
           {{PRODUCT_TITLE}}
         </h1>
         <button aria-label="Salvar" class="bookmark-btn" onclick="toggleBookmark(this)" style="background: none; border: none; padding: 2px 0 0 0; cursor: pointer; color: #161823; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" type="button">
-          <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="20">
+          <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.95" viewbox="0 0 24 24" width="20">
             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
           </svg>
         </button>
       </div>
 
       <!-- Avaliações e Vendas -->
-      <div class="ratings-row" style="display: flex; align-items: center; gap: 6px; margin-bottom: 12px;">
-        <div class="star-row" style="display: flex; align-items: center; gap: 4px;">
-          <svg class="star-icon" fill="#ffb800" height="13" viewbox="0 0 24 24" width="13">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      <div class="ratings-row" style="display: flex; align-items: center; gap: 6px; margin-bottom: 11px;">
+        <div class="star-row" style="display: flex; align-items: center; gap: 3.5px;">
+          <svg aria-hidden="true" class="star-icon" fill="#ffc600" height="14" stroke="#ffc600" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" viewbox="0 0 24 24" width="14">
+            <path d="M12 1.8c.38 0 .72.23.86.58l2.72 6.54 6.98.61c.39.04.72.31.84.68.12.38.01.79-.28 1.05l-5.28 4.67 1.57 6.86c.09.39-.07.79-.39 1.02-.32.23-.75.25-1.09.06L12 20.25l-5.93 3.62c-.34.19-.77.17-1.09-.06-.32-.23-.48-.63-.39-1.02l1.57-6.86-5.28-4.67c-.29-.26-.4-.67-.28-1.05.12-.37.45-.64.84-.68l6.98-.61 2.72-6.54c.14-.35.48-.58.86-.58z"></path>
           </svg>
-          <span style="font-size: 13px; font-weight: 700; color: #161823;">{{RATING_SCORE}}</span>
-          <span onclick="document.querySelector('.reviews-section')?.scrollIntoView({behavior:'smooth'})" style="font-size: 13px; font-weight: 500; color: #4364db; cursor: pointer;">{{RATING_COUNT}}</span>
+          <span class="rating-score-num" style="font-size: 13px; font-weight: 600; color: #161823;">{{RATING_SCORE}}</span>
+          <span class="rating-count-link" onclick="document.querySelector('.reviews-section')?.scrollIntoView({behavior:'smooth'})" style="font-size: 13px; font-weight: 400; color: #385898; cursor: pointer;">{{RATING_COUNT}}</span>
         </div>
-        <span style="color: #e5e5e5; font-size: 12px; margin: 0 1px;">|</span>
-        <div class="sold-count" style="font-size: 13px; color: #757575; font-weight: 400;">{{SOLD_COUNT}}</div>
+        <span aria-hidden="true" class="ratings-divider" style="display: inline-block; width: 1px; height: 11px; background: #e4e4e6; margin: 0 2px;"></span>
+        <div class="sold-count">{{SOLD_COUNT_HTML}}</div>
       </div>
 
       <!-- BLOCO PRÉ-DESCRIÇÃO OFICIAL TIKTOK SHOP -->
-      <div class="product-info-rows" style="border-top:1px solid #f5f5f5; border-bottom:1px solid #f5f5f5; margin-bottom:14px; background:#fff;">
+      <div class="product-info-rows">
         <!-- Linha 1: Frete Grátis -->
-        <div class="info-row-item info-row-envio" onclick="window.openEnvioModal && window.openEnvioModal()" style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid #f2f2f2; background:#fff; cursor:pointer;">
-          <div class="info-row-left" style="display:flex; align-items:center; gap:12px;">
-            <div class="info-row-icon" style="display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-              <svg height="20" viewbox="0 -2 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+        <div class="info-row-item info-row-envio" onclick="window.openEnvioModal && window.openEnvioModal()">
+          <div class="info-row-left">
+            <div class="info-row-icon">
+              <svg aria-hidden="true" height="18" viewbox="0 -2 20 20" width="18" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(-2 -4)">
-                  <path d="M9.17,17H13V6a1,1,0,0,0-1-1H5" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                  <path d="M3,13v3a1,1,0,0,0,1,1h.87" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                  <path d="M14.87,17H13V7h4.25a1,1,0,0,1,1,.73L19,10.5l1.24.31a1,1,0,0,1,.76,1V16a1,1,0,0,1-1,1h-.89" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-                  <path d="M9,17a2,2,0,1,1-2-2A2,2,0,0,1,9,17Zm8-2a2,2,0,1,0,2,2A2,2,0,0,0,17,15ZM3,9H9" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  <path d="M9.17,17H13V6a1,1,0,0,0-1-1H5" fill="none" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+                  <path d="M3,13v3a1,1,0,0,0,1,1h.87" fill="none" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+                  <path d="M14.87,17H13V7h4.25a1,1,0,0,1,1,.73L19,10.5l1.24.31a1,1,0,0,1,.76,1V16a1,1,0,0,1-1,1h-.89" fill="none" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+                  <path d="M9,17a2,2,0,1,1-2-2A2,2,0,0,1,9,17Zm8-2a2,2,0,1,0,2,2A2,2,0,0,0,17,15ZM3,9H9" fill="none" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
                 </g>
               </svg>
             </div>
-            <div class="info-row-content" style="display:flex; flex-direction:column;">
-              <div class="info-row-title-row" style="display:flex; align-items:center; gap:6px; margin-bottom:2px;">
+            <div class="info-row-content">
+              <div class="info-row-title-row">
                 <span class="info-row-badge-green info-row-frete-clean">Frete grátis</span>
                 <span class="info-row-frete-orig">{{FRETE_ORIGINAL}}</span>
               </div>
-              <span class="info-row-subtitle frete-prazo-dinamico" id="frete-prazo-dinamico" style="font-size:13.5px; color:#161823; font-weight:400;">Receba até sex., 27 de nov – ter., 1 de dez</span>
+              <span class="info-row-subtitle frete-prazo-dinamico" id="frete-prazo-dinamico">Receba até qua., 2 de dez–qua., 9 de dez</span>
             </div>
           </div>
-          <span class="info-row-arrow"><svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+          <span class="info-row-arrow"><svg aria-hidden="true" fill="none" height="13" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.95" viewbox="0 0 24 24" width="13"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
         </div>
 
         <!-- Linha 2: Opções Disponíveis -->
@@ -286,8 +287,8 @@
       </svg>
     </button>
     <button class="btn-buy" id="btn-buy" onclick="handleBuyNow()" type="button">
-      <span class="btn-line1">Comprar agora</span>
-      <span class="btn-line2">Frete grátis</span>
+      <span class="btn-line1">Compre</span>
+      <span class="btn-line2">Preço de oferta R$ {{PRICE_INT}}{{PRICE_CENTS}}</span>
     </button>
   </div>
 </div><!-- fim app-container -->

@@ -1371,9 +1371,9 @@ function renderRelacionados() {
     const pPrecoNum = typeof p.preco === 'number' ? p.preco : parseFloat(String(p.preco).replace(',', '.')) || 39.90;
     const pPreco = pPrecoNum.toFixed(2).replace('.', ',');
     const pPrecoOrig = p.precoOrig ? String(p.precoOrig) : (pPrecoNum * 2.5).toFixed(2).replace('.', ',');
-    const pVendidos = p.vendidos 
-      ? (typeof p.vendidos === 'number' && p.vendidos >= 1000 ? (p.vendidos / 1000).toFixed(1) + 'K vendidos' : p.vendidos + ' vendidos')
-      : (5 + ((p.id * 7) % 18) * 0.8).toFixed(1) + 'K vendidos';
+  const pVendidos = p.vendidos
+      ? String(p.vendidos).replace(/\./g, '') + ' vendidos'
+      : String(5120 + ((p.id * 731) % 8800)) + ' vendidos';
 
     const vInfo = PRODUTO_VIDEOS_MAP[p.id];
     // Ativa vídeo estritamente em apenas 2 posições espaçadas (1º no card 1 e 2º no card 5 ou 6)
@@ -1652,7 +1652,7 @@ function initProductTabs() {
 
   const HEADER = 48;   // altura real do header fixo
   const TABS = 42;     // altura das abas
-  const SHOW_AT = 18;  // aparece imediatamente ao iniciar a rolagem já na 1ª aba (Visão geral)
+  const SHOW_AT = 60;  // aparece somente após rolar além do topo (tela inicial limpa 1:1)
 
   // Configuração inicial forçada para garantir visibilidade absoluta
   tabsBar.style.position = 'fixed';
@@ -1684,10 +1684,8 @@ function initProductTabs() {
 
     if (sy > SHOW_AT) {
       tabsBar.classList.add('tabs-visible');
-      tabsBar.style.top = '48px';
     } else {
       tabsBar.classList.remove('tabs-visible');
-      tabsBar.style.top = '-100px';
     }
 
     const threshold = HEADER + TABS + 88;
@@ -2975,7 +2973,7 @@ function renderStoreReviewsFilter() {
   const existingBlock = document.querySelector('.store-reviews-summary-block');
   if (existingBlock) existingBlock.remove();
 
-  // Dados oficiais TikTok Shop de reputação da loja (Stone Shop: 112.2K vendidos)
+  // Dados oficiais TikTok Shop de reputação da loja (Stone Shop: 112240 vendidos)
   const storeTotalReviews = '2,9 mil';
   const storeMediaReviews = '742';
   const store5StarReviews = '2,2 mil';
@@ -4049,7 +4047,7 @@ function openSmartChat() {
   const prodOrigNum = hasProd ? Number(PRODUTO_ATUAL.preco_antigo || 0) : 0;
   const prodPriceStr = hasProd ? ('R$ ' + prodPriceNum.toFixed(2).replace('.', ',')) : '';
   const prodOrigStr = (hasProd && prodOrigNum > prodPriceNum) ? ('R$ ' + prodOrigNum.toFixed(2).replace('.', ',')) : (document.querySelector('.price-original')?.textContent?.trim() || '');
-  const soldText = document.querySelector('.sold-count')?.textContent?.trim() || '2.5K vendidos';
+  const soldText = document.querySelector('.sold-count')?.textContent?.trim() || '2540 vendidos on-line';
 
   const botAvatarSvg = `<div class="tt-chat-bot-avatar" aria-hidden="true">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -4920,7 +4918,7 @@ function initStoneShopApp() {
                   <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
               </div>
-              <div class="store-widget-sales" style="font-size:12px; color:#888;">147.2K vendido(s)</div>
+              <div class="store-widget-sales" style="font-size:12px; color:#888;">147200 vendidos</div>
             </div>
             <button class="store-widget-btn-visitar" onclick="openPumaStoreModal()" style="background:#f5f5f5; color:#111; font-size:13px; font-weight:700; padding:6px 16px; border-radius:20px; border:none; cursor:pointer; flex-shrink:0; outline:none; transition:background 0.2s;">Visitar</button>
           </div>
@@ -4953,7 +4951,7 @@ function initStoneShopApp() {
                 <span style="color:#bbb; font-size:13px; line-height:1; font-weight:300;">|</span>
                 <span style="font-size:11px; color:#555; font-weight:500; letter-spacing:0.1px;">Loja Credenciada</span>
               </div>` : ''}
-              <div class="store-widget-sales" style="font-size:12.5px; color:#8a8b91; font-weight:400; margin-top:1px; line-height:1.2;">112.2K vendido(s)</div>
+              <div class="store-widget-sales" style="font-size:12.5px; color:#8a8b91; font-weight:400; margin-top:1px; line-height:1.2;">112240 vendidos</div>
             </div>
             <!-- Botão Visitar Idêntico à Imagem 2 (Flat, border-radius: 18px, font-weight: 600, sem sombra) -->
             <button class="store-widget-btn-visitar" onclick="window.location.href='../index.html'" style="background:#fe2c55; color:#fff; font-size:13.5px; font-weight:600; padding:6px 18px; height:34px; border-radius:18px; border:none; cursor:pointer; flex-shrink:0; outline:none; box-shadow:none; letter-spacing:-0.2px; display:inline-flex; align-items:center; justify-content:center; -webkit-tap-highlight-color:transparent;">Visitar</button>
@@ -5087,7 +5085,7 @@ function initStoneShopApp() {
       const maxDia = maxData.getDate();
       const maxMes = meses[maxData.getMonth()];
 
-      return `Receba até ${minSem}, ${minDia} de ${minMes} – ${maxSem}, ${maxDia} de ${maxMes}`;
+      return `Receba até ${minSem}, ${minDia} de ${minMes}–${maxSem}, ${maxDia} de ${maxMes}`;
     };
 
     // Se o contêiner já existir no DOM, atualiza a data do frete dinamicamente sem causar flicker
@@ -6113,7 +6111,7 @@ function formatarPrazoEnvioCompleto() {
   const diaMax = dMax.getDate();
   const mesMax = meses[dMax.getMonth()];
 
-  return `Receba até ${semMin}., ${diaMin} de ${mesMin} – ${semMax}., ${diaMax} de ${mesMax}`;
+  return `Receba até ${semMin}., ${diaMin} de ${mesMin}–${semMax}., ${diaMax} de ${mesMax}`;
 }
 
 const BR_ESTADOS_ENVIO = [

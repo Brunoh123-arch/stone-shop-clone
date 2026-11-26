@@ -1,0 +1,501 @@
+{
+  "id": 132,
+  "title": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Colchetes Respirável - Stone Shop",
+  "meta_description": "Cinta Modeladora Feminina Redutora Abdominal M+ com 6 fileiras de colchetes e tecido respirável por R$ 49,90 no PIX. Frete grátis Stone Shop.",
+  "product_title": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste Tecido Respirável",
+  "slider_imgs": [
+    {
+      "src": "../img/cinta-132-slide-1.webp",
+      "alt": "Cinta Modeladora Feminina Redutora Abdominal M+ Preta - Vista Frontal"
+    },
+    {
+      "src": "../img/cinta-132-slide-2.webp",
+      "alt": "Cinta Modeladora M+ - 6 Fileiras de Colchetes com Ajuste Regulável"
+    },
+    {
+      "src": "../img/cinta-132-slide-3.webp",
+      "alt": "Cinta Modeladora M+ - Modelagem da Cintura e Compressão Firme"
+    },
+    {
+      "src": "../img/cinta-132-slide-4.webp",
+      "alt": "Cinta Modeladora M+ - Medidas Aproximadas (Altura 25 cm)"
+    },
+    {
+      "src": "../img/cinta-132-slide-5.webp",
+      "alt": "Cinta Modeladora M+ - Estrutura de Sustentação Lombar e Abdominal"
+    },
+    {
+      "src": "../img/cinta-132-slide-6.webp",
+      "alt": "Cinta Modeladora M+ - Tecido Perfurado Respirável de Alta Elasticidade"
+    },
+    {
+      "src": "../img/cinta-132-slide-7.webp",
+      "alt": "Cinta Modeladora M+ - Uso Discreto no Dia a Dia e Academia"
+    },
+    {
+      "src": "../img/cinta-132-slide-8.webp",
+      "alt": "Cinta Modeladora M+ - Cor Bege Nude Respirável"
+    }
+  ],
+  "discount_badge": "-72%",
+  "price_int": "49",
+  "price_cents": ",90",
+  "price_original": "R$ 179,90",
+  "installment_text": "3x R$ 16,63",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom R$ 20 OFF aplicado",
+  "coupon_bonus": "Final R$ 49,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(418)",
+  "sold_count": "4617 vendidos on-line",
+  "frete_original": "R$ 18,90",
+  "reviews_header": "Avaliações dos clientes (418)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "M**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_1.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Bege",
+      "date_line": "25/11 · Bege",
+      "comment": "Amei demais! Comprei a bege pra usar por baixo de roupa clara e não marca nada. Os 6 níveis de colchetes ajudam muito a regular a compressão no dia a dia.",
+      "photos": [
+        "../img/review-132-b4-1.webp"
+      ]
+    },
+    {
+      "name": "C**a O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_2.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Preto",
+      "date_line": "24/11 · Preto",
+      "comment": "Material excelente, bem reforçada e o tecido furadinho deixa a pele respirar. Chegou super rápido e bem embalada. Vou pedir a bege agora!",
+      "photos": [
+        "../img/review-132-b2-1.webp"
+      ]
+    },
+    {
+      "name": "J**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_3.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Preto",
+      "date_line": "24/11 · Preto",
+      "comment": "Olha como modela a cintura na hora! Uso pra ir na academia e no trabalho, não enrola e melhora até a postura. Super recomendo!",
+      "photos": [
+        "../img/review-132-b3-1.webp",
+        "../img/review-132-b3-2.webp"
+      ]
+    },
+    {
+      "name": "F**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Bege",
+      "date_line": "23/11 · Bege",
+      "comment": "Serviu perfeitamente, acabamento impecável e a compressão é firme na medida certa sem machucar. Ótimo custo-benefício!",
+      "photos": []
+    },
+    {
+      "name": "L**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_5.jpg",
+      "stars": 5,
+      "date": "22/11",
+      "variation": "Bege",
+      "date_line": "22/11 · Bege",
+      "comment": "Os colchetes são super resistentes e bem costurados, não solta de jeito nenhum. Tô usando todo dia e já senti muita diferença na postura.",
+      "photos": [
+        "../img/review-132-b5-1.webp"
+      ]
+    },
+    {
+      "name": "A**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "Preto",
+      "date_line": "21/11 · Preto",
+      "comment": "Perfeita! Fica super bonita no corpo, reduz medidas na hora de colocar vestido justo e não incomoda pra sentar. Comprem sem medo!",
+      "photos": []
+    },
+    {
+      "name": "B**z N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Preto",
+      "date_line": "20/11 · Preto",
+      "comment": "Comprei tamanho GG e vestiu certinho, tem 6 fileiras de ajuste então dá pra ir fechando mais conforme emagrece. Amei!",
+      "photos": []
+    },
+    {
+      "name": "R**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_8.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "Bege",
+      "date_line": "19/11 · Bege",
+      "comment": "Muito confortável! Já tive outras cintas que sufocavam, essa por ser respirável dá pra ficar horas tranquilamente.",
+      "photos": []
+    },
+    {
+      "name": "T**s G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_9.jpg",
+      "stars": 4,
+      "date": "18/11",
+      "variation": "Preto",
+      "date_line": "18/11 · Preto",
+      "comment": "Ótima compressão e material bom. Só recomendo conferir bem as medidas antes de escolher o tamanho pra ficar certinho.",
+      "photos": []
+    },
+    {
+      "name": "P**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_10.jpg",
+      "stars": 5,
+      "date": "17/11",
+      "variation": "Preto",
+      "date_line": "17/11 · Preto",
+      "comment": "Chegou em 4 dias aqui em SP! Produto exatamente igual ao vídeo, a compressão abdominal é incrível.",
+      "photos": []
+    },
+    {
+      "name": "D**e A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_11.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Bege",
+      "date_line": "16/11 · Bege",
+      "comment": "Uso no pós-parto e me deu muita firmeza na barriga e nas costas. Melhor compra que fiz esse mês!",
+      "photos": []
+    },
+    {
+      "name": "S**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_12.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "Preto",
+      "date_line": "15/11 · Preto",
+      "comment": "Fica super discreta por baixo da blusa, não marca e afina muito a silhueta. Já indiquei pras minhas amigas.",
+      "photos": []
+    },
+    {
+      "name": "K**n F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_13.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Bege",
+      "date_line": "14/11 · Bege",
+      "comment": "Qualidade surpreendente pelo preço! O tecido é elástico mas segura bem firme o abdômen.",
+      "photos": []
+    },
+    {
+      "name": "G**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_14.jpg",
+      "stars": 5,
+      "date": "13/11",
+      "variation": "Preto",
+      "date_line": "13/11 · Preto",
+      "comment": "Não enrola na barriga quando senta, isso pra mim era o mais importante. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "V**a R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_15.jpg",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "Bege",
+      "date_line": "12/11 · Bege",
+      "comment": "Entrega rápida e produto bem acabado. A cor bege é bem neutra, perfeita pra usar com vestido branco.",
+      "photos": []
+    },
+    {
+      "name": "N**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_16.jpg",
+      "stars": 4,
+      "date": "11/11",
+      "variation": "Preto",
+      "date_line": "11/11 · Preto",
+      "comment": "Gostei bastante, aperta bem na cintura e ajuda na lombar. Nos primeiros dias é bom fechar no primeiro colchete pra acostumar.",
+      "photos": []
+    },
+    {
+      "name": "E**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_17.jpg",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Preto",
+      "date_line": "10/11 · Preto",
+      "comment": "Maravilhosa! Comprei uma preta e já tô voltando pra comprar mais uma pra revezar quando lavar.",
+      "photos": []
+    },
+    {
+      "name": "L**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_18.jpg",
+      "stars": 5,
+      "date": "09/11",
+      "variation": "Bege",
+      "date_line": "09/11 · Bege",
+      "comment": "Serviu igual uma luva! Super leve, respirável e com ótimo acabamento nos colchetes.",
+      "photos": []
+    },
+    {
+      "name": "I**s P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_19.jpg",
+      "stars": 5,
+      "date": "08/11",
+      "variation": "Preto",
+      "date_line": "08/11 · Preto",
+      "comment": "Excelente produto, chegou certinho e faz exatamente o que promete. Reduz bastante as medidas visualmente.",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg",
+      "stars": 5,
+      "date": "07/11",
+      "variation": "Bege",
+      "date_line": "07/11 · Bege",
+      "comment": "Amei o conforto! Uso pra treinar na academia e ajuda muito a manter a postura reta.",
+      "photos": []
+    },
+    {
+      "name": "M**e A**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
+      "stars": 5,
+      "date": "06/11",
+      "variation": "Preto",
+      "date_line": "06/11 · Preto",
+      "comment": "Muito boa mesmo! Alta cobertura abdominal, pega toda a região da barriga sem ficar dobrando.",
+      "photos": []
+    },
+    {
+      "name": "J**e L**z",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
+      "stars": 5,
+      "date": "05/11",
+      "variation": "Preto",
+      "date_line": "05/11 · Preto",
+      "comment": "Chegou antes do prazo e a qualidade me surpreendeu. Muito feliz com a compra na Stone Shop!",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Modelo",
+      "value": "Cinta Modeladora Abdominal M+ 6 Colchetes",
+      "hidden": false
+    },
+    {
+      "label": "Material",
+      "value": "Poliéster e Elastano Perfurado Respirável",
+      "hidden": false
+    },
+    {
+      "label": "Níveis de Ajuste",
+      "value": "6 Fileiras de Colchetes Frontais Reforçados",
+      "hidden": false
+    },
+    {
+      "label": "Altura Aproximada",
+      "value": "25 cm (Alta Cobertura Abdominal)",
+      "hidden": false
+    },
+    {
+      "label": "Indicação de Uso",
+      "value": "Dia a Dia, Academia, Fitness e Postura",
+      "hidden": true
+    },
+    {
+      "label": "Cores Disponíveis",
+      "value": "Preto e Bege Nude",
+      "hidden": true
+    },
+    {
+      "label": "Tamanhos",
+      "value": "P, M, G, GG, XG",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/bjmpqr.mp4",
+    "poster": "../videosprodutos/posters/poster-cinta-132-desc.jpg?v=20261126",
+    "duration": "0:12",
+    "catbox_id": "bjmpqr.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>✨ Cinta Modeladora Feminina Redutora Abdominal M+ — 6 Níveis de Compressão</strong><br/><br/>\nModele sua cintura instantaneamente com máximo conforto! Desenvolvida com <strong>tecido perfurado respirável</strong> que evita superaquecimento e permite o uso prolongado sob qualquer roupa ou durante os treinos na academia.<br/><br/>\n<strong>Principais Benefícios:</strong><br/>\n• <strong>6 Fileiras de Colchetes Frontais</strong>: ajuste progressivo que acompanha a redução de medidas.<br/>\n• <strong>Alta Cobertura Abdominal (25 cm)</strong>: envolve toda a região da cintura sem enrolar ao sentar.<br/>\n• <strong>Tecido Respirável com Microfuros</strong>: conforto térmico o dia todo, discreta sob vestidos e blusas.<br/>\n• <strong>Estrutura de Sustentação</strong>: auxilia na postura e oferece firmeza na região lombar.<br/><br/>\n<strong>Guia Rápido de Tamanhos (Cintura):</strong><br/>\n• <strong>P</strong>: 60 a 70 cm (manequim 36–38)<br/>\n• <strong>M</strong>: 71 a 80 cm (manequim 40–42)<br/>\n• <strong>G</strong>: 81 a 90 cm (manequim 44–46)<br/>\n• <strong>GG</strong>: 91 a 102 cm (manequim 48–50)<br/>\n• <strong>XG</strong>: 103 a 115 cm (manequim 52–54)<br/><br/>\n<strong>Conteúdo da Embalagem:</strong><br/>\n• 1 Cinta Modeladora Feminina M+ na cor e tamanho escolhidos<br/>• Garantia de 90 dias Stone Shop",
+  "related": [
+    {
+      "href": "produto-134.html",
+      "img": "../img/sobrancelha-134-slide-1.webp",
+      "alt": "Caneta Aparadora de Sobrancelhas Elétrica LED",
+      "name": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ LED",
+      "price": "R$ 39,90",
+      "price_original": "R$ 129,90",
+      "discount": "69% OFF",
+      "sold": "5191 vendidos"
+    },
+    {
+      "href": "produto-133.html",
+      "img": "../img/pisca-133-slide-1.webp",
+      "alt": "Cordão de Luz Natal Pisca Pisca 100 LEDs 9m",
+      "name": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente",
+      "price": "R$ 34,90",
+      "price_original": "R$ 99,90",
+      "discount": "65% OFF",
+      "sold": "6454 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 132,
+    "nome": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste Tecido Respirável",
+    "name": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste Tecido Respirável",
+    "preco": 49.9,
+    "price": 49.9,
+    "preco_antigo": 179.9,
+    "precoOrig": 179.9,
+    "originalPrice": 179.9,
+    "cupomPreco": 49.9,
+    "couponPrice": 49.9,
+    "desc": 72,
+    "desconto": 72,
+    "installmentText": "3x R$ 16,63 sem juros",
+    "parcelamento": "2x de R$ 24,95 sem juros",
+    "categoria": "Moda Feminina",
+    "img": "../img/cinta-132-slide-1.webp",
+    "image": "../img/cinta-132-slide-1.webp",
+    "imagens": [
+      "../img/cinta-132-slide-1.webp",
+      "../img/cinta-132-slide-2.webp",
+      "../img/cinta-132-slide-3.webp",
+      "../img/cinta-132-slide-4.webp",
+      "../img/cinta-132-slide-5.webp",
+      "../img/cinta-132-slide-6.webp",
+      "../img/cinta-132-slide-7.webp",
+      "../img/cinta-132-slide-8.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "imagem": "../img/cinta-132-var-preto.webp",
+            "nome": "Preto"
+          },
+          {
+            "imagem": "../img/cinta-132-var-bege.webp",
+            "nome": "Bege"
+          }
+        ]
+      },
+      "tamanho": {
+        "com_imagem": false,
+        "label": "Tamanho",
+        "opcoes": [
+          {
+            "nome": "P"
+          },
+          {
+            "nome": "M"
+          },
+          {
+            "nome": "G"
+          },
+          {
+            "nome": "GG"
+          },
+          {
+            "nome": "XG"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "4617 vendidos on-line"
+  },
+  "extra_scripts": [],
+  "creator_context": "cinta132",
+  "creators": [
+    {
+      "name": "Luna Oliveira",
+      "username": "bylunaas",
+      "avatar": "../img/avatars-cinta/creator-132-c1.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-cinta-132-c1.jpg?v=20261126",
+      "video": "https://files.catbox.moe/xzyqjc.mp4#prod=132&slot=criador_1&slug=cinta-modeladora-abdominal-mplus",
+      "catbox_id": "xzyqjc.mp4",
+      "startTime": 0.2,
+      "likes": 66200,
+      "commentsCount": 305,
+      "saves": 15866,
+      "shares": 2861,
+      "description": "POV: não acredito que essa cinta modeladora M+ tá custando só isso 😳🔥 #cintamodeladora #cinturafina #modafeminina"
+    },
+    {
+      "name": "Vanessa Martins",
+      "username": "vanessa.mdv",
+      "avatar": "../img/avatars-cinta/creator-132-c2.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-cinta-132-c2.jpg?v=20261126",
+      "video": "https://files.catbox.moe/p4zgl7.mp4#prod=132&slot=criador_2&slug=cinta-modeladora-abdominal-mplus",
+      "catbox_id": "p4zgl7.mp4",
+      "startTime": 0.2,
+      "likes": 14200,
+      "commentsCount": 210,
+      "saves": 2400,
+      "shares": 310,
+      "description": "Testando a cinta modeladora com 6 fileiras de colchetes no corpo! Afina na hora 😍✨ #cintamodeladora #fitness #achadinhos"
+    },
+    {
+      "name": "Tamires Santos",
+      "username": "tamires_santoscosta",
+      "avatar": "../img/avatars-cinta/creator-132-c3.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-cinta-132-c3.jpg?v=20261126",
+      "video": "https://files.catbox.moe/yf7joz.mp4#prod=132&slot=criador_3&slug=cinta-modeladora-abdominal-mplus",
+      "catbox_id": "yf7joz.mp4",
+      "startTime": 0.2,
+      "likes": 14200,
+      "commentsCount": 145,
+      "saves": 1950,
+      "shares": 310,
+      "description": "Essa cinta respirável é perfeita pra quem quer comprimir a barriga sem sufocar 💕 #cintamodeladora #posparto #dicasdemoda"
+    },
+    {
+      "name": "Camila Ferreira",
+      "username": "camila.fitbr",
+      "avatar": "../img/avatars-cinta/creator-132-c4.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-cinta-132-c4.jpg?v=20261126",
+      "video": "https://files.catbox.moe/gh1svv.mp4#prod=132&slot=criador_4&slug=cinta-modeladora-abdominal-mplus",
+      "catbox_id": "gh1svv.mp4",
+      "startTime": 0.2,
+      "likes": 14200,
+      "commentsCount": 210,
+      "saves": 2400,
+      "shares": 420,
+      "description": "Tecido todo furadinho que não esquenta na academia e modela demais a cintura 💪🖤 #cintafitness #treino #cintamodeladora"
+    },
+    {
+      "name": "Clara Mendes",
+      "username": "claraindica9",
+      "avatar": "../img/avatars-cinta/creator-132-c5.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-cinta-132-c5.jpg?v=20261126",
+      "video": "https://files.catbox.moe/rt3sec.mp4#prod=132&slot=criador_5&slug=cinta-modeladora-abdominal-mplus",
+      "catbox_id": "rt3sec.mp4",
+      "startTime": 0.2,
+      "likes": 14200,
+      "commentsCount": 210,
+      "saves": 1950,
+      "shares": 420,
+      "description": "Olha os 6 níveis de ajuste dessa cinta! Dá pra ir apertando conforme vai afinando 🔥 #cintamodeladora #cinturafina"
+    }
+  ]
+}

@@ -29,13 +29,13 @@
   "price_int": "127",
   "price_cents": ",90",
   "price_original": "R$ 259,90",
-  "installment_text": "3x de R$ 42,63 sem juros",
+  "installment_text": "3x R$ 42,63",
   "installment_highlight": "sem juros",
   "coupon_main": "Cupom R$ 30 OFF aplicado",
   "coupon_bonus": "Final R$ 97,90 no Pix ou Cartão",
   "rating_score": "4,9",
   "rating_count": "(248)",
-  "sold_count": "2.4K vendido(s)",
+  "sold_count": "2453 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (48)",
   "reviews_avg": "5,0",
@@ -242,7 +242,7 @@
       "price": "R$ 89,00",
       "price_original": "R$ 399,90",
       "discount": "78% OFF",
-      "sold": "5668 vendido(s)"
+      "sold": "5668 vendidos"
     },
     {
       "href": "produto-15.html",
@@ -252,7 +252,7 @@
       "price": "R$ 149,90",
       "price_original": "R$ 624,90",
       "discount": "76% OFF",
-      "sold": "7543 vendido(s)"
+      "sold": "7543 vendidos"
     },
     {
       "href": "produto-16.html",
@@ -262,7 +262,7 @@
       "price": "R$ 129,30",
       "price_original": "R$ 499,00",
       "discount": "74% OFF",
-      "sold": "7548 vendido(s)"
+      "sold": "7548 vendidos"
     },
     {
       "href": "produto-7.html",
@@ -272,7 +272,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
-      "sold": "8754 vendido(s)"
+      "sold": "7894 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -282,7 +282,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     }
   ],
   "produto_atual": {
@@ -309,7 +309,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "2453 vendidos on-line",
+    "installmentText": "3x R$ 42,63 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "livro124",

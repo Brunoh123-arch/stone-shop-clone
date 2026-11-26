@@ -45,6 +45,10 @@ for (const id of ids) {
   if (!html.includes('price-section-bf')) errors.push(`produto-${id}: falta price-section-bf`);
   if (!html.includes('ui-oficial.css')) errors.push(`produto-${id}: falta ui-oficial.css`);
   if (!html.includes('decalque-blackfriday.png')) errors.push(`produto-${id}: falta decalque-blackfriday.png`);
+  if (/\d+(?:[.,]\d+)?\s*K\s*vendido/i.test(html)) errors.push(`produto-${id}: ainda contém contador abreviado com 'K' em vendidos`);
+  const instBlock = (html.match(/<div class="installment-row"[\s\S]*?<\/div>/i) || [''])[0];
+  if (/sem\s+juros[\s\S]*sem\s+juros/i.test(instBlock)) errors.push(`produto-${id}: 'sem juros' duplicado na linha de parcelamento`);
+  if (/\dx\s+de\s+R\$/i.test(instBlock)) errors.push(`produto-${id}: parcelamento ainda contém 'de' (deve ser '3x R$ XX,XX sem juros')`);
 
   const revMatches = html.match(/class="review-card"/g) || [];
   totalReviews += revMatches.length;

@@ -29,13 +29,13 @@
   "price_int": "89",
   "price_cents": ",90",
   "price_original": "R$ 349,90",
-  "installment_text": "6x de R$ 14,98",
+  "installment_text": "3x R$ 29,96",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 260",
   "coupon_bonus": "Economize 74% com bônus",
   "rating_score": "4.9",
   "rating_count": "(15)",
-  "sold_count": "2.950 vendidos",
+  "sold_count": "2965 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (15)",
   "reviews_avg": "4,9",
@@ -276,7 +276,7 @@
       "price": "R$ 64,90",
       "price_original": "R$ 497,90",
       "discount": "87% OFF",
-      "sold": "5.462 vendido(s)"
+      "sold": "5462 vendidos"
     },
     {
       "href": "produto-52.html",
@@ -286,7 +286,7 @@
       "price": "R$ 94,90",
       "price_original": "R$ 497,90",
       "discount": "81% OFF",
-      "sold": "7.654 vendido(s)"
+      "sold": "7654 vendidos"
     },
     {
       "href": "produto-105.html",
@@ -296,7 +296,7 @@
       "price": "R$ 39,90",
       "price_original": "R$ 399,90",
       "discount": "90% OFF",
-      "sold": "14.829 vendido(s)"
+      "sold": "14829 vendidos"
     },
     {
       "href": "produto-63.html",
@@ -306,7 +306,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
-      "sold": "9.853 vendido(s)"
+      "sold": "9853 vendidos"
     },
     {
       "href": "produto-111.html",
@@ -316,7 +316,7 @@
       "price": "R$ 49,90",
       "price_original": "R$ 199,90",
       "discount": "75% OFF",
-      "sold": "5.180 vendido(s)"
+      "sold": "5253 vendidos"
     }
   ],
   "produto_atual": {
@@ -343,7 +343,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "2965 vendidos on-line",
+    "installmentText": "3x R$ 29,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "arcade_114",

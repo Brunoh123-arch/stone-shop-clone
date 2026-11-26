@@ -29,13 +29,13 @@
   "price_int": "189",
   "price_cents": ",90",
   "price_original": "R$ 779,90",
-  "installment_text": "2x R$ 94,95",
+  "installment_text": "3x R$ 63,30",
   "installment_highlight": "sem juros",
   "coupon_main": "76% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(49)",
-  "sold_count": "9.9K vendidos",
+  "sold_count": "9874 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (842)",
   "reviews_avg": "4.9",
@@ -286,7 +286,7 @@
       "price": "R$ 129,30",
       "price_original": "R$ 349,00",
       "discount": "63% OFF",
-      "sold": "4520 vendido(s)"
+      "sold": "7548 vendidos"
     },
     {
       "href": "produto-95.html",
@@ -296,7 +296,7 @@
       "price": "R$ 48,05",
       "price_original": "R$ 398,05",
       "discount": "88% OFF",
-      "sold": "200 vendido(s)"
+      "sold": "259 vendidos"
     },
     {
       "href": "produto-63.html",
@@ -306,7 +306,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
-      "sold": "9853 vendido(s)"
+      "sold": "9853 vendidos"
     },
     {
       "href": "produto-9.html",
@@ -316,7 +316,7 @@
       "price": "R$ 92,80",
       "price_original": "R$ 754,44",
       "discount": "88% OFF",
-      "sold": "10241 vendido(s)"
+      "sold": "10241 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -326,7 +326,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     }
   ],
   "produto_atual": {
@@ -356,7 +356,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "9874 vendidos on-line",
+    "installmentText": "3x R$ 63,30 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "churrasqueira_14",

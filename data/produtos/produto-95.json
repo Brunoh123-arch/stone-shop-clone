@@ -45,13 +45,13 @@
   "price_int": "48",
   "price_cents": ",05",
   "price_original": "R$ 398,05",
-  "installment_text": "2x R$ 24,02sem juros",
+  "installment_text": "3x R$ 16,01",
   "installment_highlight": "sem juros",
   "coupon_main": "",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(48)",
-  "sold_count": "200 vendidos",
+  "sold_count": "259 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (48)",
   "reviews_avg": "5,0",
@@ -594,7 +594,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 597,00",
       "discount": "88% OFF",
-      "sold": "7894 vendido(s)"
+      "sold": "7894 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -604,7 +604,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     },
     {
       "href": "produto-104.html",
@@ -614,7 +614,7 @@
       "price": "R$ 19,90",
       "price_original": "R$ 59,90",
       "discount": "67% OFF",
-      "sold": "21.3K vendidos"
+      "sold": "21303 vendidos"
     },
     {
       "href": "produto-111.html",
@@ -624,7 +624,7 @@
       "price": "R$ 49,90",
       "price_original": "R$ 199,90",
       "discount": "75% OFF",
-      "sold": "5.1K vendidos"
+      "sold": "5253 vendidos"
     }
   ],
   "produto_atual": {
@@ -667,7 +667,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "259 vendidos on-line",
+    "installmentText": "3x R$ 16,01 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "maquina_gelo_95",

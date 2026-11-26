@@ -45,13 +45,13 @@
   "price_int": "19",
   "price_cents": ",90",
   "price_original": "R$ 59,90",
-  "installment_text": "2x de R$ 11,48",
+  "installment_text": "3x R$ 6,63",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 40",
   "coupon_bonus": "Economize 67% com bônus",
   "rating_score": "4.8",
   "rating_count": "(14)",
-  "sold_count": "21.3K vendidos",
+  "sold_count": "21303 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (14)",
   "reviews_avg": "4,8",
@@ -329,7 +329,7 @@
       "price": "R$ 76,99",
       "price_original": "R$ 129,99",
       "discount": "41% OFF",
-      "sold": "648 vendido(s)"
+      "sold": "648 vendidos"
     },
     {
       "href": "produto-126.html",
@@ -339,7 +339,7 @@
       "price": "R$ 97,00",
       "price_original": "R$ 389,90",
       "discount": "75% OFF",
-      "sold": "3.8K vendidos"
+      "sold": "3842 vendidos"
     }
   ],
   "produto_atual": {
@@ -387,7 +387,9 @@
           "39/40"
         ]
       }
-    }
+    },
+    "sales": "21303 vendidos on-line",
+    "installmentText": "3x R$ 6,63 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "chinelo",

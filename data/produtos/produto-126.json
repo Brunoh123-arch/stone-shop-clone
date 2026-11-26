@@ -37,13 +37,13 @@
   "price_int": "97",
   "price_cents": ",00",
   "price_original": "R$ 389,90",
-  "installment_text": "3x de R$ 32,33 sem juros",
+  "installment_text": "3x R$ 32,33",
   "installment_highlight": "sem juros",
   "coupon_main": "Cupom R$ 50 OFF Natal aplicado",
   "coupon_bonus": "Final R$ 97,00 no Pix ou Cartão",
   "rating_score": "4,9",
   "rating_count": "(386)",
-  "sold_count": "3.8K vendido(s)",
+  "sold_count": "3842 vendidos on-line",
   "frete_original": "R$ 24,90",
   "reviews_header": "Avaliações dos clientes (386)",
   "reviews_avg": "4,9",
@@ -391,7 +391,7 @@
       "price": "R$ 44,90",
       "price_original": "R$ 169,90",
       "discount": "73% OFF",
-      "sold": "3.890 vendidos"
+      "sold": "3914 vendidos"
     },
     {
       "href": "produto-124.html",
@@ -401,7 +401,7 @@
       "price": "R$ 97,90",
       "price_original": "R$ 259,90",
       "discount": "62% OFF",
-      "sold": "2.4K vendido(s)"
+      "sold": "2453 vendidos"
     }
   ],
   "produto_atual": {
@@ -417,7 +417,7 @@
     "couponPrice": 97,
     "desc": 75,
     "desconto": 75,
-    "installmentText": "3x de R$ 32,33 sem juros",
+    "installmentText": "3x R$ 32,33 sem juros",
     "parcelamento": "3x de R$ 32,33 sem juros",
     "categoria": "Brinquedos",
     "img": "../img/patinete-126-slide-1.webp",
@@ -458,7 +458,7 @@
     "shipping": "Frete grátis",
     "store": "Stone Shop",
     "rating": 4.9,
-    "sales": "3.8K vendidos"
+    "sales": "3842 vendidos on-line"
   },
   "extra_scripts": [],
   "creator_context": "patinete126",

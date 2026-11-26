@@ -45,13 +45,13 @@
   "price_int": "69",
   "price_cents": ",90",
   "price_original": "R$ 397,90",
-  "installment_text": "2x R$ 34,95",
+  "installment_text": "3x R$ 23,30",
   "installment_highlight": "sem juros",
   "coupon_main": "82% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(48)",
-  "sold_count": "8.4K vendidos",
+  "sold_count": "8391 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (48)",
   "reviews_avg": "5,0",
@@ -617,7 +617,7 @@
       "price": "R$ 147,90",
       "price_original": "R$ 697,90",
       "discount": "79% OFF",
-      "sold": "8765 vendido(s)"
+      "sold": "8765 vendidos"
     },
     {
       "href": "produto-54.html",
@@ -627,7 +627,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
-      "sold": "9876 vendido(s)"
+      "sold": "9876 vendidos"
     },
     {
       "href": "produto-36.html",
@@ -637,7 +637,7 @@
       "price": "R$ 92,80",
       "price_original": "R$ 497,90",
       "discount": "81% OFF",
-      "sold": "9853 vendido(s)"
+      "sold": "9853 vendidos"
     },
     {
       "href": "produto-46.html",
@@ -647,7 +647,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 399,90",
       "discount": "83% OFF",
-      "sold": "9831 vendido(s)"
+      "sold": "9831 vendidos"
     },
     {
       "href": "produto-64.html",
@@ -657,7 +657,7 @@
       "price": "R$ 69,90",
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
-      "sold": "8765 vendido(s)"
+      "sold": "8765 vendidos"
     }
   ],
   "produto_atual": {
@@ -691,7 +691,9 @@
           }
         ]
       }
-    }
+    },
+    "sales": "8391 vendidos on-line",
+    "installmentText": "3x R$ 23,30 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "oven_41",

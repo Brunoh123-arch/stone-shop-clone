@@ -1,0 +1,499 @@
+{
+  "id": 134,
+  "title": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB LED - Stone Shop",
+  "meta_description": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB com Luz LED Indolor por R$ 39,90 no PIX. Frete grátis Stone Shop.",
+  "product_title": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",
+  "slider_imgs": [
+    {
+      "src": "../img/sobrancelha-134-slide-1.webp",
+      "alt": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica USB LED - Branco Pérola"
+    },
+    {
+      "src": "../img/sobrancelha-134-slide-2.webp",
+      "alt": "Caneta Aparadora de Sobrancelhas Elétrica LED - Preto Ônix"
+    },
+    {
+      "src": "../img/sobrancelha-134-slide-3.webp",
+      "alt": "Caneta Aparadora de Sobrancelhas Elétrica LED - Rosa Quartzo"
+    },
+    {
+      "src": "../img/sobrancelha-134-slide-4.webp",
+      "alt": "Kit Completo com Caneta Aparadora, Cabo USB e Escovinha de Limpeza"
+    },
+    {
+      "src": "../img/sobrancelha-134-slide-5.webp",
+      "alt": "Luz LED Embutida para Precisão Total na Sobrancelha e Buço"
+    },
+    {
+      "src": "../img/sobrancelha-134-slide-6.webp",
+      "alt": "Design Portátil Tipo Caneta Recarregável USB para Bolsa e Viagens"
+    },
+    {
+      "src": "../img/sobrancelha-134-slide-7.webp",
+      "alt": "Retoque Rápido e Sem Dor em Qualquer Lugar"
+    }
+  ],
+  "discount_badge": "-69%",
+  "price_int": "39",
+  "price_cents": ",90",
+  "price_original": "R$ 129,90",
+  "installment_text": "3x R$ 13,30",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom Beleza R$ 15 OFF aplicado",
+  "coupon_bonus": "Final R$ 39,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(512)",
+  "sold_count": "5191 vendidos on-line",
+  "frete_original": "R$ 16,90",
+  "reviews_header": "Avaliações dos clientes (512)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "M**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_42.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Branco Pérola",
+      "date_line": "25/11 · Branco Pérola",
+      "comment": "Muito bom produto, entrega realmente o resultado! Tira os pelos do buço e limpa as sobrancelhas sem dor nenhuma, amei demais!",
+      "photos": [
+        "../img/review-134-b1-1.webp",
+        "../img/review-134-b1-2.webp",
+        "../img/review-134-b1-3.webp"
+      ]
+    },
+    {
+      "name": "C**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_43.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Branco Pérola",
+      "date_line": "24/11 · Branco Pérola",
+      "comment": "A luz LED acende bem forte e ajuda a enxergar os pelinhos mais claros. Não deixa a pele vermelha nem irritada!",
+      "photos": [
+        "../img/review-134-b2-1.webp",
+        "../img/review-134-b2-2.webp"
+      ]
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_44.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Rosa Quartzo",
+      "date_line": "24/11 · Rosa Quartzo",
+      "comment": "O produto chegou no prazo e impressionou porque cumpre muito bem o papel de acabamento na sobrancelha. Super fácil de manusear!",
+      "photos": [
+        "../img/review-134-b3-1.webp"
+      ]
+    },
+    {
+      "name": "P**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_45.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Branco Pérola",
+      "date_line": "23/11 · Branco Pérola",
+      "comment": "Eu achei muito bom! Corta bem rente sem arrancar e sem deixar marcas. Posso estar sempre arrumada em 2 minutos sem depender de ninguém.",
+      "photos": [
+        "../img/review-134-b4-1.webp"
+      ]
+    },
+    {
+      "name": "L**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_46.jpg",
+      "stars": 5,
+      "date": "22/11",
+      "variation": "Branco Pérola",
+      "date_line": "22/11 · Branco Pérola",
+      "comment": "Veio completinho com o cabo USB e a escovinha pra limpar a ponta! Carrega rápido e a bateria dura várias semanas.",
+      "photos": [
+        "../img/review-134-b5-1.webp"
+      ]
+    },
+    {
+      "name": "A**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_47.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "Branco Pérola",
+      "date_line": "21/11 · Branco Pérola",
+      "comment": "Chegou certinho na caixinha, acabamento lindo branco com dourado rosé. Levo na bolsa pra qualquer viagem!",
+      "photos": [
+        "../img/review-134-b6-1.webp"
+      ]
+    },
+    {
+      "name": "B**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_48.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Rosa Quartzo",
+      "date_line": "20/11 · Rosa Quartzo",
+      "comment": "A cor rosa é a coisa mais linda! Super silenciosa e não puxa os pelos, zero dor mesmo.",
+      "photos": []
+    },
+    {
+      "name": "F**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_49.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "Preto Ônix",
+      "date_line": "19/11 · Preto Ônix",
+      "comment": "Comprei a preta e achei chiquérrima! Uso na sobrancelha e no buço e deixa a pele lisinha na hora.",
+      "photos": []
+    },
+    {
+      "name": "R**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_50.jpg",
+      "stars": 4,
+      "date": "18/11",
+      "variation": "Branco Pérola",
+      "date_line": "18/11 · Branco Pérola",
+      "comment": "Muito prática pro dia a dia, salva demais quando não dá tempo de ir na designer. A pontinha sai fácil pra lavar.",
+      "photos": []
+    },
+    {
+      "name": "T**s V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_51.jpg",
+      "stars": 5,
+      "date": "17/11",
+      "variation": "Rosa Quartzo",
+      "date_line": "17/11 · Rosa Quartzo",
+      "comment": "Minha pele é super sensível e sempre ficava vermelha com pinça e cera. Com essa caneta não irrita nada!",
+      "photos": []
+    },
+    {
+      "name": "D**e P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_52.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Branco Pérola",
+      "date_line": "16/11 · Branco Pérola",
+      "comment": "Entrega relâmpago! Já testei assim que abri e limpou direitinho os pelinhos em volta da sobrancelha.",
+      "photos": []
+    },
+    {
+      "name": "S**a O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_53.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "Preto Ônix",
+      "date_line": "15/11 · Preto Ônix",
+      "comment": "Melhor investimento de beleza por menos de 40 reais! Carregar no USB é vida, não precisa ficar comprando pilha.",
+      "photos": []
+    },
+    {
+      "name": "K**n M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_54.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Branco Pérola",
+      "date_line": "14/11 · Branco Pérola",
+      "comment": "Ameiiii! A luz de LED faz toda a diferença na frente do espelho.",
+      "photos": []
+    },
+    {
+      "name": "G**a A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_55.jpg",
+      "stars": 5,
+      "date": "13/11",
+      "variation": "Rosa Quartzo",
+      "date_line": "13/11 · Rosa Quartzo",
+      "comment": "Comprei uma pra mim e outra pra minha mãe, nós duas apaixonamos!",
+      "photos": []
+    },
+    {
+      "name": "V**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_56.jpg",
+      "stars": 4,
+      "date": "12/11",
+      "variation": "Branco Pérola",
+      "date_line": "12/11 · Branco Pérola",
+      "comment": "Funciona super bem pra pelos finos e médios, basta passar devagar em movimentos circulares. Adorei!",
+      "photos": []
+    },
+    {
+      "name": "N**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_57.jpg",
+      "stars": 5,
+      "date": "11/11",
+      "variation": "Preto Ônix",
+      "date_line": "11/11 · Preto Ônix",
+      "comment": "Design super elegante, parece um batom na nécessaire. Corta certinho e sem machucar.",
+      "photos": []
+    },
+    {
+      "name": "E**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_58.jpg",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Branco Pérola",
+      "date_line": "10/11 · Branco Pérola",
+      "comment": "Produto excelente, veio funcionando com carga e já usei na hora. Recomendo muito!",
+      "photos": []
+    },
+    {
+      "name": "L**e R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_59.jpg",
+      "stars": 5,
+      "date": "09/11",
+      "variation": "Rosa Quartzo",
+      "date_line": "09/11 · Rosa Quartzo",
+      "comment": "Chegou super bem embalada em 4 dias. A precisão da ponta é ótima, não tira nada fora do lugar.",
+      "photos": []
+    },
+    {
+      "name": "I**s C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_60.jpg",
+      "stars": 5,
+      "date": "08/11",
+      "variation": "Branco Pérola",
+      "date_line": "08/11 · Branco Pérola",
+      "comment": "Zero dor, zero vermelhidão e super prática pra limpar a cabeça com a escovinha.",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_61.jpg",
+      "stars": 5,
+      "date": "07/11",
+      "variation": "Preto Ônix",
+      "date_line": "07/11 · Preto Ônix",
+      "comment": "Muito boa mesmo! Uso antes da maquiagem pra tirar a penugem do rosto e a base fica perfeita.",
+      "photos": []
+    },
+    {
+      "name": "M**e L**z",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_62.jpg",
+      "stars": 5,
+      "date": "06/11",
+      "variation": "Branco Pérola",
+      "date_line": "06/11 · Branco Pérola",
+      "comment": "Ótimo custo-benefício, funciona perfeitamente e a bateria dura bastante.",
+      "photos": []
+    },
+    {
+      "name": "J**e P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_63.jpg",
+      "stars": 5,
+      "date": "05/11",
+      "variation": "Rosa Quartzo",
+      "date_line": "05/11 · Rosa Quartzo",
+      "comment": "Amei a compra na Stone Shop! Produto igualzinho às fotos e chegou antes do prazo.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Tipo",
+      "value": "Caneta Aparadora e Depiladora Facial de Precisão",
+      "hidden": false
+    },
+    {
+      "label": "Alimentação",
+      "value": "Bateria Interna Recarregável via Cabo USB",
+      "hidden": false
+    },
+    {
+      "label": "Iluminação",
+      "value": "Luz LED Embutida de Alta Precisão",
+      "hidden": false
+    },
+    {
+      "label": "Cabeça de Corte",
+      "value": "Precisão 360° Hipoalergênica Removível e Lavável",
+      "hidden": false
+    },
+    {
+      "label": "Indicação",
+      "value": "Sobrancelhas, Buço e Pelos Faciais Finos",
+      "hidden": true
+    },
+    {
+      "label": "Cores Disponíveis",
+      "value": "Branco Pérola, Preto Ônix e Rosa Quartzo",
+      "hidden": true
+    },
+    {
+      "label": "Itens Inclusos",
+      "value": "1 Caneta Aparadora, 1 Cabo USB e 1 Escova de Limpeza",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/rcu02u.mp4",
+    "poster": "../videosprodutos/posters/poster-sobrancelha-134-desc.jpg?v=20261126",
+    "duration": "0:30",
+    "catbox_id": "rcu02u.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>✨ Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED</strong><br/><br/>\nMantenha suas sobrancelhas e buço perfeitos em segundos, <strong>100% sem dor e sem irritação</strong>! Com formato discreto de caneta portátil e ponta hipoalergênica de precisão 360°, remove até os pelinhos mais curtos sem causar vermelhidão.<br/><br/>\n<strong>Principais Diferenciais:</strong><br/>\n• <strong>Luz LED Integrada</strong>: ilumina a região na hora do uso para máxima precisão.<br/>\n• <strong>Recarregável via USB</strong>: dispense pilhas — recarregue no carregador do celular, notebook ou power bank.<br/>\n• <strong>Ponta Hipoalergênica Removível</strong>: segura para peles sensíveis e super fácil de higienizar com a escovinha inclusa.<br/>\n• <strong>Portátil e Discreta</strong>: cabe na bolsa ou nécessaire para retoques rápidos em qualquer lugar.<br/><br/>\n<strong>Conteúdo da Embalagem:</strong><br/>\n• 1 Caneta Aparadora de Sobrancelhas Elétrica com LED<br/>• 1 Cabo Carregador USB<br/>• 1 Escovinha de Limpeza<br/>• Garantia de 90 dias Stone Shop",
+  "related": [
+    {
+      "href": "produto-132.html",
+      "img": "../img/cinta-132-slide-1.webp",
+      "alt": "Cinta Modeladora Feminina M+",
+      "name": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste",
+      "price": "R$ 49,90",
+      "price_original": "R$ 179,90",
+      "discount": "72% OFF",
+      "sold": "4617 vendidos"
+    },
+    {
+      "href": "produto-133.html",
+      "img": "../img/pisca-133-slide-1.webp",
+      "alt": "Cordão de Luz Natal Pisca Pisca 100 LEDs 9m",
+      "name": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente",
+      "price": "R$ 34,90",
+      "price_original": "R$ 99,90",
+      "discount": "65% OFF",
+      "sold": "6454 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 134,
+    "nome": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",
+    "name": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",
+    "preco": 39.9,
+    "price": 39.9,
+    "preco_antigo": 129.9,
+    "precoOrig": 129.9,
+    "originalPrice": 129.9,
+    "cupomPreco": 39.9,
+    "couponPrice": 39.9,
+    "desc": 69,
+    "desconto": 69,
+    "installmentText": "3x R$ 13,30 sem juros",
+    "parcelamento": "2x de R$ 19,95 sem juros",
+    "categoria": "Beleza e Cuidados",
+    "img": "../img/sobrancelha-134-slide-1.webp",
+    "image": "../img/sobrancelha-134-slide-1.webp",
+    "imagens": [
+      "../img/sobrancelha-134-slide-1.webp",
+      "../img/sobrancelha-134-slide-2.webp",
+      "../img/sobrancelha-134-slide-3.webp",
+      "../img/sobrancelha-134-slide-4.webp",
+      "../img/sobrancelha-134-slide-5.webp",
+      "../img/sobrancelha-134-slide-6.webp",
+      "../img/sobrancelha-134-slide-7.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "imagem": "../img/sobrancelha-134-var-branco.webp",
+            "nome": "Branco Pérola"
+          },
+          {
+            "imagem": "../img/sobrancelha-134-var-preto.webp",
+            "nome": "Preto Ônix"
+          },
+          {
+            "imagem": "../img/sobrancelha-134-var-rosa.webp",
+            "nome": "Rosa Quartzo"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "5191 vendidos on-line"
+  },
+  "extra_scripts": [],
+  "creator_context": "sobrancelha134",
+  "creators": [
+    {
+      "name": "João Pedro",
+      "username": "jpmotivacalowp",
+      "avatar": "../img/avatars-sobrancelha/creator-134-c1.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-sobrancelha-134-c1.jpg?v=20261126",
+      "video": "https://files.catbox.moe/wi8hbs.mp4#prod=134&slot=criador_1&slug=caneta-aparadora-sobrancelha-led",
+      "catbox_id": "wi8hbs.mp4",
+      "startTime": 0.2,
+      "likes": 19800,
+      "commentsCount": 185,
+      "saves": 2650,
+      "shares": 420,
+      "description": "Olha esse resultado surreal limpando a sobrancelha sem dor nenhuma e com luz LED! ✨🤯 #sobrancelha #beleza #tiktokshop"
+    },
+    {
+      "name": "Duda Ribeiro",
+      "username": "dutrbyu",
+      "avatar": "../img/avatars-sobrancelha/creator-134-c2.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-sobrancelha-134-c2.jpg?v=20261126",
+      "video": "https://files.catbox.moe/1jg3b9.mp4#prod=134&slot=criador_2&slug=caneta-aparadora-sobrancelha-led",
+      "catbox_id": "1jg3b9.mp4",
+      "startTime": 0.2,
+      "likes": 19800,
+      "commentsCount": 185,
+      "saves": 3126,
+      "shares": 2285,
+      "description": "Nunca mais sofri com pinça! A luzinha LED mostra até os pelinhos mais finos 😍✨ #aparadorsobrancelha #skincare"
+    },
+    {
+      "name": "Maria Madalena",
+      "username": "maria_madalena1907",
+      "avatar": "../img/avatars-sobrancelha/creator-134-c3.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-sobrancelha-134-c3.jpg?v=20261126",
+      "video": "https://files.catbox.moe/f83vgg.mp4#prod=134&slot=criador_3&slug=caneta-aparadora-sobrancelha-led",
+      "catbox_id": "f83vgg.mp4",
+      "startTime": 0.2,
+      "likes": 120798,
+      "commentsCount": 845,
+      "saves": 16448,
+      "shares": 11610,
+      "description": "Testando a caneta aparadora recarregável na sobrancelha — não irrita a pele e é super rápida! 💕 #beleza #dicasdebeleza"
+    },
+    {
+      "name": "Lívia Rezende",
+      "username": "librzn",
+      "avatar": "../img/avatars-sobrancelha/creator-134-c4.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-sobrancelha-134-c4.jpg?v=20261126",
+      "video": "https://files.catbox.moe/2wk07s.mp4#prod=134&slot=criador_4&slug=caneta-aparadora-sobrancelha-led",
+      "catbox_id": "2wk07s.mp4",
+      "startTime": 0.2,
+      "likes": 20425,
+      "commentsCount": 318,
+      "saves": 4352,
+      "shares": 2660,
+      "description": "Atenção pra quem sofre com buço e sobrancelha! Essa canetinha resolve em 1 minuto sem dor 🔥✨ #depiladorfacial"
+    },
+    {
+      "name": "Maiara Souza",
+      "username": "mai80038",
+      "avatar": "../img/avatars-sobrancelha/creator-134-c5.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-sobrancelha-134-c5.jpg?v=20261126",
+      "video": "https://files.catbox.moe/lbv9ro.mp4#prod=134&slot=criador_5&slug=caneta-aparadora-sobrancelha-led",
+      "catbox_id": "lbv9ro.mp4",
+      "startTime": 0.2,
+      "likes": 19800,
+      "commentsCount": 185,
+      "saves": 2650,
+      "shares": 497,
+      "description": "As sobrancelhas sempre alinhadas em casa! Cabe na bolsa e carrega no USB 💄✨ #sobrancelhaperfeita #achadinhos"
+    },
+    {
+      "name": "Mônica Mendes",
+      "username": "monicamendes_85",
+      "avatar": "../img/avatars-sobrancelha/creator-134-c6.jpg?v=20261126",
+      "poster": "../videosprodutos/posters/poster-sobrancelha-134-c6.jpg?v=20261126",
+      "video": "https://files.catbox.moe/ezxrr8.mp4#prod=134&slot=criador_6&slug=caneta-aparadora-sobrancelha-led",
+      "catbox_id": "ezxrr8.mp4",
+      "startTime": 0.2,
+      "likes": 19800,
+      "commentsCount": 185,
+      "saves": 2650,
+      "shares": 519,
+      "description": "Mostrando de pertinho minha caneta aparadora de sobrancelhas, uso toda semana e amo demais! 💖 #reviewreal #beleza"
+    }
+  ]
+}
