@@ -378,14 +378,9 @@
         overflow: hidden !important;
         text-overflow: ellipsis !important;
       }
-      .tt-anchor-bf {
-        font-weight: 700 !important;
-        color: #ffffff !important;
-        letter-spacing: 0.1px !important;
-      }
       .tt-anchor-title {
         color: #ffffff !important;
-        font-weight: 500 !important;
+        font-weight: 600 !important;
       }
       .tt-anchor-line2 {
         font-size: 11.5px !important;
@@ -1339,7 +1334,7 @@
                 </svg>
               </div>
               <div class="tt-anchor-lines">
-                <div class="tt-anchor-line1"><span class="tt-anchor-bf">BLACK FRIDAY</span><span> · </span><span class="tt-anchor-title" id="tt-anchor-title">Loja - Produto Oficial</span></div>
+                <div class="tt-anchor-line1"><span class="tt-anchor-title" id="tt-anchor-title">Loja - Produto Oficial</span></div>
                 <div class="tt-anchor-line2">Frete grátis · Devoluções gratuitas</div>
               </div>
             </div>
