@@ -26,16 +26,32 @@
   let currentVideoIndex = 0;
   let videoList = [];
 
+  function parseStatNumber(val, fallback) {
+    if (typeof val === 'number' && !isNaN(val) && val > 0) return Math.round(val);
+    if (typeof val === 'string' && val.trim()) {
+      const s = val.trim();
+      const km = s.match(/^(\d+(?:[.,]\d+)?)\s*(k|mil)\b/i);
+      if (km) return Math.round(parseFloat(km[1].replace(',', '.')) * 1000);
+      const mm = s.match(/^(\d+(?:[.,]\d+)?)\s*m\b/i);
+      if (mm) return Math.round(parseFloat(mm[1].replace(',', '.')) * 1000000);
+      const digits = s.replace(/[^\d]/g, '');
+      if (digits) return parseInt(digits, 10);
+    }
+    return fallback || 0;
+  }
+
   function formatNumber(num) {
-    if (!num || isNaN(num)) return '0';
-    if (num >= 1000000) {
-      return (num / 1000000).toFixed(1).replace('.', ',') + 'M';
-    }
-    if (num >= 10000) {
-      const formatted = (num / 1000).toFixed(1).replace('.0', '').replace('.', ',');
-      return formatted + 'K';
-    }
-    return num.toLocaleString('pt-BR');
+    const n = parseStatNumber(num, 0);
+    if (!n || n <= 0) return '0';
+    return n.toLocaleString('pt-BR');
+  }
+
+  function getCreatorPostDate(idx) {
+    const d = new Date();
+    d.setDate(d.getDate() - (3 + ((idx * 5) % 24)));
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    return `${mm}-${dd}`;
   }
 
   // Injeta estilos CSS necessários
@@ -147,184 +163,332 @@
         z-index: 15;
         transition: transform 0.15s, opacity 0.15s;
       }
+      @keyframes ttDiscSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .tt-modal,
+      .tt-modal button,
+      .tt-modal input,
+      .tt-modal span,
+      .tt-modal div {
+        font-family: 'TTProUI', 'BFOnlyNumbers', -apple-system, BlinkMacSystemFont, "TikTok Sans", sans-serif !important;
+        -webkit-font-smoothing: antialiased !important;
+      }
       .tt-top-bar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 12px 14px;
-        padding-top: max(16px, calc(10px + env(safe-area-inset-top)));
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        z-index: 10;
-        box-sizing: border-box;
-        background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, transparent 100%);
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        padding: 14px 16px !important;
+        padding-top: max(16px, calc(10px + env(safe-area-inset-top))) !important;
+        display: flex !important;
+        align-items: center !important;
+        z-index: 16 !important;
+        box-sizing: border-box !important;
+        background: linear-gradient(180deg, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 100%) !important;
+        pointer-events: none !important;
       }
       .tt-back-btn {
-        background: none;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        padding: 0;
-        display: flex;
-        align-items: center;
-      }
-      .tt-search-container {
-        flex: 1;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(8px);
-        border-radius: 18px;
-        display: flex;
-        align-items: center;
-        padding: 6px 12px;
-        gap: 6px;
-      }
-      .tt-search-input {
-        flex: 1;
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 13px;
-        outline: none;
+        background: none !important;
+        border: none !important;
+        color: #ffffff !important;
+        cursor: pointer !important;
+        padding: 4px !important;
+        margin-left: -4px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        pointer-events: auto !important;
+        filter: drop-shadow(0 1px 3px rgba(0,0,0,0.45)) !important;
+        -webkit-tap-highlight-color: transparent !important;
       }
       .tt-video-wrapper {
         position: relative !important;
         width: 100% !important;
-        height: 100% !important;
+        flex: 1 1 auto !important;
+        min-height: 0 !important;
         display: flex !important;
-        align-items: center !important;
+        align-items: flex-start !important;
         justify-content: center !important;
-        background: #000 !important;
+        background: #000000 !important;
         overflow: hidden !important;
         touch-action: none !important;
         cursor: pointer !important;
         will-change: transform, opacity !important;
         box-sizing: border-box !important;
       }
-      .tt-video-wrapper:active {
-        cursor: grabbing;
+      .tt-video-wrapper::after {
+        content: '' !important;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        height: 230px !important;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.52) 48%, rgba(0,0,0,0.94) 82%, #000000 100%) !important;
+        pointer-events: none !important;
+        z-index: 4 !important;
       }
       .tt-video {
         width: 100% !important;
-        height: 100% !important;
-        object-fit: contain !important;
-        background: #000 !important;
+        height: calc(100% - 76px) !important;
+        object-fit: cover !important;
+        background: #000000 !important;
         pointer-events: none !important;
+        display: block !important;
       }
       .tt-right-actions {
         position: absolute !important;
         right: 10px !important;
-        bottom: calc(24px + env(safe-area-inset-bottom, 12px)) !important;
+        bottom: 12px !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 14px !important;
-        z-index: 10 !important;
+        gap: 15px !important;
+        z-index: 12 !important;
         pointer-events: auto !important;
       }
       .tt-creator-wrapper {
-        position: relative;
-        margin-bottom: 6px;
+        position: relative !important;
+        margin-bottom: 8px !important;
+        width: 47px !important;
+        height: 47px !important;
       }
       .tt-creator-avatar {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        object-fit: cover;
+        width: 47px !important;
+        height: 47px !important;
+        border-radius: 50% !important;
+        border: 1.5px solid rgba(255, 255, 255, 0.95) !important;
+        object-fit: cover !important;
+        display: block !important;
+        background: #1a1a1a !important;
+        box-sizing: border-box !important;
       }
       .tt-follow-btn {
-        position: absolute;
-        bottom: -7px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 20px;
-        height: 20px;
-        background: #fe2c55;
-        color: #fff;
-        border-radius: 50%;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        font-weight: bold;
-        cursor: pointer;
+        position: absolute !important;
+        bottom: -9px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 21px !important;
+        height: 21px !important;
+        background: #f7355a !important;
+        color: #ffffff !important;
+        border-radius: 50% !important;
+        border: none !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.35) !important;
       }
       .tt-action-btn {
-        background: none;
-        border: none;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        cursor: pointer;
-        padding: 0;
+        background: none !important;
+        border: none !important;
+        color: #ffffff !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 3px !important;
+        cursor: pointer !important;
+        padding: 0 !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+      .tt-action-btn svg {
+        filter: drop-shadow(0 1px 3px rgba(0,0,0,0.38)) !important;
       }
       .tt-action-label {
-        font-size: 12px;
-        font-weight: 600;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        font-size: 12.5px !important;
+        font-weight: 500 !important;
+        color: #ffffff !important;
+        line-height: 1.15 !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.65) !important;
+      }
+      .tt-music-disc {
+        width: 38px !important;
+        height: 38px !important;
+        border-radius: 50% !important;
+        overflow: hidden !important;
+        margin-top: 4px !important;
+        border: 1.5px solid rgba(255,255,255,0.22) !important;
+        background: #1a1a1a !important;
+        flex-shrink: 0 !important;
+        animation: ttDiscSpin 7s linear infinite !important;
+      }
+      .tt-music-disc img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
       }
       .tt-left-info {
         position: absolute !important;
         left: 14px !important;
-        right: 76px !important;
-        bottom: calc(24px + env(safe-area-inset-bottom, 12px)) !important;
-        color: #fff !important;
-        z-index: 10 !important;
+        right: 74px !important;
+        bottom: 12px !important;
+        color: #ffffff !important;
+        z-index: 12 !important;
         pointer-events: auto !important;
-        text-shadow: 0 1px 4px rgba(0,0,0,0.95) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
       }
-      .tt-username {
-        font-size: 15px !important;
-        font-weight: 700 !important;
-        margin-bottom: 4px !important;
-        text-shadow: 0 1px 4px rgba(0,0,0,0.95) !important;
-        line-height: 1.25 !important;
-      }
-      
       .tt-product-anchor {
         display: inline-flex !important;
         align-items: center !important;
-        gap: 6px !important;
-        background: rgba(0, 0, 0, 0.7) !important;
+        gap: 9px !important;
+        background: rgba(38, 38, 42, 0.56) !important;
         backdrop-filter: blur(10px) !important;
         -webkit-backdrop-filter: blur(10px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
-        border-radius: 6px !important;
-        padding: 5px 9px !important;
-        margin-top: 6px !important;
+        border: none !important;
+        border-radius: 10px !important;
+        padding: 7.5px 12px 7.5px 9px !important;
+        margin: 0 0 10px 0 !important;
         cursor: pointer !important;
         color: #ffffff !important;
-        font-size: 11px !important;
-        font-weight: 600 !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
         transition: transform 0.15s ease !important;
       }
       .tt-product-anchor:active {
-        transform: scale(0.96) !important;
+        transform: scale(0.97) !important;
       }
-      .tt-anchor-title {
+      .tt-anchor-cart-badge {
+        width: 23px !important;
+        height: 23px !important;
+        border-radius: 5.5px !important;
+        background: #ff6221 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+      }
+      .tt-anchor-lines {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5px !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+      }
+      .tt-anchor-line1 {
+        font-size: 13px !important;
+        line-height: 1.22 !important;
+        color: #ffffff !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-        max-width: 190px !important;
-        color: #ffb800 !important;
-        font-weight: 700 !important;
       }
-
+      .tt-anchor-bf {
+        font-weight: 700 !important;
+        color: #ffffff !important;
+        letter-spacing: 0.1px !important;
+      }
+      .tt-anchor-title {
+        color: #ffffff !important;
+        font-weight: 500 !important;
+      }
+      .tt-anchor-line2 {
+        font-size: 11.5px !important;
+        font-weight: 400 !important;
+        line-height: 1.2 !important;
+        color: rgba(255, 255, 255, 0.86) !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      .tt-username-row {
+        display: flex !important;
+        align-items: baseline !important;
+        gap: 5px !important;
+        margin: 0 0 6px 0 !important;
+        max-width: 100% !important;
+      }
+      .tt-username {
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #ffffff !important;
+        margin: 0 !important;
+        line-height: 1.25 !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.6) !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      .tt-post-date {
+        font-size: 14.5px !important;
+        font-weight: 500 !important;
+        color: rgba(255, 255, 255, 0.72) !important;
+        line-height: 1.25 !important;
+        flex-shrink: 0 !important;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+      }
       .tt-desc {
-        font-size: 13px !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        color: rgba(255, 255, 255, 0.95) !important;
         line-height: 1.35 !important;
-        text-shadow: 0 1px 4px rgba(0,0,0,0.95) !important;
+        margin: 0 0 8px 0 !important;
         display: -webkit-box !important;
         -webkit-line-clamp: 2 !important;
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         word-break: break-word !important;
+        width: 100% !important;
+      }
+      .tt-desc.is-expanded {
+        -webkit-line-clamp: 8 !important;
+      }
+      .tt-music-row {
+        display: flex !important;
+        align-items: center !important;
+        gap: 7px !important;
+        max-width: 100% !important;
+      }
+      .tt-music-text {
+        font-size: 13.5px !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
+        line-height: 1.25 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: 250px !important;
+      }
+      .tt-bottom-bar-comment {
+        width: 100% !important;
+        background: #000000 !important;
+        padding: 8px 14px calc(10px + env(safe-area-inset-bottom, 0px)) 14px !important;
+        box-sizing: border-box !important;
+        flex-shrink: 0 !important;
+        z-index: 15 !important;
+      }
+      .tt-bottom-comment-pill {
+        width: 100% !important;
+        height: 44px !important;
+        background: #333333 !important;
+        border-radius: 999px !important;
+        padding: 0 16px !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 14px !important;
+        box-sizing: border-box !important;
+        cursor: pointer !important;
+      }
+      .tt-bottom-comment-placeholder {
+        flex: 1 !important;
+        font-size: 14.5px !important;
+        font-weight: 400 !important;
+        color: rgba(255, 255, 255, 0.62) !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      .tt-bottom-comment-icons {
+        display: flex !important;
+        align-items: center !important;
+        gap: 14px !important;
+        flex-shrink: 0 !important;
+        color: rgba(255, 255, 255, 0.82) !important;
       }
       .tt-comments-drawer {
         position: absolute;
@@ -498,18 +662,19 @@
       const originalItem = activeDataset[i];
       const videoId = i;
       
-      const likes = originalItem.likes || (12400 + ((i * 4391) % 48000));
-      const comments = originalItem.commentsCount || originalItem.comments || (38 + ((i * 19) % 210));
-      const saves = originalItem.saves || Math.max(120, Math.floor(likes * 0.11));
-      const shares = originalItem.shares || Math.max(30, Math.floor(likes * 0.035));
+      const likes = parseStatNumber(originalItem.likes, 2840 + ((i * 1741) % 6400));
+      const comments = parseStatNumber(originalItem.commentsCount || originalItem.comments, 42 + ((i * 23) % 160));
+      const saves = parseStatNumber(originalItem.saves, Math.max(95, Math.floor(likes * 0.135)));
+      const shares = parseStatNumber(originalItem.shares, Math.max(48, Math.floor(likes * 0.145)));
 
       const item = {
         id: videoId,
-        name: originalItem.name,
-        username: originalItem.username,
+        name: originalItem.name || originalItem.username || 'Criador',
+        username: originalItem.username || String(originalItem.name || 'criador').toLowerCase().replace(/\s+/g, '_'),
         avatar: originalItem.avatar,
         poster: originalItem.poster,
         video: originalItem.video,
+        postDate: originalItem.postDate || getCreatorPostDate(i),
         startTime: originalItem.startTime || 0.2,
         likes: likes,
         commentsCount: comments,
@@ -1043,6 +1208,16 @@
           e.stopPropagation();
         }
         const id = parseInt(this.getAttribute('data-video-id') !== null ? this.getAttribute('data-video-id') : idx, 10);
+        const cardImg = this.querySelector('img');
+        const cardVid = this.querySelector('video');
+        const cardName = this.querySelector('span');
+        if (videoList[id]) {
+          if (cardImg && cardImg.getAttribute('src')) videoList[id].avatar = cardImg.getAttribute('src');
+          if (cardVid && (cardVid.dataset.src || cardVid.getAttribute('src'))) {
+            videoList[id].video = cardVid.dataset.src || cardVid.getAttribute('src');
+          }
+          if (cardName && cardName.textContent.trim()) videoList[id].name = cardName.textContent.trim();
+        }
         openTikTokVideo(id);
       };
     });
@@ -1107,16 +1282,16 @@
     ttModal.className = 'tt-modal';
     ttModal.id = 'tiktok-modal';
 
+    const initialAvatar = (videoList[0] && videoList[0].avatar) ? videoList[0].avatar : '';
     ttModal.innerHTML = `
       <div class="tt-container">
         <div class="tt-top-bar">
-          <button class="tt-back-btn" id="tt-close-btn" aria-label="Voltar">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          <button class="tt-back-btn" id="tt-close-btn" type="button" aria-label="Voltar">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
           </button>
-          <div class="tt-search-container">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <input class="tt-search-input" type="text" value="Encontrar conteúdo relacionado" readonly>
-          </div>
         </div>
 
         <div class="tt-video-wrapper" id="tt-video-wrapper">
@@ -1128,51 +1303,99 @@
 
           <div class="tt-right-actions">
             <div class="tt-creator-wrapper">
-              <img class="tt-creator-avatar" id="tt-action-avatar" src="../logo.png" alt="Stone Shop">
-              <button class="tt-follow-btn" id="tt-action-follow">+</button>
+              <img class="tt-creator-avatar" id="tt-action-avatar" src="${initialAvatar}" alt="">
+              <button class="tt-follow-btn" id="tt-action-follow" type="button" aria-label="Seguir">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </button>
             </div>
-            <button class="tt-action-btn" id="tt-action-like">
-              <svg viewBox="0 0 24 24" width="32" height="32" fill="#fff"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span class="tt-action-label" id="tt-like-count">14.2K</span>
+            <button class="tt-action-btn" id="tt-action-like" type="button">
+              <svg viewBox="0 0 24 24" width="34" height="34" fill="#ffffff"><path d="M16.5 3.2C14.6 3.2 12.95 4.18 12 5.66C11.05 4.18 9.4 3.2 7.5 3.2C4.42 3.2 2 5.68 2 8.82C2 13.15 6.45 16.82 10.78 20.42C11.49 21.01 12.51 21.01 13.22 20.42C17.55 16.82 22 13.15 22 8.82C22 5.68 19.58 3.2 16.5 3.2Z"/></svg>
+              <span class="tt-action-label" id="tt-like-count">5.089</span>
             </button>
-            <button class="tt-action-btn" id="tt-action-comment">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="#fff"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
-              <span class="tt-action-label" id="tt-comment-count">128</span>
+            <button class="tt-action-btn" id="tt-action-comment" type="button">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 2.5C6.48 2.5 2 6.42 2 11.25C2 13.78 3.23 16.06 5.2 17.66L4.38 20.72C4.24 21.24 4.76 21.69 5.25 21.46L8.78 19.8C9.8 20.06 10.88 20.2 12 20.2C17.52 20.2 22 16.28 22 11.35C22 6.42 17.52 2.5 12 2.5ZM8.1 12.6C7.33 12.6 6.7 11.97 6.7 11.2C6.7 10.43 7.33 9.8 8.1 9.8C8.87 9.8 9.5 10.43 9.5 11.2C9.5 11.97 8.87 12.6 8.1 12.6ZM12 12.6C11.23 12.6 10.6 11.97 10.6 11.2C10.6 10.43 11.23 9.8 12 9.8C12.77 9.8 13.4 10.43 13.4 11.2C13.4 11.97 12.77 12.6 12 12.6ZM15.9 12.6C15.13 12.6 14.5 11.97 14.5 11.2C14.5 10.43 15.13 9.8 15.9 9.8C16.67 9.8 17.3 10.43 17.3 11.2C17.3 11.97 16.67 12.6 15.9 12.6Z"/></svg>
+              <span class="tt-action-label" id="tt-comment-count">94</span>
             </button>
-            <button class="tt-action-btn" id="tt-action-save">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="#fff"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
-              <span class="tt-action-label" id="tt-save-count">3.4K</span>
+            <button class="tt-action-btn" id="tt-action-save" type="button">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="#ffffff"><path d="M6.5 3C5.4 3 4.5 3.9 4.5 5V19.95C4.5 20.78 5.42 21.27 6.11 20.81L12 16.88L17.89 20.81C18.58 21.27 19.5 20.78 19.5 19.95V5C19.5 3.9 18.6 3 17.5 3H6.5Z"/></svg>
+              <span class="tt-action-label" id="tt-save-count">695</span>
             </button>
-            <button class="tt-action-btn" id="tt-action-share">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
-              <span class="tt-action-label">Compartilhar</span>
+            <button class="tt-action-btn" id="tt-action-share" type="button">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="#ffffff"><path d="M13.6 4.25C13.6 3.42 14.58 2.98 15.2 3.53L21.65 9.28C22.12 9.7 22.12 10.44 21.65 10.86L15.2 16.61C14.58 17.16 13.6 16.72 13.6 15.89V12.75C8.55 12.75 4.95 14.48 2.82 18.28C2.48 18.88 1.6 18.55 1.72 17.86C2.65 11.25 6.82 6.85 13.6 6.55V4.25Z"/></svg>
+              <span class="tt-action-label" id="tt-share-count">753</span>
             </button>
+            <div class="tt-music-disc" id="tt-music-disc">
+              <img id="tt-music-avatar" src="${initialAvatar}" alt="">
+            </div>
           </div>
 
           <div class="tt-left-info">
-            <div class="tt-username" id="tt-display-name">@tiktokshop</div>
-            <div class="tt-desc" id="tt-display-desc">Review oficial do produto</div>
             <div class="tt-product-anchor" id="tt-product-anchor">
-              <svg viewBox="0 0 24 24" width="13" height="13" fill="#ffb800" style="flex-shrink:0;"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z"/></svg>
-              <span class="tt-anchor-title" id="tt-anchor-title">Produto Oficial</span>
-              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#fff" stroke-width="2.5" style="flex-shrink:0;"><polyline points="9 18 15 12 9 6"/></svg>
+              <div class="tt-anchor-cart-badge">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 4h2.2l1.9 9.5a1.5 1.5 0 0 0 1.48 1.2h7.9a1.5 1.5 0 0 0 1.46-1.15L19.8 6.8H6.1"></path>
+                  <circle cx="9.2" cy="18.6" r="1.4" fill="#ffffff" stroke="none"></circle>
+                  <circle cx="16.4" cy="18.6" r="1.4" fill="#ffffff" stroke="none"></circle>
+                </svg>
+              </div>
+              <div class="tt-anchor-lines">
+                <div class="tt-anchor-line1"><span class="tt-anchor-bf">BLACK FRIDAY</span><span> · </span><span class="tt-anchor-title" id="tt-anchor-title">Loja - Produto Oficial</span></div>
+                <div class="tt-anchor-line2">Frete grátis · Devoluções gratuitas</div>
+              </div>
+            </div>
+            <div class="tt-username-row">
+              <div class="tt-username" id="tt-display-name">Criador</div>
+              <span class="tt-post-date" id="tt-display-date">· 11-18</span>
+            </div>
+            <div class="tt-desc" id="tt-display-desc"></div>
+            <div class="tt-music-row">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="#ffffff" style="flex-shrink:0;">
+                <path d="M19 3v11.5a3.5 3.5 0 1 1-2-3.16V6.4l-8 1.8v8.3a3.5 3.5 0 1 1-2-3.16V6.6L19 3z"></path>
+              </svg>
+              <span class="tt-music-text" id="tt-display-music">som original - criador ...</span>
             </div>
           </div>
 
           <div class="tt-comments-drawer" id="tt-comments-drawer">
             <div class="tt-drawer-header">
-              <span class="tt-drawer-title" id="tt-drawer-title">128 comentários</span>
-              <button class="tt-drawer-close" id="tt-drawer-close">✕</button>
+              <span class="tt-drawer-title" id="tt-drawer-title">94 comentários</span>
+              <button class="tt-drawer-close" id="tt-drawer-close" type="button">✕</button>
             </div>
             <div class="tt-drawer-list" id="tt-drawer-comments-list"></div>
             <div class="tt-comment-input-bar">
               <input type="text" class="tt-comment-input" id="tt-comment-input-field" placeholder="Adicionar comentário...">
-              <button class="tt-comment-submit-btn" id="tt-comment-send-btn" aria-label="Enviar comentário">
+              <button class="tt-comment-submit-btn" id="tt-comment-send-btn" type="button" aria-label="Enviar comentário">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
               </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tt-bottom-bar-comment" id="tt-bottom-bar-comment">
+          <div class="tt-bottom-comment-pill" id="tt-open-comment-pill">
+            <span class="tt-bottom-comment-placeholder">Adicionar comentário...</span>
+            <div class="tt-bottom-comment-icons">
+              <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="3"></rect>
+                <circle cx="8.8" cy="8.8" r="1.4" fill="currentColor" stroke="none"></circle>
+                <path d="M20.5 15.8L16.2 11.6L7.5 20.5"></path>
+              </svg>
+              <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.5 12A8.5 8.5 0 1 0 12 20.5C14.2 20.5 15.8 20.1 17.2 18.8L19.3 16.7C20.2 15.6 20.5 14 20.5 12Z"></path>
+                <path d="M14.8 20.1V16.6C14.8 15.6 15.6 14.8 16.6 14.8H20.1"></path>
+                <circle cx="9.2" cy="10" r="1.1" fill="currentColor" stroke="none"></circle>
+                <circle cx="14.8" cy="10" r="1.1" fill="currentColor" stroke="none"></circle>
+                <path d="M8.8 14.2C9.6 15.1 10.7 15.5 12 15.5C12.8 15.5 13.5 15.3 14.1 14.9"></path>
+              </svg>
+              <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="3" width="6" height="11" rx="3"></rect>
+                <path d="M5.5 11a6.5 6.5 0 0 0 13 0"></path>
+                <line x1="12" y1="17.5" x2="12" y2="21"></line>
+                <line x1="9" y1="21" x2="15" y2="21"></line>
+              </svg>
             </div>
           </div>
         </div>
@@ -1260,6 +1483,23 @@
       document.getElementById('tt-comments-drawer').classList.toggle('open');
     };
 
+    const bottomCommentPill = document.getElementById('tt-open-comment-pill');
+    if (bottomCommentPill) bottomCommentPill.onclick = (e) => {
+      e.stopPropagation();
+      const drw = document.getElementById('tt-comments-drawer');
+      if (drw) drw.classList.add('open');
+      setTimeout(() => {
+        const inp = document.getElementById('tt-comment-input-field');
+        if (inp) inp.focus();
+      }, 220);
+    };
+
+    const descBox = document.getElementById('tt-display-desc');
+    if (descBox) descBox.onclick = (e) => {
+      e.stopPropagation();
+      descBox.classList.toggle('is-expanded');
+    };
+
     // Teclado
     document.addEventListener('keydown', e => {
       if (!ttModal || ttModal.style.display !== 'flex') return;
@@ -1285,6 +1525,8 @@
     function handleStart(clientY, clientX, target) {
       if (isTransitioning) return;
       if (target.closest('#tt-comments-drawer') || 
+          target.closest('#tt-bottom-bar-comment') ||
+          target.closest('#tt-product-anchor') ||
           target.closest('.tt-right-actions') || 
           target.closest('.tt-top-bar') ||
           target.closest('#tt-sound-badge') ||
@@ -1377,6 +1619,8 @@
     if (wrapper) {
       wrapper.onclick = function(e) {
         if (e.target.closest('#tt-comments-drawer') || 
+            e.target.closest('#tt-bottom-bar-comment') ||
+            e.target.closest('#tt-product-anchor') ||
             e.target.closest('.tt-right-actions') || 
             e.target.closest('.tt-top-bar') ||
             e.target.closest('#tt-sound-badge') ||
@@ -1401,7 +1645,7 @@
       const item = videoList[currentVideoIndex];
       if (!item) return;
       item.liked = !item.liked;
-      this.querySelector('svg').style.fill = item.liked ? '#fe2c55' : '#fff';
+      this.querySelector('svg').style.fill = item.liked ? '#f7355a' : '#ffffff';
       item.likes += item.liked ? 1 : -1;
       document.getElementById('tt-like-count').textContent = formatNumber(item.likes);
     };
@@ -1412,8 +1656,10 @@
       const item = videoList[currentVideoIndex];
       if (!item) return;
       item.followed = !item.followed;
-      this.textContent = item.followed ? '✓' : '+';
-      this.style.background = item.followed ? '#25D366' : '#fe2c55';
+      this.innerHTML = item.followed
+        ? '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>'
+        : '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
+      this.style.background = item.followed ? '#25D366' : '#f7355a';
     };
 
     const saveBtn = document.getElementById('tt-action-save');
@@ -1593,27 +1839,61 @@
       }
     }
 
-    // Atualiza metadados textuais e contadores
+    // Atualiza metadados textuais, avatar idêntico ao card, nome idêntico ao card e contadores
     const actionAvatar = document.getElementById('tt-action-avatar');
-    if (actionAvatar) actionAvatar.src = item.avatar;
+    if (actionAvatar && item.avatar) actionAvatar.src = item.avatar;
+    const musicAvatar = document.getElementById('tt-music-avatar');
+    if (musicAvatar && item.avatar) musicAvatar.src = item.avatar;
+
     const displayName = document.getElementById('tt-display-name');
-    if (displayName) displayName.textContent = `@${item.username}`;
+    if (displayName) displayName.textContent = item.name || item.username || 'Criador';
+    const displayDate = document.getElementById('tt-display-date');
+    if (displayDate) displayDate.textContent = `· ${item.postDate || '11-20'}`;
+
     const displayDesc = document.getElementById('tt-display-desc');
-    if (displayDesc) displayDesc.textContent = item.description || item.desc || '';
+    if (displayDesc) {
+      displayDesc.classList.remove('is-expanded');
+      const rawDesc = String(item.description || item.desc || '').trim();
+      if (rawDesc.length > 62) {
+        displayDesc.innerHTML = `${rawDesc.slice(0, 58).trim().replace(/</g, '&lt;')}....<span style="color:rgba(255,255,255,0.78);font-weight:500;">mais</span>`;
+        displayDesc.onclick = function(ev) {
+          ev.stopPropagation();
+          if (displayDesc.classList.contains('is-expanded')) {
+            displayDesc.classList.remove('is-expanded');
+            displayDesc.innerHTML = `${rawDesc.slice(0, 58).trim().replace(/</g, '&lt;')}....<span style="color:rgba(255,255,255,0.78);font-weight:500;">mais</span>`;
+          } else {
+            displayDesc.classList.add('is-expanded');
+            displayDesc.textContent = rawDesc;
+          }
+        };
+      } else {
+        displayDesc.textContent = rawDesc;
+        displayDesc.onclick = null;
+      }
+    }
+
+    const displayMusic = document.getElementById('tt-display-music');
+    if (displayMusic) {
+      const cleanHandle = String(item.username || item.name || 'criador').replace(/^@/, '');
+      displayMusic.textContent = `som original - ${cleanHandle} ...`;
+    }
+
     const likeCount = document.getElementById('tt-like-count');
-    if (likeCount) likeCount.textContent = formatNumber(item.likes || 12400);
+    if (likeCount) likeCount.textContent = formatNumber(item.likes || 5089);
     const commentCount = document.getElementById('tt-comment-count');
-    if (commentCount) commentCount.textContent = formatNumber(item.commentsCount || 68);
+    if (commentCount) commentCount.textContent = formatNumber(item.commentsCount || 94);
     const saveCount = document.getElementById('tt-save-count');
-    if (saveCount) saveCount.textContent = formatNumber(item.saves || 2800);
-        // Atualiza Âncora Oficial de Produto (Shopping Tag TikTok Shop)
+    if (saveCount) saveCount.textContent = formatNumber(item.saves || 695);
+    const shareCount = document.getElementById('tt-share-count');
+    if (shareCount) shareCount.textContent = formatNumber(item.shares || 753);
+
+    // Atualiza Âncora Oficial de Produto (BLACK FRIDAY · Loja - ... / Frete grátis · Devoluções gratuitas)
     const anchorEl = document.getElementById('tt-product-anchor');
     const anchorTitle = document.getElementById('tt-anchor-title');
     if (anchorTitle) {
       const prodObj = (typeof PRODUTO_ATUAL !== 'undefined' && PRODUTO_ATUAL) ? PRODUTO_ATUAL : (window.PRODUTO_ATUAL || {});
       const pName = prodObj.nome || (document.title ? document.title.replace(' - Stone Shop', '').trim() : 'Produto Oficial');
-      const pPrice = prodObj.preco ? `R$ ${Number(prodObj.preco).toFixed(2).replace('.', ',')}` : '';
-      anchorTitle.textContent = `${pName.slice(0, 26)}... · ${pPrice}`;
+      anchorTitle.textContent = `Loja - ${pName}`;
       if (anchorEl) {
         anchorEl.setAttribute('data-product-id', prodObj.id || '');
         anchorEl.onclick = function(e) {
@@ -1626,17 +1906,19 @@
     }
 
     const drawerTitle = document.getElementById('tt-drawer-title');
-    if (drawerTitle) drawerTitle.textContent = `${formatNumber(item.commentsCount || 68)} comentários`;
+    if (drawerTitle) drawerTitle.textContent = `${formatNumber(item.commentsCount || 94)} comentários`;
 
     const likeSvg = document.querySelector('#tt-action-like svg');
-    if (likeSvg) likeSvg.style.fill = item.liked ? '#fe2c55' : '#fff';
+    if (likeSvg) likeSvg.style.fill = item.liked ? '#f7355a' : '#ffffff';
     const saveSvg = document.querySelector('#tt-action-save svg');
-    if (saveSvg) saveSvg.style.fill = item.saved ? '#face15' : '#fff';
+    if (saveSvg) saveSvg.style.fill = item.saved ? '#face15' : '#ffffff';
 
     const followEl = document.getElementById('tt-action-follow');
     if (followEl) {
-      followEl.textContent = item.followed ? '✓' : '+';
-      followEl.style.background = item.followed ? '#25D366' : '#fe2c55';
+      followEl.innerHTML = item.followed
+        ? '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>'
+        : '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
+      followEl.style.background = item.followed ? '#25D366' : '#f7355a';
     }
 
     // Renderizar comentários da gaveta

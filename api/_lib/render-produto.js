@@ -3,7 +3,7 @@ const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261126_tt_oficial_1to1_v30';
+const ASSET_VERSION = '20261126_tt_oficial_1to1_v32';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
@@ -96,20 +96,18 @@ function renderSoldCountHtml(soldCount) {
 }
 
 function renderCoupons(couponMain, couponBonus) {
-  if (!couponMain && !couponBonus) return '';
-  const mainBadge = couponMain ? `<span class="product-badge-discount" style="display: inline-flex; align-items: center; gap: 4px; background: #fff; border: 1px solid #ffd2d8; color: #d60643; font-size: 11.5px; font-weight: 600; padding: 2.5px 7px; border-radius: 4px; line-height: 1.4; white-space: nowrap;">
-            <svg fill="none" height="11" style="flex-shrink: 0;" viewbox="0 0 667 534" width="14" xmlns="http://www.w3.org/2000/svg">
+  const text = couponMain || couponBonus;
+  if (!text) return '';
+  return `<div class="discount-ticket" onclick="handleAddToCart()">
+        <div class="discount-ticket-badges">
+          <span class="product-badge-discount">
+            <svg fill="none" height="12" style="flex-shrink: 0;" viewbox="0 0 667 534" width="15" xmlns="http://www.w3.org/2000/svg">
               <path d="M666.666 166.667C640.145 166.667 614.71 177.203 595.956 195.956C577.202 214.71 566.666 240.145 566.666 266.667C566.666 293.189 577.202 318.624 595.956 337.378C614.71 356.131 640.145 366.667 666.666 366.667L666.666 466.667C666.666 484.348 659.642 501.305 647.14 513.808C634.637 526.31 617.681 533.334 600 533.334L466.666 533.334L466.666 470.601C466.666 461.76 463.154 453.281 456.903 447.03C450.652 440.779 442.174 437.267 433.333 437.267C424.492 437.267 416.014 440.779 409.763 447.03C403.512 453.281 400 461.76 400 470.601L400 533.334L66.666 533.334C48.9852 533.334 32.0287 526.31 19.5264 513.808C7.02395 501.305 1.13666e-05 484.348 1.01189e-05 466.667L1.44901e-05 366.666C55.4279 366.576 100.333 266.167 100.333 266.167C100.333 210.718 55.4279 165.758 2.3276e-05 165.668L2.76035e-05 66.667C3.0397e-05 48.9859 7.02397 32.0288 19.5264 19.5264C32.0287 7.02422 48.9852 8.86041e-05 66.666 4.76048e-07L400 1.50465e-05L400 62.7334C400 71.5739 403.512 80.0525 409.763 86.3037C416.014 92.5549 424.492 96.0674 433.333 96.0674C442.174 96.0674 450.652 92.5549 456.903 86.3037C463.154 80.0525 466.666 71.5739 466.666 62.7334L466.666 1.79606e-05L600 2.37888e-05C617.681 0.000113468 634.637 7.02425 647.14 19.5264C659.642 32.0288 666.666 48.9859 666.666 66.667L666.666 166.667ZM466.666 156.867C466.666 148.027 463.154 139.548 456.903 133.297C450.652 127.046 442.174 123.533 433.333 123.533C424.492 123.533 416.014 127.046 409.763 133.297C403.512 139.548 400 148.027 400 156.867L400 219.601C400 228.441 403.512 236.92 409.763 243.171C416.014 249.422 424.493 252.934 433.333 252.934C442.174 252.934 450.652 249.422 456.903 243.171C463.154 236.92 466.666 228.441 466.666 219.601L466.666 156.867ZM466.666 313.733C466.666 304.893 463.154 296.414 456.903 290.163C450.652 283.912 442.174 280.4 433.333 280.4C424.493 280.4 416.014 283.912 409.763 290.163C403.512 296.414 400 304.893 400 313.733L400 376.467C400 385.307 403.512 393.786 409.763 400.037C416.014 406.288 424.492 409.801 433.333 409.801C442.174 409.801 450.652 406.288 456.903 400.037C463.154 393.786 466.666 385.307 466.666 376.467L466.666 313.733Z" fill="#D60643"></path>
             </svg>
-            <span>${escapeHtml(couponMain)}</span>
-          </span>` : '';
-  const bonusBadge = couponBonus ? `<span class="bonus-discount-badge" style="display: inline-flex; align-items: center; background: #fff; border: 1px solid #ffd2d8; color: #d60643; font-size: 11.5px; font-weight: 600; padding: 2.5px 7px; border-radius: 4px; line-height: 1.4; white-space: nowrap;">${escapeHtml(couponBonus)}</span>` : '';
-  return `<div class="discount-ticket" onclick="handleAddToCart()" style="flex-wrap: nowrap; display: flex; align-items: center; justify-content: space-between; cursor: pointer; margin-bottom: 12px;">
-        <div style="display: flex; align-items: center; gap: 6px; min-width: 0; overflow: hidden; flex: 1;">
-          ${mainBadge}
-          ${bonusBadge}
+            <span>${escapeHtml(text)}</span>
+          </span>
         </div>
-        <svg fill="none" height="14" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" style="flex-shrink: 0; margin-left: auto;" viewbox="0 0 24 24" width="14"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        <svg aria-hidden="true" fill="none" height="13" stroke="#8a8b91" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.95" style="flex-shrink: 0; margin-left: auto;" viewbox="0 0 24 24" width="13"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </div>`;
 }
 
