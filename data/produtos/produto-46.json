@@ -647,26 +647,6 @@
       "sold": "1 vendido(s)"
     },
     {
-      "href": "produto-82.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-man0mifag5bt63",
-      "alt": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "name": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "price": "R$ 257,90",
-      "price_original": "R$ 2579,00",
-      "discount": "90% OFF",
-      "sold": "150 vendido(s)"
-    },
-    {
-      "href": "produto-31.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_700421-MLB88866744981_072025-F.webp",
-      "alt": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
-      "name": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
-      "price": "R$ 69,80",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "5867 vendido(s)"
-    },
-    {
       "href": "produto-26.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
@@ -675,6 +655,26 @@
       "price_original": "R$ 349,90",
       "discount": "73% OFF",
       "sold": "458 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

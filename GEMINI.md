@@ -15,8 +15,8 @@ Loja e-commerce estilo **TikTok Shop Brasil**. Modelo Único Permanente:
 | Índice de registro | `data/produtos/index.js` → `'126': () => require('./produto-126.json'),` |
 | Renderizador (Vercel Function) | `api/_lib/render-produto.js` injeta o JSON em `templates/produto-modelo.html` |
 | Rotas | `/produto-126`, `/produto/126`, `/pages/produto-126` → `api/serve?slug=produto-126` (`vercel.json`) |
-| Vitrine / busca / recomendados | `js/catalogo.js` (`CATALOGO_PRODUTOS`) + `index.html` |
-| Carrossel de criadores | vem do campo `creators` do JSON (autoplay mudo, IntersectionObserver). `js/videos-criadores.js` só serve produtos legados |
+| Vitrine / busca / recomendados | `js/catalogo.js` (`CATALOGO_PRODUTOS`) + `index.html` (`#recommended-grid` e `#novos-lancamentos-section` têm cards estáticos HTML — atualizar AMBOS!) |
+| Carrossel de criadores | vem do campo `creators` do JSON via `js/videos-criadores-modular.js` (autoplay mudo, IntersectionObserver). Adicionar comentários do nicho em `js/videos-criadores-modular.js` (`contextType`) |
 | Anti-clone / cloaker v6.6 | `api/serve.js` (backend) + `js/tiktok-cloaker.js` (frontend) |
 | Validador | `node scripts/validar-modelo-unico.js` (**obrigatório antes de todo commit**) |
 
@@ -52,6 +52,7 @@ Loja e-commerce estilo **TikTok Shop Brasil**. Modelo Único Permanente:
   - **A cor em `variation` tem que bater com a cor do produto na foto.**
 
 ### 2.5 Avaliações (texto)
+- **Volume e sincronia com vendidos:** no mínimo **20–26 avaliações reais** (com **6 a 10+ cards de unboxing com foto**). **REGRA CRÍTICA:** o número dentro de `reviews_header` (ex.: `"Avaliações dos clientes (386)"`) **TEM QUE SER IDÊNTICO** ao `rating_count` (`"(386)"`), porque `js/app.js` lê `reviews_header` e sobrescreve o contador do topo ao lado de `vendido(s)`!
 - Texto real extraído do anúncio (PT-BR); proibido inventar em script. Sem vocabulário Shopee/AliExpress (“moedas”, “qualidade do produto:”).
 - Mix ~90% 5★ / 10% 4★. Datas dos últimos 30–45 dias (`dd/mm`). `variation` só com opções que existem na grade do produto (sem “110V” em calçado).
 - Nome mascarado (`M**a S**a`) com **gênero coerente com o avatar**. Produto feminino = 100% mulheres.
@@ -100,7 +101,7 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | ID | Produto | PIX | Status |
 |:--:|---|:--:|---|
 | 125 | Carrinho Rolimã Girocar / Super Car LED (100 kg) | R$ 84,90 | fila |
-| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 97,00 | **no ar** — pendência: só 2 criadores verificados (faltam vídeos do modelo exato) e 5 unboxings reais |
+| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 97,00 | **100% blindado no ar** — 8 vídeos exatos 3 rodas + 1 na descrição, 26 avaliações reais (9 compradores com 13 fotos de unboxing limpas) |
 | 127 | Carrinho RC Drift 4x4 (fumaça + 2 baterias) | R$ 74,90 | fila |
 | 128 | Mesa dobrável maleta 1,80 m | R$ 89,90 | fila |
 | 129 | Escova elétrica giratória 9 em 1 c/ extensor | R$ 64,90 | fila |

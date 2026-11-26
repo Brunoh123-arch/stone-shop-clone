@@ -263,16 +263,6 @@
   "description_html": "<strong>✨ Diversão e Refrescância Garantida para Toda a Família ✨</strong><br/><br/>\n              A <strong>Piscina Inflável Mor 1000 Litros Splash Fun</strong> é a escolha perfeita para transformar qualquer espaço em um ambiente refrescante nos dias quentes! Desenvolvida com a exclusiva tecnologia Splash Fun da Mor, ela alia praticidade máxima, segurança e durabilidade sem necessidade de estruturas pesadas de ferro ou ferramentas de montagem.<br/><br/>\n              Basta estender a lona em piso nivelado, inflar a borda superior e encher com água. Conforme o volume sobe, a própria pressão da água molda a estrutura, deixando a piscina firme, estável e pronta para o banho em poucos minutos.<br/><br/>\n<strong>Destaques da Piscina Mor:</strong><br/>\n              • <strong>Montagem Rápida e Fácil:</strong> Não precisa de nenhuma ferramenta. Inflou a borda, encheu d'água e está pronta para a diversão.<br/>\n              • <strong>Borda Inflável Macia:</strong> Segurança total e conforto absoluto para as crianças, sem ferragens rígidas ou quinas duras.<br/>\n              • <strong>Lona em PVC Tripla Camada:</strong> Fabricada em PVC reforçado com trama interna de poliéster para máxima resistência contra furos e desgaste.<br/>\n              • <strong>Válvula de Deságue Prática:</strong> Facilita o escoamento rápido da água para limpeza e higienização sem esforço.<br/>\n              • <strong>Super Compacta:</strong> Desinflada e dobrada ocupa pouquíssimo espaço no armário ou no porta-malas.<br/><br/>\n<strong>Especificações Técnicas:</strong><br/>\n              • Marca: Mor Oficial<br/>\n              • Modelo: Splash Fun 1000 Litros (Ref. 001051)<br/>\n              • Capacidade: 1.000 Litros<br/>\n              • Formato: Redonda<br/>\n              • Diâmetro: Ø 1,65 m | Altura: 55 cm<br/>\n              • Material: Lona em PVC de alta resistência com trama de poliéster<br/>\n              • Cor: Azul clássico Splash Fun<br/>\n              • Itens Inclusos: 01 Piscina Inflável Mor 1000L, 01 Válvula de deságue, 01 Kit de reparação e Manual de instruções oficial.",
   "related": [
     {
-      "href": "produto-82.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-man0mifag5bt63",
-      "alt": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "name": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "price": "R$ 257,90",
-      "price_original": "R$ 2579,00",
-      "discount": "90% OFF",
-      "sold": "150 vendido(s)"
-    },
-    {
       "href": "produto-7.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
       "alt": "Caixa de Som AIWA",
@@ -283,26 +273,6 @@
       "sold": "7894 vendido(s)"
     },
     {
-      "href": "produto-80.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg5ie67i4op35d",
-      "alt": "Panificadora 19 Programas Gallant 600w 127v Branca (GPA1E19A_127BR)",
-      "name": "Panificadora 19 Programas Gallant 600w 127v Branca (GPA1E19A_127BR)",
-      "price": "R$ 85,90",
-      "price_original": "R$ 398,90",
-      "discount": "78% OFF",
-      "sold": "100 vendido(s)"
-    },
-    {
-      "href": "produto-72.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mk3m0dsr37k1a6",
-      "alt": "Jogo de Panelas 13 Peças Ferro Fundido Esmaltado Premium Alta Resistência Antibacteria Mantenha aquecido e fresco",
-      "name": "Jogo de Panelas 13 Peças Ferro Fundido Esmaltado Premium Alta Resistência Antibacteria Mantenha aquecido e fresco",
-      "price": "R$ 79,90",
-      "price_original": "R$ 497,90",
-      "discount": "84% OFF",
-      "sold": "7965 vendido(s)"
-    },
-    {
       "href": "produto-38.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh12vhr254hs6c",
       "alt": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
@@ -311,6 +281,36 @@
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
       "sold": "5490 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
+    },
+    {
+      "href": "produto-111.html",
+      "img": "../img/produto-111-oficial-1.jpg?v=3",
+      "alt": "Projetor LED Natalino 16 Desenhos",
+      "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
+      "price": "R$ 49,90",
+      "price_original": "R$ 199,90",
+      "discount": "75% OFF",
+      "sold": "5.1K vendidos"
     }
   ],
   "produto_atual": {

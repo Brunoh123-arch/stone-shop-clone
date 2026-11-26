@@ -1097,16 +1097,6 @@
   "description_html": "<b>🍽️ Lava Louças Portátil Praxis LLPP </b><p><b>A revolução que sua cozinha merece: mais tempo para você e menos trabalho com a louça!</b></p><p>A <b>Lava Louças Portátil Praxis</b> é a escolha inteligente para quem busca <b>praticidade</b>, <b>eficiência</b> e <b>design moderno</b>. Com recursos inovadores, ela transforma a forma como você cuida das suas louças, otimizando o tempo e trazendo mais comodidade para o seu dia a dia.</p><p><br/></p><p><b>🌟 PRINCIPAIS FUNÇÕES E BENEFÍCIOS</b></p><p><b>💦 Pré-Lavagem</b></p><p>Retire resíduos difíceis e deixe suas louças prontas para uma limpeza impecável.</p><p><b>⏱️ Lavagem Express</b></p><p>Sabe aquele momento de pressa? A Lavagem Express oferece uma limpeza rápida e eficiente, sem perder a qualidade.</p><p><b>🧼 Lavagem Delicada</b></p><p>Cuide das suas louças mais frágeis com todo o carinho, sem danos e com máxima eficiência.</p><p><b>🌱 Lavagem ECO</b></p><p>Cuide do planeta! Economize água e energia com um programa sustentável que não compromete o poder de limpeza.</p><p><b>🧽 Lavagem Pesada</b></p><p>Enfrente sujeiras difíceis e gorduras persistentes com facilidade e rapidez, deixando suas panelas impecáveis.</p><p><b>🍊 Higienização de Frutas e Legumes</b></p><p>Mantenha seus alimentos frescos e seguros, com uma limpeza profunda para eliminar contaminantes.</p><p><b>🥫 Higienização de Embalagens</b></p><p>Limpeza segura para latas, embalagens Tetra Pak e outros itens, trazendo mais higiene para sua cozinha.</p><p><br/></p><p><b>🔥 Água Quente para Limpeza Profunda</b></p><p>Com <b>água quente</b>, a Lava Louças Praxis garante uma <b>limpeza profunda</b> e <b>higienizante</b>, eliminando germes e bactérias, enquanto mantém a <b>eficiência</b> no <b>consumo de energia.</b></p><p><b><br/></b></p><p><b>⏳ Ciclo Rápido de 30 Minutos</b></p><p>Perfeito para a rotina agitada: apenas 30 minutos para ter suas louças limpas e prontas para o próximo uso, sem comprometer a qualidade.</p><p><br/></p><p><b>🔧 Fácil Instalação e Versatilidade</b></p><p><b>Instalação simples</b>, sem a necessidade de complicações hidráulicas. Basta conectar à tomada e pronto, sua Lava Louças está pronta para te ajudar no dia a dia.</p><p><br/></p><p><b>✨ Design Moderno e Elegante</b></p><p>Disponível na elegante cor Preto Fosco, ela combina perfeitamente com qualquer estilo de cozinha, trazendo um toque sofisticado e moderno.</p><p><br/></p><p><b>🔝 Por que escolher a Lava Louças Portátil Praxis?</b></p><p><b>Alta performance</b>: Limpeza eficiente em menos tempo</p><p><b>Tecnologia inovadora</b>: Água quente, ciclos rápidos e programas diversos</p><p><b>Praticidade</b>: Fácil de instalar, sem complicação</p><p><b>Design incrível</b>: Perfeita para qualquer cozinha moderna</p><p><br/></p><p><b>📦 O que vem na caixa?</b></p><p>Lava Louças Portátil Praxis LLPP</p><p>Jarra de abastecimento</p><p>Copo medidor</p><p>Manual de uso</p><p><br/></p><p><b>🔌 Especificações Técnicas</b></p><p>Voltagem: Bivolt</p><p>Cor: Preto ou Branco</p><p>Consumo por ciclo: 3 Litros</p><p>Potência: 415W</p><p>Dimensões (A x L x P): 47,1 cm x 42 cm x 43,2 cm</p><p>Abertura superior e instalação bancada</p><p>Consumo de energia otimizado</p><p>Garantia do fabricante: 12 meses</p><p><br/></p>",
   "related": [
     {
-      "href": "produto-56.html",
-      "img": "../esteirafotos/esteiraprimeirafoto.PNG",
-      "alt": "Esteira Elétrica Ergométrica Ginástica Corrida Dobrável - Heroi Sports",
-      "name": "Câmera Instax Mini 12 FujiFIlm + Filme de 60 Poses",
-      "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "9875 vendido(s)"
-    },
-    {
       "href": "produto-54.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
       "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
@@ -1145,6 +1135,16 @@
       "price_original": "R$ 799,00",
       "discount": "82% OFF",
       "sold": "984 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

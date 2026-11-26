@@ -241,16 +241,6 @@
   "description_html": "O Tênis Kappa Pulse RX foi desenvolvido para proporcionar máxima absorção de impacto, leveza incomparável e alta durabilidade tanto para treinos intensos quanto para o uso diário e caminhadas prolongadas.<br/><br/>\n\n• <strong>Cabedal Respirável em Knit:</strong> Ajuste anatômico que se molda aos pés e mantém a ventilação constante.<br/>\n\n• <strong>Entressola com Tecnologia Pulse RX:</strong> Espuma de alto retorno de energia para passadas mais macias.<br/>\n\n• <strong>Solado de Borracha Antiderrapante:</strong> Aderência firme e tração segura em esteiras, asfalto ou pisos lisos.<br/>\n\n• <strong>Design Esportivo Italiano:</strong> Acabamento premium da tradicional marca Kappa com logo icônico.<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Tênis Kappa Pulse\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-110.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n\nConfira a tabela de medidas acima e escolha a sua numeração BR exata. Produto original com garantia Stone Shop e nota fiscal!",
   "related": [
     {
-      "href": "produto-115.html",
-      "img": "../img/forno-hq-slide-1.webp",
-      "alt": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "price": "R$ 289,90",
-      "price_original": "R$ 429,00",
-      "discount": "35% OFF",
-      "sold": "668 vendido(s)"
-    },
-    {
       "href": "produto-17.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf",
       "alt": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
@@ -289,6 +279,16 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "8754 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

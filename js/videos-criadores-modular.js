@@ -796,6 +796,51 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'patinete126') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Gente, o patinete já vem pré-montado na caixa com carregador bivolt! As 3 rodas dão muita segurança pros pequenos e os LEDs acendem forte demais 🛴✨',
+                date: 'Há 1 hora',
+                likes: 93,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_1.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_1.jpg',
+                user: 'ju_maedodavi',
+                text: 'Comprei o Azul Turbo pro meu filho de 6 anos e ele não desce mais! A bateria dura o passeio inteiro na praça 💙',
+                date: 'Há 40 min',
+                likes: 47,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_2.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_2.jpg',
+                user: 'carol.almeida88',
+                text: 'Dobra mesmo pra caber no porta-malas? Quero levar na viagem de fim de ano!',
+                date: 'Há 2 horas',
+                likes: 19,
+                liked: false
+              },
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Dobra sim amiga! Destrava na base em 3 segundos e pesa só 4,5 kg, cabe em qualquer cantinho do porta-malas 🥰',
+                date: 'Há 2 horas',
+                likes: 64,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_3.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_3.jpg',
+                user: 'patricia_melo',
+                text: 'Por R$ 97 no Pix tá dado demais, no shopping vi igualzinho por quase 400 reais! Já garanti o de Natal da minha afilhada 🎄🎁',
+                date: 'Há 4 horas',
+                likes: 52,
+                liked: false
+              }
+            ];
           } else if (contextType === 'arcade114') {
             return [
               {

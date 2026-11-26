@@ -156,6 +156,13 @@ for (const id of ids) {
   });
 
   // 2.5 avaliações
+  const revCount = (d.reviews || []).length;
+  if (revCount < 20) W(`apenas ${revCount} avaliações cadastradas (meta: 20+ para prova social forte)`);
+  const rcMatch = String(d.rating_count || '').match(/\d+/);
+  const rhMatch = String(d.reviews_header || '').match(/\d+/);
+  if (rcMatch && rhMatch && rcMatch[0] !== rhMatch[0]) {
+    E(`reviews_header '${d.reviews_header}' diverge de rating_count '${d.rating_count}' (js/app.js sobrescreve o topo!)`);
+  }
   const photoSeen = new Set();
   const avSeen = new Set();
   (d.reviews || []).forEach((r, i) => {
@@ -177,12 +184,23 @@ for (const id of ids) {
     });
   });
   const withPhoto = (d.reviews || []).filter((r) => (r.photos || []).length > 0).length;
-  if (withPhoto < 5) W(`apenas ${withPhoto} avaliações com foto de unboxing (meta: 5+)`);
-  (d.reviews || []).forEach((r) => (r.photos || []).length > 0 && null);
+  if (withPhoto < 6) W(`apenas ${withPhoto} avaliações com foto de unboxing (meta: 6+)`);
 
-  // 2.6 catálogo + switch de criadores
+  // 2.6 catálogo
   const cat = fs.readFileSync(path.join(ROOT, 'js', 'catalogo.js'), 'utf8');
   if (!new RegExp(`\\{id:${id},`).test(cat)) E('não registrado em js/catalogo.js');
+}
+
+// 2.7 Garantir que nenhum produto redirecionado (302) sobrou listado na vitrine (catalogo.js / index.html)
+const catSrc = fs.readFileSync(path.join(ROOT, 'js', 'catalogo.js'), 'utf8');
+const idxSrc = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+for (const id of ids) {
+  const f = path.join(ROOT, 'data', 'produtos', `produto-${id}.json`);
+  if (!fs.existsSync(f)) continue;
+  const d = JSON.parse(fs.readFileSync(f, 'utf8'));
+  if (!d.redirect) continue;
+  if (new RegExp(`\\{id:${id},`).test(catSrc)) errors.push(`produto-${id}: é redirect (${d.redirect}) mas ainda aparece em js/catalogo.js`);
+  if (new RegExp(`data-id="${id}"`).test(idxSrc)) errors.push(`produto-${id}: é redirect (${d.redirect}) mas ainda aparece em index.html`);
 }
 
 // ---------- 3. Relatório ----------
@@ -201,7 +219,8 @@ if (warnings.length) {
   warnings.forEach((w) => console.warn('  -', w));
 }
 
-if (totalReviews < 3000) errors.push(`Total de avaliações caiu para ${totalReviews} (< 3000) — algo foi apagado`);
+const minExpectedReviews = ok200 * 25;
+if (totalReviews < minExpectedReviews) errors.push(`Total de avaliações caiu para ${totalReviews} (< ${minExpectedReviews} para ${ok200} produtos ativos) — algo foi apagado`);
 
 if (errors.length > 0) {
   console.error(`\n❌ ${errors.length} ERRO(S) ENCONTRADO(S):`);

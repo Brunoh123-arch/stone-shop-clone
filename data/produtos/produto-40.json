@@ -575,16 +575,6 @@
   "description_html": "DESCRIÇÃO COMPLETA:<br/><br/>O Micro-ondas Mondial MO-01-21-E combina sofisticação e eficiência, oferecendo recursos que facilitam o preparo de refeições no dia a dia. Com design espelhado e compacto, é ideal para cozinhas modernas e funcionais.<br/><br/>Características:<br/><br/>Marca: Mondial<br/><br/>Modelo: MO-01-21-E<br/><br/>Especificações:<br/><br/>Cor: Cinza Espelhado<br/><br/>Capacidade: 21 litros<br/><br/>Potência: 1.200W<br/><br/>Consumo: 1,2 kWh<br/><br/>Voltagem: 127V/220V<br/><br/>Material: Aço Galvanizado e ABS<br/><br/>Níveis de Potência: 10<br/><br/>Funções:<br/><br/>Menu Dia a Dia<br/><br/>Menu Kids (pipoca, brigadeiro, bolo de caneca)<br/><br/>Descongelar<br/><br/>Manter Aquecido<br/><br/>Tira Odor<br/><br/>Trava de Segurança<br/><br/>Tecla Iniciar Fácil<br/><br/>Função Relógio<br/><br/>Prato Giratório<br/><br/>QR Code de Receitas<br/><br/>Eficiência Energética: Classificação A<br/><br/>Dimensões: 26x45x35 (AxLxC)<br/><br/>Conteúdo da Embalagem:<br/><br/>1 Micro-ondas Mondial MO-01-21-E<br/><br/>1 Prato Giratório de Vidro<br/><br/>1 Suporte do Prato Giratório<br/><br/>1 Manual de Instruções<br/><br/>Garantia:<br/><br/>12 meses<br/><br/>Peso:<br/><br/>10,5 Kg<br/><br/>Kit Mestre Cuca 10 Livros Digitais no Ubook GO:<br/><br/>Adquira um kit exclusivo com 10 títulos selecionados todos em formato digital com diversas receitas culinárias para transformar sua cozinha em um verdadeiro festival de sabores. Explore pratos do dia a dia, sobremesas irresistíveis e receitas especiais para impressionar, sempre com a praticidade de acessar onde e quando quiser pelo Ubook GO.<br/><br/>Os 10 títulos ficam disponíveis de forma vitalícia na sua conta do Ubook GO, vinculados ao seu CPF. Uma vez ativado o acesso, os conteúdos estarão sempre disponíveis para você, sem prazo de expiração..",
   "related": [
     {
-      "href": "produto-81.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-820lo-mlgqr9tonx8kc2",
-      "alt": "Caixa de Som WAAW Hyperboom 1000 180W IPX7 TWS Bivolt",
-      "name": "Caixa de Som WAAW Hyperboom 1000 180W IPX7 TWS Bivolt",
-      "price": "R$ 126,90",
-      "price_original": "R$ 1260,90",
-      "discount": "90% OFF",
-      "sold": "500 vendido(s)"
-    },
-    {
       "href": "produto-9.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
@@ -593,16 +583,6 @@
       "price_original": "R$ 754,44",
       "discount": "88% OFF",
       "sold": "10241 vendido(s)"
-    },
-    {
-      "href": "produto-56.html",
-      "img": "../esteirafotos/esteiraprimeirafoto.PNG",
-      "alt": "Esteira Elétrica Ergométrica Ginástica Corrida Dobrável - Heroi Sports",
-      "name": "Câmera Instax Mini 12 FujiFIlm + Filme de 60 Poses",
-      "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "9875 vendido(s)"
     },
     {
       "href": "produto-63.html",
@@ -623,6 +603,26 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "9876 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

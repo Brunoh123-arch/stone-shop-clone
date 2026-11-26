@@ -418,16 +418,6 @@
   "description_html": "Fritadeira Elétrica Sem Óleo Elgin Visio Fry 5L  Praticidade, potência e visualização total do preparo<br/><br/>Transforme sua rotina na cozinha com a Visio Fry da Elgin. Seu design moderno com visor transparente permite acompanhar o preparo dos alimentos sem abrir o cesto, mantendo o calor e garantindo mais eficiência.<br/><br/>Com painel Digital Touch Screen e 12 funções pré-programadas, você prepara diversas receitas com facilidade. A capacidade de 5 litros é ideal para famílias e para quem gosta de fazer porções maiores de uma só vez.<br/><br/>Equipada com 1700W de potência e tecnologia Air Circuit 360, a fritadeira garante circulação de ar ultrarrápida, deixando os alimentos crocantes por fora e macios por dentro, com economia de energia.<br/><br/>O cesto possui revestimento antiaderente Black Resist, que oferece mais durabilidade e muito mais facilidade na hora da limpeza. Conta também com controle de temperatura de 80C a 200C, timer de até 60 minutos com aviso sonoro, desligamento automático, proteção contra superaquecimento, base antiderrapante e alça fria, proporcionando um uso seguro e confortável.<br/><br/>A escolha ideal para quem busca sabor, saúde e praticidade no dia a dia.",
   "related": [
     {
-      "href": "produto-73.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-m0excasdlftxa1",
-      "alt": "Caixa De Som Bluetooth Waaw Hyperboom 1000",
-      "name": "Caixa De Som Bluetooth Waaw Hyperboom 1000",
-      "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
-      "sold": "9853 vendido(s)"
-    },
-    {
       "href": "produto-64.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5",
       "alt": "Bia Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
@@ -436,16 +426,6 @@
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
       "sold": "8765 vendido(s)"
-    },
-    {
-      "href": "produto-56.html",
-      "img": "../esteirafotos/esteiraprimeirafoto.PNG",
-      "alt": "Esteira Elétrica Ergométrica Ginástica Corrida Dobrável - Heroi Sports",
-      "name": "Câmera Instax Mini 12 FujiFIlm + Filme de 60 Poses",
-      "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "9875 vendido(s)"
     },
     {
       "href": "produto-7.html",
@@ -466,6 +446,26 @@
       "price_original": "R$ 397,86",
       "discount": "82% OFF",
       "sold": "9052 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

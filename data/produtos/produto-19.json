@@ -475,16 +475,6 @@
       "sold": "0 vendido(s)"
     },
     {
-      "href": "produto-92.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-820mb-ml9zyiobgzrb67",
-      "alt": "Conjunto de Panelas de Ferro Fundido Esmaltado 10 Peças - Frigideira e Panelas Antiaderentes",
-      "name": "Conjunto de Panelas de Ferro Fundido Esmaltado 10 Peças - Frigideira e Panelas Antiaderentes",
-      "price": "R$ 598,00",
-      "price_original": "",
-      "discount": "80% OFF",
-      "sold": "37 vendido(s)"
-    },
-    {
       "href": "produto-16.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
@@ -513,6 +503,16 @@
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
       "sold": "5490 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

@@ -253,16 +253,6 @@
   "description_html": "O Body Modelador Cinta Alta Compressão Efeito Lipo Redutora é a escolha perfeita para modelar a silhueta com total discrição e conforto absoluto. Desenvolvido com tecido tecnológico respirável de compressão inteligente, ele reduz medidas na hora sem marcar sob as roupas.<br/><br/>\n\n• <strong>Efeito Lipo Redutora:</strong> Comprime suavemente a região abdominal, disfarçando pneuzinhos e realçando a cintura.<br/>\n\n• <strong>Costura Invisível:</strong> Não enrola na barra e não marca sob vestidos justos, calças ou blusas claras.<br/>\n\n• <strong>Abertura Higiênica Inferior:</strong> Facilidade total no dia a dia sem precisar tirar a peça inteira.<br/>\n\n• <strong>Alças Reguláveis e Confortáveis:</strong> Distribuição equilibrada sem machucar os ombros.<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Body Modelador\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-106.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n\nEscolha o seu tamanho ideal de acordo com a tabela acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
   "related": [
     {
-      "href": "produto-115.html",
-      "img": "../img/forno-hq-slide-1.webp",
-      "alt": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "price": "R$ 289,90",
-      "price_original": "R$ 429,00",
-      "discount": "35% OFF",
-      "sold": "668 vendido(s)"
-    },
-    {
       "href": "produto-17.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf",
       "alt": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
@@ -301,6 +291,16 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "8754 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

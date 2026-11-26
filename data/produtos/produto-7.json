@@ -641,16 +641,6 @@
   "description_html": "<p><strong>Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA</strong></p><p>Produto oficial com nota fiscal e garantia total.</p>",
   "related": [
     {
-      "href": "produto-28.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhqna6evm0oz72",
-      "alt": "Kit Mochila Rebecca Bonbon - Lancheira Térmica + Estojo + Box Escolar Nova Coleção Exclusiva Juvenil",
-      "name": "Kit Mochila Rebecca Bonbon - Lancheira Térmica + Estojo + Box Escolar Nova Coleção Exclusiva Juvenil",
-      "price": "R$ 69,90",
-      "price_original": "R$ 489,90",
-      "discount": "86% OFF",
-      "sold": "12569 vendido(s)"
-    },
-    {
       "href": "produto-35.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8",
       "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
@@ -659,16 +649,6 @@
       "price_original": "R$ 497,90",
       "discount": "81% OFF",
       "sold": "8569 vendido(s)"
-    },
-    {
-      "href": "produto-82.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-man0mifag5bt63",
-      "alt": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "name": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "price": "R$ 257,90",
-      "price_original": "R$ 2579,00",
-      "discount": "90% OFF",
-      "sold": "150 vendido(s)"
     },
     {
       "href": "produto-26.html",
@@ -689,6 +669,26 @@
       "price_original": "R$ 397,90",
       "discount": "82% OFF",
       "sold": "9864 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

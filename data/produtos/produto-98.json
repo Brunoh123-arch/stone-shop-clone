@@ -251,16 +251,6 @@
   "description_html": "A Oxford Alumina Crystal traz alta tecnologia para o mundo dos cristais. O processo inovador de produção e a adição de Alumina na sua composição conferem ao produto características únicas de alta performance para uso no dia a dia. Testes de resistência mostram que a Oxford Alumina Crystal tem maior resistência de borda e de bojo que as taças convencionais. O modelo Proper na decoração Effect é inspirado no movimento artístico Art Nouveau que surgiu no final do século XIX, na Europa. Uma das principais características deste movimento foi a exuberância decorativa, as formas ondulantes e elegantes. O Copo Long Drink da linha Proper possui efeito ondulado no interior da peça de 14,4  cm de altura e capacidade para 490  ml. O Copo Long Drink é usado para servir água, suco ou coquetéis diversos.<br/><br/>Conteúdo da embalagem: 6 Copos de Cristal Long Drink 490 Ml  Com 14,4 cm de altura<br/><br/>- Garantia: 3 Meses para Defeitos de fabricação<br/><br/>- Marca: Oxford<br/><br/>- Tipo da embalagem: Papelão pardo<br/><br/>- Material: Cristal<br/><br/>- É apto para lava-louças: Sim<br/><br/>- É apto para micro-ondas: Não<br/><br/>- Tipo de produto: Copo<br/><br/>- Modelo: Proper Effect<br/><br/>- Cor: Transparente<br/><br/>- Capacidade em volume: 490 ml<br/><br/>- Inclui tampa: Não<br/><br/>- Formato de venda: Kit<br/><br/>- É descartável: Não<br/><br/>- Código universal de produto: 7891361250301<br/><br/>- Linha: Alumina Crystal<br/><br/>- SKU: 097201<br/><br/>- Bebidas recomendadas: Água, Suco<br/><br/>- Com canudo: Não<br/><br/>- Altura: 14,4 cm<br/><br/>- Condição do item: Novo<br/><br/>- É produto personalizado: Não<br/><br/>- Unidades por kit: 6<br/><br/>- É kit: Sim<br/><br/>ATENÇÃO: Para compras de pessoa jurídica,cadastreosdados exatamente como consta em seu cartão do CNPJ",
   "related": [
     {
-      "href": "produto-73.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-m0excasdlftxa1",
-      "alt": "Caixa De Som Bluetooth Waaw Hyperboom 1000",
-      "name": "Caixa De Som Bluetooth Waaw Hyperboom 1000",
-      "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
-      "sold": "9853 vendido(s)"
-    },
-    {
       "href": "produto-55.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m024asxqvazr6b",
       "alt": "SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
@@ -271,26 +261,6 @@
       "sold": "5462 vendido(s)"
     },
     {
-      "href": "produto-31.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_700421-MLB88866744981_072025-F.webp",
-      "alt": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
-      "name": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
-      "price": "R$ 69,80",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "5867 vendido(s)"
-    },
-    {
-      "href": "produto-49.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7qve4-lgjjzn7opmtfae",
-      "alt": "Detergente Limpador Para Extratoras Limpa E Extrai 1L Wap",
-      "name": "Detergente Limpador Para Extratoras Limpa E Extrai 1L Wap",
-      "price": "R$ 19,99",
-      "price_original": "R$ 39,90",
-      "discount": "50% OFF",
-      "sold": "4983 vendido(s)"
-    },
-    {
       "href": "produto-97.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-81zwa-mimr7kh9srno54",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
@@ -299,6 +269,36 @@
       "price_original": "R$ 596,90",
       "discount": "88% OFF",
       "sold": "877 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
+    },
+    {
+      "href": "produto-111.html",
+      "img": "../img/produto-111-oficial-1.jpg?v=3",
+      "alt": "Projetor LED Natalino 16 Desenhos",
+      "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
+      "price": "R$ 49,90",
+      "price_original": "R$ 199,90",
+      "discount": "75% OFF",
+      "sold": "5.1K vendidos"
     }
   ],
   "produto_atual": {

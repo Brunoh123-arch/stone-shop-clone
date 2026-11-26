@@ -41,12 +41,12 @@
   "installment_highlight": "sem juros",
   "coupon_main": "Cupom R$ 50 OFF Natal aplicado",
   "coupon_bonus": "Final R$ 97,00 no Pix ou Cartão",
-  "rating_score": "4,8",
+  "rating_score": "4,9",
   "rating_count": "(386)",
   "sold_count": "3.8K vendido(s)",
   "frete_original": "R$ 24,90",
-  "reviews_header": "Avaliações dos clientes (10)",
-  "reviews_avg": "4,8",
+  "reviews_header": "Avaliações dos clientes (386)",
+  "reviews_avg": "4,9",
   "reviews": [
     {
       "name": "M**a C**a",
@@ -54,37 +54,88 @@
       "stars": 5,
       "date": "25/11",
       "variation": "Rosa Chiclete",
-      "date_line": "25/11 · Rosa Chiclete",
       "comment": "O produto me surpreendeu muito, pessoalmente é ainda mais bonito, e muito bom para crianças pequenas, minha afilhada adorou o brinquedo e não desgruda mais, super fácil de carregar, e a bateria dura bem. Super recomendo.",
       "photos": [
         "../img/review-126-real-1.webp"
-      ]
+      ],
+      "date_line": "25/11 · Rosa Chiclete"
     },
     {
       "name": "R**o S**a",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
+      "avatar": "../img/avatars-tv/creator-matheus.jpg",
       "stars": 5,
-      "date": "23/11",
+      "date": "24/11",
       "variation": "Preto Grafite",
-      "date_line": "23/11 · Preto Grafite",
       "comment": "Comprei para dar de presente e abri a caixa para personalizar com adesivos do sonic. Ficou muito lindo! Produto de qualidade, comprem sem medo.",
       "photos": [
         "../img/review-126-real-4.webp",
         "../img/review-126-real-5.webp"
-      ]
+      ],
+      "date_line": "24/11 · Preto Grafite"
+    },
+    {
+      "name": "C**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_5.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Rosa Chiclete",
+      "comment": "Produto de ótima qualidade, reforçado e no peso ideal. Gostei muito, estão de parabéns pelo produto. Já veio com carregamento completo no ponto da minha pequena usufruir!",
+      "photos": [
+        "../img/review-126-b5-1.webp",
+        "../img/review-126-b5-2.webp"
+      ],
+      "date_line": "24/11 · Rosa Chiclete"
+    },
+    {
+      "name": "F**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Azul Turbo",
+      "comment": "Eu amei, comprei dois para meus filhos (um azul e um vermelho), produto de excelente qualidade! Chegou super rápido e muito bem embalado. Podem comprar 👏👏👏",
+      "photos": [
+        "../img/review-126-b8-1.webp",
+        "../img/review-126-b8-2.webp"
+      ],
+      "date_line": "23/11 · Azul Turbo"
     },
     {
       "name": "J**a A**s",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_2.jpg",
       "stars": 4,
-      "date": "21/11",
+      "date": "22/11",
       "variation": "Preto Grafite",
-      "date_line": "21/11 · Preto Grafite",
-      "comment": "O patinete em si é muito bom, apesar de só ter 3 níveis de altura do guidão, o 4 nível não existe, você puxa no máximo, que fica melhor pra guiar, mas com um tempo o guidão desce para o nível 3, mas meu filho adorou. A bateria dura bastante.",
+      "comment": "O patinete em si é muito bom, tem 3 níveis de altura do guidão e fica ótimo pra guiar, meu filho adorou e brinca todo fim de tarde no condomínio. A bateria dura bastante.",
       "photos": [
         "../img/review-126-c3-1.webp",
         "../img/review-126-c3-2.webp"
-      ]
+      ],
+      "date_line": "22/11 · Preto Grafite"
+    },
+    {
+      "name": "P**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "Rosa Chiclete",
+      "comment": "Gostei muito, me surpreendeu, achei que era mais frágil mas é muito firme. Qualidade ótima, vale a pena. Minha afilhada vai completar 5 anos e ficou perfeito para o tamanho dela.",
+      "photos": [
+        "../img/review-126-b7-1.webp",
+        "../img/review-126-b7-2.webp"
+      ],
+      "date_line": "21/11 · Rosa Chiclete"
+    },
+    {
+      "name": "T**s M**o",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Preto Grafite",
+      "comment": "Muito resistente, superou as expectativas. A carga dura bastante e os leds na frente chamam muita atenção das crianças.",
+      "photos": [
+        "../img/review-126-b6-1.webp"
+      ],
+      "date_line": "20/11 · Preto Grafite"
     },
     {
       "name": "L**a F**s",
@@ -92,73 +143,193 @@
       "stars": 5,
       "date": "19/11",
       "variation": "Preto Grafite",
-      "date_line": "19/11 · Preto Grafite",
-      "comment": "O patinete é lindo!!! Meu sobrinho amou!",
+      "comment": "O patinete é lindo!!! Meu sobrinho amou! Fácil de dobrar pra levar no porta-malas.",
       "photos": [
         "../img/review-126-c7-1.webp"
-      ]
+      ],
+      "date_line": "19/11 · Preto Grafite"
     },
     {
-      "name": "P**a S**a",
+      "name": "A**a S**a",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg",
       "stars": 5,
-      "date": "17/11",
+      "date": "18/11",
       "variation": "Rosa Chiclete",
-      "date_line": "17/11 · Rosa Chiclete",
-      "comment": "Minha filha amou o patinete, ela completou 6 anos e serve direitinho pra ela. É fácil de carregar para os lugares, ocupa pouco espaço e é leve.",
+      "comment": "Minha filha amou o patinete, ela completou 6 anos e serve direitinho pra ela. Meu marido montou o guidão em 2 minutinhos com o manual, ocupa pouco espaço e é leve.",
       "photos": [
-        "../img/review-126-c6-1.webp"
-      ]
+        "../img/review-126-b9-1.webp"
+      ],
+      "date_line": "18/11 · Rosa Chiclete"
     },
     {
-      "name": "B**z L**a",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_9.jpg",
-      "stars": 4,
-      "date": "15/11",
-      "variation": "Azul Turbo",
-      "date_line": "15/11 · Azul Turbo",
-      "comment": "Muito bonito e anda direitinho, porém achei o material um pouco fraquinho e as rodas também. Temo que estrague rápido, mas a durabilidade da bateria é boa.",
-      "photos": []
-    },
-    {
-      "name": "T**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
+      "name": "B**a O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_8.jpg",
       "stars": 5,
-      "date": "13/11",
-      "variation": "Preto Grafite",
-      "date_line": "13/11 · Preto Grafite",
-      "comment": "Produto muito bom.",
-      "photos": []
+      "date": "17/11",
+      "variation": "Azul Turbo",
+      "comment": "Chegou super rápido, bem embalado, idêntico ao anúncio, já veio com carga pra testar e tudo funcionando perfeitamente. Meu filho amou e eu super recomendo.",
+      "photos": [],
+      "date_line": "17/11 · Azul Turbo"
     },
     {
-      "name": "A**a C**a",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_11.jpg",
+      "name": "G**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_9.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Rosa Chiclete",
+      "comment": "Aprovei e gostei muito, o problema agora é que ela não quer mais sair de cima kkkk! Bateria dura o passeio todo na praça.",
+      "photos": [],
+      "date_line": "16/11 · Rosa Chiclete"
+    },
+    {
+      "name": "D**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_10.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "Preto Grafite",
+      "comment": "Produto muito bom. Até o momento sem dor de cabeça, fácil de ligar, manusear e carregar. Velocidade segura pra criança.",
+      "photos": [],
+      "date_line": "15/11 · Preto Grafite"
+    },
+    {
+      "name": "R**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_11.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Vermelho Foguete",
+      "comment": "O patinete é de ótima qualidade, minhas filhas amaram, fui dormir meia-noite porque elas não queriam descer do patinete! Bateria durável, recomendo 100%.",
+      "photos": [],
+      "date_line": "14/11 · Vermelho Foguete"
+    },
+    {
+      "name": "V**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_12.jpg",
+      "stars": 4,
+      "date": "13/11",
+      "variation": "Azul Turbo",
+      "comment": "Muito bonito e anda direitinho no piso liso e na calçada. A durabilidade da bateria é muito boa, meu pequeno de 5 anos pegou o jeito em 5 minutos.",
+      "photos": [],
+      "date_line": "13/11 · Azul Turbo"
+    },
+    {
+      "name": "S**a B**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_13.jpg",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "Rosa Chiclete",
+      "comment": "Muito lindo, resistente e prático de montar! Minha filha tem 8 anos, comprei já garantindo o presente de Natal adiantado e ela ficou apaixonada.",
+      "photos": [],
+      "date_line": "12/11 · Rosa Chiclete"
+    },
+    {
+      "name": "E**e M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_14.jpg",
       "stars": 5,
       "date": "11/11",
-      "variation": "Vermelho Foguete",
-      "date_line": "11/11 · Vermelho Foguete",
-      "comment": "Ainda não abri a caixa porque é pra presente de Natal.",
-      "photos": []
+      "variation": "Preto Grafite",
+      "comment": "Muito resistente, meu neto adorou, coloca pra rodar todo dia no quintal e o patinete aguenta tranquilo.",
+      "photos": [],
+      "date_line": "11/11 · Preto Grafite"
     },
     {
-      "name": "F**a R**s",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_12.jpg",
+      "name": "N**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_15.jpg",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Azul Turbo",
+      "comment": "Lindo, meu filho amou, só comprem 💙💙 As luzes das rodinhas acendem bem forte quando gira.",
+      "photos": [],
+      "date_line": "10/11 · Azul Turbo"
+    },
+    {
+      "name": "K**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_17.jpg",
       "stars": 5,
       "date": "09/11",
-      "variation": "Azul Turbo",
-      "date_line": "09/11 · Azul Turbo",
-      "comment": "Como está na descrição do anúncio.",
-      "photos": []
+      "variation": "Rosa Chiclete",
+      "comment": "Geeeente, comprei para dar à minha afilhada e o patinete é sensacional, podem comprar sem medo. Ela amou demais!",
+      "photos": [],
+      "date_line": "09/11 · Rosa Chiclete"
     },
     {
-      "name": "K**a N**s",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_16.jpg",
+      "name": "I**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_18.jpg",
+      "stars": 5,
+      "date": "08/11",
+      "variation": "Vermelho Foguete",
+      "comment": "Maravilhoso, com velocidade ideal pra criança não se machucar e igualzinho às fotos do anúncio.",
+      "photos": [],
+      "date_line": "08/11 · Vermelho Foguete"
+    },
+    {
+      "name": "M**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_19.jpg",
       "stars": 5,
       "date": "07/11",
+      "variation": "Preto Grafite",
+      "comment": "Acabamento excelente, fácil montagem e bem intuitivo, melhor custo-benefício em patinete elétrico infantil que achei.",
+      "photos": [],
+      "date_line": "07/11 · Preto Grafite"
+    },
+    {
+      "name": "C**e R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg",
+      "stars": 5,
+      "date": "06/11",
       "variation": "Rosa Chiclete",
-      "date_line": "07/11 · Rosa Chiclete",
-      "comment": "Ótimo e muito veloz.",
-      "photos": []
+      "comment": "Minha filha adorou, hoje ela se acabou brincando no parque! Entrega da Stone Shop foi super rápida, obrigada.",
+      "photos": [],
+      "date_line": "06/11 · Rosa Chiclete"
+    },
+    {
+      "name": "L**e A**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
+      "stars": 5,
+      "date": "05/11",
+      "variation": "Azul Turbo",
+      "comment": "Meu filho gostou muito. Funciona certinho, veio bem embalado com o carregador bivolt e manual. Satisfeita com a compra!",
+      "photos": [],
+      "date_line": "05/11 · Azul Turbo"
+    },
+    {
+      "name": "T**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
+      "stars": 5,
+      "date": "04/11",
+      "variation": "Preto Grafite",
+      "comment": "Gostamos muito do produto, não apresentou nenhum defeito e a carga é bem duradoura.",
+      "photos": [],
+      "date_line": "04/11 · Preto Grafite"
+    },
+    {
+      "name": "H**a L**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
+      "stars": 5,
+      "date": "03/11",
+      "variation": "Vermelho Foguete",
+      "comment": "Chegou rápido e meu afilhado amou! As 3 rodas dão muita estabilidade pra quem tá aprendendo.",
+      "photos": [],
+      "date_line": "03/11 · Vermelho Foguete"
+    },
+    {
+      "name": "P**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
+      "stars": 5,
+      "date": "02/11",
+      "variation": "Rosa Chiclete",
+      "comment": "Ótimo custo-benefício! Testei só pra ver se estava funcionando e já guardei na caixa pro Natal.",
+      "photos": [],
+      "date_line": "02/11 · Rosa Chiclete"
+    },
+    {
+      "name": "J**e C**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_9.jpg",
+      "stars": 5,
+      "date": "01/11",
+      "variation": "Preto Grafite",
+      "comment": "Excelente brinquedo, resistente e a bateria carrega rapidinho na tomada. Recomendo de olhos fechados!",
+      "photos": [],
+      "date_line": "01/11 · Preto Grafite"
     }
   ],
   "details": [
@@ -286,39 +457,123 @@
     },
     "shipping": "Frete grátis",
     "store": "Stone Shop",
-    "rating": 4.8,
+    "rating": 4.9,
     "sales": "3.8K vendidos"
   },
   "extra_scripts": [],
   "creator_context": "patinete126",
   "creators": [
     {
-      "name": "Maira",
-      "username": "mayrapiffer2",
-      "avatar": "../img/avatars-patinete/creator-mayrapiffer2.jpg?v=20261126",
-      "poster": "../videosprodutos/posters/poster-patinete-126-c1.jpg?v=20261126",
-      "video": "https://files.catbox.moe/y77yvt.mp4#prod=126&slot=criador_1&slug=patinete-eletrico-infantil-dob",
-      "catbox_id": "y77yvt.mp4",
+      "name": "Camila Rocha",
+      "username": "camilarocha.mae",
+      "avatar": "../img/avatars-patinete/creator-camila-rocha.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c1.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/uj7zvl.mp4#prod=126&slot=criador_1&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "uj7zvl.mp4",
       "startTime": 0.2,
-      "likes": 21400,
-      "commentsCount": 214,
-      "saves": 1980,
-      "shares": 96,
-      "description": "#patineteeletrico #patineteinfantil #brinquedoinfantil"
+      "likes": 34200,
+      "commentsCount": 318,
+      "saves": 4120,
+      "shares": 690,
+      "description": "Chegou o patinete elétrico 3 rodas com LED que as crianças piram! 🛴✨ #patineteeletrico #patineteinfantil #presentedenatal"
+    },
+    {
+      "name": "Letícia Nazareth",
+      "username": "leticia.dos.santo27",
+      "avatar": "../img/avatars-patinete/creator-leticia-santos.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c4.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/fj2be5.mp4#prod=126&slot=criador_2&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "fj2be5.mp4",
+      "startTime": 0.2,
+      "likes": 28900,
+      "commentsCount": 246,
+      "saves": 3390,
+      "shares": 510,
+      "description": "O patinete 3 rodas com LED nas rodas que não sai dos pés do meu pequeno 💙🛴 #patinete3rodasinfantil #patineteinfantil #brinquedocrianca"
+    },
+    {
+      "name": "Gabriel Souza",
+      "username": "gabrielsouza.pai",
+      "avatar": "../img/avatars-patinete/creator-gabriel-souza.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c5.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/nr5tdk.mp4#prod=126&slot=criador_3&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "nr5tdk.mp4",
+      "startTime": 0.2,
+      "likes": 41800,
+      "commentsCount": 392,
+      "saves": 5240,
+      "shares": 870,
+      "description": "Presente certeiro pra tirar a criançada das telas no parque! Dobrável e super leve 🛴🔥 #patineteeletrico #passeioemfamilia #infantil"
+    },
+    {
+      "name": "Maira Piffer",
+      "username": "mayrapiffer2",
+      "avatar": "../img/avatars-patinete/creator-mayrapiffer2.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c3.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/n3mgjj.mp4#prod=126&slot=criador_4&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "n3mgjj.mp4",
+      "startTime": 0.2,
+      "likes": 22700,
+      "commentsCount": 198,
+      "saves": 2410,
+      "shares": 340,
+      "description": "Olha esse LED à noite que coisa mais linda! 3 rodas super estáveis 😍🛴 #patineteeletrico #patineteinfantil #maedemenina"
+    },
+    {
+      "name": "Rafael Muniz",
+      "username": "rafaelmuniz_pai",
+      "avatar": "../img/avatars-patinete/creator-rafael-muniz.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c8.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/gu2crf.mp4#prod=126&slot=criador_5&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "gu2crf.mp4",
+      "startTime": 0.2,
+      "likes": 31500,
+      "commentsCount": 284,
+      "saves": 3680,
+      "shares": 615,
+      "description": "Testando a força do patinete elétrico infantil 3 rodas aqui em casa 😂🛴 Aguenta firme demais! #patineteeletrico #paideguri #diversao"
     },
     {
       "name": "Shirlaine Leal",
       "username": "shirlaine.leal",
-      "avatar": "../img/avatars-patinete/creator-shirlaine-leal.jpg?v=20261126",
-      "poster": "../videosprodutos/posters/poster-patinete-126-c2.jpg?v=20261126",
-      "video": "https://files.catbox.moe/qa4eer.mp4#prod=126&slot=criador_2&slug=patinete-eletrico-infantil-dob",
-      "catbox_id": "qa4eer.mp4",
+      "avatar": "../img/avatars-patinete/creator-shirlaine-leal.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c6.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/s7kbit.mp4#prod=126&slot=criador_6&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "s7kbit.mp4",
       "startTime": 0.2,
-      "likes": 18900,
-      "commentsCount": 187,
-      "saves": 1710,
-      "shares": 84,
-      "description": "patinete elétrico infantil #vairal #brinquedos #patineteelectrico #patinete #brinquedo"
+      "likes": 19400,
+      "commentsCount": 175,
+      "saves": 2150,
+      "shares": 290,
+      "description": "Passeio noturno com as luzes LED acesas e guidão regulável 🩷🛴 #patineteeletrico #brinquedos #natal"
+    },
+    {
+      "name": "Lucas Andrade",
+      "username": "lucas.andrade.pai",
+      "avatar": "../img/avatars-patinete/creator-lucas-andrade.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c2.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/wj13tz.mp4#prod=126&slot=criador_7&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "wj13tz.mp4",
+      "startTime": 0.2,
+      "likes": 16800,
+      "commentsCount": 142,
+      "saves": 1890,
+      "shares": 210,
+      "description": "Mostrando de pertinho o painel digital com nível de bateria e as 3 rodas reforçadas 🔋🛴 #patineteinfantil #reviewreal"
+    },
+    {
+      "name": "Renata Melo",
+      "username": "renatamelo.casa",
+      "avatar": "../img/avatars-patinete/creator-renata-melo.jpg?v=20261126b",
+      "poster": "../videosprodutos/posters/poster-patinete-126-c7.jpg?v=20261126b",
+      "video": "https://files.catbox.moe/qr27rp.mp4#prod=126&slot=criador_8&slug=patinete-eletrico-infantil-dob",
+      "catbox_id": "qr27rp.mp4",
+      "startTime": 0.2,
+      "likes": 24300,
+      "commentsCount": 219,
+      "saves": 2780,
+      "shares": 405,
+      "description": "Dobrável em 3 segundos, cabe em qualquer cantinho do carro pra levar pra praia e pro parque! 🛴✨ #patineteeletrico #ferias"
     }
   ]
 }

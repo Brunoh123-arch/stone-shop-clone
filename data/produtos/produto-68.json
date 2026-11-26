@@ -739,16 +739,6 @@
       "sold": "8765 vendido(s)"
     },
     {
-      "href": "produto-6.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_870423-MLA92702191632_092025-F.jpg",
-      "alt": "Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor Preto e Vermelho Marca Sevenfit",
-      "name": "Bicicleta Ergométrica Fitness para Cardio e Musculação 6kg Inercia com base Cor Preto e Vermelho Marca Sevenfit",
-      "price": "R$ 147,00",
-      "price_original": "R$ 1094,00",
-      "discount": "87% OFF",
-      "sold": "10000 vendido(s)"
-    },
-    {
       "href": "produto-76.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
@@ -767,6 +757,16 @@
       "price_original": "R$ 497,90",
       "discount": "81% OFF",
       "sold": "8569 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

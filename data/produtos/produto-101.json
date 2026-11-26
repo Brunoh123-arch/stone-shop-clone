@@ -244,16 +244,6 @@
   "description_html": "<strong>Pneus Pirelli - Alta Performance e Segurança</strong><br/><br/>\n          Os pneus Pirelli são reconhecidos mundialmente pela alta qualidade, tecnologia de ponta e performance extrema. Desenvolvidos com a experiência de décadas na Fórmula 1®, os pneus Pirelli garantem a máxima segurança, estabilidade em curvas e conforto superior para o seu veículo.<br/><br/>\n<strong>Clique em \"Comprar agora\" ou \"Adicionar ao carrinho\" para abrir o nosso seletor e encontrar a medida exata para o seu veículo.</strong> Nosso sistema conta com o banco de dados oficial Pirelli Brasil completo para busca por modelo de veículo ou diretamente por medidas.<br/><br/>\n<strong>Destaques dos Modelos Pirelli Disponíveis no Nosso Seletor:</strong><br/><br/>\n          :: <strong>P ZERO (PZ4) [Alta Performance / Premium]</strong><br/>\n          O pneu esportivo oficial com tecnologia herdada diretamente das pistas de Fórmula 1®. Projetado para quem exige aceleração máxima, resposta imediata na direção e aderência extrema em pistas secas e molhadas.<br/><br/>\n          :: <strong>CINTURATO P7 (P7C2) [Premium / Tecnológico]</strong><br/>\n          O pneu de passeio de última geração da Pirelli. Conta com a exclusiva tecnologia <strong>SEAL INSIDE</strong>, que previne a perda de pressão do ar em caso de furos de até 4mm na banda de rodagem, permitindo continuar rodando com segurança. Máxima eficiência energética e silêncio de rodagem.<br/><br/>\n          :: <strong>CINTURATO P7 [Passeio / Urbano]</strong><br/>\n          Referência em sedans de média e alta potência. Proporciona excelente rendimento quilométrico, controle preciso e frenagem otimizada em piso molhado.<br/><br/>\n          :: <strong>POWERGY [Passeio / Eficiente]</strong><br/>\n          O pneu ideal para o dia a dia. Focado em excelente aderência em piso molhado, baixa resistência ao rolamento (economia de combustível) e alta durabilidade.<br/><br/>\n          :: <strong>SCORPION VERDE [SUV / Crossover]</strong><br/>\n          Desenvolvido especificamente para SUVs de alta performance. Proporciona aderência superior, menor emissão de ruídos e alta durabilidade, respeitando o meio ambiente.<br/><br/>\n          :: <strong>SCORPION ATR [SUV / Off-Road Misto]</strong><br/>\n          Para quem divide o tempo entre o asfalto e a terra. Conta com blocos autolimpantes e estrutura reforçada para resistir aos impactos mais severos fora de estrada.<br/><br/>\n          :: <strong>CINTURATO P6 / P1 [Compactos / Urbanos]</strong><br/>\n          Pneus focados em carros compactos e urbanos de passeio. Garantem estabilidade direcional superior, segurança no molhado e excelente custo-benefício.<br/><br/>\n          :: <strong>P400 EVO [Econômico / Durabilidade]</strong><br/>\n          Pneu tradicional Pirelli focado na máxima durabilidade e economia. Excelente escoamento de água e conforto no asfalto.<br/><br/>\n<strong>Como Realizar a Compra Pelo Nosso Seletor Inteligente:</strong><br/><br/>\n          1. Clique nos botões \"Comprar agora\" ou \"Adicionar ao carrinho\" na barra inferior.<br/>\n          2. No modal Pirelli, escolha como deseja buscar: <strong>Por Veículo</strong> (selecionando Marca, Modelo, Ano e Versão do seu carro) ou <strong>Por Medida</strong> (selecionando Largura, Perfil e Aro do pneu).<br/>\n          3. O sistema filtrará os modelos compatíveis e exibirá as opções com os selos de <strong>Mais Vendido</strong> e <strong>Recomendado</strong> baseados no melhor desempenho e estrutura do pneu.<br/>\n          4. Escolha a quantidade desejada através do seletor `[-] 1 [+]` e clique em confirmar para finalizar a sua compra com **Frete Grátis** e envio imediato!<br/><br/>\n<strong>Características Gerais e Garantia:</strong><br/><br/>\n          :: Produto 100% Original Pirelli homologado pelo INMETRO.<br/>\n          :: Tecnologia anti-furos Seal Inside nos modelos aplicáveis.<br/>\n          :: Índices de carga e velocidade oficiais Pirelli gravados na lateral do pneu.<br/>\n          :: Frete Grátis para todo o Brasil com rastreamento ativo.<br/>\n          :: Garantia oficial de fábrica contra defeitos de fabricação.",
   "related": [
     {
-      "href": "produto-32.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rccw-ltobhzgc83yx8a",
-      "alt": "Chuveiro Acqua Duo Lorenzetti BIVOLT",
-      "name": "Chuveiro Acqua Duo Lorenzetti BIVOLT",
-      "price": "R$ 69,80",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "6978 vendido(s)"
-    },
-    {
       "href": "produto-54.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
       "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Aro 16 (Original) Cinza (PE11X)",
@@ -262,16 +252,6 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "9876 vendido(s)"
-    },
-    {
-      "href": "produto-60.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjev4ty4yzghc1",
-      "alt": "Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,",
-      "name": "Caixa Som Sabala DR-908: A Escolha Definitiva para Quem Busca Potência,",
-      "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "9531 vendido(s)"
     },
     {
       "href": "produto-35.html",
@@ -292,6 +272,26 @@
       "price_original": "R$ 779,90",
       "discount": "76% OFF",
       "sold": "9874 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

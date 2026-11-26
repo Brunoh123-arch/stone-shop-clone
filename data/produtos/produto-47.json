@@ -655,16 +655,6 @@
       "sold": "7643 vendido(s)"
     },
     {
-      "href": "produto-57.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdgxfw79ifo1aa",
-      "alt": "caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E Tws",
-      "name": "caixa de som Joog One Hifi J 200w Com 2 Mic s/fio Controle remoto Ip67 app E Tws",
-      "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "9876 vendido(s)"
-    },
-    {
       "href": "produto-40.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zqs2hxtuki59",
       "alt": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
@@ -683,6 +673,16 @@
       "price_original": "R$ 397,86",
       "discount": "82% OFF",
       "sold": "9052 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

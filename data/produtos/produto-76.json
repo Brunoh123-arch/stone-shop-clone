@@ -235,16 +235,6 @@
   "description_html": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE com 86% OFF. Apenas R$69,90. Frete grátis.",
   "related": [
     {
-      "href": "produto-115.html",
-      "img": "",
-      "alt": "",
-      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "price": "R$ 289,90",
-      "price_original": "R$ 429,00",
-      "discount": "35% OFF",
-      "sold": "668 vendido(s)"
-    },
-    {
       "href": "produto-17.html",
       "img": "",
       "alt": "",
@@ -283,6 +273,16 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "8754 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

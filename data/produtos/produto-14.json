@@ -289,16 +289,6 @@
       "sold": "4520 vendido(s)"
     },
     {
-      "href": "produto-8.html",
-      "img": "../img/produto-8-1.jpg",
-      "alt": "Caixa de Som Amplificada AIWA Party Box AWSPB07 Bluetooth",
-      "name": "Caixa de Som Amplificada AIWA Party Box AWSPB07 Bluetooth",
-      "price": "R$ 149,99",
-      "price_original": "R$ 990,00",
-      "discount": "85% OFF",
-      "sold": "5367 vendido(s)"
-    },
-    {
       "href": "produto-95.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
@@ -327,6 +317,16 @@
       "price_original": "R$ 754,44",
       "discount": "88% OFF",
       "sold": "10241 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {

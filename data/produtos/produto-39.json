@@ -247,16 +247,6 @@
   "description_html": "<b>Secador de Cabelos Philco PSC3500: Potência e Versatilidade para Seus Cabelos<br/></b><br/><b>Transforme sua rotina de beleza</b> com a Secador de Cabelos Philco PSC3500. Com um poderoso motor de <b>1450W</b>, esta secador oferece <b>3 velocidades</b> e <b>3 temperaturas</b>, garantindo uma secagem rápida e eficiente, além de proporcionar resultados dignos de salão. Ideal para todos os tipos de cabelo, ela permite que você ajuste a intensidade do calor e do vento para atender às suas necessidades específicas.<br/><br/><b>Tecnologia e Conforto ao Seu Alcance:</b> A Philco PSC3500 não é apenas potente, mas também foi projetada para proporcionar conforto e praticidade no uso diário. Seu design ergonômico e leve facilita a manobra, enquanto a função de jato de ar frio fixa o penteado e proporciona um acabamento brilhoso. Seja para um look casual ou uma produção mais elaborada, essa secadora é sua aliada perfeita.<br/><br/><b>Durabilidade</b> e <b>estilo</b> construída com materiais de alta qualidade, a Secadora de Cabelo Philco PSC3500 é <b>robusta</b> e <b>durável</b>, garantindo que você desfrute de seus recursos por muito tempo. Com um visual moderno e sofisticado, ela se destaca em qualquer ambiente, tornando-se não apenas uma ferramenta de beleza, mas também um item de decoração.<br/><br/>Não perca tempo! eleve seus cuidados com os cabelos a um novo patamar com a Philco PSC3500!<br/><b><br/></b><p><b>ESPECIFICAÇÕES TÉCNICAS:</b></p><p><br/></p>Velocidades: 3<br/>Controle de temperatura: 3<br/>Emissão de Íons: Íons Tourmaline<br/>Jato de ar frio: Sim<br/>Bocal direcionador de ar: Sim<br/>Dobrável: Sim<br/>Alça para Pendurar: Não<br/>Cabo 360: Sim<br/>Tamanho do fio (cm): 180<br/>Voltagem: 110V ou 220V (não é bivolt)<br/>Consumo (kWh): 0,14 kW/h<br/>Potência (W): 1450W<br/>Peso (kg): 0.88<br/>Referência: PSC3500<br/>Dimensões (AxLxP): 31,5 x 4,5 x 4,5cm<br/>Registro INMETRO: OCP 0040<br/><br/><b>Itens Inclusos:</b><br/><br/>- 1 Secador de Cabelo Philco<br/>- 1 Escova oval<br/>- 1 Escova raquete<br/>- 1 Bocal concentrador<br/>- 2 Cacheadores<br/><br/><b>Garantia Fabricante:</b> 12 meses",
   "related": [
     {
-      "href": "produto-31.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_700421-MLB88866744981_072025-F.webp",
-      "alt": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
-      "name": "Caixa De Som Bluetooth 200w 39000mah Tws Ipx6 Sabala Dr-909 Preto 127/220v",
-      "price": "R$ 69,80",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
-      "sold": "5867 vendido(s)"
-    },
-    {
       "href": "produto-76.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
@@ -265,16 +255,6 @@
       "price_original": "R$ 497,90",
       "discount": "86% OFF",
       "sold": "9843 vendido(s)"
-    },
-    {
-      "href": "produto-4.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_866750-MLU74810519490_032024-F.webp",
-      "alt": "Caixa De Som Boombox 3 Bluetooth Preta Jbl",
-      "name": "Caixa De Som Boombox 3 Bluetooth Preta Jbl",
-      "price": "R$ 149,00",
-      "price_original": "R$ 899,00",
-      "discount": "83% OFF",
-      "sold": "10000 vendido(s)"
     },
     {
       "href": "produto-58.html",
@@ -287,14 +267,34 @@
       "sold": "9876 vendido(s)"
     },
     {
-      "href": "produto-94.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m78dqlbsalos96",
-      "alt": "Bicicleta Bike Ergometrica Spinning Academia Fitness Profissional 120kg",
-      "name": "Bicicleta Bike Ergometrica Spinning Academia Fitness Profissional 120kg",
-      "price": "R$ 606,28",
-      "price_original": "",
-      "discount": "80% OFF",
-      "sold": "0 vendido(s)"
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
+    },
+    {
+      "href": "produto-111.html",
+      "img": "../img/produto-111-oficial-1.jpg?v=3",
+      "alt": "Projetor LED Natalino 16 Desenhos",
+      "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
+      "price": "R$ 49,90",
+      "price_original": "R$ 199,90",
+      "discount": "75% OFF",
+      "sold": "5.1K vendidos"
     }
   ],
   "produto_atual": {

@@ -247,16 +247,6 @@
       "sold": "9853 vendido(s)"
     },
     {
-      "href": "produto-50.html",
-      "img": "",
-      "alt": "",
-      "name": "Lava e Seca Midea Master Clean Smart 11kg Wi-Fi MFM01D110WB-TKBR Titanium",
-      "price": "R$ 247,90",
-      "price_original": "R$ 597,90",
-      "discount": "59% OFF",
-      "sold": "8675 vendido(s)"
-    },
-    {
       "href": "produto-9.html",
       "img": "",
       "alt": "",
@@ -267,14 +257,24 @@
       "sold": "10241 vendido(s)"
     },
     {
-      "href": "produto-84.html",
-      "img": "",
-      "alt": "",
-      "name": "Panificadora 19 Programas Gallant 600w Preta (GPA1E19A_127PT)",
-      "price": "R$ 69,90",
-      "price_original": "R$ 589,90",
-      "discount": "88% OFF",
-      "sold": "200 vendido(s)"
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

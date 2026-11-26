@@ -645,16 +645,6 @@
       "sold": "8391 vendido(s)"
     },
     {
-      "href": "produto-74.html",
-      "img": "https://meu-pedido.sbs/images/f952a003201ab6148b5b728e45a5dd60_1774470498.webp",
-      "alt": "Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026",
-      "name": "Kit compre 1 leve 2 Camisa Seleção Brasil Home Copa 2026",
-      "price": "R$ 129,90",
-      "price_original": "R$ 597,90",
-      "discount": "78% OFF",
-      "sold": "5331 vendido(s)"
-    },
-    {
       "href": "produto-22.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc2cl1xpb0kn0b",
       "alt": "Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway",
@@ -665,16 +655,6 @@
       "sold": "1531 vendido(s)"
     },
     {
-      "href": "produto-82.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-man0mifag5bt63",
-      "alt": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "name": "Lava e Seca 11kg Hisense 11 Programas de Lavagem, Steam, Wi-fi Titanium",
-      "price": "R$ 257,90",
-      "price_original": "R$ 2579,00",
-      "discount": "90% OFF",
-      "sold": "150 vendido(s)"
-    },
-    {
       "href": "produto-5.html",
       "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh9e1c37asxxe2",
       "alt": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
@@ -683,6 +663,26 @@
       "price_original": "R$ 500,00",
       "discount": "75% OFF",
       "sold": "2000 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     }
   ],
   "produto_atual": {

@@ -587,36 +587,6 @@
   "description_html": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar<br/><br/>Procurando por uma solução eficiente, ecológica e prática para nunca mais ficar sem gelo? A Máquina de Gelo Portátil YESOP é o acessório que faltava na sua cozinha, bar ou área gourmet.<br/><br/>Com um design moderno e compacto na cor branca, ela combina com qualquer ambiente e entrega performance profissional com o sistema Turbo Ice, produzindo 9 cubos de gelo a cada 10 minutos!<br/><br/>Destaques que fazem a diferença:<br/><br/>Alta Produtividade: Capacidade de gerar até 12kg de gelo por dia, garantindo bebidas geladas para toda a família ou convidados.<br/><br/>Tecnologia Turbo Ice: Esqueça a espera. Em ciclos rápidos de aproximadamente 10 a 15 minutos, seu gelo já está pronto para uso.<br/><br/>Eco-Friendly: Equipado com compressor de gás ecológico R600a, que não agride a camada de ozônio e é super silencioso.<br/><br/>Inteligência e Praticidade: Painel eletrônico com sensores que avisam quando o reservatório de gelo está cheio ou quando falta água.<br/><br/>Versatilidade Total: Escolha entre dois tamanhos de gelo (Pequeno ou Grande) de acordo com a sua necessidade. Não precisa de instalação hidráulica!<br/><br/>ESPECIFICAÇÕES TÉCNICAS:<br/><br/>Marca: YESOP<br/><br/>Modelo: Azul Tifany, Branco, Preto e Prata Premium<br/><br/>Voltagem: 120V (Ideal para regiões com padrão 110V/127V)<br/><br/>Potência: 120W<br/><br/>Capacidade de Produção: 12kg em 24 horas<br/><br/>Ciclo de Produção: 9 cubos a cada 10-15 minutos<br/><br/>Reservatório de Gelo: Aprox. 0,6kg<br/><br/>Gás Refrigerante: R600a (Ecológico)<br/><br/>Dimensões: 31 x 30 x 24 cm (Compacta e fácil de transportar)<br/><br/>Peso: 6 Kg<br/><br/>FUNCIONALIDADES:<br/><br/>Painel digital intuitivo.<br/><br/>Tampa em acrílico transparente para visualização interna.<br/><br/>Dreno inferior para facilitar a limpeza.<br/><br/>Operação super silenciosa.<br/><br/>ITENS INCLUSOS:<br/><br/>1 Máquina de Gelo YESOP 120V<br/><br/>1 Cesto de gelo removível<br/><br/>1 Pá coletora de gelo<br/><br/>1 Manual de instruções<br/><br/>Garanta já a sua Máquina YESOP e tenha a praticidade de ter gelo fresco sempre à mão!",
   "related": [
     {
-      "href": "produto-4.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_866750-MLU74810519490_032024-F.webp",
-      "alt": "Caixa De Som Boombox 3 Bluetooth Preta Jbl",
-      "name": "Caixa De Som Boombox 3 Bluetooth Preta Jbl",
-      "price": "R$ 149,00",
-      "price_original": "R$ 899,00",
-      "discount": "83% OFF",
-      "sold": "10000 vendido(s)"
-    },
-    {
-      "href": "produto-83.html",
-      "img": "https://down-aka-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfks-m8jodixfs7ht28.16000081744583351.mp4",
-      "alt": "Caixa De Som Joog break X1 Tela 13,1 2 Microfones Cor Preto 110V/220V",
-      "name": "Caixa De Som Joog break X1 Tela 13,1 2 Microfones Cor Preto 110V/220V",
-      "price": "R$ 149,90",
-      "price_original": "R$ 1490,90",
-      "discount": "90% OFF",
-      "sold": "100 vendido(s)"
-    },
-    {
-      "href": "produto-91.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma357gbfhypu7c",
-      "alt": "Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir Pipoca PPI04V Philco",
-      "name": "Pipoqueira Classic Retrô, Misturador Automático, Com Bandeja Para Servir Pipoca PPI04V Philco",
-      "price": "R$ 643,08",
-      "price_original": "",
-      "discount": "80% OFF",
-      "sold": "215 vendido(s)"
-    },
-    {
       "href": "produto-7.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
       "alt": "Caixa de Som AIWA",
@@ -627,14 +597,34 @@
       "sold": "7894 vendido(s)"
     },
     {
-      "href": "produto-88.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-misy16cf0dmr4f",
-      "alt": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social",
-      "name": "Conjunto Feminino de Trabalho em Alfaiataria Laris Blusa com Botões e Calça Social",
-      "price": "R$ 170,05",
-      "price_original": "",
-      "discount": "80% OFF",
-      "sold": "0 vendido(s)"
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
+    },
+    {
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
+    },
+    {
+      "href": "produto-111.html",
+      "img": "../img/produto-111-oficial-1.jpg?v=3",
+      "alt": "Projetor LED Natalino 16 Desenhos",
+      "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
+      "price": "R$ 49,90",
+      "price_original": "R$ 199,90",
+      "discount": "75% OFF",
+      "sold": "5.1K vendidos"
     }
   ],
   "produto_atual": {

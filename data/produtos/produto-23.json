@@ -565,16 +565,6 @@
   "description_html": "DESCRIÇÃO RESUMIDA<br/><br/>Um kit de 24 potes herméticos com tampa transparente é um conjunto versátil de recipientes de armazenamento projetados para manter os alimentos frescos e organizados. Cada pote possui um design hermético que impede a entrada de ar e umidade, garantindo a preservação da qualidade dos alimentos. A tampa transparente permite visualizar facilmente o conteúdo, facilitando a identificação dos itens armazenados.<br/><br/>Características:<br/><br/>- Marca: Croix<br/><br/>Especificações:<br/><br/>- Material Plástico e Acrilico<br/><br/>- Livre de BPA<br/><br/>- Recipiente multiuso<br/><br/>- Ideal para transporte de alimentos<br/><br/>- Reutilizáveis<br/><br/>- Resistentes a manchas e odores<br/><br/>- Design empilhável<br/><br/>- Design transparente<br/><br/>- Dimensões 27x18x25cm (AxLxC)<br/><br/>Garantia:<br/><br/>- 6 Meses<br/><br/>Conteúdo da embalagem:<br/><br/>- 2 x Potes de 1L<br/><br/>- 3 x Potes de 840ml<br/><br/>- 2 x Potes de 700ml<br/><br/>- 2 x Potes de 500ml<br/><br/>- 3 x Potes de 350ml<br/><br/>- 4 x Potes de 320ml<br/><br/>- 8 x Potes de 60ml<br/><br/>Peso<br/><br/>- 1,50Kg<br/><br/>Kit com 5 Audiolivros e Livros Digitais no Ubook GO:<br/><br/>Adquira um kit exclusivo com 5 títulos selecionados, entre audiolivros e livros digitais, para consumir onde e quando quiser através da plataforma Ubook GO. Os conteúdos abrangem diversas categorias e são escolhidos especialmente para proporcionar uma experiência completa de leitura e escuta, com obras narradas por profissionais, autores, atores e dubladores.<br/><br/>Os 5 títulos ficam disponíveis de forma vitalícia na sua conta do Ubook GO, vinculados ao seu CPF. Uma vez ativado o acesso, os conteúdos estarão sempre disponíveis para você, sem prazo de expiração.",
   "related": [
     {
-      "href": "produto-115.html",
-      "img": "../img/forno-hq-slide-1.webp",
-      "alt": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "name": "Forno Elétrico HQ 48 Litros HQ48D 1600W Preto 127V / 220V",
-      "price": "R$ 289,90",
-      "price_original": "R$ 429,00",
-      "discount": "35% OFF",
-      "sold": "668 vendido(s)"
-    },
-    {
       "href": "produto-75.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxr-lyatwes75beuc5",
       "alt": "Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida",
@@ -585,34 +575,34 @@
       "sold": "9843 vendido(s)"
     },
     {
-      "href": "produto-84.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg5ie67i1vk735",
-      "alt": "Panificadora 19 Programas Gallant 600w Preta (GPA1E19A_127PT)",
-      "name": "Panificadora 19 Programas Gallant 600w Preta (GPA1E19A_127PT)",
-      "price": "R$ 69,90",
-      "price_original": "R$ 589,90",
-      "discount": "88% OFF",
-      "sold": "200 vendido(s)"
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     },
     {
-      "href": "produto-8.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m688tqkxlw36d9",
-      "alt": "Caixa de Som Amplificada AIWA Party Box AWS-PB-07 Bluetooth 100W RMS",
-      "name": "Caixa de Som Amplificada AIWA Party Box AWSPB07 Bluetooth",
-      "price": "R$ 149,99",
-      "price_original": "R$ 990,00",
-      "discount": "85% OFF",
-      "sold": "5367 vendido(s)"
+      "href": "produto-104.html",
+      "img": "../img/produto-104-1.jpg",
+      "alt": "Chinelo Feminino Luxo Strass",
+      "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
+      "price": "R$ 19,90",
+      "price_original": "R$ 59,90",
+      "discount": "67% OFF",
+      "sold": "21.3K vendidos"
     },
     {
-      "href": "produto-81.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-820lo-mlgqr9tonx8kc2",
-      "alt": "Caixa de Som WAAW Hyperboom 1000 180W IPX7 TWS Transparente Hermético",
-      "name": "Caixa de Som WAAW Hyperboom 1000 180W IPX7 TWS Transparente Hermético",
-      "price": "R$ 126,90",
-      "price_original": "R$ 1260,90",
-      "discount": "90% OFF",
-      "sold": "500 vendido(s)"
+      "href": "produto-111.html",
+      "img": "../img/produto-111-oficial-1.jpg?v=3",
+      "alt": "Projetor LED Natalino 16 Desenhos",
+      "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
+      "price": "R$ 49,90",
+      "price_original": "R$ 199,90",
+      "discount": "75% OFF",
+      "sold": "5.1K vendidos"
     }
   ],
   "produto_atual": {

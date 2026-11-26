@@ -245,16 +245,6 @@
   "description_html": "!!! ATENÇÃO !!!!!<br/><br/>AO COMPRAR O KIT COMPRE NO MAXIMO 1 KIT (6 CADEIRAS) POR COMPRA COMPRANDO ACIMA DE 1 KITS NAO E POSSIVEL O ENVIO PQ O PACOTE EXCEDE O TAMANHO PERMITIDO PELA TRANSPORTADORA<br/><br/>Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS<br/><br/>Relaxe com o conforto que você merece! Apresentamos a Cadeira Alta Conforto da Mor!<br/><br/>A Cadeira Alta Conforto da Mor foi projetada para proporcionar o máximo de bem-estar em seus momentos de lazer. Com encosto e assento mais largos que as cadeiras convencionais, você sentirá a diferença no conforto e na ergonomia.<br/><br/>Qualidade e durabilidade: Estrutura em alumínio de alta qualidade, tela em polietileno e rebites em aço.<br/><br/>Design ergonômico: Braços plásticos em formato anatômico para maior conforto.<br/><br/>Leveza e praticidade: Fácil de carregar e dobrável, ideal para qualquer ambiente.<br/><br/>Especificações:<br/><br/>Material: Aço<br/><br/>Capacidade: 110 kg<br/><br/>Altura: 85,50 centímetros<br/><br/>Largura: 59,00 centímetros<br/><br/>Comprimento: 58,00 centímetros<br/><br/>Peso: 1,65 kg<br/><br/>Garantia: 90 dias",
   "related": [
     {
-      "href": "produto-87.html",
-      "img": "../img/stone-asset-17-10.jpg",
-      "alt": "Calça Mom Jeans Feminina com Cinto Preto KISSMELADY Cintura Alta Modeladora",
-      "name": "Calça Mom Jeans Feminina com Cinto Preto KISSMELADY Cintura Alta Modeladora",
-      "price": "R$ 77,97",
-      "price_original": "R$ 199,00",
-      "discount": "61% OFF",
-      "sold": "0 vendido(s)"
-    },
-    {
       "href": "produto-40.html",
       "img": "../img/stone-asset-17-11.jpg",
       "alt": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
@@ -293,6 +283,16 @@
       "price_original": "R$ 497,90",
       "discount": "87% OFF",
       "sold": "5462 vendido(s)"
+    },
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável com LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3.8K vendidos"
     }
   ],
   "produto_atual": {
