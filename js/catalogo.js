@@ -1,7 +1,7 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
   {id:134,nome:"Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",preco:39.9,precoOrig:"129,90",desc:69,vendidos:5191,img:"../img/sobrancelha-134-slide-1.webp"},
-  {id:133,nome:"Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração",preco:34.9,precoOrig:"99,90",desc:65,vendidos:6454,img:"../img/pisca-133-slide-1.webp"},
+  {id:133,nome:'Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração',preco:9.69,precoOrig:'39,90',desc:76,vendidos:6454,img:'../img/pisca-133-slide-1.webp'},
   {id:132,nome:"Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste Tecido Respirável",preco:49.9,precoOrig:"179,90",desc:72,vendidos:4617,img:"../img/cinta-132-slide-1.webp"},
   {id:126,nome:"Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",preco:97,precoOrig:"389,90",desc:75,vendidos:3842,img:"../img/patinete-126-slide-1.webp"},
   {id:110,nome:"Tênis Kappa Pulse RX Masculino e Feminino Amortecimento Corrida e Caminhada",preco:69.9,precoOrig:"259,90",desc:73,vendidos:6553,img:"../img/produto-110-1.jpg"},
