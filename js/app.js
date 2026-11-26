@@ -2347,7 +2347,7 @@ function openVariacaoModal(produto, fluxo = 'cart', onConfirm) {
 
       <!-- BANNER OFICIAL TIKTOK SHOP - BLACK FRIDAY -->
       <div class="var-modal-banner-bf" style="padding: 6px 16px 12px 16px; width: 100%; box-sizing: border-box;">
-        <img src="/decalque/banner-modal-bf-v2.png?v=20261126" alt="Black Friday - 12 de nov – 3 de dez" style="width: 100%; aspect-ratio: 415 / 42; height: auto; display: block; border-radius: 10px; object-fit: cover;">
+        <img src="/decalque/banner-modal-bf-v2.png?v=20261126b" alt="Black Friday - 12 de nov – 3 de dez" style="width: 100%; aspect-ratio: 954 / 97; height: auto; display: block; border-radius: 10px; object-fit: cover;">
       </div>
 
       <div class="var-modal-body">
