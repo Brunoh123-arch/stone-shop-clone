@@ -1407,7 +1407,7 @@ function renderRelacionados() {
       preco: pPreco,
       precoOrig: pPrecoOrig,
       is1111: (idx % 3 === 0),
-      badgeTipo: (idx % 4 === 1) ? 'relampago' : 'off_frete',
+      badgeTipo: 'off_frete',
       descOff: (p.desc || 60) + '% OFF',
       rating: (4.7 + ((p.id * 3) % 3) * 0.1).toFixed(1).replace('.', ','),
       vendidos: pVendidos
@@ -2346,8 +2346,8 @@ function openVariacaoModal(produto, fluxo = 'cart', onConfirm) {
       </div>
 
       <!-- BANNER OFICIAL TIKTOK SHOP - BLACK FRIDAY -->
-      <div class="var-modal-banner-bf" style="padding: 4px 16px 10px 16px; width: 100%; box-sizing: border-box;">
-        <img src="${window.location.pathname.includes('/pages/') ? '../decalque/banner-modal-bf-v2.png' : './decalque/banner-modal-bf-v2.png'}" alt="Black Friday - 12 de nov - 3 de dez" style="width: 100%; height: auto; display: block; border-radius: 10px; object-fit: cover;">
+      <div class="var-modal-banner-bf" style="padding: 6px 16px 12px 16px; width: 100%; box-sizing: border-box;">
+        <img src="/decalque/banner-modal-bf-v2.png?v=20261126" alt="Black Friday - 12 de nov – 3 de dez" style="width: 100%; aspect-ratio: 415 / 42; height: auto; display: block; border-radius: 10px; object-fit: cover;">
       </div>
 
       <div class="var-modal-body">
