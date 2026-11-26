@@ -42,18 +42,18 @@
     }
   ],
   "discount_badge": "-83%",
-  "price_int": "137",
-  "price_cents": ",00",
-  "price_original": "R$ 799,00",
-  "installment_text": "3x R$ 45,66",
+  "price_int": "74",
+  "price_cents": ",90",
+  "price_original": "R$ 449,00",
+  "installment_text": "3x R$ 24,97",
   "installment_highlight": "sem juros",
   "coupon_main": "83% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
-  "rating_count": "(37)",
-  "sold_count": "987 vendidos on-line",
+  "rating_count": "(473)",
+  "sold_count": "4987 vendidos on-line",
   "frete_original": "R$ 15,60",
-  "reviews_header": "Avaliações dos clientes (37)",
+  "reviews_header": "Avaliações dos clientes (473)",
   "reviews_avg": "5,0",
   "reviews": [
     {
@@ -518,7 +518,7 @@
   "produto_atual": {
     "id": 19,
     "nome": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
-    "preco": 137,
+    "preco": 74.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4",
     "imagens": [
       "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfkq-m84xvokvhipd9f.16000081743691318.mp4",
@@ -548,8 +548,9 @@
         ]
       }
     },
-    "sales": "987 vendidos on-line",
-    "installmentText": "3x R$ 45,66 sem juros"
+    "sales": "4987 vendidos on-line",
+    "installmentText": "3x R$ 24,97 sem juros",
+    "preco_antigo": 449
   },
   "extra_scripts": [],
   "creator_context": "stitch_19",

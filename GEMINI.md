@@ -108,6 +108,17 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | 130 | Colar Prata 925 c/ rosa giratória + sacola | R$ 74,90 | fila |
 | 131 | Kit 2 jogos de cama casal 400 fios | R$ 69,90 | fila |
 
+### 5.1 FILA URGENTE — COMBOS MODA "LEVE 4" & BOLSA + RELÓGIO (135–140) — Puxar no Profile 42
+
+| ID | Produto / Gatilho | PIX | Links Base (TikTok Shop / Mercado Livre) |
+|:--:|---|:--:|---|
+| **135** | **Combo Bolsa Feminina Luxo Transversal + Relógio Dourado + Carteira + Pulseira (Kit 4 em 1)** | **R$ 64,90** | TT: `https://shop.tiktok.com/br/pdp/1738506652937389299` · `https://shop.tiktok.com/br/pdp/kit-prime-desejado-com-caixa-de-presente-ocasioes-especiais/1733666761179367118` · ML: `MLB50330996` / `MLBU3915875418` |
+| **136** | **Kit Leve 4 Roupas Femininas Verão/Fim de Ano (4 Vestidos Canelados Premium ou 4 Blusas Caneladas)** | **R$ 69,90** | TT: `https://shop.tiktok.com/br/pdp/1735058119636584400` · `https://shop.tiktok.com/br/pdp/1738105625122538960` |
+| **137** | **Kit Leve 4 Conjuntos/Peças Fitness Empina Bumbum Sem Costura Feminino** | **R$ 59,90** | Buscar no Profile 42: `kit 4 conjunto fitness empina bumbum` / `kit 4 short legging seamless` |
+| **138** | **Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 / Oversized Casual** | **R$ 59,90** | TT: `https://shop.tiktok.com/br/pdp/kit-4-camisetas-masculinas-oversized-100-algodao-streetwear/1737238568108722123` · ML: `MLB-4574806641` / `MLBU4163539189` |
+| **139** | **Combo Presente Masculino: Relógio Cronógrafo Aço + Carteira Couro + Cinto + Óculos Polarizado (Caixa)** | **R$ 64,90** | Buscar no Profile 42: `kit relogio masculino carteira cinto oculos presente` |
+| **140** | **Kit Leve 4 Bermudas Masculinas Verão (Elastano / Tactel / Linho Praia & Churrasco)** | **R$ 69,90** | Buscar no Profile 42: `kit 4 bermuda masculina elastano verao` |
+
 ---
 
 ## 6. DÍVIDAS TÉCNICAS CONHECIDAS (não esconda do usuário)

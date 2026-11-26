@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Central de Produtos & Teste de Anúncios — Stone Shop Black Friday</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --card: #141821;
+      --card-hover: #1a202c;
+      --border: #252c3a;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --pink: #fe2c55;
+      --pink-soft: rgba(254, 44, 85, 0.14);
+      --green: #10b981;
+      --green-soft: rgba(16, 185, 129, 0.15);
+      --amber: #f59e0b;
+      --amber-soft: rgba(245, 158, 11, 0.15);
+      --blue: #3b82f6;
+      --blue-soft: rgba(59, 130, 246, 0.15);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding-bottom: 96px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 13, 18, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 18px;
+    }
+    .topbar-inner {
+      max-width: 1420px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-badge {
+      background: linear-gradient(135deg, #fe2c55, #ff6b35);
+      color: #fff;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 5px 9px;
+      border-radius: 7px;
+      letter-spacing: 0.4px;
+    }
+    .brand h1 {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+    .brand p {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: #1c2230;
+      color: var(--text);
+      padding: 8px 13px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn:hover { background: #262e40; border-color: #38435c; }
+    .btn-primary {
+      background: var(--pink);
+      border-color: var(--pink);
+      color: #fff;
+    }
+    .btn-primary:hover { background: #e61e47; border-color: #e61e47; }
+    .btn-green {
+      background: var(--green);
+      border-color: var(--green);
+      color: #052e1c;
+      font-weight: 800;
+    }
+    .container {
+      max-width: 1420px;
+      margin: 0 auto;
+      padding: 16px 18px;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 12px 14px;
+    }
+    .kpi-label { font-size: 11.5px; color: var(--muted); margin-bottom: 4px; }
+    .kpi-val { font-size: 21px; font-weight: 800; }
+    .kpi-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    .controls-panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .search-sort-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .search-input {
+      flex: 1;
+      min-width: 220px;
+      background: #0d1017;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 13px;
+      border-radius: 9px;
+      font-size: 13.5px;
+      outline: none;
+    }
+    .search-input:focus { border-color: var(--pink); }
+    .select-box {
+      background: #0d1017;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      outline: none;
+    }
+    .chips-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: center;
+    }
+    .chips-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 4px;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      background: #0f131c;
+      color: #d1d5db;
+      padding: 6px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .chip:hover { border-color: #4b5563; color: #fff; }
+    .chip.active {
+      background: var(--pink-soft);
+      border-color: var(--pink);
+      color: #ff6b88;
+    }
+    .chip.active-green {
+      background: var(--green-soft);
+      border-color: var(--green);
+      color: #34d399;
+    }
+
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+      gap: 14px;
+    }
+    .p-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 13px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.14s ease, border-color 0.14s ease;
+      position: relative;
+    }
+    .p-card:hover { transform: translateY(-2px); border-color: #3b455e; }
+    .p-card.selected-ad {
+      border-color: var(--green);
+      box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.35), 0 10px 26px rgba(0, 0, 0, 0.45);
+    }
+    .p-media {
+      position: relative;
+      display: flex;
+      gap: 12px;
+      padding: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .p-thumb {
+      width: 92px;
+      height: 92px;
+      border-radius: 9px;
+      object-fit: cover;
+      background: #fff;
+      flex-shrink: 0;
+    }
+    .p-head-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .p-badges-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+    .id-pill {
+      background: #232a3b;
+      color: #e5e7eb;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 5px;
+    }
+    .tier-pill {
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 5px;
+    }
+    .tier-scale { background: var(--green-soft); color: #34d399; border: 1px solid rgba(16,185,129,0.35); }
+    .tier-test { background: var(--blue-soft); color: #60a5fa; border: 1px solid rgba(59,130,246,0.35); }
+    .tier-vitrine { background: var(--amber-soft); color: #fbbf24; border: 1px solid rgba(245,158,11,0.35); }
+
+    .p-title {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.32;
+      color: #f9fafb;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .p-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      margin-top: 6px;
+    }
+    .p-price {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ff476e;
+    }
+    .p-old {
+      font-size: 11.5px;
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+    .p-disc {
+      background: var(--pink-soft);
+      color: #ff6b88;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    .p-body {
+      padding: 10px 12px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      flex: 1;
+      justify-content: space-between;
+    }
+    .persona-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .persona-tag {
+      font-size: 10.5px;
+      background: #1d2331;
+      color: #cbd5e1;
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      background: #0e121a;
+      padding: 7px 8px;
+      border-radius: 8px;
+      font-size: 11px;
+    }
+    .m-cell { display: flex; flex-direction: column; }
+    .m-lbl { color: var(--muted); font-size: 10px; }
+    .m-val { font-weight: 700; color: #e5e7eb; margin-top: 1px; }
+
+    .why-txt {
+      font-size: 11.5px;
+      color: #94a3b8;
+      line-height: 1.35;
+    }
+
+    .card-btns {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 6px;
+      margin-top: 2px;
+    }
+    .btn-select-ad {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #1a2232;
+      color: #e2e8f0;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.14s;
+    }
+    .btn-select-ad:hover { background: #243047; }
+    .btn-select-ad.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: #042f1e;
+    }
+    .btn-icon {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #161c27;
+      color: #d1d5db;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-icon:hover { background: #222b3c; color: #fff; }
+
+    .floating-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      background: rgba(15, 19, 28, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid #2d3748;
+      padding: 12px 18px;
+    }
+    .floating-inner {
+      max-width: 1420px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .sel-summary {
+      font-size: 13.5px;
+      font-weight: 700;
+    }
+    .sel-summary span { color: var(--green); font-size: 16px; font-weight: 800; }
+
+    .toast {
+      position: fixed;
+      bottom: 78px;
+      right: 20px;
+      background: #10b981;
+      color: #042f1e;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 10px 16px;
+      border-radius: 9px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.45);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: all 0.2s ease;
+      z-index: 100;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* Modal Plano de Teste */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.76);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 90;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal-card {
+      background: #141821;
+      border: 1px solid #2d3748;
+      border-radius: 14px;
+      max-width: 780px;
+      width: 100%;
+      max-height: 86vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .modal-hdr {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-body {
+      padding: 16px 18px;
+      overflow-y: auto;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .plan-textarea {
+      width: 100%;
+      min-height: 290px;
+      background: #0b0d12;
+      color: #e5e7eb;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-badge">BLACK FRIDAY LAB</span>
+        <div>
+          <h1>Central de Produtos & Validação de Anúncios</h1>
+          <p>Todos os produtos calibrados em um só lugar · Escolha e exporte sua fila de testes TikTok Ads</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="btn" onclick="applyRecommendedPreset()">⚡ Carregar Top 10 Recomendados</button>
+        <button class="btn" onclick="openExportModal()">📋 Ver / Copiar Plano de Anúncios</button>
+        <a class="btn btn-primary" href="/?preview=1" target="_blank">🛍️ Abrir Vitrine da Loja ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-label">Produtos Ativos na Loja</div>
+        <div class="kpi-val" id="kpi-total">0</div>
+        <div class="kpi-sub">100% preços PIX sincronizados</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Selecionados p/ Teste de Anúncio</div>
+        <div class="kpi-val" style="color:#34d399" id="kpi-selected">0</div>
+        <div class="kpi-sub">Salvos automaticamente neste navegador</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Prontos p/ Escala Imediata</div>
+        <div class="kpi-val" style="color:#ff6b88" id="kpi-scale">0</div>
+        <div class="kpi-sub">Vídeos de criadores + fotos reais</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Ticket Médio dos Selecionados</div>
+        <div class="kpi-val" id="kpi-avg">R$ 0,00</div>
+        <div class="kpi-sub">Sweet spot PIX Black Friday</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Fila p/ Puxar em Casa</div>
+        <div class="kpi-val" style="color:#fbbf24" id="kpi-queue">6 Urgentes</div>
+        <div class="kpi-sub">Combos Roupas Leve 4 &amp; Bolsa+Relógio</div>
+      </div>
+    </div>
+
+    <section class="controls-panel" style="border-color: rgba(245, 158, 11, 0.45); background: linear-gradient(180deg, rgba(245,158,11,0.08), #141821);">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px;">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="background:#f59e0b; color:#111827; font-size:11px; font-weight:900; padding:3px 8px; border-radius:6px;">📥 PUXAR EM CASA (PROFILE 42)</span>
+            <strong style="font-size:15px;">Fila Urgente de Novos Produtos — Combos "Leve 4 Roupas" &amp; "Bolsa + Relógio" (#135 a #140)</strong>
+          </div>
+          <p style="font-size:12px; color:#9ca3af; margin-top:4px;">Links reais do TikTok Shop e Mercado Livre já separados. Ao chegar no PC de casa (Chrome Profile 42 logado), clique em copiar prompt e mande no chat!</p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="btn btn-green" onclick="copyAllQueuePrompt()">📋 Copiar Prompt p/ Cadastrar os Top 3 Agora</button>
+          <button class="btn" onclick="const el=document.getElementById('pull-queue-grid'); el.style.display = el.style.display==='none' ? 'grid' : 'none';">Mostrar / Recolher Fila</button>
+        </div>
+      </div>
+
+      <div id="pull-queue-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(310px, 1fr)); gap:10px; margin-top:4px;">
+        <div style="background:#0d1118; border:1px solid #2d3748; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill" style="background:#f59e0b; color:#111827;">#135 · PRIORIDADE 1</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 64,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 249,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Combo Bolsa Feminina Luxo + Relógio Dourado + Carteira + Pulseira (Kit 4 em 1)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Gatilho: "Compre a Bolsa e LEVE GRÁTIS Relógio + Carteira". Zero erro de numeração, explode hoje, amanhã e no 13º (30/11).</span>
+          <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn-icon" href="https://shop.tiktok.com/br/pdp/1738506652937389299" target="_blank">TikTok Shop 1 ↗</a>
+            <a class="btn-icon" href="https://www.mercadolivre.com.br/kit-bolsa-feminina-relogio-chaveiro-lindos-presente-4-itens-acambamento-dos-ferragens-ouro-cor-preto-correia-de-ombro-preto-desenho-do-tecido-lisa/p/MLB50330996" target="_blank">ML Base ↗</a>
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(135)">📋 Prompt #135</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #2d3748; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill" style="background:#f59e0b; color:#111827;">#136 · PRIORIDADE 1</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 69,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 279,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Kit Leve 4 Roupas Femininas Fim de Ano (4 Vestidos Canelados ou 4 Blusas Caneladas)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Gatilho: "Leve 4 looks pelo valor de 1 (R$ 17,47 cada!)". Look Natal, Réveillon e Verão (P ao GG).</span>
+          <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn-icon" href="https://shop.tiktok.com/br/pdp/1735058119636584400" target="_blank">TT Blusas ↗</a>
+            <a class="btn-icon" href="https://shop.tiktok.com/br/pdp/1738105625122538960" target="_blank">TT Vestidos ↗</a>
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(136)">📋 Prompt #136</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #2d3748; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill" style="background:#f59e0b; color:#111827;">#138 · PRIORIDADE 1</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 59,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 239,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Kit Leve 4 Camisetas Masculinas 100% Algodão 30.1 / Oversized Casual</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Gatilho: "Sai R$ 14,97 cada camiseta!". Homem e esposa comprando pro marido usar no Natal/Ano Novo.</span>
+          <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:4px;">
+            <a class="btn-icon" href="https://shop.tiktok.com/br/pdp/kit-4-camisetas-masculinas-oversized-100-algodao-streetwear/1737238568108722123" target="_blank">TikTok Shop ↗</a>
+            <a class="btn-icon" href="https://produto.mercadolivre.com.br/MLB-4574806641-kit-4-camisas-camisetas-basicas-100-algodo-301-premium-_JM" target="_blank">ML Base ↗</a>
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(138)">📋 Prompt #138</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#139 · MASCULINO PRESENTE</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 64,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 259,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Combo Masculino: Relógio Cronógrafo Aço + Carteira Couro + Cinto + Óculos (Caixa)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Espelho masculino do Bolsa+Relógio: presente #1 p/ marido/pai/namorado no 13º (30/11).</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(139)">📋 Prompt #139</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#137 · FITNESS LEVE 4</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 59,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 219,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Kit Leve 4 Conjuntos/Shorts Fitness Empina Bumbum Sem Costura</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Vídeos de provador com maior CTR feminino no TikTok + projeto verão dezembro.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(137)">📋 Prompt #137</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#140 · VERÃO MASCULINO</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 69,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 269,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Kit Leve 4 Bermudas Masculinas Verão (Elastano / Tactel Praia &amp; Churrasco)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Combo pronto p/ viagem, praia e Natal — vende pra Pai, Adulto e Adolescente.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(140)">📋 Prompt #140</button>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="search-sort-row">
+        <input id="q-input" class="search-input" type="search" placeholder="🔎 Buscar por nome, #ID (ex: 126, 108, patinete, escova, air fryer, pneu)..." oninput="renderGrid()" />
+        <select id="sort-select" class="select-box" onchange="renderGrid()">
+          <option value="ad_score">Ordenar: Maior Potencial de Venda na Black</option>
+          <option value="creators">Ordenar: Mais Vídeos de Criadores</option>
+          <option value="price_asc">Ordenar: Menor Preço PIX</option>
+          <option value="price_desc">Ordenar: Maior Ticket PIX</option>
+          <option value="sold_desc">Ordenar: Mais Vendidos</option>
+          <option value="id_desc">Ordenar: Cadastros Mais Novos (#ID)</option>
+        </select>
+      </div>
+
+      <div class="chips-group" id="persona-chips">
+        <span class="chips-title">Visão Comprador:</span>
+        <button class="chip active" data-persona="all" onclick="setPersona('all', this)">Todos (70)</button>
+        <button class="chip" data-persona="mae" onclick="setPersona('mae', this)">👩 Se eu fosse MÃE</button>
+        <button class="chip" data-persona="pai" onclick="setPersona('pai', this)">👨 Se eu fosse PAI</button>
+        <button class="chip" data-persona="adulto" onclick="setPersona('adulto', this)">🧑 ADULTO (Casa / Uso Próprio)</button>
+        <button class="chip" data-persona="teen" onclick="setPersona('teen', this)">🎮 ADOLESCENTE / JOVEM</button>
+      </div>
+
+      <div class="chips-group" id="moment-chips">
+        <span class="chips-title">Janela & Filtro:</span>
+        <button class="chip active" data-moment="all" onclick="setMoment('all', this)">Todas as Datas</button>
+        <button class="chip" data-moment="hoje" onclick="setMoment('hoje', this)">🔥 Vende Hoje (26/11 Impulso)</button>
+        <button class="chip" data-moment="amanha" onclick="setMoment('amanha', this)">💣 Black Friday (27/11)</button>
+        <button class="chip" data-moment="dia30" onclick="setMoment('dia30', this)">💰 13º Salário & Natal (30/11)</button>
+        <button class="chip" data-moment="scale" onclick="setMoment('scale', this)">🏆 Só Campeões p/ Ads Direto</button>
+        <button class="chip" data-moment="selected" onclick="setMoment('selected', this)">✅ Só Meus Selecionados</button>
+      </div>
+    </section>
+
+    <div id="prod-grid" class="prod-grid"></div>
+  </main>
+
+  <div class="floating-bar">
+    <div class="floating-inner">
+      <div class="sel-summary">
+        Fila de Validação TikTok Ads: <span id="bar-count">0</span> produto(s) marcado(s)
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn" onclick="clearSelection()">Limpar Seleção</button>
+        <button class="btn" onclick="setMoment('selected', document.querySelector('[data-moment=selected]'))">Ver Selecionados</button>
+        <button class="btn btn-green" onclick="openExportModal()">🚀 Gerar Links & Plano de Teste Ads</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="export-modal" class="modal-backdrop" onclick="if(event.target===this)closeExportModal()">
+    <div class="modal-card">
+      <div class="modal-hdr">
+        <strong>🚀 Fila Selecionada para Validação de Anúncios (TikTok Ads)</strong>
+        <button class="btn" onclick="closeExportModal()">Fechar ✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="color:#9ca3af;">Links já configurados com parâmetros de campanha (<code>?utm_source=tiktok&amp;utm_medium=cpc&amp;tt_medium=paid</code>) para passar direto no Cloaker em celulares reais:</p>
+        <textarea id="plan-output" class="plan-textarea" readonly></textarea>
+        <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:12px;">
+          <button class="btn btn-green" onclick="copyPlanText()">📋 Copiar Tudo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Copiado!</div>
+
+  <script src="/js/catalogo.js?v=20261126_lab"></script>
+  <script>
+    const STORAGE_KEY = 'stone_ads_test_selection_v1';
+    const DEFAULT_TOP_ADS = [126, 108, 104, 109, 134, 133, 132, 105, 41, 47];
+
+    // Inteligência comercial por produto (Personas + Janela de Pico + Tier de Tráfego Pago)
+    const INTEL = {
+      126: { tier: 'scale', score: 100, personas: ['mae','pai'], moments: ['amanha','dia30'], why: 'Campeão #1 presente de Natal c/ 13º: 8 vídeos reais 3 rodas + 26 reviews/9 unboxings.' },
+      108: { tier: 'scale', score: 99, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Desejo feminino #1 na Black: R$ 49,90 (-88%) + 31 vídeos de criadores prontos.' },
+      104: { tier: 'scale', score: 98, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Menor barreira PIX da loja (R$ 19,90) + 32 vídeos + 15 fotos reais. Escala fácil.' },
+      109: { tier: 'scale', score: 96, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Criativo hipnótico em 3s, R$ 39,90 (-89%) e 31 vídeos de criadores.' },
+      134: { tier: 'scale', score: 95, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Impulso imediato sub-R$ 40, zero objeção de tamanho/voltagem, página blindada.' },
+      133: { tier: 'scale', score: 94, personas: ['mae','adulto'], moments: ['hoje','dia30'], why: 'Virada de 1º/dez + 13º: todo lar compra 2 a 4 unidades p/ árvore e varanda.' },
+      132: { tier: 'scale', score: 93, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Alta dor emocional p/ festas de fim de ano + página nova 100% calibrada.' },
+      105: { tier: 'scale', score: 92, personas: ['pai','adulto','teen'], moments: ['hoje','amanha','dia30'], why: 'Eletrônico mais viral do TikTok Brasil por R$ 39,90 (-90%).' },
+      41:  { tier: 'scale', score: 91, personas: ['mae','pai','adulto'], moments: ['amanha','dia30'], why: 'Air Fryer Oven 12L é Top 1 de busca na sexta de Black Friday.' },
+      46:  { tier: 'scale', score: 90, personas: ['mae','adulto'], moments: ['amanha','dia30'], why: 'Panela Elétrica 6L Rita Lobo a R$ 69,90: altíssimo desejo para ceia/cozinha.' },
+      47:  { tier: 'scale', score: 89, personas: ['mae','pai','adulto'], moments: ['amanha','dia30'], why: 'Vídeos satisfatórios de limpeza de sofá/carro convertem muito no TikTok.' },
+      106: { tier: 'scale', score: 88, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Ticket R$ 29,90 + 10 fotos reais de clientes. Conversão rápida no PIX.' },
+      107: { tier: 'test',  score: 86, personas: ['pai','adulto'], moments: ['hoje','amanha'], why: 'Achadinho masculino/carro R$ 34,90 sem atrito.' },
+      101: { tier: 'vitrine', score: 87, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Rei de ticket múltiplo (2 a 4 pneus) p/ viagem de fim de ano.' },
+      111: { tier: 'test',  score: 85, personas: ['mae','pai','adulto'], moments: ['dia30'], why: 'Decoração instantânea de fachada pro Natal com 13º na mão.' },
+      112: { tier: 'test',  score: 84, personas: ['mae','pai'], moments: ['hoje','dia30'], why: 'Brinquedo hipnótico barato (R$ 44,90) p/ crianças pequenas.' },
+      19:  { tier: 'test',  score: 84, personas: ['mae','pai','teen'], moments: ['amanha','dia30'], why: 'Febre Stitch recalibrado p/ R$ 74,90: sonho de Natal infantil/teen.' },
+      85:  { tier: 'test',  score: 83, personas: ['pai','adulto','teen'], moments: ['amanha','dia30'], why: 'Karaokê c/ tela e 2 microfones p/ festas de Natal e Réveillon.' },
+      95:  { tier: 'test',  score: 82, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Máquina de gelo turbo p/ calor e churrasco de dezembro (R$ 48,05).' },
+      123: { tier: 'test',  score: 82, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Recalibrada p/ R$ 79,90! Vídeo demonstrativo forte p/ lavar carro/quintal.' },
+      122: { tier: 'test',  score: 81, personas: ['mae','adulto'], moments: ['amanha'], why: 'Corrigida de R$ 289 p/ R$ 79,90! Painel touch inox desejado.' },
+      124: { tier: 'test',  score: 80, personas: ['mae','pai'], moments: ['hoje','dia30'], why: 'Recalibrado p/ R$ 49,90! Presente educativo bilíngue acessível.' },
+      38:  { tier: 'test',  score: 80, personas: ['mae','adulto','teen'], moments: ['amanha','dia30'], why: 'Perfume árabe Yara é febre feminina e presente certeiro no 13º.' },
+      110: { tier: 'test',  score: 79, personas: ['pai','adulto','teen'], moments: ['amanha','dia30'], why: 'Tênis versátil p/ presente e uso no fim de ano.' },
+      114: { tier: 'test',  score: 79, personas: ['pai','teen'], moments: ['amanha','dia30'], why: 'Nostalgia + gamer: Controle Arcade 7 em 1 p/ pais e adolescentes.' },
+      63:  { tier: 'test',  score: 78, personas: ['adulto','teen'], moments: ['amanha','dia30'], why: 'Smartwatch GPS desejado por jovens e adultos.' },
+      64:  { tier: 'test',  score: 77, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Item essencial de porta-malas p/ viagem de férias.' }
+    };
+
+    let allProducts = [];
+    let currentPersona = 'all';
+    let currentMoment = 'all';
+    let selectedIds = new Set();
+
+    function loadSelection() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          selectedIds = new Set(JSON.parse(raw).map(Number));
+        } else {
+          selectedIds = new Set(DEFAULT_TOP_ADS);
+          saveSelection();
+        }
+      } catch (e) {
+        selectedIds = new Set(DEFAULT_TOP_ADS);
+      }
+    }
+
+    function saveSelection() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(selectedIds)));
+      } catch (e) {}
+      updateKPIs();
+    }
+
+    function inferMeta(p) {
+      const id = Number(p.id);
+      if (INTEL[id]) return INTEL[id];
+      const t = (p.title || p.nome || '').toLowerCase();
+      const personas = [];
+      const moments = ['amanha'];
+      if (/infantil|bebê|bebe|fralda|triciclo|patinete|bicicleta aro 20|stitch|livro|patinho/.test(t)) personas.push('mae', 'pai');
+      if (/panela|jantar|fritadeira|air fryer|lava lou|micro-ondas|purificador|potes|copos|travesseiro|sofá|sofa/.test(t)) personas.push('mae', 'adulto');
+      if (/churrasqueira|pneu|bateria|lavadora|piscina|cadeira|praia|bola|colchão|gelo|ar condicionado/.test(t)) { personas.push('pai', 'adulto'); moments.push('dia30'); }
+      if (/switch|arcade|smartwatch|pad 11|celular|xiaomi|iphone|caixa de som|jbl|aiwa|echo|karaok/.test(t)) { personas.push('teen', 'adulto'); moments.push('dia30'); }
+      if (/escova|secador|prancha|vestido|cinta|body|perfume|chinelo|sobrancelha/.test(t)) { personas.push('mae', 'adulto', 'teen'); moments.push('hoje'); }
+      if (personas.length === 0) personas.push('adulto');
+
+      const isBrandSensitive = /iphone|xiaomi|jbl|starlink|switch|echo dot|pirelli/.test(t);
+      const tier = isBrandSensitive ? 'vitrine' : (Number(p.preco) <= 79.9 ? 'test' : 'vitrine');
+      const score = isBrandSensitive ? 74 : Math.max(60, Math.round(85 - Number(p.preco) * 0.15));
+      const why = isBrandSensitive
+        ? 'Forte p/ converter tráfego interno na vitrine (evitar criativo direto por marca sensível).'
+        : 'Preço calibrado no sweet spot PIX de Black Friday.';
+      return { tier, score, personas: Array.from(new Set(personas)), moments: Array.from(new Set(moments)), why };
+    }
+
+    async function init() {
+      loadSelection();
+      let adminMap = {};
+      try {
+        const res = await fetch('/data/admin-catalogo-360.json?t=' + Date.now());
+        if (res.ok) {
+          const data = await res.json();
+          (data.products || []).forEach(item => { adminMap[Number(item.id)] = item; });
+        }
+      } catch (e) {}
+
+      const baseList = (typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS : []);
+      allProducts = baseList.map(c => {
+        const id = Number(c.id);
+        const adm = adminMap[id] || {};
+        const meta = inferMeta(c);
+        const imgRaw = c.img || adm.img || '';
+        const img = imgRaw.startsWith('http') ? imgRaw : '/' + imgRaw.replace(/^(\.\.\/|\/)+/, '');
+        return {
+          id,
+          nome: c.nome || adm.title || ('Produto ' + id),
+          preco: Number(c.preco || adm.preco || 0),
+          precoOrig: c.precoOrig || adm.price_original_str || '',
+          desc: Number(c.desc || String(adm.discount_badge || '').replace(/\D/g, '') || 70),
+          vendidos: Number(c.vendidos || String(adm.sold_count || '').replace(/\D/g, '') || 0),
+          creators: Number(adm.creators_count || 0),
+          reviews: Number(adm.reviews_count || 15),
+          photos: Number(adm.reviews_photos_count || 0),
+          health: Number(adm.health_score || 75),
+          img,
+          ...meta
+        };
+      });
+
+      updateKPIs();
+      renderGrid();
+    }
+
+    function updateKPIs() {
+      document.getElementById('kpi-total').textContent = allProducts.length;
+      document.getElementById('kpi-selected').textContent = selectedIds.size;
+      document.getElementById('bar-count').textContent = selectedIds.size;
+      const scaleCount = allProducts.filter(p => p.tier === 'scale').length;
+      document.getElementById('kpi-scale').textContent = scaleCount;
+
+      const selItems = allProducts.filter(p => selectedIds.has(p.id));
+      const avg = selItems.length
+        ? selItems.reduce((a, b) => a + b.preco, 0) / selItems.length
+        : 0;
+      document.getElementById('kpi-avg').textContent = 'R$ ' + avg.toFixed(2).replace('.', ',');
+    }
+
+    function setPersona(p, btn) {
+      currentPersona = p;
+      document.querySelectorAll('#persona-chips .chip').forEach(c => c.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderGrid();
+    }
+
+    function setMoment(m, btn) {
+      currentMoment = m;
+      document.querySelectorAll('#moment-chips .chip').forEach(c => c.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderGrid();
+    }
+
+    function toggleSelect(id) {
+      id = Number(id);
+      if (selectedIds.has(id)) selectedIds.delete(id);
+      else selectedIds.add(id);
+      saveSelection();
+      renderGrid();
+    }
+
+    function applyRecommendedPreset() {
+      selectedIds = new Set(DEFAULT_TOP_ADS);
+      saveSelection();
+      renderGrid();
+      showToast('Top 10 campeões de validação carregados!');
+    }
+
+    function clearSelection() {
+      selectedIds.clear();
+      saveSelection();
+      renderGrid();
+    }
+
+    function getAdUrl(id) {
+      const origin = window.location.origin.includes('localhost')
+        ? 'https://stone-shop-clone.vercel.app'
+        : window.location.origin;
+      return `${origin}/produto-${id}?utm_source=tiktok&utm_medium=cpc&tt_medium=paid`;
+    }
+
+    function copyAdLink(id) {
+      const url = getAdUrl(id);
+      navigator.clipboard.writeText(url);
+      showToast(`Link Ads #${id} copiado!`);
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+    }
+
+    function personaLabel(k) {
+      return { mae: '👩 Mãe', pai: '👨 Pai', adulto: '🧑 Adulto', teen: '🎮 Jovem/Teen' }[k] || k;
+    }
+
+    function tierBadge(tier) {
+      if (tier === 'scale') return '<span class="tier-pill tier-scale">🏆 ESCALAR ADS</span>';
+      if (tier === 'test') return '<span class="tier-pill tier-test">⚡ TESTAR ADS</span>';
+      return '<span class="tier-pill tier-vitrine">🛒 VITRINE / CROSS</span>';
+    }
+
+    function renderGrid() {
+      const q = (document.getElementById('q-input').value || '').trim().toLowerCase();
+      const sortBy = document.getElementById('sort-select').value;
+
+      let list = allProducts.filter(p => {
+        if (currentPersona !== 'all' && !p.personas.includes(currentPersona)) return false;
+        if (currentMoment === 'selected' && !selectedIds.has(p.id)) return false;
+        if (currentMoment === 'scale' && p.tier !== 'scale') return false;
+        if (['hoje', 'amanha', 'dia30'].includes(currentMoment) && !p.moments.includes(currentMoment)) return false;
+        if (q) {
+          const hay = (`#${p.id} ${p.id} ${p.nome} ${p.why}`).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      list.sort((a, b) => {
+        if (sortBy === 'creators') return b.creators - a.creators || b.score - a.score;
+        if (sortBy === 'price_asc') return a.preco - b.preco;
+        if (sortBy === 'price_desc') return b.preco - a.preco;
+        if (sortBy === 'sold_desc') return b.vendidos - a.vendidos;
+        if (sortBy === 'id_desc') return b.id - a.id;
+        return b.score - a.score || b.creators - a.creators;
+      });
+
+      const grid = document.getElementById('prod-grid');
+      if (!list.length) {
+        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:48px;color:#9ca3af;background:#141821;border-radius:12px;border:1px solid #252c3a;">Nenhum produto neste filtro. Clique em "Todos" para ver o catálogo completo.</div>';
+        return;
+      }
+
+      grid.innerHTML = list.map(p => {
+        const isSel = selectedIds.has(p.id);
+        const origFormatted = String(p.precoOrig).startsWith('R$') ? p.precoOrig : ('R$ ' + p.precoOrig);
+        return `
+          <article class="p-card ${isSel ? 'selected-ad' : ''}">
+            <div class="p-media">
+              <img class="p-thumb" src="${p.img}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.opacity=0.2" />
+              <div class="p-head-info">
+                <div>
+                  <div class="p-badges-top">
+                    <span class="id-pill">#${p.id}</span>
+                    ${tierBadge(p.tier)}
+                  </div>
+                  <h3 class="p-title" title="${p.nome.replace(/"/g, '&quot;')}">${p.nome}</h3>
+                </div>
+                <div class="p-price-row">
+                  <span class="p-price">R$ ${p.preco.toFixed(2).replace('.', ',')}</span>
+                  <span class="p-old">${origFormatted}</span>
+                  <span class="p-disc">-${p.desc}%</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-body">
+              <div class="persona-row">
+                ${p.personas.map(k => `<span class="persona-tag">${personaLabel(k)}</span>`).join('')}
+              </div>
+              <div class="metrics-row">
+                <div class="m-cell">
+                  <span class="m-lbl">Criadores</span>
+                  <span class="m-val">${p.creators} vídeo(s)</span>
+                </div>
+                <div class="m-cell">
+                  <span class="m-lbl">Prova Social</span>
+                  <span class="m-val">${p.reviews} rev (${p.photos} fotos)</span>
+                </div>
+                <div class="m-cell">
+                  <span class="m-lbl">Vendidos</span>
+                  <span class="m-val">${p.vendidos.toLocaleString('pt-BR')}</span>
+                </div>
+              </div>
+              <p class="why-txt">${p.why}</p>
+              <div class="card-btns">
+                <button class="btn-select-ad ${isSel ? 'active' : ''}" onclick="toggleSelect(${p.id})">
+                  ${isSel ? '✓ Na Fila de Teste Ads' : '+ Escolher p/ Anúncio'}
+                </button>
+                <a class="btn-icon" href="/produto-${p.id}?preview=1" target="_blank" title="Abrir página do produto">Ver ↗</a>
+                <button class="btn-icon" onclick="copyAdLink(${p.id})" title="Copiar URL pronta p/ TikTok Ads">Link 📋</button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function openExportModal() {
+      const sel = allProducts.filter(p => selectedIds.has(p.id)).sort((a, b) => b.score - a.score);
+      const lines = [
+        `=== FILA DE TESTE E VALIDAÇÃO TIKTOK ADS (${sel.length} PRODUTOS) ===`,
+        `Datas-alvo: Hoje 26/11 (Impulso) · Amanhã 27/11 (Black Friday) · 30/11 (1ª Parcela 13º & Natal)`,
+        `Estrutura sugerida CBO/ABO teste rápido: 1 Campanha -> 3 Conjuntos Abertos (18-55+) -> R$ 30 a R$ 50/conjunto`,
+        ``
+      ];
+      sel.forEach((p, idx) => {
+        lines.push(`${idx + 1}. [#${p.id}] ${p.nome}`);
+        lines.push(`   Preço PIX: R$ ${p.preco.toFixed(2).replace('.', ',')} (-${p.desc}%) | Público: ${p.personas.map(personaLabel).join(', ')}`);
+        lines.push(`   Criadores na página: ${p.creators} vídeos | Motivo: ${p.why}`);
+        lines.push(`   URL Anúncio: ${getAdUrl(p.id)}`);
+        lines.push(``);
+      });
+      if (!sel.length) {
+        lines.push('Nenhum produto marcado ainda. Feche este modal e clique em "+ Escolher p/ Anúncio" nos cards desejados.');
+      }
+      document.getElementById('plan-output').value = lines.join('\n');
+      document.getElementById('export-modal').classList.add('open');
+    }
+
+    function closeExportModal() {
+      document.getElementById('export-modal').classList.remove('open');
+    }
+
+    function copyPlanText() {
+      const el = document.getElementById('plan-output');
+      el.select();
+      navigator.clipboard.writeText(el.value);
+      showToast('Plano completo copiado!');
+    }
+
+    const QUEUE_PROMPTS = {
+      135: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-135: Combo Bolsa Feminina Luxo Transversal + Relógio Dourado + Carteira + Pulseira (Kit 4 em 1) por R$ 64,90 (de R$ 249,90). Links base: https://shop.tiktok.com/br/pdp/1738506652937389299 e https://www.mercadolivre.com.br/kit-bolsa-feminina-relogio-chaveiro-lindos-presente-4-itens-acambamento-dos-ferragens-ouro-cor-preto-correia-de-ombro-preto-desenho-do-tecido-lisa/p/MLB50330996',
+      136: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-136: Kit Leve 4 Roupas Femininas Fim de Ano (4 Vestidos Canelados Premium ou 4 Blusas Caneladas) por R$ 69,90 (de R$ 279,90). Links base: https://shop.tiktok.com/br/pdp/1735058119636584400 e https://shop.tiktok.com/br/pdp/1738105625122538960',
+      137: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-137: Kit Leve 4 Conjuntos/Shorts Fitness Empina Bumbum Sem Costura Feminino por R$ 59,90 (de R$ 219,90).',
+      138: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-138: Kit Leve 4 Camisetas Masculinas 100% Algodão 30.1 / Oversized Casual por R$ 59,90 (de R$ 239,90). Links base: https://shop.tiktok.com/br/pdp/kit-4-camisetas-masculinas-oversized-100-algodao-streetwear/1737238568108722123 e https://produto.mercadolivre.com.br/MLB-4574806641-kit-4-camisas-camisetas-basicas-100-algodo-301-premium-_JM',
+      139: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-139: Combo Presente Masculino Relógio Cronógrafo Aço + Carteira Couro + Cinto + Óculos Polarizado (Caixa Presente) por R$ 64,90 (de R$ 259,90).',
+      140: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-140: Kit Leve 4 Bermudas Masculinas Verão (Elastano / Tactel Praia e Churrasco) por R$ 69,90 (de R$ 269,90).'
+    };
+
+    function copySingleQueuePrompt(id) {
+      const txt = `Dê git pull origin main, leia GEMINI.md inteiro e execute:\n${QUEUE_PROMPTS[id]}`;
+      navigator.clipboard.writeText(txt);
+      showToast(`Prompt do #${id} copiado p/ colar no PC de casa!`);
+    }
+
+    function copyAllQueuePrompt() {
+      const txt = [
+        'Dê git pull origin main, leia GEMINI.md inteiro (seção 5.1) e cadastre 100% blindados no Profile 42 (zero áudio, inspecionando todas as imagens com read_file e validando com validar-modelo-unico.js) os Top 3 urgentes:',
+        '1) ' + QUEUE_PROMPTS[135],
+        '2) ' + QUEUE_PROMPTS[136],
+        '3) ' + QUEUE_PROMPTS[138]
+      ].join('\n\n');
+      navigator.clipboard.writeText(txt);
+      showToast('Prompt completo dos Top 3 copiado!');
+    }
+
+    init();
+  </script>
+</body>
+</html>

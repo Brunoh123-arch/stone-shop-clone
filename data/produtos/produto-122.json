@@ -30,8 +30,8 @@
   "coupon_main": "Desconto de R$ 310",
   "coupon_bonus": "Economize 52% com bônus",
   "rating_score": "4.9",
-  "rating_count": "(148)",
-  "sold_count": "2442 vendidos on-line",
+  "rating_count": "(740)",
+  "sold_count": "4842 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (740)",
   "reviews_avg": "4,9",
@@ -286,10 +286,10 @@
     "id": 122,
     "nome": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
     "name": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
-    "preco": 289,
-    "price": 289,
-    "preco_antigo": 599,
-    "precoOrig": 599,
+    "preco": 79.9,
+    "price": "R$ 79,90",
+    "preco_antigo": 389,
+    "precoOrig": "R$ 389,00",
     "originalPrice": 599,
     "cupomPreco": 289,
     "couponPrice": 289,
@@ -312,13 +312,13 @@
         "opcoes": [
           {
             "nome": "110V (127V)",
-            "preco": 289,
-            "preco_antigo": 599
+            "preco": 79.9,
+            "preco_antigo": 389
           },
           {
             "nome": "220V",
-            "preco": 289,
-            "preco_antigo": 599
+            "preco": 79.9,
+            "preco_antigo": 389
           }
         ]
       }
@@ -326,7 +326,7 @@
     "shipping": "Frete grátis",
     "store": "Stone Shop",
     "rating": 4.9,
-    "sales": "2442 vendidos on-line"
+    "sales": "4842 vendidos on-line"
   },
   "extra_scripts": [],
   "creator_context": "panela122",

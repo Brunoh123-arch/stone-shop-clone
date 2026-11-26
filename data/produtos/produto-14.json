@@ -25,16 +25,16 @@
       "alt": "Churrasqueira Elétrica Arke Vitta Smart 5 Espetos - Slide 5"
     }
   ],
-  "discount_badge": "-76%",
-  "price_int": "189",
+  "discount_badge": "-85%",
+  "price_int": "89",
   "price_cents": ",90",
-  "price_original": "R$ 779,90",
-  "installment_text": "3x R$ 63,30",
+  "price_original": "R$ 599,90",
+  "installment_text": "3x R$ 29,97",
   "installment_highlight": "sem juros",
   "coupon_main": "76% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
-  "rating_count": "(49)",
+  "rating_count": "(842)",
   "sold_count": "9874 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (842)",
@@ -332,7 +332,7 @@
   "produto_atual": {
     "id": 14,
     "nome": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
-    "preco": 189.9,
+    "preco": 89.9,
     "img": "../img/produto-14-1.jpg",
     "imagens": [
       "https://files.catbox.moe/ibv6vn.mp4",
@@ -358,7 +358,8 @@
       }
     },
     "sales": "9874 vendidos on-line",
-    "installmentText": "3x R$ 63,30 sem juros"
+    "installmentText": "3x R$ 29,97 sem juros",
+    "preco_antigo": 599.9
   },
   "extra_scripts": [],
   "creator_context": "churrasqueira_14",

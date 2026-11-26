@@ -41,17 +41,17 @@
       "alt": "Triciclo Infantil 4 em 1 Multifuncional - Slide 9"
     }
   ],
-  "discount_badge": "-73%",
-  "price_int": "159",
+  "discount_badge": "-79%",
+  "price_int": "84",
   "price_cents": ",90",
-  "price_original": "R$ 599,00",
-  "installment_text": "3x R$ 53,30",
+  "price_original": "R$ 399,00",
+  "installment_text": "3x R$ 28,30",
   "installment_highlight": "sem juros",
   "coupon_main": "73% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(52)",
-  "sold_count": "897 vendidos on-line",
+  "sold_count": "4897 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (52)",
   "reviews_avg": "5,0",
@@ -668,8 +668,8 @@
   "produto_atual": {
     "id": 24,
     "nome": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
-    "preco": 159.9,
-    "preco_antigo": 599,
+    "preco": 84.9,
+    "preco_antigo": 399,
     "img": "../img/produto-24-slide-1.webp",
     "imagens": [
       "../img/produto-24-slide-1.webp",
@@ -690,26 +690,26 @@
           {
             "nome": "Cinza Grafite",
             "imagem": "../img/triciclo-kababy-cinza.webp",
-            "preco": 159.9,
-            "preco_antigo": 599
+            "preco": 84.9,
+            "preco_antigo": 399
           },
           {
             "nome": "Preto Ônix",
             "imagem": "../img/triciclo-kababy-preto.webp",
-            "preco": 159.9,
-            "preco_antigo": 599
+            "preco": 84.9,
+            "preco_antigo": 399
           },
           {
             "nome": "Rosa Bebê",
             "imagem": "../img/triciclo-kababy-rosa.webp",
-            "preco": 159.9,
-            "preco_antigo": 599
+            "preco": 84.9,
+            "preco_antigo": 399
           }
         ]
       }
     },
-    "sales": "897 vendidos on-line",
-    "installmentText": "3x R$ 53,30 sem juros"
+    "sales": "4897 vendidos on-line",
+    "installmentText": "3x R$ 28,30 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "kababy_24",

@@ -7,6 +7,8 @@
     { "source": "/time-machine", "destination": "/versoes.html" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/painel", "destination": "/admin.html" },
+    { "source": "/catalogo-ads", "destination": "/catalogo-ads.html" },
+    { "source": "/todos-produtos", "destination": "/catalogo-ads.html" },
     { "source": "/loja", "destination": "/" },
     { "source": "/resumo", "destination": "/pages/resumo" },
     { "source": "/checkout", "destination": "/pages/resumo" },

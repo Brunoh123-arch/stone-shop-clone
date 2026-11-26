@@ -21,19 +21,19 @@
       "alt": "Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta - 4"
     }
   ],
-  "discount_badge": "-73%",
+  "discount_badge": "-80%",
   "price_int": "79",
   "price_cents": ",90",
-  "price_original": "R$ 299,90",
+  "price_original": "R$ 399,00",
   "installment_text": "3x R$ 26,63",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 302",
   "coupon_bonus": "Economize 60% com bônus",
   "rating_score": "4.9",
-  "rating_count": "(148)",
+  "rating_count": "(1120)",
   "sold_count": "5506 vendidos on-line",
   "frete_original": "R$ 15,60",
-  "reviews_header": "Avaliações dos clientes (1.120)",
+  "reviews_header": "Avaliações dos clientes (1120)",
   "reviews_avg": "4,9",
   "reviews": [
     {
@@ -284,10 +284,10 @@
     "id": 123,
     "nome": "Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta, 2 Baterias e Canhão de Espuma",
     "name": "Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta, 2 Baterias e Canhão de Espuma",
-    "preco": 197,
-    "price": 197,
-    "preco_antigo": 499,
-    "precoOrig": 499,
+    "preco": 79.9,
+    "price": "R$ 79,90",
+    "preco_antigo": 399,
+    "precoOrig": "R$ 399,00",
     "originalPrice": 499,
     "cupomPreco": 197,
     "couponPrice": 197,
@@ -310,8 +310,8 @@
         "opcoes": [
           {
             "nome": "Kit Completo 48V (2 Baterias + Maleta + Bico Snow Foam)",
-            "preco": 197,
-            "preco_antigo": 499
+            "preco": 79.9,
+            "preco_antigo": 399
           }
         ]
       }

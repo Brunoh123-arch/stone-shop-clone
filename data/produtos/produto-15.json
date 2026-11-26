@@ -21,16 +21,16 @@
       "alt": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag - 4"
     }
   ],
-  "discount_badge": "-76%",
-  "price_int": "149",
+  "discount_badge": "-80%",
+  "price_int": "69",
   "price_cents": ",90",
-  "price_original": "R$ 624,90",
-  "installment_text": "3x R$ 49,96",
+  "price_original": "R$ 349,90",
+  "installment_text": "3x R$ 23,30",
   "installment_highlight": "sem juros",
   "coupon_main": "76% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
-  "rating_count": "(51)",
+  "rating_count": "(638)",
   "sold_count": "7543 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (638)",
@@ -280,7 +280,7 @@
   "produto_atual": {
     "id": 15,
     "nome": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
-    "preco": 149.9,
+    "preco": 69.9,
     "img": "../img/produto-15-1.jpg",
     "imagens": [
       "https://files.catbox.moe/qfampv.mp4",
@@ -306,7 +306,8 @@
       }
     },
     "sales": "7543 vendidos on-line",
-    "installmentText": "3x R$ 49,96 sem juros"
+    "installmentText": "3x R$ 23,30 sem juros",
+    "preco_antigo": 349.9
   },
   "extra_scripts": [],
   "creator_context": "churrasqueira_15",

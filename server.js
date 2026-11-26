@@ -128,8 +128,8 @@ const server = http.createServer((req, res) => {
   // Intercepta rota raiz / ou /index.html para Server-Side Cloaking
   const cleanUrl = req.url.split('?')[0];
 
-  // Modelo Único Permanente: renderiza /pages/produto-X(.html) via api/serve.js
-  const prodMatch = cleanUrl.match(/^\/pages\/produto-(\d+)(?:\.html)?$/i);
+  // Modelo Único Permanente: renderiza /pages/produto-X, /produto-X e /produto/X via api/serve.js
+  const prodMatch = cleanUrl.match(/^(?:\/pages)?\/produto[-/](\d+)(?:\.html)?$/i);
   if (prodMatch) {
     const serveHandler = require('./api/serve');
     req.query = { slug: `produto-${prodMatch[1]}` };
@@ -176,6 +176,9 @@ const server = http.createServer((req, res) => {
   }
 
   let reqPath = decodeURIComponent(cleanUrl);
+  if (reqPath === '/carrinho') reqPath = '/pages/carrinho.html';
+  else if (reqPath === '/resumo' || reqPath === '/checkout') reqPath = '/pages/resumo.html';
+  else if (reqPath === '/catalogo-ads' || reqPath === '/todos-produtos') reqPath = '/catalogo-ads.html';
 
   let filePath = path.join(ROOT, reqPath);
 

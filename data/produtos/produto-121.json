@@ -25,19 +25,19 @@
       "alt": "Travesseiro Cervical Ortopédico Abranuv Pro 2.0 - 5"
     }
   ],
-  "discount_badge": "-59%",
-  "price_int": "89",
+  "discount_badge": "-75%",
+  "price_int": "39",
   "price_cents": ",90",
-  "price_original": "R$ 219,00",
-  "installment_text": "3x R$ 29,96",
+  "price_original": "R$ 159,90",
+  "installment_text": "3x R$ 13,30",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 129",
   "coupon_bonus": "Economize 59% com bônus",
   "rating_score": "4.9",
-  "rating_count": "(148)",
+  "rating_count": "(1240)",
   "sold_count": "6765 vendidos on-line",
   "frete_original": "R$ 15,60",
-  "reviews_header": "Avaliações dos clientes (1.240)",
+  "reviews_header": "Avaliações dos clientes (1240)",
   "reviews_avg": "4,9",
   "reviews": [
     {
@@ -304,16 +304,16 @@
     "id": 121,
     "nome": "Travesseiro Cervical Ortopédico Abranuv Pro 2.0 Espuma Viscoelástica",
     "name": "Travesseiro Cervical Ortopédico Abranuv Pro 2.0 Espuma Viscoelástica",
-    "preco": 89.9,
-    "price": 89.9,
-    "preco_antigo": 219,
-    "precoOrig": 219,
+    "preco": 39.9,
+    "price": "R$ 39,90",
+    "preco_antigo": 159.9,
+    "precoOrig": "R$ 159,90",
     "originalPrice": 219,
     "cupomPreco": 89.9,
     "couponPrice": 89.9,
     "desc": 59,
     "desconto": 59,
-    "installmentText": "3x R$ 29,96 sem juros",
+    "installmentText": "3x R$ 13,30 sem juros",
     "parcelamento": "3x de R$ 29,97 sem juros",
     "img": "../img/travesseiro-slide-1.webp",
     "image": "../img/travesseiro-slide-1.webp",
@@ -331,13 +331,13 @@
         "opcoes": [
           {
             "nome": "1 Unidade - Travesseiro Abranuv Pro 2.0",
-            "preco": 89.9,
-            "preco_antigo": 219
+            "preco": 39.9,
+            "preco_antigo": 159.9
           },
           {
             "nome": "Combo 2 Unidades - Leve 2 com Super Desconto",
-            "preco": 149.9,
-            "preco_antigo": 389
+            "preco": 39.9,
+            "preco_antigo": 159.9
           }
         ]
       }

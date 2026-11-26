@@ -29,17 +29,17 @@
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 6"
     }
   ],
-  "discount_badge": "-81%",
-  "price_int": "109",
-  "price_cents": ",00",
-  "price_original": "R$ 569,00",
-  "installment_text": "3x R$ 36,33",
+  "discount_badge": "-82%",
+  "price_int": "79",
+  "price_cents": ",90",
+  "price_original": "R$ 449,00",
+  "installment_text": "3x R$ 26,63",
   "installment_highlight": "sem juros",
   "coupon_main": "",
   "coupon_bonus": "",
   "rating_score": "5.0",
   "rating_count": "(56)",
-  "sold_count": "769 vendidos on-line",
+  "sold_count": "4769 vendidos on-line",
   "frete_original": "R$ 15,60",
   "reviews_header": "Avaliações dos clientes (56)",
   "reviews_avg": "5,0",
@@ -721,7 +721,7 @@
   "produto_atual": {
     "id": 25,
     "nome": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
-    "preco": 109,
+    "preco": 79.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b",
     "imagens": [
       "https://down-zl-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dm-mfe5kpp2wk5c54.16000081759503752.mp4",
@@ -787,8 +787,9 @@
         ]
       }
     },
-    "sales": "769 vendidos on-line",
-    "installmentText": "3x R$ 36,33 sem juros"
+    "sales": "4769 vendidos on-line",
+    "installmentText": "3x R$ 26,63 sem juros",
+    "preco_antigo": 449
   },
   "extra_scripts": [],
   "creator_context": "bmx_25",

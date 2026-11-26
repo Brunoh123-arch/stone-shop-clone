@@ -41,19 +41,19 @@
       "alt": "Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts - 10"
     }
   ],
-  "discount_badge": "-81%",
-  "price_int": "129",
+  "discount_badge": "-83%",
+  "price_int": "84",
   "price_cents": ",90",
-  "price_original": "R$ 699,00",
-  "installment_text": "3x R$ 43,30",
+  "price_original": "R$ 499,00",
+  "installment_text": "3x R$ 28,30",
   "installment_highlight": "sem juros",
   "coupon_main": "81% OFF",
   "coupon_bonus": "",
   "rating_score": "5.0",
-  "rating_count": "(1)",
+  "rating_count": "(466)",
   "sold_count": "10706 vendidos on-line",
   "frete_original": "R$ 15,60",
-  "reviews_header": "Avaliações dos clientes (15)Ver mais >",
+  "reviews_header": "Avaliações dos clientes (466)",
   "reviews_avg": "4.9",
   "reviews": [
     {
@@ -298,7 +298,7 @@
   "produto_atual": {
     "id": 18,
     "nome": "Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts",
-    "preco": 129.9,
+    "preco": 84.9,
     "img": "../img/stone-asset-18-1.jpg",
     "imagens": [
       "https://files.catbox.moe/18m1t8.mp4",
@@ -325,7 +325,8 @@
       }
     },
     "sales": "10706 vendidos on-line",
-    "installmentText": "3x R$ 43,30 sem juros"
+    "installmentText": "3x R$ 28,30 sem juros",
+    "preco_antigo": 499
   },
   "extra_scripts": [],
   "creator_context": "kit_praia_mor_18",
