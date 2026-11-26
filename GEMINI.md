@@ -118,6 +118,11 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | **138** | **Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 / Oversized Casual** | **R$ 59,90** | TT: `https://shop.tiktok.com/br/pdp/kit-4-camisetas-masculinas-oversized-100-algodao-streetwear/1737238568108722123` · ML: `MLB-4574806641` / `MLBU4163539189` |
 | **139** | **Combo Presente Masculino: Relógio Cronógrafo Aço + Carteira Couro + Cinto + Óculos Polarizado (Caixa)** | **R$ 64,90** | Buscar no Profile 42: `kit relogio masculino carteira cinto oculos presente` |
 | **140** | **Kit Leve 4 Bermudas Masculinas Verão (Elastano / Tactel / Linho Praia & Churrasco)** | **R$ 69,90** | Buscar no Profile 42: `kit 4 bermuda masculina elastano verao` |
+| **141** | **Combo 2 Pares Sandália Brilho/Salto Bloco + Bolsa Tiracolo Brinde (Natal & Réveillon)** | **R$ 69,90** | Buscar no Profile 42: `kit 2 sandalia feminina brilho bolsa` / `kit sandalia festa bolsa` |
+| **142** | **Maleta Completa de Maquiagem Profissional (ou Kit 12 Itens Make + Necessaire Brinde)** | **R$ 59,90** | Buscar no Profile 42: `maleta maquiagem completa profissional` / `kit maquiagem completo necessaire` |
+| **143** | **Kit Leve 3 Conjuntos Pijama Cetim/Seda Verão (Baby Doll Luxo)** | **R$ 54,90** | Buscar no Profile 42: `kit 3 pijama cetim feminino baby doll` |
+| **144** | **Câmera Infantil Instantânea que Imprime Foto na Hora + 3 Bobinas + Cartão SD** | **R$ 64,90** | Buscar no Profile 42: `camera infantil impressao instantanea termica` |
+| **145** | **Combo Mala de Bordo Rígida ABS Giro 360° ANAC + Frasqueira Combinando (Kit 2 Peças)** | **R$ 89,90** | Buscar no Profile 42: `kit mala de bordo 360 com frasqueira` |
 
 ---
 

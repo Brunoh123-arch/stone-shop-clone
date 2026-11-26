@@ -518,8 +518,8 @@
       </div>
       <div class="kpi">
         <div class="kpi-label">Fila p/ Puxar em Casa</div>
-        <div class="kpi-val" style="color:#fbbf24" id="kpi-queue">6 Urgentes</div>
-        <div class="kpi-sub">Combos Roupas Leve 4 &amp; Bolsa+Relógio</div>
+        <div class="kpi-val" style="color:#fbbf24" id="kpi-queue">16 Campeões</div>
+        <div class="kpi-sub">Moda, Presentes 13º, Casa &amp; Viagem</div>
       </div>
     </div>
 
@@ -528,17 +528,18 @@
         <div>
           <div style="display:flex; align-items:center; gap:8px;">
             <span style="background:#f59e0b; color:#111827; font-size:11px; font-weight:900; padding:3px 8px; border-radius:6px;">📥 PUXAR EM CASA (PROFILE 42)</span>
-            <strong style="font-size:15px;">Fila Urgente de Novos Produtos — Combos "Leve 4 Roupas" &amp; "Bolsa + Relógio" (#135 a #140)</strong>
+            <strong style="font-size:15px;">Fila Completa dos 16 Campeões — Combos Moda, Bolsa+Relógio, Presentes 13º, Casa &amp; Viagem</strong>
           </div>
-          <p style="font-size:12px; color:#9ca3af; margin-top:4px;">Links reais do TikTok Shop e Mercado Livre já separados. Ao chegar no PC de casa (Chrome Profile 42 logado), clique em copiar prompt e mande no chat!</p>
+          <p style="font-size:12px; color:#9ca3af; margin-top:4px;">Ao chegar no PC de casa (Chrome Profile 42 logado), clique em copiar prompt individual ou em lotes e cole direto no chat!</p>
         </div>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <button class="btn btn-green" onclick="copyAllQueuePrompt()">📋 Copiar Prompt p/ Cadastrar os Top 3 Agora</button>
+          <button class="btn btn-green" onclick="copyAllQueuePrompt()">📋 Copiar Top 3 Urgentes</button>
+          <button class="btn" style="border-color:#f59e0b; color:#fbbf24;" onclick="copyFull16QueuePrompt()">📋 Copiar Fila Completa (16)</button>
           <button class="btn" onclick="const el=document.getElementById('pull-queue-grid'); el.style.display = el.style.display==='none' ? 'grid' : 'none';">Mostrar / Recolher Fila</button>
         </div>
       </div>
 
-      <div id="pull-queue-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(310px, 1fr)); gap:10px; margin-top:4px;">
+      <div id="pull-queue-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(305px, 1fr)); gap:10px; margin-top:4px;">
         <div style="background:#0d1118; border:1px solid #2d3748; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
           <div style="display:flex; justify-content:space-between; align-items:center;">
             <span class="id-pill" style="background:#f59e0b; color:#111827;">#135 · PRIORIDADE 1</span>
@@ -616,8 +617,130 @@
             <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(140)">📋 Prompt #140</button>
           </div>
         </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#141 · FESTAS FIM DE ANO</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 69,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 269,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Combo 2 Pares Sandália Brilho/Salto Bloco + Bolsa Tiracolo Brinde</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Toda mulher compra sandália pro Natal e Réveillon; 2 pares + bolsa destrói o CPA.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(141)">📋 Prompt #141</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#142 · BELEZA / TEEN</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 59,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 239,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Maleta Completa de Maquiagem Profissional (ou Kit 12 Itens + Necessaire)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Presente #1 p/ filha, adolescente, sobrinha e Amigo Secreto + unboxing hipnótico.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(142)">📋 Prompt #142</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#143 · LEVE 3 CETIM</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 54,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 199,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Kit Leve 3 Conjuntos Pijama Cetim/Seda Verão (Baby Doll Luxo)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Sai R$ 18,30 cada conjunto! Calor de dezembro + presente feminino certeiro.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(143)">📋 Prompt #143</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#144 · VIRAL INFANTIL</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 64,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 249,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Câmera Infantil que Imprime a Foto na Hora (Sem Tinta) + 3 Bobinas + SD</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Brinquedo mais viral do TikTok! Imprime foto em 2 segundos; mães e avós compram na hora.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(144)">📋 Prompt #144</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#127 · NATAL MENINOS</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 74,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 289,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Carrinho RC Drift 4x4 Turbo que Solta Fumaça + LED + 2 Baterias</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Complementa o Patinete #126 pegando meninos de 6 a 14 anos (e os pais!).</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(127)">📋 Prompt #127</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#130 · PRESENTE ESPOSA</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 69,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 259,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Porta-Joias Rosa Giratória + Colar Prata 925 "Eu Te Amo 100 Idiomas" + Sacola</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Salva todo marido/namorado no 13º — zero erro de tamanho e vídeo emocionante.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(130)">📋 Prompt #130</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#128 · CEIA DE NATAL</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 89,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 349,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Mesa Dobrável Vira Maleta 1,80m Reforçada (Ceia, Churrasco e Praia)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Resolve a dor de toda família em dezembro: caber todo mundo sentado na ceia!</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(128)">📋 Prompt #128</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#131 · CASA HOTEL 5★</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 69,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 259,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Combo Leve 2 Jogos de Cama Casal 400 Fios Padrão Hotel (8 Peças)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Sai R$ 34,95 cada jogo! Tradição de renovar a cama p/ visitas de Natal e Ano Novo.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(131)">📋 Prompt #131</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#129 · FAXINA FIM DE ANO</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 59,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 229,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Escova Elétrica Giratória Sem Fio 9 em 1 c/ Cabo Extensor Lavável</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Vídeos satisfatórios limpando box e azulejo sem agachar convertem muito no 30+.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(129)">📋 Prompt #129</button>
+          </div>
+        </div>
+
+        <div style="background:#0d1118; border:1px solid #252c3a; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="id-pill">#145 · FÉRIAS &amp; VIAGEM</span>
+            <strong style="color:#34d399; font-size:15px;">PIX R$ 89,90 <small style="color:#9ca3af; text-decoration:line-through; font-weight:400;">R$ 399,90</small></strong>
+          </div>
+          <strong style="font-size:13px;">Combo Mala de Bordo Rígida Giro 360° ANAC + Frasqueira Combinando (2 Peças)</strong>
+          <span style="font-size:11.5px; color:#94a3b8;">Pico anual de viagens em dezembro! Kit 2 peças parece custar R$ 450.</span>
+          <div style="display:flex; gap:6px; margin-top:4px;">
+            <button class="btn-icon" style="border-color:#10b981; color:#34d399;" onclick="copySingleQueuePrompt(145)">📋 Prompt #145</button>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="controls-panel">
       <div class="search-sort-row">
         <input id="q-input" class="search-input" type="search" placeholder="🔎 Buscar por nome, #ID (ex: 126, 108, patinete, escova, air fryer, pneu)..." oninput="renderGrid()" />
         <select id="sort-select" class="select-box" onchange="renderGrid()">
@@ -1010,8 +1133,28 @@
       137: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-137: Kit Leve 4 Conjuntos/Shorts Fitness Empina Bumbum Sem Costura Feminino por R$ 59,90 (de R$ 219,90).',
       138: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-138: Kit Leve 4 Camisetas Masculinas 100% Algodão 30.1 / Oversized Casual por R$ 59,90 (de R$ 239,90). Links base: https://shop.tiktok.com/br/pdp/kit-4-camisetas-masculinas-oversized-100-algodao-streetwear/1737238568108722123 e https://produto.mercadolivre.com.br/MLB-4574806641-kit-4-camisas-camisetas-basicas-100-algodo-301-premium-_JM',
       139: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-139: Combo Presente Masculino Relógio Cronógrafo Aço + Carteira Couro + Cinto + Óculos Polarizado (Caixa Presente) por R$ 64,90 (de R$ 259,90).',
-      140: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-140: Kit Leve 4 Bermudas Masculinas Verão (Elastano / Tactel Praia e Churrasco) por R$ 69,90 (de R$ 269,90).'
+      140: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-140: Kit Leve 4 Bermudas Masculinas Verão (Elastano / Tactel Praia e Churrasco) por R$ 69,90 (de R$ 269,90).',
+      141: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-141: Combo 2 Pares Sandália Feminina Brilho/Salto Bloco + Bolsa Tiracolo Brinde (Natal & Réveillon) por R$ 69,90 (de R$ 269,90).',
+      142: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-142: Maleta Completa de Maquiagem Profissional (ou Kit 12 Itens Make + Necessaire Brinde) por R$ 59,90 (de R$ 239,90).',
+      143: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-143: Kit Leve 3 Conjuntos Pijama Cetim/Seda Verão (Baby Doll Luxo) por R$ 54,90 (de R$ 199,90).',
+      144: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-144: Câmera Infantil Instantânea que Imprime Foto na Hora (Sem Tinta) + 3 Bobinas + Cartão SD por R$ 64,90 (de R$ 249,90).',
+      145: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-145: Combo Mala de Bordo Rígida ABS Giro 360° ANAC + Frasqueira Combinando (Kit 2 Peças) por R$ 89,90 (de R$ 399,90).',
+      127: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-127: Carrinho RC Drift 4x4 Turbo que Solta Fumaça + LED + 2 Baterias por R$ 74,90 (de R$ 289,90).',
+      128: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-128: Mesa Dobrável Vira Maleta 1,80m Branca Reforçada (Ceia de Natal e Churrasco) por R$ 89,90 (de R$ 349,90).',
+      129: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-129: Escova Elétrica Giratória Sem Fio 9 em 1 c/ Cabo Extensor Lavável por R$ 59,90 (de R$ 229,90).',
+      130: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-130: Porta-Joias Rosa Eterna Giratória + Colar Prata 925 Eu Te Amo em 100 Idiomas + Sacola Luxo por R$ 69,90 (de R$ 259,90).',
+      131: 'Cadastre 100% blindado (seguindo GEMINI.md no Chrome Profile 42, zero áudio) o produto-131: Combo Leve 2 Jogos de Cama Casal 400 Fios Padrão Hotel (8 Peças) por R$ 69,90 (de R$ 259,90).'
     };
+
+    function copyFull16QueuePrompt() {
+      const order = [135, 136, 138, 139, 137, 140, 141, 142, 143, 144, 127, 130, 128, 131, 129, 145];
+      const txt = [
+        'Dê git pull origin main, leia GEMINI.md inteiro (seções 5 e 5.1) e cadastre em lotes 100% blindados no Profile 42 (zero áudio, inspecionando cada foto com read_file e validando com validar-modelo-unico.js) os 16 campeões da fila:',
+        ...order.map((id, i) => `${i + 1}) ${QUEUE_PROMPTS[id]}`)
+      ].join('\n\n');
+      navigator.clipboard.writeText(txt);
+      showToast('Fila completa dos 16 campeões copiada!');
+    }
 
     function copySingleQueuePrompt(id) {
       const txt = `Dê git pull origin main, leia GEMINI.md inteiro e execute:\n${QUEUE_PROMPTS[id]}`;
