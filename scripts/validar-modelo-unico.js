@@ -64,11 +64,11 @@ for (const id of ids) {
 
 console.log(`✅ Produtos 200 OK:     ${ok200}`);
 console.log(`↪️  Redirects 302:       ${ok302}`);
-console.log(`⭐ Total de avaliações: ${totalReviews} (esperado: 3301)`);
+console.log(`⭐ Total de avaliações: ${totalReviews} (esperado: 3316)`);
 console.log(`🎬 Produtos com vídeo:  ${totalVideos}`);
 
-if (totalReviews !== 3301) {
-  errors.push(`Total de avaliações divergente: ${totalReviews} != 3301`);
+if (totalReviews !== 3316) {
+  errors.push(`Total de avaliações divergente: ${totalReviews} != 3316`);
 }
 
 if (errors.length > 0) {
@@ -77,4 +77,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log('\n🏆 VALIDAÇÃO 100% APROVADA — ZERO ERROS EM TODOS OS 103 PRODUTOS!');
+console.log(`\n🏆 VALIDAÇÃO 100% APROVADA — ZERO ERROS EM TODOS OS ${ok200} PRODUTOS!`);

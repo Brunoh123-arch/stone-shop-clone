@@ -104,4 +104,5 @@ module.exports = {
   '122': () => require('./produto-122.json'),
   '123': () => require('./produto-123.json'),
   '124': () => require('./produto-124.json'),
+  '126': () => require('./produto-126.json'),
 };

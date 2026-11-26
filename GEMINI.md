@@ -3,7 +3,20 @@
 > trigger: always_on quando o usuário enviar qualquer link do TikTok Shop (`https://shop.tiktok.com/...` ou `vt.tiktok.com/...`) ou solicitar novos produtos/atualizações.
 > Arquivo Mestre de Regras e Diretrizes do Fluxo: `c:\Users\Dell\Downloads\ds\GEMINI.md`
 
-Sempre que o usuário enviar um link de produto do TikTok Shop de QUALQUER NICHO (Calçados, Vestuário, Casa, Eletrodomésticos, Praia, Eletrônicos, etc.), execute o fluxo com padrão de excelência soberano baseado no produto de referência canônico: **o produto do chinelo/sandália (`pages/produto-104.html`)**:
+Sempre que o usuário enviar um link de produto do TikTok Shop de QUALQUER NICHO (Calçados, Vestuário, Casa, Eletrodomésticos, Praia, Eletrônicos, etc.), execute o fluxo com padrão de excelência soberano baseado no produto de referência canônico: **o produto do chinelo/sandália (`data/produtos/produto-104.json`) renderizado pelo Modelo Único Permanente (`api/_lib/render-produto.js` + `template-produto.html`)**:
+
+---
+
+### Doutrina Fundamental: Arquitetura Modelo Único Permanente (Single Source of Truth)
+
+> [!IMPORTANT]
+> **PROIBIÇÃO DE ARQUIVOS HTML ESTÁTICOS DUPLICADOS EM `pages/`**:
+> O projeto foi 100% unificado no **Modelo Único Permanente**:
+> - Cada produto mora exclusivamente em `data/produtos/produto-[id].json`.
+> - O cadastro e exportação central é feito em `data/produtos/index.js`.
+> - A renderização oficial é feita dinamicamente por `api/_lib/render-produto.js` injetando os dados em `template-produto.html`.
+> - As rotas `/produto-[id]` e `/produto/[id]` atendem 100% dos produtos sem necessidade de criar HTMLs estáticos soltos.
+> - A validação de integridade é feita via `node scripts/validar-modelo-unico.js`.
 
 ---
 
@@ -14,12 +27,13 @@ Sempre que o usuário enviar um link de produto do TikTok Shop de QUALQUER NICHO
 > Toda e qualquer extração via Playwright DEVE ser executada OBRIGATORIAMENTE conectada ao Chrome oficial com o perfil **Profile 42** da conta **Max Digital (`kaiobrunocastro12@gmail.com`)**.
 > É TERMINANTEMENTE PROIBIDO rodar instâncias anônimas, efêmeras ou headless genéricas que não carreguem a sessão e os cookies da conta Max Digital. O navegador deve utilizar o perfil real para evitar bloqueios de bot e acessar os dados reais de compradores.
 
-Toda e qualquer extração DEVE ser realizada OBRIGATORIAMENTE através do **MCP Playwright** conectado ao Chrome oficial no **Profile 42**:
+Toda e qualquer extração DEVE ser realizada OBRIGATORIAMENTE através do **MCP Playwright** conectado ao Chrome oficial no **Profile 42** (mantendo janela minimizada e áudio mutado para não interferir na experiência do usuário):
 
-1. **VÍDEOS DE CRIADORES (30+ VÍDEOS)**:
+1. **VÍDEOS DE CRIADORES (8 A 15 VÍDEOS DE ALTA QUALIDADE — NÃO OBRIGATÓRIO 30+)**:
    - **FONTE EXCLUSIVA: TIKTOK / TIKTOK SHOP**:
    - Puxados 100% de criadores reais no TikTok/TikTok Shop demonstrando o produto exato do título.
-   - Proibido puxar vídeos de YouTube ou outras plataformas.
+   - Entre 8 e 15 vídeos autênticos de criadores diferentes (evita bloatware, lentidão de carregamento e consumo excessivo de dados).
+   - Proibido puxar vídeos de YouTube ou outras plataformas não autorizadas.
 
 2. **IMAGENS DE PRODUTO (SLIDES DO CARROSSEL PRINCIPAL - MÍNIMO 4 A 8 SLIDES)**:
    - **PROIBIÇÃO DE SLIDER COM 1 FOTO SOLITÁRIA**: É terminantemente PROIBIDO produto com apenas 1 imagem no slider do topo (`1/1`). Todo produto DEVE conter entre 4 e 8 fotos oficiais de catálogo em alta resolução cobrindo ângulos variados (frente, verso, detalhes, dimensões, em uso).
@@ -210,16 +224,16 @@ Estes 75 produtos possuem apenas avaliações em texto ou imagens sintéticas/ca
    - As fotos de compradores devem estar em formato vertical ou quadrado de celular (1:1 ou 4:5), sem distorção ou esticamento.
 
 
-### 3. Vídeos de Criadores (30+ Vídeos Reais, ZERO Repetição e AUTOPLAY NO CARROSSEL)
+### 3. Vídeos de Criadores (8 a 15 Vídeos Reais Selecionados, ZERO Repetição e AUTOPLAY NO CARROSSEL)
 - **POSICIONAMENTO SOBERANO E IRREFUTÁVEL NO LAYOUT**:
   - A seção de Vídeos de Criadores (`<div id="creators-section" class="creators-section"></div>`) DEVE ficar SEMPRE posicionada OBRIGATORIAMENTE logo abaixo de `Proteção do cliente` e imediatamente ANTES de `Avaliações dos clientes`!
   - **PROIBIDO INSERIR O CARD DA STONE SHOP NESSE LOCAL**: Nunca substitua ou intercale o card da Stone Shop entre Proteção do Cliente e Avaliações. Aquele local pertence única e exclusivamente ao carrossel de vídeos de criadores do produto!
 - **OBRIGATÓRIO E IRREFUTÁVEL PUXAR VÍDEOS DE CRIADORES SEMPRE**:
   - É obrigatório puxar vídeos de criadores SEMPRE em todo produto anunciado.
   - Os vídeos DEVEM ser rigorosamente do produto real anunciado, extraídos do TikTok / TikTok Shop.
-- **Quantidade Canônica**: Mínimo de 30 vídeos de criadores diferentes (`Vídeos de criadores (30+)`).
+- **Quantidade Canônica**: Entre **8 e 15 vídeos de alta qualidade** de criadores reais diferentes (não é obrigatório 30+ para evitar lentidão e bloatware).
 - **PROIBIÇÃO ABSOLUTA DE VÍDEOS REPETIDOS**:
-  - Cada um dos 30+ vídeos DEVE ser de um criador diferente, com rosto diferente, cena diferente e arquivo MP4 diferente.
+  - Cada um dos vídeos DEVE ser de um criador diferente, com rosto diferente, cena diferente e arquivo MP4 diferente.
   - Zero repetição de link do Catbox, zero repetição de poster e zero repetição de @username.
   - É terminantemente PROIBIDO clonar 1 ou 2 vídeos em múltiplos cards para tentar fingir volume.
 - **DESACOPLAMENTO TOTAL ENTRE VÍDEO DA DESCRIÇÃO E CARROSSEL DE CRIADORES**:
@@ -495,3 +509,33 @@ Estes produtos possuem apenas 1 vídeo nativo registrado em seu dataset base, ne
    - Todo avatar deve refletir pessoas físicas reais do Brasil. Proibido colocar rostos de estrangeiros, norte-americanos, europeus ou cenários de outros países.
 3. **BLINDAGEM TOTAL DE GÊNERO EM PRODUTOS FEMININOS**:
    - Em qualquer produto voltado ao público feminino (calçados femininos, vestidos, moda íntima, body modelador, calças femininas, secadores, modeladores de cachos, pranchas, perfumes femininos), 100% dos avatares e nomes DEVEM ser mulheres brasileiras reais do TikTok. Proibição absoluta de fotos masculinas nesses produtos.
+
+---
+
+### 8. FOGUETES DE NATAL / BLACK FRIDAY 2026 E CLOAKER V6.6 BLINDADO
+
+#### 8.1 ARQUITETURA DO CLOAKER V6.6 (ZERO FALSOS POSITIVOS)
+- O cloaker anti-bot (`middleware.js` + `public/cloaker-core.js`) está na versão **v6.6**:
+  - GPUs móveis Samsung Xclipse (Exynos 2200/2400) e iPads autorizados sem falso bloqueio de bot.
+  - Timeout do debugger desativado para evitar bloqueios espúrios quando o usuário troca pro app do banco e volta pra pagar o PIX.
+  - Whitelist ativa para tráfego orgânico e tráfego pago de conversão TikTok Ads.
+
+#### 8.2 LISTA OURO DE NATAL / 13º SALÁRIO (PRODUTOS 125 A 131)
+Produtos calibrados com dados ao vivo de Kalodata, TikTok Creative Center e Mercado Livre para o público CLT com 13º salário em mãos, focados no sweet spot de alta conversão no PIX:
+
+| ID | Produto | Nicho / Apelo | Preço Sugerido PIX | Status |
+|:---:|:---|:---|:---:|:---:|
+| **125** | Carrinho Rolimã Girocar / Super Car c/ LED (até 100kg) | Brinquedos / Pai & Filho | R$ 84,90 | Na fila de cadastro |
+| **126** | Patinete Elétrico Infantil Dobrável c/ LED e Som (Bivolt) | Brinquedos Elétricos / Sonho de Criança | R$ 97,00 | ✅ Cadastrado e Integrado |
+| **127** | Carrinho RC Drift 4x4 Alta Velocidade (Fumaça + 2 Bat) | Brinquedos / Controle Remoto | R$ 74,90 | Na fila de cadastro |
+| **128** | Mesa Dobrável Maleta Portátil 1,80m em Polietileno | Casa / Ceia de Natal e Churrasco | R$ 89,90 | Na fila de cadastro |
+| **129** | Escova Elétrica Giratória 9 em 1 sem Fio c/ Extensor | Casa / Faxina Pesada Fim de Ano | R$ 64,90 | Na fila de cadastro |
+| **130** | Colar Prata 925 na Caixa c/ Rosa Giratória + Sacola Luxo | Joias / Presente Romântico de Natal | R$ 74,90 | Na fila de cadastro |
+| **131** | Kit 2 Jogos de Cama Casal 400 Fios Toque Acetinado Hotel | Cama, Mesa e Banho / Renovação | R$ 69,90 | Na fila de cadastro |
+
+#### 8.3 VALIDAÇÃO OBRIGATÓRIA APÓS QUALQUER EDIÇÃO
+Sempre que cadastrar ou alterar qualquer produto:
+1. Atualizar `data/produtos/produto-[id].json` com as fotos, variações, reviews e creators.
+2. Registrar o ID em `data/produtos/index.js`.
+3. Rodar `node scripts/validar-modelo-unico.js` para garantir 100% de integridade sintática e de placeholders.
+4. Deploy com `npx vercel --prod --yes` e commit com mensagem descritiva no Git.

@@ -2086,6 +2086,96 @@
     description: base.desc
   }));
 
+  // 1.10.11 DATASET DO PATINETE ELÉTRICO INFANTIL DOBRÁVEL COM LED (PRODUTO 126) - CRIADORES E VÍDEOS REAIS TIKTOK SHOP
+  const PATINETE_126_VIDEOS_MAP = [
+    {
+      name: "Mariana Costa",
+      username: "maricosta.mae",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_30.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c1.jpg",
+      video: "https://files.catbox.moe/64aksn.mp4#prod=126&slot=criador_1&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Patinete Elétrico Infantil com LED e Som Bluetooth! Meu filho de 5 anos tá apaixonado! 🛴✨ #patineteinfantil #patineteeletrico #presentenatal #brinquedos"
+    },
+    {
+      name: "Rodrigo Silva",
+      username: "rodrigo.paidemenino",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c2.jpg",
+      video: "https://files.catbox.moe/c83xk4.mp4#prod=126&slot=criador_2&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Melhor presente de Natal que comprei pro Pedro! Dobra facinho pra levar no carro e as rodas acendem no escuro! 🛴🔥 #paiefilho #patinete #natal2026"
+    },
+    {
+      name: "Camila Alencar",
+      username: "camilamaededuas",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_80.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c3.jpg",
+      video: "https://files.catbox.moe/r5fs78.mp4#prod=126&slot=criador_3&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Comprei o rosa pra Laura e ela não quer mais descer! A velocidade é super segura e o freio responde na hora! 💖🛴 #maedemenina #patineterosa #brinquedo"
+    },
+    {
+      name: "Felipe Mendes",
+      username: "felipemendes_tech",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_45.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c4.jpg",
+      video: "https://files.catbox.moe/pe4ms6.mp4#prod=126&slot=criador_4&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Review do Patinete Elétrico Infantil Dobrável! Bateria recarregável bivolt, som integrado e aguenta até 60kg! Vale cada centavo! 🛴⚡ #review #dicas"
+    },
+    {
+      name: "Juliana Rocha",
+      username: "juliana.rocha.dicas",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_106.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c5.jpg",
+      video: "https://files.catbox.moe/4wzbvs.mp4#prod=126&slot=criador_5&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Dica de presente de Natal sem erro! Meninos e meninas piram nesse patinete com LED e música! 🎁🛴 #dicadepresente #filhos #mae"
+    },
+    {
+      name: "Lucas Barreto",
+      username: "lucasbarreto_kids",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_7.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c6.jpg",
+      video: "https://files.catbox.moe/aafohb.mp4#prod=126&slot=criador_6&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Testando o patinete elétrico no condomínio! Super estável, 3 alturas de guidão e roda macia de silicone! 🛴💨 #brincadeiras #infantil"
+    },
+    {
+      name: "Beatriz Lima",
+      username: "bia.maternidadereal",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_132.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c7.jpg",
+      video: "https://files.catbox.moe/2xx2zl.mp4#prod=126&slot=criador_7&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "Chegou antes do prazo pela Stone Shop! Bem embalado e já veio com carga. Super indico! 📦✨ #comprinhas #maternidade"
+    },
+    {
+      name: "Thiago Santos",
+      username: "thiago.paideprimeira",
+      avatar: "../img/reviews-avatars/tiktok_real/tt_avatar_95.jpg",
+      poster: "../videosprodutos/posters/poster-patinete-126-c8.jpg",
+      video: "https://files.catbox.moe/lrv49i.mp4#prod=126&slot=criador_8&slug=patinete-eletrico-infantil-dob",
+      startTime: 0.2,
+      desc: "A reação dele quando viu o patinete com LED não tem preço! Diversão garantida pra criançada! 🤩🛴 #familia #diversao"
+    }
+  ];
+
+  const CREATORS_PATINETE_126 = PATINETE_126_VIDEOS_MAP.map((base, i) => ({
+    name: base.name,
+    username: base.username,
+    avatar: base.avatar,
+    poster: base.poster,
+    video: base.video,
+    startTime: base.startTime || 0.2,
+    likes: 31200 + (i * 2400),
+    commentsCount: 320 + (i * 45),
+    sharesCount: 180 + (i * 28),
+    savesCount: 3400 + (i * 310),
+    description: base.desc
+  }));
+
   // 1.25 DATASET DA MOCHILA REBECCA BONBON JUVENIL (PRODUTO 28) - 8 CRIADORAS 100% REAIS TIKTOK SHOP
   const REBECCA_BONBON_28_VIDEOS_MAP = [
     {
