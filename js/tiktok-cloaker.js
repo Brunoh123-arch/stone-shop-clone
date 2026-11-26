@@ -50,7 +50,7 @@
     }
 
     function redirectToWhitehat() {
-      window.location.replace('/loja' + search);
+      window.location.replace('/' + search);
     }
 
     // 1. BLOQUEIO DE ROBÔS, SCRAPERS, HEADLESS BROWSERS E IAs
@@ -181,8 +181,15 @@
       return; // APROVADO: Comprador navegando entre telas da loja
     }
 
-    // 6. Acesso no celular comum sem anúncio -> Envia para a Loja Whitehat
-    redirectToWhitehat();
+    // 6. DISPOSITIVO MOBILE REAL APROVADO:
+    // Passou por todas as validações (não é bot, não é desktop, não é emulador, tem touch e GPU móvel)
+    try {
+      sessionStorage.setItem('is_ad_traffic', 'true');
+    } catch (eSave) {}
+    if (document.documentElement) document.documentElement.style.visibility = '';
+    return; // APROVADO: Dispositivo mobile real legítimo
 
-  } catch (err) { window.location.replace('/loja'); }
+  } catch (err) {
+    if (document.documentElement) document.documentElement.style.visibility = '';
+  }
 })();
