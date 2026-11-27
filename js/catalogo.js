@@ -1,5 +1,6 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
+  {id:135,nome:'Smartwatch Série 10 W99+ Pro Tela Super AMOLED NFC ChatGPT GPS Faz e Recebe Ligações',preco:89.9,precoOrig:'349,90',desc:74,vendidos:9200,img:'../img/smartwatch-135-slide-1.webp'},
   {id:134,nome:"Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",preco:11.89,precoOrig:'49,90',desc:76,vendidos:5191,img:"../img/sobrancelha-134-slide-1.webp"},
   {id:133,nome:'Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração',preco:9.69,precoOrig:'39,90',desc:76,vendidos:6454,img:'../img/pisca-133-slide-1.webp'},
   {id:132,nome:"Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste Tecido Respirável",preco:19.79,precoOrig:'89,90',desc:78,vendidos:4617,img:"../img/cinta-132-slide-1.webp"},

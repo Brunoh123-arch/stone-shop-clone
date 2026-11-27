@@ -1,0 +1,470 @@
+{
+  "id": 135,
+  "title": "Smartwatch Série 10 W99+ Pro Tela AMOLED NFC ChatGPT GPS Ligações - Stone Shop",
+  "meta_description": "Smartwatch Série 10 W99+ Pro com Tela Super AMOLED, NFC para fechaduras, ChatGPT integrado, GPS dinâmico e ligações por R$ 89,90 no PIX. Frete grátis Stone Shop.",
+  "product_title": "Smartwatch Série 10 W99+ Pro Tela Super AMOLED NFC ChatGPT GPS Faz e Recebe Ligações",
+  "slider_imgs": [
+    {
+      "src": "../img/smartwatch-135-slide-1.webp",
+      "alt": "Smartwatch Série 10 W99+ Pro AMOLED NFC ChatGPT GPS - Preto"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-2.webp",
+      "alt": "Smartwatch Série 10 W99+ Pro AMOLED - Prata com Pulseira Branca"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-3.webp",
+      "alt": "Smartwatch Série 10 W99+ Pro AMOLED - Rosê com Pulseira Rosa"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-4.webp",
+      "alt": "Tela Super AMOLED de Alto Brilho e Contraste - Comparativo"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-5.webp",
+      "alt": "Bateria de Longa Duração com Carregamento Rápido por Indução"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-6.webp",
+      "alt": "Função GPS com Rastreamento de Rota Dinâmica no App"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-7.webp",
+      "alt": "Modos Esportivos Integrados para Corrida, Caminhada e Academia"
+    },
+    {
+      "src": "../img/smartwatch-135-slide-8.webp",
+      "alt": "Smartwatch Série 10 W99+ Pro - Notificações e Mensagens WhatsApp"
+    }
+  ],
+  "discount_badge": "-74%",
+  "price_int": "89",
+  "price_cents": ",90",
+  "price_original": "R$ 349,90",
+  "installment_text": "3x de R$ 29,97 sem juros",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom Tech R$ 40 OFF aplicado",
+  "coupon_bonus": "Final R$ 89,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(842)",
+  "sold_count": "9240 vendido(s)",
+  "frete_original": "R$ 22,90",
+  "reviews_header": "Avaliações dos clientes (842)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "M**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_1.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "Rosê",
+      "date_line": "26/11 · Rosê",
+      "comment": "Cumpre com tudo que promete, espetacular! A tela AMOLED tem cores vivas demais e o menu colmeia roda super liso sem travar. Amei a cor Rosê!",
+      "photos": [
+        "../img/review-135-b1-1.webp",
+        "../img/review-135-b1-2.webp"
+      ]
+    },
+    {
+      "name": "R**o S**a",
+      "avatar": "../img/avatars-tv/creator-matheus.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "Preto",
+      "date_line": "26/11 · Preto",
+      "comment": "Gostei bastante! A tela é AMOLED com tamanho muito bom, coloquei foto da minha família no mostrador e ficou perfeito. Bateria tá durando uns 4 dias tranquilo!",
+      "photos": [
+        "../img/review-135-b2-1.webp"
+      ]
+    },
+    {
+      "name": "J**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_2.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Preto",
+      "date_line": "25/11 · Preto",
+      "comment": "Muito bom o produto! Chegou certinho, conectou super rápido no meu iPhone e já tô recebendo todas as notificações do WhatsApp no pulso.",
+      "photos": [
+        "../img/review-135-b3-1.webp"
+      ]
+    },
+    {
+      "name": "L**s F**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Preto",
+      "date_line": "25/11 · Preto",
+      "comment": "Acabamento top demais, parece relógio de 2 mil reais! Testei o NFC na fechadura eletrônica aqui de casa e abriu na hora. Melhor custo-benefício!",
+      "photos": [
+        "../img/review-135-b4-1.webp"
+      ]
+    },
+    {
+      "name": "A**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_3.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Prata",
+      "date_line": "24/11 · Prata",
+      "comment": "Esse relógio é super completo! Dá pra atender ligações direto pelo relógio porque tem microfone e alto-falante, e o ChatGPT funciona direitinho.",
+      "photos": []
+    },
+    {
+      "name": "G**l O**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Preto",
+      "date_line": "24/11 · Preto",
+      "comment": "Sistema muito rápido e fluido, zero engasgo! Veio com o carregador por indução e já veio com película e pulseira extra na caixa.",
+      "photos": []
+    },
+    {
+      "name": "C**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Rosê",
+      "date_line": "23/11 · Rosê",
+      "comment": "Lindo demais! Uso na academia todo dia pra marcar os treinos e batimentos cardíacos, super leve e confortável no pulso.",
+      "photos": []
+    },
+    {
+      "name": "F**a A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_17.jpg",
+      "stars": 5,
+      "date": "22/11",
+      "variation": "Preto",
+      "date_line": "22/11 · Preto",
+      "comment": "Paguei 89 reais no PIX e chegou em 4 dias aqui em SP. Qualidade surreal pelo preço, já comprei outro Prata pra dar de presente de Natal!",
+      "photos": []
+    },
+    {
+      "name": "B**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_5.jpg",
+      "stars": 4,
+      "date": "21/11",
+      "variation": "Prata",
+      "date_line": "21/11 · Prata",
+      "comment": "Relógio muito bonito e tela excelente. A bateria comigo usando brilho no máximo e notificações o dia todo dura uns 3 dias, achei ótimo.",
+      "photos": []
+    },
+    {
+      "name": "P**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Rosê",
+      "date_line": "20/11 · Rosê",
+      "comment": "A cor Rosê é maravilhosa, super delicada e combina com tudo. O aplicativo em português é bem fácil de configurar.",
+      "photos": []
+    },
+    {
+      "name": "T**s N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_18.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "Preto",
+      "date_line": "19/11 · Preto",
+      "comment": "Funciona perfeitamente tanto no Android quanto no iPhone! Recebe mensagens do WhatsApp, Instagram e faz ligações com som bem alto.",
+      "photos": []
+    },
+    {
+      "name": "D**e C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg",
+      "stars": 5,
+      "date": "18/11",
+      "variation": "Prata",
+      "date_line": "18/11 · Prata",
+      "comment": "Adorei! A pulseira de silicone é bem macia e dá pra trocar fácil por qualquer pulseira padrão 45mm.",
+      "photos": []
+    },
+    {
+      "name": "K**n S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_8.jpg",
+      "stars": 5,
+      "date": "17/11",
+      "variation": "Rosê",
+      "date_line": "17/11 · Rosê",
+      "comment": "Chegou super bem embalado e funcionando 100%. O carregamento por indução é muito prático, só encostar na base.",
+      "photos": []
+    },
+    {
+      "name": "V**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_19.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Preto",
+      "date_line": "16/11 · Preto",
+      "comment": "Brilho da tela no sol é muito bom por ser AMOLED. Bússola, calculadora, alarme e controle de música funcionam perfeitamente!",
+      "photos": []
+    },
+    {
+      "name": "S**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_9.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "Prata",
+      "date_line": "15/11 · Prata",
+      "comment": "Comprei pro meu marido e ele não tira do braço! Muito bonito e elegante, parece muito mais caro do que custou.",
+      "photos": []
+    },
+    {
+      "name": "N**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_10.jpg",
+      "stars": 4,
+      "date": "14/11",
+      "variation": "Rosê",
+      "date_line": "14/11 · Rosê",
+      "comment": "Muito bom mesmo! Só lembre de dar uma carga completa antes do primeiro uso e parear pelo app oficial pra sincronizar tudo certinho.",
+      "photos": []
+    },
+    {
+      "name": "E**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_11.jpg",
+      "stars": 5,
+      "date": "13/11",
+      "variation": "Preto",
+      "date_line": "13/11 · Preto",
+      "comment": "Entrega relâmpago da Stone Shop! Produto nota 10, recomendo de olhos fechados.",
+      "photos": []
+    },
+    {
+      "name": "M**e P**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_12.jpg",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "Prata",
+      "date_line": "12/11 · Prata",
+      "comment": "Amei que dá pra colocar minha própria foto na tela inicial e trocar a watchface sempre que quiser!",
+      "photos": []
+    },
+    {
+      "name": "I**s M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_13.jpg",
+      "stars": 5,
+      "date": "11/11",
+      "variation": "Rosê",
+      "date_line": "11/11 · Rosê",
+      "comment": "Super resistente a respingos, lavo a mão tranquila e nunca deu problema. Excelente compra!",
+      "photos": []
+    },
+    {
+      "name": "R**e F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_14.jpg",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Preto",
+      "date_line": "10/11 · Preto",
+      "comment": "Qualidade impressionante! O recurso de ChatGPT no pulso e controle de músicas no Spotify são sensacionais.",
+      "photos": []
+    },
+    {
+      "name": "L**e A**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_15.jpg",
+      "stars": 5,
+      "date": "09/11",
+      "variation": "Prata",
+      "date_line": "09/11 · Prata",
+      "comment": "Chegou antes do prazo e superou minhas expectativas. Muito satisfeita!",
+      "photos": []
+    },
+    {
+      "name": "J**e L**z",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_16.jpg",
+      "stars": 5,
+      "date": "08/11",
+      "variation": "Preto",
+      "date_line": "08/11 · Preto",
+      "comment": "Top demais! Excelente presente de Natal, vou pedir mais dois pra família.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Modelo",
+      "value": "Smartwatch Série 10 W99+ Pro AMOLED",
+      "hidden": false
+    },
+    {
+      "label": "Tela",
+      "value": "Super AMOLED Infinita de Alto Brilho e Contraste",
+      "hidden": false
+    },
+    {
+      "label": "Recursos Inteligentes",
+      "value": "NFC (Fechaduras), ChatGPT Integrado e GPS Dinâmico (via App)",
+      "hidden": false
+    },
+    {
+      "label": "Chamadas e Notificações",
+      "value": "Faz/Recebe Ligações Bluetooth + WhatsApp, Instagram e SMS",
+      "hidden": false
+    },
+    {
+      "label": "Compatibilidade",
+      "value": "Android e iOS (iPhone)",
+      "hidden": true
+    },
+    {
+      "label": "Bateria e Recarga",
+      "value": "Longa Duração (3 a 5 dias) + Carregamento por Indução",
+      "hidden": true
+    },
+    {
+      "label": "Modos Esportivos",
+      "value": "+50 Modos de Treino + Monitor Cardíaco e Sono",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/93klv0.mp4",
+    "poster": "../videosprodutos/posters/poster-smartwatch-135-desc.jpg?v=20261127",
+    "duration": "0:12",
+    "catbox_id": "93klv0.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>⌚ Smartwatch Série 10 W99+ Pro — Tela Super AMOLED, NFC, ChatGPT e Ligações</strong><br/><br/>\nTecnologia de ponta no seu pulso por uma fração do preço! Com <strong>tela Super AMOLED infinita</strong> de brilho intenso, sistema fluido sem travamentos e acabamento premium, o Série 10 W99+ Pro reúne tudo o que você precisa no dia a dia e nos treinos.<br/><br/>\n<strong>Principais Destaques:</strong><br/>\n• <strong>NFC Integrado</strong>: destrave fechaduras eletrônicas e portões compatíveis apenas aproximando o pulso.<br/>\n• <strong>ChatGPT & Assistente de Voz</strong>: tire dúvidas e dê comandos de voz direto no relógio.<br/>\n• <strong>Faz e Recebe Ligações + WhatsApp</strong>: microfone e alto-falante integrados + notificações completas de redes sociais.<br/>\n• <strong>GPS Dinâmico & +50 Modos Esportivos</strong>: acompanhe rotas, passos, calorias e batimentos cardíacos.<br/>\n• <strong>Carregamento por Indução</strong>: bateria com autonomia de 3 a 5 dias em uso normal.<br/>• <strong>Compatível com Android e iPhone (iOS)</strong>.<br/><br/>\n<strong>Conteúdo da Embalagem:</strong><br/>\n• 1 Smartwatch Série 10 W99+ Pro na cor escolhida<br/>• 1 Carregador Magnético por Indução<br/>• 1 Manual do Usuário<br/>• Garantia de 90 dias Stone Shop",
+  "related": [
+    {
+      "href": "produto-126.html",
+      "img": "../img/patinete-126-slide-1.webp",
+      "alt": "Patinete Elétrico Infantil Dobrável LED",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
+      "price": "R$ 97,00",
+      "price_original": "R$ 389,90",
+      "discount": "75% OFF",
+      "sold": "3840 vendidos"
+    },
+    {
+      "href": "produto-133.html",
+      "img": "../img/pisca-133-slide-1.webp",
+      "alt": "Cordão de Luz Natal Pisca Pisca 100 LEDs 9m",
+      "name": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente",
+      "price": "R$ 34,90",
+      "price_original": "R$ 99,90",
+      "discount": "65% OFF",
+      "sold": "6420 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 135,
+    "nome": "Smartwatch Série 10 W99+ Pro Tela Super AMOLED NFC ChatGPT GPS Faz e Recebe Ligações",
+    "name": "Smartwatch Série 10 W99+ Pro Tela Super AMOLED NFC ChatGPT GPS Faz e Recebe Ligações",
+    "preco": 89.9,
+    "price": 89.9,
+    "preco_antigo": 349.9,
+    "precoOrig": 349.9,
+    "originalPrice": 349.9,
+    "cupomPreco": 89.9,
+    "couponPrice": 89.9,
+    "desc": 74,
+    "desconto": 74,
+    "installmentText": "3x de R$ 29,97 sem juros",
+    "parcelamento": "3x de R$ 29,97 sem juros",
+    "categoria": "Eletrônicos",
+    "img": "../img/smartwatch-135-slide-1.webp",
+    "image": "../img/smartwatch-135-slide-1.webp",
+    "imagens": [
+      "../img/smartwatch-135-slide-1.webp",
+      "../img/smartwatch-135-slide-2.webp",
+      "../img/smartwatch-135-slide-3.webp",
+      "../img/smartwatch-135-slide-4.webp",
+      "../img/smartwatch-135-slide-5.webp",
+      "../img/smartwatch-135-slide-6.webp",
+      "../img/smartwatch-135-slide-7.webp",
+      "../img/smartwatch-135-slide-8.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "imagem": "../img/smartwatch-135-var-preto.webp",
+            "nome": "Preto"
+          },
+          {
+            "imagem": "../img/smartwatch-135-var-prata.webp",
+            "nome": "Prata"
+          },
+          {
+            "imagem": "../img/smartwatch-135-var-rose.webp",
+            "nome": "Rosê"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "9240 vendidos"
+  },
+  "extra_scripts": [],
+  "creator_context": "smartwatch135",
+  "creators": [
+    {
+      "name": "Nicolas Moreira",
+      "username": "niicolasmoreiira",
+      "avatar": "../img/avatars-smartwatch/creator-135-nicolas.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-smartwatch-135-c1.jpg?v=20261127",
+      "video": "https://files.catbox.moe/vb3402.mp4#prod=135&slot=criador_1&slug=smartwatch-serie-10-nfc-chatgpt",
+      "catbox_id": "vb3402.mp4",
+      "startTime": 0.2,
+      "likes": 11629,
+      "commentsCount": 312,
+      "saves": 3869,
+      "shares": 745,
+      "description": "NFC no pulso, ChatGPT integrado e tela AMOLED absurda! A NASA precisa estudar quem criou esse relógio 🔥⌚ #smartwatch #dicastech #nfc"
+    },
+    {
+      "name": "Nicolas Moreira",
+      "username": "nicolas.moreira99",
+      "avatar": "../img/avatars-smartwatch/creator-135-nicolas.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-smartwatch-135-c2.jpg?v=20261127",
+      "video": "https://files.catbox.moe/2cwufw.mp4#prod=135&slot=criador_2&slug=smartwatch-serie-10-nfc-chatgpt",
+      "catbox_id": "2cwufw.mp4",
+      "startTime": 0.2,
+      "likes": 11623,
+      "commentsCount": 289,
+      "saves": 4321,
+      "shares": 610,
+      "description": "Quando eu falo o preço desse relógio ninguém acredita! NFC ativo pra fechaduras e carregamento por indução ⚡⌚ #smartwatch #tiktokshop"
+    },
+    {
+      "name": "Marcos Silva",
+      "username": "marcos.silva87",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
+      "poster": "../videosprodutos/posters/poster-smartwatch-135-c3.jpg?v=20261127",
+      "video": "https://files.catbox.moe/6qnwq4.mp4#prod=135&slot=criador_3&slug=smartwatch-serie-10-nfc-chatgpt",
+      "catbox_id": "6qnwq4.mp4",
+      "startTime": 0.2,
+      "likes": 2502,
+      "commentsCount": 142,
+      "saves": 1118,
+      "shares": 195,
+      "description": "NFC ✅ Resistente à água ✅ Recebe e responde mensagem ✅ +50 modos esportes! Facilita demais o dia a dia ⌚🔥 #smartwatch #tech"
+    },
+    {
+      "name": "Bruno Camargo",
+      "username": "brcamarg0",
+      "avatar": "../img/avatars-smartwatch/creator-135-brcamarg0.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-smartwatch-135-c4.jpg?v=20261127",
+      "video": "https://files.catbox.moe/4vdw7s.mp4#prod=135&slot=criador_4&slug=smartwatch-serie-10-nfc-chatgpt",
+      "catbox_id": "4vdw7s.mp4",
+      "startTime": 0.2,
+      "likes": 2004,
+      "commentsCount": 118,
+      "saves": 366,
+      "shares": 88,
+      "description": "Tela infinita AMOLED fluida demais e acabamento premium no pulso! Vale cada centavo ⌚✨ #smartwatch #relogiointeligente"
+    }
+  ]
+}

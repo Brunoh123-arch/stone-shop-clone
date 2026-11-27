@@ -1114,6 +1114,34 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'smartwatch135') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Mano, esse Série 10 W99+ Pro tem tela Super AMOLED, NFC pra fechadura, ChatGPT e faz ligação direto no pulso! Por R$ 89,90 no PIX é surreal 🔥⌚',
+                date: 'Há 1 hora',
+                likes: 142,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg' : 'img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg',
+                user: 'lucas.techsp',
+                text: 'Peguei o Preto semana passada, conectou de primeira no meu iPhone e a bateria tá durando 4 dias tranquilo!',
+                date: 'Há 32 min',
+                likes: 64,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_9.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_9.jpg',
+                user: 'camila_rocha',
+                text: 'Comprei o Rosê pra mim e o Preto pro meu namorado de presente de Natal, chegaram super rápido 😍⌚',
+                date: 'Há 14 min',
+                likes: 38,
+                liked: false
+              }
+            ];
           } else if (contextType === 'cinta132') {
             return [
               {
