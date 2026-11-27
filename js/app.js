@@ -187,14 +187,28 @@ function getCartTotal() {
 
 function updateCartBadges() {
   const count = getCartCount();
-  document.querySelectorAll('.cart-badge').forEach(badge => {
+  document.querySelectorAll('.cart-badge, .tt-rev-cart-badge').forEach(badge => {
     badge.textContent = count > 0 ? count : '';
-    badge.style.display = count > 0 ? 'flex' : 'none';
+    badge.style.setProperty('display', count > 0 ? 'flex' : 'none', 'important');
     badge.classList.remove('pop');
     void badge.offsetWidth;
     if (count > 0) badge.classList.add('pop');
   });
 }
+
+window.goStoneHome = function () {
+  try {
+    const sp = new URLSearchParams(window.location.search);
+    const kept = new URLSearchParams();
+    ['owner', 'preview', 'c', 'ttclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(k => {
+      if (sp.has(k)) kept.set(k, sp.get(k));
+    });
+    const qs = kept.toString();
+    window.location.href = '/' + (qs ? ('?' + qs) : '');
+  } catch (e) {
+    window.location.href = '/';
+  }
+};
 
 // ===== TOAST OFICIAL TIKTOK SHOP (CENTRALIZADO, DARK PILL BLINDADO) =====
 function showTikTokToast(msg, duration = 1800) {
@@ -3509,7 +3523,7 @@ window.abrirTelaAvaliacoesCompletas = function(filtro = 'all') {
             <circle cx="20" cy="21" r="1"></circle>
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
           </svg>
-          <span class="tt-rev-cart-badge">13</span>
+          <span class="tt-rev-cart-badge" style="display:${getCartCount() > 0 ? 'flex' : 'none'} !important;">${getCartCount() > 0 ? getCartCount() : ''}</span>
         </div>
       </div>
     </div>
@@ -3544,7 +3558,7 @@ window.abrirTelaAvaliacoesCompletas = function(filtro = 'all') {
       <div class="tt-rev-bottom-left">
         <!-- Bloco Oficial Loja e Chat idêntico à Página Inicial e Produto -->
         <div class="store-chat-image-group tt-rev-store-chat">
-          <div class="store-chat-clickable-loja" onclick="window.location.href='../index.html'"></div>
+          <div class="store-chat-clickable-loja" onclick="if(window.goStoneHome){window.goStoneHome();}else{window.location.href='../index.html';}"></div>
           <div class="store-chat-clickable-chat" onclick="if (typeof openSmartChat==='function') openSmartChat(); else window.location.href='../index.html'"></div>
         </div>
         <!-- Caixa Rosa com Carrinho e Ícone de Mais Oficial TikTok Shop -->
@@ -4975,7 +4989,7 @@ function initStoneShopApp() {
               <div class="store-widget-sales" style="font-size:12.5px; color:#8a8b91; font-weight:400; margin-top:1px; line-height:1.2;">112240 vendidos</div>
             </div>
             <!-- Botão Visitar Idêntico à Imagem 2 (Flat, border-radius: 18px, font-weight: 600, sem sombra) -->
-            <button class="store-widget-btn-visitar" onclick="window.location.href='../index.html'" style="background:#fe2c55; color:#fff; font-size:13.5px; font-weight:600; padding:6px 18px; height:34px; border-radius:18px; border:none; cursor:pointer; flex-shrink:0; outline:none; box-shadow:none; letter-spacing:-0.2px; display:inline-flex; align-items:center; justify-content:center; -webkit-tap-highlight-color:transparent;">Visitar</button>
+            <button class="store-widget-btn-visitar" onclick="if(window.goStoneHome){window.goStoneHome();}else{window.location.href='../index.html';}" style="background:#fe2c55; color:#fff; font-size:13.5px; font-weight:600; padding:6px 18px; height:34px; border-radius:18px; border:none; cursor:pointer; flex-shrink:0; outline:none; box-shadow:none; letter-spacing:-0.2px; display:inline-flex; align-items:center; justify-content:center; -webkit-tap-highlight-color:transparent;">Visitar</button>
           </div>
           
           <!-- Estatísticas da Loja (Números 95% e 99% em #161823 font-weight:700 e textos em #8a8b91 font-weight:400) -->
@@ -4989,7 +5003,7 @@ function initStoneShopApp() {
           </div>
           
           <!-- Título Mais Desta Loja -->
-          <div class="store-widget-title-row" onclick="window.location.href='../index.html'" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; cursor:pointer;">
+          <div class="store-widget-title-row" onclick="if(window.goStoneHome){window.goStoneHome();}else{window.location.href='../index.html';}" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; cursor:pointer;">
             <span class="store-widget-section-title" style="font-size:13.5px; font-weight:700; color:#222;">Mais desta loja</span>
             <span class="store-widget-arrow" style="font-size:16px; color:#888; line-height:1; font-weight:300;">›</span>
           </div>

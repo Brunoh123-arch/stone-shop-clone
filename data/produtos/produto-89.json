@@ -5,39 +5,39 @@
   "product_title": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbq3nla8",
+      "src": "../img/produtos/local/ext_9ff8a4f9087332.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjsvyfh8osue4a",
+      "src": "../img/produtos/local/ext_8f3eaefd437d4d.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m79gqwb6rooi3e",
+      "src": "../img/produtos/local/ext_57e97837852299.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m90ay6sp232a1e",
+      "src": "../img/produtos/local/ext_e838733494a7cf.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m90ay6sp4w76ce",
+      "src": "../img/produtos/local/ext_42d6ce2c055dd9.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m90ay6sp6arm9c",
+      "src": "../img/produtos/local/ext_efb8b35fa0b811.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbri8140",
+      "src": "../img/produtos/local/ext_8b8c380cec577d.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbswsh29",
+      "src": "../img/produtos/local/ext_c0dccb01e484fa.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbubcxf1",
+      "src": "../img/produtos/local/ext_0180a375a7a6e7.webp",
       "alt": "Kit conjunto de panelas de ferro esmalta - Slide 9"
     }
   ],
@@ -654,7 +654,7 @@
     },
     {
       "name": "R**o S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/avatars-patinete/creator-rafael-muniz.jpg",
       "stars": 5,
       "date": "14/02",
       "variation": "LARANJA descolado",
@@ -694,7 +694,7 @@
     },
     {
       "name": "G**a R**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_16.jpg",
       "stars": 4,
       "date": "08/02",
       "variation": "CINZA CHIQUE",
@@ -766,7 +766,7 @@
     },
     {
       "href": "produto-101.html",
-      "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "img": "../img/produtos/local/ext_13fbb86477331c.webp",
       "alt": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
       "name": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
       "price": "R$ 189,90",
@@ -809,18 +809,18 @@
     "id": 89,
     "nome": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
     "preco": 79.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbq3nla8",
+    "img": "../img/produtos/local/ext_9ff8a4f9087332.webp",
     "imagens": [
-      "https://down-cvs-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v65c-mi09vekkjnyeff.16000081765201215.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbq3nla8",
-      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mjsvyfh8osue4a",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m79gqwb6rooi3e",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m90ay6sp232a1e",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m90ay6sp4w76ce",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m90ay6sp6arm9c",
-      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbri8140",
-      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbswsh29",
-      "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbubcxf1"
+      "../img/produtos/local/ext_9ff8a4f9087332.webp",
+      "../img/produtos/local/ext_9ff8a4f9087332.webp",
+      "../img/produtos/local/ext_8f3eaefd437d4d.webp",
+      "../img/produtos/local/ext_57e97837852299.webp",
+      "../img/produtos/local/ext_e838733494a7cf.webp",
+      "../img/produtos/local/ext_42d6ce2c055dd9.webp",
+      "../img/produtos/local/ext_efb8b35fa0b811.webp",
+      "../img/produtos/local/ext_8b8c380cec577d.webp",
+      "../img/produtos/local/ext_c0dccb01e484fa.webp",
+      "../img/produtos/local/ext_0180a375a7a6e7.webp"
     ],
     "variacoes": {
       "cor": {
@@ -828,23 +828,23 @@
         "label": "COR",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpc1c75ca",
+            "imagem": "../img/produtos/local/ext_5731b8f946a3ae.webp",
             "nome": "VERMELHO CLASSICO"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbvpxdfc",
+            "imagem": "../img/produtos/local/ext_0cc73de4f7818a.webp",
             "nome": "AZUL Moderno"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbx4ht98",
+            "imagem": "../img/produtos/local/ext_33c4db3886359d.webp",
             "nome": "PRETO Surreal"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbyj29fb",
+            "imagem": "../img/produtos/local/ext_121c4cee71975f.webp",
             "nome": "CINZA CHIQUE"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbzxmp33",
+            "imagem": "../img/produtos/local/ext_dfeed109d02f5d.webp",
             "nome": "LARANJA descolado"
           }
         ]

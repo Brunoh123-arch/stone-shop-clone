@@ -54,7 +54,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/avatars-patinete/creator-rafael-muniz.jpg",
       "stars": 5,
       "date": "14/02",
       "variation": "Inox 220V",
@@ -78,7 +78,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_71.jpg",
       "stars": 5,
       "date": "11/02",
       "variation": "Inox 220V",
@@ -126,7 +126,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/avatars-smartwatch/creator-135-brcamarg0.jpg",
       "stars": 4,
       "date": "05/02",
       "variation": "Inox 220V",
@@ -208,7 +208,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/avatars-mix9/creator-146-c3.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "Inox 220V",
@@ -280,7 +280,7 @@
   "related": [
     {
       "href": "produto-16.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "img": "../img/produtos/local/ext_8ec0b5955ed9bf.webp",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "price": "R$ 64,90",
@@ -290,7 +290,7 @@
     },
     {
       "href": "produto-95.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
+      "img": "../img/produtos/local/ext_b841cf2196e1c7.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
       "name": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
       "price": "R$ 159,90",
@@ -300,7 +300,7 @@
     },
     {
       "href": "produto-63.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
+      "img": "../img/produtos/local/ext_68475e5e216508.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "name": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "price": "R$ 69,90",
@@ -310,7 +310,7 @@
     },
     {
       "href": "produto-9.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "img": "../img/produtos/local/ext_87369898964782.webp",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "price": "R$ 349,90",
@@ -335,7 +335,7 @@
     "preco": 189.9,
     "img": "../img/produto-14-1.jpg",
     "imagens": [
-      "https://files.catbox.moe/ibv6vn.mp4",
+      "../img/produtos/p14/slide_1.jpg",
       "../img/produto-14-1.jpg",
       "../img/produto-14-2.jpg",
       "../img/produto-14-3.jpg",

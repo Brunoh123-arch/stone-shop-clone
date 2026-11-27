@@ -302,7 +302,7 @@
   <!-- BOTTOM BAR UNIVERSAL -->
   <div class="bottom-bar">
     <div class="store-chat-image-group">
-      <div class="store-chat-clickable-loja" onclick="window.location.href='../index.html'"></div>
+      <div class="store-chat-clickable-loja" onclick="if(window.goStoneHome){window.goStoneHome();}else{window.location.href='../index.html'+(window.location.search||'');}"></div>
       <div class="store-chat-clickable-chat" onclick="openSmartChat()"></div>
     </div>
     <button aria-label="Adicionar ao carrinho" class="btn-add-cart" id="btn-add-cart" onclick="handleAddToCart()" type="button">

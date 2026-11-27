@@ -5,43 +5,43 @@
   "product_title": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
   "slider_imgs": [
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp",
+      "src": "../img/produtos/local/ext_93fa140245872d.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 1"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_892654-MLA88404436715_072025-O.webp",
+      "src": "../img/produtos/local/ext_ab439aeef9c815.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 2"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_824435-MLA88403891671_072025-O.webp",
+      "src": "../img/produtos/local/ext_3d20a896cf68fd.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 3"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_949374-MLA88403911749_072025-O.webp",
+      "src": "../img/produtos/local/ext_4b6cf0342b0bc9.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 4"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_966428-MLA88063965616_072025-O.webp",
+      "src": "../img/produtos/local/ext_b590e13f770190.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 5"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_964110-MLA88404188767_072025-O.webp",
+      "src": "../img/produtos/local/ext_517863c592bcda.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 6"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_986060-MLA88404407339_072025-O.webp",
+      "src": "../img/produtos/local/ext_4b0e0c97515dfc.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 7"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_931099-MLA88403772555_072025-O.webp",
+      "src": "../img/produtos/local/ext_6cde4e677d9dc1.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 8"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_624672-MLA88403603287_072025-O.webp",
+      "src": "../img/produtos/local/ext_05c2eca23ed75a.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 9"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_720244-MLA88403951527_072025-O.webp",
+      "src": "../img/produtos/local/ext_7b6dba55a4ec52.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto - 10"
     }
   ],
@@ -286,7 +286,7 @@
   "related": [
     {
       "href": "produto-25.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b",
+      "img": "../img/produtos/local/ext_ec5070df7674c4.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
       "name": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
       "price": "R$ 79,90",
@@ -296,7 +296,7 @@
     },
     {
       "href": "produto-76.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
+      "img": "../img/produtos/local/ext_5e27c05d37aedb.webp",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "name": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "price": "R$ 69,90",
@@ -306,7 +306,7 @@
     },
     {
       "href": "produto-63.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
+      "img": "../img/produtos/local/ext_68475e5e216508.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "name": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "price": "R$ 69,90",
@@ -339,18 +339,18 @@
     "id": 90,
     "nome": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
     "preco": 79.9,
-    "img": "https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp",
+    "img": "../img/produtos/local/ext_93fa140245872d.webp",
     "imagens": [
-      "https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_892654-MLA88404436715_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_824435-MLA88403891671_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_949374-MLA88403911749_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_966428-MLA88063965616_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_964110-MLA88404188767_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_986060-MLA88404407339_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_931099-MLA88403772555_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_624672-MLA88403603287_072025-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_720244-MLA88403951527_072025-O.webp"
+      "../img/produtos/local/ext_93fa140245872d.webp",
+      "../img/produtos/local/ext_ab439aeef9c815.webp",
+      "../img/produtos/local/ext_3d20a896cf68fd.webp",
+      "../img/produtos/local/ext_4b6cf0342b0bc9.webp",
+      "../img/produtos/local/ext_b590e13f770190.webp",
+      "../img/produtos/local/ext_517863c592bcda.webp",
+      "../img/produtos/local/ext_4b0e0c97515dfc.webp",
+      "../img/produtos/local/ext_6cde4e677d9dc1.webp",
+      "../img/produtos/local/ext_05c2eca23ed75a.webp",
+      "../img/produtos/local/ext_7b6dba55a4ec52.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -359,7 +359,7 @@
         "opcoes": [
           {
             "nome": "Preto Indução Space 5 Peças",
-            "imagem": "https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp"
+            "imagem": "../img/produtos/local/ext_93fa140245872d.webp"
           }
         ]
       }

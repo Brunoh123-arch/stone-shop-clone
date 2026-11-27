@@ -5,23 +5,23 @@
   "product_title": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
+      "src": "../img/produtos/local/ext_68475e5e216508.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto  - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdx3-mc9fnl7820o09a",
+      "src": "../img/produtos/local/ext_36472ade737297.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto  - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdwp-mc9fnluj5cdubd",
+      "src": "../img/produtos/local/ext_43ebb12b87ee42.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto  - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvy-mc9fnmf29w2976",
+      "src": "../img/produtos/local/ext_9c88b81fd41abe.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto  - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-md0i6m40q3huc9",
+      "src": "../img/produtos/local/ext_727ff6dc412562.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto  - Slide 5"
     }
   ],
@@ -260,7 +260,7 @@
   "related": [
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -270,7 +270,7 @@
     },
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
+      "img": "../img/produtos/local/ext_954098063bc9b4.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "price": "R$ 69,90",
@@ -313,14 +313,14 @@
     "id": 63,
     "nome": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
     "preco": 69.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
+    "img": "../img/produtos/local/ext_68475e5e216508.webp",
     "imagens": [
-      "https://down-bs-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dk-mfikpccp9a10ae.16000081759771329.mp4",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdx3-mc9fnl7820o09a",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdwp-mc9fnluj5cdubd",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdvy-mc9fnmf29w2976",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-md0i6m40q3huc9"
+      "../img/produtos/local/ext_68475e5e216508.webp",
+      "../img/produtos/local/ext_68475e5e216508.webp",
+      "../img/produtos/local/ext_36472ade737297.webp",
+      "../img/produtos/local/ext_43ebb12b87ee42.webp",
+      "../img/produtos/local/ext_9c88b81fd41abe.webp",
+      "../img/produtos/local/ext_727ff6dc412562.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -329,11 +329,11 @@
         "opcoes": [
           {
             "nome": "Preto com GPS",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24"
+            "imagem": "../img/produtos/local/ext_68475e5e216508.webp"
           },
           {
             "nome": "Cinza Claro com GPS",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rdx3-mc9fnl7820o09a"
+            "imagem": "../img/produtos/local/ext_36472ade737297.webp"
           }
         ]
       }

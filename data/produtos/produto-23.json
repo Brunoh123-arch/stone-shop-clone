@@ -5,39 +5,39 @@
   "product_title": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5",
+      "src": "../img/produtos/local/ext_808987870d01f6.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduzx2q49",
+      "src": "../img/produtos/local/ext_558a2b69d4225e.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduyiiaa8",
+      "src": "../img/produtos/local/ext_0755b74a160d30.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv1bn609",
+      "src": "../img/produtos/local/ext_b32c43b2c2252d.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdusw8i92",
+      "src": "../img/produtos/local/ext_f68869153f963f.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduuasy19",
+      "src": "../img/produtos/local/ext_ddecf31e350b5f.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduvpde9f",
+      "src": "../img/produtos/local/ext_3749f8760785b8.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdux3xu2a",
+      "src": "../img/produtos/local/ext_0c91f972732d00.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv2q7m0a",
+      "src": "../img/produtos/local/ext_574ba8319963cf.webp",
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 9"
     }
   ],
@@ -566,7 +566,7 @@
   "related": [
     {
       "href": "produto-75.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxr-lyatwes75beuc5",
+      "img": "../img/produtos/local/ext_6e96a51bd2f1e7.webp",
       "alt": "Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida",
       "name": "Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida",
       "price": "R$ 69,90",
@@ -609,18 +609,18 @@
     "id": 23,
     "nome": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava",
     "preco": 24.73,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5",
+    "img": "../img/produtos/local/ext_808987870d01f6.webp",
     "imagens": [
-      "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dl-mfa1g6achtl364.16000081759254686.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduzx2q49",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduyiiaa8",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv1bn609",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdusw8i92",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduuasy19",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecduvpde9f",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdux3xu2a",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv2q7m0a"
+      "../img/produtos/local/ext_808987870d01f6.webp",
+      "../img/produtos/local/ext_808987870d01f6.webp",
+      "../img/produtos/local/ext_558a2b69d4225e.webp",
+      "../img/produtos/local/ext_0755b74a160d30.webp",
+      "../img/produtos/local/ext_b32c43b2c2252d.webp",
+      "../img/produtos/local/ext_f68869153f963f.webp",
+      "../img/produtos/local/ext_ddecf31e350b5f.webp",
+      "../img/produtos/local/ext_3749f8760785b8.webp",
+      "../img/produtos/local/ext_0c91f972732d00.webp",
+      "../img/produtos/local/ext_574ba8319963cf.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -629,7 +629,7 @@
         "opcoes": [
           {
             "nome": "Kit Completo 24 Potes Herméticos com Trava",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5"
+            "imagem": "../img/produtos/local/ext_808987870d01f6.webp"
           }
         ]
       }

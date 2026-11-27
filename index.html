@@ -20,7 +20,7 @@
 <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" name="viewport"/>
 <title>Stone Shop</title>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" referrerpolicy="no-referrer" rel="stylesheet"/>
-<link href="css/style.css?v=20261127_tt_oficial_1to1_v43" rel="stylesheet"/>
+<link href="css/style.css?v=20261127_tt_oficial_1to1_v45" rel="stylesheet"/>
 <link href="css/original_index.css" rel="stylesheet"/>
 <style>
     /* Ajustes finos adicionais */
@@ -2827,7 +2827,7 @@ html, body {
     gap: 8px !important;
   }
   #tt-store-header .cart-badge {
-    display: flex !important;
+    display: none;
     position: absolute !important;
     top: 0px !important;
     right: -4px !important;
@@ -3432,7 +3432,7 @@ html, body {
         <circle cx="9.4" cy="20" fill="currentColor" r="1.85"></circle>
         <circle cx="17.7" cy="20" fill="currentColor" r="1.85"></circle>
       </svg>
-      <span class="cart-badge">12</span>
+      <span class="cart-badge" style="display:none">0</span>
     </a>
   </div>
 </header>
@@ -3609,7 +3609,7 @@ html, body {
 <div class="divider-home-rec">Recomendado para você</div>
 <div id="recommended-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
 <!-- PRODUTO 146 -->
-<a class="product-card-rec" data-cat="Eletrônicos" data-id="146" data-nome="caixa de som jbl partybox encore essential bluetooth 100w led portatil festa churrasco" data-vendas="7438" href="pages/produto-146.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="146" data-nome="caixa de som jbl partybox encore essential bluetooth 100w led portatil festa churrasco" data-vendas="7438" href="pages/produto-146.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS Show de Luzes LED IPX4" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/jbl-146-slide-1.webp"/>
 <div class="card-details-col">
@@ -3638,7 +3638,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 147 -->
-<a class="product-card-rec" data-cat="Brinquedos" data-id="147" data-nome="triciclo eletrico drift infantil 360 350w led bluetooth scooter crianca presente natal" data-vendas="5126" href="pages/produto-147.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="147" data-nome="triciclo eletrico drift infantil 360 350w led bluetooth scooter crianca presente natal" data-vendas="5126" href="pages/produto-147.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ Luzes LED, Chave, Display e Bluetooth" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/triciclo-147-slide-1.webp"/>
 <div class="card-details-col">
@@ -3667,7 +3667,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 148 -->
-<a class="product-card-rec" data-cat="Cozinha" data-id="148" data-nome="jogo de panelas brinox ceramic life smart plus 8 pecas vanilla antiaderente ceramica cozinha" data-vendas="8290" href="pages/produto-148.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="148" data-nome="jogo de panelas brinox ceramic life smart plus 8 pecas vanilla antiaderente ceramica cozinha" data-vendas="8290" href="pages/produto-148.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/panelas-148-slide-1.webp"/>
 <div class="card-details-col">
@@ -3696,7 +3696,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 149 -->
-<a class="product-card-rec" data-cat="Casa" data-id="149" data-nome="cortina cascata de led 3x3 300 leds colorido rgb branco quente usb controle remoto natal sala quarto festas" data-vendas="11420" href="pages/produto-149.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="149" data-nome="cortina cascata de led 3x3 300 leds colorido rgb branco quente usb controle remoto natal sala quarto festas" data-vendas="11420" href="pages/produto-149.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Cortina Cascata Luminosa 3m x 3m 300 LEDs Colorido RGB & Branco Quente USB IP44 c/ Controle Remoto" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/cortina-149-slide-1.webp"/>
 <div class="card-details-col">
@@ -3725,7 +3725,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 150 -->
-<a class="product-card-rec" data-cat="Cozinha" data-id="150" data-nome="fogao 4 bocas esmaltec ideal agata preto inox acendimento automatico forno limpa facil" data-vendas="4180" href="pages/produto-150.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="150" data-nome="fogao 4 bocas esmaltec ideal agata preto inox acendimento automatico forno limpa facil" data-vendas="4180" href="pages/produto-150.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Fogão 4 Bocas Esmaltec Ideal Super Mesa Inox Acendimento Automático Forno Limpa Fácil 50L Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/fogao-150-slide-1.webp"/>
 <div class="card-details-col">
@@ -3754,7 +3754,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 151 -->
-<a class="product-card-rec" data-cat="Eletrônicos" data-id="151" data-nome="smart tv 32 lg hd led ai thinq hdr wifi bluetooth webos televisao quarto sala" data-vendas="5890" href="pages/produto-151.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="151" data-nome="smart tv 32 lg hd led ai thinq hdr wifi bluetooth webos televisao quarto sala" data-vendas="5890" href="pages/produto-151.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Smart TV 32&quot; LG HD LED ThinQ AI HDR10 Processador α5 WebOS Wi-Fi Bluetooth Alexa Integrada" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/tv-151-slide-1.webp"/>
 <div class="card-details-col">
@@ -3783,7 +3783,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 152 -->
-<a class="product-card-rec" data-cat="Eletrônicos" data-id="152" data-nome="celular smartphone samsung galaxy a17 5g 128gb tela super amoled camera 50mp nfc" data-vendas="6310" href="pages/produto-152.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="152" data-nome="celular smartphone samsung galaxy a17 5g 128gb tela super amoled camera 50mp nfc" data-vendas="6310" href="pages/produto-152.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Smartphone Samsung Galaxy A17 5G 128GB 4GB RAM Tela Super AMOLED 6,7&quot; 90Hz Câmera Tripla 50MP NFC" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/galaxy-152-slide-1.webp"/>
 <div class="card-details-col">
@@ -3812,7 +3812,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 153 -->
-<a class="product-card-rec" data-cat="Eletrônicos" data-id="153" data-nome="tablet samsung galaxy tab s10 fe 128gb 8gb ram tela 10.9 caneta s pen capa estudos" data-vendas="4290" href="pages/produto-153.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="153" data-nome="tablet samsung galaxy tab s10 fe 128gb 8gb ram tela 10.9 caneta s pen capa estudos" data-vendas="4290" href="pages/produto-153.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Tablet Samsung Galaxy Tab S10 FE 128GB 8GB RAM Tela 10,9&quot; 90Hz Wi-Fi IP68 c/ Caneta S-Pen e Capa Inclusas" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/tabs10-153-slide-1.webp"/>
 <div class="card-details-col">
@@ -3841,7 +3841,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 154 -->
-<a class="product-card-rec" data-cat="Casa" data-id="154" data-nome="maquina de lavar roupas lavadora brastemp 13kg bwk13 automatica cesto inox tira manchas" data-vendas="3740" href="pages/produto-154.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="154" data-nome="maquina de lavar roupas lavadora brastemp 13kg bwk13 automatica cesto inox tira manchas" data-vendas="3740" href="pages/produto-154.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox Ciclo Tira-Manchas Advanced e Antibolinhas" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/brastemp-154-slide-1.webp"/>
 <div class="card-details-col">
@@ -3870,7 +3870,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 144 -->
-<a class="product-card-rec" data-cat="Brinquedos" data-id="144" data-nome="camera infantil instantanea imprime foto na hora sem tinta bobina presente natal" data-vendas="4829" href="pages/produto-144.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="144" data-nome="camera infantil instantanea imprime foto na hora sem tinta bobina presente natal" data-vendas="4829" href="pages/produto-144.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas Térmicas e Alça" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/camera-144-slide-1.webp"/>
 <div class="card-details-col">
@@ -3899,7 +3899,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 129 -->
-<a class="product-card-rec" data-cat="Casa" data-id="129" data-nome="escova eletrica giratoria limpeza sem fio 9 em 1 cabo extensor banheiro box azulejo" data-vendas="6184" href="pages/produto-129.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="129" data-nome="escova eletrica giratoria limpeza sem fio 9 em 1 cabo extensor banheiro box azulejo" data-vendas="6184" href="pages/produto-129.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Escova Elétrica Giratória de Limpeza Sem Fio 9 em 1 Impermeável c/ Cabo Extensor Retrátil USB" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/escova-129-slide-1.webp"/>
 <div class="card-details-col">
@@ -3928,7 +3928,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 127 -->
-<a class="product-card-rec" data-cat="Brinquedos" data-id="127" data-nome="carrinho controle remoto drift 4x4 turbo solta fumaca led pneus cones brinquedo" data-vendas="3918" href="pages/produto-127.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="127" data-nome="carrinho controle remoto drift 4x4 turbo solta fumaca led pneus cones brinquedo" data-vendas="3918" href="pages/produto-127.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Carrinho Controle Remoto Drift 4x4 Turbo que Solta Fumaça com LED + Kit Pneus Drift e Cones" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/drift-127-slide-1.webp"/>
 <div class="card-details-col">
@@ -3957,7 +3957,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 145 -->
-<a class="product-card-rec" data-cat="Viagem" data-id="145" data-nome="combo mala de bordo rigida abs giro 360 anac frasqueira viagem kit 2 pecas" data-vendas="4376" href="pages/produto-145.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="145" data-nome="combo mala de bordo rigida abs giro 360 anac frasqueira viagem kit 2 pecas" data-vendas="4376" href="pages/produto-145.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Combo Mala de Bordo Rígida ABS Giro 360° Padrão ANAC + Frasqueira de Viagem (Kit 2 Peças)" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/mala-145-slide-1.webp"/>
 <div class="card-details-col">
@@ -3986,7 +3986,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 128 -->
-<a class="product-card-rec" data-cat="Casa" data-id="128" data-nome="mesa dobravel portatil vira maleta 180m reforcada ceia natal churrasco camping" data-vendas="3695" href="pages/produto-128.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="128" data-nome="mesa dobravel portatil vira maleta 180m reforcada ceia natal churrasco camping" data-vendas="3695" href="pages/produto-128.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Mesa Dobrável Portátil Vira Maleta 1,80m Reforçada com Alça e Trava (Ceia, Churrasco e Camping)" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/mesa-128-slide-1.webp"/>
 <div class="card-details-col">
@@ -4015,7 +4015,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 136 -->
-<a class="product-card-rec" data-cat="Casa" data-id="136" data-nome="kit cozinha mondial liquidificador 550w batedeira 400w black friday" data-vendas="2840" href="pages/produto-136.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="136" data-nome="kit cozinha mondial liquidificador 550w batedeira 400w black friday" data-vendas="2840" href="pages/produto-136.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/kit-mondial-136-slide-1.webp"/>
 <div class="card-details-col">
@@ -4044,7 +4044,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 138 -->
-<a class="product-card-rec" data-cat="Casa" data-id="138" data-nome="cortina de led 3m 300 leds usb controle remoto natal decoracao" data-vendas="8420" href="pages/produto-138.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="138" data-nome="cortina de led 3m 300 leds usb controle remoto natal decoracao" data-vendas="8420" href="pages/produto-138.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Cortina de LED 3m x 3m 300 LEDs USB c/ Controle Remoto 8 Funções" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/cortina-led-138-slide-1.webp"/>
 <div class="card-details-col">
@@ -4073,7 +4073,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 139 -->
-<a class="product-card-rec" data-cat="Moda" data-id="139" data-nome="vestido curto ombro a ombro drapeado faixa lateral festa natal reveillon" data-vendas="3650" href="pages/produto-139.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="139" data-nome="vestido curto ombro a ombro drapeado faixa lateral festa natal reveillon" data-vendas="3650" href="pages/produto-139.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Natal e Réveillon" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/vestido-139-slide-1.webp"/>
 <div class="card-details-col">
@@ -4102,7 +4102,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 135 -->
-<a class="product-card-rec" data-cat="Eletrônicos" data-id="135" data-nome="smartwatch serie 10 w99 pro amoled nfc chatgpt gps relogio inteligente ligacoes" data-vendas="9200" href="pages/produto-135.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="135" data-nome="smartwatch serie 10 w99 pro amoled nfc chatgpt gps relogio inteligente ligacoes" data-vendas="9200" href="pages/produto-135.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Smartwatch Série 10 W99+ Pro AMOLED NFC ChatGPT" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/smartwatch-135-slide-1.webp"/>
 <div class="card-details-col">
@@ -4131,7 +4131,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 134 -->
-<a class="product-card-rec" data-cat="Beleza" data-id="134" data-nome="caneta aparadora depiladora sobrancelhas eletrica recarregavel usb led indolor buco" data-vendas="5191" href="pages/produto-134.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Beleza, Cabelo & Perfumaria" data-id="134" data-nome="caneta aparadora depiladora sobrancelhas eletrica recarregavel usb led indolor buco" data-vendas="5191" href="pages/produto-134.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ LED" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/sobrancelha-134-slide-1.webp"/>
 <div class="card-details-col">
@@ -4160,7 +4160,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 133 -->
-<a class="product-card-rec" data-cat="Casa" data-id="133" data-nome="cordao luz natal pisca pisca 100 leds 9m 8 funcoes fio transparente decoracao arvore" data-vendas="6454" href="pages/produto-133.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="133" data-nome="cordao luz natal pisca pisca 100 leds 9m 8 funcoes fio transparente decoracao arvore" data-vendas="6454" href="pages/produto-133.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/pisca-133-slide-1.webp"/>
 <div class="card-details-col">
@@ -4189,7 +4189,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 132 -->
-<a class="product-card-rec" data-cat="Moda" data-id="132" data-nome="cinta modeladora feminina redutora abdominal m plus 6 colchetes respiravel fitness" data-vendas="4617" href="pages/produto-132.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="132" data-nome="cinta modeladora feminina redutora abdominal m plus 6 colchetes respiravel fitness" data-vendas="4617" href="pages/produto-132.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis Respirável" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/cinta-132-slide-1.webp"/>
 <div class="card-details-col">
@@ -4218,7 +4218,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 126 -->
-<a class="product-card-rec" data-cat="Brinquedos" data-id="126" data-nome="patinete eletrico infantil dobravel luzes led rodas guidao ajustavel brinquedo presente natal" data-vendas="3842" href="pages/produto-126.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="126" data-nome="patinete eletrico infantil dobravel luzes led rodas guidao ajustavel brinquedo presente natal" data-vendas="3842" href="pages/produto-126.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Patinete Elétrico Infantil Dobrável com LED" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/patinete-126-slide-1.webp"/>
 <div class="card-details-col">
@@ -4248,7 +4248,7 @@ html, body {
 </a>
 
 <!-- PRODUTO 110 -->
-<a class="product-card-rec" data-cat="Calçados" data-id="110" data-nome="tenis kappa pulse rx masculino feminino amortecimento corrida caminhada" data-vendas="6553" href="pages/produto-110.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="110" data-nome="tenis kappa pulse rx masculino feminino amortecimento corrida caminhada" data-vendas="6553" href="pages/produto-110.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Tênis Kappa Pulse RX" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-110-1.jpg"/>
 <div class="card-details-col">
@@ -4277,7 +4277,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 111 -->
-<a class="product-card-rec" data-cat="Casa" data-id="111" data-nome="projetor led natalino 16 desenhos tematicos usb bivolt decoracao" data-vendas="5253" href="pages/produto-111.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="111" data-nome="projetor led natalino 16 desenhos tematicos usb bivolt decoracao" data-vendas="5253" href="pages/produto-111.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Projetor LED Natalino 16 Desenhos" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-111-1.jpg"/>
 <div class="card-details-col">
@@ -4306,7 +4306,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 112 -->
-<a class="product-card-rec" data-cat="Brinquedos" data-id="112" data-nome="caminhao de bombeiros 2 em 1 montanha russa de patinhos bate volta led musical" data-vendas="3914" href="pages/produto-112.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="112" data-nome="caminhao de bombeiros 2 em 1 montanha russa de patinhos bate volta led musical" data-vendas="3914" href="pages/produto-112.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Caminhão Bombeiro Patinhos 2 em 1" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-112-1.jpg"/>
 <div class="card-details-col">
@@ -4335,7 +4335,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 113 -->
-<a class="product-card-rec" data-cat="Pet" data-id="113" data-nome="comedouro cachorro gato elevado duplo acrilico transparente anti engasgo" data-vendas="7401" href="pages/produto-113.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="113" data-nome="comedouro cachorro gato elevado duplo acrilico transparente anti engasgo" data-vendas="7401" href="pages/produto-113.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Comedouro Pet Duplo Elevado" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-113-1.jpg"/>
 <div class="card-details-col">
@@ -4364,7 +4364,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 114 -->
-<a class="product-card-rec" data-cat="Games" data-id="114" data-nome="controle arcade 7 em 1 stick retro multiplataforma ps4 ps3 xbox pc switch celular" data-vendas="2965" href="pages/produto-114.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="114" data-nome="controle arcade 7 em 1 stick retro multiplataforma ps4 ps3 xbox pc switch celular" data-vendas="2965" href="pages/produto-114.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Controle Arcade 7 em 1 Stick Retrô" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-114-1.jpg"/>
 <div class="card-details-col">
@@ -4393,7 +4393,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 109 -->
-<a class="product-card-rec" data-cat="Beleza" data-id="109" data-nome="modelador de cachos automatico sem fio portatil ceramica bateria usb" data-vendas="14369" href="pages/produto-109.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Beleza, Cabelo & Perfumaria" data-id="109" data-nome="modelador de cachos automatico sem fio portatil ceramica bateria usb" data-vendas="14369" href="pages/produto-109.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Modelador de Cachos Automático Sem Fio" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-109-1.jpg"/>
 <div class="card-details-col">
@@ -4422,7 +4422,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 108 -->
-<a class="product-card-rec" data-cat="Beleza" data-id="108" data-nome="escova secadora e modeladora 5 em 1 multifuncional efeito coanda bivolt" data-vendas="18462" href="pages/produto-108.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Beleza, Cabelo & Perfumaria" data-id="108" data-nome="escova secadora e modeladora 5 em 1 multifuncional efeito coanda bivolt" data-vendas="18462" href="pages/produto-108.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Escova Secadora e Modeladora 5 em 1" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-108-1.jpg"/>
 <div class="card-details-col">
@@ -4452,9 +4452,9 @@ html, body {
 </a>
 <!-- PRODUTO 52 -->
 <!-- PRODUTO 105 -->
-<a class="product-card-rec" data-cat="Eletrônicos" data-id="105" data-nome="projetor hy300 original portatil smart android 11 4k ultra hd hdmi wifi bluetooth alto" data-vendas="14829" href="pages/produto-105.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="105" data-nome="projetor hy300 original portatil smart android 11 4k ultra hd hdmi wifi bluetooth alto" data-vendas="14829" href="pages/produto-105.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Projetor HY300 Original Smart 4K" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/81525a24b6074e6c87b673c8cc37d237~tplv-aphluv4xwc-resize-webp:800:800.webp"/>
+<img alt="Projetor HY300 Original Smart 4K" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/prod-105-local-1.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto</h3>
@@ -4481,9 +4481,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 104 -->
-<a class="product-card-rec" data-cat="Calçados" data-id="104" data-nome="chinelo feminino luxo strass brilhante macio leve" data-vendas="21303" href="pages/produto-104.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="104" data-nome="chinelo feminino luxo strass brilhante macio leve" data-vendas="21303" href="pages/produto-104.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Chinelo Feminino Luxo Strass Brilhante Macio Leve" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&amp;t=555f072d&amp;ps=933b5bde&amp;shp=c940a200&amp;shcp=9b759fb9&amp;idc=my3&amp;from=3376456192"/>
+<img alt="Chinelo Feminino Luxo Strass Brilhante Macio Leve" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/prod-104-local-1.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Chinelo Feminino Luxo Strass Brilhante Macio Leve</h3>
@@ -4510,9 +4510,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 103 -->
-<a class="product-card-rec" data-cat="Moda Feminina" data-id="103" data-nome="vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante" data-vendas="5648" href="pages/produto-103.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="103" data-nome="vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante" data-vendas="5648" href="pages/produto-103.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/ad55abb03d5c4c37957422c69ecd7d65~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&amp;t=555f072d&amp;ps=933b5bde&amp;shp=c940a200&amp;shcp=9b759fb9&amp;idc=my3&amp;from=3376456192"/>
+<img alt="Vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/prod-103-local-1.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante</h3>
@@ -4540,9 +4540,9 @@ html, body {
 </a>
 <!-- PRODUTO 56 -->
 <!-- PRODUTO 35 -->
-<a class="product-card-rec" data-cat="Alto-Falantes" data-id="35" data-nome="caixa de som jbl boombox 4 bluetooth 210w preta bivolt" data-vendas="8569" href="pages/produto-35.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="35" data-nome="caixa de som jbl boombox 4 bluetooth 210w preta bivolt" data-vendas="8569" href="pages/produto-35.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8"/>
+<img alt="Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-108-1.jpg"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt</h3>
@@ -4572,9 +4572,9 @@ html, body {
 <!-- PRODUTO 82 -->
 <!-- PRODUTO 65 -->
 <!-- PRODUTO 40 -->
-<a class="product-card-rec" data-cat="Micro-ondas" data-id="40" data-nome="micro-ondas mondial mo-01-21-e 1200w 21 litros" data-vendas="8953" href="pages/produto-40.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="40" data-nome="micro-ondas mondial mo-01-21-e 1200w 21 litros" data-vendas="8953" href="pages/produto-40.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zqs2hxtuki59"/>
+<img alt="Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_b71372ef194ac9.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros</h3>
@@ -4606,9 +4606,9 @@ html, body {
 <!-- PRODUTO 79 -->
 
 <!-- PRODUTO 18 -->
-<a class="product-card-rec" data-cat="Outros" data-id="18" data-nome="kit praia 4 cadeiras sortidas reclinável + guarda sol fashion + saca areia+ carrinho+ coller 18 lts" data-vendas="10706" href="pages/produto-18.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="18" data-nome="kit praia 4 cadeiras sortidas reclinável + guarda sol fashion + saca areia+ carrinho+ coller 18 lts" data-vendas="10706" href="pages/produto-18.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhuv620f45j7bf"/>
+<img alt="Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-109-1.jpg"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts</h3>
@@ -4637,7 +4637,7 @@ html, body {
 <!-- PRODUTO 9 -->
 <!-- PRODUTO 10 -->
 <!-- PRODUTO 13 -->
-<a class="product-card-rec" data-cat="Esportes e Jogos ao Ar Livre" data-id="13" data-nome="piscina inflável redonda mor 1000 litros splash fun azul" data-vendas="10004" href="pages/produto-13.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="13" data-nome="piscina inflável redonda mor 1000 litros splash fun azul" data-vendas="10004" href="pages/produto-13.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/p13/mor_slide_1.jpg"/>
 <div class="card-details-col">
@@ -4666,9 +4666,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 58 -->
-<a class="product-card-rec" data-cat="Geral" data-id="58" data-nome="caixa de som original alaxe echo dot 5 geração com envio imediato e melhor preço" data-vendas="9876" href="pages/produto-58.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="58" data-nome="caixa de som original alaxe echo dot 5 geração com envio imediato e melhor preço" data-vendas="9876" href="pages/produto-58.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgby6v6yabr9ad"/>
+<img alt="Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_664ccedde4b336.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço</h3>
@@ -4695,9 +4695,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 54 -->
-<a class="product-card-rec" data-cat="Geral" data-id="54" data-nome="purificador eletrônico compacto efficient painel digital bivolt cinza (pe11x)" data-vendas="9876" href="pages/produto-54.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="54" data-nome="purificador eletrônico compacto efficient painel digital bivolt cinza (pe11x)" data-vendas="9876" href="pages/produto-54.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89"/>
+<img alt="Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_7f3b92c0ec6446.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)</h3>
@@ -4724,9 +4724,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 14 -->
-<a class="product-card-rec" data-cat="Fornos e Churrasqueiras Elétricas" data-id="14" data-nome="churrasqueira assador a gás glp rotativo arke 5 espetos agr-05 bivolt" data-vendas="9874" href="pages/produto-14.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="14" data-nome="churrasqueira assador a gás glp rotativo arke 5 espetos agr-05 bivolt" data-vendas="9874" href="pages/produto-14.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rdwx-lzpm7626yvg7c9"/>
+<img alt="Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-110-1.jpg"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt</h3>
@@ -4753,9 +4753,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 39 -->
-<a class="product-card-rec" data-cat="Utensílios Capilares" data-id="39" data-nome="secador de cabelos philco psc3500 4 em 1 dobrável 1450w" data-vendas="9872" href="pages/produto-39.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Beleza, Cabelo & Perfumaria" data-id="39" data-nome="secador de cabelos philco psc3500 4 em 1 dobrável 1450w" data-vendas="9872" href="pages/produto-39.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-824hh-mfio0pwmo0su97"/>
+<img alt="Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_1bf45eeb92ea9f.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W</h3>
@@ -4782,9 +4782,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 34 -->
-<a class="product-card-rec" data-cat="Lavadoras de Louça" data-id="34" data-nome="lava louças praxis portátil llpp semi-automática bivolt" data-vendas="9864" href="pages/produto-34.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="34" data-nome="lava louças praxis portátil llpp semi-automática bivolt" data-vendas="9864" href="pages/produto-34.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m850ox58do8h8b"/>
+<img alt="Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_fa4eb58f0107a3.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt</h3>
@@ -4812,9 +4812,9 @@ html, body {
 </a>
 <!-- PRODUTO 44 -->
 <!-- PRODUTO 85 -->
-<a class="product-card-rec" data-cat="Geral" data-id="85" data-nome="caixa de som karaokê joog x2 300w tela 10,1 com 2 microfones" data-vendas="9853" href="pages/produto-85.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="85" data-nome="caixa de som karaokê joog x2 300w tela 10,1 com 2 microfones" data-vendas="9853" href="pages/produto-85.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103"/>
+<img alt="Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_687a326d19d3f0.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones</h3>
@@ -4841,9 +4841,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 63 -->
-<a class="product-card-rec" data-cat="Geral" data-id="63" data-nome="smartwatch redmi watch 5 lite gps preto pulseira" data-vendas="9853" href="pages/produto-63.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="63" data-nome="smartwatch redmi watch 5 lite gps preto pulseira" data-vendas="9853" href="pages/produto-63.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24"/>
+<img alt="Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_68475e5e216508.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira</h3>
@@ -4871,9 +4871,9 @@ html, body {
 </a>
 <!-- PRODUTO 36 -->
 <!-- PRODUTO 76 -->
-<a class="product-card-rec" data-cat="Geral" data-id="76" data-nome="aparelho jogo de jantar 30 peças orgânico petroleum porto brasil carlos bertolazzi + brinde" data-vendas="9843" href="pages/produto-76.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="76" data-nome="aparelho jogo de jantar 30 peças orgânico petroleum porto brasil carlos bertolazzi + brinde" data-vendas="9843" href="pages/produto-76.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75"/>
+<img alt="Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_5e27c05d37aedb.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE</h3>
@@ -4900,9 +4900,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 75 -->
-<a class="product-card-rec" data-cat="Geral" data-id="75" data-nome="kit 10 camisetas dry fit masculina - casual - treino - academia - esportes - exercícios - corrida" data-vendas="9843" href="pages/produto-75.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="75" data-nome="kit 10 camisetas dry fit masculina - casual - treino - academia - esportes - exercícios - corrida" data-vendas="9843" href="pages/produto-75.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rdxr-lyatwes75beuc5"/>
+<img alt="Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_6e96a51bd2f1e7.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida</h3>
@@ -4929,9 +4929,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 7 -->
-<a class="product-card-rec" data-cat="Geral" data-id="7" data-nome="caixa de som boombox plus com 3 alto-falantes 200w" data-vendas="7894" href="pages/produto-7.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="7" data-nome="caixa de som boombox plus com 3 alto-falantes 200w" data-vendas="7894" href="pages/produto-7.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Caixa de Som Boombox Plus com 3 Alto-falantes 200W" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rff9-m4ep3f8n12n686"/>
+<img alt="Caixa de Som Boombox Plus com 3 Alto-falantes 200W" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-111-oficial-1.jpg?v=3"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Caixa de Som AIWA</h3>
@@ -4958,9 +4958,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 46 -->
-<a class="product-card-rec" data-cat="Panelas Elétricas de Pressão" data-id="46" data-nome="panela de pressão elétrica electrolux por rita lobo 6l preta experience digital (pcc20)" data-vendas="9831" href="pages/produto-46.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="46" data-nome="panela de pressão elétrica electrolux por rita lobo 6l preta experience digital (pcc20)" data-vendas="9831" href="pages/produto-46.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18"/>
+<img alt="Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_b0ce6b75a7635a.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)</h3>
@@ -4988,9 +4988,9 @@ html, body {
 </a>
 <!-- PRODUTO 29 -->
 <!-- PRODUTO 47 -->
-<a class="product-card-rec" data-cat="Aspiradores de Pó e Utensílios de Cuidados com o Piso" data-id="47" data-nome="extratora higienizadora portátil  borrifa esfrega e extrai sujeira colchão sofá " data-vendas="9314" href="pages/produto-47.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="47" data-nome="extratora higienizadora portátil  borrifa esfrega e extrai sujeira colchão sofá " data-vendas="9314" href="pages/produto-47.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá " class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rbn7-lqeu1vzxvsrqba"/>
+<img alt="Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá " class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_a56c5c78e7f2eb.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Extratora e Higienizadora Portátil WAP Spot Cleaner 1400W Borrifa Esfrega e Extrai Sujeira</h3>
@@ -5017,9 +5017,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 68 -->
-<a class="product-card-rec" data-cat="Geral" data-id="68" data-nome="jogo de panelas cerâmica kit 5 peças antiaderente tampa vidro" data-vendas="9052" href="pages/produto-68.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="68" data-nome="jogo de panelas cerâmica kit 5 peças antiaderente tampa vidro" data-vendas="9052" href="pages/produto-68.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94x2pt4c"/>
+<img alt="Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_7eb9e66c4129d4.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro</h3>
@@ -5046,9 +5046,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 64 -->
-<a class="product-card-rec" data-cat="Geral" data-id="64" data-nome="bateria auxiliar de partida portátil com bomba de ar de rosquear" data-vendas="8765" href="pages/produto-64.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="64" data-nome="bateria auxiliar de partida portátil com bomba de ar de rosquear" data-vendas="8765" href="pages/produto-64.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5"/>
+<img alt="Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_ba41d760d89c04.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear</h3>
@@ -5077,9 +5077,9 @@ html, body {
 <!-- PRODUTO 50 -->
 <!-- PRODUTO 30 -->
 <!-- PRODUTO 45 -->
-<a class="product-card-rec" data-cat="Utensílios Capilares" data-id="45" data-nome="prancha pro 480 turbo mq professional bivolt" data-vendas="8654" href="pages/produto-45.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Beleza, Cabelo & Perfumaria" data-id="45" data-nome="prancha pro 480 turbo mq professional bivolt" data-vendas="8654" href="pages/produto-45.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Prancha Pro 480 Turbo MQ Professional Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87"/>
+<img alt="Prancha Pro 480 Turbo MQ Professional Bivolt" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_49bfeea4a4ef65.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Prancha Pro 480 Turbo MQ Professional Bivolt</h3>
@@ -5106,9 +5106,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 41 -->
-<a class="product-card-rec" data-cat="Fritadeiras" data-id="41" data-nome="fritadeira air fryer forno oven 12l mondial preto e inox0w afon-12l-bi" data-vendas="8391" href="pages/produto-41.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="41" data-nome="fritadeira air fryer forno oven 12l mondial preto e inox0w afon-12l-bi" data-vendas="8391" href="pages/produto-41.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16"/>
+<img alt="Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_91d317df6d92ca.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI</h3>
@@ -5135,9 +5135,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 16 -->
-<a class="product-card-rec" data-cat="Grelhas e Acessórios" data-id="16" data-nome="churrasqueira resistente modelo rodeio bacia esmaltada casa praia piscina verão lazer preta - mor" data-vendas="7548" href="pages/produto-16.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="16" data-nome="churrasqueira resistente modelo rodeio bacia esmaltada casa praia piscina verão lazer preta - mor" data-vendas="7548" href="pages/produto-16.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a"/>
+<img alt="Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_8ec0b5955ed9bf.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor</h3>
@@ -5164,9 +5164,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 15 -->
-<a class="product-card-rec" data-cat="Grelhas e Acessórios" data-id="15" data-nome="churrasqueira portátil a carvão biscuitt steak master smoke &amp; fire usb com bag" data-vendas="7543" href="pages/produto-15.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="15" data-nome="churrasqueira portátil a carvão biscuitt steak master smoke &amp; fire usb com bag" data-vendas="7543" href="pages/produto-15.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke &amp; Fire USB Com Bag" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11110105-7r98o-lr96mg3y7nja34"/>
+<img alt="Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke &amp; Fire USB Com Bag" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-112-patinho-1.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag</h3>
@@ -5195,9 +5195,9 @@ html, body {
 <!-- PRODUTO 29 -->
 <!-- PRODUTO 27 -->
 <!-- PRODUTO 17 -->
-<a class="product-card-rec" data-cat="Bancos, Cadeiras e Banquetas" data-id="17" data-nome="kit 6 cadeira de praia aço mor 110kg resistente cores sortidas oferta" data-vendas="5668" href="pages/produto-17.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="17" data-nome="kit 6 cadeira de praia aço mor 110kg resistente cores sortidas oferta" data-vendas="5668" href="pages/produto-17.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7reoq-m8kskp1ohv2vcf"/>
+<img alt="Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-113-1.jpg"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta</h3>
@@ -5224,9 +5224,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 38 -->
-<a class="product-card-rec" data-cat="Perfumes Femininos" data-id="38" data-nome="kit lattafa yara collection feminino edp - perfume 4x25ml original" data-vendas="5515" href="pages/produto-38.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Beleza, Cabelo & Perfumaria" data-id="38" data-nome="kit lattafa yara collection feminino edp - perfume 4x25ml original" data-vendas="5515" href="pages/produto-38.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh12vhr254hs6c"/>
+<img alt="Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_e3a405c17fee86.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original</h3>
@@ -5254,9 +5254,9 @@ html, body {
 </a>
 <!-- PRODUTO 55 -->
 <!-- PRODUTO 21 -->
-<a class="product-card-rec" data-cat="Futebol, Futsal e Sepak Takraw" data-id="21" data-nome="bola de futebol de campo penalty bravo xxv" data-vendas="5346" href="pages/produto-21.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="21" data-nome="bola de futebol de campo penalty bravo xxv" data-vendas="5346" href="pages/produto-21.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Bola De Futebol De Campo Penalty Bravo Xxv" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rbkz-m5oo5ljc9heg98"/>
+<img alt="Bola De Futebol De Campo Penalty Bravo Xxv" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-114-1.jpg"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Bola De Futebol De Campo Penalty Bravo Xxv</h3>
@@ -5283,9 +5283,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 90 -->
-<a class="product-card-rec" data-cat="Geral" data-id="90" data-nome="jogo de panela avant space 5 peças - tognana cor preto" data-vendas="5324" href="pages/produto-90.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="90" data-nome="jogo de panela avant space 5 peças - tognana cor preto" data-vendas="5324" href="pages/produto-90.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp"/>
+<img alt="Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_93fa140245872d.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto</h3>
@@ -5312,7 +5312,7 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 12 -->
-<a class="product-card-rec" data-cat="Esportes e Jogos ao Ar Livre" data-id="12" data-nome="piscina splash fun redonda inflável 2400 litros - mor" data-vendas="9899" href="pages/produto-12.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="12" data-nome="piscina splash fun redonda inflável 2400 litros - mor" data-vendas="9899" href="pages/produto-12.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Piscina Splash Fun Redonda Inflável 2400 Litros - Mor" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-12-1.jpg"/>
 <div class="card-details-col">
@@ -5342,9 +5342,9 @@ html, body {
 </a>
 <!-- PRODUTO 59 -->
 <!-- PRODUTO 5 -->
-<a class="product-card-rec" data-cat="Air Fryers" data-id="5" data-nome="fritadeira elétrica visio fry elgin 5l 1700w air fryer digital cinza" data-vendas="5849" href="pages/produto-5.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="5" data-nome="fritadeira elétrica visio fry elgin 5l 1700w air fryer digital cinza" data-vendas="5849" href="pages/produto-5.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh9e1c37asxxe2"/>
+<img alt="Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_ca8d3f6ae6238c.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza</h3>
@@ -5371,9 +5371,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 22 -->
-<a class="product-card-rec" data-cat="Acampamento e Caminhada" data-id="22" data-nome="colchão inflável suporta 300kg casal camping praia + bomba de ar manual bestway" data-vendas="5531" href="pages/produto-22.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="22" data-nome="colchão inflável suporta 300kg casal camping praia + bomba de ar manual bestway" data-vendas="5531" href="pages/produto-22.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc2cl1xpb0kn0b"/>
+<img alt="Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-12-1.jpg"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway</h3>
@@ -5400,9 +5400,9 @@ html, body {
 </div>
 </a>
 <!-- PRODUTO 19 -->
-<a class="product-card-rec" data-cat="Tablets" data-id="19" data-nome="tablet vision tab 7 stitch + capa e bolsa - octa-core 3gb ram 64gb android 14 go wi-fi ips positivo" data-vendas="4987" href="pages/produto-19.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="19" data-nome="tablet vision tab 7 stitch + capa e bolsa - octa-core 3gb ram 64gb android 14 go wi-fi ips positivo" data-vendas="4987" href="pages/produto-19.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4"/>
+<img alt="Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_66b6b35e7b6437.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo</h3>
@@ -5430,9 +5430,9 @@ html, body {
 </a>
 <!-- PRODUTO 20 -->
 <!-- PRODUTO 24 -->
-<a class="product-card-rec" data-cat="Carrinho e Sistemas de Viagem" data-id="24" data-nome="triciclo infantil 4 em 1 multifuncional carrinho de bebê com empurrador e capotasolar-kababy" data-vendas="4897" href="pages/produto-24.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="24" data-nome="triciclo infantil 4 em 1 multifuncional carrinho de bebê com empurrador e capotasolar-kababy" data-vendas="4897" href="pages/produto-24.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-81zw1-mivpxinfwy6803"/>
+<img alt="Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/patinete-126-slide-1.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy</h3>
@@ -5462,9 +5462,9 @@ html, body {
 <!-- PRODUTO 81 -->
 
 <!-- PRODUTO 26 -->
-<a class="product-card-rec" data-cat="Carrinho e Sistemas de Viagem" data-id="26" data-nome="carrinho de bebê guarda chuva passeio leve e dobrável mega compras compacto, seguro,cinto" data-vendas="4458" href="pages/produto-26.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="26" data-nome="carrinho de bebê guarda chuva passeio leve e dobrável mega compras compacto, seguro,cinto" data-vendas="4458" href="pages/produto-26.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf"/>
+<img alt="Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_954098063bc9b4.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto</h3>
@@ -5492,9 +5492,9 @@ html, body {
 </a>
 <!-- PRODUTO 11 -->
 <!-- PRODUTO 95 -->
-<a class="product-card-rec" data-cat="Geral" data-id="95" data-nome="yesop máquina de gelo portátil preto 12kg/dia 127v produção rápida turbo ice para casa e bar" data-vendas="5259" href="pages/produto-95.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="95" data-nome="yesop máquina de gelo portátil preto 12kg/dia 127v produção rápida turbo ice para casa e bar" data-vendas="5259" href="pages/produto-95.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529"/>
+<img alt="YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_b841cf2196e1c7.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar</h3>
@@ -5525,9 +5525,9 @@ html, body {
 <!-- PRODUTO 83 -->
 
 <!-- PRODUTO 98 -->
-<a class="product-card-rec" data-cat="Geral" data-id="98" data-nome="conjunto de 12 copos de cristal p/ long drink 490ml proper effect" data-vendas="4812" href="pages/produto-98.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="98" data-nome="conjunto de 12 copos de cristal p/ long drink 490ml proper effect" data-vendas="4812" href="pages/produto-98.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61"/>
+<img alt="Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_90dd90aaeca942.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect</h3>
@@ -5556,9 +5556,9 @@ html, body {
 <!-- PRODUTO 94 -->
 <!-- PRODUTO 53 -->
 <!-- PRODUTO 23 -->
-<a class="product-card-rec" data-cat="Armazenamento de Alimentos" data-id="23" data-nome="conjunto de 24 potes herméticos croix com tampa e trava" data-vendas="6691" href="pages/produto-23.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="23" data-nome="conjunto de 24 potes herméticos croix com tampa e trava" data-vendas="6691" href="pages/produto-23.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5"/>
+<img alt="Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_808987870d01f6.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava</h3>
@@ -5585,7 +5585,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 9: Ar Condicionado Portátil HQ 8.500 BTU/h Frio -->
-<a class="product-card-rec" data-cat="Climatização e Ar" data-id="9" data-nome="ar condicionado portátil hq 8.500 btu/h frio" data-vendas="10241" href="pages/produto-9.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="9" data-nome="ar condicionado portátil hq 8.500 btu/h frio" data-vendas="10241" href="pages/produto-9.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Ar Condicionado Portátil HQ 8.500 BTU/h Frio" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/p09/slide_1.jpg"/>
 <div class="card-details-col">
@@ -5614,9 +5614,9 @@ html, body {
 </div>
 </a>
 <!-- Produto 20: Bicicleta Aro 29 GT Sprint MX7 24V MTB Freio Disco -->
-<a class="product-card-rec" data-cat="Ciclismo" data-id="20" data-nome="bicicleta aro 29 gt sprint mx7 24v mtb freio disco" data-vendas="4984" href="pages/produto-20.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="20" data-nome="bicicleta aro 29 gt sprint mx7 24v mtb freio disco" data-vendas="4984" href="pages/produto-20.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Bicicleta Aro 29 GT Sprint MX7 24V MTB Freio Disco" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-me910y70d7nmf6"/>
+<img alt="Bicicleta Aro 29 GT Sprint MX7 24V MTB Freio Disco" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_ebea070012787a.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB</h3>
@@ -5643,9 +5643,9 @@ html, body {
 </div>
 </a>
 <!-- Produto 25: Bicicleta Aro 20 Bmx Infantil GottBikes -->
-<a class="product-card-rec" data-cat="Ciclismo Infantil" data-id="25" data-nome="bicicleta aro 20 bmx infantil gottbikes" data-vendas="4769" href="pages/produto-25.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="25" data-nome="bicicleta aro 20 bmx infantil gottbikes" data-vendas="4769" href="pages/produto-25.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Bicicleta Aro 20 Bmx Infantil GottBikes" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b"/>
+<img alt="Bicicleta Aro 20 Bmx Infantil GottBikes" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_ec5070df7674c4.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake</h3>
@@ -5672,7 +5672,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 36: Celular Xiaomi Poco X7 Pro 5G 512GB Amarelo 12RAM -->
-<a class="product-card-rec" data-cat="Smartphones" data-id="36" data-nome="celular xiaomi poco x7 pro 5g 512gb amarelo 12ram" data-vendas="9853" href="pages/produto-36.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="36" data-nome="celular xiaomi poco x7 pro 5g 512gb amarelo 12ram" data-vendas="9853" href="pages/produto-36.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Celular Xiaomi Poco X7 Pro 5G 512GB Amarelo 12RAM" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/p36/slide_1.jpg"/>
 <div class="card-details-col">
@@ -5701,9 +5701,9 @@ html, body {
 </div>
 </a>
 <!-- Produto 53: Starlink V4 Internet Satélite Wi-Fi 6 Padrão Anatel -->
-<a class="product-card-rec" data-cat="Conectividade" data-id="53" data-nome="starlink v4 internet satélite wi-fi 6 padrão anatel" data-vendas="5801" href="pages/produto-53.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="53" data-nome="starlink v4 internet satélite wi-fi 6 padrão anatel" data-vendas="5801" href="pages/produto-53.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Starlink V4 Internet Satélite Wi-Fi 6 Padrão Anatel" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-me8xwns12tqb8f"/>
+<img alt="Starlink V4 Internet Satélite Wi-Fi 6 Padrão Anatel" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_9b46068f96883f.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)</h3>
@@ -5730,9 +5730,9 @@ html, body {
 </div>
 </a>
 <!-- Produto 55: Nintendo Switch Desbloqueado + 10 Jogos MicroSD 128GB -->
-<a class="product-card-rec" data-cat="Games e Consoles" data-id="55" data-nome="nintendo switch desbloqueado + 10 jogos microsd 128gb" data-vendas="5462" href="pages/produto-55.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="55" data-nome="nintendo switch desbloqueado + 10 jogos microsd 128gb" data-vendas="5462" href="pages/produto-55.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Nintendo Switch Desbloqueado + 10 Jogos MicroSD 128GB" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m024asxqvazr6b"/>
+<img alt="Nintendo Switch Desbloqueado + 10 Jogos MicroSD 128GB" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_4d5418ef22e80f.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB</h3>
@@ -5760,9 +5760,9 @@ html, body {
 </a>
 <!-- Produto 65: Sofá 3 Lugares Retrátil e Reclinável Cama inBox 2,00m -->
 <!-- Produto 89: Kit Conjunto de Panelas de Ferro Esmaltadas Luxo 18 Peças -->
-<a class="product-card-rec" data-cat="Utilidades Domésticas" data-id="89" data-nome="kit conjunto de panelas de ferro esmaltadas luxo 18 peças" data-vendas="5432" href="pages/produto-89.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="89" data-nome="kit conjunto de panelas de ferro esmaltadas luxo 18 peças" data-vendas="5432" href="pages/produto-89.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Kit Conjunto de Panelas de Ferro Esmaltadas Luxo 18 Peças" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbq3nla8"/>
+<img alt="Kit Conjunto de Panelas de Ferro Esmaltadas Luxo 18 Peças" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_9ff8a4f9087332.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Kit conjunto de panelas de ferro esmaltadas luxo 18 peças</h3>
@@ -5789,9 +5789,9 @@ html, body {
 </div>
 </a>
 <!-- Produto 96: Aparelho de Jantar Oxford Ryo Maresia 30 Peças -->
-<a class="product-card-rec" data-cat="Mesa Posta" data-id="96" data-nome="aparelho de jantar oxford ryo maresia 30 peças" data-vendas="7643" href="pages/produto-96.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="96" data-nome="aparelho de jantar oxford ryo maresia 30 peças" data-vendas="7643" href="pages/produto-96.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Aparelho de Jantar Oxford Ryo Maresia 30 Peças" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rd5p-m7uwvu85tnp9ae"/>
+<img alt="Aparelho de Jantar Oxford Ryo Maresia 30 Peças" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_479c93b5a61444.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças</h3>
@@ -5818,9 +5818,9 @@ html, body {
 </div>
 </a>
 <!-- Produto 97: Jogo de Jantar Canyon Porcelana Decorada 20 Peças -->
-<a class="product-card-rec" data-cat="Mesa Posta" data-id="97" data-nome="jogo de jantar canyon porcelana decorada 20 peças" data-vendas="4877" href="pages/produto-97.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="97" data-nome="jogo de jantar canyon porcelana decorada 20 peças" data-vendas="4877" href="pages/produto-97.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Jogo de Jantar Canyon Porcelana Decorada 20 Peças" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-81zwa-mimr7kh9srno54"/>
+<img alt="Jogo de Jantar Canyon Porcelana Decorada 20 Peças" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_b6b03661808a9a.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina</h3>
@@ -5848,9 +5848,9 @@ html, body {
 </a>
 <!-- Produto 100: Apple iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max -->
 <!-- Produto 101: Pneus Pirelli Original - Alta Durabilidade e Segurança -->
-<a class="product-card-rec" data-cat="Automotivo" data-id="101" data-nome="pneus pirelli original - alta durabilidade e segurança" data-vendas="13488" href="pages/produto-101.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="101" data-nome="pneus pirelli original - alta durabilidade e segurança" data-vendas="13488" href="pages/produto-101.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
-<img alt="Pneus Pirelli Original - Alta Durabilidade e Segurança" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png"/>
+<img alt="Pneus Pirelli Original - Alta Durabilidade e Segurança" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_13fbb86477331c.webp"/>
 <div class="card-details-col">
 <div class="card-top-info">
 <h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Pneus Pirelli - Encontre a medida ideal para o seu veículo</h3>
@@ -5878,7 +5878,7 @@ html, body {
 </a>
 <!-- Produto 102: Scooter Elétrica TUI 1000W 2 Lugares Sem CNH -->
 <!-- Produto 106: Body Modelador Cinta Alta Compressão Efeito Lipo -->
-<a class="product-card-rec" data-cat="Moda Feminina" data-id="106" data-nome="body modelador cinta alta compressão efeito lipo" data-vendas="23451" href="pages/produto-106.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Moda, Bolsas & Calçados" data-id="106" data-nome="body modelador cinta alta compressão efeito lipo" data-vendas="23451" href="pages/produto-106.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Body Modelador Cinta Alta Compressão Efeito Lipo" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-106-1.jpg"/>
 <div class="card-details-col">
@@ -5907,7 +5907,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 107: Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo -->
-<a class="product-card-rec" data-cat="Acessórios Automotivos" data-id="107" data-nome="mini aspirador de pó sem fio portátil e soprador turbo" data-vendas="16888" href="pages/produto-107.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="107" data-nome="mini aspirador de pó sem fio portátil e soprador turbo" data-vendas="16888" href="pages/produto-107.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produto-107-1.jpg"/>
 <div class="card-details-col">
@@ -5936,7 +5936,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 119: Combo Fardo Mega Fraldas Huggies Supreme Care & Pampers -->
-<a class="product-card-rec" data-cat="Bebês e Crianças" data-id="119" data-nome="combo fardo mega fraldas huggies supreme care &amp; pampers" data-vendas="8964" href="pages/produto-119.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="119" data-nome="combo fardo mega fraldas huggies supreme care &amp; pampers" data-vendas="8964" href="pages/produto-119.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Combo Fardo Mega Fraldas Huggies Supreme Care &amp; Pampers" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/fraldas-slide-1.webp"/>
 <div class="card-details-col">
@@ -5965,7 +5965,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 121: Travesseiro Cervical Ortopédico Espuma Viscoelástica -->
-<a class="product-card-rec" data-cat="Cama e Banho" data-id="121" data-nome="travesseiro cervical ortopédico espuma viscoelástica" data-vendas="6765" href="pages/produto-121.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Casa, Limpeza & Natal" data-id="121" data-nome="travesseiro cervical ortopédico espuma viscoelástica" data-vendas="6765" href="pages/produto-121.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Travesseiro Cervical Ortopédico Espuma Viscoelástica" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/travesseiro-slide-1.webp"/>
 <div class="card-details-col">
@@ -5994,7 +5994,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 122: Panela de Pressão Elétrica Digital 5L Painel Touch Inox -->
-<a class="product-card-rec" data-cat="Eletroportáteis" data-id="122" data-nome="panela de pressão elétrica digital 5l painel touch inox" data-vendas="4842" href="pages/produto-122.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Eletrodomésticos & Cozinha" data-id="122" data-nome="panela de pressão elétrica digital 5l painel touch inox" data-vendas="4842" href="pages/produto-122.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Panela de Pressão Elétrica Digital 5L Painel Touch Inox" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/panela-pressao-slide-1.webp"/>
 <div class="card-details-col">
@@ -6023,7 +6023,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 123: Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta -->
-<a class="product-card-rec" data-cat="Ferramentas" data-id="123" data-nome="lavadora de alta pressão portátil sem fio 48v com maleta" data-vendas="5506" href="pages/produto-123.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Churrasco, Piscina & Lazer" data-id="123" data-nome="lavadora de alta pressão portátil sem fio 48v com maleta" data-vendas="5506" href="pages/produto-123.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/lavadora-slide-1.webp"/>
 <div class="card-details-col">
@@ -6052,7 +6052,7 @@ html, body {
 </div>
 </a>
 <!-- Produto 124: Livro Infantil Interativo Bilíngue Falante Inglês/Português -->
-<a class="product-card-rec" data-cat="Brinquedos" data-id="124" data-nome="livro infantil interativo bilíngue falante inglês/português" data-vendas="4953" href="pages/produto-124.html" style="text-decoration: none; color: inherit;">
+<a class="product-card-rec" data-cat="Brinquedos & Infantil" data-id="124" data-nome="livro infantil interativo bilíngue falante inglês/português" data-vendas="4953" href="pages/produto-124.html" style="text-decoration: none; color: inherit;">
 <div class="card-inner-box">
 <img alt="Livro Infantil Interativo Bilíngue Falante Inglês/Português" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/livro-interativo-slide-1.webp"/>
 <div class="card-details-col">
@@ -6080,33 +6080,127 @@ html, body {
 </div>
 </div>
 </a>
+<!-- PRODUTO 52 -->
+<a class="product-card-rec" data-cat="Celulares, TVs & Eletrônicos" data-id="52" data-nome="ipad pad 11 geracao a16 256gb 128gb wifi tela 11 tablet apple" data-vendas="7654" href="pages/produto-52.html" style="text-decoration: none; color: inherit;">
+<div class="card-inner-box">
+<img alt="Pad 11 Geração A16 Wi-Fi Tela 11pol" class="card-thumb-img" loading="lazy" referrerpolicy="no-referrer" src="img/produtos/local/ext_ccb35fce55b374.webp"/>
+<div class="card-details-col">
+<div class="card-top-info">
+<h3 class="product-name"><span class="tt-list-bf-tag">Black Friday</span>Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano</h3>
+<div class="tt-list-promo-row"><span class="tt-list-coupon-pill"><svg aria-hidden="true" viewBox="0 0 667 534" width="12" height="10" style="flex-shrink:0;"><path fill="#d60643" d="M666.666 166.667C640.145 166.667 614.71 177.203 595.956 195.956C577.202 214.71 566.666 240.145 566.666 266.667C566.666 293.189 577.202 318.624 595.956 337.378C614.71 356.131 640.145 366.667 666.666 366.667V466.667C666.666 503.486 636.819 533.334 600 533.334H466.666V470.601C466.666 452.191 451.742 437.267 433.333 437.267C414.924 437.267 400 452.191 400 470.601V533.334H66.666C29.847 533.334 0 503.486 0 466.667V366.666C55.428 366.576 100.333 266.167 100.333 266.167C100.333 210.718 55.428 165.758 0 165.668V66.667C0 29.848 29.847 0 66.666 0H400V62.733C400 81.143 414.924 96.067 433.333 96.067C451.742 96.067 466.666 81.143 466.666 62.733V0H600C636.819 0 666.666 29.848 666.666 66.667V166.667ZM466.666 156.867C466.666 138.457 451.742 123.533 433.333 123.533C414.924 123.533 400 138.457 400 156.867V219.601C400 238.01 414.924 252.934 433.333 252.934C451.742 252.934 466.666 238.01 466.666 219.601V156.867ZM466.666 313.733C466.666 295.324 451.742 280.4 433.333 280.4C414.924 280.4 400 295.324 400 313.733V376.467C400 394.876 414.924 409.801 433.333 409.801C451.742 409.801 466.666 394.876 466.666 376.467V313.733Z"/></svg><span>Desconto de R$ 100</span></span></div>
+<div class="card-badges-row">
+<span class="badge-frete-gratis">Frete grátis</span>
+<span class="related-discount" style="background: #fff0f2; color: #fe2c55; border: 1px solid #ffd8e0; font-size: 9px; font-weight: 700; padding: 0.5px 3px; border-radius: 2px; line-height: 1.2;">-82%</span>
 </div>
 </div>
-<div id="categorias-section" style="display: none; background: white; min-height: 85vh; padding: 4px 16px 20px 16px;">
-<!-- Categoria 1: Calçados -->
-<div class="category-item-row" onclick="filterByCategory('Calçados')" style="display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid #f5f5f5; cursor: pointer;">
-<div style="display: flex; align-items: center; gap: 14px;">
-<img alt="Calçados" referrerpolicy="no-referrer" src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/937eda3788b14961af3dc12028a4c886~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15582&amp;t=555f072d&amp;ps=933b5bde&amp;shp=c940a200&amp;shcp=9b759fb9&amp;idc=my3&amp;from=3376456192" style="width: 48px; height: 48px; border-radius: 6px; object-fit: cover; background: #f7f7f7;"/>
-<span style="font-size: 15px; font-weight: 700; color: #161823;">Calçados</span>
+<div class="card-rating-row"><span class="star-yellow">★</span> <span class="rating-num">4.9</span> <span class="rating-pipe">|</span> <span class="sales-count-txt">7654 vendidos</span></div>
+<div class="card-bottom-action-row">
+<div class="price-stack-col">
+<div class="price-current-txt"><span class="currency">R$</span> 389,90</div>
+<div class="price-old-txt">R$ 2.199,00</div>
 </div>
-<div style="display: flex; align-items: center; gap: 4px; color: #8a8b91; font-size: 14px;">
-<span>19</span>
-<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16">
-<path d="M9 18l6-6-6-6"></path>
+<div aria-label="Adicionar ao carrinho" class="btn-cart-circle">
+<svg fill="none" height="16" stroke="#fe2c55" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="16">
+<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
 </svg>
 </div>
+<div class="list-split-buy-btn"><span class="split-cart-half" aria-label="Adicionar ao carrinho"><svg aria-hidden="true" viewBox="0 0 50 44" width="17" height="15" fill="none"><path d="M3.8 4H8.6C9.8 4 10.5 4.6 10.8 5.8L15.6 26.2C16.1 28.3 17.5 29.5 19.7 29.5H37.3C39.5 29.5 40.9 28.3 41.5 26.2L45.3 12.8" stroke="#e11d48" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.5 6V19M22 12.5H35" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/><circle cx="17" cy="38" r="3.5" fill="#e11d48"/><circle cx="40" cy="38" r="3.5" fill="#e11d48"/></svg></span><span class="split-buy-half">Comprar</span></div>
 </div>
-<!-- Categoria 2: Moda infantil / Vestuário -->
-<div class="category-item-row" onclick="filterByCategory('Moda Feminina')" style="display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid #f5f5f5; cursor: pointer;">
-<div style="display: flex; align-items: center; gap: 14px;">
-<img alt="Moda infantil" referrerpolicy="no-referrer" src="https://down-br.img.susercontent.com/file/sg-11134201-7rd5p-m7uwvu85tnp9ae" style="width: 48px; height: 48px; border-radius: 6px; object-fit: cover; background: #f7f7f7;"/>
-<span style="font-size: 15px; font-weight: 700; color: #161823;">Moda infantil</span>
 </div>
-<div style="display: flex; align-items: center; gap: 4px; color: #8a8b91; font-size: 14px;">
-<span>3</span>
-<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16">
-<path d="M9 18l6-6-6-6"></path>
-</svg>
+</div>
+</a>
+</div>
+</div>
+<div id="categorias-section" style="display: none; background: white; min-height: 85vh; padding: 6px 16px 28px 16px;">
+<div class="category-item-row" onclick="filterByCategory('Celulares, TVs & Eletrônicos')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Celulares, TVs & Eletrônicos" loading="lazy" src="img/galaxy-152-slide-1.webp" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Celulares, TVs & Eletrônicos</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>17</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
+</div>
+</div>
+<div class="category-item-row" onclick="filterByCategory('Eletrodomésticos & Cozinha')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Eletrodomésticos & Cozinha" loading="lazy" src="img/panelas-148-slide-1.webp" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Eletrodomésticos & Cozinha</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>20</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
+</div>
+</div>
+<div class="category-item-row" onclick="filterByCategory('Casa, Limpeza & Natal')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Casa, Limpeza & Natal" loading="lazy" src="img/cortina-149-slide-1.webp" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Casa, Limpeza & Natal</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>11</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
+</div>
+</div>
+<div class="category-item-row" onclick="filterByCategory('Brinquedos & Infantil')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Brinquedos & Infantil" loading="lazy" src="img/triciclo-147-slide-1.webp" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Brinquedos & Infantil</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>10</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
+</div>
+</div>
+<div class="category-item-row" onclick="filterByCategory('Moda, Bolsas & Calçados')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Moda, Bolsas & Calçados" loading="lazy" src="img/mala-145-slide-1.webp" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Moda, Bolsas & Calçados</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>8</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
+</div>
+</div>
+<div class="category-item-row" onclick="filterByCategory('Beleza, Cabelo & Perfumaria')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Beleza, Cabelo & Perfumaria" loading="lazy" src="img/sobrancelha-134-slide-1.webp" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Beleza, Cabelo & Perfumaria</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>6</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
+</div>
+</div>
+<div class="category-item-row" onclick="filterByCategory('Churrasco, Piscina & Lazer')" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #f2f2f4; cursor: pointer;">
+<div style="display: flex; align-items: center; gap: 13px;">
+<img alt="Churrasco, Piscina & Lazer" loading="lazy" src="img/produtos/p13/mor_slide_1.jpg" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover; background: #f7f7f8; border: 1px solid #f0f0f2;"/>
+<div>
+<div style="font-size: 14.5px; font-weight: 600; color: #161823; line-height: 1.25;">Churrasco, Piscina & Lazer</div>
+<div style="font-size: 12px; color: #8a8b91; margin-top: 2px;">Frete grátis · Ofertas Black Friday</div>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 5px; color: #8a8b91; font-size: 13.5px; font-weight: 500;">
+<span>13</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M9 18l6-6-6-6"></path></svg>
 </div>
 </div>
 </div>
@@ -6126,8 +6220,8 @@ html, body {
 </button>
 </div>
 </div>
-<script src="js/catalogo.js?v=20261127_tt_oficial_1to1_v44"></script>
-<script src="js/app.js?v=20261127_tt_oficial_1to1_v44"></script>
+<script src="js/catalogo.js?v=20261127_tt_oficial_1to1_v45"></script>
+<script src="js/app.js?v=20261127_tt_oficial_1to1_v45"></script>
 <script src="js/roleta-tiktok.js?v=roleta_original_2026"></script>
 <script>
     function normalizeStr(str) {
@@ -6328,16 +6422,24 @@ html, body {
       const produtosTabBtn = document.querySelectorAll('.nav-tab')[1];
       switchTab(produtosTabBtn, 'produtos');
 
-      const cards = document.querySelectorAll('.product-card-rec');
+      const divider = document.querySelector('.divider-home-rec');
+      const cards = Array.from(document.querySelectorAll('.product-card-rec'));
+      let countVis = 0;
       cards.forEach(card => {
-        const cat = card.getAttribute('data-cat') || '';
-        const nome = card.getAttribute('data-nome') || '';
-        if (cat.toLowerCase().includes(catName.toLowerCase()) || nome.toLowerCase().includes(catName.toLowerCase())) {
+        const cat = (card.getAttribute('data-cat') || '').toLowerCase();
+        if (cat === catName.toLowerCase() || cat.includes(catName.toLowerCase())) {
+          card.classList.remove('hidden');
           card.style.display = '';
+          countVis++;
         } else {
-          card.style.display = 'none';
+          card.classList.add('hidden');
+          card.style.setProperty('display', 'none', 'important');
         }
       });
+      if (divider) {
+        divider.style.setProperty('display', 'flex', 'important');
+        divider.innerHTML = `<span>${catName} (${countVis})</span> <span onclick="switchTab(document.querySelectorAll('.nav-tab')[1], 'produtos')" style="font-size:12px;font-weight:600;color:#fe2c55;margin-left:8px;cursor:pointer;text-decoration:underline;">Ver todos</span>`;
+      }
     }
 
     // Sub-filtro da aba Produtos: Recomendado | Mais vendidos | Lançamentos
@@ -6366,8 +6468,8 @@ html, body {
         cards.sort((a, b) => {
           const hrefA = a.getAttribute('href') || '';
           const hrefB = b.getAttribute('href') || '';
-          if (hrefA.includes('produto-52.html')) return -1;
-          if (hrefB.includes('produto-52.html')) return 1;
+          if (hrefA.includes('produto-148.html')) return -1;
+          if (hrefB.includes('produto-148.html')) return 1;
           return 0;
         });
       }

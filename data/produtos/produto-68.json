@@ -5,23 +5,23 @@
   "product_title": "Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94x2pt4c",
+      "src": "../img/produtos/local/ext_7eb9e66c4129d4.webp",
       "alt": "Jogo de Panelas Cerâmica Kit 5 Peças Ant - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94yha90b",
+      "src": "../img/produtos/local/ext_5d145d8346ed18.webp",
       "alt": "Jogo de Panelas Cerâmica Kit 5 Peças Ant - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn8x9reod7",
+      "src": "../img/produtos/local/ext_b25d124bb3dfb3.webp",
       "alt": "Jogo de Panelas Cerâmica Kit 5 Peças Ant - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn8z2dj660",
+      "src": "../img/produtos/local/ext_ca68c233c1a4f6.webp",
       "alt": "Jogo de Panelas Cerâmica Kit 5 Peças Ant - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn8z0yyq79",
+      "src": "../img/produtos/local/ext_c7b5c4a41b360e.webp",
       "alt": "Jogo de Panelas Cerâmica Kit 5 Peças Ant - Slide 5"
     }
   ],
@@ -68,7 +68,7 @@
     },
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg",
       "stars": 5,
       "date": "12/02",
       "variation": "Rose",
@@ -720,7 +720,7 @@
   "related": [
     {
       "href": "produto-38.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh12vhr254hs6c",
+      "img": "../img/produtos/local/ext_e3a405c17fee86.webp",
       "alt": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "name": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "price": "R$ 69,90",
@@ -730,7 +730,7 @@
     },
     {
       "href": "produto-64.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5",
+      "img": "../img/produtos/local/ext_ba41d760d89c04.webp",
       "alt": "Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
       "name": "Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
       "price": "R$ 69,90",
@@ -740,7 +740,7 @@
     },
     {
       "href": "produto-76.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
+      "img": "../img/produtos/local/ext_5e27c05d37aedb.webp",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "name": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "price": "R$ 69,90",
@@ -773,13 +773,13 @@
     "id": 68,
     "nome": "Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro",
     "preco": 44.73,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94x2pt4c",
+    "img": "../img/produtos/local/ext_7eb9e66c4129d4.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94x2pt4c",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94yha90b",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn8x9reod7",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn8z2dj660",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn8z0yyq79"
+      "../img/produtos/local/ext_7eb9e66c4129d4.webp",
+      "../img/produtos/local/ext_5d145d8346ed18.webp",
+      "../img/produtos/local/ext_b25d124bb3dfb3.webp",
+      "../img/produtos/local/ext_ca68c233c1a4f6.webp",
+      "../img/produtos/local/ext_c7b5c4a41b360e.webp"
     ],
     "variacoes": {
       "cor": {
@@ -787,11 +787,11 @@
         "label": "Cor",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn94zvup42",
+            "imagem": "../img/produtos/local/ext_d19628bb1322fb.webp",
             "nome": "Rose"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mebnfn951af5b4",
+            "imagem": "../img/produtos/local/ext_0bb7491488d032.webp",
             "nome": "Granite"
           }
         ]

@@ -266,7 +266,7 @@
     },
     {
       "href": "produto-41.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16",
+      "img": "../img/produtos/local/ext_91d317df6d92ca.webp",
       "alt": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "name": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "price": "R$ 139,90",
@@ -301,7 +301,7 @@
     "preco": 84.9,
     "img": "../img/stone-asset-18-1.jpg",
     "imagens": [
-      "https://files.catbox.moe/18m1t8.mp4",
+      "../img/stone-asset-18-1.jpg",
       "../img/stone-asset-18-1.jpg",
       "../img/stone-asset-18-2.jpg",
       "../img/stone-asset-18-3.jpg",

@@ -100,7 +100,7 @@
     },
     {
       "name": "T**o A**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
       "stars": 5,
       "date": "08/02",
       "variation": "Branco com Marinho 41",
@@ -140,7 +140,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Branco com Marinho 41",
@@ -150,7 +150,7 @@
     },
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "All Black 39",
@@ -160,7 +160,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
       "stars": 5,
       "date": "29/01",
       "variation": "Preto com Grafite 42",
@@ -180,7 +180,7 @@
     },
     {
       "name": "W**r P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "Branco com Marinho 41",
@@ -262,7 +262,7 @@
     },
     {
       "href": "produto-16.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "img": "../img/produtos/local/ext_8ec0b5955ed9bf.webp",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "price": "R$ 64,90",
@@ -272,7 +272,7 @@
     },
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",

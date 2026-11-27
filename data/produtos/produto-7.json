@@ -5,35 +5,35 @@
   "product_title": "Caixa de Som AIWA",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "src": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rceu-lrrqagdluuuv38",
+      "src": "../img/produtos/local/ext_5ee7341c687a04.webp",
       "alt": "Caixa de Som AIWA - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rccg-lrrqah84m75599",
+      "src": "../img/produtos/local/ext_b7a498ce03fe89.webp",
       "alt": "Caixa de Som AIWA - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rcc9-lrrqaht7rc8zea",
+      "src": "../img/produtos/local/ext_163371549daa83.webp",
       "alt": "Caixa de Som AIWA - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rccq-lrrqaidqxacvc3",
+      "src": "../img/produtos/local/ext_71ff534e6efef0.webp",
       "alt": "Caixa de Som AIWA - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rcfd-lrrqaiz420u9d3",
+      "src": "../img/produtos/local/ext_2629dd2f1f1d9c.webp",
       "alt": "Caixa de Som AIWA - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0sp9yiljjod00",
+      "src": "../img/produtos/local/ext_c0a497dbca02bb.webp",
       "alt": "Caixa de Som AIWA - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0sp9yilky8ta6",
+      "src": "../img/produtos/local/ext_12f027af7346b4.webp",
       "alt": "Caixa de Som AIWA - Slide 8"
     }
   ],
@@ -67,7 +67,7 @@
     },
     {
       "name": "L**s F**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg",
       "stars": 5,
       "date": "14/02",
       "variation": "Preto Fosco",
@@ -180,7 +180,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
       "stars": 5,
       "date": "29/01",
       "variation": "Preto Fosco",
@@ -200,7 +200,7 @@
     },
     {
       "name": "T**s A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "Preto Fosco",
@@ -260,7 +260,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/avatars-churras/creator-marcos.jpg",
       "stars": 5,
       "date": "17/01",
       "variation": "Preto Fosco",
@@ -280,7 +280,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
       "stars": 4,
       "date": "13/01",
       "variation": "Preto Fosco",
@@ -320,7 +320,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/avatars-churras/creator-rodrigo.jpg",
       "stars": 5,
       "date": "06/01",
       "variation": "Preto Fosco",
@@ -460,7 +460,7 @@
     },
     {
       "name": "D**e A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "Preto Fosco",
@@ -550,7 +550,7 @@
     },
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg",
       "stars": 5,
       "date": "17/01",
       "variation": "Preto Fosco",
@@ -652,7 +652,7 @@
     },
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
+      "img": "../img/produtos/local/ext_954098063bc9b4.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "price": "R$ 69,90",
@@ -662,7 +662,7 @@
     },
     {
       "href": "produto-34.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m850ox58do8h8b",
+      "img": "../img/produtos/local/ext_fa4eb58f0107a3.webp",
       "alt": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
       "name": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
       "price": "R$ 219,90",
@@ -695,16 +695,16 @@
     "id": 7,
     "nome": "Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA",
     "preco": 69.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+    "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rceu-lrrqagdluuuv38",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rccg-lrrqah84m75599",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rcc9-lrrqaht7rc8zea",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rccq-lrrqaidqxacvc3",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rcfd-lrrqaiz420u9d3",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0sp9yiljjod00",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0sp9yilky8ta6"
+      "../img/produtos/local/ext_4fa0c8f575ed16.webp",
+      "../img/produtos/local/ext_5ee7341c687a04.webp",
+      "../img/produtos/local/ext_b7a498ce03fe89.webp",
+      "../img/produtos/local/ext_163371549daa83.webp",
+      "../img/produtos/local/ext_71ff534e6efef0.webp",
+      "../img/produtos/local/ext_2629dd2f1f1d9c.webp",
+      "../img/produtos/local/ext_c0a497dbca02bb.webp",
+      "../img/produtos/local/ext_12f027af7346b4.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -713,7 +713,7 @@
         "opcoes": [
           {
             "nome": "Preto Fosco",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2"
+            "imagem": "../img/produtos/local/ext_4fa0c8f575ed16.webp"
           }
         ]
       }

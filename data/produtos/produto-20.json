@@ -5,39 +5,39 @@
   "product_title": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me910y70d7nmf6",
+      "src": "../img/produtos/local/ext_ebea070012787a.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meirv5gwc1s391",
+      "src": "../img/produtos/local/ext_5d99869763f28b.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meirv5gtpxqad1",
+      "src": "../img/produtos/local/ext_83b383ccfb3952.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmktxi2a11",
+      "src": "../img/produtos/local/ext_0de185795bcd3b.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m2ldhcvgv18zee",
+      "src": "../img/produtos/local/ext_3f93144df03eec.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmktxhzkc5",
+      "src": "../img/produtos/local/ext_391cb9bcc926c8.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmp9r06q62",
+      "src": "../img/produtos/local/ext_21d7199511f0ce.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmp9qzr9d2",
+      "src": "../img/produtos/local/ext_74d71563a5e368.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmktxhmt88",
+      "src": "../img/produtos/local/ext_ec7f5a05c94a22.webp",
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 9"
     }
   ],
@@ -154,7 +154,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Preto/Amarelo",
@@ -174,7 +174,7 @@
     },
     {
       "name": "T**s A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_8.jpg",
       "stars": 5,
       "date": "29/01",
       "variation": "Preto/Vermelho",
@@ -234,7 +234,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
       "stars": 5,
       "date": "20/01",
       "variation": "Vermelho/Amarelo",
@@ -254,7 +254,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_9.jpg",
       "stars": 5,
       "date": "17/01",
       "variation": "Preto/Cinza",
@@ -294,7 +294,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
       "stars": 5,
       "date": "10/01",
       "variation": "Azul/Rosa",
@@ -434,7 +434,7 @@
     },
     {
       "name": "D**e A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_10.jpg",
       "stars": 5,
       "date": "04/02",
       "variation": "Preto/Cinza",
@@ -656,7 +656,7 @@
     },
     {
       "href": "produto-9.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "img": "../img/produtos/local/ext_87369898964782.webp",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "price": "R$ 349,90",
@@ -699,57 +699,57 @@
     "id": 20,
     "nome": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB",
     "preco": 269.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me910y70d7nmf6",
+    "img": "../img/produtos/local/ext_ebea070012787a.webp",
     "imagens": [
-      "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfko-m86q5a2zdudtaf.16000081743799389.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me910y70d7nmf6",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meirv5gwc1s391",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meirv5gtpxqad1",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmktxi2a11",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m2ldhcvgv18zee",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmktxhzkc5",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmp9r06q62",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmp9qzr9d2",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ahnmktxhmt88"
+      "../img/produtos/local/ext_ebea070012787a.webp",
+      "../img/produtos/local/ext_ebea070012787a.webp",
+      "../img/produtos/local/ext_5d99869763f28b.webp",
+      "../img/produtos/local/ext_83b383ccfb3952.webp",
+      "../img/produtos/local/ext_0de185795bcd3b.webp",
+      "../img/produtos/local/ext_3f93144df03eec.webp",
+      "../img/produtos/local/ext_391cb9bcc926c8.webp",
+      "../img/produtos/local/ext_21d7199511f0ce.webp",
+      "../img/produtos/local/ext_74d71563a5e368.webp",
+      "../img/produtos/local/ext_ec7f5a05c94a22.webp"
     ],
     "variacoes": {
       "cor": {
         "label": "COR",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-23010-gj4qkv4gsgmv3e",
+            "imagem": "../img/produtos/local/ext_8ac91716a8a807.webp",
             "nome": "Preto/Amarelo"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-23010-mqwm9k3gsgmv86",
+            "imagem": "../img/produtos/local/ext_83febd3c56e322.webp",
             "nome": "Preto/Cinza"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-23010-vwu1alzgsgmv48",
+            "imagem": "../img/produtos/local/ext_501b31ed68edb3.webp",
             "nome": "Preto/Vermelho"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-23010-mmpipc4gsgmv52",
+            "imagem": "../img/produtos/local/ext_7c39630cb811ff.webp",
             "nome": "Preto/verde"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-23010-9dgiokygsgmv1e",
+            "imagem": "../img/produtos/local/ext_bb07694f7ab1f8.webp",
             "nome": "Preto/rosa"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7reos-m8l010h934wh9b",
+            "imagem": "../img/produtos/local/ext_04a4d0527129d6.webp",
             "nome": "Azul/Rosa"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rep9-m8l019cm3t0ia6",
+            "imagem": "../img/produtos/local/ext_185dec0d5269e3.webp",
             "nome": "Preto/laranja"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7repe-m8l014mj0n9c8a",
+            "imagem": "../img/produtos/local/ext_82ff71016c601c.webp",
             "nome": "Preto/Azul"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7reni-m8l01cjhfp9l8a",
+            "imagem": "../img/produtos/local/ext_51645803988376.webp",
             "nome": "Vermelho/Amarelo"
           }
         ]

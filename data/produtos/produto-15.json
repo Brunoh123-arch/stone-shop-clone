@@ -248,7 +248,7 @@
     },
     {
       "href": "produto-9.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "img": "../img/produtos/local/ext_87369898964782.webp",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "price": "R$ 349,90",
@@ -283,7 +283,7 @@
     "preco": 69.9,
     "img": "../img/produto-15-1.jpg",
     "imagens": [
-      "https://files.catbox.moe/qfampv.mp4",
+      "../img/produto-15-1.jpg",
       "../img/produto-15-1.jpg",
       "../img/produto-15-2.jpg",
       "../img/produto-15-3.jpg",

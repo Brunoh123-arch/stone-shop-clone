@@ -5,27 +5,27 @@
   "product_title": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
   "slider_imgs": [
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_619198-MLA96107579199_102025-F.webp",
+      "src": "../img/produtos/local/ext_b9815b84412b91.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças - 1"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_766380-MLA84537989014_052025-F.webp",
+      "src": "../img/produtos/local/ext_2533c21a008927.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças - 2"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_635191-MLA84836071911_052025-F.webp",
+      "src": "../img/produtos/local/ext_ecc2480920f617.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças - 3"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_903091-MLA84538065128_052025-F.webp",
+      "src": "../img/produtos/local/ext_7b5c51021e68bd.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças - 4"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_817603-MLA84836071947_052025-F.webp",
+      "src": "../img/produtos/local/ext_b54c7e16c057fa.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças - 5"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_842962-MLA84836129895_052025-F.webp",
+      "src": "../img/produtos/local/ext_52eccfe5d7c42b.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças - 6"
     }
   ],
@@ -266,7 +266,7 @@
     },
     {
       "href": "produto-16.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "img": "../img/produtos/local/ext_8ec0b5955ed9bf.webp",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "price": "R$ 64,90",
@@ -276,7 +276,7 @@
     },
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -300,14 +300,14 @@
     "nome": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
     "preco": 69.9,
     "preco_antigo": 497.9,
-    "img": "https://http2.mlstatic.com/D_NQ_NP_619198-MLA96107579199_102025-F.webp",
+    "img": "../img/produtos/local/ext_b9815b84412b91.webp",
     "imagens": [
-      "https://http2.mlstatic.com/D_NQ_NP_619198-MLA96107579199_102025-F.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_766380-MLA84537989014_052025-F.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_635191-MLA84836071911_052025-F.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_903091-MLA84538065128_052025-F.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_817603-MLA84836071947_052025-F.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_842962-MLA84836129895_052025-F.webp"
+      "../img/produtos/local/ext_b9815b84412b91.webp",
+      "../img/produtos/local/ext_2533c21a008927.webp",
+      "../img/produtos/local/ext_ecc2480920f617.webp",
+      "../img/produtos/local/ext_7b5c51021e68bd.webp",
+      "../img/produtos/local/ext_b54c7e16c057fa.webp",
+      "../img/produtos/local/ext_52eccfe5d7c42b.webp"
     ],
     "variacoes": {
       "conjunto": {
@@ -315,7 +315,7 @@
         "opcoes": [
           {
             "nome": "Jogo Completo 30 Peças Porcelana",
-            "imagem": "https://http2.mlstatic.com/D_NQ_NP_619198-MLA96107579199_102025-F.webp",
+            "imagem": "../img/produtos/local/ext_b9815b84412b91.webp",
             "preco": 69.9
           }
         ]

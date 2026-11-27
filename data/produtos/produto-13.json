@@ -78,7 +78,7 @@
     },
     {
       "name": "T**o A**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/avatars-churras/review-homem-3.jpg",
       "stars": 5,
       "date": "11/02",
       "variation": "Azul 1000 Litros Oficial Mor",
@@ -126,7 +126,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/avatars-tv/creator-matheus.jpg",
       "stars": 4,
       "date": "05/02",
       "variation": "Azul 1000 Litros Oficial Mor",
@@ -150,7 +150,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_63.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Azul 1000 Litros Oficial Mor",
@@ -172,7 +172,7 @@
     },
     {
       "name": "W**r P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_64.jpg",
       "stars": 5,
       "date": "29/01",
       "variation": "Azul 1000 Litros Oficial Mor",
@@ -264,7 +264,7 @@
   "related": [
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -274,7 +274,7 @@
     },
     {
       "href": "produto-38.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh12vhr254hs6c",
+      "img": "../img/produtos/local/ext_e3a405c17fee86.webp",
       "alt": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "name": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "price": "R$ 69,90",
@@ -317,15 +317,15 @@
     "id": 13,
     "nome": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
     "preco": 49.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-82260-mhoz9j95dloj8d",
+    "img": "../img/produtos/local/ext_a6bef056a3b5aa.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/sg-11134201-82260-mhoz9j95dloj8d",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8225r-mhoz9jwwdyiwcc",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8225w-mhoz9khalkarfb",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8225o-mhoz9lerlr7m4c",
-      "https://down-br.img.susercontent.com/file/sg-11134201-82254-mhoz9m6v8irm20",
-      "https://down-br.img.susercontent.com/file/sg-11134201-82280-mhoz9mzl6o0527",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8225b-mhoz9nj5l3wl23"
+      "../img/produtos/local/ext_a6bef056a3b5aa.webp",
+      "../img/produtos/local/ext_b058cde51a46ae.webp",
+      "../img/produtos/local/ext_6ee681f249b924.webp",
+      "../img/produtos/local/ext_c57f0c0d2b8edc.webp",
+      "../img/produtos/local/ext_90be5df64b98fa.webp",
+      "../img/produtos/local/ext_7b5de5609c3926.webp",
+      "../img/produtos/local/ext_91088421f9d138.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -334,7 +334,7 @@
         "opcoes": [
           {
             "nome": "Azul 1000 Litros Oficial Mor",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-82260-mhoz9j95dloj8d"
+            "imagem": "../img/produtos/local/ext_a6bef056a3b5aa.webp"
           }
         ]
       }

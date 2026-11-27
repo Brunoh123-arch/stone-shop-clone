@@ -5,31 +5,31 @@
   "product_title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18",
+      "src": "../img/produtos/local/ext_b0ce6b75a7635a.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfg8-m9yig86uyvtu72",
+      "src": "../img/produtos/local/ext_efbc85b19d80f7.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfey-m9yig8s83m3t62",
+      "src": "../img/produtos/local/ext_27c3fa68c14b9b.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfhv-m9yig9g34n4mf7",
+      "src": "../img/produtos/local/ext_2746ca9913d38d.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfi6-m9yig9wqgc6a3b",
+      "src": "../img/produtos/local/ext_7d5e6d0cf10599.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfew-m9yigag5pbc94e",
+      "src": "../img/produtos/local/ext_adef2e03bd5ec9.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rfi7-m9yigb0ott0s13",
+      "src": "../img/produtos/local/ext_54c1916150bc2e.webp",
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 7"
     }
   ],
@@ -106,7 +106,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_38.jpg",
       "stars": 5,
       "date": "08/02",
       "variation": "220V",
@@ -126,7 +126,7 @@
     },
     {
       "name": "T**s A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_40.jpg",
       "stars": 4,
       "date": "05/02",
       "variation": "220V",
@@ -186,7 +186,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/avatars-churras/creator-fernando.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "220V",
@@ -206,7 +206,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_43.jpg",
       "stars": 5,
       "date": "23/01",
       "variation": "220V",
@@ -246,7 +246,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/avatars-churras/creator-lucas.jpg",
       "stars": 5,
       "date": "17/01",
       "variation": "220V",
@@ -386,7 +386,7 @@
     },
     {
       "name": "D**e A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_47.jpg",
       "stars": 5,
       "date": "10/02",
       "variation": "220V",
@@ -628,7 +628,7 @@
   "related": [
     {
       "href": "produto-9.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "img": "../img/produtos/local/ext_87369898964782.webp",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "price": "R$ 349,90",
@@ -638,7 +638,7 @@
     },
     {
       "href": "produto-98.html",
-      "img": "https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61",
+      "img": "../img/produtos/local/ext_90dd90aaeca942.webp",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
       "name": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
       "price": "R$ 44,90",
@@ -648,7 +648,7 @@
     },
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
+      "img": "../img/produtos/local/ext_954098063bc9b4.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "price": "R$ 69,90",
@@ -681,15 +681,15 @@
     "id": 46,
     "nome": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)",
     "preco": 149.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18",
+    "img": "../img/produtos/local/ext_b0ce6b75a7635a.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfg8-m9yig86uyvtu72",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfey-m9yig8s83m3t62",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfhv-m9yig9g34n4mf7",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfi6-m9yig9wqgc6a3b",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfew-m9yigag5pbc94e",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rfi7-m9yigb0ott0s13"
+      "../img/produtos/local/ext_b0ce6b75a7635a.webp",
+      "../img/produtos/local/ext_efbc85b19d80f7.webp",
+      "../img/produtos/local/ext_27c3fa68c14b9b.webp",
+      "../img/produtos/local/ext_2746ca9913d38d.webp",
+      "../img/produtos/local/ext_7d5e6d0cf10599.webp",
+      "../img/produtos/local/ext_adef2e03bd5ec9.webp",
+      "../img/produtos/local/ext_54c1916150bc2e.webp"
     ],
     "variacoes": {
       "cor": {
@@ -698,7 +698,7 @@
         "opcoes": [
           {
             "nome": "Preto",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18"
+            "imagem": "../img/produtos/local/ext_b0ce6b75a7635a.webp"
           }
         ]
       },

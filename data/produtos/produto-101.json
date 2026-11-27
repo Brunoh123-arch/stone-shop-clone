@@ -5,11 +5,11 @@
   "product_title": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
   "slider_imgs": [
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "src": "../img/produtos/local/ext_13fbb86477331c.webp",
       "alt": "Pneu Pirelli Cinturato P7 C2"
     },
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pzero.png",
+      "src": "../img/produtos/local/ext_ead1c6c0c251bb.webp",
       "alt": "Pneu Pirelli P Zero PZ4"
     },
     {
@@ -21,23 +21,23 @@
       "alt": "Pneu Pirelli Scorpion ATR"
     },
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pwrgy.png",
+      "src": "../img/produtos/local/ext_ed4279ce8f501b.webp",
       "alt": "Pneu Pirelli Powergy"
     },
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cint.png",
+      "src": "../img/produtos/local/ext_aee6ae9a82a60f.webp",
       "alt": "Pneu Pirelli Cinturato P7"
     },
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p1cint.png",
+      "src": "../img/produtos/local/ext_17e989c7470216.webp",
       "alt": "Pneu Pirelli Cinturato P1"
     },
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/CinturatoP6-BR_visorePDP_cake.png",
+      "src": "../img/produtos/local/ext_f2d34b77013bdb.webp",
       "alt": "Pneu Pirelli Cinturato P6"
     },
     {
-      "src": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/P400Evo_visorePDP_cake.png",
+      "src": "../img/produtos/local/ext_a633455ac09064.webp",
       "alt": "Pneu Pirelli P400 EVO"
     }
   ],
@@ -245,7 +245,7 @@
   "related": [
     {
       "href": "produto-54.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
+      "img": "../img/produtos/local/ext_7f3b92c0ec6446.webp",
       "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
       "name": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
       "price": "R$ 169,90",
@@ -298,14 +298,14 @@
     "id": 101,
     "nome": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
     "preco": 189.9,
-    "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+    "img": "../img/produtos/local/ext_13fbb86477331c.webp",
     "imagens": [
-      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
-      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pzero.png",
-      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/scverde.png",
-      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/scatr.png",
-      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pwrgy.png",
-      "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cint.png"
+      "../img/produtos/local/ext_13fbb86477331c.webp",
+      "../img/produtos/local/ext_ead1c6c0c251bb.webp",
+      "../img/produtos/local/ext_13fbb86477331c.webp",
+      "../img/produtos/local/ext_13fbb86477331c.webp",
+      "../img/produtos/local/ext_ed4279ce8f501b.webp",
+      "../img/produtos/local/ext_aee6ae9a82a60f.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -313,31 +313,31 @@
         "opcoes": [
           {
             "nome": "CINTURATO P7 (P7C2)",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png"
+            "imagem": "../img/produtos/local/ext_13fbb86477331c.webp"
           },
           {
             "nome": "CINTURATO P7",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cint.png"
+            "imagem": "../img/produtos/local/ext_aee6ae9a82a60f.webp"
           },
           {
             "nome": "CINTURATO P1",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p1cint.png"
+            "imagem": "../img/produtos/local/ext_17e989c7470216.webp"
           },
           {
             "nome": "CINTURATO P6",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/CinturatoP6-BR_visorePDP_cake.png"
+            "imagem": "../img/produtos/local/ext_f2d34b77013bdb.webp"
           },
           {
             "nome": "P ZERO (PZ4)",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pzero.png"
+            "imagem": "../img/produtos/local/ext_ead1c6c0c251bb.webp"
           },
           {
             "nome": "POWERGY",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/pwrgy.png"
+            "imagem": "../img/produtos/local/ext_ed4279ce8f501b.webp"
           },
           {
             "nome": "P400 EVO",
-            "imagem": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/P400Evo_visorePDP_cake.png"
+            "imagem": "../img/produtos/local/ext_a633455ac09064.webp"
           },
           {
             "nome": "SCORPION VERDE",

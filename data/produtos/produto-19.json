@@ -5,39 +5,39 @@
   "product_title": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4",
+      "src": "../img/produtos/local/ext_66b6b35e7b6437.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqhbf556",
+      "src": "../img/produtos/local/ext_5a9016f9a5e0c1.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyp-m1fz239k9t4v55",
+      "src": "../img/produtos/local/ext_fa6c86ddb3912b.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-m1fz23rbjt4v05",
+      "src": "../img/produtos/local/ext_c045366e188ac2.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdw0-m1fz24agrsfb50",
+      "src": "../img/produtos/local/ext_533c745d962f24.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxp-m1fz24lkbkcf4e",
+      "src": "../img/produtos/local/ext_76478ab98cbdde.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyh-m1fz25q2o9x9b9",
+      "src": "../img/produtos/local/ext_95c579a1d2e2e6.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqfwup0f",
+      "src": "../img/produtos/local/ext_8527eae1a9a28e.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdexclaw1nf5aa",
+      "src": "../img/produtos/local/ext_a5e25a7375664b.webp",
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 9"
     }
   ],
@@ -254,7 +254,7 @@
     },
     {
       "name": "R**o S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/avatars-patinete/creator-rafael-muniz.jpg",
       "stars": 5,
       "date": "17/01",
       "variation": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
@@ -294,7 +294,7 @@
     },
     {
       "name": "G**a R**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_1.jpg",
       "stars": 5,
       "date": "10/01",
       "variation": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
@@ -314,7 +314,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/avatars-smartwatch/creator-135-brcamarg0.jpg",
       "stars": 5,
       "date": "06/01",
       "variation": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
@@ -334,7 +334,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_2.jpg",
       "stars": 5,
       "date": "03/01",
       "variation": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
@@ -374,7 +374,7 @@
     },
     {
       "name": "Y**a C**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_3.jpg",
       "stars": 5,
       "date": "12/02",
       "variation": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
@@ -394,7 +394,7 @@
     },
     {
       "name": "V**r H**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg",
       "stars": 5,
       "date": "10/02",
       "variation": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
@@ -466,7 +466,7 @@
   "related": [
     {
       "href": "produto-53.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me8xwns11f5v8f",
+      "img": "../img/produtos/local/ext_31ef18af8e14d1.webp",
       "alt": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
       "name": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
       "price": "R$ 347,90",
@@ -476,7 +476,7 @@
     },
     {
       "href": "produto-16.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "img": "../img/produtos/local/ext_8ec0b5955ed9bf.webp",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "price": "R$ 64,90",
@@ -486,7 +486,7 @@
     },
     {
       "href": "produto-90.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp",
+      "img": "../img/produtos/local/ext_93fa140245872d.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
       "name": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
       "price": "R$ 79,90",
@@ -496,7 +496,7 @@
     },
     {
       "href": "produto-38.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh12vhr254hs6c",
+      "img": "../img/produtos/local/ext_e3a405c17fee86.webp",
       "alt": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "name": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "price": "R$ 69,90",
@@ -519,18 +519,18 @@
     "id": 19,
     "nome": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
     "preco": 139.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4",
+    "img": "../img/produtos/local/ext_66b6b35e7b6437.webp",
     "imagens": [
-      "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfkq-m84xvokvhipd9f.16000081743691318.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqhbf556",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdyp-m1fz239k9t4v55",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-m1fz23rbjt4v05",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdw0-m1fz24agrsfb50",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdxp-m1fz24lkbkcf4e",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rdyh-m1fz25q2o9x9b9",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqfwup0f",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdexclaw1nf5aa"
+      "../img/produtos/local/ext_66b6b35e7b6437.webp",
+      "../img/produtos/local/ext_66b6b35e7b6437.webp",
+      "../img/produtos/local/ext_5a9016f9a5e0c1.webp",
+      "../img/produtos/local/ext_fa6c86ddb3912b.webp",
+      "../img/produtos/local/ext_c045366e188ac2.webp",
+      "../img/produtos/local/ext_533c745d962f24.webp",
+      "../img/produtos/local/ext_76478ab98cbdde.webp",
+      "../img/produtos/local/ext_95c579a1d2e2e6.webp",
+      "../img/produtos/local/ext_8527eae1a9a28e.webp",
+      "../img/produtos/local/ext_a5e25a7375664b.webp"
     ],
     "variacoes": {
       "cor": {
@@ -539,11 +539,11 @@
         "opcoes": [
           {
             "nome": "Azul Stitch + Capa",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4"
+            "imagem": "../img/produtos/local/ext_66b6b35e7b6437.webp"
           },
           {
             "nome": "Kit Stitch Completo (+ Bolsa)",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqhbf556"
+            "imagem": "../img/produtos/local/ext_5a9016f9a5e0c1.webp"
           }
         ]
       },

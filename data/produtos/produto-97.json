@@ -5,27 +5,27 @@
   "product_title": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
   "slider_imgs": [
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_971035-MLB119952134826_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+      "src": "../img/produtos/local/ext_997a954b37d10c.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina - 1"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_797834-MLB119952134828_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+      "src": "../img/produtos/local/ext_13377efcf3a0b3.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina - 2"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_869560-MLB119952134830_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+      "src": "../img/produtos/local/ext_bb744b756e3f5e.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina - 3"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_623140-MLB119952134832_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+      "src": "../img/produtos/local/ext_b749742b31a807.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina - 4"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_744623-MLB119952134834_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+      "src": "../img/produtos/local/ext_90168feb44d586.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina - 5"
     },
     {
-      "src": "https://http2.mlstatic.com/D_NQ_NP_934427-MLB119952134836_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+      "src": "../img/produtos/local/ext_e8745898ad65ea.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina - 6"
     }
   ],
@@ -104,7 +104,7 @@
     },
     {
       "name": "D**o M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "avatar": "../img/avatars-churras/creator-marcos.jpg",
       "stars": 5,
       "date": "08/02",
       "variation": "Coleção Original",
@@ -154,7 +154,7 @@
     },
     {
       "name": "B**a N**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "Jogo Completo 20 Peças Porcelana",
@@ -266,7 +266,7 @@
     },
     {
       "href": "produto-16.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "img": "../img/produtos/local/ext_8ec0b5955ed9bf.webp",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "price": "R$ 64,90",
@@ -276,7 +276,7 @@
     },
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -300,14 +300,14 @@
     "nome": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
     "preco": 69.9,
     "preco_antigo": 596.9,
-    "img": "https://http2.mlstatic.com/D_NQ_NP_971035-MLB119952134826_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+    "img": "../img/produtos/local/ext_997a954b37d10c.webp",
     "imagens": [
-      "https://http2.mlstatic.com/D_NQ_NP_971035-MLB119952134826_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_797834-MLB119952134828_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_869560-MLB119952134830_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_623140-MLB119952134832_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_744623-MLB119952134834_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_934427-MLB119952134836_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp"
+      "../img/produtos/local/ext_997a954b37d10c.webp",
+      "../img/produtos/local/ext_13377efcf3a0b3.webp",
+      "../img/produtos/local/ext_bb744b756e3f5e.webp",
+      "../img/produtos/local/ext_b749742b31a807.webp",
+      "../img/produtos/local/ext_90168feb44d586.webp",
+      "../img/produtos/local/ext_e8745898ad65ea.webp"
     ],
     "variacoes": {
       "conjunto": {
@@ -315,7 +315,7 @@
         "opcoes": [
           {
             "nome": "Jogo Completo 20 Peças Porcelana",
-            "imagem": "https://http2.mlstatic.com/D_NQ_NP_971035-MLB119952134826_112026-O-aparelho-de-jantar-20-pecas-porcelana-canyon-tramontina.webp",
+            "imagem": "../img/produtos/local/ext_997a954b37d10c.webp",
             "preco": 69.9
           }
         ]

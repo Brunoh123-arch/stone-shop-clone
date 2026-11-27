@@ -5,39 +5,39 @@
   "product_title": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
+      "src": "../img/produtos/local/ext_b841cf2196e1c7.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyq9899d",
+      "src": "../img/produtos/local/ext_ea176b1f45c048.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyrnsp1a",
+      "src": "../img/produtos/local/ext_1d82fe1026a286.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyugxlec",
+      "src": "../img/produtos/local/ext_689935087c0e96.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyvvi1ba",
+      "src": "../img/produtos/local/ext_33e373e17fcd4c.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyxa2h20",
+      "src": "../img/produtos/local/ext_ee706483700286.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9fqnbslbuo2da",
+      "src": "../img/produtos/local/ext_2ac2213fedb8e5.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9fqnbslrawy75",
+      "src": "../img/produtos/local/ext_08ad22174b76cd.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-820m9-mm1hnijqap6u26",
+      "src": "../img/produtos/local/ext_756e37311bc514.webp",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 9"
     }
   ],
@@ -82,7 +82,7 @@
     },
     {
       "name": "A**a N**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_18.jpg",
       "stars": 5,
       "date": "12/02",
       "variation": "Azul Tifany 127V",
@@ -196,7 +196,7 @@
     },
     {
       "name": "Y**a C**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_19.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "Branco 127V",
@@ -296,7 +296,7 @@
     },
     {
       "name": "J**o P**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
       "stars": 5,
       "date": "10/01",
       "variation": "Prata Premium 127V",
@@ -336,7 +336,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg",
       "stars": 5,
       "date": "03/01",
       "variation": "Prata Premium 127V",
@@ -416,7 +416,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
       "stars": 4,
       "date": "07/02",
       "variation": "Prata Premium 127V",
@@ -456,7 +456,7 @@
     },
     {
       "name": "M**s P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "Prata Premium 127V",
@@ -526,7 +526,7 @@
     },
     {
       "name": "A**a N**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
       "stars": 5,
       "date": "20/01",
       "variation": "Azul Tifany 127V",
@@ -588,7 +588,7 @@
   "related": [
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -631,18 +631,18 @@
     "id": 95,
     "nome": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
     "preco": 159.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
+    "img": "../img/produtos/local/ext_b841cf2196e1c7.webp",
     "imagens": [
-      "https://down-cvs-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfks-m9txdzfa3rpe0c.16000081747383137.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyq9899d",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyrnsp1a",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyugxlec",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyvvi1ba",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyxa2h20",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9fqnbslbuo2da",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9fqnbslrawy75",
-      "https://down-br.img.susercontent.com/file/br-11134207-820m9-mm1hnijqap6u26"
+      "../img/produtos/local/ext_b841cf2196e1c7.webp",
+      "../img/produtos/local/ext_b841cf2196e1c7.webp",
+      "../img/produtos/local/ext_ea176b1f45c048.webp",
+      "../img/produtos/local/ext_1d82fe1026a286.webp",
+      "../img/produtos/local/ext_689935087c0e96.webp",
+      "../img/produtos/local/ext_33e373e17fcd4c.webp",
+      "../img/produtos/local/ext_ee706483700286.webp",
+      "../img/produtos/local/ext_2ac2213fedb8e5.webp",
+      "../img/produtos/local/ext_08ad22174b76cd.webp",
+      "../img/produtos/local/ext_756e37311bc514.webp"
     ],
     "variacoes": {
       "cor": {
@@ -651,19 +651,19 @@
         "opcoes": [
           {
             "nome": "Preto",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyyomxc1"
+            "imagem": "../img/produtos/local/ext_4bf698a631be4c.webp"
           },
           {
             "nome": "Branco",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tlt21c6"
+            "imagem": "../img/produtos/local/ext_d33bc25ce25f3f.webp"
           },
           {
             "nome": "Azul Tiffany",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tbz2xcd"
+            "imagem": "../img/produtos/local/ext_16f8c6a031da72.webp"
           },
           {
             "nome": "Prata Premium",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tkehl54"
+            "imagem": "../img/produtos/local/ext_f67795462e0ac4.webp"
           }
         ]
       },

@@ -302,7 +302,7 @@
     },
     {
       "href": "produto-101.html",
-      "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "img": "../img/produtos/local/ext_13fbb86477331c.webp",
       "alt": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
       "name": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
       "price": "R$ 189,90",
@@ -312,7 +312,7 @@
     },
     {
       "href": "produto-13.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-82260-mhoz9j95dloj8d",
+      "img": "../img/produtos/local/ext_a6bef056a3b5aa.webp",
       "alt": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
       "name": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
       "price": "R$ 49,90",
@@ -347,7 +347,7 @@
     "preco": 297.9,
     "img": "../img/produtos/p35/slide_1.jpg",
     "imagens": [
-      "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5do-meyct3ylvqbr56.16000081758547370.mp4",
+      "../img/produtos/p35/slide_1.jpg",
       "../img/produtos/p35/slide_1.jpg",
       "../img/produtos/p35/slide_2.jpg",
       "../img/produtos/p35/slide_3.jpg",

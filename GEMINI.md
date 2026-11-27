@@ -138,7 +138,7 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 ---
 
 ## 6. DÍVIDAS TÉCNICAS CONHECIDAS (não esconda do usuário)
-- ~42 produtos antigos (< 125) ainda usam avatares de logo/cartoon da lista `BAD_AVATARS` (validador só informa; corrigir 1 a 1 com inspeção visual).
+- ✅ **Resolvido (27/11/2026):** todos os 32 produtos antigos (`< 125`) que usavam avatares de logo/cartoon da lista `BAD_AVATARS` foram saneados com avatares humanos brasileiros verificados sem colisão MD5, e +320 fotos externas da Shopee/Pirelli foram localizadas em `img/produtos/local/`.
 - Scripts antigos em `scripts/` referenciam `reviews-avatars/unique|curated` (pastas já excluídas) — são resíduos de patches únicos; podem ser apagados.
 - `js/videos-criadores.js` (7 mil linhas) só atende produtos legados; produto novo usa `creators` no JSON.
 

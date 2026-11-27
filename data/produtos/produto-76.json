@@ -5,19 +5,19 @@
   "product_title": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
+      "src": "../img/produtos/local/ext_5e27c05d37aedb.webp",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânic - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8261j-mkckruaikmbmcc",
+      "src": "../img/produtos/local/ext_3c52ec4b6415c4.webp",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânic - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8260o-mkckrv9bot1j4a",
+      "src": "../img/produtos/local/ext_0fb135da4da6db.webp",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânic - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8262m-mkckrw3h3pc565",
+      "src": "../img/produtos/local/ext_6ed68646631be7.webp",
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânic - Slide 4"
     }
   ],
@@ -184,7 +184,7 @@
     },
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_48.jpg",
       "stars": 5,
       "date": "25/01",
       "variation": "Jogo Completo 30 Peças Porcelana Orgânico",
@@ -256,7 +256,7 @@
     },
     {
       "href": "produto-16.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
+      "img": "../img/produtos/local/ext_8ec0b5955ed9bf.webp",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "price": "R$ 64,90",
@@ -266,7 +266,7 @@
     },
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -289,12 +289,12 @@
     "id": 76,
     "nome": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
     "preco": 69.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
+    "img": "../img/produtos/local/ext_5e27c05d37aedb.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8261j-mkckruaikmbmcc",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8260o-mkckrv9bot1j4a",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8262m-mkckrw3h3pc565"
+      "../img/produtos/local/ext_5e27c05d37aedb.webp",
+      "../img/produtos/local/ext_3c52ec4b6415c4.webp",
+      "../img/produtos/local/ext_0fb135da4da6db.webp",
+      "../img/produtos/local/ext_6ed68646631be7.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -303,7 +303,7 @@
         "opcoes": [
           {
             "nome": "Jogo Completo 30 Peças Porcelana Orgânico",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-8261c-mkckrt97fvgg75"
+            "imagem": "../img/produtos/local/ext_5e27c05d37aedb.webp"
           }
         ]
       }

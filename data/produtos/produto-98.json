@@ -5,23 +5,23 @@
   "product_title": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61",
+      "src": "../img/produtos/local/ext_90dd90aaeca942.webp",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long  - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/3f4ae5eb5dde30d5fa8cd6562912fecb",
+      "src": "../img/produtos/local/ext_5e07d398e4e1b8.webp",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long  - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/1976a521fdad35dd69790375b4bc85f1",
+      "src": "../img/produtos/local/ext_97e93d55e781c6.webp",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long  - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8260r-ml5jzonezggdd0",
+      "src": "../img/produtos/local/ext_aabc0d424da7ec.webp",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long  - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-825zl-ml5jzpfxwt1c22",
+      "src": "../img/produtos/local/ext_f3dbae05675746.webp",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long  - Slide 5"
     }
   ],
@@ -140,7 +140,7 @@
     },
     {
       "name": "M**s P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_39.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Kit 12 Copos Cristal Bohemia 450ml",
@@ -252,7 +252,7 @@
   "related": [
     {
       "href": "produto-55.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m024asxqvazr6b",
+      "img": "../img/produtos/local/ext_4d5418ef22e80f.webp",
       "alt": "SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
       "name": "SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
       "price": "R$ 289,90",
@@ -262,7 +262,7 @@
     },
     {
       "href": "produto-97.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-81zwa-mimr7kh9srno54",
+      "img": "../img/produtos/local/ext_b6b03661808a9a.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
       "name": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
       "price": "R$ 69,90",
@@ -305,13 +305,13 @@
     "id": 98,
     "nome": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
     "preco": 44.9,
-    "img": "https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61",
+    "img": "../img/produtos/local/ext_90dd90aaeca942.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61",
-      "https://down-br.img.susercontent.com/file/3f4ae5eb5dde30d5fa8cd6562912fecb",
-      "https://down-br.img.susercontent.com/file/1976a521fdad35dd69790375b4bc85f1",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8260r-ml5jzonezggdd0",
-      "https://down-br.img.susercontent.com/file/sg-11134201-825zl-ml5jzpfxwt1c22"
+      "../img/produtos/local/ext_90dd90aaeca942.webp",
+      "../img/produtos/local/ext_5e07d398e4e1b8.webp",
+      "../img/produtos/local/ext_97e93d55e781c6.webp",
+      "../img/produtos/local/ext_aabc0d424da7ec.webp",
+      "../img/produtos/local/ext_f3dbae05675746.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -320,7 +320,7 @@
         "opcoes": [
           {
             "nome": "Kit 12 Copos Cristal Bohemia 450ml",
-            "imagem": "https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61"
+            "imagem": "../img/produtos/local/ext_90dd90aaeca942.webp"
           }
         ]
       }

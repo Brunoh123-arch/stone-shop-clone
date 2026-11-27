@@ -144,7 +144,7 @@
     },
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_47.jpg",
       "stars": 5,
       "date": "04/02",
       "variation": "Cores Sortidas Vibrantes (Kit 6 Cadeiras)",
@@ -246,7 +246,7 @@
   "related": [
     {
       "href": "produto-40.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zqs2hxtuki59",
+      "img": "../img/produtos/local/ext_b71372ef194ac9.webp",
       "alt": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
       "name": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
       "price": "R$ 179,90",
@@ -266,7 +266,7 @@
     },
     {
       "href": "produto-7.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
+      "img": "../img/produtos/local/ext_4fa0c8f575ed16.webp",
       "alt": "Caixa de Som AIWA",
       "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
@@ -276,7 +276,7 @@
     },
     {
       "href": "produto-55.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m024asxqvazr6b",
+      "img": "../img/produtos/local/ext_4d5418ef22e80f.webp",
       "alt": "SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
       "name": "SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
       "price": "R$ 289,90",

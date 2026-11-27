@@ -5,27 +5,27 @@
   "product_title": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b",
+      "src": "../img/produtos/local/ext_ec5070df7674c4.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rceq-m6cx3fohpmyo13",
+      "src": "../img/produtos/local/ext_d1156e6b5cdafb.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rcdc-m6cx3gaepcobb7",
+      "src": "../img/produtos/local/ext_735ee3e4623d91.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rceb-m6cx3gt9xs7r3d",
+      "src": "../img/produtos/local/ext_f44ee30b81766e.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rceg-m6cx3hkgty0ke6",
+      "src": "../img/produtos/local/ext_18d1cc6208912b.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rcec-m6cx3f3ega6v64",
+      "src": "../img/produtos/local/ext_380041d6163277.webp",
       "alt": "Bicicleta Aro 20 Bmx infantil GottBikes  - Slide 6"
     }
   ],
@@ -252,7 +252,7 @@
     },
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_43.jpg",
       "stars": 5,
       "date": "15/01",
       "variation": "Preto e Laranja",
@@ -402,7 +402,7 @@
     },
     {
       "name": "R**o S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
       "stars": 4,
       "date": "07/02",
       "variation": "Verde e Preto",
@@ -442,7 +442,7 @@
     },
     {
       "name": "G**a R**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_44.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "Branco e Rosa",
@@ -462,7 +462,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
       "stars": 5,
       "date": "28/01",
       "variation": "Laranja e Preto",
@@ -482,7 +482,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_45.jpg",
       "stars": 5,
       "date": "25/01",
       "variation": "Azul e Preto",
@@ -522,7 +522,7 @@
     },
     {
       "name": "Y**a C**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_46.jpg",
       "stars": 5,
       "date": "18/01",
       "variation": "Verde e Preto",
@@ -542,7 +542,7 @@
     },
     {
       "name": "V**r H**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_47.jpg",
       "stars": 4,
       "date": "15/01",
       "variation": "Branco e Laranja",
@@ -592,7 +592,7 @@
     },
     {
       "name": "M**a S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_46.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_48.jpg",
       "stars": 5,
       "date": "06/01",
       "variation": "Preto",
@@ -669,7 +669,7 @@
   "related": [
     {
       "href": "produto-54.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
+      "img": "../img/produtos/local/ext_7f3b92c0ec6446.webp",
       "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
       "name": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
       "price": "R$ 169,90",
@@ -722,66 +722,66 @@
     "id": 25,
     "nome": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
     "preco": 79.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b",
+    "img": "../img/produtos/local/ext_ec5070df7674c4.webp",
     "imagens": [
-      "https://down-zl-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dm-mfe5kpp2wk5c54.16000081759503752.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mer4ub5zgb9c1b",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rceq-m6cx3fohpmyo13",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rcdc-m6cx3gaepcobb7",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rceb-m6cx3gt9xs7r3d",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rceg-m6cx3hkgty0ke6",
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rcec-m6cx3f3ega6v64"
+      "../img/produtos/local/ext_ec5070df7674c4.webp",
+      "../img/produtos/local/ext_ec5070df7674c4.webp",
+      "../img/produtos/local/ext_d1156e6b5cdafb.webp",
+      "../img/produtos/local/ext_735ee3e4623d91.webp",
+      "../img/produtos/local/ext_f44ee30b81766e.webp",
+      "../img/produtos/local/ext_18d1cc6208912b.webp",
+      "../img/produtos/local/ext_380041d6163277.webp"
     ],
     "variacoes": {
       "cor": {
         "label": "Cor",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01lshxbb",
+            "imagem": "../img/produtos/local/ext_2c28f249498c72.webp",
             "nome": "Branco e Azul"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01n72d8f",
+            "imagem": "../img/produtos/local/ext_a083ffcf593ca2.webp",
             "nome": "Branco e Laranja"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01olmt7b",
+            "imagem": "../img/produtos/local/ext_6e8d4ac025ac09.webp",
             "nome": "Branco e  Preto"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01q07944",
+            "imagem": "../img/produtos/local/ext_80664c126de0c1.webp",
             "nome": "Branco e Rosa"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01rerpf8",
+            "imagem": "../img/produtos/local/ext_0f0c5d03ccefb3.webp",
             "nome": "Branco e Verde"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01stc52a",
+            "imagem": "../img/produtos/local/ext_8d60cb1b32d1c3.webp",
             "nome": "Laranja e Preto"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01u7wl67",
+            "imagem": "../img/produtos/local/ext_6c22bc860810f4.webp",
             "nome": "Preto"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u45a01vmh1d6",
+            "imagem": "../img/produtos/local/ext_fe87903f803894.webp",
             "nome": "Azul e Preto"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u543pivlu811",
+            "imagem": "../img/produtos/local/ext_b1e73205e8ac3e.webp",
             "nome": "Preto e Laranja"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u543pix0eob6",
+            "imagem": "../img/produtos/local/ext_1bb35a3973a343.webp",
             "nome": "Preto e Verde"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u543piyez45f",
+            "imagem": "../img/produtos/local/ext_29a8c7bc189077.webp",
             "nome": "Rosa e Preto"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5u543piztjk94",
+            "imagem": "../img/produtos/local/ext_5823ec06c0a495.webp",
             "nome": "Verde e Preto"
           }
         ]

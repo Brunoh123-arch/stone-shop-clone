@@ -5,19 +5,19 @@
   "product_title": "Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5",
+      "src": "../img/produtos/local/ext_ba41d760d89c04.webp",
       "alt": "Bateria Auxiliar De Partida Portátil Com - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8260c-mju7sk0bb1ms77",
+      "src": "../img/produtos/local/ext_8e3d10aa6fef53.webp",
       "alt": "Bateria Auxiliar De Partida Portátil Com - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-82609-mju7snf9k2rnf4",
+      "src": "../img/produtos/local/ext_1127543f775185.webp",
       "alt": "Bateria Auxiliar De Partida Portátil Com - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-8262i-mju7sr5j5vyc2f",
+      "src": "../img/produtos/local/ext_8816915d4614fc.webp",
       "alt": "Bateria Auxiliar De Partida Portátil Com - Slide 4"
     }
   ],
@@ -334,7 +334,7 @@
     },
     {
       "name": "R**o S**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/avatars-patinete/creator-rafael-muniz.jpg",
       "stars": 5,
       "date": "15/02",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -374,7 +374,7 @@
     },
     {
       "name": "G**a R**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_6.jpg",
       "stars": 5,
       "date": "10/02",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -394,7 +394,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/avatars-smartwatch/creator-135-brcamarg0.jpg",
       "stars": 4,
       "date": "07/02",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -414,7 +414,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg",
       "stars": 5,
       "date": "04/02",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -454,7 +454,7 @@
     },
     {
       "name": "Y**a C**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_8.jpg",
       "stars": 5,
       "date": "28/01",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -474,7 +474,7 @@
     },
     {
       "name": "V**r H**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_9.jpg",
       "stars": 5,
       "date": "25/01",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -574,7 +574,7 @@
     },
     {
       "name": "C**s E**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_10.jpg",
       "stars": 5,
       "date": "08/01",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -594,7 +594,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_11.jpg",
       "stars": 5,
       "date": "05/01",
       "variation": "Kit Auxiliar de Partida + Compressor com Maleta",
@@ -636,7 +636,7 @@
   "related": [
     {
       "href": "produto-41.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16",
+      "img": "../img/produtos/local/ext_91d317df6d92ca.webp",
       "alt": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "name": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "price": "R$ 139,90",
@@ -656,7 +656,7 @@
     },
     {
       "href": "produto-5.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh9e1c37asxxe2",
+      "img": "../img/produtos/local/ext_ca8d3f6ae6238c.webp",
       "alt": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
       "name": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
       "price": "R$ 67,90",
@@ -689,13 +689,13 @@
     "id": 64,
     "nome": "Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
     "preco": 69.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5",
+    "img": "../img/produtos/local/ext_ba41d760d89c04.webp",
     "imagens": [
-      "https://down-ws-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfkr-m8nlmciz0bgib5.16000081744820869.mp4",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8260c-mju7sk0bb1ms77",
-      "https://down-br.img.susercontent.com/file/sg-11134201-82609-mju7snf9k2rnf4",
-      "https://down-br.img.susercontent.com/file/sg-11134201-8262i-mju7sr5j5vyc2f"
+      "../img/produtos/local/ext_ba41d760d89c04.webp",
+      "../img/produtos/local/ext_ba41d760d89c04.webp",
+      "../img/produtos/local/ext_8e3d10aa6fef53.webp",
+      "../img/produtos/local/ext_1127543f775185.webp",
+      "../img/produtos/local/ext_8816915d4614fc.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -704,7 +704,7 @@
         "opcoes": [
           {
             "nome": "Kit Auxiliar de Partida + Compressor com Maleta",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-8260z-mju7shogkd8jf5"
+            "imagem": "../img/produtos/local/ext_ba41d760d89c04.webp"
           }
         ]
       }

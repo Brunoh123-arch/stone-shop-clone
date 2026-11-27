@@ -5,19 +5,19 @@
   "product_title": "Prancha Pro 480 Turbo MQ Professional Bivolt",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87",
+      "src": "../img/produtos/local/ext_49bfeea4a4ef65.webp",
       "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217am1apcd",
+      "src": "../img/produtos/local/ext_0f51da6aee7cb6.webp",
       "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217anfv5fa",
+      "src": "../img/produtos/local/ext_a820afbc05e58f.webp",
       "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217aoufld3",
+      "src": "../img/produtos/local/ext_bde314410de86d.webp",
       "alt": "Prancha Pro 480 Turbo MQ Professional Bi - Slide 4"
     }
   ],
@@ -606,7 +606,7 @@
   "related": [
     {
       "href": "produto-5.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh9e1c37asxxe2",
+      "img": "../img/produtos/local/ext_ca8d3f6ae6238c.webp",
       "alt": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
       "name": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
       "price": "R$ 67,90",
@@ -616,7 +616,7 @@
     },
     {
       "href": "produto-9.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "img": "../img/produtos/local/ext_87369898964782.webp",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "price": "R$ 349,90",
@@ -626,7 +626,7 @@
     },
     {
       "href": "produto-101.html",
-      "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
+      "img": "../img/produtos/local/ext_13fbb86477331c.webp",
       "alt": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
       "name": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
       "price": "R$ 189,90",
@@ -636,7 +636,7 @@
     },
     {
       "href": "produto-97.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-81zwa-mimr7kh9srno54",
+      "img": "../img/produtos/local/ext_b6b03661808a9a.webp",
       "alt": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
       "name": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
       "price": "R$ 69,90",
@@ -646,7 +646,7 @@
     },
     {
       "href": "produto-63.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
+      "img": "../img/produtos/local/ext_68475e5e216508.webp",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "name": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "price": "R$ 69,90",
@@ -659,12 +659,12 @@
     "id": 45,
     "nome": "Prancha Pro 480 Turbo MQ Professional Bivolt",
     "preco": 69.9,
-    "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87",
+    "img": "../img/produtos/local/ext_49bfeea4a4ef65.webp",
     "imagens": [
-      "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217am1apcd",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217anfv5fa",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m83f217aoufld3"
+      "../img/produtos/local/ext_49bfeea4a4ef65.webp",
+      "../img/produtos/local/ext_0f51da6aee7cb6.webp",
+      "../img/produtos/local/ext_a820afbc05e58f.webp",
+      "../img/produtos/local/ext_bde314410de86d.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -673,7 +673,7 @@
         "opcoes": [
           {
             "nome": "Titanium Bivolt Automático",
-            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rept-m80tiqdhkwwh87"
+            "imagem": "../img/produtos/local/ext_49bfeea4a4ef65.webp"
           }
         ]
       }

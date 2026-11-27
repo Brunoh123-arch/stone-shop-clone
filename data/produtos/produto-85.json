@@ -5,23 +5,23 @@
   "product_title": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103",
+      "src": "../img/produtos/local/ext_687a326d19d3f0.webp",
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 1 - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc504x27",
+      "src": "../img/produtos/local/ext_324c5467fb1d60.webp",
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 1 - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc3lkh4a",
+      "src": "../img/produtos/local/ext_8414d67919f126.webp",
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 1 - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvbzdv56e",
+      "src": "../img/produtos/local/ext_1a45e50fd18ed3.webp",
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 1 - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc0sfl24",
+      "src": "../img/produtos/local/ext_a30b5e9cee6098.webp",
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 1 - Slide 5"
     }
   ],
@@ -42,7 +42,7 @@
   "reviews": [
     {
       "name": "L**a M**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_12.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_51.jpg",
       "stars": 4,
       "date": "15/02",
       "variation": "Preto Karaokê 300W com Tela 10.1",
@@ -55,7 +55,7 @@
     },
     {
       "name": "T**s A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_52.jpg",
       "stars": 5,
       "date": "14/02",
       "variation": "Preto Karaokê 300W com Tela 10.1",
@@ -118,7 +118,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
       "stars": 4,
       "date": "05/02",
       "variation": "Preto Karaokê 300W com Tela 10.1",
@@ -138,7 +138,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_53.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Preto Karaokê 300W com Tela 10.1",
@@ -178,7 +178,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "Preto Karaokê 300W com Tela 10.1",
@@ -230,7 +230,7 @@
   "related": [
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
+      "img": "../img/produtos/local/ext_954098063bc9b4.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "price": "R$ 69,90",
@@ -240,7 +240,7 @@
     },
     {
       "href": "produto-34.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m850ox58do8h8b",
+      "img": "../img/produtos/local/ext_fa4eb58f0107a3.webp",
       "alt": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
       "name": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
       "price": "R$ 219,90",
@@ -283,14 +283,14 @@
     "id": 85,
     "nome": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
     "preco": 197.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103",
+    "img": "../img/produtos/local/ext_687a326d19d3f0.webp",
     "imagens": [
-      "https://down-ws-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfks-ma4merlhc7bbc2.16000081748030512.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc504x27",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc3lkh4a",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvbzdv56e",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc0sfl24"
+      "../img/produtos/local/ext_687a326d19d3f0.webp",
+      "../img/produtos/local/ext_687a326d19d3f0.webp",
+      "../img/produtos/local/ext_324c5467fb1d60.webp",
+      "../img/produtos/local/ext_8414d67919f126.webp",
+      "../img/produtos/local/ext_1a45e50fd18ed3.webp",
+      "../img/produtos/local/ext_a30b5e9cee6098.webp"
     ],
     "variacoes": {
       "modelo": {
@@ -299,7 +299,7 @@
         "opcoes": [
           {
             "nome": "Preto Karaokê 300W com Tela 10.1\"",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103"
+            "imagem": "../img/produtos/local/ext_687a326d19d3f0.webp"
           }
         ]
       }

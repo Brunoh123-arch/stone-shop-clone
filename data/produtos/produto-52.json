@@ -5,39 +5,39 @@
   "product_title": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rladn00h24",
+      "src": "../img/produtos/local/ext_ccb35fce55b374.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl72mrwxb5",
+      "src": "../img/produtos/local/ext_46154d64bc27b6.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71rvf5fc",
+      "src": "../img/produtos/local/ext_4fd2797760ffe0.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71rvzt9d",
+      "src": "../img/produtos/local/ext_3136a8fc6df4a1.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl72mshl3b",
+      "src": "../img/produtos/local/ext_bbd1351b8eedec.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl727c8p34",
+      "src": "../img/produtos/local/ext_2e221734fe833a.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl8ppgahb2",
+      "src": "../img/produtos/local/ext_ff9419ad5f1521.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rlcbk69l97",
+      "src": "../img/produtos/local/ext_027faf235df018.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71tak90c",
+      "src": "../img/produtos/local/ext_fb483842fbcb4f.webp",
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 9"
     }
   ],
@@ -71,7 +71,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/avatars-churras/creator-marcos.jpg",
       "stars": 5,
       "date": "14/02",
       "variation": "Azul 256gb",
@@ -94,7 +94,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg",
       "stars": 5,
       "date": "11/02",
       "variation": "Prata 128gb",
@@ -114,7 +114,7 @@
     },
     {
       "name": "W**r P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg",
       "stars": 5,
       "date": "08/02",
       "variation": "Rosa 128gb",
@@ -154,7 +154,7 @@
     },
     {
       "name": "V**r H**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Prata 128gb",
@@ -174,7 +174,7 @@
     },
     {
       "name": "L**s F**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg",
       "stars": 5,
       "date": "29/01",
       "variation": "Rosa 128gb",
@@ -274,7 +274,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg",
       "stars": 4,
       "date": "13/01",
       "variation": "Prata 128gb",
@@ -294,7 +294,7 @@
     },
     {
       "name": "T**s A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg",
       "stars": 5,
       "date": "10/01",
       "variation": "Rosa 128gb",
@@ -354,7 +354,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/avatars-churras/creator-rodrigo.jpg",
       "stars": 5,
       "date": "15/02",
       "variation": "Rosa 128gb",
@@ -374,7 +374,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg",
       "stars": 5,
       "date": "12/02",
       "variation": "Azul 256gb",
@@ -414,7 +414,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/avatars-churras/review-homem-1.jpg",
       "stars": 4,
       "date": "07/02",
       "variation": "Rosa 128gb",
@@ -554,7 +554,7 @@
     },
     {
       "name": "D**e A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg",
       "stars": 4,
       "date": "15/01",
       "variation": "Azul 256gb",
@@ -736,7 +736,7 @@
   "related": [
     {
       "href": "produto-96.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rd5p-m7uwvu85tnp9ae",
+      "img": "../img/produtos/local/ext_479c93b5a61444.webp",
       "alt": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
       "name": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
       "price": "R$ 69,90",
@@ -746,7 +746,7 @@
     },
     {
       "href": "produto-89.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj765kpbq3nla8",
+      "img": "../img/produtos/local/ext_9ff8a4f9087332.webp",
       "alt": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
       "name": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
       "price": "R$ 79,90",
@@ -789,18 +789,18 @@
     "id": 52,
     "nome": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano",
     "preco": 389.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rladn00h24",
+    "img": "../img/produtos/local/ext_ccb35fce55b374.webp",
     "imagens": [
-      "https://down-zl-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dl-mfgwcikdqjuvce.16000081759669834.mp4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rladn00h24",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl72mrwxb5",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71rvf5fc",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71rvzt9d",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl72mshl3b",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl727c8p34",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl8ppgahb2",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rlcbk69l97",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71tak90c"
+      "../img/produtos/local/ext_ccb35fce55b374.webp",
+      "../img/produtos/local/ext_ccb35fce55b374.webp",
+      "../img/produtos/local/ext_46154d64bc27b6.webp",
+      "../img/produtos/local/ext_4fd2797760ffe0.webp",
+      "../img/produtos/local/ext_3136a8fc6df4a1.webp",
+      "../img/produtos/local/ext_bbd1351b8eedec.webp",
+      "../img/produtos/local/ext_2e221734fe833a.webp",
+      "../img/produtos/local/ext_ff9419ad5f1521.webp",
+      "../img/produtos/local/ext_027faf235df018.webp",
+      "../img/produtos/local/ext_fb483842fbcb4f.webp"
     ],
     "variacoes": {
       "cor": {
@@ -809,15 +809,15 @@
         "opcoes": [
           {
             "nome": "Prata",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71up4p5d"
+            "imagem": "../img/produtos/local/ext_0ba2c4d8822fc0.webp"
           },
           {
             "nome": "Azul",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71w3p5bd"
+            "imagem": "../img/produtos/local/ext_2490f7f21886b8.webp"
           },
           {
             "nome": "Rosa",
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71xi9l93"
+            "imagem": "../img/produtos/local/ext_aad046633a1d8f.webp"
           }
         ]
       },

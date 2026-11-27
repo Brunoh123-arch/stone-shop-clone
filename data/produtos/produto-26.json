@@ -5,43 +5,43 @@
   "product_title": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
   "slider_imgs": [
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
+      "src": "../img/produtos/local/ext_954098063bc9b4.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 1"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
+      "src": "../img/produtos/local/ext_4c5bfd19edf623.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 2"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8r04685cd",
+      "src": "../img/produtos/local/ext_1ec6ebfe6d7ae7.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 3"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s76ts5e",
+      "src": "../img/produtos/local/ext_5744bc0afa2c27.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 4"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8ra3s1eb1",
+      "src": "../img/produtos/local/ext_c37c29e8b7b3e1.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 5"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s4dowd4",
+      "src": "../img/produtos/local/ext_7556570a20eaa1.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 6"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s2z4g7d",
+      "src": "../img/produtos/local/ext_12653157406c4a.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 7"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8r046nmf1",
+      "src": "../img/produtos/local/ext_bee1fa81f0ed97.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 8"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s5s9c8a",
+      "src": "../img/produtos/local/ext_158000a288572f.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 9"
     },
     {
-      "src": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8ra3ryo13",
+      "src": "../img/produtos/local/ext_7267eed7349674.webp",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Le - Slide 10"
     }
   ],
@@ -75,7 +75,7 @@
     },
     {
       "name": "T**o A**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_5.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_46.jpg",
       "stars": 5,
       "date": "14/02",
       "variation": "Verde",
@@ -118,7 +118,7 @@
     },
     {
       "name": "H**o C**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
+      "avatar": "../img/avatars-churras/creator-fernando.jpg",
       "stars": 5,
       "date": "08/02",
       "variation": "Preto",
@@ -138,7 +138,7 @@
     },
     {
       "name": "K**s M**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_50.jpg",
       "stars": 4,
       "date": "05/02",
       "variation": "Verde",
@@ -158,7 +158,7 @@
     },
     {
       "name": "W**r P**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_51.jpg",
       "stars": 5,
       "date": "02/02",
       "variation": "Rosa",
@@ -198,7 +198,7 @@
     },
     {
       "name": "V**r H**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_52.jpg",
       "stars": 5,
       "date": "26/01",
       "variation": "Verde",
@@ -218,7 +218,7 @@
     },
     {
       "name": "L**s F**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_53.jpg",
       "stars": 5,
       "date": "23/01",
       "variation": "Rosa",
@@ -318,7 +318,7 @@
     },
     {
       "name": "R**a G**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_54.jpg",
       "stars": 5,
       "date": "06/01",
       "variation": "Verde",
@@ -338,7 +338,7 @@
     },
     {
       "name": "T**s A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_55.jpg",
       "stars": 5,
       "date": "03/01",
       "variation": "Rosa",
@@ -358,7 +358,7 @@
     },
     {
       "name": "A**r C**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_33.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_56.jpg",
       "stars": 5,
       "date": "15/02",
       "variation": "Preto",
@@ -398,7 +398,7 @@
     },
     {
       "name": "G**o B**o",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
+      "avatar": "../img/avatars-churras/creator-lucas.jpg",
       "stars": 5,
       "date": "10/02",
       "variation": "Rosa",
@@ -418,7 +418,7 @@
     },
     {
       "name": "R**n O**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_57.jpg",
       "stars": 4,
       "date": "07/02",
       "variation": "Preto",
@@ -458,7 +458,7 @@
     },
     {
       "name": "C**o L**a",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
+      "avatar": "../img/avatars-churras/creator-marcos.jpg",
       "stars": 5,
       "date": "01/02",
       "variation": "Rosa",
@@ -598,7 +598,7 @@
     },
     {
       "name": "D**e A**s",
-      "avatar": "../img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_58.jpg",
       "stars": 5,
       "date": "08/01",
       "variation": "Preto",
@@ -660,7 +660,7 @@
   "related": [
     {
       "href": "produto-9.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
+      "img": "../img/produtos/local/ext_87369898964782.webp",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "price": "R$ 349,90",
@@ -670,7 +670,7 @@
     },
     {
       "href": "produto-27.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_738338-MLA43324938498_082020-O-ar-condicionado-portatil-lg-dual-inverter-14000-btu-127v.webp",
+      "img": "../img/produtos/local/ext_b04355db97f533.webp",
       "alt": "Ar Condicionado Portátil LG Dual Inverter 14.000 Btu Preto Fosco Confort",
       "name": "Ar Condicionado Portátil LG Dual Inverter 14.000 Btu Preto Fosco Confort",
       "price": "R$ 92,80",
@@ -680,7 +680,7 @@
     },
     {
       "href": "produto-47.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rbn7-lqeu1vzxvsrqba",
+      "img": "../img/produtos/local/ext_a56c5c78e7f2eb.webp",
       "alt": "Extratora e Higienizadora Portátil WAP Spot Cleaner 1400W Borrifa Esfrega e Extrai Sujeira",
       "name": "Extratora e Higienizadora Portátil WAP Spot Cleaner 1400W Borrifa Esfrega e Extrai Sujeira",
       "price": "R$ 169,90",
@@ -690,7 +690,7 @@
     },
     {
       "href": "produto-41.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16",
+      "img": "../img/produtos/local/ext_91d317df6d92ca.webp",
       "alt": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "name": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "price": "R$ 139,90",
@@ -713,34 +713,34 @@
     "id": 26,
     "nome": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
     "preco": 69.9,
-    "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
+    "img": "../img/produtos/local/ext_954098063bc9b4.webp",
     "imagens": [
-      "https://down-ws-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfkp-lw4k3v5xfzcl62.16000081717517282.mp4",
-      "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8r04685cd",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s76ts5e",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8ra3s1eb1",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s4dowd4",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s2z4g7d",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8r046nmf1",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s5s9c8a",
-      "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8ra3ryo13"
+      "../img/produtos/local/ext_954098063bc9b4.webp",
+      "../img/produtos/local/ext_954098063bc9b4.webp",
+      "../img/produtos/local/ext_4c5bfd19edf623.webp",
+      "../img/produtos/local/ext_1ec6ebfe6d7ae7.webp",
+      "../img/produtos/local/ext_5744bc0afa2c27.webp",
+      "../img/produtos/local/ext_c37c29e8b7b3e1.webp",
+      "../img/produtos/local/ext_7556570a20eaa1.webp",
+      "../img/produtos/local/ext_12653157406c4a.webp",
+      "../img/produtos/local/ext_bee1fa81f0ed97.webp",
+      "../img/produtos/local/ext_158000a288572f.webp",
+      "../img/produtos/local/ext_7267eed7349674.webp"
     ],
     "variacoes": {
       "cor": {
         "label": "Cor",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7ryrf4db",
+            "imagem": "../img/produtos/local/ext_8b979d0225bea6.webp",
             "nome": "Rosa"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s05zk33",
+            "imagem": "../img/produtos/local/ext_a034d5a4d7cb61.webp",
             "nome": "Verde"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bbtp7s1kk080",
+            "imagem": "../img/produtos/local/ext_f9ca5a4fab09d8.webp",
             "nome": "Preto"
           }
         ]
