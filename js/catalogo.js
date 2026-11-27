@@ -1,8 +1,8 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
-  {id:136,nome:'Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula',preco:99.9,precoOrig:'299,90',desc:67,vendidos:2840,img:'../img/kit-mondial-136-slide-1.webp'},
-  {id:138,nome:'Cortina de LED 3m x 3m 300 LEDs USB c/ Controle Remoto 8 Funções e Ganchos Integrados',preco:39.9,precoOrig:'119,90',desc:67,vendidos:8420,img:'../img/cortina-led-138-slide-1.webp'},
-  {id:139,nome:'Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon',preco:54.9,precoOrig:'159,90',desc:65,vendidos:3650,img:'../img/vestido-139-slide-1.webp'},
+  {id:136,nome:'Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula',preco:34.89,precoOrig:'299,90',desc:88,vendidos:2840,img:'../img/kit-mondial-136-slide-1.webp'},
+  {id:138,nome:'Cortina de LED 3m x 3m 300 LEDs USB c/ Controle Remoto 8 Funções e Ganchos Integrados',preco:11.89,precoOrig:'119,90',desc:90,vendidos:8420,img:'../img/cortina-led-138-slide-1.webp'},
+  {id:139,nome:'Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon',preco:19.89,precoOrig:'159,90',desc:88,vendidos:3650,img:'../img/vestido-139-slide-1.webp'},
   {id:144,nome:"Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas Térmicas e Alça",preco:37.89,precoOrig:'199,90',desc:81,vendidos:4829,img:"../img/camera-144-slide-1.webp"},
   {id:129,nome:"Escova Elétrica Giratória de Limpeza Sem Fio 9 em 1 Impermeável c/ Cabo Extensor Retrátil USB",preco:29.89,precoOrig:'159,90',desc:81,vendidos:6184,img:"../img/escova-129-slide-1.webp"},
   {id:127,nome:"Carrinho Controle Remoto Drift 4x4 Turbo que Solta Fumaça com LED + Kit Pneus Drift e Cones",preco:49.89,precoOrig:'249,90',desc:80,vendidos:3918,img:"../img/drift-127-slide-1.webp"},

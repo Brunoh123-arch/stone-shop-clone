@@ -1,7 +1,7 @@
 {
   "id": 136,
   "title": "Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W + Copo Medidor e Espátula - Stone Shop",
-  "meta_description": "Kit Cozinha Mondial Preto com Liquidificador Turbo Power 550W, Batedeira Prática 400W 3,6L, Copo Medidor e Espátula por R$ 99,90 no PIX. Frete grátis Stone Shop.",
+  "meta_description": "Kit Cozinha Mondial Preto com Liquidificador Turbo Power 550W, Batedeira Prática 400W 3,6L, Copo Medidor e Espátula por R$ 34,89 no PIX. Frete grátis Stone Shop.",
   "product_title": "Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula",
   "slider_imgs": [
     {
@@ -37,14 +37,14 @@
       "alt": "Espátula de Silicone Culinária Resistente ao Calor"
     }
   ],
-  "discount_badge": "-67%",
-  "price_int": "99",
-  "price_cents": ",90",
+  "discount_badge": "-88%",
+  "price_int": "34",
+  "price_cents": ",89",
   "price_original": "R$ 299,90",
-  "installment_text": "3x de R$ 33,30 sem juros",
+  "installment_text": "3x de R$ 11,63 sem juros",
   "installment_highlight": "sem juros",
   "coupon_main": "Cupom Black Friday R$ 50 OFF aplicado",
-  "coupon_bonus": "Final R$ 99,90 no Pix ou Cartão",
+  "coupon_bonus": "Final R$ 34,89 no Pix ou Cartão",
   "rating_score": "4,9",
   "rating_count": "(164)",
   "sold_count": "2840 vendido(s)",
@@ -59,7 +59,7 @@
       "date": "26/11",
       "variation": "Preto",
       "date_line": "26/11 · Preto",
-      "comment": "Simplesmente maravilhoso! Comprei na promoção da Black Friday por R$ 99,90 e chegou em 4 dias super bem embalado. O liquidificador de 550W tritura gelo tranquilo e a batedeira tem tigela enorme!",
+      "comment": "Simplesmente maravilhoso! Comprei na promoção da Black Friday por R$ 34,89 e chegou em 4 dias super bem embalado. O liquidificador de 550W tritura gelo tranquilo e a batedeira tem tigela enorme!",
       "photos": []
     },
     {
@@ -239,7 +239,7 @@
       "date": "11/11",
       "variation": "Preto",
       "date_line": "11/11 · Preto",
-      "comment": "Melhor compra da Black Friday até agora! R$ 99,90 com frete grátis nesse kit é surreal.",
+      "comment": "Melhor compra da Black Friday até agora! R$ 34,89 com frete grátis nesse kit é surreal.",
       "photos": []
     },
     {
@@ -304,9 +304,9 @@
       "img": "../img/cortina-led-138-slide-1.webp",
       "alt": "Cortina de LED 3m x 3m 300 LEDs",
       "name": "Cortina de LED 3m x 3m 300 LEDs USB c/ Controle Remoto 8 Funções",
-      "price": "R$ 39,90",
+      "price": "R$ 11,89",
       "price_original": "R$ 119,90",
-      "discount": "67% OFF",
+      "discount": "90% OFF",
       "sold": "8420 vendidos"
     },
     {
@@ -324,17 +324,17 @@
     "id": 136,
     "nome": "Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula",
     "name": "Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula",
-    "preco": 99.9,
-    "price": 99.9,
+    "preco": 34.89,
+    "price": 34.89,
     "preco_antigo": 299.9,
     "precoOrig": 299.9,
     "originalPrice": 299.9,
-    "cupomPreco": 99.9,
-    "couponPrice": 99.9,
-    "desc": 67,
-    "desconto": 67,
-    "installmentText": "3x de R$ 33,30 sem juros",
-    "parcelamento": "3x de R$ 33,30 sem juros",
+    "cupomPreco": 34.89,
+    "couponPrice": 34.89,
+    "desc": 88,
+    "desconto": 88,
+    "installmentText": "3x de R$ 11,63 sem juros",
+    "parcelamento": "3x de R$ 11,63 sem juros",
     "categoria": "Casa e Cozinha",
     "img": "../img/kit-mondial-136-slide-1.webp",
     "image": "../img/kit-mondial-136-slide-1.webp",
