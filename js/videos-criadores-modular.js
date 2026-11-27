@@ -1114,6 +1114,21 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'kitmondial136') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Gente, esse kit da Mondial com liquidificador 550W + batedeira 400W + copo medidor + espátula por R$ 99,90 na Black Friday é loucura! Corre antes de acabar 🔥🖤', date: 'Há 1 hora', likes: 134, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_44.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_44.jpg', user: 'claudia_cozinha', text: 'Comprei ontem no PIX e já despacharam! Só a batedeira no shopping tá 140 reais 😍', date: 'Há 30 min', likes: 52, liked: false }
+            ];
+          } else if (contextType === 'cortinaled138') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Olha o brilho desses 300 LEDs 3x3m! Já vem com ganchinhos pra pendurar no varão, controle remoto e liga direto no USB ✨🎄', date: 'Há 1 hora', likes: 118, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_45.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_45.jpg', user: 'ju_decoracoes', text: 'Coloquei a branco quente na sala e ficou igual foto de revista! Recomendo demais 💛', date: 'Há 24 min', likes: 44, liked: false }
+            ];
+          } else if (contextType === 'vestido139') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Meninas, o tecido suplex desse vestido drapeado é super encorpado, não fica transparente e a faixa lateral deixa a silhueta perfeita pro Réveillon! 🥂✨', date: 'Há 1 hora', likes: 129, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_46.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_46.jpg', user: 'amanda.style', text: 'Peguei o branco pro Ano Novo e o preto pro Natal! Chegou em 4 dias e vestiu perfeito 😍', date: 'Há 19 min', likes: 48, liked: false }
+            ];
           } else if (contextType === 'smartwatch135') {
             return [
               {

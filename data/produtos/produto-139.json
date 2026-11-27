@@ -1,0 +1,435 @@
+{
+  "id": 139,
+  "title": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral Festas Natal e Réveillon - Stone Shop",
+  "meta_description": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral Assimétrica em Suplex Premium para Natal, Réveillon e Festas por R$ 54,90 no PIX. Frete grátis Stone Shop.",
+  "product_title": "Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon",
+  "slider_imgs": [
+    {
+      "src": "../img/vestido-139-slide-1.webp",
+      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral Assimétrica - Preto"
+    },
+    {
+      "src": "../img/vestido-139-slide-2.webp",
+      "alt": "Vestido Curto Drapeado com Cauda Lateral - Movimento e Caimento Perfeito"
+    },
+    {
+      "src": "../img/vestido-139-slide-3.webp",
+      "alt": "Modelagem Justa Drapeada que Valoriza a Silhueta"
+    },
+    {
+      "src": "../img/vestido-139-slide-4.webp",
+      "alt": "Vista Lateral do Vestido Ombro a Ombro com Faixa Longa"
+    },
+    {
+      "src": "../img/vestido-139-slide-5.webp",
+      "alt": "Look Completo Festa, Natal e Réveillon - Vestido Ombro a Ombro"
+    }
+  ],
+  "discount_badge": "-65%",
+  "price_int": "54",
+  "price_cents": ",90",
+  "price_original": "R$ 159,90",
+  "installment_text": "2x de R$ 27,45 sem juros",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom Festas R$ 25 OFF aplicado",
+  "coupon_bonus": "Final R$ 54,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(192)",
+  "sold_count": "3650 vendido(s)",
+  "frete_original": "R$ 17,90",
+  "reviews_header": "Avaliações dos clientes (192)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "M**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "Branco",
+      "date_line": "26/11 · Branco",
+      "comment": "Amei demais! Comprei o branco pro Réveillon e fiquei com medo de ser transparente, mas o tecido suplex é bem encorpado e tem forro! Vestiu perfeitamente!",
+      "photos": []
+    },
+    {
+      "name": "C**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "Preto",
+      "date_line": "26/11 · Preto",
+      "comment": "O drapeado na barriga disfarça tudo e deixa o corpo lindo demais! A faixa lateral dá um charme absurdo, parece vestido de grife.",
+      "photos": []
+    },
+    {
+      "name": "J**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Branco",
+      "date_line": "25/11 · Branco",
+      "comment": "Chegou em 4 dias aqui em SP! Serviu certinho o tamanho M (uso 40), estica bem sem perder a firmeza. Super recomendo!",
+      "photos": []
+    },
+    {
+      "name": "P**a O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Preto",
+      "date_line": "25/11 · Preto",
+      "comment": "Simplesmente perfeito! Usei numa formatura e todo mundo elogiou. Por R$ 54,90 foi o melhor achado do ano!",
+      "photos": []
+    },
+    {
+      "name": "A**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Branco",
+      "date_line": "24/11 · Branco",
+      "comment": "Lindo demais pessoalmente! O decote ombro a ombro fica bem firme no lugar e não fica caindo.",
+      "photos": []
+    },
+    {
+      "name": "F**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Preto",
+      "date_line": "24/11 · Preto",
+      "comment": "Comprei o preto e já tô voltando pra comprar o branco pro Ano Novo! Caimento impecável.",
+      "photos": []
+    },
+    {
+      "name": "L**a C**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Branco",
+      "date_line": "23/11 · Branco",
+      "comment": "Tecido super macio e confortável, dá pra dançar a noite toda sem incomodar. Amei!",
+      "photos": []
+    },
+    {
+      "name": "B**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg",
+      "stars": 4,
+      "date": "22/11",
+      "variation": "Preto",
+      "date_line": "22/11 · Preto",
+      "comment": "Muito bonito e bem costurado! A faixa lateral longa fica linda andando e nas fotos.",
+      "photos": []
+    },
+    {
+      "name": "R**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "Branco",
+      "date_line": "21/11 · Branco",
+      "comment": "Serviu igual uma luva! Valoriza muito a silhueta e não marca celulite por causa do drapeado.",
+      "photos": []
+    },
+    {
+      "name": "T**s V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Preto",
+      "date_line": "20/11 · Preto",
+      "comment": "Entrega super rápida da Stone Shop e o vestido é idêntico às fotos e vídeos!",
+      "photos": []
+    },
+    {
+      "name": "D**e P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "Branco",
+      "date_line": "19/11 · Branco",
+      "comment": "Já garanti meu look de Réveillon por menos de 55 reais com frete grátis! Lindo demais!",
+      "photos": []
+    },
+    {
+      "name": "S**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg",
+      "stars": 5,
+      "date": "18/11",
+      "variation": "Preto",
+      "date_line": "18/11 · Preto",
+      "comment": "Muito elegante! Com uma sandália de salto fica um arraso pra qualquer festa.",
+      "photos": []
+    },
+    {
+      "name": "K**n T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg",
+      "stars": 5,
+      "date": "17/11",
+      "variation": "Branco",
+      "date_line": "17/11 · Branco",
+      "comment": "Ótimo acabamento, costura bem feita e zero transparência usando calcinha bege.",
+      "photos": []
+    },
+    {
+      "name": "G**a A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_34.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Preto",
+      "date_line": "16/11 · Preto",
+      "comment": "Amei! Uso 42, peguei o G e ficou perfeito, justinho na medida certa.",
+      "photos": []
+    },
+    {
+      "name": "V**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg",
+      "stars": 4,
+      "date": "15/11",
+      "variation": "Branco",
+      "date_line": "15/11 · Branco",
+      "comment": "Lindo demais, tecido com bastante elastano e super gostoso no corpo.",
+      "photos": []
+    },
+    {
+      "name": "N**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_36.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Preto",
+      "date_line": "14/11 · Preto",
+      "comment": "Meu marido amou quando experimentei! Super chique e moderno.",
+      "photos": []
+    },
+    {
+      "name": "E**a M**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_37.jpg",
+      "stars": 5,
+      "date": "13/11",
+      "variation": "Branco",
+      "date_line": "13/11 · Branco",
+      "comment": "Chegou cheiroso e muito bem embalado. Compraria de novo sem pensar duas vezes!",
+      "photos": []
+    },
+    {
+      "name": "L**e R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_38.jpg",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "Preto",
+      "date_line": "12/11 · Preto",
+      "comment": "Modelagem incrível, desenha a cintura na hora. Nota 10!",
+      "photos": []
+    },
+    {
+      "name": "I**s C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_39.jpg",
+      "stars": 5,
+      "date": "11/11",
+      "variation": "Branco",
+      "date_line": "11/11 · Branco",
+      "comment": "Perfeito pro Ano Novo na praia ou festa! Leve, elegante e super confortável.",
+      "photos": []
+    },
+    {
+      "name": "R**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_40.jpg",
+      "stars": 5,
+      "date": "10/11",
+      "variation": "Preto",
+      "date_line": "10/11 · Preto",
+      "comment": "Excelente qualidade pelo preço! Muito satisfeita com a compra na Stone Shop.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Modelo",
+      "value": "Vestido Curto Tubinho Ombro a Ombro com Faixa Lateral",
+      "hidden": false
+    },
+    {
+      "label": "Tecido",
+      "value": "Suplex Poliamida Premium com Elastano (Encorpado)",
+      "hidden": false
+    },
+    {
+      "label": "Acabamento",
+      "value": "Drapeado Estratégico que Valoriza a Silhueta",
+      "hidden": false
+    },
+    {
+      "label": "Ocasião",
+      "value": "Natal, Réveillon, Formaturas, Baladas e Festas",
+      "hidden": false
+    },
+    {
+      "label": "Cores Disponíveis",
+      "value": "Preto e Branco (Off-White)",
+      "hidden": true
+    },
+    {
+      "label": "Tamanhos",
+      "value": "P (36-38), M (40), G (42), GG (44)",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/m56nxr.mp4",
+    "poster": "../videosprodutos/posters/poster-vestido-139-desc.jpg?v=20261127",
+    "duration": "0:44",
+    "catbox_id": "m56nxr.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>🥂 Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral — Look Oficial Natal & Réveillon</strong><br/><br/>\nElegância instantânea para arrasar nas festas de fim de ano! Confeccionado em <strong>Suplex Poliamida Premium</strong> de toque macio e alta elasticidade, possui <strong>drapeado frontal</strong> que modela a cintura e <strong>faixa lateral assimétrica</strong> que traz movimento sofisticado.<br/><br/>\n<strong>Guia de Tamanhos:</strong><br/>\n• <strong>P</strong>: veste 36–38<br/>• <strong>M</strong>: veste 40<br/>• <strong>G</strong>: veste 42<br/>• <strong>GG</strong>: veste 44<br/><br/>\n<strong>Conteúdo da Embalagem:</strong><br/>\n• 1 Vestido Curto Ombro a Ombro Drapeado na cor e tamanho escolhidos<br/>• Garantia de 90 dias Stone Shop",
+  "related": [
+    {
+      "href": "produto-132.html",
+      "img": "../img/cinta-132-slide-1.webp",
+      "alt": "Cinta Modeladora Feminina M+",
+      "name": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis Respirável",
+      "price": "R$ 49,90",
+      "price_original": "R$ 179,90",
+      "discount": "72% OFF",
+      "sold": "4620 vendidos"
+    },
+    {
+      "href": "produto-134.html",
+      "img": "../img/sobrancelha-134-slide-1.webp",
+      "alt": "Caneta Aparadora de Sobrancelhas LED",
+      "name": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica USB c/ LED",
+      "price": "R$ 39,90",
+      "price_original": "R$ 129,90",
+      "discount": "69% OFF",
+      "sold": "5140 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 139,
+    "nome": "Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon",
+    "name": "Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon",
+    "preco": 54.9,
+    "price": 54.9,
+    "preco_antigo": 159.9,
+    "precoOrig": 159.9,
+    "originalPrice": 159.9,
+    "cupomPreco": 54.9,
+    "couponPrice": 54.9,
+    "desc": 65,
+    "desconto": 65,
+    "installmentText": "2x de R$ 27,45 sem juros",
+    "parcelamento": "2x de R$ 27,45 sem juros",
+    "categoria": "Moda Feminina",
+    "img": "../img/vestido-139-slide-1.webp",
+    "image": "../img/vestido-139-slide-1.webp",
+    "imagens": [
+      "../img/vestido-139-slide-1.webp",
+      "../img/vestido-139-slide-2.webp",
+      "../img/vestido-139-slide-3.webp",
+      "../img/vestido-139-slide-4.webp",
+      "../img/vestido-139-slide-5.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "imagem": "../img/vestido-139-var-preto.webp",
+            "nome": "Preto"
+          },
+          {
+            "imagem": "../img/vestido-139-var-branco.jpg",
+            "nome": "Branco"
+          }
+        ]
+      },
+      "tamanho": {
+        "com_imagem": false,
+        "label": "Tamanho",
+        "opcoes": [
+          {
+            "nome": "P"
+          },
+          {
+            "nome": "M"
+          },
+          {
+            "nome": "G"
+          },
+          {
+            "nome": "GG"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "3650 vendidos"
+  },
+  "extra_scripts": [],
+  "creator_context": "vestido139",
+  "creators": [
+    {
+      "name": "Bruna Cristina",
+      "username": "brunacrysss",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_65.jpg",
+      "poster": "../videosprodutos/posters/poster-vestido-139-c1.jpg?v=20261127",
+      "video": "https://files.catbox.moe/d9wi9k.mp4#prod=139&slot=criador_1&slug=vestido-ombro-a-ombro-drapeado",
+      "catbox_id": "d9wi9k.mp4",
+      "startTime": 0.2,
+      "likes": 16200,
+      "commentsCount": 175,
+      "saves": 2800,
+      "shares": 390,
+      "description": "Unboxing do vestido ombro a ombro drapeado mais pedido pro fim de ano! Tecido encorpado que não fica transparente 😍🖤 #vestido #modafeminina"
+    },
+    {
+      "name": "Mel Rodrigues",
+      "username": "melrodriiguesz",
+      "avatar": "../img/avatars-vestido139/creator-139-c2.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-vestido-139-c2.jpg?v=20261127",
+      "video": "https://files.catbox.moe/dh9u7t.mp4#prod=139&slot=criador_2&slug=vestido-ombro-a-ombro-drapeado",
+      "catbox_id": "dh9u7t.mp4",
+      "startTime": 0.2,
+      "likes": 16200,
+      "commentsCount": 175,
+      "saves": 2800,
+      "shares": 619,
+      "description": "Olha esse vestido branco drapeado com faixa lateral pro Réveillon! Caimento surreal no corpo ✨🤍 #reveillon #lookanonovo"
+    },
+    {
+      "name": "Laís Mikaelly",
+      "username": "lais_mikaelly",
+      "avatar": "../img/avatars-vestido139/creator-139-c3.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-vestido-139-c3.jpg?v=20261127",
+      "video": "https://files.catbox.moe/rdshbd.mp4#prod=139&slot=criador_3&slug=vestido-ombro-a-ombro-drapeado",
+      "catbox_id": "rdshbd.mp4",
+      "startTime": 0.2,
+      "likes": 16200,
+      "commentsCount": 230,
+      "saves": 2800,
+      "shares": 390,
+      "description": "O detalhe drapeado com a faixa lateral valoriza demais a cintura! Já garanti o meu pro Ano Novo 🥂✨ #vestidoreveillon #moda"
+    },
+    {
+      "name": "Sasa Oliveira",
+      "username": "sasaichii",
+      "avatar": "../img/avatars-vestido139/creator-139-c4.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-vestido-139-c4.jpg?v=20261127",
+      "video": "https://files.catbox.moe/5hsqfm.mp4#prod=139&slot=criador_4&slug=vestido-ombro-a-ombro-drapeado",
+      "catbox_id": "5hsqfm.mp4",
+      "startTime": 0.2,
+      "likes": 16200,
+      "commentsCount": 230,
+      "saves": 3400,
+      "shares": 480,
+      "description": "Tecido super confortável que modela sem apertar! Perfeito pras festas de Natal e Réveillon 💖✨ #modafeminina #festas"
+    }
+  ]
+}
