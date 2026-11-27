@@ -1,7 +1,7 @@
 {
   "id": 112,
   "title": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led - Stone Shop",
-  "meta_description": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led com 73% OFF no 11.11. Apenas R$ 44,90. Frete grátis.",
+  "meta_description": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led com 81% OFF no 11.11. Apenas R$ 16,73. Frete grátis.",
   "product_title": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Brinquedo Pista Patinhos Escada Musical 5"
     }
   ],
-  "discount_badge": "-73%",
-  "price_int": "44",
-  "price_cents": ",90",
-  "price_original": "R$ 169,90",
-  "installment_text": "3x R$ 14,96",
+  "discount_badge": "-81%",
+  "price_int": "16",
+  "price_cents": ",73",
+  "price_original": "R$ 89,90",
+  "installment_text": "3x R$ 5,57",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 125",
-  "coupon_bonus": "Economize 88% com bônus",
+  "coupon_bonus": "Final R$ 16,73 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(48)",
   "sold_count": "3914 vendidos on-line",
@@ -238,7 +238,7 @@
     "catbox_id": "geut5n.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Brinquedo Pista Montanha-Russa de Patinhos com 73% OFF no 11.11. Apenas R$ 44,90. Frete grátis.",
+  "description_html": "<p><strong>🐤 Brinquedo Pista Montanha-Russa de Patinhos — Escada Rolante Automática com Música e LED</strong></p>\n<p>Diversão hipnotizante que tira as crianças das telas e encanta toda a família! Na <strong>Pista Montanha-Russa de Patinhos</strong>, os patinhos sobem sozinhos os degraus da escada automática e descem deslizando pelas curvas das pistas em um circuito contínuo cheio de luzes LED e musiquinhas alegres.</p>\n<p><strong>✅ Benefícios para o Desenvolvimento Infantil:</strong><br/>\n• <strong>Estímulo Visual e Coordenação Motora:</strong> Estimula a percepção de movimento, cores, causa e efeito desde os primeiros anos.<br/>\n• <strong>Luzes LED Pisca-Pisca + Trilha Musical:</strong> Botão liga/desliga prático na lateral para brincar em casa com facilidade.<br/>\n• <strong>Material ABS Seguro e Cantos Arredondados:</strong> Plástico atóxico resistente com encaixe firme das trilhas e rodinhas metálicas nos patinhos para deslizar suave.</p>\n<p><strong>📦 Conteúdo da Embalagem:</strong><br/>\n• 01 Base Escada Automática com Luz e Som<br/>\n• 03 Trilhos Curvos Encaixáveis + Plaquinha Decorativa do Topo<br/>\n• Kit de Patinhos com Rodinhas Deslizantes</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -294,8 +294,8 @@
   "produto_atual": {
     "id": 112,
     "nome": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led",
-    "preco": 44.9,
-    "preco_antigo": 169.9,
+    "preco": 16.73,
+    "preco_antigo": 89.9,
     "img": "../img/produto-112-patinho-1.webp",
     "imagens": [
       "../img/produto-112-patinho-1.webp",
@@ -311,23 +311,31 @@
           {
             "nome": "Pista Escada + 3 Patinhos Amarelos",
             "imagem": "../img/produto-112-patinho-1.webp",
-            "preco": 44.9
+            "preco": 16.73
           },
           {
             "nome": "Pista Escada + 6 Patinhos Amarelos",
             "imagem": "../img/produto-112-patinho-2.webp",
-            "preco": 54.9
+            "preco": 16.73
           },
           {
             "nome": "Pista Escada + 9 Patinhos Amarelos",
             "imagem": "../img/produto-112-patinho-3.webp",
-            "preco": 64.9
+            "preco": 16.73
           }
         ]
       }
     },
     "sales": "3914 vendidos on-line",
-    "installmentText": "3x R$ 14,96 sem juros"
+    "installmentText": "3x R$ 5,57 sem juros",
+    "price": 16.73,
+    "precoOrig": 89.9,
+    "originalPrice": 89.9,
+    "cupomPreco": 16.73,
+    "couponPrice": 16.73,
+    "desc": 81,
+    "desconto": 81,
+    "parcelamento": "3x R$ 5,57 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "patinhos112",

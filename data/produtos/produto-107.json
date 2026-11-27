@@ -1,7 +1,7 @@
 {
   "id": 107,
   "title": "Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo 2 em 1 Carro e Casa - Stone Shop",
-  "meta_description": "Mini Aspirador de Pó Portátil e Soprador Turbo com 75% OFF no 11.11. Apenas R$ 34,90. Frete grátis.",
+  "meta_description": "Mini Aspirador de Pó Portátil e Soprador Turbo com 85% OFF no 11.11. Apenas R$ 13,79. Frete grátis.",
   "product_title": "Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo 2 em 1 Carro e Casa",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Mini Aspirador de Pó Portátil - 5"
     }
   ],
-  "discount_badge": "-75%",
-  "price_int": "34",
-  "price_cents": ",90",
-  "price_original": "R$ 139,90",
-  "installment_text": "3x R$ 11,63",
+  "discount_badge": "-85%",
+  "price_int": "13",
+  "price_cents": ",79",
+  "price_original": "R$ 89,90",
+  "installment_text": "3x R$ 4,59",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 105",
-  "coupon_bonus": "Economize 75% com bônus",
+  "coupon_bonus": "Final R$ 13,79 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(48)",
   "sold_count": "16888 vendidos on-line",
@@ -238,7 +238,7 @@
     "catbox_id": "049abg.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Mini Aspirador de Pó Portátil e Soprador Turbo com 75% OFF no 11.11. Apenas R$ 34,90. Frete grátis.",
+  "description_html": "<p><strong>🌪️ Mini Aspirador de Pó e Soprador Sem Fio Turbo 2 em 1 — Portátil USB Recarregável</strong></p>\n<p>Mantenha o interior do carro, sofá, teclado do computador, frestas de janelas e cantos difíceis sempre impecáveis em poucos segundos! O <strong>Mini Aspirador e Soprador 2 em 1 Sem Fio</strong> combina sucção concentrada de alta rotação na parte frontal e jato soprador de ar na parte traseira.</p>\n<p><strong>✅ Vantagens no Dia a Dia:</strong><br/>\n• <strong>Função Dupla (Aspira + Sopra):</strong> Puxa migalhas, areia, poeira e pelos de pets do estofado ou sopra a poeira acumulada em teclados, saídas de ar-condicionado e eletrônicos.<br/>\n• <strong>100% Sem Fio e Leve:</strong> Design ergonômico compacto que cabe no porta-luvas do carro ou na gaveta do escritório.<br/>\n• <strong>Filtro HEPA Lavável e Reutilizável:</strong> Basta destacar o reservatório transparente, esvaziar e lavar o filtro em água corrente — sem gastar com refis.<br/>\n• <strong>Recarga Prática via USB:</strong> Carrega facilmente no carregador de celular, no USB do carro, notebook ou powerbank.</p>\n<p><strong>📦 Itens Inclusos no Kit:</strong><br/>\n• 01 Mini Aspirador e Soprador Sem Fio Recarregável<br/>\n• 01 Bico Longo para Cantos e Frestas + 01 Escova Acoplável para Estofados<br/>\n• 01 Bico Soprador Traseiro + 01 Filtro Lavável + 01 Cabo USB</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -294,8 +294,8 @@
   "produto_atual": {
     "id": 107,
     "nome": "Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo 2 em 1 Carro e Casa",
-    "preco": 34.9,
-    "preco_antigo": 139.9,
+    "preco": 13.79,
+    "preco_antigo": 89.9,
     "img": "../img/produto-107-1.jpg",
     "imagens": [
       "../img/produto-107-1.jpg",
@@ -311,18 +311,26 @@
           {
             "nome": "Preto",
             "imagem": "../img/produto-107-1.jpg",
-            "preco": 34.9
+            "preco": 13.79
           },
           {
             "nome": "Branco",
             "imagem": "../img/produto-107-2.jpg",
-            "preco": 34.9
+            "preco": 13.79
           }
         ]
       }
     },
     "sales": "16888 vendidos on-line",
-    "installmentText": "3x R$ 11,63 sem juros"
+    "installmentText": "3x R$ 4,59 sem juros",
+    "price": 13.79,
+    "precoOrig": 89.9,
+    "originalPrice": 89.9,
+    "cupomPreco": 13.79,
+    "couponPrice": 13.79,
+    "desc": 85,
+    "desconto": 85,
+    "parcelamento": "3x R$ 4,59 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "aspirador",

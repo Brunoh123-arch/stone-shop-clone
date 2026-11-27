@@ -1,7 +1,7 @@
 {
   "id": 109,
   "title": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica Bateria USB - Stone Shop",
-  "meta_description": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica com 89% OFF. Apenas R$ 39,90. Frete grátis.",
+  "meta_description": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica com 84% OFF. Apenas R$ 23,79. Frete grátis.",
   "product_title": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica Bateria USB",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Modelador de Cachos Sem Fio - 5"
     }
   ],
-  "discount_badge": "-89%",
-  "price_int": "39",
-  "price_cents": ",90",
-  "price_original": "R$ 362,70",
-  "installment_text": "3x R$ 13,30",
+  "discount_badge": "-84%",
+  "price_int": "23",
+  "price_cents": ",79",
+  "price_original": "R$ 149,90",
+  "installment_text": "3x R$ 7,93",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 322",
-  "coupon_bonus": "Economize 89% com bônus",
+  "coupon_bonus": "Final R$ 23,79 no Pix ou Cartão",
   "rating_score": "4.8",
   "rating_count": "(1842)",
   "sold_count": "14369 vendidos on-line",
@@ -238,7 +238,7 @@
     "catbox_id": "lxfl7p.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica com 89% OFF. Apenas R$ 39,90. Frete grátis.",
+  "description_html": "<p><strong>✨ Modelador de Cachos Automático Sem Fio Portátil — Cilindro de Cerâmica e Bateria USB</strong></p>\n<p>Cachos definidos, soltos e brilhantes em qualquer lugar sem enrolar o braço em fios e sem risco de queimar os dedos ou o rosto! O <strong>Modelador de Cachos Automático Sem Fio</strong> possui câmara térmica isolada inteligente: basta posicionar a mecha, apertar um botão e aguardar o sinal sonoro.</p>\n<p><strong>✅ Diferenciais que Fazem Sucesso:</strong><br/>\n• <strong>100% Sem Fio e Portátil:</strong> Bateria interna recarregável via USB-C perfeita para levar na bolsa, viagens, trabalho ou retoques antes de festas.<br/>\n• <strong>Câmara de Cerâmica Turmalina Anti-Queimadura:</strong> O aquecimento fica protegido na parte interna, distribuindo o calor por igual e deixando o cabelo sedoso e sem frizz.<br/>\n• <strong>Display LCD Digital Completo:</strong> Controle preciso de temperatura ajustável (150°C a 200°C), temporizador de segundos (8s a 18s) e escolha de direção do cacho (Esquerda / Direita) para efeito natural.<br/>\n• <strong>Sistema Anti-Embaraço Inteligente:</strong> Sensor automático que interrompe a rotação caso a mecha esteja grossa demais, protegendo totalmente os fios.</p>\n<p><strong>📦 Conteúdo da Embalagem:</strong><br/>\n• 01 Modelador de Cachos Automático Sem Fio Digital<br/>\n• 01 Cabo Carregador USB + Pente Auxiliar e Presilhas + Manual de Uso</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -294,8 +294,8 @@
   "produto_atual": {
     "id": 109,
     "nome": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica Bateria USB",
-    "preco": 39.9,
-    "preco_antigo": 362.7,
+    "preco": 23.79,
+    "preco_antigo": 149.9,
     "img": "../img/produto-109-1.jpg",
     "imagens": [
       "../img/produto-109-1.jpg",
@@ -311,18 +311,26 @@
           {
             "nome": "Cinza e Roxo",
             "imagem": "../img/produto-109-1.jpg",
-            "preco": 39.9
+            "preco": 23.79
           },
           {
             "nome": "Branco e Dourado",
             "imagem": "../img/produto-109-2.jpg",
-            "preco": 39.9
+            "preco": 23.79
           }
         ]
       }
     },
     "sales": "14369 vendidos on-line",
-    "installmentText": "3x R$ 13,30 sem juros"
+    "installmentText": "3x R$ 7,93 sem juros",
+    "price": 23.79,
+    "precoOrig": 149.9,
+    "originalPrice": 149.9,
+    "cupomPreco": 23.79,
+    "couponPrice": 23.79,
+    "desc": 84,
+    "desconto": 84,
+    "parcelamento": "3x R$ 7,93 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "modelador109",
@@ -339,7 +347,7 @@
       "commentsCount": 54,
       "saves": 2300,
       "shares": 280,
-      "description": "Qualidade surpreende por esse valor! Carrega igual celular por menos de R$ 50,00! Cachos perfeitos 😍"
+      "description": "Qualidade surpreende por esse valor! Carrega igual celular super em conta! Cachos perfeitos 😍"
     },
     {
       "name": "Yasmin Oliveira",

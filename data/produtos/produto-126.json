@@ -388,9 +388,9 @@
       "img": "../img/produto-112-patinho-1.jpg",
       "alt": "Brinquedo Pista Montanha-Russa de Patinhos",
       "name": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led",
-      "price": "R$ 44,90",
-      "price_original": "R$ 169,90",
-      "discount": "73% OFF",
+      "price": "R$ 16,73",
+      "price_original": "R$ 89,90",
+      "discount": "-81%",
       "sold": "3914 vendidos"
     },
     {
@@ -398,9 +398,9 @@
       "img": "../img/livro-interativo-slide-1.webp",
       "alt": "Livro Infantil Interativo Bilíngue Falante",
       "name": "Livro Infantil Interativo Bilíngue Falante com Som ao Toque",
-      "price": "R$ 97,90",
-      "price_original": "R$ 259,90",
-      "discount": "62% OFF",
+      "price": "R$ 21,89",
+      "price_original": "R$ 99,90",
+      "discount": "-78%",
       "sold": "2453 vendidos"
     }
   ],

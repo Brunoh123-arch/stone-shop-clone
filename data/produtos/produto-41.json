@@ -1,7 +1,7 @@
 {
   "id": 41,
   "title": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI - Stone Shop",
-  "meta_description": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI com 82% OFF. Apenas R$69,90. Frete grátis.",
+  "meta_description": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI com 82% OFF. Apenas R$ 54,73. Frete grátis.",
   "product_title": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
   "slider_imgs": [
     {
@@ -42,13 +42,13 @@
     }
   ],
   "discount_badge": "-82%",
-  "price_int": "69",
-  "price_cents": ",90",
-  "price_original": "R$ 397,90",
-  "installment_text": "3x R$ 23,30",
+  "price_int": "54",
+  "price_cents": ",73",
+  "price_original": "R$ 299,90",
+  "installment_text": "3x R$ 18,24",
   "installment_highlight": "sem juros",
   "coupon_main": "82% OFF",
-  "coupon_bonus": "",
+  "coupon_bonus": "Final R$ 54,73 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(48)",
   "sold_count": "8391 vendidos on-line",
@@ -663,7 +663,7 @@
   "produto_atual": {
     "id": 41,
     "nome": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
-    "preco": 69.9,
+    "preco": 54.73,
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16",
     "imagens": [
       "https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16",
@@ -693,7 +693,16 @@
       }
     },
     "sales": "8391 vendidos on-line",
-    "installmentText": "3x R$ 23,30 sem juros"
+    "installmentText": "3x R$ 18,24 sem juros",
+    "price": 54.73,
+    "preco_antigo": 299.9,
+    "precoOrig": 299.9,
+    "originalPrice": 299.9,
+    "cupomPreco": 54.73,
+    "couponPrice": 54.73,
+    "desc": 82,
+    "desconto": 82,
+    "parcelamento": "3x R$ 18,24 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "oven_41",

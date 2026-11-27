@@ -1,7 +1,7 @@
 {
   "id": 23,
   "title": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava - Stone Shop",
-  "meta_description": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava com 63% OFF. Apenas R$64,99. Frete grátis.",
+  "meta_description": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava com 79% OFF. Apenas R$ 24,73. Frete grátis.",
   "product_title": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Conjunto De 24 Potes Herméticos Croix Co - Slide 9"
     }
   ],
-  "discount_badge": "-75%",
-  "price_int": "44",
-  "price_cents": ",90",
-  "price_original": "R$ 179,90",
-  "installment_text": "3x R$ 14,97",
+  "discount_badge": "-79%",
+  "price_int": "24",
+  "price_cents": ",73",
+  "price_original": "R$ 119,90",
+  "installment_text": "3x R$ 8,24",
   "installment_highlight": "sem juros",
   "coupon_main": "63% OFF",
-  "coupon_bonus": "",
+  "coupon_bonus": "Final R$ 24,73 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(47)",
   "sold_count": "6691 vendidos on-line",
@@ -589,9 +589,9 @@
       "img": "../img/produto-104-1.jpg",
       "alt": "Chinelo Feminino Luxo Strass",
       "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
-      "price": "R$ 19,90",
+      "price": "R$ 11,49",
       "price_original": "R$ 59,90",
-      "discount": "67% OFF",
+      "discount": "-81%",
       "sold": "21303 vendidos"
     },
     {
@@ -599,16 +599,16 @@
       "img": "../img/produto-111-oficial-1.jpg?v=3",
       "alt": "Projetor LED Natalino 16 Desenhos",
       "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
-      "price": "R$ 49,90",
-      "price_original": "R$ 199,90",
-      "discount": "75% OFF",
+      "price": "R$ 19,69",
+      "price_original": "R$ 99,90",
+      "discount": "-80%",
       "sold": "5253 vendidos"
     }
   ],
   "produto_atual": {
     "id": 23,
     "nome": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava",
-    "preco": 44.9,
+    "preco": 24.73,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mci5ecdv44s2e5",
     "imagens": [
       "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dl-mfa1g6achtl364.16000081759254686.mp4",
@@ -635,8 +635,16 @@
       }
     },
     "sales": "6691 vendidos on-line",
-    "installmentText": "3x R$ 14,97 sem juros",
-    "preco_antigo": 179.9
+    "installmentText": "3x R$ 8,24 sem juros",
+    "preco_antigo": 119.9,
+    "price": 24.73,
+    "precoOrig": 119.9,
+    "originalPrice": 119.9,
+    "cupomPreco": 24.73,
+    "couponPrice": 24.73,
+    "desc": 79,
+    "desconto": 79,
+    "parcelamento": "3x R$ 8,24 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "croix_23",

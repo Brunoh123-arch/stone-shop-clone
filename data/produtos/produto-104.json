@@ -1,7 +1,7 @@
 {
   "id": 104,
   "title": "Chinelo Feminino Luxo Strass Brilhante Macio Leve - Stone Shop",
-  "meta_description": "Chinelo Feminino Luxo Strass Brilhante Macio Leve com 67% OFF. Apenas R$19,90. Frete grátis.",
+  "meta_description": "Chinelo Feminino Luxo Strass Brilhante Macio Leve com 81% OFF. Apenas R$ 11,49. Frete grátis.",
   "product_title": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Chinelo Feminino Luxo Strass - 9"
     }
   ],
-  "discount_badge": "-67%",
-  "price_int": "19",
-  "price_cents": ",90",
+  "discount_badge": "-81%",
+  "price_int": "11",
+  "price_cents": ",49",
   "price_original": "R$ 59,90",
-  "installment_text": "3x R$ 6,63",
+  "installment_text": "3x R$ 3,83",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 40",
-  "coupon_bonus": "Economize 67% com bônus",
+  "coupon_bonus": "Final R$ 11,49 no Pix ou Cartão",
   "rating_score": "4.8",
   "rating_count": "(488)",
   "sold_count": "21303 vendidos on-line",
@@ -318,7 +318,7 @@
     "duration": "0:20",
     "catbox_id": "p85550.mp4"
   },
-  "size_guide_html": "",
+  "size_guide_html": "<div class=\"size-guide-block\" style=\"margin-bottom:16px;\"><h3 class=\"about-subtitle\">Guia de tamanhos</h3><img class=\"size-guide-img\" src=\"../img/guia-tamanhos-104.png?v=20261126\" alt=\"Guia de tamanhos oficial\" style=\"width:100%;height:auto;border-radius:8px;display:block;\"/></div>",
   "description_html": "<strong>✨ Elegância e Conforto em Cada Passo ✨</strong><br/><br/>\nEste chinelo feminino é perfeito para quem busca unir conforto absoluto e sofisticação no dia a dia. Com detalhes em strass brilhante de alto padrão, ele adiciona um toque refinado e glamouroso a qualquer look.<br/><br/>\nA textura macia e o peso leve garantem um uso agradável durante todo o dia sem cansar os pés. Ideal para dias de calor, praia, passeios, encontros casuais ou ocasiões especiais que pedem praticidade com muito charme.<br/><br/>\n<strong>Características principais:</strong><br/>\n• <strong>Strass Brilhante:</strong> Tiras cravejadas com pedras brilhantes de excelente fixação e acabamento premium.<br/>\n• <strong>Textura Macia:</strong> Palmilha anatômica que amortece a pisada com maciez incomparável.<br/>\n• <strong>Super Leve:</strong> Não pesa nos pés e proporciona liberdade total de movimento.<br/>\n• <strong>Solado Seguro:</strong> Base resistente e com ranhuras antiderrapantes para qualquer tipo de piso.<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Chinelo Luxo Strass\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-104.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/>\nEste chinelo combina perfeitamente com vestidos, shorts, macaquinhos e calças jeans. Experimente e sinta a diferença! Envio imediato para todo o Brasil com código de rastreamento.",
   "related": [
     {
@@ -345,7 +345,7 @@
   "produto_atual": {
     "id": 104,
     "nome": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
-    "preco": 19.9,
+    "preco": 11.49,
     "preco_antigo": 59.9,
     "img": "../img/prod-104-local-1.webp",
     "imagens": [
@@ -389,7 +389,15 @@
       }
     },
     "sales": "21303 vendidos on-line",
-    "installmentText": "3x R$ 6,63 sem juros"
+    "installmentText": "3x R$ 3,83 sem juros",
+    "price": 11.49,
+    "precoOrig": 59.9,
+    "originalPrice": 59.9,
+    "cupomPreco": 11.49,
+    "couponPrice": 11.49,
+    "desc": 81,
+    "desconto": 81,
+    "parcelamento": "3x R$ 3,83 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "chinelo",

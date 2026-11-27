@@ -1,7 +1,7 @@
 {
   "id": 113,
   "title": "Comedouro Cachorro e Gato Elevado Duplo em Acrílico Transparente Anti-Engasgo - Stone Shop",
-  "meta_description": "Comedouro Pet Elevado Duplo Acrílico com 69% OFF no 11.11. Apenas R$ 39,90. Frete grátis.",
+  "meta_description": "Comedouro Pet Elevado Duplo Acrílico com 82% OFF no 11.11. Apenas R$ 14,69. Frete grátis.",
   "product_title": "Comedouro Cachorro e Gato Elevado Duplo em Acrílico Transparente Anti-Engasgo",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Comedouro Pet Duplo Elevado - 5"
     }
   ],
-  "discount_badge": "-69%",
-  "price_int": "39",
-  "price_cents": ",90",
-  "price_original": "R$ 129,90",
-  "installment_text": "3x R$ 13,30",
+  "discount_badge": "-82%",
+  "price_int": "14",
+  "price_cents": ",69",
+  "price_original": "R$ 79,90",
+  "installment_text": "3x R$ 4,89",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 90",
-  "coupon_bonus": "Economize 88% com bônus",
+  "coupon_bonus": "Final R$ 14,69 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(1650)",
   "sold_count": "7401 vendidos on-line",
@@ -238,7 +238,7 @@
     "catbox_id": "grwbds.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Comedouro Pet Elevado Duplo Acrílico com 69% OFF no 11.11. Apenas R$ 39,90. Frete grátis.",
+  "description_html": "<p><strong>🐾 Comedouro e Bebedouro Duplo Elevado Pet — Base em Acrílico Inclinada Anti-Engasgo</strong></p>\n<p>Mais saúde, postura correta e conforto na alimentação diária do seu gato ou cão de pequeno porte! O <strong>Comedouro Duplo Elevado em Acrílico</strong> posiciona o alimento e a água na altura e inclinação ergonômica recomendadas por veterinários.</p>\n<p><strong>✅ Benefícios para o seu Pet:</strong><br/>\n• <strong>Inclinação Ergonômica de 15° Anti-Vômito e Anti-Refluxo:</strong> Reduz a compressão no pescoço e nas articulações, facilitando a deglutição e evitando engasgos.<br/>\n• <strong>Design Duplo Prático:</strong> Sirva ração e água fresca simultaneamente em duas tigelas independentes e fáceis de higienizar.<br/>\n• <strong>Acrílico Cristal Espesso e Higiênico:</strong> Não acumula cheiro, não enferruja, evita acne felina no queixo dos gatos e deixa o cantinho pet moderno e limpo.<br/>\n• <strong>Base Estável Antiderrapante:</strong> Evita que o pet arraste ou vire os potinhos pelo chão durante a refeição.</p>\n<p><strong>📦 Conteúdo da Embalagem:</strong><br/>\n• 01 Suporte Elevado Inclinado em Acrílico Transparente<br/>\n• 02 Tigelas Encaixáveis Removíveis para Ração e Água</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -294,8 +294,8 @@
   "produto_atual": {
     "id": 113,
     "nome": "Comedouro Cachorro e Gato Elevado Duplo em Acrílico Transparente Anti",
-    "preco": 39.9,
-    "preco_antigo": 129.9,
+    "preco": 14.69,
+    "preco_antigo": 79.9,
     "img": "../img/produto-113-1.jpg",
     "imagens": [
       "../img/produto-113-1.jpg",
@@ -311,13 +311,21 @@
           {
             "nome": "Tigela Dupla Transparente",
             "imagem": "../img/produto-113-1.jpg",
-            "preco": 39.9
+            "preco": 14.69
           }
         ]
       }
     },
     "sales": "7401 vendidos on-line",
-    "installmentText": "3x R$ 13,30 sem juros"
+    "installmentText": "3x R$ 4,89 sem juros",
+    "price": 14.69,
+    "precoOrig": 79.9,
+    "originalPrice": 79.9,
+    "cupomPreco": 14.69,
+    "couponPrice": 14.69,
+    "desc": 82,
+    "desconto": 82,
+    "parcelamento": "3x R$ 4,89 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "comedouro_113",

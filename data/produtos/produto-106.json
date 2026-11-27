@@ -1,7 +1,7 @@
 {
   "id": 106,
   "title": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora - Stone Shop",
-  "meta_description": "Body Modelador Cinta Alta Compressão Efeito Lipo com 75% OFF no 11.11. Apenas R$ 29,90. Frete grátis.",
+  "meta_description": "Body Modelador Cinta Alta Compressão Efeito Lipo com 81% OFF no 11.11. Apenas R$ 16,89. Frete grátis.",
   "product_title": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Body Modelador Efeito Lipo - 5"
     }
   ],
-  "discount_badge": "-75%",
-  "price_int": "29",
-  "price_cents": ",90",
-  "price_original": "R$ 119,90",
-  "installment_text": "3x R$ 9,96",
+  "discount_badge": "-81%",
+  "price_int": "16",
+  "price_cents": ",89",
+  "price_original": "R$ 89,90",
+  "installment_text": "3x R$ 5,63",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 90",
-  "coupon_bonus": "Economize 75% com bônus",
+  "coupon_bonus": "Final R$ 16,89 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(48)",
   "sold_count": "23451 vendidos on-line",
@@ -249,7 +249,7 @@
     "duration": "0:20",
     "catbox_id": "1hm15q.mp4"
   },
-  "size_guide_html": "",
+  "size_guide_html": "<div class=\"size-guide-block\" style=\"margin-bottom:16px;\"><h3 class=\"about-subtitle\">Guia de tamanhos</h3><img class=\"size-guide-img\" src=\"../img/guia-tamanhos-106.png?v=20261126\" alt=\"Guia de tamanhos oficial\" style=\"width:100%;height:auto;border-radius:8px;display:block;\"/></div>",
   "description_html": "O Body Modelador Cinta Alta Compressão Efeito Lipo Redutora é a escolha perfeita para modelar a silhueta com total discrição e conforto absoluto. Desenvolvido com tecido tecnológico respirável de compressão inteligente, ele reduz medidas na hora sem marcar sob as roupas.<br/><br/>\n\n• <strong>Efeito Lipo Redutora:</strong> Comprime suavemente a região abdominal, disfarçando pneuzinhos e realçando a cintura.<br/>\n\n• <strong>Costura Invisível:</strong> Não enrola na barra e não marca sob vestidos justos, calças ou blusas claras.<br/>\n\n• <strong>Abertura Higiênica Inferior:</strong> Facilidade total no dia a dia sem precisar tirar a peça inteira.<br/>\n\n• <strong>Alças Reguláveis e Confortáveis:</strong> Distribuição equilibrada sem machucar os ombros.<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Body Modelador\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-106.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n\nEscolha o seu tamanho ideal de acordo com a tabela acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
   "related": [
     {
@@ -306,8 +306,8 @@
   "produto_atual": {
     "id": 106,
     "nome": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora",
-    "preco": 29.9,
-    "preco_antigo": 119.9,
+    "preco": 16.89,
+    "preco_antigo": 89.9,
     "img": "../img/produto-106-1.jpg",
     "imagens": [
       "../img/produto-106-1.jpg",
@@ -341,7 +341,15 @@
       }
     },
     "sales": "23451 vendidos on-line",
-    "installmentText": "3x R$ 9,96 sem juros"
+    "installmentText": "3x R$ 5,63 sem juros",
+    "price": 16.89,
+    "precoOrig": 89.9,
+    "originalPrice": 89.9,
+    "cupomPreco": 16.89,
+    "couponPrice": 16.89,
+    "desc": 81,
+    "desconto": 81,
+    "parcelamento": "3x R$ 5,63 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "bodymodelador",

@@ -721,7 +721,7 @@
     "duration": "0:30",
     "catbox_id": "7wnkoq.mp4"
   },
-  "size_guide_html": "",
+  "size_guide_html": "<div class=\"size-guide-block\" style=\"margin-bottom:16px;\"><h3 class=\"about-subtitle\">Guia de tamanhos</h3><img class=\"size-guide-img\" src=\"../img/guia-tamanhos-75.png?v=20261126\" alt=\"Guia de tamanhos oficial\" style=\"width:100%;height:auto;border-radius:8px;display:block;\"/></div>",
   "description_html": "Kit com 10 Camisetas Dry Fit Masculinas de alta performance para treino, academia, esportes ao ar livre e uso casual diário. Tecido tecnológico leve e respirável que não amassa e seca rapidamente.<br/><br/>\n              • <strong>Composição:</strong> 100% Poliéster Dry Fit respirável com proteção UV<br/>\n              • <strong>Gola:</strong> Redonda reforçada com acabamento antialérgico<br/>\n              • <strong>Modelagem:</strong> Ajuste anatômico que garante liberdade total de movimentos<br/>\n              • <strong>Praticidade:</strong> Não amassa, não precisa passar e não desbota na lavagem<br/><br/>\n<strong>Guia de Tamanhos Recomendado:</strong><br/>\n<img alt=\"Guia de Tamanhos Oficial Camisetas Dry Fit\" class=\"size-guide-img\" src=\"../img/guia-tamanhos-75.png?v=1795410323540\" style=\"max-width:100%; height:auto; border-radius:8px; margin:12px 0 16px; display:block;\"/><br/>\n              Escolha o seu tamanho ideal de acordo com a tabela de medidas acima. Envio imediato para todo o Brasil pela Stone Shop com garantia e frete grátis!",
   "related": [
     {
@@ -759,9 +759,9 @@
       "img": "../img/produto-104-1.jpg",
       "alt": "Chinelo Feminino Luxo Strass",
       "name": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
-      "price": "R$ 19,90",
+      "price": "R$ 11,49",
       "price_original": "R$ 59,90",
-      "discount": "67% OFF",
+      "discount": "-81%",
       "sold": "21303 vendidos"
     },
     {
@@ -769,9 +769,9 @@
       "img": "../img/produto-111-oficial-1.jpg?v=3",
       "alt": "Projetor LED Natalino 16 Desenhos",
       "name": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
-      "price": "R$ 49,90",
-      "price_original": "R$ 199,90",
-      "discount": "75% OFF",
+      "price": "R$ 19,69",
+      "price_original": "R$ 99,90",
+      "discount": "-80%",
       "sold": "5253 vendidos"
     }
   ],

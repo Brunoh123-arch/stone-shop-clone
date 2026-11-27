@@ -1,7 +1,7 @@
 {
   "id": 111,
   "title": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração Casa e Jardim - Stone Shop",
-  "meta_description": "Projetor LED Natalino com 16 Desenhos Temáticos em Alta Definição. Rotação 360°, USB Bivolt. 75% OFF no 11.11. Apenas R$ 49,90. Frete grátis.",
+  "meta_description": "Projetor LED Natalino com 16 Desenhos Temáticos em Alta Definição. Rotação 360°, USB Bivolt. 80% OFF no 11.11. Apenas R$ 19,69. Frete grátis.",
   "product_title": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Projetor LED Natalino 16 Desenhos - 5"
     }
   ],
-  "discount_badge": "-75%",
-  "price_int": "49",
-  "price_cents": ",90",
-  "price_original": "R$ 199,90",
-  "installment_text": "3x R$ 16,63",
+  "discount_badge": "-80%",
+  "price_int": "19",
+  "price_cents": ",69",
+  "price_original": "R$ 99,90",
+  "installment_text": "3x R$ 6,56",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 150",
-  "coupon_bonus": "Economize 88% com bônus",
+  "coupon_bonus": "Final R$ 19,69 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(537)",
   "sold_count": "5253 vendidos on-line",
@@ -238,7 +238,7 @@
     "catbox_id": "d7tqme.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Projetor LED Natalino com 16 Desenhos Temáticos em Alta Definição. Rotação 360°, USB Bivolt. 75% OFF no 11.11. Apenas R$ 49,90. Frete grátis.",
+  "description_html": "<p><strong>🎄 Projetor LED Natalino Rotativo 360° — 16 Desenhos Temáticos em Alta Definição Bivolt</strong></p>\n<p>Encha a sala, fachada coberta, varanda ou festa de fim de ano com o clima mágico do Natal em segundos! O <strong>Projetor LED Natalino com 16 Figuras</strong> projeta desenhos coloridos e animados em movimento suave na parede ou no teto — basta ligar na tomada e pronto.</p>\n<p><strong>✅ Principais Características:</strong><br/>\n• <strong>16 Desenhos Natalinos Coloridos:</strong> Projeta Papai Noel, flocos de neve, árvore de Natal, renas, boneco de neve, sinos e estrelas com cores vivas.<br/>\n• <strong>Rotação Automática Contínua 360°:</strong> As imagens giram suavemente pelo ambiente criando um efeito encantador para crianças e convidados.<br/>\n• <strong>Cabeça Articulada Ajustável:</strong> Permite direcionar o ângulo exato da projeção para paredes, tetos ou painéis de festa.<br/>\n• <strong>Iluminação LED Econômica e Segura:</strong> Baixíssimo consumo de energia, não esquenta e funciona em tomadas 110V ou 220V (Bivolt).</p>\n<p><strong>📦 O que vem na Caixa:</strong><br/>\n• 01 Projetor LED Natalino Rotativo 16 Figuras Bivolt<br/>\n• 01 Suporte de Fixação Articulado + Fonte/Cabo de Alimentação</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -294,8 +294,8 @@
   "produto_atual": {
     "id": 111,
     "nome": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração Casa e Jardim",
-    "preco": 49.9,
-    "preco_antigo": 199.9,
+    "preco": 19.69,
+    "preco_antigo": 99.9,
     "img": "../img/produto-111-oficial-1.jpg?v=3",
     "imagens": [
       "../img/produto-111-oficial-1.jpg?v=3",
@@ -311,13 +311,21 @@
           {
             "nome": "Preto",
             "imagem": "../img/produto-111-oficial-1.jpg?v=3",
-            "preco": 49.9
+            "preco": 19.69
           }
         ]
       }
     },
     "sales": "5253 vendidos on-line",
-    "installmentText": "3x R$ 16,63 sem juros"
+    "installmentText": "3x R$ 6,56 sem juros",
+    "price": 19.69,
+    "precoOrig": 99.9,
+    "originalPrice": 99.9,
+    "cupomPreco": 19.69,
+    "couponPrice": 19.69,
+    "desc": 80,
+    "desconto": 80,
+    "parcelamento": "3x R$ 6,56 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "projetor_111",

@@ -1237,7 +1237,7 @@
               {
                 avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_3.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_3.jpg',
                 user: 'patricia_melo',
-                text: 'Por R$ 47,89 no Pix tá dado demais, no shopping vi igualzinho por quase 400 reais! Já garanti o de Natal da minha afilhada 🎄🎁',
+                text: 'Por esse valor no Pix tá dado demais, no shopping vi igualzinho por quase 400 reais! Já garanti o de Natal da minha afilhada 🎄🎁',
                 date: 'Há 4 horas',
                 likes: 52,
                 liked: false

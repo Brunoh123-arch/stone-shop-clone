@@ -1,7 +1,7 @@
 {
   "id": 124,
   "title": "Livro Infantil Interativo Bilíngue Falante - Português e Inglês com Som ao Toque - Stone Shop",
-  "meta_description": "Livro Infantil Interativo Bilíngue Falante Português e Inglês com Som ao Toque com 51% OFF. Apenas R$ 97,90 com cupom. Frete grátis para todo o Brasil.",
+  "meta_description": "Livro Infantil Interativo Bilíngue Falante Português e Inglês com Som ao Toque com 78% OFF. Apenas R$ 21,89 com cupom. Frete grátis para todo o Brasil.",
   "product_title": "Livro Infantil Interativo Bilíngue Falante com Som ao Toque - Português e Inglês com Caneta Tátil",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Livro Infantil Interativo Bilíngue Falante - Brinquedo Educativo Anti-Telas"
     }
   ],
-  "discount_badge": "-75%",
-  "price_int": "49",
-  "price_cents": ",90",
-  "price_original": "R$ 199,90",
-  "installment_text": "3x R$ 16,63",
+  "discount_badge": "-78%",
+  "price_int": "21",
+  "price_cents": ",89",
+  "price_original": "R$ 99,90",
+  "installment_text": "3x R$ 7,29",
   "installment_highlight": "sem juros",
   "coupon_main": "Cupom R$ 30 OFF aplicado",
-  "coupon_bonus": "Final R$ 97,90 no Pix ou Cartão",
+  "coupon_bonus": "Final R$ 21,89 no Pix ou Cartão",
   "rating_score": "4,9",
   "rating_count": "(248)",
   "sold_count": "4953 vendidos on-line",
@@ -232,7 +232,7 @@
     "catbox_id": "64aksn.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Livro Infantil Interativo Bilíngue Falante Português e Inglês com Som ao Toque com 51% OFF. Apenas R$ 97,90 com cupom. Frete grátis para todo o Brasil.",
+  "description_html": "<p><strong>📚 Livro Infantil Interativo Bilíngue Falante — Português e Inglês com Caneta e Som ao Toque</strong></p>\n<p>O brinquedo educativo perfeito para estimular a fala, o vocabulário e a curiosidade das crianças longe do celular! No <strong>Livro Infantil Interativo Bilíngue</strong>, basta tocar nas ilustrações para ouvir a pronúncia clara das palavras em <strong>Português e Inglês</strong>, sons reais de animais, músicas infantis e joguinhos de perguntas.</p>\n<p><strong>✅ O que a Criança Aprende Brincando:</strong><br/>\n• <strong>Conteúdo Completo Ilustrado:</strong> Alfabeto, números e operações básicas, animais, frutas, meios de transporte, cores, família, instrumentos musicais e historinhas.<br/>\n• <strong>Modo Bilíngue Instantâneo (PT/EN):</strong> Alterna com um botão entre Português e Inglês, aproveitando a melhor fase de absorção de idiomas na infância.<br/>\n• <strong>Quiz Interativo + Caneta Escreve e Apaga:</strong> Inclui atividades de coordenação motora na página lateral e modo \"Onde está?\" que desafia a criança a acertar.<br/>\n• <strong>Controle de Volume e Páginas Impermeáveis:</strong> Material laminado resistente a pequenos respingos e manuseio infantil.</p>\n<p><strong>📦 Conteúdo da Embalagem:</strong><br/>\n• 01 Livro Infantil Eletrônico Interativo Bilíngue (Português / Inglês)<br/>\n• 01 Caneta para Atividades Escreve e Apaga</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -288,8 +288,8 @@
   "produto_atual": {
     "id": 124,
     "nome": "Livro Infantil Interativo Bilíngue Falante",
-    "preco": 49.9,
-    "preco_antigo": 199.9,
+    "preco": 21.89,
+    "preco_antigo": 99.9,
     "img": "../img/livro-interativo-slide-1.webp",
     "imagens": [
       "../img/livro-interativo-slide-1.webp",
@@ -305,13 +305,21 @@
           {
             "nome": "Bilíngue Português / Inglês",
             "imagem": "../img/livro-interativo-slide-1.webp",
-            "preco": 49.9
+            "preco": 21.89
           }
         ]
       }
     },
     "sales": "4953 vendidos on-line",
-    "installmentText": "3x R$ 16,63 sem juros"
+    "installmentText": "3x R$ 7,29 sem juros",
+    "price": 21.89,
+    "precoOrig": 99.9,
+    "originalPrice": 99.9,
+    "cupomPreco": 21.89,
+    "couponPrice": 21.89,
+    "desc": 78,
+    "desconto": 78,
+    "parcelamento": "3x R$ 7,29 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "livro124",

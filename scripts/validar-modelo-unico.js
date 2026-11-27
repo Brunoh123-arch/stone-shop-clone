@@ -64,6 +64,27 @@ for (const id of ids) {
     errors.push(`produto-${id}: ainda contém 'Tipo de Fogão'!`);
   }
 
+  // Travas globais de Descrição e Guia de Tamanhos (todos os 70 produtos ativos)
+  const rawJsonPath = path.join(ROOT, 'data', 'produtos', `produto-${id}.json`);
+  if (fs.existsSync(rawJsonPath)) {
+    try {
+      const pj = JSON.parse(fs.readFileSync(rawJsonPath, 'utf8'));
+      const descHtml = String(pj.description_html || '');
+      const descPlain = descHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      if (descPlain.length < 300) {
+        errors.push(`produto-${id}: description_html muito curta (${descPlain.length} chars < 300)`);
+      }
+      if (/R\$\s*\d|\b\d+%\s*OFF\b/i.test(descPlain)) {
+        errors.push(`produto-${id}: PROIBIDO mencionar valor 'R$' ou '% OFF' dentro de description_html`);
+      }
+      const APPAREL_IDS = new Set([74, 75, 87, 88, 99, 103, 104, 106, 110, 132, 136, 137, 138, 140, 141, 143]);
+      const hasSg = String(pj.size_guide_html || '').trim().length > 0;
+      if (hasSg && !APPAREL_IDS.has(Number(id))) {
+        errors.push(`produto-${id}: size_guide_html proibido em produto que não é vestuário/calçado/cinta`);
+      }
+    } catch (e) {}
+  }
+
   const m = html.match(/const PRODUTO_ATUAL = (\{[\s\S]*?\});/);
   if (!m) {
     errors.push(`produto-${id}: PRODUTO_ATUAL não encontrado`);

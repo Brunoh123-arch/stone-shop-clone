@@ -1,7 +1,7 @@
 {
   "id": 105,
   "title": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto - Stone Shop",
-  "meta_description": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD com 90% OFF no Festival 11.11. Apenas R$ 39,90 com Frete Grátis.",
+  "meta_description": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD com 83% OFF no Festival 11.11. Apenas R$ 34,79 com Frete Grátis.",
   "product_title": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto",
   "slider_imgs": [
     {
@@ -21,14 +21,14 @@
       "alt": "Projetor HY300 Tela Gigante 130 Pol - 4"
     }
   ],
-  "discount_badge": "-90%",
-  "price_int": "39",
-  "price_cents": ",90",
-  "price_original": "R$ 399,90",
-  "installment_text": "3x R$ 13,30",
+  "discount_badge": "-83%",
+  "price_int": "34",
+  "price_cents": ",79",
+  "price_original": "R$ 199,90",
+  "installment_text": "3x R$ 11,59",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 360",
-  "coupon_bonus": "Economize 90% com bônus",
+  "coupon_bonus": "Final R$ 34,79 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(48)",
   "sold_count": "14829 vendidos on-line",
@@ -234,7 +234,7 @@
     "catbox_id": "facj5t.mp4"
   },
   "size_guide_html": "",
-  "description_html": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD com 90% OFF no Festival 11.11. Apenas R$ 39,90 com Frete Grátis.",
+  "description_html": "<p><strong>🎬 Projetor Portátil Smart HY300 Original — Android 11 Integrado, Wi-Fi 6, Bluetooth e Suporte 4K</strong></p>\n<p>Transforme qualquer parede ou até o teto do quarto em uma tela de cinema gigante de até 130 polegadas! O <strong>Projetor Smart HY300 Original</strong> já vem com sistema Android 11 integrado para você assistir seus aplicativos favoritos de filmes, séries, futebol e desenhos sem precisar conectar computador.</p>\n<p><strong>✅ Principais Recursos:</strong><br/>\n• <strong>Base Giratória 180° Livre:</strong> Projete na parede da sala ou direto no teto para assistir deitado na cama com conforto total.<br/>\n• <strong>Correção Automática Keystone:</strong> Alinha a imagem automaticamente na horizontal, mantendo o quadro retangular perfeito em segundos.<br/>\n• <strong>Imagem Nítida HD Nativo (Suporte Decodificação 4K):</strong> Lente óptica de alta transmissão com cores vibrantes e excelente contraste em ambientes com pouca luz.<br/>\n• <strong>Conexão Completa:</strong> Wi-Fi Dual Band (2.4G/5G), Bluetooth 5.0 para caixas de som/fones, entrada HDMI (videogames, TV Box, notebook), USB e saída de áudio P2.<br/>\n• <strong>Alto-falante Embutido e Baixo Ruído:</strong> Sistema de refrigeração silencioso (&lt; 25 dB) para não atrapalhar o som do filme.</p>\n<p><strong>📦 Conteúdo da Caixa:</strong><br/>\n• 01 Projetor Smart HY300 Original Bivolt (110V/220V)<br/>\n• 01 Controle Remoto + 01 Cabo de Energia + Manual do Usuário</p>",
   "related": [
     {
       "href": "produto-17.html",
@@ -290,8 +290,8 @@
   "produto_atual": {
     "id": 105,
     "nome": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto",
-    "preco": 39.9,
-    "preco_antigo": 399.9,
+    "preco": 34.79,
+    "preco_antigo": 199.9,
     "img": "../img/prod-105-local-1.webp",
     "imagens": [
       "../img/prod-105-local-1.webp",
@@ -316,7 +316,15 @@
       }
     },
     "sales": "14829 vendidos on-line",
-    "installmentText": "3x R$ 13,30 sem juros"
+    "installmentText": "3x R$ 11,59 sem juros",
+    "price": 34.79,
+    "precoOrig": 199.9,
+    "originalPrice": 199.9,
+    "cupomPreco": 34.79,
+    "couponPrice": 34.79,
+    "desc": 83,
+    "desconto": 83,
+    "parcelamento": "3x R$ 11,59 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "projetor",

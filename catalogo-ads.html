@@ -807,35 +807,38 @@
 
   <div id="toast" class="toast">Copiado!</div>
 
-  <script src="/js/catalogo.js?v=20261126_tt_oficial_1to1_v38"></script>
+  <script src="/js/catalogo.js?v=20261126_tt_oficial_1to1_v39"></script>
   <script>
     const STORAGE_KEY = 'stone_ads_test_selection_v1';
-    const DEFAULT_TOP_ADS = [133, 134, 132, 108, 126, 104, 109, 105, 41, 47];
+    const DEFAULT_TOP_ADS = [133, 134, 104, 107, 113, 112, 106, 132, 108, 126];
 
     // Inteligência comercial por produto (Personas + Janela de Pico + Tier de Tráfego Pago)
     const INTEL = {
       126: { tier: 'scale', score: 100, personas: ['mae','pai'], moments: ['hoje','amanha','dia30'], why: 'Campeão #1 presente de Natal c/ 13º por R$ 47,89 (-76%): 8 vídeos reais 3 rodas + 26 reviews/13 unboxings.' },
       108: { tier: 'scale', score: 99, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Desejo feminino #1 na Black por R$ 27,89 (-81%) + 31 vídeos de criadores prontos.' },
-      104: { tier: 'scale', score: 98, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Impulso PIX rápido (R$ 19,90) + 32 vídeos + 15 fotos reais. Escala fácil.' },
-      109: { tier: 'scale', score: 96, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Criativo hipnótico em 3s, R$ 39,90 (-89%) e 31 vídeos de criadores.' },
-      134: { tier: 'scale', score: 97, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Isca de impulso máximo por R$ 11,89 (-76%), zero objeção de tamanho/voltagem, página blindada.' },
-      133: { tier: 'scale', score: 99, personas: ['mae','adulto'], moments: ['hoje','amanha','dia30'], why: 'Oferta isca R$ 9,69 (-76%): todo lar compra 2 a 4 unidades p/ árvore e varanda.' },
-      132: { tier: 'scale', score: 95, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Cinta M+ por R$ 19,79 (-78%): alta dor emocional p/ festas de fim de ano + página blindada.' },
-      105: { tier: 'scale', score: 92, personas: ['pai','adulto','teen'], moments: ['hoje','amanha','dia30'], why: 'Eletrônico mais viral do TikTok Brasil por R$ 39,90 (-90%).' },
-      41:  { tier: 'scale', score: 91, personas: ['mae','pai','adulto'], moments: ['amanha','dia30'], why: 'Air Fryer Oven 12L é Top 1 de busca na sexta de Black Friday.' },
+      104: { tier: 'scale', score: 99, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Impulso PIX absurdo R$ 11,49 (-81%) + 32 vídeos + 15 fotos reais. Escala imediata.' },
+      109: { tier: 'scale', score: 97, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Criativo hipnótico em 3s por R$ 23,79 (-84%) e 31 vídeos de criadores.' },
+      134: { tier: 'scale', score: 98, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Isca de impulso máximo por R$ 11,89 (-76%), zero objeção de tamanho/voltagem, página blindada.' },
+      133: { tier: 'scale', score: 100, personas: ['mae','adulto'], moments: ['hoje','amanha','dia30'], why: 'Oferta isca R$ 9,69 (-76%): todo lar compra 2 a 4 unidades p/ árvore e varanda.' },
+      132: { tier: 'scale', score: 96, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Cinta M+ por R$ 19,79 (-78%): alta dor emocional p/ festas de fim de ano + página blindada.' },
+      105: { tier: 'scale', score: 95, personas: ['pai','adulto','teen'], moments: ['hoje','amanha','dia30'], why: 'Eletrônico mais viral do TikTok Brasil por R$ 34,79 (-83%).' },
+      41:  { tier: 'scale', score: 94, personas: ['mae','pai','adulto'], moments: ['amanha','dia30'], why: 'Air Fryer Oven 12L Mondial por R$ 54,73 (-82%): Top 1 de busca na Black Friday.' },
       46:  { tier: 'scale', score: 90, personas: ['mae','adulto'], moments: ['amanha','dia30'], why: 'Panela Elétrica 6L Rita Lobo a R$ 69,90: altíssimo desejo para ceia/cozinha.' },
       47:  { tier: 'scale', score: 89, personas: ['mae','pai','adulto'], moments: ['amanha','dia30'], why: 'Vídeos satisfatórios de limpeza de sofá/carro convertem muito no TikTok.' },
-      106: { tier: 'scale', score: 88, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Ticket R$ 29,90 + 10 fotos reais de clientes. Conversão rápida no PIX.' },
-      107: { tier: 'test',  score: 86, personas: ['pai','adulto'], moments: ['hoje','amanha'], why: 'Achadinho masculino/carro R$ 34,90 sem atrito.' },
+      106: { tier: 'scale', score: 94, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Body Modelador por R$ 16,89 (-81%) + 10 fotos reais de clientes. Conversão rápida no PIX.' },
+      107: { tier: 'scale', score: 95, personas: ['pai','adulto'], moments: ['hoje','amanha'], why: 'Achadinho carro/casa R$ 13,79 (-85%) sem atrito de tamanho ou voltagem.' },
+      113: { tier: 'scale', score: 93, personas: ['mae','pai','adulto'], moments: ['hoje','amanha'], why: 'Comedouro Pet Acrílico por R$ 14,69 (-82%): dono de pet compra no impulso.' },
+      23:  { tier: 'scale', score: 92, personas: ['mae','adulto'], moments: ['hoje','amanha'], why: 'Kit 24 Potes Herméticos por R$ 24,73 (-79%): sai quase R$ 1 por pote!' },
+      68:  { tier: 'scale', score: 92, personas: ['mae','adulto'], moments: ['amanha','dia30'], why: 'Jogo 5 Panelas Cerâmica por R$ 44,73 (-82%): ticket campeão p/ donas de casa.' },
       101: { tier: 'vitrine', score: 87, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Rei de ticket múltiplo (2 a 4 pneus) p/ viagem de fim de ano.' },
-      111: { tier: 'test',  score: 85, personas: ['mae','pai','adulto'], moments: ['dia30'], why: 'Decoração instantânea de fachada pro Natal com 13º na mão.' },
-      112: { tier: 'test',  score: 84, personas: ['mae','pai'], moments: ['hoje','dia30'], why: 'Brinquedo hipnótico barato (R$ 44,90) p/ crianças pequenas.' },
+      111: { tier: 'scale', score: 91, personas: ['mae','pai','adulto'], moments: ['hoje','amanha','dia30'], why: 'Projetor Natalino 16 Desenhos por R$ 19,69 (-80%): fachada/sala pronta pro Natal.' },
+      112: { tier: 'scale', score: 92, personas: ['mae','pai'], moments: ['hoje','amanha','dia30'], why: 'Pista de Patinhos Musical c/ LED por R$ 16,73 (-81%): criativo hipnótico infantil.' },
       19:  { tier: 'test',  score: 84, personas: ['mae','pai','teen'], moments: ['amanha','dia30'], why: 'Febre Stitch recalibrado p/ R$ 74,90: sonho de Natal infantil/teen.' },
       85:  { tier: 'test',  score: 83, personas: ['pai','adulto','teen'], moments: ['amanha','dia30'], why: 'Karaokê c/ tela e 2 microfones p/ festas de Natal e Réveillon.' },
       95:  { tier: 'test',  score: 82, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Máquina de gelo turbo p/ calor e churrasco de dezembro (R$ 48,05).' },
       123: { tier: 'test',  score: 82, personas: ['pai','adulto'], moments: ['amanha','dia30'], why: 'Recalibrada p/ R$ 79,90! Vídeo demonstrativo forte p/ lavar carro/quintal.' },
       122: { tier: 'test',  score: 81, personas: ['mae','adulto'], moments: ['amanha'], why: 'Corrigida de R$ 289 p/ R$ 79,90! Painel touch inox desejado.' },
-      124: { tier: 'test',  score: 80, personas: ['mae','pai'], moments: ['hoje','dia30'], why: 'Recalibrado p/ R$ 49,90! Presente educativo bilíngue acessível.' },
+      124: { tier: 'scale', score: 91, personas: ['mae','pai'], moments: ['hoje','amanha','dia30'], why: 'Livro Interativo Bilíngue Falante por R$ 21,89 (-78%): presente educativo campeão.' },
       38:  { tier: 'test',  score: 80, personas: ['mae','adulto','teen'], moments: ['amanha','dia30'], why: 'Perfume árabe Yara é febre feminina e presente certeiro no 13º.' },
       110: { tier: 'test',  score: 79, personas: ['pai','adulto','teen'], moments: ['amanha','dia30'], why: 'Tênis versátil p/ presente e uso no fim de ano.' },
       114: { tier: 'test',  score: 79, personas: ['pai','teen'], moments: ['amanha','dia30'], why: 'Nostalgia + gamer: Controle Arcade 7 em 1 p/ pais e adolescentes.' },

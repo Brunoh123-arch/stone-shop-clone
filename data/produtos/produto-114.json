@@ -293,9 +293,9 @@
       "img": "../img/produto-105-1.jpg",
       "alt": "Projetor HY300 Original Portátil Smart Android 11 4K",
       "name": "Projetor HY300 Original Portátil Smart Android 11 4K",
-      "price": "R$ 39,90",
-      "price_original": "R$ 399,90",
-      "discount": "90% OFF",
+      "price": "R$ 34,79",
+      "price_original": "R$ 199,90",
+      "discount": "-83%",
       "sold": "14829 vendidos"
     },
     {
@@ -313,9 +313,9 @@
       "img": "../img/produto-111-1.jpg",
       "alt": "Projetor LED Natalino 16 Desenhos Temáticos USB",
       "name": "Projetor LED Natalino 16 Desenhos Temáticos USB",
-      "price": "R$ 49,90",
-      "price_original": "R$ 199,90",
-      "discount": "75% OFF",
+      "price": "R$ 19,69",
+      "price_original": "R$ 99,90",
+      "discount": "-80%",
       "sold": "5253 vendidos"
     }
   ],

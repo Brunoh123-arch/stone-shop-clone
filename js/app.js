@@ -1951,8 +1951,9 @@ function openVariacaoModal(produto, fluxo = 'cart', onConfirm) {
           </div>
         `;
       } else {
-        // Botões normais (tamanho/voltagem) com link do Guia de tamanhos (Print 3 - Item 6)
-        const isSize = chave.toLowerCase().includes('tam') || label.toLowerCase().includes('tam');
+        // Botões normais (tamanho/voltagem) com link do Guia de tamanhos apenas quando houver tabela real de vestuário/calçado
+        const hasRealSizeGuide = Boolean(typeof getProductSizeGuideImage === 'function' && getProductSizeGuideImage());
+        const isSize = (chave.toLowerCase().includes('tam') || label.toLowerCase().includes('tam')) && hasRealSizeGuide;
         const btns = opcoes.map((o, i) => {
           const nome = typeof o === 'object' ? o.nome : o;
           const precoOpt = (typeof o === 'object' && o.preco !== undefined) ? o.preco : '';
@@ -2034,14 +2035,25 @@ function openVariacaoModal(produto, fluxo = 'cart', onConfirm) {
     descPercent = String(descPercent).replace(/[^0-9]/g, '');
   }
 
-  const temOferta = document.querySelector('.flash-deal-banner') !== null || document.querySelector('.price-decalque') !== null || document.querySelector('.price-section') !== null;
-  const subTextoBotao = temOferta ? `Oferta relâmpago R$ <span id="var-modal-btn-preco">${preco}</span>` : `R$ <span id="var-modal-btn-preco">${preco}</span> com cupom`;
+  const subTextoBotao = `Preço de oferta R$ <span id="var-modal-btn-preco">${preco}</span>`;
 
-  let footerButtonHtml = `
+  let footerButtonHtml = fluxo === 'cart'
+    ? `
     <div class="var-modal-footer">
-      <button class="var-btn-buy-full" onclick="varModalConfirm('${fluxo}')">
-        <span style="font-size:15px; font-weight:700; line-height:1.2;">Compre</span>
-        <span style="font-size:11.5px; font-weight:500; opacity:0.95; line-height:1.2;">${subTextoBotao}</span>
+      <button type="button" class="var-btn-cart-full" style="background:#fff0f3; color:#fe2c55; border:1px solid #ffd6df; flex:0.92;" onclick="varModalConfirm('cart')">
+        <span style="font-size:13.5px; font-weight:600; line-height:1.2;">Adicionar ao carrinho</span>
+      </button>
+      <button type="button" class="var-btn-buy-full" style="background:#fe2c55; color:#ffffff; flex:1.15;" onclick="varModalConfirm('buy')">
+        <span style="font-size:15px; font-weight:600; line-height:1.18;">Compre</span>
+        <span style="font-size:11px; font-weight:400; opacity:0.96; line-height:1.18;">${subTextoBotao}</span>
+      </button>
+    </div>
+  `
+    : `
+    <div class="var-modal-footer">
+      <button type="button" class="var-btn-buy-full" style="background:#fe2c55; color:#ffffff;" onclick="varModalConfirm('buy')">
+        <span style="font-size:15px; font-weight:600; line-height:1.18;">Compre</span>
+        <span style="font-size:11.5px; font-weight:400; opacity:0.96; line-height:1.18;">${subTextoBotao}</span>
       </button>
     </div>
   `;
@@ -3852,9 +3864,8 @@ function irDiretoAoCheckoutComProduto(produto, varLabel, qty) {
   try { localStorage.setItem('famosinhos_checkout_cart', JSON.stringify([checkoutItem])); } catch (e) { }
   try { sessionStorage.setItem('famosinhos_checkout_cart', JSON.stringify([checkoutItem])); } catch (e) { }
 
-  // Redireciona com breve delay suave para o cliente ver o HUD na tela correta com parâmetros de fallback blindados
-  const isPagesDir = window.location.pathname.includes('/pages/');
-  const targetBase = isPagesDir ? 'resumo.html' : 'pages/resumo.html';
+  // Redireciona SEMPRE por rota absoluta /pages/resumo.html preservando parâmetros de campanha/preview
+  const targetBase = '/pages/resumo.html';
   const queryParts = [
     'produto=' + encodeURIComponent(checkoutItem.id),
     'preco=' + encodeURIComponent(checkoutItem.preco),
@@ -3862,6 +3873,12 @@ function irDiretoAoCheckoutComProduto(produto, varLabel, qty) {
   ];
   if (checkoutItem.variacao) queryParts.push('var=' + encodeURIComponent(checkoutItem.variacao));
   if (checkoutItem.img) queryParts.push('img=' + encodeURIComponent(checkoutItem.img));
+  try {
+    const curParams = new URLSearchParams(window.location.search || '');
+    ['preview', 'owner', 'c', 'ttclid', 'utm_source', 'utm_medium', 'tt_medium', 'campaign_id'].forEach(function (k) {
+      if (curParams.has(k)) queryParts.push(k + '=' + encodeURIComponent(curParams.get(k)));
+    });
+  } catch (e) {}
   queryParts.push('v=' + Date.now());
 
   const targetUrl = targetBase + '?' + queryParts.join('&');
@@ -5234,7 +5251,7 @@ function initStoneShopApp() {
         </div>
 
         <!-- Linha 2: Opções Disponíveis (Sempre visível com miniaturas e ícone 4 quadradinhos) -->
-        <div class="info-row-item info-row-opcoes" onclick="handleAddToCart()">
+        <div class="info-row-item info-row-opcoes" onclick="handleBuyNow()">
           <div class="info-row-left">
             <div class="info-row-icon" style="display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-right:8px;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -6920,20 +6937,13 @@ window.toggleDescricaoCompleta = function() {
 
 (function() {
   function getProductSizeGuideImage() {
-    // 1. REGRA SOBERANA DE OURO: Single Source of Truth direto da descrição do DOM!
-    // A imagem que está na descrição da página É a autoridade máxima e deve ser exatamente a mesma no slider e no modal.
-    const descImg = document.querySelector('.size-guide-img, .description-text img[src*="guia-tamanhos"], .about-product-section img[src*="guia-tamanhos"], .product-desc img[src*="guia-tamanhos"]');
-    if (descImg && descImg.getAttribute('src')) {
-      return descImg.getAttribute('src');
-    }
-
-    if (typeof PRODUTO_ATUAL === 'undefined') return null;
+    // 1. REGRA SOBERANA (GEMINI.md §2.7): Guia de tamanhos SÓ existe em vestuário, calçado e cinta/body modelador corporal!
+    // Jamais ativar por palavra solta como "modelador" (que pegava Escova Modeladora 108 e Modelador de Cachos 109!).
+    if (typeof PRODUTO_ATUAL === 'undefined' || !PRODUTO_ATUAL) return null;
     const id = Number(PRODUTO_ATUAL.id);
-    const nome = (PRODUTO_ATUAL.nome || '').toLowerCase();
 
-    // Timestamp dinâmico para blindagem contra cache do navegador
-    const vTime = '1795058371562';
-    const mapById = {
+    const vTime = '20261126';
+    const APPAREL_SIZE_GUIDE_MAP = {
       74: `../img/guia-tamanhos-74.png?v=${vTime}`,
       75: `../img/guia-tamanhos-75.png?v=${vTime}`,
       87: `../img/guia-tamanhos-87.png?v=${vTime}`,
@@ -6942,41 +6952,16 @@ window.toggleDescricaoCompleta = function() {
       103: `../img/guia-tamanhos-103.png?v=${vTime}`,
       104: `../img/guia-tamanhos-104.png?v=${vTime}`,
       106: `../img/guia-tamanhos-106.png?v=${vTime}`,
-      110: `../img/guia-tamanhos-110.png?v=${vTime}`
+      110: `../img/guia-tamanhos-110-clean.png?v=${vTime}`,
+      132: `../img/guia-tamanhos-106.png?v=${vTime}`
     };
 
-    if (mapById[id]) return mapById[id];
-
-    // Mapeamento por nicho/palavra-chave
-    if (nome.includes('chinelo') || nome.includes('sandália') || nome.includes('sandalia')) {
-      return `../img/guia-tamanhos-104.png?v=${vTime}`;
-    }
-    if (nome.includes('body') || nome.includes('cinta') || nome.includes('modelador')) {
-      return `../img/guia-tamanhos-106.png?v=${vTime}`;
-    }
-    if (nome.includes('tênis') || nome.includes('tenis') || nome.includes('kappa')) {
-      return `../img/guia-tamanhos-110.png?v=${vTime}`;
-    }
-    if (nome.includes('calça') || nome.includes('calca') || nome.includes('jeans')) {
-      return `../img/guia-tamanhos-87.png?v=${vTime}`;
-    }
-    if (nome.includes('alfaiataria') || (nome.includes('conjunto') && nome.includes('feminino'))) {
-      return `../img/guia-tamanhos-88.png?v=${vTime}`;
-    }
-    if (nome.includes('brasil')) {
-      return `../img/guia-tamanhos-74.png?v=${vTime}`;
-    }
-    if (nome.includes('portugal')) {
-      return `../img/guia-tamanhos-99.png?v=${vTime}`;
-    }
-    if (nome.includes('dry fit') || nome.includes('dryfit') || nome.includes('camiseta')) {
-      return `../img/guia-tamanhos-75.png?v=${vTime}`;
-    }
-    if (nome.includes('vestido')) {
-      return `../img/guia-tamanhos-103.png?v=${vTime}`;
+    const descImg = document.querySelector('.size-guide-img, .description-text img[src*="guia-tamanhos"], .about-product-section img[src*="guia-tamanhos"]');
+    if (descImg && descImg.getAttribute('src')) {
+      return descImg.getAttribute('src');
     }
 
-    return null;
+    return APPAREL_SIZE_GUIDE_MAP[id] || null;
   }
   window.getProductSizeGuideImage = getProductSizeGuideImage;
 
