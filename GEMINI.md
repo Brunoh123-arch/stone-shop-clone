@@ -101,12 +101,13 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | ID | Produto | PIX | Status |
 |:--:|---|:--:|---|
 | 125 | Carrinho Rolimã Girocar / Super Car LED (100 kg) | R$ 84,90 | fila |
-| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 97,00 | **100% blindado no ar** — 8 vídeos exatos 3 rodas + 1 na descrição, 26 avaliações reais (9 compradores com 13 fotos de unboxing limpas) |
-| 127 | Carrinho RC Drift 4x4 (fumaça + 2 baterias) | R$ 74,90 | fila |
-| 128 | Mesa dobrável maleta 1,80 m | R$ 89,90 | fila |
-| 129 | Escova elétrica giratória 9 em 1 c/ extensor | R$ 64,90 | fila |
-| 130 | Colar Prata 925 c/ rosa giratória + sacola | R$ 74,90 | fila |
-| 131 | Kit 2 jogos de cama casal 400 fios | R$ 69,90 | fila |
+| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 47,89 | **100% blindado no ar** |
+| **127** | Carrinho RC Drift 4x4 Turbo que Solta Fumaça + LED + Kit Pneus & Cones | R$ 49,89 | **100% blindado no ar** |
+| **128** | Mesa Dobrável Portátil Vira Maleta 1,80 m Reforçada c/ Alça | R$ 67,89 | **100% blindado no ar** |
+| **129** | Escova Elétrica Giratória Sem Fio 9 em 1 c/ Cabo Extensor 137 cm | R$ 29,89 | **100% blindado no ar** |
+| **135** | Smartwatch Série 10 W99+ Pro AMOLED NFC ChatGPT | ativo | **no ar** |
+| **144** | Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas | R$ 37,89 | **100% blindado no ar** |
+| **145** | Combo Mala de Bordo Rígida ABS Giro 360° ANAC + Frasqueira (Kit 2 Peças) | R$ 69,89 | **100% blindado no ar** |
 
 ### 5.1 FILA URGENTE — COMBOS MODA "LEVE 4" & BOLSA + RELÓGIO (135–140) — Puxar no Profile 42
 
