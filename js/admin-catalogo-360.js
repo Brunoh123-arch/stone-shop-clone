@@ -277,8 +277,12 @@
 
     const totalEl = document.getElementById('totalProductsCount');
     const badgeTop = document.getElementById('badgeCatalogoTop');
+    const bNavCat = document.getElementById('bNavCatalogBadge');
     if (totalEl) totalEl.textContent = manifest360.total_products;
     if (badgeTop) badgeTop.textContent = manifest360.total_products;
+    if (bNavCat) bNavCat.textContent = manifest360.total_products;
+    const kpiHealth = document.getElementById('kpiHealthSub');
+    if (kpiHealth) kpiHealth.textContent = `${manifest360.total_products} ativos · Saúde ${manifest360.avg_health_score}%`;
 
     const wrap = document.createElement('div');
     wrap.id = 'rx-top-panel';
@@ -377,14 +381,25 @@
   function getFiltered360List() {
     if (!manifest360) return [];
     const term = (document.getElementById('catalogoSearch')?.value || '').toLowerCase().trim();
+    const catFilter = window.filtroCategoriaAtual || 'todas';
     return manifest360.products.filter((p) => {
       if (activeHealthFilter === 'perfect' && p.health_score < 100) return false;
       if (activeHealthFilter === '30plus' && p.creators_count < 30) return false;
       if (activeHealthFilter === 'low_creators' && p.creators_count >= 10) return false;
       if (activeHealthFilter === 'conflict' && !p.has_catbox_conflict) return false;
 
+      if (catFilter !== 'todas') {
+        const c = (p.category || '').toLowerCase();
+        const t = (p.title || '').toLowerCase();
+        if (catFilter === 'calcados' && !c.includes('moda') && !/chinelo|sand[aá]lia|t[eê]nis|vestido|cinta|bolsa/.test(t)) return false;
+        if (catFilter === 'eletronicos' && !c.includes('eletr')) return false;
+        if (catFilter === 'casa' && !c.includes('casa')) return false;
+        if (catFilter === 'infantil' && !c.includes('infantil')) return false;
+        if (catFilter === 'praia' && !c.includes('lazer') && !/praia|piscina|bike|bola|colch/.test(t)) return false;
+      }
+
       if (!term) return true;
-      if (String(p.id) === term || `#${p.id}` === term) return true;
+      if (String(p.id) === term || `#${p.id}` === term || String(p.id).includes(term)) return true;
       if ((p.title || '').toLowerCase().includes(term)) return true;
       if (p.video && (p.video.catbox_id || '').toLowerCase().includes(term)) return true;
       if ((p.creators || []).some(c => (c.catbox_id || '').toLowerCase().includes(term) || (c.username || '').toLowerCase().includes(term))) return true;
@@ -420,6 +435,8 @@
         if (j && j.overrides) serverOverrides = j.overrides;
         const prod = manifest360.products.find(x => x.id === Number(id));
         if (prod) { prod.preco = saleVal; prod.price_original_str = origVal; }
+        window.__STONE_SERVER_OVERRIDES__ = serverOverrides;
+        if (typeof window.__refreshAdsStudio === 'function') window.__refreshAdsStudio();
         if (typeof window.showToast === 'function') {
           window.showToast(`✅ Produto #${id} atualizado no SERVIDOR para R$ ${saleVal.toFixed(2)}!`, 'success');
         }
@@ -478,15 +495,20 @@
           </div>
 
           <div class="product-card-actions" style="flex-wrap:wrap; gap:8px;">
-            <button type="button" class="rx-btn-360" onclick="window.openProduct360(${p.id}, 'slides')">
-              🔍 Raio-X 360° & Mídias
-            </button>
             <div style="display:flex; gap:6px; flex-wrap:wrap;">
-              <a href="pages/produto-${p.id}" target="_blank" class="btn-action-pill">
-                <span>Abrir Loja</span>
+              <button type="button" class="rx-btn-360" onclick="window.openProduct360(${p.id}, 'slides')">
+                🔍 Raio-X 360°
+              </button>
+              <button type="button" class="btn-action-pill tiktok" onclick="window.openProductInAdsStudio && window.openProductInAdsStudio(${p.id})">
+                🎬 Vídeos Ads
+              </button>
+            </div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <a href="/produto-${p.id}?owner=1" target="_blank" class="btn-action-pill">
+                <span>Abrir Loja ↗</span>
               </a>
-              <button type="button" class="btn-action-pill tiktok" onclick="copiarLinkTikTokAds(${p.id})">
-                <span>UTM TikTok Ads</span>
+              <button type="button" class="btn-action-pill" onclick="copiarLinkTikTokAds(${p.id})">
+                <span>UTM</span>
               </button>
             </div>
           </div>
@@ -530,7 +552,7 @@
 
     document.getElementById('rx-m-title').textContent = `#${prod.id} — ${prod.title}`;
     document.getElementById('rx-m-sub').textContent = `R$ ${Number(prod.preco).toFixed(2).replace('.', ',')} · ${prod.slides.length} slides · ${prod.creators_count} vídeos criadores · ${prod.reviews_count} avaliações · Score ${prod.health_score}%`;
-    document.getElementById('rx-m-open-link').href = `/pages/produto-${prod.id}`;
+    document.getElementById('rx-m-open-link').href = `/produto-${prod.id}?owner=1`;
 
     renderModal360Tabs();
     renderModal360Content();
@@ -748,7 +770,7 @@
     if (currentModalTab === 'config') {
       const ov = serverOverrides[String(p.id)] || {};
       const bump = ov.order_bump || { title: 'Garantia Estendida + Envio Prioritário', price: 9.90, enabled: true };
-      const utmUrl = `https://stoneshopclone.vercel.app/pages/produto-${p.id}?utm_source=tiktok&utm_medium=cpc&utm_campaign=bf_stoneshop&utm_content=prod_${p.id}`;
+      const utmUrl = `https://stoneshopclone.vercel.app/produto-${p.id}?utm_source=tiktok&utm_medium=cpc&utm_campaign=bf_stoneshop&utm_content=prod_${p.id}`;
       box.innerHTML = `
         <div style="background:#131b2e; border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:16px; margin-bottom:16px;">
           <div style="font-size:14px; font-weight:800; color:#f8fafc; margin-bottom:8px;">🎯 Link Oficial de Campanha TikTok Ads (Produto #${p.id})</div>

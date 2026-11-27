@@ -11,7 +11,9 @@ const state = global.__STONE_SERVER_STATE__ || {
   productOverrides: {},
   orders: [],
   ordersByTx: new Map(),
+  trafficEvents: [],
 };
+if (!Array.isArray(state.trafficEvents)) state.trafficEvents = [];
 global.__STONE_SERVER_STATE__ = state;
 
 function getOfficialProduct(id) {
@@ -167,6 +169,113 @@ function listOrdersWithRecovery() {
   });
 }
 
+function classifyDevice(ua) {
+  const s = String(ua || '').toLowerCase();
+  if (/tiktok|musical_ly|bytedancewebview/i.test(s)) return 'TikTok App';
+  if (/iphone|ipad|ipod|ios/i.test(s)) return 'iPhone / iOS';
+  if (/android/i.test(s)) return 'Android';
+  if (/windows|macintosh|linux|x11/i.test(s)) return 'Desktop';
+  return 'Outros / Bot';
+}
+
+function recordTrafficHit({ allowed = true, blockedReason = '', isAdBot = false, ua = '', productId = null, pathUrl = '/' }) {
+  try {
+    state.trafficEvents.push({
+      ts: Date.now(),
+      allowed: !!allowed,
+      blockedReason: blockedReason || '',
+      isAdBot: !!isAdBot,
+      device: classifyDevice(ua),
+      productId: productId ? Number(productId) : null,
+      path: String(pathUrl || '/').slice(0, 80),
+    });
+    if (state.trafficEvents.length > 5000) {
+      state.trafficEvents.splice(0, state.trafficEvents.length - 4000);
+    }
+  } catch (_) {}
+}
+
+function getDashboardTelemetry(period = 'hoje') {
+  const now = Date.now();
+  const DAY = 24 * 60 * 60 * 1000;
+  let startTs = 0;
+  let endTs = now + 60000;
+
+  if (period === 'hoje') {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    startTs = d.getTime();
+  } else if (period === 'ontem') {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    endTs = d.getTime();
+    startTs = endTs - DAY;
+  } else if (period === '7d') {
+    startTs = now - 7 * DAY;
+  } else if (period === '30d') {
+    startTs = now - 30 * DAY;
+  }
+
+  const events = state.trafficEvents.filter((e) => e.ts >= startTs && e.ts <= endTs);
+  let allowed = 0;
+  let blocked = 0;
+  let adReviewBots = 0;
+  const devices = { 'TikTok App': 0, 'Android': 0, 'iPhone / iOS': 0, 'Desktop': 0, 'Outros / Bot': 0 };
+  const botTypes = {};
+  const prodHits = {};
+
+  const bucketCount = 12;
+  const span = Math.max(60 * 60 * 1000, (period === 'hoje' || period === 'ontem' ? DAY : (now - Math.max(startTs, now - 7 * DAY))));
+  const bucketStart = period === 'ontem' ? startTs : (now - span);
+  const bucketMs = span / bucketCount;
+  const series = Array.from({ length: bucketCount }, (_, i) => {
+    const t = new Date(bucketStart + i * bucketMs);
+    const label = (period === '7d' || period === '30d' || period === 'total')
+      ? t.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' })
+      : t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+    return { label, allowed: 0, blocked: 0 };
+  });
+
+  for (const e of events) {
+    if (e.allowed) allowed++;
+    else blocked++;
+    if (e.isAdBot) adReviewBots++;
+    devices[e.device] = (devices[e.device] || 0) + 1;
+
+    if (!e.allowed) {
+      const r = e.blockedReason || 'Scraper / Bot';
+      botTypes[r] = (botTypes[r] || 0) + 1;
+    } else if (e.isAdBot) {
+      botTypes['Ads Review Bot (Whitelist ✅)'] = (botTypes['Ads Review Bot (Whitelist ✅)'] || 0) + 1;
+    }
+
+    if (e.productId) {
+      prodHits[e.productId] = (prodHits[e.productId] || 0) + 1;
+    }
+
+    const idx = Math.min(bucketCount - 1, Math.max(0, Math.floor((e.ts - bucketStart) / bucketMs)));
+    if (e.allowed) series[idx].allowed++;
+    else series[idx].blocked++;
+  }
+
+  const total = allowed + blocked;
+  const approvalRate = total > 0 ? Math.round((allowed / total) * 100) : 100;
+
+  return {
+    period,
+    total,
+    allowed,
+    blocked,
+    adReviewBots,
+    approvalRate,
+    series,
+    devices,
+    botTypes,
+    prodHits,
+    updatedAt: new Date().toISOString(),
+  };
+}
+
 module.exports = {
   getOfficialProduct,
   setProductOverride,
@@ -175,4 +284,6 @@ module.exports = {
   registerPixOrder,
   markOrderPaid,
   listOrdersWithRecovery,
+  recordTrafficHit,
+  getDashboardTelemetry,
 };

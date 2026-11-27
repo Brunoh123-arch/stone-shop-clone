@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { recordTrafficHit } = require('./_lib/store-state');
 
 let _cachedIndexHtml = null;
 let _versionsBundle = null;
@@ -85,6 +86,20 @@ function isScraper(req) {
   return false;
 }
 
+function detectScraperReason(req) {
+  if (isAdReviewer(req)) return null;
+  const ua = (req.headers['user-agent'] || '').toLowerCase();
+  if (req.headers['x-saveweb2zip'] || ua.includes('saveweb')) return 'SaveWeb2Zip / Ripper';
+  if (ua.includes('httrack') || ua.includes('webcopy') || ua.includes('teleport') || ua.includes('offline explorer')) return 'Clonador (HTTrack/Copy)';
+  if (ua.includes('headless') || ua.includes('puppeteer') || ua.includes('playwright') || ua.includes('selenium') || ua.includes('phantom')) return 'Browser Headless / Automação';
+  if (ua.includes('adheart') || ua.includes('bigspy') || ua.includes('dropispy')) return 'Espião de Anúncios (Spy Tool)';
+  for (const bot of SCRAPER_BOTS) {
+    if (ua.includes(bot)) return `Bot / CLI (${bot})`;
+  }
+  if (req.headers['x-scraper']) return 'Header Scraper Detectado';
+  return null;
+}
+
 module.exports = async function handler(req, res) {
   try {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
@@ -93,8 +108,15 @@ module.exports = async function handler(req, res) {
     res.setHeader('Pragma', 'no-cache');
     res.setHeader('Expires', '0');
 
+    const uaStr = req.headers['user-agent'] || '';
+    const slugRaw = (req.query && req.query.slug) ? String(req.query.slug) : '';
+    const pidMatch = slugRaw.match(/produto-(\d+)/i);
+    const hitPid = pidMatch ? Number(pidMatch[1]) : null;
+    const scraperReason = detectScraperReason(req);
+
     // Se for SaveWeb2Zip, HTTrack ou espião concorrente -> Recebe a página fake embaralhada!
-    if (isScraper(req)) {
+    if (scraperReason) {
+      recordTrafficHit({ allowed: false, blockedReason: scraperReason, isAdBot: false, ua: uaStr, productId: hitPid, pathUrl: req.url || '/' });
       let fakeHtml = '';
       try {
         const fakePath = path.join(__dirname, '..', 'fake.html');
@@ -103,6 +125,8 @@ module.exports = async function handler(req, res) {
       if (!fakeHtml) fakeHtml = getFakeFallback();
       return res.status(200).send(fakeHtml);
     }
+
+    recordTrafficHit({ allowed: true, isAdBot: isAdReviewer(req), ua: uaStr, productId: hitPid, pathUrl: req.url || '/' });
 
     // Se for requisição de página de produto (/pages/:slug)
     if (req.query && req.query.slug) {

@@ -1,5 +1,6 @@
-// API SERVERLESS DE RASTREAMENTO & ABANDONO (BRUNO CTO)
+// API SERVERLESS DE RASTREAMENTO, CLOAKER TELEMETRY & ABANDONO (BRUNO CTO)
 const https = require('https');
+const { getDashboardTelemetry, listOrdersWithRecovery } = require('./_lib/store-state');
 
 const CLOUD_OBJECT_URL = 'https://api.restful-api.dev/objects/ff808181a09d98f701a131c5b10f4d67';
 
@@ -105,6 +106,23 @@ module.exports = async function handler(req, res) {
 
   // GET: Retornar métricas e diagnóstico consolidado para o Admin
   if (req.method === 'GET') {
+    if (req.query && req.query.mode === 'dashboard') {
+      const period = String(req.query.period || 'hoje').toLowerCase();
+      const telemetry = getDashboardTelemetry(period);
+      const orders = listOrdersWithRecovery();
+      return res.status(200).json({
+        ok: true,
+        telemetry,
+        ordersStats: {
+          total: orders.length,
+          paid: orders.filter(o => o.status === 'paid').length,
+          pending: orders.filter(o => o.status !== 'paid').length,
+          revenuePaid: orders.filter(o => o.status === 'paid').reduce((a, o) => a + (Number(o.amount) || 0), 0),
+          revenuePending: orders.filter(o => o.status !== 'paid').reduce((a, o) => a + (Number(o.amount) || 0), 0),
+        },
+      });
+    }
+
     // Mescla com a nuvem para não perder dados se a lambda reiniciar
     const cloudSessions = await fetchCloud();
     cloudSessions.forEach(s => {
