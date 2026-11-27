@@ -1,0 +1,610 @@
+/* ============================================================================
+   STONE SHOP CORE — DESIGN SYSTEM BENTO OBSIDIAN PRO
+   Fiel à referência visual: Matte Obsidian (#09090b / #16161a), Left Icon Rail
+   com círculo branco ativo, Hero Card Branco Puro (#fff), Pastel-Cap Status
+   Cards (Azul/Pêssego/Amarelo/Menta), Pill Buttons Brancos e Tipografia Limpa.
+   ============================================================================ */
+
+:root {
+  --bg-base: #09090b;
+  --bg-rail: #111114;
+  --bg-card: #16161a;
+  --bg-card-hover: #1d1d23;
+  --bg-subtle: #1f1f26;
+  --bg-input: #141418;
+  --border: rgba(255, 255, 255, 0.065);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  --text-main: #f8fafc;
+  --text-muted: #9ca3af;
+  --text-dim: #6b7280;
+
+  /* Paleta assinatura da referência */
+  --bento-white: #ffffff;
+  --bento-ink: #09090b;
+  --bento-blue: #638cff;
+  --bento-blue-btn: #2563eb;
+  --bento-peach: #f69d72;
+  --bento-yellow: #fde068;
+  --bento-mint: #6ee7a8;
+  --bento-coral: #f87171;
+
+  --primary: #6ee7a8;
+  --primary-dark: #2563eb;
+  --primary-glow: rgba(99, 140, 255, 0.25);
+  --danger: #f87171;
+  --warning: #fde068;
+  --tiktok: #fe2c55;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+
+  --rail-width: 74px;
+  --header-height: 70px;
+  --bottom-nav-height: 66px;
+}
+
+body {
+  background-color: var(--bg-base) !important;
+  color: var(--text-main) !important;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================================
+   LEFT ICON RAIL (DESKTOP >= 1024px) — IGUAL À REFERÊNCIA
+   ============================================================================ */
+.bento-rail {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-left: var(--rail-width);
+    padding-bottom: 36px !important;
+  }
+
+  .bento-rail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--rail-width);
+    background: var(--bg-rail);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 18px;
+    z-index: 200;
+    gap: 10px;
+  }
+
+  .bento-rail-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #1c1c22;
+    border: 1px solid var(--border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.18s ease;
+  }
+  .bento-rail-logo:hover { transform: scale(1.06); }
+  .bento-rail-logo img { width: 28px; height: 28px; object-fit: contain; }
+
+  .bento-rail-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 4px 0;
+  }
+  .bento-rail-nav::-webkit-scrollbar { display: none; }
+
+  .rail-btn {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: #8a8f98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    flex-shrink: 0;
+  }
+  .rail-btn:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+  }
+  .rail-btn.active {
+    background: #ffffff;
+    color: #09090b;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.18);
+  }
+  .rail-btn .rail-dot {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--bento-peach);
+    border: 1.5px solid var(--bg-rail);
+  }
+  .rail-btn.active .rail-dot {
+    border-color: #ffffff;
+    background: var(--bento-blue-btn);
+  }
+  .rail-btn[data-tip]:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 56px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    color: #09090b;
+    font-size: 11.5px;
+    font-weight: 800;
+    padding: 5px 11px;
+    border-radius: 999px;
+    white-space: nowrap;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 300;
+  }
+
+  .top-bar .brand { display: none !important; }
+  .desktop-nav { display: none !important; }
+
+  .bento-rail-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+}
+
+/* ============================================================================
+   TOP BAR MINIMALISTA OBSIDIAN
+   ============================================================================ */
+.top-bar {
+  background: rgba(9, 9, 11, 0.88) !important;
+  border-bottom: 1px solid var(--border) !important;
+  height: var(--header-height) !important;
+  padding: 0 20px !important;
+}
+
+.top-bar-inner {
+  max-width: 1380px !important;
+}
+
+.bento-top-search {
+  display: none;
+}
+@media (min-width: 768px) {
+  .bento-top-search {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    padding: 0 16px;
+    height: 40px;
+    width: 300px;
+    transition: border-color 0.2s ease;
+  }
+  .bento-top-search:focus-within {
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+  .bento-top-search input {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+    width: 100%;
+  }
+  .bento-top-search input::placeholder { color: var(--text-dim); }
+}
+
+.bento-top-date {
+  display: none;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+@media (min-width: 1100px) {
+  .bento-top-date { display: block; }
+}
+
+.btn-top-icon {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  color: #cbd5e1 !important;
+}
+.btn-top-icon:hover {
+  background: var(--bg-card-hover) !important;
+  color: #ffffff !important;
+}
+
+.bento-avatar-chip {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #638cff, #2563eb);
+  border: 2px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.pill-cloaker {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-strong) !important;
+  color: var(--bento-mint) !important;
+  border-radius: var(--radius-full) !important;
+  height: 36px;
+  padding: 0 14px !important;
+  font-size: 11.5px !important;
+}
+.pill-cloaker.mode-aramis {
+  color: var(--bento-coral) !important;
+  border-color: rgba(248, 113, 113, 0.35) !important;
+}
+
+.bento-white-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 38px;
+  padding: 0 18px;
+  border-radius: var(--radius-full);
+  background: #ffffff;
+  color: #09090b;
+  border: none;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  white-space: nowrap;
+}
+.bento-white-pill-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.bento-dark-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-strong);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+.bento-dark-pill-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* No desktop o Left Rail substitui a barra horizontal gigante; mantemos pills compactas opcionais só p/ sub-seções */
+.desktop-nav {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 18px !important;
+  gap: 8px !important;
+}
+.nav-btn {
+  border-radius: var(--radius-full) !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-muted) !important;
+  padding: 7px 14px !important;
+  font-size: 12.5px !important;
+}
+.nav-btn:hover {
+  background: var(--bg-card-hover) !important;
+  color: #fff !important;
+}
+.nav-btn.active {
+  background: #ffffff !important;
+  color: #09090b !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.14) !important;
+}
+.nav-btn.active .nav-badge {
+  background: #09090b !important;
+  color: #ffffff !important;
+}
+.nav-btn.nav-ads {
+  color: #ffffff !important;
+  border-color: rgba(99, 140, 255, 0.35) !important;
+  background: rgba(99, 140, 255, 0.12) !important;
+}
+.nav-btn.nav-ads.active {
+  background: #ffffff !important;
+  color: #09090b !important;
+  border-color: #ffffff !important;
+}
+
+/* ============================================================================
+   CARDS GERAIS, FORMULÁRIOS E COMPONENTES NO TEMA BENTO OBSIDIAN
+   ============================================================================ */
+.container {
+  max-width: 1380px !important;
+  padding: 18px 20px !important;
+}
+
+.panel-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: 22px !important;
+}
+
+.search-input, .form-control {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-full) !important;
+  color: var(--text-main) !important;
+}
+.search-input:focus, .form-control:focus {
+  border-color: var(--bento-blue) !important;
+  box-shadow: 0 0 0 3px rgba(99, 140, 255, 0.2) !important;
+}
+
+.cat-pill {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-muted) !important;
+  border-radius: var(--radius-full) !important;
+  padding: 7px 14px !important;
+}
+.cat-pill.active, .cat-pill:hover {
+  background: #ffffff !important;
+  color: #09090b !important;
+  border-color: #ffffff !important;
+}
+
+.btn-primary-action {
+  background: #ffffff !important;
+  color: #09090b !important;
+  border-radius: var(--radius-full) !important;
+  font-weight: 800 !important;
+}
+.btn-primary-action:hover {
+  opacity: 0.92;
+  background: #f1f5f9 !important;
+}
+
+.btn-save-price {
+  background: #ffffff !important;
+  color: #09090b !important;
+  border-radius: var(--radius-full) !important;
+}
+
+.product-card, .order-card {
+  background: #121216 !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 20px !important;
+}
+.product-card:hover, .order-card:hover {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+/* ============================================================================
+   PASTEL-CAP BENTO STATUS CARDS (ASSINATURA DA TELA "ORDER LIST" DA REFERÊNCIA)
+   ============================================================================ */
+.pastel-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 18px;
+}
+@media (min-width: 900px) {
+  .pastel-kpi-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pastel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.16s ease, border-color 0.16s ease;
+  cursor: pointer;
+}
+.pastel-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+.pastel-cap {
+  padding: 10px 16px;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #09090b;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pastel-cap.cap-blue { background: var(--bento-blue); }
+.pastel-cap.cap-peach { background: var(--bento-peach); }
+.pastel-cap.cap-yellow { background: var(--bento-yellow); }
+.pastel-cap.cap-mint { background: var(--bento-mint); }
+
+.pastel-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+.pastel-num-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pastel-num {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  line-height: 1.05;
+}
+.pastel-sub {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+/* Pílulas de Delta (Mint Green & Soft Coral — iguais à referência) */
+.delta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+.delta-pill.up {
+  background: #86efac;
+  color: #052e16;
+}
+.delta-pill.down {
+  background: #fda4af;
+  color: #4c0519;
+}
+.delta-pill.blue {
+  background: rgba(99, 140, 255, 0.2);
+  color: #93c5fd;
+}
+
+/* Botões Circulares com Seta Diagonal ↗ (assinatura da referência) */
+.arrow-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: transform 0.16s ease, opacity 0.16s ease;
+}
+.arrow-circle:hover { transform: scale(1.07); }
+.arrow-circle.blue { background: var(--bento-blue-btn); color: #ffffff; }
+.arrow-circle.white { background: #ffffff; color: #09090b; }
+.arrow-circle.dark { background: #26262e; color: #d4d4d8; }
+
+/* Tabela Limpa Estilo "Order List" da Referência */
+.bento-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+.bento-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+.bento-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.bento-table td {
+  padding: 13px 16px;
+  font-size: 13px;
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  vertical-align: middle;
+}
+.bento-table tr:last-child td { border-bottom: none; }
+.bento-table tbody tr:hover { background: rgba(255, 255, 255, 0.025); }
+
+/* Mobile Bottom Nav Obsidian */
+.mobile-bottom-nav {
+  background: rgba(17, 17, 20, 0.96) !important;
+  border-top: 1px solid var(--border) !important;
+  height: var(--bottom-nav-height) !important;
+}
+.b-nav-item.active {
+  color: #ffffff !important;
+}
+.b-nav-item.active svg {
+  stroke: #ffffff !important;
+}
+
+/* Modal PIN Obsidian */
+.pin-card {
+  background: #16161a !important;
+  border-radius: 26px !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+}
+.pin-icon-wrap {
+  background: #ffffff !important;
+  color: #09090b !important;
+  border: none !important;
+}
+.pin-input {
+  background: #09090b !important;
+  border-radius: var(--radius-full) !important;
+  color: #ffffff !important;
+}

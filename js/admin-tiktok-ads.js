@@ -1,11 +1,10 @@
 /**
- * STONE SHOP CORE — CENTRAL DE VÍDEOS TIKTOK ADS (ADS STUDIO)
- * Tela dedicada para subir campanhas no TikTok Ads Manager em 1 clique:
- *  - Nome completo + foto + preço PIX + desconto de cada produto
- *  - Todos os vídeos MP4 limpos (Principal + Criadores UGC) com player sob demanda
- *  - Download direto do MP4 renomeado para o TikTok Ads Manager
- *  - Link UTM limpo (/produto-ID), URL MP4 limpa e Copy/Headline pronta para anúncio
- *  - Controle de status de campanha por produto (Fila / Testando / Rodando)
+ * STONE SHOP CORE — CENTRAL DE VÍDEOS TIKTOK ADS (DESIGN BENTO OBSIDIAN PRO)
+ * Fiel à tela "Order list" da referência:
+ *  - 4 Pastel-Cap Bento Cards no topo (Azul Periwinkle / Pêssego / Amarelo / Menta)
+ *  - Busca pill + Exportar + Ordenar + Botão Branco Puro "+ Copiar Pacote Ads"
+ *  - Modo Visual Bento Cards (c/ player sob demanda + troca de criativos) E Modo Tabela Limpa ("Order list")
+ *  - Download MP4 renomeado, Link UTM limpo, Copy + Kit Ads em 1 clique
  */
 (function () {
   const STORAGE_STATUS_KEY = 'STONE_ADS_CAMPAIGN_STATUS_V1';
@@ -14,11 +13,11 @@
   let adsManifest = null;
   let adsStatusMap = {};
   let adsFavMap = {};
-  let adsActiveVideoIdx = {}; // productId -> index inside buildVideoList(prod)
-  let adsFilterChip = 'new_bf'; // padrão: lançamentos Black Friday primeiro, mas 1 clique mostra todos
+  let adsActiveVideoIdx = {};
+  let adsFilterChip = 'new_bf';
   let adsSortBy = 'newest';
   let adsCategoryFilter = 'todas';
-  let currentKitProdId = null;
+  let adsViewMode = 'cards'; // 'cards' | 'table'
 
   function esc(str) {
     if (str === null || str === undefined) return '';
@@ -58,7 +57,7 @@
         list.push({
           slot: 'principal',
           label: 'Principal Ads',
-          badge: '🏆 PRINCIPAL ADS',
+          badge: 'Principal Ads',
           url,
           poster: prod.video.poster || prod.img || 'logo.png',
           duration: prod.video.duration || '',
@@ -76,7 +75,7 @@
       list.push({
         slot: `ugc_${idx + 1}`,
         label: `UGC #${idx + 1}`,
-        badge: `📱 UGC #${idx + 1}`,
+        badge: `UGC #${idx + 1}`,
         url,
         poster: c.poster || c.avatar || prod.img || 'logo.png',
         duration: '',
@@ -139,9 +138,9 @@
   }
 
   function getStatusMeta(st) {
-    if (st === 'running') return { key: 'running', label: '🟢 Rodando Ads', cls: 'st-running' };
-    if (st === 'testing') return { key: 'testing', label: '🟡 Em Teste', cls: 'st-testing' };
-    return { key: 'idle', label: '⚪ Na Fila', cls: 'st-idle' };
+    if (st === 'running') return { key: 'running', label: 'Rodando', cls: 'st-running', pillBg: 'rgba(110,231,168,0.16)', pillCol: '#6ee7a8' };
+    if (st === 'testing') return { key: 'testing', label: 'Em teste', cls: 'st-testing', pillBg: 'rgba(246,157,114,0.18)', pillCol: '#f69d72' };
+    return { key: 'idle', label: 'Na fila', cls: 'st-idle', pillBg: 'rgba(255,255,255,0.08)', pillCol: '#a1a1aa' };
   }
 
   function injectAdsStyles() {
@@ -149,112 +148,121 @@
     const st = document.createElement('style');
     st.id = 'ads-studio-styles';
     st.textContent = `
-      .ads-hero {
-        background: linear-gradient(135deg, rgba(254, 44, 85, 0.14) 0%, rgba(14, 19, 31, 0.96) 55%, rgba(37, 244, 238, 0.08) 100%);
-        border: 1px solid rgba(254, 44, 85, 0.28);
-        border-radius: 16px;
-        padding: 18px;
-        margin-bottom: 16px;
+      .ads-bento-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .ads-bento-title {
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: -0.6px;
+        color: #ffffff;
+        line-height: 1.15;
+      }
+      .ads-bento-sub {
+        font-size: 13px;
+        color: #8a8f98;
+        margin-top: 4px;
+      }
+
+      /* Barra de controle idêntica à tela "Order list" */
+      .ads-bar-row {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 14px;
+        gap: 12px;
+        margin-bottom: 12px;
       }
-      .ads-hero-title {
-        font-size: 19px;
-        font-weight: 800;
-        letter-spacing: -0.4px;
+      .ads-bar-left {
         display: flex;
         align-items: center;
-        gap: 9px;
-        flex-wrap: wrap;
+        gap: 12px;
+        flex: 1;
+        min-width: 240px;
       }
-      .ads-live-pill {
-        font-size: 10px;
-        font-weight: 800;
-        padding: 3px 9px;
+      .ads-search-pill {
+        position: relative;
+        flex: 1;
+        max-width: 360px;
+      }
+      .ads-search-pill svg {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6b7280;
+        pointer-events: none;
+      }
+      .ads-search-pill input {
+        width: 100%;
+        height: 40px;
+        background: #16161a;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 999px;
-        background: #fe2c55;
-        color: #fff;
-        letter-spacing: 0.6px;
-        text-transform: uppercase;
+        padding: 0 16px 0 40px;
+        color: #ffffff;
+        font-size: 13px;
+        font-family: inherit;
+        outline: none;
       }
-      .ads-hero-sub {
-        font-size: 12.5px;
-        color: #cbd5e1;
-        margin-top: 4px;
-        max-width: 680px;
-      }
-      .ads-hero-actions {
+      .ads-search-pill input:focus { border-color: #638cff; }
+
+      .ads-bar-right {
         display: flex;
+        align-items: center;
         gap: 8px;
         flex-wrap: wrap;
       }
-      .ads-mini-kpis {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-bottom: 16px;
-      }
-      @media (min-width: 768px) {
-        .ads-mini-kpis { grid-template-columns: repeat(4, 1fr); }
-      }
-      .ads-kpi {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 12px 14px;
-      }
-      .ads-kpi-num { font-size: 20px; font-weight: 800; color: #f8fafc; line-height: 1.15; }
-      .ads-kpi-lbl { font-size: 11px; color: #94a3b8; margin-top: 3px; font-weight: 600; }
-
-      .ads-toolbar {
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 14px;
-        margin-bottom: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-      .ads-toolbar-top {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-      @media (min-width: 768px) {
-        .ads-toolbar-top { grid-template-columns: 1fr 200px 190px; }
-      }
-      .ads-chips {
-        display: flex;
-        gap: 7px;
-        overflow-x: auto;
-        padding-bottom: 2px;
-        scrollbar-width: none;
-      }
-      .ads-chips::-webkit-scrollbar { display: none; }
-      .ads-chip {
-        background: #0b101b;
-        border: 1px solid rgba(255,255,255,0.1);
-        color: #cbd5e1;
+      .ads-select-pill {
+        height: 38px;
+        background: #16161a;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 999px;
+        padding: 0 14px;
+        color: #e5e7eb;
         font-size: 12px;
         font-weight: 700;
-        padding: 6px 12px;
+        font-family: inherit;
+        outline: none;
+        cursor: pointer;
+      }
+
+      /* Chips de filtro minimalistas Obsidian */
+      .ads-chips-bar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        margin-bottom: 16px;
+        scrollbar-width: none;
+      }
+      .ads-chips-bar::-webkit-scrollbar { display: none; }
+      .ads-chip {
+        background: #16161a;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: #9ca3af;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 7px 14px;
         border-radius: 999px;
         cursor: pointer;
         white-space: nowrap;
-        transition: all 0.16s ease;
+        transition: all 0.15s ease;
       }
-      .ads-chip:hover { border-color: rgba(254, 44, 85, 0.5); color: #fff; }
+      .ads-chip:hover { color: #ffffff; border-color: rgba(255, 255, 255, 0.2); }
       .ads-chip.active {
-        background: #fe2c55;
-        border-color: #fe2c55;
-        color: #fff;
-        box-shadow: 0 2px 12px rgba(254, 44, 85, 0.32);
+        background: #ffffff;
+        border-color: #ffffff;
+        color: #09090b;
       }
 
+      /* Grid Bento de Cards de Vídeo Ads */
       .ads-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -268,41 +276,38 @@
       }
 
       .ads-card {
-        background: var(--bg-card);
-        border: 1.5px solid var(--border);
-        border-radius: 16px;
+        background: #16161a;
+        border: 1px solid rgba(255, 255, 255, 0.065);
+        border-radius: 22px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+        padding: 15px;
+        gap: 12px;
+        transition: transform 0.16s ease, border-color 0.16s ease;
       }
       .ads-card:hover {
-        border-color: rgba(254, 44, 85, 0.4);
+        border-color: rgba(255, 255, 255, 0.16);
         transform: translateY(-2px);
-        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.42);
       }
       .ads-card.st-running {
-        border-color: rgba(16, 185, 129, 0.55);
-        box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.2);
+        border-color: rgba(110, 231, 168, 0.45);
       }
       .ads-card.st-testing {
-        border-color: rgba(245, 158, 11, 0.5);
+        border-color: rgba(246, 157, 114, 0.45);
       }
 
       .ads-card-head {
-        padding: 13px 14px 11px;
         display: flex;
         gap: 11px;
         align-items: flex-start;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
       }
       .ads-prod-thumb {
-        width: 56px;
-        height: 56px;
-        border-radius: 10px;
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
         object-fit: cover;
-        background: #fff;
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: #ffffff;
         flex-shrink: 0;
       }
       .ads-prod-meta {
@@ -317,42 +322,30 @@
         align-items: center;
         justify-content: space-between;
         gap: 6px;
-        flex-wrap: wrap;
       }
       .ads-id-tag {
         font-family: 'JetBrains Mono', monospace;
         font-size: 11px;
         font-weight: 800;
-        color: #fff;
-        background: #1f293d;
-        padding: 2px 7px;
-        border-radius: 6px;
+        color: #d4d4d8;
+        background: #222229;
+        padding: 2px 8px;
+        border-radius: 999px;
       }
       .ads-status-btn {
-        font-size: 10.5px;
+        font-size: 11px;
         font-weight: 800;
-        padding: 3px 8px;
+        padding: 3px 10px;
         border-radius: 999px;
-        border: 1px solid rgba(255,255,255,0.12);
-        background: #0b101b;
-        color: #94a3b8;
+        border: none;
         cursor: pointer;
-        transition: all 0.15s ease;
+        transition: opacity 0.15s ease;
       }
-      .ads-status-btn.st-running {
-        background: rgba(16, 185, 129, 0.16);
-        border-color: rgba(16, 185, 129, 0.45);
-        color: #34d399;
-      }
-      .ads-status-btn.st-testing {
-        background: rgba(245, 158, 11, 0.16);
-        border-color: rgba(245, 158, 11, 0.45);
-        color: #fbbf24;
-      }
+      .ads-status-btn:hover { opacity: 0.85; }
       .ads-prod-name {
         font-size: 13.5px;
-        font-weight: 800;
-        color: #f8fafc;
+        font-weight: 700;
+        color: #ffffff;
         line-height: 1.32;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -361,36 +354,30 @@
       }
       .ads-price-strip {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         gap: 7px;
         flex-wrap: wrap;
+        margin-top: 2px;
       }
       .ads-price-now {
         font-family: 'JetBrains Mono', monospace;
         font-size: 16px;
         font-weight: 800;
-        color: #34d399;
+        color: #ffffff;
       }
       .ads-price-old {
         font-size: 11px;
-        color: #64748b;
+        color: #6b7280;
         text-decoration: line-through;
       }
-      .ads-disc-pill {
-        font-size: 10px;
-        font-weight: 800;
-        padding: 1px 6px;
-        border-radius: 4px;
-        background: rgba(254, 44, 85, 0.16);
-        color: #ff6482;
-      }
 
-      /* Stage de Vídeo Ads */
+      /* Palco de Vídeo Bento Arredondado */
       .ads-video-stage {
         position: relative;
         width: 100%;
-        aspect-ratio: 16 / 11;
-        background: #05070c;
+        aspect-ratio: 16 / 10;
+        border-radius: 16px;
+        background: #09090b;
         overflow: hidden;
         cursor: pointer;
       }
@@ -421,22 +408,22 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
-        background: linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.12) 45%, rgba(0,0,0,0.72) 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.08) 45%, rgba(0,0,0,0.72) 100%);
       }
       .ads-play-circle {
-        width: 54px;
-        height: 54px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        background: rgba(254, 44, 85, 0.92);
-        color: #fff;
+        background: #ffffff;
+        color: #09090b;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 0 0 6px rgba(254, 44, 85, 0.24), 0 8px 20px rgba(0,0,0,0.5);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
         transition: transform 0.16s ease;
       }
       .ads-video-stage:hover .ads-play-circle { transform: scale(1.08); }
-      .ads-stage-top-badges {
+      .ads-stage-top {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -447,66 +434,37 @@
         pointer-events: none;
         z-index: 2;
       }
-      .ads-vid-badge {
+      .ads-stage-pill {
         font-size: 10.5px;
         font-weight: 800;
-        padding: 3px 8px;
-        border-radius: 6px;
-        background: rgba(7, 9, 14, 0.82);
+        padding: 3px 9px;
+        border-radius: 999px;
+        background: rgba(9, 9, 11, 0.8);
         backdrop-filter: blur(8px);
-        color: #fff;
-        border: 1px solid rgba(255,255,255,0.16);
+        color: #ffffff;
       }
-      .ads-vid-count-badge {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 10.5px;
-        font-weight: 700;
-        padding: 3px 8px;
-        border-radius: 6px;
-        background: rgba(16, 185, 129, 0.9);
-        color: #03150e;
-      }
-      .ads-stage-bottom-bar {
-        position: absolute;
-        bottom: 8px;
-        left: 10px;
-        right: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 8px;
-        pointer-events: none;
-        z-index: 2;
-      }
-      .ads-author-pill {
-        font-size: 11px;
-        font-weight: 700;
-        color: #f8fafc;
-        text-shadow: 0 1px 4px rgba(0,0,0,0.9);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+      .ads-stage-pill.blue {
+        background: #638cff;
+        color: #09090b;
       }
 
-      /* Seletor de Criativos do Produto */
+      /* Seletor horizontal de criativos */
       .ads-variants-bar {
-        padding: 10px 12px 6px;
         display: flex;
         gap: 6px;
         overflow-x: auto;
-        background: rgba(7, 9, 14, 0.6);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        scrollbar-width: thin;
+        scrollbar-width: none;
       }
+      .ads-variants-bar::-webkit-scrollbar { display: none; }
       .ads-vid-pill {
         display: inline-flex;
         align-items: center;
         gap: 5px;
-        padding: 4px 9px;
-        border-radius: 7px;
-        background: #131b2e;
-        border: 1px solid rgba(255, 255, 255, 0.09);
-        color: #94a3b8;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: #111114;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: #9ca3af;
         font-size: 11px;
         font-weight: 700;
         cursor: pointer;
@@ -514,58 +472,50 @@
         flex-shrink: 0;
         transition: all 0.14s ease;
       }
-      .ads-vid-pill:hover { color: #fff; border-color: rgba(255,255,255,0.22); }
+      .ads-vid-pill:hover { color: #ffffff; }
       .ads-vid-pill.active {
-        background: rgba(254, 44, 85, 0.18);
-        border-color: #fe2c55;
-        color: #fff;
+        background: #638cff;
+        border-color: #638cff;
+        color: #09090b;
       }
       .ads-vid-pill img {
-        width: 18px;
-        height: 18px;
-        border-radius: 4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
         object-fit: cover;
       }
 
-      /* Ações do Card Ads */
-      .ads-card-body {
-        padding: 12px 14px 14px;
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-        flex: 1;
-        justify-content: flex-end;
-      }
       .ads-url-box {
         display: flex;
         align-items: center;
         gap: 6px;
-        background: #07090e;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 8px;
-        padding: 5px 8px;
+        background: #111114;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 999px;
+        padding: 5px 11px;
       }
       .ads-url-input {
         flex: 1;
         background: transparent;
         border: none;
-        color: #94a3b8;
+        color: #9ca3af;
         font-family: 'JetBrains Mono', monospace;
         font-size: 11px;
         outline: none;
         min-width: 0;
       }
-      .ads-btn-grid {
+
+      .ads-actions-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 7px;
+        gap: 8px;
       }
       .ads-btn {
-        height: 36px;
-        border-radius: 9px;
-        border: 1px solid var(--border);
-        background: #141c2e;
-        color: #f8fafc;
+        height: 38px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: #1f1f26;
+        color: #ffffff;
         font-size: 12px;
         font-weight: 700;
         cursor: pointer;
@@ -575,33 +525,30 @@
         gap: 6px;
         text-decoration: none;
         transition: all 0.15s ease;
-        padding: 0 10px;
+        padding: 0 12px;
       }
-      .ads-btn:hover { background: #1d2840; border-color: rgba(255,255,255,0.2); }
-      .ads-btn-download {
-        background: linear-gradient(135deg, #fe2c55, #e11d48);
-        border-color: #fe2c55;
-        color: #fff;
+      .ads-btn:hover { background: #2a2a33; }
+      .ads-btn-white {
+        background: #ffffff;
+        border-color: #ffffff;
+        color: #09090b;
         font-weight: 800;
       }
-      .ads-btn-download:hover { filter: brightness(1.1); }
-      .ads-btn-green {
-        background: rgba(16, 185, 129, 0.16);
-        border-color: rgba(16, 185, 129, 0.4);
-        color: #34d399;
+      .ads-btn-white:hover { background: #e5e7eb; }
+      .ads-btn-blue {
+        background: rgba(99, 140, 255, 0.16);
+        border-color: rgba(99, 140, 255, 0.35);
+        color: #93c5fd;
       }
-      .ads-btn-green:hover { background: rgba(16, 185, 129, 0.26); color: #6ee7b7; }
-      .ads-btn-full {
-        grid-column: 1 / -1;
-      }
+      .ads-btn-blue:hover { background: rgba(99, 140, 255, 0.26); color: #ffffff; }
 
-      /* Modal Kit Subida TikTok Ads */
+      /* Modal Kit Subida TikTok Ads — Bento Obsidian */
       .ads-kit-modal {
         position: fixed;
         inset: 0;
         z-index: 100000;
-        background: rgba(3, 6, 12, 0.86);
-        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.82);
+        backdrop-filter: blur(12px);
         display: none;
         align-items: center;
         justify-content: center;
@@ -610,31 +557,31 @@
       .ads-kit-modal.open { display: flex; }
       .ads-kit-box {
         width: 100%;
-        max-width: 780px;
+        max-width: 800px;
         max-height: 92dvh;
-        background: #0e131f;
-        border: 1px solid rgba(254, 44, 85, 0.35);
-        border-radius: 18px;
+        background: #16161a;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.72);
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.78);
       }
       .ads-kit-head {
-        padding: 15px 18px;
-        background: #121929;
-        border-bottom: 1px solid var(--border);
+        padding: 18px 22px;
+        background: #111114;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 10px;
       }
       .ads-kit-body {
-        padding: 16px 18px;
+        padding: 20px 22px;
         overflow-y: auto;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 18px;
       }
       @media (min-width: 700px) {
         .ads-kit-body { grid-template-columns: 240px 1fr; }
@@ -642,14 +589,14 @@
       .ads-kit-textarea {
         width: 100%;
         min-height: 112px;
-        background: #07090e;
-        border: 1px solid rgba(255,255,255,0.12);
-        border-radius: 10px;
+        background: #09090b;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
         color: #f8fafc;
-        padding: 10px 12px;
+        padding: 12px 14px;
         font-family: inherit;
         font-size: 12.5px;
-        line-height: 1.48;
+        line-height: 1.5;
         resize: vertical;
       }
     `;
@@ -665,10 +612,10 @@
       <div class="ads-kit-box" onclick="event.stopPropagation()">
         <div class="ads-kit-head">
           <div style="min-width:0;">
-            <div style="font-size:15px; font-weight:800; color:#fff;" id="adsKitTitle">🚀 Kit Subida TikTok Ads</div>
-            <div style="font-size:11.5px; color:#94a3b8; margin-top:2px;" id="adsKitSub">Pronto para colar no TikTok Ads Manager</div>
+            <div style="font-size:16px; font-weight:800; color:#fff;" id="adsKitTitle">Kit Subida TikTok Ads</div>
+            <div style="font-size:12px; color:#8a8f98; margin-top:2px;" id="adsKitSub">Pronto para colar no TikTok Ads Manager</div>
           </div>
-          <button type="button" onclick="window.closeAdsKitModal()" style="background:#1e293b; border:1px solid rgba(255,255,255,0.15); color:#fff; width:34px; height:34px; border-radius:8px; cursor:pointer; font-size:16px;">✕</button>
+          <button type="button" onclick="window.closeAdsKitModal()" class="arrow-circle dark" style="width:34px; height:34px; font-size:14px;">✕</button>
         </div>
         <div class="ads-kit-body" id="adsKitBody"></div>
       </div>
@@ -723,40 +670,101 @@
     const prods = adsManifest.products || [];
     const totalProds = prods.filter((p) => buildVideoList(p).length > 0).length;
     const totalVids = prods.reduce((acc, p) => acc + buildVideoList(p).length, 0);
+    const newBf = prods.filter((p) => p.is_new_bf).length;
     const runningCount = Object.values(adsStatusMap).filter((s) => s === 'running').length;
     const testingCount = Object.values(adsStatusMap).filter((s) => s === 'testing').length;
 
     const setTxt = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
     setTxt('adsKpiProds', totalProds);
-    setTxt('adsKpiVids', totalVids);
-    setTxt('adsKpiRunning', runningCount);
+    setTxt('adsKpiVidsSub', `${totalVids} MP4s sem marca`);
     setTxt('adsKpiTesting', testingCount);
+    setTxt('adsKpiNewBf', newBf);
+    setTxt('adsKpiRunning', runningCount);
     setTxt('badgeAdsTop', totalVids);
     setTxt('bNavAdsBadge', totalProds);
     setTxt('kpiAdsTotal', `${totalVids} vídeos`);
   }
 
-  function renderAdsGrid() {
-    const grid = document.getElementById('adsVideosGrid');
-    if (!grid) return;
+  function renderAdsListOrGrid() {
+    const host = document.getElementById('adsVideosGridHost');
+    if (!host) return;
 
     const list = getFilteredAdsProducts();
     const countLbl = document.getElementById('adsShowingCount');
-    if (countLbl) countLbl.textContent = `Exibindo ${list.length} produto(s) prontos para subir no TikTok Ads`;
+    if (countLbl) countLbl.textContent = `${list.length} produto(s)`;
 
     if (!list.length) {
-      grid.innerHTML = `
-        <div style="grid-column: 1 / -1; text-align:center; padding:48px 16px; background:var(--bg-card); border:1px dashed var(--border); border-radius:14px; color:#94a3b8;">
-          <div style="font-size:34px; margin-bottom:8px;">🎬</div>
-          <div style="font-size:15px; font-weight:800; color:#f8fafc;">Nenhum produto encontrado neste filtro</div>
-          <div style="font-size:12.5px; margin-top:4px;">Troque o filtro acima ou clique em "Todos os Produtos" para ver os 85 produtos com vídeo.</div>
-          <button type="button" class="ads-btn ads-btn-download" style="margin-top:14px;" onclick="window.setAdsFilterChip('all')">Mostrar Todos os Produtos</button>
+      host.innerHTML = `
+        <div style="text-align:center; padding:48px 16px; background:#16161a; border:1px solid rgba(255,255,255,0.06); border-radius:22px; color:#9ca3af;">
+          <div style="font-size:32px; margin-bottom:8px;">🎬</div>
+          <div style="font-size:15px; font-weight:800; color:#ffffff;">Nenhum produto encontrado neste filtro</div>
+          <div style="font-size:12.5px; margin-top:4px;">Clique abaixo para ver todos os produtos com vídeo pronto pro TikTok Ads.</div>
+          <button type="button" class="bento-white-pill-btn" style="margin-top:14px;" onclick="window.setAdsFilterChip('all')">Mostrar Todos os Produtos</button>
         </div>
       `;
       return;
     }
 
-    grid.innerHTML = list.map((p) => {
+    // MODO TABELA LIMPA ("ORDER LIST" DA REFERÊNCIA)
+    if (adsViewMode === 'table') {
+      host.innerHTML = `
+        <div class="bento-table-wrap">
+          <table class="bento-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço PIX</th>
+                <th>Vídeo Ads</th>
+                <th>Status</th>
+                <th style="text-align:right;">Subir no TikTok Ads</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${list.map((p) => {
+                const { vids, current } = getSelectedVideo(p);
+                const price = getEffectivePrice(p);
+                const stMeta = getStatusMeta(adsStatusMap[String(p.id)] || 'idle');
+                return `
+                  <tr>
+                    <td><span class="ads-id-tag">#${p.id}</span></td>
+                    <td>
+                      <div style="display:flex; align-items:center; gap:10px; max-width:310px;">
+                        <img src="${esc(p.img || 'logo.png')}" style="width:38px; height:38px; border-radius:10px; object-fit:cover; background:#fff; flex-shrink:0;" loading="lazy" onerror="this.src='logo.png'">
+                        <div style="min-width:0;">
+                          <div style="font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${esc(p.title)}">${esc(p.title)}</div>
+                          <div style="font-size:11px; color:#6b7280;">${vids.length} criativos · ${esc(current.catboxId)}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td style="color:#9ca3af; font-size:12px;">${esc(p.category)}</td>
+                    <td style="font-family:'JetBrains Mono',monospace; font-weight:800; color:#fff; white-space:nowrap;">${formatBRL(price)}</td>
+                    <td>
+                      <button type="button" class="ads-vid-pill active" onclick="window.openAdsKitModal(${p.id})">▶ Assistir (${vids.length})</button>
+                    </td>
+                    <td>
+                      <button type="button" class="ads-status-btn" style="background:${stMeta.pillBg}; color:${stMeta.pillCol};" onclick="window.cycleAdsStatus(${p.id})">${stMeta.label} ▾</button>
+                    </td>
+                    <td style="text-align:right; white-space:nowrap;">
+                      <div style="display:inline-flex; gap:6px;">
+                        <button type="button" class="bento-white-pill-btn" style="height:32px; padding:0 12px; font-size:11.5px;" id="adsDlBtn-${p.id}" onclick="window.downloadAdsVideo(${p.id})">⬇️ MP4</button>
+                        <button type="button" class="bento-dark-pill-btn" style="height:32px; padding:0 11px; font-size:11.5px;" onclick="window.copyAdsUtm(${p.id})">🔗 UTM</button>
+                        <button type="button" class="bento-dark-pill-btn" style="height:32px; padding:0 11px; font-size:11.5px;" onclick="window.openAdsKitModal(${p.id})">✍️ Kit</button>
+                      </div>
+                    </td>
+                  </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+      `;
+      return;
+    }
+
+    // MODO CARDS BENTO OBSIDIAN
+    host.innerHTML = `<div class="ads-grid" id="adsVideosGrid">${list.map((p) => {
       const { vids, idx, current } = getSelectedVideo(p);
       const price = getEffectivePrice(p);
       const origStr = p.price_original_str || (p.preco_antigo ? formatBRL(p.preco_antigo) : '');
@@ -769,78 +777,65 @@
             <img src="${esc(p.img || 'logo.png')}" alt="${esc(p.title)}" class="ads-prod-thumb" loading="lazy" onerror="this.src='logo.png'">
             <div class="ads-prod-meta">
               <div class="ads-prod-top-row">
-                <div style="display:flex; align-items:center; gap:5px; flex-wrap:wrap;">
+                <div style="display:flex; align-items:center; gap:6px;">
                   <span class="ads-id-tag">#${p.id}</span>
-                  ${p.is_new_bf ? `<span style="font-size:9.5px; font-weight:800; padding:2px 6px; border-radius:5px; background:rgba(254,44,85,0.18); color:#ff6482;">BF NOVO</span>` : ''}
-                  <span style="font-size:10px; color:#94a3b8; font-weight:600;">${esc(p.category)}</span>
+                  <button type="button" class="ads-status-btn" style="background:${stMeta.pillBg}; color:${stMeta.pillCol};" onclick="window.cycleAdsStatus(${p.id})" title="Alternar status: Fila → Em teste → Rodando">${stMeta.label}</button>
                 </div>
-                <button type="button" class="ads-status-btn ${stMeta.cls}" onclick="window.cycleAdsStatus(${p.id})" title="Clique para alternar: Fila → Em Teste → Rodando Ads">${stMeta.label}</button>
+                <a href="/produto-${p.id}?owner=1" target="_blank" class="arrow-circle dark" style="width:30px; height:30px; font-size:13px;" title="Abrir página do produto">↗</a>
               </div>
               <div class="ads-prod-name" title="${esc(p.title)}">${esc(p.title)}</div>
               <div class="ads-price-strip">
                 <span class="ads-price-now">${formatBRL(price)}</span>
                 ${origStr ? `<span class="ads-price-old">${esc(origStr)}</span>` : ''}
-                ${p.discount_badge ? `<span class="ads-disc-pill">${esc(p.discount_badge)}</span>` : ''}
+                ${p.discount_badge ? `<span class="delta-pill up">${esc(p.discount_badge)}</span>` : ''}
               </div>
             </div>
           </div>
 
-          <!-- Palco do Vídeo (carrega MP4 sob demanda ao clicar em Play) -->
           <div class="ads-video-stage" id="adsStage-${p.id}" onclick="window.playInlineAdsVideo(${p.id})">
-            <div class="ads-stage-top-badges">
-              <span class="ads-vid-badge">${esc(current.badge)}${isFav ? ' ⭐' : ''}</span>
-              <span class="ads-vid-count-badge">${vids.length} ${vids.length === 1 ? 'vídeo' : 'vídeos'}</span>
+            <div class="ads-stage-top">
+              <span class="ads-stage-pill">${esc(current.badge)}${isFav ? ' ★' : ''}</span>
+              <span class="ads-stage-pill blue">${vids.length} ${vids.length === 1 ? 'vídeo' : 'vídeos'}</span>
             </div>
             <img src="${esc(current.poster)}" alt="Vídeo Ads ${esc(p.title)}" class="ads-poster" loading="lazy" onerror="this.src='${esc(p.img || 'logo.png')}'">
             <div class="ads-play-overlay">
               <div class="ads-play-circle">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
               </div>
-              <span style="font-size:11px; font-weight:700; color:#fff; background:rgba(0,0,0,0.65); padding:3px 9px; border-radius:999px;">Assistir Criativo (${esc(current.catboxId)})</span>
-            </div>
-            <div class="ads-stage-bottom-bar">
-              <span class="ads-author-pill">${esc(current.author)}</span>
+              <span class="ads-stage-pill" style="font-size:10.5px;">Assistir · ${esc(current.catboxId)}</span>
             </div>
           </div>
 
-          <!-- Barra de troca de Criativos do Produto -->
           <div class="ads-variants-bar">
             ${vids.map((v, vIdx) => `
-              <button type="button" class="ads-vid-pill ${vIdx === idx ? 'active' : ''}" onclick="window.selectAdsVideo(${p.id}, ${vIdx})" title="${esc(v.author)} — ${esc(v.catboxId)}">
+              <button type="button" class="ads-vid-pill ${vIdx === idx ? 'active' : ''}" onclick="window.selectAdsVideo(${p.id}, ${vIdx})" title="${esc(v.author)}">
                 <img src="${esc(v.poster)}" alt="" loading="lazy" onerror="this.src='logo.png'">
-                <span>${vIdx === 0 ? '🏆 Principal' : `UGC #${vIdx}`}</span>
+                <span>${vIdx === 0 ? 'Principal' : `UGC #${vIdx}`}</span>
               </button>
             `).join('')}
           </div>
 
-          <div class="ads-card-body">
-            <!-- Link MP4 Limpo -->
-            <div class="ads-url-box">
-              <span style="font-size:10px; font-weight:800; color:#fe2c55; flex-shrink:0;">MP4</span>
-              <input type="text" readonly class="ads-url-input" value="${esc(current.url)}" onclick="this.select()">
-              <button type="button" onclick="window.copyAdsText('${esc(current.url)}', 'Link MP4 limpo copiado!')" title="Copiar link MP4" style="background:none; border:none; color:#cbd5e1; cursor:pointer; font-size:13px; padding:2px 4px;">📋</button>
-              <button type="button" onclick="window.toggleFavAdsVideo(${p.id})" title="Fixar este vídeo como Criativo Favorito do produto" style="background:none; border:none; color:${isFav ? '#fbbf24' : '#64748b'}; cursor:pointer; font-size:14px; padding:2px 4px;">★</button>
-            </div>
+          <div class="ads-url-box">
+            <span style="font-size:10px; font-weight:800; color:#638cff; flex-shrink:0;">MP4</span>
+            <input type="text" readonly class="ads-url-input" value="${esc(current.url)}" onclick="this.select()">
+            <button type="button" onclick="window.copyAdsText('${esc(current.url)}', 'Link MP4 limpo copiado!')" title="Copiar link MP4" style="background:none; border:none; color:#cbd5e1; cursor:pointer; font-size:13px;">📋</button>
+            <button type="button" onclick="window.toggleFavAdsVideo(${p.id})" title="Fixar criativo favorito" style="background:none; border:none; color:${isFav ? '#fde068' : '#6b7280'}; cursor:pointer; font-size:14px;">★</button>
+          </div>
 
-            <!-- Botões de Ação Rápida TikTok Ads -->
-            <div class="ads-btn-grid">
-              <button type="button" class="ads-btn ads-btn-download" id="adsDlBtn-${p.id}" onclick="window.downloadAdsVideo(${p.id})">
-                ⬇️ Baixar MP4 Ads
-              </button>
-              <button type="button" class="ads-btn ads-btn-green" onclick="window.copyAdsUtm(${p.id})">
-                🔗 Copiar Link UTM
-              </button>
-              <button type="button" class="ads-btn" onclick="window.openAdsKitModal(${p.id})">
-                ✍️ Copy + Kit Ads
-              </button>
-              <a href="/produto-${p.id}?owner=1" target="_blank" class="ads-btn">
-                🛍️ Ver Página ↗
-              </a>
-            </div>
+          <div class="ads-actions-row">
+            <button type="button" class="ads-btn ads-btn-white" id="adsDlBtn-${p.id}" onclick="window.downloadAdsVideo(${p.id})">
+              ⬇️ Baixar MP4
+            </button>
+            <button type="button" class="ads-btn ads-btn-blue" onclick="window.copyAdsUtm(${p.id})">
+              🔗 Copiar UTM
+            </button>
+            <button type="button" class="ads-btn" style="grid-column:1 / -1;" onclick="window.openAdsKitModal(${p.id})">
+              ✍️ Abrir Copy + Kit TikTok Ads
+            </button>
           </div>
         </article>
       `;
-    }).join('');
+    }).join('')}</div>`;
   }
 
   window.playInlineAdsVideo = function (pid) {
@@ -851,16 +846,13 @@
     if (!current) return;
     const stage = document.getElementById(`adsStage-${pid}`);
     if (!stage || stage.querySelector('video')) return;
-
     stage.onclick = null;
-    stage.innerHTML = `
-      <video controls autoplay playsinline src="${esc(current.url)}" poster="${esc(current.poster)}" style="width:100%; height:100%; object-fit:contain; background:#000;"></video>
-    `;
+    stage.innerHTML = `<video controls autoplay playsinline src="${esc(current.url)}" poster="${esc(current.poster)}" style="width:100%; height:100%; object-fit:contain; background:#000;"></video>`;
   };
 
   window.selectAdsVideo = function (pid, vIdx) {
     adsActiveVideoIdx[pid] = Number(vIdx);
-    renderAdsGrid();
+    renderAdsListOrGrid();
   };
 
   window.toggleFavAdsVideo = function (pid) {
@@ -869,17 +861,16 @@
     if (!prod) return;
     const { current } = getSelectedVideo(prod);
     if (!current) return;
-
     if (adsFavMap[String(pid)] === current.url) {
       delete adsFavMap[String(pid)];
       window.showToast && window.showToast(`Favorito removido do Produto #${pid}`, 'info');
     } else {
       adsFavMap[String(pid)] = current.url;
-      window.showToast && window.showToast(`⭐ Vídeo fixado como Criativo Favorito do #${pid}!`, 'success');
+      window.showToast && window.showToast(`★ Criativo fixado como favorito do #${pid}!`, 'success');
     }
     saveLocalState();
     syncProductAdsOverride(pid);
-    renderAdsGrid();
+    renderAdsListOrGrid();
   };
 
   window.cycleAdsStatus = function (pid) {
@@ -889,9 +880,8 @@
     saveLocalState();
     syncProductAdsOverride(pid);
     updateAdsKpis();
-    renderAdsGrid();
-    const meta = getStatusMeta(next);
-    window.showToast && window.showToast(`Produto #${pid}: ${meta.label}`, 'success');
+    renderAdsListOrGrid();
+    window.showToast && window.showToast(`Produto #${pid}: ${getStatusMeta(next).label}`, 'success');
   };
 
   function syncProductAdsOverride(pid) {
@@ -901,10 +891,7 @@
       body: JSON.stringify({
         action: 'save_product_override',
         productId: pid,
-        patch: {
-          ads_status: adsStatusMap[String(pid)] || 'idle',
-          ads_fav_video: adsFavMap[String(pid)] || '',
-        },
+        patch: { ads_status: adsStatusMap[String(pid)] || 'idle', ads_fav_video: adsFavMap[String(pid)] || '' },
       }),
     }).catch(() => {});
   }
@@ -922,8 +909,7 @@
     const prod = adsManifest.products.find((x) => x.id === Number(pid));
     if (!prod) return;
     const { idx } = getSelectedVideo(prod);
-    const utm = buildUtmUrl(prod, idx);
-    window.copyAdsText(utm, `🔗 Link TikTok Ads UTM do Produto #${pid} copiado!`);
+    window.copyAdsText(buildUtmUrl(prod, idx), `🔗 Link UTM do Produto #${pid} copiado!`);
   };
 
   window.downloadAdsVideo = async function (pid) {
@@ -937,10 +923,7 @@
     const origLabel = btn ? btn.innerHTML : '';
     const fileName = `StoneShop_Prod${prod.id}_${(prod.slug || 'produto').slice(0, 22)}_Ad${idx + 1}.mp4`;
 
-    if (btn) {
-      btn.disabled = true;
-      btn.innerHTML = '⏳ Baixando MP4...';
-    }
+    if (btn) { btn.disabled = true; btn.innerHTML = '⏳ Baixando...'; }
     try {
       const resp = await fetch(current.url, { mode: 'cors' });
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
@@ -958,10 +941,7 @@
       window.open(current.url, '_blank');
       window.showToast && window.showToast('Vídeo aberto em nova aba — clique em ⋮ → Fazer download.', 'info');
     } finally {
-      if (btn) {
-        btn.disabled = false;
-        btn.innerHTML = origLabel;
-      }
+      if (btn) { btn.disabled = false; btn.innerHTML = origLabel; }
     }
   };
 
@@ -969,58 +949,55 @@
     if (!adsManifest) return;
     const prod = adsManifest.products.find((x) => x.id === Number(pid));
     if (!prod) return;
-    currentKitProdId = prod.id;
-
     const { idx, current } = getSelectedVideo(prod);
     const copy = buildAdCopy(prod, idx);
     const price = getEffectivePrice(prod);
 
-    document.getElementById('adsKitTitle').textContent = `🚀 Kit TikTok Ads — #${prod.id} ${prod.title.slice(0, 48)}`;
+    document.getElementById('adsKitTitle').textContent = `#${prod.id} — ${prod.title.slice(0, 52)}`;
     document.getElementById('adsKitSub').textContent = `PIX ${formatBRL(price)} · ${prod.discount_badge || ''} · Criativo #${idx + 1} (${current.catboxId})`;
 
     document.getElementById('adsKitBody').innerHTML = `
       <div style="display:flex; flex-direction:column; gap:10px;">
-        <div style="background:#000; border-radius:12px; overflow:hidden; aspect-ratio:9/15; border:1px solid rgba(255,255,255,0.12);">
+        <div style="background:#000; border-radius:16px; overflow:hidden; aspect-ratio:9/15; border:1px solid rgba(255,255,255,0.08);">
           <video controls playsinline preload="metadata" poster="${esc(current.poster)}" src="${esc(current.url)}" style="width:100%; height:100%; object-fit:contain;"></video>
         </div>
-        <button type="button" class="ads-btn ads-btn-download" style="width:100%; height:40px;" onclick="window.downloadAdsVideo(${prod.id})">⬇️ Baixar MP4 pro TikTok Ads</button>
-        <a href="/produto-${prod.id}?owner=1" target="_blank" class="ads-btn" style="width:100%;">🛍️ Abrir Página do Produto ↗</a>
+        <button type="button" class="bento-white-pill-btn" style="width:100%; height:42px;" onclick="window.downloadAdsVideo(${prod.id})">⬇️ Baixar MP4 pro TikTok Ads</button>
+        <a href="/produto-${prod.id}?owner=1" target="_blank" class="bento-dark-pill-btn" style="width:100%;">Abrir Página do Produto ↗</a>
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:12px;">
+      <div style="display:flex; flex-direction:column; gap:13px;">
         <div>
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
-            <label style="font-size:11.5px; font-weight:700; color:#94a3b8; text-transform:uppercase;">1. Link de Destino (URL com UTM TikTok)</label>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <label style="font-size:11.5px; font-weight:700; color:#9ca3af; text-transform:uppercase;">1. Link de Destino (UTM TikTok)</label>
             <button type="button" class="ads-vid-pill active" onclick="window.copyAdsText(document.getElementById('kitUtmInput').value, 'Link UTM copiado!')">Copiar URL</button>
           </div>
-          <input type="text" id="kitUtmInput" readonly class="form-control" style="height:38px; font-family:'JetBrains Mono',monospace; font-size:11.5px;" value="${esc(copy.utm)}" onclick="this.select()">
+          <input type="text" id="kitUtmInput" readonly class="form-control" style="height:40px; font-family:'JetBrains Mono',monospace; font-size:11.5px;" value="${esc(copy.utm)}" onclick="this.select()">
         </div>
 
         <div>
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
-            <label style="font-size:11.5px; font-weight:700; color:#94a3b8; text-transform:uppercase;">2. Headline / Chamada Curta</label>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <label style="font-size:11.5px; font-weight:700; color:#9ca3af; text-transform:uppercase;">2. Headline / Chamada Curta</label>
             <button type="button" class="ads-vid-pill active" onclick="window.copyAdsText(document.getElementById('kitHeadlineInput').value, 'Headline copiada!')">Copiar</button>
           </div>
-          <input type="text" id="kitHeadlineInput" class="form-control" style="height:38px; font-size:13px;" value="${esc(copy.headline)}">
+          <input type="text" id="kitHeadlineInput" class="form-control" style="height:40px; font-size:13px;" value="${esc(copy.headline)}">
         </div>
 
         <div>
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
-            <label style="font-size:11.5px; font-weight:700; color:#94a3b8; text-transform:uppercase;">3. Texto Principal do Anúncio (TikTok Ads)</label>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <label style="font-size:11.5px; font-weight:700; color:#9ca3af; text-transform:uppercase;">3. Texto Principal do Anúncio</label>
             <button type="button" class="ads-vid-pill active" onclick="window.copyAdsText(document.getElementById('kitCopyArea').value, 'Copy copiada!')">Copiar Texto</button>
           </div>
           <textarea id="kitCopyArea" class="ads-kit-textarea">${esc(copy.primaryText)}</textarea>
         </div>
 
-        <div style="background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.28); border-radius:10px; padding:10px 12px; font-size:12px; color:#cbd5e1; line-height:1.5;">
-          <strong style="color:#34d399;">✅ Checklist TikTok Ads Manager:</strong><br>
+        <div style="background:#111114; border:1px solid rgba(110,231,168,0.22); border-radius:14px; padding:12px 14px; font-size:12px; color:#d4d4d8; line-height:1.55;">
+          <strong style="color:#6ee7a8;">✓ Checklist TikTok Ads Manager:</strong><br>
           • Objetivo: <strong>Conversões no Site</strong> · Evento: <strong>CompletePayment (Pix)</strong><br>
-          • CTA sugerido: <strong>Comprar Agora</strong> · Pixel: <code>DBD7ASBC77UF91061F1G</code> (CAPI ativo)<br>
-          • Vídeo MP4 limpo: <code style="color:#38bdf8;">${esc(current.url)}</code>
+          • Pixel: <code>DBD7ASBC77UF91061F1G</code> (CAPI ativo) · MP4: <code style="color:#93c5fd;">${esc(current.url)}</code>
         </div>
 
-        <button type="button" class="ads-btn ads-btn-green" style="height:42px; font-size:13px;" onclick="window.copyFullAdsKit(${prod.id})">
-          📋 Copiar Kit Completo (Nome + Copy + Link UTM + Vídeo MP4)
+        <button type="button" class="bento-white-pill-btn" style="height:44px; font-size:13px;" onclick="window.copyFullAdsKit(${prod.id})">
+          📋 Copiar Kit Completo (Nome + Copy + Link UTM + MP4)
         </button>
       </div>
     `;
@@ -1033,8 +1010,7 @@
     const prod = adsManifest.products.find((x) => x.id === Number(pid));
     if (!prod) return;
     const { idx } = getSelectedVideo(prod);
-    const copy = buildAdCopy(prod, idx);
-    window.copyAdsText(copy.fullText, `🚀 Kit completo do Produto #${pid} copiado!`);
+    window.copyAdsText(buildAdCopy(prod, idx).fullText, `Kit completo do Produto #${pid} copiado!`);
   };
 
   window.closeAdsKitModal = function () {
@@ -1051,21 +1027,31 @@
       c.classList.toggle('active', c.dataset.chip === chip);
     });
     if (btn) btn.classList.add('active');
-    renderAdsGrid();
+    renderAdsListOrGrid();
   };
 
   window.setAdsCategory = function (cat) {
     adsCategoryFilter = cat;
-    renderAdsGrid();
+    const sel = document.getElementById('adsCategorySelect');
+    if (sel) sel.value = cat;
+    renderAdsListOrGrid();
   };
 
   window.setAdsSort = function (sort) {
     adsSortBy = sort;
-    renderAdsGrid();
+    renderAdsListOrGrid();
+  };
+
+  window.setAdsViewMode = function (mode) {
+    adsViewMode = mode;
+    document.querySelectorAll('.ads-view-toggle').forEach((b) => {
+      b.classList.toggle('active', b.dataset.mode === mode);
+    });
+    renderAdsListOrGrid();
   };
 
   window.filtrarAdsVideos = function () {
-    renderAdsGrid();
+    renderAdsListOrGrid();
   };
 
   window.exportarPacoteAds = function () {
@@ -1082,10 +1068,8 @@
     ];
     list.forEach((p) => {
       const { idx, current } = getSelectedVideo(p);
-      const price = formatBRL(getEffectivePrice(p));
-      const st = getStatusMeta(adsStatusMap[String(p.id)] || 'idle').label;
       lines.push(`#${p.id} | ${p.title}`);
-      lines.push(`💰 PIX: ${price} ${p.discount_badge || ''} | Status: ${st}`);
+      lines.push(`💰 PIX: ${formatBRL(getEffectivePrice(p))} ${p.discount_badge || ''} | Status: ${getStatusMeta(adsStatusMap[String(p.id)] || 'idle').label}`);
       lines.push(`🔗 Página Ads (UTM): ${buildUtmUrl(p, idx)}`);
       lines.push(`🎬 Vídeo Ads (MP4): ${current ? current.url : 'N/A'}`);
       lines.push('');
@@ -1139,91 +1123,118 @@
     const totalWithVids = adsManifest.products.filter((p) => buildVideoList(p).length > 0).length;
 
     mountTarget.innerHTML = `
-      <div class="ads-hero">
+      <div class="ads-bento-head">
         <div>
-          <h2 class="ads-hero-title">
-            <span>🎬 Central de Vídeos TikTok Ads</span>
-            <span class="ads-live-pill">Pronto pra Subir</span>
-          </h2>
-          <p class="ads-hero-sub">
-            Nome do produto, preço PIX, preview do vídeo MP4 sem marca d'água, download renomeado, link UTM limpo e copy pronta — tudo em 1 tela pra subir campanha no TikTok Ads Manager em segundos.
-          </p>
+          <h1 class="ads-bento-title">Vídeos TikTok Ads</h1>
+          <p class="ads-bento-sub">Nome do produto, preço PIX, criativos MP4 sem marca d'água e links UTM prontos para subir.</p>
         </div>
-        <div class="ads-hero-actions">
-          <button type="button" class="ads-btn ads-btn-download" onclick="window.exportarPacoteAds()">📤 Copiar Pacote Ads (TXT)</button>
-          <button type="button" class="ads-btn" onclick="window.copyAdsText('https://stoneshopclone.vercel.app/videos-ads', 'Link direto /videos-ads copiado!')">🔗 Link Direto /videos-ads</button>
-          <a href="/catalogo-ads" target="_blank" class="ads-btn">📊 Lab de Testes ↗</a>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="bento-dark-pill-btn" onclick="window.copyAdsText('https://stoneshopclone.vercel.app/videos-ads', 'Link direto /videos-ads copiado!')">🔗 /videos-ads</button>
+          <a href="/catalogo-ads" target="_blank" class="bento-dark-pill-btn">Lab Ads ↗</a>
+          <button type="button" class="bento-white-pill-btn" onclick="window.exportarPacoteAds()">+ Exportar Pacote Ads</button>
         </div>
       </div>
 
-      <div class="ads-mini-kpis">
-        <div class="ads-kpi">
-          <div class="ads-kpi-num" id="adsKpiProds">0</div>
-          <div class="ads-kpi-lbl">📦 Produtos c/ Vídeo Ads</div>
+      <!-- 4 PASTEL-CAP BENTO CARDS (EXATAMENTE IGUAL À TELA "ORDER LIST" DA REFERÊNCIA) -->
+      <div class="pastel-kpi-grid">
+        <div class="pastel-card" onclick="window.setAdsFilterChip('all')">
+          <div class="pastel-cap cap-blue"><span>Produtos c/ Vídeo</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="adsKpiProds">0</span>
+              <span class="delta-pill up">↑ 100%</span>
+            </div>
+            <div class="pastel-sub" id="adsKpiVidsSub">522 MP4s sem marca</div>
+          </div>
         </div>
-        <div class="ads-kpi">
-          <div class="ads-kpi-num" style="color:#fe2c55;" id="adsKpiVids">0</div>
-          <div class="ads-kpi-lbl">🎬 Criativos MP4 Limpos</div>
+
+        <div class="pastel-card" onclick="window.setAdsFilterChip('testing')">
+          <div class="pastel-cap cap-peach"><span>Em Teste Ads</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="adsKpiTesting">0</span>
+              <span class="delta-pill down">Testando</span>
+            </div>
+            <div class="pastel-sub">Criativos em validação</div>
+          </div>
         </div>
-        <div class="ads-kpi">
-          <div class="ads-kpi-num" style="color:#34d399;" id="adsKpiRunning">0</div>
-          <div class="ads-kpi-lbl">🟢 Rodando no TikTok Ads</div>
+
+        <div class="pastel-card" onclick="window.setAdsFilterChip('new_bf')">
+          <div class="pastel-cap cap-yellow"><span>Lançamentos BF</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="adsKpiNewBf">0</span>
+              <span class="delta-pill up">↑ Novos</span>
+            </div>
+            <div class="pastel-sub">Mix Campeão #126–#154</div>
+          </div>
         </div>
-        <div class="ads-kpi">
-          <div class="ads-kpi-num" style="color:#fbbf24;" id="adsKpiTesting">0</div>
-          <div class="ads-kpi-lbl">🟡 Em Teste de Criativo</div>
+
+        <div class="pastel-card" onclick="window.setAdsFilterChip('running')">
+          <div class="pastel-cap cap-mint"><span>Rodando no TikTok</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="adsKpiRunning">0</span>
+              <span class="delta-pill up">↑ Ativos</span>
+            </div>
+            <div class="pastel-sub">Campanhas em escala</div>
+          </div>
         </div>
       </div>
 
-      <div class="ads-toolbar">
-        <div class="ads-toolbar-top">
-          <div class="search-input-wrap">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <!-- BARRA DE CONTROLE (SEARCH PILL + CONTADOR + SORT + VIEW MODE) -->
+      <div class="ads-bar-row">
+        <div class="ads-bar-left">
+          <div class="ads-search-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="adsSearchInput" class="search-input" placeholder="Buscar produto, ID (ex: 146, 151, 136), @criador ou código Catbox..." oninput="window.filtrarAdsVideos()">
+            <input type="text" id="adsSearchInput" placeholder="Buscar produto, ID (154, 146, 136), @criador..." oninput="window.filtrarAdsVideos()">
           </div>
+          <span id="adsShowingCount" style="font-size:12.5px; color:#6b7280; font-weight:600; white-space:nowrap;">...</span>
+        </div>
 
-          <select class="form-control" style="height:44px;" onchange="window.setAdsCategory(this.value)">
-            <option value="todas">Todas as Categorias</option>
+        <div class="ads-bar-right">
+          <select id="adsCategorySelect" class="ads-select-pill" onchange="window.setAdsCategory(this.value)">
+            <option value="todas">Todas Categorias</option>
             ${categories.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join('')}
           </select>
 
-          <select class="form-control" style="height:44px;" onchange="window.setAdsSort(this.value)">
-            <option value="newest">Ordenar: Mais Recentes</option>
-            <option value="most_videos">Mais Vídeos Ads</option>
-            <option value="biggest_disc">Maior Desconto %</option>
-            <option value="price_asc">Menor Preço PIX</option>
-            <option value="price_desc">Maior Preço PIX</option>
+          <select class="ads-select-pill" onchange="window.setAdsSort(this.value)">
+            <option value="newest">Sort: Mais Recentes</option>
+            <option value="most_videos">Mais Vídeos</option>
+            <option value="biggest_disc">Maior Desconto</option>
+            <option value="price_asc">Menor Preço</option>
+            <option value="price_desc">Maior Preço</option>
           </select>
-        </div>
 
-        <div class="ads-chips" id="adsFilterChips">
-          <button type="button" class="ads-chip active" data-chip="new_bf" onclick="window.setAdsFilterChip('new_bf', this)">🔥 Lançamentos Black Friday (${newBfCount})</button>
-          <button type="button" class="ads-chip" data-chip="all" onclick="window.setAdsFilterChip('all', this)">🎬 Todos os Produtos (${totalWithVids})</button>
-          <button type="button" class="ads-chip" data-chip="running" onclick="window.setAdsFilterChip('running', this)">🟢 Rodando Ads</button>
-          <button type="button" class="ads-chip" data-chip="testing" onclick="window.setAdsFilterChip('testing', this)">🟡 Em Teste</button>
-          <button type="button" class="ads-chip" data-chip="high_anchor" onclick="window.setAdsFilterChip('high_anchor', this)">💎 Susto no Preço (R$ 50+)</button>
-          <button type="button" class="ads-chip" data-chip="impulse" onclick="window.setAdsFilterChip('impulse', this)">⚡ Impulso Barato (≤ R$ 50)</button>
-        </div>
-
-        <div style="font-size:12px; color:#94a3b8; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-          <span id="adsShowingCount">Carregando...</span>
-          <span style="color:#64748b;">💡 Dica: clique em <strong>⚪ Na Fila</strong> no card para marcar como <strong>🟡 Em Teste</strong> ou <strong>🟢 Rodando</strong>.</span>
+          <button type="button" class="ads-chip ads-view-toggle active" data-mode="cards" onclick="window.setAdsViewMode('cards')">⊞ Cards</button>
+          <button type="button" class="ads-chip ads-view-toggle" data-mode="table" onclick="window.setAdsViewMode('table')">☰ Lista</button>
         </div>
       </div>
 
-      <div class="ads-grid" id="adsVideosGrid"></div>
+      <!-- CHIPS DE FILTRO -->
+      <div class="ads-chips-bar" id="adsFilterChips">
+        <button type="button" class="ads-chip active" data-chip="new_bf" onclick="window.setAdsFilterChip('new_bf', this)">Lançamentos Black Friday (${newBfCount})</button>
+        <button type="button" class="ads-chip" data-chip="all" onclick="window.setAdsFilterChip('all', this)">Todos os Produtos (${totalWithVids})</button>
+        <button type="button" class="ads-chip" data-chip="running" onclick="window.setAdsFilterChip('running', this)">Rodando Ads</button>
+        <button type="button" class="ads-chip" data-chip="testing" onclick="window.setAdsFilterChip('testing', this)">Em Teste</button>
+        <button type="button" class="ads-chip" data-chip="high_anchor" onclick="window.setAdsFilterChip('high_anchor', this)">Susto no Preço (R$ 50+)</button>
+        <button type="button" class="ads-chip" data-chip="impulse" onclick="window.setAdsFilterChip('impulse', this)">Impulso Barato (≤ R$ 50)</button>
+      </div>
+
+      <!-- HOST GRID / TABELA -->
+      <div id="adsVideosGridHost"></div>
     `;
 
     updateAdsKpis();
-    renderAdsGrid();
+    renderAdsListOrGrid();
   }
 
   window.__refreshAdsStudio = function () {
     updateAdsKpis();
-    renderAdsGrid();
+    renderAdsListOrGrid();
   };
 
   if (document.readyState === 'loading') {

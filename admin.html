@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin-bento.css?v=20261127_bento">
   
   <style>
     /* ==========================================================================
@@ -1193,48 +1194,106 @@
   <!-- TOAST NOTIFICATIONS -->
   <div id="toastContainer" class="toast-container"></div>
 
-  <!-- TOP BAR -->
+  <!-- LEFT ICON RAIL (DESKTOP >= 1024px — ESTILO REFERÊNCIA BENTO OBSIDIAN) -->
+  <aside class="bento-rail" aria-label="Navegação Principal">
+    <a href="/?owner=1" target="_blank" class="bento-rail-logo" title="Stone Shop — Abrir Loja ao Vivo">
+      <img src="logo.png" alt="Stone Shop">
+    </a>
+
+    <div class="bento-rail-nav">
+      <button class="rail-btn active" onclick="trocarAba('dashboard')" data-tip="Dashboard" title="Dashboard">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 12l4-4"></path><path d="M12 7v5"></path></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('ads')" data-tip="Vídeos TikTok Ads" title="Vídeos TikTok Ads">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+        <span class="rail-dot"></span>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('pedidos')" data-tip="Pedidos & CRM" title="Pedidos & CRM">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('catalogo')" data-tip="Catálogo & Preços" title="Catálogo & Preços">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('trafego')" data-tip="Cloaker & Tráfego" title="Cloaker & Tráfego">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('gateway')" data-tip="Gateway & Pix" title="Gateway & Pix">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('urgencia')" data-tip="Urgência & Cupons" title="Urgência & Cupons">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('tiktok')" data-tip="TikTok Pixel & CAPI" title="TikTok Pixel & CAPI">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+      </button>
+
+      <button class="rail-btn" onclick="trocarAba('sentinel')" data-tip="Sentinel CDN" title="Sentinel CDN">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+      </button>
+    </div>
+
+    <div class="bento-rail-footer">
+      <button class="rail-btn" onclick="trocarAba('loja')" data-tip="Identidade & SAC" title="Identidade & SAC">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 0 1 0 4h-.09c-.66 0-1.25.4-1.51 1z"></path></svg>
+      </button>
+      <button class="rail-btn" onclick="bloquearPainel()" data-tip="Bloquear Painel" title="Sair / Bloquear Painel">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- TOP BAR MINIMALISTA OBSIDIAN -->
   <header class="top-bar">
     <div class="top-bar-inner">
-      <a href="/?owner=1" class="brand" target="_blank" title="Ver Loja ao Vivo (Modo Dono)">
-        <div class="brand-logo">
-          <img src="logo.png" alt="Stone Shop">
+      <div style="display:flex; align-items:center; gap:14px;">
+        <a href="/?owner=1" class="brand" target="_blank" title="Ver Loja ao Vivo (Modo Dono)">
+          <div class="brand-logo" style="background:#1c1c22; box-shadow:none; border:1px solid rgba(255,255,255,0.1);">
+            <img src="logo.png" alt="Stone Shop">
+          </div>
+          <div class="brand-title">
+            <span>STONE SHOP</span>
+            <span class="brand-badge" style="color:#6ee7a8;">
+              <span class="status-dot" style="background:#6ee7a8;"></span>
+              CORE PRO
+            </span>
+          </div>
+        </a>
+
+        <div class="bento-top-search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="bentoGlobalSearch" placeholder="Buscar produto, ID ou vídeo Ads..." onkeydown="if(event.key==='Enter'){ window.globalQuickSearch(this.value); }">
         </div>
-        <div class="brand-title">
-          <span>STONE SHOP</span>
-          <span class="brand-badge">
-            <span class="status-dot"></span>
-            CORE ADMIN PRO
-          </span>
-        </div>
-      </a>
+
+        <span class="bento-top-date" id="bentoTopDate">Hoje</span>
+      </div>
 
       <div class="top-actions">
-        <!-- Atalho Direto Central de Vídeos TikTok Ads -->
-        <button class="pill-cloaker top-ads-shortcut" style="background:rgba(254,44,85,0.14); border-color:rgba(254,44,85,0.4); color:#ff6482;" onclick="trocarAba('ads')" title="Abrir Central de Vídeos TikTok Ads">
-          <span>🎬 Vídeos Ads</span>
-        </button>
-
         <!-- Alternador Rápido de Cloaker -->
         <button id="btnCloakerToggle" class="pill-cloaker" onclick="alternarCloakerRapido()" title="Alternar Modo da Loja">
           <span id="cloakerDot" class="status-dot"></span>
           <span id="cloakerLabel">STONE SHOP (BLACK)</span>
         </button>
 
+        <button class="btn-top-icon" onclick="trocarAba('urgencia')" title="Configurações & Urgência">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 0 1 0 4h-.09c-.66 0-1.25.4-1.51 1z"></path></svg>
+        </button>
+
         <a href="/?owner=1" target="_blank" class="btn-top-icon" title="Abrir Loja ao Vivo (Modo Dono)">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             <polyline points="15 3 21 3 21 9"></polyline>
             <line x1="10" y1="14" x2="21" y2="3"></line>
           </svg>
         </a>
 
-        <button class="btn-top-icon" onclick="bloquearPainel()" title="Bloquear Painel">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-          </svg>
-        </button>
+        <button class="bento-avatar-chip" onclick="bloquearPainel()" title="Bruno CTO · Clique para bloquear">B</button>
       </div>
     </div>
   </header>
@@ -1353,23 +1412,70 @@
     </section>
 
     <!-- ==========================================================================
-         VIEW 1: PEDIDOS & CRM WHATSAPP
+         VIEW 1: PEDIDOS & CRM WHATSAPP (ESTILO "ORDER LIST" DA REFERÊNCIA)
          ========================================================================== -->
     <section id="view-pedidos" class="view-section">
-      <div class="panel-card">
-        <div class="panel-header">
-          <div>
-            <h2 class="panel-title">📦 Gestão de Pedidos & CRM WhatsApp</h2>
-            <p class="panel-subtitle">Acompanhe pedidos em tempo real e recupere compradores com 1 clique no WhatsApp.</p>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <button class="btn-action-pill" onclick="gerarPedidoTeste()">+ Pedido Teste</button>
-            <button class="btn-action-pill" onclick="exportarPedidosCSV()">Exportar CSV</button>
-            <button class="btn-action-pill" onclick="limparPedidos()" style="color:#f87171;">Limpar</button>
+      <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:12px; margin-bottom:16px;">
+        <div>
+          <h1 style="font-size:26px; font-weight:800; letter-spacing:-0.6px; color:#fff;">Pedidos & CRM</h1>
+          <p style="font-size:13px; color:#8a8f98; margin-top:3px;">Pedidos Pix ao vivo do servidor + recuperação em 1 clique no WhatsApp.</p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="bento-dark-pill-btn" onclick="exportarPedidosCSV()">📤 Exportar CSV</button>
+          <button class="bento-dark-pill-btn" onclick="limparPedidos()" style="color:#f87171;">Limpar</button>
+          <button class="bento-white-pill-btn" onclick="gerarPedidoTeste()">+ Pedido Teste</button>
+        </div>
+      </div>
+
+      <!-- 4 PASTEL-CAP CARDS DE PEDIDOS (IGUAL À TELA "ORDER LIST" DA REFERÊNCIA) -->
+      <div class="pastel-kpi-grid">
+        <div class="pastel-card" onclick="filtrarPedidosStatus('todos')">
+          <div class="pastel-cap cap-blue"><span>Todos os pedidos</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="ordCapTotal">0</span>
+              <span class="delta-pill blue">Live</span>
+            </div>
+            <div class="pastel-sub">Registrados no sistema</div>
           </div>
         </div>
 
-        <div class="category-scroll" style="margin-bottom: 14px;">
+        <div class="pastel-card" onclick="filtrarPedidosStatus('pendente')">
+          <div class="pastel-cap cap-peach"><span>Pix Pendentes</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="ordCapPending">0</span>
+              <span class="delta-pill down">Aguardando</span>
+            </div>
+            <div class="pastel-sub" id="ordCapPendingVal">R$ 0,00 em aberto</div>
+          </div>
+        </div>
+
+        <div class="pastel-card" onclick="filtrarPedidosStatus('pendente')">
+          <div class="pastel-cap cap-yellow"><span>Recuperar WhatsApp</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="ordCapRecovery">0</span>
+              <span class="delta-pill up">1 clique</span>
+            </div>
+            <div class="pastel-sub">Prontos p/ abordagem</div>
+          </div>
+        </div>
+
+        <div class="pastel-card" onclick="filtrarPedidosStatus('pago')">
+          <div class="pastel-cap cap-mint"><span>Pix Pagos</span><span>↗</span></div>
+          <div class="pastel-body">
+            <div class="pastel-num-row">
+              <span class="pastel-num" id="ordCapPaid">0</span>
+              <span class="delta-pill up">✓ Confirmado</span>
+            </div>
+            <div class="pastel-sub" id="ordCapPaidVal">R$ 0,00 faturados</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <div class="category-scroll" style="margin-bottom: 16px;">
           <button class="cat-pill active" onclick="filtrarPedidosStatus('todos', this)">Todos</button>
           <button class="cat-pill" onclick="filtrarPedidosStatus('pendente', this)">Pix Pendente</button>
           <button class="cat-pill" onclick="filtrarPedidosStatus('pago', this)">Pix Pago</button>
@@ -1891,11 +1997,17 @@
       const targetSec = document.getElementById(`view-${abaId}`);
       if (targetSec) targetSec.classList.add('active');
 
-      // Mostra/Oculta barra de KPIs secundária (Dashboard e Ads têm seus próprios KPIs dedicados)
+      // Mostra/Oculta barra de KPIs secundária (Dashboard, Ads e Pedidos têm seus próprios Bento KPIs)
       const kpiBar = document.getElementById('globalKpiBar');
-      if (kpiBar) kpiBar.style.display = (abaId === 'dashboard' || abaId === 'ads') ? 'none' : '';
+      if (kpiBar) kpiBar.style.display = (abaId === 'dashboard' || abaId === 'ads' || abaId === 'pedidos') ? 'none' : '';
 
-      // Atualiza Desktop Nav
+      // Atualiza Left Icon Rail (Desktop)
+      document.querySelectorAll('.rail-btn').forEach(btn => {
+        const matches = btn.getAttribute('onclick')?.includes(`'${abaId}'`);
+        btn.classList.toggle('active', !!matches);
+      });
+
+      // Atualiza Desktop Nav Pills
       document.querySelectorAll('.nav-btn').forEach(btn => {
         const matches = btn.getAttribute('onclick')?.includes(`'${abaId}'`);
         btn.classList.toggle('active', !!matches);
@@ -1909,6 +2021,18 @@
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    window.globalQuickSearch = function (val) {
+      const q = String(val || '').trim();
+      if (!q) return;
+      trocarAba('ads');
+      if (typeof window.setAdsFilterChip === 'function') window.setAdsFilterChip('all');
+      const inp = document.getElementById('adsSearchInput');
+      if (inp) {
+        inp.value = q;
+        if (typeof window.filtrarAdsVideos === 'function') window.filtrarAdsVideos();
+      }
+    };
 
     // 4. Catálogo & Preços dos 109 Produtos
     function carregarCatalogo() {
@@ -2188,6 +2312,15 @@
       const badgeMob = document.getElementById('bNavOrdersBadge');
       if (badgeTop) badgeTop.textContent = pedidos.length;
       if (badgeMob) badgeMob.textContent = pendentes.length || pedidos.length;
+
+      // Atualiza os 4 Pastel-Cap Cards da aba Pedidos
+      const setT = (id, v) => { const e = document.getElementById(id); if (e) e.textContent = v; };
+      setT('ordCapTotal', pedidos.length);
+      setT('ordCapPending', pendentes.length);
+      setT('ordCapPendingVal', `R$ ${valorPendente.toFixed(2).replace('.', ',')} em aberto`);
+      setT('ordCapRecovery', pendentes.length);
+      setT('ordCapPaid', pagos.length);
+      setT('ordCapPaidVal', `R$ ${faturamentoTotal.toFixed(2).replace('.', ',')} faturados`);
     }
 
     function renderizarPedidos() {
@@ -2811,6 +2944,11 @@
 
     // Inicialização ao Carregar a Página
     document.addEventListener('DOMContentLoaded', () => {
+      const topDateEl = document.getElementById('bentoTopDate');
+      if (topDateEl) {
+        const dStr = new Date().toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: 'short' });
+        topDateEl.textContent = `Hoje, ${dStr.charAt(0).toUpperCase() + dStr.slice(1)}`;
+      }
       verificarSessao();
       carregarConfigServidor();
       carregarCatalogo();
@@ -2830,8 +2968,8 @@
       }
     });
   </script>
-  <script src="js/admin-dashboard-pro.js?v=20261127_pro"></script>
-  <script src="js/admin-catalogo-360.js?v=20261127_pro"></script>
-  <script src="js/admin-tiktok-ads.js?v=20261127_pro"></script>
+  <script src="js/admin-dashboard-pro.js?v=20261127_bento"></script>
+  <script src="js/admin-catalogo-360.js?v=20261127_bento"></script>
+  <script src="js/admin-tiktok-ads.js?v=20261127_bento"></script>
 </body>
 </html>
