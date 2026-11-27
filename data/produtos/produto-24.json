@@ -625,22 +625,22 @@
       "sold": "7643 vendidos"
     },
     {
-      "href": "produto-65.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxn-lzou0oyl6coa73",
-      "alt": "Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza",
-      "name": "Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza",
-      "price": "R$ 147,90",
-      "price_original": "R$ 697,90",
-      "discount": "79% OFF",
+      "href": "produto-128.html",
+      "img": "../img/mesa-128-slide-1.webp",
+      "alt": "Mesa Dobrável Portátil Vira Maleta 1,80m Reforçada com Alça e Trava (Ceia, Churrasco e Camping)",
+      "name": "Mesa Dobrável Portátil Vira Maleta 1,80m Reforçada com Alça e Trava (Ceia, Churrasco e Camping)",
+      "price": "R$ 67,89",
+      "price_original": "R$ 329,90",
+      "discount": "-79%",
       "sold": "8765 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },

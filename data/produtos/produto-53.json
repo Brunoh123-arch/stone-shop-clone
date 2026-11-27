@@ -1,7 +1,7 @@
 {
   "id": 53,
   "title": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão) - Stone Shop",
-  "meta_description": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão) com 81% OFF. Apenas R$94,90. Frete grátis.",
+  "meta_description": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão) com 81% OFF. Apenas R$ 347,90. Frete grátis.",
   "product_title": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Starlink V4 Internet Satélite Wi-fi 6 Al - Slide 9"
     }
   ],
-  "discount_badge": "-81%",
-  "price_int": "94",
+  "discount_badge": "-82%",
+  "price_int": "347",
   "price_cents": ",90",
-  "price_original": "R$ 497,90",
-  "installment_text": "3x R$ 31,63",
+  "price_original": "R$ 1.899,00",
+  "installment_text": "3x R$ 115,96",
   "installment_highlight": "sem juros",
-  "coupon_main": "",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 347,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(64)",
   "sold_count": "5801 vendidos on-line",
@@ -746,12 +746,12 @@
   "related": [
     {
       "href": "produto-35.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8",
+      "img": "../img/produtos/p35/slide_1.jpg",
       "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
       "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
-      "price": "R$ 96,78",
-      "price_original": "R$ 497,90",
-      "discount": "81% OFF",
+      "price": "R$ 297,90",
+      "price_original": "R$ 1.899,00",
+      "discount": "-84%",
       "sold": "8569 vendidos"
     },
     {
@@ -767,10 +767,10 @@
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -798,7 +798,7 @@
   "produto_atual": {
     "id": 53,
     "nome": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
-    "preco": 94.9,
+    "preco": 347.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me8xwns11f5v8f",
     "imagens": [
       "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me8xwns11f5v8f",
@@ -824,7 +824,16 @@
       }
     },
     "sales": "5801 vendidos on-line",
-    "installmentText": "3x R$ 31,63 sem juros"
+    "installmentText": "3x R$ 115,96 sem juros",
+    "price": 347.9,
+    "preco_antigo": 1899.0,
+    "precoOrig": 1899.0,
+    "originalPrice": 1899.0,
+    "cupomPreco": 347.9,
+    "couponPrice": 347.9,
+    "desc": 82,
+    "desconto": 82,
+    "parcelamento": "3x R$ 115,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "starlink_53",

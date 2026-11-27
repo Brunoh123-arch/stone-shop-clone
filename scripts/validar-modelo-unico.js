@@ -232,8 +232,13 @@ for (const id of ids) {
     if (creatorAvFingerprints.has(avFp)) E(`${tag}: avatar colide (mesmo rosto/MD5) com criador do carrossel de vídeos (${av})`);
     if (avSeen.has(avFp)) E(`${tag}: avatar repetido (mesmo rosto/MD5) dentro das avaliações (${av})`);
     avSeen.add(avFp);
-    if (varNames.length && r.variation && !varNames.includes(String(r.variation).toLowerCase())) {
-      E(`${tag}: variação '${r.variation}' não existe na grade do produto`);
+    if (varNames.length && r.variation) {
+      const fullV = String(r.variation).toLowerCase().trim();
+      const partsV = fullV.split(/\s*[·•,|]\s*/).map((s) => s.trim()).filter(Boolean);
+      const validComposite = varNames.includes(fullV) || (partsV.length > 1 && partsV.every((seg) => varNames.includes(seg)));
+      if (!validComposite) {
+        E(`${tag}: variação '${r.variation}' não existe na grade do produto`);
+      }
     }
     (r.photos || []).forEach((p) => {
       if (!onDisk(p)) E(`${tag}: foto não existe ${p}`);

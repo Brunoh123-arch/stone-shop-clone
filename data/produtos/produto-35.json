@@ -1,7 +1,7 @@
 {
   "id": 35,
   "title": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt - Stone Shop",
-  "meta_description": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt com 81% OFF. Apenas R$67,43. Frete grátis.",
+  "meta_description": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt com 81% OFF. Apenas R$ 297,90. Frete grátis.",
   "product_title": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
   "slider_imgs": [
     {
@@ -33,14 +33,14 @@
       "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt - 8"
     }
   ],
-  "discount_badge": "-81%",
-  "price_int": "67",
-  "price_cents": ",43",
-  "price_original": "R$ 497,90",
-  "installment_text": "3x R$ 22,47",
+  "discount_badge": "-84%",
+  "price_int": "297",
+  "price_cents": ",90",
+  "price_original": "R$ 1.899,00",
+  "installment_text": "3x R$ 99,30",
   "installment_highlight": "sem juros",
-  "coupon_main": "81% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 297,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(56)",
   "sold_count": "8569 vendidos on-line",
@@ -295,38 +295,38 @@
       "img": "../img/produto-12-1.jpg",
       "alt": "Piscina Splash Fun Redonda Inflável 2400 Litros - Mor",
       "name": "Piscina Splash Fun Redonda Inflável 2400 Litros - Mor",
-      "price": "R$ 139,99",
-      "price_original": "R$ 349,00",
-      "discount": "60% OFF",
+      "price": "R$ 89,90",
+      "price_original": "R$ 399,00",
+      "discount": "-78%",
       "sold": "9899 vendidos"
     },
     {
       "href": "produto-101.html",
       "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
-      "alt": "Pneus Pirelli — Todas as Medidas | Cinturato, P ZERO, Scorpion e mais",
-      "name": "Pneus Pirelli — Todas as Medidas | Cinturato, P ZERO, Scorpion e mais",
-      "price": "R$ 87,90",
+      "alt": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
+      "name": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
+      "price": "R$ 189,90",
       "price_original": "R$ 599,00",
-      "discount": "83% OFF",
+      "discount": "-68%",
       "sold": "13488 vendidos"
     },
     {
       "href": "produto-13.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-82260-mhoz9j95dloj8d",
-      "alt": "Piscina Borda Inflável Capacidade 1000 Litros Pixlar",
-      "name": "Piscina Borda Inflável Capacidade 1000 Litros Pixlar",
-      "price": "R$ 69,99",
-      "price_original": "R$ 139,99",
-      "discount": "50% OFF",
+      "alt": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
+      "name": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
+      "price": "R$ 49,90",
+      "price_original": "R$ 169,90",
+      "discount": "-71%",
       "sold": "10004 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -344,7 +344,7 @@
   "produto_atual": {
     "id": 35,
     "nome": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
-    "preco": 67.43,
+    "preco": 297.9,
     "img": "../img/produtos/p35/slide_1.jpg",
     "imagens": [
       "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5do-meyct3ylvqbr56.16000081758547370.mp4",
@@ -377,7 +377,16 @@
       }
     },
     "sales": "8569 vendidos on-line",
-    "installmentText": "3x R$ 22,47 sem juros"
+    "installmentText": "3x R$ 99,30 sem juros",
+    "price": 297.9,
+    "preco_antigo": 1899.0,
+    "precoOrig": 1899.0,
+    "originalPrice": 1899.0,
+    "cupomPreco": 297.9,
+    "couponPrice": 297.9,
+    "desc": 84,
+    "desconto": 84,
+    "parcelamento": "3x R$ 99,30 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "jbl_boombox4_35",

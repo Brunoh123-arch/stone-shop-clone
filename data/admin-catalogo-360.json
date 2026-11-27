@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-11-26T19:18:10.768Z",
-  "total_products": 84,
+  "total_products": 81,
   "total_slides": 473,
   "total_creators_videos": 350,
   "total_reviews": 2150,
@@ -181,9 +181,9 @@
     {
       "id": 146,
       "title": "Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS Show de Luzes LED IPX4",
-      "preco": 37.9,
-      "price_original_str": "229,90",
-      "discount_badge": "-84%",
+      "preco": 197.9,
+      "price_original_str": "1.299,00",
+      "discount_badge": "-85%",
       "sold_count": "7438 vendidos on-line",
       "img": "img/jbl-146-slide-1.webp",
       "slides_count": 6,
@@ -197,9 +197,9 @@
     {
       "id": 147,
       "title": "Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ Luzes LED, Chave, Display e Bluetooth",
-      "preco": 54.9,
-      "price_original_str": "289,90",
-      "discount_badge": "-81%",
+      "preco": 167.9,
+      "price_original_str": "799,90",
+      "discount_badge": "-79%",
       "sold_count": "5126 vendidos on-line",
       "img": "img/triciclo-147-slide-1.webp",
       "slides_count": 5,
@@ -213,9 +213,9 @@
     {
       "id": 148,
       "title": "Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro",
-      "preco": 49.9,
-      "price_original_str": "279,90",
-      "discount_badge": "-82%",
+      "preco": 119.9,
+      "price_original_str": "549,90",
+      "discount_badge": "-78%",
       "sold_count": "8290 vendidos on-line",
       "img": "img/panelas-148-slide-1.webp",
       "slides_count": 5,
@@ -276,7 +276,7 @@
     },
     {
       "id": 152,
-      "title": "Smartphone Samsung Galaxy A17 5G 128GB 4GB RAM Tela Super AMOLED 6,7\" 90Hz Câmera Tripla 50MP NFC",
+      "title": "Smartphone Samsung Galaxy A17 5G Dual SIM Tela Super AMOLED 6,7\" 90Hz Câmera Tripla 50MP OIS NFC",
       "preco": 279.9,
       "price_original_str": "949,00",
       "discount_badge": "-71%",
@@ -292,7 +292,7 @@
     },
     {
       "id": 153,
-      "title": "Tablet Samsung Galaxy Tab S10 FE 128GB 8GB RAM Tela 10,9\" 90Hz Wi-Fi IP68 c/ Caneta S-Pen e Capa Inclusas",
+      "title": "Tablet Samsung Galaxy Tab S10 FE Tela 10,9\" 90Hz Wi-Fi IP68 c/ Caneta S-Pen e Capa Inclusas",
       "preco": 297.9,
       "price_original_str": "1.855,00",
       "discount_badge": "-84%",
@@ -407,7 +407,7 @@
       "title": "Fritadeira Elétrica Visio Fry Elgin 5L 1700w Air Fryer Digital Cinza",
       "preco": 67.9,
       "preco_antigo": 399.9,
-      "price_original_str": "R$ 399,90",
+      "price_original_str": "399,90",
       "discount_badge": "-83%",
       "installment_text": "3x R$ 22,63",
       "sold_count": "5849 vendidos on-line",
@@ -841,7 +841,7 @@
       "title": "Caixa de Som AIWA",
       "preco": 69.9,
       "preco_antigo": "R$ 597,00",
-      "price_original_str": "R$ 597,00",
+      "price_original_str": "209,70",
       "discount_badge": "-88%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "7894 vendidos on-line",
@@ -1472,10 +1472,10 @@
     {
       "id": 9,
       "title": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
-      "preco": 92.8,
+      "preco": 349.9,
       "preco_antigo": "R$ 754,44",
-      "price_original_str": "R$ 754,44",
-      "discount_badge": "-88%",
+      "price_original_str": "1.799,00",
+      "discount_badge": "-81%",
       "installment_text": "3x R$ 30,93",
       "sold_count": "10241 vendidos on-line",
       "rating_score": "5.0",
@@ -1710,7 +1710,7 @@
       "title": "Piscina Splash Fun Redonda Inflável 2400 Litros - Mor",
       "preco": 89.9,
       "preco_antigo": 399,
-      "price_original_str": "R$ 399,00",
+      "price_original_str": "399,00",
       "discount_badge": "-78%",
       "installment_text": "3x R$ 29,96",
       "sold_count": "9899 vendidos on-line",
@@ -2022,7 +2022,7 @@
       "title": "Piscina Inflável Redonda Mor 1000 Litros Splash Fun Azul",
       "preco": 49.9,
       "preco_antigo": 169.9,
-      "price_original_str": "R$ 169,90",
+      "price_original_str": "169,90",
       "discount_badge": "-71%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "10004 vendidos on-line",
@@ -2294,10 +2294,10 @@
     {
       "id": 14,
       "title": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
-      "preco": 89.9,
+      "preco": 189.9,
       "preco_antigo": 599.9,
-      "price_original_str": "R$ 599,90",
-      "discount_badge": "-85%",
+      "price_original_str": "749,90",
+      "discount_badge": "-75%",
       "installment_text": "3x R$ 29,97",
       "sold_count": "9874 vendidos on-line",
       "rating_score": "5.0",
@@ -2659,7 +2659,7 @@
       "title": "Churrasqueira Portátil A Carvão Biscuitt Steak Master Smoke & Fire USB Com Bag",
       "preco": 69.9,
       "preco_antigo": 349.9,
-      "price_original_str": "R$ 349,90",
+      "price_original_str": "349,90",
       "discount_badge": "-80%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "7543 vendidos on-line",
@@ -2951,7 +2951,7 @@
       "title": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "preco": 64.9,
       "preco_antigo": 299.9,
-      "price_original_str": "R$ 299,90",
+      "price_original_str": "299,90",
       "discount_badge": "-78%",
       "installment_text": "3x R$ 21,63",
       "sold_count": "7548 vendidos on-line",
@@ -3505,9 +3505,9 @@
     {
       "id": 17,
       "title": "Kit 6 Cadeira de Praia Aço Mor 110kg Resistente CORES SORTIDAS Oferta",
-      "preco": 89,
+      "preco": 89.0,
       "preco_antigo": "R$ 399,90",
-      "price_original_str": "R$ 399,90",
+      "price_original_str": "267,00",
       "discount_badge": "-78%",
       "installment_text": "3x R$ 29,66",
       "sold_count": "5668 vendidos on-line",
@@ -3850,7 +3850,7 @@
       "title": "Kit Praia 4 Cadeiras Sortidas Reclinável + Guarda Sol Fashion + Saca Areia+ Carrinho+ Coller 18 Lts",
       "preco": 84.9,
       "preco_antigo": 499,
-      "price_original_str": "R$ 499,00",
+      "price_original_str": "499,00",
       "discount_badge": "-83%",
       "installment_text": "3x R$ 28,30",
       "sold_count": "10706 vendidos on-line",
@@ -4183,10 +4183,10 @@
     {
       "id": 19,
       "title": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
-      "preco": 74.9,
+      "preco": 139.9,
       "preco_antigo": 449,
-      "price_original_str": "R$ 449,00",
-      "discount_badge": "-83%",
+      "price_original_str": "499,00",
+      "discount_badge": "-72%",
       "installment_text": "3x R$ 24,97",
       "sold_count": "4987 vendidos on-line",
       "rating_score": "5.0",
@@ -4680,10 +4680,10 @@
     {
       "id": 20,
       "title": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB",
-      "preco": 97.9,
+      "preco": 269.9,
       "preco_antigo": 699,
-      "price_original_str": "R$ 699,00",
-      "discount_badge": "-86%",
+      "price_original_str": "1.099,00",
+      "discount_badge": "-75%",
       "installment_text": "3x R$ 32,63",
       "sold_count": "4984 vendidos on-line",
       "rating_score": "5.0",
@@ -5365,7 +5365,7 @@
       "title": "Bola De Futebol De Campo Penalty Bravo Xxv",
       "preco": 34.9,
       "preco_antigo": 129.9,
-      "price_original_str": "R$ 129,90",
+      "price_original_str": "129,90",
       "discount_badge": "-73%",
       "installment_text": "3x R$ 11,63",
       "sold_count": "5346 vendidos on-line",
@@ -5642,7 +5642,7 @@
       "title": "Colchão Inflável Suporta 300kg Casal Camping Praia + Bomba de Ar Manual Bestway",
       "preco": 49.9,
       "preco_antigo": 195.9,
-      "price_original_str": "R$ 195,90",
+      "price_original_str": "195,90",
       "discount_badge": "-75%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "5531 vendidos on-line",
@@ -5915,7 +5915,7 @@
       "title": "Conjunto De 24 Potes Herméticos Croix Com Tampa E Trava",
       "preco": 24.73,
       "preco_antigo": 179.9,
-      "price_original_str": "R$ 119,90",
+      "price_original_str": "119,90",
       "discount_badge": "-79%",
       "installment_text": "3x R$ 14,97",
       "sold_count": "6691 vendidos on-line",
@@ -6478,7 +6478,7 @@
       "title": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
       "preco": 84.9,
       "preco_antigo": 399,
-      "price_original_str": "R$ 399,00",
+      "price_original_str": "399,00",
       "discount_badge": "-79%",
       "installment_text": "3x R$ 28,30",
       "sold_count": "4897 vendidos on-line",
@@ -7090,7 +7090,7 @@
       "title": "Bicicleta Aro 20 Bmx infantil GottBikes Freio V-Brake",
       "preco": 79.9,
       "preco_antigo": 449,
-      "price_original_str": "R$ 449,00",
+      "price_original_str": "449,00",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 26,63",
       "sold_count": "4769 vendidos on-line",
@@ -7780,7 +7780,7 @@
       "title": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "preco": 69.9,
       "preco_antigo": 299.9,
-      "price_original_str": "R$ 299,90",
+      "price_original_str": "299,90",
       "discount_badge": "-77%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "4458 vendidos on-line",
@@ -8424,10 +8424,10 @@
     {
       "id": 34,
       "title": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
-      "preco": 69.8,
+      "preco": 219.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
-      "discount_badge": "-82%",
+      "price_original_str": "899,90",
+      "discount_badge": "-76%",
       "installment_text": "3x R$ 23,26",
       "sold_count": "9864 vendidos on-line",
       "rating_score": "5.0",
@@ -9480,10 +9480,10 @@
     {
       "id": 35,
       "title": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
-      "preco": 67.43,
+      "preco": 297.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
-      "discount_badge": "-81%",
+      "price_original_str": "1.899,00",
+      "discount_badge": "-84%",
       "installment_text": "3x R$ 22,47",
       "sold_count": "8569 vendidos on-line",
       "rating_score": "5.0",
@@ -9793,15 +9793,15 @@
     },
     {
       "id": 36,
-      "title": "Celular Xiaomi Poco X7 Pro 5g Dual Sim 512gb Amarelo 12ram 50mpx",
-      "preco": 92.8,
+      "title": "Smartphone Xiaomi Poco X7 Pro 5G Dual SIM Tela AMOLED 120Hz Câmera 50MP OIS NFC",
+      "preco": 329.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
+      "price_original_str": "1.699,00",
       "discount_badge": "-81%",
       "installment_text": "3x R$ 30,93",
       "sold_count": "9853 vendidos on-line",
       "rating_score": "5.0",
-      "img": "img/reviews-unboxing/poco_36/unboxing_1.jpg",
+      "img": "img/produtos/p36/slide_1.jpg",
       "slides": [
         {
           "src": "img/produtos/p36/slide_1.jpg",
@@ -10074,7 +10074,7 @@
       "title": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "preco": 69.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
+      "price_original_str": "209,70",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "5515 vendidos on-line",
@@ -10582,7 +10582,7 @@
       "title": "Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W",
       "preco": 68.7,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
+      "price_original_str": "206,10",
       "discount_badge": "-83%",
       "installment_text": "3x R$ 22,90",
       "sold_count": "9872 vendidos on-line",
@@ -10875,10 +10875,10 @@
     {
       "id": 40,
       "title": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
-      "preco": 84.9,
+      "preco": 179.9,
       "preco_antigo": "R$ 389,90",
-      "price_original_str": "R$ 389,90",
-      "discount_badge": "-78%",
+      "price_original_str": "549,90",
+      "discount_badge": "-67%",
       "installment_text": "3x R$ 28,30",
       "sold_count": "8953 vendidos on-line",
       "rating_score": "5.0",
@@ -11460,10 +11460,10 @@
     {
       "id": 41,
       "title": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
-      "preco": 54.73,
+      "preco": 139.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 299,90",
-      "discount_badge": "-82%",
+      "price_original_str": "529,90",
+      "discount_badge": "-74%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "8391 vendidos on-line",
       "rating_score": "5.0",
@@ -12093,7 +12093,7 @@
       "title": "Prancha Pro 480 Turbo MQ Professional Bivolt",
       "preco": 69.9,
       "preco_antigo": "R$ 399,90",
-      "price_original_str": "R$ 399,90",
+      "price_original_str": "209,70",
       "discount_badge": "-83%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "8654 vendidos on-line",
@@ -12709,10 +12709,10 @@
     {
       "id": 46,
       "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)",
-      "preco": 69.9,
+      "preco": 149.9,
       "preco_antigo": "R$ 399,90",
-      "price_original_str": "R$ 399,90",
-      "discount_badge": "-83%",
+      "price_original_str": "599,90",
+      "discount_badge": "-75%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9831 vendidos on-line",
       "rating_score": "5.0",
@@ -13365,10 +13365,10 @@
     {
       "id": 47,
       "title": "Extratora e Higienizadora Portátil WAP Spot Cleaner 1400W Borrifa Esfrega e Extrai Sujeira",
-      "preco": 69.9,
+      "preco": 169.9,
       "preco_antigo": "R$ 399,90",
-      "price_original_str": "R$ 399,90",
-      "discount_badge": "-83%",
+      "price_original_str": "699,90",
+      "discount_badge": "-76%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9314 vendidos on-line",
       "rating_score": "5.0",
@@ -13996,10 +13996,10 @@
     {
       "id": 52,
       "title": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano",
-      "preco": 94.9,
+      "preco": 389.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
-      "discount_badge": "-81%",
+      "price_original_str": "2.199,00",
+      "discount_badge": "-82%",
       "installment_text": "3x R$ 31,63",
       "sold_count": "7654 vendidos on-line",
       "rating_score": "5.0",
@@ -14732,10 +14732,10 @@
     {
       "id": 53,
       "title": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
-      "preco": 94.9,
+      "preco": 347.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
-      "discount_badge": "-81%",
+      "price_original_str": "1.899,00",
+      "discount_badge": "-82%",
       "installment_text": "3x R$ 31,63",
       "sold_count": "5801 vendidos on-line",
       "rating_score": "5.0",
@@ -15458,10 +15458,10 @@
     {
       "id": 54,
       "title": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
-      "preco": 69.9,
+      "preco": 169.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
-      "discount_badge": "-86%",
+      "price_original_str": "649,90",
+      "discount_badge": "-74%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9876 vendidos on-line",
       "rating_score": "5.0",
@@ -16173,10 +16173,10 @@
     {
       "id": 55,
       "title": "SWITCH  DESBLOQUEADO + 10 JOGOS DA SUA ESCOLHA COM CARTÃO DE MEMORIA 128 GB",
-      "preco": 64.9,
+      "preco": 289.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
-      "discount_badge": "-87%",
+      "price_original_str": "1.599,00",
+      "discount_badge": "-82%",
       "installment_text": "3x R$ 21,63",
       "sold_count": "5462 vendidos on-line",
       "rating_score": "5.0",
@@ -16635,7 +16635,7 @@
       "title": "Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço",
       "preco": 69.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
+      "price_original_str": "209,70",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9876 vendidos on-line",
@@ -17229,7 +17229,7 @@
       "title": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "preco": 69.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
+      "price_original_str": "209,70",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9853 vendidos on-line",
@@ -17519,7 +17519,7 @@
       "title": "Bateria Auxiliar De Partida Portátil Com Bomba De Ar de Rosquear",
       "preco": 69.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
+      "price_original_str": "209,70",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "8765 vendidos on-line",
@@ -18160,655 +18160,11 @@
       ]
     },
     {
-      "id": 65,
-      "title": "Sofá 3 Lugares Retrátil e Reclinável Cama inBox Senses 2,00m Velusoft Cinza",
-      "preco": 99.9,
-      "preco_antigo": 697.9,
-      "price_original_str": "R$ 697,90",
-      "discount_badge": "-86%",
-      "installment_text": "3x R$ 33,30",
-      "sold_count": "8765 vendidos on-line",
-      "rating_score": "5.0",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxn-lzou0oyl6coa73",
-      "slides": [
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxn-lzou0oyl6coa73",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 1"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdym-lzou0onhml9kd1",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 2"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdwh-lzou0ozz4beff1",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 3"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvr-lzou0plw88avdb",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 4"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdym-lzou0ol9pts68c",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 5"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvf-lzou0p8urbjgd9",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 6"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvr-lzou0pa8pa8792",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 7"
-        },
-        {
-          "src": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvg-lzou0pkia9dy49",
-          "alt": "Sofá 3 Lugares Retrátil e Reclinável Cam - Slide 8"
-        }
-      ],
-      "variacoes": {
-        "modelo": {
-          "com_imagem": true,
-          "label": "Cor",
-          "opcoes": [
-            {
-              "nome": "Suede Veludo Cinza Chumbo",
-              "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxn-lzou0oyl6coa73"
-            },
-            {
-              "nome": "Suede Veludo Marrom",
-              "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rdym-lzou0onhml9kd1"
-            }
-          ]
-        }
-      },
-      "video": {
-        "src": "https://files.catbox.moe/my8eud.mp4#prod=65&slot=descricao&slug=sofa-3-lugares-retratil-e-re",
-        "poster": "img/posters-desc/poster-desc-65.jpg",
-        "duration": "0:20",
-        "catbox_id": "my8eud.mp4"
-      },
-      "creators_count": 3,
-      "creators": [
-        {
-          "name": "Náthaly Rossi",
-          "username": "nathalyrmartinss",
-          "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/f23e4d391524b11802364f3d5ee6a8a5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=e16222dd&x-expires=1795464000&x-signature=7EWpShHzQ8rw27LaGlyolZeVKFU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
-          "poster": "videosprodutos/posters/poster-criador-65-1.jpg",
-          "video": "https://files.catbox.moe/67fj8e.mp4#prod=65&slot=criador_1&slug=sofa-3-lugares-retratil-e-re",
-          "catbox_id": "67fj8e.mp4",
-          "likes": 31500,
-          "description": "Dá pra acreditar que ele veio dentro de uma caixa que eu mesma carreguei para dentro do apê? #sofánacaixa #sofacama #sofainbox "
-        },
-        {
-          "name": "Malu Fernandes",
-          "username": "marialluizaff",
-          "avatar": "https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/a7ce1cfdb6f0e6946284c6d87b511b63~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=b970001a&x-expires=1795464000&x-signature=%2Fk9fQKpKfPXShzaxGcls%2Fs%2FfDq4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
-          "poster": "videosprodutos/posters/poster-criador-65-2.jpg",
-          "video": "https://files.catbox.moe/2w2dd9.mp4#prod=65&slot=criador_2&slug=sofa-3-lugares-retratil-e-re",
-          "catbox_id": "2w2dd9.mp4",
-          "likes": 34500,
-          "description": "Agora temos SOFÁ ✨ depois de um mêssss! Cê gostou? Eu ameiii e achei que combinou taaaanto com a sala!! Ele vira uma cama também então po..."
-        },
-        {
-          "name": "Dicas da Poliii",
-          "username": "dicasdapoliii",
-          "avatar": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/df53ee959a19106b9967735a4187d209~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=9598f5a4&x-expires=1795464000&x-signature=jGvAiq%2F4NFz0P41YrQRQaK%2Bclqs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
-          "poster": "videosprodutos/posters/poster-criador-65-3.jpg",
-          "video": "https://files.catbox.moe/uny51l.mp4#prod=65&slot=criador_3&slug=sofa-3-lugares-retratil-e-re",
-          "catbox_id": "uny51l.mp4",
-          "likes": 37500,
-          "description": "Sofá Cama inbox Nami. 1,88m ID SHOPEE:AXV-JBT-MQA #camainbox #sofacama "
-        }
-      ],
-      "details": [
-        {
-          "label": "Cor",
-          "value": "Cinza",
-          "hidden": false
-        },
-        {
-          "label": "Altura",
-          "value": "0,98cm",
-          "hidden": false
-        },
-        {
-          "label": "Profundidade fechado",
-          "value": "0,82cm",
-          "hidden": false
-        },
-        {
-          "label": "Profundidade aberto",
-          "value": "1,40m",
-          "hidden": false
-        }
-      ],
-      "description_html": "Perfeito para quem tem ambiente compacto, o Sofá de 3 Lugares Retrátil e Reclinável Senses é ideal para quem busca unir modernidade, conforto e tamanho para sua sala. Desenvolvido com uma estrutura interna resistente, sendo feito com espuma D33 com Tecnologia Thermogel, Percintas Extra Suport, Madeira de Eucalpito e o nosso Tecido Exclusivo Velusoft, tudo isso dará o suporte necessário para o conforto, sendo ideal para acomodar você e sua família. Tenha toda essa qualidade e conforto em sua sala. Demais, né? Garanta já o seu!<br/><br/>Informações do Produto:<br/><br/>Assentos:<br/><br/>Feitos de espuma D33 com Tecnologia Exclusiva ThermoGel, onde suas partículas em gel fazem com que sua estrutura não absorva o calor do corpo, mantendo sempre o sofá com a sensação FRESH e Aconchegante.<br/><br/>Manta Siliconada<br/><br/>Percintas Extra Suport<br/><br/>Assentos com Bordado Pantográfico<br/><br/>Encosto:<br/><br/>Reclináveis em 5 níveis de estágios.<br/><br/>Almofadas do encosto são parcialmente removíveis.<br/><br/>Compostas de 80% fibra siliconada e 20% flocos de espuma que proporcionam maior conforto.<br/><br/>Braços:<br/><br/>Madeira maciça 100% Eucalipto<br/><br/>Medindo 25cm de largura cada<br/><br/>Braços com Bordado Pantográfico<br/><br/>Estrutura:<br/><br/>Madeira maciça de Eucalipto 100% de reflorestamento<br/><br/>Grampos galvanizados<br/><br/>Pés:<br/><br/>Este modelo conta com sapatas para melhor suporte e sustentação.<br/><br/>Tecido:<br/><br/>Suede Velusoft com um toque macio e aconchegante.<br/><br/>Cor: Cinza<br/><br/>Medidas do Produto Montado:<br/><br/>Altura: 0,98cm<br/><br/>Profundidade fechado: 0,82cm<br/><br/>Profundidade aberto: 1,40m<br/><br/>Largura: 2,00m<br/><br/>Disponível nas seguintes cores: Azul, Bege, Café, Castor, Cinza, Vermelho, Vinho e Preto.<br/><br/>IMPORTANTE: Não há necessidade de montagem, pois o mesmo já vai montado.<br/><br/>Informações Extras:<br/><br/>Peso suportado: 110kg por pessoa<br/><br/>Garantia: 3 meses<br/><br/>Fabricante: Cama inBox<br/><br/>Entra facilmente em qualquer porta acima de 65cm de largura.<br/><br/>Informações Importantes:<br/><br/>- OS TECIDOS PODEM SOFRER ALTERAÇÕES DE TONALIDADES DEPENDENDO DO LOTE DE PRODUÇÃO E TAMBÉM DA RESOLUÇÃO DA TELA DO SEU MONITOR/CELULAR.<br/><br/>- Produto produzido de forma artesanal, podendo haver pequenas variações de centímetros na largura, altura e profundidade do produto.<br/><br/>- Os objetos que ambientam as fotos não acompanham o produto.<br/><br/>- Nossos produtos são feitos sob padrão, não permitindo a personalização dos mesmos.<br/><br/>- A Cama inBox fica responsável pelo transporte e entrega do produto adquirido até a porta de entrada ou portaria do cliente. Após a conclusão da entrega no endereço solicitado, o transporte até o local de uso ficará sob responsabilidade do cliente, caso neste momento haja problemas ou danos no produto, ficará a cargo do mesmo. OBS.: As transportadoras NÃO SOBEM escadas ou elevadores.",
-      "size_guide_html": "",
-      "reviews_count": 56,
-      "reviews_photos_count": 4,
-      "reviews": [
-        {
-          "name": "E**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_152.jpg",
-          "stars": 4,
-          "date_line": "15/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Simplesmente perfeito! Transformou o ambiente da casa, material de primeira e acabamento refinadíssimo. Entrega super rápida e muito cuidadosa.",
-          "photos": [
-            "img/review-65-real-1.jpg",
-            "img/review-65-real-2.jpg"
-          ]
-        },
-        {
-          "name": "K**s M**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_11.jpg",
-          "stars": 5,
-          "date_line": "14/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Chegou no prazo..\nFoi entregue na nossa casa nova..\nMoro distante...\nNão tenho como registrar fotos ou vídeo..\nMas  quem recebeu  disse q chegou direitinho,  bem embalado..",
-          "photos": [
-            "img/review-65-real-3.jpg",
-            "img/review-65-real-4.jpg"
-          ]
-        },
-        {
-          "name": "I**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_154.jpg",
-          "stars": 5,
-          "date_line": "12/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Chegou bem antes do prazo, excelente, fácil montagem, lindo! Recomendo!!!",
-          "photos": []
-        },
-        {
-          "name": "W**r P**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_13.jpg",
-          "stars": 5,
-          "date_line": "11/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Sofá simples, mas é bem confortável, não tem muita espuma, acabamento bom. Gostei muito!",
-          "photos": []
-        },
-        {
-          "name": "S**a M**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_156.jpg",
-          "stars": 5,
-          "date_line": "10/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Gostei bastante pelo preço atente bem as expectativas",
-          "photos": []
-        },
-        {
-          "name": "Y**a C**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_15.jpg",
-          "stars": 5,
-          "date_line": "08/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "O sofá é simples, bonito e a cor é linda. Nao é super confortável, mas pelo preço, é um bom sofá. O tecido nao é ruim. O tamanho é bom, é reclinável e retrátil. É muito leve.",
-          "photos": []
-        },
-        {
-          "name": "B**a N**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_158.jpg",
-          "stars": 5,
-          "date_line": "07/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Eu amei, entregou antes do prazo, no endereço certo.",
-          "photos": []
-        },
-        {
-          "name": "V**r H**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_17.jpg",
-          "stars": 4,
-          "date_line": "05/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Praticidade total no dia a dia, economiza tempo e esforço. Já indiquei para parentes e amigos, produto sensacional!",
-          "photos": []
-        },
-        {
-          "name": "L**u D**e",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_160.jpg",
-          "stars": 5,
-          "date_line": "04/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "O sofá é muito bonito e espaçoso na sala, o tecido suede é bem macio. A montagem do encosto exigiu um pouco de cuidado no encaixe dos trilhos de metal, mas depois de encaixado ficou bem firme e confortável para toda a família. A entrega da Stone Shop foi pontual e veio bem embalado.",
-          "photos": []
-        },
-        {
-          "name": "L**s F**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
-          "stars": 5,
-          "date_line": "02/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Pelo preço que saiu o sofá esperava um material melhor, a madeira é frágil, meu marido pesa 105kg, e o sofá estrala muito quando ele senta, e a entrega foi péssima, eu vi os entregadores descendo do caminhão, eles jogaram o sofá no chão, onde rasgou .. igual está a foto, e as almofadas saem do lugar ao mudar a posição, toda hora tem que ficar encaixando.",
-          "photos": []
-        },
-        {
-          "name": "B**a C**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_162.jpg",
-          "stars": 5,
-          "date_line": "01/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Muito bom, demorou um pouco além do esperado, mas chegou e o produto vale a pena MESMO! Qualidade pura!",
-          "photos": []
-        },
-        {
-          "name": "D**a G**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_21.jpg",
-          "stars": 5,
-          "date_line": "29/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Foi entregue depois do dia marcado por conta de problema com a transportadora ,mas o atendimento da loja foi bom o sofá e bonito parece bom o preço é bom \nRecomendo",
-          "photos": []
-        },
-        {
-          "name": "E**e S**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_164.jpg",
-          "stars": 5,
-          "date_line": "28/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Na realidade o sofá foi comprado para minha filha.\nEla amou o sofá. Bem costurado, tecido impecável, não tem nenhum defeito.\nA empresa está de parabéns, foram bem atenciosos e a entrega chegou exatamente no dia programado.\nMuito obrigada  ❤️",
-          "photos": []
-        },
-        {
-          "name": "M**o B**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_23.jpg",
-          "stars": 5,
-          "date_line": "26/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "É lindo demais o sofá super confortável e chegou muito rápido apaixonada  ❤️",
-          "photos": []
-        },
-        {
-          "name": "K**a L**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_166.jpg",
-          "stars": 4,
-          "date_line": "25/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Bonito confortável com mostra no anúncio",
-          "photos": []
-        },
-        {
-          "name": "J**o P**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_25.jpg",
-          "stars": 5,
-          "date_line": "23/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "O sofá esteticamente é bonito, confortável porém o Suede é fraco não é fino... Mas ainda assim eu recomendo",
-          "photos": []
-        },
-        {
-          "name": "V**a F**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_168.jpg",
-          "stars": 5,
-          "date_line": "21/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "O tamanho é perfeito pra quem é grande, e é muito confortável",
-          "photos": []
-        },
-        {
-          "name": "C**s E**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_27.jpg",
-          "stars": 5,
-          "date_line": "20/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Adorei o sofá, chegou antes do prazo, o estragador super atencioso",
-          "photos": []
-        },
-        {
-          "name": "N**a R**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_170.jpg",
-          "stars": 5,
-          "date_line": "18/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Ótimo \nMuito bom e confortável. \nFácil de montar.",
-          "photos": []
-        },
-        {
-          "name": "R**a G**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_29.jpg",
-          "stars": 5,
-          "date_line": "17/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Adorei a qualidade! Tudo muito bem acabado, sem rebarbas ou defeitos. Veio super bem protegido na caixa. Recomendo com certeza a todos!",
-          "photos": []
-        },
-        {
-          "name": "A**e M**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_172.jpg",
-          "stars": 5,
-          "date_line": "15/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Gostei muito. Entrega no prazo e entregador muito gentil,ajudou o meu esposo a colocar dentro de casa.",
-          "photos": []
-        },
-        {
-          "name": "T**s A**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_31.jpg",
-          "stars": 4,
-          "date_line": "13/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Sofá perfeito, super confortável e chegou sem nenhum defeito, chegou com 6 dias muito rápido a entrega  😍✨",
-          "photos": []
-        },
-        {
-          "name": "C**e B**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_174.jpg",
-          "stars": 5,
-          "date_line": "12/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Sofa muito  bom a loja  super atenciosa , o entregador muito simpático  e  prestativo.",
-          "photos": []
-        },
-        {
-          "name": "A**r C**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_33.jpg",
-          "stars": 5,
-          "date_line": "10/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Sofá lindooooo... Entrega maravilhosa, super rápida, estava agendada entre o dia 9 e 13 de outubro, chegou dia 03. ÓTIMA COMPRA, COMPREM SEM MEDO.",
-          "photos": []
-        },
-        {
-          "name": "T**a L**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_176.jpg",
-          "stars": 5,
-          "date_line": "08/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Gostei bonito,entregaram bem mais rápido do que informaram na compra, fiquei bastante feliz pq pedi para trocarem a cor que eu pedi errado sem querer e fui atendida, estou muito satisfeita.",
-          "photos": []
-        },
-        {
-          "name": "F**e M**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_35.jpg",
-          "stars": 5,
-          "date_line": "06/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Eu sabia que 2 metros n é grande,mas n imaginei que na minha sala ia parecer sofa de boneca ❤️,sofa confortável compatível com o valor pago.",
-          "photos": []
-        },
-        {
-          "name": "M**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_178.jpg",
-          "stars": 5,
-          "date_line": "05/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Chegou antes do tempo previsto super recomendo amei minha comprar  ❤️",
-          "photos": []
-        },
-        {
-          "name": "G**o B**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_37.jpg",
-          "stars": 5,
-          "date_line": "03/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Gostei , não é tão confortável mas pelo preço compensou",
-          "photos": []
-        },
-        {
-          "name": "V**a L**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_180.jpg",
-          "stars": 4,
-          "date_line": "02/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "O sofá é lindo, achei que ele seria um pouco maior devido a foto no anuncio, mas eu gostei mesmo assim, entrega foi super rápida, recomendo muito a loja",
-          "photos": []
-        },
-        {
-          "name": "R**n O**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_39.jpg",
-          "stars": 5,
-          "date_line": "15/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "O produto é muito bom, qualidade muito boa pelo custo, o custo benefício é perfeito, não tinha fé até vê pessoalmente e experimentar, super indico o sofá deles",
-          "photos": []
-        },
-        {
-          "name": "C**a P**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_182.jpg",
-          "stars": 5,
-          "date_line": "14/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "O produto chegou antes do prazo, bem embalado, o entregador muito atencioso.",
-          "photos": []
-        },
-        {
-          "name": "M**s P**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_41.jpg",
-          "stars": 5,
-          "date_line": "12/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Tô muito satisfeita com o meu sofá gostei muito chegou antes da data entregaram adiantado e o entregador era muito educado e gentil tô muito satisfeita adorei",
-          "photos": []
-        },
-        {
-          "name": "J**e F**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_184.jpg",
-          "stars": 5,
-          "date_line": "11/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Sofá bonito, bem acabado, de fácil montagem e fica  bem grande e confortável quando puxamos os assentos. A entrega foi excelente e bem antes do prazo..",
-          "photos": []
-        },
-        {
-          "name": "C**o L**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_43.jpg",
-          "stars": 5,
-          "date_line": "10/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Excelente produto, chegou antes do previsto. Venho sem nenhuma avaria. Com certeza recomendo!",
-          "photos": []
-        },
-        {
-          "name": "A**a N**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_186.jpg",
-          "stars": 5,
-          "date_line": "08/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Chegou antes do prazo, veio bem embalado, ainda não montei, assim fizer mandarei foto.",
-          "photos": []
-        },
-        {
-          "name": "L**z V**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_45.jpg",
-          "stars": 4,
-          "date_line": "07/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Veio certinho! E chegou muuuuuito antes do prazo combinado.\nSofá bem confortável, preço muito em conta, recomendo bastante!!",
-          "photos": []
-        },
-        {
-          "name": "L**a M**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_188.jpg",
-          "stars": 5,
-          "date_line": "05/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Ótimo atendimento e entregadores. Entrega com 10 dias antes do prazo. Muito satisfeita com meu sofá novo!",
-          "photos": []
-        },
-        {
-          "name": "R**l M**t",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_47.jpg",
-          "stars": 5,
-          "date_line": "04/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Potência excelente e baixo ruído. Limpeza fácil e rápida. Stone Shop cumpriu o prazo com entrega impecável!",
-          "photos": []
-        },
-        {
-          "name": "F**a B**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_190.jpg",
-          "stars": 5,
-          "date_line": "02/02 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Ótimo sofá pode comprar só deu um trabalho um pouquinho de montar o bracinho do dos travesseiros mãe o restante tudo ok",
-          "photos": []
-        },
-        {
-          "name": "S**o F**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_49.jpg",
-          "stars": 5,
-          "date_line": "01/02 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Chegou antes da data prevista, veio certinho sem nenhum defeito.",
-          "photos": []
-        },
-        {
-          "name": "P**a S**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_192.jpg",
-          "stars": 5,
-          "date_line": "29/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "O produto é bom, o assento poderia ser mais macio, valeu o custo/benefício.",
-          "photos": []
-        },
-        {
-          "name": "T**g R**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_51.jpg",
-          "stars": 5,
-          "date_line": "28/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "É um ótimo produto, não tenho o que reclamar chegou no prazo e em perfeita condições bem embalado.",
-          "photos": []
-        },
-        {
-          "name": "B**z L**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_194.jpg",
-          "stars": 4,
-          "date_line": "26/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Chegou tudo certo gostei bastante do sofá entrega foi antes da data prevista tava marcado pra chegar dia 22 de julho chegou dia 10 de julho",
-          "photos": []
-        },
-        {
-          "name": "J**n S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_53.jpg",
-          "stars": 5,
-          "date_line": "25/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Adorei a qualidade! Tudo muito bem acabado, sem rebarbas ou defeitos. Veio super bem protegido na caixa. Recomendo com certeza a todos!",
-          "photos": []
-        },
-        {
-          "name": "E**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_196.jpg",
-          "stars": 5,
-          "date_line": "23/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Entregou antes do previsto. Gostei muito",
-          "photos": []
-        },
-        {
-          "name": "P**o H**e",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_55.jpg",
-          "stars": 5,
-          "date_line": "21/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "O sofá vale muito pelo custo benefício, ótimo pra quem tem espaço pequeno, chegou bem antes do previsto!!!",
-          "photos": []
-        },
-        {
-          "name": "I**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_198.jpg",
-          "stars": 5,
-          "date_line": "20/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Demorou dois meses para chegar mais chegou, maravilhoso, a loja esta de parabéns",
-          "photos": []
-        },
-        {
-          "name": "D**e A**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_57.jpg",
-          "stars": 5,
-          "date_line": "18/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Achei ótimo um pouco de demora na entrega mais gostei muito",
-          "photos": []
-        },
-        {
-          "name": "S**a M**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_200.jpg",
-          "stars": 5,
-          "date_line": "17/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Simplesmente perfeito! Transformou o ambiente da casa, material de primeira e acabamento refinadíssimo. Entrega super rápida e muito cuidadosa.",
-          "photos": []
-        },
-        {
-          "name": "M**e T**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_59.jpg",
-          "stars": 4,
-          "date_line": "15/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Estava muito empolgada com a compra e contando os dias para receber o sofá, mas, infelizmente, a experiência não foi como esperado. Os encostos são difíceis de encaixar, e há o risco de forçar demais, o que pode quebrar a madeira ou entortar os ferros. Como não fixam corretamente, acabam saindo do lugar, e, ao sentar, dá a sensação de que vão se desmontar. Além disso, há uma diferença visível de espaçamento entre os encostos.\nNo entanto, o tamanho do sofá é ótimo e ele é confortável, embora a entrega tenha sido demorada. Para piorar, encontrei um objeto pontiagudo (tesoura de arremate tic-tac) dentro de um dos encostos por sorte, caiu quando fui tentar encaixar o encosto e não me machuquei. Agora tenho um tic-tac de brinde pela compra. (CONTATEI O SUPORTE, SOBRE MINHA INSATISFAÇÃO E A LOJA ENVIOU UM TÉCNICO NA MINHA CASA PARA AJUSTAR O SOFÁ  ❤️ E VERIFICAR AS CONDIÇÕES DO PRODUTO, RECEBI TODO SUPORTE NECESSÁRIO, AJUSTOU OS ENCOSTOS, AGORA O SOFÁ ESTÁ PERFEITO).",
-          "photos": []
-        },
-        {
-          "name": "B**a N**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_202.jpg",
-          "stars": 5,
-          "date_line": "13/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Produto robusto e de altíssima durabilidade. Instalação super simples e resultado espetacular logo no primeiro uso. Comprarei novamente na Stone Shop!",
-          "photos": []
-        },
-        {
-          "name": "G**l S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_61.jpg",
-          "stars": 5,
-          "date_line": "12/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Adorei a qualidade! Tudo muito bem acabado, sem rebarbas ou defeitos. Veio super bem protegido na caixa. Recomendo com certeza a todos!",
-          "photos": []
-        },
-        {
-          "name": "L**u D**e",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_204.jpg",
-          "stars": 5,
-          "date_line": "10/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Veio ótimo, bem embalado. Lindíssimo e ótima qualidade. Tô apaixonada  ❤️",
-          "photos": []
-        },
-        {
-          "name": "L**e C**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_63.jpg",
-          "stars": 5,
-          "date_line": "08/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Sofá muito confortável, esperava que fosse um pouco maior\nMas está ótimo\nChegou na data certa",
-          "photos": []
-        },
-        {
-          "name": "B**a C**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_206.jpg",
-          "stars": 5,
-          "date_line": "06/01 · Suede Veludo Cinza Chumbo",
-          "variation": "Suede Veludo Cinza Chumbo",
-          "comment": "Amei o sofá estou muito satisfeita!!!",
-          "photos": []
-        },
-        {
-          "name": "F**o P**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_65.jpg",
-          "stars": 5,
-          "date_line": "05/01 · Suede Veludo Marrom",
-          "variation": "Suede Veludo Marrom",
-          "comment": "Estava praticamente fechado com outra loja, até que vi o anúncio, perguntei pra um amigo de Umuarama, que falou muito bem da empresa, resolvi arriscar.\n\nMuito bom, o sofá é pequeno, se você busca deitar e esticar todo o corpo, não vai conseguir, ah não ser que seja na diagonal.\n\nPassou fácil na porta, é confortável, dormiria nele fácil.\n\nNão me arrependo da compra.",
-          "photos": []
-        }
-      ],
-      "health_score": 80,
-      "has_catbox_conflict": false,
-      "alerts": [
-        "3 vídeos de criadores (meta: 10–30+)"
-      ]
-    },
-    {
       "id": 68,
       "title": "Jogo de Panelas Cerâmica Kit 5 Peças Antiaderente Tampa Vidro",
       "preco": 44.73,
       "preco_antigo": "R$ 397,86",
-      "price_original_str": "R$ 249,90",
+      "price_original_str": "249,90",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9052 vendidos on-line",
@@ -19532,7 +18888,7 @@
       "title": "Kit 10 Camisetas Dry Fit Masculina - Casual - Treino - Academia - Esportes - Exercícios - Corrida",
       "preco": 69.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
+      "price_original_str": "209,70",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9843 vendidos on-line",
@@ -20257,7 +19613,7 @@
       "title": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "preco": 69.9,
       "preco_antigo": "R$ 497,90",
-      "price_original_str": "R$ 497,90",
+      "price_original_str": "209,70",
       "discount_badge": "-86%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "9843 vendidos on-line",
@@ -20521,10 +19877,10 @@
     {
       "id": 85,
       "title": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
-      "preco": 39.9,
+      "preco": 197.9,
       "preco_antigo": "R$ 397,90",
-      "price_original_str": "R$ 397,90",
-      "discount_badge": "-90%",
+      "price_original_str": "1.199,00",
+      "discount_badge": "-83%",
       "installment_text": "3x R$ 13,30",
       "sold_count": "9853 vendidos on-line",
       "rating_score": "5.0",
@@ -20772,7 +20128,7 @@
       "title": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
       "preco": 79.9,
       "preco_antigo": "R$ 697,90",
-      "price_original_str": "R$ 697,90",
+      "price_original_str": "239,70",
       "discount_badge": "-89%",
       "installment_text": "3x R$ 26,63",
       "sold_count": "5432 vendidos on-line",
@@ -21534,7 +20890,7 @@
       "title": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
       "preco": 79.9,
       "preco_antigo": "R$ 647,90",
-      "price_original_str": "R$ 647,90",
+      "price_original_str": "239,70",
       "discount_badge": "-88%",
       "installment_text": "3x R$ 26,63",
       "sold_count": "5324 vendidos on-line",
@@ -21857,10 +21213,10 @@
     {
       "id": 95,
       "title": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
-      "preco": 48.05,
+      "preco": 159.9,
       "preco_antigo": 398.05,
-      "price_original_str": "R$ 398,05",
-      "discount_badge": "-88%",
+      "price_original_str": "699,90",
+      "discount_badge": "-77%",
       "installment_text": "3x R$ 16,02",
       "sold_count": "5259 vendidos on-line",
       "rating_score": "5.0",
@@ -22455,7 +21811,7 @@
       "title": "Aparelho de Jantar/Chá Oxford Ryo Maresia 30 Peças",
       "preco": 69.9,
       "preco_antigo": 497.9,
-      "price_original_str": "R$ 497,90",
+      "price_original_str": "497,90",
       "discount_badge": "-86%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "7643 vendidos on-line",
@@ -22730,7 +22086,7 @@
       "title": "Jogo de Jantar Canyon Porcelana Decorada 20 Peças Tramontina",
       "preco": 69.9,
       "preco_antigo": 596.9,
-      "price_original_str": "R$ 596,90",
+      "price_original_str": "596,90",
       "discount_badge": "-88%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "4877 vendidos on-line",
@@ -23006,7 +22362,7 @@
       "title": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
       "preco": 44.9,
       "preco_antigo": 249.9,
-      "price_original_str": "R$ 249,90",
+      "price_original_str": "249,90",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 14,97",
       "sold_count": "4812 vendidos on-line",
@@ -23271,305 +22627,12 @@
       ]
     },
     {
-      "id": 100,
-      "title": "Apple iPhone 15, 15 Plus, 15 Pro e 15 Pro Max (Vitrine Premium)",
-      "preco": 95.9,
-      "preco_antigo": 2314.4,
-      "price_original_str": "R$ 2.314,40",
-      "discount_badge": "-82%",
-      "installment_text": "3x R$ 31,96",
-      "sold_count": "12478 vendidos on-line",
-      "rating_score": "4.9",
-      "img": "img/iphones/15/preto/1.png",
-      "slides": [
-        {
-          "src": "img/iphones/15/preto/1.png",
-          "alt": "Apple iPhone 15 - Preto"
-        },
-        {
-          "src": "img/iphones/15/azul/1.png",
-          "alt": "Apple iPhone 15 - Azul"
-        },
-        {
-          "src": "img/iphones/15/verde/1.png",
-          "alt": "Apple iPhone 15 - Verde"
-        },
-        {
-          "src": "img/iphones/15/amarelo/1.png",
-          "alt": "Apple iPhone 15 - Amarelo"
-        },
-        {
-          "src": "img/iphones/15/rosa/1.png",
-          "alt": "Apple iPhone 15 - Rosa"
-        }
-      ],
-      "variacoes": {
-        "modelo": {
-          "com_imagem": true,
-          "label": "Modelo / Capacidade",
-          "opcoes": [
-            {
-              "nome": "Titânio Preto 128GB",
-              "imagem": "../img/iphones/15/preto/1.png"
-            },
-            {
-              "nome": "Titânio Natural 256GB",
-              "imagem": "../img/iphones/15/azul/1.png"
-            },
-            {
-              "nome": "Titânio Azul 256GB",
-              "imagem": "../img/iphones/15/verde/1.png"
-            },
-            {
-              "nome": "Titânio Branco 128GB",
-              "imagem": "../img/iphones/15/rosa/1.png"
-            }
-          ]
-        }
-      },
-      "video": {
-        "src": "https://files.catbox.moe/c6hua3.mp4#prod=100&slot=descricao&slug=apple-iphone-15-15-plus-15-p",
-        "poster": "img/produto-100-1.jpg",
-        "duration": "0:30",
-        "catbox_id": "c6hua3.mp4"
-      },
-      "creators_count": 4,
-      "creators": [
-        {
-          "name": "Vitória Taques",
-          "username": "vitoriatmsugc",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_97.jpg",
-          "poster": "img/produto-100-2.jpg",
-          "video": "https://files.catbox.moe/czrpji.mp4#prod=100&slot=criador_1&slug=apple-iphone-15-15-plus-15-p",
-          "catbox_id": "czrpji.mp4",
-          "likes": 46000,
-          "description": "Unboxing do meu novo iPhone 15 cor azul! Acabamento em vidro fosco simplesmente perfeito 💙"
-        },
-        {
-          "name": "Fernanda Oliveira",
-          "username": "fernandaaa_oliv",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_98.jpg",
-          "poster": "img/produto-100-1.jpg",
-          "video": "https://files.catbox.moe/4je9vm.mp4#prod=100&slot=criador_2&slug=apple-iphone-15-15-plus-15-p",
-          "catbox_id": "4je9vm.mp4",
-          "likes": 49900,
-          "description": "Meu novo companheiro! iPhone 15 rosa, câmera de 48MP e bateria que dura o dia inteiro 🩷🥹"
-        },
-        {
-          "name": "Diogo Silva",
-          "username": "diogooslvv",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_99.jpg",
-          "poster": "img/produto-100-2.jpg",
-          "video": "https://files.catbox.moe/xcta68.mp4#prod=100&slot=criador_3&slug=apple-iphone-15-15-plus-15-p",
-          "catbox_id": "xcta68.mp4",
-          "likes": 53800,
-          "description": "Perfeição em cada detalhe! iPhone 15 Blue unboxing e primeiras impressões 🌊🐚"
-        },
-        {
-          "name": "Tuane Sangy",
-          "username": "tuanesangy",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_100.jpg",
-          "poster": "img/produto-100-1.jpg",
-          "video": "https://files.catbox.moe/q5ctfn.mp4#prod=100&slot=criador_4&slug=apple-iphone-15-15-plus-15-p",
-          "catbox_id": "q5ctfn.mp4",
-          "likes": 57700,
-          "description": "Comprei meu primeiro iPhone 15 e deu tudo certo! Câmera cinematográfica e super rápido ✨"
-        }
-      ],
-      "details": [
-        {
-          "label": "Produto",
-          "value": "Apple iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max",
-          "hidden": false
-        },
-        {
-          "label": "Condição",
-          "value": "Novo (Original de Fábrica)",
-          "hidden": false
-        },
-        {
-          "label": "Envio",
-          "value": "Pronta Entrega no Brasil com Rastreamento",
-          "hidden": false
-        },
-        {
-          "label": "Garantia",
-          "value": "90 Dias de Garantia Oficial",
-          "hidden": false
-        },
-        {
-          "label": "Disponibilidade",
-          "value": "Estoque Físico com Envio Imediato",
-          "hidden": true
-        },
-        {
-          "label": "Autenticidade",
-          "value": "100% Homologado e Certificado",
-          "hidden": true
-        }
-      ],
-      "description_html": "Apple iPhone 15, 15 Plus, 15 Pro e 15 Pro Max de vitrine com desconto. A partir de R$108,90. Frete grátis.",
-      "size_guide_html": "",
-      "reviews_count": 15,
-      "reviews_photos_count": 4,
-      "reviews": [
-        {
-          "name": "C**a P**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_62.jpg",
-          "stars": 4,
-          "date_line": "15/02 · Titânio Preto 128GB",
-          "variation": "Titânio Preto 128GB",
-          "comment": "Aparelho 100% lacrado na caixa original Apple com garantia de 1 ano! Câmera espetacular e a bateria dura o dia todo com folga. Entrega ultrarrápida!",
-          "photos": [
-            "img/review-100-real-1.jpg"
-          ]
-        },
-        {
-          "name": "C**s E**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_77.jpg",
-          "stars": 5,
-          "date_line": "14/02 · Titânio Natural 256GB",
-          "variation": "Titânio Natural 256GB",
-          "comment": "Apaixonada pelo meu iPhone 15! A Dynamic Island é super útil e a tela é muito brilhante. Chegou perfeito e bem protegido.",
-          "photos": [
-            "img/review-100-real-2.jpg"
-          ]
-        },
-        {
-          "name": "J**e F**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_9.jpg",
-          "stars": 5,
-          "date_line": "12/02 · Titânio Azul 256GB",
-          "variation": "Titânio Azul 256GB",
-          "comment": "Verifiquei o número de série no site da Apple e está tudo certinho. Desempenho absurdo nos jogos e apps pesados. Recomendo a Stone Shop!",
-          "photos": [
-            "img/review-100-real-3.jpg"
-          ]
-        },
-        {
-          "name": "R**a G**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_101.jpg",
-          "stars": 5,
-          "date_line": "11/02 · Titânio Branco 128GB",
-          "variation": "Titânio Branco 128GB",
-          "comment": "Melhor celular que já tive. O acabamento em titânio é muito leve na mão. Nota 1000!",
-          "photos": [
-            "img/review-100-real-4.jpg"
-          ]
-        },
-        {
-          "name": "A**a N**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_113.jpg",
-          "stars": 5,
-          "date_line": "10/02 · Titânio Preto 128GB",
-          "variation": "Titânio Preto 128GB",
-          "comment": "Atendimento impecável, tiraram todas as minhas dúvidas e o envio foi feito no mesmo dia. Top!",
-          "photos": []
-        },
-        {
-          "name": "T**s A**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_127.jpg",
-          "stars": 5,
-          "date_line": "08/02 · Titânio Natural 256GB",
-          "variation": "Titânio Natural 256GB",
-          "comment": "Sensacional, produto original e lacrado com nota fiscal. Podem comprar sem medo.",
-          "photos": []
-        },
-        {
-          "name": "L**a M**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_14.jpg",
-          "stars": 5,
-          "date_line": "07/02 · Titânio Azul 256GB",
-          "variation": "Titânio Azul 256GB",
-          "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
-          "photos": []
-        },
-        {
-          "name": "A**r C**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_151.jpg",
-          "stars": 5,
-          "date_line": "05/02 · Titânio Branco 128GB",
-          "variation": "Titânio Branco 128GB",
-          "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonito e resistente. Recomendo demais!",
-          "photos": []
-        },
-        {
-          "name": "F**a B**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_164.jpg",
-          "stars": 5,
-          "date_line": "04/02 · Titânio Preto 128GB",
-          "variation": "Titânio Preto 128GB",
-          "comment": "Produto espetacular! Chegou muito rápido e super bem embalado pela Stone Shop. Superou minhas expectativas!",
-          "photos": []
-        },
-        {
-          "name": "F**e M**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_178.jpg",
-          "stars": 5,
-          "date_line": "02/02 · Titânio Natural 256GB",
-          "variation": "Titânio Natural 256GB",
-          "comment": "Entrega relâmpago! Produto 100% original, acabamento impecável de altíssima qualidade. Recomendo de olhos fechados.",
-          "photos": []
-        },
-        {
-          "name": "P**a S**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_19.jpg",
-          "stars": 5,
-          "date_line": "01/02 · Titânio Azul 256GB",
-          "variation": "Titânio Azul 256GB",
-          "comment": "Comprei por indicação e me surpreendi positivamente. Vale cada centavo investido. Loja muito ágil e atenciosa!",
-          "photos": []
-        },
-        {
-          "name": "G**o B**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_203.jpg",
-          "stars": 5,
-          "date_line": "29/01 · Titânio Branco 128GB",
-          "variation": "Titânio Branco 128GB",
-          "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
-          "photos": []
-        },
-        {
-          "name": "B**z L**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_214.jpg",
-          "stars": 5,
-          "date_line": "28/01 · Titânio Preto 128GB",
-          "variation": "Titânio Preto 128GB",
-          "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
-          "photos": []
-        },
-        {
-          "name": "R**n O**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_3.jpg",
-          "stars": 5,
-          "date_line": "26/01 · Titânio Natural 256GB",
-          "variation": "Titânio Natural 256GB",
-          "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
-          "photos": []
-        },
-        {
-          "name": "E**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_196.jpg",
-          "stars": 5,
-          "date_line": "25/01 · Titânio Azul 256GB",
-          "variation": "Titânio Azul 256GB",
-          "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
-          "photos": []
-        }
-      ],
-      "health_score": 90,
-      "has_catbox_conflict": false,
-      "alerts": [
-        "4 vídeos de criadores (meta: 10–30+)"
-      ]
-    },
-    {
       "id": 101,
       "title": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
-      "preco": 87.9,
+      "preco": 189.9,
       "preco_antigo": "R$ 599,00",
-      "price_original_str": "R$ 599,00",
-      "discount_badge": "-83%",
+      "price_original_str": "599,00",
+      "discount_badge": "-68%",
       "installment_text": "3x R$ 29,30",
       "sold_count": "13488 vendidos on-line",
       "rating_score": "4.7",
@@ -23959,282 +23022,11 @@
       ]
     },
     {
-      "id": 102,
-      "title": "Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km",
-      "preco": 99.9,
-      "preco_antigo": 2344,
-      "price_original_str": "R$ 2.344,00",
-      "discount_badge": "-82%",
-      "installment_text": "3x R$ 33,30",
-      "sold_count": "8944 vendidos on-line",
-      "rating_score": "4.9",
-      "img": "imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp",
-      "slides": [
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 1"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_725757-MLA106965946098_022026-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 2"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_735269-MLA91958533693_092025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 3"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_767964-MLA91958573481_092025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 4"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_835789-MLA91559669066_092025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 5"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_877882-MLA91958603329_092025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 6"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_883810-MLA91958623277_092025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 7"
-        },
-        {
-          "src": "imagemscooterpreta/D_NQ_NP_2X_940012-MLA91958533713_092025-F.webp",
-          "alt": "Scooter Elétrica TUI 1000w - 8"
-        }
-      ],
-      "variacoes": {
-        "modelo": {
-          "com_imagem": true,
-          "label": "Cor",
-          "opcoes": [
-            {
-              "nome": "Preta",
-              "imagem": "../imagemscooterpreta/D_NQ_NP_2X_712059-MLA99509048862_112025-F.webp"
-            },
-            {
-              "nome": "Branca",
-              "imagem": "../imagemscooterbranca/D_NQ_NP_2X_679453-MLA92387568816_092025-F.webp"
-            },
-            {
-              "nome": "Vermelha",
-              "imagem": "../imagemscootervermelho/D_NQ_NP_2X_606638-MLA91971019049_092025-F.webp"
-            }
-          ]
-        }
-      },
-      "video": {
-        "src": "videoscooterintroducao/scooter-preta.mp4",
-        "poster": "img/posters-desc/poster-desc-102.jpg",
-        "duration": "0:20",
-        "catbox_id": ""
-      },
-      "creators_count": 1,
-      "creators": [
-        {
-          "name": "Matheus EletroMob",
-          "username": "matheuseletromob",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_1.jpg",
-          "poster": "img/posters-scooter/poster-1.jpg",
-          "video": "videoscooterintroducao/scooter-preta.mp4",
-          "catbox_id": "",
-          "likes": 21000,
-          "description": "Scooter Elétrica TUI 1000W! Autonomia surreal para o dia a dia na cidade! 🛴⚡ #scooter #mobilidadeurbana #tecnologia"
-        }
-      ],
-      "details": [
-        {
-          "label": "Produto",
-          "value": "Scooter Elétrica TUI 1000w | 2 Lugares | Sem CNH | Autonomia 60km",
-          "hidden": false
-        },
-        {
-          "label": "Condição",
-          "value": "Novo (Original de Fábrica)",
-          "hidden": false
-        },
-        {
-          "label": "Envio",
-          "value": "Pronta Entrega no Brasil com Rastreamento",
-          "hidden": false
-        },
-        {
-          "label": "Garantia",
-          "value": "90 Dias de Garantia Oficial",
-          "hidden": false
-        },
-        {
-          "label": "Disponibilidade",
-          "value": "Estoque Físico com Envio Imediato",
-          "hidden": true
-        },
-        {
-          "label": "Autenticidade",
-          "value": "100% Homologado e Certificado",
-          "hidden": true
-        }
-      ],
-      "description_html": "Scooter Elétrica TUI 1000w com bateria de lítio 60V, autonomia de 60km, 12 cores disponíveis. A partir de R$99,90. Frete grátis.",
-      "size_guide_html": "",
-      "reviews_count": 15,
-      "reviews_photos_count": 4,
-      "reviews": [
-        {
-          "name": "F**a B**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_110.jpg",
-          "stars": 4,
-          "date_line": "15/02 · Preta",
-          "variation": "Preta",
-          "comment": "Sensacional essa scooter! Muito forte nas subidas aqui do bairro, bateria dura a semana toda pro meu trajeto diário pro trabalho. Economia surreal!",
-          "photos": [
-            "img/review-102-real-1.jpg"
-          ]
-        },
-        {
-          "name": "D**a G**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_123.jpg",
-          "stars": 5,
-          "date_line": "14/02 · Branca",
-          "variation": "Branca",
-          "comment": "Super confortável e muito estilosa! Cabe eu e minha filha com muita segurança. Não precisa de CNH e não gasta gasolina nenhuma.",
-          "photos": [
-            "img/review-102-real-2.jpg"
-          ]
-        },
-        {
-          "name": "P**a S**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_135.jpg",
-          "stars": 5,
-          "date_line": "12/02 · Vermelha",
-          "variation": "Vermelha",
-          "comment": "Chegou muito bem embalada na estrutura reforçada. Farol de LED ilumina muito à noite e os freios a disco respondem na hora.",
-          "photos": [
-            "img/review-102-real-3.jpg"
-          ]
-        },
-        {
-          "name": "M**o B**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_149.jpg",
-          "stars": 5,
-          "date_line": "11/02 · Preta",
-          "variation": "Preta",
-          "comment": "Melhor investimento de mobilidade urbana que já fiz. Silenciosa, potente e a bateria carrega rápido na tomada comum.",
-          "photos": [
-            "img/review-102-real-4.jpg"
-          ]
-        },
-        {
-          "name": "B**z L**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_160.jpg",
-          "stars": 5,
-          "date_line": "10/02 · Branca",
-          "variation": "Branca",
-          "comment": "Adorei! Muito fácil de pilotar, display digital bem visível com velocímetro e nível de bateria.",
-          "photos": []
-        },
-        {
-          "name": "J**o P**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_173.jpg",
-          "stars": 5,
-          "date_line": "08/02 · Vermelha",
-          "variation": "Vermelha",
-          "comment": "Top de linha! Excelente acabamento e amortecedores bem macios. Recomendo!",
-          "photos": []
-        },
-        {
-          "name": "E**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_186.jpg",
-          "stars": 5,
-          "date_line": "07/02 · Preta",
-          "variation": "Preta",
-          "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
-          "photos": []
-        },
-        {
-          "name": "C**s E**o",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_199.jpg",
-          "stars": 5,
-          "date_line": "05/02 · Branca",
-          "variation": "Branca",
-          "comment": "Chegou em 2 dias aqui em casa! Acabamento impecável, muito bonito e resistente. Recomendo demais!",
-          "photos": []
-        },
-        {
-          "name": "I**a S**a",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_210.jpg",
-          "stars": 5,
-          "date_line": "04/02 · Vermelha",
-          "variation": "Vermelha",
-          "comment": "Produto espetacular! Chegou muito rápido e super bem embalado pela Stone Shop. Superou minhas expectativas!",
-          "photos": []
-        },
-        {
-          "name": "R**a G**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_27.jpg",
-          "stars": 5,
-          "date_line": "02/02 · Preta",
-          "variation": "Preta",
-          "comment": "Entrega relâmpago! Produto 100% original, acabamento impecável de altíssima qualidade. Recomendo de olhos fechados.",
-          "photos": []
-        },
-        {
-          "name": "S**a M**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_38.jpg",
-          "stars": 5,
-          "date_line": "01/02 · Branca",
-          "variation": "Branca",
-          "comment": "Comprei por indicação e me surpreendi positivamente. Vale cada centavo investido. Loja muito ágil e atenciosa!",
-          "photos": []
-        },
-        {
-          "name": "T**s A**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_51.jpg",
-          "stars": 5,
-          "date_line": "29/01 · Vermelha",
-          "variation": "Vermelha",
-          "comment": "Simplesmente perfeito! Qualidade absurda, material resistente e funciona perfeitamente. Nota 10!",
-          "photos": []
-        },
-        {
-          "name": "B**a N**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_62.jpg",
-          "stars": 5,
-          "date_line": "28/01 · Preta",
-          "variation": "Preta",
-          "comment": "Estou apaixonada! Chegou antes do prazo combinado. Já testei tudo e funciona uma maravilha. Comprarei de novo!",
-          "photos": []
-        },
-        {
-          "name": "A**r C**s",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_77.jpg",
-          "stars": 5,
-          "date_line": "26/01 · Branca",
-          "variation": "Branca",
-          "comment": "Muito satisfeito com a compra! Atendimento excelente da loja e o produto veio impecável e lacrado de fábrica.",
-          "photos": []
-        },
-        {
-          "name": "L**u D**e",
-          "avatar": "img/reviews-avatars/tiktok_real/tt_avatar_28.jpg",
-          "stars": 5,
-          "date_line": "25/01 · Vermelha",
-          "variation": "Vermelha",
-          "comment": "Melhor custo-benefício que já vi no TikTok Shop! Podem comprar sem medo nenhum, qualidade premium total.",
-          "photos": []
-        }
-      ],
-      "health_score": 90,
-      "has_catbox_conflict": false,
-      "alerts": [
-        "1 vídeos de criadores (meta: 10–30+)"
-      ]
-    },
-    {
       "id": 103,
       "title": "Vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante",
       "preco": 49.9,
       "preco_antigo": 189.9,
-      "price_original_str": "R$ 189,90",
+      "price_original_str": "189,90",
       "discount_badge": "-74%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "5648 vendidos on-line",
@@ -24543,7 +23335,7 @@
       "title": "Chinelo Feminino Luxo Strass Brilhante Macio Leve",
       "preco": 11.49,
       "preco_antigo": 59.9,
-      "price_original_str": "R$ 59,90",
+      "price_original_str": "59,90",
       "discount_badge": "-81%",
       "installment_text": "3x R$ 6,63",
       "sold_count": "21303 vendidos on-line",
@@ -25200,7 +23992,7 @@
       "title": "Projetor HY300 Original Portátil Smart Android 11 4K Ultra HD HDMI Wifi Bluetooth Alto",
       "preco": 34.79,
       "preco_antigo": 399.9,
-      "price_original_str": "R$ 199,90",
+      "price_original_str": "199,90",
       "discount_badge": "-83%",
       "installment_text": "3x R$ 13,30",
       "sold_count": "14829 vendidos on-line",
@@ -25461,7 +24253,7 @@
       "title": "Body Modelador Cinta Alta Compressão Invisível Efeito Lipo Redutora",
       "preco": 16.89,
       "preco_antigo": 119.9,
-      "price_original_str": "R$ 89,90",
+      "price_original_str": "89,90",
       "discount_badge": "-81%",
       "installment_text": "3x R$ 9,96",
       "sold_count": "23451 vendidos on-line",
@@ -25756,7 +24548,7 @@
       "title": "Mini Aspirador de Pó Sem Fio Portátil e Soprador Turbo 2 em 1 Carro e Casa",
       "preco": 13.79,
       "preco_antigo": 139.9,
-      "price_original_str": "R$ 89,90",
+      "price_original_str": "89,90",
       "discount_badge": "-85%",
       "installment_text": "3x R$ 11,63",
       "sold_count": "16888 vendidos on-line",
@@ -26022,7 +24814,7 @@
       "title": "Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda Bivolt",
       "preco": 27.89,
       "preco_antigo": 415.8,
-      "price_original_str": "R$ 149,90",
+      "price_original_str": "149,90",
       "discount_badge": "-81%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "18462 vendidos on-line",
@@ -26586,7 +25378,7 @@
       "title": "Modelador de Cachos Automático Sem Fio Portátil Cerâmica Bateria USB",
       "preco": 23.79,
       "preco_antigo": 362.7,
-      "price_original_str": "R$ 149,90",
+      "price_original_str": "149,90",
       "discount_badge": "-84%",
       "installment_text": "3x R$ 13,30",
       "sold_count": "14369 vendidos on-line",
@@ -27142,7 +25934,7 @@
       "title": "Tênis Kappa Pulse RX Masculino e Feminino Amortecimento Corrida e Caminhada",
       "preco": 69.9,
       "preco_antigo": 259.9,
-      "price_original_str": "R$ 259,90",
+      "price_original_str": "259,90",
       "discount_badge": "-73%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "6553 vendidos on-line",
@@ -27416,7 +26208,7 @@
       "title": "Projetor LED Natalino 16 Desenhos Temáticos USB Bivolt Decoração",
       "preco": 19.69,
       "preco_antigo": 199.9,
-      "price_original_str": "R$ 99,90",
+      "price_original_str": "99,90",
       "discount_badge": "-80%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "5253 vendidos on-line",
@@ -27707,7 +26499,7 @@
       "title": "Brinquedo Pista Montanha-Russa de Patinhos com Escada Musical e Luzes Led",
       "preco": 16.73,
       "preco_antigo": 169.9,
-      "price_original_str": "R$ 89,90",
+      "price_original_str": "89,90",
       "discount_badge": "-81%",
       "installment_text": "3x R$ 14,96",
       "sold_count": "3914 vendidos on-line",
@@ -27978,7 +26770,7 @@
       "title": "Comedouro Cachorro e Gato Elevado Duplo em Acrílico Transparente Anti-Engasgo",
       "preco": 14.69,
       "preco_antigo": 129.9,
-      "price_original_str": "R$ 79,90",
+      "price_original_str": "79,90",
       "discount_badge": "-82%",
       "installment_text": "3x R$ 13,30",
       "sold_count": "7401 vendidos on-line",
@@ -28259,7 +27051,7 @@
       "title": "Controle Arcade 7 em 1 Stick Retrô Multiplataforma PS4 PS3 Xbox PC Switch Celular",
       "preco": 89.9,
       "preco_antigo": 349.9,
-      "price_original_str": "R$ 349,90",
+      "price_original_str": "349,90",
       "discount_badge": "-74%",
       "installment_text": "3x R$ 29,96",
       "sold_count": "2965 vendidos on-line",
@@ -28538,7 +27330,7 @@
       "title": "Combo Fardo Mega Fraldas Supreme Care + 4 Pacotes Lenços Umedecidos Toque Suave",
       "preco": 69.9,
       "preco_antigo": 279.9,
-      "price_original_str": "R$ 279,90",
+      "price_original_str": "279,90",
       "discount_badge": "-75%",
       "installment_text": "3x R$ 23,30",
       "sold_count": "8964 vendidos on-line",
@@ -28846,7 +27638,7 @@
       "title": "Travesseiro Cervical Ortopédico Abranuv Pro 2.0 Espuma de Memória Viscoelástica",
       "preco": 39.9,
       "preco_antigo": 159.9,
-      "price_original_str": "R$ 159,90",
+      "price_original_str": "159,90",
       "discount_badge": "-75%",
       "installment_text": "3x R$ 13,30",
       "sold_count": "6765 vendidos on-line",
@@ -29159,10 +27951,10 @@
     {
       "id": 122,
       "title": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
-      "preco": 79.9,
+      "preco": 139.9,
       "preco_antigo": 389,
-      "price_original_str": "R$ 389,00",
-      "discount_badge": "-79%",
+      "price_original_str": "449,90",
+      "discount_badge": "-69%",
       "installment_text": "3x R$ 26,63",
       "sold_count": "4842 vendidos on-line",
       "rating_score": "4.9",
@@ -29458,7 +28250,7 @@
       "title": "Lavadora de Alta Pressão Portátil Sem Fio 48V com Maleta, 2 Baterias e Canhão de Espuma",
       "preco": 79.9,
       "preco_antigo": 399,
-      "price_original_str": "R$ 399,00",
+      "price_original_str": "399,00",
       "discount_badge": "-80%",
       "installment_text": "3x R$ 26,63",
       "sold_count": "5506 vendidos on-line",
@@ -29748,7 +28540,7 @@
       "title": "Livro Infantil Interativo Bilíngue Falante com Som ao Toque - Português e Inglês com Caneta Tátil",
       "preco": 21.89,
       "preco_antigo": 199.9,
-      "price_original_str": "R$ 99,90",
+      "price_original_str": "99,90",
       "discount_badge": "-78%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "4953 vendidos on-line",
@@ -30021,9 +28813,9 @@
     {
       "id": 126,
       "title": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
-      "preco": 47.89,
+      "preco": 119.9,
       "preco_antigo": 389.9,
-      "price_original_str": "R$ 199,90",
+      "price_original_str": "499,90",
       "discount_badge": "-76%",
       "installment_text": "3x R$ 32,33",
       "sold_count": "3842 vendidos on-line",
@@ -30488,7 +29280,7 @@
       "title": "Cinta Modeladora Feminina Redutora Abdominal M+ 6 Níveis de Ajuste Tecido Respirável",
       "preco": 19.79,
       "preco_antigo": 179.9,
-      "price_original_str": "R$ 89,90",
+      "price_original_str": "89,90",
       "discount_badge": "-78%",
       "installment_text": "3x R$ 16,63",
       "sold_count": "4617 vendidos on-line",
@@ -30890,7 +29682,7 @@
       "title": "Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração",
       "preco": 9.69,
       "preco_antigo": 99.9,
-      "price_original_str": "R$ 39,90",
+      "price_original_str": "39,90",
       "discount_badge": "-76%",
       "installment_text": "3x R$ 11,63",
       "sold_count": "6454 vendidos on-line",
@@ -31312,7 +30104,7 @@
       "title": "Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",
       "preco": 11.89,
       "preco_antigo": 129.9,
-      "price_original_str": "R$ 49,90",
+      "price_original_str": "49,90",
       "discount_badge": "-76%",
       "installment_text": "3x R$ 13,30",
       "sold_count": "5191 vendidos on-line",

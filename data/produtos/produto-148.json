@@ -23,16 +23,20 @@
     {
       "src": "../img/panelas-148-slide-5.webp",
       "alt": "Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro - Foto 5"
+    },
+    {
+      "src": "../img/panelas-148-var-preto.webp",
+      "alt": "Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Grafite Preto"
     }
   ],
-  "discount_badge": "-82%",
-  "price_int": "49",
+  "discount_badge": "-78%",
+  "price_int": "119",
   "price_cents": ",90",
-  "price_original": "R$ 279,90",
-  "installment_text": "3x R$ 16,63",
+  "price_original": "R$ 549,90",
+  "installment_text": "3x R$ 39,96",
   "installment_highlight": "sem juros",
   "coupon_main": "Cupom Black Friday Aplicado",
-  "coupon_bonus": "Final R$ 49,90 no Pix ou Cartão",
+  "coupon_bonus": "Final R$ 119,90 no Pix ou Cartão",
   "rating_score": "4,9",
   "rating_count": "(734)",
   "sold_count": "8290 vendidos on-line",
@@ -183,8 +187,8 @@
       "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_36.jpg",
       "stars": 5,
       "date": "19/11",
-      "variation": "Vanilla Creme (8 Peças)",
-      "date_line": "19/11 · Vanilla Creme (8 Peças)",
+      "variation": "Grafite Preto (8 Peças)",
+      "date_line": "19/11 · Grafite Preto (8 Peças)",
       "comment": "Oie gente, vou dar minha opinião usando as panelas há mais de 6 meses. Meu fogão é de indução, ou seja, elas nao entram em contato com chama de fogo, e elas continuam lindas e perfeitas por dentro e por fora. Antiaderencia continua perfeita. Unica crítica é à frigideira que foi a unica que ficou manchada e até mesmo com algumas \"bolhinhas\" no revestimento. Não sei o por quê, afinal utilizei conforme o manual, as outras panelas, como disse, estão intactas. No geral, recomendo! :).",
       "photos": []
     },
@@ -213,8 +217,8 @@
       "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_38.jpg",
       "stars": 5,
       "date": "16/11",
-      "variation": "Vanilla Creme (8 Peças)",
-      "date_line": "16/11 · Vanilla Creme (8 Peças)",
+      "variation": "Grafite Preto (8 Peças)",
+      "date_line": "16/11 · Grafite Preto (8 Peças)",
       "comment": "Excelente qualidade, superou todas as minhas expectativas! Cozinha rápido em fogo baixo e limpa só passando o lado macio da esponja.",
       "photos": []
     },
@@ -243,8 +247,8 @@
       "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_43.jpg",
       "stars": 5,
       "date": "13/11",
-      "variation": "Vanilla Creme (8 Peças)",
-      "date_line": "13/11 · Vanilla Creme (8 Peças)",
+      "variation": "Grafite Preto (8 Peças)",
+      "date_line": "13/11 · Grafite Preto (8 Peças)",
       "comment": "Melhor jogo de panelas que já comprei, antiaderente cerâmico de verdade, nada gruda!",
       "photos": []
     },
@@ -273,8 +277,8 @@
       "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_48.jpg",
       "stars": 5,
       "date": "10/11",
-      "variation": "Vanilla Creme (8 Peças)",
-      "date_line": "10/11 · Vanilla Creme (8 Peças)",
+      "variation": "Grafite Preto (8 Peças)",
+      "date_line": "10/11 · Grafite Preto (8 Peças)",
       "comment": "Perfeitas, veio bem embalada e todas certinhas, já usei essa para arroz algumas vezes e segue intacta, respeite a funcionalidade da panela que não irá ter problemas, não use uma chama que ultrapasse o fundo dela e ela não irá queimar as laterais, não dê choque térmico em água fria que não irá danificar a cerâmica, é uma panela pra quem cuida bem de suas coisas! gente desleixada não pode ter!.",
       "photos": []
     },
@@ -361,17 +365,17 @@
     "id": 148,
     "nome": "Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro",
     "name": "Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro",
-    "preco": 49.9,
-    "price": 49.9,
-    "preco_antigo": 279.9,
-    "precoOrig": 279.9,
-    "originalPrice": 279.9,
-    "cupomPreco": 49.9,
-    "couponPrice": 49.9,
-    "desc": 82,
-    "desconto": 82,
-    "installmentText": "3x R$ 16,63 sem juros",
-    "parcelamento": "3x R$ 16,63 sem juros",
+    "preco": 119.9,
+    "price": 119.9,
+    "preco_antigo": 549.9,
+    "precoOrig": 549.9,
+    "originalPrice": 549.9,
+    "cupomPreco": 119.9,
+    "couponPrice": 119.9,
+    "desc": 78,
+    "desconto": 78,
+    "installmentText": "3x R$ 39,96 sem juros",
+    "parcelamento": "3x R$ 39,96 sem juros",
     "categoria": "Cozinha",
     "img": "../img/panelas-148-slide-1.webp",
     "image": "../img/panelas-148-slide-1.webp",
@@ -380,7 +384,8 @@
       "../img/panelas-148-slide-2.webp",
       "../img/panelas-148-slide-3.webp",
       "../img/panelas-148-slide-4.webp",
-      "../img/panelas-148-slide-5.webp"
+      "../img/panelas-148-slide-5.webp",
+      "../img/panelas-148-var-preto.webp"
     ],
     "variacoes": {
       "cor": {
@@ -390,6 +395,10 @@
           {
             "nome": "Vanilla Creme (8 Peças)",
             "imagem": "../img/panelas-148-var-vanilla.webp"
+          },
+          {
+            "nome": "Grafite Preto (8 Peças)",
+            "imagem": "../img/panelas-148-var-preto.webp"
           }
         ]
       }

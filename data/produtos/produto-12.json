@@ -292,12 +292,12 @@
     },
     {
       "href": "produto-24.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-81zw1-mivpxinfwy6803",
-      "alt": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê",
-      "name": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador",
-      "price": "R$ 159,90",
-      "price_original": "R$ 599,00",
-      "discount": "73% OFF",
+      "img": "../img/produto-24-slide-1.webp",
+      "alt": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
+      "name": "Triciclo Infantil 4 em 1 Multifuncional Carrinho de Bebê Com Empurrador e CapotaSolar-Kababy",
+      "price": "R$ 84,90",
+      "price_original": "R$ 399,00",
+      "discount": "-79%",
       "sold": "897 vendidos"
     }
   ],

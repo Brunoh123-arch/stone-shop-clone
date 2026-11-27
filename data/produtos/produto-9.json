@@ -1,7 +1,7 @@
 {
   "id": 9,
   "title": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW - Stone Shop",
-  "meta_description": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW com 88% OFF. Apenas R$92,80. Frete grátis.",
+  "meta_description": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW com 88% OFF. Apenas R$ 349,90. Frete grátis.",
   "product_title": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW - 5"
     }
   ],
-  "discount_badge": "-88%",
-  "price_int": "92",
-  "price_cents": ",80",
-  "price_original": "R$ 754,44",
-  "installment_text": "3x R$ 30,93",
+  "discount_badge": "-81%",
+  "price_int": "349",
+  "price_cents": ",90",
+  "price_original": "R$ 1.799,00",
+  "installment_text": "3x R$ 116,63",
   "installment_highlight": "sem juros",
-  "coupon_main": "88% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 349,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(45)",
   "sold_count": "10241 vendidos on-line",
@@ -233,18 +233,18 @@
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103",
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
       "name": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
-      "price": "R$ 39,90",
-      "price_original": "R$ 397,90",
-      "discount": "90% OFF",
+      "price": "R$ 197,90",
+      "price_original": "R$ 1.199,00",
+      "discount": "-83%",
       "sold": "9853 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -272,7 +272,7 @@
   "produto_atual": {
     "id": 9,
     "nome": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
-    "preco": 92.8,
+    "preco": 349.9,
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
     "imagens": [
       "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
@@ -284,16 +284,40 @@
       "https://down-br.img.susercontent.com/file/sg-11134201-7reox-m8lxuh5t5mlj2f"
     ],
     "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "nome": "Branco",
+            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07"
+          }
+        ]
+      },
       "voltagem": {
+        "com_imagem": false,
         "label": "Voltagem",
         "opcoes": [
-          "127V",
-          "220V"
+          {
+            "nome": "110V (127V)"
+          },
+          {
+            "nome": "220V"
+          }
         ]
       }
     },
     "sales": "10241 vendidos on-line",
-    "installmentText": "3x R$ 30,93 sem juros"
+    "installmentText": "3x R$ 116,63 sem juros",
+    "price": 349.9,
+    "preco_antigo": 1799.0,
+    "precoOrig": 1799.0,
+    "originalPrice": 1799.0,
+    "cupomPreco": 349.9,
+    "couponPrice": 349.9,
+    "desc": 81,
+    "desconto": 81,
+    "parcelamento": "3x R$ 116,63 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "ar_hq_9",

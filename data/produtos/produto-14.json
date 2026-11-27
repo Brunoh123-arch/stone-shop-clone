@@ -1,7 +1,7 @@
 {
   "id": 14,
   "title": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt - Stone Shop",
-  "meta_description": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt com 76% OFF. Apenas R$189,90. Frete grátis.",
+  "meta_description": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt com 76% OFF. Apenas R$ 189,90. Frete grátis.",
   "product_title": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Churrasqueira Elétrica Arke Vitta Smart 5 Espetos - Slide 5"
     }
   ],
-  "discount_badge": "-85%",
-  "price_int": "89",
+  "discount_badge": "-75%",
+  "price_int": "189",
   "price_cents": ",90",
-  "price_original": "R$ 599,90",
-  "installment_text": "3x R$ 29,97",
+  "price_original": "R$ 749,90",
+  "installment_text": "3x R$ 63,30",
   "installment_highlight": "sem juros",
-  "coupon_main": "76% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 189,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(842)",
   "sold_count": "9874 vendidos on-line",
@@ -281,11 +281,11 @@
     {
       "href": "produto-16.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
-      "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Mor",
-      "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Mor",
-      "price": "R$ 129,30",
-      "price_original": "R$ 349,00",
-      "discount": "63% OFF",
+      "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
+      "price": "R$ 64,90",
+      "price_original": "R$ 299,90",
+      "discount": "-78%",
       "sold": "7548 vendidos"
     },
     {
@@ -293,38 +293,38 @@
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
       "alt": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
       "name": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
-      "price": "R$ 48,05",
-      "price_original": "R$ 398,05",
-      "discount": "88% OFF",
+      "price": "R$ 159,90",
+      "price_original": "R$ 699,90",
+      "discount": "-77%",
       "sold": "259 vendidos"
     },
     {
       "href": "produto-63.html",
-      "img": "../img/produto-63-1.jpg",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyw-mc9fnkgv7dqz24",
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "name": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-82%",
       "sold": "9853 vendidos"
     },
     {
       "href": "produto-9.html",
-      "img": "../img/produtos/p09/slide_1.jpg",
+      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
-      "price": "R$ 92,80",
-      "price_original": "R$ 754,44",
-      "discount": "88% OFF",
+      "price": "R$ 349,90",
+      "price_original": "R$ 1.799,00",
+      "discount": "-81%",
       "sold": "10241 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     }
@@ -332,7 +332,7 @@
   "produto_atual": {
     "id": 14,
     "nome": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
-    "preco": 89.9,
+    "preco": 189.9,
     "img": "../img/produto-14-1.jpg",
     "imagens": [
       "https://files.catbox.moe/ibv6vn.mp4",
@@ -358,8 +358,16 @@
       }
     },
     "sales": "9874 vendidos on-line",
-    "installmentText": "3x R$ 29,97 sem juros",
-    "preco_antigo": 599.9
+    "installmentText": "3x R$ 63,30 sem juros",
+    "preco_antigo": 749.9,
+    "price": 189.9,
+    "precoOrig": 749.9,
+    "originalPrice": 749.9,
+    "cupomPreco": 189.9,
+    "couponPrice": 189.9,
+    "desc": 75,
+    "desconto": 75,
+    "parcelamento": "3x R$ 63,30 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "churrasqueira_14",

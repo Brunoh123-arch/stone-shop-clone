@@ -1,7 +1,7 @@
 {
   "id": 122,
   "title": "Panela de Pressão Elétrica Digital 5L Painel Touch Multifunções Inox com 10 Travas de Segurança - Stone Shop",
-  "meta_description": "Panela de Pressão Elétrica Digital 5L Painel Touch Multifunções Inox com 10 Travas de Segurança com 79% OFF. Apenas R$ 79,90. Frete grátis Stone Shop.",
+  "meta_description": "Panela de Pressão Elétrica Digital 5L Painel Touch Multifunções Inox com 10 Travas de Segurança com 79% OFF. Apenas R$ 139,90. Frete grátis Stone Shop.",
   "product_title": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
   "slider_imgs": [
     {
@@ -21,14 +21,14 @@
       "alt": "Panela de Pressão Elétrica Digital 5L Painel Touch Multifunções Inox - 4"
     }
   ],
-  "discount_badge": "-79%",
-  "price_int": "79",
+  "discount_badge": "-69%",
+  "price_int": "139",
   "price_cents": ",90",
-  "price_original": "R$ 389,00",
-  "installment_text": "3x R$ 26,63",
+  "price_original": "R$ 449,90",
+  "installment_text": "3x R$ 46,63",
   "installment_highlight": "sem juros",
-  "coupon_main": "Desconto de R$ 310",
-  "coupon_bonus": "Economize 52% com bônus",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 139,90 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(740)",
   "sold_count": "4842 vendidos on-line",
@@ -286,17 +286,17 @@
     "id": 122,
     "nome": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
     "name": "Panela de Pressão Elétrica Digital 5L Painel Touch Inox com 10 Travas de Segurança",
-    "preco": 79.9,
-    "price": "R$ 79,90",
-    "preco_antigo": 389,
-    "precoOrig": "R$ 389,00",
-    "originalPrice": 599,
-    "cupomPreco": 289,
-    "couponPrice": 289,
-    "desc": 52,
-    "desconto": 52,
-    "installmentText": "3x R$ 26,63 sem juros",
-    "parcelamento": "6x de R$ 48,17 sem juros",
+    "preco": 139.9,
+    "price": 139.9,
+    "preco_antigo": 449.9,
+    "precoOrig": 449.9,
+    "originalPrice": 449.9,
+    "cupomPreco": 139.9,
+    "couponPrice": 139.9,
+    "desc": 69,
+    "desconto": 69,
+    "installmentText": "3x R$ 46,63 sem juros",
+    "parcelamento": "3x R$ 46,63 sem juros",
     "img": "../img/panela-pressao-slide-1.webp?v=1795147990000",
     "image": "../img/panela-pressao-slide-1.webp?v=1795147990000",
     "imagens": [
@@ -312,13 +312,13 @@
         "opcoes": [
           {
             "nome": "110V (127V)",
-            "preco": 79.9,
-            "preco_antigo": 389
+            "preco": 139.9,
+            "preco_antigo": 449.9
           },
           {
             "nome": "220V",
-            "preco": 79.9,
-            "preco_antigo": 389
+            "preco": 139.9,
+            "preco_antigo": 449.9
           }
         ]
       }

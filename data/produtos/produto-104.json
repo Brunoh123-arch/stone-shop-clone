@@ -323,21 +323,21 @@
   "related": [
     {
       "href": "produto-103.html",
-      "img": "../img/prod-103-local-1.webp",
-      "alt": "Vestido longo costas nua",
-      "name": "Vestido longo feminino costas nua com fenda chique",
-      "price": "R$ 76,99",
-      "price_original": "R$ 129,99",
-      "discount": "41% OFF",
+      "img": "../img/prod-103-local-10.webp",
+      "alt": "Vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante",
+      "name": "Vestido longo feminino costas nua com fenda chique eventos festas moda fashion justo e elegante",
+      "price": "R$ 49,90",
+      "price_original": "R$ 189,90",
+      "discount": "-74%",
       "sold": "648 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     }

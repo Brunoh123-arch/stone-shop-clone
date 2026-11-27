@@ -5141,10 +5141,13 @@ function initStoneShopApp() {
         }
       });
 
-      // Define a contagem baseando-se na quantidade de opções do primeiro grupo de variações
-      const primeiraVar = Object.values(PRODUTO_ATUAL.variacoes)[0];
-      if (primeiraVar && Array.isArray(primeiraVar.opcoes)) {
-        opcoesCount = primeiraVar.opcoes.length;
+      // Calcula combinações reais de SKU (ex: 3 cores x 2 memórias = 6 opções)
+      const gruposVar = Object.values(PRODUTO_ATUAL.variacoes);
+      if (gruposVar.length > 0) {
+        opcoesCount = gruposVar.reduce((acc, g) => {
+          const len = Array.isArray(g && g.opcoes) && g.opcoes.length > 0 ? g.opcoes.length : 1;
+          return acc * len;
+        }, 1);
       } else {
         opcoesCount = imgsReais.length || 1;
       }
@@ -5178,7 +5181,12 @@ function initStoneShopApp() {
       thumbnailsHtml += `<div style="width:34px; height:34px; border-radius:4px; border:1px solid #e8e8e8; background:#f0f0f0; overflow:hidden; flex-shrink:0;"><img src="${img}" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="this.src='${fallback}'"></div>`;
     });
 
-    const opcoesCountText = opcoesCount === 1 ? '1 opção disponível' : `${opcoesCount} opções disponíveis`;
+    const varGroupLabels = (temVariacoes && Object.keys(PRODUTO_ATUAL.variacoes).length > 1)
+      ? Object.values(PRODUTO_ATUAL.variacoes).map(g => String((g && g.label) || '').split('/')[0].trim()).filter(Boolean).join(' · ')
+      : '';
+    const opcoesCountText = opcoesCount === 1
+      ? '1 opção disponível'
+      : (varGroupLabels ? `${opcoesCount} opções (${varGroupLabels})` : `${opcoesCount} opções disponíveis`);
 
     // Se o contêiner já existe (renderizado estaticamente no HTML), hidrata a linha de opções para 100% dos produtos
     if (container) {

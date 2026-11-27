@@ -642,22 +642,22 @@
   "related": [
     {
       "href": "produto-35.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8",
+      "img": "../img/produtos/p35/slide_1.jpg",
       "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
       "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
-      "price": "R$ 96,78",
-      "price_original": "R$ 497,90",
-      "discount": "81% OFF",
+      "price": "R$ 297,90",
+      "price_original": "R$ 1.899,00",
+      "discount": "-84%",
       "sold": "8569 vendidos"
     },
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
+      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
-      "price": "R$ 94,90",
-      "price_original": "R$ 349,90",
-      "discount": "73% OFF",
+      "price": "R$ 69,90",
+      "price_original": "R$ 299,90",
+      "discount": "-77%",
       "sold": "458 vendidos"
     },
     {
@@ -665,18 +665,18 @@
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m850ox58do8h8b",
       "alt": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
       "name": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
-      "price": "R$ 69,80",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price": "R$ 219,90",
+      "price_original": "R$ 899,90",
+      "discount": "-76%",
       "sold": "9864 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },

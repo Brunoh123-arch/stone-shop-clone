@@ -266,10 +266,10 @@
       "href": "produto-7.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
       "alt": "Caixa de Som AIWA",
-      "name": "Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA",
+      "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
-      "price_original": "R$ 597,00",
-      "discount": "88% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-88%",
       "sold": "7894 vendidos"
     },
     {
@@ -278,17 +278,17 @@
       "alt": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "name": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-82%",
       "sold": "5515 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },

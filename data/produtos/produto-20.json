@@ -1,7 +1,7 @@
 {
   "id": 20,
   "title": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB - Stone Shop",
-  "meta_description": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB com 82% OFF. Apenas R$147,00. Frete grátis.",
+  "meta_description": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB com 82% OFF. Apenas R$ 269,90. Frete grátis.",
   "product_title": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Bicicleta Aro 29 GT Sprint MX7 24V index - Slide 9"
     }
   ],
-  "discount_badge": "-86%",
-  "price_int": "97",
+  "discount_badge": "-75%",
+  "price_int": "269",
   "price_cents": ",90",
-  "price_original": "R$ 699,00",
-  "installment_text": "3x R$ 32,63",
+  "price_original": "R$ 1.099,00",
+  "installment_text": "3x R$ 89,96",
   "installment_highlight": "sem juros",
-  "coupon_main": "",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 269,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(56)",
   "sold_count": "4984 vendidos on-line",
@@ -659,18 +659,18 @@
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
-      "price": "R$ 92,80",
-      "price_original": "R$ 754,44",
-      "discount": "88% OFF",
+      "price": "R$ 349,90",
+      "price_original": "R$ 1.799,00",
+      "discount": "-81%",
       "sold": "10241 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -698,7 +698,7 @@
   "produto_atual": {
     "id": 20,
     "nome": "Bicicleta  Aro 29 GT Sprint MX7 24V index Freio Disco Alumínio Suspensão Aero MTB",
-    "preco": 97.9,
+    "preco": 269.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me910y70d7nmf6",
     "imagens": [
       "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfko-m86q5a2zdudtaf.16000081743799389.mp4",
@@ -762,8 +762,16 @@
       }
     },
     "sales": "4984 vendidos on-line",
-    "installmentText": "3x R$ 32,63 sem juros",
-    "preco_antigo": 699
+    "installmentText": "3x R$ 89,96 sem juros",
+    "preco_antigo": 1099.0,
+    "price": 269.9,
+    "precoOrig": 1099.0,
+    "originalPrice": 1099.0,
+    "cupomPreco": 269.9,
+    "couponPrice": 269.9,
+    "desc": 75,
+    "desconto": 75,
+    "parcelamento": "3x R$ 89,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "bike_gt_20",

@@ -556,12 +556,12 @@
     },
     {
       "href": "produto-35.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8",
-      "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Aço Inox Escovado",
-      "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Aço Inox Escovado",
-      "price": "R$ 96,78",
-      "price_original": "R$ 497,90",
-      "discount": "81% OFF",
+      "img": "../img/produtos/p35/slide_1.jpg",
+      "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
+      "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
+      "price": "R$ 297,90",
+      "price_original": "R$ 1.899,00",
+      "discount": "-84%",
       "sold": "8569 vendidos"
     },
     {
@@ -570,17 +570,17 @@
       "alt": "Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W",
       "name": "Secador de Cabelos Philco PSC3500 4 em 1 Dobrável 1450W",
       "price": "R$ 68,70",
-      "price_original": "R$ 397,90",
-      "discount": "83% OFF",
+      "price_original": "R$ 206,10",
+      "discount": "-83%",
       "sold": "9872 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },

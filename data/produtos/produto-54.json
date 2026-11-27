@@ -1,7 +1,7 @@
 {
   "id": 54,
   "title": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X) - Stone Shop",
-  "meta_description": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X) com 86% OFF. Apenas R$69,90. Frete grátis.",
+  "meta_description": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X) com 86% OFF. Apenas R$ 169,90. Frete grátis.",
   "product_title": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Purificador Eletrônico Compacto Efficien - Slide 9"
     }
   ],
-  "discount_badge": "-86%",
-  "price_int": "69",
+  "discount_badge": "-74%",
+  "price_int": "169",
   "price_cents": ",90",
-  "price_original": "R$ 497,90",
-  "installment_text": "3x R$ 23,30",
+  "price_original": "R$ 649,90",
+  "installment_text": "3x R$ 56,63",
   "installment_highlight": "sem juros",
-  "coupon_main": "86% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 169,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(64)",
   "sold_count": "9876 vendidos on-line",
@@ -738,10 +738,10 @@
       "href": "produto-7.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
       "alt": "Caixa de Som AIWA",
-      "name": "Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA",
+      "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
-      "price_original": "R$ 597,00",
-      "discount": "88% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-88%",
       "sold": "7894 vendidos"
     },
     {
@@ -750,27 +750,27 @@
       "alt": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "name": "Smartwatch Redmi Watch 5 Lite GPS Preto Pulseira",
       "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-82%",
       "sold": "9853 vendidos"
     },
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
+      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
-      "price": "R$ 94,90",
-      "price_original": "R$ 349,90",
-      "discount": "73% OFF",
+      "price": "R$ 69,90",
+      "price_original": "R$ 299,90",
+      "discount": "-77%",
       "sold": "458 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -788,7 +788,7 @@
   "produto_atual": {
     "id": 54,
     "nome": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
-    "preco": 69.9,
+    "preco": 169.9,
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
     "imagens": [
       "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
@@ -802,7 +802,28 @@
       "https://down-br.img.susercontent.com/file/sg-11134201-7rdwo-mdeoo5h7vglw3b"
     ],
     "sales": "9876 vendidos on-line",
-    "installmentText": "3x R$ 23,30 sem juros"
+    "installmentText": "3x R$ 56,63 sem juros",
+    "price": 169.9,
+    "preco_antigo": 649.9,
+    "precoOrig": 649.9,
+    "originalPrice": 649.9,
+    "cupomPreco": 169.9,
+    "couponPrice": 169.9,
+    "desc": 74,
+    "desconto": 74,
+    "parcelamento": "3x R$ 56,63 sem juros",
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "nome": "Cinza Prata (Bivolt)",
+            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89"
+          }
+        ]
+      }
+    }
   },
   "extra_scripts": [],
   "creator_context": "purificador_54",

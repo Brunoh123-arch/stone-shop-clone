@@ -1,7 +1,7 @@
 {
   "id": 95,
   "title": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar - Stone Shop",
-  "meta_description": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar com 88% OFF. Apenas R$48,05. Frete grátis.",
+  "meta_description": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar com 88% OFF. Apenas R$ 159,90. Frete grátis.",
   "product_title": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "YESOP Máquina De Gelo Portátil Preto 12k - Slide 9"
     }
   ],
-  "discount_badge": "-88%",
-  "price_int": "48",
-  "price_cents": ",05",
-  "price_original": "R$ 398,05",
-  "installment_text": "3x R$ 16,02",
+  "discount_badge": "-77%",
+  "price_int": "159",
+  "price_cents": ",90",
+  "price_original": "R$ 699,90",
+  "installment_text": "3x R$ 53,30",
   "installment_highlight": "sem juros",
-  "coupon_main": "",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 159,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(48)",
   "sold_count": "5259 vendidos on-line",
@@ -590,19 +590,19 @@
       "href": "produto-7.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rceh-lrrqafsspb32c2",
       "alt": "Caixa de Som AIWA",
-      "name": "Caixa de Som AIWA Boombox Plus Bluetooth IP66 AWS-BBS-01B AIWA",
+      "name": "Caixa de Som AIWA",
       "price": "R$ 69,90",
-      "price_original": "R$ 597,00",
-      "discount": "88% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-88%",
       "sold": "7894 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -630,7 +630,7 @@
   "produto_atual": {
     "id": 95,
     "nome": "YESOP Máquina De Gelo Portátil Preto 12kg/dia 127V Produção Rápida Turbo Ice Para Casa E Bar",
-    "preco": 48.05,
+    "preco": 159.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyt2d529",
     "imagens": [
       "https://down-cvs-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfks-m9txdzfa3rpe0c.16000081747383137.mp4",
@@ -650,27 +650,47 @@
         "label": "Cor",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyyomxc1",
-            "nome": "Preto 127V"
+            "nome": "Preto",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9o8h6dyyomxc1"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tlt21c6",
-            "nome": "Branco 127V"
+            "nome": "Branco",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tlt21c6"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tbz2xcd",
-            "nome": "Azul Tifany 127V"
+            "nome": "Azul Tiffany",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tbz2xcd"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tkehl54",
-            "nome": "Prata Premium 127V"
+            "nome": "Prata Premium",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbq3mg9tkehl54"
+          }
+        ]
+      },
+      "voltagem": {
+        "com_imagem": false,
+        "label": "Voltagem",
+        "opcoes": [
+          {
+            "nome": "110V (127V)"
+          },
+          {
+            "nome": "220V"
           }
         ]
       }
     },
     "sales": "5259 vendidos on-line",
-    "installmentText": "3x R$ 16,02 sem juros",
-    "preco_antigo": 398.05
+    "installmentText": "3x R$ 53,30 sem juros",
+    "preco_antigo": 699.9,
+    "price": 159.9,
+    "precoOrig": 699.9,
+    "originalPrice": 699.9,
+    "cupomPreco": 159.9,
+    "couponPrice": 159.9,
+    "desc": 77,
+    "desconto": 77,
+    "parcelamento": "3x R$ 53,30 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "maquina_gelo_95",

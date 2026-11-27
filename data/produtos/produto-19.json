@@ -1,7 +1,7 @@
 {
   "id": 19,
   "title": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo - Stone Shop",
-  "meta_description": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo com 83% OFF. Apenas R$137,00. Frete grátis.",
+  "meta_description": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo com 83% OFF. Apenas R$ 139,90. Frete grátis.",
   "product_title": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Tablet Vision TAB 7 Stitch + Capa e Bols - Slide 9"
     }
   ],
-  "discount_badge": "-83%",
-  "price_int": "74",
+  "discount_badge": "-72%",
+  "price_int": "139",
   "price_cents": ",90",
-  "price_original": "R$ 449,00",
-  "installment_text": "3x R$ 24,97",
+  "price_original": "R$ 499,00",
+  "installment_text": "3x R$ 46,63",
   "installment_highlight": "sem juros",
-  "coupon_main": "83% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 139,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(473)",
   "sold_count": "4987 vendidos on-line",
@@ -466,12 +466,12 @@
   "related": [
     {
       "href": "produto-53.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me8xwns12tqb8f",
+      "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me8xwns11f5v8f",
       "alt": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
       "name": "Starlink V4 Internet Satélite Wi-fi 6 Alta Velocidade Nacional Homologada Anatel (Starlink Padrão)",
-      "price": "R$ 94,90",
-      "price_original": "R$ 497,90",
-      "discount": "81% OFF",
+      "price": "R$ 347,90",
+      "price_original": "R$ 1.899,00",
+      "discount": "-82%",
       "sold": "5801 vendidos"
     },
     {
@@ -479,19 +479,19 @@
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reng-m1ya6at9aqw05a",
       "alt": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
       "name": "Churrasqueira Resistente Modelo Rodeio Bacia Esmaltada Casa Praia Piscina Verão Lazer Preta - Mor",
-      "price": "R$ 129,30",
-      "price_original": "R$ 499,00",
-      "discount": "74% OFF",
+      "price": "R$ 64,90",
+      "price_original": "R$ 299,90",
+      "discount": "-78%",
       "sold": "7548 vendidos"
     },
     {
       "href": "produto-90.html",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_892654-MLA88404436715_072025-O.webp",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_747089-MLA96155562431_102025-O.webp",
       "alt": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
       "name": "Jogo De Panela Avant Space 5 Peças - Tognana Cor Preto",
       "price": "R$ 79,90",
-      "price_original": "R$ 647,90",
-      "discount": "88% OFF",
+      "price_original": "R$ 239,70",
+      "discount": "-88%",
       "sold": "5324 vendidos"
     },
     {
@@ -500,17 +500,17 @@
       "alt": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "name": "Kit Lattafa Yara Collection Feminino Edp - Perfume 4x25ml original",
       "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-82%",
       "sold": "5515 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     }
@@ -518,7 +518,7 @@
   "produto_atual": {
     "id": 19,
     "nome": "Tablet Vision TAB 7 Stitch + Capa e Bolsa - Octa-Core 3GB RAM 64GB Android 14 Go Wi-Fi IPS Positivo",
-    "preco": 74.9,
+    "preco": 139.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4",
     "imagens": [
       "https://down-tx-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfkq-m84xvokvhipd9f.16000081743691318.mp4",
@@ -533,24 +533,48 @@
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdexclaw1nf5aa"
     ],
     "variacoes": {
-      "modelo": {
+      "cor": {
         "com_imagem": true,
-        "label": "Opção",
+        "label": "Edição",
         "opcoes": [
           {
-            "nome": "Azul Stitch + Capa e Bolsa (64GB)",
+            "nome": "Azul Stitch + Capa",
             "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqeia9c4"
           },
           {
-            "nome": "Kit Stitch Completo (Tablet + Bolsa + Alça)",
+            "nome": "Kit Stitch Completo (+ Bolsa)",
             "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m84xjaeqhbf556"
+          }
+        ]
+      },
+      "memoria": {
+        "com_imagem": false,
+        "label": "Armazenamento / RAM",
+        "opcoes": [
+          {
+            "nome": "64GB / 3GB RAM",
+            "preco": 139.9,
+            "preco_antigo": 499.0
+          },
+          {
+            "nome": "128GB / 4GB RAM",
+            "preco": 169.9,
+            "preco_antigo": 599.0
           }
         ]
       }
     },
     "sales": "4987 vendidos on-line",
-    "installmentText": "3x R$ 24,97 sem juros",
-    "preco_antigo": 449
+    "installmentText": "3x R$ 46,63 sem juros",
+    "preco_antigo": 499.0,
+    "price": 139.9,
+    "precoOrig": 499.0,
+    "originalPrice": 499.0,
+    "cupomPreco": 139.9,
+    "couponPrice": 139.9,
+    "desc": 72,
+    "desconto": 72,
+    "parcelamento": "3x R$ 46,63 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "stitch_19",

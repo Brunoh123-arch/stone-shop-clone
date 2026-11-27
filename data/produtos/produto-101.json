@@ -41,14 +41,14 @@
       "alt": "Pneu Pirelli P400 EVO"
     }
   ],
-  "discount_badge": "-83%",
-  "price_int": "87",
+  "discount_badge": "-68%",
+  "price_int": "189",
   "price_cents": ",90",
   "price_original": "R$ 599,00",
-  "installment_text": "3x R$ 29,30",
+  "installment_text": "3x R$ 63,30",
   "installment_highlight": "sem juros",
-  "coupon_main": "83% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 189,90 no Pix ou Cartão",
   "rating_score": "4.7",
   "rating_count": "(467)",
   "sold_count": "13488 vendidos on-line",
@@ -246,40 +246,40 @@
     {
       "href": "produto-54.html",
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdxh-mdeoo0q0wuft89",
-      "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Aro 16 (Original) Cinza (PE11X)",
-      "name": "Purificador Eletrônico Compacto Efficient Painel Digital Aro 16 (Original) Cinza (PE11X)",
-      "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
+      "alt": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
+      "name": "Purificador Eletrônico Compacto Efficient Painel Digital Bivolt Cinza (PE11X)",
+      "price": "R$ 169,90",
+      "price_original": "R$ 649,90",
+      "discount": "-74%",
       "sold": "9876 vendidos"
     },
     {
       "href": "produto-35.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-824i8-mdyu6aqj7g1td8",
-      "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Aro 16 (Original)",
-      "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Aro 16 (Original)",
-      "price": "R$ 96,78",
-      "price_original": "R$ 497,90",
-      "discount": "81% OFF",
+      "img": "../img/produtos/p35/slide_1.jpg",
+      "alt": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
+      "name": "Caixa de Som JBL Boombox 4 Bluetooth 210W Preta Bivolt",
+      "price": "R$ 297,90",
+      "price_original": "R$ 1.899,00",
+      "discount": "-84%",
       "sold": "8569 vendidos"
     },
     {
       "href": "produto-14.html",
-      "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdwx-lzpm7626yvg7c9",
-      "alt": "Churrasqueira Elétrica Arke Apartamento Rotativa Com 5 Espetos 220v Vitta Smart",
-      "name": "Churrasqueira Elétrica Arke Apartamento Rotativa Com 5 Espetos 220v Vitta Smart",
+      "img": "../img/produto-14-1.jpg",
+      "alt": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
+      "name": "Churrasqueira Assador a Gás GLP Rotativo Arke 5 Espetos AGR-05 Bivolt",
       "price": "R$ 189,90",
-      "price_original": "R$ 779,90",
-      "discount": "76% OFF",
+      "price_original": "R$ 749,90",
+      "discount": "-75%",
       "sold": "9874 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -297,7 +297,7 @@
   "produto_atual": {
     "id": 101,
     "nome": "Pneus Pirelli - Encontre a medida ideal para o seu veículo",
-    "preco": 87.9,
+    "preco": 189.9,
     "img": "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
     "imagens": [
       "https://tyre24.pirelli.com/dynamic_engine/assets/visori/cake/p7cnt.png",
@@ -351,7 +351,16 @@
       }
     },
     "sales": "13488 vendidos on-line",
-    "installmentText": "3x R$ 29,30 sem juros"
+    "installmentText": "3x R$ 63,30 sem juros",
+    "price": 189.9,
+    "preco_antigo": 599.0,
+    "precoOrig": 599.0,
+    "originalPrice": 599.0,
+    "cupomPreco": 189.9,
+    "couponPrice": 189.9,
+    "desc": 68,
+    "desconto": 68,
+    "parcelamento": "3x R$ 63,30 sem juros"
   },
   "extra_scripts": [
     "../js/avaliacoes-pirelli.js"

@@ -1,7 +1,7 @@
 {
   "id": 85,
   "title": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones - Stone Shop",
-  "meta_description": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones com 90% OFF. Apenas R$39,90. Frete grátis.",
+  "meta_description": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones com 90% OFF. Apenas R$ 197,90. Frete grátis.",
   "product_title": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Caixa De Som Karaokê Joog X2 300w Tela 1 - Slide 5"
     }
   ],
-  "discount_badge": "-90%",
-  "price_int": "39",
+  "discount_badge": "-83%",
+  "price_int": "197",
   "price_cents": ",90",
-  "price_original": "R$ 397,90",
-  "installment_text": "3x R$ 13,30",
+  "price_original": "R$ 1.199,00",
+  "installment_text": "3x R$ 65,96",
   "installment_highlight": "sem juros",
-  "coupon_main": "90% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 197,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(355)",
   "sold_count": "9853 vendidos on-line",
@@ -230,12 +230,12 @@
   "related": [
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
+      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
-      "price": "R$ 94,90",
-      "price_original": "R$ 349,90",
-      "discount": "73% OFF",
+      "price": "R$ 69,90",
+      "price_original": "R$ 299,90",
+      "discount": "-77%",
       "sold": "458 vendidos"
     },
     {
@@ -243,18 +243,18 @@
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m850ox58do8h8b",
       "alt": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
       "name": "Lava Louças Praxis Portátil LLPP Semi-Automática Bivolt",
-      "price": "R$ 69,80",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price": "R$ 219,90",
+      "price_original": "R$ 899,90",
+      "discount": "-76%",
       "sold": "9864 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -282,7 +282,7 @@
   "produto_atual": {
     "id": 85,
     "nome": "Caixa De Som Karaokê Joog X2 300w Tela 10,1 Com 2 Microfones",
-    "preco": 39.9,
+    "preco": 197.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8jnvlvc270103",
     "imagens": [
       "https://down-ws-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6kfks-ma4merlhc7bbc2.16000081748030512.mp4",
@@ -305,7 +305,16 @@
       }
     },
     "sales": "9853 vendidos on-line",
-    "installmentText": "3x R$ 13,30 sem juros"
+    "installmentText": "3x R$ 65,96 sem juros",
+    "price": 197.9,
+    "preco_antigo": 1199.0,
+    "precoOrig": 1199.0,
+    "originalPrice": 1199.0,
+    "cupomPreco": 197.9,
+    "couponPrice": 197.9,
+    "desc": 83,
+    "desconto": 83,
+    "parcelamento": "3x R$ 65,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "joog_x2_85",

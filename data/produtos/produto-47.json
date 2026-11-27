@@ -1,7 +1,7 @@
 {
   "id": 47,
   "title": "Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá  - Stone Shop",
-  "meta_description": "Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá  com 83% OFF. Apenas R$69,90. Frete grátis.",
+  "meta_description": "Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá  com 83% OFF. Apenas R$ 169,90. Frete grátis.",
   "product_title": "Extratora e Higienizadora Portátil WAP Spot Cleaner 1400W Borrifa Esfrega e Extrai Sujeira",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Extratora e Higienizadora Portátil WAP S - Slide 9"
     }
   ],
-  "discount_badge": "-83%",
-  "price_int": "69",
+  "discount_badge": "-76%",
+  "price_int": "169",
   "price_cents": ",90",
-  "price_original": "R$ 399,90",
-  "installment_text": "3x R$ 23,30",
+  "price_original": "R$ 699,90",
+  "installment_text": "3x R$ 56,63",
   "installment_highlight": "sem juros",
-  "coupon_main": "83% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 169,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(54)",
   "sold_count": "9314 vendidos on-line",
@@ -639,9 +639,9 @@
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7raui-mb4awu05e15c16",
       "alt": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
       "name": "Fritadeira Air Fryer Forno Oven 12L Mondial Preto e Inox0W AFON-12L-BI",
-      "price": "R$ 54,73",
-      "price_original": "R$ 299,90",
-      "discount": "-82%",
+      "price": "R$ 139,90",
+      "price_original": "R$ 529,90",
+      "discount": "-74%",
       "sold": "8391 vendidos"
     },
     {
@@ -659,9 +659,9 @@
       "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zqs2hxtuki59",
       "alt": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
       "name": "Micro-ondas Mondial Mo-01-21-e 1200w 21 Litros",
-      "price": "R$ 84,90",
-      "price_original": "R$ 389,90",
-      "discount": "78% OFF",
+      "price": "R$ 179,90",
+      "price_original": "R$ 549,90",
+      "discount": "-67%",
       "sold": "8953 vendidos"
     },
     {
@@ -677,10 +677,10 @@
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     }
@@ -688,7 +688,7 @@
   "produto_atual": {
     "id": 47,
     "nome": "Extratora Higienizadora Portátil  Borrifa Esfrega e Extrai Sujeira Colchão Sofá ",
-    "preco": 69.9,
+    "preco": 169.9,
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rbn7-lqeu1vzxvsrqba",
     "imagens": [
       "https://down-br.img.susercontent.com/file/sg-11134201-7rbn7-lqeu1vzxvsrqba",
@@ -718,7 +718,16 @@
       }
     },
     "sales": "9314 vendidos on-line",
-    "installmentText": "3x R$ 23,30 sem juros"
+    "installmentText": "3x R$ 56,63 sem juros",
+    "price": 169.9,
+    "preco_antigo": 699.9,
+    "precoOrig": 699.9,
+    "originalPrice": 699.9,
+    "cupomPreco": 169.9,
+    "couponPrice": 169.9,
+    "desc": 76,
+    "desconto": 76,
+    "parcelamento": "3x R$ 56,63 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "wap_extratora_47",

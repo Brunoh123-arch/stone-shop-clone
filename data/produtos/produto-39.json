@@ -252,8 +252,8 @@
       "alt": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "name": "Aparelho Jogo De Jantar 30 Peças Orgânico Petroleum Porto Brasil Carlos Bertolazzi + BRINDE",
       "price": "R$ 69,90",
-      "price_original": "R$ 497,90",
-      "discount": "86% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-86%",
       "sold": "9843 vendidos"
     },
     {
@@ -262,17 +262,17 @@
       "alt": "Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço",
       "name": "Caixa de som original Alaxe Echo Dot 5 geração com envio imediato e melhor preço",
       "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price_original": "R$ 209,70",
+      "discount": "-82%",
       "sold": "9876 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -314,11 +314,26 @@
       "https://down-br.img.susercontent.com/file/sg-11134201-824g0-mfio0tr8uqz29c"
     ],
     "variacoes": {
-      "voltagem": {
-        "label": "VOLTAGEM",
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
         "opcoes": [
-          "220V",
-          "110V"
+          {
+            "nome": "Preto",
+            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-824hh-mfio0pwmo0su97"
+          }
+        ]
+      },
+      "voltagem": {
+        "com_imagem": false,
+        "label": "Voltagem",
+        "opcoes": [
+          {
+            "nome": "110V (127V)"
+          },
+          {
+            "nome": "220V"
+          }
         ]
       }
     },

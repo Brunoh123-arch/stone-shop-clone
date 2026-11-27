@@ -101,16 +101,16 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | ID | Produto | PIX | Status |
 |:--:|---|:--:|---|
 | 125 | Carrinho Rolimã Girocar / Super Car LED (100 kg) | R$ 84,90 | fila |
-| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 47,89 | **100% blindado no ar** |
+| **126** | Patinete Elétrico Infantil Dobrável c/ LED (60W, 8 km/h) | R$ 119,90 | **100% blindado no ar** |
 | **127** | Carrinho RC Drift 4x4 Turbo que Solta Fumaça + LED + Kit Pneus & Cones | R$ 49,89 | **100% blindado no ar** |
 | **128** | Mesa Dobrável Portátil Vira Maleta 1,80 m Reforçada c/ Alça | R$ 67,89 | **100% blindado no ar** |
 | **129** | Escova Elétrica Giratória Sem Fio 9 em 1 c/ Cabo Extensor 137 cm | R$ 29,89 | **100% blindado no ar** |
 | **135** | Smartwatch Série 10 W99+ Pro AMOLED NFC ChatGPT | ativo | **no ar** |
 | **144** | Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas | R$ 37,89 | **100% blindado no ar** |
 | **145** | Combo Mala de Bordo Rígida ABS Giro 360° ANAC + Frasqueira (Kit 2 Peças) | R$ 69,89 | **100% blindado no ar** |
-| **146** | Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS LED IPX4 | R$ 37,90 | **100% blindado no ar** |
-| **147** | Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ LED, Chave e Bluetooth | R$ 54,90 | **100% blindado no ar** |
-| **148** | Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Vanilla c/ Tampas de Vidro | R$ 49,90 | **100% blindado no ar** |
+| **146** | Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS LED IPX4 | R$ 197,90 | **100% blindado no ar** |
+| **147** | Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ LED, Chave e Bluetooth | R$ 167,90 | **100% blindado no ar** |
+| **148** | Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Vanilla/Preto c/ Tampas | R$ 119,90 | **100% blindado no ar** |
 | **149** | Cortina Cascata Luminosa 3m x 3m 300 LEDs Colorido RGB & Branco Quente USB c/ Controle | R$ 29,89 | **100% blindado no ar** |
 | **150** | Fogão 4 Bocas Esmaltec Ideal Super Mesa Inox Acendimento Automático Forno 50L Bivolt | R$ 189,90 | **100% blindado no ar** |
 | **151** | Smart TV 32" LG HD LED ThinQ AI HDR10 Processador α5 WebOS Wi-Fi Bluetooth | R$ 279,90 | **100% blindado no ar** |

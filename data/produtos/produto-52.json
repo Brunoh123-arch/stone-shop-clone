@@ -1,7 +1,7 @@
 {
   "id": 52,
   "title": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano - Stone Shop",
-  "meta_description": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano com 81% OFF. Apenas R$94,90. Frete grátis.",
+  "meta_description": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano com 81% OFF. Apenas R$ 389,90. Frete grátis.",
   "product_title": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano",
   "slider_imgs": [
     {
@@ -41,14 +41,14 @@
       "alt": "Pad 11 Geração A16 256GB Wi-fi Tela 11po - Slide 9"
     }
   ],
-  "discount_badge": "-81%",
-  "price_int": "94",
+  "discount_badge": "-82%",
+  "price_int": "389",
   "price_cents": ",90",
-  "price_original": "R$ 497,90",
-  "installment_text": "3x R$ 31,63",
+  "price_original": "R$ 2.199,00",
+  "installment_text": "3x R$ 129,96",
   "installment_highlight": "sem juros",
-  "coupon_main": "81% OFF",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 389,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(64)",
   "sold_count": "7654 vendidos on-line",
@@ -750,17 +750,17 @@
       "alt": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
       "name": "Kit conjunto de panelas de ferro esmaltadas luxo 18 peças",
       "price": "R$ 79,90",
-      "price_original": "R$ 697,90",
-      "discount": "89% OFF",
+      "price_original": "R$ 239,70",
+      "discount": "-89%",
       "sold": "5432 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -788,7 +788,7 @@
   "produto_atual": {
     "id": 52,
     "nome": "Pad 11 Geração A16 256GB Wi-fi Tela 11pol Original Novo Lacrado com Garantia  de 1 ano",
-    "preco": 94.9,
+    "preco": 389.9,
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rladn00h24",
     "imagens": [
       "https://down-zl-br.vod.susercontent.com/api/v4/11110105/mms/br-11110105-6v5dl-mfgwcikdqjuvce.16000081759669834.mp4",
@@ -803,39 +803,52 @@
       "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71tak90c"
     ],
     "variacoes": {
-      "ipad 11": {
+      "cor": {
         "com_imagem": true,
-        "label": "iPad 11",
+        "label": "Cor",
         "opcoes": [
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71up4p5d",
-            "nome": "Prata 256gb"
+            "nome": "Prata",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71up4p5d"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71w3p5bd",
-            "nome": "Azul 256gb"
+            "nome": "Azul",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71w3p5bd"
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71xi9l93",
-            "nome": "Rosa 256gb"
+            "nome": "Rosa",
+            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71xi9l93"
+          }
+        ]
+      },
+      "memoria": {
+        "com_imagem": false,
+        "label": "Armazenamento",
+        "opcoes": [
+          {
+            "nome": "128GB Wi-Fi",
+            "preco": 389.9,
+            "preco_antigo": 2199.0
           },
           {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl71ywu138",
-            "nome": "Prata 128gb"
-          },
-          {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl720behcf",
-            "nome": "Azul 128gb"
-          },
-          {
-            "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdh7rl721pyx61",
-            "nome": "Rosa 128gb"
+            "nome": "256GB Wi-Fi",
+            "preco": 439.9,
+            "preco_antigo": 2499.0
           }
         ]
       }
     },
     "sales": "7654 vendidos on-line",
-    "installmentText": "3x R$ 31,63 sem juros"
+    "installmentText": "3x R$ 129,96 sem juros",
+    "price": 389.9,
+    "preco_antigo": 2199.0,
+    "precoOrig": 2199.0,
+    "originalPrice": 2199.0,
+    "cupomPreco": 389.9,
+    "couponPrice": 389.9,
+    "desc": 82,
+    "desconto": 82,
+    "parcelamento": "3x R$ 129,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "pad11_52",

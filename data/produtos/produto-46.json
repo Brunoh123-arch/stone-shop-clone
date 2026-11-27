@@ -1,7 +1,7 @@
 {
   "id": 46,
   "title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20) - Stone Shop",
-  "meta_description": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20) com 83% OFF. Apenas R$69,90. Frete grátis.",
+  "meta_description": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20) com 83% OFF. Apenas R$ 149,90. Frete grátis.",
   "product_title": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)",
   "slider_imgs": [
     {
@@ -33,14 +33,14 @@
       "alt": "Panela de Pressão Elétrica Electrolux po - Slide 7"
     }
   ],
-  "discount_badge": "-83%",
-  "price_int": "69",
+  "discount_badge": "-75%",
+  "price_int": "149",
   "price_cents": ",90",
-  "price_original": "R$ 399,90",
-  "installment_text": "3x R$ 23,30",
+  "price_original": "R$ 599,90",
+  "installment_text": "3x R$ 49,96",
   "installment_highlight": "sem juros",
-  "coupon_main": "",
-  "coupon_bonus": "",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 149,90 no Pix ou Cartão",
   "rating_score": "5.0",
   "rating_count": "(53)",
   "sold_count": "9831 vendidos on-line",
@@ -631,9 +631,9 @@
       "img": "https://down-br.img.susercontent.com/file/sg-11134201-7renf-m8lxuc60fdsy07",
       "alt": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
       "name": "Ar Condicionado Portátil HQ 8.500 BTU/h Frio Monofásico Branco HQ-AP8500FW",
-      "price": "R$ 92,80",
-      "price_original": "R$ 754,44",
-      "discount": "88% OFF",
+      "price": "R$ 349,90",
+      "price_original": "R$ 1.799,00",
+      "discount": "-81%",
       "sold": "10241 vendidos"
     },
     {
@@ -641,28 +641,28 @@
       "img": "https://down-br.img.susercontent.com/file/d8f8f5450da9553d8273c5ffe8a1ee61",
       "alt": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
       "name": "Conjunto de 12 Copos De Cristal P/ Long Drink 490Ml Proper Effect",
-      "price": "R$ 69,90",
-      "price_original": "R$ 397,90",
-      "discount": "82% OFF",
+      "price": "R$ 44,90",
+      "price_original": "R$ 249,90",
+      "discount": "-82%",
       "sold": "1 vendidos"
     },
     {
       "href": "produto-26.html",
-      "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5bgd8rac7dc02",
+      "img": "https://down-br.img.susercontent.com/file/br-11110105-7r98o-lw4k47nf6k7mdf",
       "alt": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
       "name": "Carrinho de Bebê Guarda Chuva Passeio Leve e Dobrável Mega Compras Compacto, Seguro,Cinto",
-      "price": "R$ 94,90",
-      "price_original": "R$ 349,90",
-      "discount": "73% OFF",
+      "price": "R$ 69,90",
+      "price_original": "R$ 299,90",
+      "discount": "-77%",
       "sold": "458 vendidos"
     },
     {
       "href": "produto-126.html",
       "img": "../img/patinete-126-slide-1.webp",
-      "alt": "Patinete Elétrico Infantil Dobrável com LED",
-      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 47,89",
-      "price_original": "R$ 199,90",
+      "alt": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável em 3 Alturas",
+      "price": "R$ 119,90",
+      "price_original": "R$ 499,90",
       "discount": "-76%",
       "sold": "3842 vendidos"
     },
@@ -680,7 +680,7 @@
   "produto_atual": {
     "id": 46,
     "nome": "Panela de Pressão Elétrica Electrolux por Rita Lobo 6L Preta Experience Digital (PCC20)",
-    "preco": 69.9,
+    "preco": 149.9,
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18",
     "imagens": [
       "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18",
@@ -692,16 +692,40 @@
       "https://down-br.img.susercontent.com/file/sg-11134201-7rfi7-m9yigb0ott0s13"
     ],
     "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Cor",
+        "opcoes": [
+          {
+            "nome": "Preto",
+            "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rfhx-m9yig7n5t2mn18"
+          }
+        ]
+      },
       "voltagem": {
+        "com_imagem": false,
         "label": "Voltagem",
         "opcoes": [
-          "127V",
-          "220V"
+          {
+            "nome": "110V (127V)"
+          },
+          {
+            "nome": "220V"
+          }
         ]
       }
     },
     "sales": "9831 vendidos on-line",
-    "installmentText": "3x R$ 23,30 sem juros"
+    "installmentText": "3x R$ 49,96 sem juros",
+    "price": 149.9,
+    "preco_antigo": 599.9,
+    "precoOrig": 599.9,
+    "originalPrice": 599.9,
+    "cupomPreco": 149.9,
+    "couponPrice": 149.9,
+    "desc": 75,
+    "desconto": 75,
+    "parcelamento": "3x R$ 49,96 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "electrolux_46",

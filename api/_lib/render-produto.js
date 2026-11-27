@@ -3,7 +3,7 @@ const path = require('path');
 const produtosRegistry = require('../../data/produtos/index');
 const { getOfficialProduct } = require('./store-state');
 
-const ASSET_VERSION = '20261127_tt_oficial_1to1_v42';
+const ASSET_VERSION = '20261127_tt_oficial_1to1_v43';
 const TEMPLATE_PATH = path.join(__dirname, '..', '..', 'templates', 'produto-modelo.html');
 
 let cachedTemplate = null;
