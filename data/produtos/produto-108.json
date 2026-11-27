@@ -1,7 +1,7 @@
 {
   "id": 108,
   "title": "Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda Bivolt - Stone Shop",
-  "meta_description": "Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda com 88% OFF. Apenas R$ 49,90. Frete grátis.",
+  "meta_description": "Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda com 88% OFF. Apenas R$ 27,89. Frete grátis.",
   "product_title": "Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda Bivolt",
   "slider_imgs": [
     {
@@ -25,14 +25,14 @@
       "alt": "Escova 5 em 1 Multifuncional - 5"
     }
   ],
-  "discount_badge": "-88%",
-  "price_int": "49",
-  "price_cents": ",90",
-  "price_original": "R$ 415,80",
-  "installment_text": "3x R$ 16,63",
+  "discount_badge": "-81%",
+  "price_int": "27",
+  "price_cents": ",89",
+  "price_original": "R$ 149,90",
+  "installment_text": "3x R$ 9,29",
   "installment_highlight": "sem juros",
   "coupon_main": "Desconto de R$ 365",
-  "coupon_bonus": "Economize 88% com bônus",
+  "coupon_bonus": "Final R$ 27,89 no Pix ou Cartão",
   "rating_score": "4.9",
   "rating_count": "(48)",
   "sold_count": "18462 vendidos on-line",
@@ -285,17 +285,17 @@
       "img": "../img/patinete-126-slide-1.webp",
       "alt": "Patinete Elétrico Infantil Dobrável com LED",
       "name": "Patinete Elétrico Infantil Dobrável com Luzes LED nas Rodas e Guidão Ajustável",
-      "price": "R$ 97,00",
-      "price_original": "R$ 389,90",
-      "discount": "75% OFF",
+      "price": "R$ 47,89",
+      "price_original": "R$ 199,90",
+      "discount": "-76%",
       "sold": "3842 vendidos"
     }
   ],
   "produto_atual": {
     "id": 108,
     "nome": "Escova Secadora e Modeladora 5 em 1 Multifuncional Efeito Coanda Bivolt",
-    "preco": 49.9,
-    "preco_antigo": 415.8,
+    "preco": 27.89,
+    "preco_antigo": 149.9,
     "img": "../img/produto-108-1.jpg",
     "imagens": [
       "../img/produto-108-1.jpg",
@@ -319,18 +319,26 @@
           {
             "nome": "Rosa e Cinza",
             "imagem": "../img/produto-108-1.jpg",
-            "preco": 49.9
+            "preco": 27.89
           },
           {
             "nome": "Dourado e Preto",
             "imagem": "../img/produto-108-2.jpg",
-            "preco": 49.9
+            "preco": 27.89
           }
         ]
       }
     },
     "sales": "18462 vendidos on-line",
-    "installmentText": "3x R$ 16,63 sem juros"
+    "installmentText": "3x R$ 9,29 sem juros",
+    "price": 27.89,
+    "precoOrig": 149.9,
+    "originalPrice": 149.9,
+    "cupomPreco": 27.89,
+    "couponPrice": 27.89,
+    "desc": 81,
+    "desconto": 81,
+    "parcelamento": "3x R$ 9,29 sem juros"
   },
   "extra_scripts": [],
   "creator_context": "escova108",
