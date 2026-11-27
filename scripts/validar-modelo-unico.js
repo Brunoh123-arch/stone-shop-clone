@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { renderProdutoHtml, listProductIds } = require('../api/_lib/render-produto');
 
 const ROOT = path.join(__dirname, '..');
@@ -11,6 +12,8 @@ const BAD_AVATARS = new Set([
   'tt_avatar_29', 'tt_avatar_31', 'tt_avatar_37', 'tt_avatar_39', 'tt_avatar_43', 'tt_avatar_57',
   'tt_cdn_2', 'tt_cdn_3', 'tt_cdn_4', 'tt_cdn_5', 'tt_cdn_10', 'tt_cdn_13', 'tt_cdn_14', 'tt_cdn_15',
   'tt_cdn_19', 'tt_cdn_21', 'tt_cdn_22', 'tt_cdn_23', 'tt_cdn_27', 'tt_cdn_30',
+  'tt_cdn_28', 'tt_cdn_34', 'tt_cdn_35', 'tt_cdn_41', 'tt_cdn_44', 'tt_cdn_45',
+  'tt_cdn_51', 'tt_cdn_58', 'tt_cdn_66', 'tt_cdn_68', 'tt_cdn_69', 'tt_cdn_70',
 ]);
 const COMMERCIAL_CREATOR = /(shop|store|loja|oficial|official|ofertas|achadinhos|outlet|magazine|brasil|brazil|tech)/i;
 
@@ -101,9 +104,19 @@ for (const id of ids) {
 // ---------- 2. Travas de mídia (cross-produto) ----------
 const catboxId = (u) => { const m = String(u || '').match(/catbox\.moe\/([a-z0-9]+\.\w+)/i); return m ? m[1].toLowerCase() : null; };
 const clean = (p) => String(p || '').split('?')[0].split('#')[0];
-const onDisk = (p) => {
-  const rel = clean(p).replace(/^(\.\.\/|\.\/|\/)+/, '');
-  return fs.existsSync(path.join(ROOT, rel));
+const toAbs = (p) => path.join(ROOT, clean(p).replace(/^(\.\.\/|\.\/|\/)+/, ''));
+const onDisk = (p) => fs.existsSync(toAbs(p));
+const md5Cache = new Map();
+const avatarFingerprint = (p) => {
+  const c = clean(p);
+  if (!c) return '';
+  if (/^https?:\/\//i.test(c)) return c;
+  const abs = toAbs(c);
+  if (!fs.existsSync(abs)) return c;
+  if (!md5Cache.has(abs)) {
+    md5Cache.set(abs, crypto.createHash('md5').update(fs.readFileSync(abs)).digest('hex'));
+  }
+  return md5Cache.get(abs);
 };
 
 const owners = new Map(); // catbox_id -> [ids de produtos que usam]
@@ -152,12 +165,16 @@ for (const id of ids) {
   if (creators.length === 0) E('sem criadores');
   if (creators.length < 8) W(`apenas ${creators.length} criadores (meta: 8 a 15)`);
   const users = new Set();
+  const creatorAvFingerprints = new Set();
   creators.forEach((c, i) => {
     const tag = `criador ${i + 1} (@${c.username})`;
     if (users.has(c.username)) E(`${tag}: @username repetido`);
     users.add(c.username);
     if (COMMERCIAL_CREATOR.test(`${c.name} ${c.username}`)) E(`${tag}: perfil comercial/loja proibido`);
     if (!onDisk(c.avatar)) E(`${tag}: avatar não existe no disco ${c.avatar}`);
+    const fp = avatarFingerprint(c.avatar);
+    if (fp && creatorAvFingerprints.has(fp)) E(`${tag}: avatar repetido entre criadores do mesmo produto (${c.avatar})`);
+    if (fp) creatorAvFingerprints.add(fp);
     if (!onDisk(c.poster)) E(`${tag}: poster não existe no disco ${c.poster}`);
     if (clean(c.poster).includes('catalogo') || /slide/i.test(clean(c.poster))) E(`${tag}: poster parece foto de catálogo (deve ser frame do MP4)`);
   });
@@ -193,12 +210,14 @@ for (const id of ids) {
   (d.reviews || []).forEach((r, i) => {
     const tag = `avaliação ${i + 1} (${r.name})`;
     const av = clean(r.avatar);
+    const avFp = avatarFingerprint(r.avatar);
     if (!onDisk(av)) E(`${tag}: avatar não existe ${r.avatar}`);
     if (BAD_AVATAR_DIRS.some((b) => av.includes(b))) E(`${tag}: avatar em pasta banida (gringos): ${av}`);
     const base = path.basename(av, path.extname(av));
     if (BAD_AVATARS.has(base)) E(`${tag}: avatar ${base} é logo/cartoon (proibido)`);
-    if (avSeen.has(av)) E(`${tag}: avatar repetido ${av}`);
-    avSeen.add(av);
+    if (creatorAvFingerprints.has(avFp)) E(`${tag}: avatar colide (mesmo rosto/MD5) com criador do carrossel de vídeos (${av})`);
+    if (avSeen.has(avFp)) E(`${tag}: avatar repetido (mesmo rosto/MD5) dentro das avaliações (${av})`);
+    avSeen.add(avFp);
     if (varNames.length && r.variation && !varNames.includes(String(r.variation).toLowerCase())) {
       E(`${tag}: variação '${r.variation}' não existe na grade do produto`);
     }
