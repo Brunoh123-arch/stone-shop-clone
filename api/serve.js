@@ -128,10 +128,17 @@ module.exports = async function handler(req, res) {
 
     recordTrafficHit({ allowed: true, isAdBot: isAdReviewer(req), ua: uaStr, productId: hitPid, pathUrl: req.url || '/' });
 
-    // Se for requisição de página de produto (/pages/:slug)
+    // Se for requisição de página de produto (/pages/:slug) ou atalho admin (/videos-ads, /ads, /painel)
     if (req.query && req.query.slug) {
       let slug = String(req.query.slug).replace(/[^a-zA-Z0-9_-]/g, '');
       if (slug.endsWith('.html')) slug = slug.replace('.html', '');
+
+      if (slug === 'admin') {
+        const adminPath = path.join(__dirname, '..', 'admin.html');
+        if (fs.existsSync(adminPath)) {
+          return res.status(200).send(fs.readFileSync(adminPath, 'utf8'));
+        }
+      }
 
       // Modelo Único Permanente para produto-<id>
       const prodMatch = slug.match(/^produto-(\d+)$/i);

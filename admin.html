@@ -251,17 +251,22 @@
     .nav-btn {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
+      gap: 6px;
+      padding: 7px 11px;
       border-radius: var(--radius-md);
       background: transparent;
       border: none;
       color: var(--text-muted);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
       white-space: nowrap;
+    }
+
+    @media (max-width: 767px) {
+      .top-ads-shortcut { display: none !important; }
+      .pill-cloaker { font-size: 10px; padding: 5px 9px; }
     }
 
     .nav-btn:hover {
@@ -1206,7 +1211,7 @@
 
       <div class="top-actions">
         <!-- Atalho Direto Central de Vídeos TikTok Ads -->
-        <button class="pill-cloaker" style="background:rgba(254,44,85,0.14); border-color:rgba(254,44,85,0.4); color:#ff6482;" onclick="trocarAba('ads')" title="Abrir Central de Vídeos TikTok Ads">
+        <button class="pill-cloaker top-ads-shortcut" style="background:rgba(254,44,85,0.14); border-color:rgba(254,44,85,0.4); color:#ff6482;" onclick="trocarAba('ads')" title="Abrir Central de Vídeos TikTok Ads">
           <span>🎬 Vídeos Ads</span>
         </button>
 
