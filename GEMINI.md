@@ -108,6 +108,15 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | **135** | Smartwatch Série 10 W99+ Pro AMOLED NFC ChatGPT | ativo | **no ar** |
 | **144** | Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas | R$ 37,89 | **100% blindado no ar** |
 | **145** | Combo Mala de Bordo Rígida ABS Giro 360° ANAC + Frasqueira (Kit 2 Peças) | R$ 69,89 | **100% blindado no ar** |
+| **146** | Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS LED IPX4 | R$ 37,90 | **100% blindado no ar** |
+| **147** | Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ LED, Chave e Bluetooth | R$ 54,90 | **100% blindado no ar** |
+| **148** | Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Vanilla c/ Tampas de Vidro | R$ 49,90 | **100% blindado no ar** |
+| **149** | Cortina Cascata Luminosa 3m x 3m 300 LEDs Colorido RGB & Branco Quente USB c/ Controle | R$ 29,89 | **100% blindado no ar** |
+| **150** | Fogão 4 Bocas Esmaltec Ideal Super Mesa Inox Acendimento Automático Forno 50L Bivolt | R$ 189,90 | **100% blindado no ar** |
+| **151** | Smart TV 32" LG HD LED ThinQ AI HDR10 Processador α5 WebOS Wi-Fi Bluetooth | R$ 279,90 | **100% blindado no ar** |
+| **152** | Smartphone Samsung Galaxy A17 5G 128GB 4GB RAM Super AMOLED 6,7" 90Hz 50MP NFC | R$ 279,90 | **100% blindado no ar** |
+| **153** | Tablet Samsung Galaxy Tab S10 FE 128GB 8GB RAM 10,9" 90Hz IP68 c/ S-Pen e Capa | R$ 297,90 | **100% blindado no ar** |
+| **154** | Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox Tira-Manchas Advanced | R$ 397,90 | **100% blindado no ar** |
 
 ### 5.1 FILA URGENTE — COMBOS MODA "LEVE 4" & BOLSA + RELÓGIO (135–140) — Puxar no Profile 42
 

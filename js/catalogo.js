@@ -1,5 +1,14 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
+  {id:146,nome:"Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS Show de Luzes LED IPX4",preco:37.9,precoOrig:'229,90',desc:84,vendidos:7438,img:"../img/jbl-146-slide-1.webp"},
+  {id:147,nome:"Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ Luzes LED, Chave, Display e Bluetooth",preco:54.9,precoOrig:'289,90',desc:81,vendidos:5126,img:"../img/triciclo-147-slide-1.webp"},
+  {id:148,nome:"Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro",preco:49.9,precoOrig:'279,90',desc:82,vendidos:8290,img:"../img/panelas-148-slide-1.webp"},
+  {id:149,nome:"Cortina Cascata Luminosa 3m x 3m 300 LEDs Colorido RGB & Branco Quente USB IP44 c/ Controle Remoto",preco:29.89,precoOrig:'119,90',desc:75,vendidos:11420,img:"../img/cortina-149-slide-1.webp"},
+  {id:150,nome:"Fogão 4 Bocas Esmaltec Ideal Super Mesa Inox Acendimento Automático Forno Limpa Fácil 50L Bivolt",preco:189.9,precoOrig:'599,90',desc:68,vendidos:4180,img:"../img/fogao-150-slide-1.webp"},
+  {id:151,nome:"Smart TV 32\" LG HD LED ThinQ AI HDR10 Processador α5 WebOS Wi-Fi Bluetooth Alexa Integrada",preco:279.9,precoOrig:'999,00',desc:72,vendidos:5890,img:"../img/tv-151-slide-1.webp"},
+  {id:152,nome:"Smartphone Samsung Galaxy A17 5G 128GB 4GB RAM Tela Super AMOLED 6,7\" 90Hz Câmera Tripla 50MP NFC",preco:279.9,precoOrig:'949,00',desc:71,vendidos:6310,img:"../img/galaxy-152-slide-1.webp"},
+  {id:153,nome:"Tablet Samsung Galaxy Tab S10 FE 128GB 8GB RAM Tela 10,9\" 90Hz Wi-Fi IP68 c/ Caneta S-Pen e Capa Inclusas",preco:297.9,precoOrig:'1.855,00',desc:84,vendidos:4290,img:"../img/tabs10-153-slide-1.webp"},
+  {id:154,nome:"Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox Ciclo Tira-Manchas Advanced e Antibolinhas",preco:397.9,precoOrig:'1.679,00',desc:76,vendidos:3740,img:"../img/brastemp-154-slide-1.webp"},
   {id:136,nome:'Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula',preco:54.89,precoOrig:'299,90',desc:82,vendidos:2840,img:'../img/kit-mondial-136-slide-1.webp'},
   {id:138,nome:'Cortina de LED 3m x 3m 300 LEDs USB c/ Controle Remoto 8 Funções e Ganchos Integrados',preco:11.89,precoOrig:'119,90',desc:90,vendidos:8420,img:'../img/cortina-led-138-slide-1.webp'},
   {id:139,nome:'Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon',preco:19.89,precoOrig:'159,90',desc:88,vendidos:3650,img:'../img/vestido-139-slide-1.webp'},

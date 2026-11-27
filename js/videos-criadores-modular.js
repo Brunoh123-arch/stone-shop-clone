@@ -1241,6 +1241,60 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'jbl146') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Sim! São 100W RMS reais com Bass Boost e o LED sincroniza automático na batida da música 🔊🔥', date: 'Há 32 min', likes: 114, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-churras/review-homem-1.jpg' : 'img/avatars-churras/review-homem-1.jpg', user: 'marcelo_churrasco', text: 'Coloquei na área de churrasco aqui em casa e o grave tremeu tudo! Qualidade surreal 👏', date: 'Há 18 min', likes: 58, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_23.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_23.jpg', user: 'camila.festas', text: 'E ainda tem entrada pra microfone atrás pra fazer karaokê com a família no Natal! 😍🎤', date: 'Há 9 min', likes: 37, liked: false }
+            ];
+          } else if (contextType === 'triciclo147') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Ele gira 360° liso demais, tem 3 níveis de velocidade e toca música pelo Bluetooth do celular! 🛴⚡', date: 'Há 32 min', likes: 128, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_24.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_24.jpg', user: 'paula.maedopedro', text: 'Comprei de presente de Natal pro meu filho e já testei escondido kkkk muito forte e lindo!', date: 'Há 18 min', likes: 64, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-churras/creator-rodrigo.jpg' : 'img/avatars-churras/creator-rodrigo.jpg', user: 'rodrigo_condominio', text: 'Os LEDs acesos à noite chamam atenção da rua inteira, bateria dura bastante 👏', date: 'Há 9 min', likes: 41, liked: false }
+            ];
+          } else if (contextType === 'panelas148') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Meninas, é a linha Brinox Ceramic Life Smart Plus Vanilla de 8 peças! Não gruda nem ovo sem óleo 🍳✨', date: 'Há 32 min', likes: 142, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_25.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_25.jpg', user: 'lar_da_ju', text: 'Essa cor Vanilla deixou meu fogão um luxo! E pra lavar é só passar o lado amarelo da bucha 😍', date: 'Há 18 min', likes: 73, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_26.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_26.jpg', user: 'renata.cozinha', text: 'Os cabos soft-touch realmente não esquentam nada na mão, amei demais!', date: 'Há 9 min', likes: 49, liked: false }
+            ];
+          } else if (contextType === 'cortina149') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Ela já vem com os 10 ganchinhos prontos pra pendurar direto na cortina e controle remoto sem fio! ✨🎄', date: 'Há 32 min', likes: 135, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_27.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_27.jpg', user: 'bia.decoracao', text: 'Peguei a Branco Quente pra sala pro Natal e ficou parecendo casa de novela! 🥰', date: 'Há 18 min', likes: 69, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_28.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_28.jpg', user: 'fernanda_apto', text: 'Liguei num carregador USB atrás do sofá e não esquenta nadinha o tecido!', date: 'Há 9 min', likes: 42, liked: false }
+            ];
+          } else if (contextType === 'fogao150') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Acendimento automático super rápido na mesa e no forno, e os pés altos facilitam muito varrer embaixo! 🔥🍲', date: 'Há 32 min', likes: 96, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_29.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_29.jpg', user: 'dona.helena', text: 'A chama maior ferve a panela de pressão rapidinho! Excelente fogão Esmaltec 👏', date: 'Há 18 min', likes: 47, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-churras/review-homem-3.jpg' : 'img/avatars-churras/review-homem-3.jpg', user: 'carlos_familia', text: 'Chegou inteirinho sem nenhum amassado, forno limpa fácil funciona muito bem!', date: 'Há 9 min', likes: 31, liked: false }
+            ];
+          } else if (contextType === 'tv151') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'O sistema webOS da LG é muito rápido, já vem Netflix, Globoplay, YouTube e pega fone Bluetooth! 📺✨', date: 'Há 32 min', likes: 118, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-tv/creator-matheus.jpg' : 'img/avatars-tv/creator-matheus.jpg', user: 'lucas.quarto', text: 'Coloquei no suporte do quarto e ficou perfeita, imagem super viva com HDR!', date: 'Há 18 min', likes: 55, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_30.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_30.jpg', user: 'mariana_series', text: 'Espelho a tela do meu celular direto nela com um clique, amei demais 😍', date: 'Há 9 min', likes: 38, liked: false }
+            ];
+          } else if (contextType === 'galaxy152') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Tela Super AMOLED de 6,7 polegadas 90Hz, 128GB, 5G e NFC pra pagar aproximando na maquininha! 📱⚡', date: 'Há 32 min', likes: 131, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-churras/creator-marcos.jpg' : 'img/avatars-churras/creator-marcos.jpg', user: 'andre.silva', text: 'Comprei pro dia a dia e a bateria de 5000mAh sobra no fim da noite! Câmera ótima 👏', date: 'Há 18 min', likes: 62, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_32.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_32.jpg', user: 'juliana_sp', text: 'Chegou lacrado rapidinho, muito fino e bonito pessoalmente!', date: 'Há 9 min', likes: 44, liked: false }
+            ];
+          } else if (contextType === 'tabs10_153') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Sim! Já vem na caixa tanto a caneta S-Pen original quanto a capa magnética protetora! ✍️📚', date: 'Há 32 min', likes: 156, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_33.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_33.jpg', user: 'med.carol', text: 'Aposentei todos os cadernos da faculdade, escrever com a S-Pen no Samsung Notes é perfeito 😍', date: 'Há 18 min', likes: 81, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-patinete/creator-gabriel-souza.jpg' : 'img/avatars-patinete/creator-gabriel-souza.jpg', user: 'vitor_concursos', text: '8GB de RAM divide a tela com videoaula e PDF liso sem travar nada!', date: 'Há 9 min', likes: 52, liked: false }
+            ];
+          } else if (contextType === 'brastemp154') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Cesto 100% inox de 13kg que cabe até edredom e o ciclo Tira-Manchas tira sujeira pesada sozinho! 🫧👕', date: 'Há 32 min', likes: 124, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_34.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_34.jpg', user: 'paty.lavanderia', text: 'Silenciosa demais centrifugando! Brastemp é outro nível de durabilidade 👏', date: 'Há 18 min', likes: 66, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_35.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_35.jpg', user: 'claudia_mae3', text: 'O ciclo antibolinhas salvou todas as camisetas aqui de casa, recomendo de olhos fechados!', date: 'Há 9 min', likes: 45, liked: false }
+            ];
           } else if (contextType === 'camera144') {
             return [
               {

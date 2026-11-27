@@ -117,4 +117,13 @@ module.exports = {
   '129': () => require('./produto-129.json'),
   '144': () => require('./produto-144.json'),
   '145': () => require('./produto-145.json'),
+  '146': () => require('./produto-146.json'),
+  '147': () => require('./produto-147.json'),
+  '148': () => require('./produto-148.json'),
+  '149': () => require('./produto-149.json'),
+  '150': () => require('./produto-150.json'),
+  '151': () => require('./produto-151.json'),
+  '152': () => require('./produto-152.json'),
+  '153': () => require('./produto-153.json'),
+  '154': () => require('./produto-154.json'),
 };
