@@ -11,6 +11,7 @@
   const STORAGE_FAV_KEY = 'STONE_ADS_FAV_VIDEO_V1';
 
   let adsManifest = null;
+  let adsEditedMap = {};
   let adsStatusMap = {};
   let adsFavMap = {};
   let adsActiveVideoIdx = {};
@@ -26,6 +27,13 @@
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  }
+
+  function normAsset(u) {
+    const s = String(u || '').trim();
+    if (!s) return '/logo.png';
+    if (/^https?:\/\//i.test(s) || s.startsWith('data:')) return s;
+    return '/' + s.replace(/^\.\.\//, '').replace(/^\/+/, '');
   }
 
   function cleanUrl(u) {
@@ -50,19 +58,41 @@
     const list = [];
     const seen = new Set();
 
+    // 0. Vídeos EDITADOS exclusivos para TikTok Ads (NÃO mexem nos vídeos limpos do site!)
+    const editedItems = adsEditedMap[String(prod.id)] || [];
+    editedItems.forEach((ed, eIdx) => {
+      const url = cleanUrl(ed && ed.url);
+      if (!url || seen.has(url)) return;
+      seen.add(url);
+      list.push({
+        slot: `edited_${eIdx + 1}`,
+        isEdited: true,
+        label: eIdx === 0 ? '🔥 Editado Ads' : `🔥 Editado #${eIdx + 1}`,
+        badge: '🔥 PRONTO P/ ADS (PREÇO + SETAS)',
+        url,
+        poster: normAsset(ed.poster || (prod.video && prod.video.poster) || prod.img || '/logo.png'),
+        duration: ed.duration || '',
+        catboxId: ed.catbox_id || url.split('/').pop(),
+        author: 'Criativo Editado TikTok Ads',
+        desc: ed.headline || prod.title,
+        posNote: ed.pos_note || '',
+      });
+    });
+
     if (prod.video && prod.video.src) {
       const url = cleanUrl(prod.video.src);
       if (url && !seen.has(url)) {
         seen.add(url);
         list.push({
           slot: 'principal',
-          label: 'Principal Ads',
-          badge: 'Principal Ads',
+          isEdited: false,
+          label: 'Limpo #1',
+          badge: 'Principal Limpo',
           url,
-          poster: prod.video.poster || prod.img || 'logo.png',
+          poster: normAsset(prod.video.poster || prod.img || '/logo.png'),
           duration: prod.video.duration || '',
           catboxId: prod.video.catbox_id || url.split('/').pop(),
-          author: 'Stone Shop Oficial',
+          author: 'Stone Shop Oficial (Sem Texto)',
           desc: prod.title,
         });
       }
@@ -74,10 +104,11 @@
       seen.add(url);
       list.push({
         slot: `ugc_${idx + 1}`,
+        isEdited: false,
         label: `UGC #${idx + 1}`,
-        badge: `UGC #${idx + 1}`,
+        badge: `UGC Limpo #${idx + 1}`,
         url,
-        poster: c.poster || c.avatar || prod.img || 'logo.png',
+        poster: normAsset(c.poster || c.avatar || prod.img || '/logo.png'),
         duration: '',
         catboxId: c.catbox_id || url.split('/').pop(),
         author: c.username ? `@${c.username}` : (c.name || `Criador ${idx + 1}`),
@@ -307,7 +338,8 @@
         height: 52px;
         border-radius: 14px;
         object-fit: cover;
-        background: #ffffff;
+        background: #1f1f26;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         flex-shrink: 0;
       }
       .ads-prod-meta {
@@ -635,6 +667,7 @@
       const st = adsStatusMap[String(p.id)] || 'idle';
       const price = getEffectivePrice(p);
 
+      if (adsFilterChip === 'edited' && !(adsEditedMap[String(p.id)] && adsEditedMap[String(p.id)].length)) return false;
       if (adsFilterChip === 'new_bf' && !p.is_new_bf) return false;
       if (adsFilterChip === 'running' && st !== 'running') return false;
       if (adsFilterChip === 'testing' && st !== 'testing') return false;
@@ -731,10 +764,10 @@
                     <td><span class="ads-id-tag">#${p.id}</span></td>
                     <td>
                       <div style="display:flex; align-items:center; gap:10px; max-width:310px;">
-                        <img src="${esc(p.img || 'logo.png')}" style="width:38px; height:38px; border-radius:10px; object-fit:cover; background:#fff; flex-shrink:0;" loading="lazy" onerror="this.src='logo.png'">
+                        <img src="${esc(normAsset(p.img))}" style="width:38px; height:38px; border-radius:10px; object-fit:cover; background:#1f1f26; flex-shrink:0;" decoding="async" onerror="this.src='/logo.png'">
                         <div style="min-width:0;">
                           <div style="font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${esc(p.title)}">${esc(p.title)}</div>
-                          <div style="font-size:11px; color:#6b7280;">${vids.length} criativos · ${esc(current.catboxId)}</div>
+                          <div style="font-size:11px; color:${current.isEdited ? '#6ee7a8' : '#6b7280'};">${current.isEdited ? '🔥 Editado pronto · ' : ''}${vids.length} vídeos · ${esc(current.catboxId)}</div>
                         </div>
                       </div>
                     </td>
@@ -774,14 +807,15 @@
       return `
         <article class="ads-card ${stMeta.cls}" id="adsCard-${p.id}">
           <div class="ads-card-head">
-            <img src="${esc(p.img || 'logo.png')}" alt="${esc(p.title)}" class="ads-prod-thumb" loading="lazy" onerror="this.src='logo.png'">
+            <img src="${esc(normAsset(p.img))}" alt="${esc(p.title)}" class="ads-prod-thumb" decoding="async" onerror="this.src='/logo.png'">
             <div class="ads-prod-meta">
               <div class="ads-prod-top-row">
-                <div style="display:flex; align-items:center; gap:6px;">
+                <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
                   <span class="ads-id-tag">#${p.id}</span>
+                  ${current.isEdited ? `<span class="delta-pill up" style="font-size:10px; padding:2px 7px;">🔥 Editado</span>` : ''}
                   <button type="button" class="ads-status-btn" style="background:${stMeta.pillBg}; color:${stMeta.pillCol};" onclick="window.cycleAdsStatus(${p.id})" title="Alternar status: Fila → Em teste → Rodando">${stMeta.label}</button>
                 </div>
-                <a href="/produto-${p.id}?owner=1" target="_blank" class="arrow-circle dark" style="width:30px; height:30px; font-size:13px;" title="Abrir página do produto">↗</a>
+                <a href="/produto-${p.id}?owner=1" target="_blank" class="arrow-circle dark" style="width:30px; height:30px; font-size:13px;" title="Abrir página limpa do produto na loja">↗</a>
               </div>
               <div class="ads-prod-name" title="${esc(p.title)}">${esc(p.title)}</div>
               <div class="ads-price-strip">
@@ -792,12 +826,12 @@
             </div>
           </div>
 
-          <div class="ads-video-stage" id="adsStage-${p.id}" onclick="window.playInlineAdsVideo(${p.id})">
+          <div class="ads-video-stage" id="adsStage-${p.id}" style="${current.isEdited ? 'aspect-ratio: 9 / 14; max-height: 360px;' : ''}" onclick="window.playInlineAdsVideo(${p.id})">
             <div class="ads-stage-top">
-              <span class="ads-stage-pill">${esc(current.badge)}${isFav ? ' ★' : ''}</span>
+              <span class="ads-stage-pill" style="${current.isEdited ? 'background:#6ee7a8; color:#052e16;' : ''}">${esc(current.badge)}${isFav ? ' ★' : ''}</span>
               <span class="ads-stage-pill blue">${vids.length} ${vids.length === 1 ? 'vídeo' : 'vídeos'}</span>
             </div>
-            <img src="${esc(current.poster)}" alt="Vídeo Ads ${esc(p.title)}" class="ads-poster" loading="lazy" onerror="this.src='${esc(p.img || 'logo.png')}'">
+            <img src="${esc(current.poster)}" alt="Vídeo Ads ${esc(p.title)}" class="ads-poster" style="${current.isEdited ? 'object-fit:contain; background:#050507; filter:brightness(0.96);' : ''}" decoding="async" onerror="this.src='${esc(normAsset(p.img))}'">
             <div class="ads-play-overlay">
               <div class="ads-play-circle">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
@@ -808,23 +842,23 @@
 
           <div class="ads-variants-bar">
             ${vids.map((v, vIdx) => `
-              <button type="button" class="ads-vid-pill ${vIdx === idx ? 'active' : ''}" onclick="window.selectAdsVideo(${p.id}, ${vIdx})" title="${esc(v.author)}">
-                <img src="${esc(v.poster)}" alt="" loading="lazy" onerror="this.src='logo.png'">
-                <span>${vIdx === 0 ? 'Principal' : `UGC #${vIdx}`}</span>
+              <button type="button" class="ads-vid-pill ${vIdx === idx ? 'active' : ''}" style="${v.isEdited && vIdx !== idx ? 'border-color:rgba(110,231,168,0.45); color:#6ee7a8;' : ''}" onclick="window.selectAdsVideo(${p.id}, ${vIdx})" title="${esc(v.author)}">
+                <img src="${esc(v.poster)}" alt="" decoding="async" onerror="this.src='/logo.png'">
+                <span>${esc(v.label)}</span>
               </button>
             `).join('')}
           </div>
 
           <div class="ads-url-box">
-            <span style="font-size:10px; font-weight:800; color:#638cff; flex-shrink:0;">MP4</span>
+            <span style="font-size:10px; font-weight:800; color:${current.isEdited ? '#6ee7a8' : '#638cff'}; flex-shrink:0;">${current.isEdited ? 'ADS' : 'MP4'}</span>
             <input type="text" readonly class="ads-url-input" value="${esc(current.url)}" onclick="this.select()">
-            <button type="button" onclick="window.copyAdsText('${esc(current.url)}', 'Link MP4 limpo copiado!')" title="Copiar link MP4" style="background:none; border:none; color:#cbd5e1; cursor:pointer; font-size:13px;">📋</button>
+            <button type="button" onclick="window.copyAdsText('${esc(current.url)}', 'Link MP4 copiado!')" title="Copiar link MP4" style="background:none; border:none; color:#cbd5e1; cursor:pointer; font-size:13px;">📋</button>
             <button type="button" onclick="window.toggleFavAdsVideo(${p.id})" title="Fixar criativo favorito" style="background:none; border:none; color:${isFav ? '#fde068' : '#6b7280'}; cursor:pointer; font-size:14px;">★</button>
           </div>
 
           <div class="ads-actions-row">
             <button type="button" class="ads-btn ads-btn-white" id="adsDlBtn-${p.id}" onclick="window.downloadAdsVideo(${p.id})">
-              ⬇️ Baixar MP4
+              ⬇️ ${current.isEdited ? 'Baixar Editado' : 'Baixar MP4'}
             </button>
             <button type="button" class="ads-btn ads-btn-blue" onclick="window.copyAdsUtm(${p.id})">
               🔗 Copiar UTM
@@ -921,7 +955,8 @@
 
     const btn = document.getElementById(`adsDlBtn-${pid}`);
     const origLabel = btn ? btn.innerHTML : '';
-    const fileName = `StoneShop_Prod${prod.id}_${(prod.slug || 'produto').slice(0, 22)}_Ad${idx + 1}.mp4`;
+    const tag = current.isEdited ? 'EDITADO_ADS' : `Ad${idx + 1}`;
+    const fileName = `StoneShop_Prod${prod.id}_${(prod.slug || 'produto').slice(0, 20)}_${tag}.mp4`;
 
     if (btn) { btn.disabled = true; btn.innerHTML = '⏳ Baixando...'; }
     try {
@@ -1095,11 +1130,16 @@
     if (!mountTarget) return;
 
     try {
-      const [mRes, cfgRes] = await Promise.all([
-        fetch('data/admin-catalogo-360.json?v=' + Date.now()),
+      const [mRes, edRes, cfgRes] = await Promise.all([
+        fetch('/data/admin-catalogo-360.json?v=20261127_bento'),
+        fetch('/data/ads-editados.json?v=' + Date.now()).catch(() => null),
         fetch('/api/admin-config').catch(() => null),
       ]);
       if (mRes.ok) adsManifest = await mRes.json();
+      if (edRes && edRes.ok) {
+        const edJson = await edRes.json();
+        adsEditedMap = (edJson && edJson.items) || {};
+      }
       if (cfgRes && cfgRes.ok) {
         const cfg = await cfgRes.json();
         const ovs = cfg.overrides || {};
@@ -1121,6 +1161,8 @@
     const categories = Array.from(new Set(adsManifest.products.map((p) => p.category))).sort();
     const newBfCount = adsManifest.products.filter((p) => p.is_new_bf).length;
     const totalWithVids = adsManifest.products.filter((p) => buildVideoList(p).length > 0).length;
+    const editedCount = Object.keys(adsEditedMap).filter((k) => Array.isArray(adsEditedMap[k]) && adsEditedMap[k].length > 0).length;
+    if (editedCount > 0 && adsFilterChip === 'new_bf') adsFilterChip = 'edited';
 
     mountTarget.innerHTML = `
       <div class="ads-bento-head">
@@ -1216,7 +1258,8 @@
 
       <!-- CHIPS DE FILTRO -->
       <div class="ads-chips-bar" id="adsFilterChips">
-        <button type="button" class="ads-chip active" data-chip="new_bf" onclick="window.setAdsFilterChip('new_bf', this)">Lançamentos Black Friday (${newBfCount})</button>
+        ${editedCount > 0 ? `<button type="button" class="ads-chip ${adsFilterChip === 'edited' ? 'active' : ''}" data-chip="edited" onclick="window.setAdsFilterChip('edited', this)">🔥 Prontos Editados c/ Preço (${editedCount})</button>` : ''}
+        <button type="button" class="ads-chip ${adsFilterChip === 'new_bf' ? 'active' : ''}" data-chip="new_bf" onclick="window.setAdsFilterChip('new_bf', this)">Lançamentos Black Friday (${newBfCount})</button>
         <button type="button" class="ads-chip" data-chip="all" onclick="window.setAdsFilterChip('all', this)">Todos os Produtos (${totalWithVids})</button>
         <button type="button" class="ads-chip" data-chip="running" onclick="window.setAdsFilterChip('running', this)">Rodando Ads</button>
         <button type="button" class="ads-chip" data-chip="testing" onclick="window.setAdsFilterChip('testing', this)">Em Teste</button>

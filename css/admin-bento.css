@@ -579,7 +579,55 @@ body {
 .bento-table tr:last-child td { border-bottom: none; }
 .bento-table tbody tr:hover { background: rgba(255, 255, 255, 0.025); }
 
-/* Mobile Bottom Nav Obsidian */
+/* Mobile Header 390px Sem Overlap + Mobile Bottom Nav Obsidian */
+@media (max-width: 767px) {
+  .top-bar {
+    height: 58px !important;
+    padding: 0 12px !important;
+  }
+  .top-bar-inner {
+    gap: 8px !important;
+  }
+  .top-bar .brand-title {
+    display: none !important;
+  }
+  .top-bar .brand-logo {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .top-actions {
+    gap: 6px !important;
+  }
+  .pill-cloaker {
+    height: 32px !important;
+    padding: 0 10px !important;
+    font-size: 10px !important;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .btn-top-icon,
+  .bento-avatar-chip {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+  }
+  .container {
+    padding: 14px 12px !important;
+  }
+  .bd-hello,
+  .ads-bento-title {
+    font-size: 22px !important;
+  }
+  .bd-kpi-val {
+    font-size: 21px !important;
+  }
+  .bd-kpi {
+    padding: 14px !important;
+    min-height: 124px !important;
+  }
+}
+
 .mobile-bottom-nav {
   background: rgba(17, 17, 20, 0.96) !important;
   border-top: 1px solid var(--border) !important;

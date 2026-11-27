@@ -692,17 +692,11 @@
 
   window.reloadEnterpriseDashboard = async function (notify = false) {
     try {
-      const [tRes, trRes] = await Promise.all([
-        fetch(`/api/tracking?mode=dashboard&period=${encodeURIComponent(currentPeriod)}`, { cache: 'no-store' }).catch(() => null),
-        fetch('/api/tracking', { cache: 'no-store' }).catch(() => null),
-      ]);
+      const tRes = await fetch(`/api/tracking?mode=dashboard&period=${encodeURIComponent(currentPeriod)}`, { cache: 'no-store' }).catch(() => null);
       if (tRes && tRes.ok) {
         const j = await tRes.json();
         if (j && j.telemetry) lastTelemetry = j.telemetry;
         if (j && j.ordersStats) lastOrdersStats = j.ordersStats;
-      }
-      if (trRes && trRes.ok) {
-        lastTracking = await trRes.json();
       }
     } catch (_) {}
     renderBentoDashboard();
@@ -712,11 +706,16 @@
   async function initBentoDashboard() {
     injectBentoDashStyles();
     if (!document.getElementById('dashboardProRoot')) return;
+    // Renderiza imediatamente o esqueleto completo Bento antes mesmo da rede responder
+    renderBentoDashboard();
     try {
-      const mRes = await fetch('data/admin-catalogo-360.json?v=' + Date.now());
-      if (mRes.ok) dashManifest = await mRes.json();
+      const mRes = await fetch('/data/admin-catalogo-360.json?v=20261127_bento');
+      if (mRes.ok) {
+        dashManifest = await mRes.json();
+        renderBentoDashboard();
+      }
     } catch (_) {}
-    await window.reloadEnterpriseDashboard(false);
+    window.reloadEnterpriseDashboard(false);
   }
 
   if (document.readyState === 'loading') {
