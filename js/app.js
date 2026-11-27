@@ -2715,7 +2715,7 @@ function formatCompactReviews() {
         ${getTTOfficialStarSvg(16, true)}
         <span class="reviews-header-score">${notaVirgula}</span>
         <span class="reviews-header-divider" aria-hidden="true"></span>
-        <span class="reviews-header-title-text">Avaliações dos clientes ...</span>
+        <span class="reviews-header-title-text">${total ? `Avaliações dos clientes (${total})` : 'Avaliações dos clientes'}</span>
       </div>
       <div class="reviews-header-ver-mais">
         <svg class="reviews-header-info-icon" width="13.5" height="13.5" viewBox="0 0 24 24" fill="none" stroke="#161823" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -2738,7 +2738,7 @@ function formatCompactReviews() {
     if (scoreEl && !scoreEl.textContent.trim()) scoreEl.textContent = notaVirgula;
     const titleTextEl = reviewsSection.querySelector('.reviews-header-official .reviews-header-title-text');
     if (titleTextEl) {
-      titleTextEl.textContent = 'Avaliações dos clientes ...';
+      titleTextEl.textContent = total ? `Avaliações dos clientes (${total})` : 'Avaliações dos clientes';
     }
   }
 
@@ -2927,11 +2927,11 @@ function formatCompactReviews() {
         <img src="${bestThumbItem.src}" alt="Mídia do cliente" style="width:100%; height:100%; object-fit:cover; display:block;" onerror="var w=this.closest('.review-compact-thumb-wrap');if(w){w.style.display='none';}">
       `;
 
-      // Badge de quantidade (+3, +2) com estilo e opacidade idênticos à print oficial
+      // Badge de quantidade restante (+2 quando há 3 fotos, +1 quando há 2 fotos)
       thumbWrap.innerHTML = `
         ${mediaHtml}
         ${isVideo ? playBadge : ''}
-        ${totalFotos > 1 ? `<div class="review-thumb-count" style="position:absolute; bottom:5px; right:5px; background:rgba(0,0,0,0.62); color:#fff; font-size:11px; font-weight:600; padding:1.5px 5.5px; border-radius:4px; line-height:1.2; pointer-events:none; z-index:2;">+${totalFotos}</div>` : ''}
+        ${totalFotos > 1 ? `<div class="review-thumb-count" style="position:absolute; bottom:5px; right:5px; background:rgba(0,0,0,0.62); color:#fff; font-size:11px; font-weight:600; padding:1.5px 5.5px; border-radius:4px; line-height:1.2; pointer-events:none; z-index:2;">+${totalFotos - 1}</div>` : ''}
       `;
 
       thumbWrap.onclick = (e) => {
@@ -3385,7 +3385,11 @@ function renderReviewsListHtml(reviews, filter, sort) {
         </div>
       </div>
     `;
-  }).join('');
+  }).join('') + `
+    <div style="text-align:center; padding:18px 16px 28px; color:#8a8b91; font-size:12px; line-height:1.45; border-top:1px solid #f2f2f2; margin-top:4px;">
+      Mostrando as ${filtered.length} avaliações com comentário mais recentes · As demais foram enviadas apenas com estrelas
+    </div>
+  `;
 }
 
 window.ttSelectReviewFilter = function(filter) {

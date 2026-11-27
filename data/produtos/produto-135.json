@@ -46,10 +46,10 @@
   "coupon_main": "Cupom Tech R$ 40 OFF aplicado",
   "coupon_bonus": "Final R$ 89,90 no Pix ou Cartão",
   "rating_score": "4,9",
-  "rating_count": "(842)",
+  "rating_count": "(148)",
   "sold_count": "9240 vendido(s)",
   "frete_original": "R$ 22,90",
-  "reviews_header": "Avaliações dos clientes (842)",
+  "reviews_header": "Avaliações dos clientes (148)",
   "reviews_avg": "4,9",
   "reviews": [
     {
@@ -91,7 +91,7 @@
     },
     {
       "name": "L**s F**a",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
       "stars": 5,
       "date": "25/11",
       "variation": "Preto",
@@ -111,7 +111,7 @@
     },
     {
       "name": "G**l O**a",
-      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_39.jpg",
       "stars": 5,
       "date": "24/11",
       "variation": "Preto",
@@ -241,7 +241,7 @@
     },
     {
       "name": "I**s M**o",
-      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_13.jpg",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_1.jpg",
       "stars": 5,
       "date": "11/11",
       "variation": "Rosê",
@@ -277,6 +277,206 @@
       "variation": "Preto",
       "date_line": "08/11 · Preto",
       "comment": "Top demais! Excelente presente de Natal, vou pedir mais dois pra família.",
+      "photos": []
+    },
+    {
+      "name": "H**o M**s",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_46.jpg",
+      "stars": 5,
+      "date": "07/11",
+      "variation": "Preto",
+      "date_line": "07/11 · Preto",
+      "comment": "Excelente relógio! Uso todo dia na academia e no trabalho, o NFC abriu a portaria do prédio sem precisar do cartão. Recomendo demais!",
+      "photos": []
+    },
+    {
+      "name": "P**o H**e",
+      "avatar": "../img/avatars-churras/creator-fernando.jpg",
+      "stars": 5,
+      "date": "07/11",
+      "variation": "Preto",
+      "date_line": "07/11 · Preto",
+      "comment": "Chegou em 3 dias aqui em BH, bem lacrado. O som das ligações é bem limpo e a tela AMOLED dá um banho nos outros dessa faixa de preço.",
+      "photos": []
+    },
+    {
+      "name": "A**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_20.jpg",
+      "stars": 5,
+      "date": "06/11",
+      "variation": "Rosê",
+      "date_line": "06/11 · Rosê",
+      "comment": "Ficou lindo no meu pulso! Muito leve, não incomoda pra dormir e o monitor de sono funciona direitinho.",
+      "photos": []
+    },
+    {
+      "name": "C**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_21.jpg",
+      "stars": 5,
+      "date": "06/11",
+      "variation": "Prata",
+      "date_line": "06/11 · Prata",
+      "comment": "Comprei o Prata e achei super estiloso! A pulseira branca é bem macia e fácil de limpar.",
+      "photos": []
+    },
+    {
+      "name": "L**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
+      "stars": 5,
+      "date": "05/11",
+      "variation": "Preto",
+      "date_line": "05/11 · Preto",
+      "comment": "Dei de presente pro meu pai e ele amou! Configuramos no Android em 2 minutos e já tá recebendo todas as mensagens.",
+      "photos": []
+    },
+    {
+      "name": "F**a D**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
+      "stars": 5,
+      "date": "05/11",
+      "variation": "Rosê",
+      "date_line": "05/11 · Rosê",
+      "comment": "Melhor smartwatch custo-benefício que já comprei. Tela super brilhante e o carregador por indução funciona rapidinho!",
+      "photos": []
+    },
+    {
+      "name": "M**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
+      "stars": 4,
+      "date": "04/11",
+      "variation": "Prata",
+      "date_line": "04/11 · Prata",
+      "comment": "Muito bonito e completo. A bateria dura cerca de 4 dias comigo usando notificações e treino de caminhada.",
+      "photos": []
+    },
+    {
+      "name": "R**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg",
+      "stars": 5,
+      "date": "04/11",
+      "variation": "Preto",
+      "date_line": "04/11 · Preto",
+      "comment": "Parece original da maçã no acabamento! Todo mundo no trabalho perguntou onde comprei por menos de 90 reais.",
+      "photos": []
+    },
+    {
+      "name": "J**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg",
+      "stars": 5,
+      "date": "03/11",
+      "variation": "Rosê",
+      "date_line": "03/11 · Rosê",
+      "comment": "Amei o ChatGPT integrado, muito legal pra perguntar coisas rápidas sem pegar o celular. Super recomendo!",
+      "photos": []
+    },
+    {
+      "name": "B**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg",
+      "stars": 5,
+      "date": "03/11",
+      "variation": "Preto",
+      "date_line": "03/11 · Preto",
+      "comment": "Entrega super rápida da Stone Shop! Veio muito bem protegido na caixa e funcionando 100%.",
+      "photos": []
+    },
+    {
+      "name": "T**s S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg",
+      "stars": 5,
+      "date": "02/11",
+      "variation": "Prata",
+      "date_line": "02/11 · Prata",
+      "comment": "Conectou no meu iPhone 13 na hora! Controle de música, câmera remota e notificações do WhatsApp funcionam perfeitamente.",
+      "photos": []
+    },
+    {
+      "name": "D**e M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg",
+      "stars": 5,
+      "date": "02/11",
+      "variation": "Rosê",
+      "date_line": "02/11 · Rosê",
+      "comment": "Lindo demais pessoalmente! As bordas são bem fininhas e a tela infinita chama muita atenção.",
+      "photos": []
+    },
+    {
+      "name": "K**n O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg",
+      "stars": 5,
+      "date": "01/11",
+      "variation": "Preto",
+      "date_line": "01/11 · Preto",
+      "comment": "Comprei dois (um Preto e um Rosê) pra mim e meu marido, os dois vieram perfeitos e sem nenhum defeito.",
+      "photos": []
+    },
+    {
+      "name": "G**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg",
+      "stars": 5,
+      "date": "01/11",
+      "variation": "Prata",
+      "date_line": "01/11 · Prata",
+      "comment": "Sistema muito fluido, não trava nada ao rolar o menu. Vale muito a pena pelo preço!",
+      "photos": []
+    },
+    {
+      "name": "V**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg",
+      "stars": 4,
+      "date": "31/10",
+      "variation": "Rosê",
+      "date_line": "31/10 · Rosê",
+      "comment": "Gostei bastante, super bonito e prático pro dia a dia. Só precisa baixar o app indicado no manual pra liberar todas as funções.",
+      "photos": []
+    },
+    {
+      "name": "S**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg",
+      "stars": 5,
+      "date": "31/10",
+      "variation": "Preto",
+      "date_line": "31/10 · Preto",
+      "comment": "Amei! Uso na corrida todo dia de manhã pra ver tempo, passos e batimentos cardíacos.",
+      "photos": []
+    },
+    {
+      "name": "N**a A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_34.jpg",
+      "stars": 5,
+      "date": "30/10",
+      "variation": "Prata",
+      "date_line": "30/10 · Prata",
+      "comment": "Chegou antes do prazo previsto e a qualidade surpreendeu. Tela AMOLED faz muita diferença!",
+      "photos": []
+    },
+    {
+      "name": "E**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg",
+      "stars": 5,
+      "date": "30/10",
+      "variation": "Rosê",
+      "date_line": "30/10 · Rosê",
+      "comment": "Perfeito! Muito elegante no pulso e dá pra trocar as watchfaces pelo celular sempre que quiser.",
+      "photos": []
+    },
+    {
+      "name": "I**s R**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_36.jpg",
+      "stars": 5,
+      "date": "29/10",
+      "variation": "Preto",
+      "date_line": "29/10 · Preto",
+      "comment": "Produto top demais, bateria dura bem e carrega rápido na base magnética. Compraria de novo!",
+      "photos": []
+    },
+    {
+      "name": "L**e B**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_37.jpg",
+      "stars": 5,
+      "date": "29/10",
+      "variation": "Prata",
+      "date_line": "29/10 · Prata",
+      "comment": "Superou minhas expectativas! Recomendo muito a Stone Shop, atendimento e entrega nota 10.",
       "photos": []
     }
   ],

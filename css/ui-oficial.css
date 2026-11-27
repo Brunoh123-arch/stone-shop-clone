@@ -516,11 +516,11 @@
 }
 
 .reviews-header-official .reviews-header-title-text {
-  font-size: 14px !important;
+  font-size: 13.5px !important;
   font-weight: 700 !important;
   color: #161823 !important;
   line-height: 1.15 !important;
-  letter-spacing: -0.2px !important;
+  letter-spacing: -0.25px !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;

@@ -16069,7 +16069,7 @@ body {
     max-width: 100% !important;
     max-height: none !important;
     aspect-ratio: 1 / 1 !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     background: #ffffff !important;
     display: block !important;
   }
