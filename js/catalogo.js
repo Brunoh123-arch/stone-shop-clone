@@ -1,6 +1,6 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
-  {id:136,nome:'Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula',preco:34.89,precoOrig:'299,90',desc:88,vendidos:2840,img:'../img/kit-mondial-136-slide-1.webp'},
+  {id:136,nome:'Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L + Copo Medidor e Espátula',preco:54.89,precoOrig:'299,90',desc:82,vendidos:2840,img:'../img/kit-mondial-136-slide-1.webp'},
   {id:138,nome:'Cortina de LED 3m x 3m 300 LEDs USB c/ Controle Remoto 8 Funções e Ganchos Integrados',preco:11.89,precoOrig:'119,90',desc:90,vendidos:8420,img:'../img/cortina-led-138-slide-1.webp'},
   {id:139,nome:'Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon',preco:19.89,precoOrig:'159,90',desc:88,vendidos:3650,img:'../img/vestido-139-slide-1.webp'},
   {id:144,nome:"Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas Térmicas e Alça",preco:37.89,precoOrig:'199,90',desc:81,vendidos:4829,img:"../img/camera-144-slide-1.webp"},

@@ -56,7 +56,11 @@
       "variation": "Branco Quente",
       "date_line": "26/11 · Branco Quente",
       "comment": "Ficou um sonho na cortina da minha sala! Os 300 LEDs brilham muito e o controle remoto permite diminuir a intensidade e escolher entre os 8 modos. Amei demais!",
-      "photos": []
+      "photos": [
+        "../img/review-138-b1-1.jpg",
+        "../img/review-138-b1-2.webp",
+        "../img/review-138-b1-3.webp"
+      ]
     },
     {
       "name": "M**a E**a",
@@ -66,7 +70,10 @@
       "variation": "Branco Quente",
       "date_line": "26/11 · Branco Quente",
       "comment": "Muito fácil de instalar porque já vem com os ganchinhos prontos! Só encaixei no varão da cortina e liguei no carregador de celular USB.",
-      "photos": []
+      "photos": [
+        "../img/review-138-b2-1.jpg",
+        "../img/review-138-b2-2.jpg"
+      ]
     },
     {
       "name": "C**a S**a",
@@ -76,17 +83,24 @@
       "variation": "Branco Quente",
       "date_line": "25/11 · Branco Quente",
       "comment": "Transformou minha casa pro Natal! A luz branco quente é super aconchegante e o timer do controle desliga sozinho depois de 6 horas.",
-      "photos": []
+      "photos": [
+        "../img/review-138-b3-1.jpg",
+        "../img/review-138-b3-2.webp"
+      ]
     },
     {
       "name": "J**a R**s",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg",
       "stars": 5,
       "date": "25/11",
-      "variation": "Branco Frio",
-      "date_line": "25/11 · Branco Frio",
+      "variation": "Branco Quente",
+      "date_line": "25/11 · Branco Quente",
       "comment": "Comprei a branco frio pra festa de Réveillon e pro painel de fotos, ilumina demais e não esquenta nada!",
-      "photos": []
+      "photos": [
+        "../img/review-138-b4-1.jpg",
+        "../img/review-138-b4-2.jpg",
+        "../img/review-138-b4-3.webp"
+      ]
     },
     {
       "name": "P**a M**s",
@@ -96,7 +110,9 @@
       "variation": "Branco Quente",
       "date_line": "24/11 · Branco Quente",
       "comment": "Dica: desembole os fios só depois de pendurar os ganchos no varão! Fica perfeitinha 3x3m sem dar nó. Produto nota 10!",
-      "photos": []
+      "photos": [
+        "../img/review-138-b5-1.jpg"
+      ]
     },
     {
       "name": "L**a F**a",
@@ -106,7 +122,9 @@
       "variation": "Branco Quente",
       "date_line": "24/11 · Branco Quente",
       "comment": "Chegou super rápido aqui no RJ! Testei o controle remoto de longe e funciona certinho, todos os 300 LEDs acendendo forte.",
-      "photos": []
+      "photos": [
+        "../img/review-138-b6-1.webp"
+      ]
     },
     {
       "name": "F**a O**a",
@@ -116,7 +134,9 @@
       "variation": "Branco Frio",
       "date_line": "23/11 · Branco Frio",
       "comment": "Amei que funciona no USB — liguei até no power bank pra usar na varanda onde não tem tomada!",
-      "photos": []
+      "photos": [
+        "../img/review-138-b7-1.jpg"
+      ]
     },
     {
       "name": "B**a C**o",
@@ -310,9 +330,9 @@
       "img": "../img/kit-mondial-136-slide-1.webp",
       "alt": "Kit Cozinha Mondial 550W",
       "name": "Kit Cozinha Mondial Liquidificador 550W + Batedeira 400W 3,6L",
-      "price": "R$ 34,89",
+      "price": "R$ 54,89",
       "price_original": "R$ 299,90",
-      "discount": "88% OFF",
+      "discount": "82% OFF",
       "sold": "2840 vendidos"
     }
   ],

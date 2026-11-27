@@ -179,8 +179,18 @@ for (const id of ids) {
     if (clean(c.poster).includes('catalogo') || /slide/i.test(clean(c.poster))) E(`${tag}: poster parece foto de catálogo (deve ser frame do MP4)`);
   });
 
-  // 2.4 slider + variações
-  (d.slider_imgs || []).forEach((s) => { if (!onDisk(s.src)) E(`slide não existe no disco: ${s.src}`); });
+  // 2.4 slider + variações (inclui trava contra frame de vídeo em slide ou miniatura de variação)
+  const posterFingerprints = new Set();
+  if (d.video && d.video.poster) { const fp = avatarFingerprint(d.video.poster); if (fp) posterFingerprints.add(fp); }
+  creators.forEach((c) => { const fp = avatarFingerprint(c.poster); if (fp) posterFingerprints.add(fp); });
+
+  (d.slider_imgs || []).forEach((s) => {
+    if (!onDisk(s.src)) E(`slide não existe no disco: ${s.src}`);
+    else {
+      const fp = avatarFingerprint(s.src);
+      if (fp && posterFingerprints.has(fp)) E(`slide ${s.src} é frame/poster de vídeo (PROIBIDO no slider)`);
+    }
+  });
   if ((d.slider_imgs || []).length < 4) E('slider com menos de 4 fotos');
   const varNames = [];
   const varImgs = new Set();
@@ -191,6 +201,10 @@ for (const id of ids) {
       varNames.push(String(o.nome).toLowerCase());
       if (o.imagem) {
         if (!onDisk(o.imagem)) E(`imagem de variação não existe: ${o.imagem}`);
+        else {
+          const fp = avatarFingerprint(o.imagem);
+          if (fp && posterFingerprints.has(fp)) E(`imagem de variação '${o.nome}' (${o.imagem}) é captura/poster de vídeo (PROIBIDO — usar foto oficial de catálogo)`);
+        }
         if (varImgs.has(clean(o.imagem))) E(`imagem de variação repetida para cores diferentes: ${o.imagem}`);
         varImgs.add(clean(o.imagem));
       }
@@ -228,7 +242,9 @@ for (const id of ids) {
     });
   });
   const withPhoto = (d.reviews || []).filter((r) => (r.photos || []).length > 0).length;
-  if (withPhoto < 6) W(`apenas ${withPhoto} avaliações com foto de unboxing (meta: 6+)`);
+  if (withPhoto === 0) E(`0 avaliações com foto de unboxing (PROIBIDO — obrigatório 6+ fotos reais de compradores)`);
+  else if (Number(id) >= 136 && withPhoto < 6) E(`apenas ${withPhoto} avaliações com foto de unboxing (mínimo obrigatório: 6+)`);
+  else if (withPhoto < 6) W(`apenas ${withPhoto} avaliações com foto de unboxing (meta: 6+)`);
 
   // 2.6 catálogo
   const cat = fs.readFileSync(path.join(ROOT, 'js', 'catalogo.js'), 'utf8');

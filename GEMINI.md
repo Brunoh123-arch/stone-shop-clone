@@ -45,9 +45,9 @@ Loja e-commerce estilo **TikTok Shop Brasil**. Modelo Único Permanente:
 - Hospedagem: Catbox (`files.catbox.moe`). Arquivo > 500 KB, HTTP 200/206.
 
 ### 2.4 Fotos
-- **Slider:** 4 a 8 fotos oficiais de catálogo (TikTok Shop; fallback Mercado Livre), fundo branco/arte do vendedor. Proibido frame de vídeo no slider.
-- **Variações:** cada cor com sua miniatura 1:1 (arquivo diferente por cor), trocando o slider ao clicar.
-- **Unboxing em avaliações:** foto REAL de comprador (TikTok Shop; fallback Mercado Livre), ambiente doméstico real, produto/caixa físico visível. Proibido: ffmpeg de vídeo, IA, foto de estúdio, foto repetida.
+- **Slider:** 4 a 8 fotos oficiais de catálogo (TikTok Shop; fallback Mercado Livre), fundo branco/arte do vendedor. **PROIBIDO frame de vídeo no slider E nas miniaturas de variação (`variacoes.*.opcoes[].imagem`).**
+- **Variações (fidelidade total ao anúncio):** cadastrar as cores/variações reais do anúncio original (se o anúncio tem 5 cores, não capar pra 2), cada cor com sua miniatura 1:1 oficial de catálogo (arquivo diferente por cor, nunca frame de vídeo), trocando o slider ao clicar.
+- **Unboxing em avaliações (OBRIGATÓRIO — BLOQUEIA DEPLOY):** mínimo **6 cards de unboxing com foto REAL de comprador** (TikTok Shop; fallback Mercado Livre), ambiente doméstico real, produto/caixa físico visível. **PROIBIDO subir produto novo com 0 ou < 6 fotos de unboxing** (o validador trava como ERRO bloqueante). Proibido: ffmpeg de vídeo, IA, foto de estúdio, foto repetida.
   - **Um comprador = um card.** Todas as fotos do mesmo comprador (mesma sala/chão) ficam no MESMO `photos: [...]`; nunca fatiar em cards de “pessoas diferentes”.
   - **A cor em `variation` tem que bater com a cor do produto na foto.**
 

@@ -5,8 +5,24 @@
   "product_title": "Vestido Curto Ombro a Ombro Drapeado c/ Faixa Lateral Assimétrica Festas Natal e Réveillon",
   "slider_imgs": [
     {
-      "src": "../img/vestido-139-slide-1.webp",
-      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral Assimétrica - Preto"
+      "src": "../img/vestido-139-var-branco.webp",
+      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral - Branco"
+    },
+    {
+      "src": "../img/vestido-139-var-preto.webp",
+      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral - Preto"
+    },
+    {
+      "src": "../img/vestido-139-var-vermelho.webp",
+      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral - Vermelho"
+    },
+    {
+      "src": "../img/vestido-139-var-marrom.webp",
+      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral - Marrom"
+    },
+    {
+      "src": "../img/vestido-139-var-amarelo.webp",
+      "alt": "Vestido Curto Ombro a Ombro Drapeado com Faixa Lateral - Amarelo"
     },
     {
       "src": "../img/vestido-139-slide-2.webp",
@@ -15,14 +31,6 @@
     {
       "src": "../img/vestido-139-slide-3.webp",
       "alt": "Modelagem Justa Drapeada que Valoriza a Silhueta"
-    },
-    {
-      "src": "../img/vestido-139-slide-4.webp",
-      "alt": "Vista Lateral do Vestido Ombro a Ombro com Faixa Longa"
-    },
-    {
-      "src": "../img/vestido-139-slide-5.webp",
-      "alt": "Look Completo Festa, Natal e Réveillon - Vestido Ombro a Ombro"
     }
   ],
   "discount_badge": "-88%",
@@ -48,7 +56,10 @@
       "variation": "Branco",
       "date_line": "26/11 · Branco",
       "comment": "Amei demais! Comprei o branco pro Réveillon e fiquei com medo de ser transparente, mas o tecido suplex é bem encorpado e tem forro! Vestiu perfeitamente!",
-      "photos": []
+      "photos": [
+        "../img/review-139-b1-1.webp",
+        "../img/review-139-b1-2.webp"
+      ]
     },
     {
       "name": "C**a F**a",
@@ -57,48 +68,60 @@
       "date": "26/11",
       "variation": "Preto",
       "date_line": "26/11 · Preto",
-      "comment": "O drapeado na barriga disfarça tudo e deixa o corpo lindo demais! A faixa lateral dá um charme absurdo, parece vestido de grife.",
-      "photos": []
+      "comment": "O drapeado na barriga disfarça tudo e deixa o corpo lindo demais! O preto veste perfeitamente, parece vestido de grife.",
+      "photos": [
+        "../img/review-139-b2-1.webp"
+      ]
     },
     {
       "name": "J**a S**a",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
       "stars": 5,
       "date": "25/11",
-      "variation": "Branco",
-      "date_line": "25/11 · Branco",
-      "comment": "Chegou em 4 dias aqui em SP! Serviu certinho o tamanho M (uso 40), estica bem sem perder a firmeza. Super recomendo!",
-      "photos": []
+      "variation": "Vermelho",
+      "date_line": "25/11 · Vermelho",
+      "comment": "Chegou em 4 dias aqui em SP! Pedi o vermelho pro Natal e fiquei apaixonada pela cor viva e pelo caimento. Super recomendo!",
+      "photos": [
+        "../img/review-139-b3-1.webp"
+      ]
     },
     {
       "name": "P**a O**a",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
       "stars": 5,
       "date": "25/11",
-      "variation": "Preto",
-      "date_line": "25/11 · Preto",
-      "comment": "Simplesmente perfeito! Usei numa formatura e todo mundo elogiou. Por R$ 19,89 foi o melhor achado do ano!",
-      "photos": []
+      "variation": "Marrom",
+      "date_line": "25/11 · Marrom",
+      "comment": "Simplesmente perfeito! O marrom tá super em alta, tecido estica bem sem marcar e por R$ 19,89 foi o melhor achado do ano!",
+      "photos": [
+        "../img/review-139-b4-1.webp",
+        "../img/review-139-b4-2.webp",
+        "../img/review-139-b4-3.webp"
+      ]
     },
     {
       "name": "A**a R**s",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg",
       "stars": 5,
       "date": "24/11",
-      "variation": "Branco",
-      "date_line": "24/11 · Branco",
-      "comment": "Lindo demais pessoalmente! O decote ombro a ombro fica bem firme no lugar e não fica caindo.",
-      "photos": []
+      "variation": "Vermelho",
+      "date_line": "24/11 · Vermelho",
+      "comment": "Eu e minha amiga compramos o vermelho pra ir na festa juntas e todo mundo elogiou! Caimento impecável no corpo.",
+      "photos": [
+        "../img/review-139-b5-1.webp"
+      ]
     },
     {
       "name": "F**a M**s",
       "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg",
       "stars": 5,
       "date": "24/11",
-      "variation": "Preto",
-      "date_line": "24/11 · Preto",
-      "comment": "Comprei o preto e já tô voltando pra comprar o branco pro Ano Novo! Caimento impecável.",
-      "photos": []
+      "variation": "Marrom",
+      "date_line": "24/11 · Marrom",
+      "comment": "Acabei de receber o meu marrom, tecido super macio e costura reforçada. Entrega rapidíssima da Stone Shop!",
+      "photos": [
+        "../img/review-139-b6-1.webp"
+      ]
     },
     {
       "name": "L**a C**o",
@@ -324,14 +347,16 @@
     "installmentText": "2x de R$ 9,95 sem juros",
     "parcelamento": "2x de R$ 9,95 sem juros",
     "categoria": "Moda Feminina",
-    "img": "../img/vestido-139-slide-1.webp",
-    "image": "../img/vestido-139-slide-1.webp",
+    "img": "../img/vestido-139-var-branco.webp",
+    "image": "../img/vestido-139-var-branco.webp",
     "imagens": [
-      "../img/vestido-139-slide-1.webp",
+      "../img/vestido-139-var-branco.webp",
+      "../img/vestido-139-var-preto.webp",
+      "../img/vestido-139-var-vermelho.webp",
+      "../img/vestido-139-var-marrom.webp",
+      "../img/vestido-139-var-amarelo.webp",
       "../img/vestido-139-slide-2.webp",
-      "../img/vestido-139-slide-3.webp",
-      "../img/vestido-139-slide-4.webp",
-      "../img/vestido-139-slide-5.webp"
+      "../img/vestido-139-slide-3.webp"
     ],
     "variacoes": {
       "cor": {
@@ -339,12 +364,24 @@
         "label": "Cor",
         "opcoes": [
           {
-            "imagem": "../img/vestido-139-var-preto.webp",
-            "nome": "Preto"
+            "nome": "Branco",
+            "imagem": "../img/vestido-139-var-branco.webp"
           },
           {
-            "imagem": "../img/vestido-139-var-branco.jpg",
-            "nome": "Branco"
+            "nome": "Preto",
+            "imagem": "../img/vestido-139-var-preto.webp"
+          },
+          {
+            "nome": "Vermelho",
+            "imagem": "../img/vestido-139-var-vermelho.webp"
+          },
+          {
+            "nome": "Marrom",
+            "imagem": "../img/vestido-139-var-marrom.webp"
+          },
+          {
+            "nome": "Amarelo",
+            "imagem": "../img/vestido-139-var-amarelo.webp"
           }
         ]
       },
