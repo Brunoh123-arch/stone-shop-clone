@@ -518,7 +518,7 @@
       </div>
       <div class="kpi">
         <div class="kpi-label">Fila p/ Puxar em Casa</div>
-        <div class="kpi-val" style="color:#fbbf24" id="kpi-queue">16 Campeões</div>
+        <div class="kpi-val" style="color:#34d399" id="kpi-queue">5 Virais no Ar</div>
         <div class="kpi-sub">Moda, Presentes 13º, Casa &amp; Viagem</div>
       </div>
     </div>
@@ -539,7 +539,7 @@
         </div>
       </div>
 
-      <div id="pull-queue-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(305px, 1fr)); gap:10px; margin-top:4px;">
+      <div id="pull-queue-grid" style="display:none; grid-template-columns:repeat(auto-fill, minmax(305px, 1fr)); gap:10px; margin-top:4px;">
         <div style="background:#0d1118; border:1px solid #2d3748; border-radius:10px; padding:11px; display:flex; flex-direction:column; gap:6px;">
           <div style="display:flex; justify-content:space-between; align-items:center;">
             <span class="id-pill" style="background:#f59e0b; color:#111827;">#135 · PRIORIDADE 1</span>
@@ -755,7 +755,7 @@
 
       <div class="chips-group" id="persona-chips">
         <span class="chips-title">Visão Comprador:</span>
-        <button class="chip active" data-persona="all" onclick="setPersona('all', this)">Todos (70)</button>
+        <button class="chip active" data-persona="all" onclick="setPersona('all', this)">Todos (75)</button>
         <button class="chip" data-persona="mae" onclick="setPersona('mae', this)">👩 Se eu fosse MÃE</button>
         <button class="chip" data-persona="pai" onclick="setPersona('pai', this)">👨 Se eu fosse PAI</button>
         <button class="chip" data-persona="adulto" onclick="setPersona('adulto', this)">🧑 ADULTO (Casa / Uso Próprio)</button>
@@ -807,13 +807,18 @@
 
   <div id="toast" class="toast">Copiado!</div>
 
-  <script src="/js/catalogo.js?v=20261126_tt_oficial_1to1_v39"></script>
+  <script src="/js/catalogo.js?v=20261127_tt_oficial_1to1_v40"></script>
   <script>
     const STORAGE_KEY = 'stone_ads_test_selection_v1';
-    const DEFAULT_TOP_ADS = [133, 134, 104, 107, 113, 112, 106, 132, 108, 126];
+    const DEFAULT_TOP_ADS = [144, 129, 127, 145, 128, 126, 108, 41, 105, 68, 109, 133, 134, 104];
 
     // Inteligência comercial por produto (Personas + Janela de Pico + Tier de Tráfego Pago)
     const INTEL = {
+      144: { tier: 'scale', score: 100, personas: ['mae','pai'], moments: ['hoje','amanha','dia30'], why: 'Câmera Infantil que Imprime Foto na Hora (Sem Tinta) + 3 Bobinas por R$ 37,89 (-81%): 8 vídeos reais + 15 unboxings, ZERO tamanho!' },
+      129: { tier: 'scale', score: 100, personas: ['mae','adulto'], moments: ['hoje','amanha','dia30'], why: 'Escova Elétrica Giratória Sem Fio 9 em 1 c/ Extensor 137cm por R$ 29,89 (-81%): 8 vídeos ASMR de faxina + 18 unboxings!' },
+      127: { tier: 'scale', score: 99, personas: ['mae','pai','teen'], moments: ['hoje','amanha','dia30'], why: 'Carrinho RC Drift 4x4 Turbo que Solta Fumaça + LED por R$ 49,89 (-80%): vídeo hipnótico de fumaça + pneus extras!' },
+      145: { tier: 'scale', score: 99, personas: ['mae','pai','adulto','teen'], moments: ['hoje','amanha','dia30'], why: 'Combo Mala de Bordo Rígida 360° ANAC + Frasqueira por R$ 69,89 (-83%): ancoragem de R$ 399 por R$ 69 nas viagens de fim de ano!' },
+      128: { tier: 'scale', score: 98, personas: ['mae','pai','adulto'], moments: ['amanha','dia30'], why: 'Mesa Dobrável Vira Maleta 1,80m Reforçada por R$ 67,89 (-79%): resolve a falta de lugar na Ceia de Natal e churrasco!' },
       126: { tier: 'scale', score: 100, personas: ['mae','pai'], moments: ['hoje','amanha','dia30'], why: 'Campeão #1 presente de Natal c/ 13º por R$ 47,89 (-76%): 8 vídeos reais 3 rodas + 26 reviews/13 unboxings.' },
       108: { tier: 'scale', score: 99, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Desejo feminino #1 na Black por R$ 27,89 (-81%) + 31 vídeos de criadores prontos.' },
       104: { tier: 'scale', score: 99, personas: ['mae','adulto','teen'], moments: ['hoje','amanha'], why: 'Impulso PIX absurdo R$ 11,49 (-81%) + 32 vídeos + 15 fotos reais. Escala imediata.' },

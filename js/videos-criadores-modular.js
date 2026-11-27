@@ -1226,6 +1226,146 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'camera144') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Gente, não usa tinta nenhuma! É impressão térmica instantânea e já vem com 3 bobinas na caixa pras crianças saírem fotografando tudo 📸✨',
+                date: 'Há 35 min',
+                likes: 94,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_14.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_14.jpg',
+                user: 'camila_maedabela',
+                text: 'Comprei a Rosa Gatinho pra minha filha de 6 anos e ela largou o tablet na hora! Imprime super rápido 😍',
+                date: 'Há 20 min',
+                likes: 51,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_15.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_15.jpg',
+                user: 'paty.rodrigues',
+                text: 'E ainda dá pras crianças pintarem as fotinhos impressas com canetinha! Melhor presente de Natal 👏🩷',
+                date: 'Há 12 min',
+                likes: 33,
+                liked: false
+              }
+            ];
+          } else if (contextType === 'drift127') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Galera, é só pingar água limpa com a bisnaguinha que vem na caixa e apertar o botão no controle que sai a fumaça iluminada! 🏎️💨',
+                date: 'Há 40 min',
+                likes: 108,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/avatars-churras/creator-lucas.jpg' : 'img/avatars-churras/creator-lucas.jpg',
+                user: 'thiago_garage',
+                text: 'Comprei pro meu filho mas quem mais brinca sou eu kkkk! Com os pneus lisos faz drift perfeito no piso!',
+                date: 'Há 22 min',
+                likes: 63,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_16.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_16.jpg',
+                user: 'renata.maedoleo',
+                text: 'Chegou super rápido com os 4 cones e os pneus extras. Os LEDs no escuro ficam lindos demais 🔥',
+                date: 'Há 14 min',
+                likes: 39,
+                liked: false
+              }
+            ];
+          } else if (contextType === 'escova129') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Meninas, o cabo alonga até 1,37m! Dá pra lavar o box inteiro, o rejunte do piso e até o alto do azulejo sem dobrar a coluna 🫧✨',
+                date: 'Há 45 min',
+                likes: 119,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_18.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_18.jpg',
+                user: 'casa.da.lu',
+                text: 'A ponteira fininha tirou todo o encardido dos cantos do banheiro em 2 minutos! Amei demais 👏',
+                date: 'Há 28 min',
+                likes: 57,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_19.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_19.jpg',
+                user: 'marcia_organiza',
+                text: 'Bateria dura a faxina inteira e carrega no mesmo cabo USB-C do celular. Praticidade pura!',
+                date: 'Há 15 min',
+                likes: 34,
+                liked: false
+              }
+            ];
+          } else if (contextType === 'mala145') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Sim! Ela tem as medidas exatas da ANAC pra levar até 10kg dentro do avião sem pagar despacho, e a frasqueira prende no puxador ✈️🧳',
+                date: 'Há 50 min',
+                likes: 102,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_20.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_20.jpg',
+                user: 'bia.viaja',
+                text: 'Peguei a Branco Off-White e pessoalmente é um luxo! As rodinhas 360 giram super macio 😍',
+                date: 'Há 30 min',
+                likes: 48,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_21.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_21.jpg',
+                user: 'fernanda.costa',
+                text: 'Chegou uma dentro da outra super bem embalada, o cadeado de senha embutido dá muita segurança!',
+                date: 'Há 16 min',
+                likes: 29,
+                liked: false
+              }
+            ];
+          } else if (contextType === 'mesa128') {
+            return [
+              {
+                avatar: originalItem.avatar,
+                user: originalItem.username,
+                isCreator: true,
+                text: 'Cabe de 6 a 8 pessoas sentadas tranquilamente! As travas de aço embaixo deixam ela super firme pra ceia e pro churrasco 🍽️✨',
+                date: 'Há 55 min',
+                likes: 87,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/avatars-churras/review-homem-1.jpg' : 'img/avatars-churras/review-homem-1.jpg',
+                user: 'marcelo_churras',
+                text: 'Comprei já pensando na ceia de Natal aqui em casa! Fechada vira maleta fininha e guardo atrás do guarda-roupa 👏',
+                date: 'Há 32 min',
+                likes: 44,
+                liked: false
+              },
+              {
+                avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_22.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_22.jpg',
+                user: 'kelly.familia',
+                text: 'Material bem grosso e fácil de limpar, nem precisa de toalha se não quiser. Nota 10!',
+                date: 'Há 19 min',
+                likes: 28,
+                liked: false
+              }
+            ];
           } else if (contextType === 'patinete126') {
             return [
               {

@@ -1,5 +1,10 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
+  {id:144,nome:"Câmera Infantil Instantânea que Imprime a Foto na Hora Sem Tinta + 3 Bobinas Térmicas e Alça",preco:37.89,precoOrig:'199,90',desc:81,vendidos:4829,img:"../img/camera-144-slide-1.webp"},
+  {id:129,nome:"Escova Elétrica Giratória de Limpeza Sem Fio 9 em 1 Impermeável c/ Cabo Extensor Retrátil USB",preco:29.89,precoOrig:'159,90',desc:81,vendidos:6184,img:"../img/escova-129-slide-1.webp"},
+  {id:127,nome:"Carrinho Controle Remoto Drift 4x4 Turbo que Solta Fumaça com LED + Kit Pneus Drift e Cones",preco:49.89,precoOrig:'249,90',desc:80,vendidos:3918,img:"../img/drift-127-slide-1.webp"},
+  {id:145,nome:"Combo Mala de Bordo Rígida ABS Giro 360° Padrão ANAC + Frasqueira de Viagem (Kit 2 Peças)",preco:69.89,precoOrig:'399,90',desc:83,vendidos:4376,img:"../img/mala-145-slide-1.webp"},
+  {id:128,nome:"Mesa Dobrável Portátil Vira Maleta 1,80m Reforçada com Alça e Trava (Ceia, Churrasco e Camping)",preco:67.89,precoOrig:'329,90',desc:79,vendidos:3695,img:"../img/mesa-128-slide-1.webp"},
   {id:135,nome:'Smartwatch Série 10 W99+ Pro Tela Super AMOLED NFC ChatGPT GPS Faz e Recebe Ligações',preco:89.9,precoOrig:'349,90',desc:74,vendidos:9200,img:'../img/smartwatch-135-slide-1.webp'},
   {id:134,nome:"Caneta Aparadora e Depiladora de Sobrancelhas Elétrica Recarregável USB c/ Luz LED Indolor",preco:11.89,precoOrig:'49,90',desc:76,vendidos:5191,img:"../img/sobrancelha-134-slide-1.webp"},
   {id:133,nome:'Cordão de Luz Natal Pisca-Pisca 100 LEDs 9m 8 Funções Fio Transparente Decoração',preco:9.69,precoOrig:'39,90',desc:76,vendidos:6454,img:'../img/pisca-133-slide-1.webp'},
