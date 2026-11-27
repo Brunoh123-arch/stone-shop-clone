@@ -234,8 +234,12 @@ for (const id of ids) {
     avSeen.add(avFp);
     if (varNames.length && r.variation) {
       const fullV = String(r.variation).toLowerCase().trim();
-      const partsV = fullV.split(/\s*[·•,|]\s*/).map((s) => s.trim()).filter(Boolean);
-      const validComposite = varNames.includes(fullV) || (partsV.length > 1 && partsV.every((seg) => varNames.includes(seg)));
+      const partsDot = fullV.split(/\s*[·•|]\s*/).map((s) => s.trim()).filter(Boolean);
+      const partsComma = fullV.split(/\s*[·•,|]\s*/).map((s) => s.trim()).filter(Boolean);
+      const validComposite =
+        varNames.includes(fullV) ||
+        (partsDot.length > 1 && partsDot.every((seg) => varNames.includes(seg))) ||
+        (partsComma.length > 1 && partsComma.every((seg) => varNames.includes(seg)));
       if (!validComposite) {
         E(`${tag}: variação '${r.variation}' não existe na grade do produto`);
       }

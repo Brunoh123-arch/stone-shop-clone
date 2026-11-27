@@ -117,16 +117,16 @@ Campos obrigatórios: `id, title, meta_description, product_title, slider_imgs[{
 | **152** | Smartphone Samsung Galaxy A17 5G 128GB 4GB RAM Super AMOLED 6,7" 90Hz 50MP NFC | R$ 279,90 | **100% blindado no ar** |
 | **153** | Tablet Samsung Galaxy Tab S10 FE 128GB 8GB RAM 10,9" 90Hz IP68 c/ S-Pen e Capa | R$ 297,90 | **100% blindado no ar** |
 | **154** | Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox Tira-Manchas Advanced | R$ 397,90 | **100% blindado no ar** |
+| **155** | Combo Bolsa Feminina Luxo Matelassê + Relógio Dourado + Carteira + Pulseira (Kit 4 em 1) | R$ 49,89 | **100% blindado no ar** |
+| **156** | Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (P ao GG) | R$ 54,89 | **100% blindado no ar** |
+| **157** | Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado (P ao XG) | R$ 49,89 | **100% blindado no ar** |
+| **158** | Combo Presente Masculino 4 em 1: Relógio + Carteira + Cinto + Óculos UV400 na Caixa | R$ 54,89 | **100% blindado no ar** |
+| **159** | Combo 2 Pares Sandália Feminina Brilho Salto Bloco Confort + Bolsa Tiracolo (34 ao 39) | R$ 57,89 | **100% blindado no ar** |
 
-### 5.1 FILA PRÓXIMOS CAMPEÕES — ORGANIZADA EM 3 LOTES (#155 a #166) — Puxar no Profile 42
+### 5.1 FILA PRÓXIMOS CAMPEÕES — LOTES 2 & 3 (#160 a #166) — Puxar no Profile 42
 
 | Lote | ID | Produto / Gatilho | PIX | Links Base / Busca (Profile 42) |
 |:--:|:--:|---|:--:|---|
-| **Lote 1 (Black Urgente)** | **155** | **Combo Bolsa Feminina Luxo Transversal + Relógio Dourado + Carteira + Pulseira (Kit 4 em 1)** | **R$ 49,89** | TT: `https://shop.tiktok.com/br/pdp/1738506652937389299` · `https://shop.tiktok.com/br/pdp/kit-prime-desejado-com-caixa-de-presente-ocasioes-especiais/1733666761179367118` · ML: `MLB50330996` / `MLBU3915875418` |
-| **Lote 1 (Black Urgente)** | **156** | **Kit Leve 4 Roupas Femininas Verão/Fim de Ano (4 Vestidos Canelados ou 4 Blusas Caneladas)** | **R$ 54,89** | TT: `https://shop.tiktok.com/br/pdp/1735058119636584400` · `https://shop.tiktok.com/br/pdp/1738105625122538960` |
-| **Lote 1 (Black Urgente)** | **157** | **Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 / Oversized Casual** | **R$ 49,89** | TT: `https://shop.tiktok.com/br/pdp/kit-4-camisetas-masculinas-oversized-100-algodao-streetwear/1737238568108722123` · ML: `MLB-4574806641` / `MLBU4163539189` |
-| **Lote 1 (Black Urgente)** | **158** | **Combo Presente Masculino: Relógio Cronógrafo Aço + Carteira Couro + Cinto + Óculos Polarizado (Caixa)** | **R$ 54,89** | Buscar: `kit relogio masculino carteira cinto oculos presente` |
-| **Lote 1 (Black Urgente)** | **159** | **Combo 2 Pares Sandália Brilho/Salto Bloco + Bolsa Tiracolo Brinde (Natal & Réveillon)** | **R$ 57,89** | Buscar: `kit 2 sandalia feminina brilho bolsa` |
 | **Lote 2 (13º Dia 30/11)** | **160** | **Porta-Joias Rosa Eterna Giratória + Colar Prata 925 "Eu Te Amo em 100 Idiomas" + Sacola** | **R$ 49,89** | Buscar: `porta joias rosa giratoria colar 100 idiomas` |
 | **Lote 2 (13º Dia 30/11)** | **161** | **Maleta Completa de Maquiagem Profissional (ou Kit 12 Itens Make + Necessaire Brinde)** | **R$ 47,89** | Buscar: `maleta maquiagem completa profissional` |
 | **Lote 2 (13º Dia 30/11)** | **162** | **Kit Leve 4 Conjuntos/Shorts Fitness Empina Bumbum Sem Costura Feminino** | **R$ 49,89** | Buscar: `kit 4 conjunto fitness empina bumbum` / `kit 4 short legging seamless` |

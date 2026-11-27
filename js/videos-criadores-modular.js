@@ -1241,6 +1241,36 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'bolsa155') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Meninas, vem o kit completinho na caixa: bolsa matelassê, carteira, relógio dourado e pulseira! 👜✨', date: 'Há 24 min', likes: 148, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_41.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_41.jpg', user: 'camila.looks', text: 'Comprei pra dar de presente de Natal e acabei ficando pra mim de tão linda kkkk 😍', date: 'Há 14 min', likes: 74, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_42.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_42.jpg', user: 'patricia_rj', text: 'O acabamento das ferragens douradas é impecável demais!', date: 'Há 6 min', likes: 49, liked: false }
+            ];
+          } else if (contextType === 'vestidos156') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'São 4 vestidos no mesmo kit e a malha canelada é super grossinha, zero transparência! 👗🔥', date: 'Há 24 min', likes: 162, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_44.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_44.jpg', user: 'ju.modaverao', text: 'Pedi o M e vestiu igual uma luva no corpo, modela muito sem apertar! 🥰', date: 'Há 14 min', likes: 83, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_45.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_45.jpg', user: 'leticia_santos', text: 'Já garanti meus looks pro verão inteiro de uma vez só 👏', date: 'Há 6 min', likes: 57, liked: false }
+            ];
+          } else if (contextType === 'camisetas157') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Malha 100% algodão fio 30.1 penteado de verdade, gola firme que não esgarça e super fresca! 👕⚡', date: 'Há 24 min', likes: 139, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-patinete/creator-lucas-andrade.jpg' : 'img/avatars-patinete/creator-lucas-andrade.jpg', user: 'lucas.treino', text: 'Peguei o kit sortido G e caíram perfeitas no ombro, qualidade de shopping!', date: 'Há 14 min', likes: 68, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_46.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_46.jpg', user: 'mari_esposa', text: 'Comprei pro meu marido trabalhar e já lavei várias vezes sem desbotar nada 👏', date: 'Há 6 min', likes: 44, liked: false }
+            ];
+          } else if (contextType === 'kitmasc158') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Já vem na caixa rígida executiva com relógio, carteira, cinto e óculos UV400 prontos pra presentear! 🎁⌚', date: 'Há 24 min', likes: 134, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_47.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_47.jpg', user: 'fernanda.presentes', text: 'Dei pro meu marido de presente e ele ficou apaixonado no relógio e no óculos! 😍', date: 'Há 14 min', likes: 71, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-patinete/creator-rafael-muniz.jpg' : 'img/avatars-patinete/creator-rafael-muniz.jpg', user: 'rafael_sp', text: 'Muito alinhado, todos os 4 itens combinam perfeitamente!', date: 'Há 6 min', likes: 46, liked: false }
+            ];
+          } else if (contextType === 'sandalias159') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Vêm os 2 pares de salto bloco super confortáveis + a bolsinha tiracolo coordenada! 👠✨', date: 'Há 24 min', likes: 154, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_48.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_48.jpg', user: 'bia.reveillon', text: 'Peguei Ouro + Prata pro Natal e Réveillon, dancei a festa toda sem cansar o pé! 🥰', date: 'Há 14 min', likes: 79, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_49.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_49.jpg', user: 'carol_festas', text: 'A numeração é certinha, pedi 36 e serviu perfeitamente!', date: 'Há 6 min', likes: 52, liked: false }
+            ];
           } else if (contextType === 'jbl146') {
             return [
               { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Sim! São 100W RMS reais com Bass Boost e o LED sincroniza automático na batida da música 🔊🔥', date: 'Há 32 min', likes: 114, liked: false },

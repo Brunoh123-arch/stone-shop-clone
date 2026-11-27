@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "updated_at": "2026-11-27T13:33:22.588Z",
+  "updated_at": "2026-11-27T23:09:39.977Z",
   "description": "Livro-Razão Oficial Anti-Conflito Catbox — Gerado diretamente de data/produtos/*.json.",
   "videos": {
     "https://files.catbox.moe/a8zjrb.mp4": {
@@ -5028,6 +5028,451 @@
       "slot": "criador_7",
       "creator_username": "amadinhabrandao",
       "poster": "videosprodutos/posters/poster-prod-154-c7.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/pyltki.mp4": {
+      "catbox_id": "pyltki.mp4",
+      "base_url": "https://files.catbox.moe/pyltki.mp4",
+      "tagged_url": "https://files.catbox.moe/pyltki.mp4#prod=155&slot=descricao&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-155.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/fa1m0w.mp4": {
+      "catbox_id": "fa1m0w.mp4",
+      "base_url": "https://files.catbox.moe/fa1m0w.mp4",
+      "tagged_url": "https://files.catbox.moe/fa1m0w.mp4#prod=155&slot=criador_1&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_1",
+      "creator_username": "jamile200treinos",
+      "poster": "videosprodutos/posters/poster-prod-155-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/4tnyee.mp4": {
+      "catbox_id": "4tnyee.mp4",
+      "base_url": "https://files.catbox.moe/4tnyee.mp4",
+      "tagged_url": "https://files.catbox.moe/4tnyee.mp4#prod=155&slot=criador_2&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_2",
+      "creator_username": "izabelasvferreira",
+      "poster": "videosprodutos/posters/poster-prod-155-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/z35ilb.mp4": {
+      "catbox_id": "z35ilb.mp4",
+      "base_url": "https://files.catbox.moe/z35ilb.mp4",
+      "tagged_url": "https://files.catbox.moe/z35ilb.mp4#prod=155&slot=criador_3&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_3",
+      "creator_username": "gidicas",
+      "poster": "videosprodutos/posters/poster-prod-155-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/s7v92o.mp4": {
+      "catbox_id": "s7v92o.mp4",
+      "base_url": "https://files.catbox.moe/s7v92o.mp4",
+      "tagged_url": "https://files.catbox.moe/s7v92o.mp4#prod=155&slot=criador_4&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_4",
+      "creator_username": "camila.rezende_look",
+      "poster": "videosprodutos/posters/poster-prod-155-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/e1x5hm.mp4": {
+      "catbox_id": "e1x5hm.mp4",
+      "base_url": "https://files.catbox.moe/e1x5hm.mp4",
+      "tagged_url": "https://files.catbox.moe/e1x5hm.mp4#prod=155&slot=criador_5&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_5",
+      "creator_username": "hemillysantoos",
+      "poster": "videosprodutos/posters/poster-prod-155-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/8v6rjz.mp4": {
+      "catbox_id": "8v6rjz.mp4",
+      "base_url": "https://files.catbox.moe/8v6rjz.mp4",
+      "tagged_url": "https://files.catbox.moe/8v6rjz.mp4#prod=155&slot=criador_6&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_6",
+      "creator_username": "pricilaagnes",
+      "poster": "videosprodutos/posters/poster-prod-155-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ivavuh.mp4": {
+      "catbox_id": "ivavuh.mp4",
+      "base_url": "https://files.catbox.moe/ivavuh.mp4",
+      "tagged_url": "https://files.catbox.moe/ivavuh.mp4#prod=155&slot=criador_7&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_7",
+      "creator_username": "lilimeconta",
+      "poster": "videosprodutos/posters/poster-prod-155-c7.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vko0hs.mp4": {
+      "catbox_id": "vko0hs.mp4",
+      "base_url": "https://files.catbox.moe/vko0hs.mp4",
+      "tagged_url": "https://files.catbox.moe/vko0hs.mp4#prod=155&slot=criador_8&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_8",
+      "creator_username": "jessica.bsena",
+      "poster": "videosprodutos/posters/poster-prod-155-c8.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/5imn2y.mp4": {
+      "catbox_id": "5imn2y.mp4",
+      "base_url": "https://files.catbox.moe/5imn2y.mp4",
+      "tagged_url": "https://files.catbox.moe/5imn2y.mp4#prod=155&slot=criador_9&slug=combo-bolsa-feminina-luxo-matela",
+      "owner_product_id": 155,
+      "owner_product_title": "Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",
+      "slot": "criador_9",
+      "creator_username": "mari.peixotostyle",
+      "poster": "videosprodutos/posters/poster-prod-155-c9.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/5xg29x.mp4": {
+      "catbox_id": "5xg29x.mp4",
+      "base_url": "https://files.catbox.moe/5xg29x.mp4",
+      "tagged_url": "https://files.catbox.moe/5xg29x.mp4#prod=156&slot=descricao&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-156.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/c4r8eg.mp4": {
+      "catbox_id": "c4r8eg.mp4",
+      "base_url": "https://files.catbox.moe/c4r8eg.mp4",
+      "tagged_url": "https://files.catbox.moe/c4r8eg.mp4#prod=156&slot=criador_1&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_1",
+      "creator_username": "malu.vasconcelos",
+      "poster": "videosprodutos/posters/poster-prod-156-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/zxuk8n.mp4": {
+      "catbox_id": "zxuk8n.mp4",
+      "base_url": "https://files.catbox.moe/zxuk8n.mp4",
+      "tagged_url": "https://files.catbox.moe/zxuk8n.mp4#prod=156&slot=criador_2&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_2",
+      "creator_username": "laisstefanydaily",
+      "poster": "videosprodutos/posters/poster-prod-156-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/z0vmbj.mp4": {
+      "catbox_id": "z0vmbj.mp4",
+      "base_url": "https://files.catbox.moe/z0vmbj.mp4",
+      "tagged_url": "https://files.catbox.moe/z0vmbj.mp4#prod=156&slot=criador_3&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_3",
+      "creator_username": "vanizedonadel",
+      "poster": "videosprodutos/posters/poster-prod-156-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/d3vjly.mp4": {
+      "catbox_id": "d3vjly.mp4",
+      "base_url": "https://files.catbox.moe/d3vjly.mp4",
+      "tagged_url": "https://files.catbox.moe/d3vjly.mp4#prod=156&slot=criador_4&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_4",
+      "creator_username": "bellareais27",
+      "poster": "videosprodutos/posters/poster-prod-156-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/d53yv5.mp4": {
+      "catbox_id": "d53yv5.mp4",
+      "base_url": "https://files.catbox.moe/d53yv5.mp4",
+      "tagged_url": "https://files.catbox.moe/d53yv5.mp4#prod=156&slot=criador_5&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_5",
+      "creator_username": "maefitnss",
+      "poster": "videosprodutos/posters/poster-prod-156-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/0lx4b7.mp4": {
+      "catbox_id": "0lx4b7.mp4",
+      "base_url": "https://files.catbox.moe/0lx4b7.mp4",
+      "tagged_url": "https://files.catbox.moe/0lx4b7.mp4#prod=156&slot=criador_6&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_6",
+      "creator_username": "leticia.fernandes96",
+      "poster": "videosprodutos/posters/poster-prod-156-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/n8mkch.mp4": {
+      "catbox_id": "n8mkch.mp4",
+      "base_url": "https://files.catbox.moe/n8mkch.mp4",
+      "tagged_url": "https://files.catbox.moe/n8mkch.mp4#prod=156&slot=criador_7&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_7",
+      "creator_username": "aleuguetto",
+      "poster": "videosprodutos/posters/poster-prod-156-c7.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/dqo860.mp4": {
+      "catbox_id": "dqo860.mp4",
+      "base_url": "https://files.catbox.moe/dqo860.mp4",
+      "tagged_url": "https://files.catbox.moe/dqo860.mp4#prod=156&slot=criador_8&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_8",
+      "creator_username": "gabi.rochareal",
+      "poster": "videosprodutos/posters/poster-prod-156-c8.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/rk7b92.mp4": {
+      "catbox_id": "rk7b92.mp4",
+      "base_url": "https://files.catbox.moe/rk7b92.mp4",
+      "tagged_url": "https://files.catbox.moe/rk7b92.mp4#prod=156&slot=criador_9&slug=kit-leve-4-vestidos-canelados-fe",
+      "owner_product_id": 156,
+      "owner_product_title": "Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",
+      "slot": "criador_9",
+      "creator_username": "virginia.alencar",
+      "poster": "videosprodutos/posters/poster-prod-156-c9.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/u6nryr.mp4": {
+      "catbox_id": "u6nryr.mp4",
+      "base_url": "https://files.catbox.moe/u6nryr.mp4",
+      "tagged_url": "https://files.catbox.moe/u6nryr.mp4#prod=157&slot=descricao&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-157.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/sjgn6b.mp4": {
+      "catbox_id": "sjgn6b.mp4",
+      "base_url": "https://files.catbox.moe/sjgn6b.mp4",
+      "tagged_url": "https://files.catbox.moe/sjgn6b.mp4#prod=157&slot=criador_1&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_1",
+      "creator_username": "countryluana",
+      "poster": "videosprodutos/posters/poster-prod-157-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/9q2pjk.mp4": {
+      "catbox_id": "9q2pjk.mp4",
+      "base_url": "https://files.catbox.moe/9q2pjk.mp4",
+      "tagged_url": "https://files.catbox.moe/9q2pjk.mp4#prod=157&slot=criador_2&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_2",
+      "creator_username": "gustavo.henrique_sp",
+      "poster": "videosprodutos/posters/poster-prod-157-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/7qxyjg.mp4": {
+      "catbox_id": "7qxyjg.mp4",
+      "base_url": "https://files.catbox.moe/7qxyjg.mp4",
+      "tagged_url": "https://files.catbox.moe/7qxyjg.mp4#prod=157&slot=criador_3&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_3",
+      "creator_username": "luizaolivereira.1",
+      "poster": "videosprodutos/posters/poster-prod-157-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/yjy754.mp4": {
+      "catbox_id": "yjy754.mp4",
+      "base_url": "https://files.catbox.moe/yjy754.mp4",
+      "tagged_url": "https://files.catbox.moe/yjy754.mp4#prod=157&slot=criador_4&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_4",
+      "creator_username": "rafael.costa.estilo",
+      "poster": "videosprodutos/posters/poster-prod-157-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ickf79.mp4": {
+      "catbox_id": "ickf79.mp4",
+      "base_url": "https://files.catbox.moe/ickf79.mp4",
+      "tagged_url": "https://files.catbox.moe/ickf79.mp4#prod=157&slot=criador_5&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_5",
+      "creator_username": "bruna.thiagocasal",
+      "poster": "videosprodutos/posters/poster-prod-157-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/8d8rhr.mp4": {
+      "catbox_id": "8d8rhr.mp4",
+      "base_url": "https://files.catbox.moe/8d8rhr.mp4",
+      "tagged_url": "https://files.catbox.moe/8d8rhr.mp4#prod=157&slot=criador_6&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_6",
+      "creator_username": "lucasbarao2.0",
+      "poster": "videosprodutos/posters/poster-prod-157-c7.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/97zzxh.mp4": {
+      "catbox_id": "97zzxh.mp4",
+      "base_url": "https://files.catbox.moe/97zzxh.mp4",
+      "tagged_url": "https://files.catbox.moe/97zzxh.mp4#prod=157&slot=criador_7&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_7",
+      "creator_username": "ryanmartins.real",
+      "poster": "videosprodutos/posters/poster-prod-157-c8.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/j9hvgh.mp4": {
+      "catbox_id": "j9hvgh.mp4",
+      "base_url": "https://files.catbox.moe/j9hvgh.mp4",
+      "tagged_url": "https://files.catbox.moe/j9hvgh.mp4#prod=157&slot=criador_8&slug=kit-leve-4-camisetas-masculinas-",
+      "owner_product_id": 157,
+      "owner_product_title": "Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",
+      "slot": "criador_8",
+      "creator_username": "lipemafra_",
+      "poster": "videosprodutos/posters/poster-prod-157-c9.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/k8qcip.mp4": {
+      "catbox_id": "k8qcip.mp4",
+      "base_url": "https://files.catbox.moe/k8qcip.mp4",
+      "tagged_url": "https://files.catbox.moe/k8qcip.mp4#prod=158&slot=descricao&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-158.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/j3id0r.mp4": {
+      "catbox_id": "j3id0r.mp4",
+      "base_url": "https://files.catbox.moe/j3id0r.mp4",
+      "tagged_url": "https://files.catbox.moe/j3id0r.mp4#prod=158&slot=criador_1&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_1",
+      "creator_username": "laura.mendonca",
+      "poster": "videosprodutos/posters/poster-prod-158-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/k3w9cb.mp4": {
+      "catbox_id": "k3w9cb.mp4",
+      "base_url": "https://files.catbox.moe/k3w9cb.mp4",
+      "tagged_url": "https://files.catbox.moe/k3w9cb.mp4#prod=158&slot=criador_2&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_2",
+      "creator_username": "sabrina.goulart",
+      "poster": "videosprodutos/posters/poster-prod-158-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/k3if70.mp4": {
+      "catbox_id": "k3if70.mp4",
+      "base_url": "https://files.catbox.moe/k3if70.mp4",
+      "tagged_url": "https://files.catbox.moe/k3if70.mp4#prod=158&slot=criador_3&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_3",
+      "creator_username": "isabela.tavares_rj",
+      "poster": "videosprodutos/posters/poster-prod-158-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vpqcb8.mp4": {
+      "catbox_id": "vpqcb8.mp4",
+      "base_url": "https://files.catbox.moe/vpqcb8.mp4",
+      "tagged_url": "https://files.catbox.moe/vpqcb8.mp4#prod=158&slot=criador_4&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_4",
+      "creator_username": "natally543",
+      "poster": "videosprodutos/posters/poster-prod-158-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ssa60b.mp4": {
+      "catbox_id": "ssa60b.mp4",
+      "base_url": "https://files.catbox.moe/ssa60b.mp4",
+      "tagged_url": "https://files.catbox.moe/ssa60b.mp4#prod=158&slot=criador_5&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_5",
+      "creator_username": "lipemfra_",
+      "poster": "videosprodutos/posters/poster-prod-158-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/t3l2us.mp4": {
+      "catbox_id": "t3l2us.mp4",
+      "base_url": "https://files.catbox.moe/t3l2us.mp4",
+      "tagged_url": "https://files.catbox.moe/t3l2us.mp4#prod=158&slot=criador_6&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_6",
+      "creator_username": "bruno.silveira89",
+      "poster": "videosprodutos/posters/poster-prod-158-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/n4zmvb.mp4": {
+      "catbox_id": "n4zmvb.mp4",
+      "base_url": "https://files.catbox.moe/n4zmvb.mp4",
+      "tagged_url": "https://files.catbox.moe/n4zmvb.mp4#prod=158&slot=criador_7&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_7",
+      "creator_username": "renanviotto0",
+      "poster": "videosprodutos/posters/poster-prod-158-c7.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/0uoumn.mp4": {
+      "catbox_id": "0uoumn.mp4",
+      "base_url": "https://files.catbox.moe/0uoumn.mp4",
+      "tagged_url": "https://files.catbox.moe/0uoumn.mp4#prod=158&slot=criador_8&slug=combo-presente-masculino-4-em-1-",
+      "owner_product_id": 158,
+      "owner_product_title": "Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",
+      "slot": "criador_8",
+      "creator_username": "manu.19986",
+      "poster": "videosprodutos/posters/poster-prod-158-c8.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ww2xmv.mp4": {
+      "catbox_id": "ww2xmv.mp4",
+      "base_url": "https://files.catbox.moe/ww2xmv.mp4",
+      "tagged_url": "https://files.catbox.moe/ww2xmv.mp4#prod=159&slot=descricao&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-159.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/fbhwia.mp4": {
+      "catbox_id": "fbhwia.mp4",
+      "base_url": "https://files.catbox.moe/fbhwia.mp4",
+      "tagged_url": "https://files.catbox.moe/fbhwia.mp4#prod=159&slot=criador_1&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "criador_1",
+      "creator_username": "andresalopes951",
+      "poster": "videosprodutos/posters/poster-prod-159-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/wj0nad.mp4": {
+      "catbox_id": "wj0nad.mp4",
+      "base_url": "https://files.catbox.moe/wj0nad.mp4",
+      "tagged_url": "https://files.catbox.moe/wj0nad.mp4#prod=159&slot=criador_2&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "criador_2",
+      "creator_username": "thaykler",
+      "poster": "videosprodutos/posters/poster-prod-159-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/6gzv35.mp4": {
+      "catbox_id": "6gzv35.mp4",
+      "base_url": "https://files.catbox.moe/6gzv35.mp4",
+      "tagged_url": "https://files.catbox.moe/6gzv35.mp4#prod=159&slot=criador_3&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "criador_3",
+      "creator_username": "patricia.leandro94",
+      "poster": "videosprodutos/posters/poster-prod-159-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/col0ty.mp4": {
+      "catbox_id": "col0ty.mp4",
+      "base_url": "https://files.catbox.moe/col0ty.mp4",
+      "tagged_url": "https://files.catbox.moe/col0ty.mp4#prod=159&slot=criador_4&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "criador_4",
+      "creator_username": "tamires.oliveira_ba",
+      "poster": "videosprodutos/posters/poster-prod-159-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ew2noh.mp4": {
+      "catbox_id": "ew2noh.mp4",
+      "base_url": "https://files.catbox.moe/ew2noh.mp4",
+      "tagged_url": "https://files.catbox.moe/ew2noh.mp4#prod=159&slot=criador_5&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "criador_5",
+      "creator_username": "dicasdaagigi",
+      "poster": "videosprodutos/posters/poster-prod-159-c8.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/lqqkre.mp4": {
+      "catbox_id": "lqqkre.mp4",
+      "base_url": "https://files.catbox.moe/lqqkre.mp4",
+      "tagged_url": "https://files.catbox.moe/lqqkre.mp4#prod=159&slot=criador_6&slug=combo-2-pares-sandalia-feminina-",
+      "owner_product_id": 159,
+      "owner_product_title": "Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",
+      "slot": "criador_6",
+      "creator_username": "carolina.pradolooks",
+      "poster": "videosprodutos/posters/poster-prod-159-c9.jpg?v=20261127"
     }
   },
   "conflicts_detected": [
@@ -5099,10 +5544,10 @@
     }
   ],
   "stats": {
-    "total_unique_catbox_videos": 511,
-    "total_desc_videos": 85,
-    "total_creator_videos_slots": 438,
-    "products_with_creators": 85,
+    "total_unique_catbox_videos": 556,
+    "total_desc_videos": 90,
+    "total_creator_videos_slots": 478,
+    "products_with_creators": 90,
     "conflicts_count": 11
   }
 }

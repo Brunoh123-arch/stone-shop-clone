@@ -1,5 +1,10 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
+  {id:155,nome:"Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",preco:49.89,precoOrig:'249,90',desc:80,vendidos:6840,img:"../img/bolsa-155-slide-1.webp"},
+  {id:156,nome:"Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",preco:54.89,precoOrig:'239,90',desc:77,vendidos:9120,img:"../img/vestidos-156-slide-1.webp"},
+  {id:157,nome:"Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",preco:49.89,precoOrig:'219,90',desc:77,vendidos:11340,img:"../img/camisetas-157-slide-1.webp"},
+  {id:158,nome:"Combo Presente Masculino 4 em 1: Relógio Aço + Carteira Couro + Cinto Dupla Face + Óculos UV400 na Caixa",preco:54.89,precoOrig:'259,90',desc:79,vendidos:6490,img:"../img/kitmasc-158-slide-1.webp"},
+  {id:159,nome:"Combo 2 Pares Sandália Feminina Brilho Strass Salto Bloco Confort + Bolsa Tiracolo Festa Natal & Réveillon",preco:57.89,precoOrig:'249,90',desc:77,vendidos:5930,img:"../img/sandalias-159-slide-1.webp"},
   {id:146,nome:"Caixa de Som Portátil JBL PartyBox Encore Essential Bluetooth 100W RMS Show de Luzes LED IPX4",preco:197.9,precoOrig:'1.299,00',desc:85,vendidos:7438,img:"../img/jbl-146-slide-1.webp"},
   {id:147,nome:"Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ Luzes LED, Chave, Display e Bluetooth",preco:167.9,precoOrig:'799,90',desc:79,vendidos:5126,img:"../img/triciclo-147-slide-1.webp"},
   {id:148,nome:"Jogo de Panelas Brinox Ceramic Life Smart Plus 8 Peças Antiaderente Pro-Ceramic Vanilla c/ Tampas de Vidro",preco:119.9,precoOrig:'549,90',desc:78,vendidos:8290,img:"../img/panelas-148-slide-1.webp"},
