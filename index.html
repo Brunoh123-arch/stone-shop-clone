@@ -6126,8 +6126,8 @@ html, body {
 </button>
 </div>
 </div>
-<script src="js/catalogo.js?v=20261127_tt_oficial_1to1_v43"></script>
-<script src="js/app.js?v=20261127_tt_oficial_1to1_v43"></script>
+<script src="js/catalogo.js?v=20261127_tt_oficial_1to1_v44"></script>
+<script src="js/app.js?v=20261127_tt_oficial_1to1_v44"></script>
 <script src="js/roleta-tiktok.js?v=roleta_original_2026"></script>
 <script>
     function normalizeStr(str) {
@@ -6143,13 +6143,16 @@ html, body {
       const q = normalizeStr(query);
       const cards = Array.from(document.querySelectorAll('.product-card-rec'));
       const mainSec = document.getElementById('principais-produtos-section');
+      const novosSec = document.getElementById('novos-lancamentos-section');
       const recSec = document.getElementById('produtos-recomendados-section');
       const catSec = document.getElementById('categorias-section');
       const grid = document.getElementById('recommended-grid');
+      const divider = document.querySelector('.divider-home-rec');
 
-      // Se pesquisou algo: oculta 'Principais Produtos' e exibe só os resultados
+      // Se pesquisou algo: oculta 'Principais Produtos' e 'Novos lançamentos' e sobe os resultados pro topo
       if (q) {
         if (mainSec) mainSec.style.display = 'none';
+        if (novosSec) novosSec.style.display = 'none';
         if (catSec) catSec.style.display = 'none';
         if (recSec) recSec.style.display = 'block';
 
@@ -6169,7 +6172,8 @@ html, body {
           const nomeEl = card.querySelector('.product-name');
           const nomeText = nomeEl ? nomeEl.textContent : '';
           const catAttr = card.getAttribute('data-cat') || '';
-          const fullText = normalizeStr(nomeAttr + ' ' + nomeText + ' ' + catAttr);
+          const idAttr = card.getAttribute('data-id') || '';
+          const fullText = normalizeStr(nomeAttr + ' ' + nomeText + ' ' + catAttr + ' ' + idAttr);
 
           const matches = terms.every(term => fullText.includes(term));
           if (matches) {
@@ -6179,10 +6183,11 @@ html, body {
           }
         });
 
-        // Atualiza título para mostrar resultados da busca
-        const titleEl = recSec ? recSec.querySelector('h2') : null;
-        if (titleEl) {
-          titleEl.innerHTML = `Resultados para "${query.trim()}" (${matchCards.length}) <span onclick="limparBusca()" style="font-size:11px;font-weight:normal;color:#ff2d55;margin-left:8px;cursor:pointer;text-decoration:underline;">Limpar</span>`;
+        // Atualiza divisor/título para mostrar resultados da busca e botão Limpar
+        if (divider) {
+          divider.style.setProperty('display', 'flex', 'important');
+          const safeQ = String(query || '').trim().replace(/[<>&"]/g, '');
+          divider.innerHTML = `<span>Resultados para "${safeQ}" (${matchCards.length})</span> <span onclick="limparBusca()" style="font-size:12px;font-weight:600;color:#fe2c55;margin-left:8px;cursor:pointer;text-decoration:underline;">Limpar</span>`;
         }
 
         // Remove aviso anterior de vazio
@@ -6203,13 +6208,14 @@ html, body {
           });
 
           if (matchCards.length === 0) {
+            const safeQ2 = String(query || '').trim().replace(/[<>&"]/g, '');
             const emptyEl = document.createElement('div');
             emptyEl.id = 'no-products-found-msg';
             emptyEl.style.cssText = 'grid-column: 1 / -1; width: 100%; padding: 40px 16px; text-align: center; color: #666; background: #fff; border-radius: 8px; margin: 10px 0;';
             emptyEl.innerHTML = `
               <div style="font-size: 32px; margin-bottom: 8px;">🔍</div>
               <p style="font-size: 15px; font-weight: 700; color: #222; margin-bottom: 6px;">Nenhum produto encontrado</p>
-              <p style="font-size: 13px; color: #888; margin-bottom: 14px;">Não encontramos nenhum item correspondente a "<strong>${query.trim()}</strong>".</p>
+              <p style="font-size: 13px; color: #888; margin-bottom: 14px;">Não encontramos nenhum item correspondente a "<strong>${safeQ2}</strong>".</p>
               <button onclick="limparBusca()" style="padding: 8px 18px; background: #ff2b56; color: #fff; border: none; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer;">Ver todos os produtos</button>
             `;
             grid.appendChild(emptyEl);
@@ -6217,7 +6223,8 @@ html, body {
         }
 
         if (autoScroll && recSec) {
-          recSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const y = Math.max(0, recSec.getBoundingClientRect().top + window.scrollY - 96);
+          window.scrollTo({ top: y, behavior: 'smooth' });
         }
       } else {
         // Campo vazio: restaura tudo
@@ -6227,12 +6234,15 @@ html, body {
 
     function limparBusca() {
       const mainSec = document.getElementById('principais-produtos-section');
+      const novosSec = document.getElementById('novos-lancamentos-section');
       const recSec = document.getElementById('produtos-recomendados-section');
       const catSec = document.getElementById('categorias-section');
       const searchInput = document.getElementById('search-input');
+      const divider = document.querySelector('.divider-home-rec');
 
       // Restaura tudo
       if (mainSec) mainSec.style.display = 'block';
+      if (novosSec) novosSec.style.display = 'block';
       if (recSec) recSec.style.display = 'block';
       if (catSec) catSec.style.display = 'none';
       if (searchInput) searchInput.value = '';
@@ -6240,9 +6250,11 @@ html, body {
       const existingEmpty = document.getElementById('no-products-found-msg');
       if (existingEmpty) existingEmpty.remove();
 
-      // Restaura o título
-      const titleEl = recSec ? recSec.querySelector('h2') : null;
-      if (titleEl) titleEl.textContent = 'Produtos Recomendados';
+      // Restaura o divisor original
+      if (divider) {
+        divider.style.setProperty('display', 'flex', 'important');
+        divider.textContent = 'Recomendado para você';
+      }
 
       // Exibe todos os cards e reordena de volta à ordem original
       const grid = document.getElementById('recommended-grid');
@@ -6388,7 +6400,12 @@ html, body {
     function openStoreSearch() {
       const hdr = document.getElementById('tt-store-header');
       if (hdr) hdr.classList.add('search-mode');
-      setTimeout(() => document.getElementById('search-input')?.focus(), 80);
+      const inp = document.getElementById('search-input');
+      if (inp) {
+        // Foco síncrono obrigatório para abrir o teclado virtual no iOS Safari / Android Chrome!
+        inp.focus();
+        setTimeout(() => { try { inp.focus(); } catch (e) {} }, 40);
+      }
     }
 
     function closeStoreSearch() {
@@ -6396,6 +6413,11 @@ html, body {
       if (hdr) hdr.classList.remove('search-mode');
       limparBusca();
     }
+
+    window.openStoreSearch = openStoreSearch;
+    window.closeStoreSearch = closeStoreSearch;
+    window.filterProducts = filterProducts;
+    window.limparBusca = limparBusca;
 
     window.addEventListener('scroll', function() {
       const hdr = document.getElementById('tt-store-header');
@@ -6411,6 +6433,16 @@ html, body {
       if (typeof initShareTooltip === 'function') {
         initShareTooltip();
       }
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const initialQ = params.get('q') || params.get('search') || '';
+        if (initialQ.trim()) {
+          openStoreSearch();
+          const inp = document.getElementById('search-input');
+          if (inp) inp.value = initialQ;
+          filterProducts(initialQ, true);
+        }
+      } catch (e) {}
     });
 </script>
 </body>

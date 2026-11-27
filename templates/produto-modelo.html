@@ -33,19 +33,19 @@
 <div class="app-container">
   <!-- HEADER -->
   <header class="header">
-    <a aria-label="Voltar" class="header-back-btn" href="../index.html">
+    <a aria-label="Voltar" class="header-back-btn" href="../index.html" onclick="var qs=window.location.search||''; window.location.href='../index.html'+qs; return false;">
       <svg fill="none" height="24" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.15" viewbox="0 0 24 24" width="24">
         <path d="M15.5 4.75L8.25 12L15.5 19.25"></path>
       </svg>
     </a>
-    <div class="header-search-wrapper">
-      <button class="header-search-icon-btn" type="button">
+    <div class="header-search-wrapper" onclick="if(window.openTikTokGlobalSearch){window.openTikTokGlobalSearch(event);}" style="cursor:pointer;">
+      <button aria-label="Pesquisar" class="header-search-icon-btn" onclick="if(window.openTikTokGlobalSearch){window.openTikTokGlobalSearch(event);}" type="button">
         <svg fill="none" height="18" stroke="#161823" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.05" viewbox="0 0 24 24" width="18">
           <circle cx="10.8" cy="10.8" r="6.8"></circle>
           <line x1="15.8" x2="20.4" y1="15.8" y2="20.4"></line>
         </svg>
       </button>
-      <input class="header-search" onclick="window.location='../index.html'" placeholder="Pesquisar" readonly="" type="text"/>
+      <input class="header-search" onclick="if(window.openTikTokGlobalSearch){window.openTikTokGlobalSearch(event);}" onfocus="if(window.openTikTokGlobalSearch){this.blur();window.openTikTokGlobalSearch(event);}" placeholder="Pesquisar" readonly="" type="text"/>
     </div>
     <div class="header-icons">
       <button aria-label="Compartilhar" class="header-share-btn" onclick="shareProduct()" type="button">

@@ -7067,3 +7067,234 @@ window.toggleDescricaoCompleta = function() {
   }
   window.initSliderSizeGuideBadge = initSliderSizeGuideBadge;
 })();
+
+// === BUSCA GLOBAL INSTANTÂNEA TIKTOK SHOP (TODAS AS PÁGINAS DE PRODUTO & LOJA) ===
+(function initTikTokGlobalSearchModule() {
+  function normSearch(s) {
+    return String(s || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .trim();
+  }
+
+  function resolveThumbPath(imgRaw) {
+    const s = String(imgRaw || '').trim();
+    if (!s) return '/logo.png';
+    if (/^https?:\/\//i.test(s) || s.startsWith('/')) return s;
+    return '/' + s.replace(/^(\.\.\/|\.\/)+/, '');
+  }
+
+  function buildPreservedSuffix() {
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      const kept = new URLSearchParams();
+      ['owner', 'preview', 'c', 'ttclid', 'utm_source', 'utm_campaign'].forEach(k => {
+        if (sp.has(k)) kept.set(k, sp.get(k));
+      });
+      const qs = kept.toString();
+      return qs ? ('?' + qs) : '';
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function formatMoneyBR(num) {
+    const n = parseFloat(num);
+    if (isNaN(n) || n <= 0) return '0,00';
+    return n.toFixed(2).replace('.', ',');
+  }
+
+  function getCatalogItems() {
+    if (typeof CATALOGO_PRODUTOS !== 'undefined' && Array.isArray(CATALOGO_PRODUTOS)) {
+      return CATALOGO_PRODUTOS;
+    }
+    return [];
+  }
+
+  function renderSearchCard(p, suffix) {
+    const href = `/produto-${p.id}${suffix}`;
+    const img = resolveThumbPath(p.img);
+    const preco = formatMoneyBR(p.preco);
+    const orig = p.precoOrig ? (String(p.precoOrig).startsWith('R$') ? p.precoOrig : `R$ ${p.precoOrig}`) : '';
+    const desc = p.desc ? `-${String(p.desc).replace(/\D/g, '')}%` : '';
+    const vend = p.vendidos ? `${p.vendidos} vendidos` : 'Envio imediato';
+    const safeNome = String(p.nome || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return `
+      <a href="${href}" style="display:flex; align-items:stretch; gap:12px; padding:10px 14px; text-decoration:none; color:#161823; border-bottom:1px solid #f3f3f5; background:#fff;">
+        <img src="${img}" alt="${safeNome.replace(/"/g, '&quot;')}" loading="lazy" referrerpolicy="no-referrer" style="width:92px; height:92px; min-width:92px; border-radius:8px; object-fit:cover; background:#f6f6f7;" onerror="this.src='/logo.png'" />
+        <div style="flex:1; min-width:0; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="font-size:13.5px; font-weight:500; color:#161823; line-height:1.32; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">
+              <span style="display:inline-block; background:linear-gradient(90deg,#ff1e68,#fe2c55); color:#fff; font-size:10px; font-weight:700; padding:1px 5px; border-radius:3px; margin-right:5px; vertical-align:1px;">Black Friday</span>${safeNome}
+            </div>
+            <div style="display:flex; align-items:center; gap:5px; margin-top:5px;">
+              <span style="background:#e8f8f5; color:#008767; font-size:10.5px; font-weight:600; padding:1px 5px; border-radius:3px;">Frete grátis</span>
+              ${desc ? `<span style="background:#fff0f2; color:#fe2c55; border:1px solid #ffd8e0; font-size:10px; font-weight:700; padding:0.5px 4px; border-radius:3px;">${desc}</span>` : ''}
+              <span style="font-size:11px; color:#8a8b91;">· ${vend}</span>
+            </div>
+          </div>
+          <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:6px;">
+            <div style="display:flex; align-items:baseline; gap:6px;">
+              <span style="font-size:16.5px; font-weight:700; color:#fe2c55;"><span style="font-size:11.5px;">R$</span> ${preco}</span>
+              ${orig ? `<span style="font-size:11.5px; color:#9a9ba1; text-decoration:line-through;">${orig}</span>` : ''}
+            </div>
+            <span style="background:#fe2c55; color:#fff; font-size:12px; font-weight:600; padding:5px 11px; border-radius:5px;">Ver oferta</span>
+          </div>
+        </div>
+      </a>
+    `;
+  }
+
+  window.openTikTokGlobalSearch = function (ev, initialQuery) {
+    if (ev) {
+      if (typeof ev.preventDefault === 'function') ev.preventDefault();
+      if (typeof ev.stopPropagation === 'function') ev.stopPropagation();
+    }
+
+    // Se estiver na Home (index.html) que já tem #tt-store-header, usa a busca da própria Home
+    if (document.getElementById('tt-store-header') && typeof window.openStoreSearch === 'function') {
+      window.openStoreSearch();
+      return;
+    }
+
+    let modal = document.getElementById('tt-global-search-overlay');
+    if (!modal) {
+      modal = document.createElement('div');
+      modal.id = 'tt-global-search-overlay';
+      modal.style.cssText = 'position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.45); display:flex; justify-content:center;';
+      const hotChips = ['Celular 5G', 'Panelas Brinox', 'Lavadora', 'Caixa JBL', 'Smart TV', 'Triciclo', 'Tablet', 'Fogão', 'Cortina LED', 'Smartwatch'];
+      modal.innerHTML = `
+        <div style="width:100%; max-width:480px; height:100%; background:#ffffff; display:flex; flex-direction:column; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:8px; padding:8px 12px; border-bottom:1px solid #f0f0f2; background:#ffffff; flex-shrink:0;">
+            <button type="button" id="tt-gs-back" aria-label="Voltar" style="background:none; border:none; width:32px; height:36px; padding:0; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; color:#161823; flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 4.75L8.25 12L15.5 19.25"></path></svg>
+            </button>
+            <div style="flex:1; position:relative; display:flex; align-items:center; height:36px; background:#f1f1f2; border-radius:8px; padding:0 30px 0 34px;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8a8b91" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; left:10px; top:50%; transform:translateY(-50%); pointer-events:none;">
+                <circle cx="11" cy="11" r="7.5"></circle><line x1="20" y1="16.35" x2="16.35" y2="20"></line>
+              </svg>
+              <input id="tt-global-search-input" type="search" enterkeyhint="search" autocomplete="off" placeholder="Pesquisar na Stone Shop..." style="width:100%; height:36px; border:none; background:transparent; outline:none; font-size:14.5px; color:#161823; padding:0;" />
+              <button type="button" id="tt-gs-clear" aria-label="Limpar" style="display:none; position:absolute; right:6px; top:50%; transform:translateY(-50%); width:20px; height:20px; border-radius:50%; border:none; background:#c8c9ce; color:#fff; font-size:11px; font-weight:700; cursor:pointer; align-items:center; justify-content:center; padding:0;">✕</button>
+            </div>
+            <button type="button" id="tt-gs-submit" style="background:none; border:none; color:#fe2c55; font-size:14px; font-weight:600; padding:0 4px; height:36px; cursor:pointer; flex-shrink:0;">Procurar</button>
+          </div>
+          <div id="tt-gs-body" style="flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; background:#ffffff; padding-bottom:28px;">
+            <div id="tt-gs-suggestions" style="padding:14px 14px 8px;">
+              <div style="font-size:13px; font-weight:700; color:#161823; margin-bottom:10px;">🔥 Buscas em alta na Black Friday</div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                ${hotChips.map(c => `<button type="button" class="tt-gs-chip" data-chip="${c}" style="background:#f5f5f6; border:none; border-radius:999px; padding:6px 12px; font-size:12.5px; color:#161823; cursor:pointer; font-weight:500;">${c}</button>`).join('')}
+              </div>
+              <div style="font-size:13px; font-weight:700; color:#161823; margin:18px 0 6px;">Mais procurados hoje</div>
+            </div>
+            <div id="tt-gs-results"></div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+
+      const inp = modal.querySelector('#tt-global-search-input');
+      const clearBtn = modal.querySelector('#tt-gs-clear');
+      const resultsBox = modal.querySelector('#tt-gs-results');
+      const suggBox = modal.querySelector('#tt-gs-suggestions');
+      const suffix = buildPreservedSuffix();
+
+      function runQuery(raw) {
+        const q = normSearch(raw);
+        const all = getCatalogItems();
+        if (clearBtn) clearBtn.style.display = q ? 'inline-flex' : 'none';
+        if (!q) {
+          if (suggBox) suggBox.style.display = 'block';
+          resultsBox.innerHTML = all.slice(0, 12).map(p => renderSearchCard(p, suffix)).join('');
+          return;
+        }
+        if (suggBox) suggBox.style.display = 'none';
+        const terms = q.split(/\s+/).filter(Boolean);
+        const matched = all.filter(p => {
+          const hay = normSearch(`${p.id || ''} ${p.nome || ''}`);
+          return terms.every(t => hay.includes(t));
+        });
+        if (matched.length === 0) {
+          const safe = String(raw || '').trim().replace(/[<>&"]/g, '');
+          resultsBox.innerHTML = `
+            <div style="padding:48px 20px; text-align:center;">
+              <div style="font-size:34px; margin-bottom:10px;">🔍</div>
+              <div style="font-size:15px; font-weight:700; color:#161823; margin-bottom:6px;">Nenhum produto encontrado</div>
+              <div style="font-size:13px; color:#8a8b91; margin-bottom:16px;">Não encontramos resultados para "${safe}". Tente buscar por marca ou categoria.</div>
+              <button type="button" id="tt-gs-reset-empty" style="background:#fe2c55; color:#fff; border:none; border-radius:999px; padding:9px 20px; font-size:13px; font-weight:600; cursor:pointer;">Ver ofertas em destaque</button>
+            </div>
+          `;
+          const rst = resultsBox.querySelector('#tt-gs-reset-empty');
+          if (rst) rst.onclick = () => { inp.value = ''; runQuery(''); inp.focus(); };
+          return;
+        }
+        resultsBox.innerHTML = `
+          <div style="padding:10px 14px 4px; font-size:12px; color:#8a8b91; font-weight:500;">${matched.length} produto(s) encontrado(s)</div>
+          ${matched.map(p => renderSearchCard(p, suffix)).join('')}
+        `;
+      }
+
+      modal._runQuery = runQuery;
+      modal.querySelector('#tt-gs-back').onclick = () => window.closeTikTokGlobalSearch();
+      modal.addEventListener('click', (e) => { if (e.target === modal) window.closeTikTokGlobalSearch(); });
+      clearBtn.onclick = () => { inp.value = ''; runQuery(''); inp.focus(); };
+      modal.querySelector('#tt-gs-submit').onclick = () => { runQuery(inp.value); inp.blur(); };
+      inp.addEventListener('input', () => runQuery(inp.value));
+      inp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          runQuery(inp.value);
+          inp.blur();
+        } else if (e.key === 'Escape') {
+          window.closeTikTokGlobalSearch();
+        }
+      });
+      modal.querySelectorAll('.tt-gs-chip').forEach(btn => {
+        btn.onclick = () => {
+          const term = btn.getAttribute('data-chip') || '';
+          inp.value = term;
+          runQuery(term);
+        };
+      });
+    }
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    const inp = modal.querySelector('#tt-global-search-input');
+    if (typeof initialQuery === 'string' && initialQuery) {
+      inp.value = initialQuery;
+    }
+    if (typeof modal._runQuery === 'function') {
+      modal._runQuery(inp ? inp.value : '');
+    }
+    if (inp) {
+      inp.focus();
+      setTimeout(() => { try { inp.focus(); } catch (e) {} }, 40);
+    }
+  };
+
+  window.closeTikTokGlobalSearch = function () {
+    const modal = document.getElementById('tt-global-search-overlay');
+    if (modal) modal.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  // Segurança extra: vincula qualquer barra .header-search-wrapper em páginas internas que não tenham #tt-store-header
+  function bindProductHeaderSearch() {
+    if (document.getElementById('tt-store-header')) return;
+    document.querySelectorAll('.header-search-wrapper, .header-search-icon-btn, .header-search').forEach(el => {
+      if (el.dataset.ttSearchBound) return;
+      el.dataset.ttSearchBound = '1';
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', function (e) {
+        window.openTikTokGlobalSearch(e);
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindProductHeaderSearch);
+  } else {
+    bindProductHeaderSearch();
+  }
+})();
