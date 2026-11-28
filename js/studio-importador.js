@@ -43,7 +43,7 @@
     el.textContent = msg;
     el.classList.add('show');
     clearTimeout(window._stToastTimer);
-    window._stToastTimer = setTimeout(() => el.classList.remove('show'), 2400);
+    window._stToastTimer = setTimeout(() => el.classList.remove('show'), 2300);
   }
 
   function setBanner(msg, isWarn = false) {
@@ -88,7 +88,6 @@
       if (txt && txt.trim()) {
         const inp = document.getElementById('url1Input');
         inp.value = txt.trim();
-        inp.focus();
         toast('Link colado');
       }
     } catch (_) {
@@ -138,7 +137,7 @@
       currentDraft = res.data.draft;
       renderDraftPanels(silent);
       if (res.data.livePatch) postLiveToPhone(res.data.livePatch);
-      if (!silent) toast('Alteração salva');
+      if (!silent) toast('Atualizado');
     }
   };
 
@@ -157,7 +156,7 @@
       postLiveToPhone({ ...res.data.livePatch, scrollToSection: scrollMap[kind] });
     }
     if (res.data.added && res.data.added.length) {
-      toast(`+${res.data.added.length} adicionado(s) instantaneamente`);
+      toast(`+${res.data.added.length} adicionado(s) na hora`);
     } else {
       toast('Reserva vazia — buscando mais em segundo plano');
     }
@@ -177,12 +176,13 @@
         }
         if (data.livePatch) postLiveToPhone(data.livePatch);
         if (data.event === 'fast_preview') {
-          setBanner('Prévia instantânea aberta · Carregando banco reserva de unboxings e vídeos nos bastidores...');
+          setBanner('Página pronta aberta · Carregando unboxings e vídeos nos bastidores...');
           window.reloadPreviewIframe();
+          if (window.innerWidth < 1080) window.setMobilePane('preview');
         } else if (data.event === 'reviews_pool_ready') {
-          setBanner('Galeria 1:1, variações e avaliações reais prontas · Buscando vídeos de criadores...');
+          setBanner('Fotos 1:1, variações e avaliações carregadas · Puxando vídeos...');
         } else if (data.event === 'videos_preview_ready') {
-          setBanner('Página completa · Os vídeos estão subindo em 4x paralelo para o Catbox.');
+          setBanner('Tudo pronto · Vídeos subindo pro Catbox em 4x paralelo.');
         } else if (data.event === 'warning' && data.extra && data.extra.message) {
           setBanner(data.extra.message, true);
         }
@@ -207,7 +207,7 @@
     const origHtml = btn.innerHTML;
     btn.disabled = true;
     btn.innerHTML = '<span>Extraindo...</span>';
-    setBanner('Lendo anúncio no motor silencioso e montando prévia mobile...');
+    setBanner('Lendo anúncio e montando sua página...');
 
     const res = await api('/api/studio/extract', 'POST', {
       url1,
@@ -230,6 +230,9 @@
     renderDraftPanels(false);
     const k = encodeURIComponent(getStudioKey());
     document.getElementById('studioPhoneIframe').src = `${res.data.previewUrl}&key=${k}`;
+    if (window.innerWidth < 1080) {
+      window.setMobilePane('preview');
+    }
     connectStream(currentDraft.draftId);
     refreshStateHeader();
   };
@@ -285,31 +288,26 @@
     const totalVids = (descVid ? 1 : 0) + creators.length;
     const catboxReadyCount = [...(descVid ? [descVid] : []), ...creators].filter((v) => /catbox\.moe\//i.test(v.src || v.video || '')).length;
 
-    // Top 4 Pastel-Cap Bento KPIs
     document.getElementById('kpiSlidesNum').textContent = String(slides.length);
-    const kpiSlidesPill = document.getElementById('kpiSlidesPill');
-    kpiSlidesPill.textContent = slides.length >= 4 ? 'Pronto' : 'Mín. 4';
-    kpiSlidesPill.className = `st-delta-pill ${slides.length >= 4 ? 'ok' : 'warn'}`;
+    document.getElementById('kpiSlidesPill').textContent = slides.length >= 4 ? 'OK' : 'Mín. 4';
 
     document.getElementById('kpiUnboxNum').innerHTML = `${unboxings.length}<small>/6</small>`;
-    document.getElementById('resUnboxCount').textContent = `${(d.reserve_unboxings || []).length} reserva`;
+    document.getElementById('resUnboxCount').textContent = `${(d.reserve_unboxings || []).length} res`;
 
     document.getElementById('kpiVideosNum').textContent = String(totalVids);
-    document.getElementById('resVideosCount').textContent = `${(d.reserve_videos || []).length} reserva`;
-    document.getElementById('catboxStatusPill').textContent = `${catboxReadyCount} de ${totalVids} no Catbox`;
+    document.getElementById('resVideosCount').textContent = `${(d.reserve_videos || []).length} res`;
+    document.getElementById('catboxStatusPill').textContent = `${catboxReadyCount}/${totalVids} Catbox`;
 
     document.getElementById('kpiReviewsNum').textContent = String(reviews.length);
-    document.getElementById('resReviewsCount').textContent = `${(d.reserve_reviews || []).length} reserva`;
+    document.getElementById('resReviewsCount').textContent = `${(d.reserve_reviews || []).length} res`;
 
-    // Readiness Strip above Deploy Button
-    setChipState('gateSlides', `Slides ${slides.length}/4`, slides.length >= 4);
+    setChipState('gateSlides', `Fotos ${slides.length}/4`, slides.length >= 4);
     setChipState('gateUnbox', `Unbox ${unboxings.length}/6`, unboxings.length >= 6);
     setChipState('gateReviews', `Reviews ${reviews.length}/20`, reviews.length >= 20);
     setChipState('gateCatbox', `Catbox ${catboxReadyCount}/${totalVids}`, totalVids >= 2 && catboxReadyCount === totalVids);
 
-    document.getElementById('phonePreviewLabel').textContent = `Produto #${d.targetId} · PIX R$ ${formatBRL(d.price_pix)}`;
+    document.getElementById('phonePreviewLabel').textContent = `#${d.targetId} · PIX R$ ${formatBRL(d.price_pix)}`;
 
-    // Tab counts
     document.getElementById('tabFotosBadge').textContent = `${slides.length + unboxings.length}`;
     document.getElementById('tabVideosBadge').textContent = `${totalVids}`;
     document.getElementById('tabReviewsBadge').textContent = `${reviews.length}`;
@@ -321,12 +319,12 @@
       <div class="st-var-group">
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <strong style="font-size:13px;">${esc(grp.label || gKey)} <span style="color:#71717a;font-weight:500;">(${(grp.opcoes || []).length})</span></strong>
-          ${gKey !== 'cor' ? `<button type="button" class="st-chip-action" onclick="window.removeVarGroup('${esc(gKey)}')">Remover grupo</button>` : ''}
+          ${gKey !== 'cor' ? `<button type="button" class="st-chip-action" onclick="window.removeVarGroup('${esc(gKey)}')">Remover</button>` : ''}
         </div>
         <div class="st-var-chips">
           ${(grp.opcoes || []).map((o, oIdx) => {
             const name = typeof o === 'string' ? o : o.nome;
-            return `<span class="st-var-chip">${esc(name)} <button type="button" class="st-var-del" onclick="window.removeVarOption('${esc(gKey)}', ${oIdx})" title="Remover">✕</button></span>`;
+            return `<span class="st-var-chip">${esc(name)} <button type="button" class="st-var-del" onclick="window.removeVarOption('${esc(gKey)}', ${oIdx})">✕</button></span>`;
           }).join('')}
           <button type="button" class="st-chip-action" onclick="window.promptAddVarOption('${esc(gKey)}')">+ Opção</button>
         </div>
@@ -341,11 +339,11 @@
       <div class="st-media-card">
         <img src="${esc(s.src)}" alt="" loading="lazy" />
         <div class="st-media-actions">
-          <button type="button" class="st-chip-action" style="height:24px;padding:0 9px;font-size:10.5px;" onclick="window.saveDraftPatch({ action: 'promote_slide', index: ${idx} })">${idx === 0 ? 'Capa Principal' : 'Definir Capa'}</button>
+          <button type="button" class="st-chip-action" style="height:24px;padding:0 8px;font-size:10.5px;" onclick="window.saveDraftPatch({ action: 'promote_slide', index: ${idx} })">${idx === 0 ? 'Capa' : 'Virar Capa'}</button>
           <button type="button" class="st-var-del" onclick="window.saveDraftPatch({ action: 'remove_slide', index: ${idx} })">✕</button>
         </div>
       </div>
-    `).join('') : '<div class="st-empty-state">As fotos 1:1 aparecerão aqui assim que você colar o link.</div>';
+    `).join('') : '<div class="st-empty-state">Cole um link acima para carregar as fotos 1:1.</div>';
 
     // Unboxings Grid
     const uPill = document.getElementById('unboxCounterPill');
@@ -366,8 +364,8 @@
       <div class="st-vid-card is-desc">
         <img class="st-vid-thumb" referrerpolicy="no-referrer" src="${esc(descVid.poster || '/logo.png')}" alt="" />
         <div class="st-vid-meta">
-          <strong style="color:#6ee7a8;">Vídeo da Descrição</strong>
-          <span style="color:#a1a1aa;">${/catbox\.moe\//i.test(descVid.src) ? 'Catbox pronto ✓' : 'Subindo Catbox...'}</span>
+          <strong style="color:#6ee7a8;">Vídeo Descrição</strong>
+          <span style="color:#a1a1aa;">${/catbox\.moe\//i.test(descVid.src) ? 'Catbox ✓' : 'Subindo...'}</span>
         </div>
       </div>
     ` : '';
@@ -379,16 +377,16 @@
           <img class="st-vid-thumb" referrerpolicy="no-referrer" src="${esc(c.poster || c.avatar || '/logo.png')}" alt="" />
           <div class="st-vid-meta">
             <strong style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">@${esc(c.username)}</strong>
-            <span style="color:${ready ? '#6ee7a8' : '#fcd34d'};">${ready ? 'Catbox pronto ✓' : 'Subindo...'}</span>
-            <div style="display:flex; gap:5px; margin-top:4px;">
-              <button type="button" class="st-chip-action" style="flex:1;height:25px;padding:0 6px;font-size:10.5px;" onclick="window.saveDraftPatch({ action: 'set_desc_video', index: ${idx} })">Usar na Desc</button>
-              <button type="button" class="st-var-del" style="padding:0 4px;" onclick="window.saveDraftPatch({ action: 'remove_creator', index: ${idx} })">✕</button>
+            <span style="color:${ready ? '#6ee7a8' : '#fcd34d'};">${ready ? 'Catbox ✓' : 'Subindo...'}</span>
+            <div style="display:flex; gap:4px; margin-top:4px;">
+              <button type="button" class="st-chip-action" style="flex:1;height:24px;padding:0 6px;font-size:10px;" onclick="window.saveDraftPatch({ action: 'set_desc_video', index: ${idx} })">Desc</button>
+              <button type="button" class="st-var-del" onclick="window.saveDraftPatch({ action: 'remove_creator', index: ${idx} })">✕</button>
             </div>
           </div>
         </div>
       `;
     }).join('');
-    document.getElementById('videosGrid').innerHTML = vidHtml || '<div class="st-empty-state">Cole links do TikTok ou aguarde a busca automática silenciosa.</div>';
+    document.getElementById('videosGrid').innerHTML = vidHtml || '<div class="st-empty-state">Cole links do TikTok ou busque acima.</div>';
 
     // Reviews List
     const rPill = document.getElementById('reviewsTotalPill');
@@ -400,14 +398,19 @@
           <div style="display:flex;align-items:center;gap:6px;">
             <strong style="color:#fff;">${esc(r.name)}</strong>
             <span style="color:#fcd34d;font-size:11px;">${'★'.repeat(Number(r.stars) || 5)}</span>
-            ${r.photos && r.photos.length ? `<span style="font-size:10.5px;color:#6ee7a8;font-weight:700;">${r.photos.length} foto(s)</span>` : ''}
+            ${r.photos && r.photos.length ? `<span style="font-size:10.5px;color:#6ee7a8;font-weight:700;">${r.photos.length}ft</span>` : ''}
           </div>
-          <div style="color:#a1a1aa; margin-top:3px;">${esc(r.comment)}</div>
+          <div style="color:#a1a1aa; margin-top:2px;">${esc(r.comment)}</div>
         </div>
         <button type="button" class="st-var-del" onclick="window.saveDraftPatch({ action: 'remove_review', index: ${idx} })">✕</button>
       </div>
-    `).join('') : '<div class="st-empty-state">As avaliações extraídas aparecerão aqui.</div>';
+    `).join('') : '<div class="st-empty-state">As avaliações aparecerão aqui.</div>';
   }
+
+  window.openTabAndEdit = function (tabName) {
+    if (window.innerWidth < 1080) window.setMobilePane('curadoria');
+    window.switchSubtab(tabName);
+  };
 
   window.addPresetSecondGroup = function (preset) {
     if (!currentDraft) return toast('Cole um link primeiro');
@@ -455,7 +458,7 @@
     const urls = raw.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
     if (!urls.length) return toast('Informe pelo menos 1 link do TikTok');
     document.getElementById('pasteVideoUrls').value = '';
-    setBanner(`Baixando ${urls.length} vídeo(s) silenciosamente via tikwm + Catbox...`);
+    setBanner(`Baixando ${urls.length} vídeo(s) silenciosamente...`);
     await api(`/api/studio/draft/${currentDraft.draftId}/videos`, 'POST', { mode: 'urls', urls });
   };
 
@@ -463,7 +466,7 @@
     if (!currentDraft) return toast('Cole o link do produto primeiro');
     const q = document.getElementById('videoSearchQuery').value.trim();
     if (!q) return toast('Digite o termo de busca');
-    setBanner(`Buscando vídeos de pessoas reais no TikTok para "${q}"...`);
+    setBanner(`Buscando vídeos no TikTok para "${q}"...`);
     await api(`/api/studio/draft/${currentDraft.draftId}/videos`, 'POST', { mode: 'search', query: q });
   };
 
@@ -482,9 +485,9 @@
     const resBox = document.getElementById('publishResultBox');
     const origHtml = btn.innerHTML;
     btn.disabled = true;
-    btn.innerHTML = deploy ? '<span>Validando & Publicando...</span>' : '<span>Validando...</span>';
+    btn.innerHTML = deploy ? '<span>Publicando...</span>' : '<span>Salvando...</span>';
     resBox.style.display = 'block';
-    resBox.innerHTML = 'Finalizando uploads Catbox pendentes e executando <code>validar-modelo-unico.js</code>...';
+    resBox.innerHTML = 'Validando mídias e executando <code>validar-modelo-unico.js</code>...';
 
     const res = await api(`/api/studio/publish/${currentDraft.draftId}`, 'POST', { deploy });
     btn.disabled = false;
@@ -492,16 +495,16 @@
 
     if (!res.ok || !res.data.ok) {
       const errs = (res.data.errors || ['Erro desconhecido']).map((e) => `<li>${esc(e)}</li>`).join('');
-      resBox.innerHTML = `<strong style="color:#fb7185;">Validador bloqueou (Rollback aplicado):</strong><ul style="margin:6px 0 0 16px;color:#fda4af;">${errs}</ul>`;
+      resBox.innerHTML = `<strong style="color:#fb7185;">Falta ajustar antes de subir:</strong><ul style="margin:6px 0 0 16px;color:#fda4af;">${errs}</ul>`;
       return;
     }
 
     resBox.innerHTML = `
-      <strong style="color:#6ee7a8;">Produto #${res.data.productId} publicado com ZERO ERROS</strong><br/>
-      <a href="${esc(res.data.liveUrl)}" target="_blank" style="color:#93c5fd;text-decoration:none;font-weight:700;">Abrir Página na Loja (#${res.data.productId}) ↗</a> ·
-      <a href="${esc(res.data.adsUrl)}" target="_blank" style="color:#6ee7a8;text-decoration:none;font-weight:700;">Central TikTok Ads ↗</a>
+      <strong style="color:#6ee7a8;">Produto #${res.data.productId} no ar com ZERO ERROS!</strong><br/>
+      <a href="${esc(res.data.liveUrl)}" target="_blank" style="color:#93c5fd;text-decoration:none;font-weight:700;">Abrir Produto #${res.data.productId} ↗</a> ·
+      <a href="${esc(res.data.adsUrl)}" target="_blank" style="color:#6ee7a8;text-decoration:none;font-weight:700;">Abrir /videos-ads ↗</a>
     `;
-    toast(`Produto #${res.data.productId} no ar!`);
+    toast(`Produto #${res.data.productId} publicado!`);
     refreshStateHeader();
   };
 
@@ -526,9 +529,12 @@
     if (target) target.classList.add('active');
   };
 
-  window.setMobilePane = function (pane, btn) {
-    document.querySelectorAll('.st-mob-tab').forEach((b) => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
+  window.setMobilePane = function (pane) {
+    const btnEdit = document.getElementById('mobBtnEdit');
+    const btnPrev = document.getElementById('mobBtnPreview');
+    if (btnEdit) btnEdit.classList.toggle('active', pane !== 'preview');
+    if (btnPrev) btnPrev.classList.toggle('active', pane === 'preview');
+
     const left = document.getElementById('paneCuradoria');
     const right = document.getElementById('panePreview');
     if (pane === 'preview') {
@@ -546,18 +552,18 @@
     const badgeTxt = document.getElementById('daemonBadgeText');
     const badgeWrap = document.getElementById('daemonBadge');
     if (res.data.daemonOnline) {
-      badgeTxt.textContent = res.data.browserWarm ? 'Motor aquecido · 0ms' : 'Motor online';
+      badgeTxt.textContent = res.data.browserWarm ? 'Pronto · 0ms' : 'Online';
       badgeWrap.style.color = '#6ee7a8';
     } else {
-      badgeTxt.textContent = 'Daemon offline';
+      badgeTxt.textContent = 'Offline';
       badgeWrap.style.color = '#fcd34d';
     }
     const idInp = document.getElementById('initTargetId');
     if (idInp && !idInp.value) idInp.placeholder = `#${res.data.nextId}`;
 
     const sel = document.getElementById('recentDraftsSelect');
-    sel.innerHTML = `<option value="">Rascunhos recentes (${(res.data.drafts || []).length})</option>` +
-      (res.data.drafts || []).map((d) => `<option value="${esc(d.draftId)}">#${d.targetId} — ${esc(String(d.product_title).slice(0, 30))}</option>`).join('');
+    sel.innerHTML = `<option value="">Rascunhos (${(res.data.drafts || []).length})</option>` +
+      (res.data.drafts || []).map((d) => `<option value="${esc(d.draftId)}">#${d.targetId} · ${esc(String(d.product_title).slice(0, 22))}</option>`).join('');
   }
 
   refreshStateHeader();

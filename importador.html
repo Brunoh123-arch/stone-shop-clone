@@ -2,38 +2,36 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Stone Studio — Importador & Pré-Visualizador Instantâneo</title>
+  <title>Stone Studio — Importador Instantâneo</title>
   <link rel="icon" type="image/png" href="/logo.png" />
   <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-400.ttf" crossorigin />
   <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-500.ttf" crossorigin />
   <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-600.ttf" crossorigin />
   <link rel="preload" as="font" type="font/otf" href="/fonts/SF-Pro-Display-Bold.otf" crossorigin />
-  <link rel="stylesheet" href="/css/studio-importador.css?v=20261128_ios_tt" />
+  <link rel="stylesheet" href="/css/studio-importador.css?v=20261128_mobile_fit_v2" />
 </head>
 <body>
-  <!-- LEFT ICON RAIL (BENTO OBSIDIAN SIGNATURE — DESKTOP >= 1080px) -->
-  <aside class="st-rail" aria-label="Navegação Principal">
+  <!-- RAIL LATERAL APENAS DESKTOP (>= 1080px) -->
+  <aside class="st-rail" aria-label="Navegação Desktop">
     <a href="/?owner=1" target="_blank" class="st-rail-logo" title="Abrir Loja Oficial">
       <img src="/logo.png" alt="Stone Shop" />
     </a>
-
     <nav class="st-rail-nav">
-      <button type="button" class="st-rail-btn active" data-rail="dados" data-tip=" Produto & Preço" onclick="window.switchSubtab('dados', null, this)">
+      <button type="button" class="st-rail-btn active" data-rail="dados" data-tip="Produto & Preço" onclick="window.switchSubtab('dados', null, this)">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
       </button>
-      <button type="button" class="st-rail-btn" data-rail="fotos" data-tip="Galeria & Unboxings" onclick="window.switchSubtab('fotos', null, this)">
+      <button type="button" class="st-rail-btn" data-rail="fotos" data-tip="Fotos & Unboxings" onclick="window.switchSubtab('fotos', null, this)">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
       </button>
-      <button type="button" class="st-rail-btn" data-rail="videos" data-tip="Vídeos TikTok & Catbox" onclick="window.switchSubtab('videos', null, this)">
+      <button type="button" class="st-rail-btn" data-rail="videos" data-tip="Vídeos TikTok" onclick="window.switchSubtab('videos', null, this)">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg>
       </button>
-      <button type="button" class="st-rail-btn" data-rail="reviews" data-tip="Avaliações de Clientes" onclick="window.switchSubtab('reviews', null, this)">
+      <button type="button" class="st-rail-btn" data-rail="reviews" data-tip="Comentários" onclick="window.switchSubtab('reviews', null, this)">
         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
       </button>
     </nav>
-
     <div class="st-rail-foot">
       <a href="/videos-ads" target="_blank" class="st-rail-btn" data-tip="Central TikTok Ads">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
@@ -41,83 +39,78 @@
     </div>
   </aside>
 
-  <!-- TOP GLASS HEADER -->
+  <!-- HEADER COMPACTO 100% ENCAIXADO NO MOBILE E PC -->
   <header class="st-topbar">
     <div class="st-topbar-inner">
-      <div class="st-title-stack">
-        <div class="st-title-row">
-          <span class="st-title-main">Stone Studio</span>
-          <span class="st-status-chip" id="daemonBadge">
-            <span class="st-pulse-dot"></span>
-            <span id="daemonBadgeText">Aquecendo motor</span>
-          </span>
-        </div>
-        <span class="st-subtitle">Pré-visualizador instantâneo TikTok Shop & Mercado Livre · Edição em tempo real</span>
+      <div class="st-brand-left">
+        <img src="/logo.png" alt="Stone" class="st-mob-logo" />
+        <span class="st-title-main">Stone Studio</span>
+        <span class="st-status-chip" id="daemonBadge">
+          <span class="st-pulse-dot"></span>
+          <span id="daemonBadgeText">Online</span>
+        </span>
       </div>
 
       <div class="st-top-actions">
-        <div class="st-select-wrap">
-          <select id="recentDraftsSelect" class="st-pill-select" onchange="window.loadSelectedDraft(this.value)">
-            <option value="">Rascunhos recentes</option>
-          </select>
-        </div>
-        <a href="/videos-ads" target="_blank" class="st-dark-pill">
-          <span>TikTok Ads</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        <select id="recentDraftsSelect" class="st-pill-select" onchange="window.loadSelectedDraft(this.value)" aria-label="Rascunhos">
+          <option value="">Rascunhos</option>
+        </select>
+        <a href="/videos-ads" target="_blank" class="st-dark-pill st-ads-link">
+          <span>Ads</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
         </a>
       </div>
     </div>
   </header>
 
   <div class="st-shell">
-    <!-- COMMAND BAR: COLAR LINK E PRONTO -->
+    <!-- BARRA DE ENTRADA DO LINK (100% MOBILE-FIRST, ANTI-ZOOM iOS 16px) -->
     <section class="st-command-card">
       <form class="st-command-form" onsubmit="window.startInstantExtract(event)">
-        <div class="st-command-bar">
-          <div class="st-cmd-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          </div>
+        <div class="st-url-input-wrap">
+          <svg class="st-url-svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
           <input
             id="url1Input"
             type="url"
             class="st-cmd-input"
-            placeholder="Cole o link do TikTok Shop ou Mercado Livre e pressione Enter..."
+            placeholder="Cole o link do TikTok Shop ou Mercado Livre..."
             required
             autocomplete="off"
           />
-          <button type="button" class="st-paste-chip" onclick="window.pasteClipboardUrl()" title="Colar da área de transferência">
-            Colar
-          </button>
+          <button type="button" class="st-paste-chip" onclick="window.pasteClipboardUrl()">Colar</button>
+        </div>
+
+        <div class="st-cmd-btns-row">
           <button type="button" class="st-dark-pill st-opt-toggle" id="optToggleBtn" onclick="window.toggleExtraInputs()">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="21" y2="21"/><line x1="4" x2="20" y1="14" y2="14"/><line x1="4" x2="20" y1="7" y2="7"/><circle cx="15" cy="14" r="2"/><circle cx="9" cy="7" r="2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="18" y2="18"/><line x1="4" x2="20" y1="6" y2="6"/><circle cx="15" cy="18" r="2"/><circle cx="9" cy="6" r="2"/></svg>
             <span>Opções</span>
           </button>
           <button type="submit" id="extractBtn" class="st-white-pill st-extract-cta">
-            <span>Extrair Agora</span>
+            <span>Puxar Produto Agora</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </button>
         </div>
 
         <div id="extraInputsRow" class="st-extra-drawer" style="display:none;">
           <div class="st-extra-field st-extra-wide">
-            <label>Link complementar opcional (ex: Mercado Livre p/ somar unboxings)</label>
+            <label>2º Link opcional (ex: Mercado Livre p/ somar fotos)</label>
             <input id="url2Input" type="url" class="st-ios-input" placeholder="https://produto.mercadolivre.com.br/..." />
           </div>
           <div class="st-extra-field">
-            <label>Preço PIX fixo</label>
-            <input id="initPixInput" type="number" step="0.01" class="st-ios-input st-tabular" placeholder="Automático" />
+            <label>Preço PIX (R$)</label>
+            <input id="initPixInput" type="number" step="0.01" inputmode="decimal" class="st-ios-input st-tabular" placeholder="Automático" />
           </div>
           <div class="st-extra-field">
-            <label>Perfil de avatares</label>
+            <label>Avatares</label>
             <select id="initGenderSelect" class="st-ios-select">
               <option value="feminino">Feminino BR</option>
               <option value="unissex">Unissex / Casa</option>
               <option value="masculino">Masculino BR</option>
             </select>
           </div>
-          <div class="st-extra-field st-extra-narrow">
-            <label>ID alvo</label>
-            <input id="initTargetId" type="number" class="st-ios-input st-tabular" placeholder="#Auto" />
+          <div class="st-extra-field">
+            <label>Novo #ID</label>
+            <input id="initTargetId" type="number" inputmode="numeric" class="st-ios-input st-tabular" placeholder="#Auto" />
           </div>
         </div>
       </form>
@@ -125,147 +118,139 @@
       <div id="statusBanner" class="st-live-banner" style="display:none;"></div>
     </section>
 
-    <!-- 4 PASTEL-CAP BENTO KPI & ZERO-DELAY RESERVE CARDS -->
+    <!-- 4 CARDS BENTO COMPACTOS + BOTÕES 0ms DA RESERVA -->
     <section class="st-bento-kpis">
-      <div class="st-pastel-card" onclick="window.switchSubtab('fotos')">
+      <div class="st-pastel-card" onclick="window.openTabAndEdit('fotos')">
         <div class="st-pastel-cap cap-blue">
-          <span>Galeria 1:1</span>
-          <span class="st-cap-tag">Mín. 4</span>
+          <span>Fotos 1:1</span>
+          <span class="st-cap-tag" id="kpiSlidesPill">Mín. 4</span>
         </div>
         <div class="st-pastel-body">
-          <div class="st-pastel-row">
-            <span class="st-pastel-num st-tabular" id="kpiSlidesNum">0</span>
-            <span class="st-delta-pill" id="kpiSlidesPill">Aguardando</span>
-          </div>
-          <div class="st-pastel-foot">
-            <span class="st-pastel-sub">Slides 1000×1000 WebP</span>
-          </div>
+          <span class="st-pastel-num st-tabular" id="kpiSlidesNum">0</span>
+          <span class="st-pastel-sub">Galeria principal</span>
         </div>
       </div>
 
-      <div class="st-pastel-card">
+      <div class="st-pastel-card" onclick="window.openTabAndEdit('fotos')">
         <div class="st-pastel-cap cap-peach">
-          <span>Fotos Compradores</span>
-          <span class="st-cap-tag" id="resUnboxCount">0 reserva</span>
+          <span>Unboxings</span>
+          <span class="st-cap-tag" id="resUnboxCount">0 res</span>
         </div>
         <div class="st-pastel-body">
           <div class="st-pastel-row">
             <span class="st-pastel-num st-tabular" id="kpiUnboxNum">0<small>/6</small></span>
-            <button type="button" class="st-instant-add-btn" onclick="event.stopPropagation(); window.popMore('unboxings', 2)">
-              +2 Fotos
-            </button>
+            <button type="button" class="st-instant-add-btn" onclick="event.stopPropagation(); window.popMore('unboxings', 2)">+2</button>
           </div>
-          <div class="st-pastel-foot">
-            <span class="st-pastel-sub" id="kpiUnboxSub">Cards reais de unboxing</span>
-          </div>
+          <span class="st-pastel-sub">Fotos reais clientes</span>
         </div>
       </div>
 
-      <div class="st-pastel-card">
+      <div class="st-pastel-card" onclick="window.openTabAndEdit('videos')">
         <div class="st-pastel-cap cap-yellow">
-          <span>Vídeos Criadores</span>
-          <span class="st-cap-tag" id="resVideosCount">0 reserva</span>
+          <span>Vídeos</span>
+          <span class="st-cap-tag" id="resVideosCount">0 res</span>
         </div>
         <div class="st-pastel-body">
           <div class="st-pastel-row">
             <span class="st-pastel-num st-tabular" id="kpiVideosNum">0</span>
-            <button type="button" class="st-instant-add-btn" onclick="event.stopPropagation(); window.popMore('videos', 3)">
-              +3 Vídeos
-            </button>
+            <button type="button" class="st-instant-add-btn" onclick="event.stopPropagation(); window.popMore('videos', 3)">+3</button>
           </div>
-          <div class="st-pastel-foot">
-            <span class="st-pastel-sub" id="catboxStatusPill">0 blindados no Catbox</span>
-          </div>
+          <span class="st-pastel-sub" id="catboxStatusPill">0 no Catbox</span>
         </div>
       </div>
 
-      <div class="st-pastel-card">
+      <div class="st-pastel-card" onclick="window.openTabAndEdit('reviews')">
         <div class="st-pastel-cap cap-mint">
-          <span>Avaliações PT-BR</span>
-          <span class="st-cap-tag" id="resReviewsCount">0 reserva</span>
+          <span>Reviews</span>
+          <span class="st-cap-tag" id="resReviewsCount">0 res</span>
         </div>
         <div class="st-pastel-body">
           <div class="st-pastel-row">
             <span class="st-pastel-num st-tabular" id="kpiReviewsNum">0</span>
-            <button type="button" class="st-instant-add-btn" onclick="event.stopPropagation(); window.popMore('reviews', 5)">
-              +5 Textos
-            </button>
+            <button type="button" class="st-instant-add-btn" onclick="event.stopPropagation(); window.popMore('reviews', 5)">+5</button>
           </div>
-          <div class="st-pastel-foot">
-            <span class="st-pastel-sub">Meta recomendada: 20+</span>
-          </div>
+          <span class="st-pastel-sub">Textos PT-BR</span>
         </div>
       </div>
     </section>
 
-    <!-- MAIN TWO-COLUMN STUDIO WORKSPACE -->
+    <!-- CHAVEADOR NATIVO MOBILE: [EDITAR DADOS] | [VER PÁGINA PRONTA] -->
+    <div class="st-mobile-mode-switch" role="tablist">
+      <button type="button" class="st-mode-btn active" id="mobBtnEdit" onclick="window.setMobilePane('curadoria')">
+        Editar Produto
+      </button>
+      <button type="button" class="st-mode-btn" id="mobBtnPreview" onclick="window.setMobilePane('preview')">
+        Ver Página Pronta
+      </button>
+    </div>
+
+    <!-- WORKSPACE PRINCIPAL -->
     <main class="st-workspace">
-      <!-- LEFT COLUMN: CURATION WORKBENCH -->
+      <!-- PAINEL ESQUERDO: EDIÇÃO & CURADORIA -->
       <section class="st-left-pane" id="paneCuradoria">
-        <!-- iOS Segmented Pill Navigation -->
         <div class="st-segmented" role="tablist">
           <button type="button" class="st-seg-btn active" data-tab="dados" onclick="window.switchSubtab('dados', this)">
-            Produto & Preço
+            Preço & Nome
           </button>
           <button type="button" class="st-seg-btn" data-tab="fotos" onclick="window.switchSubtab('fotos', this)">
-            Fotos & Unboxings <span class="st-seg-count" id="tabFotosBadge">0</span>
+            Fotos <span class="st-seg-count" id="tabFotosBadge">0</span>
           </button>
           <button type="button" class="st-seg-btn" data-tab="videos" onclick="window.switchSubtab('videos', this)">
-            Vídeos TikTok <span class="st-seg-count" id="tabVideosBadge">0</span>
+            Vídeos <span class="st-seg-count" id="tabVideosBadge">0</span>
           </button>
           <button type="button" class="st-seg-btn" data-tab="reviews" onclick="window.switchSubtab('reviews', this)">
-            Comentários <span class="st-seg-count" id="tabReviewsBadge">0</span>
+            Reviews <span class="st-seg-count" id="tabReviewsBadge">0</span>
           </button>
         </div>
 
-        <!-- PANEL 1: DADOS, PREÇO 0ms & VARIAÇÕES -->
+        <!-- ABA 1: NOME, PREÇO & VARIAÇÕES -->
         <div class="st-tab-panel active" id="panel-dados">
           <div class="st-bento-card">
             <div class="st-card-head">
               <div>
-                <h2 class="st-card-title">Identidade & Precificação Instantânea</h2>
-                <p class="st-card-desc">Qualquer toque atualiza o celular ao lado em 0ms sem recarregar a página</p>
+                <h2 class="st-card-title">Nome & Preço PIX</h2>
+                <p class="st-card-desc">Atualização instantânea em 0ms na página do produto</p>
               </div>
               <span class="st-live-calc-pill st-tabular" id="liveCalcBadge">-80% OFF · 3x R$ 16,63</span>
             </div>
 
             <div class="st-ios-group">
               <div class="st-field-block">
-                <label class="st-field-label" for="editTitle">Título Oficial na Loja</label>
-                <input id="editTitle" type="text" class="st-ios-input st-input-lg" oninput="window.onLiveFieldInput()" placeholder="Cole um link acima para carregar automaticamente..." />
+                <label class="st-field-label" for="editTitle">Nome do Produto</label>
+                <input id="editTitle" type="text" class="st-ios-input st-input-lg" oninput="window.onLiveFieldInput()" placeholder="Título oficial do produto..." />
               </div>
 
               <div class="st-metrics-row-4">
                 <div class="st-field-block">
-                  <label class="st-field-label" for="editPix">Oferta PIX</label>
+                  <label class="st-field-label" for="editPix">Preço PIX</label>
                   <div class="st-currency-wrap">
                     <span class="st-curr-prefix">R$</span>
-                    <input id="editPix" type="number" step="0.01" class="st-ios-input st-tabular st-price-highlight" oninput="window.onLiveFieldInput()" />
+                    <input id="editPix" type="number" step="0.01" inputmode="decimal" class="st-ios-input st-tabular st-price-highlight" oninput="window.onLiveFieldInput()" />
                   </div>
                 </div>
 
                 <div class="st-field-block">
-                  <label class="st-field-label" for="editOrig">Preço Ancoragem</label>
+                  <label class="st-field-label" for="editOrig">Preço Antigo</label>
                   <div class="st-currency-wrap">
                     <span class="st-curr-prefix">R$</span>
-                    <input id="editOrig" type="number" step="0.01" class="st-ios-input st-tabular" oninput="window.onLiveFieldInput()" />
+                    <input id="editOrig" type="number" step="0.01" inputmode="decimal" class="st-ios-input st-tabular" oninput="window.onLiveFieldInput()" />
                   </div>
                 </div>
 
                 <div class="st-field-block">
-                  <label class="st-field-label" for="editSold">Vendidos On-line</label>
-                  <input id="editSold" type="number" class="st-ios-input st-tabular" oninput="window.onLiveFieldInput()" />
+                  <label class="st-field-label" for="editSold">Vendidos</label>
+                  <input id="editSold" type="number" inputmode="numeric" class="st-ios-input st-tabular" oninput="window.onLiveFieldInput()" />
                 </div>
 
                 <div class="st-field-block">
                   <label class="st-field-label" for="editTargetId">Código #ID</label>
-                  <input id="editTargetId" type="number" class="st-ios-input st-tabular" onchange="window.saveDraftPatch({ targetId: Number(this.value) })" />
+                  <input id="editTargetId" type="number" inputmode="numeric" class="st-ios-input st-tabular" onchange="window.saveDraftPatch({ targetId: Number(this.value) })" />
                 </div>
               </div>
 
               <div class="st-metrics-row-2">
                 <div class="st-field-block">
-                  <label class="st-field-label" for="editCategory">Categoria na Vitrine</label>
+                  <label class="st-field-label" for="editCategory">Categoria na Loja</label>
                   <select id="editCategory" class="st-ios-select" onchange="window.saveDraftPatch({ category: this.value })">
                     <option value="casa">Casa, Limpeza & Natal</option>
                     <option value="moda">Moda, Bolsas & Calçados</option>
@@ -278,7 +263,7 @@
                 </div>
 
                 <div class="st-field-block">
-                  <label class="st-field-label" for="editGender">Pool de Avatares Verificados</label>
+                  <label class="st-field-label" for="editGender">Avatares das Avaliações</label>
                   <select id="editGender" class="st-ios-select" onchange="window.saveDraftPatch({ gender: this.value })">
                     <option value="feminino">100% Mulheres Brasileiras</option>
                     <option value="unissex">Misto Brasileiro (Casa / Geral)</option>
@@ -292,8 +277,8 @@
           <div class="st-bento-card">
             <div class="st-card-head">
               <div>
-                <h2 class="st-card-title">Grade de Variações</h2>
-                <p class="st-card-desc">Cores oficiais 1:1 e segundo seletor opcional (Tamanho, Numeração ou Voltagem)</p>
+                <h2 class="st-card-title">Variações do Produto</h2>
+                <p class="st-card-desc">Adicione grades rápidas de tamanho ou voltagem em 1 toque</p>
               </div>
               <div class="st-preset-bar">
                 <button type="button" class="st-chip-action" onclick="window.addPresetSecondGroup('tamanho_roupa')">+ P ao GG</button>
@@ -305,13 +290,13 @@
           </div>
         </div>
 
-        <!-- PANEL 2: FOTOS SLIDER & UNBOXINGS -->
+        <!-- ABA 2: FOTOS & UNBOXINGS -->
         <div class="st-tab-panel" id="panel-fotos">
           <div class="st-bento-card">
             <div class="st-card-head">
               <div>
-                <h2 class="st-card-title">Galeria Principal 1:1</h2>
-                <p class="st-card-desc">Padronizadas em 1000×1000 WebP · Toque para promover à capa ou descartar</p>
+                <h2 class="st-card-title">Fotos do Slider (1:1)</h2>
+                <p class="st-card-desc">Mínimo 4 fotos limpas de catálogo</p>
               </div>
               <span id="slidesCounterPill" class="st-gate-pill">0 / 4 mín</span>
             </div>
@@ -321,35 +306,35 @@
           <div class="st-bento-card">
             <div class="st-card-head">
               <div>
-                <h2 class="st-card-title">Fotos Reais dos Compradores (Unboxing)</h2>
-                <p class="st-card-desc">1 card por comprador · Mínimo obrigatório de 6 cards para liberar deploy</p>
+                <h2 class="st-card-title">Fotos dos Compradores</h2>
+                <p class="st-card-desc">Mínimo obrigatório de 6 cards reais</p>
               </div>
-              <div style="display:flex; align-items:center; gap:8px;">
+              <div class="st-inline-actions">
                 <span id="unboxCounterPill" class="st-gate-pill">0 / 6 mín</span>
-                <button type="button" class="st-chip-action" onclick="window.popMore('unboxings', 2)">+2 da Reserva</button>
+                <button type="button" class="st-chip-action" onclick="window.popMore('unboxings', 2)">+2 Fotos</button>
               </div>
             </div>
             <div id="unboxGrid" class="st-media-grid"></div>
           </div>
         </div>
 
-        <!-- PANEL 3: VÍDEOS TIKTOK & CATBOX -->
+        <!-- ABA 3: VÍDEOS TIKTOK -->
         <div class="st-tab-panel" id="panel-videos">
           <div class="st-bento-card">
             <div class="st-metrics-row-2">
               <div class="st-field-block">
-                <label class="st-field-label" for="pasteVideoUrls">Colar Links do TikTok (1 por linha · Zero Áudio)</label>
+                <label class="st-field-label" for="pasteVideoUrls">Colar Links do TikTok (1 por linha)</label>
                 <textarea id="pasteVideoUrls" class="st-ios-textarea" rows="2" placeholder="https://www.tiktok.com/@criadora/video/..."></textarea>
-                <button type="button" class="st-dark-pill" style="width:100%; justify-content:center; margin-top:8px;" onclick="window.submitPastedVideos()">
-                  Baixar Links Colados & Subir no Catbox
+                <button type="button" class="st-dark-pill st-full-btn" onclick="window.submitPastedVideos()">
+                  Baixar Links Colados
                 </button>
               </div>
 
               <div class="st-field-block">
-                <label class="st-field-label" for="videoSearchQuery">Busca Automática Silenciosa no TikTok</label>
-                <input id="videoSearchQuery" type="text" class="st-ios-input" placeholder="Termo do produto no TikTok..." />
-                <button type="button" class="st-dark-pill" style="width:100%; justify-content:center; margin-top:12px;" onclick="window.submitSearchVideos()">
-                  Caçar +12 Vídeos de Pessoas Reais
+                <label class="st-field-label" for="videoSearchQuery">Buscar Mais Vídeos no TikTok</label>
+                <input id="videoSearchQuery" type="text" class="st-ios-input" placeholder="Ex: porta joias rosa colar..." />
+                <button type="button" class="st-dark-pill st-full-btn" onclick="window.submitSearchVideos()">
+                  Buscar +12 Vídeos
                 </button>
               </div>
             </div>
@@ -358,8 +343,8 @@
           <div class="st-bento-card">
             <div class="st-card-head">
               <div>
-                <h2 class="st-card-title">Vídeo da Descrição & Carrossel de Criadores</h2>
-                <p class="st-card-desc">Upload automático em 4 threads para files.catbox.moe com poster real em 0.5s</p>
+                <h2 class="st-card-title">Vídeos Ativos na Página</h2>
+                <p class="st-card-desc">Hospedados automaticamente no Catbox</p>
               </div>
               <button type="button" class="st-chip-action" onclick="window.popMore('videos', 3)">+3 da Reserva</button>
             </div>
@@ -367,22 +352,22 @@
           </div>
         </div>
 
-        <!-- PANEL 4: COMENTÁRIOS -->
+        <!-- ABA 4: COMENTÁRIOS -->
         <div class="st-tab-panel" id="panel-reviews">
           <div class="st-bento-card">
             <div class="st-card-head">
               <div>
-                <h2 class="st-card-title">Avaliações dos Clientes</h2>
-                <p class="st-card-desc">Sincronia automática entre topo e rodapé · Avatares brasileiros sem colisão MD5</p>
+                <h2 class="st-card-title">Comentários Ativos</h2>
+                <p class="st-card-desc">Meta recomendada: 20+ avaliações</p>
               </div>
-              <div style="display:flex; align-items:center; gap:8px;">
+              <div class="st-inline-actions">
                 <span id="reviewsTotalPill" class="st-gate-pill">0 ativas</span>
-                <button type="button" class="st-chip-action" onclick="window.popMore('reviews', 5)">+5 da Reserva</button>
+                <button type="button" class="st-chip-action" onclick="window.popMore('reviews', 5)">+5 Textos</button>
               </div>
             </div>
 
             <div class="st-quick-comment-bar">
-              <input id="newRevComment" type="text" class="st-ios-input" placeholder="Escrever comentário extra em português..." onkeydown="if(event.key==='Enter'){event.preventDefault();window.addQuickComment();}" />
+              <input id="newRevComment" type="text" class="st-ios-input" placeholder="Adicionar comentário em português..." onkeydown="if(event.key==='Enter'){event.preventDefault();window.addQuickComment();}" />
               <button type="button" class="st-white-pill" onclick="window.addQuickComment()">Adicionar</button>
             </div>
 
@@ -391,75 +376,47 @@
         </div>
       </section>
 
-      <!-- RIGHT COLUMN: TITANIUM iPHONE 16 PRO + VALIDATOR GATE + DEPLOY -->
+      <!-- PAINEL DIREITO: PRÉVIA AO VIVO (MOLDURA SÓ NO PC; TELA LIMPA ENCAIXADA NO CELULAR) -->
       <aside class="st-right-pane" id="panePreview">
-        <div class="st-deploy-dock">
-          <div class="st-readiness-row" id="readinessStrip">
-            <span class="st-ready-chip" id="gateSlides">Slides 0/4</span>
-            <span class="st-ready-chip" id="gateUnbox">Unbox 0/6</span>
-            <span class="st-ready-chip" id="gateReviews">Reviews 0/20</span>
-            <span class="st-ready-chip" id="gateCatbox">Catbox</span>
-          </div>
-
-          <div class="st-deploy-actions">
-            <button type="button" id="publishVercelBtn" class="st-white-pill st-publish-main" onclick="window.publishCurrentDraft(true)">
-              <span>Validar & Publicar na Loja</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </button>
-            <button type="button" id="publishLocalBtn" class="st-dark-pill" onclick="window.publishCurrentDraft(false)" title="Valida e registra localmente sem fazer deploy na Vercel">
-              Só Local
-            </button>
-          </div>
-
-          <div id="publishResultBox" class="st-publish-feedback" style="display:none;"></div>
-        </div>
-
-        <!-- IPHONE 16 PRO NATURAL TITANIUM FRAME -->
-        <div class="st-iphone-frame">
-          <div class="st-iphone-bezel">
-            <div class="st-ios-statusbar">
-              <span class="st-ios-time st-tabular">9:41</span>
-              <div class="st-dynamic-island">
-                <span class="st-di-camera"></span>
-              </div>
-              <div class="st-ios-signals">
-                <svg width="15" height="11" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="4.5" y="5" width="3" height="7" rx="1"/><rect x="9" y="2.5" width="3" height="9.5" rx="1"/><rect x="13.5" y="0" width="3" height="12" rx="1"/></svg>
-                <span style="font-size:10.5px; font-weight:700;">5G</span>
-                <div class="st-ios-battery"><div class="st-ios-battery-fill"></div></div>
-              </div>
-            </div>
-
-            <div class="st-preview-subbar">
-              <span id="phonePreviewLabel">Prévia Mobile 1:1 em Tempo Real</span>
+        <div class="st-preview-card">
+          <div class="st-preview-subbar">
+            <span id="phonePreviewLabel">Prévia em Tempo Real da Loja</span>
+            <div class="st-inline-actions">
               <button type="button" class="st-reload-icon" onclick="window.reloadPreviewIframe()" title="Recarregar prévia">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
               </button>
             </div>
-
-            <iframe id="studioPhoneIframe" class="st-phone-iframe" src="about:blank" title="Preview Mobile Stone Shop"></iframe>
-
-            <div class="st-ios-homebar-wrap">
-              <div class="st-ios-homebar"></div>
-            </div>
           </div>
+
+          <iframe id="studioPhoneIframe" class="st-phone-iframe" src="about:blank" title="Prévia da Página na Loja"></iframe>
         </div>
       </aside>
     </main>
+
+    <!-- BARRA DE PUBLICAÇÃO SEMPRE ACESSÍVEL E LIMPA (PC E CELULAR) -->
+    <section class="st-publish-bar">
+      <div class="st-readiness-row" id="readinessStrip">
+        <span class="st-ready-chip" id="gateSlides">Slides 0/4</span>
+        <span class="st-ready-chip" id="gateUnbox">Unbox 0/6</span>
+        <span class="st-ready-chip" id="gateReviews">Reviews 0/20</span>
+        <span class="st-ready-chip" id="gateCatbox">Catbox 0/0</span>
+      </div>
+
+      <div class="st-deploy-actions">
+        <button type="button" id="publishVercelBtn" class="st-mint-cta" onclick="window.publishCurrentDraft(true)">
+          <span>Publicar Produto na Loja</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+        <button type="button" id="publishLocalBtn" class="st-dark-pill" onclick="window.publishCurrentDraft(false)">
+          Salvar Local
+        </button>
+      </div>
+
+      <div id="publishResultBox" class="st-publish-feedback" style="display:none;"></div>
+    </section>
   </div>
 
-  <!-- MOBILE GLASS TAB BAR -->
-  <nav class="st-mobile-dock">
-    <button type="button" class="st-mob-tab active" onclick="window.setMobilePane('curadoria', this)">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-      <span>Curadoria</span>
-    </button>
-    <button type="button" class="st-mob-tab" onclick="window.setMobilePane('preview', this)">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="3"/><path d="M12 18h.01"/></svg>
-      <span>iPhone & Publicar</span>
-    </button>
-  </nav>
-
   <div id="stToast" class="st-toast"></div>
-  <script src="/js/studio-importador.js?v=20261128_ios_tt"></script>
+  <script src="/js/studio-importador.js?v=20261128_mobile_fit_v2"></script>
 </body>
 </html>
