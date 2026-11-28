@@ -10,7 +10,7 @@
   <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-500.ttf" crossorigin />
   <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-600.ttf" crossorigin />
   <link rel="preload" as="font" type="font/otf" href="/fonts/SF-Pro-Display-Bold.otf" crossorigin />
-  <link rel="stylesheet" href="/css/studio-importador.css?v=20261128_mobile_fit_v2" />
+  <link rel="stylesheet" href="/css/studio-importador.css?v=20261128_live_timer_v3" />
 </head>
 <body>
   <!-- RAIL LATERAL APENAS DESKTOP (>= 1080px) -->
@@ -115,7 +115,18 @@
         </div>
       </form>
 
-      <div id="statusBanner" class="st-live-banner" style="display:none;"></div>
+      <div id="statusBanner" class="st-live-banner" style="display:none;">
+        <div class="st-banner-top">
+          <div class="st-banner-left">
+            <span class="st-banner-dot" id="statusBannerDot"></span>
+            <span class="st-banner-msg" id="statusBannerMsg">Lendo anúncio...</span>
+          </div>
+          <span class="st-banner-timer st-tabular" id="statusBannerTimer">0,0s</span>
+        </div>
+        <div class="st-banner-track" id="statusBannerTrack">
+          <div class="st-banner-fill" id="statusBannerFill"></div>
+        </div>
+      </div>
     </section>
 
     <!-- 4 CARDS BENTO COMPACTOS + BOTÕES 0ms DA RESERVA -->
@@ -417,6 +428,6 @@
   </div>
 
   <div id="stToast" class="st-toast"></div>
-  <script src="/js/studio-importador.js?v=20261128_mobile_fit_v2"></script>
+  <script src="/js/studio-importador.js?v=20261128_live_timer_v3"></script>
 </body>
 </html>

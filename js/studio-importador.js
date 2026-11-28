@@ -46,18 +46,153 @@
     window._stToastTimer = setTimeout(() => el.classList.remove('show'), 2300);
   }
 
+  const jobClock = {
+    timerId: null,
+    startMs: 0,
+    stageStartMs: 0,
+    estRemainingFromStageSec: 26,
+    basePct: 0,
+    ceilPct: 22,
+    running: false,
+  };
+
+  function fmtSec(sec) {
+    return Math.max(0, Number(sec || 0)).toFixed(1).replace('.', ',');
+  }
+
+  function stopJobClock() {
+    jobClock.running = false;
+    if (jobClock.timerId) {
+      clearInterval(jobClock.timerId);
+      jobClock.timerId = null;
+    }
+  }
+
+  function tickJobClock() {
+    if (!jobClock.running) return;
+    const now = performance.now();
+    const totalElapsed = (now - jobClock.startMs) / 1000;
+    const stageElapsed = (now - jobClock.stageStartMs) / 1000;
+    const timerEl = document.getElementById('statusBannerTimer');
+    const fillEl = document.getElementById('statusBannerFill');
+
+    const estRem = Math.max(1, Math.ceil(jobClock.estRemainingFromStageSec - stageElapsed));
+    if (timerEl) {
+      if (stageElapsed <= jobClock.estRemainingFromStageSec) {
+        timerEl.textContent = `${fmtSec(totalElapsed)}s · falta ~${estRem}s`;
+      } else {
+        timerEl.textContent = `${fmtSec(totalElapsed)}s · finalizando`;
+      }
+    }
+
+    if (fillEl) {
+      const span = Math.max(0, jobClock.ceilPct - jobClock.basePct);
+      const frac = Math.min(0.92, stageElapsed / Math.max(2, jobClock.estRemainingFromStageSec));
+      const pct = Math.min(99, jobClock.basePct + span * frac);
+      fillEl.style.width = `${pct.toFixed(1)}%`;
+    }
+
+    // Safety watchdog so banner never hangs forever if network drops
+    if (totalElapsed > 75) {
+      finishBannerJob('Extração concluída com os itens disponíveis.', false);
+    }
+  }
+
+  function startBannerJob(msg, estTotalSec = 26, ceilPct = 24) {
+    stopJobClock();
+    const b = document.getElementById('statusBanner');
+    const m = document.getElementById('statusBannerMsg');
+    const t = document.getElementById('statusBannerTimer');
+    const tr = document.getElementById('statusBannerTrack');
+    const f = document.getElementById('statusBannerFill');
+    if (!b) return;
+
+    b.style.display = 'flex';
+    b.className = 'st-live-banner is-running';
+    if (m) m.textContent = msg;
+    if (tr) tr.style.display = 'block';
+    if (f) f.style.width = '4%';
+    if (t) {
+      t.style.display = 'inline-block';
+      t.textContent = `0,0s · falta ~${Math.ceil(estTotalSec)}s`;
+    }
+
+    jobClock.startMs = performance.now();
+    jobClock.stageStartMs = jobClock.startMs;
+    jobClock.estRemainingFromStageSec = estTotalSec;
+    jobClock.basePct = 4;
+    jobClock.ceilPct = ceilPct;
+    jobClock.running = true;
+    jobClock.timerId = setInterval(tickJobClock, 100);
+  }
+
+  function updateBannerStage(msg, basePct, ceilPct, estRemSec) {
+    const b = document.getElementById('statusBanner');
+    const m = document.getElementById('statusBannerMsg');
+    const tr = document.getElementById('statusBannerTrack');
+    const f = document.getElementById('statusBannerFill');
+    if (!b) return;
+
+    if (!jobClock.running) {
+      startBannerJob(msg, estRemSec || 18, ceilPct || 70);
+      return;
+    }
+
+    b.style.display = 'flex';
+    b.className = 'st-live-banner is-running';
+    if (m && msg) m.textContent = msg;
+    if (tr) tr.style.display = 'block';
+    jobClock.stageStartMs = performance.now();
+    jobClock.basePct = basePct;
+    jobClock.ceilPct = Math.max(basePct + 2, ceilPct);
+    jobClock.estRemainingFromStageSec = Math.max(2, estRemSec);
+    if (f) f.style.width = `${basePct}%`;
+    tickJobClock();
+  }
+
+  function finishBannerJob(msg, isWarn = false) {
+    const elapsed = jobClock.startMs ? (performance.now() - jobClock.startMs) / 1000 : 0;
+    stopJobClock();
+    const b = document.getElementById('statusBanner');
+    const m = document.getElementById('statusBannerMsg');
+    const t = document.getElementById('statusBannerTimer');
+    const tr = document.getElementById('statusBannerTrack');
+    const f = document.getElementById('statusBannerFill');
+    if (!b) return;
+
+    b.style.display = 'flex';
+    b.className = `st-live-banner ${isWarn ? 'is-warn' : 'is-done'}`;
+    if (m) m.textContent = msg;
+    if (t) {
+      t.style.display = elapsed > 0.2 ? 'inline-block' : 'none';
+      if (elapsed > 0.2) {
+        t.textContent = isWarn ? `${fmtSec(elapsed)}s` : `Pronto em ${fmtSec(elapsed)}s ✓`;
+      }
+    }
+    if (tr) tr.style.display = isWarn ? 'none' : 'block';
+    if (f) f.style.width = '100%';
+  }
+
   function setBanner(msg, isWarn = false) {
     const b = document.getElementById('statusBanner');
     if (!b) return;
     if (!msg) {
+      stopJobClock();
       b.style.display = 'none';
       return;
     }
-    b.style.display = 'block';
-    b.style.background = isWarn ? 'rgba(252, 211, 77, 0.12)' : 'rgba(99, 140, 255, 0.11)';
-    b.style.borderColor = isWarn ? 'rgba(252, 211, 77, 0.32)' : 'rgba(99, 140, 255, 0.26)';
-    b.style.color = isWarn ? '#fde68a' : '#dbeafe';
-    b.textContent = msg;
+    if (isWarn) {
+      finishBannerJob(msg, true);
+      return;
+    }
+    const m = document.getElementById('statusBannerMsg');
+    const t = document.getElementById('statusBannerTimer');
+    const tr = document.getElementById('statusBannerTrack');
+    b.style.display = 'flex';
+    b.className = 'st-live-banner';
+    if (m) m.textContent = msg;
+    if (t && !jobClock.running) t.style.display = 'none';
+    if (tr && !jobClock.running) tr.style.display = 'none';
   }
 
   function postLiveToPhone(payload) {
@@ -176,31 +311,39 @@
         }
         if (data.livePatch) postLiveToPhone(data.livePatch);
         if (data.event === 'fast_preview') {
-          setBanner('Título e capa extraídos na hora · Puxando galeria 1:1, avaliações e vídeos...');
+          updateBannerStage('Título e capa 1:1 prontos · Puxando galeria HD e avaliações...', 22, 58, 19);
           window.reloadPreviewIframe();
           if (window.innerWidth < 1080) window.setMobilePane('preview');
         } else if (data.event === 'status_info' && data.extra && data.extra.message) {
-          setBanner(data.extra.message, false);
+          updateBannerStage(data.extra.message, 38, 62, 15);
         } else if (data.event === 'reviews_pool_ready') {
-          setBanner('Galeria 1:1, variações e avaliações reais prontas · Buscando vídeos do TikTok...');
+          updateBannerStage('Galeria 1:1 e avaliações prontas · Buscando vídeos TikTok...', 62, 78, 12);
           window.reloadPreviewIframe();
         } else if (data.event === 'videos_preview_ready') {
-          const count = data.extra && typeof data.extra.count === 'number' ? data.extra.count : (currentDraft && currentDraft.creators ? currentDraft.creators.length : 0);
-          if (count > 0) {
-            setBanner('Página montada! Hospedando vídeos no Catbox em 4x paralelo...');
+          const d = currentDraft || {};
+          const allVids = [...(d.video && d.video.src ? [d.video] : []), ...(d.creators || [])];
+          const total = allVids.length;
+          if (total > 0) {
+            const estCatboxSec = Math.max(8, Math.ceil(total / 4) * 12);
+            updateBannerStage(`Subindo ${total} vídeo(s) pro Catbox (0/${total} prontos)...`, 78, 98, estCatboxSec);
           } else {
-            setBanner('Galeria e avaliações prontas! Cole links de vídeos na aba Vídeos se desejar mais.', false);
+            finishBannerJob('Galeria e avaliações prontas! (Cole links na aba Vídeos se desejar mais)', false);
           }
           window.reloadPreviewIframe();
         } else if (data.event === 'video_catbox_done') {
           const d = currentDraft || {};
           const allVids = [...(d.video && d.video.src ? [d.video] : []), ...(d.creators || [])];
           const ready = allVids.filter((v) => /catbox\.moe\//i.test(v.src || v.video || '')).length;
+          const pending = Math.max(0, allVids.length - ready);
           if (allVids.length > 0 && ready >= allVids.length) {
-            setBanner(`100% pronto pra publicar! (${ready}/${allVids.length} vídeos no Catbox ✓)`);
+            finishBannerJob(`Página 100% pronta! (${ready}/${allVids.length} vídeos no Catbox ✓)`, false);
+          } else if (allVids.length > 0) {
+            const pctNow = Math.round(78 + (ready / allVids.length) * 20);
+            const remSec = Math.max(4, Math.ceil(pending / 4) * 11);
+            updateBannerStage(`Subindo vídeos pro Catbox (${ready}/${allVids.length} prontos)...`, pctNow, 99, remSec);
           }
         } else if (data.event === 'warning' && data.extra && data.extra.message) {
-          setBanner(data.extra.message, true);
+          finishBannerJob(data.extra.message, true);
         }
       } catch (_) {}
     };
@@ -222,8 +365,8 @@
     const btn = document.getElementById('extractBtn');
     const origHtml = btn.innerHTML;
     btn.disabled = true;
-    btn.innerHTML = '<span>Extraindo...</span>';
-    setBanner('Lendo anúncio e montando sua página...');
+    btn.innerHTML = '<span>Lendo link...</span>';
+    startBannerJob('Lendo anúncio e decodificando capa 1:1...', 26, 22);
 
     const res = await api('/api/studio/extract', 'POST', {
       url1,
@@ -474,7 +617,7 @@
     const urls = raw.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
     if (!urls.length) return toast('Informe pelo menos 1 link do TikTok');
     document.getElementById('pasteVideoUrls').value = '';
-    setBanner(`Baixando ${urls.length} vídeo(s) silenciosamente...`);
+    startBannerJob(`Baixando ${urls.length} vídeo(s) e subindo pro Catbox...`, Math.max(12, Math.ceil(urls.length / 4) * 14), 78);
     await api(`/api/studio/draft/${currentDraft.draftId}/videos`, 'POST', { mode: 'urls', urls });
   };
 
@@ -482,7 +625,7 @@
     if (!currentDraft) return toast('Cole o link do produto primeiro');
     const q = document.getElementById('videoSearchQuery').value.trim();
     if (!q) return toast('Digite o termo de busca');
-    setBanner(`Buscando vídeos no TikTok para "${q}"...`);
+    startBannerJob(`Buscando vídeos no TikTok para "${q}"...`, 22, 65);
     await api(`/api/studio/draft/${currentDraft.draftId}/videos`, 'POST', { mode: 'search', query: q });
   };
 
