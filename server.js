@@ -31,6 +31,11 @@ const server = http.createServer((req, res) => {
   // CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
 
+  // Stone Studio (/importador + /api/studio/*) — ativo exclusivamente em STUDIO_MODE=1
+  if (process.env.STUDIO_MODE === '1' && require('./scripts/studio/studio-api').handleStudioRequest(req, res)) {
+    return;
+  }
+
   // Intercepta rota de API /api/chave (se existir)
   if (req.url.startsWith('/api/chave') && fs.existsSync(path.join(ROOT, 'api', 'chave.js'))) {
     const chaveHandler = require(path.join(ROOT, 'api', 'chave.js'));
