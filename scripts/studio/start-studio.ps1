@@ -15,7 +15,7 @@ foreach ($d in @($BinDir, $RuntimeDir)) {
   }
 }
 
-# Limpa processos anteriores nas portas 3333 / 3334 para nunca dar EADDRINUSE
+# Limpa processos anteriores nas portas 3333 / 3334 e instâncias órfãs do worker para nunca travar
 foreach ($p in @($Port, $DaemonPort)) {
   $conns = Get-NetTCPConnection -LocalPort $p -State Listen -ErrorAction SilentlyContinue
   foreach ($c in $conns) {
@@ -24,6 +24,7 @@ foreach ($p in @($Port, $DaemonPort)) {
     }
   }
 }
+Get-CimInstance Win32_Process -Filter "Name='chrome.exe'" -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -match 'stone-studio|window-position=-2400' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
 Get-Process -Name 'cloudflared' -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
 
 # Localiza ou baixa cloudflared oficial

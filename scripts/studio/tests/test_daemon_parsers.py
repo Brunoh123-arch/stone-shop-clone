@@ -6,6 +6,8 @@ from PIL import Image
 
 from scripts.studio.studio_daemon import (
     resolve_and_classify_url,
+    parse_tiktok_share_redirect,
+    build_clean_pt_search_query,
     clean_review_text,
     is_person_creator_handle,
     pad_image_1to1_webp,
@@ -50,7 +52,40 @@ class StudioDaemonHelpersTest(unittest.TestCase):
     def test_detect_captcha_halts_immediately(self):
         self.assertTrue(detect_captcha_or_verification("https://www.mercadolivre.com.br/gz/account-verification", "<html></html>"))
         self.assertTrue(detect_captcha_or_verification("https://shop.tiktok.com/br/pdp/123", "<div>Verify you are human</div>"))
+        self.assertTrue(
+            detect_captcha_or_verification(
+                "https://shop.tiktok.com/view/product/1731634476484232690?region=BR",
+                "<html><head><title>Security Check</title></head><body>Verify to continue: Drag the puzzle piece into place</body></html>",
+            )
+        )
         self.assertFalse(detect_captcha_or_verification("https://www.mercadolivre.com.br/p/MLB123", "<h1>Porta Joias</h1>"))
+
+    def test_parse_tiktok_share_redirect_extracts_product_og_and_seed_video(self):
+        sample_redirect = (
+            "https://www.tiktok.com/login?redirect_url=https%253A%252F%252Fwww.tiktok.com%252Fview%252Fproduct%252F"
+            "1731634476484232690%253F_svg%253D2%2526og_info%253D%25257B%252522title%252522%25253A%252522Luzes%252BDo%252BNorte%252B"
+            "Estrelado%252BL%2525C3%2525A2mpada%252BProjetor%252BLED%252BAtmosfera%252BLuz%252BNoite%252BAura%252BAurora%252B"
+            "Brilhante%252BPara%252BQuarto%252BFesta%252BDecora%2525C3%2525A7%2525C3%2525A3o%252522%25252C%252522image%252522%25253A"
+            "%252522https%25253A%25252F%25252Fp16-oec-sg.ibyteimg.com%25252Ftos-alisg-i-aphluv4xwc-sg%25252Fbbcabd34d1984c2eb90a5a83fd7fd9e3"
+            "~tplv-aphluv4xwc-resize-png%25253A630%25253A630.png%252522%25257D%2526trackParams%253D%25257B%252522traffic_source_list%252522"
+            "%25253A%25255B6%25255D%25252C%252522group_id%252522%25253A%2525227686679229957803285%252522%25257D%2526unique_id%253Dalvinnxd2"
+        )
+        meta = parse_tiktok_share_redirect(sample_redirect)
+        self.assertEqual(meta["product_id"], "1731634476484232690")
+        self.assertEqual(meta["canonical_pdp_url"], "https://shop.tiktok.com/view/product/1731634476484232690?region=BR&locale=pt-BR")
+        self.assertIn("Projetor LED", meta["title"])
+        self.assertIn("Aurora", meta["title"])
+        self.assertTrue(meta["hero_image"].startswith("https://p16-oec-sg.ibyteimg.com/"))
+        self.assertEqual(meta["seed_video_url"], "https://www.tiktok.com/@alvinnxd2/video/7686679229957803285")
+
+    def test_build_clean_pt_search_query_keeps_core_product_nouns(self):
+        q = build_clean_pt_search_query(
+            "Luzes Do Norte Estrelado Lâmpada Projetor LED Atmosfera Luz Noite Aura Aurora Brilhante Para Quarto Festa Decoração"
+        )
+        self.assertIn("projetor", q.lower())
+        self.assertIn("led", q.lower())
+        self.assertIn("aurora", q.lower())
+        self.assertLessEqual(len(q.split()), 6)
 
 
 if __name__ == "__main__":

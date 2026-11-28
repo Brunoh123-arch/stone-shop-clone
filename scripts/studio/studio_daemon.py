@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import threading
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -18,7 +19,7 @@ from PIL import Image
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 LOCAL_STATE_DIR = os.path.join(os.environ.get("LOCALAPPDATA") or ROOT, "stone-studio")
-STUDIO_PROFILE_DIR = os.path.join(LOCAL_STATE_DIR, "chrome-profile")
+STUDIO_PROFILE_DIR = os.path.join(LOCAL_STATE_DIR, "chrome-real-profile")
 FFMPEG_BIN = shutil.which("ffmpeg") or r"C:\Users\Dell\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 
 COMMERCIAL_HANDLE_RE = re.compile(
@@ -33,9 +34,16 @@ BANNED_REVIEW_RE = re.compile(
 
 CAPTCHA_URL_RE = re.compile(r"(/gz/account-verification|/security-check|captcha|challenge)", re.IGNORECASE)
 CAPTCHA_HTML_RE = re.compile(
-    r"(verify you are human|confirme que voc[eê] [eé] humano|g-recaptcha|h-captcha|cf-turnstile|waf-captcha-verify)",
+    r"(verify you are human|verify to continue|drag the puzzle piece|<title>\s*security check\s*</title>|confirme que voc[eê] [eé] humano|g-recaptcha|h-captcha|cf-turnstile|waf-captcha-verify)",
     re.IGNORECASE,
 )
+
+PT_SEARCH_STOPWORDS = {
+    "a", "o", "as", "os", "de", "da", "do", "das", "dos", "em", "no", "na", "nos", "nas",
+    "para", "pra", "por", "com", "sem", "e", "ou", "um", "uma", "kit", "combo", "novo", "nova",
+    "alta", "qualidade", "original", "oficial", "envio", "rapido", "rápido", "promocao", "promoção",
+    "oferta", "luzes", "norte", "estrelado", "atmosfera", "luz", "noite", "aura", "brilhante",
+}
 
 MOBILE_UA = (
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) "
@@ -47,10 +55,140 @@ DESKTOP_UA = (
 )
 
 
-def resolve_and_classify_url(url: str, follow_redirects: bool = True) -> tuple[str, str]:
+def strip_accents(text: str) -> str:
+    norm = unicodedata.normalize("NFKD", str(text or ""))
+    return "".join(ch for ch in norm if not unicodedata.combining(ch))
+
+
+def parse_tiktok_share_redirect(url: str) -> dict:
+    out = {
+        "product_id": "",
+        "canonical_pdp_url": "",
+        "title": "",
+        "hero_image": "",
+        "seed_video_url": "",
+        "gated_login_redirect": False,
+    }
     raw = str(url or "").strip()
+    if not raw or "tiktok.com" not in raw.lower():
+        return out
+
+    if "/login" in raw.lower() or "redirect_url=" in raw.lower():
+        out["gated_login_redirect"] = True
+
+    target_u = raw
+    try:
+        parsed = urllib.parse.urlparse(raw)
+        qs_outer = urllib.parse.parse_qs(parsed.query)
+        if "redirect_url" in qs_outer and qs_outer["redirect_url"]:
+            cand = qs_outer["redirect_url"][0]
+            for _ in range(3):
+                if "%25" in cand or cand.lower().startswith("https%3a") or cand.lower().startswith("http%3a"):
+                    cand = urllib.parse.unquote(cand)
+                else:
+                    break
+            target_u = cand
+    except Exception:
+        target_u = raw
+
+    decoded_full = target_u
+    for _ in range(3):
+        dec = urllib.parse.unquote_plus(decoded_full)
+        if dec == decoded_full:
+            break
+        decoded_full = dec
+
+    m_pid = (
+        re.search(r"/(?:view/product|pdp)/(?:[a-zA-Z-]+/)?(\d{12,25})", target_u)
+        or re.search(r"/(?:view/product|pdp)/(?:[a-zA-Z-]+/)?(\d{12,25})", decoded_full)
+        or re.search(r'"product_id"\s*:\s*"(\d{12,25})"', decoded_full)
+    )
+    if m_pid:
+        pid = m_pid.group(1)
+        out["product_id"] = pid
+        out["canonical_pdp_url"] = f"https://shop.tiktok.com/view/product/{pid}?region=BR&locale=pt-BR"
+
+    unique_id = ""
+    group_id = ""
+    try:
+        t_parsed = urllib.parse.urlparse(target_u)
+        t_qs = urllib.parse.parse_qs(t_parsed.query)
+        if "unique_id" in t_qs and t_qs["unique_id"]:
+            unique_id = urllib.parse.unquote_plus(t_qs["unique_id"][0]).strip()
+
+        if "og_info" in t_qs and t_qs["og_info"]:
+            og_raw = t_qs["og_info"][0]
+            for _ in range(2):
+                if og_raw.strip().startswith("%"):
+                    og_raw = urllib.parse.unquote_plus(og_raw)
+            og_obj = json.loads(og_raw)
+            if isinstance(og_obj, dict):
+                out["title"] = str(og_obj.get("title") or "").replace("+", " ").strip()
+                img_u = str(og_obj.get("image") or "").strip()
+                if img_u.startswith("http"):
+                    out["hero_image"] = img_u
+
+        if "trackParams" in t_qs and t_qs["trackParams"]:
+            tp_raw = t_qs["trackParams"][0]
+            for _ in range(2):
+                if tp_raw.strip().startswith("%"):
+                    tp_raw = urllib.parse.unquote_plus(tp_raw)
+            tp_obj = json.loads(tp_raw)
+            if isinstance(tp_obj, dict) and tp_obj.get("group_id"):
+                group_id = str(tp_obj["group_id"]).strip()
+    except Exception:
+        pass
+
+    if not unique_id:
+        m_uid = re.search(r"[?&]unique_id=([a-zA-Z0-9._-]+)", decoded_full)
+        if m_uid:
+            unique_id = m_uid.group(1)
+    if not group_id:
+        m_gid = re.search(r'"group_id"\s*:\s*"(\d{15,25})"', decoded_full)
+        if m_gid:
+            group_id = m_gid.group(1)
+
+    if group_id and re.match(r"^\d{15,25}$", group_id):
+        safe_handle = re.sub(r"[^a-zA-Z0-9._-]", "", unique_id) or "tiktok"
+        out["seed_video_url"] = f"https://www.tiktok.com/@{safe_handle}/video/{group_id}"
+
+    return out
+
+
+def build_clean_pt_search_query(title: str, max_words: int = 5) -> str:
+    tokens = re.findall(r"[A-Za-zÀ-ÿ0-9]{2,}", str(title or ""))
+    kept = []
+    seen = set()
+    for tok in tokens:
+        low = tok.lower()
+        if low in PT_SEARCH_STOPWORDS:
+            continue
+        if len(low) < 3 and low not in ("tv", "5g", "4k", "3d"):
+            continue
+        if low in seen:
+            continue
+        seen.add(low)
+        kept.append(tok)
+        if len(kept) >= max_words:
+            break
+    if not kept:
+        kept = tokens[:max_words]
+    return " ".join(kept)
+
+
+def resolve_source_url_metadata(url: str, follow_redirects: bool = True) -> dict:
+    raw = str(url or "").strip()
+    base = {
+        "canonical": "",
+        "kind": "unknown",
+        "product_id": "",
+        "canonical_pdp_url": "",
+        "title": "",
+        "hero_image": "",
+        "seed_video_url": "",
+    }
     if not raw:
-        return ("", "unknown")
+        return base
     if not re.match(r"^https?://", raw, re.IGNORECASE):
         raw = "https://" + raw
 
@@ -72,21 +210,38 @@ def resolve_and_classify_url(url: str, follow_redirects: bool = True) -> tuple[s
         except Exception:
             canonical = raw
 
+    tt_meta = parse_tiktok_share_redirect(canonical) if "tiktok.com" in canonical.lower() else {}
+    if tt_meta.get("product_id") and tt_meta.get("canonical_pdp_url"):
+        return {
+            "canonical": tt_meta["canonical_pdp_url"],
+            "kind": "tiktok_shop",
+            **tt_meta,
+        }
+
     low = canonical.lower()
     if "mercadolivre.com" in low or "mercadolibre.com" in low or "meli.la" in low:
-        return (canonical, "mercadolivre")
-    # Check /video/ BEFORE product so video URLs with ?product=... are never opened in Playwright!
-    if "tiktok.com/" in low and ("/video/" in low or "/photo/" in low):
-        return (canonical, "tiktok_video")
-    if "shop.tiktok.com" in low or "/pdp/" in low or ("product" in low and "tiktok.com" in low):
-        return (canonical, "tiktok_shop")
-    if "vm.tiktok.com" in low or "vt.tiktok.com" in low:
-        return (canonical, "tiktok_video")
-    if "tiktok.com/@" in low:
-        return (canonical, "tiktok_video")
-    if "tiktok.com" in low:
-        return (canonical, "tiktok_shop")
-    return (canonical, "unknown")
+        kind = "mercadolivre"
+    elif "tiktok.com/" in low and ("/video/" in low or "/photo/" in low):
+        kind = "tiktok_video"
+    elif "shop.tiktok.com" in low or "/pdp/" in low or ("product" in low and "tiktok.com" in low):
+        kind = "tiktok_shop"
+    elif "vm.tiktok.com" in low or "vt.tiktok.com" in low or "tiktok.com/@" in low:
+        kind = "tiktok_video"
+    elif "tiktok.com" in low:
+        kind = "tiktok_shop"
+    else:
+        kind = "unknown"
+
+    return {
+        "canonical": canonical,
+        "kind": kind,
+        **tt_meta,
+    }
+
+
+def resolve_and_classify_url(url: str, follow_redirects: bool = True) -> tuple[str, str]:
+    meta = resolve_source_url_metadata(url, follow_redirects=follow_redirects)
+    return (meta["canonical"], meta["kind"])
 
 
 def detect_captcha_or_verification(url: str, html_text: str) -> bool:
@@ -215,22 +370,128 @@ def patch_node_draft(draft_id: str, op: str, event_name: str | None = None, **fi
 _CATBOX_POOL = concurrent.futures.ThreadPoolExecutor(max_workers=4)
 
 
+CHROME_EXE = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+CHROME_USER_DATA_DIR = os.path.join(os.environ.get("LOCALAPPDATA") or "", "Google", "Chrome", "User Data")
+DEVTOOLS_ACTIVE_PORT_FILE = os.path.join(CHROME_USER_DATA_DIR, "DevToolsActivePort")
+
+
+_PROFILE_42_OPENED_ONCE = False
+
+
+def ensure_profile_42_open():
+    global _PROFILE_42_OPENED_ONCE
+    if _PROFILE_42_OPENED_ONCE or not os.path.exists(CHROME_EXE):
+        return
+    _PROFILE_42_OPENED_ONCE = True
+    try:
+        subprocess.Popen(
+            [
+                CHROME_EXE,
+                "--profile-directory=Profile 42",
+                "--mute-audio",
+                "about:blank",
+            ],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+    except Exception:
+        pass
+
+
 class WarmPlaywrightWorker:
-    """Single-thread warm Playwright controller: muted, minimized, zero media playback, self-healing."""
+    """Single-thread warm Playwright controller connected to Chrome Profile 42 (with safe isolated fallback)."""
 
     def __init__(self):
         self.tasks = queue.Queue()
         self.is_warm = False
+        self.profile42_connected = False
+        self.connecting_p42 = False
+        self.force_reconnect_p42 = True
         self.thread = threading.Thread(target=self._loop, daemon=True)
         self.thread.start()
 
-    def submit(self, fn, *args, timeout=50):
+    def request_profile42_reconnect(self):
+        self.force_reconnect_p42 = True
+        self.tasks.put((lambda _p: self.profile42_connected, (), queue.Queue(maxsize=1)))
+
+    def submit(self, fn, *args, timeout=75):
         res_q = queue.Queue(maxsize=1)
         self.tasks.put((fn, args, res_q))
         ok, val = res_q.get(timeout=timeout)
         if not ok:
             raise RuntimeError(val)
         return val
+
+    def _connect_cdp_profile42(self, pw, timeout_ms=90000):
+        if not os.path.exists(DEVTOOLS_ACTIVE_PORT_FILE):
+            return None, None
+        self.connecting_p42 = True
+        try:
+            lines = open(DEVTOOLS_ACTIVE_PORT_FILE, "r", encoding="utf-8").read().strip().splitlines()
+            if len(lines) < 2:
+                return None, None
+            ws_url = f"ws://127.0.0.1:{lines[0].strip()}{lines[1].strip()}"
+            print(f"[StudioDaemon] Aguardando clique em Permitir no Chrome Profile 42 ({ws_url})...", flush=True)
+            browser = pw.chromium.connect_over_cdp(ws_url, timeout=timeout_ms)
+            ensure_profile_42_open()
+            time.sleep(1.2)
+
+            # Pick the Profile 42 context (prefer context with blank tab or TikTok/ML cookies; never touch Netflix tabs!)
+            chosen_ctx = None
+            chosen_blank_page = None
+            for c in reversed(browser.contexts):
+                urls = [pg.url for pg in c.pages]
+                if any("netflix.com" in u.lower() or "youtube.com/watch" in u.lower() for u in urls):
+                    continue
+                for pg in c.pages:
+                    if pg.url in ("about:blank", "chrome://newtab/", "chrome://new-tab-page/"):
+                        chosen_ctx = c
+                        chosen_blank_page = pg
+                        break
+                if chosen_ctx:
+                    break
+
+            if chosen_ctx is None and browser.contexts:
+                # Fallback: pick last context and open a fresh background tab without touching existing tabs
+                chosen_ctx = browser.contexts[-1]
+
+            if chosen_ctx is None:
+                return None, None
+
+            page = chosen_blank_page if chosen_blank_page is not None else chosen_ctx.new_page()
+            try:
+                # Minimize ONLY if this window has a single blank tab (never minimize user's active browsing window)
+                if len(chosen_ctx.pages) <= 2 and chosen_blank_page is not None:
+                    cdp = chosen_ctx.new_cdp_session(page)
+                    win = cdp.send("Browser.getWindowForTarget")
+                    cdp.send(
+                        "Browser.setWindowBounds",
+                        {"windowId": win["windowId"], "bounds": {"windowState": "minimized"}},
+                    )
+            except Exception:
+                pass
+
+            def _block_media(route):
+                if route.request.resource_type in ("media", "font"):
+                    route.abort()
+                else:
+                    route.continue_()
+
+            try:
+                page.unroute("**/*")
+            except Exception:
+                pass
+            page.route("**/*", _block_media)
+            self.profile42_connected = True
+            self.is_warm = True
+            print("[StudioDaemon] CONECTADO COM SUCESSO AO CHROME PROFILE 42!", flush=True)
+            return chosen_ctx, page
+        except Exception as e:
+            print(f"[StudioDaemon] CDP Profile 42 timeout/aviso: {e}", flush=True)
+            self.profile42_connected = False
+            return None, None
+        finally:
+            self.connecting_p42 = False
 
     def _loop(self):
         pw = None
@@ -244,28 +505,51 @@ class WarmPlaywrightWorker:
                         if page.is_closed():
                             page = None
                             ctx = None
+                            self.profile42_connected = False
                     except Exception:
                         page = None
                         ctx = None
+                        self.profile42_connected = False
 
-                if ctx is None:
+                if pw is None:
                     from playwright.sync_api import sync_playwright
+                    pw = sync_playwright().start()
 
-                    os.makedirs(STUDIO_PROFILE_DIR, exist_ok=True)
-                    if pw is None:
-                        pw = sync_playwright().start()
-                    ctx = pw.chromium.launch_persistent_context(
-                        STUDIO_PROFILE_DIR,
-                        headless=False,
-                        args=[
-                            "--mute-audio",
-                            "--disable-audio-output",
-                            "--autoplay-policy=user-gesture-required",
-                            "--window-position=-2400,-2400",
-                            "--window-size=1280,860",
-                        ],
-                        locale="pt-BR",
-                    )
+                if self.force_reconnect_p42 and not self.profile42_connected:
+                    self.force_reconnect_p42 = False
+                    p42_ctx, p42_page = self._connect_cdp_profile42(pw, timeout_ms=75000)
+                    if p42_ctx and p42_page:
+                        ctx = p42_ctx
+                        page = p42_page
+
+                if ctx is None or page is None:
+                    session_profile_dir = os.path.join(LOCAL_STATE_DIR, f"chrome-session-{os.getpid()}")
+                    os.makedirs(session_profile_dir, exist_ok=True)
+                    launch_args = [
+                        "--mute-audio",
+                        "--disable-audio-output",
+                        "--autoplay-policy=user-gesture-required",
+                        "--window-position=-2400,-2400",
+                        "--window-size=1280,860",
+                        "--disable-blink-features=AutomationControlled",
+                    ]
+                    try:
+                        ctx = pw.chromium.launch_persistent_context(
+                            session_profile_dir,
+                            channel="chrome",
+                            headless=False,
+                            args=launch_args,
+                            locale="pt-BR",
+                            viewport={"width": 1280, "height": 860},
+                        )
+                    except Exception:
+                        ctx = pw.chromium.launch_persistent_context(
+                            session_profile_dir,
+                            headless=False,
+                            args=launch_args,
+                            locale="pt-BR",
+                            viewport={"width": 1280, "height": 860},
+                        )
                     page = ctx.pages[0] if ctx.pages else ctx.new_page()
                     try:
                         cdp = ctx.new_cdp_session(page)
@@ -277,13 +561,13 @@ class WarmPlaywrightWorker:
                     except Exception:
                         pass
 
-                    def _block_media(route):
+                    def _block_media_fallback(route):
                         if route.request.resource_type in ("media", "font"):
                             route.abort()
                         else:
                             route.continue_()
 
-                    page.route("**/*", _block_media)
+                    page.route("**/*", _block_media_fallback)
                     self.is_warm = True
 
                 out = fn(page, *args)
@@ -291,17 +575,24 @@ class WarmPlaywrightWorker:
                     page.goto("about:blank", timeout=4000)
                 except Exception:
                     pass
-                res_q.put((True, out))
+                try:
+                    res_q.put_nowait((True, out))
+                except queue.Full:
+                    pass
             except Exception as e:
                 if "Target page, context or browser has been closed" in str(e):
                     ctx = None
                     page = None
+                    self.profile42_connected = False
                 try:
                     if page:
                         page.goto("about:blank", timeout=3000)
                 except Exception:
                     pass
-                res_q.put((False, str(e)))
+                try:
+                    res_q.put_nowait((False, str(e)))
+                except queue.Full:
+                    pass
 
 
 _BROWSER = WarmPlaywrightWorker()
@@ -595,36 +886,143 @@ def _scrape_dom_in_playwright(page, url: str, kind: str) -> dict:
     )
 
 
-def _search_tiktok_video_urls(page, query: str) -> dict:
-    q_enc = urllib.parse.quote(query.strip())
-    search_url = f"https://www.tiktok.com/search/video?q={q_enc}"
-    page.goto(search_url, wait_until="domcontentloaded", timeout=20000)
-    page.wait_for_timeout(2200)
-    cur_url = page.url
-    if detect_captcha_or_verification(cur_url, page.content()[:15000]):
-        return {"captcha": True, "items": []}
-    try:
-        page.evaluate("window.scrollBy(0, 1400)")
-        page.wait_for_timeout(1200)
-    except Exception:
-        pass
-    items = page.evaluate(
+def _discover_and_scrape_ml_by_query(page, query: str) -> dict:
+    ascii_q = strip_accents(query).lower()
+    ascii_q = re.sub(r"\blampada\b", "luminaria", ascii_q)
+    slug_q = re.sub(r"[^a-z0-9]+", "-", ascii_q).strip("-")
+    if not slug_q:
+        return {"captcha": False, "found": False}
+    list_url = f"https://lista.mercadolivre.com.br/{urllib.parse.quote(slug_q)}"
+    page.goto(list_url, wait_until="domcontentloaded", timeout=18000)
+    page.wait_for_timeout(1300)
+    if detect_captcha_or_verification(page.url, page.content()[:15000]):
+        return {"captcha": True, "found": False}
+
+    candidates = page.evaluate(
         """() => {
-        const found = [];
-        const seen = new Set();
-        document.querySelectorAll('a[href*="/video/"]').forEach(a => {
-          const href = a.href.split('?')[0];
-          const m = href.match(/tiktok\\.com\\/@([^/]+)\\/video\\/(\\d+)/i);
-          if (m && !seen.has(m[2])) {
-            seen.add(m[2]);
-            found.push({ url: href, username: m[1], video_id: m[2] });
-          }
+        const byUrl = new Map();
+        const registerLink = (rawHref, revs) => {
+          const raw = (rawHref || '').split('#')[0].split('?')[0];
+          if (!raw || raw.includes('click1.') || raw.includes('/ofertas') || raw.includes('/ajuda') || raw.includes('lista.mercadolivre')) return;
+          if (!(/\\/p\\/MLB\\d+/i.test(raw) || /MLB-?\\d{7,}/i.test(raw) || /\\/up\\/MLBU\\d+/i.test(raw))) return;
+          const isCat = /\\/p\\/MLB\\d+/i.test(raw) ? 1 : 0;
+          const prev = byUrl.get(raw);
+          if (!prev || revs > prev.revs) byUrl.set(raw, { url: raw, revs, isCat });
+        };
+
+        document.querySelectorAll('li.ui-search-layout__item, div.poly-card, div.ui-search-result__wrapper').forEach(card => {
+          const revMatch = (card.innerText || '').match(/\\((\\d[\\d.]*)\\)/);
+          const revs = revMatch ? (parseInt(revMatch[1].replace(/\\./g, ''), 10) || 0) : 0;
+          card.querySelectorAll('a[href*="mercadolivre.com.br"]:not([href*="click1."])').forEach(a => registerLink(a.href, revs));
         });
-        return found.slice(0, 26);
+
+        if (byUrl.size === 0) {
+          document.querySelectorAll('a[href*="mercadolivre.com.br"]:not([href*="click1."])').forEach(a => registerLink(a.href, 0));
+        }
+
+        const arr = Array.from(byUrl.values());
+        arr.sort((a, b) => (b.revs - a.revs) || (b.isCat - a.isCat));
+        return arr.slice(0, 4).map(x => x.url);
         }"""
     )
-    filtered = [it for it in (items or []) if is_person_creator_handle(it.get("username", ""), "")]
-    return {"captcha": False, "items": filtered}
+
+    agg = {
+        "captcha": False,
+        "found": False,
+        "title": "",
+        "price_original": 0.0,
+        "slides": [],
+        "variations": {},
+        "details": [],
+        "description_html": "",
+        "reviews": [],
+    }
+    for cand_url in (candidates or [])[:3]:
+        try:
+            dom = _scrape_dom_in_playwright(page, cand_url, "mercadolivre")
+            if dom.get("captcha"):
+                break
+            agg["found"] = True
+            if not agg["title"] and dom.get("title"):
+                agg["title"] = dom["title"]
+            if not agg["price_original"] and dom.get("price_original"):
+                agg["price_original"] = float(dom["price_original"])
+            for s in dom.get("slides") or []:
+                if s not in agg["slides"]:
+                    agg["slides"].append(s)
+            if not agg["variations"] and dom.get("variations"):
+                agg["variations"] = dom["variations"]
+            if not agg["details"] and dom.get("details"):
+                agg["details"] = dom["details"]
+            if not agg["description_html"] and dom.get("description_html"):
+                agg["description_html"] = dom["description_html"]
+            agg["reviews"].extend(dom.get("reviews") or [])
+
+            photo_revs = sum(1 for r in agg["reviews"] if r.get("photos"))
+            if len(agg["slides"]) >= 5 and photo_revs >= 7 and len(agg["reviews"]) >= 26:
+                break
+        except Exception:
+            pass
+    return agg
+
+
+def _search_tiktok_video_urls(page, query: str) -> dict:
+    ascii_q = strip_accents(query).lower()
+    ascii_q = re.sub(r"\blampada\b", "luminaria", ascii_q)
+    words = [w for w in ascii_q.split() if len(w) >= 2]
+    q_full = " ".join(words[:5])
+    q_core = " ".join(words[:3])
+    q_tail = " ".join([words[0]] + words[2:5]) if len(words) >= 4 else f"{q_core} review"
+
+    ddg_queries = []
+    for cand_q in [
+        f"tiktok.com video {q_full}",
+        f"tiktok.com video {q_tail}",
+        f"tiktok.com video {q_core} review",
+    ]:
+        if cand_q not in ddg_queries:
+            ddg_queries.append(cand_q)
+
+    collected = []
+    seen_vids = set()
+    seen_users = set()
+
+    for dq in ddg_queries:
+        try:
+            ddg_url = "https://html.duckduckgo.com/html/?q=" + urllib.parse.quote(dq)
+            page.goto(ddg_url, wait_until="domcontentloaded", timeout=14000)
+            page.wait_for_timeout(950)
+            rows = page.evaluate(
+                """() => {
+                const found = [];
+                document.querySelectorAll('a[href]').forEach(a => {
+                  let h = a.href || '';
+                  if (h.includes('duckduckgo.com/y.js')) return;
+                  const mUddg = h.match(/uddg=([^&]+)/);
+                  if (mUddg) { try { h = decodeURIComponent(mUddg[1]); } catch(e) {} }
+                  const clean = h.split('?')[0];
+                  const m = clean.match(/tiktok\\.com\\/@([^/]+)\\/video\\/(\\d+)/i);
+                  if (m) found.push({ url: clean, username: m[1], video_id: m[2] });
+                });
+                return found;
+                }"""
+            )
+            for it in rows or []:
+                vid = it.get("video_id") or ""
+                uname = (it.get("username") or "").lower()
+                if not vid or vid in seen_vids or uname in seen_users:
+                    continue
+                if not is_person_creator_handle(uname, ""):
+                    continue
+                seen_vids.add(vid)
+                seen_users.add(uname)
+                collected.append(it)
+        except Exception:
+            pass
+        if len(collected) >= 14:
+            break
+
+    return {"captcha": False, "items": collected[:24]}
 
 
 def fetch_tikwm_info(video_url: str) -> dict | None:
@@ -669,6 +1067,35 @@ def fetch_tikwm_info(video_url: str) -> dict | None:
 
 
 def upload_file_to_catbox(filepath: str) -> str | None:
+    if not os.path.exists(filepath) or os.path.getsize(filepath) < 100_000:
+        return None
+
+    # Primary fast path on Windows: native curl.exe (uses Schannel TLS, zero memory copy)
+    curl_bin = shutil.which("curl.exe") or r"C:\Windows\System32\curl.exe"
+    if os.path.exists(curl_bin):
+        try:
+            proc = subprocess.run(
+                [
+                    curl_bin,
+                    "-sS",
+                    "--max-time",
+                    "80",
+                    "-F",
+                    "reqtype=fileupload",
+                    "-F",
+                    f"fileToUpload=@{filepath};type=video/mp4",
+                    "https://catbox.moe/user/api.php",
+                ],
+                capture_output=True,
+                text=True,
+                timeout=85,
+            )
+            out_curl = (proc.stdout or "").strip()
+            if proc.returncode == 0 and out_curl.startswith("https://files.catbox.moe/"):
+                return out_curl
+        except Exception as e:
+            print(f"[StudioDaemon] curl Catbox fallback notice: {e}", flush=True)
+
     boundary = "----StoneStudioBoundary" + hashlib.md5(filepath.encode()).hexdigest()[:12]
     filename = os.path.basename(filepath)
     with open(filepath, "rb") as f:
@@ -718,7 +1145,10 @@ def process_single_video_to_catbox(draft_id: str, draft_dir: str, vid_meta: dict
     avatar_abs = os.path.join(media_dir, f"avatar_{vid_id}.jpg")
 
     try:
-        req = urllib.request.Request(vid_meta["stream_url"], headers={"User-Agent": DESKTOP_UA})
+        req = urllib.request.Request(
+            vid_meta["stream_url"],
+            headers={"User-Agent": DESKTOP_UA, "Referer": "https://www.tiktok.com/"},
+        )
         with urllib.request.urlopen(req, timeout=45) as resp, open(raw_mp4, "wb") as out_f:
             shutil.copyfileobj(resp, out_f)
 
@@ -777,28 +1207,48 @@ def process_single_video_to_catbox(draft_id: str, draft_dir: str, vid_meta: dict
         print(f"[StudioDaemon] video worker err ({vid_id}): {e}", flush=True)
 
 
-def run_videos_pipeline(draft_id: str, draft_dir: str, mode: str, query: str = "", urls: list[str] | None = None):
+def run_videos_pipeline(
+    draft_id: str,
+    draft_dir: str,
+    mode: str,
+    query: str = "",
+    urls: list[str] | None = None,
+    seed_urls: list[str] | None = None,
+):
     candidates = []
+    seen_cand_urls = set()
+
+    for su in seed_urls or []:
+        if su and su not in seen_cand_urls:
+            seen_cand_urls.add(su)
+            candidates.append({"url": su, "is_seed": True})
+
     if mode == "urls" and urls:
         for u in urls:
-            cu, _ = resolve_and_classify_url(u, follow_redirects=True)
-            if cu:
-                candidates.append({"url": cu})
+            meta_u = resolve_source_url_metadata(u, follow_redirects=True)
+            cu = meta_u.get("seed_video_url") or meta_u.get("canonical") or ""
+            if cu and cu not in seen_cand_urls:
+                seen_cand_urls.add(cu)
+                candidates.append({"url": cu, "is_seed": True})
     else:
         q = (query or "").strip()
         if q:
             try:
-                search_res = _BROWSER.submit(_search_tiktok_video_urls, q, timeout=35)
-                if search_res.get("captcha"):
+                search_res = _BROWSER.submit(_search_tiktok_video_urls, q, timeout=40)
+                for it in search_res.get("items") or []:
+                    u_it = it.get("url") or ""
+                    if u_it and u_it not in seen_cand_urls:
+                        seen_cand_urls.add(u_it)
+                        candidates.append(it)
+                if search_res.get("captcha") and not candidates:
                     notify_node_studio(
                         draft_id,
                         "warning",
                         {
                             "code": "NEEDS_USER_ACTION",
-                            "message": "TikTok pediu verificação humana na busca automática. Cole os links dos vídeos manualmente na aba Vídeos.",
+                            "message": "A busca automática pediu verificação humana. Cole links do TikTok na aba Vídeos se quiser adicionar.",
                         },
                     )
-                candidates.extend(search_res.get("items") or [])
             except Exception as e:
                 print(f"[StudioDaemon] TikTok search error: {e}", flush=True)
 
@@ -806,19 +1256,27 @@ def run_videos_pipeline(draft_id: str, draft_dir: str, mode: str, query: str = "
         notify_node_studio(draft_id, "videos_preview_ready", {"count": 0})
         return
 
-    resolved = []
+    # Preserve order (seed video first!) while resolving via tikwm in parallel
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as meta_pool:
-        futs = [meta_pool.submit(fetch_tikwm_info, c["url"]) for c in candidates[:22]]
+        ordered_futs = [(c, meta_pool.submit(fetch_tikwm_info, c["url"])) for c in candidates[:22]]
+        resolved = []
         seen_streams = set()
-        for fut in concurrent.futures.as_completed(futs):
-            info = fut.result()
+        seen_resolved_users = set()
+        for c_item, fut in ordered_futs:
+            try:
+                info = fut.result(timeout=15)
+            except Exception:
+                info = None
             if not info:
                 continue
-            if mode != "urls" and not is_person_creator_handle(info["username"], info["name"]):
+            uname_low = str(info.get("username") or "").lower()
+            if mode != "urls" and not c_item.get("is_seed") and not is_person_creator_handle(info["username"], info["name"]):
                 continue
-            if info["id"] in seen_streams:
+            if info["id"] in seen_streams or (uname_low and uname_low in seen_resolved_users):
                 continue
             seen_streams.add(info["id"])
+            if uname_low:
+                seen_resolved_users.add(uname_low)
             resolved.append(info)
 
     if not resolved:
@@ -853,6 +1311,7 @@ def run_videos_pipeline(draft_id: str, draft_dir: str, mode: str, query: str = "
         mode=mode,
         videos=mapped,
         firstDuration=resolved[0]["duration"],
+        extra={"count": len(mapped)},
     )
 
     for idx, inf in enumerate(resolved[:14]):
@@ -863,8 +1322,17 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
     media_dir = os.path.join(draft_dir, "media")
     os.makedirs(media_dir, exist_ok=True)
 
-    u1, kind1 = resolve_and_classify_url(url1, follow_redirects=True)
-    u2, kind2 = resolve_and_classify_url(url2, follow_redirects=True) if url2 else ("", "unknown")
+    meta1 = resolve_source_url_metadata(url1, follow_redirects=True)
+    meta2 = resolve_source_url_metadata(url2, follow_redirects=True) if url2 else {"canonical": "", "kind": "unknown"}
+
+    u1, kind1 = meta1["canonical"], meta1["kind"]
+    u2, kind2 = meta2.get("canonical") or "", meta2.get("kind") or "unknown"
+
+    seed_video_urls = []
+    for m_src in (meta1, meta2):
+        sv = m_src.get("seed_video_url") or ""
+        if sv and sv not in seed_video_urls:
+            seed_video_urls.append(sv)
 
     # Never open tiktok_video links in Playwright — route them directly through silent tikwm!
     direct_video_urls = []
@@ -875,49 +1343,79 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
     if direct_video_urls:
         run_videos_pipeline(draft_id, draft_dir, mode="urls", urls=direct_video_urls)
 
-    # Stage 1A: Ultra-Fast HTTP SSR Pass (~1.5s)
+    # Stage 1A: Instant Metadata & Hero Image Preview (< 1s for vt.tiktok.com or ML SSR!)
     fast_data = parse_ml_html_fast(u1) if kind1 == "mercadolivre" else None
     if fast_data and fast_data.get("captcha"):
         fast_data = None
 
-    if fast_data and fast_data.get("title"):
-        fast_slides = [{"src": s, "alt": f"{fast_data['title']} - {i + 1}"} for i, s in enumerate(fast_data.get("slides") or [])]
+    initial_title = (fast_data or {}).get("title") or meta1.get("title") or meta2.get("title") or ""
+    initial_price = float((fast_data or {}).get("price_original") or 0)
+    initial_remote_slides = list((fast_data or {}).get("slides") or [])
+    for hero in (meta1.get("hero_image"), meta2.get("hero_image")):
+        if hero and hero not in initial_remote_slides:
+            initial_remote_slides.insert(0, hero)
+
+    local_fast_slides = []
+    seen_slide_md5 = set()
+    for idx_s, s_u in enumerate(initial_remote_slides[:4]):
+        b_fast = download_bytes(s_u, timeout=8)
+        if b_fast:
+            h_md5 = hashlib.md5(b_fast).hexdigest()
+            if h_md5 in seen_slide_md5:
+                continue
+            seen_slide_md5.add(h_md5)
+            out_fast = os.path.join(media_dir, f"slide_{len(local_fast_slides) + 1}.webp")
+            try:
+                pad_image_1to1_webp(b_fast, out_fast, size=1000)
+                local_fast_slides.append(
+                    {
+                        "src": f"/.studio-drafts/{draft_id}/media/slide_{len(local_fast_slides) + 1}.webp",
+                        "alt": f"{initial_title or 'Produto'} - {len(local_fast_slides) + 1}",
+                    }
+                )
+                continue
+            except Exception:
+                pass
+        local_fast_slides.append({"src": s_u, "alt": f"{initial_title or 'Produto'} - {idx_s + 1}"})
+
+    if initial_title or local_fast_slides:
         patch_node_draft(
             draft_id,
             "extract_fast",
             event_name="fast_preview",
-            title=fast_data["title"],
-            price_original=float(fast_data.get("price_original") or 0),
-            slides=fast_slides,
-            description_html=fast_data.get("description_html") or "",
+            title=initial_title,
+            price_original=initial_price,
+            slides=local_fast_slides,
+            description_html=(fast_data or {}).get("description_html") or "",
         )
 
-    # Stage 1B: Warm Playwright Pass (strictly for mercadolivre / tiktok_shop PDPs)
-    merged_slides = list((fast_data or {}).get("slides") or [])
+    # Stage 1B: Warm Playwright Pass (Official Chrome) + Auto Cross-Marketplace Enrichment
+    merged_slides = list(initial_remote_slides)
     merged_vars = {}
     merged_details = []
     merged_desc = (fast_data or {}).get("description_html") or ""
-    merged_title = (fast_data or {}).get("title") or ""
-    merged_price = float((fast_data or {}).get("price_original") or 0)
+    merged_title = initial_title
+    merged_price = initial_price
     raw_reviews = []
+    hit_primary_captcha = False
 
-    for src_u, src_k in [(u1, kind1), (u2, kind2)]:
+    for src_meta in (meta1, meta2):
+        src_u = src_meta.get("canonical") or ""
+        src_k = src_meta.get("kind") or "unknown"
         if not src_u or src_k not in ("mercadolivre", "tiktok_shop"):
             continue
+        # Skip gated TikTok Shop PDP ONLY if Profile 42 is NOT connected; when Profile 42 IS connected, scrape the logged-in TikTok Shop PDP directly!
+        if src_k == "tiktok_shop" and src_meta.get("gated_login_redirect") and initial_title and not _BROWSER.profile42_connected:
+            hit_primary_captcha = True
+            continue
         try:
-            dom_res = _BROWSER.submit(_scrape_dom_in_playwright, src_u, src_k, timeout=42)
+            dom_res = _BROWSER.submit(_scrape_dom_in_playwright, src_u, src_k, timeout=30)
             if dom_res.get("redirected_video"):
-                run_videos_pipeline(draft_id, draft_dir, mode="urls", urls=[dom_res["redirected_video"]])
+                if dom_res["redirected_video"] not in seed_video_urls:
+                    seed_video_urls.append(dom_res["redirected_video"])
                 continue
             if dom_res.get("captcha"):
-                notify_node_studio(
-                    draft_id,
-                    "warning",
-                    {
-                        "code": "NEEDS_USER_ACTION",
-                        "message": f"A fonte {src_k} solicitou verificação humana. Seguindo regra anti-CAPTCHA, parei essa fonte.",
-                    },
-                )
+                hit_primary_captcha = True
                 continue
             if not merged_title and dom_res.get("title"):
                 merged_title = dom_res["title"]
@@ -936,48 +1434,119 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
         except Exception as e:
             print(f"[StudioDaemon] DOM scrape err ({src_u}): {e}", flush=True)
 
+    photo_rev_count = sum(1 for r in raw_reviews if r.get("photos"))
+    search_q = build_clean_pt_search_query(merged_title, max_words=5) if merged_title else ""
+
+    # Auto-enrich gallery 1:1, specs, PT-BR reviews, and buyer unboxing photos when TikTok Shop gates PDP or has < 4 slides / < 6 unboxings
+    if search_q and (len(merged_slides) < 4 or photo_rev_count < 6 or len(raw_reviews) < 20):
+        notify_node_studio(
+            draft_id,
+            "status_info",
+            {"message": f'Enriquecendo fotos HD 1:1 e avaliações reais para "{search_q}"...'},
+        )
+        try:
+            enrich_res = _BROWSER.submit(_discover_and_scrape_ml_by_query, search_q, timeout=55)
+            if enrich_res.get("found"):
+                if not merged_price and enrich_res.get("price_original"):
+                    merged_price = float(enrich_res["price_original"])
+                for s in enrich_res.get("slides") or []:
+                    if s not in merged_slides:
+                        merged_slides.append(s)
+                if not merged_vars and enrich_res.get("variations"):
+                    merged_vars = enrich_res["variations"]
+                if not merged_details and enrich_res.get("details"):
+                    merged_details = enrich_res["details"]
+                if not merged_desc and enrich_res.get("description_html"):
+                    merged_desc = enrich_res["description_html"]
+                raw_reviews.extend(enrich_res.get("reviews") or [])
+        except Exception as e:
+            print(f"[StudioDaemon] Auto-enrich err ({search_q}): {e}", flush=True)
+
+    if hit_primary_captcha and not merged_slides and not raw_reviews:
+        notify_node_studio(
+            draft_id,
+            "warning",
+            {
+                "code": "NEEDS_USER_ACTION",
+                "message": "O link pediu verificação humana e não trouxe título suficiente. Cole também o link do Mercado Livre em '+ Opções'.",
+            },
+        )
+
     local_slides = []
-    for i, s_url in enumerate(merged_slides[:8]):
-        raw_b = download_bytes(s_url)
-        if raw_b:
-            out_abs = os.path.join(media_dir, f"slide_{i + 1}.webp")
-            try:
-                pad_image_1to1_webp(raw_b, out_abs, size=1000)
-                local_slides.append({"src": f"/.studio-drafts/{draft_id}/media/slide_{i + 1}.webp", "alt": f"{merged_title} - {i + 1}"})
-                continue
-            except Exception:
-                pass
-        local_slides.append({"src": s_url, "alt": f"{merged_title} - {i + 1}"})
+    seen_final_slide_md5 = set()
+    cand_slide_urls = merged_slides[:10]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as img_pool:
+        slide_bytes_list = list(img_pool.map(download_bytes, cand_slide_urls))
+
+    for s_url, raw_b in zip(cand_slide_urls, slide_bytes_list):
+        if len(local_slides) >= 8 or not raw_b:
+            continue
+        h_md5 = hashlib.md5(raw_b).hexdigest()
+        if h_md5 in seen_final_slide_md5:
+            continue
+        seen_final_slide_md5.add(h_md5)
+        idx_num = len(local_slides) + 1
+        out_abs = os.path.join(media_dir, f"slide_{idx_num}.webp")
+        try:
+            pad_image_1to1_webp(raw_b, out_abs, size=1000)
+            local_slides.append({"src": f"/.studio-drafts/{draft_id}/media/slide_{idx_num}.webp", "alt": f"{merged_title} - {idx_num}"})
+        except Exception:
+            pass
 
     for grp_k, grp in (merged_vars or {}).items():
         new_opts = []
+        seen_var_md5 = set()
         for o_idx, opt in enumerate(grp.get("opcoes") or []):
             if isinstance(opt, dict) and opt.get("imagem"):
                 vb = download_bytes(opt["imagem"])
                 if vb:
-                    v_abs = os.path.join(media_dir, f"var_{grp_k}_{o_idx + 1}.webp")
-                    try:
-                        pad_image_1to1_webp(vb, v_abs, size=1000)
-                        opt = dict(opt, imagem=f"/.studio-drafts/{draft_id}/media/var_{grp_k}_{o_idx + 1}.webp")
-                    except Exception:
-                        pass
+                    vh = hashlib.md5(vb).hexdigest()
+                    if vh not in seen_var_md5:
+                        seen_var_md5.add(vh)
+                        v_abs = os.path.join(media_dir, f"var_{grp_k}_{o_idx + 1}.webp")
+                        try:
+                            pad_image_1to1_webp(vb, v_abs, size=1000)
+                            opt = dict(opt, imagem=f"/.studio-drafts/{draft_id}/media/var_{grp_k}_{o_idx + 1}.webp")
+                        except Exception:
+                            pass
+                    else:
+                        opt = opt.get("nome") or f"Opção {o_idx + 1}"
             new_opts.append(opt)
         grp["opcoes"] = new_opts
+
+    # Pre-download buyer unboxing photos in parallel (8 threads) so 15+ photos finish in ~1.2s!
+    all_photo_urls = []
+    for rv in raw_reviews[:60]:
+        for p_u in (rv.get("photos") or [])[:3]:
+            if p_u not in all_photo_urls:
+                all_photo_urls.append(p_u)
+
+    photo_bytes_map = {}
+    if all_photo_urls:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ph_pool:
+            for u_ph, b_ph in zip(all_photo_urls[:36], ph_pool.map(download_bytes, all_photo_urls[:36])):
+                if b_ph:
+                    photo_bytes_map[u_ph] = b_ph
 
     unboxing_cards = []
     text_reviews = []
     seen_comments = set()
+    seen_unbox_md5 = set()
 
-    for idx, rv in enumerate(raw_reviews):
+    for idx, rv in enumerate(raw_reviews[:65]):
         cleaned = clean_review_text(rv.get("comment") or "")
         if not cleaned or cleaned.lower() in seen_comments:
             continue
         seen_comments.add(cleaned.lower())
 
         buyer_photos = []
-        for p_idx, p_url in enumerate((rv.get("photos") or [])[:4]):
-            pb = download_bytes(p_url)
+        for p_idx, p_url in enumerate((rv.get("photos") or [])[:3]):
+            pb = photo_bytes_map.get(p_url)
             if pb:
+                ph_md5 = hashlib.md5(pb).hexdigest()
+                if ph_md5 in seen_unbox_md5:
+                    continue
+                seen_unbox_md5.add(ph_md5)
                 p_abs = os.path.join(media_dir, f"unbox_{idx + 1}_{p_idx + 1}.jpg")
                 try:
                     with Image.open(io.BytesIO(pb)) as im:
@@ -1003,7 +1572,7 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
 
     active_unbox = unboxing_cards[:8]
     reserve_unbox = unboxing_cards[8:]
-    needed_text = max(14, 22 - len(active_unbox))
+    needed_text = max(18, 26 - len(active_unbox))
     active_text = text_reviews[:needed_text]
     reserve_text = text_reviews[needed_text:]
 
@@ -1022,11 +1591,8 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
         reserve_reviews=reserve_text,
     )
 
-    if auto_videos and merged_title:
-        words = [w for w in re.sub(r"[^\w\sÀ-ÿ]", " ", merged_title).split() if len(w) > 2][:5]
-        q = " ".join(words)
-        if q:
-            run_videos_pipeline(draft_id, draft_dir, mode="search", query=q)
+    if auto_videos and (search_q or seed_video_urls):
+        run_videos_pipeline(draft_id, draft_dir, mode="search", query=search_q, seed_urls=seed_video_urls)
 
 
 class StudioDaemonHandler(BaseHTTPRequestHandler):
@@ -1043,12 +1609,24 @@ class StudioDaemonHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path.startswith("/health"):
-            return self._send_json(200, {"ok": True, "browser_warm": _BROWSER.is_warm})
+            return self._send_json(
+                200,
+                {
+                    "ok": True,
+                    "browser_warm": _BROWSER.is_warm,
+                    "profile42_connected": _BROWSER.profile42_connected,
+                    "connecting_p42": _BROWSER.connecting_p42,
+                },
+            )
         return self._send_json(404, {"ok": False})
 
     def do_POST(self):
         length = int(self.headers.get("Content-Length") or 0)
         body = json.loads(self.rfile.read(length).decode("utf-8") or "{}") if length else {}
+
+        if self.path == "/connect-profile42":
+            _BROWSER.request_profile42_reconnect()
+            return self._send_json(202, {"ok": True, "connecting": True})
 
         if self.path == "/extract":
             threading.Thread(
@@ -1070,7 +1648,14 @@ class StudioDaemonHandler(BaseHTTPRequestHandler):
 
 
 def run_server(port: int = 3334):
-    threading.Thread(target=lambda: _BROWSER.submit(lambda p: True, timeout=30), daemon=True).start()
+    try:
+        if os.path.exists(LOCAL_STATE_DIR):
+            for entry in os.listdir(LOCAL_STATE_DIR):
+                if entry.startswith("chrome-session-"):
+                    shutil.rmtree(os.path.join(LOCAL_STATE_DIR, entry), ignore_errors=True)
+    except Exception:
+        pass
+    threading.Thread(target=lambda: _BROWSER.submit(lambda p: True, timeout=80), daemon=True).start()
     srv = ThreadingHTTPServer(("127.0.0.1", port), StudioDaemonHandler)
     print(f"[StudioDaemon] Online em http://127.0.0.1:{port} (warm zero-audio mode)", flush=True)
     srv.serve_forever()

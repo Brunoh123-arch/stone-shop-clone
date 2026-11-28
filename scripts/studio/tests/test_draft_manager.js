@@ -84,3 +84,41 @@ test('composite review variations (Cor · Tamanho) and video id on set_desc_vide
 
   fs.rmSync(path.join(process.cwd(), '.studio-drafts', draft.draftId), { recursive: true, force: true });
 });
+
+test('buildProductJsonFromDraft deduplicates @username in creators and prevents duplicate variation images across options', () => {
+  const draft = createDraft({
+    targetId: 993,
+    product_title: 'Luminária Projetor Aurora LED',
+    price_pix: 39.89,
+    price_original_num: 179.9,
+    slides: [
+      { src: '/img/s1.webp', alt: '1' },
+      { src: '/img/s2.webp', alt: '2' },
+    ],
+    variations: {
+      cor: {
+        com_imagem: true,
+        label: 'Cor',
+        opcoes: [
+          { nome: 'Branco', imagem: '/img/s1.webp' },
+          { nome: 'Preto', imagem: '/img/s1.webp' },
+        ],
+      },
+    },
+    creators: [
+      { id: 'c1', video: 'https://files.catbox.moe/c1.mp4', poster: '/p1.jpg', username: 'mariana.luz', name: 'Mariana' },
+      { id: 'c2', video: 'https://files.catbox.moe/c2.mp4', poster: '/p2.jpg', username: 'mariana.luz', name: 'Mariana 2' },
+      { id: 'c3', video: 'https://files.catbox.moe/c3.mp4', poster: '/p3.jpg', username: 'julia.decor', name: 'Julia' },
+    ],
+  });
+
+  const built = buildProductJsonFromDraft(draft);
+  const usernames = built.creators.map((c) => c.username.toLowerCase());
+  assert.equal(new Set(usernames).size, usernames.length, 'Creator @usernames must be unique');
+
+  const opts = built.produto_atual.variacoes.cor.opcoes;
+  const imgs = opts.map((o) => (typeof o === 'object' ? o.imagem : null)).filter(Boolean);
+  assert.equal(new Set(imgs).size, imgs.length, 'Variation option images must never collide');
+
+  fs.rmSync(path.join(process.cwd(), '.studio-drafts', draft.draftId), { recursive: true, force: true });
+});

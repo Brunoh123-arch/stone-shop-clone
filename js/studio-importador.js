@@ -176,20 +176,36 @@
         }
         if (data.livePatch) postLiveToPhone(data.livePatch);
         if (data.event === 'fast_preview') {
-          setBanner('Página pronta aberta · Carregando unboxings e vídeos nos bastidores...');
+          setBanner('Título e capa extraídos na hora · Puxando galeria 1:1, avaliações e vídeos...');
           window.reloadPreviewIframe();
           if (window.innerWidth < 1080) window.setMobilePane('preview');
+        } else if (data.event === 'status_info' && data.extra && data.extra.message) {
+          setBanner(data.extra.message, false);
         } else if (data.event === 'reviews_pool_ready') {
-          setBanner('Fotos 1:1, variações e avaliações carregadas · Puxando vídeos...');
+          setBanner('Galeria 1:1, variações e avaliações reais prontas · Buscando vídeos do TikTok...');
+          window.reloadPreviewIframe();
         } else if (data.event === 'videos_preview_ready') {
-          setBanner('Tudo pronto · Vídeos subindo pro Catbox em 4x paralelo.');
+          const count = data.extra && typeof data.extra.count === 'number' ? data.extra.count : (currentDraft && currentDraft.creators ? currentDraft.creators.length : 0);
+          if (count > 0) {
+            setBanner('Página montada! Hospedando vídeos no Catbox em 4x paralelo...');
+          } else {
+            setBanner('Galeria e avaliações prontas! Cole links de vídeos na aba Vídeos se desejar mais.', false);
+          }
+          window.reloadPreviewIframe();
+        } else if (data.event === 'video_catbox_done') {
+          const d = currentDraft || {};
+          const allVids = [...(d.video && d.video.src ? [d.video] : []), ...(d.creators || [])];
+          const ready = allVids.filter((v) => /catbox\.moe\//i.test(v.src || v.video || '')).length;
+          if (allVids.length > 0 && ready >= allVids.length) {
+            setBanner(`100% pronto pra publicar! (${ready}/${allVids.length} vídeos no Catbox ✓)`);
+          }
         } else if (data.event === 'warning' && data.extra && data.extra.message) {
           setBanner(data.extra.message, true);
         }
       } catch (_) {}
     };
 
-    ['sync_state', 'fast_preview', 'reviews_pool_ready', 'videos_preview_ready', 'video_catbox_done', 'warning'].forEach((evt) => {
+    ['sync_state', 'fast_preview', 'status_info', 'reviews_pool_ready', 'videos_preview_ready', 'video_catbox_done', 'warning'].forEach((evt) => {
       sseSource.addEventListener(evt, onStage);
     });
   }
@@ -546,17 +562,42 @@
     }
   };
 
+  window.connectProfile42 = async function () {
+    setBanner('Aguardando você clicar em "Permitir / Allow" no Chrome do PC (Profile 42)...');
+    await api('/api/studio/connect-profile42', 'POST', {});
+    let checks = 0;
+    const iv = setInterval(async () => {
+      checks += 1;
+      const st = await api('/api/studio/state');
+      if (st.ok && st.data.profile42Connected) {
+        clearInterval(iv);
+        refreshStateHeader();
+        setBanner('Chrome Profile 42 conectado! Pode colar qualquer link agora.');
+        toast('Profile 42 conectado!');
+      } else if (checks >= 25) {
+        clearInterval(iv);
+        refreshStateHeader();
+      }
+    }, 2500);
+  };
+
   async function refreshStateHeader() {
     const res = await api('/api/studio/state');
     if (!res.ok) return;
     const badgeTxt = document.getElementById('daemonBadgeText');
     const badgeWrap = document.getElementById('daemonBadge');
-    if (res.data.daemonOnline) {
-      badgeTxt.textContent = res.data.browserWarm ? 'Pronto · 0ms' : 'Online';
+    if (res.data.profile42Connected) {
+      badgeTxt.textContent = 'Profile 42 · OK';
       badgeWrap.style.color = '#6ee7a8';
+    } else if (res.data.connectingProfile42) {
+      badgeTxt.textContent = 'Clique Permitir...';
+      badgeWrap.style.color = '#fcd34d';
+    } else if (res.data.daemonOnline) {
+      badgeTxt.textContent = 'Engatar P42';
+      badgeWrap.style.color = '#fcd34d';
     } else {
       badgeTxt.textContent = 'Offline';
-      badgeWrap.style.color = '#fcd34d';
+      badgeWrap.style.color = '#fb7185';
     }
     const idInp = document.getElementById('initTargetId');
     if (idInp && !idInp.value) idInp.placeholder = `#${res.data.nextId}`;

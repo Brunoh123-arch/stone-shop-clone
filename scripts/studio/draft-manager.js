@@ -175,8 +175,22 @@ function getValidVariationSample(variations, idx = 0) {
     .join(' · ');
 }
 
+function deduplicateCreatorsByUsername(list, initialSeen = new Set()) {
+  const seen = new Set(Array.from(initialSeen).map((u) => String(u || '').toLowerCase()));
+  const out = [];
+  for (const item of list || []) {
+    if (!item) continue;
+    const uname = String(item.username || '').trim().toLowerCase();
+    if (uname && seen.has(uname)) continue;
+    if (uname) seen.add(uname);
+    out.push(item);
+  }
+  return out;
+}
+
 function normalizeVariations(variations, slides) {
-  const defaultImg = (slides && slides[0] && slides[0].src) || '/logo.png';
+  const safeSlides = Array.isArray(slides) ? slides : [];
+  const defaultImg = (safeSlides[0] && safeSlides[0].src) || '/logo.png';
   if (!variations || typeof variations !== 'object' || !Object.keys(variations).length) {
     return {
       cor: {
@@ -187,24 +201,58 @@ function normalizeVariations(variations, slides) {
     };
   }
   const out = {};
+  const globalUsedVarImgs = new Set();
+
   for (const [k, grp] of Object.entries(variations)) {
     if (!grp || !Array.isArray(grp.opcoes) || !grp.opcoes.length) continue;
-    out[k] = {
-      com_imagem: Boolean(grp.com_imagem),
-      label: String(grp.label || k),
-      opcoes: grp.opcoes.map((o, idx) => {
-        if (typeof o === 'string') return sanitizeVariationName(o);
-        const opt = {
-          nome: sanitizeVariationName(o.nome || `Opção ${idx + 1}`),
-        };
-        if (grp.com_imagem || o.imagem) {
-          opt.imagem = o.imagem || (slides[idx] && slides[idx].src) || defaultImg;
-        }
-        if (Number(o.preco) > 0) opt.preco = Number(Number(o.preco).toFixed(2));
-        if (o.precoOrig) opt.precoOrig = String(o.precoOrig);
-        return opt;
-      }),
-    };
+    const wantsImg = Boolean(grp.com_imagem) || grp.opcoes.some((o) => o && typeof o === 'object' && o.imagem);
+    if (!wantsImg) {
+      out[k] = {
+        com_imagem: false,
+        label: String(grp.label || k),
+        opcoes: grp.opcoes.map((o, idx) => sanitizeVariationName(typeof o === 'string' ? o : (o.nome || `Opção ${idx + 1}`))),
+      };
+      continue;
+    }
+
+    const mappedOpts = [];
+    let hasCollision = false;
+
+    grp.opcoes.forEach((o, idx) => {
+      const cleanName = sanitizeVariationName(typeof o === 'string' ? o : (o.nome || `Opção ${idx + 1}`));
+      let candidateImg = (typeof o === 'object' && o.imagem) ? String(o.imagem) : '';
+      const cleanKey = (u) => String(u || '').split('?')[0].split('#')[0];
+
+      if (!candidateImg || globalUsedVarImgs.has(cleanKey(candidateImg))) {
+        const unusedSlide = safeSlides.find((s) => s && s.src && !globalUsedVarImgs.has(cleanKey(s.src)));
+        candidateImg = unusedSlide ? unusedSlide.src : '';
+      }
+
+      if (!candidateImg || globalUsedVarImgs.has(cleanKey(candidateImg))) {
+        hasCollision = true;
+      } else {
+        globalUsedVarImgs.add(cleanKey(candidateImg));
+      }
+
+      const opt = { nome: cleanName, imagem: candidateImg || defaultImg };
+      if (typeof o === 'object' && Number(o.preco) > 0) opt.preco = Number(Number(o.preco).toFixed(2));
+      if (typeof o === 'object' && o.precoOrig) opt.precoOrig = String(o.precoOrig);
+      mappedOpts.push(opt);
+    });
+
+    if (hasCollision && mappedOpts.length > 1) {
+      out[k] = {
+        com_imagem: false,
+        label: String(grp.label || k),
+        opcoes: mappedOpts.map((o) => o.nome),
+      };
+    } else {
+      out[k] = {
+        com_imagem: true,
+        label: String(grp.label || k),
+        opcoes: mappedOpts,
+      };
+    }
   }
   return Object.keys(out).length ? out : {
     cor: { com_imagem: true, label: 'Modelo', opcoes: [{ nome: 'Padrão Oficial', imagem: defaultImg }] },
@@ -303,10 +351,23 @@ function popFromReserve(draftId, kind, count = 1) {
 
   if (kind === 'videos') {
     const pool = Array.isArray(draft.reserve_videos) ? draft.reserve_videos : [];
-    added = pool.splice(0, n).map((c, idx) => sanitizeCreatorObj(c, draft.creators.length + idx));
-    draft.reserve_videos = pool;
+    const activeUsers = new Set((draft.creators || []).map((c) => String(c.username || '').toLowerCase()));
+    const picked = [];
+    const kept = [];
+    for (const item of pool) {
+      const sanitized = sanitizeCreatorObj(item, draft.creators.length + picked.length);
+      const uname = sanitized.username.toLowerCase();
+      if (picked.length < n && !activeUsers.has(uname)) {
+        activeUsers.add(uname);
+        picked.push(sanitized);
+      } else if (!activeUsers.has(uname)) {
+        kept.push(item);
+      }
+    }
+    added = picked;
+    draft.reserve_videos = kept;
     draft.creators.push(...added);
-    remaining = pool.length;
+    remaining = kept.length;
   } else if (kind === 'unboxings') {
     const pool = Array.isArray(draft.reserve_unboxings) ? draft.reserve_unboxings : [];
     added = pool.splice(0, n);
@@ -482,7 +543,8 @@ function buildProductJsonFromDraft(draft) {
   const ratingScore = String(draft.rating_score || '4.9').replace(',', '.');
 
   let descVideo = draft.video;
-  const creatorsList = (Array.isArray(draft.creators) ? draft.creators : []).map((c, idx) => sanitizeCreatorObj(c, idx));
+  const rawCreatorsList = (Array.isArray(draft.creators) ? draft.creators : []).map((c, idx) => sanitizeCreatorObj(c, idx));
+  const creatorsList = deduplicateCreatorsByUsername(rawCreatorsList);
   if ((!descVideo || !descVideo.src) && creatorsList.length > 1) {
     const first = creatorsList.shift();
     descVideo = {
@@ -585,6 +647,7 @@ function applyDaemonPatch(draftId, body = {}) {
     const incoming = (Array.isArray(body.videos) ? body.videos : []).map((v, i) => sanitizeCreatorObj(v, i));
     const existingIds = new Set();
     const existingUrls = new Set();
+    const existingUsers = new Set();
     if (draft.video && draft.video.src) {
       if (draft.video.id) existingIds.add(draft.video.id);
       existingUrls.add(draft.video.src);
@@ -592,13 +655,23 @@ function applyDaemonPatch(draftId, body = {}) {
     (draft.creators || []).forEach((c) => {
       if (c.id) existingIds.add(c.id);
       if (c.video) existingUrls.add(c.video);
+      if (c.username) existingUsers.add(String(c.username).toLowerCase());
     });
     (draft.reserve_videos || []).forEach((c) => {
       if (c.id) existingIds.add(c.id);
       if (c.video) existingUrls.add(c.video);
+      if (c.username) existingUsers.add(String(c.username).toLowerCase());
     });
 
-    const fresh = incoming.filter((v) => !existingIds.has(v.id) && !existingUrls.has(v.video));
+    const fresh = [];
+    for (const v of incoming) {
+      const uname = String(v.username || '').toLowerCase();
+      if (existingIds.has(v.id) || existingUrls.has(v.video) || (uname && existingUsers.has(uname))) continue;
+      existingIds.add(v.id);
+      existingUrls.add(v.video);
+      if (uname) existingUsers.add(uname);
+      fresh.push(v);
+    }
     if (body.mode === 'urls') {
       draft.creators.push(...fresh);
     } else {

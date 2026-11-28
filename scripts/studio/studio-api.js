@@ -285,6 +285,8 @@ function handleStudioRequest(req, res) {
         nextId: getNextProductId(),
         daemonOnline: Boolean(health.ok),
         browserWarm: Boolean(health.data && health.data.browser_warm),
+        profile42Connected: Boolean(health.data && health.data.profile42_connected),
+        connectingProfile42: Boolean(health.data && health.data.connecting_p42),
         drafts: listDrafts().map((d) => ({
           draftId: d.draftId,
           targetId: d.targetId,
@@ -293,6 +295,14 @@ function handleStudioRequest(req, res) {
           updatedAt: d.updatedAt,
         })),
       });
+    });
+    return true;
+  }
+
+  // 4B. Re-trigger Chrome Profile 42 CDP prompt
+  if (req.method === 'POST' && pathname === '/api/studio/connect-profile42') {
+    callDaemon('POST', '/connect-profile42', {}, 3000).then((r) => {
+      sendJson(res, 200, { ok: Boolean(r.ok), connecting: true });
     });
     return true;
   }
