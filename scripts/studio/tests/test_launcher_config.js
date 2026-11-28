@@ -14,4 +14,11 @@ test('package.json defines npm run studio and start-studio.ps1 enforces Cloudfla
   assert.match(ps1, /STUDIO_MODE/);
   assert.match(ps1, /STUDIO_TOKEN/);
   assert.match(ps1, /trycloudflare\\?\.com/);
+  assert.match(ps1, /\[switch\]\$Detach/);
+  assert.match(ps1, /\/health/);
+
+  const homeHtml = fs.readFileSync(path.join(process.cwd(), 'index.html'), 'utf8');
+  const pubJs = fs.readFileSync(path.join(process.cwd(), 'scripts', 'studio', 'publisher.js'), 'utf8');
+  assert.doesNotMatch(pubJs, /Automotivo & Ferramentas/);
+  assert.match(homeHtml, /Churrasco, Piscina & Lazer/);
 });

@@ -18,9 +18,13 @@ class StudioDaemonHelpersTest(unittest.TestCase):
         _, kind1 = resolve_and_classify_url("https://produto.mercadolivre.com.br/MLB-123456-teste-_JM", follow_redirects=False)
         _, kind2 = resolve_and_classify_url("https://shop.tiktok.com/br/pdp/1738506652937389299", follow_redirects=False)
         _, kind3 = resolve_and_classify_url("https://www.tiktok.com/@maria.silva/video/741234567890", follow_redirects=False)
+        _, kind4 = resolve_and_classify_url("https://www.tiktok.com/@maria.silva/video/741234567890?product=1", follow_redirects=False)
+        _, kind5 = resolve_and_classify_url("https://mercadolivre.com.br/sec/2AbCdEf", follow_redirects=False)
         self.assertEqual(kind1, "mercadolivre")
         self.assertEqual(kind2, "tiktok_shop")
         self.assertEqual(kind3, "tiktok_video")
+        self.assertEqual(kind4, "tiktok_video")
+        self.assertEqual(kind5, "mercadolivre")
 
     def test_clean_review_text_filters_shopee_and_competitor_jargon(self):
         self.assertIsNone(clean_review_text("Comprei só pra ganhar moedas na shopee"))

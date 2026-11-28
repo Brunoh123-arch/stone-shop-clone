@@ -68,6 +68,14 @@ function sanitizeVariationName(name) {
     .trim() || 'Padrão';
 }
 
+function sanitizeCompositeVariation(raw) {
+  const parts = String(raw || '')
+    .split(/\s*[·•|]\s*/)
+    .map((seg) => sanitizeVariationName(seg))
+    .filter(Boolean);
+  return parts.join(' · ');
+}
+
 function sanitizeCreatorObj(c, idx = 0) {
   const fallbackNames = [
     ['Camila Rocha', 'camilarocha.vids'],
@@ -391,12 +399,14 @@ function applyDraftPatch(draftId, patch = {}) {
     const [picked] = draft.creators.splice(patch.index, 1);
     if (draft.video && draft.video.src) {
       draft.creators.unshift(sanitizeCreatorObj({
+        id: draft.video.id,
         video: draft.video.src,
         poster: draft.video.poster,
         catbox_id: draft.video.catbox_id,
       }, 0));
     }
     draft.video = {
+      id: picked.id,
       src: picked.video,
       poster: picked.poster,
       duration: '0:22',
@@ -414,7 +424,7 @@ function applyDraftPatch(draftId, patch = {}) {
       avatar: patch.review.avatar || '../img/reviews-avatars/mulheres_validadas/mulher_01.jpg',
       stars: Number(patch.review.stars) || 5,
       date: patch.review.date || '27/11',
-      variation: sanitizeVariationName(patch.review.variation || getValidVariationSample(draft.variations, 0)),
+      variation: sanitizeCompositeVariation(patch.review.variation || getValidVariationSample(draft.variations, 0)),
       comment: String(patch.review.comment || 'Produto excelente, entrega super rápida!'),
       photos: Array.isArray(patch.review.photos) ? patch.review.photos : [],
     });
@@ -449,7 +459,7 @@ function buildProductJsonFromDraft(draft) {
   });
 
   const reviews = (Array.isArray(draft.reviews) ? draft.reviews : []).map((r, idx) => {
-    let varStr = sanitizeVariationName(r.variation || '');
+    let varStr = sanitizeCompositeVariation(r.variation || '');
     const segs = varStr.toLowerCase().split(/\s*[·•|]\s*/).filter(Boolean);
     const isValid = segs.length > 0 && segs.every((s) => validVarNames.has(s));
     if (!isValid) {
@@ -531,12 +541,114 @@ function buildProductJsonFromDraft(draft) {
   };
 }
 
+function applyDaemonPatch(draftId, body = {}) {
+  const draft = loadDraft(draftId);
+  if (!draft) return null;
+  const op = body.op || '';
+
+  if (op === 'extract_fast') {
+    if (body.title) {
+      draft.product_title = String(body.title).trim();
+      draft.category = inferCategory(draft.product_title);
+    }
+    if (Number(body.price_original) > 0 && !draft.user_locked_price) {
+      const sweet = computeSweetSpotPix(Number(body.price_original));
+      draft.price_pix = sweet.pix;
+      draft.price_original_num = sweet.orig;
+    }
+    if (Array.isArray(body.slides) && body.slides.length) draft.slides = body.slides;
+    if (body.description_html) draft.description_html = sanitizeDescriptionHtml(body.description_html, draft.product_title, draft.details);
+    draft.status = 'enriching';
+  } else if (op === 'extract_full') {
+    if (body.title) {
+      draft.product_title = String(body.title).trim();
+      draft.category = inferCategory(draft.product_title);
+    }
+    if (Number(body.price_original) > 0 && !draft.user_locked_price) {
+      const sweet = computeSweetSpotPix(Number(body.price_original));
+      draft.price_pix = sweet.pix;
+      draft.price_original_num = sweet.orig;
+    }
+    if (Array.isArray(body.slides) && body.slides.length) draft.slides = body.slides;
+    if (body.variations && Object.keys(body.variations).length) {
+      draft.variations = normalizeVariations(body.variations, draft.slides);
+    }
+    if (Array.isArray(body.details) && body.details.length) draft.details = body.details;
+    if (body.description_html) {
+      draft.description_html = sanitizeDescriptionHtml(body.description_html, draft.product_title, draft.details);
+    }
+    if (Array.isArray(body.reviews) && body.reviews.length) draft.reviews = body.reviews;
+    if (Array.isArray(body.reserve_unboxings)) draft.reserve_unboxings = body.reserve_unboxings;
+    if (Array.isArray(body.reserve_reviews)) draft.reserve_reviews = body.reserve_reviews;
+    draft.status = 'ready';
+  } else if (op === 'videos_merge') {
+    const incoming = (Array.isArray(body.videos) ? body.videos : []).map((v, i) => sanitizeCreatorObj(v, i));
+    const existingIds = new Set();
+    const existingUrls = new Set();
+    if (draft.video && draft.video.src) {
+      if (draft.video.id) existingIds.add(draft.video.id);
+      existingUrls.add(draft.video.src);
+    }
+    (draft.creators || []).forEach((c) => {
+      if (c.id) existingIds.add(c.id);
+      if (c.video) existingUrls.add(c.video);
+    });
+    (draft.reserve_videos || []).forEach((c) => {
+      if (c.id) existingIds.add(c.id);
+      if (c.video) existingUrls.add(c.video);
+    });
+
+    const fresh = incoming.filter((v) => !existingIds.has(v.id) && !existingUrls.has(v.video));
+    if (body.mode === 'urls') {
+      draft.creators.push(...fresh);
+    } else {
+      if ((!draft.video || !draft.video.src) && fresh.length > 0) {
+        const first = fresh.shift();
+        draft.video = {
+          id: first.id,
+          src: first.video,
+          poster: first.poster,
+          duration: body.firstDuration || '0:20',
+          catbox_id: first.catbox_id || '',
+        };
+      }
+      while (draft.creators.length < 9 && fresh.length > 0) {
+        draft.creators.push(fresh.shift());
+      }
+      draft.reserve_videos.push(...fresh);
+    }
+  } else if (op === 'video_catbox_done') {
+    const vidId = body.videoId;
+    if (draft.video && draft.video.id === vidId) {
+      draft.video.src = body.catboxUrl;
+      draft.video.catbox_id = body.catboxId || '';
+      if (body.poster) draft.video.poster = body.poster;
+    }
+    for (const arr of [draft.creators, draft.reserve_videos]) {
+      for (const item of arr || []) {
+        if (item.id === vidId) {
+          item.video = body.catboxUrl;
+          item.catbox_id = body.catboxId || '';
+          item.catbox_ready = true;
+          if (body.poster) item.poster = body.poster;
+          if (body.avatar) item.avatar = body.avatar;
+        }
+      }
+    }
+  }
+
+  saveDraft(draft);
+  const built = buildProductJsonFromDraft(draft);
+  return { draft, built, livePatch: extractLivePatch(built) };
+}
+
 module.exports = {
   DRAFTS_ROOT,
   getNextProductId,
   formatBRLNum,
   computeSweetSpotPix,
   sanitizeVariationName,
+  sanitizeCompositeVariation,
   sanitizeCreatorObj,
   sanitizeDescriptionHtml,
   inferCategory,
@@ -546,5 +658,6 @@ module.exports = {
   listDrafts,
   popFromReserve,
   applyDraftPatch,
+  applyDaemonPatch,
   buildProductJsonFromDraft,
 };

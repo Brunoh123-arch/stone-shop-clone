@@ -2588,6 +2588,7 @@
     injectStyles();
     initCarousel();
   }
+  window.initVideosCriadoresModular = init;
 
 
   if (document.readyState === 'loading') {

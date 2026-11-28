@@ -61,3 +61,26 @@ test('popFromReserve moves pre-fetched videos, unboxings, and comments in 0ms an
 
   fs.rmSync(path.join(process.cwd(), '.studio-drafts', draft.draftId), { recursive: true, force: true });
 });
+
+test('composite review variations (Cor · Tamanho) and video id on set_desc_video are preserved', () => {
+  const draft = createDraft({
+    targetId: 995,
+    product_title: 'Kit 4 Vestidos Teste',
+    price_pix: 54.89,
+    price_original_num: 239.9,
+    variations: {
+      cor: { com_imagem: true, label: 'Cor', opcoes: [{ nome: 'Preto', imagem: '/s1.webp' }] },
+      tamanho: { com_imagem: false, label: 'Tamanho', opcoes: ['P', 'M', 'G'] },
+    },
+    creators: [{ id: 'vid_abc', video: 'https://files.catbox.moe/abc.mp4', poster: '/p.jpg', username: 'bia.real', name: 'Bia' }],
+    reviews: [{ name: 'M**a S**a', stars: 5, date: '26/11', variation: 'Preto · M', comment: 'Ficou lindo demais!', photos: [] }],
+  });
+
+  const built = buildProductJsonFromDraft(draft);
+  assert.equal(built.reviews[0].variation, 'Preto · M');
+
+  const swapped = applyDraftPatch(draft.draftId, { action: 'set_desc_video', index: 0 });
+  assert.equal(swapped.draft.video.id, 'vid_abc');
+
+  fs.rmSync(path.join(process.cwd(), '.studio-drafts', draft.draftId), { recursive: true, force: true });
+});

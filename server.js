@@ -184,6 +184,7 @@ const server = http.createServer((req, res) => {
   if (reqPath === '/carrinho') reqPath = '/pages/carrinho.html';
   else if (reqPath === '/resumo' || reqPath === '/checkout') reqPath = '/pages/resumo.html';
   else if (reqPath === '/catalogo-ads' || reqPath === '/todos-produtos') reqPath = '/catalogo-ads.html';
+  else if (reqPath === '/videos-ads' || reqPath === '/ads' || reqPath === '/painel' || reqPath === '/admin') reqPath = '/admin.html';
 
   let filePath = path.join(ROOT, reqPath);
 

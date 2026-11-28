@@ -8,7 +8,6 @@ import queue
 import re
 import shutil
 import subprocess
-import sys
 import threading
 import time
 import urllib.error
@@ -18,7 +17,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from PIL import Image
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-STUDIO_PROFILE_DIR = os.path.join(ROOT, ".studio-chrome-profile")
+LOCAL_STATE_DIR = os.path.join(os.environ.get("LOCALAPPDATA") or ROOT, "stone-studio")
+STUDIO_PROFILE_DIR = os.path.join(LOCAL_STATE_DIR, "chrome-profile")
 FFMPEG_BIN = shutil.which("ffmpeg") or r"C:\Users\Dell\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 
 COMMERCIAL_HANDLE_RE = re.compile(
@@ -56,22 +56,33 @@ def resolve_and_classify_url(url: str, follow_redirects: bool = True) -> tuple[s
 
     canonical = raw
     is_short = bool(
-        re.search(r"(vt\.tiktok\.com|vm\.tiktok\.com|mercadolivre\.com/sec/|meli\.la/)", raw, re.IGNORECASE)
+        re.search(
+            r"(vt\.tiktok\.com|vm\.tiktok\.com|mercadolivre\.com(?:\.br)?/sec/|meli\.la/)",
+            raw,
+            re.IGNORECASE,
+        )
     )
     if follow_redirects and is_short:
         try:
             req = urllib.request.Request(raw, headers={"User-Agent": MOBILE_UA})
             with urllib.request.urlopen(req, timeout=8) as resp:
                 canonical = resp.geturl() or raw
+        except urllib.error.HTTPError as he:
+            canonical = he.geturl() or raw
         except Exception:
             canonical = raw
 
     low = canonical.lower()
     if "mercadolivre.com" in low or "mercadolibre.com" in low or "meli.la" in low:
         return (canonical, "mercadolivre")
-    if "shop.tiktok.com" in low or "/pdp/" in low or "product" in low and "tiktok.com" in low:
+    # Check /video/ BEFORE product so video URLs with ?product=... are never opened in Playwright!
+    if "tiktok.com/" in low and ("/video/" in low or "/photo/" in low):
+        return (canonical, "tiktok_video")
+    if "shop.tiktok.com" in low or "/pdp/" in low or ("product" in low and "tiktok.com" in low):
         return (canonical, "tiktok_shop")
-    if "tiktok.com/" in low and ("/video/" in low or "/@" in low or "vm.tiktok" in low or "vt.tiktok" in low):
+    if "vm.tiktok.com" in low or "vt.tiktok.com" in low:
+        return (canonical, "tiktok_video")
+    if "tiktok.com/@" in low:
         return (canonical, "tiktok_video")
     if "tiktok.com" in low:
         return (canonical, "tiktok_shop")
@@ -127,9 +138,7 @@ def mask_buyer_name(raw_name: str, idx: int = 0) -> str:
         return raw_name.strip()[:18]
     first = parts[0]
     last = parts[-1] if len(parts) > 1 else "Silva"
-    m1 = f"{first[0]}**{first[-1]}"
-    m2 = f"{last[0]}**{last[-1]}"
-    return f"{m1} {m2}"
+    return f"{first[0]}**{first[-1]} {last[0]}**{last[-1]}"
 
 
 def pad_image_1to1_webp(src_bytes: bytes, out_path: str, size: int = 1000) -> str:
@@ -175,11 +184,11 @@ def download_bytes(url: str, timeout: int = 12) -> bytes | None:
         return None
 
 
-def notify_node_studio(draft_id: str, event_name: str, payload: dict | None = None):
+def post_node_studio(endpoint: str, payload: dict):
     port = os.environ.get("STUDIO_PORT", "3333")
     token = os.environ.get("STUDIO_TOKEN", "")
-    url = f"http://127.0.0.1:{port}/api/studio/internal/notify"
-    body = json.dumps({"draftId": draft_id, "event": event_name, "payload": payload or {}}).encode("utf-8")
+    url = f"http://127.0.0.1:{port}{endpoint}"
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     req = urllib.request.Request(
         url,
         data=body,
@@ -187,37 +196,27 @@ def notify_node_studio(draft_id: str, event_name: str, payload: dict | None = No
         method="POST",
     )
     try:
-        urllib.request.urlopen(req, timeout=3).read()
-    except Exception:
-        pass
+        urllib.request.urlopen(req, timeout=6).read()
+    except Exception as e:
+        print(f"[StudioDaemon] post_node_studio err ({endpoint}): {e}", flush=True)
 
 
-def update_draft_file(draft_dir: str, updater_fn):
-    fp = os.path.join(draft_dir, "draft.json")
-    if not os.path.exists(fp):
-        return None
-    with _DRAFT_LOCK:
-        try:
-            with open(fp, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            updater_fn(data)
-            data["updatedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-            tmp = fp + ".tmp"
-            with open(tmp, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            os.replace(tmp, fp)
-            return data
-        except Exception as e:
-            print(f"[StudioDaemon] draft update error: {e}", flush=True)
-            return None
+def notify_node_studio(draft_id: str, event_name: str, payload: dict | None = None):
+    post_node_studio("/api/studio/internal/notify", {"draftId": draft_id, "event": event_name, "payload": payload or {}})
 
 
-_DRAFT_LOCK = threading.Lock()
+def patch_node_draft(draft_id: str, op: str, event_name: str | None = None, **fields):
+    body = {"draftId": draft_id, "op": op, **fields}
+    if event_name:
+        body["event"] = event_name
+    post_node_studio("/api/studio/internal/patch", body)
+
+
 _CATBOX_POOL = concurrent.futures.ThreadPoolExecutor(max_workers=4)
 
 
 class WarmPlaywrightWorker:
-    """Single-thread warm Playwright controller: muted, minimized, zero media playback."""
+    """Single-thread warm Playwright controller: muted, minimized, zero media playback, self-healing."""
 
     def __init__(self):
         self.tasks = queue.Queue()
@@ -225,7 +224,7 @@ class WarmPlaywrightWorker:
         self.thread = threading.Thread(target=self._loop, daemon=True)
         self.thread.start()
 
-    def submit(self, fn, *args, timeout=45):
+    def submit(self, fn, *args, timeout=50):
         res_q = queue.Queue(maxsize=1)
         self.tasks.put((fn, args, res_q))
         ok, val = res_q.get(timeout=timeout)
@@ -240,11 +239,21 @@ class WarmPlaywrightWorker:
         while True:
             fn, args, res_q = self.tasks.get()
             try:
+                if page is not None:
+                    try:
+                        if page.is_closed():
+                            page = None
+                            ctx = None
+                    except Exception:
+                        page = None
+                        ctx = None
+
                 if ctx is None:
                     from playwright.sync_api import sync_playwright
 
                     os.makedirs(STUDIO_PROFILE_DIR, exist_ok=True)
-                    pw = sync_playwright().start()
+                    if pw is None:
+                        pw = sync_playwright().start()
                     ctx = pw.chromium.launch_persistent_context(
                         STUDIO_PROFILE_DIR,
                         headless=False,
@@ -284,6 +293,9 @@ class WarmPlaywrightWorker:
                     pass
                 res_q.put((True, out))
             except Exception as e:
+                if "Target page, context or browser has been closed" in str(e):
+                    ctx = None
+                    page = None
                 try:
                     if page:
                         page.goto("about:blank", timeout=3000)
@@ -299,8 +311,7 @@ def upgrade_ml_img(url: str) -> str:
     if not url:
         return ""
     u = str(url).strip()
-    u = re.sub(r"-[A-Z](\.(?:webp|jpg|jpeg|png))(\?.*)?$", r"-O\1", u, flags=re.IGNORECASE)
-    return u
+    return re.sub(r"-[A-Z](\.(?:webp|jpg|jpeg|png))(\?.*)?$", r"-O\1", u, flags=re.IGNORECASE)
 
 
 def parse_ml_html_fast(url: str) -> dict | None:
@@ -348,7 +359,7 @@ def parse_ml_html_fast(url: str) -> dict | None:
         if key not in seen_imgs:
             seen_imgs.add(key)
             imgs.append(hd)
-        if len(imgs) >= 10:
+        if len(imgs) >= 8:
             break
 
     desc = ""
@@ -367,30 +378,49 @@ def parse_ml_html_fast(url: str) -> dict | None:
         "price_original": price_orig,
         "slides": imgs[:8],
         "description_html": desc,
-        "details": [],
-        "variations": {},
-        "reviews": [],
-        "unboxings": [],
     }
 
 
 def _scrape_dom_in_playwright(page, url: str, kind: str) -> dict:
-    page.goto(url, wait_until="domcontentloaded", timeout=22000)
-    page.wait_for_timeout(1600)
+    page.goto(url, wait_until="domcontentloaded", timeout=24000)
+    page.wait_for_timeout(1500)
     cur_url = page.url
+
+    # Hard safety guard: NEVER stay on a TikTok /video/ page in Playwright!
+    if "tiktok.com" in cur_url.lower() and "/video/" in cur_url.lower():
+        page.goto("about:blank", timeout=3000)
+        return {"redirected_video": cur_url}
+
     content_head = page.content()[:20000]
     if detect_captcha_or_verification(cur_url, content_head):
         return {"captcha": True, "url": cur_url}
 
-    try:
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.55)")
-        page.wait_for_timeout(900)
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.85)")
-        page.wait_for_timeout(900)
-    except Exception:
-        pass
+    for frac in (0.4, 0.7, 0.9):
+        try:
+            page.evaluate(f"window.scrollTo(0, document.body.scrollHeight * {frac})")
+            page.wait_for_timeout(700)
+        except Exception:
+            pass
 
     if kind == "mercadolivre":
+        # Open ML full opinions modal/drawer if available and scroll to overfetch 40+ reviews & 15+ unboxings
+        try:
+            btn = page.locator('button[data-testid="see-more"], .ui-review-capability__action button').first
+            if btn.count() > 0 and btn.is_visible():
+                btn.click(timeout=2500)
+                page.wait_for_timeout(1400)
+                for _ in range(5):
+                    page.evaluate(
+                        """() => {
+                        const scrollers = document.querySelectorAll('[class*="andes-modal__scroll"], [class*="ui-review-capability"], [role="dialog"] div');
+                        scrollers.forEach(el => { if (el.scrollHeight > el.clientHeight + 80) el.scrollTop = el.scrollHeight; });
+                        window.scrollBy(0, 1200);
+                        }"""
+                    )
+                    page.wait_for_timeout(650)
+        except Exception:
+            pass
+
         return page.evaluate(
             """() => {
             const txt = (el) => (el ? el.textContent.trim() : '');
@@ -437,74 +467,142 @@ def _scrape_dom_in_playwright(page, url: str, kind: str) -> dict:
               if (th && td && details.length < 10) details.push({ label: th, value: td, hidden: details.length >= 5 });
             });
             const descEl = document.querySelector('.ui-pdp-description__content');
-            const desc = descEl ? descEl.innerText.split('\\n').filter(l => l.trim().length > 15).slice(0, 7).map(l => '<p>' + l.trim() + '</p>').join('\\n') : '';
+            const desc = descEl ? descEl.innerText.split('\\n').filter(l => l.trim().length > 15).slice(0, 8).map(l => '<p>' + l.trim() + '</p>').join('\\n') : '';
 
             const reviews = [];
-            document.querySelectorAll('article.ui-review-capability-comments__comment, .ui-review-capability-comments__comment').forEach(card => {
+            const seenComments = new Set();
+            document.querySelectorAll('article.ui-review-capability-comments__comment, [class*="ui-review-capability-comments__comment"]').forEach(card => {
               const comment = txt(card.querySelector('p.ui-review-capability-comments__comment__content, p'));
+              if (!comment || seenComments.has(comment)) return;
+              seenComments.add(comment);
               const date = txt(card.querySelector('.ui-review-capability-comments__comment__date'));
               const photos = [];
               card.querySelectorAll('img').forEach(im => {
-                let src = im.getAttribute('src') || im.getAttribute('data-src') || '';
-                if (src.includes('mlstatic.com') && !src.includes('avatar')) {
+                let src = im.getAttribute('data-src') || im.getAttribute('src') || '';
+                if (src.includes('mlstatic.com') && !src.includes('avatar') && !src.includes('svg')) {
                   src = src.replace(/-[A-Z](\\.(?:webp|jpg|jpeg|png))(\\?.*)?$/i, '-O$1');
                   if (!photos.includes(src)) photos.push(src);
                 }
               });
-              if (comment) reviews.push({ name: '', comment, date, stars: 5, photos });
+              reviews.push({ name: '', comment, date, stars: 5, photos });
             });
             return { captcha: false, title, price_original: price, slides: slides.slice(0, 8), variations, details, description_html: desc, reviews };
             }"""
         )
 
-    # TikTok Shop / generic e-commerce fallback
+    # TikTok Shop: click "Ver mais" on reviews if present + parse SSR hydration JSON & DOM
+    try:
+        for _ in range(3):
+            page.evaluate("window.scrollBy(0, 1100)")
+            page.wait_for_timeout(650)
+    except Exception:
+        pass
+
     return page.evaluate(
         """() => {
         const txt = (el) => (el ? el.textContent.trim() : '');
-        const title = txt(document.querySelector('h1')) || document.title.split('|')[0].split('-')[0].trim();
+        let title = txt(document.querySelector('h1')) || document.title.split('|')[0].split('-')[0].trim();
         let price = 0;
+        const slides = [];
+        const seenSlides = new Set();
+        const variations = {};
+        const details = [];
+        let desc = '';
+        const reviews = [];
+
+        // 1. Parse TikTok Shop SSR Hydration JSON if present
+        for (const sid of ['__MODERN_ROUTER_DATA__', 'SIGI_STATE', '__NEXT_DATA__']) {
+          const sEl = document.getElementById(sid);
+          if (!sEl) continue;
+          try {
+            const raw = sEl.textContent || '';
+            const imgMatches = raw.match(/https:\\/\\/p\\d+-oec-[a-z0-9-]+\\.ibyteimg\\.com\\/[^"\\\\]+/gi) || [];
+            imgMatches.forEach(u => {
+              const clean = u.replace(/\\\\u002F/g, '/');
+              if (!clean.includes('avatar') && !seenSlides.has(clean) && slides.length < 10) {
+                seenSlides.add(clean);
+                slides.push(clean);
+              }
+            });
+          } catch (_) {}
+        }
+
+        // 2. DOM Gallery + Variations + Specs + Description + Reviews
         const bodyText = document.body ? document.body.innerText : '';
         const pm = bodyText.match(/R\\$\\s*(\\d{1,4}(?:\\.\\d{3})*,\\d{2})/);
         if (pm) price = parseFloat(pm[1].replace(/\\./g, '').replace(',', '.')) || 0;
 
-        const slides = [];
-        const seen = new Set();
         document.querySelectorAll('img').forEach(im => {
           const w = im.naturalWidth || im.width || 0;
-          const h = im.naturalHeight || im.height || 0;
           const src = im.currentSrc || im.src || '';
-          if (src.startsWith('http') && (w >= 260 || src.includes('tiktokcdn') || src.includes('ibyteimg')) && !src.includes('avatar') && !seen.has(src)) {
-            seen.add(src);
+          if (src.startsWith('http') && (w >= 260 || src.includes('ibyteimg')) && !src.includes('avatar') && !seenSlides.has(src) && slides.length < 8) {
+            seenSlides.add(src);
             slides.push(src);
           }
         });
 
-        const reviews = [];
+        document.querySelectorAll('[class*="sku-prop"], [class*="SkuProp"], [data-testid*="sku"]').forEach((grp, idx) => {
+          const label = txt(grp.querySelector('[class*="title"], [class*="label"]')).split(':')[0].trim() || (idx === 0 ? 'Cor' : 'Tamanho');
+          const key = idx === 0 ? 'cor' : ('grupo_' + idx);
+          const opts = [];
+          grp.querySelectorAll('button, [role="radio"], li').forEach(b => {
+            const im = b.querySelector('img');
+            const n = (b.getAttribute('aria-label') || (im && im.alt) || txt(b)).trim();
+            if (!n || n.length > 44) return;
+            const imgU = im ? (im.currentSrc || im.src || '') : '';
+            if (!opts.some(o => (o.nome || o) === n)) {
+              opts.push(imgU.startsWith('http') ? { nome: n, imagem: imgU } : n);
+            }
+          });
+          if (opts.length) {
+            variations[key] = { com_imagem: opts.some(o => typeof o === 'object' && o.imagem), label, opcoes: opts };
+          }
+        });
+
+        document.querySelectorAll('[class*="spec-item"], [class*="SpecItem"], table tr').forEach(row => {
+          const cells = row.querySelectorAll('span, td, th, div');
+          if (cells.length >= 2) {
+            const k = txt(cells[0]);
+            const v = txt(cells[1]);
+            if (k && v && k !== v && k.length < 36 && v.length < 120 && details.length < 10) {
+              details.push({ label: k, value: v, hidden: details.length >= 5 });
+            }
+          }
+        });
+
+        const descNode = document.querySelector('[class*="product-desc"], [class*="ProductDesc"], [data-testid*="description"]');
+        if (descNode) {
+          desc = descNode.innerText.split('\\n').filter(l => l.trim().length > 18).slice(0, 8).map(l => '<p>' + l.trim() + '</p>').join('\\n');
+        }
+
+        const seenRev = new Set();
         document.querySelectorAll('[class*="review-item"], [class*="ReviewItem"], [data-testid*="review"]').forEach(card => {
           const comment = txt(card.querySelector('p, [class*="text"], [class*="content"]'));
+          if (!comment || comment.length < 8 || seenRev.has(comment)) return;
+          seenRev.add(comment);
           const user = txt(card.querySelector('[class*="name"], [class*="author"], [class*="user"]'));
           const photos = [];
           card.querySelectorAll('img').forEach(im => {
             const s = im.currentSrc || im.src || '';
             const w = im.naturalWidth || im.width || 0;
-            if (s.startsWith('http') && w >= 60 && !s.includes('avatar') && !photos.includes(s)) photos.push(s);
+            if (s.startsWith('http') && w >= 55 && !s.includes('avatar') && !photos.includes(s)) photos.push(s);
           });
-          if (comment && comment.length > 8) reviews.push({ name: user, comment, date: '25/11', stars: 5, photos });
+          reviews.push({ name: user, comment, date: '25/11', stars: 5, photos });
         });
 
-        return { captcha: false, title, price_original: price, slides: slides.slice(0, 8), variations: {}, details: [], description_html: '', reviews };
+        return { captcha: false, title, price_original: price, slides: slides.slice(0, 8), variations, details, description_html: desc, reviews };
         }"""
     )
 
 
-def _search_tiktok_video_urls(page, query: str) -> list[dict]:
+def _search_tiktok_video_urls(page, query: str) -> dict:
     q_enc = urllib.parse.quote(query.strip())
     search_url = f"https://www.tiktok.com/search/video?q={q_enc}"
     page.goto(search_url, wait_until="domcontentloaded", timeout=20000)
     page.wait_for_timeout(2200)
     cur_url = page.url
     if detect_captcha_or_verification(cur_url, page.content()[:15000]):
-        return []
+        return {"captcha": True, "items": []}
     try:
         page.evaluate("window.scrollBy(0, 1400)")
         page.wait_for_timeout(1200)
@@ -525,7 +623,8 @@ def _search_tiktok_video_urls(page, query: str) -> list[dict]:
         return found.slice(0, 26);
         }"""
     )
-    return [it for it in (items or []) if is_person_creator_handle(it.get("username", ""), "")]
+    filtered = [it for it in (items or []) if is_person_creator_handle(it.get("username", ""), "")]
+    return {"captcha": False, "items": filtered}
 
 
 def fetch_tikwm_info(video_url: str) -> dict | None:
@@ -664,27 +763,16 @@ def process_single_video_to_catbox(draft_id: str, draft_dir: str, vid_meta: dict
             return
 
         catbox_id = catbox_url.split("/")[-1]
-
-        def _patch_vid(d):
-            if d.get("video") and d["video"].get("id") == vid_meta["id"]:
-                d["video"]["src"] = catbox_url
-                d["video"]["catbox_id"] = catbox_id
-                d["video"]["catbox_ready"] = True
-                if os.path.exists(poster_abs):
-                    d["video"]["poster"] = poster_rel
-            for arr_key in ("creators", "reserve_videos"):
-                for item in d.get(arr_key) or []:
-                    if item.get("id") == vid_meta["id"]:
-                        item["video"] = catbox_url
-                        item["catbox_id"] = catbox_id
-                        item["catbox_ready"] = True
-                        if os.path.exists(poster_abs):
-                            item["poster"] = poster_rel
-                        if os.path.exists(avatar_abs):
-                            item["avatar"] = avatar_rel
-
-        update_draft_file(draft_dir, _patch_vid)
-        notify_node_studio(draft_id, "video_catbox_done", {"videoId": vid_meta["id"], "catboxUrl": catbox_url})
+        patch_node_draft(
+            draft_id,
+            "video_catbox_done",
+            event_name="video_catbox_done",
+            videoId=vid_meta["id"],
+            catboxUrl=catbox_url,
+            catboxId=catbox_id,
+            poster=poster_rel if os.path.exists(poster_abs) else "",
+            avatar=avatar_rel if os.path.exists(avatar_abs) else "",
+        )
     except Exception as e:
         print(f"[StudioDaemon] video worker err ({vid_id}): {e}", flush=True)
 
@@ -700,8 +788,17 @@ def run_videos_pipeline(draft_id: str, draft_dir: str, mode: str, query: str = "
         q = (query or "").strip()
         if q:
             try:
-                found = _BROWSER.submit(_search_tiktok_video_urls, q, timeout=35)
-                candidates.extend(found or [])
+                search_res = _BROWSER.submit(_search_tiktok_video_urls, q, timeout=35)
+                if search_res.get("captcha"):
+                    notify_node_studio(
+                        draft_id,
+                        "warning",
+                        {
+                            "code": "NEEDS_USER_ACTION",
+                            "message": "TikTok pediu verificação humana na busca automática. Cole os links dos vídeos manualmente na aba Vídeos.",
+                        },
+                    )
+                candidates.extend(search_res.get("items") or [])
             except Exception as e:
                 print(f"[StudioDaemon] TikTok search error: {e}", flush=True)
 
@@ -728,54 +825,36 @@ def run_videos_pipeline(draft_id: str, draft_dir: str, mode: str, query: str = "
         notify_node_studio(draft_id, "videos_preview_ready", {"count": 0})
         return
 
-    def _inject_instant_videos(d):
-        mapped = []
-        for idx, inf in enumerate(resolved):
-            mapped.append(
-                {
-                    "id": inf["id"],
-                    "name": inf["name"],
-                    "username": inf["username"],
-                    "avatar": inf["avatar_remote"] or "../img/reviews-avatars/mulheres_validadas/mulher_01.jpg",
-                    "poster": inf["poster_remote"] or "/logo.png",
-                    "video": inf["stream_url"],
-                    "stream_url": inf["stream_url"],
-                    "catbox_id": "",
-                    "catbox_ready": False,
-                    "startTime": 0,
-                    "likes": inf["likes"],
-                    "commentsCount": inf["commentsCount"],
-                    "saves": inf["saves"],
-                    "shares": inf["shares"],
-                    "description": inf["description"] or "Qualidade absurda, chegou super rápido!",
-                }
-            )
+    mapped = [
+        {
+            "id": inf["id"],
+            "name": inf["name"],
+            "username": inf["username"],
+            "avatar": inf["avatar_remote"] or "../img/reviews-avatars/mulheres_validadas/mulher_01.jpg",
+            "poster": inf["poster_remote"] or "/logo.png",
+            "video": inf["stream_url"],
+            "stream_url": inf["stream_url"],
+            "catbox_id": "",
+            "catbox_ready": False,
+            "startTime": 0,
+            "likes": inf["likes"],
+            "commentsCount": inf["commentsCount"],
+            "saves": inf["saves"],
+            "shares": inf["shares"],
+            "description": inf["description"] or "Qualidade absurda, chegou super rápido!",
+        }
+        for inf in resolved
+    ]
 
-        if mode == "urls":
-            d.setdefault("creators", []).extend(mapped)
-        else:
-            if not (d.get("video") and d["video"].get("src")) and mapped:
-                first = mapped[0]
-                d["video"] = {
-                    "id": first["id"],
-                    "src": first["video"],
-                    "poster": first["poster"],
-                    "duration": resolved[0]["duration"],
-                    "catbox_id": "",
-                    "catbox_ready": False,
-                }
-                active_creators = mapped[1:10]
-                reserve_vids = mapped[10:]
-            else:
-                active_creators = mapped[:9]
-                reserve_vids = mapped[9:]
-            d["creators"] = active_creators
-            d["reserve_videos"] = reserve_vids
+    patch_node_draft(
+        draft_id,
+        "videos_merge",
+        event_name="videos_preview_ready",
+        mode=mode,
+        videos=mapped,
+        firstDuration=resolved[0]["duration"],
+    )
 
-    update_draft_file(draft_dir, _inject_instant_videos)
-    notify_node_studio(draft_id, "videos_preview_ready", {"count": len(resolved)})
-
-    # Pre-warm Catbox in parallel for active videos + top 4 reserve videos
     for idx, inf in enumerate(resolved[:14]):
         _CATBOX_POOL.submit(process_single_video_to_catbox, draft_id, draft_dir, inf, idx)
 
@@ -787,35 +866,33 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
     u1, kind1 = resolve_and_classify_url(url1, follow_redirects=True)
     u2, kind2 = resolve_and_classify_url(url2, follow_redirects=True) if url2 else ("", "unknown")
 
-    # Stage 1A: Ultra-Fast HTTP SSR Pass (~1.5s) for instant mobile preview!
-    fast_data = None
-    if kind1 == "mercadolivre":
-        fast_data = parse_ml_html_fast(u1)
+    # Never open tiktok_video links in Playwright — route them directly through silent tikwm!
+    direct_video_urls = []
+    if kind1 == "tiktok_video":
+        direct_video_urls.append(u1)
+    if kind2 == "tiktok_video":
+        direct_video_urls.append(u2)
+    if direct_video_urls:
+        run_videos_pipeline(draft_id, draft_dir, mode="urls", urls=direct_video_urls)
 
+    # Stage 1A: Ultra-Fast HTTP SSR Pass (~1.5s)
+    fast_data = parse_ml_html_fast(u1) if kind1 == "mercadolivre" else None
     if fast_data and fast_data.get("captcha"):
-        notify_node_studio(
-            draft_id,
-            "warning",
-            {"code": "NEEDS_USER_ACTION", "message": "Mercado Livre pediu verificação na leitura rápida; usando navegador aquecido."},
-        )
         fast_data = None
 
     if fast_data and fast_data.get("title"):
-        def _apply_fast(d):
-            d["product_title"] = fast_data["title"]
-            if fast_data.get("price_original") and not d.get("user_locked_price"):
-                orig = float(fast_data["price_original"])
-                d["price_original_num"] = max(orig, round(d.get("price_pix", 49.89) * 3.4, 2))
-            if fast_data.get("slides"):
-                d["slides"] = [{"src": s, "alt": f"{fast_data['title']} - {i + 1}"} for i, s in enumerate(fast_data["slides"])]
-            if fast_data.get("description_html"):
-                d["description_html"] = fast_data["description_html"]
-            d["status"] = "enriching"
+        fast_slides = [{"src": s, "alt": f"{fast_data['title']} - {i + 1}"} for i, s in enumerate(fast_data.get("slides") or [])]
+        patch_node_draft(
+            draft_id,
+            "extract_fast",
+            event_name="fast_preview",
+            title=fast_data["title"],
+            price_original=float(fast_data.get("price_original") or 0),
+            slides=fast_slides,
+            description_html=fast_data.get("description_html") or "",
+        )
 
-        update_draft_file(draft_dir, _apply_fast)
-        notify_node_studio(draft_id, "fast_preview", {"title": fast_data["title"]})
-
-    # Stage 1B: Full Warm Playwright Pass (Variations, Specs, Overfetched Reviews & Buyer Unboxing Photos)
+    # Stage 1B: Warm Playwright Pass (strictly for mercadolivre / tiktok_shop PDPs)
     merged_slides = list((fast_data or {}).get("slides") or [])
     merged_vars = {}
     merged_details = []
@@ -825,10 +902,13 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
     raw_reviews = []
 
     for src_u, src_k in [(u1, kind1), (u2, kind2)]:
-        if not src_u or src_k == "unknown":
+        if not src_u or src_k not in ("mercadolivre", "tiktok_shop"):
             continue
         try:
-            dom_res = _BROWSER.submit(_scrape_dom_in_playwright, src_u, src_k, timeout=35)
+            dom_res = _BROWSER.submit(_scrape_dom_in_playwright, src_u, src_k, timeout=42)
+            if dom_res.get("redirected_video"):
+                run_videos_pipeline(draft_id, draft_dir, mode="urls", urls=[dom_res["redirected_video"]])
+                continue
             if dom_res.get("captcha"):
                 notify_node_studio(
                     draft_id,
@@ -856,7 +936,6 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
         except Exception as e:
             print(f"[StudioDaemon] DOM scrape err ({src_u}): {e}", flush=True)
 
-    # Convert slides & variation thumbnails locally into 1000x1000 1:1 WebP
     local_slides = []
     for i, s_url in enumerate(merged_slides[:8]):
         raw_b = download_bytes(s_url)
@@ -885,11 +964,9 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
             new_opts.append(opt)
         grp["opcoes"] = new_opts
 
-    # Partition reviews into Unboxing Cards (1 card per buyer) + Text Reviews (Active + Reserve Pool!)
     unboxing_cards = []
     text_reviews = []
     seen_comments = set()
-    u_counter = 0
 
     for idx, rv in enumerate(raw_reviews):
         cleaned = clean_review_text(rv.get("comment") or "")
@@ -901,7 +978,6 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
         for p_idx, p_url in enumerate((rv.get("photos") or [])[:4]):
             pb = download_bytes(p_url)
             if pb:
-                u_counter += 1
                 p_abs = os.path.join(media_dir, f"unbox_{idx + 1}_{p_idx + 1}.jpg")
                 try:
                     with Image.open(io.BytesIO(pb)) as im:
@@ -931,51 +1007,23 @@ def run_extract_pipeline(draft_id: str, draft_dir: str, url1: str, url2: str = "
     active_text = text_reviews[:needed_text]
     reserve_text = text_reviews[needed_text:]
 
-    def _apply_full_extract(d):
-        if merged_title:
-            d["product_title"] = merged_title
-        if merged_price > 0 and not d.get("user_locked_price"):
-            # Re-calibrate PIX sweet spot from real extracted price
-            raw = merged_price
-            if raw <= 80:
-                pix = min(37.89, max(24.89, int(raw * 0.46) + 0.89))
-            elif raw <= 180:
-                pix = min(57.89, max(47.89, int(raw * 0.36) + 0.89))
-            elif raw <= 400:
-                pix = min(119.90, max(69.89, int(raw * 0.31) + 0.90))
-            else:
-                pix = min(297.90, max(167.90, int(raw * 0.28) + 0.90))
-            d["price_pix"] = round(pix, 2)
-            d["price_original_num"] = round(max(raw, int(pix * 3.6) + 0.90), 2)
-        if local_slides:
-            d["slides"] = local_slides
-        if merged_vars:
-            d["variations"] = merged_vars
-        if merged_details:
-            d["details"] = merged_details
-        if merged_desc:
-            d["description_html"] = merged_desc
-        if active_unbox or active_text:
-            d["reviews"] = active_unbox + active_text
-        d["reserve_unboxings"] = reserve_unbox
-        d["reserve_reviews"] = reserve_text
-        d["status"] = "ready"
-
-    updated = update_draft_file(draft_dir, _apply_full_extract)
-    notify_node_studio(
+    patch_node_draft(
         draft_id,
-        "reviews_pool_ready",
-        {
-            "slides": len(local_slides),
-            "unboxings": len(active_unbox),
-            "reserve_unboxings": len(reserve_unbox),
-            "reserve_reviews": len(reserve_text),
-        },
+        "extract_full",
+        event_name="reviews_pool_ready",
+        title=merged_title,
+        price_original=merged_price,
+        slides=local_slides,
+        variations=merged_vars,
+        details=merged_details,
+        description_html=merged_desc,
+        reviews=active_unbox + active_text,
+        reserve_unboxings=reserve_unbox,
+        reserve_reviews=reserve_text,
     )
 
-    if auto_videos:
-        base_title = merged_title or ((updated or {}).get("product_title") or "")
-        words = [w for w in re.sub(r"[^\w\sÀ-ÿ]", " ", base_title).split() if len(w) > 2][:5]
+    if auto_videos and merged_title:
+        words = [w for w in re.sub(r"[^\w\sÀ-ÿ]", " ", merged_title).split() if len(w) > 2][:5]
         q = " ".join(words)
         if q:
             run_videos_pipeline(draft_id, draft_dir, mode="search", query=q)
@@ -1003,27 +1051,17 @@ class StudioDaemonHandler(BaseHTTPRequestHandler):
         body = json.loads(self.rfile.read(length).decode("utf-8") or "{}") if length else {}
 
         if self.path == "/extract":
-            draft_id = body["draftId"]
-            draft_dir = body["draftDir"]
-            url1 = body.get("url1") or ""
-            url2 = body.get("url2") or ""
-            auto_vids = bool(body.get("autoVideos", True))
             threading.Thread(
                 target=run_extract_pipeline,
-                args=(draft_id, draft_dir, url1, url2, auto_vids),
+                args=(body["draftId"], body["draftDir"], body.get("url1") or "", body.get("url2") or "", bool(body.get("autoVideos", True))),
                 daemon=True,
             ).start()
             return self._send_json(202, {"ok": True, "queued": "extract"})
 
         if self.path == "/videos":
-            draft_id = body["draftId"]
-            draft_dir = body["draftDir"]
-            mode = body.get("mode") or "search"
-            query = body.get("query") or ""
-            urls = body.get("urls") or []
             threading.Thread(
                 target=run_videos_pipeline,
-                args=(draft_id, draft_dir, mode, query, urls),
+                args=(body["draftId"], body["draftDir"], body.get("mode") or "search", body.get("query") or "", body.get("urls") or []),
                 daemon=True,
             ).start()
             return self._send_json(202, {"ok": True, "queued": "videos"})
@@ -1032,7 +1070,6 @@ class StudioDaemonHandler(BaseHTTPRequestHandler):
 
 
 def run_server(port: int = 3334):
-    # Pre-warm Playwright minimized context in background right at startup so T+0 has zero cold-start!
     threading.Thread(target=lambda: _BROWSER.submit(lambda p: True, timeout=30), daemon=True).start()
     srv = ThreadingHTTPServer(("127.0.0.1", port), StudioDaemonHandler)
     print(f"[StudioDaemon] Online em http://127.0.0.1:{port} (warm zero-audio mode)", flush=True)

@@ -7,9 +7,11 @@ const {
   getNextProductId,
   createDraft,
   loadDraft,
+  saveDraft,
   listDrafts,
   popFromReserve,
   applyDraftPatch,
+  applyDaemonPatch,
   buildProductJsonFromDraft,
 } = require('./draft-manager');
 const { publishDraft } = require('./publisher');
@@ -40,7 +42,11 @@ function parseCookies(cookieHeader) {
       if (idx > 0) {
         const k = pair.slice(0, idx).trim();
         const v = pair.slice(idx + 1).trim();
-        out[k] = decodeURIComponent(v);
+        try {
+          out[k] = decodeURIComponent(v);
+        } catch (_) {
+          out[k] = v;
+        }
       }
     });
   return out;
@@ -61,7 +67,7 @@ function readJsonBody(req) {
     let raw = '';
     req.on('data', (c) => {
       raw += c;
-      if (raw.length > 5 * 1024 * 1024) req.destroy();
+      if (raw.length > 8 * 1024 * 1024) req.destroy();
     });
     req.on('end', () => {
       try {
@@ -107,11 +113,7 @@ function callDaemon(method, endpoint, bodyObj = null, timeoutMs = 4000) {
   });
 }
 
-function broadcastDraftEvent(draftId, eventName, extra = {}) {
-  const listeners = sseClients.get(draftId);
-  if (!listeners || listeners.size === 0) return;
-  const draft = loadDraft(draftId);
-  if (!draft) return;
+function buildSseFrame(draft, eventName, extra = {}) {
   const built = buildProductJsonFromDraft(draft);
   const livePatch = {
     product_title: built.product_title,
@@ -132,7 +134,15 @@ function broadcastDraftEvent(draftId, eventName, extra = {}) {
     creators: built.creators,
     produto_atual: built.produto_atual,
   };
-  const frame = `event: ${eventName}\ndata: ${JSON.stringify({ event: eventName, draft, livePatch, extra })}\n\n`;
+  return `event: ${eventName}\ndata: ${JSON.stringify({ event: eventName, draft, livePatch, extra })}\n\n`;
+}
+
+function broadcastDraftEvent(draftId, eventName, extra = {}) {
+  const listeners = sseClients.get(draftId);
+  if (!listeners || listeners.size === 0) return;
+  const draft = loadDraft(draftId);
+  if (!draft) return;
+  const frame = buildSseFrame(draft, eventName, extra);
   for (const clientRes of listeners) {
     try { clientRes.write(frame); } catch (_) {}
   }
@@ -153,38 +163,66 @@ async function waitForActiveCatboxUploads(draftId, maxWaitMs = 25000) {
 function handleStudioRequest(req, res) {
   if (process.env.STUDIO_MODE !== '1') return false;
 
-  const parsedUrl = new URL(req.url, `http://${req.headers.host || '127.0.0.1'}`);
-  const pathname = parsedUrl.pathname;
+  const parsedUrl = new URL(req.url || '/', `http://${req.headers.host || '127.0.0.1'}`);
+  let decodedPath;
+  try {
+    decodedPath = decodeURIComponent(parsedUrl.pathname || '/');
+  } catch (_) {
+    res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('400 Bad Request');
+    return true;
+  }
+
+  const pathname = path.posix.normalize(decodedPath).replace(/\\/g, '/').replace(/\/{2,}/g, '/');
+  const lowerPath = pathname.toLowerCase();
+
+  // Hard block internal/dot directories from ever leaking over public Cloudflare Tunnel
+  if (
+    (lowerPath.startsWith('/.') && !lowerPath.startsWith('/.studio-drafts/')) ||
+    lowerPath.startsWith('/scripts/') ||
+    lowerPath === '/scripts' ||
+    lowerPath.startsWith('/docs/') ||
+    lowerPath === '/docs'
+  ) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store' });
+    res.end('403 Forbidden');
+    return true;
+  }
 
   const isStudioRoute =
-    pathname === '/importador' ||
-    pathname === '/importador.html' ||
-    pathname.startsWith('/api/studio/') ||
-    pathname.startsWith('/.studio-drafts/');
+    lowerPath === '/importador' ||
+    lowerPath === '/importador.html' ||
+    lowerPath.startsWith('/api/studio/') ||
+    lowerPath.startsWith('/.studio-drafts/');
 
   if (!isStudioRoute) return false;
 
+  // Fail-closed token authentication
   const expectedToken = String(process.env.STUDIO_TOKEN || '').trim();
-  if (expectedToken) {
-    const queryKey = parsedUrl.searchParams.get('key') || '';
-    const headerKey = req.headers['x-studio-key'] || '';
-    const cookies = parseCookies(req.headers.cookie);
-    const cookieKey = cookies.studio_key || '';
+  if (!expectedToken) {
+    res.writeHead(401, { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store' });
+    res.end('401 STUDIO_TOKEN ausente');
+    return true;
+  }
 
-    const provided = queryKey || headerKey || cookieKey;
-    if (provided !== expectedToken) {
-      res.writeHead(401, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' });
-      res.end('<h1>401 — Acesso restrito ao Stone Studio</h1><p>Abra pelo link completo com ?key=... gerado no terminal.</p>');
-      return true;
-    }
+  const queryKey = parsedUrl.searchParams.get('key') || '';
+  const headerKey = req.headers['x-studio-key'] || '';
+  const cookies = parseCookies(req.headers.cookie);
+  const cookieKey = cookies.studio_key || '';
 
-    if (queryKey === expectedToken && cookieKey !== expectedToken) {
-      res.setHeader('Set-Cookie', `studio_key=${encodeURIComponent(expectedToken)}; Path=/; HttpOnly; SameSite=Lax`);
-    }
+  const provided = queryKey || headerKey || cookieKey;
+  if (provided !== expectedToken) {
+    res.writeHead(401, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' });
+    res.end('<h1>401 — Acesso restrito ao Stone Studio</h1><p>Abra pelo link completo com ?key=... gerado no terminal.</p>');
+    return true;
+  }
+
+  if (queryKey === expectedToken && cookieKey !== expectedToken) {
+    res.setHeader('Set-Cookie', `studio_key=${encodeURIComponent(expectedToken)}; Path=/; HttpOnly; SameSite=Lax`);
   }
 
   // 1. Serve Studio HTML
-  if (req.method === 'GET' && (pathname === '/importador' || pathname === '/importador.html')) {
+  if (req.method === 'GET' && (lowerPath === '/importador' || lowerPath === '/importador.html')) {
     const htmlPath = path.join(ROOT, 'importador.html');
     if (!fs.existsSync(htmlPath)) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
@@ -197,10 +235,10 @@ function handleStudioRequest(req, res) {
   }
 
   // 2. Serve local draft media safely
-  if (req.method === 'GET' && pathname.startsWith('/.studio-drafts/')) {
-    const rel = decodeURIComponent(pathname.replace(/^\/\.studio-drafts\//, ''));
+  if (req.method === 'GET' && lowerPath.startsWith('/.studio-drafts/')) {
+    const rel = pathname.replace(/^\/\.studio-drafts\//i, '');
     const abs = path.resolve(DRAFTS_ROOT, rel);
-    if (!abs.startsWith(path.resolve(DRAFTS_ROOT)) || !fs.existsSync(abs) || !fs.statSync(abs).isFile()) {
+    if (!abs.startsWith(path.resolve(DRAFTS_ROOT) + path.sep) || !fs.existsSync(abs) || !fs.statSync(abs).isFile()) {
       res.writeHead(404);
       res.end('Not found');
       return true;
@@ -214,7 +252,21 @@ function handleStudioRequest(req, res) {
     return true;
   }
 
-  // 3. Internal daemon notification webhook
+  // 3A. Single-writer atomic daemon delta merge endpoint
+  if (req.method === 'POST' && pathname === '/api/studio/internal/patch') {
+    readJsonBody(req).then((body) => {
+      if (!body || !body.draftId) return sendJson(res, 400, { ok: false });
+      const resPatch = applyDaemonPatch(body.draftId, body);
+      if (!resPatch) return sendJson(res, 404, { ok: false });
+      if (body.event) {
+        broadcastDraftEvent(body.draftId, body.event, body.extra || {});
+      }
+      return sendJson(res, 200, { ok: true, draft: resPatch.draft });
+    });
+    return true;
+  }
+
+  // 3B. Internal daemon notification webhook (warnings/status)
   if (req.method === 'POST' && pathname === '/api/studio/internal/notify') {
     readJsonBody(req).then((body) => {
       if (body && body.draftId && body.event) {
@@ -264,7 +316,7 @@ function handleStudioRequest(req, res) {
 
       if (manualPix > 0) {
         draft.user_locked_price = true;
-        require('./draft-manager').saveDraft(draft);
+        saveDraft(draft);
       }
 
       const draftDir = path.join(DRAFTS_ROOT, draft.draftId);
@@ -287,7 +339,7 @@ function handleStudioRequest(req, res) {
     return true;
   }
 
-  // 6. SSE real-time stream
+  // 6. SSE real-time stream (pushes immediate snapshot on connect to prevent fast_preview race)
   const streamMatch = pathname.match(/^\/api\/studio\/stream\/([a-zA-Z0-9_-]+)$/);
   if (req.method === 'GET' && streamMatch) {
     const draftId = streamMatch[1];
@@ -297,6 +349,11 @@ function handleStudioRequest(req, res) {
       Connection: 'keep-alive',
     });
     res.write(': connected\n\n');
+    const curDraft = loadDraft(draftId);
+    if (curDraft) {
+      res.write(buildSseFrame(curDraft, 'sync_state', {}));
+    }
+
     if (!sseClients.has(draftId)) sseClients.set(draftId, new Set());
     sseClients.get(draftId).add(res);
 
@@ -341,7 +398,6 @@ function handleStudioRequest(req, res) {
     readJsonBody(req).then((body) => {
       try {
         const result = popFromReserve(draftId, body.kind || 'reviews', Number(body.count) || 2);
-        // Trigger background refill if video reserve is running low
         if (body.kind === 'videos' && result.remaining < 3) {
           const draftDir = path.join(DRAFTS_ROOT, draftId);
           const q = String(result.draft.product_title || '').split(/\s+/).slice(0, 4).join(' ');

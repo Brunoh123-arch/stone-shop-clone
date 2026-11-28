@@ -13,3 +13,5 @@ brain_test/
 .studio-chrome-profile/
 .studio-bin/
 .superpowers/
+__pycache__/
+*.pyc

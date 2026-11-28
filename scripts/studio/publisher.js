@@ -22,7 +22,8 @@ const CATEGORY_LABELS = {
   infantil: 'Brinquedos & Infantil',
   moda: 'Moda, Bolsas & Calçados',
   beleza: 'Beleza, Cabelo & Perfumaria',
-  auto: 'Automotivo & Ferramentas',
+  lazer: 'Churrasco, Piscina & Lazer',
+  auto: 'Churrasco, Piscina & Lazer',
 };
 
 function fileMd5(absPath) {
@@ -136,7 +137,7 @@ function escapeAttr(str) {
     .replace(/>/g, '&gt;');
 }
 
-function promoteMediaFile(srcRef, destRelFromRoot, copiedFiles) {
+function promoteMediaFile(srcRef, destRelFromRoot, mediaBackups) {
   const cleanSrc = String(srcRef || '').split('?')[0];
   if (!cleanSrc || /^https?:\/\//i.test(cleanSrc)) return srcRef;
 
@@ -154,10 +155,24 @@ function promoteMediaFile(srcRef, destRelFromRoot, copiedFiles) {
     return '../' + destRelFromRoot.replace(/\\/g, '/');
   }
 
+  if (!mediaBackups.has(destAbs)) {
+    mediaBackups.set(destAbs, fs.existsSync(destAbs) ? fs.readFileSync(destAbs) : null);
+  }
   fs.mkdirSync(path.dirname(destAbs), { recursive: true });
   fs.copyFileSync(srcAbs, destAbs);
-  copiedFiles.push(destAbs);
   return '../' + destRelFromRoot.replace(/\\/g, '/');
+}
+
+function restoreMediaBackups(mediaBackups) {
+  for (const [abs, prevBuf] of mediaBackups.entries()) {
+    try {
+      if (prevBuf === null) {
+        if (fs.existsSync(abs)) fs.unlinkSync(abs);
+      } else {
+        fs.writeFileSync(abs, prevBuf);
+      }
+    } catch (_) {}
+  }
 }
 
 function buildHomeCardHtml(prodJson, categoryLabel) {
@@ -339,7 +354,18 @@ async function publishDraft(draftId, options = {}) {
   }
   const prodJsonPath = path.join(ROOT, 'data', 'produtos', `produto-${id}.json`);
   const prevProdJson = fs.existsSync(prodJsonPath) ? fs.readFileSync(prodJsonPath, 'utf8') : null;
-  const copiedFiles = [];
+  const mediaBackups = new Map();
+  let validationPassed = false;
+
+  const rollbackAll = () => {
+    for (const [p, content] of snapshots.entries()) fs.writeFileSync(p, content, 'utf8');
+    if (prevProdJson === null) {
+      if (fs.existsSync(prodJsonPath)) fs.unlinkSync(prodJsonPath);
+    } else {
+      fs.writeFileSync(prodJsonPath, prevProdJson, 'utf8');
+    }
+    restoreMediaBackups(mediaBackups);
+  };
 
   try {
     let prodJson = buildProductJsonFromDraft(draft);
@@ -348,7 +374,7 @@ async function publishDraft(draftId, options = {}) {
     prodJson.slider_imgs = prodJson.slider_imgs.map((s, idx) => {
       const ext = path.extname(String(s.src).split('?')[0]) || '.webp';
       const rel = `img/studio-${id}-slide-${idx + 1}${ext}`;
-      return { ...s, src: promoteMediaFile(s.src, rel, copiedFiles) };
+      return { ...s, src: promoteMediaFile(s.src, rel, mediaBackups) };
     });
 
     // Promote variations
@@ -360,7 +386,7 @@ async function publishDraft(draftId, options = {}) {
           vCounter += 1;
           const ext = path.extname(String(opt.imagem).split('?')[0]) || '.webp';
           const rel = `img/studio-${id}-var-${vCounter}${ext}`;
-          return { ...opt, imagem: promoteMediaFile(opt.imagem, rel, copiedFiles) };
+          return { ...opt, imagem: promoteMediaFile(opt.imagem, rel, mediaBackups) };
         }
         return opt;
       });
@@ -372,20 +398,20 @@ async function publishDraft(draftId, options = {}) {
     if (prodJson.video && prodJson.video.poster) {
       const ext = path.extname(String(prodJson.video.poster).split('?')[0]) || '.jpg';
       const rel = `img/posters-desc/poster-desc-${id}${ext}`;
-      prodJson.video.poster = `${promoteMediaFile(prodJson.video.poster, rel, copiedFiles)}?v=${stamp}`;
+      prodJson.video.poster = `${promoteMediaFile(prodJson.video.poster, rel, mediaBackups)}?v=${stamp}`;
     }
 
     // Promote creators posters & avatars
     prodJson.creators = (prodJson.creators || []).map((c, idx) => {
       const pExt = path.extname(String(c.poster).split('?')[0]) || '.jpg';
       const pRel = `videosprodutos/posters/poster-prod-${id}-c${idx + 1}${pExt}`;
-      const promotedPoster = `${promoteMediaFile(c.poster, pRel, copiedFiles)}?v=${stamp}`;
+      const promotedPoster = `${promoteMediaFile(c.poster, pRel, mediaBackups)}?v=${stamp}`;
 
       let promotedAv = c.avatar;
       if (String(c.avatar || '').startsWith('/.studio-drafts/')) {
         const aExt = path.extname(String(c.avatar).split('?')[0]) || '.jpg';
         const aRel = `img/avatars-studio/creator-${id}-c${idx + 1}${aExt}`;
-        promotedAv = `${promoteMediaFile(c.avatar, aRel, copiedFiles)}?v=${stamp}`;
+        promotedAv = `${promoteMediaFile(c.avatar, aRel, mediaBackups)}?v=${stamp}`;
       }
       return { ...c, poster: promotedPoster, avatar: promotedAv };
     });
@@ -395,7 +421,7 @@ async function publishDraft(draftId, options = {}) {
       const newPhotos = (r.photos || []).map((ph, pIdx) => {
         const ext = path.extname(String(ph).split('?')[0]) || '.jpg';
         const rel = `img/review-${id}-b${rIdx + 1}-${pIdx + 1}${ext}`;
-        return promoteMediaFile(ph, rel, copiedFiles);
+        return promoteMediaFile(ph, rel, mediaBackups);
       });
       return { ...r, photos: newPhotos };
     });
@@ -416,31 +442,22 @@ async function publishDraft(draftId, options = {}) {
         stdio: ['ignore', 'pipe', 'pipe'],
       });
     } catch (valErr) {
-      const combined = `${valErr.stdout || ''}\n${valErr.stderr || ''}`;
-      const errLines = combined
+      const stderrPart = String(valErr.stderr || '');
+      const errBlock = stderrPart.includes('❌') ? stderrPart.slice(stderrPart.indexOf('❌')) : `${valErr.stdout || ''}\n${stderrPart}`;
+      const errLines = errBlock
         .split(/\r?\n/)
-        .filter((l) => l.trim().startsWith('- ') || l.includes(`produto-${id}:`))
+        .filter((l) => l.trim().startsWith('- '))
         .map((l) => l.replace(/^\s*-\s*/, '').trim());
 
-      // Atomic rollback!
-      for (const [p, content] of snapshots.entries()) fs.writeFileSync(p, content, 'utf8');
-      if (prevProdJson === null) {
-        if (fs.existsSync(prodJsonPath)) fs.unlinkSync(prodJsonPath);
-      } else {
-        fs.writeFileSync(prodJsonPath, prevProdJson, 'utf8');
-      }
-      for (const cf of copiedFiles) {
-        if (fs.existsSync(cf)) {
-          try { fs.unlinkSync(cf); } catch (_) {}
-        }
-      }
-
+      rollbackAll();
       return {
         ok: false,
         productId: id,
         errors: errLines.length ? errLines : ['Falha no validar-modelo-unico.js'],
       };
     }
+
+    validationPassed = true;
 
     // Clear Node require cache for local server.js live serving
     try {
@@ -454,7 +471,7 @@ async function publishDraft(draftId, options = {}) {
       .map((l) => l.replace(/^\s*-\s*/, '').trim());
 
     if (options.deploy) {
-      const relCopied = copiedFiles.map((abs) => path.relative(ROOT, abs).replace(/\\/g, '/'));
+      const relCopied = Array.from(mediaBackups.keys()).map((abs) => path.relative(ROOT, abs).replace(/\\/g, '/'));
       const stageTargets = [
         `data/produtos/produto-${id}.json`,
         'data/produtos/index.js',
@@ -463,14 +480,29 @@ async function publishDraft(draftId, options = {}) {
         'data/admin-catalogo-360.json',
         ...relCopied,
       ];
-      execFileSync('git', ['add', '--', ...stageTargets], { cwd: ROOT, stdio: 'pipe' });
-      execFileSync('git', ['commit', '-m', `feat(studio): publicar produto #${id} via Stone Studio`], { cwd: ROOT, stdio: 'pipe' });
-      execSync('git pull --rebase --autostash origin main', { cwd: ROOT, stdio: 'pipe' });
-      execSync('git push origin main', { cwd: ROOT, stdio: 'pipe' });
-      const vcOut = execSync('npx vercel --prod --yes', { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
-      const depMatch = vcOut.match(/https:\/\/stoneshopclone-[a-z0-9]+-k7s-projects-[a-z0-9]+\.vercel\.app/i);
-      if (depMatch) {
+      try {
+        execFileSync('git', ['add', '--', ...stageTargets], { cwd: ROOT, stdio: 'pipe' });
+        execFileSync('git', ['commit', '-m', `feat(studio): publicar produto #${id} via Stone Studio`], { cwd: ROOT, stdio: 'pipe' });
+        execSync('git pull --rebase --autostash origin main', { cwd: ROOT, stdio: 'pipe' });
+        execSync('git push origin main', { cwd: ROOT, stdio: 'pipe' });
+        const vcOut = execSync('npx vercel --prod --yes 2>&1', { cwd: ROOT, encoding: 'utf8' });
+        const depMatch = vcOut.match(/https:\/\/stoneshopclone-[a-z0-9-]+\.vercel\.app/i);
+        if (!depMatch) {
+          return {
+            ok: false,
+            committedLocally: true,
+            productId: id,
+            errors: ['Deploy enviado, mas URL da Vercel não foi identificada para apontar alias.'],
+          };
+        }
         execSync(`npx vercel alias set ${depMatch[0]} stoneshopclone.vercel.app`, { cwd: ROOT, stdio: 'pipe' });
+      } catch (deployErr) {
+        return {
+          ok: false,
+          committedLocally: true,
+          productId: id,
+          errors: [`Produto validado localmente, mas etapa Git/Vercel falhou: ${deployErr.message || String(deployErr)}`],
+        };
       }
     }
 
@@ -482,17 +514,7 @@ async function publishDraft(draftId, options = {}) {
       adsUrl: 'https://stoneshopclone.vercel.app/videos-ads',
     };
   } catch (err) {
-    for (const [p, content] of snapshots.entries()) fs.writeFileSync(p, content, 'utf8');
-    if (prevProdJson === null) {
-      if (fs.existsSync(prodJsonPath)) fs.unlinkSync(prodJsonPath);
-    } else {
-      fs.writeFileSync(prodJsonPath, prevProdJson, 'utf8');
-    }
-    for (const cf of copiedFiles) {
-      if (fs.existsSync(cf)) {
-        try { fs.unlinkSync(cf); } catch (_) {}
-      }
-    }
+    if (!validationPassed) rollbackAll();
     return { ok: false, productId: id, errors: [err.message || String(err)] };
   }
 }

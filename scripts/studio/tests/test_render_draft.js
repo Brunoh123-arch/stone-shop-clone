@@ -39,8 +39,14 @@ test('renderProdutoFromData renders in-memory draft with studio live bridge with
   assert.match(res.html, /Kit Teste Instantâneo Zero Delay/);
   assert.match(res.html, /id="studio-live-bridge"/);
   assert.match(res.html, /STUDIO_LIVE_PATCH/);
+  assert.match(res.html, /<base href="\/pages\/"\s*\/>/);
+  assert.doesNotMatch(res.html, /anti-clone-guard\.js/);
+
+  const modularJs = require('fs').readFileSync(require('path').join(process.cwd(), 'js/videos-criadores-modular.js'), 'utf8');
+  assert.match(modularJs, /window\.initVideosCriadoresModular\s*=/);
 
   const prod155 = renderProdutoHtml('155');
   assert.equal(prod155.status, 200);
   assert.doesNotMatch(prod155.html, /id="studio-live-bridge"/);
+  assert.match(prod155.html, /anti-clone-guard\.js/);
 });

@@ -252,7 +252,7 @@ function getStudioLiveBridgeScript() {
   function esc(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
   window.addEventListener('message', function (ev) {
     var msg = ev && ev.data;
@@ -321,12 +321,20 @@ function getStudioLiveBridgeScript() {
       }
       var cnt = document.querySelector('.slider-counter');
       if (cnt) cnt.textContent = '1/' + p.slider_imgs.length;
+      if (typeof window.initSlider === 'function') {
+        try { window.initSlider(); } catch (_) {}
+      }
     }
     if (typeof p.reviews_cards_html === 'string') {
       var revSec = document.querySelector('.reviews-section');
       if (revSec) {
         Array.from(revSec.querySelectorAll('.review-card')).forEach(function (n) { n.remove(); });
+        var oldMore = revSec.querySelector('.btn-ver-mais-avaliacoes');
+        if (oldMore) oldMore.remove();
         revSec.insertAdjacentHTML('beforeend', p.reviews_cards_html);
+        if (typeof window.formatCompactReviews === 'function') {
+          try { window.formatCompactReviews(); } catch (_) {}
+        }
       }
     }
     if (p.video && p.video.src) {
@@ -421,6 +429,8 @@ function renderProdutoFromData(data, options = {}) {
   }
 
   if (options && options.studioPreview) {
+    html = html.replace(/<head>/i, '<head>\n  <base href="/pages/" />');
+    html = html.replace(/<script[^>]*anti-clone-guard\.js[^>]*><\/script>/gi, '');
     html = html.replace('</body>', `${getStudioLiveBridgeScript()}\n</body>`);
   }
 

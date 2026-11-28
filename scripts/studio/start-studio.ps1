@@ -1,13 +1,18 @@
 ﻿param(
   [int]$Port = 3333,
-  [int]$DaemonPort = 3334
+  [int]$DaemonPort = 3334,
+  [switch]$Detach
 )
 
 $ErrorActionPreference = 'Stop'
 $Root = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $BinDir = Join-Path $Root '.studio-bin'
-if (-not (Test-Path $BinDir)) {
-  New-Item -ItemType Directory -Path $BinDir -Force | Out-Null
+$RuntimeDir = Join-Path $env:LOCALAPPDATA 'stone-studio'
+
+foreach ($d in @($BinDir, $RuntimeDir)) {
+  if (-not (Test-Path $d)) {
+    New-Item -ItemType Directory -Path $d -Force | Out-Null
+  }
 }
 
 # Limpa processos anteriores nas portas 3333 / 3334 para nunca dar EADDRINUSE
@@ -49,13 +54,14 @@ $env:STUDIO_PORT = "$Port"
 $env:STUDIO_DAEMON_PORT = "$DaemonPort"
 $env:PORT = "$Port"
 
-$DaemonLog = Join-Path $BinDir 'daemon.log'
-$DaemonErr = Join-Path $BinDir 'daemon.err.log'
-$ServerLog = Join-Path $BinDir 'server.log'
-$ServerErr = Join-Path $BinDir 'server.err.log'
-$CfLog = Join-Path $BinDir 'cloudflared.log'
-$CfErr = Join-Path $BinDir 'cloudflared.err.log'
-$UrlFile = Join-Path $BinDir 'active-url.txt'
+# Logs e URL ativa ficam em %LOCALAPPDATA%\stone-studio (fora do webroot!)
+$DaemonLog = Join-Path $RuntimeDir 'daemon.log'
+$DaemonErr = Join-Path $RuntimeDir 'daemon.err.log'
+$ServerLog = Join-Path $RuntimeDir 'server.log'
+$ServerErr = Join-Path $RuntimeDir 'server.err.log'
+$CfLog = Join-Path $RuntimeDir 'cloudflared.log'
+$CfErr = Join-Path $RuntimeDir 'cloudflared.err.log'
+$UrlFile = Join-Path $RuntimeDir 'active-url.txt'
 if (Test-Path $UrlFile) { Remove-Item $UrlFile -Force -ErrorAction SilentlyContinue }
 
 $DaemonProc = $null
@@ -66,10 +72,24 @@ try {
   Write-Host '🔥 Subindo Daemon Aquecido Zero-Áudio (Playwright + Catbox 4x)...' -ForegroundColor Yellow
   $DaemonProc = Start-Process -FilePath 'python' -ArgumentList @('scripts/studio/studio_daemon.py') -WorkingDirectory $Root -WindowStyle Hidden -RedirectStandardOutput $DaemonLog -RedirectStandardError $DaemonErr -PassThru
 
+  for ($h = 0; $h -lt 25; $h++) {
+    Start-Sleep -Milliseconds 500
+    try {
+      $resp = Invoke-WebRequest -Uri "http://127.0.0.1:$DaemonPort/health" -UseBasicParsing -TimeoutSec 2
+      if ($resp.StatusCode -eq 200) { break }
+    } catch {}
+  }
+
   Write-Host '⚡ Subindo Stone Studio Engine...' -ForegroundColor Yellow
   $ServerProc = Start-Process -FilePath 'node' -ArgumentList @('server.js') -WorkingDirectory $Root -WindowStyle Hidden -RedirectStandardOutput $ServerLog -RedirectStandardError $ServerErr -PassThru
 
-  Start-Sleep -Seconds 2
+  for ($s = 0; $s -lt 20; $s++) {
+    Start-Sleep -Milliseconds 400
+    try {
+      $resp = Invoke-WebRequest -Uri "http://127.0.0.1:$Port/importador?key=$Token" -UseBasicParsing -TimeoutSec 2
+      if ($resp.StatusCode -eq 200) { break }
+    } catch {}
+  }
 
   Write-Host '🌐 Abrindo Túnel HTTPS Público na Cloudflare...' -ForegroundColor Cyan
   $CfProc = Start-Process -FilePath $CloudflaredExe -ArgumentList @('tunnel', '--no-autoupdate', '--url', "http://127.0.0.1:$Port") -WorkingDirectory $Root -WindowStyle Hidden -RedirectStandardOutput $CfLog -RedirectStandardError $CfErr -PassThru
@@ -105,13 +125,19 @@ try {
   Write-Host '====================================================================' -ForegroundColor Green
   Write-Host ''
 
+  if ($Detach) {
+    return
+  }
+
   while (-not $ServerProc.HasExited -and -not $CfProc.HasExited) {
     Start-Sleep -Seconds 3
   }
 } finally {
-  foreach ($proc in @($CfProc, $ServerProc, $DaemonProc)) {
-    if ($proc -and -not $proc.HasExited) {
-      Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+  if (-not $Detach) {
+    foreach ($proc in @($CfProc, $ServerProc, $DaemonProc)) {
+      if ($proc -and -not $proc.HasExited) {
+        Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+      }
     }
   }
 }

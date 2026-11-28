@@ -15,13 +15,17 @@
   async function api(pathUrl, method = 'GET', body = null) {
     const headers = { 'x-studio-key': getStudioKey() };
     if (body) headers['Content-Type'] = 'application/json';
-    const resp = await fetch(pathUrl, {
-      method,
-      headers,
-      body: body ? JSON.stringify(body) : null,
-    });
-    const data = await resp.json().catch(() => ({}));
-    return { status: resp.status, ok: resp.ok, data };
+    try {
+      const resp = await fetch(pathUrl, {
+        method,
+        headers,
+        body: body ? JSON.stringify(body) : null,
+      });
+      const data = await resp.json().catch(() => ({ error: `HTTP ${resp.status}` }));
+      return { status: resp.status, ok: resp.ok, data };
+    } catch (err) {
+      return { status: 0, ok: false, data: { error: err.message || 'Falha de conexão com o Studio' } };
+    }
   }
 
   function esc(s) {
@@ -29,7 +33,8 @@
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
 
   function toast(msg) {
@@ -158,7 +163,7 @@
       } catch (_) {}
     };
 
-    ['fast_preview', 'reviews_pool_ready', 'videos_preview_ready', 'video_catbox_done', 'warning'].forEach((evt) => {
+    ['sync_state', 'fast_preview', 'reviews_pool_ready', 'videos_preview_ready', 'video_catbox_done', 'warning'].forEach((evt) => {
       sseSource.addEventListener(evt, onStage);
     });
   }
@@ -307,7 +312,7 @@
 
     const descCard = descVid ? `
       <div class="st-vid-card is-desc">
-        <img class="st-vid-thumb" src="${esc(descVid.poster || '/logo.png')}" alt="" />
+        <img class="st-vid-thumb" referrerpolicy="no-referrer" src="${esc(descVid.poster || '/logo.png')}" alt="" />
         <div class="st-vid-meta">
           <strong style="color:#34d399;">★ Vídeo da Descrição</strong>
           <span>${/catbox\.moe\//i.test(descVid.src) ? '☁️ Catbox Pronto ✓' : '⏳ Subindo Catbox...'}</span>
@@ -319,7 +324,7 @@
       const ready = /catbox\.moe\//i.test(c.video || '');
       return `
         <div class="st-vid-card">
-          <img class="st-vid-thumb" src="${esc(c.poster || c.avatar || '/logo.png')}" alt="" />
+          <img class="st-vid-thumb" referrerpolicy="no-referrer" src="${esc(c.poster || c.avatar || '/logo.png')}" alt="" />
           <div class="st-vid-meta">
             <strong>@${esc(c.username)}</strong>
             <span style="color:${ready ? '#34d399' : '#fbbf24'};">${ready ? '☁️ Catbox ✓' : '⏳ Subindo...'}</span>
