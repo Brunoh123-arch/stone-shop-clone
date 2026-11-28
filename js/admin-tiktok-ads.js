@@ -15,7 +15,7 @@
   let adsStatusMap = {};
   let adsFavMap = {};
   let adsActiveVideoIdx = {};
-  let adsFilterChip = 'new_bf';
+  let adsFilterChip = 'all';
   let adsSortBy = 'newest';
   let adsCategoryFilter = 'todas';
   let adsViewMode = 'cards'; // 'cards' | 'table'
@@ -1131,7 +1131,7 @@
 
     try {
       const [mRes, edRes, cfgRes] = await Promise.all([
-        fetch('/data/admin-catalogo-360.json?v=20261127_bento'),
+        fetch('/data/admin-catalogo-360.json?v=' + Date.now()),
         fetch('/data/ads-editados.json?v=' + Date.now()).catch(() => null),
         fetch('/api/admin-config').catch(() => null),
       ]);
@@ -1162,7 +1162,6 @@
     const newBfCount = adsManifest.products.filter((p) => p.is_new_bf).length;
     const totalWithVids = adsManifest.products.filter((p) => buildVideoList(p).length > 0).length;
     const editedCount = Object.keys(adsEditedMap).filter((k) => Array.isArray(adsEditedMap[k]) && adsEditedMap[k].length > 0).length;
-    if (editedCount > 0 && adsFilterChip === 'new_bf') adsFilterChip = 'edited';
 
     mountTarget.innerHTML = `
       <div class="ads-bento-head">
@@ -1260,7 +1259,7 @@
       <div class="ads-chips-bar" id="adsFilterChips">
         ${editedCount > 0 ? `<button type="button" class="ads-chip ${adsFilterChip === 'edited' ? 'active' : ''}" data-chip="edited" onclick="window.setAdsFilterChip('edited', this)">🔥 Prontos Editados c/ Preço (${editedCount})</button>` : ''}
         <button type="button" class="ads-chip ${adsFilterChip === 'new_bf' ? 'active' : ''}" data-chip="new_bf" onclick="window.setAdsFilterChip('new_bf', this)">Lançamentos Black Friday (${newBfCount})</button>
-        <button type="button" class="ads-chip" data-chip="all" onclick="window.setAdsFilterChip('all', this)">Todos os Produtos (${totalWithVids})</button>
+        <button type="button" class="ads-chip ${adsFilterChip === 'all' ? 'active' : ''}" data-chip="all" onclick="window.setAdsFilterChip('all', this)">Todos os Produtos (${totalWithVids})</button>
         <button type="button" class="ads-chip" data-chip="running" onclick="window.setAdsFilterChip('running', this)">Rodando Ads</button>
         <button type="button" class="ads-chip" data-chip="testing" onclick="window.setAdsFilterChip('testing', this)">Em Teste</button>
         <button type="button" class="ads-chip" data-chip="high_anchor" onclick="window.setAdsFilterChip('high_anchor', this)">Susto no Preço (R$ 50+)</button>

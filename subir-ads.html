@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>TikTok Ads — Todos os Produtos & Vídeos Prontos p/ Subir</title>
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-400.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-500.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/ttf" href="/fonts/tt-pro-600.ttf" crossorigin />
+  <link rel="preload" as="font" type="font/otf" href="/fonts/SF-Pro-Display-Bold.otf" crossorigin />
+  <style>
+    @font-face {
+      font-family: 'TikTokSans';
+      src: url('/fonts/tt-pro-400.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'TikTokSans';
+      src: url('/fonts/tt-pro-500.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'TikTokSans';
+      src: url('/fonts/tt-pro-600.ttf') format('truetype');
+      font-weight: 600 800;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'SFProDisplay';
+      src: url('/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+      font-weight: 700 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --bg: #09090b;
+      --surface: #121216;
+      --card: #16161b;
+      --card-elev: #1d1d24;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+      --text: #fafafa;
+      --muted: #a1a1aa;
+      --dim: #71717a;
+      --mint: #6ee7a8;
+      --blue: #7aa2ff;
+      --peach: #f8ad88;
+      --yellow: #fde068;
+      --pink: #fe2c55;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'TikTokSans', -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .tabular {
+      font-family: 'SFProDisplay', 'TikTokSans', -apple-system, sans-serif;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* TOPBAR FIXA */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      background: rgba(9, 9, 11, 0.88);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
+    }
+    .topbar-inner {
+      max-width: 1460px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: #18181c;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .brand-title {
+      font-family: 'SFProDisplay', 'TikTokSans', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+    }
+    .brand-sub {
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .top-btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pill-btn {
+      height: 36px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--card);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform 0.14s ease, background 0.14s ease, border-color 0.14s ease;
+    }
+    .pill-btn:hover { background: var(--card-elev); }
+    .pill-btn:active { transform: scale(0.97); }
+    .pill-btn:disabled { opacity: 0.55; cursor: wait; }
+
+    .pill-white {
+      background: #ffffff;
+      border-color: #ffffff;
+      color: #09090b;
+      font-weight: 700;
+    }
+    .pill-white:hover { background: #e4e4e7; }
+
+    .pill-mint {
+      background: rgba(110, 231, 168, 0.15);
+      border-color: rgba(110, 231, 168, 0.38);
+      color: var(--mint);
+      font-weight: 700;
+    }
+    .pill-mint.solid {
+      background: var(--mint);
+      border-color: var(--mint);
+      color: #052e16;
+    }
+
+    .pill-blue {
+      background: rgba(122, 162, 255, 0.15);
+      border-color: rgba(122, 162, 255, 0.36);
+      color: #bfdbfe;
+    }
+
+    /* CONTAINER */
+    .shell {
+      max-width: 1460px;
+      margin: 0 auto;
+      padding: 14px 14px 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* 4 BENTO KPI CARDS */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    @media (min-width: 860px) {
+      .kpi-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    .kpi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.14s ease, border-color 0.14s ease;
+    }
+    .kpi-card:hover { transform: translateY(-1px); border-color: var(--border-strong); }
+    .kpi-cap {
+      padding: 7px 12px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #09090b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cap-blue { background: var(--blue); }
+    .cap-peach { background: var(--peach); }
+    .cap-mint { background: var(--mint); }
+    .cap-yellow { background: var(--yellow); }
+    .kpi-body {
+      padding: 11px 12px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .kpi-num {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+    .kpi-sub {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    /* BARRA DE BUSCA & FILTROS */
+    .toolbar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .toolbar-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .search-wrap {
+      flex: 1;
+      min-width: 220px;
+      position: relative;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--dim);
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      height: 42px;
+      border-radius: 12px;
+      border: 1px solid var(--border-strong);
+      background: #09090b;
+      color: var(--text);
+      padding: 0 14px 0 38px;
+      font-family: inherit;
+      font-size: 16px;
+      outline: none;
+    }
+    @media (min-width: 768px) {
+      .search-input { font-size: 13.5px; height: 38px; }
+    }
+    .search-input:focus { border-color: var(--blue); }
+
+    .select-pill {
+      height: 38px;
+      border-radius: 12px;
+      border: 1px solid var(--border-strong);
+      background: #09090b;
+      color: var(--text);
+      padding: 0 12px;
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .chips-row {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    .chips-row::-webkit-scrollbar { display: none; }
+    .filter-chip {
+      height: 32px;
+      padding: 0 13px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--muted);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .filter-chip.active {
+      background: #ffffff;
+      border-color: #ffffff;
+      color: #09090b;
+      font-weight: 700;
+    }
+
+    /* LISTA DE PRODUTOS (CONJUNTOS DE ANÚNCIOS) */
+    .products-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .prod-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      content-visibility: auto;
+      contain-intrinsic-size: 360px;
+    }
+    .prod-block.is-uploaded {
+      border-color: rgba(110, 231, 168, 0.42);
+      background: linear-gradient(180deg, rgba(110, 231, 168, 0.04) 0%, var(--surface) 100%);
+    }
+
+    .prod-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .prod-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .prod-thumb {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      object-fit: cover;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .prod-info {
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .prod-badges {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .id-badge {
+      background: #ffffff;
+      color: #09090b;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 7px;
+      letter-spacing: -0.01em;
+    }
+
+    .price-badge {
+      background: rgba(254, 44, 85, 0.16);
+      border: 1px solid rgba(254, 44, 85, 0.35);
+      color: #ff6b88;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 7px;
+    }
+
+    .count-badge {
+      background: rgba(122, 162, 255, 0.14);
+      color: #93c5fd;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 7px;
+    }
+
+    .cat-badge {
+      color: var(--dim);
+      font-size: 11.5px;
+      font-weight: 500;
+    }
+
+    .prod-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .prod-url-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 2px;
+    }
+    .prod-url-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      color: var(--muted);
+      background: #09090b;
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      border-radius: 7px;
+      max-width: 440px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+
+    .prod-actions {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    /* GRADE DE TODOS OS VÍDEOS DO PRODUTO (9:16 LADO A LADO, ZERO TEXTO) */
+    .vids-strip {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    @media (min-width: 560px) {
+      .vids-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (min-width: 860px) {
+      .vids-strip { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1180px) {
+      .vids-strip { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    }
+
+    .vid-tile {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .vid-tile.is-edited {
+      border-color: rgba(110, 231, 168, 0.5);
+    }
+
+    .vid-stage {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 15;
+      background: #050507;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .vid-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+    .vid-tile.is-edited .vid-stage img {
+      object-fit: contain;
+    }
+    .vid-stage:hover img { transform: scale(1.03); }
+    .vid-stage video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+      display: block;
+    }
+
+    .vid-top-tags {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      right: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .vid-slot-tag {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2.5px 7px;
+      border-radius: 999px;
+      background: rgba(9, 9, 11, 0.82);
+      color: #ffffff;
+      backdrop-filter: blur(6px);
+    }
+    .vid-tile.is-edited .vid-slot-tag {
+      background: var(--mint);
+      color: #052e16;
+    }
+    .vid-code-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: rgba(9, 9, 11, 0.76);
+      color: #d4d4d8;
+    }
+
+    .vid-play-btn {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.05) 65%);
+    }
+    .vid-play-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.94);
+      color: #09090b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .vid-foot {
+      padding: 7px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 5px;
+      background: var(--card);
+      border-top: 1px solid var(--border);
+    }
+    .vid-dl-btn {
+      height: 32px;
+      border-radius: 9px;
+      border: none;
+      background: #ffffff;
+      color: #09090b;
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 8px;
+      white-space: nowrap;
+    }
+    .vid-dl-btn:hover { background: #e4e4e7; }
+    .vid-dl-btn:disabled { opacity: 0.55; cursor: wait; }
+    .vid-tile.is-edited .vid-dl-btn {
+      background: var(--mint);
+      color: #052e16;
+    }
+
+    .vid-copy-btn {
+      height: 32px;
+      width: 32px;
+      border-radius: 9px;
+      border: 1px solid var(--border-strong);
+      background: #09090b;
+      color: var(--muted);
+      font-size: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vid-copy-btn:hover { color: #ffffff; border-color: #ffffff; }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%) translateY(14px);
+      background: #ffffff;
+      color: #09090b;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 999px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.18s ease;
+      z-index: 200;
+      white-space: nowrap;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="/logo.png" alt="Stone Shop" />
+        <div>
+          <div class="brand-title">Central TikTok Ads — Só Vídeos & Links</div>
+          <div class="brand-sub" id="headerSummary">Carregando 99 produtos e vídeos prontos...</div>
+        </div>
+      </div>
+
+      <div class="top-btns">
+        <button type="button" class="pill-btn" onclick="window.exportCleanLinks()">📋 Copiar Lista Geral (Links + MP4s)</button>
+        <a href="/?owner=1" target="_blank" class="pill-btn">🛍️ Loja ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <!-- 4 BENTO KPI CARDS -->
+    <section class="kpi-grid">
+      <div class="kpi-card" onclick="window.setFilter('all')">
+        <div class="kpi-cap cap-blue"><span>Todos os Produtos</span><span>Ver tudo</span></div>
+        <div class="kpi-body">
+          <span class="kpi-num tabular" id="kpiAllProds">0</span>
+          <span class="kpi-sub" id="kpiAllVids">0 vídeos MP4</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="window.setFilter('pending')">
+        <div class="kpi-cap cap-peach"><span>Falta Subir</span><span>Fila</span></div>
+        <div class="kpi-body">
+          <span class="kpi-num tabular" id="kpiPending">0</span>
+          <span class="kpi-sub">Pendentes p/ subir</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="window.setFilter('uploaded')">
+        <div class="kpi-cap cap-mint"><span>Já Subidos Ads</span><span>Ativos</span></div>
+        <div class="kpi-body">
+          <span class="kpi-num tabular" id="kpiUploaded">0</span>
+          <span class="kpi-sub">Marcados como subido</span>
+        </div>
+      </div>
+
+      <div class="kpi-card" onclick="window.setFilter('edited')">
+        <div class="kpi-cap cap-yellow"><span>Editados c/ Preço</span><span>Prontos</span></div>
+        <div class="kpi-body">
+          <span class="kpi-num tabular" id="kpiEdited">0</span>
+          <span class="kpi-sub">Com preço + setas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSCA + FILTROS -->
+    <section class="toolbar">
+      <div class="toolbar-top">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="searchInput" type="search" class="search-input" placeholder="Buscar por #ID (ex: 168, 155, 126), nome do produto ou código do vídeo..." oninput="window.renderAll()" />
+        </div>
+
+        <select id="categorySelect" class="select-pill" onchange="window.renderAll()">
+          <option value="todas">Todas Categorias</option>
+        </select>
+
+        <select id="sortSelect" class="select-pill" onchange="window.renderAll()">
+          <option value="id_desc">Ordem: Mais Novos (#168 → #1)</option>
+          <option value="most_vids">Ordem: Mais Vídeos</option>
+          <option value="price_asc">Ordem: Menor Preço PIX</option>
+          <option value="price_desc">Ordem: Maior Preço PIX</option>
+          <option value="id_asc">Ordem: #1 → #168</option>
+        </select>
+      </div>
+
+      <div class="chips-row" id="chipsRow">
+        <button type="button" class="filter-chip active" data-chip="all" onclick="window.setFilter('all')">Todos os Produtos</button>
+        <button type="button" class="filter-chip" data-chip="pending" onclick="window.setFilter('pending')">⏳ Falta Subir</button>
+        <button type="button" class="filter-chip" data-chip="uploaded" onclick="window.setFilter('uploaded')">✅ Já Subidos</button>
+        <button type="button" class="filter-chip" data-chip="new_bf" onclick="window.setFilter('new_bf')">🔥 Novos (#126–#168)</button>
+        <button type="button" class="filter-chip" data-chip="edited" onclick="window.setFilter('edited')">⚡ Com Vídeo Editado</button>
+        <button type="button" class="filter-chip" data-chip="ate55" onclick="window.setFilter('ate55')">💸 Impulso até R$ 55</button>
+        <button type="button" class="filter-chip" data-chip="acima55" onclick="window.setFilter('acima55')">💎 Ticket R$ 55+</button>
+      </div>
+    </section>
+
+    <!-- STACK DE PRODUTOS E VÍDEOS -->
+    <div id="productsHost" class="products-stack"></div>
+  </main>
+
+  <div id="toast" class="toast">Copiado!</div>
+
+  <script>
+    (function () {
+      const STORAGE_STATUS_KEY = 'STONE_ADS_CAMPAIGN_STATUS_V1';
+      let products = [];
+      let editedMap = {};
+      let statusMap = {};
+      let activeFilter = 'all';
+
+      function esc(s) {
+        return String(s == null ? '' : s)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+
+      function normAsset(u) {
+        const s = String(u || '').trim();
+        if (!s) return '/logo.png';
+        if (/^https?:\/\//i.test(s) || s.startsWith('data:')) return s;
+        return '/' + s.replace(/^(\.\.\/)+/, '').replace(/^\/+/, '');
+      }
+
+      function cleanUrl(u) {
+        return String(u || '').split('#')[0].split('?')[0].trim();
+      }
+
+      function formatBRL(v) {
+        const [i, d] = Number(v || 0).toFixed(2).split('.');
+        return 'R$ ' + i.replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ',' + d;
+      }
+
+      function slugFile(str) {
+        return String(str || 'produto')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^a-zA-Z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '')
+          .slice(0, 28) || 'produto';
+      }
+
+      function toast(msg) {
+        const el = document.getElementById('toast');
+        if (!el) return;
+        el.textContent = msg;
+        el.classList.add('show');
+        clearTimeout(window._adsToastTimer);
+        window._adsToastTimer = setTimeout(() => el.classList.remove('show'), 2200);
+      }
+
+      window.copyText = function (txt, msg) {
+        navigator.clipboard.writeText(txt).then(() => toast(msg || 'Copiado!')).catch(() => prompt('Copie:', txt));
+      };
+
+      function buildAdUrl(prod) {
+        return `https://stoneshopclone.vercel.app/produto-${prod.id}?utm_source=tiktok&utm_medium=cpc&tt_medium=paid`;
+      }
+
+      function buildVideosForProduct(prod) {
+        const out = [];
+        const seen = new Set();
+
+        const edList = editedMap[String(prod.id)] || [];
+        edList.forEach((ed, idx) => {
+          const url = cleanUrl(ed && ed.url);
+          if (!url || seen.has(url)) return;
+          seen.add(url);
+          out.push({
+            num: out.length + 1,
+            isEdited: true,
+            tag: idx === 0 ? '🔥 V1 · Editado' : `🔥 Editado #${idx + 1}`,
+            url,
+            poster: normAsset(ed.poster || (prod.video && prod.video.poster) || prod.img),
+            code: ed.catbox_id || url.split('/').pop(),
+          });
+        });
+
+        if (prod.video && prod.video.src) {
+          const url = cleanUrl(prod.video.src);
+          if (url && !seen.has(url)) {
+            seen.add(url);
+            const n = out.length + 1;
+            out.push({
+              num: n,
+              isEdited: false,
+              tag: `V${n} · Principal`,
+              url,
+              poster: normAsset(prod.video.poster || prod.img),
+              code: prod.video.catbox_id || url.split('/').pop(),
+            });
+          }
+        }
+
+        (prod.creators || []).forEach((c) => {
+          const url = cleanUrl(c && c.video);
+          if (!url || seen.has(url)) return;
+          seen.add(url);
+          const n = out.length + 1;
+          out.push({
+            num: n,
+            isEdited: false,
+            tag: `V${n}`,
+            url,
+            poster: normAsset(c.poster || c.avatar || prod.img),
+            code: c.catbox_id || url.split('/').pop(),
+          });
+        });
+
+        return out;
+      }
+
+      function isUploaded(pid) {
+        const st = statusMap[String(pid)];
+        return st === 'running' || st === 'uploaded';
+      }
+
+      window.toggleUploaded = function (pid) {
+        const key = String(pid);
+        statusMap[key] = isUploaded(pid) ? 'idle' : 'running';
+        try { localStorage.setItem(STORAGE_STATUS_KEY, JSON.stringify(statusMap)); } catch (_) {}
+        updateKpis();
+        window.renderAll();
+        toast(isUploaded(pid) ? `Produto #${pid} marcado como SUBIDO ✓` : `Produto #${pid} voltou p/ fila`);
+      };
+
+      window.playTileVideo = function (stageEl, url, poster) {
+        if (!stageEl || stageEl.querySelector('video')) return;
+        stageEl.onclick = null;
+        stageEl.innerHTML = `<video controls autoplay playsinline src="${esc(url)}" poster="${esc(poster)}"></video>`;
+      };
+
+      async function triggerSingleDownload(url, fileName, btnEl) {
+        const orig = btnEl ? btnEl.innerHTML : '';
+        if (btnEl) {
+          btnEl.disabled = true;
+          btnEl.innerHTML = '⏳...';
+        }
+        try {
+          const resp = await fetch(url, { mode: 'cors' });
+          if (!resp.ok) throw new Error('HTTP ' + resp.status);
+          const blob = await resp.blob();
+          const bUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = bUrl;
+          a.download = fileName;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(() => URL.revokeObjectURL(bUrl), 10000);
+          return true;
+        } catch (_) {
+          window.open(url, '_blank');
+          return false;
+        } finally {
+          if (btnEl) {
+            btnEl.disabled = false;
+            btnEl.innerHTML = orig;
+          }
+        }
+      }
+
+      function makeVideoFileName(prod, vObj) {
+        const pSlug = slugFile(prod.title);
+        const priceTag = 'R' + Number(prod.preco || 0).toFixed(2).replace('.', '-');
+        const vNum = String(vObj.num).padStart(2, '0');
+        const edSuffix = vObj.isEdited ? '_EDITADO' : '';
+        return `PROD_${prod.id}_${pSlug}_${priceTag}_V${vNum}${edSuffix}.mp4`;
+      }
+
+      window.downloadOneVideo = async function (pid, vIdx, btnEl) {
+        const prod = products.find((p) => Number(p.id) === Number(pid));
+        if (!prod) return;
+        const vids = prod._videos || [];
+        const vObj = vids[vIdx];
+        if (!vObj) return;
+        const fn = makeVideoFileName(prod, vObj);
+        const ok = await triggerSingleDownload(vObj.url, fn, btnEl);
+        if (ok) toast(`⬇️ ${fn}`);
+      };
+
+      window.downloadAllProductVideos = async function (pid, btnEl) {
+        const prod = products.find((p) => Number(p.id) === Number(pid));
+        if (!prod) return;
+        const vids = prod._videos || [];
+        if (!vids.length) return;
+
+        const orig = btnEl ? btnEl.innerHTML : '';
+        if (btnEl) btnEl.disabled = true;
+
+        for (let i = 0; i < vids.length; i++) {
+          if (btnEl) btnEl.innerHTML = `⏳ Baixando ${i + 1}/${vids.length}...`;
+          const fn = makeVideoFileName(prod, vids[i]);
+          await triggerSingleDownload(vids[i].url, fn, null);
+          await new Promise((r) => setTimeout(r, 380));
+        }
+
+        if (btnEl) {
+          btnEl.disabled = false;
+          btnEl.innerHTML = orig;
+        }
+        toast(`✅ ${vids.length} vídeos do Produto #${pid} baixados!`);
+      };
+
+      function getFilteredList() {
+        const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+        const cat = document.getElementById('categorySelect').value;
+        const sort = document.getElementById('sortSelect').value;
+
+        const filtered = products.filter((p) => {
+          if (!p._videos.length) return false;
+          if (activeFilter === 'pending' && isUploaded(p.id)) return false;
+          if (activeFilter === 'uploaded' && !isUploaded(p.id)) return false;
+          if (activeFilter === 'new_bf' && Number(p.id) < 126 && !p.is_new_bf) return false;
+          if (activeFilter === 'edited' && !p._videos.some((v) => v.isEdited)) return false;
+          if (activeFilter === 'ate55' && Number(p.preco) > 55) return false;
+          if (activeFilter === 'acima55' && Number(p.preco) <= 55) return false;
+          if (cat !== 'todas' && p.category !== cat) return false;
+
+          if (q) {
+            const hitId = String(p.id) === q.replace('#', '') || `#${p.id}` === q || String(p.id).includes(q);
+            const hitTitle = (p.title || '').toLowerCase().includes(q);
+            const hitCode = p._videos.some((v) => (v.code || '').toLowerCase().includes(q));
+            if (!hitId && !hitTitle && !hitCode) return false;
+          }
+          return true;
+        });
+
+        if (sort === 'id_desc') filtered.sort((a, b) => Number(b.id) - Number(a.id));
+        else if (sort === 'id_asc') filtered.sort((a, b) => Number(a.id) - Number(b.id));
+        else if (sort === 'most_vids') filtered.sort((a, b) => b._videos.length - a._videos.length);
+        else if (sort === 'price_asc') filtered.sort((a, b) => Number(a.preco) - Number(b.preco));
+        else if (sort === 'price_desc') filtered.sort((a, b) => Number(b.preco) - Number(a.preco));
+
+        return filtered;
+      }
+
+      function updateKpis() {
+        const withVids = products.filter((p) => p._videos.length > 0);
+        const totalVids = withVids.reduce((acc, p) => acc + p._videos.length, 0);
+        const uploadedCount = withVids.filter((p) => isUploaded(p.id)).length;
+        const pendingCount = withVids.length - uploadedCount;
+        const editedCount = withVids.filter((p) => p._videos.some((v) => v.isEdited)).length;
+
+        document.getElementById('kpiAllProds').textContent = String(withVids.length);
+        document.getElementById('kpiAllVids').textContent = `${totalVids} vídeos MP4`;
+        document.getElementById('kpiPending').textContent = String(pendingCount);
+        document.getElementById('kpiUploaded').textContent = String(uploadedCount);
+        document.getElementById('kpiEdited').textContent = String(editedCount);
+        document.getElementById('headerSummary').textContent = `${withVids.length} produtos organizados · ${totalVids} vídeos MP4 prontos p/ subir`;
+      }
+
+      window.setFilter = function (f) {
+        activeFilter = f;
+        document.querySelectorAll('#chipsRow .filter-chip').forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.chip === f);
+        });
+        window.renderAll();
+      };
+
+      window.exportCleanLinks = function () {
+        const list = getFilteredList();
+        const lines = [];
+        list.forEach((p) => {
+          lines.push(`#${p.id} | ${p.title} | PIX ${formatBRL(p.preco)}`);
+          lines.push(`ANÚNCIO: ${buildAdUrl(p)}`);
+          p._videos.forEach((v) => {
+            lines.push(`  V${v.num}${v.isEdited ? ' [EDITADO]' : ''}: ${v.url}`);
+          });
+          lines.push('');
+        });
+        window.copyText(lines.join('\n'), `📋 ${list.length} produtos + vídeos copiados!`);
+      };
+
+      window.renderAll = function () {
+        const host = document.getElementById('productsHost');
+        const list = getFilteredList();
+
+        if (!list.length) {
+          host.innerHTML = `
+            <div style="padding:48px 16px; text-align:center; background:#121216; border:1px solid rgba(255,255,255,0.08); border-radius:20px; color:#a1a1aa;">
+              Nenhum produto neste filtro. <button type="button" class="pill-btn pill-white" style="margin-left:8px;" onclick="window.setFilter('all')">Mostrar Todos</button>
+            </div>
+          `;
+          return;
+        }
+
+        host.innerHTML = list.map((p) => {
+          const adUrl = buildAdUrl(p);
+          const uploaded = isUploaded(p.id);
+          const vids = p._videos;
+
+          return `
+            <section class="prod-block ${uploaded ? 'is-uploaded' : ''}" id="prod-${p.id}">
+              <div class="prod-header">
+                <div class="prod-left">
+                  <img src="${esc(normAsset(p.img))}" alt="" class="prod-thumb" loading="lazy" decoding="async" onerror="this.src='/logo.png'" />
+                  <div class="prod-info">
+                    <div class="prod-badges">
+                      <span class="id-badge tabular">#${p.id}</span>
+                      <span class="price-badge tabular">PIX ${formatBRL(p.preco)}</span>
+                      <span class="count-badge tabular">${vids.length} ${vids.length === 1 ? 'vídeo' : 'vídeos'}</span>
+                      <span class="cat-badge">${esc(p.category || '')}</span>
+                    </div>
+                    <h2 class="prod-title">${esc(p.title)}</h2>
+                    <div class="prod-url-bar">
+                      <span class="prod-url-code" onclick="window.copyText('${esc(adUrl)}', '🔗 Link do Produto #${p.id} copiado!')" title="Clique para copiar link de destino do TikTok Ads">${esc(adUrl)}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prod-actions">
+                  <button type="button" class="pill-btn pill-blue" onclick="window.copyText('${esc(adUrl)}', '🔗 Link do anúncio #${p.id} copiado!')">
+                    🔗 Link Anúncio
+                  </button>
+                  <button type="button" class="pill-btn pill-white" onclick="window.downloadAllProductVideos(${p.id}, this)">
+                    ⬇️ Baixar Todos (${vids.length})
+                  </button>
+                  <button type="button" class="pill-btn pill-mint ${uploaded ? 'solid' : ''}" onclick="window.toggleUploaded(${p.id})">
+                    ${uploaded ? '✓ Subido' : 'Marcar Subido'}
+                  </button>
+                  <a href="/produto-${p.id}?owner=1" target="_blank" class="pill-btn" title="Ver página do produto">↗</a>
+                </div>
+              </div>
+
+              <div class="vids-strip">
+                ${vids.map((v, vIdx) => `
+                  <div class="vid-tile ${v.isEdited ? 'is-edited' : ''}">
+                    <div class="vid-stage" onclick="window.playTileVideo(this, '${esc(v.url)}', '${esc(v.poster)}')">
+                      <div class="vid-top-tags">
+                        <span class="vid-slot-tag">${esc(v.tag)}</span>
+                        <span class="vid-code-tag">${esc(v.code)}</span>
+                      </div>
+                      <img src="${esc(v.poster)}" alt="" loading="lazy" decoding="async" onerror="this.src='${esc(normAsset(p.img))}'" />
+                      <div class="vid-play-btn">
+                        <div class="vid-play-circle">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="vid-foot">
+                      <button type="button" class="vid-dl-btn" onclick="window.downloadOneVideo(${p.id}, ${vIdx}, this)">
+                        ⬇️ Baixar V${v.num}
+                      </button>
+                      <button type="button" class="vid-copy-btn" onclick="window.copyText('${esc(v.url)}', '📋 MP4 V${v.num} (#${p.id}) copiado!')" title="Copiar URL direta do MP4">📋</button>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </section>
+          `;
+        }).join('');
+      };
+
+      async function boot() {
+        try {
+          statusMap = JSON.parse(localStorage.getItem(STORAGE_STATUS_KEY) || '{}') || {};
+        } catch (_) {
+          statusMap = {};
+        }
+
+        const [mRes, edRes] = await Promise.all([
+          fetch('/data/admin-catalogo-360.json?t=' + Date.now()),
+          fetch('/data/ads-editados.json?t=' + Date.now()).catch(() => null),
+        ]);
+
+        const manifest = mRes.ok ? await mRes.json() : { products: [] };
+        if (edRes && edRes.ok) {
+          const edData = await edRes.json();
+          editedMap = (edData && edData.items) || {};
+        }
+
+        products = (manifest.products || []).map((p) => ({
+          ...p,
+          _videos: buildVideosForProduct(p),
+        }));
+
+        const cats = Array.from(new Set(products.map((p) => p.category).filter(Boolean))).sort();
+        const sel = document.getElementById('categorySelect');
+        sel.innerHTML = '<option value="todas">Todas Categorias</option>' +
+          cats.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+
+        updateKpis();
+        window.renderAll();
+      }
+
+      boot();
+    })();
+  </script>
+</body>
+</html>
