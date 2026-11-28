@@ -22,3 +22,14 @@ test('package.json defines npm run studio and start-studio.ps1 enforces Cloudfla
   assert.doesNotMatch(pubJs, /Automotivo & Ferramentas/);
   assert.match(homeHtml, /Churrasco, Piscina & Lazer/);
 });
+
+test('importador uses 100% local TikTok Sans + iOS SF Pro fonts with zero Google Fonts', () => {
+  const html = fs.readFileSync(path.join(process.cwd(), 'importador.html'), 'utf8');
+  const css = fs.readFileSync(path.join(process.cwd(), 'css', 'studio-importador.css'), 'utf8');
+  assert.doesNotMatch(html, /fonts\.googleapis\.com/);
+  assert.match(css, /font-family:\s*'TikTokSans'/);
+  assert.match(css, /tt-pro-400\.ttf/);
+  assert.match(css, /tt-pro-500\.ttf/);
+  assert.match(css, /tt-pro-600\.ttf/);
+  assert.match(css, /SF-Pro-Display-Bold\.otf/);
+});
