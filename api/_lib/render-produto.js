@@ -245,8 +245,128 @@ function getProductData(id) {
   return getOfficialProduct(id);
 }
 
-function renderProdutoHtml(id) {
-  const data = getProductData(id);
+function getStudioLiveBridgeScript() {
+  return `<script id="studio-live-bridge">
+(function () {
+  window.__STUDIO_PREVIEW__ = true;
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  window.addEventListener('message', function (ev) {
+    var msg = ev && ev.data;
+    if (!msg || msg.type !== 'STUDIO_LIVE_PATCH' || !msg.payload) return;
+    var p = msg.payload;
+    if (p.product_title !== undefined) {
+      var tEl = document.querySelector('.product-title');
+      if (tEl) tEl.textContent = p.product_title;
+      document.title = p.product_title + ' - Stone Shop';
+    }
+    if (p.price_int !== undefined || p.price_cents !== undefined) {
+      var curEl = document.querySelector('.price-current');
+      var pi = p.price_int !== undefined ? p.price_int : (curEl ? curEl.childNodes[0].nodeValue : '0');
+      var pcEl = document.querySelector('.price-cents');
+      var pc = p.price_cents !== undefined ? p.price_cents : (pcEl ? pcEl.textContent : ',00');
+      if (curEl) curEl.innerHTML = esc(pi) + '<span class="price-cents">' + esc(pc) + '</span>';
+      var buyLine = document.querySelector('#btn-buy .btn-line2');
+      if (buyLine) buyLine.textContent = 'Preço de oferta R$ ' + pi + pc;
+    }
+    if (p.price_original !== undefined) {
+      var poEl = document.querySelector('.price-original');
+      if (poEl) poEl.textContent = p.price_original;
+    }
+    if (p.discount_badge !== undefined) {
+      var dbEl = document.querySelector('.discount-badge-white');
+      if (dbEl) dbEl.textContent = p.discount_badge;
+    }
+    if (p.installment_text !== undefined) {
+      var ivEl = document.querySelector('.inst-val');
+      if (ivEl) ivEl.textContent = p.installment_text;
+    }
+    if (p.coupon_main !== undefined) {
+      var cpEl = document.querySelector('.product-badge-discount span');
+      if (cpEl) cpEl.textContent = p.coupon_main;
+    }
+    if (p.sold_num !== undefined) {
+      var snEl = document.querySelector('.sold-num');
+      if (snEl) snEl.textContent = String(p.sold_num);
+    }
+    if (p.rating_score !== undefined) {
+      var rsEl = document.querySelector('.rating-score-num');
+      if (rsEl) rsEl.textContent = String(p.rating_score).replace(',', '.');
+      var rhsEl = document.querySelector('.reviews-header-score');
+      if (rhsEl) rhsEl.textContent = String(p.rating_score).replace('.', ',');
+    }
+    if (p.rating_count !== undefined) {
+      var rcEl = document.querySelector('.rating-count-link');
+      if (rcEl) rcEl.textContent = p.rating_count;
+    }
+    if (p.reviews_header !== undefined) {
+      var rhEl = document.querySelector('.reviews-header');
+      if (rhEl) rhEl.textContent = p.reviews_header;
+      var rhtEl = document.querySelector('.reviews-header-title-text');
+      if (rhtEl) rhtEl.textContent = p.reviews_header;
+    }
+    if (p.description_html !== undefined) {
+      var dEl = document.getElementById('desc-content-text');
+      if (dEl) dEl.innerHTML = p.description_html;
+    }
+    if (Array.isArray(p.slider_imgs) && p.slider_imgs.length > 0) {
+      var tr = document.querySelector('.slider-track');
+      if (tr) {
+        tr.innerHTML = p.slider_imgs.map(function (im, idx) {
+          return '<img alt="' + esc(im.alt || ('Foto ' + (idx + 1))) + '" class="slider-img" src="' + esc(im.src) + '"/>';
+        }).join('');
+      }
+      var cnt = document.querySelector('.slider-counter');
+      if (cnt) cnt.textContent = '1/' + p.slider_imgs.length;
+    }
+    if (typeof p.reviews_cards_html === 'string') {
+      var revSec = document.querySelector('.reviews-section');
+      if (revSec) {
+        Array.from(revSec.querySelectorAll('.review-card')).forEach(function (n) { n.remove(); });
+        revSec.insertAdjacentHTML('beforeend', p.reviews_cards_html);
+      }
+    }
+    if (p.video && p.video.src) {
+      var vEl = document.getElementById('tt-product-video');
+      if (vEl) {
+        vEl.setAttribute('data-src', p.video.src);
+        vEl.src = p.video.src;
+        if (p.video.poster) vEl.setAttribute('poster', p.video.poster);
+      }
+    }
+    if (Array.isArray(p.creators)) {
+      window.PRODUTO_CRIADORES = p.creators;
+      var cSec = document.getElementById('creators-section');
+      if (cSec) {
+        cSec.innerHTML = '';
+        cSec.removeAttribute('data-initialized');
+      }
+      if (typeof window.initVideosCriadoresModular === 'function') {
+        window.initVideosCriadoresModular();
+      } else {
+        document.dispatchEvent(new Event('DOMContentLoaded'));
+      }
+    }
+    if (p.produto_atual && typeof p.produto_atual === 'object') {
+      if (typeof PRODUTO_ATUAL === 'object' && PRODUTO_ATUAL) {
+        Object.keys(PRODUTO_ATUAL).forEach(function (k) { delete PRODUTO_ATUAL[k]; });
+        Object.assign(PRODUTO_ATUAL, p.produto_atual);
+      }
+      window.PRODUTO_ATUAL = p.produto_atual;
+    }
+    if (p.scrollToSection) {
+      var target = document.querySelector(p.scrollToSection);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+})();
+</script>`;
+}
+
+function renderProdutoFromData(data, options = {}) {
   if (!data) return { status: 404, html: '<h1>Produto não encontrado</h1>' };
 
   if (data.redirect) {
@@ -300,12 +420,23 @@ function renderProdutoHtml(id) {
     html = html.split(token).join(val);
   }
 
+  if (options && options.studioPreview) {
+    html = html.replace('</body>', `${getStudioLiveBridgeScript()}\n</body>`);
+  }
+
   return { status: 200, html };
+}
+
+function renderProdutoHtml(id) {
+  const data = getProductData(id);
+  return renderProdutoFromData(data);
 }
 
 module.exports = {
   ASSET_VERSION,
   getProductData,
+  renderReviews,
+  renderProdutoFromData,
   renderProdutoHtml,
   listProductIds: () => Object.keys(produtosRegistry),
 };

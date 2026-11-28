@@ -13,3 +13,11 @@ criativos_tiktok_ads/
 *.log
 .playwright-mcp/
 scripts_archive/
+.studio-drafts/
+.studio-chrome-profile/
+.studio-bin/
+.superpowers/
+docs/
+importador.html
+css/studio-importador.css
+js/studio-importador.js

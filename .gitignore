@@ -9,3 +9,7 @@ Temp/
 temp_*/
 scratch/
 brain_test/
+.studio-drafts/
+.studio-chrome-profile/
+.studio-bin/
+.superpowers/
