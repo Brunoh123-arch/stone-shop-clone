@@ -140,6 +140,13 @@ module.exports = async function handler(req, res) {
         }
       }
 
+      if (slug === 'subir-ads') {
+        const subirAdsPath = path.join(__dirname, '..', 'subir-ads.html');
+        if (fs.existsSync(subirAdsPath)) {
+          return res.status(200).send(fs.readFileSync(subirAdsPath, 'utf8'));
+        }
+      }
+
       // Modelo Único Permanente para produto-<id>
       const prodMatch = slug.match(/^produto-(\d+)$/i);
       if (prodMatch) {
