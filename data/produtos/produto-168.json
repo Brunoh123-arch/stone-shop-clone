@@ -1,0 +1,430 @@
+{
+  "id": 168,
+  "title": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos - Stone Shop",
+  "meta_description": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos com frete grátis, envio imediato e garantia Stone Shop.",
+  "product_title": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+  "slider_imgs": [
+    {
+      "src": "../img/karcher-168-slide-1.webp",
+      "alt": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos - Foto 1"
+    },
+    {
+      "src": "../img/karcher-168-slide-3.webp",
+      "alt": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos - Foto 2"
+    },
+    {
+      "src": "../img/karcher-168-slide-5.webp",
+      "alt": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos - Foto 3"
+    },
+    {
+      "src": "../img/karcher-168-slide-7.webp",
+      "alt": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos - Foto 4"
+    }
+  ],
+  "discount_badge": "-81%",
+  "price_int": "167",
+  "price_cents": ",90",
+  "price_original": "R$ 899,90",
+  "installment_text": "3x R$ 55,97",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 167,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(564)",
+  "sold_count": "4380 vendidos on-line",
+  "frete_original": "R$ 24,90",
+  "reviews_header": "Avaliações dos clientes (564)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "M**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_60.jpg",
+      "stars": 5,
+      "date": "27/11",
+      "variation": "127V (110V)",
+      "date_line": "27/11 · 127V (110V)",
+      "comment": "Ruído: não faz barulho. Acessórios: bons. Está bom.",
+      "photos": [
+        "../img/review-168-b1-1.jpg",
+        "../img/review-168-b1-2.webp"
+      ]
+    },
+    {
+      "name": "J**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_61.jpg",
+      "stars": 5,
+      "date": "27/11",
+      "variation": "220V",
+      "date_line": "27/11 · 220V",
+      "comment": "Manuseio: leve, fácil de transportar, possui rodas que facilitam seu deslocamento. Potência: limpeza a vapor. Bom produto, fácil de usar, o vapor solta a sujeira facilmente, porém não é muito bom para esfregar, o ideal é usar o vapor para soltar a sujeira e, se necessário, esfregar com uma escova separada e depois remover a sujeira com um pano ou com os que vêm no equipamento, que são dois: um para o piso e outro para o escova de roupa ou estofados. Se for apenas poeira nas superfícies, ela sai facilmente. Como é a vapor, as superfícies ficam úmidas, em alguns casos será necessário passar um pano para secar. Ideal para limpar campanas, cozinhas, fornos, pisos e gorduras em geral, porque o vapor quente solta a sujeira, sendo necessário, claro, esfregar bem.",
+      "photos": [
+        "../img/review-168-b2-1.jpg",
+        "../img/review-168-b2-2.jpg",
+        "../img/review-168-b2-3.webp"
+      ]
+    },
+    {
+      "name": "R**o S**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_6.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "127V (110V)",
+      "date_line": "26/11 · 127V (110V)",
+      "comment": "Manutenção: boa qualidade. Acessórios: tem, mas poucos acessórios. Recomendo, é um pouco mais cara que as chinesas, mas sua qualidade não tem preço.",
+      "photos": [
+        "../img/review-168-b3-1.jpg",
+        "../img/review-168-b3-2.webp"
+      ]
+    },
+    {
+      "name": "A**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_62.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "220V",
+      "date_line": "26/11 · 220V",
+      "comment": "Acessórios: os acessórios são muito úteis, apesar de que no meu caso uso apenas o acessório pequeno e redondo. Potência: tem uma potência muito boa, assim como tudo, dêem manutenção e limpeza ao reservatório se usarem água da torneira. Libere a pressão ao parar de usar e, assim que esfriar, esvazie a água que ficou no reservatório.",
+      "photos": [
+        "../img/review-168-b4-1.jpg",
+        "../img/review-168-b4-2.webp"
+      ]
+    },
+    {
+      "name": "R**e M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_63.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "127V (110V)",
+      "date_line": "25/11 · 127V (110V)",
+      "comment": "É muito boa, tem muita potência. Seu funcionamento é bem simples: basta tirar a tampa, colocar 1 litro de água, esperar 5 minutos para evaporar e pronto, já pode usar. O que eu gosto é que ela tem diferentes bicos, dependendo do uso que você queira dar. Eu acho que vale o seu preço.",
+      "photos": [
+        "../img/review-168-b5-1.webp"
+      ]
+    },
+    {
+      "name": "L**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_64.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "220V",
+      "date_line": "25/11 · 220V",
+      "comment": "Ferramenta eficaz, fácil de manusear e rende bastante para o serviço de lavagem automotiva.",
+      "photos": [
+        "../img/review-168-b6-1.jpg",
+        "../img/review-168-b6-2.jpg"
+      ]
+    },
+    {
+      "name": "L**s F**a",
+      "avatar": "../img/reviews-avatars/tiktok_cdn_real/tt_cdn_7.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "127V (110V)",
+      "date_line": "24/11 · 127V (110V)",
+      "comment": "Potência: vapor médio, não é tão eficiente nesse aspecto. Manuseio: peso leve, mangueira curta que dificulta um pouco a manobra durante a limpeza. A escova de cerdas duras foi a única útil, mas muito pequena e sem reposição, gastou-se rápido. Precisava dela para remover a sujeira das juntas das cerâmicas e não fez o trabalho como esperava.",
+      "photos": [
+        "../img/review-168-b7-1.webp"
+      ]
+    },
+    {
+      "name": "B**a A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_65.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "220V",
+      "date_line": "24/11 · 220V",
+      "comment": "Excelente compra, bastante pressão e alta temperatura. Até o momento, funciona muito bem.",
+      "photos": [
+        "../img/review-168-b8-1.webp",
+        "../img/review-168-b8-2.webp"
+      ]
+    },
+    {
+      "name": "T**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_66.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "127V (110V)",
+      "date_line": "23/11 · 127V (110V)",
+      "comment": "Não estou me adaptando ainda. Achei fraco e o reservatório de água pequeno. Vou continuar tentando para ver se obtenho resultados melhores.",
+      "photos": [
+        "../img/review-168-b9-1.webp"
+      ]
+    },
+    {
+      "name": "G**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_67.jpg",
+      "stars": 5,
+      "date": "22/11",
+      "variation": "220V",
+      "date_line": "22/11 · 220V",
+      "comment": "Chegou super rápido e muito bem embalado, excelente qualidade! Recomendo demais.",
+      "photos": [
+        "../img/review-168-b10-1.webp"
+      ]
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_68.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "127V (110V)",
+      "date_line": "21/11 · 127V (110V)",
+      "comment": "Comprei para poder eliminar percevejos e funciona, o tanque de 1 litro é muito bom, com aproximadamente duas cargas dá para limpar um colchão de casal, mas não serve apenas para isso, também é muito bom para limpar forno e tirar gordura da cozinha ou para limpar as linhas entre os azulejos. Totalmente recomendável para uma limpeza profunda.",
+      "photos": []
+    },
+    {
+      "name": "S**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_69.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "220V",
+      "date_line": "20/11 · 220V",
+      "comment": "Eu achei uma otima compra - quem pode e tem a casa grande compre o modelo mais completo - o dobro do preço, mas seu tempo vale mais, os materias são excelentes, fio grosso como deve ser , esquenta um pouco na mão e na mangueira mas nada demais, não é brinquedo então crinças não devem usar de forma alguma, silencioso, facil de arrastar, comprimento do fio me atendeu ,sobre a potencia não conheço outro mas o vapor é muito quente cuiadado para não se queimar, minha casa tens 200 metros, o chão aqui fica bem preguento pq moro num sitio e agente entra trazendo areia nos pés e mancha o chão. Nesse ponto eu aspiro e depois passo ele foi uma mão na roda, muito satisfatorio. Mas não tem milagre não, numa parede de azulejo encruada de gordura de banho tive que passar produtos e deixei agir e vim com o vapor e ajudou muito a derreter a gordura. Não acho nada demias usar um prouto desengordurante. Claro que o produto é na parede e não na agua. Minha avaliação é que não fico mais sem um aparelho assim. Pq ajudantes de casa não existem mais vou me cercar de tudo que me ajudar a fazer mais rapido e eficiente as tarefas de manter a casa limpa. Boa sorte na sua escolha.",
+      "photos": []
+    },
+    {
+      "name": "D**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_7.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "127V (110V)",
+      "date_line": "19/11 · 127V (110V)",
+      "comment": "Excelente produto, cumpre o que promete. Para todos que têm a mesma dúvida: o vapor que sai a uma distância de uns 20 cm é demais de quente e o ideal para matar percebes e baratas. Limpar o quarto após esses 20 cm, o vapor já é muito leve, muito suave. Mas eu recomendo.",
+      "photos": []
+    },
+    {
+      "name": "N**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_70.jpg",
+      "stars": 4,
+      "date": "18/11",
+      "variation": "220V",
+      "date_line": "18/11 · 220V",
+      "comment": "Pouco ruído, comporta pouco mais de 800ml de água. Acessórios todos em perfeita condições de uso. Em teste ainda!!!.",
+      "photos": []
+    },
+    {
+      "name": "V**a O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_71.jpg",
+      "stars": 5,
+      "date": "17/11",
+      "variation": "127V (110V)",
+      "date_line": "17/11 · 127V (110V)",
+      "comment": "Simplesmente impressionante! Tirou toda a sujeira encardida dos rejuntes do banheiro e do fogão sem usar nenhum produto químico.",
+      "photos": []
+    },
+    {
+      "name": "I**s R**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_72.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "220V",
+      "date_line": "16/11 · 220V",
+      "comment": "Pressão de vapor muito forte! Usei no sofá, no box e até no trilho da janela — ficou parecendo novo.",
+      "photos": []
+    },
+    {
+      "name": "E**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_73.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "127V (110V)",
+      "date_line": "15/11 · 127V (110V)",
+      "comment": "Qualidade Kärcher original! Esquentou rapidinho e o kit de acessórios serve pra absolutamente tudo na casa.",
+      "photos": []
+    },
+    {
+      "name": "H**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_74.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "220V",
+      "date_line": "14/11 · 220V",
+      "comment": "Tenho cachorro em casa e higienizar o piso só com vapor quente sem química é maravilhoso!",
+      "photos": []
+    },
+    {
+      "name": "Y**m R**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_75.jpg",
+      "stars": 4,
+      "date": "13/11",
+      "variation": "127V (110V)",
+      "date_line": "13/11 · 127V (110V)",
+      "comment": "Limpei o motor e os bancos do carro no fim de semana, tirou graxa antiga fácil demais. Recomendo muito!",
+      "photos": []
+    },
+    {
+      "name": "L**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_8.jpg",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "220V",
+      "date_line": "12/11 · 220V",
+      "comment": "Veio lacrada com todos os bocais, extensores e panos de microfibra. Entrega super rápida!",
+      "photos": []
+    },
+    {
+      "name": "C**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_9.jpg",
+      "stars": 5,
+      "date": "11/11",
+      "variation": "127V (110V)",
+      "date_line": "11/11 · 127V (110V)",
+      "comment": "A trava de segurança na pistola é ótima pra quem tem criança. Muito potente e leve de puxar pelas rodinhas.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Marca / Modelo",
+      "value": "Kärcher Original — SC 2 Premium",
+      "hidden": false
+    },
+    {
+      "label": "Potência e Pressão",
+      "value": "1500W · Pressão de vapor 3,2 bar com regulagem em 2 níveis",
+      "hidden": false
+    },
+    {
+      "label": "Higienização",
+      "value": "Elimina até 99,99% das bactérias domésticas usando apenas água",
+      "hidden": false
+    },
+    {
+      "label": "Acessórios Inclusos",
+      "value": "Bocal de piso, extensores, escova redonda, bico de jato fino e panos microfibra",
+      "hidden": false
+    },
+    {
+      "label": "Aplicações",
+      "value": "Pisos, rejuntes, fogões, vidros, estofados, banheiros e carros",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias de garantia com Proteção Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/kyz9rc.mp4#prod=168&slot=descricao&slug=prod168",
+    "poster": "../img/posters-desc/poster-desc-168.jpg?v=20261127",
+    "duration": "1:02",
+    "catbox_id": "kyz9rc.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>💨✨ Higienizadora a Vapor Kärcher SC 2 Premium — Derrete Gordura e Higieniza a Casa Toda Sem Produtos Químicos!</strong><br/><br/>Tecnologia alemã Kärcher para limpeza profunda em minutos! Com <strong>jato de vapor pressurizado a 3,2 bar</strong>, a SC 2 solta sujeira pesada de rejuntes, fogão, box de banheiro, estofados, pisos e até peças automotivas usando <strong>apenas água</strong>.<br/><br/><strong>Por que a Kärcher SC 2 é Insubstituível:</strong><br/>• <strong>Limpeza Sem Química</strong>: ideal para casas com bebês, pets e pessoas alérgicas.<br/>• <strong>Kit Completo de Bocais</strong>: limpa do chão ao teto com tubos extensores, bico concentrador e pano de microfibra.<br/>• <strong>Controle de Vapor na Pistola</strong>: 2 intensidades + trava de segurança infantil.<br/>• <strong>Porta-Acessórios Integrado</strong>: tudo organizado no próprio corpo do aparelho.<br/><br/><strong>Conteúdo da Caixa:</strong><br/>• 1 Limpadora a Vapor Kärcher SC 2 + 2 Tubos Extensores + Bocal Piso + Bico Manual + Escova Redonda + Panos Microfibra",
+  "related": [
+    {
+      "href": "produto-154.html",
+      "img": "../img/brastemp-154-slide-1.webp",
+      "alt": "Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox",
+      "name": "Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox Ciclo Tira-Manchas Advanced",
+      "price": "R$ 397,90",
+      "price_original": "R$ 1.679,00",
+      "discount": "-76%",
+      "sold": "3740 vendidos"
+    },
+    {
+      "href": "produto-147.html",
+      "img": "../img/triciclo-147-slide-1.webp",
+      "alt": "Triciclo Elétrico Drift Infantil 360° 350W",
+      "name": "Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ Luzes LED e Bluetooth",
+      "price": "R$ 167,90",
+      "price_original": "R$ 799,90",
+      "discount": "-79%",
+      "sold": "5126 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 168,
+    "nome": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+    "name": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+    "preco": 167.9,
+    "price": 167.9,
+    "preco_antigo": 899.9,
+    "precoOrig": 899.9,
+    "originalPrice": 899.9,
+    "cupomPreco": 167.9,
+    "couponPrice": 167.9,
+    "desc": 81,
+    "desconto": 81,
+    "installmentText": "3x R$ 55,97 sem juros",
+    "parcelamento": "3x R$ 55,97 sem juros",
+    "categoria": "Casa & Cozinha",
+    "img": "../img/karcher-168-slide-1.webp",
+    "image": "../img/karcher-168-slide-1.webp",
+    "imagens": [
+      "../img/karcher-168-slide-1.webp",
+      "../img/karcher-168-slide-3.webp",
+      "../img/karcher-168-slide-5.webp",
+      "../img/karcher-168-slide-7.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Voltagem",
+        "opcoes": [
+          {
+            "nome": "127V (110V)",
+            "imagem": "../img/karcher-168-slide-1.webp"
+          },
+          {
+            "nome": "220V",
+            "imagem": "../img/karcher-168-slide-3.webp"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "4380 vendidos on-line"
+  },
+  "extra_scripts": [],
+  "creator_context": "karcher168",
+  "creators": [
+    {
+      "name": "Charlotte Rødland",
+      "username": "charlohome",
+      "avatar": "../img/avatars-lote2/creator-168-c1.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-prod-168-c1.jpg?v=20261127",
+      "video": "https://files.catbox.moe/s8vqzj.mp4#prod=168&slot=criador_1&slug=prod168",
+      "catbox_id": "s8vqzj.mp4",
+      "startTime": 0.2,
+      "likes": 2349,
+      "commentsCount": 20,
+      "saves": 240,
+      "shares": 353,
+      "description": "Now we can eat in the bathroom 🫠 #cleanwithme #cleaningmotivation #cleaning #karcher #karchersteamcleaner #bathroomcleaning #fyp #foryou #fypシ"
+    },
+    {
+      "name": "Ana Lima",
+      "username": "canalanalima",
+      "avatar": "../img/avatars-lote2/creator-168-c2.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-prod-168-c2.jpg?v=20261127",
+      "video": "https://files.catbox.moe/u8zk29.mp4#prod=168&slot=criador_2&slug=prod168",
+      "catbox_id": "u8zk29.mp4",
+      "startTime": 0.2,
+      "likes": 20700,
+      "commentsCount": 73,
+      "saves": 951,
+      "shares": 324,
+      "description": "Limpei os armários com a higienizadora a vapor SC4 premium da @Kärcher Brasil O resultado 🤩🤌🏻 #higienizadoravapor #limpeza #faxina #donadecasa #creatorsearch"
+    },
+    {
+      "name": "jhennifervargass",
+      "username": "jhennifervargass",
+      "avatar": "../img/avatars-lote2/creator-168-c3.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-prod-168-c3.jpg?v=20261127",
+      "video": "https://files.catbox.moe/xllfng.mp4#prod=168&slot=criador_3&slug=prod168",
+      "catbox_id": "xllfng.mp4",
+      "startTime": 0.2,
+      "likes": 3610,
+      "commentsCount": 69,
+      "saves": 1030,
+      "shares": 810,
+      "description": "Mais será que realmente vale a pena? Ter um Higienizador a Vapor 🧼🫧 #limpeza #donadecasa #dicas #faxina"
+    }
+  ]
+}

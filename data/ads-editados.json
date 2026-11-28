@@ -1,7 +1,115 @@
 {
-  "updated_at": "2026-11-27T15:00:00Z",
+  "updated_at": "2026-11-28T03:21:46Z",
   "note": "Vídeos editados EXCLUSIVOS do painel /videos-ads (TikTok Sans Bold + Preço + Setas iOS). NÃO alteram os vídeos limpos da loja.",
   "items": {
+    "168": [
+      {
+        "url": "https://files.catbox.moe/n0bby4.mp4",
+        "catbox_id": "n0bby4.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-168.jpg?v=20261128",
+        "duration": "47.0s",
+        "headline": "Higienizadora Vapor Kärcher na Black Friday ⚡",
+        "price_str": "R$ 167,90",
+        "campaign": "Black Friday",
+        "pos_note": "Azulejo superior limpo (5.8%, corte sem CTA externo) · Setas em 67.2% acima da legenda e do 'Saiba mais'"
+      }
+    ],
+    "167": [
+      {
+        "url": "https://files.catbox.moe/3prt74.mp4",
+        "catbox_id": "3prt74.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-167.jpg?v=20261128",
+        "duration": "31.5s",
+        "headline": "Redutor Infantil c/ Escada na Black Friday ✨",
+        "price_str": "R$ 29,89",
+        "campaign": "Black Friday",
+        "pos_note": "Topo limpo (5.5%, corte sem legenda inicial) · Setas estimadas em 72.5% acima do 'Saiba mais'"
+      }
+    ],
+    "166": [
+      {
+        "url": "https://files.catbox.moe/qlkag6.mp4",
+        "catbox_id": "qlkag6.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-166.jpg?v=20261128",
+        "duration": "9.6s",
+        "headline": "Cesto de Bambu 72 Litros na Black Friday ✨",
+        "price_str": "R$ 29,89",
+        "campaign": "Black Friday",
+        "pos_note": "Parede branca limpa (5.0%) · Setas estimadas em 72.5% acima do 'Saiba mais'"
+      }
+    ],
+    "165": [
+      {
+        "url": "https://files.catbox.moe/8eskcf.mp4",
+        "catbox_id": "8eskcf.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-165.jpg?v=20261128",
+        "duration": "20.7s",
+        "headline": "Bike Infantil de Equilíbrio na Black Friday 🎁",
+        "price_str": "R$ 34,89",
+        "campaign": "Black Friday",
+        "pos_note": "Fundo superior limpo (5.5%) · Setas estimadas em 72.5% acima do 'Saiba mais'"
+      }
+    ],
+    "164": [
+      {
+        "url": "https://files.catbox.moe/3vh5mz.mp4",
+        "catbox_id": "3vh5mz.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-164.jpg?v=20261128",
+        "duration": "10.6s",
+        "headline": "Mesa + 4 Cadeiras Madesa na Black Friday 🔥",
+        "price_str": "R$ 189,90",
+        "campaign": "Black Friday",
+        "pos_note": "Parede superior limpa (5.8%) · Setas estimadas em 72.8% acima do 'Saiba mais'"
+      }
+    ],
+    "163": [
+      {
+        "url": "https://files.catbox.moe/mhl6ds.mp4",
+        "catbox_id": "mhl6ds.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-163.jpg?v=20261128",
+        "duration": "36.0s",
+        "headline": "Faqueiro Tramontina 74 Pçs na Black Friday 🔥",
+        "price_str": "R$ 69,90",
+        "campaign": "Black Friday",
+        "pos_note": "Corte limpo dos talheres inox (6.0%) · Setas estimadas em 72.5% acima do 'Saiba mais'"
+      }
+    ],
+    "162": [
+      {
+        "url": "https://files.catbox.moe/5a21pq.mp4",
+        "catbox_id": "5a21pq.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-162.jpg?v=20261128",
+        "duration": "23.5s",
+        "headline": "Cozinha Infantil c/ Água na Black Friday 🎁",
+        "price_str": "R$ 79,90",
+        "campaign": "Black Friday",
+        "pos_note": "Topo (5.0%) preservando pia c/ água real · Setas estimadas em 72.5% acima do 'Saiba mais'"
+      }
+    ],
+    "161": [
+      {
+        "url": "https://files.catbox.moe/hm4mf0.mp4",
+        "catbox_id": "hm4mf0.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-161.jpg?v=20261128",
+        "duration": "22.2s",
+        "headline": "iPhone 16e 128GB na Black Friday 🔥",
+        "price_str": "R$ 347,90",
+        "campaign": "Black Friday",
+        "pos_note": "Topo cinza limpo (5.2%) acima do iPhone · Setas estimadas em 72.8% acima do 'Saiba mais'"
+      }
+    ],
+    "160": [
+      {
+        "url": "https://files.catbox.moe/9tbl13.mp4",
+        "catbox_id": "9tbl13.mp4",
+        "poster": "img/posters-ads/poster-ad-editado-160.jpg?v=20261128",
+        "duration": "20.0s",
+        "headline": "Jipe Elétrico Infantil 12V na Black Friday ⚡",
+        "price_str": "R$ 197,90",
+        "campaign": "Black Friday",
+        "pos_note": "Topo limpo (5.5%) acima do jipe · Setas estimadas em 72.5% acima do 'Saiba mais'"
+      }
+    ],
     "154": [
       {
         "url": "https://files.catbox.moe/za4da7.mp4",

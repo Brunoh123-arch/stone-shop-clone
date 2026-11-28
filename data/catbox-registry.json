@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "updated_at": "2026-11-27T23:09:39.977Z",
+  "updated_at": "2026-11-28T03:23:38.414Z",
   "description": "Livro-Razão Oficial Anti-Conflito Catbox — Gerado diretamente de data/produtos/*.json.",
   "videos": {
     "https://files.catbox.moe/a8zjrb.mp4": {
@@ -5473,6 +5473,467 @@
       "slot": "criador_6",
       "creator_username": "carolina.pradolooks",
       "poster": "videosprodutos/posters/poster-prod-159-c9.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/z4cxal.mp4": {
+      "catbox_id": "z4cxal.mp4",
+      "base_url": "https://files.catbox.moe/z4cxal.mp4",
+      "tagged_url": "https://files.catbox.moe/z4cxal.mp4#prod=160&slot=descricao&slug=carro-eletrico-infantil-jipe-12v",
+      "owner_product_id": 160,
+      "owner_product_title": "Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-160.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vcymbt.mp4": {
+      "catbox_id": "vcymbt.mp4",
+      "base_url": "https://files.catbox.moe/vcymbt.mp4",
+      "tagged_url": "https://files.catbox.moe/vcymbt.mp4#prod=160&slot=criador_1&slug=carro-eletrico-infantil-jipe-12v",
+      "owner_product_id": 160,
+      "owner_product_title": "Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",
+      "slot": "criador_1",
+      "creator_username": "kasouza069",
+      "poster": "videosprodutos/posters/poster-prod-160-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/5ou9lq.mp4": {
+      "catbox_id": "5ou9lq.mp4",
+      "base_url": "https://files.catbox.moe/5ou9lq.mp4",
+      "tagged_url": "https://files.catbox.moe/5ou9lq.mp4#prod=160&slot=criador_2&slug=carro-eletrico-infantil-jipe-12v",
+      "owner_product_id": 160,
+      "owner_product_title": "Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",
+      "slot": "criador_2",
+      "creator_username": "paularegina96",
+      "poster": "videosprodutos/posters/poster-prod-160-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vvw5n1.mp4": {
+      "catbox_id": "vvw5n1.mp4",
+      "base_url": "https://files.catbox.moe/vvw5n1.mp4",
+      "tagged_url": "https://files.catbox.moe/vvw5n1.mp4#prod=160&slot=criador_3&slug=carro-eletrico-infantil-jipe-12v",
+      "owner_product_id": 160,
+      "owner_product_title": "Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",
+      "slot": "criador_3",
+      "creator_username": "ciibele_silva",
+      "poster": "videosprodutos/posters/poster-prod-160-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/da9l5i.mp4": {
+      "catbox_id": "da9l5i.mp4",
+      "base_url": "https://files.catbox.moe/da9l5i.mp4",
+      "tagged_url": "https://files.catbox.moe/da9l5i.mp4#prod=160&slot=criador_4&slug=carro-eletrico-infantil-jipe-12v",
+      "owner_product_id": 160,
+      "owner_product_title": "Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",
+      "slot": "criador_4",
+      "creator_username": "alvaroramirez1967",
+      "poster": "videosprodutos/posters/poster-prod-160-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/uktfvd.mp4": {
+      "catbox_id": "uktfvd.mp4",
+      "base_url": "https://files.catbox.moe/uktfvd.mp4",
+      "tagged_url": "https://files.catbox.moe/uktfvd.mp4#prod=160&slot=criador_5&slug=carro-eletrico-infantil-jipe-12v",
+      "owner_product_id": 160,
+      "owner_product_title": "Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",
+      "slot": "criador_5",
+      "creator_username": "aluziane.oliveira",
+      "poster": "videosprodutos/posters/poster-prod-160-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/dzweqb.mp4": {
+      "catbox_id": "dzweqb.mp4",
+      "base_url": "https://files.catbox.moe/dzweqb.mp4",
+      "tagged_url": "https://files.catbox.moe/dzweqb.mp4#prod=161&slot=descricao&slug=apple-iphone-16e-128gb-5g-tela-s",
+      "owner_product_id": 161,
+      "owner_product_title": "Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-161.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/uq81bl.mp4": {
+      "catbox_id": "uq81bl.mp4",
+      "base_url": "https://files.catbox.moe/uq81bl.mp4",
+      "tagged_url": "https://files.catbox.moe/uq81bl.mp4#prod=161&slot=criador_1&slug=apple-iphone-16e-128gb-5g-tela-s",
+      "owner_product_id": 161,
+      "owner_product_title": "Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",
+      "slot": "criador_1",
+      "creator_username": "emkwan",
+      "poster": "videosprodutos/posters/poster-prod-161-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ec23qe.mp4": {
+      "catbox_id": "ec23qe.mp4",
+      "base_url": "https://files.catbox.moe/ec23qe.mp4",
+      "tagged_url": "https://files.catbox.moe/ec23qe.mp4#prod=161&slot=criador_2&slug=apple-iphone-16e-128gb-5g-tela-s",
+      "owner_product_id": 161,
+      "owner_product_title": "Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",
+      "slot": "criador_2",
+      "creator_username": "briansolid_",
+      "poster": "videosprodutos/posters/poster-prod-161-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/shgzvf.mp4": {
+      "catbox_id": "shgzvf.mp4",
+      "base_url": "https://files.catbox.moe/shgzvf.mp4",
+      "tagged_url": "https://files.catbox.moe/shgzvf.mp4#prod=161&slot=criador_3&slug=apple-iphone-16e-128gb-5g-tela-s",
+      "owner_product_id": 161,
+      "owner_product_title": "Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",
+      "slot": "criador_3",
+      "creator_username": "mariliaasoares",
+      "poster": "videosprodutos/posters/poster-prod-161-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/7c0nx0.mp4": {
+      "catbox_id": "7c0nx0.mp4",
+      "base_url": "https://files.catbox.moe/7c0nx0.mp4",
+      "tagged_url": "https://files.catbox.moe/7c0nx0.mp4#prod=161&slot=criador_4&slug=apple-iphone-16e-128gb-5g-tela-s",
+      "owner_product_id": 161,
+      "owner_product_title": "Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",
+      "slot": "criador_4",
+      "creator_username": "ste.tavaresz",
+      "poster": "videosprodutos/posters/poster-prod-161-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/i09ko3.mp4": {
+      "catbox_id": "i09ko3.mp4",
+      "base_url": "https://files.catbox.moe/i09ko3.mp4",
+      "tagged_url": "https://files.catbox.moe/i09ko3.mp4#prod=161&slot=criador_5&slug=apple-iphone-16e-128gb-5g-tela-s",
+      "owner_product_id": 161,
+      "owner_product_title": "Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",
+      "slot": "criador_5",
+      "creator_username": "ni_ferreirx",
+      "poster": "videosprodutos/posters/poster-prod-161-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/kx3x9d.mp4": {
+      "catbox_id": "kx3x9d.mp4",
+      "base_url": "https://files.catbox.moe/kx3x9d.mp4",
+      "tagged_url": "https://files.catbox.moe/kx3x9d.mp4#prod=162&slot=descricao&slug=kit-cozinha-infantil-completa-gr",
+      "owner_product_id": 162,
+      "owner_product_title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-162.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ak2byw.mp4": {
+      "catbox_id": "ak2byw.mp4",
+      "base_url": "https://files.catbox.moe/ak2byw.mp4",
+      "tagged_url": "https://files.catbox.moe/ak2byw.mp4#prod=162&slot=criador_1&slug=kit-cozinha-infantil-completa-gr",
+      "owner_product_id": 162,
+      "owner_product_title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+      "slot": "criador_1",
+      "creator_username": "gyseladomingos",
+      "poster": "videosprodutos/posters/poster-prod-162-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/y4x9cb.mp4": {
+      "catbox_id": "y4x9cb.mp4",
+      "base_url": "https://files.catbox.moe/y4x9cb.mp4",
+      "tagged_url": "https://files.catbox.moe/y4x9cb.mp4#prod=162&slot=criador_2&slug=kit-cozinha-infantil-completa-gr",
+      "owner_product_id": 162,
+      "owner_product_title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+      "slot": "criador_2",
+      "creator_username": "sinceridadeempalavras",
+      "poster": "videosprodutos/posters/poster-prod-162-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/syoph4.mp4": {
+      "catbox_id": "syoph4.mp4",
+      "base_url": "https://files.catbox.moe/syoph4.mp4",
+      "tagged_url": "https://files.catbox.moe/syoph4.mp4#prod=162&slot=criador_3&slug=kit-cozinha-infantil-completa-gr",
+      "owner_product_id": 162,
+      "owner_product_title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+      "slot": "criador_3",
+      "creator_username": "edilmacarvalho21",
+      "poster": "videosprodutos/posters/poster-prod-162-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/hpj7tg.mp4": {
+      "catbox_id": "hpj7tg.mp4",
+      "base_url": "https://files.catbox.moe/hpj7tg.mp4",
+      "tagged_url": "https://files.catbox.moe/hpj7tg.mp4#prod=162&slot=criador_4&slug=kit-cozinha-infantil-completa-gr",
+      "owner_product_id": 162,
+      "owner_product_title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+      "slot": "criador_4",
+      "creator_username": "laisablopes",
+      "poster": "videosprodutos/posters/poster-prod-162-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ui3407.mp4": {
+      "catbox_id": "ui3407.mp4",
+      "base_url": "https://files.catbox.moe/ui3407.mp4",
+      "tagged_url": "https://files.catbox.moe/ui3407.mp4#prod=163&slot=descricao&slug=faqueiro-aco-inox-tramontina-mal",
+      "owner_product_id": 163,
+      "owner_product_title": "Faqueiro Aço Inox Tramontina Malibu 74 Peças Serviço para 12 Pessoas c/ Facas de Churrasco",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-163.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/l1c1yl.mp4": {
+      "catbox_id": "l1c1yl.mp4",
+      "base_url": "https://files.catbox.moe/l1c1yl.mp4",
+      "tagged_url": "https://files.catbox.moe/l1c1yl.mp4#prod=163&slot=criador_1&slug=faqueiro-aco-inox-tramontina-mal",
+      "owner_product_id": 163,
+      "owner_product_title": "Faqueiro Aço Inox Tramontina Malibu 74 Peças Serviço para 12 Pessoas c/ Facas de Churrasco",
+      "slot": "criador_1",
+      "creator_username": "achadosdolar.ana",
+      "poster": "videosprodutos/posters/poster-prod-163-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/k6873y.mp4": {
+      "catbox_id": "k6873y.mp4",
+      "base_url": "https://files.catbox.moe/k6873y.mp4",
+      "tagged_url": "https://files.catbox.moe/k6873y.mp4#prod=163&slot=criador_2&slug=faqueiro-aco-inox-tramontina-mal",
+      "owner_product_id": 163,
+      "owner_product_title": "Faqueiro Aço Inox Tramontina Malibu 74 Peças Serviço para 12 Pessoas c/ Facas de Churrasco",
+      "slot": "criador_2",
+      "creator_username": "montareplantar",
+      "poster": "videosprodutos/posters/poster-prod-163-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vj6tzr.mp4": {
+      "catbox_id": "vj6tzr.mp4",
+      "base_url": "https://files.catbox.moe/vj6tzr.mp4",
+      "tagged_url": "https://files.catbox.moe/vj6tzr.mp4#prod=164&slot=descricao&slug=conjunto-sala-de-jantar-madesa-c",
+      "owner_product_id": 164,
+      "owner_product_title": "Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-164.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/nwj56a.mp4": {
+      "catbox_id": "nwj56a.mp4",
+      "base_url": "https://files.catbox.moe/nwj56a.mp4",
+      "tagged_url": "https://files.catbox.moe/nwj56a.mp4#prod=164&slot=criador_1&slug=conjunto-sala-de-jantar-madesa-c",
+      "owner_product_id": 164,
+      "owner_product_title": "Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",
+      "slot": "criador_1",
+      "creator_username": "sellymaria0",
+      "poster": "videosprodutos/posters/poster-prod-164-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/9cfhd6.mp4": {
+      "catbox_id": "9cfhd6.mp4",
+      "base_url": "https://files.catbox.moe/9cfhd6.mp4",
+      "tagged_url": "https://files.catbox.moe/9cfhd6.mp4#prod=164&slot=criador_2&slug=conjunto-sala-de-jantar-madesa-c",
+      "owner_product_id": 164,
+      "owner_product_title": "Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",
+      "slot": "criador_2",
+      "creator_username": "maditawana",
+      "poster": "videosprodutos/posters/poster-prod-164-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/2xkm1m.mp4": {
+      "catbox_id": "2xkm1m.mp4",
+      "base_url": "https://files.catbox.moe/2xkm1m.mp4",
+      "tagged_url": "https://files.catbox.moe/2xkm1m.mp4#prod=164&slot=criador_3&slug=conjunto-sala-de-jantar-madesa-c",
+      "owner_product_id": 164,
+      "owner_product_title": "Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",
+      "slot": "criador_3",
+      "creator_username": "achadosdavanqiroz",
+      "poster": "videosprodutos/posters/poster-prod-164-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/focxjc.mp4": {
+      "catbox_id": "focxjc.mp4",
+      "base_url": "https://files.catbox.moe/focxjc.mp4",
+      "tagged_url": "https://files.catbox.moe/focxjc.mp4#prod=164&slot=criador_4&slug=conjunto-sala-de-jantar-madesa-c",
+      "owner_product_id": 164,
+      "owner_product_title": "Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",
+      "slot": "criador_4",
+      "creator_username": "velmont.bt",
+      "poster": "videosprodutos/posters/poster-prod-164-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/jjmdlm.mp4": {
+      "catbox_id": "jjmdlm.mp4",
+      "base_url": "https://files.catbox.moe/jjmdlm.mp4",
+      "tagged_url": "https://files.catbox.moe/jjmdlm.mp4#prod=164&slot=criador_5&slug=conjunto-sala-de-jantar-madesa-c",
+      "owner_product_id": 164,
+      "owner_product_title": "Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",
+      "slot": "criador_5",
+      "creator_username": "classeexecutivadaellen",
+      "poster": "videosprodutos/posters/poster-prod-164-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/iue71k.mp4": {
+      "catbox_id": "iue71k.mp4",
+      "base_url": "https://files.catbox.moe/iue71k.mp4",
+      "tagged_url": "https://files.catbox.moe/iue71k.mp4#prod=165&slot=descricao&slug=bicicleta-infantil-de-equilibrio",
+      "owner_product_id": 165,
+      "owner_product_title": "Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-165.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/uq99so.mp4": {
+      "catbox_id": "uq99so.mp4",
+      "base_url": "https://files.catbox.moe/uq99so.mp4",
+      "tagged_url": "https://files.catbox.moe/uq99so.mp4#prod=165&slot=criador_1&slug=bicicleta-infantil-de-equilibrio",
+      "owner_product_id": 165,
+      "owner_product_title": "Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",
+      "slot": "criador_1",
+      "creator_username": "sil.creator7",
+      "poster": "videosprodutos/posters/poster-prod-165-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/v1qywa.mp4": {
+      "catbox_id": "v1qywa.mp4",
+      "base_url": "https://files.catbox.moe/v1qywa.mp4",
+      "tagged_url": "https://files.catbox.moe/v1qywa.mp4#prod=165&slot=criador_2&slug=bicicleta-infantil-de-equilibrio",
+      "owner_product_id": 165,
+      "owner_product_title": "Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",
+      "slot": "criador_2",
+      "creator_username": "taisbrinquedos",
+      "poster": "videosprodutos/posters/poster-prod-165-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vod530.mp4": {
+      "catbox_id": "vod530.mp4",
+      "base_url": "https://files.catbox.moe/vod530.mp4",
+      "tagged_url": "https://files.catbox.moe/vod530.mp4#prod=165&slot=criador_3&slug=bicicleta-infantil-de-equilibrio",
+      "owner_product_id": 165,
+      "owner_product_title": "Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",
+      "slot": "criador_3",
+      "creator_username": "ericaindica",
+      "poster": "videosprodutos/posters/poster-prod-165-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/fp11ia.mp4": {
+      "catbox_id": "fp11ia.mp4",
+      "base_url": "https://files.catbox.moe/fp11ia.mp4",
+      "tagged_url": "https://files.catbox.moe/fp11ia.mp4#prod=165&slot=criador_4&slug=bicicleta-infantil-de-equilibrio",
+      "owner_product_id": 165,
+      "owner_product_title": "Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",
+      "slot": "criador_4",
+      "creator_username": "viih.silvac",
+      "poster": "videosprodutos/posters/poster-prod-165-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ewq1h4.mp4": {
+      "catbox_id": "ewq1h4.mp4",
+      "base_url": "https://files.catbox.moe/ewq1h4.mp4",
+      "tagged_url": "https://files.catbox.moe/ewq1h4.mp4#prod=165&slot=criador_5&slug=bicicleta-infantil-de-equilibrio",
+      "owner_product_id": 165,
+      "owner_product_title": "Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",
+      "slot": "criador_5",
+      "creator_username": "alineluriane",
+      "poster": "videosprodutos/posters/poster-prod-165-c5.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/t1no2k.mp4": {
+      "catbox_id": "t1no2k.mp4",
+      "base_url": "https://files.catbox.moe/t1no2k.mp4",
+      "tagged_url": "https://files.catbox.moe/t1no2k.mp4#prod=166&slot=descricao&slug=cesto-de-roupa-suja-de-bambu-72-",
+      "owner_product_id": 166,
+      "owner_product_title": "Cesto de Roupa Suja de Bambu 72 Litros Dobrável Retangular c/ Tampa, Forro Removível e Alças",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-166.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/nw4j80.mp4": {
+      "catbox_id": "nw4j80.mp4",
+      "base_url": "https://files.catbox.moe/nw4j80.mp4",
+      "tagged_url": "https://files.catbox.moe/nw4j80.mp4#prod=166&slot=criador_1&slug=cesto-de-roupa-suja-de-bambu-72-",
+      "owner_product_id": 166,
+      "owner_product_title": "Cesto de Roupa Suja de Bambu 72 Litros Dobrável Retangular c/ Tampa, Forro Removível e Alças",
+      "slot": "criador_1",
+      "creator_username": "jadecosta2022",
+      "poster": "videosprodutos/posters/poster-prod-166-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ikv373.mp4": {
+      "catbox_id": "ikv373.mp4",
+      "base_url": "https://files.catbox.moe/ikv373.mp4",
+      "tagged_url": "https://files.catbox.moe/ikv373.mp4#prod=166&slot=criador_2&slug=cesto-de-roupa-suja-de-bambu-72-",
+      "owner_product_id": 166,
+      "owner_product_title": "Cesto de Roupa Suja de Bambu 72 Litros Dobrável Retangular c/ Tampa, Forro Removível e Alças",
+      "slot": "criador_2",
+      "creator_username": "katianefermino",
+      "poster": "videosprodutos/posters/poster-prod-166-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/pvyjri.mp4": {
+      "catbox_id": "pvyjri.mp4",
+      "base_url": "https://files.catbox.moe/pvyjri.mp4",
+      "tagged_url": "https://files.catbox.moe/pvyjri.mp4#prod=166&slot=criador_3&slug=cesto-de-roupa-suja-de-bambu-72-",
+      "owner_product_id": 166,
+      "owner_product_title": "Cesto de Roupa Suja de Bambu 72 Litros Dobrável Retangular c/ Tampa, Forro Removível e Alças",
+      "slot": "criador_3",
+      "creator_username": "cynthiaalves_",
+      "poster": "videosprodutos/posters/poster-prod-166-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/hk2c4d.mp4": {
+      "catbox_id": "hk2c4d.mp4",
+      "base_url": "https://files.catbox.moe/hk2c4d.mp4",
+      "tagged_url": "https://files.catbox.moe/hk2c4d.mp4#prod=166&slot=criador_4&slug=cesto-de-roupa-suja-de-bambu-72-",
+      "owner_product_id": 166,
+      "owner_product_title": "Cesto de Roupa Suja de Bambu 72 Litros Dobrável Retangular c/ Tampa, Forro Removível e Alças",
+      "slot": "criador_4",
+      "creator_username": "user2229532612614",
+      "poster": "videosprodutos/posters/poster-prod-166-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/gfh3je.mp4": {
+      "catbox_id": "gfh3je.mp4",
+      "base_url": "https://files.catbox.moe/gfh3je.mp4",
+      "tagged_url": "https://files.catbox.moe/gfh3je.mp4#prod=167&slot=descricao&slug=redutor-de-assento-sanitario-inf",
+      "owner_product_id": 167,
+      "owner_product_title": "Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-167.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/pa0bh7.mp4": {
+      "catbox_id": "pa0bh7.mp4",
+      "base_url": "https://files.catbox.moe/pa0bh7.mp4",
+      "tagged_url": "https://files.catbox.moe/pa0bh7.mp4#prod=167&slot=criador_1&slug=redutor-de-assento-sanitario-inf",
+      "owner_product_id": 167,
+      "owner_product_title": "Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",
+      "slot": "criador_1",
+      "creator_username": "lele.batista",
+      "poster": "videosprodutos/posters/poster-prod-167-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/ygrwsr.mp4": {
+      "catbox_id": "ygrwsr.mp4",
+      "base_url": "https://files.catbox.moe/ygrwsr.mp4",
+      "tagged_url": "https://files.catbox.moe/ygrwsr.mp4#prod=167&slot=criador_2&slug=redutor-de-assento-sanitario-inf",
+      "owner_product_id": 167,
+      "owner_product_title": "Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",
+      "slot": "criador_2",
+      "creator_username": "bianca_lbtrindade19",
+      "poster": "videosprodutos/posters/poster-prod-167-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/jlfmuy.mp4": {
+      "catbox_id": "jlfmuy.mp4",
+      "base_url": "https://files.catbox.moe/jlfmuy.mp4",
+      "tagged_url": "https://files.catbox.moe/jlfmuy.mp4#prod=167&slot=criador_3&slug=redutor-de-assento-sanitario-inf",
+      "owner_product_id": 167,
+      "owner_product_title": "Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",
+      "slot": "criador_3",
+      "creator_username": "maritips_",
+      "poster": "videosprodutos/posters/poster-prod-167-c3.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/vewukv.mp4": {
+      "catbox_id": "vewukv.mp4",
+      "base_url": "https://files.catbox.moe/vewukv.mp4",
+      "tagged_url": "https://files.catbox.moe/vewukv.mp4#prod=167&slot=criador_4&slug=redutor-de-assento-sanitario-inf",
+      "owner_product_id": 167,
+      "owner_product_title": "Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",
+      "slot": "criador_4",
+      "creator_username": "valquiria.rodrigues22",
+      "poster": "videosprodutos/posters/poster-prod-167-c4.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/01enrr.mp4": {
+      "catbox_id": "01enrr.mp4",
+      "base_url": "https://files.catbox.moe/01enrr.mp4",
+      "tagged_url": "https://files.catbox.moe/01enrr.mp4#prod=167&slot=criador_5&slug=redutor-de-assento-sanitario-inf",
+      "owner_product_id": 167,
+      "owner_product_title": "Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",
+      "slot": "criador_5",
+      "creator_username": "deborafernandes.18",
+      "poster": "videosprodutos/posters/poster-prod-167-c6.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/kyz9rc.mp4": {
+      "catbox_id": "kyz9rc.mp4",
+      "base_url": "https://files.catbox.moe/kyz9rc.mp4",
+      "tagged_url": "https://files.catbox.moe/kyz9rc.mp4#prod=168&slot=descricao&slug=higienizadora-e-limpadora-a-vapo",
+      "owner_product_id": 168,
+      "owner_product_title": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+      "slot": "descricao",
+      "poster": "img/posters-desc/poster-desc-168.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/s8vqzj.mp4": {
+      "catbox_id": "s8vqzj.mp4",
+      "base_url": "https://files.catbox.moe/s8vqzj.mp4",
+      "tagged_url": "https://files.catbox.moe/s8vqzj.mp4#prod=168&slot=criador_1&slug=higienizadora-e-limpadora-a-vapo",
+      "owner_product_id": 168,
+      "owner_product_title": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+      "slot": "criador_1",
+      "creator_username": "charlohome",
+      "poster": "videosprodutos/posters/poster-prod-168-c1.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/u8zk29.mp4": {
+      "catbox_id": "u8zk29.mp4",
+      "base_url": "https://files.catbox.moe/u8zk29.mp4",
+      "tagged_url": "https://files.catbox.moe/u8zk29.mp4#prod=168&slot=criador_2&slug=higienizadora-e-limpadora-a-vapo",
+      "owner_product_id": 168,
+      "owner_product_title": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+      "slot": "criador_2",
+      "creator_username": "canalanalima",
+      "poster": "videosprodutos/posters/poster-prod-168-c2.jpg?v=20261127"
+    },
+    "https://files.catbox.moe/xllfng.mp4": {
+      "catbox_id": "xllfng.mp4",
+      "base_url": "https://files.catbox.moe/xllfng.mp4",
+      "tagged_url": "https://files.catbox.moe/xllfng.mp4#prod=168&slot=criador_3&slug=higienizadora-e-limpadora-a-vapo",
+      "owner_product_id": 168,
+      "owner_product_title": "Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",
+      "slot": "criador_3",
+      "creator_username": "jhennifervargass",
+      "poster": "videosprodutos/posters/poster-prod-168-c3.jpg?v=20261127"
     }
   },
   "conflicts_detected": [
@@ -5544,10 +6005,10 @@
     }
   ],
   "stats": {
-    "total_unique_catbox_videos": 556,
-    "total_desc_videos": 90,
-    "total_creator_videos_slots": 478,
-    "products_with_creators": 90,
+    "total_unique_catbox_videos": 603,
+    "total_desc_videos": 99,
+    "total_creator_videos_slots": 516,
+    "products_with_creators": 99,
     "conflicts_count": 11
   }
 }

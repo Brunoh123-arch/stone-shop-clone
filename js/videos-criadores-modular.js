@@ -1241,6 +1241,60 @@
                 liked: false
               }
             ];
+          } else if (contextType === 'jipe160') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Ele vem com controle remoto pros pais guiarem, pedal acelerador, farol LED e toca música pelo Bluetooth! 🚙⚡', date: 'Há 22 min', likes: 164, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_41.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_41.jpg', user: 'paula.maedolucas', text: 'Presente de Natal do meu filho garantido! Chegou super bem embalado e ele já não quer sair de dentro 😍', date: 'Há 13 min', likes: 82, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-patinete/creator-lucas-andrade.jpg' : 'img/avatars-patinete/creator-lucas-andrade.jpg', user: 'thiago_pais', text: 'A bateria 12V é muito forte, anda tranquilo na garagem e na calçada do condomínio 👏', date: 'Há 5 min', likes: 47, liked: false }
+            ];
+          } else if (contextType === 'iphone16e161') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Chip A18 voando, tela OLED Super Retina XDR 6,1" e câmera Fusion 48MP com bateria pro dia inteiro! 📱🔥', date: 'Há 19 min', likes: 241, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_42.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_42.jpg', user: 'camila.techbr', text: 'Chegou lacrado na caixa Apple com cabo USB-C trançado! Câmera surreal demais 😍', date: 'Há 11 min', likes: 116, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-patinete/creator-rafael-muniz.jpg' : 'img/avatars-patinete/creator-rafael-muniz.jpg', user: 'rafael_rj', text: 'Migrei do iPhone 12 pro 16e e a diferença de velocidade e bateria é absurda 👏', date: 'Há 4 min', likes: 69, liked: false }
+            ];
+          } else if (contextType === 'cozinha162') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Sim mamães, sai água de verdade da torneirinha! É só colocar água no reservatório da pia e ela recicla 🚰🎀', date: 'Há 25 min', likes: 189, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_44.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_44.jpg', user: 'mariana.maedahelena', text: 'Minha filha de 3 anos pirou na pia com água e nas panelinhas! Muito grandona e cheia de acessórios 🥰', date: 'Há 14 min', likes: 94, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_45.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_45.jpg', user: 'jessica_lar', text: 'Super fácil de montar e não faz sujeira, presente de Natal perfeito!', date: 'Há 7 min', likes: 53, liked: false }
+            ];
+          } else if (contextType === 'faqueiro163') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'É o Tramontina Malibu original de 74 peças em aço inox completo pra 12 pessoas, inclusive colheres de servir! ✨🍴', date: 'Há 28 min', likes: 152, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_46.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_46.jpg', user: 'claudia.mesaposta', text: 'Já garanti pra ceia de Natal com a família toda! Brilho lindo e não enferruja na lava-louças 😍', date: 'Há 16 min', likes: 78, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_47.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_47.jpg', user: 'renata_sp', text: 'As facas têm serrilha ótima, cortam churrasco fácil demais 👏', date: 'Há 6 min', likes: 45, liked: false }
+            ];
+          } else if (contextType === 'mesa164') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Conjunto Madesa Cíntia completo com a mesa retangular + 4 cadeiras estofadas super confortáveis! 🪑✨', date: 'Há 26 min', likes: 173, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_48.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_48.jpg', user: 'lar_da_amanda', text: 'Transformou minha sala de jantar pro Natal! O tom amadeirado Rustic com creme é chique demais 😍', date: 'Há 15 min', likes: 89, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-churras/review-homem-1.jpg' : 'img/avatars-churras/review-homem-1.jpg', user: 'marcelo_apto', text: 'Montei sozinho com o manual em menos de 1 hora, muito firme e bem acabada 👏', date: 'Há 8 min', likes: 51, liked: false }
+            ];
+          } else if (contextType === 'bikeeq165') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'As 4 rodinhas largas em EVA dão total estabilidade e não riscam o piso de casa! Ideal de 1 a 4 anos 🚲💙', date: 'Há 23 min', likes: 144, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_49.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_49.jpg', user: 'bia.maedotheo', text: 'Meu bebê de 1 ano e meio já saiu andando pela sala no primeiro dia! Limitador de guidão super seguro 🥰', date: 'Há 12 min', likes: 71, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_23.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_23.jpg', user: 'fernanda_mae', text: 'Levinha de carregar no porta-malas pro parque, amei demais!', date: 'Há 5 min', likes: 39, liked: false }
+            ];
+          } else if (contextType === 'cesto166') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'São 72 litros reais em bambu natural com tampa e forro de tecido removível pra lavar na máquina! 🧺✨', date: 'Há 27 min', likes: 138, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_24.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_24.jpg', user: 'carol.organizacao', text: 'Deixou meu banheiro com cara de Pinterest! Cabe muita roupa da semana inteira e não passa cheiro 😍', date: 'Há 16 min', likes: 67, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_25.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_25.jpg', user: 'juliana_casa', text: 'Montei em 30 segundos, super firme e lindo demais!', date: 'Há 7 min', likes: 42, liked: false }
+            ];
+          } else if (contextType === 'redutor167') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Salva demais no desfralde! Tem assento almofadado macio, alças laterais, pés antiderrapantes e dobra pra guardar 🚽💛', date: 'Há 21 min', likes: 161, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_26.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_26.jpg', user: 'leticia.desfralde', text: 'Meu pequeno perdeu o medo do vaso na hora! Agora sobe sozinho pela escadinha todo orgulhoso 🥰', date: 'Há 11 min', likes: 84, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_27.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_27.jpg', user: 'paty_maternidade', text: 'Encaixou certinho no meu vaso e a almofadinha sai fácil pra higienizar 👏', date: 'Há 4 min', likes: 48, liked: false }
+            ];
+          } else if (contextType === 'karcher168') {
+            return [
+              { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: '1500W de vapor quente que derrete gordura do fogão, rejunte do banheiro e higieniza sofá sem produto químico! 💨⚡', date: 'Há 20 min', likes: 197, liked: false },
+              { avatar: isPagesDir ? '../img/reviews-avatars/mulheres_validadas/mulher_28.jpg' : 'img/reviews-avatars/mulheres_validadas/mulher_28.jpg', user: 'amanda.faxina', text: 'Passei no box e nos rejuntes do banheiro e ficou branco igual novo! Vale cada centavo 😍', date: 'Há 10 min', likes: 103, liked: false },
+              { avatar: isPagesDir ? '../img/avatars-churras/creator-rodrigo.jpg' : 'img/avatars-churras/creator-rodrigo.jpg', user: 'rodrigo_detail', text: 'Usei até nos bancos do carro e na grelha da churrasqueira, pressão de vapor absurda 👏', date: 'Há 5 min', likes: 61, liked: false }
+            ];
           } else if (contextType === 'bolsa155') {
             return [
               { avatar: originalItem.avatar, user: originalItem.username, isCreator: true, text: 'Meninas, vem o kit completinho na caixa: bolsa matelassê, carteira, relógio dourado e pulseira! 👜✨', date: 'Há 24 min', likes: 148, liked: false },

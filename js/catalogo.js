@@ -1,5 +1,14 @@
 // Catálogo gerado automaticamente — usa apenas imagens estáticas (não vídeo)
 const CATALOGO_PRODUTOS = [
+  {id:168,nome:"Higienizadora e Limpadora a Vapor Portátil Kärcher SC 2 Premium 1500W — Limpeza Pesada Sem Químicos",preco:167.9,precoOrig:'899,90',desc:81,vendidos:4380,img:"../img/karcher-168-slide-1.webp"},
+  {id:167,nome:"Redutor de Assento Sanitário Infantil c/ Escada Dobrável, Alças de Apoio e Pés Antiderrapantes",preco:29.89,precoOrig:'109,90',desc:73,vendidos:6810,img:"../img/redutor-167-slide-1.webp"},
+  {id:166,nome:"Cesto de Roupa Suja de Bambu 72 Litros Dobrável Retangular c/ Tampa, Forro Removível e Alças",preco:29.89,precoOrig:'99,90',desc:70,vendidos:11480,img:"../img/cesto-166-slide-1.webp"},
+  {id:165,nome:"Bicicleta Infantil de Equilíbrio Sem Pedal 4 Rodas Andador Primeiros Passos (1 a 4 Anos)",preco:34.89,precoOrig:'140,98',desc:75,vendidos:7290,img:"../img/bikeeq-165-slide-1.webp"},
+  {id:164,nome:"Conjunto Sala de Jantar Madesa Cíntia Mesa Retangular + 4 Cadeiras Estofadas Rustic/Crema",preco:189.9,precoOrig:'682,00',desc:72,vendidos:6140,img:"../img/mesa-164-slide-1.webp"},
+  {id:163,nome:"Faqueiro Aço Inox Tramontina Malibu 74 Peças Serviço para 12 Pessoas c/ Facas de Churrasco",preco:69.9,precoOrig:'269,00',desc:74,vendidos:8940,img:"../img/faqueiro-163-slide-1.webp"},
+  {id:162,nome:"Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",preco:79.9,precoOrig:'294,90',desc:73,vendidos:5620,img:"../img/cozinha-162-slide-1.webp"},
+  {id:161,nome:"Apple iPhone 16e 128GB 5G Tela Super Retina XDR OLED 6,1\" Chip A18 Câmera Fusion 48MP Face ID",preco:347.9,precoOrig:'3.443,00',desc:90,vendidos:7840,img:"../img/iphone16e-161-slide-1.webp"},
+  {id:160,nome:"Carro Elétrico Infantil Jipe 12V c/ Controle Remoto, Farol de LED, Pedal, Som e Bluetooth",preco:197.9,precoOrig:'1.609,00',desc:88,vendidos:4890,img:"../img/jipe-160-slide-1.webp"},
   {id:155,nome:"Combo Bolsa Feminina Luxo Matelassê Transversal + Relógio Dourado + Carteira + Pulseira na Caixa (Kit 4 em 1)",preco:49.89,precoOrig:'249,90',desc:80,vendidos:6840,img:"../img/bolsa-155-slide-1.webp"},
   {id:156,nome:"Kit Leve 4 Vestidos Canelados Femininos Modeladores Verão & Festas (Não Fica Transparente)",preco:54.89,precoOrig:'239,90',desc:77,vendidos:9120,img:"../img/vestidos-156-slide-1.webp"},
   {id:157,nome:"Kit Leve 4 Camisetas Masculinas 100% Algodão Fio 30.1 Penteado Gola Redonda Casual Premium",preco:49.89,precoOrig:'219,90',desc:77,vendidos:11340,img:"../img/camisetas-157-slide-1.webp"},

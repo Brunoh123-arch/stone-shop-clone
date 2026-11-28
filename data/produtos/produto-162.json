@@ -1,0 +1,440 @@
+{
+  "id": 162,
+  "title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios - Stone Shop",
+  "meta_description": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios com frete grátis, envio imediato e garantia Stone Shop.",
+  "product_title": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+  "slider_imgs": [
+    {
+      "src": "../img/cozinha-162-slide-1.webp",
+      "alt": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios - Foto 1"
+    },
+    {
+      "src": "../img/cozinha-162-slide-3.webp",
+      "alt": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios - Foto 2"
+    },
+    {
+      "src": "../img/cozinha-162-slide-4.webp",
+      "alt": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios - Foto 3"
+    },
+    {
+      "src": "../img/cozinha-162-slide-5.webp",
+      "alt": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios - Foto 4"
+    },
+    {
+      "src": "../img/cozinha-162-slide-7.webp",
+      "alt": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios - Foto 5"
+    }
+  ],
+  "discount_badge": "-73%",
+  "price_int": "79",
+  "price_cents": ",90",
+  "price_original": "R$ 294,90",
+  "installment_text": "3x R$ 26,63",
+  "installment_highlight": "sem juros",
+  "coupon_main": "Cupom Black Friday Aplicado",
+  "coupon_bonus": "Final R$ 79,90 no Pix ou Cartão",
+  "rating_score": "4,9",
+  "rating_count": "(538)",
+  "sold_count": "5620 vendidos on-line",
+  "frete_original": "R$ 24,90",
+  "reviews_header": "Avaliações dos clientes (538)",
+  "reviews_avg": "4,9",
+  "reviews": [
+    {
+      "name": "M**a S**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_24.jpg",
+      "stars": 5,
+      "date": "27/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "27/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Muito bom!! conforme o anunciado, fácil montagem. 10/10.",
+      "photos": [
+        "../img/review-162-b5-1.webp",
+        "../img/review-162-b5-2.webp",
+        "../img/review-162-b5-3.webp"
+      ]
+    },
+    {
+      "name": "J**a M**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_25.jpg",
+      "stars": 5,
+      "date": "27/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "27/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Ótimo produto, a criança adorou, fácil de montar, produto da altura de uma criança de até 4 anos.",
+      "photos": [
+        "../img/review-162-b6-1.webp"
+      ]
+    },
+    {
+      "name": "P**a F**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_26.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "26/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Mto bom. Helena amou.",
+      "photos": [
+        "../img/review-162-b7-1.webp",
+        "../img/review-162-b7-2.webp",
+        "../img/review-162-b7-3.webp"
+      ]
+    },
+    {
+      "name": "A**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_27.jpg",
+      "stars": 5,
+      "date": "26/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "26/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Minha netinha amou.",
+      "photos": [
+        "../img/review-162-b8-1.webp"
+      ]
+    },
+    {
+      "name": "R**e M**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_28.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "25/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Chegou super rápido e muito bem embalado, excelente qualidade! Recomendo demais.",
+      "photos": [
+        "../img/review-162-b9-1.webp"
+      ]
+    },
+    {
+      "name": "L**a F**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_29.jpg",
+      "stars": 5,
+      "date": "25/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "25/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Adorei! Montei super rápido e minha filha brinca o dia inteiro com as panelinhas.",
+      "photos": [
+        "../img/review-162-b10-1.webp"
+      ]
+    },
+    {
+      "name": "F**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_3.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "24/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Minha filha amou demais a cozinha! Bem grandinha, colorida e veio com vários acessórios lindos.",
+      "photos": [
+        "../img/review-162-b11-1.webp"
+      ]
+    },
+    {
+      "name": "B**a A**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_30.jpg",
+      "stars": 5,
+      "date": "24/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "24/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Muito fofa e espaçosa! As portinhas abrem e fecham direitinho e as cores são super vivas.",
+      "photos": [
+        "../img/review-162-b12-1.webp"
+      ]
+    },
+    {
+      "name": "T**a R**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_31.jpg",
+      "stars": 5,
+      "date": "23/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "23/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Presente perfeito pro Natal! Veio certinho com fogãozinho, pia, geladeira e utensílios.",
+      "photos": [
+        "../img/review-162-b13-1.webp"
+      ]
+    },
+    {
+      "name": "G**a N**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_32.jpg",
+      "stars": 5,
+      "date": "22/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "22/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Adorei esse produto.",
+      "photos": []
+    },
+    {
+      "name": "K**a L**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_33.jpg",
+      "stars": 5,
+      "date": "21/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "21/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Só comprem a cozinha é linda, minha netinha amou.",
+      "photos": []
+    },
+    {
+      "name": "S**a P**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_34.jpg",
+      "stars": 5,
+      "date": "20/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "20/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Ótimo produto.",
+      "photos": []
+    },
+    {
+      "name": "D**a C**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_35.jpg",
+      "stars": 5,
+      "date": "19/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "19/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Incrível, minha filha amou!.",
+      "photos": []
+    },
+    {
+      "name": "N**a G**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_36.jpg",
+      "stars": 4,
+      "date": "18/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "18/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Linda igual a foto.",
+      "photos": []
+    },
+    {
+      "name": "V**a O**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_37.jpg",
+      "stars": 5,
+      "date": "17/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "17/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Minha filha de 3 anos pirou quando viu a cozinha montada! Tamanho excelente e cores muito alegres.",
+      "photos": []
+    },
+    {
+      "name": "I**s R**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_38.jpg",
+      "stars": 5,
+      "date": "16/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "16/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Fácil de montar, veio todas as pecinhas e panelinhas completas. Ótimo presente de Natal!",
+      "photos": []
+    },
+    {
+      "name": "E**e S**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_39.jpg",
+      "stars": 5,
+      "date": "15/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "15/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Ela passa horas fazendo comidinha na cozinha nova, esqueceu até do celular kkkk recomendo muito!",
+      "photos": []
+    },
+    {
+      "name": "H**a T**s",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_4.jpg",
+      "stars": 5,
+      "date": "14/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "14/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Entrega super rápida, caixa intacta e plástico bem acabado sem rebarbas. Amei!",
+      "photos": []
+    },
+    {
+      "name": "Y**m R**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_40.jpg",
+      "stars": 4,
+      "date": "13/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "13/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Comprei pra minha afilhada de 4 anos e foi o presente que ela mais gostou na festa!",
+      "photos": []
+    },
+    {
+      "name": "L**a V**a",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_41.jpg",
+      "stars": 5,
+      "date": "12/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "12/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "As portinhas abrem direitinho, cabe todas as comidinhas dentro da geladeira. Muito bem feita!",
+      "photos": []
+    },
+    {
+      "name": "C**a B**o",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_42.jpg",
+      "stars": 5,
+      "date": "11/11",
+      "variation": "Cozinha Completa Rosa c/ Acessórios",
+      "date_line": "11/11 · Cozinha Completa Rosa c/ Acessórios",
+      "comment": "Pelo preço da Black Friday valeu muito a pena, é bem alta e completinha.",
+      "photos": []
+    }
+  ],
+  "details": [
+    {
+      "label": "Interatividade",
+      "value": "Pia com torneira que sai água de verdade + portinhas que abrem",
+      "hidden": false
+    },
+    {
+      "label": "Fogão e Geladeira",
+      "value": "Fogão de 3 botões clic-clac + geladeira com prateleiras internas",
+      "hidden": false
+    },
+    {
+      "label": "Acessórios Inclusos",
+      "value": "Panelinhas com tampa, talheres, pratinhos, copos e utensílios",
+      "hidden": false
+    },
+    {
+      "label": "Material",
+      "value": "Plástico polipropileno atóxico resistente com bordas arredondadas",
+      "hidden": false
+    },
+    {
+      "label": "Idade Recomendada",
+      "value": "A partir de 3 anos (certificado de segurança INMETRO)",
+      "hidden": true
+    },
+    {
+      "label": "Garantia",
+      "value": "90 dias de garantia com Proteção Stone Shop",
+      "hidden": true
+    }
+  ],
+  "video": {
+    "src": "https://files.catbox.moe/kx3x9d.mp4#prod=162&slot=descricao&slug=prod162",
+    "poster": "../img/posters-desc/poster-desc-162.jpg?v=20261127",
+    "duration": "0:10",
+    "catbox_id": "kx3x9d.mp4"
+  },
+  "size_guide_html": "",
+  "description_html": "<strong>👩‍🍳🎀 Kit Cozinha Infantil Completa Grande — Pia que Sai Água de Verdade + Acessórios Inclusos!</strong><br/><br/>Transforme a brincadeira em um verdadeiro mundo de imaginação! Essa cozinha infantil grande vem completinha com <strong>fogão, geladeira que abre a porta, janelinha decorada, ganchinhos para utensílios e pia funcional</strong>.<br/><br/><strong>Por que as Crianças Amam:</strong><br/>• <strong>Pia Funcional</strong>: basta colocar um pouquinho de água para a torneira funcionar na brincadeira.<br/>• <strong>Cheia de Detalhes Reais</strong>: botões no fogão, prateleiras internas e portas que abrem de verdade.<br/>• <strong>Kit Completo de Acessórios</strong>: já acompanha panelinhas, talheres e utensílios para brincar na hora.<br/>• <strong>Montagem Simples por Encaixe</strong>: leve, firme e sem cantos cortantes.<br/><br/><strong>Conteúdo da Caixa:</strong><br/>• 1 Cozinha Infantil Completa Grande + Kit de Panelinhas e Utensílios",
+  "related": [
+    {
+      "href": "produto-154.html",
+      "img": "../img/brastemp-154-slide-1.webp",
+      "alt": "Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox",
+      "name": "Máquina de Lavar Roupas Brastemp 13kg Automática Cesto Inox Ciclo Tira-Manchas Advanced",
+      "price": "R$ 397,90",
+      "price_original": "R$ 1.679,00",
+      "discount": "-76%",
+      "sold": "3740 vendidos"
+    },
+    {
+      "href": "produto-147.html",
+      "img": "../img/triciclo-147-slide-1.webp",
+      "alt": "Triciclo Elétrico Drift Infantil 360° 350W",
+      "name": "Triciclo Elétrico Drift Infantil 360° 350W Bateria 36V c/ Luzes LED e Bluetooth",
+      "price": "R$ 167,90",
+      "price_original": "R$ 799,90",
+      "discount": "-79%",
+      "sold": "5126 vendidos"
+    }
+  ],
+  "produto_atual": {
+    "id": 162,
+    "nome": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+    "name": "Kit Cozinha Infantil Completa Grande c/ Pia que Sai Água de Verdade, Fogão, Geladeira e Acessórios",
+    "preco": 79.9,
+    "price": 79.9,
+    "preco_antigo": 294.9,
+    "precoOrig": 294.9,
+    "originalPrice": 294.9,
+    "cupomPreco": 79.9,
+    "couponPrice": 79.9,
+    "desc": 73,
+    "desconto": 73,
+    "installmentText": "3x R$ 26,63 sem juros",
+    "parcelamento": "3x R$ 26,63 sem juros",
+    "categoria": "Infantil & Brinquedos",
+    "img": "../img/cozinha-162-slide-1.webp",
+    "image": "../img/cozinha-162-slide-1.webp",
+    "imagens": [
+      "../img/cozinha-162-slide-1.webp",
+      "../img/cozinha-162-slide-3.webp",
+      "../img/cozinha-162-slide-4.webp",
+      "../img/cozinha-162-slide-5.webp",
+      "../img/cozinha-162-slide-7.webp"
+    ],
+    "variacoes": {
+      "cor": {
+        "com_imagem": true,
+        "label": "Modelo",
+        "opcoes": [
+          {
+            "nome": "Cozinha Completa Rosa c/ Acessórios",
+            "imagem": "../img/cozinha-162-slide-1.webp"
+          }
+        ]
+      }
+    },
+    "shipping": "Frete grátis",
+    "store": "Stone Shop",
+    "rating": 4.9,
+    "sales": "5620 vendidos on-line"
+  },
+  "extra_scripts": [],
+  "creator_context": "cozinha162",
+  "creators": [
+    {
+      "name": "Gisela Domingos",
+      "username": "gyseladomingos",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_22.jpg",
+      "poster": "../videosprodutos/posters/poster-prod-162-c1.jpg?v=20261127",
+      "video": "https://files.catbox.moe/ak2byw.mp4#prod=162&slot=criador_1&slug=prod162",
+      "catbox_id": "ak2byw.mp4",
+      "startTime": 0.2,
+      "likes": 177,
+      "commentsCount": 5,
+      "saves": 48,
+      "shares": 128,
+      "description": "Kit Cozinha Infantil Grande sai água de verdade #cozinhainfantil #brinquedos #brinquedoinfantil #maedemenina"
+    },
+    {
+      "name": "Sinceridade em palavras",
+      "username": "sinceridadeempalavras",
+      "avatar": "../img/avatars-lote2/creator-162-c2.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-prod-162-c2.jpg?v=20261127",
+      "video": "https://files.catbox.moe/y4x9cb.mp4#prod=162&slot=criador_2&slug=prod162",
+      "catbox_id": "y4x9cb.mp4",
+      "startTime": 0.2,
+      "likes": 448,
+      "commentsCount": 10,
+      "saves": 105,
+      "shares": 669,
+      "description": "Kit Cozinha Infantil De Brinquedo."
+    },
+    {
+      "name": "Edilma",
+      "username": "edilmacarvalho21",
+      "avatar": "../img/avatars-lote2/creator-162-c3.jpg?v=20261127",
+      "poster": "../videosprodutos/posters/poster-prod-162-c3.jpg?v=20261127",
+      "video": "https://files.catbox.moe/syoph4.mp4#prod=162&slot=criador_3&slug=prod162",
+      "catbox_id": "syoph4.mp4",
+      "startTime": 0.2,
+      "likes": 146,
+      "commentsCount": 5,
+      "saves": 27,
+      "shares": 49,
+      "description": "Cozinha infantil grande completa #cozinhainfantil #brinquedoinfantil #cozinhacompleta #brinquedos"
+    },
+    {
+      "name": "Laísa Lopes",
+      "username": "laisablopes",
+      "avatar": "../img/reviews-avatars/mulheres_validadas/mulher_23.jpg",
+      "poster": "../videosprodutos/posters/poster-prod-162-c4.jpg?v=20261127",
+      "video": "https://files.catbox.moe/hpj7tg.mp4#prod=162&slot=criador_4&slug=prod162",
+      "catbox_id": "hpj7tg.mp4",
+      "startTime": 0.2,
+      "likes": 26,
+      "commentsCount": 2,
+      "saves": 16,
+      "shares": 37,
+      "description": "A Mega Cozinha Toy Chef é o brinquedo ideal para estimular a criatividade e a imaginação no universo da culinária. Perfeita para crianças que adoram inventar, c"
+    }
+  ]
+}
