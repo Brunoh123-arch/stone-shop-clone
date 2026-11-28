@@ -10,7 +10,8 @@
     "cache:bust": "node add_cache_buster.js",
     "deploy": "node deploy_to_vercel.js",
     "tiktok:videos": "node download_and_extract_tiktok_videos.js",
-    "pipeline": "node pipeline_tiktok_shop.js"
+    "pipeline": "node pipeline_tiktok_shop.js",
+    "studio": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/studio/start-studio.ps1"
   },
   "keywords": ["ecommerce", "stoneshop", "tiktokshop", "vsl", "clone"],
   "author": "Bruno (CTO Uppi)",
